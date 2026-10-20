@@ -1734,22 +1734,7 @@
           `;
         } else {
           item.setAttribute('aria-label', `Navigate to ${page.title}`);
-          let rightHtml = '';
-          if (idx <= 3) {
-            rightHtml = `<svg class="flight-strip-chevron w-3.5 h-3.5 shrink-0 opacity-40 transition-all pointer-events-none" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>`;
-          } else if (idx === 4) {
-            rightHtml = `<span class="flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded transition-all shrink-0">FE</span>`;
-          } else if (idx === 5 || page.detailsUrl) {
-            rightHtml = `<span class="flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded transition-all shrink-0">DDRS</span>`;
-          } else if (idx === 6 || page.isAdmin) {
-            rightHtml = `<span class="flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded transition-all shrink-0">ADMIN</span>`;
-          } else if (idx === 7 || page.isObjectives) {
-            rightHtml = `<span class="flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded transition-all shrink-0">OBJ</span>`;
-          } else if (idx >= 8 || page.isImmersion) {
-            rightHtml = `<span class="flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded transition-all shrink-0">S2</span>`;
-          } else {
-            rightHtml = `<svg class="flight-strip-chevron w-3.5 h-3.5 shrink-0 opacity-40 transition-all pointer-events-none" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>`;
-          }
+          const rightHtml = `<svg class="flight-strip-chevron w-3.5 h-3.5 shrink-0 opacity-40 transition-all pointer-events-none" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>`;
 
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
@@ -1779,7 +1764,6 @@
         const badge = item.querySelector('.flight-strip-badge');
         const title = item.querySelector('.flight-strip-title');
         const chevron = item.querySelector('.flight-strip-chevron');
-        const pill = item.querySelector('.flight-strip-pill');
 
         if (isActive) {
           item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border cursor-pointer shadow-2xs";
@@ -1799,9 +1783,6 @@
             chevron.style.color = mod.accent;
             chevron.style.opacity = '0.9';
             chevron.style.transform = 'none';
-          }
-          if (pill) {
-            pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-800 text-white shadow-2xs shrink-0";
           }
         } else {
           item.style.borderLeft = '';
@@ -1824,10 +1805,6 @@
               chevron.style.opacity = '0.35';
               chevron.style.transform = 'none';
             }
-            if (pill) {
-              // FE pill on Card 05: clean neutral slate pill
-              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200/90 shrink-0";
-            }
           } else {
             // Cards 06 to 08/09: Administrative & Reference Frameworks (Grounded Slate-200 / Touch Darker)
             item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-300/80 bg-slate-200/70 hover:bg-slate-200 hover:border-slate-400/80 text-slate-700 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
@@ -1842,8 +1819,10 @@
               badge.style.color = '#1e293b';
               badge.style.border = '1px solid #94a3b8';
             }
-            if (pill) {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-300 text-slate-800 border border-slate-400/60 shrink-0";
+            if (chevron) {
+              chevron.style.color = '#64748b';
+              chevron.style.opacity = '0.35';
+              chevron.style.transform = 'none';
             }
           }
         }
