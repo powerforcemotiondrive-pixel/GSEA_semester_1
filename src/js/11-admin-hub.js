@@ -1224,9 +1224,9 @@
         {
           num: "03",
           badge: "Aviation Culture",
-          title: "Professional Aviation Culture & Regulatory Frameworks",
-          desc: "Explain commercial airline business models, air traffic management jurisdictions (Tower, Approach, En-Route), international safety regulations (ICAO Annex 19 Safety vs. Annex 17 Security), and air accident investigation methodologies (CVR/FDR, BEA, NTSB) with professional rigor.",
-          indicators: "Clear explanation of regulatory requirements, airline fleet economics, and safety management systems (SMS)."
+          title: "General Aviation Culture & Operational Awareness",
+          desc: "Demonstrate a broad understanding of the commercial aviation ecosystem, describing the roles of key stakeholders (airports, airlines, ground operations, and air traffic services), the main stages of commercial flight operations, and the fundamental importance of safety culture and environmental challenges in modern aviation.",
+          indicators: "Accurate overview of airport and airline operations, clear description of the passenger and flight journey, active discussion of contemporary aviation challenges."
         },
         {
           num: "04",
@@ -1237,10 +1237,10 @@
         },
         {
           num: "05",
-          badge: "Crisis Communication",
-          title: "Communicative Confidence & Crisis Communication",
-          desc: "Manage simulated high-pressure communication scenarios with composure, delivering clear pilot-controller handoffs, emergency diversion requests, and simulated airline spokesperson press briefings following major operational disruptions.",
-          indicators: "Calm tone under pressure, factual communication without unverified speculation, structured holding statements."
+          badge: "Operational Confidence",
+          title: "Communicative Confidence & Operational Problem-Solving",
+          desc: "Communicate with increased composure and confidence in both routine and unexpected operational aviation situations. Students will develop the ability to explain delays, describe technical anomalies or operational disruptions, ask clarifying questions, check instructions, and resolve communication breakdowns smoothly.",
+          indicators: "Proactive requests for clarification or confirmation, calm and clear reporting of unexpected situations or delays, effective interaction during group problem-solving exercises."
         },
         {
           num: "06",
@@ -1269,9 +1269,9 @@
         {
           num: "03",
           badge: "Culture Aéronautique",
-          title: "Culture aéronautique et cadre réglementaire international",
-          desc: "Présenter avec clarté les modèles économiques des compagnies aériennes, les compétences des services de la circulation aérienne (Tour, Approche, En-Route), les conventions internationales (Annexe 19 Sécurité vs Annexe 17 Sûreté) et les méthodes d'enquête accident (BEA, NTSB).",
-          indicators: "Explication des obligations réglementaires, de l'économie de flotte et du Système de Gestion de la Sécurité (SGS)."
+          title: "Culture aéronautique générale et environnement opérationnel",
+          desc: "Comprendre et expliquer le fonctionnement global du secteur aéronautique : les rôles des principaux acteurs (aéroports, compagnies aériennes, assistance en escale, services de la navigation aérienne), les grandes étapes d'un vol commercial, ainsi que les principes fondamentaux de la culture de sécurité et des enjeux environnementaux de l'aviation moderne.",
+          indicators: "Présentation claire des acteurs de l'écosystème aérien, description fluide du parcours passager et des opérations de vol, participation active aux débats sur les enjeux aéronautiques contemporains."
         },
         {
           num: "04",
@@ -1282,10 +1282,10 @@
         },
         {
           num: "05",
-          badge: "Gestion de Crise",
-          title: "Confiance opérationnelle et communication de crise",
-          desc: "Réagir avec calme et professionnalisme lors de simulations d'incidents sous pression, de transferts de contrôle, de demandes de déroutement prioritaire et de conférences de presse simulées en tant que porte-parole d'une compagnie ou d'un aéroport.",
-          indicators: "Maîtrise de soi sous stress, communication factuelle sans spéculation, formulation d'une déclaration d'attente (holding statement)."
+          badge: "Confiance Opérationnelle",
+          title: "Confiance en communication et résolution d'imprévus",
+          desc: "Communiquer avec aisance et assurance lors d'échanges techniques et de situations opérationnelles courantes ou imprévues. Développer la capacité à décrire une anomalie, expliquer un retard, demander des éclaircissements, vérifier une information et surmonter les blocages linguistiques avec calme et clarté.",
+          indicators: "Initiative pour demander des clarifications ou reformuler, explication sereine d'aléas ou de retards, collaboration efficace lors des résolutions de cas en groupe."
         },
         {
           num: "06",
