@@ -493,7 +493,7 @@
               Formative Evaluation 3 (FE3) — Aviation Current Events &amp; Press Briefing
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              The Formative Evaluation takes place in <strong>pairs or trios</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Wednesday 25 February 2025 (Week 08)</strong> with <strong>Tracy NEILL (Group A)</strong> or <strong>Ally HEWETT (Group B)</strong>. You and your partner will roleplay as <strong>Aviation Authority / Airline Spokespersons</strong> delivering a formal 10-12 minute <strong>Press Briefing</strong> on a major recent aviation current event (severe weather disruption, in-flight medical emergency diversion, airport security breach / biometric rollout, or safety maintenance airworthiness directive), followed by spontaneous press conference Q&A, personal vocabulary portfolio audit, and detailed teacher feedback.
+              The Formative Evaluation takes place in <strong>pairs or trios</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Wednesday 24 February 2027 (Week 08)</strong> with <strong>Tracy NEILL (Group A)</strong> or <strong>Ally HEWETT (Group B)</strong>. You and your partner will roleplay as <strong>Aviation Authority / Airline Spokespersons</strong> delivering a formal 10-12 minute <strong>Press Briefing</strong> on a major recent aviation current event (severe weather disruption, in-flight medical emergency diversion, airport security breach / biometric rollout, or safety maintenance airworthiness directive), followed by spontaneous press conference Q&A, personal vocabulary portfolio audit, and detailed teacher feedback.
             </p>
           </div>
 
@@ -717,7 +717,7 @@
               Formative Evaluation 3 (FE3) — Emerging Technology Presentation
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              The Formative Evaluation takes place in <strong>pairs</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Friday 27 February 2025 (Week 08)</strong>. You and your partner will present a comprehensive technical profile and critical evaluation of an emerging aviation or non-aviation technology, defend technical trade-offs during a spontaneous teacher Q&amp;A, present evidence of your Vocabulary Log and TOEIC preparation, and evaluate your personal strengths and action targets.
+              The Formative Evaluation takes place in <strong>pairs</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Friday 26 February 2027 (Week 08)</strong>. You and your partner will present a comprehensive technical profile and critical evaluation of an emerging aviation or non-aviation technology, defend technical trade-offs during a spontaneous teacher Q&amp;A, present evidence of your Vocabulary Log and TOEIC preparation, and evaluate your personal strengths and action targets.
             </p>
           </div>
 
@@ -1162,7 +1162,7 @@
               Formative Evaluation 2 (FE2) — Climate Resilience Redesign
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              The Formative Evaluation takes place in <strong>pairs</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Friday 23 January 2025 (Week 03)</strong>. You and your partner will present a comprehensive climate resilience masterplan for an airport or city, defend technical trade-offs during a spontaneous teacher Q&amp;A, present evidence of your Vocabulary Log and TOEIC preparation, and evaluate your personal strengths and action targets.
+              The Formative Evaluation takes place in <strong>pairs</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Friday 22 January 2027 (Week 03)</strong>. You and your partner will present a comprehensive climate resilience masterplan for an airport or city, defend technical trade-offs during a spontaneous teacher Q&amp;A, present evidence of your Vocabulary Log and TOEIC preparation, and evaluate your personal strengths and action targets.
             </p>
           </div>
 

@@ -17654,7 +17654,7 @@
             ],
             "instructions": [
               "Congratulate the winning squad of the Semester 1 Grand Prix Tournament!",
-              "Review final preparation reminders for Formative Evaluation 3 on Wednesday 25 February 2025 (Week 08).",
+              "Review final preparation reminders for Formative Evaluation 3 on Wednesday 24 February 2027 (Week 08).",
               "Verify that your personal Vocabulary Log contains all required aeronautical terms across Modules 1, 2, and 3."
             ],
             "deliverable": "Confirmed FE3 preparation roadmap, verified evaluation timeslot, and finalized media briefing visual slides.",

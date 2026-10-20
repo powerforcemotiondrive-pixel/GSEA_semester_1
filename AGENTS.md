@@ -50,9 +50,22 @@ Course administration (student lists, teacher assignments, weekly schedules, and
     git push origin main --force --tags
     ```
 
+### D. Mandatory Pre-Implementation Response & Approval Gate
+- **No Direct Changes Without Prior Response**: ALL questions, requests, or suggested modifications from the user require a thorough review, report, and recommendation from the AI assistant **BEFORE** implementing any changes.
+- **Proceed / Ignore Prompt**: Every proposal or review must conclude with an explicit prompt asking the user whether to **proceed or ignore/adjust** (e.g. *"Please let me know if you would like me to proceed with these changes, or ignore/adjust."*).
+- **Explicit Confirmation Required**: The assistant must wait for explicit approval (such as *"Proceed"*, *"Approved"*, or further instructions) before modifying any codebase files.
+
+### E. Automated Project Backups (`backup1` & `backup2`)
+- **`backup1` Trigger**: Whenever the user sends `backup1`, the assistant immediately runs `npm run backup1` (or `node scripts/backup.js semester1`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_1/` and confirms the file path and archive size.
+- **`backup2` Trigger**: Whenever the user sends `backup2`, the assistant immediately runs `npm run backup2` (or `node scripts/backup.js semester2`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_2/` and confirms the file path and archive size.
+- **Archive Convention**: Archives are named `GSEA_Semester_X_backup_YYYY-MM-DD_HHmm.zip`, containing the full project source and compiled assets while omitting `node_modules` and `.git`.
+
+### F. Cross-Project Rule & Tooling Synchronization
+- **Mandatory Dual-Project Propagation**: Any time an architectural rule, governance guideline, operational command (e.g. `backup1`/`backup2`), or utility script is created or modified in `GSEA_semester_1`, the assistant MUST immediately mirror and synchronize that change into `GSEA_semester_2` (and vice-versa) within the same session.
+
 ---
 
-## 2. Active Cohort Configuration (GSEA26A • 2024–2025)
+## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
 
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*
 
@@ -62,17 +75,17 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   - **Group A Teacher**: Tracy NEILL
   - **Group B Teacher**: Ally HEWETT
   - **Evaluation Dates**:
-    - FE1: Wednesday 26 November 2024 (Week 48)
-    - FE2: Wednesday 21 January 2025 (Week 03)
-    - FE3: Wednesday 25 February 2025 (Week 08)
+    - FE1: Wednesday 25 November 2026 (Week 48)
+    - FE2: Wednesday 20 January 2027 (Week 03)
+    - FE3: Wednesday 24 February 2027 (Week 08)
 - **General English (AG • LV101E)**
   - **Schedule**: Fridays 08h00 – 10h00 (2 Hours)
   - **Group A Teacher**: Geri MIDDLETON
   - **Group B Teacher**: Penny WRIGHT
   - **Evaluation Dates**:
-    - FE1: Friday 28 November 2024 (Week 48)
-    - FE2: Friday 23 January 2025 (Week 03)
-    - FE3: Friday 27 February 2025 (Week 08)
+    - FE1: Friday 27 November 2026 (Week 48)
+    - FE2: Friday 22 January 2027 (Week 03)
+    - FE3: Friday 26 February 2027 (Week 08)
 
 ### Evaluation Structure
 - **Slot Length**: 30 minutes per evaluation slot.

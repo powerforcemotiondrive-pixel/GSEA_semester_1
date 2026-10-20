@@ -489,6 +489,387 @@
       `;
     }
 
+    function renderToeicGuideTab(theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+
+      bodyEl.innerHTML = `
+        <div class="space-y-6 text-slate-800">
+
+          <!-- 1. Header Banner & Exam Structure Quick-Card -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs font-black text-sm" style="background-color: ${theme.primary};">
+                  ETS
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">Official Guide</span>
+                    <h3 class="text-sm sm:text-base font-extrabold text-slate-900">TOEIC® Listening &amp; Reading Strategy Guide</h3>
+                  </div>
+                  <p class="text-xs text-slate-500 mt-0.5">Practical Examination Methodology, Timing, Question Types, Grammar Rules &amp; CEFR Scales</p>
+                </div>
+              </div>
+              <button type="button" onclick="switchModalTab('toeic')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-white shadow-xs hover:shadow-md transition-all cursor-pointer self-stretch sm:self-auto justify-center" style="background-color: ${theme.accent};">
+                <span>Try Session TOEIC Practice</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+
+            <!-- 3-Pillar Summary Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Total Examination</span>
+                <div class="text-base font-black text-slate-900">2 Hours • 200 Questions</div>
+                <p class="text-[11px] text-slate-600 leading-snug">Paper &amp; pencil multiple choice test with bubble answer sheet. Maximum score: <strong>990 points</strong>.</p>
+              </div>
+              <div class="p-3.5 bg-blue-50/80 border border-blue-200 rounded-xl space-y-1">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-700">Listening Section</span>
+                <div class="text-base font-black text-blue-950">45 Mins • 100 Questions</div>
+                <p class="text-[11px] text-blue-900 leading-snug">Parts 1 to 4 • <strong>495 points max</strong>. Fast paced audio recorded by native speakers (US, UK, Canadian, Australian).</p>
+              </div>
+              <div class="p-3.5 bg-amber-50/80 border border-amber-200 rounded-xl space-y-1">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">Reading Section</span>
+                <div class="text-base font-black text-amber-950">75 Mins • 100 Questions</div>
+                <p class="text-[11px] text-amber-900 leading-snug">Parts 5 to 7 • <strong>495 points max</strong>. Autonomous time management: speed through P5/P6 to preserve time for P7.</p>
+              </div>
+            </div>
+
+            <!-- Benchmark Callout -->
+            <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between gap-3 text-xs text-emerald-950">
+              <div class="flex items-center gap-2">
+                <span class="text-base">🎯</span>
+                <span><strong>ENAC Graduation Benchmark:</strong> Minimum <strong>785 points (CEFR B2)</strong> required for degree validation. Targeting <strong>850–945+ (B2/C1)</strong> for international career mobility.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Listening Section Tactics & Traps (Parts 1 to 4) -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.primary};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">1. Listening Section Tactics &amp; Traps (Parts 1–4 • 45 Mins)</h4>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+              
+              <!-- Part 1: Photos -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-black text-white px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
+                  <span class="text-[11px] font-bold text-slate-500">6 Photographs</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Which sentence describes what you see?</h5>
+                <ul class="text-[11.5px] text-slate-600 space-y-1.5 list-disc list-inside">
+                  <li><strong>Progressive difficulty:</strong> Starts simply with present continuous actions (<em>"she is speaking on the phone"</em>), then introduces specialized objects (<em>broom, sweeping, shore, drawer, wheelbarrow, eyeglasses</em>).</li>
+                  <li><strong>Passive voice constructions:</strong> Watch out for passive forms (<em>"some pictures have been hung on the wall"</em>, <em>"the equipment is being serviced"</em>).</li>
+                  <li><strong>Photos with no people:</strong> Usually test prepositions of place and objects (<em>"boats are being dragged along the shore"</em>).</li>
+                </ul>
+              </div>
+
+              <!-- Part 2: Question & Response -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-black text-white px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
+                  <span class="text-[11px] font-bold text-slate-500">25 Questions / Statements</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">The First-Word &amp; Trap Elimination Rule</h5>
+                <ul class="text-[11.5px] text-slate-600 space-y-1.5 list-disc list-inside">
+                  <li><strong>WH- Question:</strong> If opening with <em>When, Where, Why, What, Whose, How long</em>, the answer <strong>cannot</strong> be "Yes" or "No".</li>
+                  <li><strong>Auxiliary Question:</strong> If starting with <em>Is it, Can you, Will they, Should we, Have you...</em>, expect an affirmative (<em>yes, sure, okay</em>) or negation (<em>no, not yet, never</em>).</li>
+                  <li><strong>The Repetition Trap:</strong> If you hear the same or a similar-sounding word in the answer as in the question, <strong>it is almost always a trap!</strong> (e.g. <em>board meeting</em> &rarr; distractor: <em>"he was bored"</em>).</li>
+                  <li><strong>Homophones &amp; Similar Words:</strong> <em>sale/sail</em>, <em>shore/sure</em>, <em>compete/complete</em>. Listen carefully for <strong>When</strong> vs. <strong>Where</strong>!</li>
+                  <li><strong>Indirect / Obscure Answers:</strong> 4 to 5 questions are indirect (e.g. <em>"Is there enough room in your car?" &rarr; "We're taking the shuttle bus"</em>). Don't panic; guess and move on!</li>
+                </ul>
+              </div>
+
+              <!-- Part 3: Conversations -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-black text-white px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
+                  <span class="text-[11px] font-bold text-slate-500">39 Questions (13 Dialogues &times; 3 Qs)</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">The 40-Second Preview Strategy</h5>
+                <ul class="text-[11.5px] text-slate-600 space-y-1.5 list-disc list-inside">
+                  <li><strong>The Golden Routine:</strong> While instructions play, read the first 3 questions and options. As you listen, place a light pencil dot next to your choice. While the speaker reads the questions aloud (40s gap!), darken your bubble sheet and <strong>immediately use the remaining time to read the NEXT 3 questions</strong>.</li>
+                  <li><strong>Never fall behind:</strong> Answers are in chronological order. If you miss one, guess immediately and protect your preview lead!</li>
+                  <li><strong>Exact words:</strong> Unlike Part 2, in Parts 3 &amp; 4 hearing a word that is printed in your booklet is usually the <strong>correct</strong> answer.</li>
+                  <li><strong>Visual graphics:</strong> Charts and price lists at the end are simple data-matching; identify the row/column mentioned.</li>
+                </ul>
+              </div>
+
+              <!-- Part 4: Short Talks -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-black text-white px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
+                  <span class="text-[11px] font-bold text-slate-500">30 Questions (10 Monologues &times; 3 Qs)</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Monologue Formats &amp; Keyword Anticipation</h5>
+                <ul class="text-[11.5px] text-slate-600 space-y-1.5 list-disc list-inside">
+                  <li><strong>Preview questions first:</strong> Apply the exact same 40-second preview technique as Part 3.</li>
+                  <li><strong>Core monologue types:</strong>
+                    <div class="pl-2 pt-0.5 text-slate-500">
+                      &bull; <strong>Announcements:</strong> airport gate changes, rail delays, plant safety warnings.<br>
+                      &bull; <strong>Recordings:</strong> corporate telephone voicemail, automated service menus.<br>
+                      &bull; <strong>Commercials / Marketing:</strong> promotional sales, product rollouts.<br>
+                      &bull; <strong>Broadcasts:</strong> weather updates, business news reports.
+                    </div>
+                  </li>
+                  <li>Identify the speaker, purpose, and required next action in the first 2 sentences.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3. Reading Section Strategy & Timing (Parts 5 to 7) -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.accent};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">2. Reading Section Strategy &amp; Time Budget (Parts 5–7 • 75 Mins)</h4>
+            </div>
+
+            <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 bg-amber-50/70 border border-amber-200 rounded-lg text-xs text-amber-950">
+                <span>⏱️ <strong>Pacing Guideline:</strong> Spend ~30 seconds per item on Parts 5 &amp; 6 (total ~25 mins) to protect at least <strong>45–50 minutes</strong> for the long texts in Part 7!</span>
+                <span class="font-mono font-bold text-[11px] bg-white px-2 py-0.5 rounded border border-amber-300 shrink-0">Part 5 &amp; 6: ~30s / item</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                  <div class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                    <span>If choices share the same root &rarr; GRAMMAR</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                    Options: <em>(A) interest (B) interests (C) interested (D) interesting</em>.<br>
+                    <strong>Strategy:</strong> <u>Do NOT read the whole sentence!</u> Check only the words immediately preceding and following the gap (e.g. <em>the/a + [adjective] + noun</em>, <em>preposition + V-ing</em>).
+                  </p>
+                </div>
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                  <div class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>If choices are 4 different words &rarr; VOCABULARY</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                    Options: <em>(A) develop (B) raise (C) open (D) complete</em>.<br>
+                    <strong>Strategy:</strong> Read the full sentence to comprehend context, business collocations, and prepositions that follow the verb.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. High-Frequency Grammar Rules & Shortcuts -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.primary};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">3. Essential High-Frequency TOEIC Grammar Rules</h4>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+
+              <!-- Rule 1: Correlatives & Conjunctions -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">1. Correlative Conjunctions &amp; Pairings</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; <code>whether ... or</code> (suggests a choice between options)<br>
+                  &bull; <code>either ... or</code> &nbsp;|&nbsp; <code>neither ... nor</code><br>
+                  <em>Example:</em> "Please indicate on the envelope <strong>whether</strong> you prefer regular <strong>or</strong> deluxe processing."
+                </p>
+              </div>
+
+              <!-- Rule 2: Future Time Clauses -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">2. Future Time Clauses ("Will" Prohibition)</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  Never use <code>will</code> directly after time conjunctions: <em>as soon as, before, until, when, after</em>.<br>
+                  <em>Correct:</em> "<strong>When you arrive</strong>, I will leave." (NOT <em>"When you will arrive"</em>).
+                </p>
+              </div>
+
+              <!-- Rule 3: Pronouns -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">3. Pronoun Cases &amp; Reflexives</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; Possessive determiner + noun: <em>his car / her car / their car</em><br>
+                  &bull; Object pronoun: <em>belongs to him / to her / to them</em><br>
+                  &bull; Possessive pronoun (alone): <em>it is his / it is hers / it is theirs</em><br>
+                  &bull; Reflexives for self/alone: <em>themselves</em>, <em>by herself</em>.
+                </p>
+              </div>
+
+              <!-- Rule 4: Comparatives & Superlatives -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">4. Comparatives, Superlatives &amp; Quantifiers</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; <code>than</code> &rarr; requires comparative (<em>bigger than</em>)<br>
+                  &bull; <code>even</code> + comparative (<em>even more meetings</em>)<br>
+                  &bull; <code>the most / the least</code> &rarr; superlatives preceded by <strong>the</strong>. Note: <em>most people</em> (without "the") = la plupart des gens.<br>
+                  &bull; <em>many / few</em> + countable nouns &bull; <em>much / little</em> + uncountable nouns.
+                </p>
+              </div>
+
+              <!-- Rule 5: Conjunction vs Preposition -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">5. Conjunctions vs. Prepositions</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; <code>while</code> (+ clause with verb) vs. <code>during</code> (+ noun only)<br>
+                  &bull; <code>although / though</code> (+ clause) vs. <code>despite / in spite of</code> (+ noun or V-ing)<br>
+                  &bull; <code>However,</code> | <code>Moreover,</code> | <code>Nevertheless,</code> &rarr; followed by a comma.<br>
+                  &bull; <code>since</code> = either time (<em>depuis</em> + present perfect) or cause (<em>puisque</em>)<br>
+                  &bull; <code>besides</code> (<em>en plus</em>) vs. <code>beside</code> (<em>&agrave; c&ocirc;t&eacute; de</em>).
+                </p>
+              </div>
+
+              <!-- Rule 6: Preposition + Gerund -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">6. Prepositions Followed by Verb + ING</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  All prepositions require <code>verb + ing</code> (<em>before speaking</em>, <em>without asking</em>).<br>
+                  <strong>Watch out for "to" as a preposition:</strong><br>
+                  &bull; <em>I look forward to <strong>hearing</strong> from you</em><br>
+                  &bull; <em>In addition to <strong>doing</strong> something</em><br>
+                  (contrast with infinitive of purpose: <em>in order to do</em>).
+                </p>
+              </div>
+
+              <!-- Rule 7: Adjectives -ed vs -ing -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">7. Adjectives: -ED vs. -ING</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; <code>-ed</code> describes how someone <strong>feels</strong>: <em>"I was interested in the presentation"</em>.<br>
+                  &bull; <code>-ing</code> describes the thing or situation <strong>causing</strong> the feeling: <em>"The presentation was interesting"</em>.
+                </p>
+              </div>
+
+              <!-- Rule 8: Word Length Shortcut & Part of Speech -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">8. Word Length &amp; Part of Speech Shortcut</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  When guessing completely unfamiliar word forms:<br>
+                  &bull; <strong>Longest word</strong> &rarr; usually the <strong>NOUN</strong> (<em>deliberation</em>)<br>
+                  &bull; <strong>Shortest word</strong> &rarr; usually the <strong>VERB</strong> (<em>deliberate</em>)<br>
+                  &bull; <strong>Ending in -ly</strong> &rarr; <strong>ADVERB</strong> (<em>deliberately</em>)<br>
+                  &bull; <strong>Remaining form</strong> &rarr; <strong>ADJECTIVE</strong> (<em>deliberate, reflective</em>)<br>
+                  &bull; <strong>Compound verbs:</strong> Adverbs fit between auxiliaries: <em>"must [definitely] have done"</em>.
+                </p>
+              </div>
+
+              <!-- Rule 9: Person Noun vs Thing Noun -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5 md:col-span-2">
+                <strong class="text-slate-900 block font-bold">9. Person Noun vs. Concept/Thing Noun</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  TOEIC frequently asks you to choose between a person (agent) and an abstract concept:<br>
+                  &bull; <em>advisor / adviser</em> (person) vs. <em>advice</em> (uncountable noun)<br>
+                  &bull; <em>researcher</em> (person, needs article: <em>a researcher</em>) vs. <em>researchers</em> (plural + have) vs. <em>research</em> (field).<br>
+                  <em>Example:</em> "The financial <strong>advisor</strong> suggested an international fund" (only a person can suggest!).
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 5. Part 7 Comprehension Tactics (Skimming & Scanning) -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.primary};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">4. Part 7 Reading Comprehension (Skimming &amp; Scanning)</h4>
+            </div>
+
+            <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3 text-xs">
+              <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-lg text-blue-950 font-bold">
+                🔄 The Reverse Strategy: Always read the questions BEFORE reading the passage!
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                  <h5 class="font-bold text-slate-900">📖 Skimming (Reading for Gist &amp; Purpose)</h5>
+                  <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                    Read quickly to grasp the main ideas. Check the title, first sentence of each paragraph, and the closing sentence.<br>
+                    <strong>Ask yourself:</strong> What is the document? Who is it for? What is the main objective?<br>
+                    <strong>What NOT to do:</strong> Do NOT read every single word. Do NOT stop for unknown vocabulary.
+                  </p>
+                </div>
+
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                  <h5 class="font-bold text-slate-900">🔍 Scanning (Searching for Specific Facts)</h5>
+                  <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                    Read carefully to pinpoint targeted facts: dates, times, prices, personal names, phone numbers, or flight/order codes.<br>
+                    <strong>How to scan:</strong> Know exactly what keyword you are looking for before glancing at the text. Use headings and bullet points as visual anchors.<br>
+                    <strong>What NOT to do:</strong> Do not continue reading once you locate the needed detail.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. CEFR Benchmark & Score Mapping Table -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.accent};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">5. TOEIC Score Scale &amp; CEFR Level Benchmarks</h4>
+            </div>
+
+            <div class="overflow-x-auto bg-white border border-slate-200 rounded-xl shadow-xs">
+              <table class="w-full text-left border-collapse text-xs">
+                <thead>
+                  <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+                    <th class="py-2.5 px-3 w-20">CEFR</th>
+                    <th class="py-2.5 px-3 w-32">TOEIC Score</th>
+                    <th class="py-2.5 px-3">Proficiency &amp; Workplace Competencies</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-[11.5px]">
+                  <tr class="hover:bg-slate-50">
+                    <td class="py-2 px-3 font-black text-slate-500">A1</td>
+                    <td class="py-2 px-3 font-mono font-bold text-slate-600">120 &ndash; 224</td>
+                    <td class="py-2 px-3 text-slate-600">Beginner: Can introduce oneself and ask/answer basic questions in familiar contexts.</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="py-2 px-3 font-black text-slate-500">A2</td>
+                    <td class="py-2 px-3 font-mono font-bold text-slate-600">225 &ndash; 549</td>
+                    <td class="py-2 px-3 text-slate-600">Elementary: Can describe basic background and exchange simple direct information on familiar topics.</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="py-2 px-3 font-black text-blue-600">B1</td>
+                    <td class="py-2 px-3 font-mono font-bold text-blue-700">550 &ndash; 784</td>
+                    <td class="py-2 px-3 text-slate-700">Intermediate: Understands the main points in clear standard speech and workplace texts on familiar matters.</td>
+                  </tr>
+                  <tr class="bg-emerald-50/70 border-l-4 border-emerald-500 font-medium">
+                    <td class="py-2.5 px-3 font-black text-emerald-800">B2 🎯</td>
+                    <td class="py-2.5 px-3 font-mono font-black text-emerald-800">785 &ndash; 944</td>
+                    <td class="py-2.5 px-3 text-emerald-950">
+                      <strong>Independent User (ENAC Graduation Benchmark):</strong> Understands complex technical and business texts. Interacts with spontaneity and fluency in professional meetings and discussions.
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="py-2 px-3 font-black text-purple-600">C1</td>
+                    <td class="py-2 px-3 font-mono font-bold text-purple-700">945 &ndash; 990</td>
+                    <td class="py-2 px-3 text-slate-700">Autonomous / Proficient: Expresses ideas fluently without searching for expressions. Grasps implicit meanings and complex professional nuance.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Bottom Action Switcher to Practice Drill -->
+          <div class="p-4 bg-slate-100 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>
+              <p class="text-xs font-bold text-slate-700">Ready to put these strategies into practice?</p>
+              <p class="text-[11px] text-slate-500">Test your grammatical accuracy and timing on this session's official Reading Part 5 question drill.</p>
+            </div>
+            <button type="button" onclick="switchModalTab('toeic')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-xs font-bold text-white shadow-xs hover:shadow-md transition-all cursor-pointer" style="background-color: ${theme.primary};">
+              <span>Open TOEIC Practice Drill</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+      `;
+    }
+
     function renderDdrsTab(theme) {
       const bodyEl = document.getElementById('modal-body');
       const modCourse = getActiveModalCourseData();

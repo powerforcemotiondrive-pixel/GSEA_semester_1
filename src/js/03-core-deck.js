@@ -163,7 +163,7 @@
       }
       const mainTitle = document.getElementById('deck-main-title');
       if (mainTitle) {
-        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT' : 'GSEA SEMESTER 1 AG';
+        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT (LV121E)' : 'GSEA SEMESTER 1 AG (LV101E)';
       }
       const footerCurriculum = document.getElementById('footer-curriculum-label');
       if (footerCurriculum && PROGRAMS_CONFIG[currentProgram]) {
@@ -402,7 +402,7 @@
       // Header Main Title & Subheader
       const mainTitle = document.getElementById('deck-main-title');
       if (mainTitle) {
-        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT' : 'GSEA SEMESTER 1 AG';
+        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT (LV121E)' : 'GSEA SEMESTER 1 AG (LV101E)';
       }
 
       const subtitle = document.getElementById('deck-subtitle');
@@ -524,6 +524,17 @@
       const mod = modulesData[currentModuleIndex];
 
       mod.pages.forEach((page, idx) => {
+        if (idx === 5) {
+          const divider = document.createElement('div');
+          divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
+          divider.innerHTML = `
+            <span class="h-px bg-slate-200/90 flex-1"></span>
+            <span>Admin &amp; Frameworks</span>
+            <span class="h-px bg-slate-200/90 flex-1"></span>
+          `;
+          menuEl.appendChild(divider);
+        }
+
         const item = document.createElement('button');
         item.type = 'button';
         item.setAttribute('data-card-idx', idx);
@@ -598,15 +609,9 @@
             title.className = "flight-strip-title truncate text-xs font-bold text-slate-900 transition-all pointer-events-none";
           }
           if (badge) {
-            if (idx === 4) {
-              badge.style.backgroundColor = '#fef3c7';
-              badge.style.color = '#92400e';
-              badge.style.border = '1px solid #fcd34d';
-            } else {
-              badge.style.backgroundColor = '#f1f5f9';
-              badge.style.color = '#334155';
-              badge.style.border = '1px solid #e2e8f0';
-            }
+            badge.style.backgroundColor = '#f1f5f9';
+            badge.style.color = '#334155';
+            badge.style.border = '1px solid #e2e8f0';
           }
           if (chevron) {
             chevron.style.color = mod.accent;
@@ -614,16 +619,12 @@
             chevron.style.transform = 'none';
           }
           if (pill) {
-            if (idx === 4) {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-500 text-white shadow-2xs shrink-0";
-            } else {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-800 text-white shadow-2xs shrink-0";
-            }
+            pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-800 text-white shadow-2xs shrink-0";
           }
         } else {
           item.style.borderLeft = '';
-          if (idx <= 3) {
-            // Sessions 01 to 04: Core Teaching Units (Clean White / Slate Border)
+          if (idx <= 4) {
+            // Sessions 01 to 05: Core Teaching & FE Units (Clean White / Slate Border)
             item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/90 bg-white hover:bg-slate-50 hover:border-slate-300 text-slate-800 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
             item.style.backgroundColor = '#ffffff';
             item.style.borderColor = '#e2e8f0';
@@ -641,39 +642,26 @@
               chevron.style.opacity = '0.35';
               chevron.style.transform = 'none';
             }
-          } else if (idx === 4) {
-            // Session 05: Evaluation Milestone (Warm Amber Highlight)
-            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-amber-200/80 bg-amber-50/70 hover:bg-amber-50 hover:border-amber-300/90 text-amber-950 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
-            item.style.backgroundColor = '#fffbeb';
-            item.style.borderColor = '#fde68a';
-            if (title) {
-              title.style.color = '#78350f';
-              title.className = "flight-strip-title truncate text-xs font-bold text-amber-950 group-hover:text-amber-900 transition-all pointer-events-none";
-            }
-            if (badge) {
-              badge.style.backgroundColor = '#fef3c7';
-              badge.style.color = '#92400e';
-              badge.style.border = '1px solid #fde68a';
-            }
             if (pill) {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-200/80 text-amber-900 border border-amber-300/80 shrink-0";
+              // FE pill on Card 05: clean neutral slate pill
+              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200/90 shrink-0";
             }
           } else {
-            // Cards 06 to 08/09: Administrative & Reference Frameworks (Muted Cool Slate)
-            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/70 bg-slate-100/75 hover:bg-slate-100 hover:border-slate-300 text-slate-600 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
-            item.style.backgroundColor = '#f1f5f9';
-            item.style.borderColor = '#e2e8f0';
+            // Cards 06 to 08/09: Administrative & Reference Frameworks (Grounded Slate-200 / Touch Darker)
+            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-300/80 bg-slate-200/70 hover:bg-slate-200 hover:border-slate-400/80 text-slate-700 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
+            item.style.backgroundColor = '#e2e8f0';
+            item.style.borderColor = '#cbd5e1';
             if (title) {
-              title.style.color = '#475569';
-              title.className = "flight-strip-title truncate text-xs font-medium text-slate-600 group-hover:text-slate-900 transition-all pointer-events-none";
+              title.style.color = '#334155';
+              title.className = "flight-strip-title truncate text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-all pointer-events-none";
             }
             if (badge) {
-              badge.style.backgroundColor = '#e2e8f0';
-              badge.style.color = '#64748b';
-              badge.style.border = '1px solid #cbd5e1';
+              badge.style.backgroundColor = '#cbd5e1';
+              badge.style.color = '#1e293b';
+              badge.style.border = '1px solid #94a3b8';
             }
             if (pill) {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-200/70 text-slate-600 border border-slate-300/60 shrink-0";
+              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-300 text-slate-800 border border-slate-400/60 shrink-0";
             }
           }
         }
@@ -1166,6 +1154,15 @@
 
         standardTabs.forEach(t => t.classList.remove('hidden'));
 
+        const toeicGuideTab = document.getElementById('modal-tab-toeic-guide');
+        if (toeicGuideTab) {
+          if (modalState.program === 'ag') {
+            toeicGuideTab.classList.remove('hidden');
+          } else {
+            toeicGuideTab.classList.add('hidden');
+          }
+        }
+
         if (hasLessonContent) {
           if (tabObjectives) tabObjectives.classList.add('hidden');
           if (tabPlan) tabPlan.classList.add('hidden');
@@ -1448,6 +1445,8 @@
         renderRevisionTab(sessionData, theme);
       } else if (modalState.tab === 'materials') {
         renderMaterialsTab(sessionData, theme);
+      } else if (modalState.tab === 'toeic_guide') {
+        renderToeicGuideTab(theme);
       } else if (modalState.tab === 'toeic') {
         renderToeicTab(sessionData, theme);
       } else if (modalState.tab === 'ddrs') {

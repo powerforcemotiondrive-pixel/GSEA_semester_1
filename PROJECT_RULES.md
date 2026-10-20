@@ -27,7 +27,16 @@ Before modifying any file in this repository, any AI assistant MUST adhere to th
    - **DO NOT change `mode: "no-cors"` to "cors"** and do not replace this dual-route architecture with a raw Google iframe.
 5. **ALWAYS USE `npm run package` TO BUNDLE**:
    - Never manually zip the project folder. Always run `npm run package`.
-   - This script minifies Tailwind CSS, validates all 119 resources in `imsmanifest.xml`, and builds `dist/GSEA_Semester_1_SCORM.zip`.
+   - This script minifies Tailwind CSS, validates all resources in `imsmanifest.xml`, and builds `dist/GSEA_Semester_1_SCORM.zip`.
+6. **MANDATORY PRE-IMPLEMENTATION RESPONSE & APPROVAL GATE**:
+   - ALL user questions, requests, and feature suggestions require a thorough review, report, and recommendation response from the AI assistant **BEFORE** implementing any changes.
+   - The assistant must always conclude with an explicit prompt asking the user to **proceed or ignore/adjust** and await explicit confirmation before modifying any files.
+7. **AUTOMATED DATED BACKUPS (`backup1` & `backup2`)**:
+   - `backup1` creates a full dated zip archive into `~/Documents/moodle_backups/GSEA_semester_1/`.
+   - `backup2` creates a full dated zip archive into `~/Documents/moodle_backups/GSEA_semester_2/`.
+   - Automated via `scripts/backup.js` and executable directly via `npm run backup1` / `npm run backup2`.
+8. **CROSS-PROJECT SYNCHRONIZATION (`Semester 1` <-> `Semester 2`)**:
+   - Any new rules, operational guidelines, or shared tooling scripts must immediately be synchronized across both `GSEA_semester_1` and `GSEA_semester_2`.
 
 ---
 

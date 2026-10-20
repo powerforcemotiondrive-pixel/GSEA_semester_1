@@ -347,7 +347,7 @@
             </svg>
           </div>
           <div class="flex flex-col justify-center min-h-[40px] max-h-[40px] overflow-hidden">
-            <h1 id="deck-main-title" class="text-[13.5px] sm:text-[15px] font-semibold text-white tracking-wide uppercase leading-[19px] truncate">GSEA SEMESTER 1 AG</h1>
+            <h1 id="deck-main-title" class="text-[13.5px] sm:text-[15px] font-semibold text-white tracking-wide uppercase leading-[19px] truncate">GSEA SEMESTER 1 AG (LV101E)</h1>
             <p id="deck-subtitle" class="text-[11.5px] sm:text-[12px] font-medium leading-[16px] truncate text-slate-300 mt-0.5">Module 1 - Travel, Transport &amp; Leisure</p>
           </div>
         </div>
@@ -370,8 +370,8 @@
 
       <!-- Flight Deck Navigation Ribbon -->
       <nav id="flight-deck-ribbon" class="bg-[#1f2937] text-white px-2 sm:px-5 py-1.5 sm:py-2 border-b border-[#111827] flex items-center justify-between gap-1 sm:gap-3 shrink-0 z-10 transition-colors duration-200 overflow-x-auto no-scrollbar">
-        <!-- Left: Curriculum Track Switcher (AG / AT) -->
-        <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <!-- Left: Curriculum Track Switcher (AG / AT) (Balanced Flex-1 Anchor) -->
+        <div class="flex-1 flex items-center justify-start gap-1.5 sm:gap-2 shrink-0 min-w-fit">
           <span class="text-[10px] font-black uppercase tracking-wider text-slate-300 hidden sm:inline-block">Track:</span>
           <div id="program-switcher" class="inline-flex items-center bg-black/40 p-0.5 rounded-lg border border-white/15 shadow-inner" role="tablist" aria-label="Curriculum Track">
             <button id="prog-btn-ag"
@@ -395,8 +395,8 @@
           </div>
         </div>
 
-        <!-- Center: Flight Deck HUD Promotion Callsign Badge (Link to e-Campus) -->
-        <div class="flex items-center justify-center shrink-0">
+        <!-- Center: Flight Deck HUD Promotion Callsign Badge (Locked to True 50% Center) -->
+        <div class="flex items-center justify-center shrink-0 px-2">
           <a id="promo-callsign-badge"
              href="https://e-campus.enac.fr"
              target="_blank"
@@ -409,8 +409,8 @@
           </a>
         </div>
 
-        <!-- Right: Module Selection Tabs (MOD 1 / MOD 2 / MOD 3) -->
-        <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <!-- Right: Module Selection Tabs (MOD 1 / MOD 2 / MOD 3) (Balanced Flex-1 Anchor) -->
+        <div class="flex-1 flex items-center justify-end gap-1.5 sm:gap-2 shrink-0 min-w-fit">
           <span class="text-[10px] font-black uppercase tracking-wider text-slate-300 flex items-center gap-1">
             <svg width="12" height="12" class="w-3 h-3 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path></svg>
             <span>Module:</span>
@@ -527,6 +527,7 @@
             <button data-tab="content" id="modal-tab-content" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Lesson Content</button>
             <button data-tab="revision" id="modal-tab-revision" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Vocabulary</button>
             <button data-tab="materials" id="modal-tab-materials" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Additional Materials</button>
+            <button data-tab="toeic_guide" id="modal-tab-toeic-guide" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">TOEIC</button>
             <button data-tab="toeic" id="modal-tab-toeic" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">TOEIC Practice</button>
             <button data-tab="ddrs" id="modal-tab-ddrs" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">DDRS</button>
             <!-- Formative Evaluation Tabs -->
@@ -1344,7 +1345,7 @@
       }
       const mainTitle = document.getElementById('deck-main-title');
       if (mainTitle) {
-        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT' : 'GSEA SEMESTER 1 AG';
+        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT (LV121E)' : 'GSEA SEMESTER 1 AG (LV101E)';
       }
       const footerCurriculum = document.getElementById('footer-curriculum-label');
       if (footerCurriculum && PROGRAMS_CONFIG[currentProgram]) {
@@ -1583,7 +1584,7 @@
       // Header Main Title & Subheader
       const mainTitle = document.getElementById('deck-main-title');
       if (mainTitle) {
-        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT' : 'GSEA SEMESTER 1 AG';
+        mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT (LV121E)' : 'GSEA SEMESTER 1 AG (LV101E)';
       }
 
       const subtitle = document.getElementById('deck-subtitle');
@@ -1705,6 +1706,17 @@
       const mod = modulesData[currentModuleIndex];
 
       mod.pages.forEach((page, idx) => {
+        if (idx === 5) {
+          const divider = document.createElement('div');
+          divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
+          divider.innerHTML = `
+            <span class="h-px bg-slate-200/90 flex-1"></span>
+            <span>Admin &amp; Frameworks</span>
+            <span class="h-px bg-slate-200/90 flex-1"></span>
+          `;
+          menuEl.appendChild(divider);
+        }
+
         const item = document.createElement('button');
         item.type = 'button';
         item.setAttribute('data-card-idx', idx);
@@ -1779,15 +1791,9 @@
             title.className = "flight-strip-title truncate text-xs font-bold text-slate-900 transition-all pointer-events-none";
           }
           if (badge) {
-            if (idx === 4) {
-              badge.style.backgroundColor = '#fef3c7';
-              badge.style.color = '#92400e';
-              badge.style.border = '1px solid #fcd34d';
-            } else {
-              badge.style.backgroundColor = '#f1f5f9';
-              badge.style.color = '#334155';
-              badge.style.border = '1px solid #e2e8f0';
-            }
+            badge.style.backgroundColor = '#f1f5f9';
+            badge.style.color = '#334155';
+            badge.style.border = '1px solid #e2e8f0';
           }
           if (chevron) {
             chevron.style.color = mod.accent;
@@ -1795,16 +1801,12 @@
             chevron.style.transform = 'none';
           }
           if (pill) {
-            if (idx === 4) {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-500 text-white shadow-2xs shrink-0";
-            } else {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-800 text-white shadow-2xs shrink-0";
-            }
+            pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-800 text-white shadow-2xs shrink-0";
           }
         } else {
           item.style.borderLeft = '';
-          if (idx <= 3) {
-            // Sessions 01 to 04: Core Teaching Units (Clean White / Slate Border)
+          if (idx <= 4) {
+            // Sessions 01 to 05: Core Teaching & FE Units (Clean White / Slate Border)
             item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/90 bg-white hover:bg-slate-50 hover:border-slate-300 text-slate-800 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
             item.style.backgroundColor = '#ffffff';
             item.style.borderColor = '#e2e8f0';
@@ -1822,39 +1824,26 @@
               chevron.style.opacity = '0.35';
               chevron.style.transform = 'none';
             }
-          } else if (idx === 4) {
-            // Session 05: Evaluation Milestone (Warm Amber Highlight)
-            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-amber-200/80 bg-amber-50/70 hover:bg-amber-50 hover:border-amber-300/90 text-amber-950 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
-            item.style.backgroundColor = '#fffbeb';
-            item.style.borderColor = '#fde68a';
-            if (title) {
-              title.style.color = '#78350f';
-              title.className = "flight-strip-title truncate text-xs font-bold text-amber-950 group-hover:text-amber-900 transition-all pointer-events-none";
-            }
-            if (badge) {
-              badge.style.backgroundColor = '#fef3c7';
-              badge.style.color = '#92400e';
-              badge.style.border = '1px solid #fde68a';
-            }
             if (pill) {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-200/80 text-amber-900 border border-amber-300/80 shrink-0";
+              // FE pill on Card 05: clean neutral slate pill
+              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200/90 shrink-0";
             }
           } else {
-            // Cards 06 to 08/09: Administrative & Reference Frameworks (Muted Cool Slate)
-            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/70 bg-slate-100/75 hover:bg-slate-100 hover:border-slate-300 text-slate-600 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
-            item.style.backgroundColor = '#f1f5f9';
-            item.style.borderColor = '#e2e8f0';
+            // Cards 06 to 08/09: Administrative & Reference Frameworks (Grounded Slate-200 / Touch Darker)
+            item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-300/80 bg-slate-200/70 hover:bg-slate-200 hover:border-slate-400/80 text-slate-700 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
+            item.style.backgroundColor = '#e2e8f0';
+            item.style.borderColor = '#cbd5e1';
             if (title) {
-              title.style.color = '#475569';
-              title.className = "flight-strip-title truncate text-xs font-medium text-slate-600 group-hover:text-slate-900 transition-all pointer-events-none";
+              title.style.color = '#334155';
+              title.className = "flight-strip-title truncate text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-all pointer-events-none";
             }
             if (badge) {
-              badge.style.backgroundColor = '#e2e8f0';
-              badge.style.color = '#64748b';
-              badge.style.border = '1px solid #cbd5e1';
+              badge.style.backgroundColor = '#cbd5e1';
+              badge.style.color = '#1e293b';
+              badge.style.border = '1px solid #94a3b8';
             }
             if (pill) {
-              pill.className = "flight-strip-pill text-[9px] font-mono font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-200/70 text-slate-600 border border-slate-300/60 shrink-0";
+              pill.className = "flight-strip-pill text-[9px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-300 text-slate-800 border border-slate-400/60 shrink-0";
             }
           }
         }
@@ -2347,6 +2336,15 @@
 
         standardTabs.forEach(t => t.classList.remove('hidden'));
 
+        const toeicGuideTab = document.getElementById('modal-tab-toeic-guide');
+        if (toeicGuideTab) {
+          if (modalState.program === 'ag') {
+            toeicGuideTab.classList.remove('hidden');
+          } else {
+            toeicGuideTab.classList.add('hidden');
+          }
+        }
+
         if (hasLessonContent) {
           if (tabObjectives) tabObjectives.classList.add('hidden');
           if (tabPlan) tabPlan.classList.add('hidden');
@@ -2629,6 +2627,8 @@
         renderRevisionTab(sessionData, theme);
       } else if (modalState.tab === 'materials') {
         renderMaterialsTab(sessionData, theme);
+      } else if (modalState.tab === 'toeic_guide') {
+        renderToeicGuideTab(theme);
       } else if (modalState.tab === 'toeic') {
         renderToeicTab(sessionData, theme);
       } else if (modalState.tab === 'ddrs') {
@@ -11379,6 +11379,387 @@
       `;
     }
 
+    function renderToeicGuideTab(theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+
+      bodyEl.innerHTML = `
+        <div class="space-y-6 text-slate-800">
+
+          <!-- 1. Header Banner & Exam Structure Quick-Card -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs font-black text-sm" style="background-color: ${theme.primary};">
+                  ETS
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">Official Guide</span>
+                    <h3 class="text-sm sm:text-base font-extrabold text-slate-900">TOEIC® Listening &amp; Reading Strategy Guide</h3>
+                  </div>
+                  <p class="text-xs text-slate-500 mt-0.5">Practical Examination Methodology, Timing, Question Types, Grammar Rules &amp; CEFR Scales</p>
+                </div>
+              </div>
+              <button type="button" onclick="switchModalTab('toeic')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-white shadow-xs hover:shadow-md transition-all cursor-pointer self-stretch sm:self-auto justify-center" style="background-color: ${theme.accent};">
+                <span>Try Session TOEIC Practice</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+
+            <!-- 3-Pillar Summary Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Total Examination</span>
+                <div class="text-base font-black text-slate-900">2 Hours • 200 Questions</div>
+                <p class="text-[11px] text-slate-600 leading-snug">Paper &amp; pencil multiple choice test with bubble answer sheet. Maximum score: <strong>990 points</strong>.</p>
+              </div>
+              <div class="p-3.5 bg-blue-50/80 border border-blue-200 rounded-xl space-y-1">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-700">Listening Section</span>
+                <div class="text-base font-black text-blue-950">45 Mins • 100 Questions</div>
+                <p class="text-[11px] text-blue-900 leading-snug">Parts 1 to 4 • <strong>495 points max</strong>. Fast paced audio recorded by native speakers (US, UK, Canadian, Australian).</p>
+              </div>
+              <div class="p-3.5 bg-amber-50/80 border border-amber-200 rounded-xl space-y-1">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">Reading Section</span>
+                <div class="text-base font-black text-amber-950">75 Mins • 100 Questions</div>
+                <p class="text-[11px] text-amber-900 leading-snug">Parts 5 to 7 • <strong>495 points max</strong>. Autonomous time management: speed through P5/P6 to preserve time for P7.</p>
+              </div>
+            </div>
+
+            <!-- Benchmark Callout -->
+            <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between gap-3 text-xs text-emerald-950">
+              <div class="flex items-center gap-2">
+                <span class="text-base">🎯</span>
+                <span><strong>ENAC Graduation Benchmark:</strong> Minimum <strong>785 points (CEFR B2)</strong> required for degree validation. Targeting <strong>850–945+ (B2/C1)</strong> for international career mobility.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Listening Section Tactics & Traps (Parts 1 to 4) -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.primary};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">1. Listening Section Tactics &amp; Traps (Parts 1–4 • 45 Mins)</h4>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+              
+              <!-- Part 1: Photos -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-black text-white px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
+                  <span class="text-[11px] font-bold text-slate-500">6 Photographs</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Which sentence describes what you see?</h5>
+                <ul class="text-[11.5px] text-slate-600 space-y-1.5 list-disc list-inside">
+                  <li><strong>Progressive difficulty:</strong> Starts simply with present continuous actions (<em>"she is speaking on the phone"</em>), then introduces specialized objects (<em>broom, sweeping, shore, drawer, wheelbarrow, eyeglasses</em>).</li>
+                  <li><strong>Passive voice constructions:</strong> Watch out for passive forms (<em>"some pictures have been hung on the wall"</em>, <em>"the equipment is being serviced"</em>).</li>
+                  <li><strong>Photos with no people:</strong> Usually test prepositions of place and objects (<em>"boats are being dragged along the shore"</em>).</li>
+                </ul>
+              </div>
+
+              <!-- Part 2: Question & Response -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-black text-white px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
+                  <span class="text-[11px] font-bold text-slate-500">25 Questions / Statements</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">The First-Word &amp; Trap Elimination Rule</h5>
+                <ul class="text-[11.5px] text-slate-600 space-y-1.5 list-disc list-inside">
+                  <li><strong>WH- Question:</strong> If opening with <em>When, Where, Why, What, Whose, How long</em>, the answer <strong>cannot</strong> be "Yes" or "No".</li>
+                  <li><strong>Auxiliary Question:</strong> If starting with <em>Is it, Can you, Will they, Should we, Have you...</em>, expect an affirmative (<em>yes, sure, okay</em>) or negation (<em>no, not yet, never</em>).</li>
+                  <li><strong>The Repetition Trap:</strong> If you hear the same or a similar-sounding word in the answer as in the question, <strong>it is almost always a trap!</strong> (e.g. <em>board meeting</em> &rarr; distractor: <em>"he was bored"</em>).</li>
+                  <li><strong>Homophones &amp; Similar Words:</strong> <em>sale/sail</em>, <em>shore/sure</em>, <em>compete/complete</em>. Listen carefully for <strong>When</strong> vs. <strong>Where</strong>!</li>
+                  <li><strong>Indirect / Obscure Answers:</strong> 4 to 5 questions are indirect (e.g. <em>"Is there enough room in your car?" &rarr; "We're taking the shuttle bus"</em>). Don't panic; guess and move on!</li>
+                </ul>
+              </div>
+
+              <!-- Part 3: Conversations -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-black text-white px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
+                  <span class="text-[11px] font-bold text-slate-500">39 Questions (13 Dialogues &times; 3 Qs)</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">The 40-Second Preview Strategy</h5>
+                <ul class="text-[11.5px] text-slate-600 space-y-1.5 list-disc list-inside">
+                  <li><strong>The Golden Routine:</strong> While instructions play, read the first 3 questions and options. As you listen, place a light pencil dot next to your choice. While the speaker reads the questions aloud (40s gap!), darken your bubble sheet and <strong>immediately use the remaining time to read the NEXT 3 questions</strong>.</li>
+                  <li><strong>Never fall behind:</strong> Answers are in chronological order. If you miss one, guess immediately and protect your preview lead!</li>
+                  <li><strong>Exact words:</strong> Unlike Part 2, in Parts 3 &amp; 4 hearing a word that is printed in your booklet is usually the <strong>correct</strong> answer.</li>
+                  <li><strong>Visual graphics:</strong> Charts and price lists at the end are simple data-matching; identify the row/column mentioned.</li>
+                </ul>
+              </div>
+
+              <!-- Part 4: Short Talks -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-black text-white px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
+                  <span class="text-[11px] font-bold text-slate-500">30 Questions (10 Monologues &times; 3 Qs)</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Monologue Formats &amp; Keyword Anticipation</h5>
+                <ul class="text-[11.5px] text-slate-600 space-y-1.5 list-disc list-inside">
+                  <li><strong>Preview questions first:</strong> Apply the exact same 40-second preview technique as Part 3.</li>
+                  <li><strong>Core monologue types:</strong>
+                    <div class="pl-2 pt-0.5 text-slate-500">
+                      &bull; <strong>Announcements:</strong> airport gate changes, rail delays, plant safety warnings.<br>
+                      &bull; <strong>Recordings:</strong> corporate telephone voicemail, automated service menus.<br>
+                      &bull; <strong>Commercials / Marketing:</strong> promotional sales, product rollouts.<br>
+                      &bull; <strong>Broadcasts:</strong> weather updates, business news reports.
+                    </div>
+                  </li>
+                  <li>Identify the speaker, purpose, and required next action in the first 2 sentences.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3. Reading Section Strategy & Timing (Parts 5 to 7) -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.accent};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">2. Reading Section Strategy &amp; Time Budget (Parts 5–7 • 75 Mins)</h4>
+            </div>
+
+            <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 bg-amber-50/70 border border-amber-200 rounded-lg text-xs text-amber-950">
+                <span>⏱️ <strong>Pacing Guideline:</strong> Spend ~30 seconds per item on Parts 5 &amp; 6 (total ~25 mins) to protect at least <strong>45–50 minutes</strong> for the long texts in Part 7!</span>
+                <span class="font-mono font-bold text-[11px] bg-white px-2 py-0.5 rounded border border-amber-300 shrink-0">Part 5 &amp; 6: ~30s / item</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                  <div class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                    <span>If choices share the same root &rarr; GRAMMAR</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                    Options: <em>(A) interest (B) interests (C) interested (D) interesting</em>.<br>
+                    <strong>Strategy:</strong> <u>Do NOT read the whole sentence!</u> Check only the words immediately preceding and following the gap (e.g. <em>the/a + [adjective] + noun</em>, <em>preposition + V-ing</em>).
+                  </p>
+                </div>
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
+                  <div class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>If choices are 4 different words &rarr; VOCABULARY</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                    Options: <em>(A) develop (B) raise (C) open (D) complete</em>.<br>
+                    <strong>Strategy:</strong> Read the full sentence to comprehend context, business collocations, and prepositions that follow the verb.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. High-Frequency Grammar Rules & Shortcuts -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.primary};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">3. Essential High-Frequency TOEIC Grammar Rules</h4>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+
+              <!-- Rule 1: Correlatives & Conjunctions -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">1. Correlative Conjunctions &amp; Pairings</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; <code>whether ... or</code> (suggests a choice between options)<br>
+                  &bull; <code>either ... or</code> &nbsp;|&nbsp; <code>neither ... nor</code><br>
+                  <em>Example:</em> "Please indicate on the envelope <strong>whether</strong> you prefer regular <strong>or</strong> deluxe processing."
+                </p>
+              </div>
+
+              <!-- Rule 2: Future Time Clauses -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">2. Future Time Clauses ("Will" Prohibition)</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  Never use <code>will</code> directly after time conjunctions: <em>as soon as, before, until, when, after</em>.<br>
+                  <em>Correct:</em> "<strong>When you arrive</strong>, I will leave." (NOT <em>"When you will arrive"</em>).
+                </p>
+              </div>
+
+              <!-- Rule 3: Pronouns -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">3. Pronoun Cases &amp; Reflexives</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; Possessive determiner + noun: <em>his car / her car / their car</em><br>
+                  &bull; Object pronoun: <em>belongs to him / to her / to them</em><br>
+                  &bull; Possessive pronoun (alone): <em>it is his / it is hers / it is theirs</em><br>
+                  &bull; Reflexives for self/alone: <em>themselves</em>, <em>by herself</em>.
+                </p>
+              </div>
+
+              <!-- Rule 4: Comparatives & Superlatives -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">4. Comparatives, Superlatives &amp; Quantifiers</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; <code>than</code> &rarr; requires comparative (<em>bigger than</em>)<br>
+                  &bull; <code>even</code> + comparative (<em>even more meetings</em>)<br>
+                  &bull; <code>the most / the least</code> &rarr; superlatives preceded by <strong>the</strong>. Note: <em>most people</em> (without "the") = la plupart des gens.<br>
+                  &bull; <em>many / few</em> + countable nouns &bull; <em>much / little</em> + uncountable nouns.
+                </p>
+              </div>
+
+              <!-- Rule 5: Conjunction vs Preposition -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">5. Conjunctions vs. Prepositions</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; <code>while</code> (+ clause with verb) vs. <code>during</code> (+ noun only)<br>
+                  &bull; <code>although / though</code> (+ clause) vs. <code>despite / in spite of</code> (+ noun or V-ing)<br>
+                  &bull; <code>However,</code> | <code>Moreover,</code> | <code>Nevertheless,</code> &rarr; followed by a comma.<br>
+                  &bull; <code>since</code> = either time (<em>depuis</em> + present perfect) or cause (<em>puisque</em>)<br>
+                  &bull; <code>besides</code> (<em>en plus</em>) vs. <code>beside</code> (<em>&agrave; c&ocirc;t&eacute; de</em>).
+                </p>
+              </div>
+
+              <!-- Rule 6: Preposition + Gerund -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">6. Prepositions Followed by Verb + ING</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  All prepositions require <code>verb + ing</code> (<em>before speaking</em>, <em>without asking</em>).<br>
+                  <strong>Watch out for "to" as a preposition:</strong><br>
+                  &bull; <em>I look forward to <strong>hearing</strong> from you</em><br>
+                  &bull; <em>In addition to <strong>doing</strong> something</em><br>
+                  (contrast with infinitive of purpose: <em>in order to do</em>).
+                </p>
+              </div>
+
+              <!-- Rule 7: Adjectives -ed vs -ing -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">7. Adjectives: -ED vs. -ING</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  &bull; <code>-ed</code> describes how someone <strong>feels</strong>: <em>"I was interested in the presentation"</em>.<br>
+                  &bull; <code>-ing</code> describes the thing or situation <strong>causing</strong> the feeling: <em>"The presentation was interesting"</em>.
+                </p>
+              </div>
+
+              <!-- Rule 8: Word Length Shortcut & Part of Speech -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5">
+                <strong class="text-slate-900 block font-bold">8. Word Length &amp; Part of Speech Shortcut</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  When guessing completely unfamiliar word forms:<br>
+                  &bull; <strong>Longest word</strong> &rarr; usually the <strong>NOUN</strong> (<em>deliberation</em>)<br>
+                  &bull; <strong>Shortest word</strong> &rarr; usually the <strong>VERB</strong> (<em>deliberate</em>)<br>
+                  &bull; <strong>Ending in -ly</strong> &rarr; <strong>ADVERB</strong> (<em>deliberately</em>)<br>
+                  &bull; <strong>Remaining form</strong> &rarr; <strong>ADJECTIVE</strong> (<em>deliberate, reflective</em>)<br>
+                  &bull; <strong>Compound verbs:</strong> Adverbs fit between auxiliaries: <em>"must [definitely] have done"</em>.
+                </p>
+              </div>
+
+              <!-- Rule 9: Person Noun vs Thing Noun -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-1.5 md:col-span-2">
+                <strong class="text-slate-900 block font-bold">9. Person Noun vs. Concept/Thing Noun</strong>
+                <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                  TOEIC frequently asks you to choose between a person (agent) and an abstract concept:<br>
+                  &bull; <em>advisor / adviser</em> (person) vs. <em>advice</em> (uncountable noun)<br>
+                  &bull; <em>researcher</em> (person, needs article: <em>a researcher</em>) vs. <em>researchers</em> (plural + have) vs. <em>research</em> (field).<br>
+                  <em>Example:</em> "The financial <strong>advisor</strong> suggested an international fund" (only a person can suggest!).
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 5. Part 7 Comprehension Tactics (Skimming & Scanning) -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.primary};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">4. Part 7 Reading Comprehension (Skimming &amp; Scanning)</h4>
+            </div>
+
+            <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3 text-xs">
+              <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-lg text-blue-950 font-bold">
+                🔄 The Reverse Strategy: Always read the questions BEFORE reading the passage!
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                  <h5 class="font-bold text-slate-900">📖 Skimming (Reading for Gist &amp; Purpose)</h5>
+                  <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                    Read quickly to grasp the main ideas. Check the title, first sentence of each paragraph, and the closing sentence.<br>
+                    <strong>Ask yourself:</strong> What is the document? Who is it for? What is the main objective?<br>
+                    <strong>What NOT to do:</strong> Do NOT read every single word. Do NOT stop for unknown vocabulary.
+                  </p>
+                </div>
+
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
+                  <h5 class="font-bold text-slate-900">🔍 Scanning (Searching for Specific Facts)</h5>
+                  <p class="text-slate-600 leading-relaxed text-[11.5px]">
+                    Read carefully to pinpoint targeted facts: dates, times, prices, personal names, phone numbers, or flight/order codes.<br>
+                    <strong>How to scan:</strong> Know exactly what keyword you are looking for before glancing at the text. Use headings and bullet points as visual anchors.<br>
+                    <strong>What NOT to do:</strong> Do not continue reading once you locate the needed detail.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. CEFR Benchmark & Score Mapping Table -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
+              <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.accent};"></div>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">5. TOEIC Score Scale &amp; CEFR Level Benchmarks</h4>
+            </div>
+
+            <div class="overflow-x-auto bg-white border border-slate-200 rounded-xl shadow-xs">
+              <table class="w-full text-left border-collapse text-xs">
+                <thead>
+                  <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
+                    <th class="py-2.5 px-3 w-20">CEFR</th>
+                    <th class="py-2.5 px-3 w-32">TOEIC Score</th>
+                    <th class="py-2.5 px-3">Proficiency &amp; Workplace Competencies</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100 text-[11.5px]">
+                  <tr class="hover:bg-slate-50">
+                    <td class="py-2 px-3 font-black text-slate-500">A1</td>
+                    <td class="py-2 px-3 font-mono font-bold text-slate-600">120 &ndash; 224</td>
+                    <td class="py-2 px-3 text-slate-600">Beginner: Can introduce oneself and ask/answer basic questions in familiar contexts.</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="py-2 px-3 font-black text-slate-500">A2</td>
+                    <td class="py-2 px-3 font-mono font-bold text-slate-600">225 &ndash; 549</td>
+                    <td class="py-2 px-3 text-slate-600">Elementary: Can describe basic background and exchange simple direct information on familiar topics.</td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="py-2 px-3 font-black text-blue-600">B1</td>
+                    <td class="py-2 px-3 font-mono font-bold text-blue-700">550 &ndash; 784</td>
+                    <td class="py-2 px-3 text-slate-700">Intermediate: Understands the main points in clear standard speech and workplace texts on familiar matters.</td>
+                  </tr>
+                  <tr class="bg-emerald-50/70 border-l-4 border-emerald-500 font-medium">
+                    <td class="py-2.5 px-3 font-black text-emerald-800">B2 🎯</td>
+                    <td class="py-2.5 px-3 font-mono font-black text-emerald-800">785 &ndash; 944</td>
+                    <td class="py-2.5 px-3 text-emerald-950">
+                      <strong>Independent User (ENAC Graduation Benchmark):</strong> Understands complex technical and business texts. Interacts with spontaneity and fluency in professional meetings and discussions.
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-slate-50">
+                    <td class="py-2 px-3 font-black text-purple-600">C1</td>
+                    <td class="py-2 px-3 font-mono font-bold text-purple-700">945 &ndash; 990</td>
+                    <td class="py-2 px-3 text-slate-700">Autonomous / Proficient: Expresses ideas fluently without searching for expressions. Grasps implicit meanings and complex professional nuance.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Bottom Action Switcher to Practice Drill -->
+          <div class="p-4 bg-slate-100 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>
+              <p class="text-xs font-bold text-slate-700">Ready to put these strategies into practice?</p>
+              <p class="text-[11px] text-slate-500">Test your grammatical accuracy and timing on this session's official Reading Part 5 question drill.</p>
+            </div>
+            <button type="button" onclick="switchModalTab('toeic')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-xs font-bold text-white shadow-xs hover:shadow-md transition-all cursor-pointer" style="background-color: ${theme.primary};">
+              <span>Open TOEIC Practice Drill</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+      `;
+    }
+
     function renderDdrsTab(theme) {
       const bodyEl = document.getElementById('modal-body');
       const modCourse = getActiveModalCourseData();
@@ -11927,7 +12308,7 @@
               Formative Evaluation 3 (FE3) — Aviation Current Events &amp; Press Briefing
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              The Formative Evaluation takes place in <strong>pairs or trios</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Wednesday 25 February 2025 (Week 08)</strong> with <strong>Tracy NEILL (Group A)</strong> or <strong>Ally HEWETT (Group B)</strong>. You and your partner will roleplay as <strong>Aviation Authority / Airline Spokespersons</strong> delivering a formal 10-12 minute <strong>Press Briefing</strong> on a major recent aviation current event (severe weather disruption, in-flight medical emergency diversion, airport security breach / biometric rollout, or safety maintenance airworthiness directive), followed by spontaneous press conference Q&A, personal vocabulary portfolio audit, and detailed teacher feedback.
+              The Formative Evaluation takes place in <strong>pairs or trios</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Wednesday 24 February 2027 (Week 08)</strong> with <strong>Tracy NEILL (Group A)</strong> or <strong>Ally HEWETT (Group B)</strong>. You and your partner will roleplay as <strong>Aviation Authority / Airline Spokespersons</strong> delivering a formal 10-12 minute <strong>Press Briefing</strong> on a major recent aviation current event (severe weather disruption, in-flight medical emergency diversion, airport security breach / biometric rollout, or safety maintenance airworthiness directive), followed by spontaneous press conference Q&A, personal vocabulary portfolio audit, and detailed teacher feedback.
             </p>
           </div>
 
@@ -12151,7 +12532,7 @@
               Formative Evaluation 3 (FE3) — Emerging Technology Presentation
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              The Formative Evaluation takes place in <strong>pairs</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Friday 27 February 2025 (Week 08)</strong>. You and your partner will present a comprehensive technical profile and critical evaluation of an emerging aviation or non-aviation technology, defend technical trade-offs during a spontaneous teacher Q&amp;A, present evidence of your Vocabulary Log and TOEIC preparation, and evaluate your personal strengths and action targets.
+              The Formative Evaluation takes place in <strong>pairs</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Friday 26 February 2027 (Week 08)</strong>. You and your partner will present a comprehensive technical profile and critical evaluation of an emerging aviation or non-aviation technology, defend technical trade-offs during a spontaneous teacher Q&amp;A, present evidence of your Vocabulary Log and TOEIC preparation, and evaluate your personal strengths and action targets.
             </p>
           </div>
 
@@ -12596,7 +12977,7 @@
               Formative Evaluation 2 (FE2) — Climate Resilience Redesign
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              The Formative Evaluation takes place in <strong>pairs</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Friday 23 January 2025 (Week 03)</strong>. You and your partner will present a comprehensive climate resilience masterplan for an airport or city, defend technical trade-offs during a spontaneous teacher Q&amp;A, present evidence of your Vocabulary Log and TOEIC preparation, and evaluate your personal strengths and action targets.
+              The Formative Evaluation takes place in <strong>pairs</strong> during a dedicated <strong>30-minute tutorial slot</strong> on <strong>Friday 22 January 2027 (Week 03)</strong>. You and your partner will present a comprehensive climate resilience masterplan for an airport or city, defend technical trade-offs during a spontaneous teacher Q&amp;A, present evidence of your Vocabulary Log and TOEIC preparation, and evaluate your personal strengths and action targets.
             </p>
           </div>
 
@@ -14012,7 +14393,7 @@
                 <svg class="w-4 h-4 text-slate-500 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 Course Coordination &amp; Administration: <strong>Phil PARRIS (LH/LAN)</strong> • <span class="font-mono text-slate-500 font-bold">v1.2.0</span>
               </span>
-              <span class="text-slate-400 text-[11px]">Academic Year 2024–2025</span>
+              <span class="text-slate-400 text-[11px]">Academic Year 2026–2027</span>
             </div>
           </div>
 
@@ -14140,11 +14521,11 @@
             weeks: "Weeks 44 – 48",
             headerBg: "#1e293b",
             sessions: [
-              { week: "W44", date: "Fri 31 Oct", title: "Session 1 — Introduction & Travel Anecdotes", tag: "Teaching Session", isFe: false },
-              { week: "W45", date: "Fri 07 Nov", title: "Session 2 — Evolution of Transport", tag: "Teaching Session", isFe: false },
-              { week: "W46", date: "Fri 14 Nov", title: "Session 3 — Overtourism", tag: "Teaching Session", isFe: false },
-              { week: "W47", date: "Fri 21 Nov", title: "Session 4 — Sustainable and Eco-tourism", tag: "Teaching Session • Prep FE1", isFe: false },
-              { week: "W48", date: "Fri 28 Nov", title: "FORMATIVE EVALUATION 1 (FE1) — Oral Tutorials", subtitle: "Fri 28 Nov • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true }
+              { week: "W44", date: "Fri 30 Oct", title: "Session 1 — Introduction & Travel Anecdotes", tag: "Teaching Session", isFe: false },
+              { week: "W45", date: "Fri 06 Nov", title: "Session 2 — Evolution of Transport", tag: "Teaching Session", isFe: false },
+              { week: "W46", date: "Fri 13 Nov", title: "Session 3 — Overtourism", tag: "Teaching Session", isFe: false },
+              { week: "W47", date: "Fri 20 Nov", title: "Session 4 — Sustainable and Eco-tourism", tag: "Teaching Session • Prep FE1", isFe: false },
+              { week: "W48", date: "Fri 27 Nov", title: "FORMATIVE EVALUATION 1 (FE1) — Oral Tutorials", subtitle: "Fri 27 Nov • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true }
             ]
           },
           {
@@ -14153,12 +14534,12 @@
             weeks: "Weeks 49 – Week 3",
             headerBg: "#1b382b",
             sessions: [
-              { week: "W49", date: "Fri 05 Dec", title: "Session 1 — Extreme Weather", tag: "Teaching Session", isFe: false },
-              { week: "W50", date: "Fri 12 Dec", title: "Session 2 — Sustainable Cities", tag: "Teaching Session", isFe: false },
+              { week: "W49", date: "Fri 04 Dec", title: "Session 1 — Extreme Weather", tag: "Teaching Session", isFe: false },
+              { week: "W50", date: "Fri 11 Dec", title: "Session 2 — Sustainable Cities", tag: "Teaching Session", isFe: false },
               { isHoliday: true, text: "🎄 Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)" },
-              { week: "W01", date: "Fri 09 Jan", title: "Session 3 — Building and Supporting Arguments", tag: "Teaching Session", isFe: false },
-              { week: "W02", date: "Fri 16 Jan", title: "Session 4 — Biodiversity in Urban Areas and Airports", tag: "Teaching Session • Prep FE2", isFe: false },
-              { week: "W03", date: "Fri 23 Jan", title: "FORMATIVE EVALUATION 2 (FE2) — Oral Tutorials", subtitle: "Fri 23 Jan • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true }
+              { week: "W01", date: "Fri 08 Jan", title: "Session 3 — Building and Supporting Arguments", tag: "Teaching Session", isFe: false },
+              { week: "W02", date: "Fri 15 Jan", title: "Session 4 — Biodiversity in Urban Areas and Airports", tag: "Teaching Session • Prep FE2", isFe: false },
+              { week: "W03", date: "Fri 22 Jan", title: "FORMATIVE EVALUATION 2 (FE2) — Climate Resilience Redesign (Airport / City)", subtitle: "Fri 22 Jan • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true }
             ]
           },
           {
@@ -14167,11 +14548,11 @@
             weeks: "Weeks 4 – 8",
             headerBg: "#1a2238",
             sessions: [
-              { week: "W04", date: "Fri 30 Jan", title: "Session 1 — Everyday AI & Workplace Automation", tag: "Teaching Session", isFe: false },
-              { week: "W05", date: "Fri 06 Feb", title: "Session 2 — Future Mobility & Clean Energy Transport", tag: "Teaching Session", isFe: false },
-              { week: "W06", date: "Fri 13 Feb", title: "Session 3 — Technology Ethics & Automated Decisions in AI", tag: "Teaching Session", isFe: false },
-              { week: "W07", date: "Fri 20 Feb", title: "Session 4 — Biometrics, Digital IDs & Passenger Journey", tag: "Teaching Session • Prep FE3", isFe: false },
-              { week: "W08", date: "Fri 27 Feb", title: "FORMATIVE EVALUATION 3 (FE3) — Emerging Technology Presentation (Aviation / Non-Aviation)", subtitle: "Fri 27 Feb • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true },
+              { week: "W04", date: "Fri 29 Jan", title: "Session 1 — Everyday AI & Workplace Automation", tag: "Teaching Session", isFe: false },
+              { week: "W05", date: "Fri 05 Feb", title: "Session 2 — Future Mobility & Clean Energy Transport", tag: "Teaching Session", isFe: false },
+              { week: "W06", date: "Fri 12 Feb", title: "Session 3 — Technology Ethics & Automated Decisions in AI", tag: "Teaching Session", isFe: false },
+              { week: "W07", date: "Fri 19 Feb", title: "Session 4 — Biometrics, Digital IDs & Passenger Journey", tag: "Teaching Session • Prep FE3", isFe: false },
+              { week: "W08", date: "Fri 26 Feb", title: "FORMATIVE EVALUATION 3 (FE3) — Emerging Technology Presentation (Aviation / Non-Aviation)", subtitle: "Fri 26 Feb • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true },
             ]
           }
         ]
@@ -14188,11 +14569,11 @@
             weeks: "Weeks 44 – 48",
             headerBg: "#1e293b",
             sessions: [
-              { week: "W44", date: "Wed 29 Oct", title: "Session 1 — Introduction & Aviation Survey", tag: "Teaching Session", isFe: false },
-              { week: "W45", date: "Wed 05 Nov", title: "Session 2 — Passenger Journey & Airfield Movement", tag: "Teaching Session", isFe: false },
-              { week: "W46", date: "Wed 12 Nov", title: "Session 3 — Ground Operations & Turnaround", tag: "Teaching Session", isFe: false },
-              { week: "W47", date: "Wed 19 Nov", title: "Session 4 — Air Traffic Control & Surface Movement", tag: "Teaching Session • Prep FE1", isFe: false },
-              { week: "W48", date: "Wed 26 Nov", title: "FORMATIVE EVALUATION 1 (FE1) — Oral Tutorials", subtitle: "Wed 26 Nov • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
+              { week: "W44", date: "Wed 28 Oct", title: "Session 1 — Introduction & Aviation Survey", tag: "Teaching Session", isFe: false },
+              { week: "W45", date: "Wed 04 Nov", title: "Session 2 — Passenger Journey & Airfield Movement", tag: "Teaching Session", isFe: false },
+              { week: "W46", date: "Wed 11 Nov", title: "Session 3 — Ground Operations & Turnaround", tag: "Teaching Session", isFe: false },
+              { week: "W47", date: "Wed 18 Nov", title: "Session 4 — Air Traffic Control & Surface Movement", tag: "Teaching Session • Prep FE1", isFe: false },
+              { week: "W48", date: "Wed 25 Nov", title: "FORMATIVE EVALUATION 1 (FE1) — Oral Tutorials", subtitle: "Wed 25 Nov • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
             ]
           },
           {
@@ -14201,12 +14582,12 @@
             weeks: "Weeks 49 – Week 3",
             headerBg: "#1b382b",
             sessions: [
-              { week: "W49", date: "Wed 03 Dec", title: "Session 1 — Aerodynamics & Flight Principles", tag: "Teaching Session", isFe: false },
-              { week: "W50", date: "Wed 10 Dec", title: "Session 2 — Aircraft Anatomy: Structure & Systems", tag: "Teaching Session", isFe: false },
+              { week: "W49", date: "Wed 02 Dec", title: "Session 1 — Aerodynamics & Flight Principles", tag: "Teaching Session", isFe: false },
+              { week: "W50", date: "Wed 09 Dec", title: "Session 2 — Aircraft Anatomy: Structure & Systems", tag: "Teaching Session", isFe: false },
               { isHoliday: true, text: "🎄 Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)" },
-              { week: "W01", date: "Wed 07 Jan", title: "Session 3 — Commercial Aircraft & Airlines", tag: "Teaching Session", isFe: false },
-              { week: "W02", date: "Wed 14 Jan", title: "Session 4 — Significant Aviation Accidents & Aircraft Types", tag: "Teaching Session • Prep FE2", isFe: false },
-              { week: "W03", date: "Wed 21 Jan", title: "FORMATIVE EVALUATION 2 (FE2) — Aircraft & Airlines Profile", subtitle: "Wed 21 Jan • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
+              { week: "W01", date: "Wed 06 Jan", title: "Session 3 — Commercial Aircraft & Airlines", tag: "Teaching Session", isFe: false },
+              { week: "W02", date: "Wed 13 Jan", title: "Session 4 — Significant Aviation Accidents & Aircraft Types", tag: "Teaching Session • Prep FE2", isFe: false },
+              { week: "W03", date: "Wed 20 Jan", title: "FORMATIVE EVALUATION 2 (FE2) — Aircraft & Airlines Profile", subtitle: "Wed 20 Jan • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
             ]
           },
           {
@@ -14215,11 +14596,11 @@
             weeks: "Weeks 4 – 8",
             headerBg: "#1a2238",
             sessions: [
-              { week: "W04", date: "Wed 28 Jan", title: "Session 1 — Health & Human Factors in Aviation", tag: "Teaching Session", isFe: false },
-              { week: "W05", date: "Wed 04 Feb", title: "Session 2 — Meteorology & Severe Weather in Aviation", tag: "Teaching Session", isFe: false },
-              { week: "W06", date: "Wed 11 Feb", title: "Session 3 — Aviation Safety vs. Security: Airport & Aircraft Checks", tag: "Teaching Session", isFe: false },
-              { week: "W07", date: "Wed 18 Feb", title: "Session 4 — Global Semester Review & 3-Team Quiz", tag: "Teaching Session • Prep FE3", isFe: false },
-              { week: "W08", date: "Wed 25 Feb", title: "FORMATIVE EVALUATION 3 (FE3) — Aviation Current Events & Press Briefing", subtitle: "Wed 25 Feb • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
+              { week: "W04", date: "Wed 27 Jan", title: "Session 1 — Health & Human Factors in Aviation", tag: "Teaching Session", isFe: false },
+              { week: "W05", date: "Wed 03 Feb", title: "Session 2 — Meteorology & Severe Weather in Aviation", tag: "Teaching Session", isFe: false },
+              { week: "W06", date: "Wed 10 Feb", title: "Session 3 — Aviation Safety vs. Security: Airport & Aircraft Checks", tag: "Teaching Session", isFe: false },
+              { week: "W07", date: "Wed 17 Feb", title: "Session 4 — Global Semester Review & 3-Team Quiz", tag: "Teaching Session • Prep FE3", isFe: false },
+              { week: "W08", date: "Wed 24 Feb", title: "FORMATIVE EVALUATION 3 (FE3) — Aviation Current Events & Press Briefing", subtitle: "Wed 24 Feb • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
             ]
           }
         ]
@@ -14371,7 +14752,7 @@
           1: {
             title: "FE1 — Module 1 Oral Evaluation",
             week: "Week 48",
-            dateStr: "Friday 28 November 2024",
+            dateStr: "Friday 27 November 2026",
             groupA: {
               teacher: "Geri MIDDLETON",
               slots: [
@@ -14394,7 +14775,7 @@
           2: {
             title: "FE2 — Module 2 Oral Evaluation",
             week: "Week 03",
-            dateStr: "Friday 23 January 2025",
+            dateStr: "Friday 22 January 2027",
             groupA: {
               teacher: "Geri MIDDLETON",
               slots: [
@@ -14417,7 +14798,7 @@
           3: {
             title: "FE3 — Module 3 Oral Evaluation",
             week: "Week 08",
-            dateStr: "Friday 27 February 2025",
+            dateStr: "Friday 26 February 2027",
             groupA: {
               teacher: "Geri MIDDLETON",
               slots: [
@@ -14448,7 +14829,7 @@
           1: {
             title: "FE1 — Module 1 Oral Evaluation",
             week: "Week 48",
-            dateStr: "Wednesday 26 November 2024",
+            dateStr: "Wednesday 25 November 2026",
             groupA: {
               teacher: "Tracy NEILL",
               slots: [
@@ -14471,7 +14852,7 @@
           2: {
             title: "FE2 — Module 2 Oral Evaluation",
             week: "Week 03",
-            dateStr: "Wednesday 21 January 2025",
+            dateStr: "Wednesday 20 January 2027",
             groupA: {
               teacher: "Tracy NEILL",
               slots: [
@@ -14494,7 +14875,7 @@
           3: {
             title: "FE3 — Module 3 Oral Evaluation",
             week: "Week 08",
-            dateStr: "Wednesday 25 February 2025",
+            dateStr: "Wednesday 24 February 2027",
             groupA: {
               teacher: "Tracy NEILL",
               slots: [
