@@ -63,6 +63,9 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 ### F. Cross-Project Rule & Tooling Synchronization
 - **Mandatory Dual-Project Propagation**: Any time an architectural rule, governance guideline, operational command (e.g. `backup1`/`backup2`), or utility script is created or modified in `GSEA_semester_1`, the assistant MUST immediately mirror and synchronize that change into `GSEA_semester_2` (and vice-versa) within the same session.
 
+### G. Automatic Atomic Commit & Push Protocol
+- **Single-Step Remote Synchronization**: Whenever the user instructs the assistant to `"Commit"` or `"Commit changes"`, the assistant MUST automatically execute **both** `git commit` AND `git push origin main` together in one seamless step, ensuring GitHub and GitHub Pages stay continuously synchronized with local progress.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
