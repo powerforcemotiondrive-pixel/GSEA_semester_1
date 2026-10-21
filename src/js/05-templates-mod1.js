@@ -390,7 +390,7 @@
 
             <!-- 4-Step Argument Framework -->
             <div class="space-y-2">
-              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Structured Spoken Handover Framework:</h5>
+              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Structured Spoken Policy Debate Framework:</h5>
               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                 ${(miniDebate.framework || []).map(f => `
                   <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
@@ -733,6 +733,53 @@
             </div>
 
             ${renderActivityInstructions(caseStudy, theme)}
+
+            ${caseStudy.incidentBriefing ? `
+              <!-- Operational Incident Briefing Card -->
+              <div class="rounded-xl border border-rose-300 bg-rose-50/40 overflow-hidden shadow-xs space-y-3">
+                <!-- Incident Dispatch Header Banner -->
+                <div class="px-4 py-3 bg-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div class="flex items-center gap-2.5">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-600 text-white">Security Alert</span>
+                    <span class="font-bold text-sm text-white">${caseStudy.incidentBriefing.classification || 'Apron Security Breach'}</span>
+                  </div>
+                  <div class="text-[11px] text-slate-300 flex items-center gap-3">
+                    <span><strong>Time:</strong> ${caseStudy.incidentBriefing.time}</span>
+                    <span class="text-amber-400 font-bold"><strong>Location:</strong> ${caseStudy.incidentBriefing.location}</span>
+                    <span class="hidden md:inline text-slate-400">| ${caseStudy.incidentBriefing.commChannel}</span>
+                  </div>
+                </div>
+
+                <div class="p-4 space-y-3.5">
+                  <!-- Operational Context -->
+                  <div>
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                      <svg width="14" height="14" class="text-slate-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                      Incident Situation &amp; Breach Log
+                    </h5>
+                    <p class="text-xs text-slate-700 leading-relaxed mt-1">
+                      ${caseStudy.incidentBriefing.situation}
+                    </p>
+                  </div>
+
+                  <!-- Immediate Hazards -->
+                  <div class="space-y-1.5">
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                      <svg width="14" height="14" class="text-rose-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                      Immediate Apron Safety Hazards:
+                    </h5>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                      ${(caseStudy.incidentBriefing.immediateHazards || []).map(hz => `
+                        <div class="p-2.5 bg-white border border-rose-200 rounded-lg text-[11px] text-rose-950 flex items-start gap-2 shadow-2xs">
+                          <span class="text-rose-600 font-bold">&bull;</span>
+                          <span>${hz}</span>
+                        </div>
+                      `).join('')}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ` : ''}
 
             <!-- Role Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -2785,6 +2832,52 @@
             </div>
 
             ${renderActivityInstructions(simulation, theme)}
+
+            ${simulation.crisisBriefing ? `
+              <!-- Isla Serena Crisis Briefing Card -->
+              <div class="rounded-xl border border-sky-300 bg-sky-50/40 overflow-hidden shadow-xs space-y-3">
+                <!-- Header Banner -->
+                <div class="px-4 py-3 bg-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div class="flex items-center gap-2.5">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-600 text-white">Emergency Summit</span>
+                    <span class="font-bold text-sm text-white">${simulation.crisisBriefing.title || 'Isla Serena Crisis Dossier'}</span>
+                  </div>
+                  <div class="text-[11px] text-slate-300 flex items-center gap-3">
+                    <span><strong>Location:</strong> ${simulation.crisisBriefing.region || 'Isla Serena'}</span>
+                    <span class="text-amber-400 font-bold"><strong>Status:</strong> ${simulation.crisisBriefing.peakSeason || 'Peak Drought'}</span>
+                  </div>
+                </div>
+
+                <div class="p-4 space-y-3.5">
+                  <!-- Situation Context -->
+                  <div>
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                      <svg width="14" height="14" class="text-sky-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                      Crisis Overview &amp; Infrastructure Dispute
+                    </h5>
+                    <p class="text-xs text-slate-700 leading-relaxed mt-1">
+                      ${simulation.crisisBriefing.situation}
+                    </p>
+                  </div>
+
+                  <!-- Key Metrics Grid -->
+                  <div class="space-y-1.5">
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                      <svg width="14" height="14" class="text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                      Key Crisis Metrics &amp; Parameters:
+                    </h5>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+                      ${(simulation.crisisBriefing.keyMetrics || []).map(m => `
+                        <div class="p-2.5 bg-white border border-slate-200 rounded-lg shadow-2xs space-y-0.5">
+                          <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">${m.label}</span>
+                          <span class="text-xs font-black text-slate-900 block">${m.value}</span>
+                        </div>
+                      `).join('')}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ` : ''}
 
             <!-- Roles Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">

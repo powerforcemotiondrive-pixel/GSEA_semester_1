@@ -2318,6 +2318,18 @@
           "simulation": {
             "title": "Activity 5: DDRS Simulation: The Isla Serena Water Crisis (30 mins)",
             "summary": "A 4-role negotiation resolving an acute summer water shortage (320% surge in consumption) vs. a proposal to expand the island airport runway to welcome more tourists.",
+            "crisisBriefing": {
+              "title": "Crisis Dossier: Isla Serena Emergency Water Summit",
+              "region": "Isla Serena (Mediterranean Tourism Island)",
+              "peakSeason": "August • 120,000 visitors (Resident population: 24,000)",
+              "situation": "A consecutive 14-month drought has reduced the island reservoir and freshwater aquifers to an alarming 18% capacity. Concurrently, luxury coastal resorts are consuming 800 liters of water per guest per day for private swimming pools, gardens, and cooling. Local households face strict rationing (capped at 90 liters per day). An emergency municipal summit has been convened to agree on binding water cuts and resolve a controversial proposal to extend the airport runway by 600 meters onto agricultural land to handle larger widebody tourist jets.",
+              "keyMetrics": [
+                { "label": "Reservoir & Aquifers", "value": "18% capacity (Critical shortage)" },
+                { "label": "Tourist Consumption", "value": "800 L / guest / day" },
+                { "label": "Household Quota", "value": "Capped at 90 L / day" },
+                { "label": "Runway Proposal", "value": "+600m onto farmland" }
+              ]
+            },
             "roles": [
               {
                 "role": "Role A: The Town Mayor",
@@ -2344,9 +2356,9 @@
               "🤝 Multi-Party Consensus"
             ],
             "instructions": [
-              "Step 1 (Crisis Briefing - 4 mins): Read the Isla Serena Water Crisis scenario: Summer drought drops reservoir to 18% capacity while luxury resorts consume 800L/guest/day.",
-              "Step 2 (Role Allocation & Strategy - 8 mins): In groups of 4, take on one assigned role: Hotel Federation President, Farmers' Cooperative Lead, Resident Association Spokesperson, or Municipal Water Commissioner. Prepare your non-negotiables.",
-              "Step 3 (Emergency Summit - 6 mins): Convene the emergency summit. Negotiate an emergency water quota allocation and seasonal tourism tariff to reach unanimous consensus."
+              "Step 1 (Crisis Briefing - 4 mins): Review the Isla Serena Emergency Summit crisis dossier, reservoir depletion metrics, and the airport runway expansion dispute.",
+              "Step 2 (Role Allocation & Strategy - 8 mins): In groups of 4, assign roles (The Town Mayor, The Hotel Association President, The Organic Farmer, or The Environmental Protection Regulator) and prepare your non-negotiable demands.",
+              "Step 3 (Emergency Summit - 18 mins): Convene the emergency summit. Negotiate an emergency water quota allocation and airport infrastructure policy to reach unanimous consensus."
             ],
             "deliverable": "Signed 4-point Emergency Water Allocation Accord presenting agreed percentage quotas for each sector.",
             "teacherNotes": "Timekeeper and moderator: cut off circular debates. If groups reach a stalemate, introduce a crisis prompt: 'A heatwave has pushed reservoir levels down to 12%—you have 3 minutes to finalize water cuts!'"
@@ -9331,10 +9343,10 @@
             ],
             "instructions": [
               "Step 1 (Role Allocation - 5 mins): Form teams of 4: Airport Director, Airline Station Manager, Air Traffic Control Supervisor, Passenger Rights Representative.",
-              "Step 2 (Committee Deliberation - 15 mins): Debate how to allocate scarce airport slots during a weather recovery sequence.",
+              "Step 2 (Committee Deliberation - 15 mins): Debate whether to support the total alcohol retail ban or propose a regulated compromise (such as a 2-drink boarding pass cap). Weigh safety against concession revenues.",
               "Step 3 (Consensus Pitch - 5 mins): Elect a spokesperson to present the committee's final operational decision in 60 seconds."
             ],
-            "deliverable": "Deliver a 60-second spoken shift handover briefing summarizing the consensus plan.",
+            "deliverable": "Deliver a 60-second spoken policy consensus pitch summarizing the committee's agreed solution.",
             "teacherNotes": "Act as the Civil Aviation Authority Observer. Time each spokesperson strictly at 60 seconds. Evaluate against clarity, target vocabulary, and professional composure.",
             "title": "Activity 5: Station Mini-Debate & Spoken Consensus Briefing (25 mins)",
             "summary": "In small groups of 3 to 4, prepare and deliver structured arguments on an aerodrome management policy debate. Structure your arguments with a clear Claim, Operational Evidence, and Real-World Impact.",
@@ -10045,6 +10057,19 @@
           "airsideCaseStudy": {
             "title": "Activity 4: Operational Case Study: Unauthorized Apron Access (25 mins)",
             "summary": "A disoriented passenger who missed their boarding call pushed through an emergency exit door onto the terminal apron looking for their plane, triggering a ramp safety alert.",
+            "incidentBriefing": {
+              "incidentId": "SEC-2026-1102-TLS",
+              "time": "14h20 Local",
+              "location": "Stand 4 (South Apron) via Terminal 2 Gate B12",
+              "classification": "Apron Security Breach & Airside Incursion (ICAO Level 2)",
+              "situation": "At 14h20, a passenger who arrived late at Gate B12 found the boarding door locked. Panicked and disoriented, the passenger pushed open emergency fire exit B12-E, sounding a local alarm, and walked directly onto the active apron surface. Ground observers spotted the individual walking along Service Road Bravo, approximately 30 meters from Stand 4, heading towards Taxiway Alpha while an adjacent aircraft on Stand 3 was preparing for engine start.",
+              "immediateHazards": [
+                "Jet engine ingestion & prop-wash hazard from adjacent Stand 3 aircraft",
+                "High-density ramp service traffic along Service Road Bravo (baggage tugs, fuel hydrant trucks)",
+                "Risk of unescorted entry onto active Taxiway Alpha"
+              ],
+              "commChannel": "VHF 121.750 MHz (Aerodrome Ground Movement / Apron Control)"
+            },
             "roles": [
               {
                 "role": "Role A: Aerodrome Ground Liaison / AFISO Trainee",
@@ -10075,12 +10100,12 @@
               "📋 Corrective Protocol"
             ],
             "instructions": [
-              "Step 1 (Incident Dissection - 4 mins): Read the unauthorized apron access scenario: catering contractor vehicle incursion near Stand 12.",
+              "Step 1 (Incident Dissection - 4 mins): Read the unauthorized apron access scenario: Gate B12 door breach and Stand 4 ramp security alert.",
               "Step 2 (Role-Play Prep - 6 mins): Partner A takes the Operations Trainee role; Partner B takes the Ramp Lead role. Prepare your VHF radio statements using key phrases.",
               "Step 3 (Simulation & De-Escalation - 8 mins): Conduct a 4-minute spoken radio exchange handling the incident professionally. Swap roles after 4 minutes."
             ],
             "deliverable": "Deliver a 60-second verbal briefing outlining the root causes and your immediate corrective actions.",
-            "teacherNotes": "Act as the Airport Operations Director receiving the incident briefing. Ask probing questions: 'Who authorized vehicle movement onto taxiway Bravo?'"
+            "teacherNotes": "Act as the Airport Operations Director receiving the incident briefing. Ask probing questions: 'What immediate actions were taken to safeguard the passenger from the active engine hazard on Stand 3?'"
           },
           "guidanceWorkshop": {
             "title": "Activity 5: Airfield Guidance Markings & Spoken Briefing (25 mins)",
@@ -11004,7 +11029,7 @@
             "instructions": [
               "Step 1 (Situation Report - 4 mins): Examine the Operational Situation Report: 3 simultaneous ramp bottlenecks (fuel spill Stand 14, conveyor belt failure Stand 16, lost transfer baggage).",
               "Step 2 (Role Allocation & Briefing Prep - 8 mins): Partner A acts as Outgoing Ramp Coordinator delivering the 4-part Shift Handover Briefing; Partner B acts as Incoming Ramp Coordinator preparing tactical follow-up questions.",
-              "Step 3 (Simulation & Model Check - 6 mins): Conduct the spoken handover simulation. Click 'Listen to Model' to compare your delivery against the ICAO standard benchmark."
+              "Step 3 (Simulation & Model Check - 6 mins): Conduct the spoken handover simulation. Review the 60-Second Shift Handover Briefing model or click the audio icon to listen to the speech pronunciation."
             ],
             "deliverable": "Flawless delivery of a 60-second spoken shift handover briefing following the 4-part operational standard.",
             "teacherNotes": "Time each student briefing with a stopwatch. Cut them off at exactly 60 seconds to simulate real-world operational pressure. Evaluate for conciseness, calm delivery, and zero filler words."

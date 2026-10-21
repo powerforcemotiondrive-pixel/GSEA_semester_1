@@ -421,19 +421,301 @@
 
             ${renderActivityInstructions(diagramLabeling, theme)}
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              ${externalParts.map(p => `
-                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1 border-b border-slate-200">
-                      <span class="font-bold text-xs text-slate-900">${p.name}</span>
-                      <span class="text-[10px] font-mono font-bold text-white px-1.5 py-0.5 rounded" style="background-color: ${theme.accent};">${p.id}</span>
-                    </div>
-                    <p class="text-[11px] text-slate-500 mt-1.5"><strong>Location:</strong> ${p.location}</p>
-                    <p class="text-[11px] text-slate-700 mt-1 leading-relaxed">${p.purpose}</p>
-                  </div>
+            <!-- Interactive Airframe Anatomy Diagram Container -->
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-3 sm:p-5 shadow-lg space-y-4 text-white overflow-hidden">
+              <!-- Mode Bar & Controls -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-indigo-500 text-white shadow-2xs">Interactive Blueprint</span>
+                  <span class="text-xs font-bold text-slate-200">Twin-Engine Commercial Jetliner (Dorsal Planform View)</span>
                 </div>
-              `).join('')}
+                
+                <!-- Controls (Study Mode vs Challenge Mode) -->
+                <div class="no-print flex flex-wrap items-center gap-2">
+                  <button type="button" id="airframe-mode-study-btn" onclick="window.setAirframeDiagramMode('study')" class="px-2.5 py-1 rounded text-xs font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer">
+                    Study Mode (All Labeled)
+                  </button>
+                  <button type="button" id="airframe-mode-quiz-btn" onclick="window.setAirframeDiagramMode('quiz')" class="px-2.5 py-1 rounded text-xs font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 cursor-pointer">
+                    Labeling Challenge (Test Yourself)
+                  </button>
+                  <button type="button" onclick="window.resetAirframeChallenge()" id="airframe-reset-btn" class="hidden px-2.5 py-1 rounded text-xs font-bold bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 cursor-pointer">
+                    Reset Blanks
+                  </button>
+                </div>
+              </div>
+
+              <!-- SVG Viewport -->
+              <div class="relative w-full overflow-x-auto flex justify-center py-1">
+                <svg viewBox="0 0 920 545" class="w-full h-auto max-w-4xl select-none" xmlns="http://www.w3.org/2000/svg" style="min-width: 650px;">
+                  <!-- Background Blueprint Guide Lines -->
+                  <g opacity="0.18">
+                    <circle cx="460" cy="275" r="140" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+                    <circle cx="460" cy="275" r="230" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+                    <line x1="460" y1="20" x2="460" y2="525" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+                    <line x1="70" y1="275" x2="850" y2="275" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+                  </g>
+
+                  <!-- Horizontal Stabilizers (Tailplane) -->
+                  <g id="svg-horizontal-stabilizers">
+                    <!-- Port Tailplane -->
+                    <polygon points="446,438 290,472 292,488 450,482" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+                    <polygon points="350,478 292,488 350,487 450,482" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Starboard Tailplane -->
+                    <polygon points="474,438 630,472 628,488 470,482" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+                    <polygon points="570,478 628,488 570,487 470,482" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                  </g>
+
+                  <!-- Main Wings -->
+                  <g id="svg-wings">
+                    <!-- Port Wing Body -->
+                    <polygon points="440,215 105,308 105,328 330,322 440,318" fill="#334155" stroke="#475569" stroke-width="2"/>
+                    <!-- Port Leading Edge Slat -->
+                    <polygon points="440,215 105,308 107,314 440,224" fill="#64748b" stroke="#38bdf8" stroke-width="1"/>
+                    <!-- Port Inboard Trailing Flap -->
+                    <polygon points="440,318 330,322 328,310 440,305" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Port Outboard Aileron -->
+                    <polygon points="225,324 105,328 108,319 225,316" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Port Roll Spoilers -->
+                    <rect x="250" y="296" width="60" height="15" transform="rotate(7 280 300)" fill="#1e293b" stroke="#94a3b8" stroke-width="1" rx="2"/>
+                    <!-- Port Winglet -->
+                    <path d="M 105,300 L 98,285 L 105,328 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+
+                    <!-- Starboard Wing Body -->
+                    <polygon points="480,215 815,308 815,328 590,322 480,318" fill="#334155" stroke="#475569" stroke-width="2"/>
+                    <!-- Starboard Leading Edge Slat -->
+                    <polygon points="480,215 815,308 813,314 480,224" fill="#64748b" stroke="#38bdf8" stroke-width="1"/>
+                    <!-- Starboard Inboard Trailing Flap -->
+                    <polygon points="480,318 590,322 592,310 480,305" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Starboard Outboard Aileron -->
+                    <polygon points="695,324 815,328 812,319 695,316" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Starboard Roll Spoilers -->
+                    <rect x="610" y="296" width="60" height="15" transform="rotate(-7 640 300)" fill="#1e293b" stroke="#94a3b8" stroke-width="1" rx="2"/>
+                    <!-- Starboard Winglet -->
+                    <path d="M 815,300 L 822,285 L 815,328 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+                  </g>
+
+                  <!-- Turbofan Engines & Pylons -->
+                  <g id="svg-engines">
+                    <!-- Port Engine -->
+                    <rect x="325" y="215" width="8" height="30" fill="#475569" rx="2"/>
+                    <rect x="312" y="235" width="34" height="62" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+                    <ellipse cx="329" cy="235" rx="14" ry="5" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+                    <polygon points="320,297 338,297 329,308" fill="#f59e0b"/>
+                    
+                    <!-- Starboard Engine -->
+                    <rect x="587" y="215" width="8" height="30" fill="#475569" rx="2"/>
+                    <rect x="574" y="235" width="34" height="62" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+                    <ellipse cx="591" cy="235" rx="14" ry="5" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+                    <polygon points="582,297 600,297 591,308" fill="#f59e0b"/>
+                  </g>
+
+                  <!-- Fuselage Main Body & Empennage -->
+                  <g id="svg-fuselage">
+                    <!-- Fuselage Shell -->
+                    <path d="M 440,95 Q 460,45 480,95 L 480,435 Q 460,488 440,435 Z" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+                    <!-- Radome Boundary Curve -->
+                    <path d="M 442,95 Q 460,102 478,95" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <!-- Cockpit Windscreen -->
+                    <polygon points="447,102 453,99 460,100 467,99 473,102 471,108 460,106 449,108" fill="#38bdf8"/>
+                    <!-- Centerline Keel -->
+                    <line x1="460" y1="95" x2="460" y2="440" stroke="#334155" stroke-width="1" stroke-dasharray="3 3"/>
+                    <!-- Vertical Fin Dorsal Spine -->
+                    <polygon points="457,400 463,400 462,485 458,485" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Rudder Trailing Edge -->
+                    <polygon points="458,445 462,445 461,485 459,485" fill="#f8fafc" stroke="#f59e0b" stroke-width="1.5"/>
+                    <!-- APU Exhaust Nozzle -->
+                    <circle cx="460" cy="488" r="3.5" fill="#f59e0b" stroke="#d97706" stroke-width="1"/>
+                  </g>
+
+                  <!-- Leader Lines to Callouts -->
+                  <g stroke="#94a3b8" stroke-width="1.2" fill="none" opacity="0.85">
+                    <!-- Left Leaders -->
+                    <path d="M 460,68 L 300,47 L 220,47"/>
+                    <path d="M 440,115 L 290,107 L 220,107"/>
+                    <path d="M 460,165 L 300,167 L 220,167"/>
+                    <path d="M 329,255 L 260,227 L 220,227"/>
+                    <path d="M 260,260 L 250,287 L 220,287"/>
+                    <path d="M 280,305 L 260,347 L 220,347"/>
+                    
+                    <!-- Right Leaders -->
+                    <path d="M 460,310 L 630,227 L 700,227"/>
+                    <path d="M 818,298 L 780,287 L 700,287"/>
+                    <path d="M 750,324 L 740,347 L 700,347"/>
+                    <path d="M 535,320 L 640,407 L 700,407"/>
+                    <path d="M 555,465 L 640,467 L 700,467"/>
+                    <path d="M 460,465 L 630,522 L 700,522"/>
+                  </g>
+
+                  <!-- Target Pin Dots on Aircraft Surface -->
+                  <g fill="#38bdf8" stroke="#ffffff" stroke-width="1.5">
+                    <circle cx="460" cy="68" r="4.5"/>
+                    <circle cx="440" cy="115" r="4.5"/>
+                    <circle cx="460" cy="165" r="4.5"/>
+                    <circle cx="329" cy="255" r="4.5"/>
+                    <circle cx="260" cy="260" r="4.5"/>
+                    <circle cx="280" cy="305" r="4.5"/>
+                    <circle cx="460" cy="310" r="4.5"/>
+                    <circle cx="818" cy="298" r="4.5"/>
+                    <circle cx="750" cy="324" r="4.5"/>
+                    <circle cx="535" cy="320" r="4.5"/>
+                    <circle cx="555" cy="465" r="4.5"/>
+                    <circle cx="460" cy="465" r="4.5"/>
+                  </g>
+
+                  <!-- 12 Interactive Callout Badges -->
+                  <!-- LEFT BADGES -->
+                  <!-- 01: Radome -->
+                  <g id="svg-callout-01" onclick="window.selectAirframePart('01', 'Radome (Nose Cone)')" class="cursor-pointer transition-all">
+                    <rect x="20" y="25" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="32" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="50" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">01</text>
+                    <text id="svg-part-text-01" data-real-name="Radome (Nose Cone)" x="58" y="44" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Radome (Nose Cone)</text>
+                    <text x="58" y="58" font-family="sans-serif" font-size="9" fill="#94a3b8">Weather Radar Housing</text>
+                  </g>
+
+                  <!-- 02: Pitot-Static Probes -->
+                  <g id="svg-callout-02" onclick="window.selectAirframePart('02', 'Pitot-Static Probes')" class="cursor-pointer transition-all">
+                    <rect x="20" y="85" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="92" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="110" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">02</text>
+                    <text id="svg-part-text-02" data-real-name="Pitot-Static Probes" x="58" y="104" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Pitot-Static Probes</text>
+                    <text x="58" y="118" font-family="sans-serif" font-size="9" fill="#94a3b8">Dynamic &amp; Static Pressure</text>
+                  </g>
+
+                  <!-- 03: Fuselage -->
+                  <g id="svg-callout-03" onclick="window.selectAirframePart('03', 'Fuselage')" class="cursor-pointer transition-all">
+                    <rect x="20" y="145" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="152" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="170" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">03</text>
+                    <text id="svg-part-text-03" data-real-name="Fuselage" x="58" y="164" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Fuselage</text>
+                    <text x="58" y="178" font-family="sans-serif" font-size="9" fill="#94a3b8">Pressurized Cabin &amp; Hold</text>
+                  </g>
+
+                  <!-- 08: Engine Nacelle & Pylon -->
+                  <g id="svg-callout-08" onclick="window.selectAirframePart('08', 'Engine Nacelle & Pylon')" class="cursor-pointer transition-all">
+                    <rect x="20" y="205" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="212" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="230" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">08</text>
+                    <text id="svg-part-text-08" data-real-name="Engine Nacelle & Pylon" x="58" y="224" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">Engine Nacelle &amp; Pylon</text>
+                    <text x="58" y="238" font-family="sans-serif" font-size="9" fill="#94a3b8">Turbofan Housing &amp; Mount</text>
+                  </g>
+
+                  <!-- 04: Leading-Edge Slats -->
+                  <g id="svg-callout-04" onclick="window.selectAirframePart('04', 'Leading-Edge Slats')" class="cursor-pointer transition-all">
+                    <rect x="20" y="265" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="272" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="290" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">04</text>
+                    <text id="svg-part-text-04" data-real-name="Leading-Edge Slats" x="58" y="284" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Leading-Edge Slats</text>
+                    <text x="58" y="298" font-family="sans-serif" font-size="9" fill="#94a3b8">Wing Camber &amp; Stall Delay</text>
+                  </g>
+
+                  <!-- 07: Roll Spoilers & Speed Brakes -->
+                  <g id="svg-callout-07" onclick="window.selectAirframePart('07', 'Roll Spoilers & Speed Brakes')" class="cursor-pointer transition-all">
+                    <rect x="20" y="325" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="332" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="350" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">07</text>
+                    <text id="svg-part-text-07" data-real-name="Roll Spoilers & Speed Brakes" x="58" y="344" font-family="sans-serif" font-size="10" font-weight="700" fill="#f8fafc">Roll Spoilers &amp; Brakes</text>
+                    <text x="58" y="358" font-family="sans-serif" font-size="9" fill="#94a3b8">Lift Dumper &amp; Roll Assist</text>
+                  </g>
+
+                  <!-- RIGHT BADGES -->
+                  <!-- 09: Main & Nose Landing Gear -->
+                  <g id="svg-callout-09" onclick="window.selectAirframePart('09', 'Main & Nose Landing Gear')" class="cursor-pointer transition-all">
+                    <rect x="705" y="205" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="212" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="230" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">09</text>
+                    <text id="svg-part-text-09" data-real-name="Main & Nose Landing Gear" x="743" y="224" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">Landing Gear Assembly</text>
+                    <text x="743" y="238" font-family="sans-serif" font-size="9" fill="#94a3b8">Oleo Struts &amp; Wheels</text>
+                  </g>
+
+                  <!-- 12: Winglets / Sharklets -->
+                  <g id="svg-callout-12" onclick="window.selectAirframePart('12', 'Winglets / Sharklets')" class="cursor-pointer transition-all">
+                    <rect x="705" y="265" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="272" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="290" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">12</text>
+                    <text id="svg-part-text-12" data-real-name="Winglets / Sharklets" x="743" y="284" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Winglets / Sharklets</text>
+                    <text x="743" y="298" font-family="sans-serif" font-size="9" fill="#94a3b8">Vortex Drag Reduction</text>
+                  </g>
+
+                  <!-- 06: Ailerons -->
+                  <g id="svg-callout-06" onclick="window.selectAirframePart('06', 'Ailerons')" class="cursor-pointer transition-all">
+                    <rect x="705" y="325" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="332" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="350" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">06</text>
+                    <text id="svg-part-text-06" data-real-name="Ailerons" x="743" y="344" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Ailerons</text>
+                    <text x="743" y="358" font-family="sans-serif" font-size="9" fill="#94a3b8">Differential Roll Control</text>
+                  </g>
+
+                  <!-- 05: Trailing-Edge Flaps -->
+                  <g id="svg-callout-05" onclick="window.selectAirframePart('05', 'Trailing-Edge Flaps')" class="cursor-pointer transition-all">
+                    <rect x="705" y="385" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="392" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="410" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">05</text>
+                    <text id="svg-part-text-05" data-real-name="Trailing-Edge Flaps" x="743" y="404" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Trailing-Edge Flaps</text>
+                    <text x="743" y="418" font-family="sans-serif" font-size="9" fill="#94a3b8">High Lift &amp; Drag Extenders</text>
+                  </g>
+
+                  <!-- 11: Horizontal Stabilizer & Elevators -->
+                  <g id="svg-callout-11" onclick="window.selectAirframePart('11', 'Horizontal Stabilizer & Elevators')" class="cursor-pointer transition-all">
+                    <rect x="705" y="445" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="452" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="470" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">11</text>
+                    <text id="svg-part-text-11" data-real-name="Horizontal Stabilizer & Elevators" x="743" y="464" font-family="sans-serif" font-size="10" font-weight="700" fill="#f8fafc">Stabilizer &amp; Elevators</text>
+                    <text x="743" y="478" font-family="sans-serif" font-size="9" fill="#94a3b8">Pitch Stability &amp; Control</text>
+                  </g>
+
+                  <!-- 10: Vertical Fin & Rudder -->
+                  <g id="svg-callout-10" onclick="window.selectAirframePart('10', 'Vertical Fin & Rudder')" class="cursor-pointer transition-all">
+                    <rect x="705" y="500" width="195" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="506" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="524" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">10</text>
+                    <text id="svg-part-text-10" data-real-name="Vertical Fin & Rudder" x="743" y="518" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Vertical Fin &amp; Rudder</text>
+                    <text x="743" y="531" font-family="sans-serif" font-size="9" fill="#94a3b8">Yaw Control &amp; Stability</text>
+                  </g>
+                </svg>
+              </div>
+              
+              <!-- Diagram Footer / Hint -->
+              <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-800 text-[11px] text-slate-400">
+                <div class="flex items-center gap-2">
+                  <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span id="airframe-diagram-tip">Click any numbered pin or component badge on the blueprint to listen to pronunciation and inspect its functional purpose.</span>
+                </div>
+                <span class="font-mono text-slate-500 text-[10px]">ICAO Aerodrome Operations • Airframe Technical English</span>
+              </div>
+            </div>
+
+            <!-- 12 External Component Cards -->
+            <div class="space-y-2 pt-2">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Component Technical Specifications &amp; Walkaround Checkpoints:</h5>
+                <span class="text-[11px] text-slate-500">12 Primary Airframe Structures</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                ${externalParts.map(p => `
+                  <div id="airframe-card-${p.id}" class="airframe-component-card p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between shadow-2xs transition-all">
+                    <div>
+                      <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
+                        <div class="flex items-center gap-1.5">
+                          <span class="text-[10px] font-mono font-bold text-white px-1.5 py-0.5 rounded shadow-2xs" style="background-color: ${theme.primary};">${p.id}</span>
+                          <span id="card-part-name-${p.id}" data-real-name="${p.name}" class="font-bold text-xs text-slate-900">${p.name}</span>
+                        </div>
+                        <button type="button" onclick="speakWord('${p.name.replace(/'/g, "\\'")}')" class="p-1 rounded bg-white hover:bg-slate-200 border border-slate-200 text-slate-600 transition-all cursor-pointer" title="Listen to pronunciation">
+                          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
+                        </button>
+                      </div>
+                      <p class="text-[11px] text-slate-500 mt-2"><strong>Location:</strong> ${p.location}</p>
+                      <p class="text-[11px] text-slate-700 mt-1 leading-relaxed">${p.purpose}</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-200/80 mt-2 flex items-center justify-between text-[10px]">
+                      <button type="button" onclick="window.selectAirframePart('${p.id}', '${p.name.replace(/'/g, "\\'")}')" class="font-bold text-indigo-600 hover:text-indigo-800 transition-all cursor-pointer">
+                        Locate on Blueprint &uarr;
+                      </button>
+                      <span class="text-slate-400 font-mono">Airframe Item ${p.id}</span>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
             </div>
           </div>
 
@@ -1094,4 +1376,85 @@
         </div>
       `;
     }
+
+    // ==========================================
+    // Interactive Airframe Diagram Controllers
+    // ==========================================
+    window.setAirframeDiagramMode = function(mode) {
+      const studyBtn = document.getElementById('airframe-mode-study-btn');
+      const quizBtn = document.getElementById('airframe-mode-quiz-btn');
+      const resetBtn = document.getElementById('airframe-reset-btn');
+      const tipEl = document.getElementById('airframe-diagram-tip');
+
+      if (mode === 'study') {
+        if (studyBtn) { studyBtn.className = 'px-2.5 py-1 rounded text-xs font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer'; }
+        if (quizBtn) { quizBtn.className = 'px-2.5 py-1 rounded text-xs font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 cursor-pointer'; }
+        if (resetBtn) { resetBtn.classList.add('hidden'); }
+        if (tipEl) { tipEl.textContent = 'Click any numbered pin or component badge on the blueprint to listen to pronunciation and inspect its functional purpose.'; }
+        window.revealAllAirframeParts();
+      } else {
+        if (studyBtn) { studyBtn.className = 'px-2.5 py-1 rounded text-xs font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 cursor-pointer'; }
+        if (quizBtn) { quizBtn.className = 'px-2.5 py-1 rounded text-xs font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer'; }
+        if (resetBtn) { resetBtn.classList.remove('hidden'); }
+        if (tipEl) { tipEl.textContent = 'Challenge Mode: Click any [ ? ] badge on the blueprint to test your memory and reveal the aeronautical term.'; }
+        window.resetAirframeChallenge();
+      }
+    };
+
+    window.selectAirframePart = function(partId, partName) {
+      if (typeof speakWord === 'function' && partName) {
+        speakWord(partName);
+      }
+      window.revealAirframePart(partId);
+
+      // Highlight corresponding card in the lower grid
+      document.querySelectorAll('.airframe-component-card').forEach(c => {
+        c.classList.remove('ring-2', 'ring-indigo-500', 'bg-indigo-50/60');
+      });
+      const targetCard = document.getElementById('airframe-card-' + partId);
+      if (targetCard) {
+        targetCard.classList.add('ring-2', 'ring-indigo-500', 'bg-indigo-50/60');
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+
+    window.revealAirframePart = function(partId) {
+      const textEl = document.getElementById('svg-part-text-' + partId);
+      if (textEl && textEl.dataset.realName) {
+        textEl.textContent = textEl.dataset.realName;
+        textEl.setAttribute('fill', '#f8fafc');
+      }
+      const cardName = document.getElementById('card-part-name-' + partId);
+      if (cardName && cardName.dataset.realName) {
+        cardName.textContent = cardName.dataset.realName;
+      }
+    };
+
+    window.revealAllAirframeParts = function() {
+      document.querySelectorAll('[id^="svg-part-text-"]').forEach(el => {
+        if (el.dataset.realName) {
+          el.textContent = el.dataset.realName;
+          el.setAttribute('fill', '#f8fafc');
+        }
+      });
+      document.querySelectorAll('[id^="card-part-name-"]').forEach(el => {
+        if (el.dataset.realName) {
+          el.textContent = el.dataset.realName;
+        }
+      });
+    };
+
+    window.resetAirframeChallenge = function() {
+      document.querySelectorAll('[id^="svg-part-text-"]').forEach(el => {
+        if (el.dataset.realName) {
+          el.textContent = '[ Click to Reveal ]';
+          el.setAttribute('fill', '#fbbf24');
+        }
+      });
+      document.querySelectorAll('[id^="card-part-name-"]').forEach(el => {
+        if (el.dataset.realName) {
+          el.textContent = 'Part ' + el.id.replace('card-part-name-', '') + ' [ ? ]';
+        }
+      });
+    };
 
