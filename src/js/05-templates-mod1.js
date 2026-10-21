@@ -268,6 +268,73 @@
 
             ${renderActivityInstructions(caseStudy, theme)}
 
+            ${caseStudy.incidentBriefing ? `
+              <!-- Operational Incident Briefing Card -->
+              <div class="rounded-xl border border-slate-300 bg-slate-50/70 overflow-hidden shadow-xs space-y-3">
+                <!-- Flight Dispatch Header Banner -->
+                <div class="px-4 py-3 bg-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div class="flex items-center gap-2.5">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-600 text-white">Delayed +4h05</span>
+                    <span class="font-bold text-sm text-white">${caseStudy.incidentBriefing.flight} • ${caseStudy.incidentBriefing.route}</span>
+                  </div>
+                  <div class="text-[11px] text-slate-300 flex items-center gap-3">
+                    <span><strong>Sched:</strong> ${caseStudy.incidentBriefing.scheduled}</span>
+                    <span class="text-rose-400 font-bold"><strong>New Slot:</strong> ${caseStudy.incidentBriefing.revised}</span>
+                    <span class="hidden md:inline text-slate-400">| ${caseStudy.incidentBriefing.aircraft}</span>
+                  </div>
+                </div>
+
+                <div class="p-4 space-y-3.5">
+                  <!-- Operational Context -->
+                  <div>
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                      <svg width="14" height="14" class="text-slate-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                      Operational Context &amp; Disruption Report
+                    </h5>
+                    <p class="text-xs text-slate-700 leading-relaxed mt-1">
+                      ${caseStudy.incidentBriefing.context}
+                    </p>
+                  </div>
+
+                  <!-- Chronological Incident Timeline -->
+                  <div class="space-y-1.5">
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                      <svg width="14" height="14" class="text-slate-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                      Flight Timeline &amp; Incident Log
+                    </h5>
+                    <div class="grid grid-cols-1 gap-1.5">
+                      ${(caseStudy.incidentBriefing.timeline || []).map(item => `
+                        <div class="flex items-start gap-2.5 p-2 bg-white rounded-lg border border-slate-200 text-xs">
+                          <span class="font-mono font-bold text-[11px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-800 shrink-0">${item.time}</span>
+                          <span class="text-slate-700 leading-snug">${item.event}</span>
+                        </div>
+                      `).join('')}
+                    </div>
+                  </div>
+
+                  <!-- EU261 Regulatory Framework Reference -->
+                  ${caseStudy.incidentBriefing.regulations ? `
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                      <div class="p-3 bg-emerald-50/70 border border-emerald-200 rounded-lg space-y-1">
+                        <span class="text-[10px] font-black uppercase tracking-wider text-emerald-900 block flex items-center gap-1">
+                          <svg width="12" height="12" class="text-emerald-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                          Mandatory Duty of Care (Immediate at Gate)
+                        </span>
+                        <p class="text-[11px] text-emerald-950 leading-relaxed">${caseStudy.incidentBriefing.regulations.dutyOfCare}</p>
+                      </div>
+                      <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg space-y-1">
+                        <span class="text-[10px] font-black uppercase tracking-wider text-amber-900 block flex items-center gap-1">
+                          <svg width="12" height="12" class="text-amber-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                          Financial Compensation (€250 Post-Travel Claim)
+                        </span>
+                        <p class="text-[11px] text-amber-950 leading-relaxed">${caseStudy.incidentBriefing.regulations.compensation}</p>
+                      </div>
+                    </div>
+                  ` : ''}
+                </div>
+              </div>
+            ` : ''}
+
             <!-- Role Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               ${(caseStudy.roles || []).map((r, rIdx) => {

@@ -9270,14 +9270,35 @@
               "🎯 Passenger Rights vs. Safety"
             ],
             "instructions": [
-              "Step 1 (Read Scenario - 5 mins): Analyze the Flight AF7724 diversion and delay timeline caused by technical fault vs. meteorological closure.",
-              "Step 2 (Legal Assessment - 12 mins): In pairs, evaluate whether the airline owes compensation under EU261 \"extraordinary circumstances\" rules.",
-              "Step 3 (Duty of Care Checklist - 8 mins): Formulate the mandatory passenger care package (hotel, food vouchers, re-routing communication)."
+              "Step 1 (Read Scenario - 5 mins): Review the Flight AF1420 Operational Incident Briefing, technical failure log, and EU261 passenger entitlement parameters.",
+              "Step 2 (Pair Preparation - 5 mins): Assign roles (Role A: Passenger Service Liaison vs. Role B: Frustrated Business Traveler) and review your communicative goals.",
+              "Step 3 (De-Escalation Simulation - 15 mins): Conduct a 4-minute spoken role-play adhering to passenger rights, then switch roles and repeat."
             ],
             "deliverable": "Draft a 3-point operational passenger briefing resolving the disruption.",
             "teacherNotes": "Challenge pairs with a curveball: \"The captain claims weather, but maintenance records show a deferred hydraulic valve.\" How does this affect airline liability? Elicit precise modal arguments.",
             "title": "Activity 4: Operational Dilemma: The EU261 Delay & Disruption Case Study (25 mins)",
             "summary": "A realistic airport concourse scenario: Flight AF1420 to Paris-CDG is delayed by 4 hours due to an incoming maintenance issue and a destination night curfew. Passengers are anxious and demanding cash payouts.",
+            "incidentBriefing": {
+              "flight": "Flight AF1420",
+              "route": "Toulouse-Blagnac (TLS) ➔ Paris-Charles de Gaulle (CDG)",
+              "aircraft": "Airbus A320-214 (Registration: F-GKXH)",
+              "scheduled": "18h45",
+              "revised": "22h50 (+4h05 delay)",
+              "location": "Concourse B • Gate 14",
+              "passengers": "142 passengers holding at the gate (including 28 with tight international long-haul connections)",
+              "context": "The inbound aircraft arrived at Toulouse with an intermittent amber hydraulic warning light on the Green circuit. Line maintenance was dispatched to replace a hydraulic pressure relief valve. Technical sign-off (AOG release) was completed at 21h30. However, Paris-CDG air traffic flow management calculated that the flight would arrive after 23h30, risking a violation of the strict CDG night noise curfew penalties. A revised departure slot was assigned for 22h50, creating a total delay of 4 hours and 5 minutes. Gate 14 is overcrowded, tension is escalating, and several passengers are demanding cash and alternate routing.",
+              "timeline": [
+                { "time": "18h15", "event": "Inbound aircraft touches down at TLS; crew logs intermittent Green hydraulic system pressure drop during taxi-in." },
+                { "time": "18h45", "event": "Scheduled departure time. Gate agent announces a provisional 45-minute delay for technical investigation." },
+                { "time": "19h30", "event": "Maintenance engineers request a replacement pressure relief valve from station hangar inventory." },
+                { "time": "21h30", "event": "Maintenance repairs signed off and certified airworthy. ATC warns that arrival at CDG risks violating the strict 23h30 night noise curfew." },
+                { "time": "21h45", "event": "ATC confirms revised departure slot for 22h50. 142 passengers assemble at Gate 14; business travelers demand immediate cash and hotel vouchers." }
+              ],
+              "regulations": {
+                "dutyOfCare": "Under EU261, delays exceeding 2 hours on flights under 1,500 km trigger an immediate statutory Duty of Care: complimentary meal and refreshment vouchers (€15), two free telephone calls or emails, and overnight hotel accommodation plus ground transfers if departure is rescheduled for the following day.",
+                "compensation": "EU261 provides for €250 compensation for delays of 3+ hours upon arrival unless caused by 'extraordinary circumstances'. Technical mechanical faults are classified as inherent operational risks and qualify for compensation, but claims must be submitted online post-travel—ground liaison agents are strictly prohibited from issuing cash at the boarding gate."
+              }
+            },
             "roles": [
               {
                 "role": "Role A: Passenger Service Liaison (AFISO / Operations Trainee)",
