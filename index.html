@@ -896,60 +896,29 @@
 
       const desc = (isAas ? aasDescriptions[modNumber] : agDescriptions[modNumber]) || (isAas ? aasDescriptions[1] : agDescriptions[1]);
 
-      const s1AdditionalMaterialsUrl = isAas ? (modNumber === 1 ? "session1/admat_aas1.html" : "session1/admat_aas2.html") : `session1/admat${modNumber}.html`;
-      const s1ClassReviewUrl = isAas ? (modNumber === 1 ? "session1/rev_aas1.html" : "session1/rev_aas2.html") : `session1/rev${modNumber}.html`;
-      const s2AdditionalMaterialsUrl = isAas ? (modNumber === 1 ? "session2/admat_aas1.html" : "session2/admat_aas2.html") : `session2/admat${modNumber}.html`;
-      const s2ClassReviewUrl = isAas ? (modNumber === 1 ? "session2/rev_aas1.html" : "session2/rev_aas2.html") : `session2/rev${modNumber}.html`;
-      const s3AdditionalMaterialsUrl = isAas ? (modNumber === 1 ? "session3/admat_aas1.html" : "session3/admat_aas2.html") : `session3/admat${modNumber}.html`;
-      const s3ClassReviewUrl = isAas ? (modNumber === 1 ? "session3/rev_aas1.html" : "session3/rev_aas2.html") : `session3/rev${modNumber}.html`;
-      const s4AdditionalMaterialsUrl = isAas ? (modNumber === 1 ? "session4/admat_aas1.html" : "session4/admat_aas2.html") : `session4/admat${modNumber}.html`;
-      const s4ClassReviewUrl = isAas ? (modNumber === 1 ? "session4/rev_aas1.html" : "session4/rev_aas2.html") : `session4/rev${modNumber}.html`;
-      const s5GuidelinesUrl = isAas ? (modNumber === 1 ? "session5/guidelines_aas1.html" : "session5/guidelines_aas2.html") : `session5/guidelines${modNumber}.html`;
-      const s5ObjectivesUrl = isAas ? (modNumber === 1 ? "session5/obj_aas1.html" : "session5/obj_aas2.html") : `session5/obj${modNumber}.html`;
-      const s5CriteriaUrl = isAas ? (modNumber === 1 ? "session5/criteria_aas1.html" : "session5/criteria_aas2.html") : `session5/criteria${modNumber}.html`;
       const pages = [
         {
           tag: `Module ${modNumber} • Session 1`,
           title: titles.s1,
           description: desc.s1,
-          url: s1AdditionalMaterialsUrl,
-          additionalMaterialsUrl: s1AdditionalMaterialsUrl,
-          lessonPlanUrl: `session1/plan${modNumber}.html`,
-          objectivesUrl: `session1/obj${modNumber}.html`,
-          classReviewUrl: s1ClassReviewUrl,
           imageUrl: images.card1
         },
         {
           tag: `Module ${modNumber} • Session 2`,
           title: titles.s2,
           description: desc.s2,
-          url: s2AdditionalMaterialsUrl,
-          additionalMaterialsUrl: s2AdditionalMaterialsUrl,
-          lessonPlanUrl: `session2/plan${modNumber}.html`,
-          objectivesUrl: `session2/obj${modNumber}.html`,
-          classReviewUrl: s2ClassReviewUrl,
           imageUrl: images.card2
         },
         {
           tag: `Module ${modNumber} • Session 3`,
           title: titles.s3,
           description: desc.s3,
-          url: s3AdditionalMaterialsUrl,
-          additionalMaterialsUrl: s3AdditionalMaterialsUrl,
-          lessonPlanUrl: `session3/plan${modNumber}.html`,
-          objectivesUrl: `session3/obj${modNumber}.html`,
-          classReviewUrl: s3ClassReviewUrl,
           imageUrl: images.card3
         },
         {
           tag: `Module ${modNumber} • Session 4`,
           title: titles.s4,
           description: desc.s4,
-          url: s4AdditionalMaterialsUrl,
-          additionalMaterialsUrl: s4AdditionalMaterialsUrl,
-          lessonPlanUrl: `session4/plan${modNumber}.html`,
-          objectivesUrl: `session4/obj${modNumber}.html`,
-          classReviewUrl: s4ClassReviewUrl,
           imageUrl: images.card4
         },
         {
@@ -966,9 +935,6 @@
                 : (modNumber === 2
                     ? "Welcome to Session 5! In this Formative Evaluation, you and your partner will present a comprehensive climate resilience masterplan for an airport or city of your choice.<br><br><em>Subject overview:</em> Formative Evaluation 2 — Climate Resilience: Redesign an airport or city for climate resilience. Cover climate hazard assessments, physical engineering adaptations, nature-based solutions (DDRS), and operational contingencies.<br><br>All work in this session contributes directly toward your Formative Evaluation."
                     : "Welcome to Session 5! In this Formative Evaluation, you and your partner will present an in-depth technical analysis and critical evaluation of an emerging aviation or non-aviation technology.<br><br><em>Subject overview:</em> Formative Evaluation 3 — Emerging Technology: Presentation on an emerging aviation or non-aviation related technology. Address technical architecture, quantitative efficiency gains, DDRS & ethical challenges, and deployment roadmaps.<br><br>All work in this session contributes directly toward your Formative Evaluation.")),
-          url: s5CriteriaUrl,
-          lessonPlanUrl: s5GuidelinesUrl,
-          objectivesUrl: s5ObjectivesUrl,
           imageUrl: images.fe
         },
         {
@@ -983,7 +949,6 @@
                 : modNumber === 3
                     ? "<strong>Definition:</strong> DDRS (Sustainable Development & Social Responsibility) in emerging technology balances technological acceleration with algorithmic fairness, environmental lifecycle impacts, and human dignity.<br><br><strong>Key areas covered:</strong> Compute carbon footprints, explainable AI (XAI), data privacy sovereignty, and social inclusion under the EU AI Act.<br><br><strong>Why we discuss DDRS in English:</strong> Articulating tech ethics, regulatory compliance, and responsible innovation in international English prepares aerospace professionals to lead global technology governance."
                     : "<strong>Definition:</strong> DDRS (Sustainable Development & Social Responsibility) is the framework linking environmental protection, social fairness, and ethical decision-making in modern organizations.<br><br><strong>Key areas covered:</strong> Reducing carbon footprints, community wellbeing and inclusion, and responsible innovation.<br><br><strong>Why we discuss DDRS in English:</strong> Discussing DDRS topics builds the vocabulary, critical thinking, and communication skills you need to talk about global environmental and social challenges in professional English."),
-          detailsUrl: isAas ? "" : `ddrs${modNumber}.html`,
           imageUrl: images.ddrs,
           isMuted: isAas
         },
@@ -1978,15 +1943,13 @@
         actionContainer.appendChild(createThemedCTA("Open Objectives", "sem_obj_en", ""));
       } else if (page.isAdmin || currentIndex === 6) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "admin_groups", "admin.html"));
-      } else if (page.detailsUrl || currentIndex === 5) {
-        actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", page.detailsUrl || "ddrs1.html"));
+      } else if (currentIndex === 5) {
+        actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", ""));
       } else if (currentIndex === 4) {
-        actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", page.lessonPlanUrl || page.url || ""));
+        actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
       } else {
         // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
-        const initialTab = page.objectivesUrl ? 'objectives' : (page.lessonPlanUrl ? 'plan' : 'materials');
-        const fallback = page.additionalMaterialsUrl || page.url || page.lessonPlanUrl || '';
-        actionContainer.appendChild(createThemedCTA("Open Resources", initialTab, fallback));
+        actionContainer.appendChild(createThemedCTA("Open Resources", "objectives", ""));
       }
 
 

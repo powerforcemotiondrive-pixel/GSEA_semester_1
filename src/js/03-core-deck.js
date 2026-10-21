@@ -796,15 +796,13 @@
         actionContainer.appendChild(createThemedCTA("Open Objectives", "sem_obj_en", ""));
       } else if (page.isAdmin || currentIndex === 6) {
         actionContainer.appendChild(createThemedCTA("Open Resources", "admin_groups", "admin.html"));
-      } else if (page.detailsUrl || currentIndex === 5) {
-        actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", page.detailsUrl || "ddrs1.html"));
+      } else if (currentIndex === 5) {
+        actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", ""));
       } else if (currentIndex === 4) {
-        actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", page.lessonPlanUrl || page.url || ""));
+        actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
       } else {
         // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
-        const initialTab = page.objectivesUrl ? 'objectives' : (page.lessonPlanUrl ? 'plan' : 'materials');
-        const fallback = page.additionalMaterialsUrl || page.url || page.lessonPlanUrl || '';
-        actionContainer.appendChild(createThemedCTA("Open Resources", initialTab, fallback));
+        actionContainer.appendChild(createThemedCTA("Open Resources", "objectives", ""));
       }
 
 
