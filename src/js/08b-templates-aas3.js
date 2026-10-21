@@ -937,7 +937,7 @@
                   <p class="text-[11px] text-slate-500">${walkaroundAct.summary || 'Conduct a clockwise external airframe inspection and evaluate critical airworthiness checkpoints.'}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">External Walkaround Inspection</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Aircraft Security Sweep</span>
             </div>
 
             ${renderActivityInstructions(walkaroundAct, theme)}

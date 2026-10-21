@@ -2210,8 +2210,8 @@
               "🏙️ Municipal Measures"
             ],
             "instructions": [
-              "Step 1 (Data Comparison - 4 mins): Examine the 4 destination pressure profiles (Venice, Amsterdam, Dubrovnik, Barcelona), comparing resident populations against annual visitor volumes.",
-              "Step 2 (Ratio Calculation - 4 mins): Calculate the ratio of annual visitors per resident (e.g. Venice: 50,000 residents vs. 5,500,000 visitors = 110:1 ratio). Discuss how this impacts local housing and essential public services.",
+              "Step 1 (Data Comparison - 4 mins): Examine the 4 destination pressure profiles (Venice, Amsterdam, Dubrovnik, Maya Bay), comparing resident populations against annual visitor volumes.",
+              "Step 2 (Comparing Tourist Pressure - 4 mins): Compare the visitor-to-resident figures across the destinations. Practice using comparative structures (e.g., 'Venice experiences far greater visitor pressure than...') to discuss the impact on local housing and public services.",
               "Step 3 (Policy Debate - 7 mins): In pairs, evaluate which municipal measure (entry fees, cruise ship bans, short-term rental freezes) is most effective and defend your choice with your partner."
             ],
             "deliverable": "Deliver a 45-second comparative argument evaluating the effectiveness of two municipal anti-overtourism policies.",
@@ -3813,14 +3813,14 @@
               "🎯 TOEIC Part 5 Accuracy"
             ],
             "instructions": [
-              "Step 1 (Morphology Rules - 8 mins): Analyze the four derivational suffix families in the reference table. Identify sentence position cues (e.g., after determiners $\\rightarrow$ noun; between auxiliary and participle $\\rightarrow$ adverb).",
+              "Step 1 (Word Family Rules - 8 mins): Analyze the four common suffix families in the reference table. Identify sentence position clues (e.g., after determiners $\\rightarrow$ noun; between auxiliary and participle $\\rightarrow$ adverb).",
               "Step 2 (Interactive Drills - 7 mins): Individually complete the 4 Part-5 style sentence gap-fills by identifying the grammatical category required before choosing the suffix.",
               "Step 3 (Peer Check & Verify - 5 mins): Compare answers with your partner. Explain why the blank requires that exact word form before clicking \"Reveal Answer\"."
             ],
-            "deliverable": "Achieve 100% accuracy on the 4 morphology drill sentences with written grammatical justifications.",
+            "deliverable": "Achieve 100% accuracy on the 4 word form drill sentences with clear grammatical explanations.",
             "teacherNotes": "Highlight the common TOEIC trap: confusing adjectives ending in \"-able/-ive\" with nouns in \"-tion/-ment\". Emphasize sentence position analysis over guesswork.",
             "title": "Activity 3: Language Focus: Word Forms & Suffixes in Technical English (20 mins)",
-            "summary": "Mastering derivational morphology to identify nouns, verbs, adjectives, and adverbs rapidly—essential for TOEIC Part 5 accuracy and professional writing.",
+            "summary": "Mastering Word Families: converting verbs to nouns, adjectives, and adverbs using common English suffixes—essential for TOEIC Part 5 accuracy and professional writing.",
             "rules": [
               {
                 "type": "Nouns (-tion, -ment, -ence, -ity)",
@@ -12637,17 +12637,17 @@
             ],
             "instructions": [
               "Step 1 (Scenario Analysis - 8 mins): Read the authentic flight deck incident transcript. Identify the dangerous aerodynamic misconception made by the First Officer (confusing altitude loss with pitch attitude).",
-              "Step 2 (Crew Recovery Protocol - 15 mins): In pairs, formulate the standardized EASA/FAA stall recovery memory items in exact sequence. Draft the Captain's mandatory callouts (\"STALL, I have control, pitching down\").",
+              "Step 2 (Cockpit Communication & Callouts - 15 mins): In pairs, role-play the cockpit crew communication. Draft the Captain's clear callouts (\"STALL, I have control, pitching down\") and the First Officer's verbal confirmations.",
               "Step 3 (Cockpit Debrief Role-Play - 7 mins): Role-play the debrief between Captain and FO after leveling off at FL330. Address crew resource management (CRM), sensor iced-over pitot tubes, and aerodynamic AoA awareness."
             ],
-            "deliverable": "A written 3-step Standard Operating Procedure stall recovery sequence followed by an authentic 2-minute cockpit CRM debrief.",
+            "deliverable": "A clear 3-step cockpit communication script followed by an authentic 2-minute cockpit CRM debrief.",
             "teacherNotes": "Reference high-profile real-world accidents (AF447, Colgan 3407) where pulling back on the stick stalled the aircraft into the ground or ocean. Reinforce the aerodynamic invariant: The only way to recover from a stall is to reduce the angle of attack below the critical limit.",
             "title": "Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence (30 mins)",
             "summary": "Team case study analyzing stall warnings, stick-shaker activation, and crew coordination during atmospheric turbulence.",
             "scenarioText": "Cruising at FL370 in turbulent air near the equator, Flight 204 encounters severe mountain wave downdrafts. The airspeed drops rapidly toward the low-speed buffet boundary. Suddenly, the master warning chimes and the stick-shaker vibrates violently. The junior First Officer reflexively pulls back on the sidestick, increasing the angle of attack.",
             "tasks": [
               "Identify the dangerous aerodynamic error made by the First Officer and explain why pulling back worsens a stall.",
-              "Formulate the exact standardized memory items the Captain must call out and execute to recover (Pitch down, level wings, advance thrust smoothly).",
+              "Practice the clear standard aviation English callouts the Captain and First Officer use to coordinate recovery (pitching down, leveling wings, advancing thrust smoothly).",
               "Role-play the cockpit debrief after recovering safe airspeed and stabilizing at FL330."
             ]
           },
@@ -13138,7 +13138,7 @@
               "🎯 External Airframe Structural Vocabulary"
             ],
             "instructions": [
-              "Step 1 (Component Scan - 5 mins): Examine the 12 external airframe components in the aircraft components chart. Memorize their ATA chapter classifications and functional roles.",
+              "Step 1 (Component Scan - 5 mins): Examine the 12 external aircraft components in the visual diagram. Review their English names, physical locations, and primary functions.",
               "Step 2 (Peer-Teaching Walkthrough - 15 mins): In pairs, Student A describes a component's physical location and operational purpose without naming it; Student B identifies the part and its primary failure mode. Then swap.",
               "Step 3 (Plenary Quick-Fire - 5 mins): Rapid-fire quiz on component abbreviations (APU, RAT, VOR/LOC, Pitot probes, static ports). Confirm precise technical pronunciation."
             ],
@@ -15560,11 +15560,11 @@
               "20 Mins"
             ],
             "instructions": [
-              "Read the core physiological principles of sleep architecture, sleep inertia (grogginess upon waking), and the Window of Circadian Low (WOCL).",
-              "Examine EASA Flight Time Limitations (FTL) tables: maximum daily flight duty period (FDP) based on start time and number of sectors.",
-              "Work in pairs to audit a realistic 12-hour crew schedule: determine if the roster complies with legal FTL and calculate required rest periods before the next duty."
+              "Step 1 (Concepts & Vocabulary - 5 mins): Review key human factors terms: sleep debt, sleep inertia (grogginess upon waking), and the Window of Circadian Low (WOCL).",
+              "Step 2 (Roster Evaluation - 8 mins): In pairs, review the 12-hour multi-sector crew schedule. Identify points where fatigue and reduced alertness pose operational risks.",
+              "Step 3 (Fatigue Consultation Briefing - 7 mins): Practice advising a colleague or supervisor in spoken English, using professional modal verbs of advice (should, ought to, must) to recommend appropriate rest intervals."
             ],
-            "deliverable": "Annotated IMSAFE self-assessment checklist and calculated maximum duty period under EASA FTL rules.",
+            "deliverable": "A 1-minute spoken handover briefing advising a colleague on fatigue management and recommending safe rest actions.",
             "teacherNotes": "Contrast acute fatigue (single exhausting duty cycle) with cumulative sleep debt. Emphasize that reporting fatigued is a non-punitive safety obligation under Just Culture.",
             "ftlRules": [
               {
@@ -15596,10 +15596,10 @@
             "instructions": [
               "In small groups of 3-4, select one of the 3 realistic in-flight emergency scenarios below.",
               "Step 1: Clinical Assessment & Ground Telemedicine (consult MedLink satellite doctor, evaluate EMK pharmaceuticals).",
-              "Step 2: Operational Feasibility (calculate distance, fuel dumping / overweight landing limits, airport runway length, weather minimums, and hospital trauma level).",
-              "Step 3: ATC Radio Transmission & Passenger Announcement (draft and deliver the PAN-PAN / MAYDAY radio declaration and Captain's cabin announcement)."
+              "Step 2: Operational Assessment (evaluate diversion airfields, runway conditions, weather considerations, and hospital trauma access in pairs).",
+              "Step 3: ATC Radio Transmission & Passenger Announcement (practice delivering the standard emergency radio call [PAN-PAN MEDICO] and the Captain's reassuring cabin announcement in spoken English)."
             ],
-            "deliverable": "3-minute Captain's diversion briefing and radio declaration (PAN-PAN MEDICO vs. MAYDAY) with runway, hospital, and fuel dump calculations.",
+            "deliverable": "Spoken delivery of the standard emergency radio call and a 1-minute reassuring Captain's cabin announcement to passengers.",
             "teacherNotes": "Guide groups to balance medical urgency against operational feasibility. An overweight landing on a short wet runway creates catastrophic safety risks that must be weighed against medical priority.",
             "scenarios": [
               {
@@ -16414,8 +16414,8 @@
             },
             {
               "time": "50-75",
-              "title": "Activity 4: Aircraft Safety Checks & Pre-Flight Walkaround Inspection (25 mins)",
-              "description": "Interactive walkaround workshop identifying critical inspection checkpoints (gear pins, pitot covers, tire wear) and applying MEL dispatch rules."
+              "title": "Activity 4: Aircraft Security Search & Pre-Flight Sterile Checks (25 mins)",
+              "description": "Interactive cabin security sweep workshop identifying unattended baggage, tamper-evident seals, and spoken security sign-off to the Captain."
             },
             {
               "time": "75-110",
@@ -16913,36 +16913,36 @@
             ]
           },
           "aircraftSafetyChecksClinic": {
-            "title": "Activity 4: Aircraft Safety Checks & Pre-Flight Walkaround Inspection (25 mins)",
-            "summary": "Interactive walkaround workshop identifying critical inspection checkpoints and applying MEL dispatch rules.",
+            "title": "Activity 4: Aircraft Security Search & Sterile Pre-Flight Checks (25 mins)",
+            "summary": "Pre-flight security sweep workshop identifying cabin search protocols, unattended baggage, and spoken handover to the flight crew.",
             "modeBadges": [
               "Pairs",
-              "Maintenance Workshop",
+              "Security Search Workshop",
               "25 Mins"
             ],
             "instructions": [
-              "Follow the standardized clockwise walkaround inspection pattern around a commercial transport aircraft (starting at left forward fuselage).",
-              "Identify the 6 critical physical items that must be inspected at each station: pitot tubes, angle of attack vanes, landing gear ground safety pins, brake wear pins, tire tread grooves, engine cowlings, and static discharge wicks.",
-              "Apply the Minimum Equipment List (MEL) to 3 simulated maintenance defects: determine if the flight can depart, what operational restrictions apply, and the maximum rectification interval (Category A, B, C, or D)."
+              "Step 1 (Security Protocols - 5 mins): Contrast safety walkarounds (checking mechanical integrity) with mandatory pre-flight cabin security sweeps (identifying unattended items and tampering).",
+              "Step 2 (Security Search Scenario - 12 mins): In pairs, role-play the pre-boarding cabin security sweep between Lead Flight Attendant and Ground Security Officer: report a suspicious unlabelled item found in row 18 overhead bin.",
+              "Step 3 (Spoken Security Handover - 8 mins): Deliver a standard spoken security search sign-off briefing to the Captain before passenger boarding begins."
             ],
-            "deliverable": "Walkaround inspection defect report identifying 3 simulated critical safety discrepancies (e.g. gear pin left in place, missing static wick, hydraulic fluid puddle).",
-            "teacherNotes": "Share a common real-world error: flight crews forgetting to pull the nose gear steering bypass pin or main gear downlock pins, which prevents the landing gear from retracting after takeoff.",
+            "deliverable": "Deliver a 90-second spoken security search briefing to the Captain confirming sterile cabin status.",
+            "teacherNotes": "Emphasize that aircraft security searches are legally mandated under ICAO Annex 17 and EU regulations prior to departure to prevent prohibited articles or weapons from being left on board.",
             "walkaroundCheckpoints": [
               {
-                "station": "Station 1: Nose & Radome",
-                "items": "Radome clean with no bird strike damage; all pitot probes and static port covers removed; angle of attack (AoA) vanes free to pivot; nose gear chocks removed; nose wheel steering lockout pin removed."
+                "station": "Station 1: Flight Deck & Emergency Equipment",
+                "items": "Verify reinforced flight deck door electronic strike latch functioning; cockpit escape ropes stowed and sealed; crash axe and fire extinguisher inspection tags valid; avionics bay hatch locked."
               },
               {
-                "station": "Station 2: Left Wing Leading Edge & Engine",
-                "items": "Leading edge slats smooth without dents; engine intake and fan blades checked for nicks or FOD; thrust reverser cascades stowed; fuel drain vents clear; tire wear indicator pins checked."
+                "station": "Station 2: Passenger Cabin & Overhead Bins",
+                "items": "Systematic sweep of overhead stowage bins for unattended items; seat pocket checks; life vest tamper-evident seals intact under all passenger seats; lavatory ceiling panels inspected."
               },
               {
-                "station": "Station 3: Main Landing Gear & Wheel Well",
-                "items": "Main gear downlock safety pins removed; hydraulic lines inspected for leaks; brake disc wear indicator pins protruding; tire tread depth sufficient with no cord visible."
+                "station": "Station 3: Galleys, Trolleys & Waste Bins",
+                "items": "Inspect waste bin flap seals for foreign objects; verify tamper-evident security numbered seals on catering containers and duty-free carts; galley service access panels latched."
               },
               {
-                "station": "Station 4: Empennage & Tailcone",
-                "items": "Horizontal stabilizer and elevator free of ice; rudder trim tab centered; APU air intake and exhaust duct clear; static discharge wicks intact on all trailing edges."
+                "station": "Station 4: Cargo Hold & Baggage Reconciliation",
+                "items": "Ensure positive passenger-baggage reconciliation: no unaccompanied baggage loaded without authorization; hold access door perimeter seals and latches inspected."
               }
             ]
           },
