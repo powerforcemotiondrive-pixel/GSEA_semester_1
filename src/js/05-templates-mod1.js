@@ -1806,8 +1806,12 @@
     };
 
     window.printLessonContent = function() {
+      document.body.classList.add('printing-lesson-active');
       window.print();
     };
+    window.addEventListener('afterprint', function() {
+      document.body.classList.remove('printing-lesson-active');
+    });
 
     /* ==========================================================================
        GENERAL ENGLISH (AG) MODULE 1 - INTERACTIVE LESSON CONTENT RENDERERS
