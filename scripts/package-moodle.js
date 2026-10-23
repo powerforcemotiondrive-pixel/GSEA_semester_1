@@ -65,6 +65,7 @@ const includeList = [
   'admin.html',
   'immersion.html',
   'portfolio.html',
+  'presentation.html',
 ].filter(item => fs.existsSync(path.join(rootDir, item)));
 
 // Helper to copy files or directories recursively
