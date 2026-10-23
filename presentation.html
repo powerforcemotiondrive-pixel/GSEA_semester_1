@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GSEA Semester 1 English — Project Architecture & Executive Presentation</title>
+  <title>GSEA Semester 1 English — Project Presentation &amp; Architecture</title>
   <!-- Compiled Tailwind CSS (Local & Offline) -->
   <link rel="stylesheet" href="output.css">
   <style>
@@ -25,19 +25,20 @@
     @media print {
       body { background-color: white !important; color: black !important; }
       .no-print { display: none !important; }
-      .print-break-inside { page-break-inside: avoid; }
+      .presentation-slide { display: block !important; page-break-after: always; margin-bottom: 2rem !important; }
       .shadow-xl, .shadow-md, .shadow-xs, .shadow-2xs { box-shadow: none !important; }
       .border { border-color: #cbd5e1 !important; }
     }
   </style>
 </head>
-<body class="bg-slate-100 min-h-screen text-slate-800 font-sans">
+<body class="bg-slate-100 min-h-screen text-slate-800 font-sans flex flex-col justify-between">
 
-<div class="w-[98%] sm:w-[95%] lg:w-[90%] max-w-[1350px] mx-auto px-2 sm:px-4 py-4 sm:py-6">
-  <div class="bg-white rounded-2xl shadow-xl border border-slate-300 flex flex-col overflow-hidden">
+<!-- Main Application Shell -->
+<div class="w-[98%] sm:w-[95%] lg:w-[92%] max-w-[1350px] mx-auto px-2 sm:px-4 py-3 sm:py-5 flex-1 flex flex-col">
+  <div class="bg-white rounded-2xl shadow-xl border border-slate-300 flex-1 flex flex-col overflow-hidden">
     
     <!-- Top Header -->
-    <header class="textured-surface bg-slate-800 text-white px-4 py-4 sm:px-6 sm:py-5 flex flex-wrap items-center justify-between gap-3 border-b border-slate-900 shrink-0">
+    <header class="textured-surface bg-slate-800 text-white px-4 py-3.5 sm:px-6 sm:py-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-900 shrink-0">
       <div class="flex items-center space-x-3 sm:space-x-4">
         <div class="bg-orange-600 p-2.5 rounded-lg text-white shadow-md flex items-center justify-center shrink-0">
           <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -51,535 +52,604 @@
             </h1>
             <span class="bg-orange-500/30 text-orange-200 border border-orange-400/40 text-[10px] font-mono font-bold px-2 py-0.5 rounded-full">v1.2.0 • GSEA26A</span>
           </div>
-          <p class="text-[11.5px] sm:text-[12.5px] font-medium text-orange-300 mt-0.5">
-            Project Architecture, Pedagogical Framework &amp; Operational Overview
+          <p class="text-[11.5px] sm:text-[12px] font-medium text-orange-300 mt-0.5">
+            Faculty Presentation &amp; Architecture Showcase
           </p>
         </div>
       </div>
       
-      <!-- Action Navigation Buttons -->
-      <div class="flex items-center gap-2 no-print shrink-0">
-        <button onclick="window.print()" class="flex items-center space-x-1.5 bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-xs cursor-pointer border border-slate-600">
+      <!-- Top Actions & View Mode Switcher -->
+      <div class="flex items-center gap-2 no-print shrink-0 flex-wrap">
+        <!-- Mode Switcher Pill -->
+        <div class="bg-slate-900/80 p-1 rounded-xl border border-slate-700 flex items-center gap-1 shadow-inner">
+          <button id="btn-mode-slides" onclick="setViewMode('slides')" class="px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-orange-600 text-white shadow-xs">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>Slide Show</span>
+          </button>
+          <button id="btn-mode-doc" onclick="setViewMode('doc')" class="px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-slate-300 hover:text-white hover:bg-white/10">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span>Document</span>
+          </button>
+        </div>
+
+        <button onclick="window.print()" title="Print full presentation or save as PDF" class="flex items-center space-x-1.5 bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-xs cursor-pointer border border-slate-600">
           <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
           </svg>
-          <span>Print / PDF Summary</span>
+          <span class="hidden sm:inline">Print / PDF</span>
         </button>
+
         <a href="admin.html" class="flex items-center space-x-1.5 bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-xs cursor-pointer border border-slate-600">
           <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
           </svg>
-          <span>Admin Hub</span>
+          <span class="hidden sm:inline">Admin</span>
         </a>
+
         <a href="index.html" class="flex items-center space-x-1.5 bg-orange-600 hover:bg-orange-700 text-white px-3.5 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-md cursor-pointer shrink-0">
           <svg class="w-3.5 h-3.5 stroke-[2.5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
           </svg>
-          <span>Return to Course Deck</span>
+          <span>Deck</span>
         </a>
       </div>
     </header>
 
-    <!-- Executive Headline Banner -->
-    <section class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white px-5 sm:px-8 py-6 border-b border-slate-700">
-      <div class="max-w-4xl space-y-2.5">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-orange-300 bg-orange-500/15 border border-orange-400/30">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          ENAC • École Nationale de l'Aviation Civile • Département Langues
+    <!-- SLIDE SHOW VIEW CONTAINER -->
+    <div id="slides-view-container" class="flex-1 flex flex-col justify-between bg-slate-900 text-white p-3 sm:p-6 lg:p-8">
+      
+      <!-- Slide Stage Area -->
+      <div class="flex-1 flex items-center justify-center min-h-[480px]">
+        <div class="w-full max-w-4xl mx-auto">
+
+          <!-- SLIDE 1: Title & Executive Overview -->
+          <div class="presentation-slide space-y-6" id="slide-0">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-orange-300 bg-orange-500/20 border border-orange-400/30">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  ENAC • Département Langues • Promotion GSEA26A
+                </span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 01 / 10</span>
+              </div>
+
+              <div>
+                <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+                  GSEA Semester 1 English Portal
+                </h2>
+                <p class="text-sm sm:text-base text-orange-400 font-semibold mt-1">
+                  A Zero-Dependency, Offline SCORM 1.2 Learning Cockpit for Civil Aviation Technicians
+                </p>
+                <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+                  Designed specifically for French civil aviation safety and electronics technicians (TSEEAC / IESSA). Built on modern web standards with zero cloud dependencies, it replaces fragmented textbooks and static PDF links with interactive, task-based digital workspaces that prioritize spoken operational fluency over rote grammar memorization.
+                </p>
+              </div>
+
+              <!-- Metrics Strip -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-700">
+                <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-center">
+                  <div class="text-xl sm:text-2xl font-black text-orange-400">6.95 MB</div>
+                  <div class="text-[11px] text-slate-300 font-medium mt-0.5">Total SCORM Zip</div>
+                </div>
+                <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-center">
+                  <div class="text-xl sm:text-2xl font-black text-emerald-400">~2,000</div>
+                  <div class="text-[11px] text-slate-300 font-medium mt-0.5">Pages Paper Saved</div>
+                </div>
+                <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-center">
+                  <div class="text-xl sm:text-2xl font-black text-purple-400">100% Oral</div>
+                  <div class="text-[11px] text-slate-300 font-medium mt-0.5">Continuous FE Rotas</div>
+                </div>
+                <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-center">
+                  <div class="text-xl sm:text-2xl font-black text-teal-400">GDPR Safe</div>
+                  <div class="text-[11px] text-slate-300 font-medium mt-0.5">Pseudonymized Git</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2: Pedagogical Philosophy -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-1">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Pedagogical Philosophy</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 02 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  "We Teach Communicative Language, Not Engineering Mechanics"
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  Aviation technician students already receive advanced technical systems and physics instruction in French. Our English lessons do not test memorization of hydraulic part numbers or ATA chapters.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                  <span class="font-bold text-xs sm:text-sm text-orange-300 block">1. Operational Confidence</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">Developing calm, clear, spoken English to describe incidents, hand over shifts, and explain technical disruptions.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                  <span class="font-bold text-xs sm:text-sm text-emerald-300 block">2. De-Escalation &amp; Stance</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">Practicing diplomatic language to resolve delays, negotiate apron access, and handle passenger disputes under EU261.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                  <span class="font-bold text-xs sm:text-sm text-blue-300 block">3. Global B2 Fluency</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">Simple, natural communication accessible to all students without theoretical linguistics or academic jargon.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3: Curriculum Structure -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-2">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Curriculum Architecture</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 03 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  Two Complementary Tracks Across 3 Modules
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  GSEA students participate in two parallel 2-hour English courses each week, unified under a single cockpit interface:
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                <div class="p-5 rounded-xl bg-slate-900 border border-slate-700 space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="px-2.5 py-0.5 rounded text-white font-mono text-xs font-black bg-slate-700">LV101E</span>
+                    <span class="text-xs text-slate-400">Fridays 08h00 – 10h00</span>
+                  </div>
+                  <h4 class="text-base font-bold text-white">General English (AG)</h4>
+                  <ul class="text-xs text-slate-300 space-y-1.5">
+                    <li>• Societal debates, sustainable mobility &amp; green transit</li>
+                    <li>• Overtourism impact &amp; intercultural negotiation</li>
+                    <li>• Teamwork, consensus pitching &amp; active listening</li>
+                  </ul>
+                </div>
+
+                <div class="p-5 rounded-xl bg-orange-950/40 border border-orange-500/40 space-y-3">
+                  <div class="flex items-center justify-between">
+                    <span class="px-2.5 py-0.5 rounded text-white font-mono text-xs font-black bg-orange-600">LV121E</span>
+                    <span class="text-xs text-orange-300">Wednesdays 13h15 – 15h15</span>
+                  </div>
+                  <h4 class="text-base font-bold text-white">Technical English (AT / AAS)</h4>
+                  <ul class="text-xs text-slate-300 space-y-1.5">
+                    <li>• Aerodrome layout, taxiways, ramps &amp; runways</li>
+                    <li>• Airframe anatomy &amp; flight controls blueprint</li>
+                    <li>• Turnaround coordination &amp; incident de-escalation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 4: 120-Minute Lesson Arc -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-3">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Classroom Methodology</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 04 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  The 120-Minute Task-Based Lesson Rhythm
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Every 2-hour session follows a predictable, anxiety-reducing 4-phase pedagogical curve:
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1">
+                  <div class="flex items-center gap-2">
+                    <span class="bg-slate-700 text-white text-[11px] font-bold px-2 py-0.5 rounded">Phase 1 • 15m</span>
+                    <span class="font-bold text-sm text-white">News Warm-Up</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">Current aviation headlines &amp; rapid-fire vocabulary spot-check.</p>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1">
+                  <div class="flex items-center gap-2">
+                    <span class="bg-slate-700 text-white text-[11px] font-bold px-2 py-0.5 rounded">Phase 2 • 25m</span>
+                    <span class="font-bold text-sm text-white">Language Clinic</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">Useful sentence patterns, linking words, and diplomatic negotiation phrases.</p>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-orange-500/20 border border-orange-400/40 space-y-1">
+                  <div class="flex items-center gap-2">
+                    <span class="bg-orange-600 text-white text-[11px] font-bold px-2 py-0.5 rounded">Phase 3 • 45m</span>
+                    <span class="font-bold text-sm text-orange-200">Live Simulation</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">Collaborative pair/trio role-play solving realistic incident dossiers.</p>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1">
+                  <div class="flex items-center gap-2">
+                    <span class="bg-slate-700 text-white text-[11px] font-bold px-2 py-0.5 rounded">Phase 4 • 15m</span>
+                    <span class="font-bold text-sm text-white">Wrap-Up &amp; Goals</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">Pronunciation audio drills + individual digital portfolio self-evaluation.</p>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-400 flex items-center justify-between">
+                <span>Includes a 20-minute teacher feedback &amp; buffer window</span>
+                <span class="text-orange-400 font-bold">Turnkey Delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 5: Continuous Assessment -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-4">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Evaluation Strategy</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 05 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  Continuous Assessment: FE1 • FE2 • FE3 Oral Rotas
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Written final exams are replaced with three continuous formative oral evaluations spaced across the term:
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                  <span class="px-2 py-0.5 rounded bg-purple-600 text-white font-mono text-[10px] font-bold">CAPACITY</span>
+                  <h4 class="font-bold text-sm text-white">4 × 30-Min Slots</h4>
+                  <p class="text-xs text-slate-300 leading-relaxed">Exactly four 30-minute evaluation slots per 2-hour session accommodate 100% of the promotion with zero scheduling overflow.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                  <span class="px-2 py-0.5 rounded bg-orange-600 text-white font-mono text-[10px] font-bold">ROTATION</span>
+                  <h4 class="font-bold text-sm text-white">Rotating Pairs &amp; Trios</h4>
+                  <p class="text-xs text-slate-300 leading-relaxed">Students systematically switch speaking partners across FE1, FE2, and FE3 to practice interacting with diverse peers.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                  <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold">TRANSPARENCY</span>
+                  <h4 class="font-bold text-sm text-white">Published Rubrics</h4>
+                  <p class="text-xs text-slate-300 leading-relaxed">Fluency, operational clarity, and interaction criteria are published inside the student deck, removing test anxiety.</p>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+                <span>Timetable: Week 48 (FE1), Week 03 (FE2), Week 08 (FE3)</span>
+                <span class="text-purple-300 font-bold">Oral Communication 100%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 6: Student Portfolios -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-5">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Autonomous Learning</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 06 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  Student Digital Portfolios &amp; Goal Tracking
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Every student maintains a personal digital learning log after each class to track tangible linguistic progress:
+                </p>
+              </div>
+
+              <div class="space-y-3 pt-2">
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-md bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center shrink-0 text-xs">1</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-white">Key Technical Vocabulary Learnt</h4>
+                    <p class="text-xs text-slate-300 mt-0.5">Students record operational aviation terms and professional phrases, explaining their meaning in context.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-md bg-blue-500/20 text-blue-400 font-bold flex items-center justify-center shrink-0 text-xs">2</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-white">Session Content &amp; Operations Review</h4>
+                    <p class="text-xs text-slate-300 mt-0.5">Students summarize the aeronautical topics, ground turnaround challenges, or sustainability debates covered in class.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-md bg-orange-500/20 text-orange-400 font-bold flex items-center justify-center shrink-0 text-xs">3</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-white">Personal Communication Goals</h4>
+                    <p class="text-xs text-slate-300 mt-0.5">Students identify specific pronunciation challenges, grammar patterns, or fluency goals to consolidate for the next FE.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+                <span>Integrated in both AT and AG courses</span>
+                <span class="text-emerald-400 font-bold">1-Click PDF Export</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 7: SCORM 1.2 & Digital Sobriety -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-6">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Technical Architecture</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 07 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  SCORM 1.2 Integration &amp; Digital Sobriety
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Engineered for seamless Moodle / eCampus delivery with zero external network dependencies:
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                  <span class="font-bold text-sm text-orange-300 block">Automated Gradebook Tracking</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">SCORM 1.2 runtime API synchronizes completion status (<code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">cmi.core.lesson_status</code>) and quiz scores directly into Moodle.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                  <span class="font-bold text-sm text-emerald-300 block">Zero External CDNs</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">No Google Fonts, no cloud icon sets, no remote stylesheets. Operates 100% offline within ENAC campus networks.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                  <span class="font-bold text-sm text-blue-300 block">Client-Side Web Speech API</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">Native browser speech synthesis powers UK/US vocabulary pronunciation drills without downloading megabytes of audio files.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                  <span class="font-bold text-sm text-purple-300 block">Interactive SVG Vectors</span>
+                  <p class="text-xs text-slate-300 leading-relaxed">Crisp, interactive 12-point airframe anatomy blueprint rendered as inline vector graphics with zero image downloading lag.</p>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+                <span>Verified across 44 local manifest assets</span>
+                <span class="font-mono font-bold text-white">Ultra-Compact 6.95 MB Total</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 8: Student Data Privacy & GDPR -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-7">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Institutional Governance</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 08 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  Student Data Privacy (GDPR / PII Compliance)
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  French CNIL and EU GDPR regulations strictly forbid storing student personal data in cloud Git repositories or AI tools. Our dual-layer solution solves this completely:
+                </p>
+              </div>
+
+              <div class="space-y-3 pt-2">
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-md bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center shrink-0 text-xs">1</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-white">100% Anonymous Git Codebase</h4>
+                    <p class="text-xs text-slate-300 mt-0.5">All student rosters and FE evaluation rotas in Git use anonymous identifiers (<code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">GRPA001</code>–<code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">GRPA010</code>). Zero student names ever enter Git history or cloud logs.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-md bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center shrink-0 text-xs">2</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-white">Protected Local Mapping File</h4>
+                    <p class="text-xs text-slate-300 mt-0.5">Real student names exist exclusively on the course director's local workstation in <code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">students.private.json</code>, permanently blocked by <code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">.gitignore</code>.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-teal-500/20 border border-teal-400/40 flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-md bg-teal-500 text-slate-900 font-bold flex items-center justify-center shrink-0 text-xs">3</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-teal-200">Automated Moodle Injection Pipeline</h4>
+                    <p class="text-xs text-slate-300 mt-0.5"><code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">npm run package:moodle</code> injects real names strictly into the final zip archive for ENAC eCampus upload, leaving local source code 100% anonymous.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+                <span>Zero cloud PII exposure</span>
+                <span class="text-teal-400 font-bold">100% GDPR Compliant</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 9: DDRS & Paper Savings -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-8">
+            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Sustainability &amp; DDRS</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 09 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  Environmental Impact: ~2,000 Sheets of Paper Eliminated
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Supporting ENAC's DD&amp;RS (Développement Durable &amp; Responsabilité Sociétale) institutional commitments:
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div class="p-4 rounded-xl bg-emerald-950/40 border border-emerald-500/40 space-y-2">
+                  <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold">PAPER WASTE</span>
+                  <h4 class="font-bold text-sm text-white">~2,000 Pages Saved</h4>
+                  <p class="text-xs text-slate-300 leading-relaxed">19 students × 15 weeks × 2 courses × 3–4 pages of photocopies = ~2,000 sheets saved per semester through digital worksheets.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                  <span class="px-2 py-0.5 rounded bg-slate-700 text-white font-mono text-[10px] font-bold">SOBRIETY</span>
+                  <h4 class="font-bold text-sm text-white">Digital Sobriety</h4>
+                  <p class="text-xs text-slate-300 leading-relaxed">No high-bandwidth video streaming, near-zero server emissions, and smooth performance on low-spec student laptops.</p>
+                </div>
+
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                  <span class="px-2 py-0.5 rounded bg-orange-600 text-white font-mono text-[10px] font-bold">CURRICULUM</span>
+                  <h4 class="font-bold text-sm text-white">Green Aviation Topics</h4>
+                  <p class="text-xs text-slate-300 leading-relaxed">SAF fuels, airport noise abatement, electric ground equipment, and rail-vs-air debates embedded directly in lessons.</p>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+                <span>1-Click printable option retained for backup</span>
+                <span class="text-emerald-400 font-bold">Eco-Designed Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 10: Moodle Downtime Contingency Plan -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-9">
+            <div class="bg-slate-800/90 border-2 border-orange-400/80 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-orange-500/40">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Operational Continuity</span>
+                <span class="text-xs font-mono font-bold text-slate-400">SLIDE 10 / 10</span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-white">
+                  Moodle Downtime Contingency Plan: The 3-Tier Fallback
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300">
+                  Server outages must never disrupt live teaching. We guarantee 100% operational continuity:
+                </p>
+              </div>
+
+              <div class="space-y-3 pt-2">
+                <div class="p-3.5 rounded-xl bg-white/10 border border-white/20 flex items-start gap-3">
+                  <span class="px-2 py-0.5 rounded bg-orange-600 text-white text-[10px] font-black shrink-0 mt-0.5">TIER 1</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-white">Direct Local USB / Folder Launch (Primary Fallback)</h4>
+                    <p class="text-xs text-slate-300 mt-0.5">Instructors launch <code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">index.html</code> directly from a USB stick or classroom PC folder. Runs 100% offline with zero internet required.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
+                  <span class="px-2 py-0.5 rounded bg-slate-700 text-white text-[10px] font-black shrink-0 mt-0.5">TIER 2</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-white">Emergency Cloud Mirror (Live GitHub Pages)</h4>
+                    <p class="text-xs text-slate-300 mt-0.5">An anonymous mirror is hosted at <span class="font-mono text-blue-300 font-bold">powerforcemotiondrive-pixel.github.io/GSEA_semester_1/</span>. Students connect from phones or laptops in seconds.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
+                  <span class="px-2 py-0.5 rounded bg-slate-700 text-white text-[10px] font-black shrink-0 mt-0.5">TIER 3</span>
+                  <div>
+                    <h4 class="font-bold text-sm text-white">1-Click Printable Handouts (Hardware Fallback)</h4>
+                    <p class="text-xs text-slate-300 mt-0.5">Every lesson card features built-in print buttons to generate clean paper worksheets if student laptop batteries die.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+                <span>Guaranteed Teaching Continuity</span>
+                <span class="text-orange-400 font-bold">Zero Lost Instruction Hours</span>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <h2 class="text-lg sm:text-2xl font-black tracking-tight text-white">
-          A Zero-Dependency, Offline SCORM 1.2 Learning Cockpit for Civil Aviation English
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
-          The GSEA Semester 1 English Portal is a unified digital learning environment designed specifically for civil aviation safety and electronics technicians (TSEEAC / IESSA). Built on modern web standards with zero cloud dependencies, it replaces fragmented textbooks and static PDF links with communicative, task-based digital workspaces that prioritize spoken operational confidence over rote theoretical memorization.
-        </p>
       </div>
 
-      <!-- Quick Metrics Strip -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mt-6 pt-5 border-t border-slate-700/80">
-        <div class="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-          <div class="text-lg sm:text-xl font-black text-orange-400">6.95 MB</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-300 font-medium mt-0.5">Total SCORM Zip</div>
+      <!-- Slide Show Navigation Control Bar (Fixed Bottom) -->
+      <div class="max-w-4xl w-full mx-auto mt-6 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs select-none no-print">
+        <div class="flex items-center gap-2">
+          <button id="btn-prev-slide" onclick="prevSlide()" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-bold border border-slate-700 transition-all cursor-pointer flex items-center gap-1.5 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed">
+            <span>←</span>
+            <span>Previous</span>
+          </button>
+          <button id="btn-next-slide" onclick="nextSlide()" class="px-3.5 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 text-white font-bold transition-all cursor-pointer flex items-center gap-1.5 shadow-md disabled:opacity-40 disabled:cursor-not-allowed">
+            <span>Next</span>
+            <span>→</span>
+          </button>
         </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-          <div class="text-lg sm:text-xl font-black text-emerald-400">100% Offline</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-300 font-medium mt-0.5">Zero External CDNs</div>
+
+        <!-- Slide Number Indicator & Jump Dots -->
+        <div class="flex items-center gap-2">
+          <span id="slide-counter-badge" class="font-mono text-xs font-bold text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">
+            Slide 1 of 10
+          </span>
+          <div id="slide-jump-dots" class="flex items-center gap-1.5">
+            <!-- Populated via script -->
+          </div>
         </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-          <div class="text-lg sm:text-xl font-black text-blue-400">~2,000</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-300 font-medium mt-0.5">Paper Pages Saved</div>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-          <div class="text-lg sm:text-xl font-black text-amber-400">3 Modules</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-300 font-medium mt-0.5">AT &amp; AG Tracks</div>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-          <div class="text-lg sm:text-xl font-black text-purple-400">4 Slots</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-300 font-medium mt-0.5">30m FE Oral Rotas</div>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-3 text-center">
-          <div class="text-lg sm:text-xl font-black text-teal-400">GDPR Safe</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-300 font-medium mt-0.5">Pseudonymized Git</div>
+
+        <div class="flex items-center gap-2">
+          <span class="text-[11px] text-slate-500 hidden sm:inline">Use <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-slate-400">←</kbd> <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-slate-400">→</kbd> arrow keys</span>
+          <button onclick="toggleFullScreen()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition-all cursor-pointer" title="Toggle Fullscreen">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+          </button>
         </div>
       </div>
-    </section>
 
-    <!-- Filter Strip (On-Screen Navigation) -->
-    <div class="bg-slate-800/90 border-b border-slate-700 px-4 sm:px-6 py-2.5 flex items-center gap-2 overflow-x-auto text-xs no-print">
-      <span class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mr-2">Jump to Topic:</span>
-      <a href="#pillar-1" class="px-3 py-1 rounded-md font-semibold text-white/90 bg-white/10 hover:bg-white/20 transition-all shrink-0">1. Curriculum Dual-Track</a>
-      <a href="#pillar-2" class="px-3 py-1 rounded-md font-semibold text-white/90 bg-white/10 hover:bg-white/20 transition-all shrink-0">2. 120-Min Lesson Flow</a>
-      <a href="#pillar-3" class="px-3 py-1 rounded-md font-semibold text-white/90 bg-white/10 hover:bg-white/20 transition-all shrink-0">3. Continuous Assessment</a>
-      <a href="#pillar-4" class="px-3 py-1 rounded-md font-semibold text-white/90 bg-white/10 hover:bg-white/20 transition-all shrink-0">4. Student Portfolios</a>
-      <a href="#pillar-5" class="px-3 py-1 rounded-md font-semibold text-white/90 bg-white/10 hover:bg-white/20 transition-all shrink-0">5. Moodle SCORM 1.2</a>
-      <a href="#pillar-6" class="px-3 py-1 rounded-md font-semibold text-white/90 bg-white/10 hover:bg-white/20 transition-all shrink-0">6. Student GDPR Privacy</a>
-      <a href="#pillar-7" class="px-3 py-1 rounded-md font-semibold text-white/90 bg-white/10 hover:bg-white/20 transition-all shrink-0">7. DDRS &amp; Paper Saving</a>
-      <a href="#pillar-8" class="px-3 py-1 rounded-md font-semibold text-orange-200 bg-orange-600/30 hover:bg-orange-600/50 border border-orange-500/40 transition-all shrink-0">8. Moodle Outage Plan</a>
     </div>
 
-    <!-- Main Content Body -->
-    <main class="p-4 sm:p-8 bg-slate-50 space-y-6">
+    <!-- DOCUMENT VIEW CONTAINER (Continuous Full Page) -->
+    <div id="doc-view-container" class="hidden flex-1 bg-slate-50 p-4 sm:p-8 space-y-6">
 
-      <!-- Topic Grid: 8 Core Pillars -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-        <!-- Pillar 1: Curriculum Dual-Track -->
-        <article id="pillar-1" class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs flex flex-col justify-between print-break-inside">
-          <div>
-            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-              <div class="flex items-center gap-2.5">
-                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white font-bold flex items-center justify-center text-xs">01</span>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Curriculum Dual-Track: General vs. Technical</h3>
-              </div>
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-orange-50 text-orange-700 border border-orange-200">LV101E &amp; LV121E</span>
-            </div>
-            
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-              GSEA students take two distinct, complementary English courses each week. The platform unifies both syllabi into a single card deck while maintaining their distinct pedagogical identities:
-            </p>
-
-            <div class="space-y-3">
-              <div class="p-3.5 rounded-lg bg-slate-50 border border-slate-200/80">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-bold text-xs text-slate-800">General English (AG • LV101E)</span>
-                  <span class="text-[11px] font-medium text-slate-500">Fridays 08h00 – 10h00</span>
-                </div>
-                <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed">
-                  Focuses on global B2 conversational agility, socio-environmental debates, green mobility, intercultural communication, and diplomatic negotiation skills.
-                </p>
-              </div>
-
-              <div class="p-3.5 rounded-lg bg-orange-50/50 border border-orange-200/80">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-bold text-xs text-orange-950">Technical English (AT / AAS • LV121E)</span>
-                  <span class="text-[11px] font-medium text-orange-800">Wednesdays 13h15 – 15h15</span>
-                </div>
-                <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed">
-                  Focuses on operational communication: aerodrome infrastructure, aircraft anatomy, ground turnaround workflows, standard phrases, and de-escalating operational disruptions.
-                </p>
-              </div>
-            </div>
+      <!-- Executive Banner -->
+      <section class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white rounded-xl p-5 sm:p-6 shadow-md border border-slate-700">
+        <div class="max-w-4xl space-y-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-orange-300 bg-orange-500/20 border border-orange-400/30">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            ENAC • École Nationale de l'Aviation Civile • Département Langues
           </div>
-
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] font-medium text-slate-500">
-            <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
-            <span>Cardinal Principle: Language acquisition and operational fluency, not engineering theory.</span>
-          </div>
-        </article>
-
-        <!-- Pillar 2: 120-Minute Lesson Arc -->
-        <article id="pillar-2" class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs flex flex-col justify-between print-break-inside">
-          <div>
-            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-              <div class="flex items-center gap-2.5">
-                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white font-bold flex items-center justify-center text-xs">02</span>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Course Flow: The 120-Minute Lesson Arc</h3>
-              </div>
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">TBLT Methodology</span>
-            </div>
-            
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-              Every 2-hour session follows a structured, confidence-building Task-Based Language Teaching (TBLT) curve. Lessons are turnkey: any teacher or substitute can step in with zero setup friction:
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="font-black text-slate-700 text-[11px] bg-slate-200 px-1.5 py-0.5 rounded">Phase 1</span>
-                  <span class="font-bold text-slate-800">Warm-Up (15 min)</span>
-                </div>
-                <p class="text-[11px] text-slate-600 leading-snug">Current aviation news spot-check &amp; rapid diagnostic vocabulary warm-up.</p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="font-black text-slate-700 text-[11px] bg-slate-200 px-1.5 py-0.5 rounded">Phase 2</span>
-                  <span class="font-bold text-slate-800">Language Focus (25 min)</span>
-                </div>
-                <p class="text-[11px] text-slate-600 leading-snug">Practical sentence patterns, connecting words, and polite negotiation formulas.</p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-orange-50/60 border border-orange-200">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="font-black text-orange-800 text-[11px] bg-orange-200 px-1.5 py-0.5 rounded">Phase 3</span>
-                  <span class="font-bold text-orange-950">Simulation (45 min)</span>
-                </div>
-                <p class="text-[11px] text-slate-600 leading-snug">Collaborative pair/trio role-play based on authentic operational incident dossiers.</p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="font-black text-slate-700 text-[11px] bg-slate-200 px-1.5 py-0.5 rounded">Phase 4</span>
-                  <span class="font-bold text-slate-800">Wrap-Up (15 min)</span>
-                </div>
-                <p class="text-[11px] text-slate-600 leading-snug">Speech audio pronunciation drills + personal portfolio self-evaluation.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] font-medium text-slate-500">
-            <svg class="w-4 h-4 text-blue-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <span>Leaves 20 minutes buffer for detailed individualized teacher feedback.</span>
-          </div>
-        </article>
-
-        <!-- Pillar 3: Continuous Assessment -->
-        <article id="pillar-3" class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs flex flex-col justify-between print-break-inside">
-          <div>
-            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-              <div class="flex items-center gap-2.5">
-                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white font-bold flex items-center justify-center text-xs">03</span>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Continuous Assessment: Formative Evaluations</h3>
-              </div>
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-purple-50 text-purple-700 border border-purple-200">FE1 • FE2 • FE3</span>
-            </div>
-            
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-              Traditional high-stakes written exams are replaced by continuous oral assessment across three formative evaluations spaced across the 15-week semester:
-            </p>
-
-            <div class="space-y-2.5 text-xs">
-              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="px-2 py-0.5 rounded bg-slate-800 text-white font-mono text-[10px] font-bold shrink-0">4 SLOTS</span>
-                <div>
-                  <h4 class="font-bold text-slate-800">30-Minute Oral Tutorial Slots</h4>
-                  <p class="text-[11px] text-slate-600 mt-0.5">Exactly four 30-minute evaluation slots per 2-hour session (13h15–15h15 for AT, 08h00–10h00 for AG) ensure 100% promotion capacity with zero scheduling overflow.</p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="px-2 py-0.5 rounded bg-orange-600 text-white font-mono text-[10px] font-bold shrink-0">ROTAS</span>
-                <div>
-                  <h4 class="font-bold text-slate-800">Dynamic Rotating Pairs &amp; Trios</h4>
-                  <p class="text-[11px] text-slate-600 mt-0.5">Students are systematically paired and grouped in alternating pairs and trios across FE1, FE2, and FE3, ensuring every student communicates with diverse partners.</p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold shrink-0">RUBRICS</span>
-                <div>
-                  <h4 class="font-bold text-slate-800">Transparent Published Criteria</h4>
-                  <p class="text-[11px] text-slate-600 mt-0.5">Evaluation rubrics (Fluency, Operational Vocabulary, Interactive Communication, Task Completion) are openly visible inside the student deck to remove test anxiety.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
-            <span>Evaluation Dates: W48 (Nov), W03 (Jan), W08 (Feb)</span>
-            <span class="font-semibold text-purple-700">100% Oral Assessment</span>
-          </div>
-        </article>
-
-        <!-- Pillar 4: Student Digital Portfolios -->
-        <article id="pillar-4" class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs flex flex-col justify-between print-break-inside">
-          <div>
-            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-              <div class="flex items-center gap-2.5">
-                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white font-bold flex items-center justify-center text-xs">04</span>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Student Digital Portfolios</h3>
-              </div>
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">Self-Directed Learning</span>
-            </div>
-            
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-              Every student maintains a dedicated digital learning log linked directly to classroom sessions, empowering reflective practice and tracking measurable linguistic growth:
-            </p>
-
-            <div class="space-y-2.5 text-xs">
-              <div class="p-3 rounded-lg bg-emerald-50/40 border border-emerald-200/70">
-                <span class="font-bold text-emerald-950 block mb-0.5">1. Key Technical Vocabulary Learnt</span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  Students log aviation terms and professional phrases covered during the session, writing operational definitions and realistic context examples.
-                </p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="font-bold text-slate-800 block mb-0.5">2. Content &amp; Operations Review</span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  Students summarize aeronautical topics, ground procedures, or societal mobility debates explored during collaborative tasks.
-                </p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="font-bold text-slate-800 block mb-0.5">3. Personal Communication Goals</span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  Students identify specific pronunciation challenges, grammar patterns, or fluency hurdles to consolidate prior to the next formative evaluation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] font-medium text-slate-500">
-            <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-            <span>One-click export: Students can print or save their portfolio logs as PDF for teacher review.</span>
-          </div>
-        </article>
-
-        <!-- Pillar 5: Moodle SCORM 1.2 Integration -->
-        <article id="pillar-5" class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs flex flex-col justify-between print-break-inside">
-          <div>
-            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-              <div class="flex items-center gap-2.5">
-                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white font-bold flex items-center justify-center text-xs">05</span>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Moodle SCORM 1.2 &amp; Offline Architecture</h3>
-              </div>
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">SCORM Certified</span>
-            </div>
-            
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-              Packaged as a lightweight, certified SCORM 1.2 zip archive for ENAC eCampus / Moodle, combining deep LMS integration with zero reliance on external cloud services:
-            </p>
-
-            <ul class="space-y-2 text-xs text-slate-600">
-              <li class="flex items-start gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-orange-600 mt-1.5 shrink-0"></span>
-                <span><strong>Automated Gradebook Tracking:</strong> Real-time SCORM handshake logs session completion (<code class="font-mono text-[11px] bg-slate-100 px-1 py-0.5 rounded">cmi.core.lesson_status</code>) and quiz performance (<code class="font-mono text-[11px] bg-slate-100 px-1 py-0.5 rounded">cmi.core.score.raw</code>) directly to Moodle.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-orange-600 mt-1.5 shrink-0"></span>
-                <span><strong>Zero External CDNs:</strong> No Google Fonts, no external icon packs, no remote CSS frameworks. 100% of fonts, scripts, and vector assets are bundled locally.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-orange-600 mt-1.5 shrink-0"></span>
-                <span><strong>Client-Side Speech API:</strong> Uses native browser Web Speech API for interactive UK/US audio drills, eliminating megabytes of heavy pre-recorded audio files.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-orange-600 mt-1.5 shrink-0"></span>
-                <span><strong>Manifest Asset Verification:</strong> Automated build scripts verify all 44 bundled assets against <code class="font-mono text-[11px] bg-slate-100 px-1 py-0.5 rounded">imsmanifest.xml</code> before producing the release zip.</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
-            <span>Runs in any modern browser without plugins</span>
-            <span class="font-mono font-bold text-slate-700">6.95 MB Total Zip</span>
-          </div>
-        </article>
-
-        <!-- Pillar 6: Student Data Privacy (GDPR) -->
-        <article id="pillar-6" class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs flex flex-col justify-between print-break-inside">
-          <div>
-            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-              <div class="flex items-center gap-2.5">
-                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white font-bold flex items-center justify-center text-xs">06</span>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Student Data Privacy &amp; GDPR Compliance</h3>
-              </div>
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-teal-50 text-teal-700 border border-teal-200">100% PII Protected</span>
-            </div>
-            
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-              European and French GDPR regulations strictly forbid storing student personal data in cloud code repositories (GitHub) or AI pair-programming systems. We solved this with a secure pseudonymization architecture:
-            </p>
-
-            <div class="space-y-2.5 text-xs">
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="font-bold text-slate-800 block mb-0.5">1. Strict Codebase Pseudonymization</span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  The Git codebase and public repositories strictly use anonymous student tokens (<code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded">GRPA001</code>–<code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded">GRPA010</code>). Zero real names ever enter Git history or cloud logs.
-                </p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="font-bold text-slate-800 block mb-0.5">2. Protected Local Mapping File</span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  Real student names are stored solely on the course director's local workstation in <code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded">students.private.json</code>, permanently blocked by <code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded">.gitignore</code>.
-                </p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-teal-50/40 border border-teal-200/80">
-                <span class="font-bold text-teal-950 block mb-0.5">3. Dual Automated Packaging Pipeline</span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  <code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded">npm run package</code> produces an anonymous package for Git/previews. <code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded">npm run package:moodle</code> injects real names strictly into the final zip archive for eCampus, leaving the working directory completely anonymous.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2 text-[11px] font-medium text-teal-800">
-            <svg class="w-4 h-4 text-teal-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-            <span>Fully compliant with French CNIL and EU GDPR data privacy mandates.</span>
-          </div>
-        </article>
-
-        <!-- Pillar 7: DDRS & Paper Savings -->
-        <article id="pillar-7" class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs flex flex-col justify-between print-break-inside">
-          <div>
-            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-              <div class="flex items-center gap-2.5">
-                <span class="w-7 h-7 rounded-lg bg-slate-800 text-white font-bold flex items-center justify-center text-xs">07</span>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Environmental Impact &amp; Paper Savings (DDRS)</h3>
-              </div>
-              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">Eco-Conception</span>
-            </div>
-            
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-              ENAC and French higher education require active integration of sustainable development (DD&amp;RS). This platform demonstrates sustainability both technically and pedagogically:
-            </p>
-
-            <div class="space-y-3">
-              <div class="p-3.5 rounded-lg bg-emerald-50/50 border border-emerald-200">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-bold text-xs text-emerald-950">~1,700 to 2,200 Printed Pages Eliminated</span>
-                  <span class="text-[11px] font-bold text-emerald-700">Per Semester</span>
-                </div>
-                <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed">
-                  19 students across 15 weeks in 2 separate courses (AT and AG) previously consumed 3–4 pages of photocopied worksheets each session. Interactive digital worksheets replace paper completely, while still permitting 1-click printable PDF backups if needed.
-                </p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="font-bold text-xs text-slate-800 block mb-1">Digital Sobriety (Eco-Conception Numérique)</span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  Weighing under 7 MB, the platform uses client-side rendering and lightweight vector SVG graphics. It generates near-zero server emissions, requires no cloud bandwidth streaming, and runs smoothly on low-spec or older laptops.
-                </p>
-              </div>
-
-              <div class="p-3 rounded-lg bg-slate-50 border border-slate-200">
-                <span class="font-bold text-xs text-slate-800 block mb-1">Embedded Sustainability Curriculum</span>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  Ecological transition is not an afterthought; it is the thematic core of the course: SAF (Sustainable Aviation Fuels), noise abatement procedures, electric airport vehicles, and high-speed rail vs. air debates.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
-            <span>Directly supports ENAC DDRS institutional certification</span>
-            <span class="font-bold text-emerald-700">Zero Paper Waste</span>
-          </div>
-        </article>
-
-        <!-- Pillar 8: Moodle Downtime Contingency Plan -->
-        <article id="pillar-8" class="bg-white border-2 border-orange-300 rounded-xl p-5 sm:p-6 shadow-md flex flex-col justify-between print-break-inside bg-gradient-to-br from-white to-orange-50/30">
-          <div>
-            <div class="flex items-center justify-between pb-3 mb-4 border-b border-orange-200">
-              <div class="flex items-center gap-2.5">
-                <span class="w-7 h-7 rounded-lg bg-orange-600 text-white font-bold flex items-center justify-center text-xs">08</span>
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Moodle Downtime Contingency Plan</h3>
-              </div>
-              <span class="text-[11px] font-bold px-2.5 py-0.5 rounded bg-orange-100 text-orange-800 border border-orange-300">Operational Continuity</span>
-            </div>
-            
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mb-4">
-              Server outages and network interruptions can occur during academic terms. Our 3-tier contingency plan ensures zero instructional disruption if ENAC eCampus is temporarily offline:
-            </p>
-
-            <div class="space-y-3">
-              <!-- Tier 1 -->
-              <div class="p-3 rounded-lg bg-white border border-orange-200 shadow-2xs">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="font-black text-white text-[10px] bg-orange-600 px-2 py-0.5 rounded">TIER 1 • PRIMARY</span>
-                  <span class="font-bold text-xs text-slate-900">Direct Local USB / Folder Launch</span>
-                </div>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  Because the platform has zero external dependencies, instructors can launch <code class="font-mono text-[10px] bg-slate-100 px-1 py-0.5 rounded">index.html</code> directly from a USB flash drive or desktop folder on classroom computers. Runs 100% offline in Chrome, Safari, Edge, or Firefox without any internet or web server.
-                </p>
-              </div>
-
-              <!-- Tier 2 -->
-              <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="font-black text-white text-[10px] bg-slate-800 px-2 py-0.5 rounded">TIER 2 • BACKUP</span>
-                  <span class="font-bold text-xs text-slate-900">Emergency Cloud GitHub Pages Mirror</span>
-                </div>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  A live, anonymous mirror is maintained continuously at <span class="font-mono text-[10px] text-blue-700 font-bold break-all">powerforcemotiondrive-pixel.github.io/GSEA_semester_1/</span>. Teachers can display the short URL or QR code on the board; students connect on laptops or smartphones in seconds.
-                </p>
-              </div>
-
-              <!-- Tier 3 -->
-              <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs">
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="font-black text-white text-[10px] bg-slate-600 px-2 py-0.5 rounded">TIER 3 • FALLBACK</span>
-                  <span class="font-bold text-xs text-slate-900">1-Click Printable Handouts</span>
-                </div>
-                <p class="text-[11px] text-slate-600 leading-relaxed">
-                  Every lesson card features a built-in print action bar. If student devices run out of battery or hardware fails, teachers can print full activity sheets or save them as static PDF files on campus computers in seconds.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 pt-3 border-t border-orange-200 flex items-center justify-between text-[11px] text-orange-950 font-medium">
-            <span>Continuity Guaranteed</span>
-            <span class="font-bold text-orange-700">Zero Lost Teaching Hours</span>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- Comparison Table: Bespoke Vanilla Platform vs. Off-The-Shelf SaaS -->
-      <section class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs space-y-4 print-break-inside">
-        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
-          <div>
-            <h3 class="text-sm sm:text-base font-bold text-slate-900">Comparative Analysis: Bespoke Modern Web vs. Generic Authoring Tools</h3>
-            <p class="text-xs text-slate-500 mt-0.5">Objective evaluation of our architecture against commercial off-the-shelf tools (Articulate Storyline, Adobe Captivate)</p>
-          </div>
-          <span class="text-xs font-bold px-2.5 py-1 rounded bg-slate-100 text-slate-700">Engineering Review</span>
+          <h2 class="text-lg sm:text-2xl font-black text-white">
+            GSEA Semester 1 English Platform: Architecture, Pedagogy &amp; Operations
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            A zero-dependency, ultra-lightweight SCORM 1.2 digital learning platform designed specifically for civil aviation technician students (TSEEAC / IESSA). Built on modern web standards with zero cloud dependencies, it prioritizes spoken operational confidence, continuous oral evaluation, and student data protection within an eco-designed 6.95 MB package.
+          </p>
         </div>
 
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-xs border-collapse">
-            <thead>
-              <tr class="bg-slate-100 text-slate-700 font-bold uppercase tracking-wider text-[11px] border-b border-slate-200">
-                <th class="py-2.5 px-3">Evaluation Criteria</th>
-                <th class="py-2.5 px-3 text-orange-700 bg-orange-50/50">Our Bespoke Architecture</th>
-                <th class="py-2.5 px-3 text-slate-500">Commercial Authoring Tools</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100 text-slate-600">
-              <tr>
-                <td class="py-2.5 px-3 font-bold text-slate-800">Package Size &amp; Speed</td>
-                <td class="py-2.5 px-3 font-semibold text-orange-900 bg-orange-50/30">6.95 MB • Sub-second native DOM rendering</td>
-                <td class="py-2.5 px-3 text-slate-500">80–250 MB • Heavy canvas engines, slow startup</td>
-              </tr>
-              <tr>
-                <td class="py-2.5 px-3 font-bold text-slate-800">Licensing &amp; Annual Cost</td>
-                <td class="py-2.5 px-3 font-semibold text-orange-900 bg-orange-50/30">€0 • 100% Open source toolchain, zero vendor lock-in</td>
-                <td class="py-2.5 px-3 text-slate-500">Substantial annual recurring SaaS subscription per instructor</td>
-              </tr>
-              <tr>
-                <td class="py-2.5 px-3 font-bold text-slate-800">Curriculum Customization</td>
-                <td class="py-2.5 px-3 font-semibold text-orange-900 bg-orange-50/30">100% custom-tailored to ENAC timetables, FE rotas &amp; ICAO phraseology</td>
-                <td class="py-2.5 px-3 text-slate-500">Constrained by rigid pre-built quiz and slide templates</td>
-              </tr>
-              <tr>
-                <td class="py-2.5 px-3 font-bold text-slate-800">Data Privacy &amp; GDPR</td>
-                <td class="py-2.5 px-3 font-semibold text-orange-900 bg-orange-50/30">Built-in automated pseudonymization pipeline for Git and AI pair-programming</td>
-                <td class="py-2.5 px-3 text-slate-500">Student data frequently synced to third-party US cloud servers</td>
-              </tr>
-              <tr>
-                <td class="py-2.5 px-3 font-bold text-slate-800">Maintenance Profile (Trade-off)</td>
-                <td class="py-2.5 px-3 font-semibold text-orange-900 bg-orange-50/30">Requires code literacy (HTML/JS/CSS) or AI pair-programming for content updates</td>
-                <td class="py-2.5 px-3 text-emerald-700 font-semibold">Visual drag-and-drop editor allows non-technical text updates</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-4 border-t border-slate-700/80 text-center">
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+            <span class="block text-base sm:text-lg font-black text-orange-400">6.95 MB</span>
+            <span class="text-[10px] text-slate-300 font-medium">Self-Contained SCORM</span>
+          </div>
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+            <span class="block text-base sm:text-lg font-black text-emerald-400">~2,000</span>
+            <span class="text-[10px] text-slate-300 font-medium">Pages Paper Eliminated</span>
+          </div>
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+            <span class="block text-base sm:text-lg font-black text-purple-400">100% Oral</span>
+            <span class="text-[10px] text-slate-300 font-medium">Continuous FE Rotas</span>
+          </div>
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+            <span class="block text-base sm:text-lg font-black text-teal-400">GDPR Safe</span>
+            <span class="text-[10px] text-slate-300 font-medium">Pseudonymized Git</span>
+          </div>
         </div>
       </section>
 
-      <!-- Pedagogical Transparency & AI Disclosure -->
+      <!-- 8 Pillars Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="doc-cards-container">
+        <!-- Rendered dynamically from slide contents for 100% data parity -->
+      </div>
+
+      <!-- Pedagogical Transparency Notice -->
       <section class="p-4 bg-slate-100 border border-slate-200 rounded-xl flex items-start gap-3 text-xs text-slate-600 print-break-inside">
         <svg class="w-5 h-5 text-indigo-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
         <div class="space-y-1">
@@ -590,10 +660,10 @@
         </div>
       </section>
 
-    </main>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-slate-800 text-slate-400 px-6 py-4 border-t border-slate-900 flex flex-wrap items-center justify-between gap-3 text-xs">
+    <footer class="bg-slate-800 text-slate-400 px-6 py-3 border-t border-slate-900 flex flex-wrap items-center justify-between gap-3 text-xs shrink-0">
       <div class="flex items-center gap-2">
         <span class="font-bold text-white">ENAC GSEA English Semester 1</span>
         <span>•</span>
@@ -608,6 +678,146 @@
   </div>
 </div>
 
+<!-- Ultra-Lightweight Slide Show Engine (Zero External Dependencies) -->
+<script>
+  let currentSlide = 0;
+  const totalSlides = 10;
+  let viewMode = 'slides';
+
+  function initSlides() {
+    renderJumpDots();
+    updateSlideDisplay();
+    populateDocView();
+  }
+
+  function setViewMode(mode) {
+    viewMode = mode;
+    const slidesContainer = document.getElementById('slides-view-container');
+    const docContainer = document.getElementById('doc-view-container');
+    const btnSlides = document.getElementById('btn-mode-slides');
+    const btnDoc = document.getElementById('btn-mode-doc');
+
+    if (mode === 'slides') {
+      slidesContainer.classList.remove('hidden');
+      docContainer.classList.add('hidden');
+      btnSlides.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-orange-600 text-white shadow-xs";
+      btnDoc.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-slate-300 hover:text-white hover:bg-white/10";
+    } else {
+      slidesContainer.classList.add('hidden');
+      docContainer.classList.remove('hidden');
+      btnDoc.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-orange-600 text-white shadow-xs";
+      btnSlides.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-slate-300 hover:text-white hover:bg-white/10";
+    }
+  }
+
+  function updateSlideDisplay() {
+    for (let i = 0; i < totalSlides; i++) {
+      const slide = document.getElementById(`slide-${i}`);
+      if (slide) {
+        if (i === currentSlide) {
+          slide.classList.remove('hidden');
+        } else {
+          slide.classList.add('hidden');
+        }
+      }
+    }
+
+    const badge = document.getElementById('slide-counter-badge');
+    if (badge) badge.textContent = `Slide ${currentSlide + 1} of ${totalSlides}`;
+
+    const prevBtn = document.getElementById('btn-prev-slide');
+    const nextBtn = document.getElementById('btn-next-slide');
+    if (prevBtn) prevBtn.disabled = (currentSlide === 0);
+    if (nextBtn) nextBtn.disabled = (currentSlide === totalSlides - 1);
+
+    // Update Jump dots
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.getElementById(`dot-${i}`);
+      if (dot) {
+        if (i === currentSlide) {
+          dot.className = "w-2.5 h-2.5 rounded-full bg-orange-500 shadow-xs cursor-pointer";
+        } else {
+          dot.className = "w-2 h-2 rounded-full bg-slate-700 hover:bg-slate-500 transition-all cursor-pointer";
+        }
+      }
+    }
+  }
+
+  function renderJumpDots() {
+    const container = document.getElementById('slide-jump-dots');
+    if (!container) return;
+    let html = '';
+    for (let i = 0; i < totalSlides; i++) {
+      html += `<button id="dot-${i}" onclick="goToSlide(${i})" class="w-2 h-2 rounded-full bg-slate-700 hover:bg-slate-500 transition-all cursor-pointer" title="Go to slide ${i+1}"></button>`;
+    }
+    container.innerHTML = html;
+  }
+
+  function nextSlide() {
+    if (currentSlide < totalSlides - 1) {
+      currentSlide++;
+      updateSlideDisplay();
+    }
+  }
+
+  function prevSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateSlideDisplay();
+    }
+  }
+
+  function goToSlide(idx) {
+    if (idx >= 0 && idx < totalSlides) {
+      currentSlide = idx;
+      updateSlideDisplay();
+    }
+  }
+
+  function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(() => {});
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+  }
+
+  // Keyboard Navigation
+  document.addEventListener('keydown', (e) => {
+    if (viewMode !== 'slides') return;
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+      nextSlide();
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      prevSlide();
+    } else if (e.key === 'Home') {
+      goToSlide(0);
+    } else if (e.key === 'End') {
+      goToSlide(totalSlides - 1);
+    }
+  });
+
+  // Populate Document View from Slides
+  function populateDocView() {
+    const container = document.getElementById('doc-cards-container');
+    if (!container) return;
+    let cardsHtml = '';
+    for (let i = 1; i < totalSlides; i++) {
+      const slide = document.getElementById(`slide-${i}`);
+      if (slide) {
+        cardsHtml += `
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-3">
+            ${slide.innerHTML}
+          </div>
+        `;
+      }
+    }
+    container.innerHTML = cardsHtml;
+  }
+
+  window.addEventListener('DOMContentLoaded', initSlides);
+</script>
+
 </body>
 </html>
-
