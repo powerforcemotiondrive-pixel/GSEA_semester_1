@@ -72,26 +72,26 @@ The platform hosts two parallel English curricula sharing a unified flight-deck 
 - **Format**: 30-minute oral evaluation tutorials in dynamic pairs/trios (2 hours total per group per FE).
 - **19 Official Students**:
   - **Group A (10 students • 4 slots = 2h • 2 pairs + 2 trios)**:
-    1. BEDU Titouan
-    2. BEN HASSEN Ewan
-    3. MEYER Alexandre
-    4. LE BRAS Aine
-    5. ROBIN Louise
-    6. RENARD Ruben
-    7. ILPIDE Anatole
-    8. RASPILLER Thomas
-    9. RENAULT Guillaume
-    10. CAMGUILHEM Vincent
+    1. GRPA001
+    2. GRPA002
+    3. GRPA003
+    4. GRPA004
+    5. GRPA005
+    6. GRPA006
+    7. GRPA007
+    8. GRPA008
+    9. GRPA009
+    10. GRPA010
   - **Group B (9 students • 4 slots = 2h • 3 pairs + 1 trio)**:
-    1. SEVIN Brian
-    2. BENSMAINE Mohamed
-    3. DEBORDE Vincent
-    4. VILLAIN Maxime
-    5. SELLES Eliott
-    6. HAVA Peter
-    7. MARMANDE Justine
-    8. KUHN Aurianne
-    9. GADBIN Francois
+    1. GRPB001
+    2. GRPB002
+    3. GRPB003
+    4. GRPB004
+    5. GRPB005
+    6. GRPB006
+    7. GRPB007
+    8. GRPB008
+    9. GRPB009
 - **Rotations**: Pairs and trios dynamically rotate for every FE milestone so students experience different partners and alternate between early and late slots. Complete rotas are rendered in `admin.html`.
 
 ---

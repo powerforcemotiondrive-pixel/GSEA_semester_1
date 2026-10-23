@@ -20,3 +20,6 @@ dist/
 .env
 .env.local
 
+# Confidential student PII mapping (Never commit to Git)
+students.private.json
+

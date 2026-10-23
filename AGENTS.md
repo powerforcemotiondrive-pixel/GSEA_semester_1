@@ -66,6 +66,13 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 ### G. Automatic Atomic Commit & Push Protocol
 - **Single-Step Remote Synchronization**: Whenever the user instructs the assistant to `"Commit"` or `"Commit changes"`, the assistant MUST automatically execute **both** `git commit` AND `git push origin main` together in one seamless step, ensuring GitHub and GitHub Pages stay continuously synchronized with local progress.
 
+### H. Student Privacy, Pseudonymization & Offline Moodle Packaging Protocol
+- **Strict Codebase Anonymity**: The Git codebase (`src/`, `admin.html`, `index.html`) must NEVER contain real student names or PII. All student rosters and FE evaluation rotas must use anonymous identifiers (`GRPA001`–`GRPA010`, `GRPB001`–`GRPB009`).
+- **Private Mapping Security**: Real student names are stored exclusively in the local file `students.private.json`, which is permanently listed in `.gitignore` and must never be committed to Git. A placeholder template `students.private.example.json` is tracked by Git for onboarding.
+- **Dual Packaging Pipelines**:
+  1. `npm run package`: Generates `dist/GSEA_Semester_X_SCORM.zip` with 100% anonymous identifiers (safe for Git, GitHub Pages, and AI cloud pair-programming).
+  2. `npm run package:moodle`: Automatically injects real student names from `students.private.json` strictly into the output zip `dist/GSEA_Semester_X_SCORM_MOODLE.zip` for direct upload to ENAC Moodle / eCampus, leaving working directory files completely anonymous.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
