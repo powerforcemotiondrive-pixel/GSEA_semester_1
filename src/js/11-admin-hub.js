@@ -1392,4 +1392,148 @@
       `;
     }
 
+    function renderAdminPresentationTab(theme) {
+      const bodyEl = document.getElementById('modal-body');
+      bodyEl.innerHTML = `
+        <div class="space-y-6">
+          <!-- Hero Overview Card -->
+          <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white rounded-xl p-5 sm:p-6 shadow-md border border-slate-700">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold text-orange-300 bg-orange-500/20 border border-orange-400/30">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Faculty &amp; Colleague Executive Brief
+              </span>
+              <div class="flex items-center gap-2">
+                <a href="presentation.html" target="_blank" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold bg-orange-600 hover:bg-orange-700 text-white shadow-md transition-all cursor-pointer">
+                  <span>Open Fullscreen Presentation Deck</span>
+                  <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="text-base sm:text-xl font-black text-white tracking-tight">
+              GSEA English Semester 1: Platform Architecture, Pedagogy &amp; Operations
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed max-w-3xl">
+              A zero-dependency, ultra-lightweight SCORM 1.2 digital learning platform designed specifically for civil aviation technician students (TSEEAC / IESSA). Built on modern web standards with zero cloud dependencies, it prioritizes spoken operational confidence, continuous oral evaluation, and student data protection within an eco-designed 6.95 MB package.
+            </p>
+
+            <!-- Metrics Strip -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-4 border-t border-slate-700/80 text-center">
+              <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+                <span class="block text-base sm:text-lg font-black text-orange-400">6.95 MB</span>
+                <span class="text-[10px] text-slate-300 font-medium">Self-Contained SCORM</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+                <span class="block text-base sm:text-lg font-black text-emerald-400">~2,000</span>
+                <span class="text-[10px] text-slate-300 font-medium">Pages Paper Eliminated</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+                <span class="block text-base sm:text-lg font-black text-purple-400">100% Oral</span>
+                <span class="text-[10px] text-slate-300 font-medium">Continuous FE Rotas</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
+                <span class="block text-base sm:text-lg font-black text-teal-400">GDPR Safe</span>
+                <span class="text-[10px] text-slate-300 font-medium">Pseudonymized Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Summary Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Card 1 -->
+            <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-2xs space-y-2.5">
+              <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
+                <span class="w-6 h-6 rounded bg-slate-800 text-white font-bold text-xs flex items-center justify-center">1</span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-800">Curriculum Dual-Track &amp; 120-Min Lesson Flow</h4>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Unifies <strong>General English (AG • LV101E)</strong> and <strong>Technical English (AT • LV121E)</strong>. All sessions follow a predictable 4-phase Task-Based rhythm (News Warm-Up ➔ Language Focus ➔ Live Collaborative Simulation ➔ Pronunciation Wrap-Up), focusing strictly on spoken B2 fluency and de-escalation rather than theoretical engineering mechanics.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-2xs space-y-2.5">
+              <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
+                <span class="w-6 h-6 rounded bg-slate-800 text-white font-bold text-xs flex items-center justify-center">2</span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-800">Continuous Assessment &amp; Portfolios</h4>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Replaces written exams with 3 continuous oral formative evaluations (FE1, FE2, FE3) in 30-minute rotating pairs and trios (4 slots = 100% capacity). Rubrics are 100% transparent. In parallel, students maintain digital portfolios logging key technical vocabulary, operations reviews, and personal communication goals.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-2xs space-y-2.5">
+              <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
+                <span class="w-6 h-6 rounded bg-slate-800 text-white font-bold text-xs flex items-center justify-center">3</span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-800">Moodle SCORM &amp; GDPR Data Protection</h4>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Certified SCORM 1.2 package tracks progress and gradebook scores automatically with zero external CDNs. Solves student privacy (GDPR) via a dual-layer architecture: Git uses anonymous IDs (<code class="font-mono text-[10px] bg-slate-100 px-1 py-0.5 rounded">GRPA001</code>–<code class="font-mono text-[10px] bg-slate-100 px-1 py-0.5 rounded">GRPA010</code>), while real names live locally and are injected only on packaging for Moodle.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-2xs space-y-2.5">
+              <div class="flex items-center gap-2 pb-2 border-b border-slate-100">
+                <span class="w-6 h-6 rounded bg-slate-800 text-white font-bold text-xs flex items-center justify-center">4</span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-800">DDRS Paper Savings &amp; Digital Sobriety</h4>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Eliminates 1,700–2,200 printed pages of single-use worksheets per semester, directly supporting ENAC's DDRS sustainability commitments. Digital sobriety is engineered through an ultra-compact 6.95 MB bundle, native browser audio, and zero recurring server emissions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Downtime Contingency Strategy Box -->
+          <div class="bg-orange-50/70 border-2 border-orange-200 rounded-xl p-4 sm:p-5 shadow-2xs space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-orange-600"></span>
+                <h4 class="text-xs sm:text-sm font-bold text-orange-950 uppercase tracking-wide">
+                  Moodle Downtime Contingency Plan (3-Tier Fallback Strategy)
+                </h4>
+              </div>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-orange-200/70 text-orange-900">Zero Lost Teaching Hours</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white border border-orange-200 rounded-lg shadow-2xs">
+                <div class="font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+                  <span class="bg-orange-600 text-white text-[10px] px-1.5 py-0.5 rounded font-black">TIER 1</span>
+                  <span>Local USB / Folder Launch</span>
+                </div>
+                <p class="text-[11px] text-slate-600">Launch <code class="font-mono text-[10px] bg-slate-100 px-1 py-0.5 rounded">index.html</code> directly from a flash drive or desktop folder on classroom PCs. Runs 100% offline with zero internet.</p>
+              </div>
+              <div class="p-3 bg-white border border-orange-200 rounded-lg shadow-2xs">
+                <div class="font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+                  <span class="bg-slate-800 text-white text-[10px] px-1.5 py-0.5 rounded font-black">TIER 2</span>
+                  <span>Emergency Cloud Mirror</span>
+                </div>
+                <p class="text-[11px] text-slate-600">Live anonymous mirror at <span class="font-mono text-[10px] text-blue-700 font-bold break-all">powerforcemotiondrive-pixel.github.io/GSEA_semester_1/</span> accessible on student phones or tablets via board link.</p>
+              </div>
+              <div class="p-3 bg-white border border-orange-200 rounded-lg shadow-2xs">
+                <div class="font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+                  <span class="bg-slate-600 text-white text-[10px] px-1.5 py-0.5 rounded font-black">TIER 3</span>
+                  <span>1-Click Printable Handouts</span>
+                </div>
+                <p class="text-[11px] text-slate-600">Built-in print buttons on every lesson card generate clean paper worksheets or local PDF backups if student laptops run out of battery.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full Presentation Link Banner -->
+          <div class="p-4 bg-slate-100 border border-slate-200 rounded-xl flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+            <div class="flex items-center gap-2.5">
+              <svg class="w-5 h-5 text-orange-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Looking for the complete faculty presentation deck with detailed slide points and print view?</span>
+            </div>
+            <a href="presentation.html" target="_blank" class="inline-flex items-center gap-1.5 font-bold text-white bg-slate-800 hover:bg-slate-900 px-3.5 py-1.5 rounded-lg shadow-xs transition-all cursor-pointer shrink-0">
+              <span>Open Complete Presentation Deck →</span>
+            </a>
+          </div>
+        </div>
+      `;
+    }
+
+
 
