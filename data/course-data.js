@@ -143,74 +143,74 @@
         "session": 1,
         "objectives": {
           "title": "Session 1 - Introduction & Travel Anecdotes Objectives",
-          "summary": "By the end of this session, you will be able to navigate the TOEIC exam structure with confidence, use high-frequency travel and DDRS collocations, construct complex narrative sentences, and prepare for the Session 5 Formative Evaluation.",
+          "summary": "By the end of this session, you will be able to share engaging personal travel stories using narrative past tenses, use essential travel collocations, discuss global mobility dilemmas, and handle travel disruption conversations politely.",
           "items": [
             {
               "num": 1,
-              "title": "Understand the TOEIC Exam",
-              "description": "Master the structure, scoring system, and strategic pacing of the TOEIC Listening & Reading test, shifting from general language study to targeted exam technique."
+              "title": "Tell Engaging Personal Travel Stories",
+              "description": "Share a clear, entertaining travel anecdote about a memorable trip or travel mix-up using helpful storytelling words and time connectors."
             },
             {
               "num": 2,
-              "title": "Master High-Frequency Travel & Professional Collocations",
-              "description": "Identify and correctly utilize essential B2/C1-level travel collocations and idioms in professional and conversational contexts."
+              "title": "Master High-Frequency Travel Collocations & Idioms",
+              "description": "Accurately use essential B2 travel collocations (book in advance, clear customs, miss a connection) and common idioms (off the beaten track, hit the road) in conversation."
             },
             {
               "num": 3,
-              "title": "Use Narrative Past Tenses & Emphasis",
-              "description": "Use narrative past tenses (Past Simple vs. Past Continuous) and emphasis structures (Hardly had I..., No sooner had we...) to tell clear, engaging travel stories."
+              "title": "Use Narrative Past Tenses for Storytelling",
+              "description": "Combine the Past Simple, Past Continuous, and Past Perfect to describe background actions, main events, and earlier experiences in the order they happened."
             },
             {
               "num": 4,
-              "title": "Integrate DDRS Principles into Professional Travel",
-              "description": "Connect global travel scenarios to concepts of sustainable mobility, cultural respect, and responsible tourism."
+              "title": "Debate Everyday Travel Dilemmas",
+              "description": "Express and justify opinions on real-world travel dilemmas (trains vs. flights, baggage fees, biometric e-gates) using polite opinion phrases."
             },
             {
               "num": 5,
-              "title": "Prepare for the Class 5 Formative Evaluation (FE)",
-              "description": "Understand the exact assessment criteria—vocabulary, fluency, grammar, and TOEIC-readiness—for your Session 5 speaking evaluation, graded against official communication criteria."
+              "title": "Practice Polite Travel De-Escalation",
+              "description": "Handle customer service and passenger role-plays calmly during flight delays and missed connections, using polite and helpful language."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 1 Lesson Plan (2 Hours)",
-          "summary": "A structured 2-hour introductory agenda incorporating professional icebreakers, comprehensive TOEIC diagnostics and pacing strategies, travel and DDRS vocabulary building, structured narrative discussions, and formative evaluation guidelines.",
+          "summary": "A 2-hour interactive communicative session featuring personal travel anecdotes, an oral debate on modern travel dilemmas, essential travel collocations, narrative past tenses practice, a flight delay de-escalation role-play, and a 10-minute vocabulary review.",
           "items": [
             {
-              "time": "0-10",
-              "title": "Part 1: Travel News & Course Entry Warm-Up Check (10 mins)",
-              "description": "Discussing current travel headlines and checking foundational travel distinctions (layover vs. stopover, baggage allowance, direct flights) with partner recall."
+              "time": "00-15",
+              "title": "Part 1: Travel Anecdotes & Opening Spot-Check (15 mins)",
+              "description": "Tell a personal travel story about a memorable journey or travel glitch using helpful story words, followed by a quick check of foundational travel distinctions (layover vs. stopover, direct vs. non-stop)."
             },
             {
-              "time": "10-35",
-              "title": "Part 2: TOEIC Practice & Exam Strategy Workshop (25 mins)",
-              "description": "Breakdown of the 200-question Listening & Reading exam, scaled scoring (10–990), time management pacing benchmarks (Parts 5 & 6 in 20–22 mins; 10-second listening rule)."
+              "time": "15-35",
+              "title": "Part 2: Global Travel Dilemmas: Speed Discussion (20 mins)",
+              "description": "Speed discussions in pairs on 4 prominent travel dilemmas (trains vs. planes, cabin luggage fees, biometric e-gates, and tourist taxes) using key opinion phrases."
             },
             {
               "time": "35-55",
               "title": "Part 3: Essential Travel Collocations & Idioms (20 mins)",
-              "description": "Mastering high-frequency B2 collocations (book in advance, clear customs, miss a connection) and common idioms (off the beaten track, hit the road, in the driver's seat)."
+              "description": "Mastering high-frequency travel collocations (book in advance, clear customs, miss a connection) and common idioms (off the beaten track, hit the road, in the driver's seat) with interactive practice."
             },
             {
               "time": "55-80",
-              "title": "Part 4: Grammar Focus — Narrative Tenses & Storytelling Inversions (25 mins)",
-              "description": "Combining Past Simple and Past Continuous for setting scenes, and using high-impact inversions (Hardly had I... when... / No sooner had we... than...) for dramatic storytelling."
+              "title": "Part 4: Grammar Focus: Narrative Past Tenses & Story Sequencing (25 mins)",
+              "description": "Using Past Simple, Past Continuous, and Past Perfect together to tell clear, engaging travel stories in chronological order with natural connecting words."
             },
             {
               "time": "80-110",
-              "title": "Part 5: Travel Disruptions Role-Play & DDRS Sustainable Mobility (30 mins)",
-              "description": "De-escalating flight delays and missed connections in pairs, followed by analyzing carbon footprints across European travel modes (rail vs. air)."
+              "title": "Part 5: Role-Play Simulation: Flight Delay & Missing a Connection (30 mins)",
+              "description": "Practicing polite customer service and passenger de-escalation during a 2.5-hour delay with missed connections, focusing on clear explanations and active listening."
             },
             {
               "time": "110-120",
-              "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Exit Ticket (10 mins)",
-              "description": "Consolidation of the 18 introductory terms with audio pronunciation drill, word stress practice, and personal study log reflection."
+              "title": "Part 6: 10-Minute Vocabulary Review & Class Wrap-Up (10 mins)",
+              "description": "Final 10-minute consolidation: review of all 30 session vocabulary terms, pronunciation drill, and personal study log reflection."
             }
           ]
         },
         "revision": {
           "title": "Session 1: Introduction & Travel Anecdotes",
-          "summary": "Review the 18 key terms for Introduction & Travel Anecdotes to build your fluency in discussions, professional reading, and TOEIC practice.",
+          "summary": "Review the 30 key terms for Introduction & Travel Anecdotes to build your fluency in discussions, professional reading, and everyday travel conversations.",
           "terms": [
             {
               "num": "01",
@@ -301,6 +301,66 @@
               "num": "18",
               "term": "Carbon Footprint",
               "definition": "The total amount of greenhouse gases generated directly and indirectly by an individual&#x27;s travel activities."
+            },
+            {
+              "num": "19",
+              "term": "Stopover",
+              "definition": "A planned, longer stay (usually 24 hours or more) in a transit city before continuing to your final destination."
+            },
+            {
+              "num": "20",
+              "term": "Non-Stop Flight",
+              "definition": "A flight that travels from departure to arrival airport without landing anywhere in between."
+            },
+            {
+              "num": "21",
+              "term": "Excess Baggage",
+              "definition": "Checked or carry-on luggage that exceeds an airline's weight or size allowances, incurring additional fees."
+            },
+            {
+              "num": "22",
+              "term": "Travel Glitch",
+              "definition": "An unexpected minor problem or disruption during a journey that requires an adjustment of plans."
+            },
+            {
+              "num": "23",
+              "term": "Out of the Blue",
+              "definition": "An event, delay, or surprise happening completely unexpectedly and without prior warning."
+            },
+            {
+              "num": "24",
+              "term": "To My Relief",
+              "definition": "An expression used when a stressful or uncertain travel situation turns out well or is resolved."
+            },
+            {
+              "num": "25",
+              "term": "As Luck Would Have It",
+              "definition": "A storytelling phrase used to describe an unexpected piece of good or bad fortune while traveling."
+            },
+            {
+              "num": "26",
+              "term": "Duty of Care",
+              "definition": "An airline or travel provider's statutory obligation to provide refreshments and accommodation during prolonged delays."
+            },
+            {
+              "num": "27",
+              "term": "Boarding Gate Friction",
+              "definition": "Disagreements or delays at the boarding gate caused by oversized cabin luggage or seat disputes."
+            },
+            {
+              "num": "28",
+              "term": "High-Speed Rail",
+              "definition": "An electrified passenger train network operating at over 250 km/h, offering a low-carbon alternative to short flights."
+            },
+            {
+              "num": "29",
+              "term": "Biometric E-Gate",
+              "definition": "An automated airport border gate using facial recognition scanning to verify travelers quickly."
+            },
+            {
+              "num": "30",
+              "term": "De-escalation",
+              "definition": "Professional communication techniques used by ground staff to calm frustrated passengers during travel disruptions."
             }
           ]
         },
@@ -574,25 +634,46 @@
           },
           "openingSession": {
             "modeBadges": [
-              "👥 Pair Recall",
-              "⏱️ 5 min pairs + 5 min plenary",
-              "🗣️ Spoken Spot-Check"
+              "👥 Pair Storytelling",
+              "⏱️ 15 mins",
+              "🗣️ Spoken Anecdote",
+              "🎯 Narrative Fluency"
             ],
             "instructions": [
-              "Step 1 (Headlines - 3 mins): In pairs, ask each other: \"What major travel or transit news caught your eye this week?\" Share one headline and its significance.",
-              "Step 2 (Memory Recall - 4 mins): Take turns testing each other on the 4 foundational travel distinctions below without looking at the answers.",
-              "Step 3 (Verify - 3 mins): Click \"Reveal Answer\" to check your reasoning. Identify which distinction is easiest to confuse in spoken conversations."
+              "Step 1 (Think of a Trip - 2 mins): Think of a memorable travel experience (a flight delay, a missed train, a lost item, or a pleasant surprise). Review the useful words and phrases below.",
+              "Step 2 (Tell Your Story - 8 mins): In pairs, take turns telling your story (about 90 seconds to 2 minutes each). Use at least two useful words or phrases.",
+              "Step 3 (Ask & React - 2 mins): Listen actively to your partner and ask 2 follow-up questions about what happened.",
+              "Step 4 (Quick Check - 3 mins): Test each other on the 2 quick travel distinctions (Layover vs. Stopover, Direct vs. Non-stop)."
             ],
-            "deliverable": "Clearly explain one travel distinction during the teacher spot-check.",
-            "teacherNotes": "Cold-call 2 random pairs to define \"Layover vs. Stopover\" and \"Direct vs. Non-stop\". Clarify why airlines and booking portals define these differently. Board high-frequency collocations.",
-            "title": "Activity 1: Travel News & Course Entry Warm-Up Check (10 mins)",
-            "summary": "Every class begins with a 10-minute opening: discussing current travel headlines and checking our understanding of foundational travel terms.",
-            "newsPrompts": [
-              "What recent travel, transport, or tourism stories have you noticed in the headlines this week?",
-              "How are high-speed rail lines and airlines competing for travelers on popular European routes?"
+            "storyWords": [
+              "suddenly",
+              "unexpectedly",
+              "out of the blue",
+              "to my relief",
+              "in the end",
+              "as luck would have it"
             ],
+            "storyPhrases": {
+              "start": [
+                "A couple of years ago, I went on a trip to...",
+                "It all started when I was traveling to..."
+              ],
+              "event": [
+                "Everything was going well until...",
+                "Before we knew it, we realized that..."
+              ],
+              "ending": [
+                "To my relief, everything worked out when...",
+                "Looking back now, it was an unforgettable experience."
+              ]
+            },
+            "modelStory": "Two summers ago, my friends and I took a train from Munich to Salzburg. Everything was going smoothly until our train stopped in the countryside because of an engine problem. Before we knew it, we had missed our connection! Luckily, a friendly local passenger helped us find a bus, and we reached our hostel just in time. Looking back now, it turned an ordinary trip into a fun adventure.",
+            "deliverable": "Tell a 90-second personal travel story to your partner and explain one travel distinction.",
+            "teacherNotes": "Circulate to listen for past tense usage (Past Continuous for background, Past Simple for events). Invite two students with entertaining or relatable stories to share briefly with the class.",
+            "title": "Activity 1: Travel Anecdotes — My Most Memorable Trip (15 mins)",
+            "summary": "Share a personal travel anecdote about a memorable trip, unexpected travel glitch, or great adventure with your partner using helpful story words.",
             "diagnostic": {
-              "title": "Course Entry Warm-Up Check: Travel Vocabulary Check",
+              "title": "Quick Travel Distinction Check",
               "instructions": "Discuss each distinction in pairs, then click 'Reveal Answer' to verify your reasoning.",
               "questions": [
                 {
@@ -604,16 +685,6 @@
                   "id": 2,
                   "q": "What distinguishes a Direct Flight from a Non-Stop Flight?",
                   "answer": "A non-stop flight flies from your departure airport to your destination without landing anywhere in between. A direct flight keeps the same flight number and aircraft, but may make a brief intermediate stop to refuel or pick up passengers."
-                },
-                {
-                  "id": 3,
-                  "q": "What is the difference between Baggage Allowance and Excess Baggage?",
-                  "answer": "Baggage allowance is the specific weight and dimensions of checked and carry-on luggage included free with your ticket. Excess baggage refers to any bags exceeding those limits, requiring extra fees at check-in."
-                },
-                {
-                  "id": 4,
-                  "q": "What is the difference between Peak Season and Off-Peak (Low) Season?",
-                  "answer": "Peak season is the time of year when tourist demand is highest (summer holidays, festivals), bringing crowded destinations and high prices. Off-peak season offers lower prices, fewer crowds, and quieter travel conditions."
                 }
               ]
             }
@@ -623,21 +694,23 @@
               "👥 Speed-Dating Rotation",
               "⏱️ 4 min per dilemma",
               "🗣️ Spoken Debate",
-              "🎯 Agreement Signposts"
+              "🎯 Useful Opinion Phrases"
             ],
             "instructions": [
               "Step 1 (Pair Setup): Partner A defends the statement; Partner B provides the counter-argument using the Support/Counter prompts.",
-              "Step 2 (Timed Debate - 3 mins/topic): Speak for 90 seconds each. You MUST incorporate at least one target conversation signpost from the reference box below.",
+              "Step 2 (Timed Debate - 3 mins/topic): Speak for 90 seconds each. Incorporate at least one opinion phrase from the reference box below.",
               "Step 3 (Consensus & Rotate): Agree on a compromise position, record your partner's key point, and rotate to the next dilemma."
             ],
             "deliverable": "Summarize your partner's most convincing counter-argument during the class roundup.",
-            "teacherNotes": "Enforce active speed-dating rotation: call \"Switch roles!\" every 4 minutes. Circulate to check usage of polite disagreement signposts (\"While I see your point, ...\"). Board 2 exceptional student phrases.",
-            "title": "Activity 2: Global Travel Dilemmas: Speed Discussion (25 mins)",
-            "summary": "Conduct structured speed-dating interviews on 4 prominent travel dilemmas. Practice expressing clear agreement or disagreement, providing concrete reasons, and using polite conversation signposts.",
+            "teacherNotes": "Enforce active speed-dating rotation: call \"Switch roles!\" every 4 minutes. Circulate to check usage of polite opinion phrases (\"While I see your point, ...\"). Board 2 strong student phrases.",
+            "title": "Activity 2: Global Travel Dilemmas: Speed Discussion (20 mins)",
+            "summary": "Conduct structured speed discussions on 4 prominent travel dilemmas. Practice expressing clear agreement or disagreement, providing concrete reasons, and using polite phrases to express your opinion.",
             "signposts": [
               "\"In my view, travelers should definitely...\"",
               "\"While I understand the cost advantage, I believe that...\"",
               "\"We need to balance passenger comfort with environmental responsibility.\"",
+              "\"From my personal travel experience, ...\""
+            ],
               "\"From my personal travel experience, ...\""
             ],
             "topics": [
@@ -688,7 +761,7 @@
               "Step 3 (Peer Review - 4 mins): Compare answers with your partner, click \"Check Answer\", and analyze why the distractors are incorrect."
             ],
             "deliverable": "Achieve 4/4 on the practice quiz and record one new collocation in your personal study log.",
-            "teacherNotes": "Emphasize prepositional dependency: \"book in advance\", \"off the beaten track\". In the quiz, highlight TOEIC Part 5 distractor patterns (e.g. adverbs modifying participle clauses).",
+            "teacherNotes": "Encourage students to practice saying the collocations in full sentences. Focus on natural word partnerships (e.g. 'book in advance', 'clear customs').",
             "title": "Activity 3: Language Focus: Essential Travel Collocations & Idioms (20 mins)",
             "summary": "Master high-frequency B2 collocations and common idioms used in travel, tourism, and everyday transport contexts.",
             "items": [
@@ -771,19 +844,19 @@
           },
           "grammarClinic": {
             "modeBadges": [
-              "👤 Individual Prep + 👥 Spoken Exchange",
+              "👥 Spoken Practice",
               "⏱️ 10 min rules + 15 min storytelling",
-              "🎯 Past Perfect & Inversions"
+              "🎯 Past Tenses for Stories"
             ],
             "instructions": [
-              "Step 1 (Rule Master - 8 mins): Review the 3 narrative formulas: scene-setting (Past Continuous), sequence (Past Simple), and background trigger (Past Perfect).",
-              "Step 2 (Sentence Inversion - 7 mins): Complete the sentence inversion practice prompts. Click \"Show Model Answer\" to verify subject-auxiliary word order.",
-              "Step 3 (Storytelling Practice - 10 mins): In pairs, tell a 90-second personal travel anecdote about a flight delay, train mix-up, or lost item. Include at least one dramatic inversion (\"Hardly had I... when...\")."
+              "Step 1 (Understand the 3 Past Tenses - 8 mins): Review how Past Continuous sets the background, Past Simple describes the main events, and Past Perfect shows what happened earlier.",
+              "Step 2 (Sentence Practice - 7 mins): Practice combining tenses with the example prompts. Click \"Show Model Answer\" to check your sentences.",
+              "Step 3 (Mini-Story - 10 mins): With your partner, create a 3-sentence travel story using all three past tenses."
             ],
-            "deliverable": "Deliver a 90-second travel anecdote incorporating one negative inversion structure.",
-            "teacherNotes": "Watch for the common French false friend inversion error: ensure auxiliary verb precedes the subject (\"Hardly had I arrived...\", NOT \"Hardly I had arrived...\"). Invite one student with a dramatic anecdote to share with the whole class.",
-            "title": "Activity 4: Grammar Focus: Narrative Tenses & Storytelling Inversions (25 mins)",
-            "summary": "Use Past Simple and Past Continuous together to set scenes and describe sudden events. Then use inversion structures to tell dramatic travel stories.",
+            "deliverable": "Write or say a 3-sentence mini-story using Past Simple, Past Continuous, and Past Perfect.",
+            "teacherNotes": "Check that students use the Past Continuous for background actions and Past Simple for single completed events. Encourage natural story connectors.",
+            "title": "Activity 4: Grammar Focus: Narrative Past Tenses & Story Sequencing (25 mins)",
+            "summary": "Use Past Simple, Past Continuous, and Past Perfect together to tell travel stories clearly in the order they happened.",
             "rules": [
               {
                 "title": "1. Setting the Scene (Past Continuous + Past Simple)",
@@ -791,26 +864,26 @@
                 "example": "While we <strong>were waiting</strong> at the departure gate, the ground staff <strong>announced</strong> a gate change."
               },
               {
-                "title": "2. High-Impact Inversion: 'Hardly had... when...'",
-                "formula": "Hardly + had + Subject + V3 (Past Participle) + when + Past Simple",
-                "example": "<strong>Hardly had we stepped</strong> off the train <strong>when</strong> heavy rain began to fall."
+                "title": "2. What Happened First (Past Perfect)",
+                "formula": "had + Past Participle (for an action completed before another past moment)",
+                "example": "When we reached the platform, our train <strong>had already departed</strong>."
               },
               {
-                "title": "3. High-Impact Inversion: 'No sooner had... than...'",
-                "formula": "No sooner + had + Subject + V3 (Past Participle) + than + Past Simple",
-                "example": "<strong>No sooner had I cleared</strong> security <strong>than</strong> I realized I had left my passport at the café."
+                "title": "3. Connecting Events in Time",
+                "formula": "Time connectors: Just then, Suddenly, By the time, In the end",
+                "example": "<strong>By the time</strong> we arrived at the hotel, the reception <strong>had closed</strong>."
               }
             ],
             "practice": [
               {
                 "id": 1,
-                "prompt": "Rewrite this sentence with inversion: 'As soon as we arrived at the hotel, the power went out.'",
-                "answer": "Hardly had we arrived at the hotel when the power went out. / No sooner had we arrived at the hotel than the power went out."
+                "prompt": "Combine these ideas into one sentence: 'We were driving to the airport. Suddenly, the GPS stopped working.' (Use 'while' or 'as')",
+                "answer": "While we were driving to the airport, the GPS suddenly stopped working."
               },
               {
                 "id": 2,
-                "prompt": "Rewrite this sentence with inversion: 'I had just sat down in my seat when the captain made an announcement.'",
-                "answer": "No sooner had I sat down in my seat than the captain made an announcement."
+                "prompt": "Combine these ideas into one sentence: 'I arrived at the boarding gate at 10h15. The flight departed at 10h10.' (Use 'by the time' and Past Perfect)",
+                "answer": "By the time I arrived at the boarding gate, the flight had already departed."
               }
             ]
           },
@@ -863,14 +936,14 @@
               "🎯 Pronunciation Drill"
             ],
             "instructions": [
-              "Step 1 (Rapid Drill - 4 mins): Read the 18 session vocabulary items aloud with correct word stress and syllabic emphasis.",
-              "Step 2 (Personal Selection - 3 mins): Star 3 words that are completely new to you and write a personal workplace sentence for each.",
+              "Step 1 (Rapid Drill - 4 mins): Read the 30 session vocabulary items aloud with correct word stress and clear pronunciation.",
+              "Step 2 (Personal Selection - 3 mins): Star 3 words that are completely new to you and write a personal sentence for each.",
               "Step 3 (Exit Ticket - 3 mins): Complete the digital study log reflection prompt before leaving the session."
             ],
             "deliverable": "Submit your completed 3-sentence exit ticket and study log entry.",
             "teacherNotes": "Lead a choral pronunciation drill focusing on difficult phonemes: \"itinerary\" /aɪˈtɪnərəri/, \"infrastructure\", \"scheduled\". Collect quick verbal exit tickets at the door.",
             "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Exit Ticket (10 mins)",
-            "summary": "Consolidate today's learning: review the pronunciation of all 18 key terms, check your word stress, and write one reflection in your study log.",
+            "summary": "Consolidate today's learning: review the pronunciation of all 30 key terms, check your word stress, and write one reflection in your study log.",
             "vocabWords": [
               "Itinerary",
               "Layover",
@@ -889,11 +962,23 @@
               "Peak Season",
               "Red-Eye Flight",
               "Eco-Tourism",
-              "Carbon Footprint"
+              "Carbon Footprint",
+              "Stopover",
+              "Non-Stop Flight",
+              "Excess Baggage",
+              "Travel Glitch",
+              "Out of the Blue",
+              "To My Relief",
+              "As Luck Would Have It",
+              "Duty of Care",
+              "Boarding Gate Friction",
+              "High-Speed Rail",
+              "Biometric E-Gate",
+              "De-escalation"
             ],
             "reflectionPrompts": [
-              "Which travel collocation or idiom from today will you use in your next conversation?",
-              "Write one sentence using narrative inversion ('Hardly had I...' or 'No sooner had we...') about a past trip."
+              "Which travel collocation or story word from today will you use in your next conversation?",
+              "Write one sentence using narrative past tenses (Past Continuous + Past Simple) about a past trip."
             ]
           }
         }
@@ -9049,7 +9134,7 @@
             {
               "time": "10-35",
               "title": "Part 2: The Global Aviation Survey (25 mins)",
-              "description": "Speed-dating interviews: paired discussions on 4 prominent commercial dilemmas (in-flight alcohol caps, low-cost carrier fees, cockpit defense, and space tourism ethics) using formal opinion signposts."
+              "description": "Speed-dating interviews: paired discussions on 4 prominent commercial dilemmas (in-flight alcohol caps, low-cost carrier fees, cockpit defense, and space tourism ethics) using formal phrases to express viewpoints and justify opinions."
             },
             {
               "time": "35-60",
@@ -9069,7 +9154,7 @@
             {
               "time": "110-120",
               "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: rapid recall of the 18 introductory terms, word stress and syllable drill, personal learning reflection, and portfolio logging."
+              "description": "Final 10-minute consolidation: rapid recall of the 30 introductory terms, word stress and syllable drill, personal learning reflection, and portfolio logging."
             }
           ]
         },
@@ -9092,9 +9177,9 @@
               "Step 3 (Check - 3 mins): Click \"Reveal Answer\" to verify the exact ICAO/operational definitions."
             ],
             "deliverable": "Clearly explain the operational distinction between one pair of roles.",
-            "teacherNotes": "Focus on professional aviation register. Board the core acronyms: AODB, TRC, GPU, GSE. Elicit why clear role boundaries prevent airside safety incidents.",
+            "teacherNotes": "Focus on professional aviation register. Board the core acronyms: AODB (Airport Operational Database), TRC (Turnaround Coordinator), GPU (Ground Power Unit), GSE (Ground Support Equipment). Elicit why clear role boundaries between airlines, aerodrome operators, and ground handlers prevent airside safety incidents.",
             "title": "Activity 1: Aviation News & Course Entry Warm-Up Check (10 mins)",
-            "summary": "Every class begins with a 10-minute professional opening: analyzing current aviation headlines and testing our understanding of foundational aviation distinctions.",
+            "summary": "Every class begins with a 10-minute professional opening: analyzing current aviation headlines and discussing recent news stories and events from the world of aviation.",
             "newsPrompts": [
               "What major commercial aviation, airline, or airport developments have you noticed in the headlines this week?",
               "How are international airlines and aerodrome authorities balancing post-pandemic passenger traffic surges with passenger satisfaction and environmental commitments?"
@@ -9131,17 +9216,18 @@
               "👥 Speed-Dating Rotation",
               "⏱️ 4 min per dilemma",
               "🗣️ Technical Debate",
-              "🎯 Professional Signposts"
+              "🎯 Useful Opinion Phrases"
             ],
             "instructions": [
               "Step 1 (Pairing): Review Topic 01–04. Partner A argues for stricter regulation; Partner B defends economic flexibility.",
-              "Step 2 (Timed Debate - 3 mins/topic): Debate each statement. Both speakers MUST incorporate one signpost phrase from the reference box below.",
-              "Step 3 (Class Consensus): Vote on Topic 01 (Cockpit Defense) and Topic 03 (Turnaround Targets) with a show of hands."
+              "Step 2 (Timed Debate - 3 mins/topic): Debate each statement. Both speakers MUST incorporate at least one opinion phrase from the reference box below.",
+              "Step 3 (Class Consensus): Vote on Topic 01 (Cockpit Defense) and Topic 03 (Turnaround Targets) with a show of hands.",
+              "Step 4 (Speed-Dating Rotation): Partner A stays in place; Partner B rotates clockwise to a new discussion partner."
             ],
             "deliverable": "Summarize your partner's argument and deliver a 30-second spoken consensus.",
             "teacherNotes": "Keep pace brisk. Ring a bell at 4 minutes to force rotation. Note down grammatical errors with modal verbs (\"must to comply\" -> \"must comply\") for the upcoming Language Clinic.",
             "title": "Activity 2: The Global Aviation Survey (25 mins)",
-            "summary": "Conduct structured speed-dating interviews on 4 prominent commercial aviation dilemmas. Practice expressing nuanced agreement, providing concrete justifications, and using professional opinion signposts.",
+            "summary": "Conduct structured speed-dating interviews on 4 prominent commercial aviation dilemmas. Practice expressing nuanced agreement, providing concrete justifications, and using professional phrases to structure your arguments.",
             "signposts": [
               "\"From an operational standpoint, I believe...\"",
               "\"While I understand the commercial justification, I would argue that...\"",
@@ -9160,10 +9246,10 @@
               {
                 "id": 2,
                 "badge": "Low-Cost vs Legacy Carriers",
-                "statement": "Do budget airlines (Low-Cost Carriers) democratize air travel, or do unbundled fees (ancillary revenues for carry-ons, seat selection, and water) degrade passenger dignity?",
-                "pro": "Unbundled pricing allows budget-conscious passengers, students, and families to travel across Europe for very low base fares, paying only for the exact services they need.",
-                "con": "Hidden ancillary fees confuse travelers, generate boarding gate friction over carry-on bag dimensions, and increase ground staff stress.",
-                "prompt": "Interview your partner: How do ancillary baggage fees impact gate boarding efficiency and ground staff workload?"
+                "statement": "Have budget airlines (Low-Cost Carriers) made flying accessible to everyone, or do extra charges for hand luggage, seat selection, and water make travel frustrating for passengers?",
+                "pro": "Low base fares allow students, families, and budget travelers to fly easily across Europe, paying only for the specific services they choose.",
+                "con": "Extra fees for carry-on bags and basic drinks create confusion, slow down gate boarding, and cause unnecessary stress for passengers and ground staff.",
+                "prompt": "Interview your partner: How do extra baggage fees affect boarding times and ground staff workload?"
               },
               {
                 "id": 3,
@@ -9354,7 +9440,7 @@
             "framework": [
               {
                 "step": "1. State the Core Claim",
-                "desc": "Clearly express your team's stance using formal opinion signposts.",
+                "desc": "Clearly express your team's stance using formal opinion expressions.",
                 "phrase": "\"Our working group firmly maintains that...\""
               },
               {
@@ -9386,14 +9472,14 @@
               "🎯 Pronunciation Drill"
             ],
             "instructions": [
-              "Step 1 (Pronunciation - 4 mins): Practice pronouncing the 18 core terms with emphasis on word stress (e.g., ca'pacity, co'mpliance, tur'naround).",
+              "Step 1 (Pronunciation - 4 mins): Practice pronouncing the 30 core terms with emphasis on word stress (e.g., ca'pacity, co'mpliance, tur'naround).",
               "Step 2 (Sentence Drill - 3 mins): Write 2 original operational sentences combining at least 3 target terms.",
               "Step 3 (Formative Evaluation Check - 3 mins): Review the FE1 criteria card and note one personal speaking skill to develop for next week."
             ],
             "deliverable": "Complete the session exit ticket and submit your self-assessment log.",
             "teacherNotes": "Lead choral repetition on tricky stress patterns: \"au'thority\", \"juris'diction\", \"con'tingency\". Remind students about next week's Session 2 content.",
             "title": "Activity 6: 10-Minute Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-            "summary": "Consolidate today's 18 vocabulary terms, test your word stress, and update your personal English learning portfolio.",
+            "summary": "Consolidate today's 30 vocabulary terms, test your word stress, and update your personal English learning portfolio.",
             "reviewPrompts": [
               {
                 "title": "Rapid Terminology Match",
@@ -9412,7 +9498,7 @@
         },
         "revision": {
           "title": "Session 1 Revision - Introduction & Aviation Survey",
-          "summary": "Master the 18 key vocabulary terms for the Introduction & Aviation Survey to discuss security dilemmas, low-cost operations, alternative propulsion, and passenger rights.",
+          "summary": "Master the 30 key vocabulary terms for the Introduction & Aviation Survey to discuss security dilemmas, low-cost operations, alternative propulsion, and passenger rights.",
           "terms": [
             {
               "num": "01",
@@ -9503,6 +9589,66 @@
               "num": "18",
               "term": "Turnaround Time (TAT)",
               "definition": "The duration an aircraft remains parked at a gate between arriving from one flight and departing on the next."
+            },
+            {
+              "num": "19",
+              "term": "Airside",
+              "definition": "The secure operational zone of an airport beyond security control, including boarding gates, ramps, taxiways, and runways."
+            },
+            {
+              "num": "20",
+              "term": "Landside",
+              "definition": "The public terminal areas (check-in desks, arrivals concourse, public parking) accessible without a boarding pass or security screening."
+            },
+            {
+              "num": "21",
+              "term": "Aerodrome Operator",
+              "definition": "The managing authority responsible for operating, maintaining, and certifying airport infrastructure, runways, and safety services."
+            },
+            {
+              "num": "22",
+              "term": "Airport Operational Database (AODB)",
+              "definition": "The central IT system that stores, manages, and updates real-time flight schedules, stand allocations, and gate changes."
+            },
+            {
+              "num": "23",
+              "term": "Turnaround Coordinator (TRC)",
+              "definition": "The airside specialist who manages and synchronizes all ground handling activities between an aircraft's arrival and departure."
+            },
+            {
+              "num": "24",
+              "term": "Ground Power Unit (GPU)",
+              "definition": "A mobile generator or stand-mounted unit that supplies external electrical power to an aircraft while its engines and APU are turned off."
+            },
+            {
+              "num": "25",
+              "term": "Ground Support Equipment (GSE)",
+              "definition": "Specialized apron vehicles and equipment (tugs, belt loaders, stairs, de-icers) used to service aircraft on the ramp."
+            },
+            {
+              "num": "26",
+              "term": "Scheduled Flight",
+              "definition": "A commercial flight operated according to a published, regular timetable regardless of passenger load."
+            },
+            {
+              "num": "27",
+              "term": "Charter Flight",
+              "definition": "An aircraft hired for a specific private or group itinerary outside the regular published timetable."
+            },
+            {
+              "num": "28",
+              "term": "Duty of Care",
+              "definition": "The statutory legal obligation of airlines under EU261 to provide food, drinks, communication, and hotel accommodation to passengers during prolonged flight delays."
+            },
+            {
+              "num": "29",
+              "term": "Extraordinary Circumstances",
+              "definition": "Unforeseeable and unavoidable operational events (e.g., severe volcanic ash, ATC strikes, unforecast microbursts) that legally exempt airlines from paying cash compensation under EU261."
+            },
+            {
+              "num": "30",
+              "term": "De-escalation",
+              "definition": "Professional communication strategies used by airport ground staff and cabin crew to calm angry or distressed passengers during delays and flight disruptions."
             }
           ]
         },
