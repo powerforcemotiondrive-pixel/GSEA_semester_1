@@ -711,8 +711,6 @@
               "\"We need to balance passenger comfort with environmental responsibility.\"",
               "\"From my personal travel experience, ...\""
             ],
-              "\"From my personal travel experience, ...\""
-            ],
             "topics": [
               {
                 "id": 1,
