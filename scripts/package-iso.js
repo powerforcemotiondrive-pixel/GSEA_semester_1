@@ -74,10 +74,13 @@ const readmeContent = `=========================================================
 ENAC GSEA SEMESTER 1 ENGLISH PORTAL — READ-ONLY OFFLINE EDITION
 ======================================================================
 
-HOW TO LAUNCH:
-1. Double-click "index.html" to launch the full interactive course deck.
-2. To access Course Administration directly, open "admin.html".
-3. To access the Project Presentation deck, open "presentation.html".
+QUICK START:
+Double-click "index.html" in this folder.
+
+This is the ONLY file you need to open. 
+The entire learning portal, interactive course modules, audio tracks,
+course administration hub, and project presentation are all integrated
+and accessible directly from inside index.html.
 
 COMPATIBILITY:
 - Windows 10 & 11 (PC): Automatically mounts as a Virtual DVD Drive.
