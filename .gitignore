@@ -11,6 +11,8 @@ node_modules/
 dist/
 *.zip
 *.tar.gz
+*.iso
+*.dmg
 
 # IDE and editor settings
 .vscode/
