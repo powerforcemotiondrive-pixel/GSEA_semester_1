@@ -601,9 +601,12 @@
       </div>
 
       <!-- Bottom status footer -->
-      <footer class="bg-slate-50 border-t border-slate-200 px-3 py-2 text-[11px] text-slate-500 flex justify-between items-center shrink-0 rounded-b-2xl">
-        <span id="footer-status" class="font-medium text-slate-700">Ready</span>
-        <span id="footer-curriculum-label" class="font-medium">GSEA Semester 1 General English (AG) • Phil PARRIS (LH/LAN) • <span class="font-mono text-slate-400 font-semibold">v1.2.0</span></span>
+      <footer class="textured-surface bg-[#1f2937] border-t border-[#111827] px-3.5 py-2.5 text-[11px] text-slate-300 flex justify-between items-center shrink-0 rounded-b-2xl shadow-inner">
+        <div class="flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="footer-status" class="font-medium text-slate-200">Ready</span>
+        </div>
+        <span id="footer-curriculum-label" class="font-medium text-slate-300">GSEA Semester 1 General English (AG) • Phil PARRIS (LH/LAN) • <span class="font-mono text-emerald-400 font-bold bg-black/40 px-1.5 py-0.5 rounded border border-white/10 text-[10px]">v1.2.0</span></span>
       </footer>
     </div>
 
@@ -667,14 +670,14 @@
         </div>
 
         <!-- Drawer Footer -->
-        <footer class="bg-white border-t border-slate-200 px-4 py-2.5 sm:px-6 sm:py-3 pb-[max(0.625rem,env(safe-area-inset-bottom))] flex items-center justify-between text-xs text-slate-500 shrink-0">
+        <footer class="textured-surface bg-[#1f2937] border-t border-[#111827] px-4 py-2.5 sm:px-6 sm:py-3 pb-[max(0.625rem,env(safe-area-inset-bottom))] flex items-center justify-between text-xs text-slate-300 shrink-0 shadow-inner">
           <div class="flex items-center gap-2">
-            <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span id="modal-scorm-status" class="font-medium">SCORM 1.2 Connected • Active Tracking</span>
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span id="modal-scorm-status" class="font-medium text-slate-200">SCORM 1.2 Connected • Active Tracking</span>
           </div>
-          <button type="button" onclick="closeModalDrawer()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 active:bg-slate-200 text-slate-700 font-bold text-xs shadow-2xs hover:shadow-xs transition-all cursor-pointer">
+          <button type="button" onclick="closeModalDrawer()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs shadow-xs transition-all cursor-pointer">
             <span>Close Drawer</span>
-            <kbd class="font-mono text-[10px] text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200">Esc</kbd>
+            <kbd class="font-mono text-[10px] text-slate-400 bg-slate-900 px-1.5 py-0.5 rounded border border-slate-700">Esc</kbd>
           </button>
         </footer>
 

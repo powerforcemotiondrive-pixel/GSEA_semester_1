@@ -59,8 +59,8 @@ console.log(`📍 Destination: ${destDir}`);
 console.log(`🏷️  Archive:     ${zipFilename}\n`);
 
 try {
-  // Zip entire project directory excluding heavy transient folders (node_modules, .git) & macOS artifacts
-  const zipCmd = `zip -r -q "${zipFilePath}" . -x "*.DS_Store" "*node_modules*" "*.git*"`;
+  // Zip entire project source directory excluding heavy build outputs, packages, node_modules, .git & macOS artifacts
+  const zipCmd = `zip -r -q "${zipFilePath}" . -x "*.DS_Store" "*node_modules*" "*.git*" "*dist*" "*.zip" "*.iso" "*.dmg"`;
   execSync(zipCmd, { cwd: sourceDir, stdio: 'inherit' });
 
   const stats = fs.statSync(zipFilePath);
