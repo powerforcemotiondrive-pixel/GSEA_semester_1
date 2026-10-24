@@ -478,6 +478,10 @@
           <button id="next-btn" class="flex items-center space-x-1 bg-[#ea580c] hover:bg-[#c2410c] active:bg-[#9a3412] text-white px-3.5 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-xs hover:shadow-sm disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer hover:-translate-y-[1px] active:translate-y-0" type="button">
             <span class="pointer-events-none">Next</span>
           </button>
+          <button id="deck-fullscreen-btn" type="button" onclick="toggleDeckFullScreen()" class="hidden md:inline-flex items-center justify-center p-2 rounded-lg bg-[#1f2937] hover:bg-[#111827] active:bg-[#0f172a] text-slate-200 hover:text-white border border-[#111827] shadow-xs hover:shadow-sm hover:-translate-y-[1px] active:translate-y-0 transition-all cursor-pointer" title="Toggle Fullscreen" aria-label="Toggle Fullscreen">
+            <svg id="deck-fs-icon-expand" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+            <svg id="deck-fs-icon-compress" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 4v4H4m0 0l5-5M16 4v4h4m0 0l-5-5M8 20v-4H4m0 0l5 5M16 20v-4h4m0 0l-5 5"/></svg>
+          </button>
         </div>
       </header>
 

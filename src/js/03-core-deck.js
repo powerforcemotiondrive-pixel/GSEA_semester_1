@@ -65,6 +65,20 @@
         });
       }
 
+      // Fullscreen change listener to sync deck expand/compress icons
+      const updateDeckFsIcons = () => {
+        const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+        const expandIcon = document.getElementById('deck-fs-icon-expand');
+        const compressIcon = document.getElementById('deck-fs-icon-compress');
+        const btn = document.getElementById('deck-fullscreen-btn');
+        if (expandIcon) expandIcon.classList.toggle('hidden', isFs);
+        if (compressIcon) compressIcon.classList.toggle('hidden', !isFs);
+        if (btn) btn.title = isFs ? "Exit Fullscreen" : "Toggle Fullscreen";
+      };
+
+      document.addEventListener('fullscreenchange', updateDeckFsIcons);
+      document.addEventListener('webkitfullscreenchange', updateDeckFsIcons);
+
       // Mouse wheel / trackpad scroll listener on the ribbon to cycle through modules
       const navContainer = document.getElementById('flight-deck-ribbon');
       if (navContainer) {
@@ -1196,6 +1210,23 @@
         if ('speechSynthesis' in window) window.speechSynthesis.cancel();
       }, 300);
     }
+
+    function toggleDeckFullScreen() {
+      if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        if (document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else if (document.documentElement.webkitRequestFullscreen) {
+          document.documentElement.webkitRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+    }
+    window.toggleDeckFullScreen = toggleDeckFullScreen;
 
     window.syncPortfolioDrawerHeader = function(trackKey) {
       const activeTrack = trackKey || 'ag';
