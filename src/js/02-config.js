@@ -51,7 +51,7 @@
           card2: isAas ? "images/aas_m1card2.jpg" : "images/ag_m1card2.jpg",
           card3: isAas ? "images/aas_m1card3.jpg" : "images/ag_m1card3.jpg",
           card4: isAas ? "images/aas_m1card4.jpg" : "images/ag_m1card4.jpg",
-          fe: "images/fe_progress_check.png",
+          fe: "images/fe_progress_check.jpg",
           ddrs: isAas ? "images/ddrs_aas_mod1.jpg" : "images/ddrs_ag_mod1.jpg",
           admin: "images/course_admin.jpg"
         },
@@ -60,7 +60,7 @@
           card2: isAas ? "images/aas_m2card2.jpg" : "images/ag_m2card2.jpg",
           card3: isAas ? "images/aas_m2card3.jpg" : "images/ag_m2card3.jpg",
           card4: isAas ? "images/aas_m2card4.jpg" : "images/ag_m2card4.jpg",
-          fe: "images/fe_progress_check.png",
+          fe: "images/fe_progress_check.jpg",
           ddrs: isAas ? "images/ddrs_aas_mod2.jpg" : "images/ddrs_ag_mod2.jpg",
           admin: "images/course_admin.jpg"
         },
@@ -69,7 +69,7 @@
           card2: isAas ? "images/aas_m3card2.jpg" : "images/ag_m3card2.jpg",
           card3: isAas ? "images/aas_m3card3.jpg" : "images/ag_m3card3.jpg",
           card4: isAas ? "images/aas_m3card4.jpg" : "images/ag_m3card4.jpg",
-          fe: "images/fe_progress_check.png",
+          fe: "images/fe_progress_check.jpg",
           ddrs: isAas ? "images/ddrs_aas_mod3.jpg" : "images/ddrs_ag_mod3.jpg",
           admin: "images/course_admin.jpg"
         }
@@ -192,7 +192,7 @@
           title: "Semester Objectives",
           description: "Here you can find the complete objectives for the full semester 1.<br><br><em>Subject overview:</em> Comprehensive pedagogical roadmap, learning outcomes, and assessment benchmarks for GSEA Semester 1.<br><br>Consult the full bilingual syllabus (English & French) covering continuous assessment, professional development, technical communication, and evaluation criteria.",
           isObjectives: true,
-          imageUrl: "images/semester_objectives.png"
+          imageUrl: "images/semester_objectives.jpg"
         }
       ];
 

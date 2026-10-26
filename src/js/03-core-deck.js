@@ -472,7 +472,7 @@
           <div class="grid grid-cols-2 sm:grid-cols-5 gap-y-2 gap-x-2.5">
             <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Fluency')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Fluency</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈfluː.ən.si/</span></div>
             <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Grammar')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Grammar</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈɡræm.ər/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Technical Vocabulary')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Technical Vocabulary</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈtek.nɪ.kəl vəˈkæb/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Vocabulary')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Vocabulary</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/vəˈkæb.jʊ.lər.i/</span></div>
             <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Pronunciation')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Pronunciation</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/prəˌnʌn.siˈeɪ.shən/</span></div>
             <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Comprehension')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Comprehension</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌkɒm.prɪˈhen.ʃən/</span></div>
             <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Discussion')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Discussion</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/dɪˈskʌʃ.ən/</span></div>
@@ -668,8 +668,10 @@
       });
     }
 
+    const RESOURCE_GUIDE_TEXT = "In the resources section you will find class plans, class content, formative evaluation details, vocabulary lists and other revision materials to help you with your formative evaluation preparation.";
+
     function formatCardDescription(rawDesc, page, cardIdx) {
-      if (!rawDesc) return '';
+      if (!rawDesc) return { leadHtml: '', calloutsHtml: '' };
 
       // Check if Session 6 (DDRS card)
       if (page.detailsUrl || cardIdx === 5) {
@@ -679,34 +681,41 @@
           const areasText = parts[1].replace(/<strong>Key areas covered:<\/strong>\s*/i, '').trim();
           const whyText = parts[2].replace(/<strong>Why we discuss DDRS in English:<\/strong>\s*/i, '').trim();
 
-          return `
-            <div class="space-y-3">
-              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
-                <strong class="font-bold text-slate-900">Definition:</strong> ${defText}
+          const leadHtml = `
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+              <strong class="font-bold text-slate-900">Definition:</strong> ${defText}
+            </p>
+            <p class="text-[11.5px] sm:text-xs text-slate-500 leading-relaxed font-normal">
+              ${RESOURCE_GUIDE_TEXT}
+            </p>
+          `;
+
+          const calloutsHtml = `
+            <div class="p-3.5 bg-slate-50 border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+              <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 shrink-0 mt-0.5">Key Areas</span>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+                ${areasText}
               </p>
-              <div class="p-3 bg-slate-50 border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs">
-                <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 shrink-0 mt-0.5">Key Areas</span>
-                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  ${areasText}
-                </p>
-              </div>
-              <div class="p-3 bg-emerald-50/70 border border-emerald-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs">
-                <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-emerald-200/90 text-emerald-900 shrink-0 mt-0.5">Framework</span>
-                <p class="text-xs sm:text-sm text-emerald-950 font-medium leading-relaxed">
-                  ${whyText}
-                </p>
-              </div>
+            </div>
+            <div class="p-3.5 bg-emerald-50/70 border border-emerald-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+              <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-emerald-200/90 text-emerald-900 shrink-0 mt-0.5">Framework</span>
+              <p class="text-xs sm:text-sm text-emerald-950 font-medium leading-relaxed">
+                ${whyText}
+              </p>
             </div>
           `;
+
+          return { leadHtml, calloutsHtml };
         }
       }
 
-      // Standard Sessions 1 to 5 (3-Tier Flight Briefing)
+      // Standard Sessions 1 to 5, Admin, Objectives, Immersion
       const parts = rawDesc.split(/<br\s*\/?>\s*<br\s*\/?>/i);
       if (parts.length >= 2) {
         const introText = parts[0].trim();
         let overviewText = parts[1].replace(/<\/?em>/gi, '')
                                    .replace(/Subject overview:\s*/i, '')
+                                   .replace(/Academic & cultural goals:\s*/i, '')
                                    .trim();
         let milestoneText = (parts[2] || "").trim();
         milestoneText = milestoneText.replace(/,\s*for which you will receive a GO \/ NO GO\.?/gi, '.')
@@ -715,35 +724,50 @@
                                      .replace(/GO\s*\/\s*NO\s*GO/gi, '')
                                      .trim();
 
-        return `
-          <div class="space-y-3">
-            <!-- Tier 1: Lead Intro Briefing -->
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
-              ${introText}
-            </p>
-
-            <!-- Tier 2: Subject Focus Box -->
-            ${overviewText ? `
-              <div class="p-3 bg-slate-50 border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs">
-                <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 shrink-0 mt-0.5">Focus</span>
-                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
-                  ${overviewText}
-                </p>
-              </div>
-            ` : ''}
-
-            <!-- Tier 3: Evaluation Milestone / FE Tip (Compact Secondary Footnote) -->
-            ${milestoneText ? `
-              <div class="px-3 py-2 bg-amber-50/50 border border-amber-200/70 rounded-lg flex items-center sm:items-baseline gap-2 text-[11.5px] text-amber-900/90">
-                <span class="inline-flex items-center text-[9.5px] font-mono font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-200/70 text-amber-900 shrink-0">${cardIdx === 4 ? 'FE Target' : (cardIdx === 6 || (page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')))}</span>
-                <span class="leading-snug">${milestoneText}</span>
-              </div>
-            ` : ''}
-          </div>
+        const leadHtml = `
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+            ${introText}
+          </p>
+          <p class="text-[11.5px] sm:text-xs text-slate-500 leading-relaxed font-normal">
+            ${RESOURCE_GUIDE_TEXT}
+          </p>
         `;
+
+        let calloutsHtml = '';
+        if (overviewText) {
+          const focusLabel = (page && page.isImmersion) ? 'Academic Goals' : 'Focus';
+          calloutsHtml += `
+            <div class="p-3.5 bg-slate-50 border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+              <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 shrink-0 mt-0.5">${focusLabel}</span>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+                ${overviewText}
+              </p>
+            </div>
+          `;
+        }
+
+        if (milestoneText) {
+          const badgeText = cardIdx === 4 ? 'FE Target' : (cardIdx === 6 || (page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
+          calloutsHtml += `
+            <div class="p-3.5 bg-amber-50/60 border border-amber-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+              <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">${badgeText}</span>
+              <p class="text-xs sm:text-sm text-amber-950 leading-relaxed font-normal">
+                ${milestoneText}
+              </p>
+            </div>
+          `;
+        }
+
+        return { leadHtml, calloutsHtml };
       }
 
-      return `<div class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">${rawDesc}</div>`;
+      return {
+        leadHtml: `
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">${rawDesc}</p>
+          <p class="text-[11.5px] sm:text-xs text-slate-500 leading-relaxed font-normal">${RESOURCE_GUIDE_TEXT}</p>
+        `,
+        calloutsHtml: ''
+      };
     }
 
     function renderCard(idx) {
@@ -765,12 +789,49 @@
       currentIndex = idx;
       const page = pages[currentIndex];
 
+      // Update card tag pill (Option A Balanced Horizontal Grid)
+      const tagPill = document.getElementById('card-tag-pill');
+      if (tagPill) {
+        let tagText = page.tag || (page.isAdmin ? "Administration" : (currentIndex === 4 ? "Formative Evaluation" : (currentIndex === 5 ? "DDRS Sustainability" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session 0${currentIndex + 1}`)))));
+        tagPill.textContent = tagText;
+        const pillAccent = mod.accent || mod.primary;
+        const pillText = mod.accentDark || mod.primary;
+        tagPill.style.color = pillText;
+        tagPill.style.borderColor = `${pillAccent}33`;
+        tagPill.style.backgroundColor = `${pillAccent}12`;
+      }
+
       // Update card title
       const cardHeading = document.getElementById('card-heading');
       cardHeading.textContent = page.title;
       cardHeading.style.color = mod.primary;
 
-      document.getElementById('card-desc').innerHTML = formatCardDescription(page.description, page, currentIndex);
+      // Update card description & twin callout tiles (Option A Balanced Horizontal Grid)
+      const descContent = formatCardDescription(page.description, page, currentIndex);
+      const descEl = document.getElementById('card-desc');
+      const calloutsEl = document.getElementById('card-callouts');
+      const imageContainer = document.getElementById('image-container');
+      const imgEl = document.getElementById('card-image');
+
+      if (descEl) descEl.innerHTML = descContent.leadHtml;
+      if (calloutsEl) {
+        calloutsEl.innerHTML = descContent.calloutsHtml;
+        const hasCallouts = descContent.calloutsHtml && descContent.calloutsHtml.trim() !== "";
+        if (!hasCallouts) {
+          calloutsEl.classList.add('hidden');
+        } else {
+          calloutsEl.classList.remove('hidden');
+        }
+      }
+
+      const hasImage = page.imageUrl && page.imageUrl.trim() !== "";
+      if (hasImage) {
+        imgEl.src = page.imageUrl;
+        imageContainer.classList.remove('hidden');
+      } else {
+        imgEl.src = "";
+        imageContainer.classList.add('hidden');
+      }
 
       const actionContainer = document.getElementById('action-links-container');
       actionContainer.innerHTML = '';
@@ -824,18 +885,6 @@
       } else {
         // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
         actionContainer.appendChild(createThemedCTA("Open Resources", "objectives", ""));
-      }
-
-
-      const imageContainer = document.getElementById('image-container');
-      const imgEl = document.getElementById('card-image');
-
-      if (page.imageUrl && page.imageUrl.trim() !== "") {
-        imgEl.src = page.imageUrl;
-        imageContainer.classList.remove('hidden');
-      } else {
-        imgEl.src = "";
-        imageContainer.classList.add('hidden');
       }
 
       const accessiblePages = pages.filter(p => !p.isMuted);
