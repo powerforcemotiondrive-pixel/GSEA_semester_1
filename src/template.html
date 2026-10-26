@@ -73,6 +73,24 @@
       }
     }
 
+    /* Subtle page-to-page opacity crossfade (Zero layout risk) */
+    @keyframes deckFadeIn {
+      from {
+        opacity: 0.5;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .deck-card-fade {
+      animation: deckFadeIn 160ms ease-out forwards;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .deck-card-fade {
+        animation: none !important;
+      }
+    }
+
     /* Dynamic canvas backdrop & tactile textured background behind the main frame */
     body {
       background-image: radial-gradient(rgba(0, 0, 0, 0.085) 1.25px, transparent 1.25px);
@@ -579,7 +597,7 @@
         <!-- Main Content Panel Area -->
         <div class="flex-1 bg-white p-4 sm:p-6 flex flex-col justify-between overflow-y-auto content-panel">
           <!-- Content Card Details: Balanced Horizontal Grid (Option A) -->
-          <div class="space-y-4 sm:space-y-5">
+          <div id="deck-card-view" class="space-y-4 sm:space-y-5 deck-card-fade">
             <!-- Top Briefing Row: Left Briefing Bento Box & Right Photo Anchor (Locked to 2-Column Grid) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-3.5 items-stretch">
               
@@ -642,8 +660,8 @@
 
       <!-- Bottom status footer -->
       <footer class="textured-surface bg-[#1f2937] border-t border-[#111827] px-3.5 py-2 text-[11px] text-slate-300 flex justify-between items-center shrink-0 rounded-b-2xl shadow-inner">
-        <!-- Left: Status indicator (Balanced Flex-1 Anchor) -->
-        <div class="flex-1 flex items-center justify-start gap-2 min-w-0">
+        <!-- Left: Status indicator (Balanced Flex-1 Anchor on desktop, natural fit on mobile) -->
+        <div class="flex items-center justify-start gap-2 min-w-0 sm:flex-1 shrink-0">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
           <span id="footer-status" class="font-medium text-slate-200 truncate mobile-hide">Ready</span>
         </div>
@@ -656,9 +674,9 @@
           </button>
         </div>
 
-        <!-- Right: Curriculum label & ENAC Logo (Balanced Flex-1 Anchor) -->
-        <div class="flex-1 flex items-center justify-end gap-2.5 sm:gap-3 min-w-0 shrink-0">
-          <span id="footer-curriculum-label" class="font-medium text-slate-300 truncate">
+        <!-- Right: Curriculum label & ENAC Logo (Full width on mobile, balanced anchor on desktop) -->
+        <div class="flex-1 flex items-center justify-end gap-2 sm:gap-3 min-w-0">
+          <span id="footer-curriculum-label" class="font-medium text-slate-300 sm:truncate">
             <span id="footer-curriculum-track" class="mobile-hide">GSEA Semester 1 General English (AG) • </span>
             <span>Phil PARRIS <span class="text-slate-400 font-mono text-[10px]">(LH/LAN)</span></span>
             <span class="text-slate-500">•</span>

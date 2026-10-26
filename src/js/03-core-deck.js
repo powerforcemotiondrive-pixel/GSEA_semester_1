@@ -789,6 +789,14 @@
       currentIndex = idx;
       const page = pages[currentIndex];
 
+      // Subtle opacity crossfade transition (Option 1)
+      const cardView = document.getElementById('deck-card-view');
+      if (cardView) {
+        cardView.classList.remove('deck-card-fade');
+        void cardView.offsetWidth; // Force reflow to re-trigger CSS keyframe
+        cardView.classList.add('deck-card-fade');
+      }
+
       // Update card tag pill (Option A Balanced Horizontal Grid)
       const tagPill = document.getElementById('card-tag-pill');
       if (tagPill) {
