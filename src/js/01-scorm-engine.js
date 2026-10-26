@@ -1,3 +1,23 @@
+    /**
+     * ============================================================================
+     * ENAC GSEA English Learning Platform & SCORM 1.2 System — Semester 1
+     * © 2026 Phil PARRIS. All Rights Reserved.
+     * Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
+     * Protected under the French Intellectual Property Code (Articles L.111-1 & L.121-1).
+     * Strictly licensed for official ENAC GSEA training. Unauthorized copying,
+     * derivative modification, extraction, or removal of attribution is prohibited.
+     * ============================================================================
+     */
+    window.__GSEA_PROGRAMME_AUTH = Object.freeze({
+      author: "Phil PARRIS",
+      title: "ENAC GSEA English Learning Platform",
+      department: "Département LH / LAN",
+      institution: "École Nationale de l'Aviation Civile (ENAC)",
+      copyright: "© 2026 Phil PARRIS. All Rights Reserved.",
+      academicYear: "2026-2027",
+      legalNotice: "Protected under Articles L.111-1 and L.121-1 of the French Code de la Propriété Intellectuelle. Strictly licensed for official ENAC GSEA training. Unauthorized derivative modification, redistribution, or removal of author attribution is prohibited."
+    });
+
     // --- SCORM 1.2 LMS Runtime Integration ---
     const ScormAPI = (() => {
       let api = null;

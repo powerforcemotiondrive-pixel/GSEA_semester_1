@@ -58,7 +58,11 @@ if (missingFiles === 0) {
   console.log(`⚠️ ${missingFiles} file(s) referenced in manifest are missing on disk.\n`);
 }
 
-// 4. Create SCORM Zip archive
+// 4. Generate Cryptographic SHA-256 Manifest
+const generateChecksums = require('./generate-checksums');
+generateChecksums();
+
+// 5. Create SCORM Zip archive
 console.log('🗜️  Bundling SCORM package into dist/GSEA_Semester_1_SCORM.zip...');
 if (fs.existsSync(zipOutput)) {
   fs.unlinkSync(zipOutput);
@@ -67,6 +71,8 @@ if (fs.existsSync(zipOutput)) {
 // Files and directories to bundle in the SCORM root
 const includeList = [
   'imsmanifest.xml',
+  'COPYRIGHT.md',
+  'CHECKSUMS.sha256',
   'index.html',
   'output.css',
   'data',

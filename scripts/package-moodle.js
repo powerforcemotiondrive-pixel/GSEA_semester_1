@@ -49,15 +49,21 @@ if (fs.existsSync(privateMapPath)) {
   console.warn('👉 Copy students.private.example.json to students.private.json to inject real names.');
 }
 
-// 4. Create clean staging directory
+// 4. Generate Cryptographic SHA-256 Manifest
+const generateChecksums = require('./generate-checksums');
+generateChecksums();
+
+// 5. Create clean staging directory
 if (fs.existsSync(stagingDir)) {
   fs.rmSync(stagingDir, { recursive: true, force: true });
 }
 fs.mkdirSync(stagingDir, { recursive: true });
 
-// 5. Files and directories to bundle
+// 6. Files and directories to bundle
 const includeList = [
   'imsmanifest.xml',
+  'COPYRIGHT.md',
+  'CHECKSUMS.sha256',
   'index.html',
   'output.css',
   'data',

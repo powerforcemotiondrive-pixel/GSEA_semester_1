@@ -81,6 +81,11 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   - Always replace with direct, human-friendly terms: `"Useful phrases"`, `"Useful storytelling words"`, `"Example story"`, `"Key phrases for expressing opinions"`, `"Connecting words"`, `"Sentence patterns"`.
 - **Simple, Actionable Steps**: Keep all task instructions concise, direct, and focused on spoken communication, peer interaction, and listening.
 
+### J. Invisible Copyright & Cryptographic Authorship Integrity
+- **Moral Rights & Authorship**: All materials are protected under French Intellectual Property law (Articles L.111-1 & L.121-1 CPI) with author attribution to **Phil PARRIS**.
+- **100% Invisible On Screen**: No visible copyright notices or disclaimers clutter student or faculty UI. All protections reside under the hood via `<meta>` tags, HTML comment blocks, frozen JavaScript tokens (`window.__GSEA_PROGRAMME_AUTH`), root `COPYRIGHT.md`, and cryptographic `CHECKSUMS.sha256`.
+- **INPI e-Soleau Archival Tool**: Run `npm run package:esoleau` to bundle the complete human-editable source tree into `dist/GSEA_Semester_X_INPI_eSoleau_YYYY-MM-DD.zip` for instant certified timestamping (*date certaine*) on [inpi.fr](https://www.inpi.fr).
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)

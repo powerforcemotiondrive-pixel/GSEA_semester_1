@@ -10,6 +10,7 @@
     "package": "node scripts/package-scorm.js",
     "package:moodle": "node scripts/package-moodle.js",
     "package:iso": "node scripts/package-iso.js",
+    "package:esoleau": "node scripts/package-esoleau.js",
     "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --watch",
     "serve": "python3 -m http.server 8000",
     "backup1": "node scripts/backup.js semester1",

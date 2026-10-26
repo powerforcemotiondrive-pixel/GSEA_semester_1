@@ -33,15 +33,21 @@ try {
   process.exit(1);
 }
 
-// 4. Create fresh staging directory
+// 4. Generate Cryptographic SHA-256 Manifest
+const generateChecksums = require('./generate-checksums');
+generateChecksums();
+
+// 5. Create fresh staging directory
 if (fs.existsSync(stagingDir)) {
   fs.rmSync(stagingDir, { recursive: true, force: true });
 }
 fs.mkdirSync(stagingDir, { recursive: true });
 
-// 5. Files and directories to bundle in the ISO root (Source files and Git are omitted)
+// 6. Files and directories to bundle in the ISO root (Source files and Git are omitted)
 const includeList = [
   'imsmanifest.xml',
+  'COPYRIGHT.md',
+  'CHECKSUMS.sha256',
   'index.html',
   'output.css',
   'data',

@@ -1,0 +1,54 @@
+# ============================================================================
+# ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
+# Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
+# © 2026 Phil PARRIS. All Rights Reserved.
+# Generated: 2026-10-26T16:55:39.192Z
+# ============================================================================
+
+88b16c08deb07148794c1c79364e7a2ef0890e8921f3ecd4844e5440d1431962  imsmanifest.xml
+49ecc1dde666ea4a48435448fb80ac68a0b39fba3151aa667791365820fbe460  COPYRIGHT.md
+a9592018076f89aee4dea4b38a5bd367461b0a2b235039398a72d79e470b003c  index.html
+7c787681b9b7f14ffcb2af8d50aa5167602530359d487f2959d401ec262e22ce  admin.html
+1e98485431a55a4e5940014e3b319b02b441e2ce38af328cb6f8a3a335799078  presentation.html
+6586bee8c32afaece9fd72aa1fa3390c4569247d7fb1863b1da0bd90298dce15  portfolio.html
+93414830a71d1cb256196bf3bfde0a845a3a563520b07112247290d75c75b9aa  immersion.html
+9f0b2f55e29a5f462be117c9c57fc47f7d0335659b9fa0bca528248ddd230abc  output.css
+88d03f0da4eaa0437da66787359aa668c8824458a75dd7c99c5abc2e8e8634e3  data/course-data.js
+bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
+f52e89458efa94b0699a10d97147f8a9b99d46395b563ef0f9210a5f2de99fd3  images/aas_m1card2.jpg
+e0334c57519ecb7b3677770af7648e2b89d60539902763194f701ce3b0de0f1c  images/aas_m1card3.jpg
+dac529332f2e3991c76f6baa5c041a409d4b5586f94439deec384a9b3c5d5288  images/aas_m1card4.jpg
+bfa22cce7c6a3b32ed89a911375c2c699b23612d945e5e932dbe7e8a05feeb0c  images/aas_m2card1.jpg
+1067e1424b944748a187fb83b87d8ec8ec4ea1adf734cea4f354b2568b02c905  images/aas_m2card2.jpg
+9df1ce23c2dcabcd81d16af5b3ef5251af9823662fc185795658c11a6e5bab9e  images/aas_m2card3.jpg
+be6cfd5ea480d8a4fa99a89239e600740f51ea2d2805437325d4a4eba808d6c4  images/aas_m2card4.jpg
+455838044932d8dd8f6192394a806508d6d3bf5c1fb33451c1ca9d670d0cbf40  images/aas_m3card1.jpg
+4c1fc557694197b0009b9c33b7d767c1ed569658b04972cc5dd965e118f4a3ee  images/aas_m3card2.jpg
+3f2a0030ae7aa96e3ba6bd26aa75e9c661575d4b15949958a0b4dfee4240f2e6  images/aas_m3card3.jpg
+fe31053248645ccbe92d35a3385b096a6aa8a106b4e3f5efa6467a04a60d9c59  images/aas_m3card4.jpg
+2bdbab68c17b31406e1c3fc61d18bc6e52da5e2c2d087eba5c391d63133f261c  images/ag_m1card1.jpg
+58da603176a658d98df32440a2b2981d4c4bfae17942aa92329b69644f8a23cd  images/ag_m1card2.jpg
+2ee03fdbaa27ee5e5d224dbb389d419ab66f4d6519a5fdffa214e5a8c8d5f734  images/ag_m1card3.jpg
+bd2652d7f76a77047f418918c80799bcc4e24960fdadf5f69d7a485b5e0d589d  images/ag_m1card4.jpg
+fa8fcba74416010eb8c087edb4415e02dcaa0d24f0bdba077c79ed2cd53be7a7  images/ag_m2card1.jpg
+c4969f0ed6cadcb231fe95d02147963812804f5acf90c3ba06d2acaa02939147  images/ag_m2card2.jpg
+78915afec0234e10b15bf0a8eeab176a885583c8bc738f3623da2554c0855814  images/ag_m2card3.jpg
+4b514f38cccd692617a973c833b550d68d533539c03aacc55355f70e5b216dde  images/ag_m2card4.jpg
+00b265e17f3544b25fd7e06bffa8795a4455fba740483fc7e0192294cea81a1b  images/ag_m3card1.jpg
+67026aa95f7228cf726ebd3e5798011795571e7f1547324db5dc23ee531b96fd  images/ag_m3card2.jpg
+448db6df41799e503fa78dfe66ad04f7d4a1bee7ad7eb875d4c2b6e4b6fdd865  images/ag_m3card3.jpg
+c8b4a150c4ecff8b290cdbafba7dc6a4e7f84bb2f9ee48992bf6a5e883a0614d  images/ag_m3card4.jpg
+875492fdd635c9526c885935261d6626686a2ed57955355c4418105a6a6b00e9  images/course_admin.jpg
+25be4d485fc0dbd024ba8b36856b160cb2a3dbba4c5dbaa2c3f98ae59f71328c  images/ddrs_aas_mod1.jpg
+8bac59dfd79178dda6433c4d75d4a77463f2d2368a19e091f169ce6775778ad3  images/ddrs_aas_mod2.jpg
+4009992ccb1ade6981044b509931fd153c418d3c2a9825fb65207a94b545918c  images/ddrs_aas_mod3.jpg
+0852f55ea863501502f7a191b035ee0e104bfa221a1983df174b020e80c9aee4  images/ddrs_ag_mod1.jpg
+91f2f78530f0852f67370c68026c73a520243d9831ac65bb42e61d4aec0a1dd4  images/ddrs_ag_mod2.jpg
+729e744bbc7bae400722477dd92faf50af3216b2e2ba4dcf9aef51d0b56735cb  images/ddrs_ag_mod3.jpg
+53052cf828d43ecdc2d87dae624d7cf8f068cac83c7f60d38be82f803e290cf9  images/enac_logo_white.png
+9aeef869b02d3b9e5a57c9ad0fec384c4749110a075b69b434a72b132c66f277  images/fe_aas_mod1.jpg
+5fd3f0c9363dbad60d3b3ca10e01e29022c2c9b76d0764ecea7846199dabcc48  images/fe_aas_mod2.jpg
+9b1ed6df72778eda19c37516596223a6371a7fb1883ab788d2f987c61b1dc490  images/fe_progress_check.png
+59342b87326c174d3600e7056d894bdbe4b0c3fbb4df3971ea44fa85bc0ed19a  images/immersion_card.jpg
+3b460ca46e8f5632034ada2f5419f493ce815042e96d9e7700aad4cab0dc9134  images/semester_objectives.png
+6970e2b956c8d6557969a7b3484ffc7590642b8b8e4450ef3ea1a35599700568  images/turnaround_apron.jpg
