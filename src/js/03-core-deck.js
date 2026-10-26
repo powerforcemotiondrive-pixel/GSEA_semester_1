@@ -179,9 +179,16 @@
       if (mainTitle) {
         mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT (LV121E)' : 'GSEA SEMESTER 1 AG (LV101E)';
       }
-      const footerCurriculum = document.getElementById('footer-curriculum-label');
-      if (footerCurriculum && PROGRAMS_CONFIG[currentProgram]) {
-        footerCurriculum.textContent = PROGRAMS_CONFIG[currentProgram].footerDesc;
+      const footerTrack = document.getElementById('footer-curriculum-track');
+      if (footerTrack) {
+        footerTrack.textContent = currentProgram === 'aas' 
+          ? 'GSEA Semester 1 Technical English (AT) • ' 
+          : 'GSEA Semester 1 General English (AG) • ';
+      } else {
+        const footerCurriculum = document.getElementById('footer-curriculum-label');
+        if (footerCurriculum && PROGRAMS_CONFIG[currentProgram]) {
+          footerCurriculum.textContent = PROGRAMS_CONFIG[currentProgram].footerDesc;
+        }
       }
     }
 

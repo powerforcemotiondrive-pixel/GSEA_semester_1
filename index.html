@@ -50,6 +50,16 @@
       }
     }
 
+    /* Clean mobile-only responsive rules (< 640px) */
+    @media (max-width: 639px) {
+      .mobile-hide {
+        display: none !important;
+      }
+      #action-dock {
+        justify-content: flex-end !important;
+      }
+    }
+
     /* Dynamic canvas backdrop & tactile textured background behind the main frame */
     body {
       background-image: radial-gradient(rgba(0, 0, 0, 0.085) 1.25px, transparent 1.25px);
@@ -496,7 +506,7 @@
       <nav id="flight-deck-ribbon" class="bg-[#1f2937] text-white px-2 sm:px-5 py-1.5 sm:py-2 border-b border-[#111827] flex items-center justify-between gap-1 sm:gap-3 shrink-0 z-10 transition-colors duration-200 overflow-x-auto no-scrollbar">
         <!-- Left: Curriculum Track Switcher (AG / AT) (Balanced Flex-1 Anchor) -->
         <div class="flex-1 flex items-center justify-start gap-1.5 sm:gap-2 shrink-0 min-w-fit">
-          <span class="text-[10px] font-black uppercase tracking-wider text-slate-300 hidden sm:inline-block">Track:</span>
+          <span class="text-[10px] font-black uppercase tracking-wider text-slate-300 mobile-hide">Track:</span>
           <div id="program-switcher" class="inline-flex items-center bg-black/40 p-0.5 rounded-lg border border-white/15 shadow-inner" role="tablist" aria-label="Curriculum Track">
             <button id="prog-btn-ag"
                     type="button"
@@ -519,8 +529,8 @@
           </div>
         </div>
 
-        <!-- Center: Flight Deck HUD Promotion Callsign Badge (Locked to True 50% Center) -->
-        <div class="flex items-center justify-center shrink-0 px-2">
+        <!-- Center: Flight Deck HUD Promotion Callsign Badge (Locked to True 50% Center, Desktop/Tablet only) -->
+        <div class="flex items-center justify-center shrink-0 px-2 mobile-hide">
           <a id="promo-callsign-badge"
              href="https://e-campus.enac.fr"
              target="_blank"
@@ -601,7 +611,7 @@
           <!-- Executive Action Dock: Label on Left, Open Resources on Right -->
           <div id="action-dock" class="pt-3.5 border-t border-slate-200/80 flex items-center justify-between gap-3 mt-4 w-full">
             <!-- Left: Subtle Technical Status / Workspace Breadcrumb -->
-            <div id="action-dock-label" class="flex items-center gap-2 shrink-0 select-none">
+            <div id="action-dock-label" class="flex items-center gap-2 shrink-0 select-none mobile-hide">
               <span id="action-dock-dot" class="w-2 h-2 rounded-full transition-colors duration-200" style="background-color: #374151;"></span>
               <span id="action-dock-title" class="font-mono text-[11px] font-bold uppercase tracking-wider text-slate-500">Session 01 Study Resources</span>
             </div>
@@ -613,12 +623,17 @@
 
       <!-- Bottom status footer -->
       <footer class="textured-surface bg-[#1f2937] border-t border-[#111827] px-3.5 py-2.5 text-[11px] text-slate-300 flex justify-between items-center shrink-0 rounded-b-2xl shadow-inner">
-        <div class="flex items-center gap-2">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span id="footer-status" class="font-medium text-slate-200">Ready</span>
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+          <span id="footer-status" class="font-medium text-slate-200 truncate mobile-hide">Ready</span>
         </div>
         <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">
-          <span id="footer-curriculum-label" class="font-medium text-slate-300">GSEA Semester 1 General English (AG) • Phil PARRIS (LH/LAN) • <span class="font-mono text-emerald-400 font-bold bg-black/40 px-1.5 py-0.5 rounded border border-white/10 text-[10px]">v1.2.0</span></span>
+          <span id="footer-curriculum-label" class="font-medium text-slate-300">
+            <span id="footer-curriculum-track" class="mobile-hide">GSEA Semester 1 General English (AG) • </span>
+            <span>Phil PARRIS <span class="text-slate-400 font-mono text-[10px]">(LH/LAN)</span></span>
+            <span class="text-slate-500">•</span>
+            <span class="font-mono text-emerald-400 font-bold bg-black/40 px-1.5 py-0.5 rounded border border-white/10 text-[10px]">v1.2.0</span>
+          </span>
           <img src="images/enac_logo_white.png" alt="ENAC" class="h-4.5 sm:h-5 w-auto object-contain shrink-0 opacity-80 hover:opacity-100 transition-opacity" height="20">
         </div>
       </footer>
@@ -1461,9 +1476,16 @@
       if (mainTitle) {
         mainTitle.textContent = currentProgram === 'aas' ? 'GSEA SEMESTER 1 AT (LV121E)' : 'GSEA SEMESTER 1 AG (LV101E)';
       }
-      const footerCurriculum = document.getElementById('footer-curriculum-label');
-      if (footerCurriculum && PROGRAMS_CONFIG[currentProgram]) {
-        footerCurriculum.textContent = PROGRAMS_CONFIG[currentProgram].footerDesc;
+      const footerTrack = document.getElementById('footer-curriculum-track');
+      if (footerTrack) {
+        footerTrack.textContent = currentProgram === 'aas' 
+          ? 'GSEA Semester 1 Technical English (AT) • ' 
+          : 'GSEA Semester 1 General English (AG) • ';
+      } else {
+        const footerCurriculum = document.getElementById('footer-curriculum-label');
+        if (footerCurriculum && PROGRAMS_CONFIG[currentProgram]) {
+          footerCurriculum.textContent = PROGRAMS_CONFIG[currentProgram].footerDesc;
+        }
       }
     }
 

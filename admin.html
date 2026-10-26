@@ -22,6 +22,11 @@
       background-size: 100% 100%, 16px 16px, 16px 16px, 100% 100% !important;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.3) !important;
     }
+    @media (max-width: 639px) {
+      .mobile-hide {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 <body class="bg-slate-100 min-h-screen text-slate-800 font-sans">
@@ -554,10 +559,13 @@
     </main>
 
     <!-- Footer -->
-    <footer class="textured-surface bg-[#1f2937] border-t border-[#111827] px-4 py-3 sm:px-6 flex items-center justify-between text-xs text-slate-300 rounded-b-2xl shadow-inner">
-      <span>GSEA26A Official Course Administration • ENAC Language Hub • Phil PARRIS (LH/LAN)</span>
-      <div class="flex items-center gap-3 shrink-0">
-        <span class="font-mono text-emerald-400 font-bold bg-black/40 px-2 py-0.5 rounded border border-white/10 text-[10px]">SCORM 1.2 Compatible</span>
+    <footer class="textured-surface bg-[#1f2937] border-t border-[#111827] px-3.5 py-2.5 sm:px-6 sm:py-3 flex items-center justify-between text-[11px] sm:text-xs text-slate-300 rounded-b-2xl shadow-inner">
+      <div class="min-w-0 truncate">
+        <span class="mobile-hide">GSEA26A Official Course Administration • ENAC Language Hub • </span>
+        <span>Phil PARRIS <span class="text-slate-400 font-mono text-[10px]">(LH/LAN)</span></span>
+      </div>
+      <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">
+        <span class="mobile-hide font-mono text-emerald-400 font-bold bg-black/40 px-2 py-0.5 rounded border border-white/10 text-[10px]">SCORM 1.2 Compatible</span>
         <img src="images/enac_logo_white.png" alt="ENAC" class="h-4.5 sm:h-5 w-auto object-contain shrink-0 opacity-80 hover:opacity-100 transition-opacity" height="20">
       </div>
     </footer>
