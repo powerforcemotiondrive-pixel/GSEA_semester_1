@@ -69,6 +69,42 @@ for (const item of includeList) {
   copyRecursive(path.join(rootDir, item), path.join(stagingDir, item));
 }
 
+// 5b. Perform student name injection on staged files if students.private.json exists
+const privateMapPath = path.join(rootDir, 'students.private.json');
+let studentMap = {};
+if (fs.existsSync(privateMapPath)) {
+  try {
+    const raw = fs.readFileSync(privateMapPath, 'utf8');
+    studentMap = JSON.parse(raw);
+    const count = Object.keys(studentMap).filter(k => !k.startsWith('_')).length;
+    console.log(`🔒 Loaded private student mapping from students.private.json (${count} student mappings).`);
+  } catch (err) {
+    console.warn('⚠️ Warning: Failed to parse students.private.json:', err.message);
+  }
+}
+
+const keys = Object.keys(studentMap).filter(k => !k.startsWith('_'));
+if (keys.length > 0) {
+  console.log('🔄 Injecting real student names into offline ISO package...');
+  for (const file of ['index.html', 'admin.html', 'portfolio.html']) {
+    const stagedFile = path.join(stagingDir, file);
+    if (fs.existsSync(stagedFile)) {
+      let content = fs.readFileSync(stagedFile, 'utf8');
+      let replacedCount = 0;
+      for (const key of keys) {
+        const val = studentMap[key];
+        if (content.includes(key)) {
+          const regex = new RegExp(key, 'g');
+          content = content.replace(regex, val);
+          replacedCount++;
+        }
+      }
+      fs.writeFileSync(stagedFile, content, 'utf8');
+      console.log(`  ✓ ${file}: Injected names for ${replacedCount} identifiers.`);
+    }
+  }
+}
+
 // Add a helpful read-only instructions banner
 const readmeContent = `======================================================================
 ENAC GSEA SEMESTER 1 ENGLISH PORTAL — READ-ONLY OFFLINE EDITION
