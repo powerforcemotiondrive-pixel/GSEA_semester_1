@@ -86,22 +86,44 @@ if (fs.existsSync(privateMapPath)) {
 const keys = Object.keys(studentMap).filter(k => !k.startsWith('_'));
 if (keys.length > 0) {
   console.log('🔄 Injecting real student names into offline ISO package...');
-  for (const file of ['index.html', 'admin.html', 'portfolio.html']) {
+
+  // Inject into index.html and admin.html
+  for (const file of ['index.html', 'admin.html']) {
     const stagedFile = path.join(stagingDir, file);
     if (fs.existsSync(stagedFile)) {
       let content = fs.readFileSync(stagedFile, 'utf8');
       let replacedCount = 0;
       for (const key of keys) {
         const val = studentMap[key];
-        if (content.includes(key)) {
-          const regex = new RegExp(key, 'g');
-          content = content.replace(regex, val);
-          replacedCount++;
-        }
+        // 1. In Roster table: display Name (ID), e.g. BEDU Titouan (GRPA001)
+        const tableCellRegex = new RegExp(`>${key}<`, 'g');
+        content = content.replace(tableCellRegex, `>${val} (${key})<`);
+
+        // 2. In FE Rotas and slot schedules: display Name, e.g. "BEDU Titouan"
+        const rotaSlotRegex = new RegExp(`"${key}"`, 'g');
+        content = content.replace(rotaSlotRegex, `"${val}"`);
+
+        replacedCount++;
       }
       fs.writeFileSync(stagedFile, content, 'utf8');
-      console.log(`  ✓ ${file}: Injected names for ${replacedCount} identifiers.`);
+      console.log(`  ✓ ${file}: Injected names with IDs for ${replacedCount} identifiers.`);
     }
+  }
+
+  // Inject into portfolio.html: Keep value="GRPA001", show "BEDU Titouan (GRPA001)" in display text
+  const stagedPortfolio = path.join(stagingDir, 'portfolio.html');
+  if (fs.existsSync(stagedPortfolio)) {
+    let portContent = fs.readFileSync(stagedPortfolio, 'utf8');
+    let portReplacedCount = 0;
+    for (const key of keys) {
+      const val = studentMap[key];
+      // Target only the option display text: <option value="GRPA001">GRPA001</option> -> <option value="GRPA001">BEDU Titouan (GRPA001)</option>
+      const optRegex = new RegExp(`<option\\s+value="${key}">.*?<\\/option>`, 'g');
+      portContent = portContent.replace(optRegex, `<option value="${key}">${val} (${key})</option>`);
+      portReplacedCount++;
+    }
+    fs.writeFileSync(stagedPortfolio, portContent, 'utf8');
+    console.log(`  ✓ portfolio.html: Injected display names with anonymous values for ${portReplacedCount} identifiers.`);
   }
 }
 
