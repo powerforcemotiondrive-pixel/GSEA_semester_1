@@ -24,9 +24,9 @@ INSTRUCTION: Injecting Private Data
 3. HOW TO UPDATE STUDENT ROSTERS FOR A NEW COHORT
    Step 1: Open students.private.json in any text editor.
    Step 2: Match student names to their group identifiers:
-           "GRPA001": "BEDU Titouan",
-           "GRPA002": "BEN HASSEN Ewan",
-           "GRPB001": "SEVIN Brian",
+           "GRPA001": "DUPONT Jean",
+           "GRPA002": "MARTIN Marie",
+           "GRPB001": "BERNARD Pierre",
            ...
    Step 3: Save the file.
 

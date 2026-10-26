@@ -105,11 +105,11 @@ if (keys.length > 0) {
       let replacedCount = 0;
       for (const key of keys) {
         const val = studentMap[key];
-        // 1. In Roster table: display Name (ID), e.g. BEDU Titouan (GRPA001)
+        // 1. In Roster table: display Name (ID), e.g. DUPONT Jean (GRPA001)
         const tableCellRegex = new RegExp(`>${key}<`, 'g');
         content = content.replace(tableCellRegex, `>${val} (${key})<`);
 
-        // 2. In FE Rotas and slot schedules: display Name, e.g. "BEDU Titouan"
+        // 2. In FE Rotas and slot schedules: display Name, e.g. "DUPONT Jean"
         const rotaSlotRegex = new RegExp(`"${key}"`, 'g');
         content = content.replace(rotaSlotRegex, `"${val}"`);
 
@@ -120,14 +120,14 @@ if (keys.length > 0) {
     }
   }
 
-  // 6b. Inject into portfolio.html: Keep value="GRPA001", show "BEDU Titouan (GRPA001)" in display text
+  // 6b. Inject into portfolio.html: Keep value="GRPA001", show "DUPONT Jean (GRPA001)" in display text
   const stagedPortfolio = path.join(stagingDir, 'portfolio.html');
   if (fs.existsSync(stagedPortfolio)) {
     let portContent = fs.readFileSync(stagedPortfolio, 'utf8');
     let portReplacedCount = 0;
     for (const key of keys) {
       const val = studentMap[key];
-      // Target only the option display text: <option value="GRPA001">GRPA001</option> -> <option value="GRPA001">BEDU Titouan (GRPA001)</option>
+      // Target only the option display text: <option value="GRPA001">GRPA001</option> -> <option value="GRPA001">DUPONT Jean (GRPA001)</option>
       const optRegex = new RegExp(`<option\\s+value="${key}">.*?<\\/option>`, 'g');
       portContent = portContent.replace(optRegex, `<option value="${key}">${val} (${key})</option>`);
       portReplacedCount++;

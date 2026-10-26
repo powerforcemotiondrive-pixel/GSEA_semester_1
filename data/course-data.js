@@ -5199,7 +5199,7 @@
               "Incorporate at least two of the mandatory spoken linking phrases into each round ('While I concede that...', 'Empirical evidence strongly suggests that...').",
               "Switch partners after Dilemma 2 to defend the opposing viewpoint."
             ],
-            "deliverable": "4 structured debate exchanges (Claim → Evidence → Reasoning → Concession → Response) utilizing polite concessive signposts.",
+            "deliverable": "4 structured debate exchanges (Claim → Evidence → Reasoning → Concession → Response) utilizing polite connecting words for contrasting ideas.",
             "teacherNotes": "Circulate to monitor linking words. Intervene if students rely on casual conversational fillers ('Yeah but...', 'I don't think so'). Hold students to formal hedging and concessive markers ('Admittedly...', 'Notwithstanding the operational challenges...').",
             "signposts": [
               "\"While I concede that [X] involves significant expenditure, ...\"",
@@ -5243,15 +5243,15 @@
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Focus: Gerunds vs. Infinitives & Concessive Signposts (20 mins)",
-            "summary": "Selecting the correct verb complementation patterns (Gerund vs. Infinitive) and mastering sophisticated concessive linking words for persuasive speaking.",
+            "title": "Activity 3: Language Focus: Gerunds vs. Infinitives & Connecting Words for Contrasting Ideas (20 mins)",
+            "summary": "Selecting the correct verb complementation patterns (Gerund vs. Infinitive) and mastering useful connecting words for persuasive speaking.",
             "modeBadges": [
               "Pairs / Individual",
               "Grammar Drills",
               "20 Mins"
             ],
             "instructions": [
-              "Review the 3 core grammatical structures: Verbs taking Gerunds (advocate doing, delay implementing), Verbs taking Infinitives (agree to fund, aim to achieve), and Concessive Clauses (Although + clause vs. Despite + noun phrase).",
+              "Review the 3 core grammatical structures: Verbs taking Gerunds (advocate doing, delay implementing), Verbs taking Infinitives (agree to fund, aim to achieve), and Contrasting Clauses (Although + clause vs. Despite + noun phrase).",
               "Analyze the formula examples and identify which policy actions require an ongoing process focus (-ing) versus future commitments (to + verb).",
               "Complete the 4 interactive TOEIC Part 5 drills independently, selecting the correct verb complementation pattern.",
               "Click 'Check Answer & Explanation' and note the structural justification in your error log."
@@ -5270,7 +5270,7 @@
                 "usage": "Used when expressing intent, decisions, commitments, or future targets."
               },
               {
-                "type": "Concessive Signposts & Hedging",
+                "type": "Contrasting Ideas & Polite Disagreement",
                 "formula": "\"While it is true that [X], empirical evidence indicates that [Y]...\" | \"Admittedly..., nevertheless...\"",
                 "usage": "Use to politely soften strong disagreements and frame your counter-argument persuasively."
               }
@@ -7109,7 +7109,7 @@
             ],
             "correctLetter": "A",
             "correctText": "have",
-            "analysis": "When a sentence starts with a restrictive or negative adverb (\"Rarely\", \"Seldom\", \"Never\"), subject-auxiliary inversion occurs: Rarely + have + subject + past participle.",
+            "analysis": "When a sentence starts with a restrictive or negative adverb (\"Rarely\", \"Seldom\", \"Never\"), we invert the word order (auxiliary verb before subject): Rarely + have + subject + past participle.",
             "strategy": "Negative Inversion Formula: [Negative adverb] + [auxiliary verb] + [Subject] + [Main verb]. Look for have/has before the subject."
           },
           "resources": [
@@ -7192,7 +7192,7 @@
               ],
               "correctLetter": "A",
               "correctText": "have",
-              "analysis": "When a sentence starts with a restrictive or negative adverb (\"Rarely\", \"Seldom\", \"Never\"), subject-auxiliary inversion occurs: Rarely + have + subject + past participle.",
+              "analysis": "When a sentence starts with a restrictive or negative adverb (\"Rarely\", \"Seldom\", \"Never\"), we invert the word order (auxiliary verb before subject): Rarely + have + subject + past participle.",
               "strategy": "Negative Inversion Formula: [Negative adverb] + [auxiliary verb] + [Subject] + [Main verb]. Look for have/has before the subject."
             },
             {
