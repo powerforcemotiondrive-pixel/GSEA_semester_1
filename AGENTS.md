@@ -36,13 +36,15 @@ Course administration (student lists, teacher assignments, weekly schedules, and
     - `src/js/10-fe-guidelines.js`: Formative evaluation guidelines, rubrics, and criteria
     - `src/js/11-admin-hub.js`: Promotion rosters, timetables, rota schedules, and immersion hub
     - `src/js/12-footer-init.js`: Interactive quiz handlers and DOMContentLoaded initialization
-- **Build & Package**:
+- **Build & Package (Mandatory SCORM + `.iso` + `.dmg` Rebuild)**:
+  - **CRITICAL RULE**: Every time code, content, or assets are updated, the `.iso` (`GSEA_Semester_X_Offline.iso`) and `.dmg` (`GSEA_Semester_X_Mac.dmg`) offline disk images **must** be rebuilt alongside the SCORM `.zip` package.
   - `npm run build`: Compiles `src/` modules into `index.html` and builds minified CSS.
   - `npm run package`:
   ```bash
   npm run package
   ```
-  *(Compiles `src/` into `index.html`, compiles Tailwind CSS v4 minified, validates manifest integrity, and outputs the SCORM zip).*
+  *(Automatically runs `package-scorm.js` AND `package-iso.js`: compiles `src/` into `index.html`, compiles Tailwind CSS v4 minified, validates manifest integrity, outputs the SCORM `.zip`, and rebuilds both the `.iso` and `.dmg` offline installers).*
+  - `npm run package:iso`: Rebuilds the `.iso` and `.dmg` offline installers standalone.
 - **Release Versioning**:
   - Main production code lives on branch `main`.
   - Production releases are tagged with `v1.2.0-live` (or semantic version increments) and pushed with:
@@ -86,6 +88,31 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **Moral Rights & Authorship**: All materials are protected under French Intellectual Property law (Articles L.111-1 & L.121-1 CPI) with author attribution to **Phil PARRIS**.
 - **100% Invisible On Screen**: No visible copyright notices or disclaimers clutter student or faculty UI. All protections reside under the hood via `<meta>` tags, HTML comment blocks, frozen JavaScript tokens (`window.__GSEA_PROGRAMME_AUTH`), root `COPYRIGHT.md`, and cryptographic `CHECKSUMS.sha256`.
 - **INPI e-Soleau Archival Tool**: Run `npm run package:esoleau` to bundle the complete human-editable source tree into `dist/GSEA_Semester_X_INPI_eSoleau_YYYY-MM-DD.zip` for instant certified timestamping (*date certaine*) on [inpi.fr](https://www.inpi.fr).
+
+### K. `Promo Admin` & `Semester X Update` Rapid Cohort & Faculty Configuration Protocol
+- **`Semester X Update` Trigger (`PROMO_SETUP.private.md` — Auto-Repackage + Auto-Commit & Push)**: Whenever the user edits `PROMO_SETUP.private.md` and sends `Semester 1 Update`, `Semester 2 Update`, or `Semester 3 Update`, the assistant immediately:
+  1. Runs `npm run promo:update` (`node scripts/update-promo.js && npm run package && npm run package:moodle`), which reads `PROMO_SETUP.private.md`, pulls live session titles from `src/js/02-config.js`, updates `students.private.json`, updates the bounded `ADMIN_PROMO_CONFIG` blocks in `src/js/11-admin-hub.js` and `admin.html`, updates `portfolio.html`, and rebuilds all 4 packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`).
+  2. Automatically executes `git commit` AND `git push origin main` in the same step so the anonymized updates are immediately synchronized to GitHub.
+- **Inline Trigger Shorthand (`Promo Admin`)**: Whenever the user sends a `Promo Admin` instruction (e.g., `Promo Admin: Promotion GSEA25A, Semester 3, Groups 3, A - 10 B - 10 C - 10, Teachers AG 0 AT 3 [optional teacher names]`), the assistant automatically updates all cohort, group, student roster, and faculty structures across the entire project.
+- **Permanent Semester Track Invariants (Never Changes)**:
+  - **Semester 1**: Always **AG** + **AT** (`LV101E` & `LV121E`)
+  - **Semester 2**: Always **AG** + **AAS** (`LV102E` & `LV122E`)
+  - **Semester 3**: Always **AT** only (`LV125E`, `AG` disabled) — **CRITICAL TERMINOLOGY RULE**: Never use `"Aeronautical English"` in Semester 3; always use **`Technical English`** or **`AT`**.
+  - **Semester 4**: Always **AP** only (`AG` disabled)
+- **Group Scaling (1 to 4 Groups Max: `A`, `B`, `C`, `D`)**:
+  - Supports up to 4 groups (`Group A`, `Group B`, `Group C`, `Group D`).
+  - Automatically generates anonymous student IDs (`GRPA001`–`GRPA0XX`, `GRPB001`–`GRPB0XX`, `GRPC001`–`GRPC0XX`, `GRPD001`–`GRPD0XX`), calculates total promotion headcount, and computes the FE pair/trio slot mix per group.
+- **Teacher Assignments (`Teachers`)**:
+  - Parses teacher counts per track (e.g., `Teachers AG 0 AT 3` or `Teachers AG 2 AT 2`) and optional teacher names per group (`A`, `B`, `C`, `D`).
+  - If teacher names are omitted, defaults to clean placeholders (`Teacher A (TBC)`, `Teacher B (TBC)`, `Teacher C (TBC)`, `Teacher D (TBC)`).
+  - If a track has `0` teachers (e.g., `AG 0` in Semester 3 or 4), its faculty card is omitted from the Class Groups & Teachers page.
+- **Files Synchronized Automatically**:
+  1. `src/template.html` (Flight Deck HUD callsign badge)
+  2. `src/js/02-config.js` & `src/js/03-core-deck.js` (Admin card tag, description, and dock title)
+  3. `src/js/11-admin-hub.js` (In-Deck Admin Hub: overview, faculty cards, and student group tables)
+  4. `admin.html` (Standalone Admin Portal: overview, faculty cards, and student group tables)
+  5. `portfolio.html` & `students.private.example.json` (Student `<optgroup>` selectors and private mapping template)
+  6. Runs `npm run package` to rebuild `index.html`, `output.css`, the SCORM `.zip`, `.iso`, and `.dmg`.
 
 ---
 

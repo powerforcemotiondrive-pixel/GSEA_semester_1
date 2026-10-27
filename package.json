@@ -7,7 +7,8 @@
     "build:html": "node scripts/build-html.js",
     "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify",
     "build": "node scripts/build-html.js && npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify",
-    "package": "node scripts/package-scorm.js",
+    "package": "node scripts/package-scorm.js && node scripts/package-iso.js",
+    "package:scorm": "node scripts/package-scorm.js",
     "package:moodle": "node scripts/package-moodle.js",
     "package:iso": "node scripts/package-iso.js",
     "package:esoleau": "node scripts/package-esoleau.js",
@@ -15,7 +16,8 @@
     "serve": "python3 -m http.server 8000",
     "backup1": "node scripts/backup.js semester1",
     "backup2": "node scripts/backup.js semester2",
-    "backup3": "node scripts/backup.js semester3"
+    "backup3": "node scripts/backup.js semester3",
+    "promo:update": "node scripts/update-promo.js && npm run package && npm run package:moodle"
   },
   "repository": {
     "type": "git",

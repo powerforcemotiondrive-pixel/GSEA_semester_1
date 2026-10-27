@@ -22,6 +22,8 @@ dist/
 .env
 .env.local
 
-# Confidential student PII mapping (Never commit to Git)
+# Confidential student & faculty PII mapping (Never commit to Git)
 students.private.json
+PROMO_SETUP.private.md
+
 
