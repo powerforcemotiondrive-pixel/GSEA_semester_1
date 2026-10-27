@@ -28,6 +28,14 @@
 
       // Enhanced keyboard navigation (Deck & Flashcards & Modal Escape)
       document.addEventListener('keydown', (e) => {
+        const critModalEl = document.getElementById('criteria-modal');
+        const isCritModalOpen = critModalEl && !critModalEl.classList.contains('hidden');
+
+        if (e.key === 'Escape' && isCritModalOpen) {
+          closeCriteriaModal();
+          return;
+        }
+
         const portModalEl = document.getElementById('deck-portfolio-modal');
         const isPortModalOpen = portModalEl && !portModalEl.classList.contains('hidden');
 
@@ -50,7 +58,7 @@
           if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggleFlashcardFlip(); return; }
         }
 
-        if (!isModalOpen && !isPortModalOpen) {
+        if (!isModalOpen && !isPortModalOpen && !isCritModalOpen) {
           if (e.key === 'ArrowLeft') stepDeck(-1);
           if (e.key === 'ArrowRight') stepDeck(1);
         }
@@ -467,19 +475,19 @@
               <svg width="13" height="13" class="shrink-0 transition-colors" style="color: var(--skills-accent);" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
               <span class="transition-colors font-extrabold" style="color: var(--skills-color);">Continuous Assessment Criteria</span>
             </div>
-            <span class="text-[9.5px] font-mono text-slate-400 font-medium hidden sm:inline">Click to listen</span>
+            <span class="text-[9.5px] font-mono text-slate-400 font-medium hidden sm:inline">Click to explore criteria</span>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-5 gap-y-2 gap-x-2.5">
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Fluency')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Fluency</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈfluː.ən.si/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Grammar')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Grammar</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈɡræm.ər/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Vocabulary')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Vocabulary</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/vəˈkæb.jʊ.lər.i/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Pronunciation')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Pronunciation</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/prəˌnʌn.siˈeɪ.shən/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Comprehension')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Comprehension</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌkɒm.prɪˈhen.ʃən/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Discussion')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Discussion</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/dɪˈskʌʃ.ən/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Correction')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Correction</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/kəˈrek.ʃən/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Interaction')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Interaction</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌɪn.təˈræk.ʃən/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Assessment')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Assessment</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/əˈses.mənt/</span></div>
-            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Portfolio')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Portfolio</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/pɔːtˈfəʊ.li.əʊ/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Fluency')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Fluency</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈfluː.ən.si/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Grammar')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Grammar</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈɡræm.ər/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Vocabulary')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Vocabulary</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/vəˈkæb.jʊ.lər.i/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Pronunciation')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Pronunciation</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/prəˌnʌn.siˈeɪ.shən/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Comprehension')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Comprehension</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌkɒm.prɪˈhen.ʃən/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Discussion')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Discussion</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/dɪˈskʌʃ.ən/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Correction')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Correction</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/kəˈrek.ʃən/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Interaction')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Interaction</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌɪn.təˈræk.ʃən/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Assessment')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Assessment</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/əˈses.mənt/</span></div>
+            <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Portfolio')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Portfolio</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/pɔːtˈfəʊ.li.əʊ/</span></div>
           </div>
         `;
       }
@@ -606,17 +614,23 @@
 
         if (isActive) {
           item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border cursor-pointer shadow-2xs";
-          item.style.backgroundColor = '#ffffff';
-          item.style.borderColor = '#cbd5e1';
+          if (idx <= 4) {
+            item.style.backgroundColor = '#ffffff';
+            item.style.borderColor = '#cbd5e1';
+          } else {
+            item.style.backgroundColor = '#e2e8f0';
+            item.style.borderColor = '#94a3b8';
+          }
           item.style.borderLeft = `3px solid ${mod.accent}`;
           if (title) {
             title.style.color = '#0f172a';
             title.className = "flight-strip-title truncate text-xs font-bold text-slate-900 transition-all pointer-events-none";
           }
           if (badge) {
-            badge.style.backgroundColor = '#f1f5f9';
-            badge.style.color = '#334155';
-            badge.style.border = '1px solid #e2e8f0';
+            badge.style.backgroundColor = '#ffffff';
+            badge.style.color = mod.accent;
+            badge.style.border = idx <= 4 ? '1px solid #cbd5e1' : '1px solid #94a3b8';
+            badge.style.fontWeight = '800';
           }
           if (chevron) {
             chevron.style.color = mod.accent;
@@ -638,6 +652,7 @@
               badge.style.backgroundColor = '#f1f5f9';
               badge.style.color = '#475569';
               badge.style.border = '1px solid #e2e8f0';
+              badge.style.fontWeight = '700';
             }
             if (chevron) {
               chevron.style.color = '#64748b';
@@ -657,6 +672,7 @@
               badge.style.backgroundColor = '#cbd5e1';
               badge.style.color = '#1e293b';
               badge.style.border = '1px solid #94a3b8';
+              badge.style.fontWeight = '700';
             }
             if (chevron) {
               chevron.style.color = '#64748b';
@@ -1004,6 +1020,206 @@
         console.warn('Speech synthesis exception:', e);
       }
     }
+
+    // --- Continuous Assessment Criteria Deep-Dive Data & Modal Controller ---
+    const CRITERIA_DATA = {
+      'Fluency': {
+        word: 'Fluency',
+        ipa: '/ˈfluː.ən.si/',
+        category: 'ICAO Rating Dimension 4 • Spoken Delivery',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`,
+        definition: 'Speaking smoothly and naturally at an even tempo, without long pauses, awkward silences, or repetitive self-stopping.',
+        aviation: 'In air traffic and flight operations, long hesitations tie up radio frequencies and introduce ambiguity. A steady, predictable tempo signals calm situational control and professionalism.',
+        toeic: 'Questions 3–11 in TOEIC Speaking evaluate spontaneous speech rate. Continuous delivery without "dead air" scores higher than pausing to search for overly complex words.',
+        strategy: 'Use conversational bridges instead of dead silence: <em>"Looking at the current apron conditions..."</em> or <em>"From an operational standpoint..."</em>'
+      },
+      'Grammar': {
+        word: 'Grammar',
+        ipa: '/ˈɡræm.ər/',
+        category: 'ICAO Rating Dimension 2 • Sentence Structure',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7"/></svg>`,
+        definition: 'Using clear, accurate sentence patterns (verb tenses, modal verbs of obligation, cause-and-effect clauses) that convey your meaning without ambiguity.',
+        aviation: 'Standard operational phrasing relies on strict modals (<em>must, should, are required to</em>) and passive incident reporting (<em>"The runway was inspected before landing"</em>). Errors in tense or obligation cause immediate safety hazards.',
+        toeic: 'Tested directly in TOEIC Speaking Q8 and Q11. Consistent subject-verb agreement and conditional clauses (<em>"If... then..."</em>) distinguish score bands 7 & 8.',
+        strategy: 'Keep sentence structures direct and controlled: <em>"Due to technical delays, the aircraft was held at the holding point before departure."</em>'
+      },
+      'Vocabulary': {
+        word: 'Vocabulary',
+        ipa: '/vəˈkæb.jʊ.lər.i/',
+        category: 'ICAO Rating Dimension 3 • Terminology & Precision',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>`,
+        definition: 'Selecting accurate, context-specific words for aerodromes, turnaround operations, weather, and sustainable aviation instead of vague terms like <em>"thing"</em> or <em>"problem"</em>.',
+        aviation: 'Precise aeronautical terminology (FOD, pushback tug, holding pattern, go-around, turnaround schedule) guarantees instant mutual comprehension across multinational crews.',
+        toeic: 'High-scoring TOEIC responses replace basic words (<em>"good"</em>, <em>"big"</em>) with precise professional vocabulary (<em>"cost-effective"</em>, <em>"substantial"</em>, <em>"reliable"</em>, <em>"sustainable"</em>).',
+        strategy: 'Paraphrase accurately if a specific word escapes you: <em>"The paved safety boundary alongside the runway, also known as the shoulder..."</em>'
+      },
+      'Pronunciation': {
+        word: 'Pronunciation',
+        ipa: '/prəˌnʌn.siˈeɪ.shən/',
+        category: 'ICAO Rating Dimension 1 • Intelligibility & Rhythm',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>`,
+        definition: 'Clear word stress, distinct syllable rhythm, and accurate sounds so that international listeners understand your speech easily on the first attempt.',
+        aviation: 'You do not need a native British or American accent; you need clear intelligibility. Correct word stress (<em>pro-CE-dure</em>, not <em>PRO-ce-dure</em>) prevents fatal misunderstandings on VHF frequencies.',
+        toeic: 'Directly evaluated in TOEIC Speaking Q1–2 (Read a text aloud). Syllable grouping, natural pauses at commas/periods, and rising/falling pitch intonation drive top scores.',
+        strategy: 'Emphasize key informative words (runway numbers, flight levels, speed instructions) and slow down slightly on technical terms.'
+      },
+      'Comprehension': {
+        word: 'Comprehension',
+        ipa: '/ˌkɒm.prɪˈhen.ʃən/',
+        category: 'ICAO Rating Dimension 5 • Understanding Global Accents',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>`,
+        definition: 'Understanding spoken English quickly and accurately across diverse international accents, unexpected scenarios, and technical briefings.',
+        aviation: 'Aviation is an international team environment. You must understand flight crews and engineers with Spanish, German, Chinese, or French accents without repeatedly asking them to say again.',
+        toeic: 'Comprises 50% of your total TOEIC Listening score (Parts 1–4). Recognizing main ideas, speaker attitudes, and operational data under time constraints is essential for 850+ marks.',
+        strategy: 'Use active readback confirmations when verifying complex instructions: <em>"Confirming your instruction: taxi via Alpha to holding point Runway 27 Right, correct?"</em>'
+      },
+      'Discussion': {
+        word: 'Discussion',
+        ipa: '/dɪˈskʌʃ.ən/',
+        category: 'Communicative Competence • Collaborative Debate',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>`,
+        definition: 'Actively contributing arguments, evaluating alternatives, and working toward consensus with a partner or team during seminar discussions.',
+        aviation: 'Modern aviation operations rely on Crew Resource Management (CRM). Constructive, respectful debate among engineers, pilots, and controllers prevents errors before operations commence.',
+        toeic: 'Directly prepares for TOEIC Speaking Q11 (Express an Opinion). High scores require presenting a firm position supported by two distinct reasons and addressing counterarguments.',
+        strategy: 'Invite peer input constructively: <em>"I agree that turnaround times are tight, but how would you handle the baggage transfer constraint?"</em>'
+      },
+      'Correction': {
+        word: 'Correction',
+        ipa: '/kəˈrek.ʃən/',
+        category: 'Communicative Competence • Spontaneous Self-Repair',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>`,
+        definition: 'Recognizing your own speech slips or misunderstandings and repairing them naturally without losing composure or freezing.',
+        aviation: 'In aeronautical radiotelephony, when a slip occurs, the official procedure is to state <em>"Correction"</em> followed immediately by the accurate data. Self-repair is an active indicator of operational vigilance.',
+        toeic: 'Examiners do not penalize brief, natural self-corrections. In fact, smoothly repairing a slip demonstrates active linguistic self-awareness and speaking confidence.',
+        strategy: 'Use professional repair markers: <em>"Correction, the departure runway is 14 Left, not 14 Right."</em> or <em>"What I meant to say was..."</em>'
+      },
+      'Interaction': {
+        word: 'Interaction',
+        ipa: '/ˌɪn.təˈræk.ʃən/',
+        category: 'ICAO Rating Dimension 6 • Team Coordination & Feedback',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>`,
+        definition: 'Engaging actively with your conversation partner: listening attentively, maintaining mutual focus, and building collaboratively on each other\'s ideas.',
+        aviation: 'Aviation communication is never a monologue; it is an active closed-loop system. Confirming, verifying, and challenging constructively prevents dangerous assumptions.',
+        toeic: 'Assessed throughout collaborative simulation and paired tasks. Spontaneous turn-taking, active listening reactions (<em>"That makes sense"</em>, <em>"Good point"</em>), and follow-up prompts earn top marks.',
+        strategy: 'Build on your peer\'s proposal: <em>"Building on what Thomas said, we should also examine the energy impact on ground power units."</em>'
+      },
+      'Assessment': {
+        word: 'Assessment',
+        ipa: '/əˈses.mənt/',
+        category: 'Evaluation Framework • Continuous Formative Feedback',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`,
+        definition: 'Regular, formative feedback from your teacher and peers to help you track your spoken English development against CEFR B2 and ICAO benchmarks.',
+        aviation: 'Continuous assessment mirrors operational safety audits and recurring flight-simulator checks. It identifies individual strengths and specific areas for targeted improvement before evaluations.',
+        toeic: 'Tracking your performance across weekly mini-briefings and pronunciation drills eliminates recurring errors before your official graduation TOEIC exam.',
+        strategy: 'Solicit targeted feedback after briefings: <em>"Did the timeline of the turnaround sequence come across clearly, or was the delivery too fast?"</em>'
+      },
+      'Portfolio': {
+        word: 'Portfolio',
+        ipa: '/pɔːtˈfəʊ.li.əʊ/',
+        category: 'Autonomous Learning • Formative Dossier',
+        icon: `<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>`,
+        definition: 'Your personal digital dossier of coursework, reflections, vocabulary revision logs, and formative evaluation grades across the entire semester.',
+        aviation: 'Professional aeronautical careers demand lifelong continuous learning and documentation. Your portfolio cultivates autonomous self-audit habits essential for engineers and air traffic managers.',
+        toeic: 'Systematically reviewing and recording mastered vocabulary and grammar notes in your portfolio directly boosts retention for long-term TOEIC score gains.',
+        strategy: 'Use your portfolio to set concrete weekly goals: <em>"For this week\'s simulation, my personal objective is to deploy three new modal structures in the team debrief."</em>'
+      }
+    };
+
+    function showCriteriaModal(key) {
+      const data = CRITERIA_DATA[key];
+      if (!data) return;
+
+      const modalEl = document.getElementById('criteria-modal');
+      const backdropEl = document.getElementById('criteria-modal-backdrop');
+      const cardEl = document.getElementById('criteria-modal-card');
+      const titleEl = document.getElementById('criteria-modal-title');
+      const ipaEl = document.getElementById('criteria-modal-ipa');
+      const subtitleEl = document.getElementById('criteria-modal-subtitle');
+      const badgeEl = document.getElementById('criteria-modal-badge');
+      const audioBtn = document.getElementById('criteria-modal-audio-btn');
+      const bodyEl = document.getElementById('criteria-modal-body');
+
+      const mod = modulesData[currentModuleIndex] || { accent: '#ea580c', primaryDark: '#0f172a' };
+
+      if (titleEl) titleEl.textContent = data.word;
+      if (ipaEl) ipaEl.textContent = data.ipa;
+      if (subtitleEl) subtitleEl.textContent = data.category;
+      if (badgeEl) {
+        badgeEl.style.backgroundColor = mod.accent;
+        badgeEl.innerHTML = data.icon;
+      }
+      if (audioBtn) {
+        audioBtn.onclick = () => speakWord(data.word);
+      }
+
+      if (bodyEl) {
+        bodyEl.innerHTML = `
+          <!-- Section 1: Plain English Definition -->
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+            <div class="flex items-center gap-2 mb-1.5 text-slate-900 font-bold text-xs uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full" style="background-color: ${mod.accent};"></span>
+              <span>Plain B2 Definition</span>
+            </div>
+            <p class="text-xs sm:text-[13px] leading-relaxed text-slate-700">${data.definition}</p>
+          </div>
+
+          <!-- Section 2: Why It Matters in Aviation & Professional English -->
+          <div class="p-3.5 rounded-xl bg-sky-50/70 border border-sky-100 shadow-2xs">
+            <div class="flex items-center gap-2 mb-1.5 text-sky-950 font-bold text-xs uppercase tracking-wider">
+              <svg class="w-3.5 h-3.5 text-sky-600 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+              <span>Why It Matters in Aviation &amp; Engineering</span>
+            </div>
+            <p class="text-xs sm:text-[13px] leading-relaxed text-slate-700">${data.aviation}</p>
+          </div>
+
+          <!-- Section 3: TOEIC Speaking & Listening Impact -->
+          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-100 shadow-2xs">
+            <div class="flex items-center gap-2 mb-1.5 text-amber-950 font-bold text-xs uppercase tracking-wider">
+              <svg class="w-3.5 h-3.5 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+              <span>TOEIC Benchmark &amp; Exam Strategy</span>
+            </div>
+            <p class="text-xs sm:text-[13px] leading-relaxed text-slate-700">${data.toeic}</p>
+          </div>
+
+          <!-- Section 4: Practical Spoken Strategy / Phrase -->
+          <div class="p-3.5 rounded-xl bg-emerald-50/70 border border-emerald-100 shadow-2xs">
+            <div class="flex items-center gap-2 mb-1.5 text-emerald-950 font-bold text-xs uppercase tracking-wider">
+              <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              <span>Useful Spoken Pattern for Class</span>
+            </div>
+            <p class="text-xs sm:text-[13px] leading-relaxed text-emerald-900 font-medium">${data.strategy}</p>
+          </div>
+        `;
+      }
+
+      if (modalEl) modalEl.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        if (backdropEl) backdropEl.classList.remove('opacity-0');
+        if (cardEl) {
+          cardEl.classList.remove('scale-95', 'opacity-0');
+          cardEl.classList.add('scale-100', 'opacity-100');
+        }
+      });
+    }
+
+    function closeCriteriaModal() {
+      const modalEl = document.getElementById('criteria-modal');
+      const backdropEl = document.getElementById('criteria-modal-backdrop');
+      const cardEl = document.getElementById('criteria-modal-card');
+
+      if (backdropEl) backdropEl.classList.add('opacity-0');
+      if (cardEl) {
+        cardEl.classList.remove('scale-100', 'opacity-100');
+        cardEl.classList.add('scale-95', 'opacity-0');
+      }
+      setTimeout(() => {
+        if (modalEl) modalEl.classList.add('hidden');
+      }, 200);
+    }
+
+    window.speakWord = speakWord;
+    window.showCriteriaModal = showCriteriaModal;
+    window.closeCriteriaModal = closeCriteriaModal;
 
     // --- Mastered Vocabulary Learning State ---
     function getMasteredKey(modNum, sessionNum, progKey = (modalState && modalState.program) || currentProgram || 'ag') {

@@ -23,8 +23,8 @@
     :root {
       --primary: #1e293b;
       --primary-dark: #0f172a;
-      --accent: #ea580c;
-      --accent-dark: #c2410c;
+      --accent: #0284c7;
+      --accent-dark: #0369a1;
     }
     .textured-surface {
       background-image: 
@@ -34,6 +34,11 @@
         linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.16) 100%) !important;
       background-size: 100% 100%, 16px 16px, 16px 16px, 100% 100% !important;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.3) !important;
+    }
+    .slides-canvas {
+      background-color: #f1f5f9;
+      background-image: radial-gradient(rgba(100, 116, 139, 0.22) 1.25px, transparent 1.25px);
+      background-size: 20px 20px;
     }
     @media print {
       body { background-color: white !important; color: black !important; }
@@ -56,30 +61,27 @@
     <!-- Top Header -->
     <header class="textured-surface bg-slate-800 text-white px-4 py-3.5 sm:px-6 sm:py-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-900 shrink-0">
       <div class="flex items-center space-x-3 sm:space-x-4">
-        <div class="bg-orange-600 p-2.5 rounded-lg text-white shadow-md flex items-center justify-center shrink-0">
+        <div class="bg-sky-600 p-2.5 rounded-lg text-white shadow-md flex items-center justify-center shrink-0">
           <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
           </svg>
         </div>
         <div class="flex flex-col justify-center">
-          <div class="flex items-center gap-2">
-            <h1 class="text-[14px] sm:text-[16px] font-bold text-white tracking-wide uppercase leading-tight">
-              GSEA English Programme 2026–2027
-            </h1>
-            <span class="bg-orange-500/30 text-orange-200 border border-orange-400/40 text-[10px] font-mono font-bold px-2 py-0.5 rounded-full">Refonte • GSEA26A</span>
-          </div>
-          <p class="text-[11.5px] sm:text-[12px] font-medium text-orange-300 mt-0.5">
+          <h1 class="text-[14px] sm:text-[16px] font-bold text-white tracking-wide uppercase leading-tight">
+            GSEA English Programme 2026–2027
+          </h1>
+          <p class="text-[11.5px] sm:text-[12px] font-medium text-slate-300 mt-0.5">
             <span class="lang-en">Faculty Presentation • Phil PARRIS (LH/LAN)</span>
             <span class="lang-fr">Présentation Pédagogique • Phil PARRIS (LH/LAN)</span>
           </p>
         </div>
       </div>
       
-      <!-- Top Actions & View Mode Switcher -->
-      <div class="flex items-center gap-2 no-print shrink-0 flex-wrap">
+      <!-- Top Actions: Language & View Mode Switcher -->
+      <div class="flex items-center gap-2.5 no-print shrink-0 flex-wrap">
         <!-- Language Switcher Pill -->
         <div class="bg-slate-900/80 p-1 rounded-xl border border-slate-700 flex items-center gap-1 shadow-inner text-xs font-bold">
-          <button id="btn-lang-en" onclick="setPresentationLang('en')" class="px-2.5 py-1 rounded-lg transition-all cursor-pointer bg-orange-600 text-white shadow-xs flex items-center gap-1" title="English Version">
+          <button id="btn-lang-en" onclick="setPresentationLang('en')" class="px-2.5 py-1 rounded-lg transition-all cursor-pointer bg-sky-600 text-white shadow-xs flex items-center gap-1" title="English Version">
             <span>🇬🇧</span>
             <span>EN</span>
           </button>
@@ -91,7 +93,7 @@
 
         <!-- Mode Switcher Pill -->
         <div class="bg-slate-900/80 p-1 rounded-xl border border-slate-700 flex items-center gap-1 shadow-inner">
-          <button id="btn-mode-slides" onclick="setViewMode('slides')" class="px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-orange-600 text-white shadow-xs">
+          <button id="btn-mode-slides" onclick="setViewMode('slides')" class="px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-sky-600 text-white shadow-xs">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             <span class="lang-en">Slide Show</span>
             <span class="lang-fr">Diaporama</span>
@@ -103,22 +105,8 @@
           </button>
         </div>
 
-        <button onclick="window.print()" title="Print full presentation or save as PDF" class="flex items-center space-x-1.5 bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-xs cursor-pointer border border-slate-600">
-          <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
-          </svg>
-          <span class="hidden sm:inline lang-en">Print / PDF</span>
-          <span class="hidden sm:inline lang-fr">Imprimer / PDF</span>
-        </button>
-
-        <a href="admin.html" class="flex items-center space-x-1.5 bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-xs cursor-pointer border border-slate-600">
-          <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-          </svg>
-          <span class="hidden sm:inline">Admin</span>
-        </a>
-
-        <a href="index.html" class="flex items-center space-x-1.5 bg-orange-600 hover:bg-orange-700 text-white px-3.5 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-md cursor-pointer shrink-0">
+        <!-- Back to Deck -->
+        <a href="index.html" class="flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-700 text-white px-3.5 py-1.5 rounded-lg font-semibold text-xs transition-all shadow-md cursor-pointer shrink-0">
           <svg class="w-3.5 h-3.5 stroke-[2.5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
           </svg>
@@ -128,77 +116,77 @@
     </header>
 
     <!-- SLIDE SHOW VIEW CONTAINER -->
-    <div id="slides-view-container" class="flex-1 flex flex-col justify-between bg-slate-900 text-white p-3 sm:p-6 lg:p-8">
+    <div id="slides-view-container" class="flex-1 flex flex-col justify-between slides-canvas text-slate-800 p-3 sm:p-6 lg:p-8">
       
       <!-- Slide Stage Area -->
       <div class="flex-1 flex items-center justify-center min-h-[480px]">
-        <div class="w-full max-w-4xl mx-auto">
+        <div class="w-full max-w-6xl mx-auto">
 
           <!-- SLIDE 1: Title & Executive Overview -->
           <div class="presentation-slide space-y-6" id="slide-0">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex flex-wrap items-center justify-between gap-2">
-                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-orange-300 bg-orange-500/20 border border-orange-400/30">
-                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  ENAC • Département LH / LAN • Promotion GSEA26A
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  ENAC • Département LH / LAN
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 01 / 12</span>
-                  <span class="lang-fr">DIAPO 01 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 01 / 13</span>
+                  <span class="lang-fr">DIAPO 01 / 13</span>
                 </span>
               </div>
 
-              <div>
-                <h2 class="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+              <div class="space-y-2">
+                <h2 class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
                   <span class="lang-en">GSEA English Programme Overhaul (Refonte) 2026/7</span>
                   <span class="lang-fr">Refonte du Programme d'Anglais GSEA 2026/2027</span>
                 </h2>
-                <p class="text-sm sm:text-base text-orange-400 font-semibold mt-1">
+                <p class="text-sm sm:text-base text-sky-700 font-bold">
                   <span class="lang-en">A Modern, Communicative, and Career-Aligned Learning Portal</span>
                   <span class="lang-fr">Un portail d'apprentissage moderne, communicatif et ancré dans les réalités professionnelles</span>
                 </p>
-                <p class="text-xs sm:text-sm text-slate-300 mt-2 font-medium">
-                  <span class="lang-en">Presented by <strong class="text-white">Phil PARRIS</strong> — Professeur Référent GSEA, Département LH / LAN</span>
-                  <span class="lang-fr">Présenté par <strong class="text-white">Phil PARRIS</strong> — Professeur Référent GSEA, Département LH / LAN</span>
+                <p class="text-xs sm:text-sm text-slate-600 font-medium">
+                  <span class="lang-en">Presented by <strong class="text-slate-900">Phil PARRIS</strong> — Professeur Référent GSEA, Département LH / LAN</span>
+                  <span class="lang-fr">Présenté par <strong class="text-slate-900">Phil PARRIS</strong> — Professeur Référent GSEA, Département LH / LAN</span>
                 </p>
-                <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1">
                   <span class="lang-en">A comprehensive pedagogical modernisation for future TSEEAC professionals, starting Week 44 of 2026. Preserving the weekly rhythm while completely renewing texts, technical vocabulary, viewing media, and communicative classroom tasks. Semester 1 serves as our foundation, with Semesters 2, 3, and 4 being updated progressively throughout the year.</span>
                   <span class="lang-fr">Une modernisation pédagogique globale pour les futurs techniciens TSEEAC, déployée dès la semaine 44 de 2026. Maintien du rythme hebdomadaire avec un renouvellement complet des supports, du vocabulaire métier, des médias et des mises en situation orales. Le Semestre 1 pose les fondations, les Semestres 2, 3 et 4 étant actualisés progressivement au fil de l'année.</span>
                 </p>
               </div>
 
               <!-- Metrics Strip -->
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-700">
-                <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-center">
-                  <div class="text-xl sm:text-2xl font-black text-orange-400">
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 border-t border-slate-100">
+                <div class="p-3 bg-sky-50/70 rounded-xl border border-sky-200/80 text-center shadow-2xs">
+                  <div class="text-xl sm:text-2xl font-black text-sky-700">
                     <span class="lang-en">68 hours</span>
                     <span class="lang-fr">68 heures</span>
                   </div>
-                  <div class="text-[11px] text-slate-300 font-medium mt-0.5">
+                  <div class="text-[11px] text-slate-600 font-medium mt-0.5">
                     <span class="lang-en">Total Timetable</span>
                     <span class="lang-fr">Volume Horaire Global</span>
                   </div>
                 </div>
-                <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-center">
-                  <div class="text-xl sm:text-2xl font-black text-emerald-400">3</div>
-                  <div class="text-[11px] text-slate-300 font-medium mt-0.5">
+                <div class="p-3 bg-emerald-50/70 rounded-xl border border-emerald-200/80 text-center shadow-2xs">
+                  <div class="text-xl sm:text-2xl font-black text-emerald-700">3</div>
+                  <div class="text-[11px] text-slate-600 font-medium mt-0.5">
                     <span class="lang-en">Modules</span>
                     <span class="lang-fr">Unités d'Enseignement</span>
                   </div>
                 </div>
-                <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-center">
-                  <div class="text-xl sm:text-2xl font-black text-teal-400">4</div>
-                  <div class="text-[11px] text-slate-300 font-medium mt-0.5">
+                <div class="p-3 bg-teal-50/70 rounded-xl border border-teal-200/80 text-center shadow-2xs">
+                  <div class="text-xl sm:text-2xl font-black text-teal-700">4</div>
+                  <div class="text-[11px] text-slate-600 font-medium mt-0.5">
                     <span class="lang-en">Formative Evaluations</span>
                     <span class="lang-fr">Évaluations Formatives (EF)</span>
                   </div>
                 </div>
-                <div class="p-3 bg-white/5 rounded-xl border border-white/10 text-center">
-                  <div class="text-xl sm:text-2xl font-black text-purple-400">
+                <div class="p-3 bg-purple-50/70 rounded-xl border border-purple-200/80 text-center shadow-2xs">
+                  <div class="text-xl sm:text-2xl font-black text-purple-700">
                     <span class="lang-en">Weekly</span>
                     <span class="lang-fr">Hebdo</span>
                   </div>
-                  <div class="text-[11px] text-slate-300 font-medium mt-0.5">
+                  <div class="text-[11px] text-slate-600 font-medium mt-0.5">
                     <span class="lang-en">Student Portfolio</span>
                     <span class="lang-fr">Portfolio Étudiant</span>
                   </div>
@@ -209,88 +197,88 @@
 
           <!-- SLIDE 2: Pedagogical Drivers -->
           <div class="presentation-slide space-y-6 hidden" id="slide-1">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Pedagogical Drivers &amp; Context</span>
                   <span class="lang-fr">Contexte &amp; Démarche Pédagogique</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 02 / 12</span>
-                  <span class="lang-fr">DIAPO 02 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 02 / 13</span>
+                  <span class="lang-fr">DIAPO 02 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">DDRS Requirements &amp; Operational Airport Field Research</span>
                   <span class="lang-fr">Exigences DD&amp;RS &amp; Enquête de Terrain Aéroportuaire</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">The 2026/7 overhaul directly aligns teaching materials with real student career needs and national educational mandates through three core pillars:</span>
                   <span class="lang-fr">La refonte 2026/2027 aligne directement les contenus sur les besoins métier des étudiants et les orientations nationales selon trois piliers :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-                <div class="p-4 rounded-xl bg-emerald-950/30 border border-emerald-500/30 space-y-2">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-2 shadow-2xs">
                   <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">1 • DDRS TOPICS</span>
                     <span class="lang-fr">1 • THÉMATIQUES DD&amp;RS</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">National DDRS Alignment</span>
                     <span class="lang-fr">Alignement National DD&amp;RS</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">General English themes are fully matched with national Sustainable Development &amp; Social Responsibility mandates. Students discuss green policy, climate resilience, and modern governance in simple, clear English.</span>
                     <span class="lang-fr">Les thèmes d'anglais général s'inscrivent pleinement dans les référentiels nationaux de Développement Durable et Responsabilité Sociétale. Les étudiants débattent de transition écologique, de résilience climatique et de gouvernance en anglais clair et accessible.</span>
                   </p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-orange-950/30 border border-orange-500/30 space-y-2 flex flex-col justify-between">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-cyan-50/70 border border-cyan-200/80 space-y-2 shadow-2xs flex flex-col justify-between">
                   <div class="space-y-2">
-                    <span class="px-2 py-0.5 rounded bg-orange-600 text-white font-mono text-[10px] font-bold">
+                    <span class="px-2 py-0.5 rounded bg-cyan-700 text-white font-mono text-[10px] font-bold">
                       <span class="lang-en">2 • FIELD RESEARCH</span>
                       <span class="lang-fr">2 • ENQUÊTE DE TERRAIN</span>
                     </span>
-                    <h4 class="font-bold text-sm text-white">
+                    <h4 class="font-bold text-sm text-slate-900">
                       <span class="lang-en">Nationwide Operational Fieldwork</span>
                       <span class="lang-fr">Enquête Opérationnelle Nationale</span>
                     </h4>
-                    <p class="text-xs text-slate-300 leading-relaxed">
+                    <p class="text-xs text-slate-600 leading-relaxed">
                       <span class="lang-en">Direct integration of qualitative findings from 35 interviews with operational TSEEAC professionals across airfields throughout France, ensuring course content mirrors genuine workplace communication.</span>
                       <span class="lang-fr">Intégration directe des conclusions issues de 35 entretiens qualitatifs menés auprès de professionnels TSEEAC en poste sur les aérodromes français, garantissant des situations de communication fidèles aux réalités du terrain.</span>
                     </p>
                   </div>
-                  <div class="pt-2 mt-1 border-t border-orange-500/20 text-[10.5px] text-orange-300">
-                    <span class="lang-en">Fieldwork: <strong class="text-white">Carmen PASSAMONTES DE BARRIO</strong></span>
-                    <span class="lang-fr">Enquête de terrain : <strong class="text-white">Carmen PASSAMONTES DE BARRIO</strong></span>
+                  <div class="pt-2 mt-1 border-t border-cyan-200 text-[10.5px] text-cyan-900 font-medium">
+                    <span class="lang-en">Fieldwork: <strong class="text-slate-900">Carmen PASSAMONTES DE BARRIO</strong></span>
+                    <span class="lang-fr">Enquête de terrain : <strong class="text-slate-900">Carmen PASSAMONTES DE BARRIO</strong></span>
                   </div>
                 </div>
 
-                <div class="p-4 rounded-xl bg-blue-950/30 border border-blue-500/30 space-y-2">
-                  <span class="px-2 py-0.5 rounded bg-blue-600 text-white font-mono text-[10px] font-bold">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-sky-50/70 border border-sky-200/90 space-y-2 shadow-2xs">
+                  <span class="px-2 py-0.5 rounded bg-sky-600 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">3 • SPOKEN ENGLISH FIRST</span>
                     <span class="lang-fr">3 • PRIORITÉ À L'ORAL</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Practical Fluency &amp; Confidence</span>
                     <span class="lang-fr">Aisance Spontanée &amp; Confiance</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Our primary mission is teaching English, not technical aviation theory. We help students actively build their vocabulary, conversational fluency, and personal confidence so they can communicate effectively in their future workplace.</span>
                     <span class="lang-fr">Notre objectif prioritaire est l'apprentissage de la langue anglaise, et non l'enseignement théorique aéronautique. Nous accompagnons les étudiants pour enrichir leur vocabulaire actif, développer leur aisance conversationnelle et renforcer leur confiance en situation professionnelle.</span>
                   </p>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Real-World Workplace Readiness</span>
                   <span class="lang-fr">Préparation Concrète au Milieu Professionnel</span>
                 </span>
-                <span class="text-orange-400 font-bold">
+                <span class="text-sky-700 font-bold">
                   <span class="lang-en">Confident Spoken Fluency</span>
                   <span class="lang-fr">Pratique Orale Fluide &amp; Confiante</span>
                 </span>
@@ -300,83 +288,105 @@
 
           <!-- SLIDE 3: Curriculum Structure -->
           <div class="presentation-slide space-y-6 hidden" id="slide-2">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Curriculum Architecture</span>
                   <span class="lang-fr">Architecture Pédagogique</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 03 / 12</span>
-                  <span class="lang-fr">DIAPO 03 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 03 / 13</span>
+                  <span class="lang-fr">DIAPO 03 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">Two Parallel Tracks: 68 Timetable Hours &amp; Workload</span>
                   <span class="lang-fr">Deux Parcours Parallèles : 68 Heures Maquette &amp; Répartition</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">GSEA students attend 4 hours of face-to-face English each week, supported by structured autonomous study:</span>
                   <span class="lang-fr">Les étudiants GSEA suivent 4 heures d'anglais en présentiel par semaine, complétées par un travail autonome guidé :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                <div class="p-5 rounded-xl bg-slate-900 border border-slate-700 space-y-3">
-                  <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded text-white font-mono text-xs font-black bg-blue-600">LV101E</span>
-                    <span class="text-xs text-slate-400">
-                      <span class="lang-en">Fridays 08h00 – 10h00</span>
-                      <span class="lang-fr">Vendredi 08h00 – 10h00</span>
-                    </span>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                <div class="p-5 rounded-xl bg-sky-50/70 border border-sky-200/90 space-y-3 shadow-2xs flex flex-col justify-between">
+                  <div class="space-y-3">
+                    <div class="h-28 rounded-lg overflow-hidden border border-sky-200/80 shadow-2xs relative">
+                      <img src="images/ag_m1card1.jpg" alt="General English - Transport &amp; Mobility" class="w-full h-full object-cover">
+                      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent flex items-end p-2.5">
+                        <span class="text-white text-[11px] font-bold uppercase tracking-wider">
+                          <span class="lang-en">Global Mobility &amp; Spoken Fluency</span>
+                          <span class="lang-fr">Mobilité Internationale &amp; Aisance Orale</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="px-2.5 py-0.5 rounded text-white font-mono text-xs font-black bg-sky-600 shadow-2xs">LV101E</span>
+                      <span class="text-xs font-bold text-sky-800">
+                        <span class="lang-en">Fridays 08h00 – 10h00</span>
+                        <span class="lang-fr">Vendredi 08h00 – 10h00</span>
+                      </span>
+                    </div>
+                    <h4 class="text-base font-bold text-slate-900">
+                      <span class="lang-en">General English (AG)</span>
+                      <span class="lang-fr">Anglais Général (AG)</span>
+                    </h4>
+                    <div class="text-xs font-mono text-sky-900 font-bold bg-white/80 px-2.5 py-1 rounded border border-sky-200">
+                      <span class="lang-en">28h Class + 1.5h Oral FE Tutorials + ~17h Self-Study</span>
+                      <span class="lang-fr">28h Cours + 1,5h Tutorats Oraux (EF) + ~17h Travail Autonome</span>
+                    </div>
+                    <ul class="text-xs text-slate-700 space-y-1.5 pt-1">
+                      <li>• <span class="lang-en">Spoken conversational fluidity, debates &amp; critical thinking</span><span class="lang-fr">Aisance conversationnelle orale, débats et esprit critique</span></li>
+                      <li>• <span class="lang-en">National DDRS environmental &amp; societal transition topics</span><span class="lang-fr">Thématiques nationales DD&amp;RS : transition écologique et sociétale</span></li>
+                      <li>• <span class="lang-en">Continuous TOEIC listening &amp; reading path via Global Exam (~30h)</span><span class="lang-fr">Parcours d'entraînement TOEIC continu sur GlobalExam (~30h)</span></li>
+                    </ul>
                   </div>
-                  <h4 class="text-base font-bold text-white">
-                    <span class="lang-en">General English (AG)</span>
-                    <span class="lang-fr">Anglais Général (AG)</span>
-                  </h4>
-                  <div class="text-xs font-mono text-blue-300 font-bold">
-                    <span class="lang-en">28h Class + 1.5h Oral FE Tutorials + ~17h Self-Study</span>
-                    <span class="lang-fr">28h Cours + 1,5h Tutorats Oraux (EF) + ~17h Travail Autonome</span>
-                  </div>
-                  <ul class="text-xs text-slate-300 space-y-1.5 pt-1">
-                    <li>• <span class="lang-en">Spoken conversational fluidity, debates &amp; critical thinking</span><span class="lang-fr">Aisance conversationnelle orale, débats et esprit critique</span></li>
-                    <li>• <span class="lang-en">National DDRS environmental &amp; societal transition topics</span><span class="lang-fr">Thématiques nationales DD&amp;RS : transition écologique et sociétale</span></li>
-                    <li>• <span class="lang-en">Continuous TOEIC listening &amp; reading path via Global Exam (~30h)</span><span class="lang-fr">Parcours d'entraînement TOEIC continu sur GlobalExam (~30h)</span></li>
-                  </ul>
                 </div>
 
-                <div class="p-5 rounded-xl bg-orange-950/40 border border-orange-500/40 space-y-3">
-                  <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded text-white font-mono text-xs font-black bg-orange-600">LV121E</span>
-                    <span class="text-xs text-orange-300">
-                      <span class="lang-en">Wednesdays 13h15 – 15h15</span>
-                      <span class="lang-fr">Mercredi 13h15 – 15h15</span>
-                    </span>
+                <div class="p-5 rounded-xl bg-cyan-50/70 border border-cyan-200/80 space-y-3 shadow-2xs flex flex-col justify-between">
+                  <div class="space-y-3">
+                    <div class="h-28 rounded-lg overflow-hidden border border-cyan-200/80 shadow-2xs relative">
+                      <img src="images/turnaround_apron.jpg" alt="Technical English - Ramp Operations" class="w-full h-full object-cover">
+                      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent flex items-end p-2.5">
+                        <span class="text-white text-[11px] font-bold uppercase tracking-wider">
+                          <span class="lang-en">Airside Apron &amp; Aircraft Turnaround</span>
+                          <span class="lang-fr">Piste, Escale &amp; Traitement Avion</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="px-2.5 py-0.5 rounded text-white font-mono text-xs font-black bg-cyan-700 shadow-2xs">LV121E</span>
+                      <span class="text-xs font-bold text-cyan-900">
+                        <span class="lang-en">Wednesdays 13h15 – 15h15</span>
+                        <span class="lang-fr">Mercredi 13h15 – 15h15</span>
+                      </span>
+                    </div>
+                    <h4 class="text-base font-bold text-slate-900">
+                      <span class="lang-en">Technical Aeronautical English (AT)</span>
+                      <span class="lang-fr">Anglais Aéronautique &amp; Technique (AT)</span>
+                    </h4>
+                    <div class="text-xs font-mono text-cyan-950 font-bold bg-white/80 px-2.5 py-1 rounded border border-cyan-200">
+                      <span class="lang-en">28h Class + 1.5h Oral FE Tutorials + ~17h Aviation Media</span>
+                      <span class="lang-fr">28h Cours + 1,5h Tutorats Oraux (EF) + ~17h Médias Métier</span>
+                    </div>
+                    <ul class="text-xs text-slate-700 space-y-1.5 pt-1">
+                      <li>• <span class="lang-en">Aerodrome infrastructure, runway/taxiway markings &amp; turnaround</span><span class="lang-fr">Infrastructure d'aérodrome, balisage pistes/taxiways et escale</span></li>
+                      <li>• <span class="lang-en">Aircraft systems, architecture &amp; basic flight aerodynamics</span><span class="lang-fr">Systèmes aéronef, structure générale et aérodynamique de base</span></li>
+                      <li>• <span class="lang-en">Ramp safety protocols, FOD mitigation &amp; meteorology in operations</span><span class="lang-fr">Sécurité sur piste, prévention du FOD et météo opérationnelle</span></li>
+                    </ul>
                   </div>
-                  <h4 class="text-base font-bold text-white">
-                    <span class="lang-en">Technical Aeronautical English (AT)</span>
-                    <span class="lang-fr">Anglais Aéronautique &amp; Technique (AT)</span>
-                  </h4>
-                  <div class="text-xs font-mono text-orange-300 font-bold">
-                    <span class="lang-en">28h Class + 1.5h Oral FE Tutorials + ~17h Aviation Media</span>
-                    <span class="lang-fr">28h Cours + 1,5h Tutorats Oraux (EF) + ~17h Médias Métier</span>
-                  </div>
-                  <ul class="text-xs text-slate-300 space-y-1.5 pt-1">
-                    <li>• <span class="lang-en">Aerodrome infrastructure, runway/taxiway markings &amp; turnaround</span><span class="lang-fr">Infrastructure d'aérodrome, balisage pistes/taxiways et escale</span></li>
-                    <li>• <span class="lang-en">Aircraft systems, architecture &amp; basic flight aerodynamics</span><span class="lang-fr">Systèmes aéronef, structure générale et aérodynamique de base</span></li>
-                    <li>• <span class="lang-en">Ramp safety protocols, FOD mitigation &amp; meteorology in operations</span><span class="lang-fr">Sécurité sur piste, prévention du FOD et météo opérationnelle</span></li>
-                  </ul>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Timetable: 56h Class • 3h Oral Tutorials • ~34h Self-Study</span>
                   <span class="lang-fr">Maquette : 56h Présentiel • 3h Tutorats Oraux • ~34h Autonomie</span>
                 </span>
-                <span class="text-purple-300 font-bold">
+                <span class="text-purple-700 font-bold">
                   <span class="lang-en">Continuous Assessment (Final GO / NO GO)</span>
                   <span class="lang-fr">Contrôle Continu (Validation GO / NO GO Finale)</span>
                 </span>
@@ -386,125 +396,125 @@
 
           <!-- SLIDE 4: General English Syllabus -->
           <div class="presentation-slide space-y-6 hidden" id="slide-3">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">General English Syllabus</span>
                   <span class="lang-fr">Syllabus Anglais Général</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 04 / 12</span>
-                  <span class="lang-fr">DIAPO 04 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 04 / 13</span>
+                  <span class="lang-fr">DIAPO 04 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">LV101E: 4 Modules Aligned with National DDRS Priorities</span>
                   <span class="lang-fr">LV101E : 4 Modules Alignés sur les Priorités Nationales DD&amp;RS</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">Building spoken conversational fluidity, debate skills, and contemporary socio-technical vocabulary:</span>
                   <span class="lang-fr">Développer la spontanéité orale, l'argumentation en débat et le vocabulaire contemporain :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
+                <div class="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="w-5 h-5 rounded bg-emerald-500/20 text-emerald-400 font-bold text-xs flex items-center justify-center">1</span>
-                    <span class="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] font-bold">
+                    <span class="w-5 h-5 rounded bg-emerald-600 text-white font-bold text-xs flex items-center justify-center">1</span>
+                    <span class="px-2 py-0.5 rounded bg-emerald-700 text-white text-[10px] font-bold">
                       <span class="lang-en">DDRS: SOCIAL POLICY &amp; MOBILITY</span>
                       <span class="lang-fr">DD&amp;RS : POLITIQUES &amp; MOBILITÉ</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Module 1: Travel, Transport &amp; Tourism (8.5 hrs)</span>
                     <span class="lang-fr">Module 1 : Voyage, Transports &amp; Tourisme (8,5 h)</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Evolution of transport, mass over-tourism, and sustainable eco-tourism.</span>
                     <span class="lang-fr">Évolution des transports, surtourisme de masse et écotourisme durable.</span>
                   </p>
-                  <div class="p-2 rounded bg-slate-900/80 border border-slate-700 text-[11px] text-emerald-300">
+                  <div class="p-2 rounded bg-white/80 border border-emerald-200 text-[11px] text-emerald-900 font-medium">
                     <span class="lang-en"><strong>FE1 Oral Tutorial:</strong> Design an eco-friendly holiday itinerary or compare two cities with contrasting tourism policies.</span>
                     <span class="lang-fr"><strong>Tutorat Oral EF1 :</strong> Conception d'un séjour éco-responsable ou analyse comparée de politiques touristiques.</span>
                   </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-sky-50/70 border border-sky-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="w-5 h-5 rounded bg-blue-500/20 text-blue-400 font-bold text-xs flex items-center justify-center">2</span>
-                    <span class="px-2 py-0.5 rounded bg-blue-900/60 text-blue-300 text-[10px] font-bold">
+                    <span class="w-5 h-5 rounded bg-sky-600 text-white font-bold text-xs flex items-center justify-center">2</span>
+                    <span class="px-2 py-0.5 rounded bg-sky-700 text-white text-[10px] font-bold">
                       <span class="lang-en">DDRS: CLIMATE &amp; RESILIENCE</span>
                       <span class="lang-fr">DD&amp;RS : CLIMAT &amp; RÉSILIENCE</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Module 2: Weather &amp; The Environment (8.5 hrs)</span>
                     <span class="lang-fr">Module 2 : Climat &amp; Environnement (8,5 h)</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Extreme weather events, sustainable cities, and biodiversity in airports.</span>
                     <span class="lang-fr">Événements météo extrêmes, villes durables et biodiversité aéroportuaire.</span>
                   </p>
-                  <div class="p-2 rounded bg-slate-900/80 border border-slate-700 text-[11px] text-blue-300">
+                  <div class="p-2 rounded bg-white/80 border border-sky-200 text-[11px] text-sky-900 font-medium">
                     <span class="lang-en"><strong>FE2 Oral Tutorial:</strong> Collaborative spoken redesign of an airport or city for climate resilience.</span>
                     <span class="lang-fr"><strong>Tutorat Oral EF2 :</strong> Concertation orale pour adapter un aéroport ou une ville à la résilience climatique.</span>
                   </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-purple-50/70 border border-purple-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="w-5 h-5 rounded bg-purple-500/20 text-purple-400 font-bold text-xs flex items-center justify-center">3</span>
-                    <span class="px-2 py-0.5 rounded bg-purple-900/60 text-purple-300 text-[10px] font-bold">
+                    <span class="w-5 h-5 rounded bg-purple-600 text-white font-bold text-xs flex items-center justify-center">3</span>
+                    <span class="px-2 py-0.5 rounded bg-purple-700 text-white text-[10px] font-bold">
                       <span class="lang-en">DDRS: STRATEGY &amp; GOVERNANCE</span>
                       <span class="lang-fr">DD&amp;RS : STRATÉGIE &amp; GOUVERNANCE</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Module 3: New Technology &amp; AI (8.5 hrs)</span>
                     <span class="lang-fr">Module 3 : Nouvelles Technologies &amp; IA (8,5 h)</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Artificial intelligence, future of travel, biometrics, and debate techniques.</span>
                     <span class="lang-fr">Intelligence artificielle, avenir des mobilités, biométrie et techniques de débat.</span>
                   </p>
-                  <div class="p-2 rounded bg-slate-900/80 border border-slate-700 text-[11px] text-purple-300">
+                  <div class="p-2 rounded bg-white/80 border border-purple-200 text-[11px] text-purple-900 font-medium">
                     <span class="lang-en"><strong>FE3 Oral Tutorial:</strong> Spoken briefing on an emerging aviation or non-aviation technology.</span>
                     <span class="lang-fr"><strong>Tutorat Oral EF3 :</strong> Présentation orale synthétique d'une technologie émergente.</span>
                   </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="w-5 h-5 rounded bg-orange-500/20 text-orange-400 font-bold text-xs flex items-center justify-center">4</span>
-                    <span class="px-2 py-0.5 rounded bg-orange-900/60 text-orange-300 text-[10px] font-bold">
+                    <span class="w-5 h-5 rounded bg-slate-600 text-white font-bold text-xs flex items-center justify-center">4</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-700 text-white text-[10px] font-bold">
                       <span class="lang-en">CONSOLIDATION</span>
                       <span class="lang-fr">BILAN &amp; SYNTHÈSE</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Module 4: Review &amp; Assessment (4 hrs)</span>
                     <span class="lang-fr">Module 4 : Bilan &amp; Évaluation (4 h)</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Phonology spot-checks, functional grammar review, and final formative oral tutorial.</span>
                     <span class="lang-fr">Points réguliers de phonologie, grammaire communicative et tutorat oral bilan.</span>
                   </p>
-                  <div class="p-2 rounded bg-slate-900/80 border border-slate-700 text-[11px] text-orange-300">
+                  <div class="p-2 rounded bg-white/80 border border-slate-200 text-[11px] text-slate-800 font-medium">
                     <span class="lang-en"><strong>Final FE Checkpoint:</strong> Consolidated oral assessment and self-reflection review.</span>
                     <span class="lang-fr"><strong>Bilan EF Final :</strong> Évaluation orale globale et retour réflexif sur le parcours.</span>
                   </div>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Includes Global Exam TOEIC Listening/Reading tracking</span>
                   <span class="lang-fr">Suivi continu de l'entraînement TOEIC sur GlobalExam</span>
                 </span>
-                <span class="text-emerald-400 font-bold">
+                <span class="text-emerald-700 font-bold">
                   <span class="lang-en">30-Min Oral Tutorials (FE1, FE2, FE3)</span>
                   <span class="lang-fr">Tutorats Oraux de 30 Min (EF1, EF2, EF3)</span>
                 </span>
@@ -514,125 +524,125 @@
 
           <!-- SLIDE 5: Technical English Syllabus -->
           <div class="presentation-slide space-y-6 hidden" id="slide-4">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Technical English Syllabus</span>
                   <span class="lang-fr">Syllabus Anglais Aéronautique &amp; Technique</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 05 / 12</span>
-                  <span class="lang-fr">DIAPO 05 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 05 / 13</span>
+                  <span class="lang-fr">DIAPO 05 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">LV121E: 4 Modules Focused on Airside Operations</span>
                   <span class="lang-fr">LV121E : 4 Modules Dédiés aux Opérations Côté Piste</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">Practical airport vocabulary for maintenance and airside coordination derived from Blagnac TSEEAC interviews:</span>
                   <span class="lang-fr">Vocabulaire aéroportuaire pratique issu des entretiens avec les TSEEAC de Toulouse-Blagnac :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
+                <div class="p-4 rounded-xl bg-cyan-50/70 border border-cyan-200/80 space-y-2 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="w-5 h-5 rounded bg-orange-500/20 text-orange-400 font-bold text-xs flex items-center justify-center">1</span>
-                    <span class="px-2 py-0.5 rounded bg-orange-900/60 text-orange-300 text-[10px] font-bold">
+                    <span class="w-5 h-5 rounded bg-cyan-700 text-white font-bold text-xs flex items-center justify-center">1</span>
+                    <span class="px-2 py-0.5 rounded bg-cyan-800 text-white text-[10px] font-bold">
                       <span class="lang-en">AIRPORT INFRASTRUCTURE</span>
                       <span class="lang-fr">INFRASTRUCTURE AÉROPORTUAIRE</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Module 1: The Aerodrome (8.5 hrs)</span>
                     <span class="lang-fr">Module 1 : L'Aérodrome (8,5 h)</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Airside/landside zones, ground handling teams, turnaround, and runway markings.</span>
                     <span class="lang-fr">Zones côté ville et côté piste, assistance en escale, traitement avion et balisage.</span>
                   </p>
-                  <div class="p-2 rounded bg-slate-900/80 border border-slate-700 text-[11px] text-orange-300">
+                  <div class="p-2 rounded bg-white/80 border border-cyan-200 text-[11px] text-cyan-950 font-medium">
                     <span class="lang-en"><strong>FE1 Oral Tutorial:</strong> Spoken description of an airport (technical details, hot spots, incidents).</span>
                     <span class="lang-fr"><strong>Tutorat Oral EF1 :</strong> Description orale d'aérodrome (infrastructures, points chauds, retour d'incident).</span>
                   </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-sky-50/70 border border-sky-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="w-5 h-5 rounded bg-blue-500/20 text-blue-400 font-bold text-xs flex items-center justify-center">2</span>
-                    <span class="px-2 py-0.5 rounded bg-blue-900/60 text-blue-300 text-[10px] font-bold">
+                    <span class="w-5 h-5 rounded bg-sky-600 text-white font-bold text-xs flex items-center justify-center">2</span>
+                    <span class="px-2 py-0.5 rounded bg-sky-700 text-white text-[10px] font-bold">
                       <span class="lang-en">AIRCRAFT SYSTEMS</span>
                       <span class="lang-fr">SYSTÈMES AÉRONEF</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Module 2: Aircraft Anatomy &amp; Aerodynamics (8.5 hrs)</span>
                     <span class="lang-fr">Module 2 : Anatomie de l'Aéronef &amp; Aérodynamique (8,5 h)</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Fuselage, wings, empennage, landing gear, engines, and principles of lift.</span>
                     <span class="lang-fr">Fuselage, voilure, empennage, train d'atterrissage, moteurs et portance.</span>
                   </p>
-                  <div class="p-2 rounded bg-slate-900/80 border border-slate-700 text-[11px] text-blue-300">
+                  <div class="p-2 rounded bg-white/80 border border-sky-200 text-[11px] text-sky-900 font-medium">
                     <span class="lang-en"><strong>FE2 Oral Tutorial:</strong> Technical profile of an aircraft type or airline history and key figures.</span>
                     <span class="lang-fr"><strong>Tutorat Oral EF2 :</strong> Fiche technique orale d'un type d'aéronef ou repères clés d'une compagnie.</span>
                   </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="w-5 h-5 rounded bg-emerald-500/20 text-emerald-400 font-bold text-xs flex items-center justify-center">3</span>
-                    <span class="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] font-bold">
+                    <span class="w-5 h-5 rounded bg-emerald-600 text-white font-bold text-xs flex items-center justify-center">3</span>
+                    <span class="px-2 py-0.5 rounded bg-emerald-700 text-white text-[10px] font-bold">
                       <span class="lang-en">RAMP SAFETY &amp; WEATHER</span>
                       <span class="lang-fr">SÉCURITÉ EN PISTE &amp; MÉTÉO</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Module 3: Safety, Security &amp; Meteorology (8.5 hrs)</span>
                     <span class="lang-fr">Module 3 : Sécurité, Sûreté &amp; Météorologie (8,5 h)</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Foreign Object Debris (FOD), ramp hazards, bird strikes, and weather vocabulary.</span>
                     <span class="lang-fr">Débris sur piste (FOD), dangers en aire de trafic, péril aviaire et météo opérationnelle.</span>
                   </p>
-                  <div class="p-2 rounded bg-slate-900/80 border border-slate-700 text-[11px] text-emerald-300">
+                  <div class="p-2 rounded bg-white/80 border border-emerald-200 text-[11px] text-emerald-900 font-medium">
                     <span class="lang-en"><strong>FE3 Oral Tutorial:</strong> Authentic aviation news and incident analysis with peer discussion questions.</span>
                     <span class="lang-fr"><strong>Tutorat Oral EF3 :</strong> Analyse orale d'actualités aéronautiques et cas d'incidents réels.</span>
                   </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-purple-50/70 border border-purple-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="w-5 h-5 rounded bg-purple-500/20 text-purple-400 font-bold text-xs flex items-center justify-center">4</span>
-                    <span class="px-2 py-0.5 rounded bg-purple-900/60 text-purple-300 text-[10px] font-bold">
+                    <span class="w-5 h-5 rounded bg-purple-600 text-white font-bold text-xs flex items-center justify-center">4</span>
+                    <span class="px-2 py-0.5 rounded bg-purple-700 text-white text-[10px] font-bold">
                       <span class="lang-en">CONSOLIDATION</span>
                       <span class="lang-fr">BILAN &amp; SYNTHÈSE</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Module 4: Review &amp; Assessment (4 hrs)</span>
                     <span class="lang-fr">Module 4 : Bilan &amp; Évaluation (4 h)</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Consolidated operational vocabulary spot-check, incident handover, and review test.</span>
                     <span class="lang-fr">Bilan de vocabulaire opérationnel, relève de poste et test récapitulatif.</span>
                   </p>
-                  <div class="p-2 rounded bg-slate-900/80 border border-slate-700 text-[11px] text-purple-300">
+                  <div class="p-2 rounded bg-white/80 border border-purple-200 text-[11px] text-purple-900 font-medium">
                     <span class="lang-en"><strong>Final FE Checkpoint:</strong> End-of-term vocabulary review test for final GO / NO GO decision.</span>
                     <span class="lang-fr"><strong>Point Final EF :</strong> Test récapitulatif de vocabulaire pour validation finale GO / NO GO.</span>
                   </div>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Grounded in Toulouse-Blagnac TSEEAC Field Research</span>
                   <span class="lang-fr">Ancré dans l'Enquête Terrain TSEEAC Toulouse-Blagnac</span>
                 </span>
-                <span class="text-orange-400 font-bold">
+                <span class="text-sky-700 font-bold">
                   <span class="lang-en">Practical Airside Vocabulary</span>
                   <span class="lang-fr">Vocabulaire Opérationnel Piste</span>
                 </span>
@@ -642,93 +652,93 @@
 
           <!-- SLIDE 6: Continuous Assessment -->
           <div class="presentation-slide space-y-6 hidden" id="slide-5">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Evaluation Strategy</span>
                   <span class="lang-fr">Stratégie d'Évaluation</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 06 / 12</span>
-                  <span class="lang-fr">DIAPO 06 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 06 / 13</span>
+                  <span class="lang-fr">DIAPO 06 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">Continuous Assessment (Final GO / NO GO)</span>
                   <span class="lang-fr">Contrôle Continu des Connaissances (Validation GO / NO GO Finale)</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">Replacing high-stakes written exams with continuous formative tracking, peer interaction, and structured feedback:</span>
                   <span class="lang-fr">Remplacement des examens écrits ponctuels par un suivi formatif continu, des interactions orales et des retours réguliers :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
+                <div class="p-4 rounded-xl bg-sky-50/70 border border-sky-200/80 space-y-2 shadow-2xs">
                   <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-orange-500/20 text-orange-400 font-bold text-xs flex items-center justify-center shrink-0">1</span>
-                    <h4 class="font-bold text-sm text-white">
+                    <span class="w-6 h-6 rounded-md bg-sky-600 text-white font-bold text-xs flex items-center justify-center shrink-0">1</span>
+                    <h4 class="font-bold text-sm text-slate-900">
                       <span class="lang-en">Continuous In-Class Work</span>
                       <span class="lang-fr">Engagement &amp; Travail en Séance</span>
                     </h4>
                   </div>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Evaluated on active participation in speaking tasks, role-play debates, proper use of vocabulary, and consistent classroom engagement.</span>
                     <span class="lang-fr">Évaluation basée sur la participation active aux tâches orales, aux jeux de rôle, l'emploi du vocabulaire adapté et l'implication en classe.</span>
                   </p>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-purple-50/70 border border-purple-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-purple-500/20 text-purple-400 font-bold text-xs flex items-center justify-center shrink-0">2</span>
-                    <h4 class="font-bold text-sm text-white">
+                    <span class="w-6 h-6 rounded-md bg-purple-600 text-white font-bold text-xs flex items-center justify-center shrink-0">2</span>
+                    <h4 class="font-bold text-sm text-slate-900">
                       <span class="lang-en">Weekly Student Portfolio</span>
                       <span class="lang-fr">Portfolio Étudiant Hebdomadaire</span>
                     </h4>
                   </div>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Personal self-reflection log completed after each session to record key vocabulary learnt, review operational tasks, and set communication targets with 1-click PDF export.</span>
                     <span class="lang-fr">Bilan réflexif personnel après chaque séance pour consigner le vocabulaire clé, récapituler les tâches opérationnelles et fixer ses objectifs de communication (export PDF en 1 clic).</span>
                   </p>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-emerald-500/20 text-emerald-400 font-bold text-xs flex items-center justify-center shrink-0">3</span>
-                    <h4 class="font-bold text-sm text-white">
+                    <span class="w-6 h-6 rounded-md bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shrink-0">3</span>
+                    <h4 class="font-bold text-sm text-slate-900">
                       <span class="lang-en">Small Project Presentations (FE1 • FE2 • FE3)</span>
                       <span class="lang-fr">Mini-Projets Oraux (EF1 • EF2 • EF3)</span>
                     </h4>
                   </div>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Dedicated 30-minute oral tutorials at the end of each module with alternating pairs and trios to evaluate communicative fluency and vocabulary in context.</span>
                     <span class="lang-fr">Tutorats oraux de 30 minutes en fin de chaque module en binômes et trinômes tournants pour évaluer l'aisance communicative et le vocabulaire en contexte.</span>
                   </p>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
+                <div class="p-4 rounded-xl bg-teal-50/70 border border-teal-200/90 space-y-2 shadow-2xs">
                   <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-blue-500/20 text-blue-400 font-bold text-xs flex items-center justify-center shrink-0">4</span>
-                    <h4 class="font-bold text-sm text-white">
+                    <span class="w-6 h-6 rounded-md bg-teal-700 text-white font-bold text-xs flex items-center justify-center shrink-0">4</span>
+                    <h4 class="font-bold text-sm text-slate-900">
                       <span class="lang-en">End-of-Semester Review Test</span>
                       <span class="lang-fr">Test Récapitulatif de Fin de Semestre</span>
                     </h4>
                   </div>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">A short consolidated in-class vocabulary and concept review test verifying that all essential terms are mastered for the final GO / NO GO decision.</span>
                     <span class="lang-fr">Court test récapitulatif de vocabulaire et de concepts en classe vérifiant la maîtrise des termes essentiels pour la décision finale GO / NO GO.</span>
                   </p>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Public Holidays: Lessons available on Moodle for self-study</span>
                   <span class="lang-fr">Jours Fériés : Séances accessibles en autonomie sur Moodle</span>
                 </span>
-                <span class="text-purple-300 font-bold">
+                <span class="text-purple-700 font-bold">
                   <span class="lang-en">Formative Progression Model</span>
                   <span class="lang-fr">Modèle de Progression Formative</span>
                 </span>
@@ -738,82 +748,82 @@
 
           <!-- SLIDE 7: Portal Structure & Layout -->
           <div class="presentation-slide space-y-6 hidden" id="slide-6">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Portal Architecture</span>
                   <span class="lang-fr">Architecture du Portail</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 07 / 12</span>
-                  <span class="lang-fr">DIAPO 07 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 07 / 13</span>
+                  <span class="lang-fr">DIAPO 07 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">The Semester 1 Portal: An Intuitive 12-Card Learning Hub</span>
                   <span class="lang-fr">Le Portail Semestre 1 : Un Espace d'Apprentissage en 12 Modules</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">A unified single-window interface replacing fragmented textbooks, loose photocopies, and scattered web links:</span>
                   <span class="lang-fr">Une interface unique et épurée remplaçant les manuels fragmentés, les polycopiés volants et les liens dispersés :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
-                  <span class="px-2 py-0.5 rounded bg-orange-600 text-white font-mono text-[10px] font-bold">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-cyan-50/70 border border-cyan-200/80 space-y-2 shadow-2xs">
+                  <span class="px-2 py-0.5 rounded bg-cyan-700 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">CARDS 01 – 06</span>
                     <span class="lang-fr">CARTES 01 – 06</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Modules &amp; Lesson Spaces</span>
                     <span class="lang-fr">Espaces de Cours &amp; Modules</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Side-by-side access to AT and AG modules. Each lesson card integrates authentic reading dossiers, technical diagrams, interactive vocabulary spot-checks, and simulation briefs.</span>
                     <span class="lang-fr">Accès direct aux modules d'anglais technique (AT) et général (AG). Chaque carte intègre dossiers de lecture authentiques, schémas techniques, auto-évaluations interactives et fiches de simulation.</span>
                   </p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
-                  <span class="px-2 py-0.5 rounded bg-blue-600 text-white font-mono text-[10px] font-bold">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-sky-50/70 border border-sky-200/90 space-y-2 shadow-2xs">
+                  <span class="px-2 py-0.5 rounded bg-sky-600 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">CARDS 08 – 11</span>
                     <span class="lang-fr">CARTES 08 – 11</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Audio, Study &amp; Immersion</span>
                     <span class="lang-fr">Audio, Révisions &amp; Immersion</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Built-in video links, pronunciation tips, study materials, TOEIC preparation guides, DDRS green initiatives, and cultural English immersion hubs.</span>
                     <span class="lang-fr">Liens vidéo intégrés, repères de prononciation, fiches de révision, guides de préparation TOEIC, initiatives DD&amp;RS et immersion culturelle anglophone.</span>
                   </p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-2 shadow-2xs">
                   <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">CARD 12</span>
                     <span class="lang-fr">CARTE 12</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Student Digital Portfolio</span>
                     <span class="lang-fr">Portfolio Numérique Étudiant</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Personal self-reflection log after each class to record key technical vocabulary learnt, summarize operations reviews, and set communication targets with 1-click PDF export.</span>
                     <span class="lang-fr">Bilan personnel après chaque cours consignant le vocabulaire technique clé, synthétisant les retours opérationnels et fixant les objectifs de communication (export PDF en 1 clic).</span>
                   </p>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Fully responsive on laptops, tablets, and phones</span>
                   <span class="lang-fr">Interface adaptée aux ordinateurs portables, tablettes et smartphones</span>
                 </span>
-                <span class="text-orange-400 font-bold">
+                <span class="text-sky-700 font-bold">
                   <span class="lang-en">Zero-Distraction Hub</span>
                   <span class="lang-fr">Espace de Travail Sans Distraction</span>
                 </span>
@@ -823,93 +833,146 @@
 
           <!-- SLIDE 8: Creation Workflow & AI Co-Design -->
           <div class="presentation-slide space-y-6 hidden" id="slide-7">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Development Methodology</span>
                   <span class="lang-fr">Méthode de Conception</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 08 / 12</span>
-                  <span class="lang-fr">DIAPO 08 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 08 / 13</span>
+                  <span class="lang-fr">DIAPO 08 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">From Paper Sketch to AI-Powered Learning Portal: The Creation Workflow</span>
                   <span class="lang-fr">Du Schéma Papier au Portail Numérique : Le Processus de Création</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">How real classroom needs shaped this platform through teacher direction and AI assistance:</span>
                   <span class="lang-fr">Comment les besoins réels de la classe ont façonné cette plateforme grâce au pilotage pédagogique et à l'IA :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <div class="p-3.5 rounded-xl bg-emerald-950/30 border border-emerald-500/30 space-y-1.5">
-                  <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-emerald-500/20 text-emerald-400 font-bold text-xs flex items-center justify-center shrink-0">1</span>
-                    <h4 class="font-bold text-sm text-white">
+              <!-- 4-Step Connected Development Pipeline -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-1">
+                <!-- Step 1 -->
+                <div class="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-2.5 shadow-2xs flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shadow-2xs">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                      </span>
+                      <span class="px-2 py-0.5 rounded bg-emerald-700 text-white font-mono text-[9.5px] font-bold uppercase tracking-wider">
+                        <span class="lang-en">Step 01 • Design</span>
+                        <span class="lang-fr">Étape 01 • Cadrage</span>
+                      </span>
+                    </div>
+                    <h4 class="font-bold text-sm text-slate-900 leading-snug">
                       <span class="lang-en">The Hand-Drawn Sketch</span>
                       <span class="lang-fr">Le Croquis Initial au Brouillon</span>
                     </h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      <span class="lang-en">I started with a simple paper sketch of the ideal student learning hub, designed from the ground up to eliminate cluttered Moodle scrolling, lost attachments, and static PDF links.</span>
+                      <span class="lang-fr">Je suis parti d'un simple croquis papier du portail d'apprentissage idéal, conçu pour éliminer le défilement lourd sur Moodle, la perte de pièces jointes et les liens PDF statiques.</span>
+                    </p>
                   </div>
-                  <p class="text-xs text-slate-300 leading-relaxed">
-                    <span class="lang-en">I started with a simple paper sketch of the ideal student learning hub, designed from the ground up to eliminate cluttered Moodle scrolling, lost attachments, and static PDF links.</span>
-                    <span class="lang-fr">Je suis parti d'un simple croquis papier du portail d'apprentissage idéal, conçu pour éliminer le défilement lourd sur Moodle, la perte de pièces jointes et les liens PDF statiques.</span>
-                  </p>
+                  <div class="pt-2 border-t border-emerald-200/80 text-[10.5px] text-emerald-800 font-medium">
+                    <span class="lang-en">Paper Blueprint &amp; Card Wireframes</span>
+                    <span class="lang-fr">Brouillon Papier &amp; Maquette Cartes</span>
+                  </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-blue-950/30 border border-blue-500/30 space-y-1.5">
-                  <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-blue-500/20 text-blue-400 font-bold text-xs flex items-center justify-center shrink-0">2</span>
-                    <h4 class="font-bold text-sm text-white">
+                <!-- Step 2 -->
+                <div class="p-4 rounded-xl bg-sky-50/70 border border-sky-200/90 space-y-2.5 shadow-2xs flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="w-7 h-7 rounded-lg bg-sky-600 text-white font-bold text-xs flex items-center justify-center shadow-2xs">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                      </span>
+                      <span class="px-2 py-0.5 rounded bg-sky-700 text-white font-mono text-[9.5px] font-bold uppercase tracking-wider">
+                        <span class="lang-en">Step 02 • Format</span>
+                        <span class="lang-fr">Étape 02 • Format</span>
+                      </span>
+                    </div>
+                    <h4 class="font-bold text-sm text-slate-900 leading-snug">
                       <span class="lang-en">Moodle Display Exploration</span>
                       <span class="lang-fr">Exploration des Formats Moodle</span>
                     </h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      <span class="lang-en">I investigated various display options within eCampus and chose SCORM 1.2: an interactive, self-contained mini-app running seamlessly inside Moodle with automatic progress tracking.</span>
+                      <span class="lang-fr">J'ai exploré plusieurs modes d'affichage sur eCampus et retenu le SCORM 1.2 : une mini-application autonome et interactive s'intégrant parfaitement dans Moodle avec suivi automatique de progression.</span>
+                    </p>
                   </div>
-                  <p class="text-xs text-slate-300 leading-relaxed">
-                    <span class="lang-en">I investigated various display options within eCampus and chose SCORM 1.2: an interactive, self-contained mini-app running seamlessly inside Moodle with automatic progress tracking.</span>
-                    <span class="lang-fr">J'ai exploré plusieurs modes d'affichage sur eCampus et retenu le SCORM 1.2 : une mini-application autonome et interactive s'intégrant parfaitement dans Moodle avec suivi automatique de progression.</span>
-                  </p>
+                  <div class="pt-2 border-t border-sky-200/80 text-[10.5px] text-sky-800 font-medium">
+                    <span class="lang-en">SCORM 1.2 Interactive Mini-App</span>
+                    <span class="lang-fr">Mini-App Interactive SCORM 1.2</span>
+                  </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-orange-950/30 border border-orange-500/30 space-y-1.5">
-                  <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-orange-500/20 text-orange-400 font-bold text-xs flex items-center justify-center shrink-0">3</span>
-                    <h4 class="font-bold text-sm text-white">
+                <!-- Step 3 -->
+                <div class="p-4 rounded-xl bg-cyan-50/70 border border-cyan-200/80 space-y-2.5 shadow-2xs flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="w-7 h-7 rounded-lg bg-cyan-700 text-white font-bold text-xs flex items-center justify-center shadow-2xs">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                      </span>
+                      <span class="px-2 py-0.5 rounded bg-cyan-800 text-white font-mono text-[9.5px] font-bold uppercase tracking-wider">
+                        <span class="lang-en">Step 03 • Stack</span>
+                        <span class="lang-fr">Étape 03 • Socle</span>
+                      </span>
+                    </div>
+                    <h4 class="font-bold text-sm text-slate-900 leading-snug">
                       <span class="lang-en">Lightweight Native Web Standards</span>
                       <span class="lang-fr">Standards Web Légers &amp; Pérennes</span>
                     </h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      <span class="lang-en">I avoided heavy, fragile web frameworks (React, Angular, bulky runtimes). I chose native HTML5, modern vanilla JavaScript, and Tailwind CSS for extreme lightness (&lt; 7 MB) and long-term durability.</span>
+                      <span class="lang-fr">J'ai évité les frameworks lourds et fragiles (React, Angular, bibliothèques encombrantes). J'ai choisi HTML5 natif, JavaScript standard et Tailwind CSS pour une légèreté extrême (&lt; 7 Mo) et une pérennité maximale.</span>
+                    </p>
                   </div>
-                  <p class="text-xs text-slate-300 leading-relaxed">
-                    <span class="lang-en">I avoided heavy, fragile web frameworks (React, Angular, bulky runtimes). I chose native HTML5, modern vanilla JavaScript, and Tailwind CSS for extreme lightness (&lt; 7 MB) and long-term durability.</span>
-                    <span class="lang-fr">J'ai évité les frameworks lourds et fragiles (React, Angular, bibliothèques encombrantes). J'ai choisi HTML5 natif, JavaScript standard et Tailwind CSS pour une légèreté extrême (&lt; 7 Mo) et une pérennité maximale.</span>
-                  </p>
+                  <div class="pt-2 border-t border-cyan-200/80 text-[10.5px] text-cyan-900 font-medium">
+                    <span class="lang-en">HTML5 • Vanilla ES6 • Tailwind CSS</span>
+                    <span class="lang-fr">HTML5 • JavaScript ES6 • Tailwind CSS</span>
+                  </div>
                 </div>
 
-                <div class="p-3.5 rounded-xl bg-purple-950/30 border border-purple-500/30 space-y-1.5">
-                  <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-purple-500/20 text-purple-400 font-bold text-xs flex items-center justify-center shrink-0">4</span>
-                    <h4 class="font-bold text-sm text-white">
-                      <span class="lang-en">Iterative AI-Assisted Development (Gemini)</span>
-                      <span class="lang-fr">Développement Itératif Assisté par IA (Gemini)</span>
+                <!-- Step 4 -->
+                <div class="p-4 rounded-xl bg-purple-50/70 border border-purple-200/90 space-y-2.5 shadow-2xs flex flex-col justify-between">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="w-7 h-7 rounded-lg bg-purple-600 text-white font-bold text-xs flex items-center justify-center shadow-2xs">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                      </span>
+                      <span class="px-2 py-0.5 rounded bg-purple-700 text-white font-mono text-[9.5px] font-bold uppercase tracking-wider">
+                        <span class="lang-en">Step 04 • Pair AI</span>
+                        <span class="lang-fr">Étape 04 • Co-Design IA</span>
+                      </span>
+                    </div>
+                    <h4 class="font-bold text-sm text-slate-900 leading-snug">
+                      <span class="lang-en">Iterative AI-Assisted Development</span>
+                      <span class="lang-fr">Développement Itératif Assisté par IA</span>
                     </h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                      <span class="lang-en">I worked with advanced AI tools (Gemini) to build and refine the codebase, iterating rapidly through focused steps and rigorous testing to ensure a rock-solid, reliable architecture.</span>
+                      <span class="lang-fr">J'ai collaboré avec des outils d'IA avancés (Gemini) pour développer et affiner le code, en itérant rapidement étape par étape avec des tests rigoureux pour garantir une architecture solide et fiable.</span>
+                    </p>
                   </div>
-                  <p class="text-xs text-slate-300 leading-relaxed">
-                    <span class="lang-en">I worked with advanced AI tools (Gemini) to build and refine the codebase, iterating rapidly through focused steps and rigorous testing to ensure a rock-solid, reliable architecture.</span>
-                    <span class="lang-fr">J'ai collaboré avec des outils d'IA avancés (Gemini) pour développer et affiner le code, en itérant rapidement étape par étape avec des tests rigoureux pour garantir une architecture solide et fiable.</span>
-                  </p>
+                  <div class="pt-2 border-t border-purple-200/80 text-[10.5px] text-purple-800 font-medium">
+                    <span class="lang-en">Gemini Advanced • Agentic Sprint</span>
+                    <span class="lang-fr">Gemini Advanced • Sprint d'Agents IA</span>
+                  </div>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Self-Contained Mini-App • Fast Iterative Cycles</span>
                   <span class="lang-fr">Mini-App Autonome • Cycles Courts &amp; Itératifs</span>
                 </span>
-                <span class="text-purple-300 font-bold">
+                <span class="text-purple-700 font-bold">
                   <span class="lang-en">Teacher Direction + AI Assistance</span>
                   <span class="lang-fr">Pilotage Pédagogique + Appui de l'IA</span>
                 </span>
@@ -919,82 +982,82 @@
 
           <!-- SLIDE 9: In-Deck Admin Hub -->
           <div class="presentation-slide space-y-6 hidden" id="slide-8">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Turnkey Administration</span>
                   <span class="lang-fr">Administration Clé en Main</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 09 / 12</span>
-                  <span class="lang-fr">DIAPO 09 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 09 / 13</span>
+                  <span class="lang-fr">DIAPO 09 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">The In-Deck Admin Hub: Seamless Course Coordination</span>
                   <span class="lang-fr">L'Espace Admin Intégré : Une Coordination Pédagogique Fluide</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">Faculty and course administration integrated directly inside Card 07:</span>
                   <span class="lang-fr">L'administration pédagogique et le suivi de promotion intégrés directement dans la Carte 07 :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2 shadow-2xs">
                   <span class="px-2 py-0.5 rounded bg-slate-700 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">ROSTERS &amp; FACULTY</span>
                     <span class="lang-fr">PROMOTIONS &amp; ENSEIGNANTS</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Promotion Overview</span>
                     <span class="lang-fr">Vue Globale de Promotion</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Instant visibility into Group A and Group B rosters, teacher assignments (Tracy Neill, Ally Hewett, Geri Middleton, Penny Wright), and schedules (Wednesdays 13h15 / Fridays 08h00).</span>
                     <span class="lang-fr">Visibilité immédiate sur les listes des Groupes A et B, l'attribution des enseignants (Tracy Neill, Ally Hewett, Geri Middleton, Penny Wright) et les créneaux (mercredis 13h15 / vendredis 08h00).</span>
                   </p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-purple-50/70 border border-purple-200/90 space-y-2 shadow-2xs">
                   <span class="px-2 py-0.5 rounded bg-purple-600 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">4 × 30-MIN SLOTS</span>
                     <span class="lang-fr">4 CRÉNEAUX DE 30 MIN</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Oral FE Schedule Rotas</span>
                     <span class="lang-fr">Plannings des Évaluations Formatives</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Four 30-minute evaluation slots per 2-hour session accommodate 100% of the cohort with zero scheduling overflow, allowing inspectors of studies and teachers to monitor timings seamlessly.</span>
                     <span class="lang-fr">Quatre créneaux de 30 minutes par séance de 2 heures couvrant 100 % de la promotion sans débordement, permettant aux inspecteurs des études et aux enseignants de suivre les horaires avec précision.</span>
                   </p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-2 shadow-2xs">
                   <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">ROTATING PEERS</span>
                     <span class="lang-fr">ROTATIONS DYNAMIQUES</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Dynamic Pair Rotations</span>
                     <span class="lang-fr">Binômes &amp; Trinômes Tournants</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Alternating pairs and trios across FE1, FE2, and FE3 ensure students practice speaking with diverse peers. Published rubrics remove test anxiety and ensure objective scoring.</span>
                     <span class="lang-fr">L'alternance de binômes et trinômes sur les EF1, EF2 et EF3 assure aux étudiants de varier leurs interlocuteurs. Les grilles publiées à l'avance éliminent l'appréhension et garantissent une évaluation objective.</span>
                   </p>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Instant access for teachers and course coordinators</span>
                   <span class="lang-fr">Accès direct pour enseignants et inspecteurs des études</span>
                 </span>
-                <span class="text-emerald-400 font-bold">
+                <span class="text-emerald-700 font-bold">
                   <span class="lang-en">Zero Administrative Friction</span>
                   <span class="lang-fr">Gestion Pédagogique Sans Friction</span>
                 </span>
@@ -1004,82 +1067,82 @@
 
           <!-- SLIDE 10: Environmental Impact & DDRS -->
           <div class="presentation-slide space-y-6 hidden" id="slide-9">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Sustainability &amp; DDRS</span>
                   <span class="lang-fr">Développement Durable &amp; DD&amp;RS</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 10 / 12</span>
-                  <span class="lang-fr">DIAPO 10 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 10 / 13</span>
+                  <span class="lang-fr">DIAPO 10 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">Environmental Impact: ~2,000 Sheets of Paper Eliminated</span>
                   <span class="lang-fr">Impact Environnemental : ~2 000 Feuilles de Papier Économisées</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">Practicing what we teach: Direct alignment with ENAC's DD&amp;RS institutional environmental commitments:</span>
                   <span class="lang-fr">Mise en pratique directe des engagements environnementaux et de la démarche DD&amp;RS de l'ENAC :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-                <div class="p-4 rounded-xl bg-emerald-950/40 border border-emerald-500/40 space-y-2">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-2 shadow-2xs">
                   <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">PAPER WASTE</span>
                     <span class="lang-fr">PAPIER ÉCONOMISÉ</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">~2,000 Pages Saved</span>
                     <span class="lang-fr">~2 000 Feuilles Évitées</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">19 students × 15 weeks × 2 courses × 3–4 pages of photocopies = ~2,000 sheets saved per cohort through interactive digital worksheets, online rubrics, and digital portfolios.</span>
                     <span class="lang-fr">19 étudiants × 15 semaines × 2 cours × 3 à 4 pages de photocopies = ~2 000 feuilles économisées par promotion grâce aux fiches interactives, grilles en ligne et portfolios numériques.</span>
                   </p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2 shadow-2xs">
                   <span class="px-2 py-0.5 rounded bg-slate-700 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">DIGITAL SOBRIETY</span>
                     <span class="lang-fr">SOBRIÉTÉ NUMÉRIQUE</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">&lt; 7 MB Package Size</span>
                     <span class="lang-fr">Poids Inférieur à 7 Mo</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">The entire course portal—including all offline MP3 audio and SVG vector blueprints—is under 7 MB. Smaller than a typical PowerPoint file, running smoothly on low-power devices.</span>
                     <span class="lang-fr">L'intégralité du portail de cours — y compris les fichiers audio MP3 hors-ligne et les schémas vectoriels SVG — pèse moins de 7 Mo. Plus léger qu'un diaporama PowerPoint classique, fluide sur tout équipement.</span>
                   </p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
-                  <span class="px-2 py-0.5 rounded bg-orange-600 text-white font-mono text-[10px] font-bold">
+                <div class="p-4 sm:p-4.5 rounded-xl bg-sky-50/70 border border-sky-200/90 space-y-2 shadow-2xs">
+                  <span class="px-2 py-0.5 rounded bg-sky-600 text-white font-mono text-[10px] font-bold">
                     <span class="lang-en">ZERO SERVER FOOTPRINT</span>
                     <span class="lang-fr">EMPREINTE SERVEUR NULLE</span>
                   </span>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-sm text-slate-900">
                     <span class="lang-en">Client-Side Execution</span>
                     <span class="lang-fr">Exécution Côté Client</span>
                   </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed">
                     <span class="lang-en">Runs entirely in client browser memory. No heavy cloud database queries, no streaming video servers, and near-zero carbon footprint during daily classroom teaching.</span>
                     <span class="lang-fr">Fonctionne entièrement dans la mémoire du navigateur de l'étudiant. Aucune requête serveur lourde en base de données, pas de streaming vidéo, et une empreinte carbone quasi-nulle au quotidien.</span>
                   </p>
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">1-Click printable backup retained for safety</span>
                   <span class="lang-fr">Option d'impression de secours conservée en 1 clic</span>
                 </span>
-                <span class="text-emerald-400 font-bold">
+                <span class="text-emerald-700 font-bold">
                   <span class="lang-en">Eco-Designed Learning</span>
                   <span class="lang-fr">Dispositif Pédagogique Éco-Conçu</span>
                 </span>
@@ -1089,46 +1152,46 @@
 
           <!-- SLIDE 11: Institutional Stability & GDPR Privacy (Risks 1 & 2) -->
           <div class="presentation-slide space-y-6 hidden" id="slide-10">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-700">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Institutional Assurances</span>
                   <span class="lang-fr">Garanties Institutionnelles</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 11 / 12</span>
-                  <span class="lang-fr">DIAPO 11 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 11 / 13</span>
+                  <span class="lang-fr">DIAPO 11 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">Structural Safeguards: Technological Longevity &amp; GDPR Privacy</span>
                   <span class="lang-fr">Garanties Structurelles : Pérennité Technique &amp; Protection RGPD</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">Addressing core institutional risks with zero-compromise technical protections:</span>
                   <span class="lang-fr">Réponse aux risques institutionnels majeurs grâce à des garanties techniques sans compromis :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                <div class="p-5 rounded-xl bg-slate-900 border border-slate-700 space-y-2.5">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded bg-teal-600 text-white font-mono text-[10px] font-bold">
+                    <span class="px-2.5 py-0.5 rounded bg-teal-700 text-white font-mono text-[10px] font-bold">
                       <span class="lang-en">RISK 1 MITIGATION</span>
                       <span class="lang-fr">MAÎTRISE DU RISQUE 1</span>
                     </span>
-                    <span class="text-xs text-teal-300 font-bold">
+                    <span class="text-xs text-teal-800 font-bold">
                       <span class="lang-en">Zero Obsolescence Risk</span>
                       <span class="lang-fr">Zéro Risque d'Obsolescence</span>
                     </span>
                   </div>
-                  <h4 class="text-base font-bold text-white">
+                  <h4 class="text-base font-bold text-slate-900">
                     <span class="lang-en">Timeless Web Standards &amp; SCORM 1.2</span>
                     <span class="lang-fr">Standards Web Pérennes &amp; SCORM 1.2</span>
                   </h4>
-                  <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed">
+                  <ul class="text-xs text-slate-700 space-y-1.5 leading-relaxed">
                     <li>
                       <span class="lang-en">• Built on pure, timeless standards: HTML5, native ES6 JavaScript, and standard CSS.</span>
                       <span class="lang-fr">• Repose sur des standards ouverts universels : HTML5, JavaScript ES6 natif et CSS standard.</span>
@@ -1148,24 +1211,24 @@
                   </ul>
                 </div>
 
-                <div class="p-5 rounded-xl bg-teal-950/30 border border-teal-500/40 space-y-2.5">
+                <div class="p-5 rounded-xl bg-teal-50/70 border border-teal-200/90 space-y-2.5 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-0.5 rounded bg-teal-600 text-white font-mono text-[10px] font-bold">
+                    <span class="px-2.5 py-0.5 rounded bg-teal-700 text-white font-mono text-[10px] font-bold">
                       <span class="lang-en">RISK 2 MITIGATION</span>
                       <span class="lang-fr">MAÎTRISE DU RISQUE 2</span>
                     </span>
-                    <span class="text-xs text-teal-300 font-bold">
+                    <span class="text-xs text-teal-800 font-bold">
                       <span class="lang-en">Zero Cloud PII Risk</span>
                       <span class="lang-fr">Zéro Fuite de Données Personnelles</span>
                     </span>
                   </div>
-                  <h4 class="text-base font-bold text-white">
+                  <h4 class="text-base font-bold text-slate-900">
                     <span class="lang-en">Student Data Privacy &amp; GDPR Compliance</span>
                     <span class="lang-fr">Confidentialité des Données &amp; Conformité RGPD</span>
                   </h4>
-                  <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed">
+                  <ul class="text-xs text-slate-700 space-y-1.5 leading-relaxed">
                     <li>
-                      <span class="lang-en">• 100% anonymous Git codebase (students identified strictly as <code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">GRPA001</code>–<code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">GRPB009</code>).</span>
+                      <span class="lang-en">• 100% anonymous Git codebase (students identified strictly as <code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded text-slate-800">GRPA001</code>–<code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded text-slate-800">GRPB009</code>).</span>
                       <span class="lang-fr">• Codebase Git 100 % anonymisée (étudiants identifiés exclusivement par <code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">GRPA001</code>–<code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">GRPB009</code>).</span>
                     </li>
                     <li>
@@ -1173,8 +1236,8 @@
                       <span class="lang-fr">• Aucun nom réel n'est jamais enregistré dans l'historique Git, les dépôts distants ou les journaux d'IA.</span>
                     </li>
                     <li>
-                      <span class="lang-en">• Real names exist solely in a local, uncommitted private file (<code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">students.private.json</code>).</span>
-                      <span class="lang-fr">• Les identités réelles sont stockées uniquement dans un fichier local privé non versionné (<code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">students.private.json</code>).</span>
+                      <span class="lang-en">• Real names exist solely in a local, uncommitted private file (<code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded text-slate-800">students.private.json</code>).</span>
+                      <span class="lang-fr">• Les identités réelles sont stockées uniquement dans un fichier local privé non versionné (<code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded text-slate-800">students.private.json</code>).</span>
                     </li>
                     <li>
                       <span class="lang-en">• Automated packaging pipeline injects real names strictly into the final zip for eCampus upload.</span>
@@ -1184,12 +1247,12 @@
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">French CNIL &amp; EU GDPR Compliant</span>
                   <span class="lang-fr">Conforme aux Directives CNIL &amp; RGPD Européen</span>
                 </span>
-                <span class="text-teal-400 font-bold">
+                <span class="text-teal-800 font-bold">
                   <span class="lang-en">Future-Proof Institutional Architecture</span>
                   <span class="lang-fr">Architecture Institutionnelle Pérenne</span>
                 </span>
@@ -1199,49 +1262,49 @@
 
           <!-- SLIDE 12: Offline Resilience, Contingency & Multi-Semester Roadmap (Risk 3) -->
           <div class="presentation-slide space-y-6 hidden" id="slide-11">
-            <div class="bg-slate-800/90 border-2 border-orange-400/80 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
-              <div class="flex items-center justify-between pb-3 border-b border-orange-500/40">
-                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-200">
                   <span class="lang-en">Operational Continuity &amp; Roadmap</span>
                   <span class="lang-fr">Continuité d'Activité &amp; Feuille de Route</span>
                 </span>
-                <span class="text-xs font-mono font-bold text-slate-400">
-                  <span class="lang-en">SLIDE 12 / 12</span>
-                  <span class="lang-fr">DIAPO 12 / 12</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 12 / 13</span>
+                  <span class="lang-fr">DIAPO 12 / 13</span>
                 </span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl sm:text-3xl font-black text-white">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
                   <span class="lang-en">100% Offline Resilience &amp; Multi-Semester Roadmap (S1–S4)</span>
                   <span class="lang-fr">Résilience 100 % Hors-Ligne &amp; Déploiement Multi-Semestres (S1–S4)</span>
                 </h3>
-                <p class="text-xs sm:text-sm text-slate-300">
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   <span class="lang-en">Guaranteed teaching continuity during campus outages, scaling across the full 2-year cycle:</span>
                   <span class="lang-fr">Garantie de continuité pédagogique en cas de panne réseau, déployée sur le cycle complet de 2 ans :</span>
                 </p>
               </div>
 
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                <div class="p-5 rounded-xl bg-cyan-50/70 border border-cyan-200/80 space-y-2.5 shadow-2xs">
                   <div class="flex items-center justify-between">
-                    <span class="px-2 py-0.5 rounded bg-orange-600 text-white font-mono text-[10px] font-bold">
+                    <span class="px-2 py-0.5 rounded bg-cyan-700 text-white font-mono text-[10px] font-bold">
                       <span class="lang-en">RISK 3 MITIGATION</span>
                       <span class="lang-fr">MAÎTRISE DU RISQUE 3</span>
                     </span>
-                    <span class="text-xs text-orange-300 font-bold">
+                    <span class="text-xs text-cyan-900 font-bold">
                       <span class="lang-en">3-Tier Fallback Plan</span>
                       <span class="lang-fr">Plan de Secours à 3 Niveaux</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-base text-slate-900">
                     <span class="lang-en">Zero-Downtime Contingency</span>
                     <span class="lang-fr">Dispositif Zéro Interruption</span>
                   </h4>
-                  <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed">
+                  <ul class="text-xs text-slate-700 space-y-1.5 leading-relaxed">
                     <li>
-                      <span class="lang-en">• <strong>Tier 1 (Direct USB)</strong>: Launch <code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">index.html</code> from a USB key. Runs 100% offline with zero external CDNs.</span>
-                      <span class="lang-fr">• <strong>Niveau 1 (Clé USB Directe)</strong> : Lancement de <code class="font-mono text-[10px] bg-slate-900 px-1 py-0.5 rounded">index.html</code> depuis une clé USB. 100 % hors-ligne sans aucun CDN externe.</span>
+                      <span class="lang-en">• <strong>Tier 1 (Direct USB)</strong>: Launch <code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded text-slate-800">index.html</code> from a USB key. Runs 100% offline with zero external CDNs.</span>
+                      <span class="lang-fr">• <strong>Niveau 1 (Clé USB Directe)</strong> : Lancement de <code class="font-mono text-[10px] bg-white border border-slate-200 px-1 py-0.5 rounded text-slate-800">index.html</code> depuis une clé USB. 100 % hors-ligne sans aucun CDN externe.</span>
                     </li>
                     <li>
                       <span class="lang-en">• <strong>Tier 2 (Cloud Mirror)</strong>: Live anonymous mirror on GitHub Pages accessible in seconds from tablets or phones.</span>
@@ -1252,28 +1315,28 @@
                       <span class="lang-fr">• <strong>Niveau 3 (Secours Papier)</strong> : Fiches imprimables en 1 clic intégrées pour l'ensemble des grilles et plannings.</span>
                     </li>
                     <li>
-                      <span class="lang-en">• <strong>Read-Only Media</strong>: Pre-packaged write-protected <span class="font-mono text-orange-300 font-bold">.iso</span> (Windows) and <span class="font-mono text-orange-300 font-bold">.dmg</span> (Mac) virtual drives that cannot be corrupted.</span>
-                      <span class="lang-fr">• <strong>Supports Protégés</strong> : Disques virtuels sécurisés <span class="font-mono text-orange-300 font-bold">.iso</span> (Windows) et <span class="font-mono text-orange-300 font-bold">.dmg</span> (Mac) protégés en écriture contre toute corruption.</span>
+                      <span class="lang-en">• <strong>Read-Only Media</strong>: Pre-packaged write-protected <span class="font-mono text-cyan-900 font-bold">.iso</span> (Windows) and <span class="font-mono text-cyan-900 font-bold">.dmg</span> (Mac) virtual drives that cannot be corrupted.</span>
+                      <span class="lang-fr">• <strong>Supports Protégés</strong> : Disques virtuels sécurisés <span class="font-mono text-cyan-900 font-bold">.iso</span> (Windows) et <span class="font-mono text-cyan-900 font-bold">.dmg</span> (Mac) protégés en écriture contre toute corruption.</span>
                     </li>
                   </ul>
                 </div>
 
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+                <div class="p-5 rounded-xl bg-purple-50/70 border border-purple-200/90 space-y-2.5 shadow-2xs">
                   <div class="flex items-center justify-between">
                     <span class="px-2 py-0.5 rounded bg-purple-600 text-white font-mono text-[10px] font-bold">
                       <span class="lang-en">SCALE &amp; CONTINUITY</span>
                       <span class="lang-fr">DÉPLOIEMENT &amp; CONTINUITÉ</span>
                     </span>
-                    <span class="text-xs text-purple-300 font-bold">
+                    <span class="text-xs text-purple-800 font-bold">
                       <span class="lang-en">Full 2-Year Cycle</span>
                       <span class="lang-fr">Cycle Complet de 2 Ans</span>
                     </span>
                   </div>
-                  <h4 class="font-bold text-sm text-white">
+                  <h4 class="font-bold text-base text-slate-900">
                     <span class="lang-en">Semesters 1, 2, 3 &amp; 4 Roadmap</span>
                     <span class="lang-fr">Feuille de Route Semestres 1, 2, 3 &amp; 4</span>
                   </h4>
-                  <ul class="text-xs text-slate-300 space-y-1.5 leading-relaxed">
+                  <ul class="text-xs text-slate-700 space-y-1.5 leading-relaxed">
                     <li>
                       <span class="lang-en">• <strong>Semester 1 (Validated)</strong>: Live for GSEA 26A starting Week 44 of 2026.</span>
                       <span class="lang-fr">• <strong>Semestre 1 (Validé)</strong> : Déployé pour GSEA 26A dès la Semaine 44 de 2026.</span>
@@ -1294,14 +1357,191 @@
                 </div>
               </div>
 
-              <div class="text-xs text-slate-400 flex items-center justify-between pt-2 border-t border-slate-700">
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
                 <span>
                   <span class="lang-en">Zero Lost Classroom Hours</span>
                   <span class="lang-fr">Zéro Heure de Cours Perdue</span>
                 </span>
-                <span class="text-orange-400 font-bold">
+                <span class="text-sky-700 font-bold">
                   <span class="lang-en">Complete 2-Year Curriculum Coherence</span>
                   <span class="lang-fr">Cohérence Pédagogique sur l'Ensemble du Cycle</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 13: Environmental Impact & AI Energy Math -->
+          <div class="presentation-slide space-y-6 hidden" id="slide-12">
+            <div class="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-9 shadow-xl space-y-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 border border-emerald-200">
+                  <span class="lang-en">DD&amp;RS &amp; Environmental Footprint</span>
+                  <span class="lang-fr">DD&amp;RS &amp; Empreinte Écologique</span>
+                </span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-mono font-bold text-slate-500 bg-slate-100 border border-slate-200">
+                  <span class="lang-en">SLIDE 13 / 13</span>
+                  <span class="lang-fr">DIAPO 13 / 13</span>
+                </span>
+              </div>
+
+              <div class="space-y-2">
+                <h3 class="text-xl sm:text-3xl font-black text-slate-900 tracking-tight leading-snug">
+                  <span class="lang-en">Environmental Impact: Energy &amp; Carbon Footprint of AI Engineering</span>
+                  <span class="lang-fr">Impact Environnemental : Bilan Énergétique et Carbone du Développement IA</span>
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                  <span class="lang-en">Transparent measurement of the computing power and carbon emissions consumed during the 4-week Antigravity agentic development sprint:</span>
+                  <span class="lang-fr">Mesure transparente de la consommation électrique et des émissions carbone générées lors du sprint de développement IA de 4 semaines :</span>
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                <!-- Left: The Math -->
+                <div class="p-5 rounded-xl bg-emerald-50/70 border border-emerald-200/90 space-y-3 shadow-2xs flex flex-col justify-between">
+                  <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                      <span class="px-2 py-0.5 rounded bg-emerald-600 text-white font-mono text-[10px] font-bold">
+                        <span class="lang-en">THE ENERGY &amp; CARBON MATH</span>
+                        <span class="lang-fr">L'ÉQUATION ÉNERGÉTIQUE &amp; CARBONE</span>
+                      </span>
+                      <span class="text-xs font-mono font-bold text-emerald-800 bg-white/80 px-2 py-0.5 rounded border border-emerald-200">
+                        7.88 kWh • ~3.15 kg CO₂e
+                      </span>
+                    </div>
+                    <h4 class="font-bold text-base text-slate-900">
+                      <span class="lang-en">Measured Power Consumption</span>
+                      <span class="lang-fr">Consommation Énergétique Mesurée</span>
+                    </h4>
+                    <ul class="text-xs text-slate-700 space-y-2 leading-relaxed">
+                      <li>
+                        <span class="lang-en">• <strong>Energy Consumption per Agent Cycle</strong>: Approximately <span class="font-mono font-bold text-emerald-800 bg-white px-1.5 py-0.5 rounded border border-emerald-200">12.5 watt-hours (Wh)</span> per heavy coding task.</span>
+                        <span class="lang-fr">• <strong>Consommation par cycle d'agent</strong> : Environ <span class="font-mono font-bold text-emerald-800 bg-white px-1.5 py-0.5 rounded border border-emerald-200">12,5 watt-heures (Wh)</span> par tâche complexe de programmation.</span>
+                      </li>
+                      <li>
+                        <span class="lang-en">• <strong>Total Energy Consumed over 4 Weeks</strong>: 630 cycles × 12.5 Wh = 7,875 Wh = <span class="font-mono font-bold text-emerald-800 bg-white px-1.5 py-0.5 rounded border border-emerald-200">7.88 kWh</span>.</span>
+                        <span class="lang-fr">• <strong>Consommation totale sur 4 semaines</strong> : 630 cycles × 12,5 Wh = 7 875 Wh = <span class="font-mono font-bold text-emerald-800 bg-white px-1.5 py-0.5 rounded border border-emerald-200">7,88 kWh</span>.</span>
+                      </li>
+                      <li>
+                        <span class="lang-en">• <strong>Total Carbon Footprint</strong>: Multiplying 7.88 kWh by standard regional grid carbon intensities (~400g CO₂e per kWh) yields approximately <span class="font-mono font-bold text-emerald-800 bg-white px-1.5 py-0.5 rounded border border-emerald-200">3.15 kg of CO₂e</span>.</span>
+                        <span class="lang-fr">• <strong>Empreinte carbone globale</strong> : En multipliant 7,88 kWh par l'intensité moyenne du réseau (~400 g CO₂e/kWh), le bilan total s'élève à environ <span class="font-mono font-bold text-emerald-800 bg-white px-1.5 py-0.5 rounded border border-emerald-200">3,15 kg de CO₂e</span>.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="grid grid-cols-3 gap-2 pt-2 border-t border-emerald-200/80 text-center">
+                    <div class="p-2 rounded-lg bg-white/90 border border-emerald-200">
+                      <div class="text-sm font-black text-emerald-800 font-mono">12.5 Wh</div>
+                      <div class="text-[10px] text-slate-500 font-medium">Per Cycle</div>
+                    </div>
+                    <div class="p-2 rounded-lg bg-white/90 border border-emerald-200">
+                      <div class="text-sm font-black text-emerald-800 font-mono">7.88 kWh</div>
+                      <div class="text-[10px] text-slate-500 font-medium">4-Week Total</div>
+                    </div>
+                    <div class="p-2 rounded-lg bg-white/90 border border-emerald-200">
+                      <div class="text-sm font-black text-emerald-800 font-mono">~3.15 kg</div>
+                      <div class="text-[10px] text-slate-500 font-medium">Net CO₂e</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right: Visual Real-World Equivalents -->
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3 shadow-2xs flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between">
+                      <span class="px-2 py-0.5 rounded bg-slate-700 text-white font-mono text-[10px] font-bold">
+                        <span class="lang-en">REAL-WORLD EQUIVALENTS</span>
+                        <span class="lang-fr">ÉQUIVALENCES DANS LA VIE COURANTE</span>
+                      </span>
+                      <span class="text-xs font-mono font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200">
+                        <span class="lang-en">4-Week Production Sprint</span>
+                        <span class="lang-fr">Sprint de 4 Semaines</span>
+                      </span>
+                    </div>
+                    <h4 class="font-bold text-base text-slate-900 mt-2">
+                      <span class="lang-en">4 Weeks of Antigravity AI Coding Equates To:</span>
+                      <span class="lang-fr">4 Semaines de Co-Développement IA Équivalent À :</span>
+                    </h4>
+
+                    <!-- 3 Visual Stat Cards -->
+                    <div class="space-y-2 mt-3">
+                      <!-- Car Equivalent -->
+                      <div class="p-2.5 sm:p-3 rounded-xl bg-white border border-slate-200/80 flex items-center gap-3.5 shadow-2xs">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center shrink-0">
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-baseline justify-between gap-2">
+                            <span class="font-bold text-xs sm:text-sm text-slate-900">
+                              <span class="lang-en">Driving a Car</span>
+                              <span class="lang-fr">Trajet en Voiture</span>
+                            </span>
+                            <span class="text-xs font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 shrink-0">
+                              ~22 km (14 mi)
+                            </span>
+                          </div>
+                          <p class="text-[11px] text-slate-500 mt-0.5">
+                            <span class="lang-en">Driving an average petrol-powered passenger car.</span>
+                            <span class="lang-fr">Trajet moyen en voiture thermique standard.</span>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Video Streaming Equivalent -->
+                      <div class="p-2.5 sm:p-3 rounded-xl bg-white border border-slate-200/80 flex items-center gap-3.5 shadow-2xs">
+                        <div class="w-10 h-10 rounded-lg bg-sky-50 border border-sky-200 text-sky-700 flex items-center justify-center shrink-0">
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-baseline justify-between gap-2">
+                            <span class="font-bold text-xs sm:text-sm text-slate-900">
+                              <span class="lang-en">Streaming HD Video</span>
+                              <span class="lang-fr">Streaming Vidéo HD</span>
+                            </span>
+                            <span class="text-xs font-mono font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200 shrink-0">
+                              ~6 to 7 hours
+                            </span>
+                          </div>
+                          <p class="text-[11px] text-slate-500 mt-0.5">
+                            <span class="lang-en">Streaming high-definition video on a laptop or smart TV.</span>
+                            <span class="lang-fr">Visionnage de vidéo HD sur ordinateur ou TV.</span>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Boiling Kettle Equivalent -->
+                      <div class="p-2.5 sm:p-3 rounded-xl bg-white border border-slate-200/80 flex items-center gap-3.5 shadow-2xs">
+                        <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center shrink-0">
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343a7.975 7.975 0 010 11.314z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-baseline justify-between gap-2">
+                            <span class="font-bold text-xs sm:text-sm text-slate-900">
+                              <span class="lang-en">Electric Kitchen Kettle</span>
+                              <span class="lang-fr">Bouilloire Électrique</span>
+                            </span>
+                            <span class="text-xs font-mono font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 shrink-0">
+                              ~40 to 45 boils
+                            </span>
+                          </div>
+                          <p class="text-[11px] text-slate-500 mt-0.5">
+                            <span class="lang-en">Boiling a standard 2,000W kitchen kettle to 100°C.</span>
+                            <span class="lang-fr">Porter de l'eau à ébullition dans une bouilloire 2 000 W.</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100 font-medium">
+                <span>
+                  <span class="lang-en">ENAC DD&amp;RS Alignment: Frugal AI Engineering &amp; Transparent Reporting</span>
+                  <span class="lang-fr">Alignement ENAC DD&amp;RS : Sobriété Numérique &amp; Transparence Carbone</span>
+                </span>
+                <span class="text-emerald-700 font-bold">
+                  <span class="lang-en">Net Sprint Impact: ~3.15 kg CO₂e Total</span>
+                  <span class="lang-fr">Bilan Net du Sprint : ~3,15 kg CO₂e Total</span>
                 </span>
               </div>
             </div>
@@ -1310,15 +1550,15 @@
         </div>
       </div>
 
-      <!-- Slide Show Navigation Control Bar (Fixed Bottom) -->
-      <div class="max-w-4xl w-full mx-auto mt-6 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs select-none no-print">
+      <!-- Slide Show Navigation Control Bar (Fixed Bottom Dock) -->
+      <div class="max-w-6xl w-full mx-auto mt-6 textured-surface bg-slate-800 text-white px-4 py-2.5 rounded-xl border border-slate-900 shadow-lg flex flex-wrap items-center justify-between gap-3 text-xs select-none no-print">
         <div class="flex items-center gap-2">
-          <button id="btn-prev-slide" onclick="prevSlide()" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-bold border border-slate-700 transition-all cursor-pointer flex items-center gap-1.5 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed">
+          <button id="btn-prev-slide" onclick="prevSlide()" class="px-3.5 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-white font-bold border border-slate-600 transition-all cursor-pointer flex items-center gap-1.5 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed">
             <span>←</span>
             <span class="lang-en">Previous</span>
             <span class="lang-fr">Précédent</span>
           </button>
-          <button id="btn-next-slide" onclick="nextSlide()" class="px-3.5 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 text-white font-bold transition-all cursor-pointer flex items-center gap-1.5 shadow-md disabled:opacity-40 disabled:cursor-not-allowed">
+          <button id="btn-next-slide" onclick="nextSlide()" class="px-3.5 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold transition-all cursor-pointer flex items-center gap-1.5 shadow-md disabled:opacity-40 disabled:cursor-not-allowed">
             <span class="lang-en">Next</span>
             <span class="lang-fr">Suivant</span>
             <span>→</span>
@@ -1326,9 +1566,9 @@
         </div>
 
         <!-- Slide Number Indicator & Jump Dots -->
-        <div class="flex items-center gap-2">
-          <span id="slide-counter-badge" class="font-mono text-xs font-bold text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">
-            Slide 1 of 12
+        <div class="flex items-center gap-2.5">
+          <span id="slide-counter-badge" class="font-mono text-xs font-bold text-sky-300 bg-slate-900/90 px-2.5 py-1 rounded-md border border-slate-700">
+            Slide 1 of 13
           </span>
           <div id="slide-jump-dots" class="flex items-center gap-1.5">
             <!-- Populated via script -->
@@ -1336,11 +1576,11 @@
         </div>
 
         <div class="flex items-center gap-2">
-          <span class="text-[11px] text-slate-500 hidden sm:inline">
-            <span class="lang-en">Use <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-slate-400">←</kbd> <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-slate-400">→</kbd> arrow keys</span>
-            <span class="lang-fr">Touches <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-slate-400">←</kbd> <kbd class="px-1.5 py-0.5 bg-slate-800 rounded border border-slate-700 text-slate-400">→</kbd> du clavier</span>
+          <span class="text-[11px] text-slate-400 hidden sm:inline">
+            <span class="lang-en">Use <kbd class="px-1.5 py-0.5 bg-slate-900 rounded border border-slate-700 text-slate-300">←</kbd> <kbd class="px-1.5 py-0.5 bg-slate-900 rounded border border-slate-700 text-slate-300">→</kbd> keys</span>
+            <span class="lang-fr">Touches <kbd class="px-1.5 py-0.5 bg-slate-900 rounded border border-slate-700 text-slate-300">←</kbd> <kbd class="px-1.5 py-0.5 bg-slate-900 rounded border border-slate-700 text-slate-300">→</kbd></span>
           </span>
-          <button onclick="toggleFullScreen()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition-all cursor-pointer" title="Toggle Fullscreen">
+          <button onclick="toggleFullScreen()" class="p-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-200 hover:text-white border border-slate-600 transition-all cursor-pointer" title="Toggle Fullscreen">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
           </button>
         </div>
@@ -1349,12 +1589,12 @@
     </div>
 
     <!-- DOCUMENT VIEW CONTAINER (Continuous Full Page) -->
-    <div id="doc-view-container" class="hidden flex-1 bg-slate-50 p-4 sm:p-8 space-y-6">
+    <div id="doc-view-container" class="hidden flex-1 bg-slate-100 slides-canvas p-4 sm:p-8 space-y-6">
 
       <!-- Executive Banner -->
-      <section class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white rounded-xl p-5 sm:p-6 shadow-md border border-slate-700">
-        <div class="max-w-4xl space-y-2">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-orange-300 bg-orange-500/20 border border-orange-400/30">
+      <section class="max-w-6xl mx-auto bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white rounded-2xl p-5 sm:p-7 shadow-lg border border-slate-800">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-sky-300 bg-sky-500/20 border border-sky-400/30">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>ENAC • École Nationale de l'Aviation Civile • Département LH / LAN</span>
           </div>
@@ -1370,7 +1610,7 @@
 
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-4 border-t border-slate-700/80 text-center">
           <div class="p-2.5 rounded-lg bg-white/5 border border-white/10">
-            <span class="block text-base sm:text-lg font-black text-orange-400">
+            <span class="block text-base sm:text-lg font-black text-sky-400">
               <span class="lang-en">68 hours</span>
               <span class="lang-fr">68 heures</span>
             </span>
@@ -1406,16 +1646,16 @@
         </div>
       </section>
 
-      <!-- 8 Pillars Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="doc-cards-container">
+      <!-- All Presentation Cards Grid -->
+      <div class="space-y-6 max-w-6xl mx-auto" id="doc-cards-container">
         <!-- Rendered dynamically from slide contents for 100% data parity -->
       </div>
 
       <!-- Pedagogical Transparency Notice -->
-      <section class="p-4 bg-slate-100 border border-slate-200 rounded-xl flex items-start gap-3 text-xs text-slate-600 print-break-inside">
+      <section class="max-w-6xl mx-auto p-5 bg-white border border-slate-200 rounded-2xl flex items-start gap-3.5 text-xs text-slate-600 shadow-sm print-break-inside">
         <svg class="w-5 h-5 text-indigo-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
         <div class="space-y-1">
-          <span class="font-bold text-slate-800 text-[11px] uppercase tracking-wider block">
+          <span class="font-bold text-slate-900 text-[11px] uppercase tracking-wider block">
             <span class="lang-en">Pedagogical Transparency Notice &amp; Institutional Governance</span>
             <span class="lang-fr">Notice de Transparence Pédagogique &amp; Gouvernance Institutionnelle</span>
           </span>
@@ -1451,7 +1691,7 @@
 <!-- Ultra-Lightweight Slide Show Engine (Zero External Dependencies) -->
 <script>
   let currentSlide = 0;
-  const totalSlides = 12;
+  const totalSlides = 13;
   let viewMode = 'slides';
   let currentLang = 'en';
   try {
@@ -1472,11 +1712,11 @@
     const btnFr = document.getElementById('btn-lang-fr');
     if (lang === 'fr') {
       document.body.classList.add('lang-fr');
-      if (btnFr) btnFr.className = "px-2.5 py-1 rounded-lg transition-all cursor-pointer bg-orange-600 text-white shadow-xs flex items-center gap-1";
+      if (btnFr) btnFr.className = "px-2.5 py-1 rounded-lg transition-all cursor-pointer bg-sky-600 text-white shadow-xs flex items-center gap-1";
       if (btnEn) btnEn.className = "px-2.5 py-1 rounded-lg transition-all cursor-pointer text-slate-300 hover:text-white hover:bg-white/10 flex items-center gap-1";
     } else {
       document.body.classList.remove('lang-fr');
-      if (btnEn) btnEn.className = "px-2.5 py-1 rounded-lg transition-all cursor-pointer bg-orange-600 text-white shadow-xs flex items-center gap-1";
+      if (btnEn) btnEn.className = "px-2.5 py-1 rounded-lg transition-all cursor-pointer bg-sky-600 text-white shadow-xs flex items-center gap-1";
       if (btnFr) btnFr.className = "px-2.5 py-1 rounded-lg transition-all cursor-pointer text-slate-300 hover:text-white hover:bg-white/10 flex items-center gap-1";
     }
     const badge = document.getElementById('slide-counter-badge');
@@ -1496,12 +1736,12 @@
     if (mode === 'slides') {
       slidesContainer.classList.remove('hidden');
       docContainer.classList.add('hidden');
-      btnSlides.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-orange-600 text-white shadow-xs";
+      btnSlides.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-sky-600 text-white shadow-xs";
       btnDoc.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-slate-300 hover:text-white hover:bg-white/10";
     } else {
       slidesContainer.classList.add('hidden');
       docContainer.classList.remove('hidden');
-      btnDoc.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-orange-600 text-white shadow-xs";
+      btnDoc.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-sky-600 text-white shadow-xs";
       btnSlides.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-slate-300 hover:text-white hover:bg-white/10";
     }
   }
@@ -1533,9 +1773,9 @@
       const dot = document.getElementById(`dot-${i}`);
       if (dot) {
         if (i === currentSlide) {
-          dot.className = "w-2.5 h-2.5 rounded-full bg-orange-500 shadow-xs cursor-pointer";
+          dot.className = "w-3 h-3 rounded-full bg-sky-500 ring-2 ring-sky-300/80 shadow-xs cursor-pointer transition-all";
         } else {
-          dot.className = "w-2 h-2 rounded-full bg-slate-700 hover:bg-slate-500 transition-all cursor-pointer";
+          dot.className = "w-2 h-2 rounded-full bg-slate-600 hover:bg-slate-400 transition-all cursor-pointer";
         }
       }
     }
@@ -1546,7 +1786,7 @@
     if (!container) return;
     let html = '';
     for (let i = 0; i < totalSlides; i++) {
-      html += `<button id="dot-${i}" onclick="goToSlide(${i})" class="w-2 h-2 rounded-full bg-slate-700 hover:bg-slate-500 transition-all cursor-pointer" title="Go to slide ${i+1}"></button>`;
+      html += `<button id="dot-${i}" onclick="goToSlide(${i})" class="w-2 h-2 rounded-full bg-slate-600 hover:bg-slate-400 transition-all cursor-pointer" title="Go to slide ${i+1}"></button>`;
     }
     container.innerHTML = html;
   }
@@ -1605,7 +1845,7 @@
       const slide = document.getElementById(`slide-${i}`);
       if (slide) {
         cardsHtml += `
-          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-3">
+          <div class="presentation-doc-item">
             ${slide.innerHTML}
           </div>
         `;

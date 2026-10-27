@@ -638,19 +638,19 @@
                   <svg width="13" height="13" class="shrink-0 transition-colors" style="color: var(--skills-accent);" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
                   <span class="transition-colors font-extrabold" style="color: var(--skills-color);">Continuous Assessment Criteria</span>
                 </div>
-                <span class="text-[9.5px] font-mono text-slate-400 font-medium hidden sm:inline">Click to listen</span>
+                <span class="text-[9.5px] font-mono text-slate-400 font-medium hidden sm:inline">Click to explore criteria</span>
               </div>
               <div class="grid grid-cols-2 sm:grid-cols-5 gap-y-2 gap-x-2.5">
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Fluency')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Fluency</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈfluː.ən.si/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Grammar')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Grammar</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈɡræm.ər/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Vocabulary')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Vocabulary</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/vəˈkæb.jʊ.lər.i/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Pronunciation')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Pronunciation</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/prəˌnʌn.siˈeɪ.shən/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Comprehension')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Comprehension</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌkɒm.prɪˈhen.ʃən/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Discussion')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Discussion</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/dɪˈskʌʃ.ən/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Correction')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Correction</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/kəˈrek.ʃən/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Interaction')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Interaction</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌɪn.təˈræk.ʃən/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Assessment')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Assessment</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/əˈses.mənt/</span></div>
-                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group" role="button" tabindex="0" onclick="speakWord('Portfolio')" title="Click to listen"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Portfolio</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/pɔːtˈfəʊ.li.əʊ/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Fluency')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Fluency</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈfluː.ən.si/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Grammar')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Grammar</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˈɡræm.ər/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Vocabulary')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Vocabulary</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/vəˈkæb.jʊ.lər.i/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Pronunciation')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Pronunciation</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/prəˌnʌn.siˈeɪ.shən/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Comprehension')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Comprehension</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌkɒm.prɪˈhen.ʃən/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Discussion')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Discussion</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/dɪˈskʌʃ.ən/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Correction')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Correction</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/kəˈrek.ʃən/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Interaction')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Interaction</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/ˌɪn.təˈræk.ʃən/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Assessment')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Assessment</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/əˈses.mənt/</span></div>
+                <div class="skill-tile flex flex-col p-1.5 rounded-lg border border-transparent transition-all cursor-pointer select-none group hover:bg-white hover:border-slate-300 hover:shadow-2xs" role="button" tabindex="0" onclick="showCriteriaModal('Portfolio')" title="Click to view criteria guide"><span class="skill-word text-[11.5px] font-extrabold uppercase tracking-wide">Portfolio</span><span class="text-[9.5px] text-slate-400 font-mono mt-0.5 group-hover:text-slate-600 transition-colors">/pɔːtˈfəʊ.li.əʊ/</span></div>
               </div>
             </div>
           </div>
@@ -765,6 +765,55 @@
           </div>
         </footer>
 
+      </div>
+    </div>
+  </div>
+
+  <!-- Micro-Modal: Continuous Assessment Criteria Deep-Dive -->
+  <div id="criteria-modal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="criteria-modal-title" role="dialog" aria-modal="true">
+    <!-- Backdrop Overlay -->
+    <div id="criteria-modal-backdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs opacity-0 transition-opacity duration-200" onclick="closeCriteriaModal()"></div>
+
+    <!-- Centered Modal Dialog Card -->
+    <div class="min-h-full flex items-center justify-center p-3 sm:p-4 text-center">
+      <div id="criteria-modal-card" class="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl text-left overflow-hidden transform scale-95 opacity-0 transition-all duration-200 border border-slate-200">
+        <!-- Dynamic Header (Word, IPA, Audio Button, Close) -->
+        <div id="criteria-modal-header" class="px-5 py-3.5 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+          <div class="flex items-center gap-3 min-w-0">
+            <div id="criteria-modal-badge" class="w-9 h-9 rounded-xl flex items-center justify-center font-black text-xs text-white bg-orange-600 shadow-xs shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <div class="min-w-0">
+              <div class="flex items-center gap-2">
+                <h3 id="criteria-modal-title" class="text-base sm:text-lg font-black text-white tracking-tight truncate">Fluency</h3>
+                <span id="criteria-modal-ipa" class="text-xs font-mono text-slate-300 font-medium shrink-0">/ˈfluː.ən.si/</span>
+              </div>
+              <p id="criteria-modal-subtitle" class="text-[11px] text-slate-400 font-medium truncate mt-0.5">Continuous Spoken Assessment &amp; ICAO Rating Dimension</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button id="criteria-modal-audio-btn" type="button" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition-all cursor-pointer" title="Listen to pronunciation">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+              <span>Listen</span>
+            </button>
+            <button type="button" onclick="closeCriteriaModal()" class="text-slate-400 hover:text-white bg-white/5 hover:bg-white/15 p-1.5 rounded-lg transition-all cursor-pointer" aria-label="Close dialog">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Body Content -->
+        <div id="criteria-modal-body" class="p-4 sm:p-5 space-y-3 text-xs sm:text-sm text-slate-700 bg-slate-50/50 max-h-[72vh] overflow-y-auto">
+          <!-- Populated dynamically via showCriteriaModal -->
+        </div>
+
+        <!-- Footer -->
+        <div class="px-5 py-2.5 bg-white border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+          <span class="text-[11px] font-medium text-slate-400">ENAC GSEA English Evaluation Framework</span>
+          <button type="button" onclick="closeCriteriaModal()" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs transition-all cursor-pointer">
+            Close
+          </button>
+        </div>
       </div>
     </div>
   </div>
