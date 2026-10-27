@@ -14,7 +14,8 @@
     "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --watch",
     "serve": "python3 -m http.server 8000",
     "backup1": "node scripts/backup.js semester1",
-    "backup2": "node scripts/backup.js semester2"
+    "backup2": "node scripts/backup.js semester2",
+    "backup3": "node scripts/backup.js semester3"
   },
   "repository": {
     "type": "git",

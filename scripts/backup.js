@@ -5,7 +5,9 @@ const os = require('os');
 const { execSync } = require('child_process');
 
 const rootDir = path.resolve(__dirname, '..');
-const defaultSem = path.basename(rootDir).toLowerCase().includes('semester_2') ? 'semester2' : 'semester1';
+const defaultSem = path.basename(rootDir).toLowerCase().includes('semester_3') 
+  ? 'semester3' 
+  : (path.basename(rootDir).toLowerCase().includes('semester_2') ? 'semester2' : 'semester1');
 const arg = (process.argv[2] || defaultSem).toLowerCase().trim();
 
 // Determine target semester
@@ -13,7 +15,11 @@ let targetFolder = 'GSEA_semester_1';
 let semesterLabel = 'Semester 1';
 let semesterNum = 1;
 
-if (arg === '2' || arg === 'semester2' || arg === 'backup2') {
+if (arg === '3' || arg === 'semester3' || arg === 'backup3') {
+  targetFolder = 'GSEA_semester_3';
+  semesterLabel = 'Semester 3';
+  semesterNum = 3;
+} else if (arg === '2' || arg === 'semester2' || arg === 'backup2') {
   targetFolder = 'GSEA_semester_2';
   semesterLabel = 'Semester 2';
   semesterNum = 2;
