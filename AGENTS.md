@@ -114,6 +114,10 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   5. `portfolio.html` & `students.private.example.json` (Student `<optgroup>` selectors and private mapping template)
   6. Runs `npm run package` to rebuild `index.html`, `output.css`, the SCORM `.zip`, `.iso`, and `.dmg`.
 
+### L. Calendar & Deck Session Title Parity Invariant (Cross-Semester Permanent Rule)
+- **1:1 Strict Title Parity**: The lesson titles displayed in the weekly course calendar (`ADMIN_CALENDAR_SCHEDULES` in both `src/js/11-admin-hub.js` and `admin.html`) must **strictly mirror and maintain 1:1 parity** with the session titles and class titles in each deck card (`src/js/02-config.js`, `data/course-data.js`, and the digital worksheets).
+- **Mandatory Dual-File Synchronization**: Whenever a session title is modified, refined, or retitled in any deck card, the corresponding calendar entries in both `src/js/11-admin-hub.js` and `admin.html` **must** be updated concurrently to match exactly.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
