@@ -63,8 +63,8 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **`backup3` Trigger**: Whenever the user sends `backup3`, the assistant immediately runs `npm run backup3` (or `node scripts/backup.js semester3`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_3/` and confirms the file path and archive size.
 - **Archive Convention**: Archives are named `GSEA_Semester_X_backup_YYYY-MM-DD_HHmm.zip`, containing the full project source and compiled assets while omitting `node_modules` and `.git`.
 
-### F. Cross-Project Rule & Tooling Synchronization
-- **Mandatory Tri-Project Propagation**: Any time an architectural rule, governance guideline, operational command (e.g. `backup1`/`backup2`/`backup3`), or utility script is created or modified in `GSEA_semester_1`, the assistant MUST immediately mirror and synchronize that change across `GSEA_semester_2` and `GSEA_semester_3` (and vice-versa) within the same session.
+### F. Cross-Project Rule, Feature & Tooling Synchronization (Tri-Project Invariant)
+- **Mandatory Tri-Project Propagation**: Whenever an architectural rule, governance guideline, operational command (e.g. `backup1`/`backup2`/`backup3`), utility script, **shared platform feature, portfolio enhancement, or UI workflow improvement** is created or updated in any semester, the assistant MUST automatically evaluate and synchronize that improvement across all three repositories (`GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`) within the same session (omitting only content that is strictly semester-specific, such as module lesson topics).
 
 ### G. Automatic Atomic Commit & Push Protocol
 - **Single-Step Remote Synchronization**: Whenever the user instructs the assistant to `"Commit"` or `"Commit changes"`, the assistant MUST automatically execute **both** `git commit` AND `git push origin main` together in one seamless step, ensuring GitHub and GitHub Pages stay continuously synchronized with local progress.
