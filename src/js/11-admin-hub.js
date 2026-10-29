@@ -1105,6 +1105,238 @@
       `;
     }
 
+    function renderStudentGuideTab(theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+
+      bodyEl.innerHTML = `
+        <div class="space-y-5">
+          <!-- Top Header Banner -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl" style="background-color: ${theme.primary};">
+                <span>📘</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">STUDENT GUIDE</span>
+                  <h3 class="text-base sm:text-lg font-extrabold text-slate-900">How to Succeed in English</h3>
+                </div>
+                <p class="text-xs text-slate-500 mt-0.5">Essential guidelines for continuous progress, formative evaluations &amp; success</p>
+              </div>
+            </div>
+
+            <!-- Quick Switcher to official syllabus -->
+            <div class="inline-flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200 shadow-inner self-stretch sm:self-auto justify-center gap-1">
+              <button type="button" onclick="switchModalTab('sem_obj_en')" class="px-3 py-1 rounded-md text-xs font-bold text-slate-600 hover:text-slate-900 cursor-pointer transition-all">🇬🇧 English Syllabus</button>
+              <button type="button" onclick="switchModalTab('sem_obj_fr')" class="px-3 py-1 rounded-md text-xs font-bold text-slate-600 hover:text-slate-900 cursor-pointer transition-all">🇫🇷 French Syllabus</button>
+            </div>
+          </div>
+
+          <!-- Key Mindset Alert Box -->
+          <div class="p-4 rounded-xl border border-blue-200/80 bg-blue-50/70 shadow-2xs flex items-start gap-3">
+            <span class="text-xl shrink-0 mt-0.5">🎯</span>
+            <div class="text-xs text-blue-900 space-y-1">
+              <h4 class="font-extrabold text-blue-950 text-sm">Our Focus: Gradual &amp; Steady Improvement</h4>
+              <p class="leading-relaxed">
+                This communicative programme is designed to build your spoken confidence, fluency, and professional vocabulary. There is no high-stress final written exam. Instead, your success is based on continuous effort, active peer interaction, and steady weekly improvement.
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 1: Three Core Focus Areas -->
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">1</span>
+              <h4 class="font-bold text-slate-900 text-sm">Three Core Areas for the Year</h4>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
+                <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
+                  <span>📈</span>
+                  <span>Continuous Progress</span>
+                </div>
+                <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                  Building on the competencies you already have, making steady and gradual progress week after week.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
+                <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
+                  <span>🗣️</span>
+                  <span>Formative Evaluations</span>
+                </div>
+                <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                  Regular oral tutorials in pairs or trios at the end of each module to monitor speaking and receive individual guidance.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
+                <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
+                  <span>📊</span>
+                  <span>Self-Monitoring</span>
+                </div>
+                <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                  Logging your own progress in the digital Learning Portfolio so both you and your teachers can track your trajectory.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: CRITICAL PORTFOLIO ALERT -->
+          <div class="p-5 rounded-2xl bg-amber-50/80 border-2 border-amber-300 shadow-xs space-y-3">
+            <div class="flex items-center gap-2 text-amber-950">
+              <span class="text-xl">⚠️</span>
+              <h4 class="font-black text-sm uppercase tracking-wide">Mandatory Rule: Detailed Portfolio Reflections (No One-Word Answers!)</h4>
+            </div>
+            <p class="text-xs sm:text-[12.5px] text-amber-900 leading-relaxed">
+              Your digital Learning Portfolio is checked and monitored regularly by the <strong>Professeur Référent (Phil PARRIS)</strong>, who coordinates with your teachers to organize additional support whenever needed.
+            </p>
+            <div class="p-3.5 rounded-xl bg-white/90 border border-amber-200 space-y-2 text-xs">
+              <div class="flex items-start gap-2">
+                <span class="text-rose-700 font-bold shrink-0">❌ Never write one-word answers:</span>
+                <span class="text-slate-600">Do NOT write simple words like <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"nothing"</em>, or <em>"ras"</em>. These give your teachers zero information.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-emerald-700 font-bold shrink-0">✅ Always write detailed notes:</span>
+                <span class="text-slate-700">Explain exactly what went well, which specific vocabulary or grammar points were difficult, and what you will do before the next session to improve.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: The 6 Spoken Competencies & TOEIC -->
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">2</span>
+                <h4 class="font-bold text-slate-900 text-sm">The 6 Core Spoken Competencies (MTF Test) &amp; TOEIC</h4>
+              </div>
+              <span class="text-[10px] font-mono uppercase bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">Tested in S3</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Track your growth in all 6 competencies tested during the oral MTF test, and monitor your TOEIC listening and reading via GlobalExam:
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-1 text-xs">
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <strong class="text-slate-900 block font-bold mb-0.5">1. Spoken Fluency</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">Smooth, natural tempo without long hesitations.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <strong class="text-slate-900 block font-bold mb-0.5">2. Interaction</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">Active turn-taking, asking questions, and responding to peers.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <strong class="text-slate-900 block font-bold mb-0.5">3. Vocabulary Range</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">Using exact general and aviation technical terminology.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <strong class="text-slate-900 block font-bold mb-0.5">4. Grammatical Control</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">Clear sentence structures, tenses, and connecting words.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <strong class="text-slate-900 block font-bold mb-0.5">5. Pronunciation</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">Intelligible sounds, correct word stress, and natural rhythm.</p>
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                <strong class="text-slate-900 block font-bold mb-0.5">6. Listening Comprehension</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">Understanding spoken briefings, audios, and teacher instructions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Formative Evaluations (FE) Rules -->
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">3</span>
+              <h4 class="font-bold text-slate-900 text-sm">Formative Evaluations (FE) — How They Work</h4>
+            </div>
+            <div class="space-y-2.5 text-xs text-slate-700">
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
+                <span class="text-base shrink-0">👥</span>
+                <div>
+                  <strong class="text-slate-900 block font-bold mb-0.5">FE 1, FE 2, and FE 3 — Prepared Outside of Class</strong>
+                  <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                    These 30-minute tutorials take place at the end of each module. You prepare your presentation and topics outside of class with your assigned partner or trio. Arrive on time, speak actively, and show what you have learned!
+                  </p>
+                </div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
+                <span class="text-base shrink-0">🎓</span>
+                <div>
+                  <strong class="text-slate-900 block font-bold mb-0.5">Final FE (Class 17) — Revision Session in Class</strong>
+                  <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                    The final formative evaluation at the end of the semester is prepared together in class during a dedicated revision session leading up to it. All students know exactly what to expect — no surprises!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="text-[11px] text-slate-500 italic pl-1">
+              * This framework applies to both General English (AG) and Technical English (AT/AAS).
+            </p>
+          </div>
+
+          <!-- Section 5: Using Class Space & Resources -->
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">4</span>
+              <h4 class="font-bold text-slate-900 text-sm">How to Use the Class Resource Workspace</h4>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                  <span>📋</span>
+                  <span>Lesson Plan &amp; Objectives</span>
+                </div>
+                <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                  Read this before each class to know the goals, key topics, and communicative targets for the session.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                  <span>📖</span>
+                  <span>Class Content &amp; Worksheets</span>
+                </div>
+                <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                  The speaking materials you work on in class. <strong>You do NOT need to complete every single exercise in class!</strong> The materials are rich so you never run out of speaking topics. It is not tested in a written exam.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                  <span>🔤</span>
+                  <span>Vocabulary Revision</span>
+                </div>
+                <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                  Essential vocabulary that you <strong>must revise</strong> and aim to use during your speaking activities and formative evaluations.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
+                <div class="font-bold text-slate-900 flex items-center gap-1.5">
+                  <span>🔎</span>
+                  <span>Additional Materials &amp; TOEIC</span>
+                </div>
+                <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                  Optional extra resources for students who wish to explore the subject further, plus weekly TOEIC practice exercises to prepare for the test.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6: Evaluation & Questions -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <h4 class="font-bold text-slate-900 text-sm">Grading &amp; Semester GO / NO GO</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Active class participation + detailed portfolio + prepared FEs combine into your final grade (/20) and semester <strong>GO / NO GO</strong>.
+              </p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs shrink-0 space-y-0.5 self-stretch sm:self-auto">
+              <div class="text-[10px] text-slate-500 uppercase font-mono font-bold">Questions or Support?</div>
+              <div class="font-bold text-slate-900 text-xs">Phil PARRIS <span class="text-slate-500 font-normal">(Professeur Référent)</span></div>
+              <a href="mailto:philip.parris@enac.fr" class="text-blue-600 hover:underline font-mono text-[11px] block">philip.parris@enac.fr</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
     function renderSemesterObjectivesTab(lang, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
@@ -1318,6 +1550,7 @@
         ? (isFr ? "Niveau B2 CECRL • Standard Opérationnel OACI Niveau 4/5" : "CEFR B2 Level • ICAO Operational Level 4/5 Benchmark")
         : (isFr ? "Niveau B2 CECRL • Utilisateur Indépendant Opérationnel" : "CEFR B2 Level • Independent Operational Proficiency");
 
+      const switchBtnGuide = `<button type="button" onclick="switchModalTab('student_guide')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer text-slate-600 hover:text-slate-900">📘 Student Guide</button>`;
       const switchBtnEn = `<button type="button" onclick="switchModalTab('sem_obj_en')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${!isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇬🇧 English</button>`;
       const switchBtnFr = `<button type="button" onclick="switchModalTab('sem_obj_fr')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇫🇷 Français</button>`;
 
@@ -1339,7 +1572,8 @@
             </div>
 
             <!-- In-Drawer Quick Language Toggle -->
-            <div class="inline-flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200 shadow-inner self-stretch sm:self-auto justify-center">
+            <div class="inline-flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200 shadow-inner self-stretch sm:self-auto justify-center gap-1">
+              ${switchBtnGuide}
               ${switchBtnEn}
               ${switchBtnFr}
             </div>
