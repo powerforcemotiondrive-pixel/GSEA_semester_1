@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const rootDir = path.resolve(__dirname, '..');
 const templatePath = path.join(rootDir, 'src', 'template.html');
@@ -35,6 +36,22 @@ function buildHtml() {
     .sort();
 
   console.log(`  Found ${jsFiles.length} source JS modules in src/js:`);
+
+  // Pre-flight automated syntax guard: verify all JS files parse cleanly
+  for (const file of jsFiles) {
+    const filePath = path.join(jsDir, file);
+    try {
+      execSync(`node -c "${filePath}"`, { stdio: 'pipe' });
+    } catch (err) {
+      console.error(`\n❌ FATAL SYNTAX ERROR detected in module [src/js/${file}]:`);
+      const errorMsg = err.stderr ? err.stderr.toString() : err.message;
+      console.error(errorMsg);
+      console.error(`🛑 BUILD ABORTED: index.html was NOT updated to protect production stability.`);
+      console.error(`   Please fix the syntax error in src/js/${file} and retry.\n`);
+      process.exit(1);
+    }
+  }
+
   let combinedJs = '';
   jsFiles.forEach(file => {
     const filePath = path.join(jsDir, file);
