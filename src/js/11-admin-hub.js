@@ -2142,23 +2142,20 @@ const PORTFOLIO_SUMMARY_DATA = {
           <!-- Track Filter Segmented Control Bar (Zero mobile clutter, single 36px bar) -->
           <div class="flex flex-col sm:flex-row items-center justify-between gap-2.5 p-2 bg-slate-100 rounded-xl border border-slate-200">
             <div class="flex items-center gap-2 self-start sm:self-auto px-1">
-              <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Course Filter:</span>
-              <span class="text-[11px] text-slate-600 font-medium">
-                ${activeFilter === 'all' ? 'All Tracks Combined' : (activeFilter === 'at' ? 'LV121E Technical English (AT)' : 'LV101E General English (AG)')}
+              <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Viewing:</span>
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border ${activeFilter === 'at' ? 'bg-emerald-50 text-emerald-800 border-emerald-300' : (activeFilter === 'ag' ? 'bg-indigo-50 text-indigo-800 border-indigo-300' : 'bg-white text-slate-800 border-slate-300')}">
+                ${activeFilter === 'all' ? '🌐 All Tracks Combined' : (activeFilter === 'at' ? '✈️ LV121E Technical English (AT)' : '🗣️ LV101E General English (AG)')}
               </span>
             </div>
             <div class="w-full sm:w-auto grid grid-cols-3 gap-1 bg-slate-200/90 p-1 rounded-lg text-xs font-bold">
-              <button onclick="window.setPortfolioTrackFilter('all')" class="py-1 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'all' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
-                <span class="inline sm:hidden">🌐 All</span>
-                <span class="hidden sm:inline">🌐 All Tracks</span>
+              <button onclick="window.setPortfolioTrackFilter('all')" class="py-1.5 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'all' ? 'bg-white text-slate-900 shadow-xs font-black' : 'text-slate-600 hover:text-slate-900 hover:bg-white/40'}">
+                🌐 All Tracks
               </button>
-              <button onclick="window.setPortfolioTrackFilter('at')" class="py-1 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'at' ? 'bg-white text-emerald-800 shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
-                <span class="inline sm:hidden">✈️ AT</span>
-                <span class="hidden sm:inline">✈️ AT Technical</span>
+              <button onclick="window.setPortfolioTrackFilter('at')" class="py-1.5 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'at' ? 'bg-emerald-600 text-white shadow-xs font-black' : 'text-slate-600 hover:text-emerald-800 hover:bg-white/40'}">
+                ✈️ AT Technical
               </button>
-              <button onclick="window.setPortfolioTrackFilter('ag')" class="py-1 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'ag' ? 'bg-white text-indigo-800 shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
-                <span class="inline sm:hidden">🗣️ AG</span>
-                <span class="hidden sm:inline">🗣️ AG General</span>
+              <button onclick="window.setPortfolioTrackFilter('ag')" class="py-1.5 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'ag' ? 'bg-indigo-600 text-white shadow-xs font-black' : 'text-slate-600 hover:text-indigo-800 hover:bg-white/40'}">
+                🗣️ AG General
               </button>
             </div>
           </div>
