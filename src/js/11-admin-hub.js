@@ -2296,12 +2296,6 @@ const PORTFOLIO_SUMMARY_DATA = {
         </div>
       `;
     }
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    }
 
 
 
