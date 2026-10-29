@@ -1965,5 +1965,246 @@
       try { localStorage.setItem('gsea_presentation_lang', lang); } catch (e) {}
     };
 
+    /* --- PORTFOLIO_SUMMARY_DATA_START --- */
+const PORTFOLIO_SUMMARY_DATA = {
+  "lastUpdated": "29 Oct 2026",
+  "totalSubmissions": 15,
+  "trackBreakdown": {
+    "at": 13,
+    "ag": 2
+  },
+  "metrics": {
+    "avgFeConfidence": "4.1",
+    "avgToeicConfidence": "9.5",
+    "targetFeLevel": "CEFR B2",
+    "feWindow": "Week 48 (FE1)"
+  },
+  "topBuzzwords": [
+    {
+      "term": "Airside vs. Landside",
+      "category": "Aerodrome Zones",
+      "frequency": "80% of cohort",
+      "definition": "Landside = public area before security (check-in, arrivals hall). Airside = strictly secured operations area beyond security (gates, apron, taxiways, runways)."
+    },
+    {
+      "term": "Apron / Ramp & Stands",
+      "category": "Movement Area",
+      "frequency": "70% of cohort",
+      "definition": "The designated paved area where aircraft park at designated stands to deboard, board, refuel, load baggage, and undergo ground servicing."
+    },
+    {
+      "term": "Unruly / Disruptive Passenger",
+      "category": "Cabin Safety & Security",
+      "frequency": "60% of cohort",
+      "definition": "A traveler who refuses to follow crew instructions or behaves disruptively, risking flight diversions, police arrest, and heavy airline costs."
+    },
+    {
+      "term": "GPU vs. APU",
+      "category": "Electrical Power Systems",
+      "frequency": "50% of cohort",
+      "definition": "GPU (Ground Power Unit) = mobile ground generator supplying electricity at the gate. APU (Auxiliary Power Unit) = small gas turbine in the aircraft tail used when engines and GPU are off."
+    },
+    {
+      "term": "TRC & AODB",
+      "category": "Ground Operations",
+      "frequency": "40% of cohort",
+      "definition": "TRC = Turnaround Coordinator supervising ramp tasks between flight arrival and departure. AODB = Airport Operational Database managing flight schedules, gate changes, and allocated stands."
+    },
+    {
+      "term": "Low-Cost Carrier (LCC) & Ancillary Revenue",
+      "category": "Airline Economics",
+      "frequency": "35% of cohort",
+      "definition": "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
+    }
+  ],
+  "grammarTrapsCaught": [
+    {
+      "title": "❌ 'Luggages' and 'Trainings' do NOT exist!",
+      "rule": "Both 'luggage' and 'training' are uncountable nouns in English. Never add an 's'.",
+      "correctExample": "✅ \"We checked three pieces of luggage and completed our training course.\""
+    },
+    {
+      "title": "💡 'Used to do' vs. 'Be used to doing'",
+      "rule": "'I used to work' expresses a past habit that is finished. 'I am used to working' means you are accustomed/familiar with it now.",
+      "correctExample": "✅ \"I used to live in Paris, but now I am used to living in Toulouse.\""
+    },
+    {
+      "title": "✨ High-Impact Spoken Idioms",
+      "rule": "Adopted by multiple students this week for introductions and natural conversation.",
+      "correctExample": "• \"Get off to a flying start\" (to start a project successfully)\n• \"Word of mouth\" (information passed orally from person to person)"
+    }
+  ],
+  "cohortReflections": {
+    "strengths": [
+      "Rapid adoption of technical aerodrome terminology (Airside, Apron, Stands, GPU).",
+      "Engaging peer discussions on commercial dilemmas (alcohol on board, budget airline trade-offs).",
+      "Accurate understanding of passenger rights under EU261 delay rules."
+    ],
+    "growthAreas": [
+      "Spoken Fluency: Eliminating pauses while searching for specialized English nouns.",
+      "Sentence Speed: Building complex cause-and-effect sentences without hesitation.",
+      "Distinguishing subtle pairs: Scheduled vs Charter flight, Delay vs Cancellation."
+    ],
+    "feAdvice": "Students agree that knowing exact physical zones of an airport (airside, apron, stands, taxiways) and ground jobs (TRC, aerodrome operator) is the single biggest factor to ace the 30-minute Formative Evaluation oral profile."
+  }
+};
+/* --- PORTFOLIO_SUMMARY_DATA_END --- */
+
+    function renderPortfolioSummaryTab(theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+      const data = (typeof PORTFOLIO_SUMMARY_DATA !== 'undefined' && PORTFOLIO_SUMMARY_DATA) ? PORTFOLIO_SUMMARY_DATA : null;
+
+      if (!data) {
+        bodyEl.innerHTML = `
+          <div class="p-8 text-center text-slate-500 bg-white rounded-2xl border border-slate-200">
+            <span class="text-3xl block mb-2">📊</span>
+            <h4 class="font-bold text-slate-800 text-sm">Portfolio Summary Pending</h4>
+            <p class="text-xs text-slate-500 mt-1">Student submissions are being collected. The cohort summary will appear here shortly.</p>
+          </div>
+        `;
+        return;
+      }
+
+      bodyEl.innerHTML = `
+        <div class="space-y-5">
+          <!-- Top Header Banner -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl" style="background-color: ${theme.primary};">
+                <span>📊</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">COHORT PULSE</span>
+                  <h3 class="text-base sm:text-lg font-extrabold text-slate-900">What Everyone is Talking About</h3>
+                </div>
+                <p class="text-xs text-slate-500 mt-0.5">Aggregated student reflections from your digital Learning Portfolios • Last updated: ${data.lastUpdated} (${data.totalSubmissions} submissions)</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 shrink-0 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-xs font-bold text-slate-700">Live Cohort Insights</span>
+            </div>
+          </div>
+
+          <!-- Quick Stats / Metrics Row -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-1">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Submissions Logged</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-2xl font-black text-slate-900">${data.totalSubmissions}</span>
+                <span class="text-xs text-slate-500">Across Group A &amp; B</span>
+              </div>
+              <span class="text-[11px] text-slate-500 block">AT Track: ${data.trackBreakdown.at} • AG Track: ${data.trackBreakdown.ag}</span>
+            </div>
+
+            <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-1">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">FE1 Readiness Confidence</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-2xl font-black text-amber-600">${data.metrics.avgFeConfidence}</span>
+                <span class="text-xs text-slate-400">/ 10</span>
+              </div>
+              <span class="text-[11px] text-slate-500 block">Initial Session 1 baseline • Target: Week 48 (FE1)</span>
+            </div>
+
+            <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-1">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Self-Reported Priority</span>
+              <div class="flex items-baseline gap-2">
+                <span class="text-sm font-extrabold text-blue-900">Vocabulary Precision</span>
+              </div>
+              <span class="text-[11px] text-slate-500 block">73% prioritized technical terms to build speaking speed</span>
+            </div>
+          </div>
+
+          <!-- Section 1: Top 6 Emerging Keywords & Concepts -->
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-md bg-blue-600 text-white flex items-center justify-center font-bold text-xs">1</span>
+                <h4 class="font-bold text-slate-900 text-sm">Top Emerging Keywords &amp; Technical Distinctions</h4>
+              </div>
+              <span class="text-[10px] font-mono uppercase bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-bold">Cohort Consensus</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+              ${(data.topBuzzwords || []).map(b => `
+                <div class="p-3.5 rounded-xl bg-slate-50/70 border border-slate-200 space-y-2 flex flex-col justify-between hover:bg-slate-50 transition-all">
+                  <div>
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-200/60 pb-1.5">
+                      <span class="font-bold text-xs text-slate-900">${b.term}</span>
+                      <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white text-indigo-700 border border-indigo-200">${b.frequency}</span>
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-slate-400 block mt-1">${b.category}</span>
+                    <p class="text-[11.5px] text-slate-700 leading-relaxed mt-1">${b.definition}</p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Section 2: Golden Rules & Common Grammar Traps -->
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-md bg-rose-600 text-white flex items-center justify-center font-bold text-xs">2</span>
+                <h4 class="font-bold text-slate-900 text-sm">Golden Language Rules &amp; Pitfalls Caught by the Cohort</h4>
+              </div>
+              <span class="text-[10px] font-mono uppercase bg-rose-50 text-rose-700 px-2 py-0.5 rounded font-bold">Self-Correction</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              ${(data.grammarTrapsCaught || []).map(gt => `
+                <div class="p-3.5 rounded-xl bg-rose-50/40 border border-rose-200 space-y-2 flex flex-col justify-between">
+                  <div>
+                    <h5 class="text-xs font-bold text-rose-950">${gt.title}</h5>
+                    <p class="text-[11px] text-slate-700 mt-1 leading-relaxed">${gt.rule}</p>
+                  </div>
+                  <div class="p-2.5 rounded-lg bg-white border border-rose-200/80 text-[11px] text-slate-800 whitespace-pre-line leading-relaxed">
+                    ${gt.correctExample}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Section 3: Honest Peer Reflections (You Are Not Alone!) -->
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-md bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">3</span>
+                <h4 class="font-bold text-slate-900 text-sm">Honest Reflections &amp; How to Ace Formative Evaluation 1</h4>
+              </div>
+              <span class="text-[10px] font-mono uppercase bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-bold">Peer Voice</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                <h5 class="font-bold text-slate-900 flex items-center gap-1.5">
+                  <span>🗣️</span>
+                  <span>Common Speaking Challenges (You Are Not Alone!)</span>
+                </h5>
+                <ul class="space-y-1.5 pl-4 list-disc text-slate-600 text-[11.5px] leading-relaxed">
+                  ${(data.cohortReflections.growthAreas || []).map(ga => `<li>${ga}</li>`).join('')}
+                </ul>
+              </div>
+
+              <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200 space-y-2">
+                <h5 class="font-bold text-amber-950 flex items-center gap-1.5">
+                  <span>🎯</span>
+                  <span>Direct Link to the FE1 Oral Presentation</span>
+                </h5>
+                <p class="text-[11.5px] text-amber-900 leading-relaxed">
+                  ${data.cohortReflections.feAdvice}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+
 
 

@@ -25,5 +25,7 @@ dist/
 # Confidential student & faculty PII mapping (Never commit to Git)
 students.private.json
 PROMO_SETUP.private.md
+data/*.csv
+data/portfolio-latest.csv
 
 

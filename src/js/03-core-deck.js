@@ -1297,7 +1297,7 @@
       headerEl.style.borderColor = theme.primaryDark;
 
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
-      const isObjectivesSession = tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_');
+      const isObjectivesSession = tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || tabKey === 'portfolio_summary' || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_') || modalState.tab === 'portfolio_summary';
       const isImmersionSession = !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
       const isAdminSession = !isObjectivesSession && !isImmersionSession && (modalState.sessionNum === 7 || tabKey.startsWith('admin_'));
       const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (modalState.sessionNum === 5 || tabKey.startsWith('fe_'));
@@ -1306,6 +1306,7 @@
       const studentGuideTab = document.getElementById('modal-tab-student-guide');
       const semObjEnTab = document.getElementById('modal-tab-sem-obj-en');
       const semObjFrTab = document.getElementById('modal-tab-sem-obj-fr');
+      const portfolioSummaryTab = document.getElementById('modal-tab-portfolio-summary');
       const feGuidelinesTab = document.getElementById('modal-tab-fe-guidelines');
       const feObjectivesTab = document.getElementById('modal-tab-fe-objectives');
       const feCriteriaTab = document.getElementById('modal-tab-fe-criteria');
@@ -1340,6 +1341,7 @@
         if (studentGuideTab) studentGuideTab.classList.remove('hidden');
         if (semObjEnTab) semObjEnTab.classList.remove('hidden');
         if (semObjFrTab) semObjFrTab.classList.remove('hidden');
+        if (portfolioSummaryTab) portfolioSummaryTab.classList.remove('hidden');
 
         const isAas = (modalState.program === 'aas' || currentProgram === 'aas');
         tagEl.textContent = isAas ? "LV121E • Technical English" : "LV101E • General English";
@@ -1348,6 +1350,7 @@
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
+        if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
@@ -1367,6 +1370,7 @@
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
+        if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
         if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
@@ -1386,6 +1390,7 @@
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
+        if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
         if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
         if (adminGroupsTab) adminGroupsTab.classList.add('hidden');
@@ -1404,6 +1409,7 @@
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
+        if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
         if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
         if (adminGroupsTab) adminGroupsTab.classList.add('hidden');
@@ -1422,6 +1428,7 @@
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
+        if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
         if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
         if (adminGroupsTab) adminGroupsTab.classList.add('hidden');
@@ -1676,6 +1683,8 @@
 
       if (modalState.tab === 'student_guide') {
         renderStudentGuideTab(theme);
+      } else if (modalState.tab === 'portfolio_summary') {
+        renderPortfolioSummaryTab(theme);
       } else if (modalState.tab === 'sem_obj_en') {
         renderSemesterObjectivesTab('en', theme);
       } else if (modalState.tab === 'sem_obj_fr') {

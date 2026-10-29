@@ -17,7 +17,8 @@
     "backup1": "node scripts/backup.js semester1",
     "backup2": "node scripts/backup.js semester2",
     "backup3": "node scripts/backup.js semester3",
-    "promo:update": "node scripts/update-promo.js && npm run package && npm run package:moodle"
+    "promo:update": "node scripts/update-promo.js && npm run package && npm run package:moodle",
+    "portfolio:summary": "node scripts/update-portfolio-summary.js && npm run package && npm run package:moodle"
   },
   "repository": {
     "type": "git",

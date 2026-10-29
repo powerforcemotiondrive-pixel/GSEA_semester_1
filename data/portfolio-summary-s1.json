@@ -1,0 +1,82 @@
+{
+  "lastUpdated": "29 Oct 2026",
+  "totalSubmissions": 15,
+  "trackBreakdown": {
+    "at": 13,
+    "ag": 2
+  },
+  "metrics": {
+    "avgFeConfidence": "4.1",
+    "avgToeicConfidence": "9.5",
+    "targetFeLevel": "CEFR B2",
+    "feWindow": "Week 48 (FE1)"
+  },
+  "topBuzzwords": [
+    {
+      "term": "Airside vs. Landside",
+      "category": "Aerodrome Zones",
+      "frequency": "80% of cohort",
+      "definition": "Landside = public area before security (check-in, arrivals hall). Airside = strictly secured operations area beyond security (gates, apron, taxiways, runways)."
+    },
+    {
+      "term": "Apron / Ramp & Stands",
+      "category": "Movement Area",
+      "frequency": "70% of cohort",
+      "definition": "The designated paved area where aircraft park at designated stands to deboard, board, refuel, load baggage, and undergo ground servicing."
+    },
+    {
+      "term": "Unruly / Disruptive Passenger",
+      "category": "Cabin Safety & Security",
+      "frequency": "60% of cohort",
+      "definition": "A traveler who refuses to follow crew instructions or behaves disruptively, risking flight diversions, police arrest, and heavy airline costs."
+    },
+    {
+      "term": "GPU vs. APU",
+      "category": "Electrical Power Systems",
+      "frequency": "50% of cohort",
+      "definition": "GPU (Ground Power Unit) = mobile ground generator supplying electricity at the gate. APU (Auxiliary Power Unit) = small gas turbine in the aircraft tail used when engines and GPU are off."
+    },
+    {
+      "term": "TRC & AODB",
+      "category": "Ground Operations",
+      "frequency": "40% of cohort",
+      "definition": "TRC = Turnaround Coordinator supervising ramp tasks between flight arrival and departure. AODB = Airport Operational Database managing flight schedules, gate changes, and allocated stands."
+    },
+    {
+      "term": "Low-Cost Carrier (LCC) & Ancillary Revenue",
+      "category": "Airline Economics",
+      "frequency": "35% of cohort",
+      "definition": "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
+    }
+  ],
+  "grammarTrapsCaught": [
+    {
+      "title": "❌ 'Luggages' and 'Trainings' do NOT exist!",
+      "rule": "Both 'luggage' and 'training' are uncountable nouns in English. Never add an 's'.",
+      "correctExample": "✅ \"We checked three pieces of luggage and completed our training course.\""
+    },
+    {
+      "title": "💡 'Used to do' vs. 'Be used to doing'",
+      "rule": "'I used to work' expresses a past habit that is finished. 'I am used to working' means you are accustomed/familiar with it now.",
+      "correctExample": "✅ \"I used to live in Paris, but now I am used to living in Toulouse.\""
+    },
+    {
+      "title": "✨ High-Impact Spoken Idioms",
+      "rule": "Adopted by multiple students this week for introductions and natural conversation.",
+      "correctExample": "• \"Get off to a flying start\" (to start a project successfully)\n• \"Word of mouth\" (information passed orally from person to person)"
+    }
+  ],
+  "cohortReflections": {
+    "strengths": [
+      "Rapid adoption of technical aerodrome terminology (Airside, Apron, Stands, GPU).",
+      "Engaging peer discussions on commercial dilemmas (alcohol on board, budget airline trade-offs).",
+      "Accurate understanding of passenger rights under EU261 delay rules."
+    ],
+    "growthAreas": [
+      "Spoken Fluency: Eliminating pauses while searching for specialized English nouns.",
+      "Sentence Speed: Building complex cause-and-effect sentences without hesitation.",
+      "Distinguishing subtle pairs: Scheduled vs Charter flight, Delay vs Cancellation."
+    ],
+    "feAdvice": "Students agree that knowing exact physical zones of an airport (airside, apron, stands, taxiways) and ground jobs (TRC, aerodrome operator) is the single biggest factor to ace the 30-minute Formative Evaluation oral profile."
+  }
+}
