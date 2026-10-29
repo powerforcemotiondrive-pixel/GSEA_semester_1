@@ -118,6 +118,12 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **1:1 Strict Title Parity**: The lesson titles displayed in the weekly course calendar (`ADMIN_CALENDAR_SCHEDULES` in both `src/js/11-admin-hub.js` and `admin.html`) must **strictly mirror and maintain 1:1 parity** with the session titles and class titles in each deck card (`src/js/02-config.js`, `data/course-data.js`, and the digital worksheets).
 - **Mandatory Dual-File Synchronization**: Whenever a session title is modified, refined, or retitled in any deck card, the corresponding calendar entries in both `src/js/11-admin-hub.js` and `admin.html` **must** be updated concurrently to match exactly.
 
+### M. `Semester X Portfolio Summary` Automated Cohort Insights Protocol
+- **Trigger**: Whenever the user sends `Semester 1 Portfolio Summary` (with a CSV or spreadsheet attached or pasted), the assistant:
+  1. Writes the raw CSV into `data/portfolio-latest.csv` (which is permanently listed in `.gitignore` to protect student security codes and PII).
+  2. Runs `npm run portfolio:summary` (`node scripts/update-portfolio-summary.js && npm run package && npm run package:moodle`), which extracts top keywords, grammar pitfalls, student reflections, and FE readiness scores, updates `data/portfolio-summary-s1.json`, synchronizes `PORTFOLIO_SUMMARY_DATA` in `src/js/11-admin-hub.js`, and rebuilds all packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`).
+  3. Automatically executes `git commit` AND `git push origin main` in the same step.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
