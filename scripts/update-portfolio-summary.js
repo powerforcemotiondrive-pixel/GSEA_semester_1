@@ -94,15 +94,25 @@ headers.forEach((h, idx) => {
   else if (norm.includes('curriculum track')) colMap.track = idx;
 });
 
-// Process rows
-let totalSubmissions = 0;
+// Process rows with chronological deduplication (keeps only the latest revision per student per session)
+const dedupeMap = new Map();
+dataRows.forEach(row => {
+  const student = (row[colMap.studentName] || '').trim();
+  const track = (row[colMap.track] || '').toUpperCase().includes('AG') ? 'AG' : 'AT';
+  const mod = (row[colMap.module] || '').trim();
+  const ses = (row[colMap.session] || '').trim();
+  const key = `${student}_${track}_${mod}_${ses}`;
+  dedupeMap.set(key, row);
+});
+
+const verifiedRows = Array.from(dedupeMap.values());
+const totalSubmissions = verifiedRows.length;
 let feScores = [];
 let toeicScores = [];
 let agCount = 0;
 let atCount = 0;
 
-dataRows.forEach(row => {
-  totalSubmissions++;
+verifiedRows.forEach(row => {
   const track = (row[colMap.track] || '').toUpperCase();
   if (track.includes('AG')) agCount++;
   else atCount++;

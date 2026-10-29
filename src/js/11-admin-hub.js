@@ -2129,13 +2129,13 @@ const PORTFOLIO_SUMMARY_DATA = {
                   <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">COHORT PULSE</span>
                   <h3 class="text-base sm:text-lg font-extrabold text-slate-900">What Everyone is Talking About</h3>
                 </div>
-                <p class="text-xs text-slate-500 mt-0.5">Aggregated student reflections from your digital Learning Portfolios • Last updated: ${data.lastUpdated} (${data.totalSubmissions} submissions)</p>
+                <p class="text-xs text-slate-500 mt-0.5">High-yield study highlights synthesized from your digital Learning Portfolios • Last updated: ${data.lastUpdated}</p>
               </div>
             </div>
 
             <div class="flex items-center gap-2 shrink-0 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span class="text-xs font-bold text-slate-700">Live Cohort Insights</span>
+              <span class="text-xs font-bold text-slate-700">Curated Peer Highlights</span>
             </div>
           </div>
 
@@ -2157,35 +2157,6 @@ const PORTFOLIO_SUMMARY_DATA = {
               <button onclick="window.setPortfolioTrackFilter('ag')" class="py-1.5 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'ag' ? 'bg-indigo-600 text-white shadow-xs font-black' : 'text-slate-600 hover:text-indigo-800 hover:bg-white/40'}">
                 🗣️ AG General
               </button>
-            </div>
-          </div>
-
-          <!-- Quick Stats / Metrics Row -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-1">
-              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Submissions Logged</span>
-              <div class="flex items-baseline gap-2">
-                <span class="text-2xl font-black text-slate-900">${data.totalSubmissions}</span>
-                <span class="text-xs text-slate-500">Across Group A &amp; B</span>
-              </div>
-              <span class="text-[11px] text-slate-500 block">AT Track: ${data.trackBreakdown.at} • AG Track: ${data.trackBreakdown.ag}</span>
-            </div>
-
-            <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-1">
-              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">FE1 Readiness Confidence</span>
-              <div class="flex items-baseline gap-2">
-                <span class="text-2xl font-black text-amber-600">${data.metrics.avgFeConfidence}</span>
-                <span class="text-xs text-slate-400">/ 10</span>
-              </div>
-              <span class="text-[11px] text-slate-500 block">Initial Session 1 baseline • Target: Week 48 (FE1)</span>
-            </div>
-
-            <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-1">
-              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Self-Reported Priority</span>
-              <div class="flex items-baseline gap-2">
-                <span class="text-sm font-extrabold text-blue-900">Vocabulary Precision</span>
-              </div>
-              <span class="text-[11px] text-slate-500 block">73% prioritized technical terms to build speaking speed</span>
             </div>
           </div>
 
