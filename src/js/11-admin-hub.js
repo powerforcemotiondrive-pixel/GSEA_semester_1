@@ -1105,9 +1105,20 @@
       `;
     }
 
-    function renderStudentGuideTab(theme) {
+    window.__GSEA_GUIDE_LANG = window.__GSEA_GUIDE_LANG || 'en';
+
+    window.setStudentGuideLang = function(lang) {
+      window.__GSEA_GUIDE_LANG = lang;
+      const theme = modulesData[modalState.modNum - 1];
+      renderStudentGuideTab(theme, lang);
+    };
+
+    function renderStudentGuideTab(theme, lang) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
+      const activeLang = lang || window.__GSEA_GUIDE_LANG || 'en';
+      const isFr = (activeLang === 'fr');
+      window.__GSEA_GUIDE_LANG = activeLang;
 
       bodyEl.innerHTML = `
         <div class="space-y-5">
@@ -1119,17 +1130,17 @@
               </div>
               <div>
                 <div class="flex items-center gap-2">
-                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">STUDENT GUIDE</span>
-                  <h3 class="text-base sm:text-lg font-extrabold text-slate-900">How to Succeed in English</h3>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">${isFr ? 'GUIDE ÉTUDIANT' : 'STUDENT GUIDE'}</span>
+                  <h3 class="text-base sm:text-lg font-extrabold text-slate-900">${isFr ? 'Comment Réussir en Anglais' : 'How to Succeed in English'}</h3>
                 </div>
-                <p class="text-xs text-slate-500 mt-0.5">Essential guidelines for continuous progress, formative evaluations &amp; success</p>
+                <p class="text-xs text-slate-500 mt-0.5">${isFr ? 'Conseils essentiels pour progresser régulièrement, réussir les évaluations formatives et valider le semestre' : 'Essential guidelines for continuous progress, formative evaluations &amp; success'}</p>
               </div>
             </div>
 
-            <!-- Quick Switcher to official syllabus -->
+            <!-- In-Drawer Language Switcher Toggle -->
             <div class="inline-flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200 shadow-inner self-stretch sm:self-auto justify-center gap-1">
-              <button type="button" onclick="switchModalTab('sem_obj_en')" class="px-3 py-1 rounded-md text-xs font-bold text-slate-600 hover:text-slate-900 cursor-pointer transition-all">🇬🇧 English Syllabus</button>
-              <button type="button" onclick="switchModalTab('sem_obj_fr')" class="px-3 py-1 rounded-md text-xs font-bold text-slate-600 hover:text-slate-900 cursor-pointer transition-all">🇫🇷 French Syllabus</button>
+              <button type="button" onclick="setStudentGuideLang('en')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${!isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇬🇧 English</button>
+              <button type="button" onclick="setStudentGuideLang('fr')" class="px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${isFr ? 'bg-white shadow-xs text-slate-900 border border-slate-300' : 'text-slate-500 hover:text-slate-800'}">🇫🇷 Français</button>
             </div>
           </div>
 
@@ -1137,9 +1148,11 @@
           <div class="p-4 rounded-xl border border-blue-200/80 bg-blue-50/70 shadow-2xs flex items-start gap-3">
             <span class="text-xl shrink-0 mt-0.5">🎯</span>
             <div class="text-xs text-blue-900 space-y-1">
-              <h4 class="font-extrabold text-blue-950 text-sm">Our Focus: Gradual &amp; Steady Improvement</h4>
+              <h4 class="font-extrabold text-blue-950 text-sm">${isFr ? 'Notre Priorité : Progression Continue &amp; Régulière' : 'Our Focus: Gradual &amp; Steady Improvement'}</h4>
               <p class="leading-relaxed">
-                This communicative programme is designed to build your spoken confidence, fluency, and professional vocabulary. There is no high-stress final written exam. Instead, your success is based on continuous effort, active peer interaction, and steady weekly improvement.
+                ${isFr 
+                  ? 'Ce programme communicatif est spécialement conçu pour développer votre aisance, votre confiance à l\'oral et votre vocabulaire professionnel. Il n\'y a pas d\'examen écrit final stressant. Votre réussite repose sur un travail continu, une interaction active avec vos pairs et des progrès constants au fil des semaines.'
+                  : 'This communicative programme is designed to build your spoken confidence, fluency, and professional vocabulary. There is no high-stress final written exam. Instead, your success is based on continuous effort, active peer interaction, and steady weekly improvement.'}
               </p>
             </div>
           </div>
@@ -1148,34 +1161,40 @@
           <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
             <div class="flex items-center gap-2">
               <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">1</span>
-              <h4 class="font-bold text-slate-900 text-sm">Three Core Areas for the Year</h4>
+              <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Trois Piliers Fondamentaux de l\'Année' : 'Three Core Areas for the Year'}</h4>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
                   <span>📈</span>
-                  <span>Continuous Progress</span>
+                  <span>${isFr ? 'Progression Continue' : 'Continuous Progress'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                  Building on the competencies you already have, making steady and gradual progress week after week.
+                  ${isFr 
+                    ? 'Développer pas à pas vos compétences existantes sans interruption tout au long de l\'année.'
+                    : 'Building on the competencies you already have, making steady and gradual progress week after week.'}
                 </p>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
                   <span>🗣️</span>
-                  <span>Formative Evaluations</span>
+                  <span>${isFr ? 'Évaluations Formatives' : 'Formative Evaluations'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                  Regular oral tutorials in pairs or trios at the end of each module to monitor speaking and receive individual guidance.
+                  ${isFr 
+                    ? 'Des oraux réguliers en binôme ou trinôme à la fin de chaque module pour mesurer vos progrès oraux et recevoir des conseils personnalisés.'
+                    : 'Regular oral tutorials in pairs or trios at the end of each module to monitor speaking and receive individual guidance.'}
                 </p>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
                   <span>📊</span>
-                  <span>Self-Monitoring</span>
+                  <span>${isFr ? 'Auto-évaluation Active' : 'Self-Monitoring'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                  Logging your own progress in the digital Learning Portfolio so both you and your teachers can track your trajectory.
+                  ${isFr 
+                    ? 'Noter vos réflexions dans votre Portfolio d\'Apprentissage afin de suivre votre propre trajectoire avec vos enseignants.'
+                    : 'Logging your own progress in the digital Learning Portfolio so both you and your teachers can track your trajectory.'}
                 </p>
               </div>
             </div>
@@ -1185,19 +1204,21 @@
           <div class="p-5 rounded-2xl bg-amber-50/80 border-2 border-amber-300 shadow-xs space-y-3">
             <div class="flex items-center gap-2 text-amber-950">
               <span class="text-xl">⚠️</span>
-              <h4 class="font-black text-sm uppercase tracking-wide">Mandatory Rule: Detailed Portfolio Reflections (No One-Word Answers!)</h4>
+              <h4 class="font-black text-sm uppercase tracking-wide">${isFr ? 'Règle Obligatoire : Rédigez des remarques détaillées (Jamais de réponses en un seul mot !)' : 'Mandatory Rule: Detailed Portfolio Reflections (No One-Word Answers!)'}</h4>
             </div>
             <p class="text-xs sm:text-[12.5px] text-amber-900 leading-relaxed">
-              Your digital Learning Portfolio is checked and monitored regularly by the <strong>Professeur Référent (Phil PARRIS)</strong>, who coordinates with your teachers to organize additional support whenever needed.
+              ${isFr 
+                ? 'Votre Portfolio d\'Apprentissage est suivi et vérifié régulièrement par le <strong>Professeur Référent (Phil PARRIS)</strong>, qui coordonne le soutien personnalisé avec vos enseignants en cas de besoin.'
+                : 'Your digital Learning Portfolio is checked and monitored regularly by the <strong>Professeur Référent (Phil PARRIS)</strong>, who coordinates with your teachers to organize additional support whenever needed.'}
             </p>
             <div class="p-3.5 rounded-xl bg-white/90 border border-amber-200 space-y-2 text-xs">
               <div class="flex items-start gap-2">
-                <span class="text-rose-700 font-bold shrink-0">❌ Never write one-word answers:</span>
-                <span class="text-slate-600">Do NOT write simple words like <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"nothing"</em>, or <em>"ras"</em>. These give your teachers zero information.</span>
+                <span class="text-rose-700 font-bold shrink-0">${isFr ? '❌ N\'écrivez jamais de réponses en un seul mot :' : '❌ Never write one-word answers:'}</span>
+                <span class="text-slate-600">${isFr ? 'N\'écrivez PAS de termes vagues comme <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"rien"</em> ou <em>"ras"</em>. Cela n\'apporte aucune information utile aux enseignants.' : 'Do NOT write simple words like <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"nothing"</em>, or <em>"ras"</em>. These give your teachers zero information.'}</span>
               </div>
               <div class="flex items-start gap-2">
-                <span class="text-emerald-700 font-bold shrink-0">✅ Always write detailed notes:</span>
-                <span class="text-slate-700">Explain exactly what went well, which specific vocabulary or grammar points were difficult, and what you will do before the next session to improve.</span>
+                <span class="text-emerald-700 font-bold shrink-0">${isFr ? '✅ Rédigez toujours des remarques précises :' : '✅ Always write detailed notes:'}</span>
+                <span class="text-slate-700">${isFr ? 'Détaillez ce qui s\'est bien passé, les points de vocabulaire ou de grammaire qui ont posé difficulté, et ce que vous prévoyez de travailler avant la séance suivante.' : 'Explain exactly what went well, which specific vocabulary or grammar points were difficult, and what you will do before the next session to improve.'}</span>
               </div>
             </div>
           </div>
@@ -1207,37 +1228,39 @@
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">2</span>
-                <h4 class="font-bold text-slate-900 text-sm">The 6 Core Spoken Competencies (MTF Test) &amp; TOEIC</h4>
+                <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Les 6 Compétences Orales Clés (Test MTF) &amp; TOEIC' : 'The 6 Core Spoken Competencies (MTF Test) &amp; TOEIC'}</h4>
               </div>
-              <span class="text-[10px] font-mono uppercase bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">Tested in S3</span>
+              <span class="text-[10px] font-mono uppercase bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">${isFr ? 'Évalué en S3' : 'Tested in S3'}</span>
             </div>
             <p class="text-xs text-slate-600 leading-relaxed">
-              Track your growth in all 6 competencies tested during the oral MTF test, and monitor your TOEIC listening and reading via GlobalExam:
+              ${isFr 
+                ? 'Développez les 6 compétences fondamentales évaluées lors de l\'examen oral MTF en semestre 3, et suivez votre TOEIC sur GlobalExam :'
+                : 'Track your growth in all 6 competencies tested during the oral MTF test, and monitor your TOEIC listening and reading via GlobalExam:'}
             </p>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-1 text-xs">
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <strong class="text-slate-900 block font-bold mb-0.5">1. Spoken Fluency</strong>
-                <p class="text-[11px] text-slate-600 leading-snug">Smooth, natural tempo without long hesitations.</p>
+                <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? '1. Aisance Orale (Fluency)' : '1. Spoken Fluency'}</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">${isFr ? 'Débit naturel, fluide et sans longues hésitations.' : 'Smooth, natural tempo without long hesitations.'}</p>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <strong class="text-slate-900 block font-bold mb-0.5">2. Interaction</strong>
-                <p class="text-[11px] text-slate-600 leading-snug">Active turn-taking, asking questions, and responding to peers.</p>
+                <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? '2. Interaction' : '2. Interaction'}</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">${isFr ? 'Relances actives, écoute du partenaire et questions spontanées.' : 'Active turn-taking, asking questions, and responding to peers.'}</p>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <strong class="text-slate-900 block font-bold mb-0.5">3. Vocabulary Range</strong>
-                <p class="text-[11px] text-slate-600 leading-snug">Using exact general and aviation technical terminology.</p>
+                <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? '3. Richesse Lexicale' : '3. Vocabulary Range'}</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">${isFr ? 'Emploi du vocabulaire aéronautique et général précis.' : 'Using exact general and aviation technical terminology.'}</p>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <strong class="text-slate-900 block font-bold mb-0.5">4. Grammatical Control</strong>
-                <p class="text-[11px] text-slate-600 leading-snug">Clear sentence structures, tenses, and connecting words.</p>
+                <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? '4. Correction Grammaticale' : '4. Grammatical Control'}</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">${isFr ? 'Structures claires, maîtrise des temps et connecteurs logiques.' : 'Clear sentence structures, tenses, and connecting words.'}</p>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <strong class="text-slate-900 block font-bold mb-0.5">5. Pronunciation</strong>
-                <p class="text-[11px] text-slate-600 leading-snug">Intelligible sounds, correct word stress, and natural rhythm.</p>
+                <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? '5. Prononciation' : '5. Pronunciation'}</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">${isFr ? 'Articulations intelligibles, accentuation et rythme naturel.' : 'Intelligible sounds, correct word stress, and natural rhythm.'}</p>
               </div>
               <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
-                <strong class="text-slate-900 block font-bold mb-0.5">6. Listening Comprehension</strong>
-                <p class="text-[11px] text-slate-600 leading-snug">Understanding spoken briefings, audios, and teacher instructions.</p>
+                <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? '6. Compréhension Orale' : '6. Listening Comprehension'}</strong>
+                <p class="text-[11px] text-slate-600 leading-snug">${isFr ? 'Compréhension aisée des briefings, audios et consignes de l\'enseignant.' : 'Understanding spoken briefings, audios, and teacher instructions.'}</p>
               </div>
             </div>
           </div>
@@ -1246,30 +1269,34 @@
           <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
             <div class="flex items-center gap-2">
               <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">3</span>
-              <h4 class="font-bold text-slate-900 text-sm">Formative Evaluations (FE) — How They Work</h4>
+              <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Déroulement des Évaluations Formatives (EF)' : 'Formative Evaluations (FE) — How They Work'}</h4>
             </div>
             <div class="space-y-2.5 text-xs text-slate-700">
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                 <span class="text-base shrink-0">👥</span>
                 <div>
-                  <strong class="text-slate-900 block font-bold mb-0.5">FE 1, FE 2, and FE 3 — Prepared Outside of Class</strong>
+                  <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? 'EF 1, EF 2 et EF 3 — Préparées en dehors des cours' : 'FE 1, FE 2, and FE 3 — Prepared Outside of Class'}</strong>
                   <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                    These 30-minute tutorials take place at the end of each module. You prepare your presentation and topics outside of class with your assigned partner or trio. Arrive on time, speak actively, and show what you have learned!
+                    ${isFr 
+                      ? 'Ces oraux de 30 minutes ont lieu à la fin de chaque module. Vous préparez votre sujet et votre support de manière autonome en binôme ou trinôme. Arrivez à l\'heure, participez activement et montrez ce que vous avez appris !'
+                      : 'These 30-minute tutorials take place at the end of each module. You prepare your presentation and topics outside of class with your assigned partner or trio. Arrive on time, speak actively, and show what you have learned!'}
                   </p>
                 </div>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                 <span class="text-base shrink-0">🎓</span>
                 <div>
-                  <strong class="text-slate-900 block font-bold mb-0.5">Final FE (Class 17) — Revision Session in Class</strong>
+                  <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? 'EF Finale (Séance 17) — Séance de révision dédiée en classe' : 'Final FE (Class 17) — Revision Session in Class'}</strong>
                   <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                    The final formative evaluation at the end of the semester is prepared together in class during a dedicated revision session leading up to it. All students know exactly what to expect — no surprises!
+                    ${isFr 
+                      ? 'La dernière évaluation formative du semestre est préparée ensemble en classe lors d\'une séance de révision. Vous saurez exactement à quoi vous attendre — aucune mauvaise surprise !'
+                      : 'The final formative evaluation at the end of the semester is prepared together in class during a dedicated revision session leading up to it. All students know exactly what to expect — no surprises!'}
                   </p>
                 </div>
               </div>
             </div>
             <p class="text-[11px] text-slate-500 italic pl-1">
-              * This framework applies to both General English (AG) and Technical English (AT/AAS).
+              ${isFr ? '* Ce cadre s\'applique aussi bien à l\'anglais général (AG) qu\'à l\'anglais technique (AT/AAS).' : '* This framework applies to both General English (AG) and Technical English (AT/AAS).'}
             </p>
           </div>
 
@@ -1277,43 +1304,51 @@
           <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3">
             <div class="flex items-center gap-2">
               <span class="w-6 h-6 rounded-md bg-slate-900 text-white flex items-center justify-center font-bold text-xs">4</span>
-              <h4 class="font-bold text-slate-900 text-sm">How to Use the Class Resource Workspace</h4>
+              <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Comment Utiliser les Espaces de Cours' : 'How to Use the Class Resource Workspace'}</h4>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
                   <span>📋</span>
-                  <span>Lesson Plan &amp; Objectives</span>
+                  <span>${isFr ? 'Plan de Cours &amp; Objectifs' : 'Lesson Plan &amp; Objectives'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                  Read this before each class to know the goals, key topics, and communicative targets for the session.
+                  ${isFr 
+                    ? 'À consulter avant chaque séance pour connaître les objectifs et cibles communicatives visées.'
+                    : 'Read this before each class to know the goals, key topics, and communicative targets for the session.'}
                 </p>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
                   <span>📖</span>
-                  <span>Class Content &amp; Worksheets</span>
+                  <span>${isFr ? 'Supports &amp; Activités de Cours' : 'Class Content &amp; Worksheets'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                  The speaking materials you work on in class. <strong>You do NOT need to complete every single exercise in class!</strong> The materials are rich so you never run out of speaking topics. It is not tested in a written exam.
+                  ${isFr 
+                    ? 'Les supports de communication orale en classe. <strong>Vous n\'avez PAS besoin de terminer tous les exercices en classe !</strong> La matière est riche pour alimenter les échanges oraux. Rien ne sera évalué en examen écrit.'
+                    : 'The speaking materials you work on in class. <strong>You do NOT need to complete every single exercise in class!</strong> The materials are rich so you never run out of speaking topics. It is not tested in a written exam.'}
                 </p>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
                   <span>🔤</span>
-                  <span>Vocabulary Revision</span>
+                  <span>${isFr ? 'Vocabulaire Indispensable' : 'Vocabulary Revision'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                  Essential vocabulary that you <strong>must revise</strong> and aim to use during your speaking activities and formative evaluations.
+                  ${isFr 
+                    ? 'Le lexique clé que vous <strong>devez impérativement réviser</strong> et réutiliser lors de vos prises de parole et évaluations formatives.'
+                    : 'Essential vocabulary that you <strong>must revise</strong> and aim to use during your speaking activities and formative evaluations.'}
                 </p>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
                   <span>🔎</span>
-                  <span>Additional Materials &amp; TOEIC</span>
+                  <span>${isFr ? 'Ressources Complémentaires &amp; TOEIC' : 'Additional Materials &amp; TOEIC'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                  Optional extra resources for students who wish to explore the subject further, plus weekly TOEIC practice exercises to prepare for the test.
+                  ${isFr 
+                    ? 'Des documents optionnels pour approfondir les sujets, accompagnés d\'un entraînement TOEIC hebdomadaire.'
+                    : 'Optional extra resources for students who wish to explore the subject further, plus weekly TOEIC practice exercises to prepare for the test.'}
                 </p>
               </div>
             </div>
@@ -1321,14 +1356,22 @@
 
           <!-- Section 6: Evaluation & Questions -->
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div class="space-y-1">
-              <h4 class="font-bold text-slate-900 text-sm">Grading &amp; Semester GO / NO GO</h4>
+            <div class="space-y-1.5">
+              <h4 class="font-bold text-slate-900 text-sm">${isFr ? 'Notation &amp; Validation GO / NO GO du Semestre' : 'Grading &amp; Semester GO / NO GO'}</h4>
               <p class="text-xs text-slate-600 leading-relaxed">
-                Active class participation + detailed portfolio + prepared FEs combine into your final grade (/20) and semester <strong>GO / NO GO</strong>.
+                ${isFr 
+                  ? 'Participation active en classe + portfolio complété et détaillé + évaluations formatives préparées composent votre note finale (/20) et la décision <strong>GO / NO GO</strong>.'
+                  : 'Active class participation + detailed portfolio + prepared FEs combine into your final grade (/20) and semester <strong>GO / NO GO</strong>.'}
               </p>
+              <div class="inline-flex items-center gap-2 text-[11px] text-slate-500 pt-0.5">
+                <span>${isFr ? 'Maquette officielle :' : 'Official syllabus:'}</span>
+                <button type="button" onclick="switchModalTab('sem_obj_en')" class="text-blue-600 hover:underline font-bold cursor-pointer">🇬🇧 English</button>
+                <span>•</span>
+                <button type="button" onclick="switchModalTab('sem_obj_fr')" class="text-blue-600 hover:underline font-bold cursor-pointer">🇫🇷 Français</button>
+              </div>
             </div>
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs shrink-0 space-y-0.5 self-stretch sm:self-auto">
-              <div class="text-[10px] text-slate-500 uppercase font-mono font-bold">Questions or Support?</div>
+              <div class="text-[10px] text-slate-500 uppercase font-mono font-bold">${isFr ? 'Des questions ou besoin d\'aide ?' : 'Questions or Support?'}</div>
               <div class="font-bold text-slate-900 text-xs">Phil PARRIS <span class="text-slate-500 font-normal">(Professeur Référent)</span></div>
               <a href="mailto:philip.parris@enac.fr" class="text-blue-600 hover:underline font-mono text-[11px] block">philip.parris@enac.fr</a>
             </div>
