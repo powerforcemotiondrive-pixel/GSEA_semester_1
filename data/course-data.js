@@ -1056,13 +1056,13 @@
             {
               "time": "110-120",
               "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
-              "description": "Consolidation of the 18 transport terms with audio pronunciation and 45-second Taboo fluency game without using forbidden words."
+              "description": "Consolidation of the 30 transport terms with audio pronunciation and 45-second Taboo fluency game without using forbidden words."
             }
           ]
         },
         "revision": {
           "title": "Session 2: Evolution of Transport",
-          "summary": "Review the 18 key terms for Evolution of Transport to build your fluency in discussions, professional reading, and TOEIC practice.",
+          "summary": "Review the 30 key terms for Evolution of Transport to build your fluency in discussions, professional reading, and TOEIC practice.",
           "terms": [
             {
               "num": "01",
@@ -1153,6 +1153,66 @@
               "num": "18",
               "term": "Low-Emission Zone (LEZ)",
               "definition": "A designated geographic area where access by polluting vehicles is restricted or subject to penalty fees."
+            },
+            {
+              "num": "19",
+              "term": "Night Train (Sleeper Train)",
+              "definition": "Long-distance passenger trains operating overnight with sleeping berths, offering a low-carbon alternative to domestic flights."
+            },
+            {
+              "num": "20",
+              "term": "Door-to-Door Travel Time",
+              "definition": "The total time required for a complete journey, from leaving home or the office until arriving at the final destination."
+            },
+            {
+              "num": "21",
+              "term": "Carpooling",
+              "definition": "Sharing car journeys with other travelers going to the same destination to reduce travel costs, fuel consumption, and road traffic."
+            },
+            {
+              "num": "22",
+              "term": "Public Transit Subsidy",
+              "definition": "Financial assistance provided by governments to keep bus, metro, and train fares affordable for citizens."
+            },
+            {
+              "num": "23",
+              "term": "Cycling Infrastructure",
+              "definition": "Protected bike lanes, secure parking stations, and bike-sharing networks designed to support safe everyday bicycle travel."
+            },
+            {
+              "num": "24",
+              "term": "Grid Capacity",
+              "definition": "The maximum amount of electrical power that a regional power network can transmit to charge electric vehicles and trains."
+            },
+            {
+              "num": "25",
+              "term": "Congestion Charge",
+              "definition": "A fee charged to drivers entering city centers during peak hours to encourage walking, cycling, or public transport."
+            },
+            {
+              "num": "26",
+              "term": "Short-Haul Flight",
+              "definition": "A commercial flight typically covering under 500 to 800 kilometers that can often be replaced by high-speed rail connections."
+            },
+            {
+              "num": "27",
+              "term": "Transit-Oriented Development",
+              "definition": "Urban planning that clusters housing, shops, and offices within easy walking distance of major rail and transit stations."
+            },
+            {
+              "num": "28",
+              "term": "First-Mile / Last-Mile Transit",
+              "definition": "The first or final leg of a commuter's journey between home or work and a public transport hub."
+            },
+            {
+              "num": "29",
+              "term": "Shared Mobility",
+              "definition": "Transportation services and vehicles (like rental bikes, scooters, and carsharing fleets) shared among users on demand."
+            },
+            {
+              "num": "30",
+              "term": "Carbon Intensity",
+              "definition": "The amount of carbon dioxide emitted per passenger-kilometer or per ton of freight moved across a transport network."
             }
           ]
         },
@@ -1673,7 +1733,7 @@
           },
           "closingReview": {
             "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
-            "summary": "Consolidate today's 18 transport terms with rapid audio pronunciation and a fast-paced 45-second Taboo fluency challenge.",
+            "summary": "Consolidate today's 30 transport terms with rapid audio pronunciation and a fast-paced 45-second Taboo fluency challenge.",
             "vocabWords": [
               "Modal Shift",
               "High-Speed Rail",
@@ -1692,7 +1752,19 @@
               "Carbon Intensity",
               "Freight Logistics",
               "Public Transit Subsidy",
-              "Zero-Emission Zone"
+              "Zero-Emission Zone",
+              "Night Train",
+              "Door-to-Door Travel Time",
+              "Carpooling",
+              "Cycling Infrastructure",
+              "Short-Haul Flight",
+              "First-Mile / Last-Mile Transit",
+              "Shared Mobility",
+              "Life-Cycle Emissions",
+              "Territorial Equity",
+              "Point-to-Point Transit",
+              "Micro-Mobility",
+              "Induced Demand"
             ],
             "tabooCards": [
               {
@@ -9941,7 +10013,7 @@
             {
               "num": 6,
               "title": "Consolidate Core Vocabulary & Syllable Stress (Phonology & Review)",
-              "description": "Consolidate the 18 essential technical terms, practice primary word stress patterns, and update personal portfolio learning logs."
+              "description": "Consolidate the 30 essential technical terms, practice primary word stress patterns, and update personal portfolio learning logs."
             }
           ]
         },
@@ -9977,7 +10049,7 @@
             {
               "time": "110-120",
               "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: rapid recall of the 18 terms, word stress and syllable drill, personal learning reflection, and portfolio logging."
+              "description": "Final 10-minute consolidation: rapid recall of the 30 terms, word stress and syllable drill, personal learning reflection, and portfolio logging."
             }
           ]
         },
@@ -10300,7 +10372,7 @@
           },
           "closingReview": {
             "title": "Activity 6: 10-Minute Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-            "summary": "Consolidate today's 18 technical vocabulary terms, practice syllable stress, and update your personal English learning portfolio.",
+            "summary": "Consolidate today's 30 technical vocabulary terms, practice syllable stress, and update your personal English learning portfolio.",
             "reviewPrompts": [
               {
                 "title": "Rapid Operational Distinction",
@@ -10332,7 +10404,7 @@
         },
         "revision": {
           "title": "Session 2 Revision - Passenger Flow & Airfield Movement Areas",
-          "summary": "Master the 18 key technical vocabulary terms covering passenger terminal flow, airside movement areas, ground markings, and runway numbering.",
+          "summary": "Master the 30 key technical vocabulary terms covering passenger terminal flow, airside movement areas, ground markings, and runway numbering.",
           "terms": [
             {
               "num": "01",
@@ -10423,6 +10495,66 @@
               "num": "18",
               "term": "Runway Designator (Numbering)",
               "definition": "The two-digit number painted on a runway end representing its magnetic azimuth rounded to the nearest 10 degrees."
+            },
+            {
+              "num": "19",
+              "term": "Hold Short Line",
+              "definition": "A painted line before a runway where aircraft and vehicles must stop until cleared by air traffic control."
+            },
+            {
+              "num": "20",
+              "term": "Taxiway Guideline Lighting",
+              "definition": "Green lights embedded along the center of a taxiway to guide pilots safely during night operations or low visibility."
+            },
+            {
+              "num": "21",
+              "term": "Stop Bar",
+              "definition": "A row of flush red lights across a taxiway pavement that warns vehicles and pilots not to enter an active runway."
+            },
+            {
+              "num": "22",
+              "term": "Apron Taxi Lane",
+              "definition": "A designated route on the apron designed to allow aircraft access to and from parking stands."
+            },
+            {
+              "num": "23",
+              "term": "Follow-Me Car",
+              "definition": "A marked airport vehicle with flashing yellow lights that guides aircraft to their parking stand in low visibility."
+            },
+            {
+              "num": "24",
+              "term": "Baggage Conveyor Belt",
+              "definition": "A moving belt system that carries checked luggage from the check-in hall to the baggage sorting area."
+            },
+            {
+              "num": "25",
+              "term": "Body Scanner",
+              "definition": "A security screening device using millimeter-waves to detect hidden objects without physical contact."
+            },
+            {
+              "num": "26",
+              "term": "Biometric E-Gate",
+              "definition": "An automated border or boarding gate using facial recognition cameras to verify a traveler's identity."
+            },
+            {
+              "num": "27",
+              "term": "Passengers with Reduced Mobility (PRM)",
+              "definition": "Travelers who need dedicated assistance through the airport due to physical disability, age, or medical condition."
+            },
+            {
+              "num": "28",
+              "term": "Flight Information Display System (FIDS)",
+              "definition": "Electronic screens throughout the terminal showing real-time departure, arrival, and gate information."
+            },
+            {
+              "num": "29",
+              "term": "Service Road",
+              "definition": "Marked roadways on the airfield reserved strictly for ground handling vehicles, fuel trucks, and baggage tugs."
+            },
+            {
+              "num": "30",
+              "term": "Blast Fence",
+              "definition": "A physical barrier placed on the airfield to protect ground vehicles, people, and buildings from aircraft jet engine blast."
             }
           ]
         },

@@ -2616,7 +2616,7 @@
             <!-- Vocabulary Rapid Audio Drill -->
             <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
               <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-900">18 Key Terms Audio Pronunciation Drill</h5>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">${(closing.vocabWords && closing.vocabWords.length) || 30} Key Terms Audio Pronunciation Drill</h5>
                 <span class="text-[11px] text-slate-500">Click any word to listen to its pronunciation</span>
               </div>
               <div class="flex flex-wrap gap-2">
@@ -2991,7 +2991,7 @@
             <!-- Vocabulary Rapid Audio Drill -->
             <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
               <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-900">18 Key Terms Audio Pronunciation Drill</h5>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">${(closing.vocabWords && closing.vocabWords.length) || 30} Key Terms Audio Pronunciation Drill</h5>
                 <span class="text-[11px] text-slate-500">Click any word to listen to its pronunciation</span>
               </div>
               <div class="flex flex-wrap gap-2">
@@ -3329,7 +3329,7 @@
             <!-- Vocabulary Rapid Audio Drill -->
             <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
               <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-900">18 Key Terms Audio Pronunciation Drill</h5>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">${(closing.vocabWords && closing.vocabWords.length) || 30} Key Terms Audio Pronunciation Drill</h5>
                 <span class="text-[11px] text-slate-500">Click any word to listen to its pronunciation</span>
               </div>
               <div class="flex flex-wrap gap-2">
