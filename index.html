@@ -16672,14 +16672,24 @@
                 ? 'Votre Portfolio d\'Apprentissage est suivi et vérifié régulièrement par le <strong>Professeur Référent (Phil PARRIS)</strong>, qui coordonne le soutien personnalisé avec vos enseignants en cas de besoin.'
                 : 'Your digital Learning Portfolio is checked and monitored regularly by the <strong>Professeur Référent (Phil PARRIS)</strong>, who coordinates with your teachers to organize additional support whenever needed.'}
             </p>
-            <div class="p-3.5 rounded-xl bg-white/90 border border-amber-200 space-y-2 text-xs">
-              <div class="flex items-start gap-2">
-                <span class="text-rose-700 font-bold shrink-0">${isFr ? '❌ N\'écrivez jamais de réponses en un seul mot :' : '❌ Never write one-word answers:'}</span>
-                <span class="text-slate-600">${isFr ? 'N\'écrivez PAS de termes vagues comme <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"rien"</em> ou <em>"ras"</em>. Cela n\'apporte aucune information utile aux enseignants.' : 'Do NOT write simple words like <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"nothing"</em>, or <em>"ras"</em>. These give your teachers zero information.'}</span>
+            <div class="space-y-2.5 text-xs">
+              <div class="p-3 rounded-xl bg-white border border-rose-200/90 space-y-1">
+                <div class="text-rose-700 font-bold text-xs flex items-center gap-1.5">
+                  <span>❌</span>
+                  <span>${isFr ? 'N\'écrivez jamais de réponses en un seul mot' : 'Never write one-word answers'}</span>
+                </div>
+                <p class="text-slate-600 text-[11.5px] leading-relaxed">
+                  ${isFr ? 'N\'écrivez PAS de termes vagues comme <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"rien"</em> ou <em>"ras"</em>. Cela n\'apporte aucune information utile aux enseignants pour vous aider.' : 'Do NOT write simple words like <em>"good"</em>, <em>"fine"</em>, <em>"ok"</em>, <em>"nothing"</em>, or <em>"ras"</em>. These give your teachers zero information to help you.'}
+                </p>
               </div>
-              <div class="flex items-start gap-2">
-                <span class="text-emerald-700 font-bold shrink-0">${isFr ? '✅ Rédigez toujours des remarques précises :' : '✅ Always write detailed notes:'}</span>
-                <span class="text-slate-700">${isFr ? 'Détaillez ce qui s\'est bien passé, les points de vocabulaire ou de grammaire qui ont posé difficulté, et ce que vous prévoyez de travailler avant la séance suivante.' : 'Explain exactly what went well, which specific vocabulary or grammar points were difficult, and what you will do before the next session to improve.'}</span>
+              <div class="p-3 rounded-xl bg-white border border-emerald-200/90 space-y-1">
+                <div class="text-emerald-700 font-bold text-xs flex items-center gap-1.5">
+                  <span>✅</span>
+                  <span>${isFr ? 'Rédigez toujours des remarques détaillées' : 'Always write detailed notes'}</span>
+                </div>
+                <p class="text-slate-700 text-[11.5px] leading-relaxed">
+                  ${isFr ? 'Détaillez ce qui s\'est bien passé, les points de vocabulaire ou de grammaire qui ont posé difficulté, et ce que vous prévoyez de travailler avant la séance suivante.' : 'Explain exactly what went well, which specific vocabulary or grammar points were difficult, and what you will do before the next session to improve.'}
+                </p>
               </div>
             </div>
           </div>
