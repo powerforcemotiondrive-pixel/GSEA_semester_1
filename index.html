@@ -17453,36 +17453,56 @@ const PORTFOLIO_SUMMARY_DATA = {
   "topBuzzwords": [
     {
       "term": "Airside vs. Landside",
+      "track": "at",
       "category": "Aerodrome Zones",
       "frequency": "80% of cohort",
       "definition": "Landside = public area before security (check-in, arrivals hall). Airside = strictly secured operations area beyond security (gates, apron, taxiways, runways)."
     },
     {
       "term": "Apron / Ramp & Stands",
+      "track": "at",
       "category": "Movement Area",
       "frequency": "70% of cohort",
       "definition": "The designated paved area where aircraft park at designated stands to deboard, board, refuel, load baggage, and undergo ground servicing."
     },
     {
-      "term": "Unruly / Disruptive Passenger",
-      "category": "Cabin Safety & Security",
-      "frequency": "60% of cohort",
-      "definition": "A traveler who refuses to follow crew instructions or behaves disruptively, risking flight diversions, police arrest, and heavy airline costs."
+      "term": "Get Off to a Flying Start",
+      "track": "ag",
+      "category": "High-Impact Idioms",
+      "frequency": "65% of cohort",
+      "definition": "Idiom meaning to begin an activity, project, or semester with immediate success, high momentum, and enthusiasm."
     },
     {
       "term": "GPU vs. APU",
+      "track": "at",
       "category": "Electrical Power Systems",
       "frequency": "50% of cohort",
       "definition": "GPU (Ground Power Unit) = mobile ground generator supplying electricity at the gate. APU (Auxiliary Power Unit) = small gas turbine in the aircraft tail used when engines and GPU are off."
     },
     {
+      "term": "Word of Mouth",
+      "track": "ag",
+      "category": "Social Communication",
+      "frequency": "55% of cohort",
+      "definition": "The organic passing of information, recommendations, or news from person to person through spoken conversation rather than formal advertising."
+    },
+    {
       "term": "TRC & AODB",
+      "track": "at",
       "category": "Ground Operations",
       "frequency": "40% of cohort",
       "definition": "TRC = Turnaround Coordinator supervising ramp tasks between flight arrival and departure. AODB = Airport Operational Database managing flight schedules, gate changes, and allocated stands."
     },
     {
+      "term": "Unruly / Disruptive Passenger",
+      "track": "ag",
+      "category": "Cabin Safety & Debate",
+      "frequency": "60% of cohort",
+      "definition": "A traveler who refuses to follow crew instructions or behaves disruptively, risking flight diversions, police arrest, and heavy airline costs."
+    },
+    {
       "term": "Low-Cost Carrier (LCC) & Ancillary Revenue",
+      "track": "at",
       "category": "Airline Economics",
       "frequency": "35% of cohort",
       "definition": "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
@@ -17491,18 +17511,27 @@ const PORTFOLIO_SUMMARY_DATA = {
   "grammarTrapsCaught": [
     {
       "title": "❌ 'Luggages' and 'Trainings' do NOT exist!",
+      "track": "ag",
       "rule": "Both 'luggage' and 'training' are uncountable nouns in English. Never add an 's'.",
       "correctExample": "✅ \"We checked three pieces of luggage and completed our training course.\""
     },
     {
       "title": "💡 'Used to do' vs. 'Be used to doing'",
+      "track": "ag",
       "rule": "'I used to work' expresses a past habit that is finished. 'I am used to working' means you are accustomed/familiar with it now.",
       "correctExample": "✅ \"I used to live in Paris, but now I am used to living in Toulouse.\""
     },
     {
-      "title": "✨ High-Impact Spoken Idioms",
-      "rule": "Adopted by multiple students this week for introductions and natural conversation.",
-      "correctExample": "• \"Get off to a flying start\" (to start a project successfully)\n• \"Word of mouth\" (information passed orally from person to person)"
+      "title": "✈️ Apron vs. Taxiway vs. Runway",
+      "track": "at",
+      "rule": "Exact spatial precision is required in operational briefings. Never refer to the runway when you mean parking on the apron or taxiing on taxiway Alpha.",
+      "correctExample": "✅ \"The aircraft pushed back from stand B4 onto the apron, taxied via Charlie, and lined up on Runway 14L.\""
+    },
+    {
+      "title": "🛫 Scheduled vs. Charter Flights & EU261",
+      "track": "at",
+      "rule": "Scheduled = timetabled regular airline service. Charter = booked on-demand for a specific private or tour operator group. Passengers hold specific EU261 rights for severe delays.",
+      "correctExample": "✅ \"Our charter flight experienced a 4-hour technical delay at the stand, triggering duty of care obligations.\""
     }
   ],
   "cohortReflections": {
@@ -17521,6 +17550,14 @@ const PORTFOLIO_SUMMARY_DATA = {
 };
 /* --- PORTFOLIO_SUMMARY_DATA_END --- */
 
+    let currentPortfolioTrackFilter = 'all';
+
+    window.setPortfolioTrackFilter = function(filter) {
+      currentPortfolioTrackFilter = filter;
+      const theme = (typeof modulesData !== 'undefined' && modulesData[0]) || { primary: '#0f172a', accent: '#3b82f6' };
+      renderPortfolioSummaryTab(theme);
+    };
+
     function renderPortfolioSummaryTab(theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
@@ -17536,6 +17573,19 @@ const PORTFOLIO_SUMMARY_DATA = {
         `;
         return;
       }
+
+      const activeFilter = currentPortfolioTrackFilter || 'all';
+
+      // Anti-bloat curated filtering by track
+      const filteredBuzzwords = (data.topBuzzwords || []).filter(b => {
+        if (activeFilter === 'all') return true;
+        return (b.track || '').toLowerCase() === activeFilter.toLowerCase();
+      });
+
+      const filteredTraps = (data.grammarTrapsCaught || []).filter(gt => {
+        if (activeFilter === 'all') return true;
+        return (gt.track || '').toLowerCase() === activeFilter.toLowerCase();
+      });
 
       bodyEl.innerHTML = `
         <div class="space-y-5">
@@ -17557,6 +17607,30 @@ const PORTFOLIO_SUMMARY_DATA = {
             <div class="flex items-center gap-2 shrink-0 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
               <span class="text-xs font-bold text-slate-700">Live Cohort Insights</span>
+            </div>
+          </div>
+
+          <!-- Track Filter Segmented Control Bar (Zero mobile clutter, single 36px bar) -->
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-2.5 p-2 bg-slate-100 rounded-xl border border-slate-200">
+            <div class="flex items-center gap-2 self-start sm:self-auto px-1">
+              <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Course Filter:</span>
+              <span class="text-[11px] text-slate-600 font-medium">
+                ${activeFilter === 'all' ? 'All Tracks Combined' : (activeFilter === 'at' ? 'LV121E Technical English (AT)' : 'LV101E General English (AG)')}
+              </span>
+            </div>
+            <div class="w-full sm:w-auto grid grid-cols-3 gap-1 bg-slate-200/90 p-1 rounded-lg text-xs font-bold">
+              <button onclick="window.setPortfolioTrackFilter('all')" class="py-1 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'all' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
+                <span class="inline sm:hidden">🌐 All</span>
+                <span class="hidden sm:inline">🌐 All Tracks</span>
+              </button>
+              <button onclick="window.setPortfolioTrackFilter('at')" class="py-1 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'at' ? 'bg-white text-emerald-800 shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
+                <span class="inline sm:hidden">✈️ AT</span>
+                <span class="hidden sm:inline">✈️ AT Technical</span>
+              </button>
+              <button onclick="window.setPortfolioTrackFilter('ag')" class="py-1 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'ag' ? 'bg-white text-indigo-800 shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
+                <span class="inline sm:hidden">🗣️ AG</span>
+                <span class="hidden sm:inline">🗣️ AG General</span>
+              </button>
             </div>
           </div>
 
@@ -17589,30 +17663,39 @@ const PORTFOLIO_SUMMARY_DATA = {
             </div>
           </div>
 
-          <!-- Section 1: Top 6 Emerging Keywords & Concepts -->
+          <!-- Section 1: Top Emerging Keywords & Concepts -->
           <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-6 h-6 rounded-md bg-blue-600 text-white flex items-center justify-center font-bold text-xs">1</span>
-                <h4 class="font-bold text-slate-900 text-sm">Top Emerging Keywords &amp; Technical Distinctions</h4>
+                <h4 class="font-bold text-slate-900 text-sm">Top Emerging Keywords &amp; Technical Distinctions (${filteredBuzzwords.length})</h4>
               </div>
-              <span class="text-[10px] font-mono uppercase bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-bold">Cohort Consensus</span>
+              <span class="text-[10px] font-mono uppercase bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-bold">Curated Summary</span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-              ${(data.topBuzzwords || []).map(b => `
-                <div class="p-3.5 rounded-xl bg-slate-50/70 border border-slate-200 space-y-2 flex flex-col justify-between hover:bg-slate-50 transition-all">
-                  <div>
-                    <div class="flex items-center justify-between gap-2 border-b border-slate-200/60 pb-1.5">
-                      <span class="font-bold text-xs text-slate-900">${b.term}</span>
-                      <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white text-indigo-700 border border-indigo-200">${b.frequency}</span>
+            ${filteredBuzzwords.length === 0 ? `
+              <p class="text-xs text-slate-500 py-4 text-center">No keywords logged for this specific filter yet.</p>
+            ` : `
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                ${filteredBuzzwords.map(b => `
+                  <div class="p-3.5 rounded-xl bg-slate-50/70 border border-slate-200 space-y-2 flex flex-col justify-between hover:bg-slate-50 transition-all">
+                    <div>
+                      <div class="flex items-center justify-between gap-2 border-b border-slate-200/60 pb-1.5">
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                          <span class="font-bold text-xs text-slate-900">${b.term}</span>
+                          ${b.track === 'at'
+                            ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 shrink-0">✈️ AT</span>'
+                            : '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-indigo-100 text-indigo-800 border border-indigo-200 shrink-0">🗣️ AG</span>'}
+                        </div>
+                        <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white text-indigo-700 border border-indigo-200 shrink-0">${b.frequency}</span>
+                      </div>
+                      <span class="text-[10px] uppercase font-bold text-slate-400 block mt-1">${b.category}</span>
+                      <p class="text-[11.5px] text-slate-700 leading-relaxed mt-1">${b.definition}</p>
                     </div>
-                    <span class="text-[10px] uppercase font-bold text-slate-400 block mt-1">${b.category}</span>
-                    <p class="text-[11.5px] text-slate-700 leading-relaxed mt-1">${b.definition}</p>
                   </div>
-                </div>
-              `).join('')}
-            </div>
+                `).join('')}
+              </div>
+            `}
           </div>
 
           <!-- Section 2: Golden Rules & Common Grammar Traps -->
@@ -17620,24 +17703,33 @@ const PORTFOLIO_SUMMARY_DATA = {
             <div class="flex items-center justify-between border-b border-slate-100 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-6 h-6 rounded-md bg-rose-600 text-white flex items-center justify-center font-bold text-xs">2</span>
-                <h4 class="font-bold text-slate-900 text-sm">Golden Language Rules &amp; Pitfalls Caught by the Cohort</h4>
+                <h4 class="font-bold text-slate-900 text-sm">Golden Language Rules &amp; Pitfalls Caught by the Cohort (${filteredTraps.length})</h4>
               </div>
               <span class="text-[10px] font-mono uppercase bg-rose-50 text-rose-700 px-2 py-0.5 rounded font-bold">Self-Correction</span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(data.grammarTrapsCaught || []).map(gt => `
-                <div class="p-3.5 rounded-xl bg-rose-50/40 border border-rose-200 space-y-2 flex flex-col justify-between">
-                  <div>
-                    <h5 class="text-xs font-bold text-rose-950">${gt.title}</h5>
-                    <p class="text-[11px] text-slate-700 mt-1 leading-relaxed">${gt.rule}</p>
+            ${filteredTraps.length === 0 ? `
+              <p class="text-xs text-slate-500 py-4 text-center">No grammar traps logged for this specific filter yet.</p>
+            ` : `
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                ${filteredTraps.map(gt => `
+                  <div class="p-3.5 rounded-xl bg-rose-50/40 border border-rose-200 space-y-2 flex flex-col justify-between">
+                    <div>
+                      <div class="flex items-center justify-between gap-2 mb-1">
+                        <h5 class="text-xs font-bold text-rose-950">${gt.title}</h5>
+                        ${gt.track === 'at'
+                          ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 shrink-0">✈️ AT</span>'
+                          : '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-indigo-100 text-indigo-800 border border-indigo-200 shrink-0">🗣️ AG</span>'}
+                      </div>
+                      <p class="text-[11px] text-slate-700 mt-1 leading-relaxed">${gt.rule}</p>
+                    </div>
+                    <div class="p-2.5 rounded-lg bg-white border border-rose-200/80 text-[11px] text-slate-800 whitespace-pre-line leading-relaxed">
+                      ${gt.correctExample}
+                    </div>
                   </div>
-                  <div class="p-2.5 rounded-lg bg-white border border-rose-200/80 text-[11px] text-slate-800 whitespace-pre-line leading-relaxed">
-                    ${gt.correctExample}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
+                `).join('')}
+              </div>
+            `}
           </div>
 
           <!-- Section 3: Honest Peer Reflections (You Are Not Alone!) -->
@@ -17669,6 +17761,12 @@ const PORTFOLIO_SUMMARY_DATA = {
                 <p class="text-[11.5px] text-amber-900 leading-relaxed">
                   ${data.cohortReflections.feAdvice}
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
               </div>
             </div>
           </div>

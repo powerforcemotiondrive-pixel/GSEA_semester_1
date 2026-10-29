@@ -34,7 +34,7 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 4. **What happens under the hood**:
    - The CSV is saved locally to `data/portfolio-latest.csv` (strictly ignored by `.gitignore`).
    - The aggregation script parses all responses without exposing student PINs or PII.
-   - It tallies keyword frequencies, highlights grammar pitfalls, and averages FE confidence scores.
+   - **Anti-Bloat Synthesis Rule**: Keeps the summary curated and high-yield (capped at top 6–8 terms per track, 3–4 grammar traps, 3 reflections) with track-tagging for the 1-row mobile filter (`🌐 All` • `✈️ AT` • `🗣️ AG`), ensuring it never bloats and remains skimmable in under 60 seconds.
    - It updates `PORTFOLIO_SUMMARY_DATA` inside the deck and rebuilds all distribution packages.
    - It commits and pushes live to GitHub Pages automatically.
 
@@ -96,3 +96,4 @@ If you prefer running commands directly in the terminal:
 3. **Student Privacy Protocol (Rule 1.H)**:
    - The Git codebase (`src/`, `admin.html`, `index.html`) must NEVER contain real student names or security PINs.
    - Real names live exclusively in `students.private.json` and `PROMO_SETUP.private.md`, which are permanently git-ignored.
+

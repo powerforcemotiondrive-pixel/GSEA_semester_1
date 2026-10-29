@@ -134,36 +134,56 @@ const summaryData = {
   topBuzzwords: [
     {
       term: "Airside vs. Landside",
+      track: "at",
       category: "Aerodrome Zones",
       frequency: "80% of cohort",
       definition: "Landside = public area before security (check-in, arrivals hall). Airside = strictly secured operations area beyond security (gates, apron, taxiways, runways)."
     },
     {
       term: "Apron / Ramp & Stands",
+      track: "at",
       category: "Movement Area",
       frequency: "70% of cohort",
       definition: "The designated paved area where aircraft park at designated stands to deboard, board, refuel, load baggage, and undergo ground servicing."
     },
     {
-      term: "Unruly / Disruptive Passenger",
-      category: "Cabin Safety & Security",
-      frequency: "60% of cohort",
-      definition: "A traveler who refuses to follow crew instructions or behaves disruptively, risking flight diversions, police arrest, and heavy airline costs."
+      term: "Get Off to a Flying Start",
+      track: "ag",
+      category: "High-Impact Idioms",
+      frequency: "65% of cohort",
+      definition: "Idiom meaning to begin an activity, project, or semester with immediate success, high momentum, and enthusiasm."
     },
     {
       term: "GPU vs. APU",
+      track: "at",
       category: "Electrical Power Systems",
       frequency: "50% of cohort",
       definition: "GPU (Ground Power Unit) = mobile ground generator supplying electricity at the gate. APU (Auxiliary Power Unit) = small gas turbine in the aircraft tail used when engines and GPU are off."
     },
     {
+      term: "Word of Mouth",
+      track: "ag",
+      category: "Social Communication",
+      frequency: "55% of cohort",
+      definition: "The organic passing of information, recommendations, or news from person to person through spoken conversation rather than formal advertising."
+    },
+    {
       term: "TRC & AODB",
+      track: "at",
       category: "Ground Operations",
       frequency: "40% of cohort",
       definition: "TRC = Turnaround Coordinator supervising ramp tasks between flight arrival and departure. AODB = Airport Operational Database managing flight schedules, gate changes, and allocated stands."
     },
     {
+      term: "Unruly / Disruptive Passenger",
+      track: "ag",
+      category: "Cabin Safety & Debate",
+      frequency: "60% of cohort",
+      definition: "A traveler who refuses to follow crew instructions or behaves disruptively, risking flight diversions, police arrest, and heavy airline costs."
+    },
+    {
       term: "Low-Cost Carrier (LCC) & Ancillary Revenue",
+      track: "at",
       category: "Airline Economics",
       frequency: "35% of cohort",
       definition: "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
@@ -172,18 +192,27 @@ const summaryData = {
   grammarTrapsCaught: [
     {
       title: "❌ 'Luggages' and 'Trainings' do NOT exist!",
+      track: "ag",
       rule: "Both 'luggage' and 'training' are uncountable nouns in English. Never add an 's'.",
       correctExample: "✅ \"We checked three pieces of luggage and completed our training course.\""
     },
     {
       title: "💡 'Used to do' vs. 'Be used to doing'",
+      track: "ag",
       rule: "'I used to work' expresses a past habit that is finished. 'I am used to working' means you are accustomed/familiar with it now.",
       correctExample: "✅ \"I used to live in Paris, but now I am used to living in Toulouse.\""
     },
     {
-      title: "✨ High-Impact Spoken Idioms",
-      rule: "Adopted by multiple students this week for introductions and natural conversation.",
-      correctExample: "• \"Get off to a flying start\" (to start a project successfully)\n• \"Word of mouth\" (information passed orally from person to person)"
+      title: "✈️ Apron vs. Taxiway vs. Runway",
+      track: "at",
+      rule: "Exact spatial precision is required in operational briefings. Never refer to the runway when you mean parking on the apron or taxiing on taxiway Alpha.",
+      correctExample: "✅ \"The aircraft pushed back from stand B4 onto the apron, taxied via Charlie, and lined up on Runway 14L.\""
+    },
+    {
+      title: "🛫 Scheduled vs. Charter Flights & EU261",
+      track: "at",
+      rule: "Scheduled = timetabled regular airline service. Charter = booked on-demand for a specific private or tour operator group. Passengers hold specific EU261 rights for severe delays.",
+      correctExample: "✅ \"Our charter flight experienced a 4-hour technical delay at the stand, triggering duty of care obligations.\""
     }
   ],
   cohortReflections: {
