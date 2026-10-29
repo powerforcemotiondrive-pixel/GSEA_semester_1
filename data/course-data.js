@@ -756,7 +756,7 @@
             "instructions": [
               "Step 1 (Contextualize - 8 mins): Read each collocation and its workplace example with your partner. Create an original sentence using \"clear customs\" and \"miss a connection\".",
               "Step 2 (Quiz Challenge - 8 mins): Complete the 4-question interactive practice challenge individually without looking at notes.",
-              "Step 3 (Peer Review - 4 mins): Compare answers with your partner, click \"Check Answer\", and analyze why the distractors are incorrect."
+              "Step 3 (Peer Review - 4 mins): Compare answers with your partner, click \"Check Answer\", and discuss why the other options are incorrect."
             ],
             "deliverable": "Achieve 4/4 on the practice quiz and record one new collocation in your personal study log.",
             "teacherNotes": "Encourage students to practice saying the collocations in full sentences. Focus on natural word partnerships (e.g. 'book in advance', 'clear customs').",
@@ -1458,14 +1458,14 @@
             },
             "modeBadges": [
               "👥 Pair Recall",
-              "⏱️ 5 min pairs + 5 min plenary",
+              "⏱️ 5 min pairs + 5 min class discussion",
               "🗣️ Spoken Retrieval",
               "🌿 Green Mobility"
             ],
             "instructions": [
               "Step 1 (Headlines - 3 mins): In pairs, discuss the two Green Mobility news prompts. Ask your partner: \"Which modal shift initiative seems most viable in our region?\"",
               "Step 2 (Memory Recall - 4 mins): Without looking at previous notes, recall and verbally explain 2 key travel distinctions from Session 1 (e.g. Layover vs Stopover, Direct vs Non-stop).",
-              "Step 3 (Spot-Check - 3 mins): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's plenary spot-check."
+              "Step 3 (Spot-Check - 3 mins): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's class spot-check."
             ],
             "deliverable": "Spoken explanation of one Green Mobility headline and one accurate Session 1 vocabulary definition.",
             "teacherNotes": "Cold-call 2 random pairs to summarize modal shift initiatives in European rail. Check pronunciation of 'infrastructure', 'subsidized', and 'intermodality'."
@@ -1508,8 +1508,8 @@
               }
             ],
             "discussionQuestions": [
-              "Which transport epoch brought the greatest improvement to human mobility?",
-              "Can high-speed rail completely replace short-haul aviation across Europe by 2040?"
+              "Which transport epoch brought the greatest improvement to human mobility? (Useful phrases: 'In my view, the steam railway was the biggest turning point because...', 'The automobile transformed society, but it also caused...').",
+              "Can high-speed rail completely replace short-haul aviation across Europe by 2040? (Useful phrases: 'Trains can easily replace flights for journeys under 4 hours, but...', 'The biggest barrier to replacing planes is...')."
             ],
             "modeBadges": [
               "👥 Speed-Dating Pairs",
@@ -1535,7 +1535,7 @@
                 "distance": "1,070 km",
                 "train": "TGV: 6h30 door-to-door (city center to city center), ~4.8 kg CO₂ per passenger, free Wi-Fi and working space.",
                 "flight": "Flight: 4h00 door-to-door (including airport security and transfers), ~140 kg CO₂ per passenger.",
-                "prompt": "How would you convince business travelers to take the 6h30 train instead of the flight?"
+                "prompt": "How would you convince business travelers to take the 6h30 train instead of the flight? (Useful phrases: 'On the train, you can work comfortably with Wi-Fi without airport security queues...', 'Although the flight is faster in the air, the total door-to-door time is...')."
               },
               {
                 "id": 2,
@@ -1543,7 +1543,7 @@
                 "distance": "540 km",
                 "train": "Eurostar: 4h00 direct city center, ~5.5 kg CO₂ per passenger, no liquid restrictions, spacious seating.",
                 "flight": "Flight: 3h45 door-to-door (Heathrow to Schiphol + security), ~62 kg CO₂ per passenger.",
-                "prompt": "Why has Eurostar captured over 70% of the leisure travel market on this route?"
+                "prompt": "Why has Eurostar captured over 70% of the leisure travel market on this route? (Useful phrases: 'Eurostar takes passengers directly into the city center...', 'There are no liquid restrictions or long luggage waits...')."
               },
               {
                 "id": 3,
@@ -1551,7 +1551,7 @@
                 "distance": "680 km",
                 "train": "TGV: 4h20 downtown Matabiau to Montparnasse, ~3.2 kg CO₂ per passenger.",
                 "flight": "Flight: 3h15 door-to-door (Blagnac to Orly), ~85 kg CO₂ per passenger (shuttle flights operate hourly).",
-                "prompt": "What infrastructure upgrades (like the planned Toulouse-Bordeaux high-speed line) are needed to trigger a complete modal shift?"
+                "prompt": "What infrastructure upgrades (like the planned Toulouse-Bordeaux high-speed line) are needed to trigger a complete modal shift? (Useful phrases: 'A high-speed rail connection would reduce travel time to...', 'To compete with hourly flights, train tickets need to be...')."
               }
             ],
             "modeBadges": [
@@ -1616,18 +1616,18 @@
               ]
             },
             "modeBadges": [
-              "👥 Grammar Pair Dissection",
-              "⏱️ 8 min analysis + 12 min plenary",
+              "👥 Grammar Pair Practice",
+              "⏱️ 8 min analysis + 12 min class review",
               "✍️ Complex Comparisons",
               "📈 Trends & Causality"
             ],
             "instructions": [
               "Step 1 (Rule Analysis - 5 mins): Review the 3 core grammar rules: Cause/Effect linkers, Double Comparatives, and Future Predictions with Modals.",
               "Step 2 (Challenge Practice - 8 mins): Work through the 4 interactive grammar challenge questions individually, selecting the grammatically precise connector.",
-              "Step 3 (Peer Check & Verification - 7 mins): Compare answers with your partner, click 'Check Answer & Explanation', and verify why the distractors fail."
+              "Step 3 (Peer Check & Verification - 7 mins): Compare answers with your partner, click 'Check Answer & Explanation', and verify why the other options are incorrect."
             ],
             "deliverable": "Spoken delivery of 2 transformed comparative sentences using the double comparative formula ('The more..., the more...').",
-            "teacherNotes": "Highlight the inversion pattern in double comparatives ('The faster the train travels, the lower the per-seat energy consumption becomes'). Correct common error of using 'that' instead of 'as' with comparisons."
+            "teacherNotes": "Highlight the sentence pattern in double comparatives ('The faster the train travels, the lower the per-seat energy consumption becomes'). Correct common error of using 'that' instead of 'as' with comparisons."
           },
           "caseStudy": {
             "title": "Activity 5: DDRS Case Study: The Campus Travel Dilemma (30 mins)",
@@ -1658,8 +1658,8 @@
             ],
             "task": "In groups of 3, debate which option ENAC should select under its DDRS environmental charter. Present a 2-minute spoken recommendation to the class.",
             "modeBadges": [
-              "👥 Strategic Consultation Triad",
-              "⏱️ 12 min group work + 18 min plenary debate",
+              "👥 Groups of 3 Discussion",
+              "⏱️ 12 min group work + 18 min class debate",
               "🌿 Campus Decarbonization",
               "📋 5-Point Action Plan"
             ],
@@ -10026,7 +10026,7 @@
             },
             "modeBadges": [
               "👥 Airfield Spot-Check",
-              "⏱️ 5 min pairs + 5 min plenary",
+              "⏱️ 5 min pairs + 5 min class discussion",
               "🗣️ Spatial Terminology",
               "✈️ Aerodrome Movement"
             ],
@@ -10080,7 +10080,7 @@
                 "statement": "Should international airports implement 100% contactless biometric facial recognition at all checkpoints, replacing physical passports and boarding passes?",
                 "pro": "Biometrics dramatically reduces queue times, eliminates fraudulent documents, and accelerates passenger boarding by over 30%.",
                 "con": "Centralized storage of passenger facial templates poses cyber-security risks, raises civil privacy concerns, and risks algorithmic bias.",
-                "prompt": "Interview your partner: How do you balance passenger processing speed with biometric data privacy?"
+                "prompt": "Interview your partner: How do you balance passenger processing speed with biometric data privacy? (Useful phrases: 'In my opinion, biometric e-gates are useful because...', 'However, the main risk for passenger privacy is...')."
               },
               {
                 "id": 2,
@@ -10088,12 +10088,12 @@
                 "statement": "Should airports replace traditional staffed check-in counters entirely with automated bag-drop conveyor machines?",
                 "pro": "Self-service bag drop cuts airline labor costs, operates 24/7 without shift gaps, and reduces terminal floor space requirements.",
                 "con": "Elderly, disabled, or infrequent travelers struggle with self-tagging, generating passenger stress and kiosk congestion when luggage tags tear.",
-                "prompt": "Interview your partner: What customer assistance protocols should ground operations maintain when check-in is automated?"
+                "prompt": "Interview your partner: What customer assistance protocols should ground operations maintain when check-in is automated? (Useful phrases: 'Airlines should keep human staff because...', 'When kiosks break down, ground staff must...')."
               }
             ],
             "modeBadges": [
               "👥 Sequential Flow Tracing",
-              "⏱️ 8 min pairs + 12 min plenary",
+              "⏱️ 8 min pairs + 12 min class discussion",
               "✈️ Passenger Facilitation",
               "🔍 Bottleneck Identification"
             ],
@@ -10186,7 +10186,7 @@
             },
             "modeBadges": [
               "👥 Spatial Precision Workshop",
-              "⏱️ 10 min exercise + 15 min plenary",
+              "⏱️ 10 min exercise + 15 min class review",
               "🗺️ Airfield Prepositions",
               "🎯 Positional Clarity"
             ],
