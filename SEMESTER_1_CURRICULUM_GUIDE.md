@@ -432,3 +432,4 @@ Le semestre 1 a pour objectif de développer et de consolider les compétences l
 2. **Zero Academic or Pedagogical Jargon**: All classroom worksheets, slides, and teacher prompts use clear, plain B2 English (*"Useful phrases"*, *"Connecting words"*, *"Example story"*) without academic meta-language.
 3. **The Learning Portfolio is Integral**: Student reflections and vocabulary logs recorded in the digital portfolio contribute directly to continuous assessment and the final Go / No-Go validation.
 4. **SCORM & Offline Parity**: All materials referenced in this guide are mirrored within the offline digital deck and tracked in the system manifest for 100% offline self-containment.
+

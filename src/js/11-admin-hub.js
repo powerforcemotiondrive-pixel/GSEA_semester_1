@@ -1965,6 +1965,2018 @@
       try { localStorage.setItem('gsea_presentation_lang', lang); } catch (e) {}
     };
 
+    
+    function renderAdminSyllabusTab(theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+      let initialLang = 'en';
+      try {
+        const saved = localStorage.getItem('gsea_presentation_lang');
+        if (saved === 'fr' || saved === 'en') initialLang = saved;
+      } catch (e) {}
+
+      bodyEl.innerHTML = `
+<style>
+      .syllabus-drawer-content:not(.lang-fr) .lang-fr { display: none !important; }
+      .syllabus-drawer-content.lang-fr .lang-en { display: none !important; }
+      .syllabus-drawer-content:not(.track-at) .track-at-only { display: none !important; }
+      .syllabus-drawer-content.track-at .track-ag-only { display: none !important; }
+    </style>
+    <div id="syllabus-drawer-content" class="syllabus-drawer-content syllabus-bilingual-container space-y-6">
+      
+      <!-- Top Action & Filter Header Banner -->
+      <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl bg-slate-900">
+            <span>📋</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white bg-blue-600 shadow-2xs">SYLLABUS</span>
+              <h3 class="text-base sm:text-lg font-extrabold text-slate-900">
+                <span class="lang-en">Course Syllabus &amp; Curriculum Guide</span>
+                <span class="lang-fr">Référentiel de Compétences &amp; Programme Détaillé</span>
+              </h3>
+            </div>
+            <p class="text-xs text-slate-500 mt-0.5">
+              <span class="lang-en">Official 17-Session Educational Roadmap • Continuous Assessment, Learning Portfolios &amp; Go / No-Go Validation</span>
+              <span class="lang-fr">Programme officiel en 17 séances • Contrôle continu, Portfolio d'apprentissage &amp; Validation Go / No-Go</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Controls: Track Switcher + Lang Switcher + Print Button -->
+        <div class="flex flex-wrap items-center gap-2 self-stretch md:self-auto justify-end">
+          <!-- Track Switcher -->
+          <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-lg border border-slate-200 text-xs font-bold">
+            <button id="btn-drawer-syl-ag" onclick="setDrawerSyllabusTrack('ag')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-xs">
+              🗣️ General English (AG)
+            </button>
+            <button id="btn-drawer-syl-at" onclick="setDrawerSyllabusTrack('at')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900">
+              ✈️ Technical English (AT)
+            </button>
+          </div>
+
+          <!-- Language Switcher -->
+          <div class="flex items-center gap-0.5 bg-slate-100 p-1 rounded-lg border border-slate-200 text-xs font-bold">
+            <button id="btn-drawer-syl-en" onclick="setDrawerSyllabusLang('en')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer bg-blue-600 text-white shadow-xs">EN</button>
+            <button id="btn-drawer-syl-fr" onclick="setDrawerSyllabusLang('fr')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900">FR</button>
+          </div>
+
+          <!-- Print / Save PDF Button -->
+          <button type="button" onclick="window.print()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-2xs transition-all cursor-pointer">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            <span class="lang-en">Print / PDF</span>
+            <span class="lang-fr">Imprimer / PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Framework & Go / No-Go Overview Card -->
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white border border-slate-700 shadow-sm space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-700/80 pb-3">
+          <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider text-amber-300 bg-amber-500/20 border border-amber-400/30">
+            <span class="lang-en">SEMESTER 1 INSTRUCTIONAL FRAMEWORK</span>
+            <span class="lang-fr">CADRE PÉDAGOGIQUE DU SEMESTRE 1</span>
+          </span>
+          <span class="text-xs font-bold text-slate-300">
+            <span class="lang-en">Continuous Assessment (50%) + Formative Evaluations (50%) • Go / No-Go Decision</span>
+            <span class="lang-fr">Contrôle Continu (50%) + Évaluations Formatives (50%) • Décision Go / No-Go</span>
+          </span>
+        </div>
+
+        <p class="text-xs sm:text-[13px] text-slate-200 leading-relaxed">
+          <span class="lang-en">
+            Semester 1 focuses on developing practical, professional, and operational linguistic competencies to prepare students for their future responsibilities in civil aviation engineering, aerodrome management, and air transport operations. Rather than passive theoretical instruction, this course is communicative, interactive, and task-based. Students build active spoken fluency, listening precision, professional presentation skills, and grammatical accuracy through weekly spoken discussions, collaborative simulations, and self-evaluation logs in their digital Learning Portfolio. Progress is assessed through continuous assessment and three modular Formative Evaluations (FE1, FE2, FE3). At the end of the semester, students' overall performance, portfolio completion, and oral competence culminate in a formal <strong>Go / No-Go</strong> validation decision for progression.
+          </span>
+          <span class="lang-fr">
+            Le semestre 1 a pour objectif de développer et de consolider les compétences linguistiques, professionnelles et opérationnelles indispensables aux futurs cadres, ingénieurs et techniciens de l'aviation civile (GSEA / ENAC). Privilégiant une approche communicative et actionnelle, les cours mettent l'accent sur la fluidité orale, l'aisance interactive, la précision technique et la justesse grammaticale à travers des études de cas hebdomadaires, des simulations professionnelles et la tenue d'un portfolio numérique d'apprentissage. L'évaluation repose sur un contrôle continu régulier et trois évaluations formatives orales (EF1, EF2, EF3). À l'issue du semestre, l'ensemble du travail de l'étudiant, son implication en classe et la validation de son portfolio déterminent la décision officielle <strong>GO / NO GO</strong> validant le passage au semestre suivant.
+          </span>
+        </p>
+
+        <!-- Track Badge Banner -->
+        <div class="pt-2 flex flex-wrap items-center gap-2 text-xs">
+          <span class="track-ag-only px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-200 border border-indigo-400/30 font-bold">
+            <span class="lang-en">🗣️ LV101E • General English • CEFR B2 Level Benchmark</span>
+            <span class="lang-fr">🗣️ LV101E • Anglais Général • Standard Niveau B2 CECRL</span>
+          </span>
+          <span class="track-at-only px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-200 border border-emerald-400/30 font-bold">
+            <span class="lang-en">✈️ LV121E • Technical English • ICAO Operational Level 4/5 Benchmark</span>
+            <span class="lang-fr">✈️ LV121E • Anglais Technique • Standard OACI Niveau 4/5</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- AG Sessions Container (Sessions 1 to 17) -->
+      <div class="track-ag-only space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+          <h3 class="text-sm font-extrabold text-slate-900 uppercase tracking-wide flex items-center gap-2">
+            <span>🗣️</span>
+            <span class="lang-en">General English (AG • LV101E) — Full 17-Session Programme</span>
+            <span class="lang-fr">Anglais Général (AG • LV101E) — Programme Intégral en 17 Séances</span>
+          </h3>
+          <span class="text-xs font-mono font-bold text-slate-500">17 Sessions</span>
+        </div>
+
+        <!-- Module 1 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <span class="lang-en">Module 1: Travel, Transport &amp; Society (Sessions 01–05)</span>
+              <span class="lang-fr">Module 1 : Voyages, Transports &amp; Société (Séances 01–05)</span>
+            </h4>
+          </div>
+          <div class="space-y-3">
+            
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            01
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Introduction & Travel Anecdotes</span>
+            <span class="lang-fr">Introduction & Récits de Voyages</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Diagnostic session and icebreaker. Students introduce themselves, share authentic travel anecdotes, and analyze passenger disruption scenarios.</span>
+        <span class="lang-fr">Séance de diagnostic et d'introduction. Présentation des étudiants, récits d'anecdotes de voyage et analyse d'incidents passagers.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Paired speed-networking interview, "Two Truths and a Travel Mishap" storytelling circle, passenger rights de-escalation role-play.</span>
+          <span class="lang-fr">Entretiens croisés en binôme, cercle de narration "Deux vérités et un imprévu", jeu de rôle de gestion de réclamation client.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Travel idioms (get off to a flying start, off the beaten track, hit the road, word of mouth), collocations (book in advance, clear customs, miss a connection).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Narrative past tenses contrast (Past Simple, Past Continuous, Past Perfect). Uncountable nouns check (luggage, accommodation).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Regular verb past tense endings (-ed /t/, /d/, /ɪd/), word stress in travel compounds.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            02
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Evolution of Transport & Sustainable Mobility</span>
+            <span class="lang-fr">Évolution des Transports & Mobilités Durables</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Examination of multimodal transport systems (rail vs. air vs. road) across a 600 km corridor. Introduction to sustainable mobility (DDRS).</span>
+        <span class="lang-fr">Étude des systèmes de transport multimodaux (ferroviaire, aérien, routier) sur 600 km. Introduction aux mobilités durables (DDRS).</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Multi-modal route optimization debate, business travel carbon-budgeting challenge, timed TOEIC reading practice (Part 7 transport schedules).</span>
+          <span class="lang-fr">Débat d'optimisation multimodale, atelier d'éco-budget carbone professionnel, entraînement chronométré TOEIC Reading (Partie 7).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Modal shift, carbon footprint, high-speed rail corridor, intermodality, transit-oriented development.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Expressing cause and effect (owing to, as a result of, lead to), double comparatives (the faster the train, the lower the emissions).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Stress shifts in word families ('transport [noun] vs. trans'port [verb]; 'mobility / 'infrastructure).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            03
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Overtourism & Destination Management</span>
+            <span class="lang-fr">Surtourisme & Gestion des Destinations</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Analysis of the economic benefits versus social and ecological damage of mass tourism in historic cities and sensitive natural sites.</span>
+        <span class="lang-fr">Analyse des retombées économiques face aux dégradations sociales et environnementales du tourisme de masse.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Stakeholder role-play debate (local residents, municipal authorities, cruise ship operators, hoteliers), drafting city regulation bylaws.</span>
+          <span class="lang-fr">Jeu de rôle multipartite (résidents, mairie, croisiéristes, hôteliers), rédaction d'un arrêté municipal de régulation.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Carrying capacity, visitor quotas, tourist levy/tax, resident displacement, season peak, UNESCO preservation.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Causative verbs of authority (have/make/get something done), concessive linkers (despite, in spite of, whereas).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Syllable stress and vowel reductions in long abstract nouns (de-stur-i-za-'tion, re-gu-'la-tion).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            04
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Ecotourism, Greenwashing & Destination Pitch</span>
+            <span class="lang-fr">Écotourisme, Greenwashing & Pitch de Destination</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session • Prep FE1
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Distinguishing authentic community-led ecotourism from commercial greenwashing. Students pitch a sustainable travel initiative in small groups.</span>
+        <span class="lang-fr">Distinguer l'écotourisme authentique du greenwashing commercial. Présentation en équipe d'un projet de voyage éco-responsable.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">"Green or Greenwashed?" corporate audit, collaborative micro-project design sprint, mock peer evaluations with timing constraints.</span>
+          <span class="lang-fr">Audit critique "Green or Greenwashed ?", sprint de conception d'un micro-projet, répétitions orales chronométrées.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Carbon offsetting, wildlife sanctuary, low-impact hospitality, local empowerment, greenwashing claims.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Mixed conditionals (If the reserve had invested in solar shuttles earlier, it would attract...), clauses of purpose (so that, in order to).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Intonation in persuasive pitches, emphatic stress on quantitative benefits.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-amber-300 bg-amber-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-amber-600 text-white">
+            05
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">FORMATIVE EVALUATION 1 (FE1) — Oral Tutorials</span>
+            <span class="lang-fr">ÉVALUATION FORMATIVE 1 (EF1) — Tutorats Oraux</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-600 text-white">
+          Oral Evaluation • FE1
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Graded 30-minute oral evaluation in pairs. Students present a sustainable travel destination profile with visual slides, followed by teacher Q&A and a portfolio check.</span>
+        <span class="lang-fr">Épreuve orale notée de 30 minutes en binôme. Présentation d'un projet d'écotourisme avec diaporama, questions du jury et audit du portfolio.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">5-stage oral tutorial roadmap: Setup (2m), Paired Presentation (12m), Teacher Q&A (8m), Portfolio review (4m), Immediate feedback (4m).</span>
+          <span class="lang-fr">Déroulé en 5 étapes : Accueil (2m), Présentation en binôme (12m), Questions du jury (8m), Revue de portfolio (4m), Bilan et conseils (4m).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Active deployment of Module 1 vocabulary log and travel definitions.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Controlled use of narrative past tenses, causatives, mixed conditionals, and formal signpost linkers.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Intelligible pronunciation, natural pacing without reading verbatim notes.</span>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <span class="lang-en">Module 2: Weather, Environment &amp; Ecological Transition (Sessions 06–10)</span>
+              <span class="lang-fr">Module 2 : Météo, Environnement &amp; Transition Écologique (Séances 06–10)</span>
+            </h4>
+          </div>
+          <div class="space-y-3">
+            
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            06
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Extreme Weather & Atmospheric Hazards</span>
+            <span class="lang-fr">Météo Extrême & Phénomènes Atmosphériques</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Exploration of extreme meteorological phenomena (heatwaves, flash floods, storms) and their disruption to global transport infrastructure.</span>
+        <span class="lang-fr">Étude des phénomènes météorologiques extrêmes (canicules, crues éclairs, tempêtes) et de leurs impacts sur les réseaux de transport.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Emergency weather response simulation, interpreting climate trend infographics, TOEIC Listening practice (Part 4 weather bulletins).</span>
+          <span class="lang-fr">Simulation de cellule de crise météo, analyse de graphiques climatiques, entraînement TOEIC Listening (Partie 4).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Torrential downpour, storm surge, heat dome, infrastructure vulnerability, contingency plan.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Passive voice in technical crisis reporting (Power lines were severed; transport links have been suspended), modals of deduction.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Consonant clusters in meteorological terms (draughts, bursts, depths, precipitation).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            07
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Sustainable Cities & Low-Emission Urban Mobility</span>
+            <span class="lang-fr">Villes Durables & Mobilités Urbaines Propres</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Architectural and urban planning innovations for climate resilience: the 15-minute city concept, sponge cities, and low-emission zones (LEZ).</span>
+        <span class="lang-fr">Innovations d'aménagement pour la résilience climatique : concept de ville du quart d'heure, villes éponges et zones à faibles émissions.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Redesigning an urban transport corridor, comparing European transit models, TOEIC Reading practice (Part 7 urban proposals).</span>
+          <span class="lang-fr">Réaménagement d'un corridor urbain, analyse comparée des réseaux européens, entraînement TOEIC Reading (Partie 7).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Permeable pavement, urban heat island, congestion charging, active mobility, mixed-use zoning, district heating.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Quantifiers and determiners (a great deal of, fewer vehicles vs. less pollution), complex noun phrases.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Contrastive sentence stress when comparing comparative urban statistics.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            08
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Building & Supporting Environmental Arguments</span>
+            <span class="lang-fr">Construction & Défense d'Arguments Écologiques</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Professional argumentation workshop. Developing structured, evidence-based environmental arguments and handling counter-arguments diplomatically.</span>
+        <span class="lang-fr">Atelier d'argumentation professionnelle. Construire des argumentaires écologiques fondés sur des données chiffrées et débattre avec nuance.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">The Great Carbon Tax Debate, rapid-fire argument rebuttal pairs, analyzing argumentative rhetorical strategies in TED-style talks.</span>
+          <span class="lang-fr">Débat contradictoire sur la taxe carbone, joutes d'arguments chronométrées, analyse rhétorique d'interventions de type TED.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Counter-argument, regulatory mandate, public pushback, unintended consequence, viable alternative.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Verbs followed by gerunds vs. infinitives (advocate implementing, fail to address), diplomatic concession markers (While I concede that...).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Diplomatic vs. aggressive intonation patterns during intellectual disagreement.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            09
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Biodiversity in Urban Areas & Transport Hubs</span>
+            <span class="lang-fr">Biodiversité Urbaine & Pôles de Transport</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session • Prep FE2
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Ecological engineering around airports and transport hubs: wildlife corridors, green roofs, runway bird strike prevention, and preserving living ecosystems.</span>
+        <span class="lang-fr">Génie écologique autour des aéroports et plateformes d'échange : corridors biologiques, toitures végétales et prévention du péril animalier.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Airport eco-corridor feasibility study, group rehearsal of the FE2 Climate Resilience Redesign, peer feedback rubric check.</span>
+          <span class="lang-fr">Étude de faisabilité d'un corridor écologique aéroportuaire, répétition générale de l'exposé EF2, grille d'évaluation par les pairs.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Native species, ecological corridor, bird strike hazard, wetland restoration, habitat fragmentation.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Complex relative clauses (defining vs. non-defining), dependent prepositions following nouns and adjectives.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Word stress in biological and environmental terminology.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-amber-300 bg-amber-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-amber-600 text-white">
+            10
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">FORMATIVE EVALUATION 2 (FE2) — Climate Resilience Redesign</span>
+            <span class="lang-fr">ÉVALUATION FORMATIVE 2 (EF2) — Résilience Climatique</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-600 text-white">
+          Oral Evaluation • FE2
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Graded 30-minute oral tutorial in pairs. Students pitch an urban or transport hub Climate Resilience Redesign project, defend technical choices, and review their portfolio.</span>
+        <span class="lang-fr">Épreuve orale notée de 30 minutes en binôme. Présentation d'un projet de résilience climatique d'un aéroport ou d'une ville, soutenance et audit du portfolio.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">5-stage oral tutorial: Welcome (2m), Resilience Pitch (12m), Cross-Examination & Q&A (8m), Portfolio review (4m), Feedback & marks (4m).</span>
+          <span class="lang-fr">Déroulé en 5 étapes : Accueil (2m), Présentation du projet (12m), Questions contradictoires (8m), Contrôle du portfolio (4m), Bilan (4m).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Accurate use of Module 2 environmental engineering and urban climate terminology.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Deployment of complex relative clauses, passive voice in crisis contexts, and gerund/infinitive precision.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Fluency, professional tempo, clear thought groups, and confident audience contact.</span>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <span class="lang-en">Module 3: Innovation, Society &amp; Emerging Technologies (Sessions 11–15)</span>
+              <span class="lang-fr">Module 3 : Innovation, Société &amp; Technologies Émergentes (Séances 11–15)</span>
+            </h4>
+          </div>
+          <div class="space-y-3">
+            
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            11
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Everyday AI & Workplace Automation</span>
+            <span class="lang-fr">IA Quotidienne & Automatisation Professionnelle</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Assessing the impact of artificial intelligence, large language models (LLMs), and automation on engineering professions, copyright, and employment.</span>
+        <span class="lang-fr">Évaluation de l'impact de l'IA, des modèles génératifs et de l'automatisation sur les métiers d'ingénieurs, le droit d'auteur et l'emploi.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">AI workplace impact audit, evaluating algorithm bias case studies, TOEIC Part 5 & 6 sentence completion practice on tech vocabulary.</span>
+          <span class="lang-fr">Audit d'impact de l'IA sur l'emploi, étude de cas sur les biais algorithmiques, exercices TOEIC Parts 5 & 6 sur le lexique technologique.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Predictive analytics, algorithmic bias, automated decision-making, machine learning model, human-in-the-loop.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Passive voice in process descriptions (Data is ingested, processed, and validated), verbs of speculation (tend to, be bound to).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Syllable reduction in tech terms ('algorithm, tech'nology, au'tomaton, au'tonomous).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            12
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Future Mobility & Clean Energy Transport</span>
+            <span class="lang-fr">Mobilités du Futur & Énergies Propres</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Emerging transportation paradigms: battery electric vehicles (EVs), hydrogen fuel-cell rail, autonomous urban pods, and urban air mobility (eVTOL).</span>
+        <span class="lang-fr">Nouveaux paradigmes de transport : véhicules électriques, trains à hydrogène, navettes autonomes et mobilité aérienne urbaine (eVTOL).</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Technology lifecycle analysis, investment pitch simulation for regional clean transport networks, TOEIC listening practice (Part 3).</span>
+          <span class="lang-fr">Analyse du cycle de vie technologique, simulation de comité d'investissement en transport vert, entraînement TOEIC Listening (Partie 3).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Energy density, charging infrastructure, green hydrogen, battery degradation, life-cycle emissions, prototype testing.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Expressing future probability (is projected to become viable by 2035), modifiers of degree (substantially higher, marginal improvement).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Linking sounds in compound technical terms (clean-energy, fuel-cell-powered).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            13
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Technology Ethics & Algorithmic Governance</span>
+            <span class="lang-fr">Éthique Technologique & Gouvernance Numérique</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Ethical boundaries of technological innovation: algorithmic surveillance, automated profiling, data harvesting, and public safety vs. personal privacy.</span>
+        <span class="lang-fr">Frontières éthiques de l'innovation : surveillance algorithmique, profilage automatisé, collecte de données et respect de la vie privée.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Oxford-style debate on AI regulation, drafting an Ethical Charter for emerging technologies, case study on passenger profiling.</span>
+          <span class="lang-fr">Débat parlementaire sur la régulation de l'IA, rédaction d'une charte éthique des technologies, étude de cas sur le profilage.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Data sovereignty, facial recognition ban, chilling effect, regulatory sandbox, accountability framework.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Inversion for formal emphasis (Not only does the algorithm introduce bias, but it also...), concession markers (whereas, albeit).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Pitch variation and sentence stress for rhetorical debate impact.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            14
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Biometrics, Digital Passports & Passenger Journey</span>
+            <span class="lang-fr">Biométrie, Passeports Numériques & Parcours Passager</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session • Prep FE3
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">The seamless passenger journey: biometric authentication at gates, digital health credentials, cybersecurity risks, and smart border facilitation.</span>
+        <span class="lang-fr">Le parcours passager connecté : authentification biométrique aux portes, passeports numériques, cybersécurité et passage des frontières.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Designing a seamless airport terminal checkpoint, dry run of the FE3 Emerging Technology Presentation, peer rubric evaluation.</span>
+          <span class="lang-fr">Conception d'un terminal aéroportuaire sans contact, répétition générale de l'exposé EF3, évaluation croisée sur grille.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Biometric token, facial recognition e-gate, contactless border control, spoofing attack, encrypted credential.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Dependent prepositions and collocations (comply with regulations, susceptible to cyberattacks, prioritize security over convenience).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Natural rhythm and thought groups in formal presentation delivery.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-amber-300 bg-amber-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-amber-600 text-white">
+            15
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">FORMATIVE EVALUATION 3 (FE3) — Emerging Technology Presentation</span>
+            <span class="lang-fr">ÉVALUATION FORMATIVE 3 (EF3) — Technologies Émergentes</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-600 text-white">
+          Oral Evaluation • FE3
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Graded 30-minute oral evaluation in pairs. Students deliver a structured presentation on an emerging technology, evaluate societal/environmental impacts, and defend technical choices.</span>
+        <span class="lang-fr">Épreuve orale notée de 30 minutes en binôme. Présentation d'une technologie émergente, analyse d'impact et soutenance face aux questions du jury.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">5-stage oral tutorial: Welcome (2m), Technology Pitch (12m), Critical Q&A (8m), Portfolio review (4m), Semester feedback (4m).</span>
+          <span class="lang-fr">Déroulé en 5 étapes : Accueil (2m), Présentation technologique (12m), Questions critiques (8m), Bilan portfolio (4m), Synthèse (4m).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Comprehensive mastery of Module 3 artificial intelligence, clean energy, and biometric vocabulary.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Use of emphatic inversion, complex modal verbs of probability, and technical passive descriptions.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">High intelligibility, persuasive intonation, and spontaneous responses to faculty challenges.</span>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+
+        <!-- Consolidation & Final FE -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <span class="lang-en">Semester Consolidation &amp; Final Evaluation (Sessions 16–17)</span>
+              <span class="lang-fr">Consolidation du Semestre &amp; Évaluation Finale (Séances 16–17)</span>
+            </h4>
+          </div>
+          <div class="space-y-3">
+            
+    <div class="p-4 rounded-xl border border-blue-300 bg-blue-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            16
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Global Semester Revision, Portfolio Clinic & Oral Workshop</span>
+            <span class="lang-fr">Révision Générale, Atelier Portfolio & Préparation Finale</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-600 text-white">
+          Consolidation Workshop
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Comprehensive synthesis of Modules 1, 2, and 3. Students audit their Digital Learning Portfolios, correct persistent spoken grammar traps, and complete intensive fluency drills.</span>
+        <span class="lang-fr">Synthèse globale des Modules 1, 2 et 3. Audit complet des portfolios numériques, élimination des pièges grammaticaux oraux et entraînements intensifs à la fluidité.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">3-Team Grand Prix Language Quiz, portfolio peer sign-off clinic, rapid-fire oral simulations of professional meetings.</span>
+          <span class="lang-fr">Grand Quiz linguistique inter-équipes, atelier de validation des portfolios, simulations orales rapides d'entretiens professionnels.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Holistic review of all 90+ core General English terms and idioms across Modules 1 to 3.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Eradication of common spoken errors (uncountable nouns, false friends, mixed conditionals, causative structures).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Focus on syllable stress, rhythm, and international intelligibility under timed examination pressure.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-purple-300 bg-purple-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-amber-600 text-white">
+            17
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">FINAL SUMMATIVE EVALUATION & GO / NO-GO PROFILE VALIDATION</span>
+            <span class="lang-fr">ÉVALUATION SOMMATIVE TERMINALE & VALIDATION GO / NO GO</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-600 text-white">
+          Final Validation • Go / No-Go
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Official final oral examination and portfolio validation. Individual or paired interview evaluating communicative fluency, spontaneous interaction, and technical competence, determining the final semester grade and Go / No-Go progression decision.</span>
+        <span class="lang-fr">Examen oral terminal officiel et validation définitive du portfolio. Entretien individuel ou en binôme validant l'aisance communicative et attribuant la note finale (/20) ainsi que la décision officielle GO / NO GO.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Final individual/paired oral interview with jury, comprehensive portfolio assessment, faculty deliberation, and progression sign-off.</span>
+          <span class="lang-fr">Entretien oral terminal devant jury, évaluation finale du portfolio, délibération de l'équipe enseignante et validation de passage.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Demonstrated B2 CEFR active vocabulary across all societal and mobility domains.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Consolidated mastery of basic and complex structural patterns with consistent self-correction.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Clear, intelligible pronunciation aligned with CEFR B2 independent operational proficiency.</span>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      </div>
+
+      <!-- AT Sessions Container (Sessions 1 to 17) -->
+      <div class="track-at-only space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+          <h3 class="text-sm font-extrabold text-slate-900 uppercase tracking-wide flex items-center gap-2">
+            <span>✈️</span>
+            <span class="lang-en">Technical English (AT • LV121E) — Full 17-Session Programme</span>
+            <span class="lang-fr">Anglais Technique (AT • LV121E) — Programme Intégral en 17 Séances</span>
+          </h3>
+          <span class="text-xs font-mono font-bold text-slate-500">17 Sessions</span>
+        </div>
+
+        <!-- Module 1 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <span class="lang-en">Module 1: Aerodromes, Air Traffic &amp; Surface Operations (Sessions 01–05)</span>
+              <span class="lang-fr">Module 1 : Aérodromes, Circulation Aérienne &amp; Opérations de Piste (Séances 01–05)</span>
+            </h4>
+          </div>
+          <div class="space-y-3">
+            
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            01
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Introduction, Aviation Survey & Regulatory Modals</span>
+            <span class="lang-fr">Introduction, Panorama Aéronautique & Modaux Réglementaires</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Introduction to the commercial aviation ecosystem. Students examine current aviation headlines, debate airline operating models, and master regulatory modal verbs under ICAO Doc 9835 criteria.</span>
+        <span class="lang-fr">Introduction à l'écosystème de l'aviation commerciale. Analyse de l'actualité aéronautique, comparaison des modèles de compagnies et maîtrise des modaux réglementaires OACI.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Aviation current events warm-up, unruly passenger policy debate, customer-service disruption role-play under EU261 regulations, 60-second spoken policy briefing.</span>
+          <span class="lang-fr">Tour de table de l'actualité aérienne, débat sur la politique des passagers perturbateurs, jeu de rôle sur les droits EU261, briefing oral de 60 secondes.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Go-around, touchdown zone, apron, landing gear, turnaround, unruly passenger, low-cost carrier (LCC), ancillary revenue.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Regulatory modals of authority (must, must not, is required to, is authorized to, may not, shall).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Syllable stress in aeronautical terms ('apron, 'runway, 'turboprop, 'diverted).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            02
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Passenger Journey & Airfield Surface Movement</span>
+            <span class="lang-fr">Parcours Passager & Circulation en Aire de Manœuvre</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Tracing traveler facilitation from landside curb to airside boarding gate. Decoding aerodrome physical movement areas: runway designators, taxiway markings, holding points, and surface signage.</span>
+        <span class="lang-fr">Analyse du parcours passager côté ville (landside) au côté piste (airside). Décodage du balisage et de la signalisation d'aérodrome (pistes, taxiways, points d'arrêt).</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Passenger concourse flow diagramming, airfield surface map navigation, unauthorized airside access de-escalation role-play, 60-second magnetic heading briefing.</span>
+          <span class="lang-fr">Schématisation du flux en aérogare, navigation sur plan d'aérodrome, gestion d'intrusion côté piste, briefing de 60 secondes sur l'orientation magnétique.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Landside vs. airside, concourse, security checkpoint, holding point, taxiway centerline, runway designator (14L/32R), FOD (Foreign Object Debris).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Spatial prepositions of point, surface, and movement (at the holding point, on the apron, taxiing via Charlie, lining up on Runway 26).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">NATO phonetic alphabet pronunciation and precision in numerical runway headings (tree, fife, niner).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            03
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Ground Handling, Apron Operations & Turnaround</span>
+            <span class="lang-fr">Assistance en Escale & Chronologie du Demi-Tour Avion</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Deep-dive into airside apron operations and the critical turnaround window. Examining Ground Support Equipment (GSE), ramp personnel duties, and sequential milestones.</span>
+        <span class="lang-fr">Étude détaillée des opérations en escale sur l'aire de trafic. Découverte des engins de piste (GSE), des missions du personnel et de la chronologie du demi-tour avion.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Identifying airside vehicles from functional diagrams, sequencing turnaround milestones on a Gantt chart, ramp delay negotiation role-play, 60-second shift handover briefing.</span>
+          <span class="lang-fr">Identification des véhicules de piste sur schémas, séquençage d'une escale sur diagramme de Gantt, négociation de retard en piste, briefing de relève de 60s.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">GPU (Ground Power Unit), APU (Auxiliary Power Unit), pushback tug, conveyor belt, refueler, Marshaller, TRC (Turnaround Coordinator), chocks.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Time linkers and sequential markers (simultaneously, prior to, upon completion of), expressing cause and effect in ramp delays.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Clear distinction between operational acronyms (GPU vs. APU, AODB, GSE).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            04
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Jobs in Aviation & Institutional Jurisdiction</span>
+            <span class="lang-fr">Métiers de l'Aérien & Juridictions Institutionnelles</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session • Prep FE1
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Comprehensive taxonomy of aviation professions across landside, airside, flight ops, and air navigation services. Clarifying the duties of TSEEAC personnel (DGAC) vs. tactical ATC controllers.</span>
+        <span class="lang-fr">Panorama complet des métiers de l'aérien. Distinction institutionnelle et opérationnelle des fonctions TSEEAC (DGAC) par rapport aux contrôleurs aériens (ICNA).</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Aviation career matrix classification, inter-role operational shift handover simulation, preparing the FE1 Airport Technical Profile in pairs.</span>
+          <span class="lang-fr">Classification matricielle des métiers, simulation de passation de consignes entre services, préparation de l'exposé technique d'aéroport EF1.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">AFISO (Aerodrome Flight Information Service Officer), Ramp Marshaller, Baggage Handler, Safety Inspector, TSEEAC, Dispatcher, Station Manager.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Formulaic formulas of responsibility ("be responsible for + -ing", "be tasked with + noun", "fall under the jurisdiction of").</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Syllable stress in multi-syllabic professional titles (ad-min-is-'tra-tion, in-'spec-tor, co-'or-di-na-tor).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-amber-300 bg-amber-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-amber-600 text-white">
+            05
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">FORMATIVE EVALUATION 1 (FE1) — Technical Airport Profile</span>
+            <span class="lang-fr">ÉVALUATION FORMATIVE 1 (EF1) — Profil Technique d'Aéroport</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-600 text-white">
+          Oral Evaluation • FE1
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Graded 30-minute oral evaluation in pairs. Students present a comprehensive technical profile of an international airport, answer spontaneous teacher questions, and present their portfolio.</span>
+        <span class="lang-fr">Épreuve orale notée de 30 minutes en binôme. Présentation technique complète d'un aéroport international, questions du jury et audit du portfolio.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">5-stage oral tutorial roadmap: Welcome & setup (2m), Airport Technical Analysis (12m), Technical Q&A (8m), Portfolio review (4m), Immediate feedback (4m).</span>
+          <span class="lang-fr">Déroulé en 5 étapes : Accueil (2m), Présentation technique (12m), Questions techniques (8m), Revue du portfolio (4m), Bilan et notation (4m).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Precise deployment of Module 1 aerodrome, runway, apron, and ground handling technical terminology.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Controlled deployment of spatial prepositions, regulatory modals, and formal cause-and-effect links.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Compliance with ICAO Level 4/5 pronunciation descriptors, avoiding ambiguities in numbers and headings.</span>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <span class="lang-en">Module 2: Aircraft &amp; Aerodynamics (Sessions 06–10)</span>
+              <span class="lang-fr">Module 2 : Aéronefs &amp; Aérodynamique (Séances 06–10)</span>
+            </h4>
+          </div>
+          <div class="space-y-3">
+            
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            06
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Aerodynamics & Fundamental Flight Principles</span>
+            <span class="lang-fr">Aérodynamique & Principes Fondamentaux du Vol</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">The physics of atmospheric flight. Explaining the four fundamental forces (Lift, Weight, Thrust, Drag) in equilibrium, airfoil anatomy, Bernoulli's principle, and angle of attack dynamics.</span>
+        <span class="lang-fr">La physique du vol atmosphérique. Explication des 4 forces fondamentales (portance, poids, poussée, traînée) en équilibre, profil d'aile, principe de Bernoulli et incidence.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Airflow vector diagramming, pilot-to-engineer aerodynamic flight control briefing, analyzing stall dynamics and aerodynamic recovery procedures.</span>
+          <span class="lang-fr">Schématisation vectorielle des écoulements d'air, briefing aérodynamique pilote-ingénieur, analyse du décrochage et des manœuvres de récupération.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Lift, weight/gravity, thrust, drag, airfoil, camber, chord line, angle of attack (AoA), boundary layer, stall, vortex.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Zero and first conditionals in flight physics (If the angle of attack exceeds critical AoA, the wing stalls), cause-and-effect connectors.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Accurate pronunciation of flight physics nouns ('chord, ae-ro-'dy-na-mics, 'drag, e-qui-'li-bri-um).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            07
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Aircraft Anatomy: Structure & Systems</span>
+            <span class="lang-fr">Anatomie de l'Aéronef : Structures & Systèmes</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Airframe anatomy, structural primary materials, and onboard technical systems. Identifying the three aircraft axes (pitch, roll, yaw) and their corresponding flight control surfaces.</span>
+        <span class="lang-fr">Anatomie de l'avion, matériaux de structure et servitudes de bord. Identification des trois axes de vol (tangage, roulis, lacet) et des gouvernes associées.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Cockpit and fuselage exterior diagram labelling, walkaround inspection simulation reporting airframe damage, Minimum Equipment List (MEL) dispatch check.</span>
+          <span class="lang-fr">Légendage de plans cellule et cockpit, simulation de visite pré-vol signalant des anomalies de structure, application de la MEL.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Fuselage, empennage, aileron, elevator, rudder, flaps, slats, spoilers, radome, pitot tube, winglet, actuator.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Spatial and functional descriptors (located along the trailing edge of the wing, designed to increase camber during low-speed approach).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Stress in aircraft components ('aileron, 'rudder, 'fuselage, em-pen-'nage).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            08
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Commercial Aircraft Families & Airline Fleet Economics</span>
+            <span class="lang-fr">Familles d'Avions Commerciaux & Flottes des Compagnies</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Categorization of commercial transport aircraft: regional turboprops, single-aisle narrowbodies, widebodies, and freighters. Comparing manufacturer strategies and airline economics.</span>
+        <span class="lang-fr">Catégorisation des avions de transport commercial : turbopropulseurs régionaux, monocouloirs, gros-porteurs et cargos. Comparaison constructeurs et réseaux.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Aircraft specification comparison challenge, simulated Airline Fleet Selection Committee pitch, evaluating fuel-burn and seat-mile costs.</span>
+          <span class="lang-fr">Défi comparatif de fiches avions, simulation de comité de choix de flotte d'une compagnie aérienne, calcul de coût au siège-kilomètre.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Narrowbody, widebody, MTOW (Maximum Takeoff Weight), payload-range, seat-mile cost, fuel burn, fleet commonality, retrofitting.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Comparative and superlative structures with modifiers (substantially lower operating cost, marginally longer range, significantly quieter engines).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Numerical aircraft designations (A-three-fifty, Boeing seven-eight-seven).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            09
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Landmark Aviation Accidents & Technical Causal Analysis</span>
+            <span class="lang-fr">Accidents Aéronautiques Majeurs & Analyse Causale</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session • Prep FE2
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Human factors, CRM, and technical accident investigation. Analysis of landmark historical aviation occurrences (Tenerife 1977, BA 38, US Airways 1549, AF 447).</span>
+        <span class="lang-fr">Facteurs humains, CRM et enquêtes de sécurité. Analyse d'accidents historiques majeurs et des recommandations de sécurité qui en ont découlé.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">15-minute collaborative group research sprint on an assigned accident, delivering a 5-minute technical safety debrief to peers, rehearsal for FE2.</span>
+          <span class="lang-fr">Sprint de recherche de 15 minutes en équipe sur un accident, débriefing technique de sécurité de 5 minutes devant la classe, préparation EF2.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">FDR (Flight Data Recorder), CVR (Cockpit Voice Recorder), CFIT, pitot icing, spatial disorientation, causal chain, safety recommendation.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Narrative past tenses in chronological investigations (Past Simple, Past Continuous, Past Perfect), modal verbs of past deduction.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Syllable stress in investigative terminology (in-ves-ti-'ga-tion, ca-tas-'tro-phic, 'cri-ti-cal).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-amber-300 bg-amber-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-amber-600 text-white">
+            10
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">FORMATIVE EVALUATION 2 (FE2) — Aircraft & Airlines Profile</span>
+            <span class="lang-fr">ÉVALUATION FORMATIVE 2 (EF2) — Profil d'Aéronef & Compagnie</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-600 text-white">
+          Oral Evaluation • FE2
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Graded 30-minute oral evaluation in pairs. Students present an in-depth technical profile of an airliner and its airline operating context, followed by technical defense and portfolio review.</span>
+        <span class="lang-fr">Épreuve orale notée de 30 minutes en binôme. Présentation technique approfondie d'un aéronef et de sa compagnie, soutenance et audit du portfolio.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">5-stage oral tutorial: Welcome (2m), Technical Aircraft Presentation (12m), Technical Cross-Examination (8m), Portfolio review (4m), Marking & feedback (4m).</span>
+          <span class="lang-fr">Déroulé en 5 étapes : Accueil (2m), Présentation de l'appareil (12m), Questions techniques du jury (8m), Contrôle portfolio (4m), Bilan (4m).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Accurate aerodynamic, structural, and aircraft systems terminology.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Controlled deployment of comparative metrics, flight physics conditionals, and narrative past tenses.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Intelligible technical delivery matching ICAO Level 4/5 operational standards.</span>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <span class="lang-en">Module 3: Health, Meteorology, Safety &amp; Security (Sessions 11–15)</span>
+              <span class="lang-fr">Module 3 : Santé, Météo, Sécurité &amp; Sûreté (Séances 11–15)</span>
+            </h4>
+          </div>
+          <div class="space-y-3">
+            
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            11
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Health & Human Factors in Aviation</span>
+            <span class="lang-fr">Santé & Facteurs Humains en Aéronautique</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Medical emergencies in flight, crew physiological limitations, circadian rhythms, fatigue management, and spatial disorientation. Applying the IMSAFE framework and diversion protocols.</span>
+        <span class="lang-fr">Urgences médicales à bord, facteurs humains, physiologie du vol, gestion de la fatigue et désorientation spatiale. Grille IMSAFE et déroutements.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Pilot fatigue case study analysis, simulated in-flight medical diversion decision challenge under fuel/runway constraints, applying the IMSAFE framework.</span>
+          <span class="lang-fr">Étude de cas sur la fatigue équipage, simulation de prise de décision de déroutement médical sous contraintes, application de la grille IMSAFE.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Hypoxia, spatial disorientation, circadian dysrhythmia, somatogravic illusion, medical diversion, defibrillator (AED), incapacitated pilot.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Conditionals of operational urgency (In the event that the captain becomes incapacitated, the first officer shall...), reporting verbs.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Stress in aeromedical terms ('hypothermia, hy'poxia, car-dio-pul-mo-'na-ry).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            12
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Meteorology & Severe Weather in Commercial Aviation</span>
+            <span class="lang-fr">Météorologie & Aléas Climatiques Sévères</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Evaluating the operational impact of severe weather on flight planning and aerodrome operations. Decoding operational METAR, TAF, and SIGMET reports. Microbursts and icing.</span>
+        <span class="lang-fr">Impacts opérationnels de la météo sévère sur la gestion des vols et des pistes. Décodage METAR, TAF et SIGMET. Cisaillement de vent et givrage.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Live METAR/TAF decoding workshop, weather diversion and holding pattern simulation under fuel constraints, historical weather accident debrief.</span>
+          <span class="lang-fr">Atelier de décodage METAR/TAF en direct, simulation de déroutement et circuit d'attente météo, débriefing d'accidents météo majeurs.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Microburst, wind shear, cumulonimbus (CB), clear icing, rime icing, de-icing boot, CAT (Clear Air Turbulence), holding stack, alternate aerodrome.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Passive voice in weather briefings (Runway 09R was closed owing to standing water; departures were suspended), conditional routing formulas.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Standard ICAO meteorological terminology pronunciation (visibility, ceiling, gusts, knots).</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            13
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Aviation Safety vs. Security: Airport Checks & Aircraft Protection</span>
+            <span class="lang-fr">Sécurité des Vols vs. Sûreté Aéroportuaire</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Articulating the fundamental legal, literal, and operational distinctions between Aviation Safety (preventing unintentional accidents) and Aviation Security (preventing unlawful interference).</span>
+        <span class="lang-fr">Distinction fondamentale entre la Sécurité des vols (accidents fortuits) et la Sûreté aéroportuaire (actes malveillants). Fouilles et architecture de sûreté.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Comparing safety vs. security incident case studies, pre-flight cockpit security search walkthrough, crisis coordination role-play between security teams and airport ops.</span>
+          <span class="lang-fr">Étude comparative d'incidents sécurité vs sûreté, visite de fouille de sécurité cabine/cockpit, jeu de rôle de gestion de crise aéroportuaire.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Safety vs. security distinction, perimeter intrusion detection, explosive trace detection, air marshal, baggage reconciliation, unlawful interference.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Contrastive discourse markers (whereas safety encompasses mechanical reliability, security addresses criminal intent), passive modal constructions.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Differentiating /s/ and /ʃ/ sounds in safety and security terminology.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-slate-200 bg-white shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            14
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Global Semester Review & 3-Team Aviation Quiz</span>
+            <span class="lang-fr">Révision Globale & Grand Quiz Aéronautique à 3 Équipes</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-300">
+          Teaching Session • Prep FE3
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Synthesis of all Semester 1 technical knowledge across Aerodromes (Module 1), Aircraft/Aerodynamics (Module 2), and Health/Weather/Safety (Module 3). Structuring the FE3 media briefing.</span>
+        <span class="lang-fr">Synthèse générale des connaissances du semestre : Aérodromes (Mod 1), Avions (Mod 2), Météo et Sûreté (Mod 3). Structuration de la conférence de presse EF3.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Competitive 3-team Aviation Grand Prix Quiz, media briefing role-play rehearsal, mock aggressive journalist cross-examinations.</span>
+          <span class="lang-fr">Grand Quiz aéronautique en 3 équipes, répétition de conférence de presse, simulations de questions incisives de journalistes.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Comprehensive technical terminology synthesis, press briefing formulas (I will now address questions regarding the preliminary investigation...).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Diplomatic response formulas (At this stage of the investigation, we cannot confirm that hypothesis), hypothetical conditionals.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Confident, measured delivery pacing under simulated high-pressure media scrutiny.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-amber-300 bg-amber-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-amber-600 text-white">
+            15
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">FORMATIVE EVALUATION 3 (FE3) — Aviation Current Events Press Briefing</span>
+            <span class="lang-fr">ÉVALUATION FORMATIVE 3 (EF3) — Conférence de Presse Aéronautique</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-600 text-white">
+          Oral Evaluation • FE3
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Graded 30-minute oral evaluation in pairs. Students stage a professional Aviation Press Briefing on a recent commercial aviation incident, followed by investigative journalist Q&A.</span>
+        <span class="lang-fr">Épreuve orale notée de 30 minutes en binôme. Conférence de presse sur un événement aéronautique récent, suivie de questions incisives de journalistes.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">5-stage oral tutorial: Welcome (2m), Press Briefing (12m), Press Q&A & De-escalation (8m), Portfolio review (4m), Semester final feedback (4m).</span>
+          <span class="lang-fr">Déroulé en 5 étapes : Accueil (2m), Conférence de presse (12m), Questions journalistes (8m), Contrôle portfolio (4m), Bilan terminal (4m).</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Precise deployment of technical aviation vocabulary, investigative terminology, and press briefing formulas.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Controlled deployment of diplomatic passive constructions, cause-and-effect links, and condition markers.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Exemplary operational intelligibility and calm, assertive vocal delivery complying with ICAO Level 4/5.</span>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+
+        <!-- Consolidation & Final FE -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+            <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">
+              <span class="lang-en">Semester Consolidation &amp; Final Evaluation (Sessions 16–17)</span>
+              <span class="lang-fr">Consolidation du Semestre &amp; Évaluation Finale (Séances 16–17)</span>
+            </h4>
+          </div>
+          <div class="space-y-3">
+            
+    <div class="p-4 rounded-xl border border-blue-300 bg-blue-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-slate-800 text-white">
+            16
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">Comprehensive Technical English Revision & ICAO Descriptors Clinic</span>
+            <span class="lang-fr">Révision Technique Approfondie & Atelier Critères OACI</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-600 text-white">
+          Consolidation Workshop
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Final preparation and consolidation workshop. Students review and drill the six ICAO operational descriptors (Pronunciation, Structure, Vocabulary, Fluency, Comprehension, Interactions).</span>
+        <span class="lang-fr">Atelier de consolidation opérationnelle. Travail intensif sur les 6 critères d'évaluation OACI et audit final du portfolio technique.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Paired ICAO diagnostic simulations, non-routine emergency scenario role-plays (engine flameout, medical diversion, gear malfunction), portfolio validation check.</span>
+          <span class="lang-fr">Simulations diagnostiques OACI en binôme, jeux de rôle d'urgences en vol (panne réacteur, déroutement, train bloqué), audit de conformité du portfolio.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Immediate clarification strategies (Say again, Confirm runway heading, Request clarification on fuel state).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Operational clarity, eradication of ambiguous phrasing, standardized phraseology compliance.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">Readily intelligible international pronunciation under high-workload simulated conditions.</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="p-4 rounded-xl border border-purple-300 bg-purple-50/25 shadow-2xs space-y-3 transition-all hover:border-slate-300">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-lg font-mono font-black text-xs flex items-center justify-center bg-amber-600 text-white">
+            17
+          </span>
+          <h4 class="text-xs sm:text-sm font-black text-slate-900">
+            <span class="lang-en">FINAL SUMMATIVE EVALUATION & GO / NO-GO SEMESTER VALIDATION</span>
+            <span class="lang-fr">ÉVALUATION SOMMATIVE TERMINALE & VALIDATION GO / NO GO</span>
+          </h4>
+        </div>
+        <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-600 text-white">
+          Final Validation • Go / No-Go
+        </span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-xs text-slate-700 leading-relaxed">
+        <span class="lang-en">Official final technical oral examination and portfolio validation. Individual or paired technical interview evaluating operational communication, determining the semester grade and Go / No-Go progression decision.</span>
+        <span class="lang-fr">Examen oral terminal officiel et validation définitive du portfolio. Entretien technique individuel ou en binôme attribuant la note finale (/20) et la décision GO / NO GO.</span>
+      </p>
+
+      <!-- Activities -->
+      <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
+        <span class="font-bold text-slate-900 shrink-0">
+          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-fr">🎯 Activités :</span>
+        </span>
+        <span>
+          <span class="lang-en">Final technical oral interview with jury, comprehensive portfolio check, faculty deliberation, and progression sign-off.</span>
+          <span class="lang-fr">Entretien oral terminal devant jury, contrôle global du portfolio, délibération de l'équipe enseignante et validation de passage.</span>
+        </span>
+      </div>
+
+      <!-- Linguistic Focus Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
+        <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="leading-relaxed">Active operational mastery across all Semester 1 aeronautical domains (Aerodromes, Aircraft, Meteorology, Safety/Security).</span>
+        </div>
+        <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="leading-relaxed">Consistent structural control of both simple and complex patterns under operational pressure.</span>
+        </div>
+        <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
+          <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
+          <span class="leading-relaxed">International ICAO operational intelligibility (Level 4/5 benchmark).</span>
+        </div>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+      `;
+
+      window.setDrawerSyllabusLang(initialLang);
+      const isAas = (modalState.program === 'aas' || currentProgram === 'aas');
+      window.setDrawerSyllabusTrack(isAas ? 'at' : 'ag');
+    }
+
+    window.setDrawerSyllabusLang = function(lang) {
+      const container = document.getElementById('syllabus-drawer-content');
+      const btnEn = document.getElementById('btn-drawer-syl-en');
+      const btnFr = document.getElementById('btn-drawer-syl-fr');
+      if (!container) return;
+      if (lang === 'fr') {
+        container.classList.add('lang-fr');
+        if (btnFr) btnFr.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer bg-blue-600 text-white shadow-xs font-bold";
+        if (btnEn) btnEn.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900";
+      } else {
+        container.classList.remove('lang-fr');
+        if (btnEn) btnEn.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer bg-blue-600 text-white shadow-xs font-bold";
+        if (btnFr) btnFr.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900";
+      }
+      try { localStorage.setItem('gsea_presentation_lang', lang); } catch (e) {}
+    };
+
+    window.setDrawerSyllabusTrack = function(track) {
+      const container = document.getElementById('syllabus-drawer-content');
+      const btnAg = document.getElementById('btn-drawer-syl-ag');
+      const btnAt = document.getElementById('btn-drawer-syl-at');
+      if (!container) return;
+      if (track === 'at') {
+        container.classList.add('track-at');
+        if (btnAt) btnAt.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-emerald-800 shadow-xs font-black";
+        if (btnAg) btnAg.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900";
+      } else {
+        container.classList.remove('track-at');
+        if (btnAg) btnAg.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-xs font-black";
+        if (btnAt) btnAt.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900";
+      }
+    };
+
     /* --- PORTFOLIO_SUMMARY_DATA_START --- */
 const PORTFOLIO_SUMMARY_DATA = {
   "lastUpdated": "29 Oct 2026",
