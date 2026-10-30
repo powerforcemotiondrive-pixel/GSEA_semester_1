@@ -558,7 +558,7 @@
           divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
             <span class="h-px bg-slate-200/90 flex-1"></span>
-            <span>Admin &amp; Frameworks</span>
+            <span>Admin &amp; Guides</span>
             <span class="h-px bg-slate-200/90 flex-1"></span>
           `;
           menuEl.appendChild(divider);
@@ -660,7 +660,7 @@
               chevron.style.transform = 'none';
             }
           } else {
-            // Cards 06 to 08/09: Administrative & Reference Frameworks (Grounded Slate-200 / Touch Darker)
+            // Cards 06 to 08/09: Administrative & Reference Guides (Grounded Slate-200 / Touch Darker)
             item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-300/80 bg-slate-200/70 hover:bg-slate-200 hover:border-slate-400/80 text-slate-700 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
             item.style.backgroundColor = '#e2e8f0';
             item.style.borderColor = '#cbd5e1';
