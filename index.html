@@ -2305,7 +2305,7 @@
       // Update Action Dock Label
       const dockDot = document.getElementById('action-dock-dot');
       const dockTitle = document.getElementById('action-dock-title');
-      if (dockDot) dockDot.style.backgroundColor = mod.primary;
+      if (dockDot) dockDot.style.backgroundColor = mod.accent || mod.primary;
       if (dockTitle) {
         if (page.isImmersion || (page.tag && page.tag.includes("Immersion"))) {
           dockTitle.textContent = "English Immersion & Destinations";
@@ -2326,9 +2326,11 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
-        btn.style.backgroundColor = mod.primary;
-        btn.onmouseenter = () => btn.style.backgroundColor = mod.primaryDark;
-        btn.onmouseleave = () => btn.style.backgroundColor = mod.primary;
+        const ctaBg = mod.accent || mod.primary;
+        const ctaHover = mod.accentDark || mod.primaryDark;
+        btn.style.backgroundColor = ctaBg;
+        btn.onmouseenter = () => btn.style.backgroundColor = ctaHover;
+        btn.onmouseleave = () => btn.style.backgroundColor = ctaBg;
         btn.innerHTML = `<span>${label}</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
         btn.addEventListener('click', () => {
           openModalDrawer(tabKey, mod.id, currentIndex + 1, fallbackHref);
