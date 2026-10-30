@@ -1,13 +1,13 @@
 {
   "lastUpdated": "30 Oct 2026",
-  "totalSubmissions": 15,
+  "totalSubmissions": 18,
   "trackBreakdown": {
-    "at": 11,
-    "ag": 4
+    "at": 12,
+    "ag": 6
   },
   "metrics": {
     "avgFeConfidence": "4.1",
-    "avgToeicConfidence": "9.1",
+    "avgToeicConfidence": "8.7",
     "targetFeLevel": "CEFR B2",
     "feWindow": "Week 48 (FE1)"
   },
@@ -81,6 +81,20 @@
       "category": "High-Impact Idioms",
       "frequency": "65% of cohort",
       "definition": "Get off to a flying start = beginning a semester or project with immediate success and momentum. Word of mouth = organic communication from person to person."
+    },
+    {
+      "term": "Overbooked Flight & Denied Boarding",
+      "track": "ag",
+      "category": "Airline Regulations",
+      "frequency": "50% of cohort",
+      "definition": "When an airline sells more tickets than available seats in anticipation of no-shows, risking involuntary denied boarding and statutory compensation obligations."
+    },
+    {
+      "term": "Direct vs. Non-Stop Flight",
+      "track": "ag",
+      "category": "Travel Operations",
+      "frequency": "45% of cohort",
+      "definition": "Direct flight = keeps the same single flight number but may include intermediate tech stops. Non-stop flight = flies between origin and destination with zero stops."
     }
   ],
   "grammarTrapsCaught": [
@@ -103,6 +117,12 @@
       "correctExample": "✅ \"He said he was running on empty that day and would take the train the following morning.\""
     },
     {
+      "title": "📍 Preposition Trap: At vs. In vs. Into",
+      "track": "ag",
+      "rule": "Watch out for spatial prepositions: use 'at' for a specific point/facility (at the airport, at the gate), 'in' for an enclosed space (in the cabin), and 'into' for direction/movement (boarded into the aircraft).",
+      "correctExample": "✅ \"We arrived at Toulouse-Blagnac Airport, waited at gate 12, and boarded into the aircraft.\""
+    },
+    {
       "title": "✈️ Apron vs. Taxiway vs. Runway",
       "track": "at",
       "rule": "Exact spatial precision is required in operational briefings. Never refer to the runway when you mean parking on the apron or taxiing on taxiway Alpha.",
@@ -118,12 +138,12 @@
   "cohortReflections": {
     "strengths": [
       "Rapid adoption of technical aerodrome terminology (Airside, Apron, Stands, GPU, TRC).",
-      "Active use of travel collocations and idioms in role-play simulations (stressed passenger vs. airport staff).",
-      "Accurate grasp of reported speech backshifting rules and time adverb transformations."
+      "Active use of travel collocations and idioms in role-play simulations (customer service support & stressed passengers).",
+      "Accurate grasp of reported speech backshifting rules and narrative past tense sequencing."
     ],
     "growthAreas": [
       "Spoken Fluency: Eliminating hesitation and pauses when searching for specialized English nouns.",
-      "Pronunciation Precision: Practicing multi-syllable travel terms (e.g., 'itinerary', 'aerodrome').",
+      "Spatial Prepositions: Practicing 'at', 'in', and 'into' when describing airport movements.",
       "Sentence Speed: Building connected cause-and-effect sentences smoothly under time pressure."
     ],
     "feAdvice": "Students agree that mastering exact spatial airport zones (airside, apron, stands, taxiways) and practicing real-time spoken storytelling with travel collocations is the single best preparation for the 30-minute Formative Evaluation."
@@ -153,9 +173,9 @@
     {
       "track": "ag",
       "session": "Mod 1 • Session 1",
-      "topic": "GlobalExam & TOEIC Preparation",
-      "quote": "It is sometimes frustrating to practice TOEIC with GlobalExam because several answers appear correct, but reading the explanations available at the end of the test is useful to understand subtle shades between two close words.",
-      "takeaway": "Always read answer explanations on GlobalExam to understand lexical nuances."
+      "topic": "Tense Learning & Active Quizzing",
+      "quote": "Testing myself with the TOEIC questions in here as well as on GlobalExam is a funnier way to incorporate the information in my brain than the old way of learning by heart with a copybook. Discussion skills worked in pairs surely are unavoidable to make a great formative evaluation.",
+      "takeaway": "Interactive daily quizzing and peer dialogue outperform rote memorization."
     }
   ]
 }
