@@ -131,6 +131,10 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   - **Cohort Reflections**: Maximum of **3 key strengths**, **3 growth areas**, and **1 actionable FE advice bullet point**.
   - **Track Tagging**: Every buzzword and grammar trap must carry a clean track tag (`track: "at"`, `track: "ag"`, or `track: "aas"`) to power the mobile-optimized, zero-clutter 3-way segmented filter bar (`🌐 All` • `✈️ AT` • `🗣️ AG`).
 
+### N. Photography Visuals Integrity & Image Asset Protection Invariant
+- **Protected Master Photography Assets**: All card visuals, especially `images/fe_progress_check.jpg` (Card 05 Formative Evaluation seminar photo) and `images/semester_objectives.jpg` (Card 08 Student Guide & Objectives classroom photo), are **permanent, high-resolution photography assets**.
+- **Strictly Forbidden Optimization Downgrades**: Never delete, compress down to flat clipart, or swap `.jpg` photo assets with legacy flat `.png` icons (`fe_progress_check.png`, `semester_objectives.png`) under the guise of build size reduction or package optimization. The legacy `.png` clipart files are purged from the repository and must never be reintroduced.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
