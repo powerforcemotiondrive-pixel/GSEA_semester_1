@@ -197,6 +197,20 @@ const summaryData = {
       category: "Airline Economics",
       frequency: "40% of cohort",
       definition: "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
+    },
+    {
+      term: "Scheduled vs. Charter Flights & EU261",
+      track: "at",
+      category: "Passenger Rights & Ops",
+      frequency: "35% of cohort",
+      definition: "Scheduled = timetabled regular airline service. Charter = booked on-demand for a specific private/tour group. Severe delays trigger passenger statutory care."
+    },
+    {
+      term: "Get Off to a Flying Start & Word of Mouth",
+      track: "ag",
+      category: "High-Impact Idioms",
+      frequency: "65% of cohort",
+      definition: "Get off to a flying start = beginning a semester or project with immediate success and momentum. Word of mouth = organic communication from person to person."
     }
   ],
   grammarTrapsCaught: [
@@ -223,6 +237,12 @@ const summaryData = {
       track: "at",
       rule: "Exact spatial precision is required in operational briefings. Never refer to the runway when you mean parking on the apron or taxiing on taxiway Alpha.",
       correctExample: "✅ \"The aircraft pushed back from stand B4 onto the apron, taxied via Charlie, and lined up on Runway 14L.\""
+    },
+    {
+      title: "💡 'Used to do' vs. 'Be used to doing'",
+      track: "ag",
+      rule: "'I used to work' expresses a past habit that is finished. 'I am used to working' means you are accustomed/familiar with it now.",
+      correctExample: "✅ \"I used to live in Paris, but now I am used to living in Toulouse.\""
     }
   ],
   cohortReflections: {
@@ -237,7 +257,37 @@ const summaryData = {
       "Sentence Speed: Building connected cause-and-effect sentences smoothly under time pressure."
     ],
     feAdvice: "Students agree that mastering exact spatial airport zones (airside, apron, stands, taxiways) and practicing real-time spoken storytelling with travel collocations is the single best preparation for the 30-minute Formative Evaluation."
-  }
+  },
+  verbatimQuotes: [
+    {
+      track: "at",
+      session: "Mod 1 • Session 1",
+      topic: "Oral Presentation & Ground Infrastructure",
+      quote: "Knowing the different geographical parts of an airport, as well as the jobs, will be very important in the airport presentation. The oral presentation won't be possible without being able to name the different parts.",
+      takeaway: "Mastering aerodrome spatial vocabulary is non-negotiable for FE1."
+    },
+    {
+      track: "at",
+      session: "Mod 1 • Session 1",
+      topic: "Spoken Fluency & Hesitation",
+      quote: "My main problem is fluency because I am always looking for a word when talking to someone. I also need some time to build my sentences, so I think that I have to talk as much as possible to improve on these points.",
+      takeaway: "Spoken practice in pairs reduces mid-sentence hesitations."
+    },
+    {
+      track: "ag",
+      session: "Mod 1 • Session 1",
+      topic: "Pronunciation & Spoken Grammar",
+      quote: "I realized with a few words like 'itinerary' that I have to work on my pronunciation. Knowing what tense I should use to properly speak in every situation is probably what I get from this class.",
+      takeaway: "Drill tricky multi-syllable terms out loud before speaking evaluations."
+    },
+    {
+      track: "ag",
+      session: "Mod 1 • Session 1",
+      topic: "GlobalExam & TOEIC Preparation",
+      quote: "It is sometimes frustrating to practice TOEIC with GlobalExam because several answers appear correct, but reading the explanations available at the end of the test is useful to understand subtle shades between two close words.",
+      takeaway: "Always read answer explanations on GlobalExam to understand lexical nuances."
+    }
+  ]
 };
 
 fs.writeFileSync(outputJsonPath, JSON.stringify(summaryData, null, 2), 'utf8');

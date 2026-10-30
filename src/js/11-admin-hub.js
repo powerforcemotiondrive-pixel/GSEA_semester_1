@@ -4047,6 +4047,20 @@ const PORTFOLIO_SUMMARY_DATA = {
       "category": "Airline Economics",
       "frequency": "40% of cohort",
       "definition": "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
+    },
+    {
+      "term": "Scheduled vs. Charter Flights & EU261",
+      "track": "at",
+      "category": "Passenger Rights & Ops",
+      "frequency": "35% of cohort",
+      "definition": "Scheduled = timetabled regular airline service. Charter = booked on-demand for a specific private/tour group. Severe delays trigger passenger statutory care."
+    },
+    {
+      "term": "Get Off to a Flying Start & Word of Mouth",
+      "track": "ag",
+      "category": "High-Impact Idioms",
+      "frequency": "65% of cohort",
+      "definition": "Get off to a flying start = beginning a semester or project with immediate success and momentum. Word of mouth = organic communication from person to person."
     }
   ],
   "grammarTrapsCaught": [
@@ -4073,6 +4087,12 @@ const PORTFOLIO_SUMMARY_DATA = {
       "track": "at",
       "rule": "Exact spatial precision is required in operational briefings. Never refer to the runway when you mean parking on the apron or taxiing on taxiway Alpha.",
       "correctExample": "✅ \"The aircraft pushed back from stand B4 onto the apron, taxied via Charlie, and lined up on Runway 14L.\""
+    },
+    {
+      "title": "💡 'Used to do' vs. 'Be used to doing'",
+      "track": "ag",
+      "rule": "'I used to work' expresses a past habit that is finished. 'I am used to working' means you are accustomed/familiar with it now.",
+      "correctExample": "✅ \"I used to live in Paris, but now I am used to living in Toulouse.\""
     }
   ],
   "cohortReflections": {
@@ -4087,7 +4107,37 @@ const PORTFOLIO_SUMMARY_DATA = {
       "Sentence Speed: Building connected cause-and-effect sentences smoothly under time pressure."
     ],
     "feAdvice": "Students agree that mastering exact spatial airport zones (airside, apron, stands, taxiways) and practicing real-time spoken storytelling with travel collocations is the single best preparation for the 30-minute Formative Evaluation."
-  }
+  },
+  "verbatimQuotes": [
+    {
+      "track": "at",
+      "session": "Mod 1 • Session 1",
+      "topic": "Oral Presentation & Ground Infrastructure",
+      "quote": "Knowing the different geographical parts of an airport, as well as the jobs, will be very important in the airport presentation. The oral presentation won't be possible without being able to name the different parts.",
+      "takeaway": "Mastering aerodrome spatial vocabulary is non-negotiable for FE1."
+    },
+    {
+      "track": "at",
+      "session": "Mod 1 • Session 1",
+      "topic": "Spoken Fluency & Hesitation",
+      "quote": "My main problem is fluency because I am always looking for a word when talking to someone. I also need some time to build my sentences, so I think that I have to talk as much as possible to improve on these points.",
+      "takeaway": "Spoken practice in pairs reduces mid-sentence hesitations."
+    },
+    {
+      "track": "ag",
+      "session": "Mod 1 • Session 1",
+      "topic": "Pronunciation & Spoken Grammar",
+      "quote": "I realized with a few words like 'itinerary' that I have to work on my pronunciation. Knowing what tense I should use to properly speak in every situation is probably what I get from this class.",
+      "takeaway": "Drill tricky multi-syllable terms out loud before speaking evaluations."
+    },
+    {
+      "track": "ag",
+      "session": "Mod 1 • Session 1",
+      "topic": "GlobalExam & TOEIC Preparation",
+      "quote": "It is sometimes frustrating to practice TOEIC with GlobalExam because several answers appear correct, but reading the explanations available at the end of the test is useful to understand subtle shades between two close words.",
+      "takeaway": "Always read answer explanations on GlobalExam to understand lexical nuances."
+    }
+  ]
 };
 /* --- PORTFOLIO_SUMMARY_DATA_END --- */
 
@@ -4126,6 +4176,11 @@ const PORTFOLIO_SUMMARY_DATA = {
       const filteredTraps = (data.grammarTrapsCaught || []).filter(gt => {
         if (activeFilter === 'all') return true;
         return (gt.track || '').toLowerCase() === activeFilter.toLowerCase();
+      });
+
+      const filteredQuotes = (data.verbatimQuotes || []).filter(q => {
+        if (activeFilter === 'all') return true;
+        return (q.track || '').toLowerCase() === activeFilter.toLowerCase();
       });
 
       bodyEl.innerHTML = `
@@ -4272,6 +4327,46 @@ const PORTFOLIO_SUMMARY_DATA = {
                 </p>
               </div>
             </div>
+          </div>
+
+          <!-- Section 4: Authentic Cohort Voices (Verbatim Student Reflections) -->
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-md bg-purple-600 text-white flex items-center justify-center font-bold text-xs">4</span>
+                <h4 class="font-bold text-slate-900 text-sm">Authentic Cohort Voices — What Your Peers Are Really Saying (${filteredQuotes.length})</h4>
+              </div>
+              <span class="text-[10px] font-mono uppercase bg-purple-50 text-purple-700 px-2 py-0.5 rounded font-bold">Verbatim Feedback</span>
+            </div>
+
+            ${filteredQuotes.length === 0 ? `
+              <p class="text-xs text-slate-500 py-4 text-center">No student quotes logged for this specific filter yet.</p>
+            ` : `
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                ${filteredQuotes.map(q => `
+                  <div class="p-4 rounded-xl bg-purple-50/40 border border-purple-200/80 space-y-2.5 flex flex-col justify-between hover:bg-purple-50/70 transition-all shadow-2xs">
+                    <div class="space-y-2">
+                      <div class="flex items-center justify-between gap-2 border-b border-purple-200/60 pb-1.5">
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                          <span class="text-[10.5px] font-bold text-purple-950 uppercase tracking-wide">${q.topic || 'Reflection'}</span>
+                          ${q.track === 'at'
+                            ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 shrink-0">✈️ AT</span>'
+                            : '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-indigo-100 text-indigo-800 border border-indigo-200 shrink-0">🗣️ AG</span>'}
+                        </div>
+                        <span class="text-[10px] font-mono text-slate-400 font-bold">${q.session || 'Module 1'}</span>
+                      </div>
+                      <p class="text-[12px] italic text-slate-800 leading-relaxed pt-0.5">
+                        "${q.quote}"
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-1 border-t border-purple-100 text-[10px] text-slate-500 font-medium">
+                      <span class="text-purple-900 font-semibold truncate pr-2">💡 ${q.takeaway || 'Key Takeaway'}</span>
+                      <span class="font-mono text-purple-700 font-bold shrink-0">Anonymous Peer Log</span>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            `}
           </div>
         </div>
       `;

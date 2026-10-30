@@ -123,13 +123,14 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   1. Writes the raw CSV into `data/portfolio-latest.csv` (which is permanently listed in `.gitignore` to protect student security codes and PII).
   2. Runs `npm run portfolio:summary` (`node scripts/update-portfolio-summary.js && npm run package && npm run package:moodle`), which extracts top keywords, grammar pitfalls, student reflections, and FE readiness scores, updates `data/portfolio-summary-s1.json`, synchronizes `PORTFOLIO_SUMMARY_DATA` in `src/js/11-admin-hub.js`, and rebuilds all packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`).
   3. Automatically executes `git commit` AND `git push origin main` in the same step.
-- **Curated High-Impact Synthesis (Anti-Bloat Invariant)**:
-  - The Portfolio Summary tab must **always remain a concise, high-yield pedagogical summary**—it must NEVER become a bloated raw catalog of everything everyone wrote.
-  - **Usability Benchmark**: Must remain easily skimmable in under 60 seconds on both mobile and desktop.
-  - **Top Buzzwords**: Maximum of **6 to 8 top emerging terms per track** (or 8–10 combined), prioritizing high-frequency consensus terms with concise, 1-sentence operational definitions.
-  - **Grammar Traps**: Maximum of **3 to 4 high-frequency spoken traps or golden rules**, formatted with punchy ❌ Wrong vs ✅ Right comparisons.
-  - **Cohort Reflections**: Maximum of **3 key strengths**, **3 growth areas**, and **1 actionable FE advice bullet point**.
-  - **Track Tagging**: Every buzzword and grammar trap must carry a clean track tag (`track: "at"`, `track: "ag"`, or `track: "aas"`) to power the mobile-optimized, zero-clutter 3-way segmented filter bar (`🌐 All` • `✈️ AT` • `🗣️ AG`).
+- **Cumulative Whole-Semester Insights & Authentic Peer Voices Protocol**:
+  - The Portfolio Summary tab must **represent cumulative learning across the entire semester** (spanning Module 1, Module 2, and Module 3) rather than discarding earlier foundations when new sessions begin.
+  - **Usability & Structure**: Rich, well-spaced modular digest that remains clear and skimmable across both mobile and desktop.
+  - **Top Buzzwords**: Up to **12 to 16 top terms across the semester** (~4 to 5 core terms per module/topic across both tracks), prioritizing high-frequency consensus terms with clear, 1-sentence operational definitions.
+  - **Grammar & Pronunciation Traps**: Up to **5 to 6 high-frequency spoken traps or golden rules**, covering pronunciation phonetics, countable/uncountable nouns, syntax, and operational distinctions, formatted with punchy ❌ Wrong vs ✅ Right comparisons.
+  - **Cohort Reflections**: Up to **3 key strengths**, **3 growth areas**, and **1 actionable FE advice bullet point**.
+  - **Authentic Cohort Voices (Verbatim Quotes)**: Include **2 to 4 authentic, anonymized verbatim student quotes** directly excerpted from student portfolio reflections, highlighting real classroom breakthroughs, speaking anxieties, or independent study strategies. Quotes must NEVER contain student names, real identifiers, or security codes.
+  - **Track Tagging**: Every buzzword, grammar trap, and verbatim quote must carry a clean track tag (`track: "at"`, `track: "ag"`, or `track: "all"`) to power the mobile-optimized 3-way segmented filter bar (`🌐 All` • `✈️ AT` • `🗣️ AG`).
 
 ### N. Photography Visuals Integrity & Image Asset Protection Invariant
 - **Protected Master Photography Assets**: All card visuals, especially `images/fe_progress_check.jpg` (Card 05 Formative Evaluation seminar photo) and `images/semester_objectives.jpg` (Card 08 Student Guide & Objectives classroom photo), are **permanent, high-resolution photography assets**.
