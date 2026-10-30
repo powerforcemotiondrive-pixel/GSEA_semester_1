@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "29 Oct 2026",
+  "lastUpdated": "30 Oct 2026",
   "totalSubmissions": 15,
   "trackBreakdown": {
-    "at": 13,
-    "ag": 2
+    "at": 11,
+    "ag": 4
   },
   "metrics": {
     "avgFeConfidence": "4.1",
-    "avgToeicConfidence": "9.5",
+    "avgToeicConfidence": "9.1",
     "targetFeLevel": "CEFR B2",
     "feWindow": "Week 48 (FE1)"
   },
@@ -16,48 +16,48 @@
       "term": "Airside vs. Landside",
       "track": "at",
       "category": "Aerodrome Zones",
-      "frequency": "80% of cohort",
-      "definition": "Landside = public area before security (check-in, arrivals hall). Airside = strictly secured operations area beyond security (gates, apron, taxiways, runways)."
+      "frequency": "85% of cohort",
+      "definition": "Landside = public areas before security (check-in, arrivals hall). Airside = strictly secured operations areas beyond security (gates, apron, taxiways, runways)."
     },
     {
       "term": "Apron / Ramp & Stands",
       "track": "at",
       "category": "Movement Area",
-      "frequency": "70% of cohort",
-      "definition": "The designated paved area where aircraft park at designated stands to deboard, board, refuel, load baggage, and undergo ground servicing."
+      "frequency": "75% of cohort",
+      "definition": "The designated paved area where aircraft park at designated stands to board/deboard, refuel, load baggage, and undergo ground servicing."
     },
     {
-      "term": "Get Off to a Flying Start",
+      "term": "Travel Collocations & Booking",
       "track": "ag",
-      "category": "High-Impact Idioms",
-      "frequency": "65% of cohort",
-      "definition": "Idiom meaning to begin an activity, project, or semester with immediate success, high momentum, and enthusiasm."
+      "category": "Travel Operations",
+      "frequency": "70% of cohort",
+      "definition": "Essential communicative collocations: to book a flight, to board a plane, to check in, to clear customs, and to travel with carry-on luggage."
     },
     {
       "term": "GPU vs. APU",
       "track": "at",
       "category": "Electrical Power Systems",
-      "frequency": "50% of cohort",
+      "frequency": "55% of cohort",
       "definition": "GPU (Ground Power Unit) = mobile ground generator supplying electricity at the gate. APU (Auxiliary Power Unit) = small gas turbine in the aircraft tail used when engines and GPU are off."
     },
     {
-      "term": "Word of Mouth",
+      "term": "Travel Idioms (Scenic Route, Hit the Road)",
       "track": "ag",
-      "category": "Social Communication",
-      "frequency": "55% of cohort",
-      "definition": "The organic passing of information, recommendations, or news from person to person through spoken conversation rather than formal advertising."
+      "category": "Spoken Idioms",
+      "frequency": "65% of cohort",
+      "definition": "Conversational storytelling idioms: to hit the road (depart), to take the scenic route (longer picturesque path), and to be in the driver's seat (in control)."
     },
     {
       "term": "TRC & AODB",
       "track": "at",
       "category": "Ground Operations",
-      "frequency": "40% of cohort",
+      "frequency": "45% of cohort",
       "definition": "TRC = Turnaround Coordinator supervising ramp tasks between flight arrival and departure. AODB = Airport Operational Database managing flight schedules, gate changes, and allocated stands."
     },
     {
       "term": "Unruly / Disruptive Passenger",
       "track": "ag",
-      "category": "Cabin Safety & Debate",
+      "category": "Cabin Safety & Rights",
       "frequency": "60% of cohort",
       "definition": "A traveler who refuses to follow crew instructions or behaves disruptively, risking flight diversions, police arrest, and heavy airline costs."
     },
@@ -65,7 +65,7 @@
       "term": "Low-Cost Carrier (LCC) & Ancillary Revenue",
       "track": "at",
       "category": "Airline Economics",
-      "frequency": "35% of cohort",
+      "frequency": "40% of cohort",
       "definition": "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
     }
   ],
@@ -77,35 +77,35 @@
       "correctExample": "✅ \"We checked three pieces of luggage and completed our training course.\""
     },
     {
-      "title": "💡 'Used to do' vs. 'Be used to doing'",
+      "title": "🗣️ Pronunciation Trap: Itinerary",
       "track": "ag",
-      "rule": "'I used to work' expresses a past habit that is finished. 'I am used to working' means you are accustomed/familiar with it now.",
-      "correctExample": "✅ \"I used to live in Paris, but now I am used to living in Toulouse.\""
+      "rule": "Multiple students flagged pronunciation difficulty with 'itinerary'. Stress is on the second syllable: /aɪˈtɪn.ər.ər.i/ (eye-TIN-er-uh-ree).",
+      "correctExample": "✅ \"Could you please confirm our flight itinerary before we head to the gate?\""
+    },
+    {
+      "title": "⏱️ Reported Speech Backshift & Time References",
+      "track": "ag",
+      "rule": "When reporting past dialogue, tenses shift back (present -> past, past -> past perfect; will -> would), and time adverbs shift ('today' -> 'that day', 'yesterday' -> 'the day before', 'tomorrow' -> 'the following day').",
+      "correctExample": "✅ \"He said he was running on empty that day and would take the train the following morning.\""
     },
     {
       "title": "✈️ Apron vs. Taxiway vs. Runway",
       "track": "at",
       "rule": "Exact spatial precision is required in operational briefings. Never refer to the runway when you mean parking on the apron or taxiing on taxiway Alpha.",
       "correctExample": "✅ \"The aircraft pushed back from stand B4 onto the apron, taxied via Charlie, and lined up on Runway 14L.\""
-    },
-    {
-      "title": "🛫 Scheduled vs. Charter Flights & EU261",
-      "track": "at",
-      "rule": "Scheduled = timetabled regular airline service. Charter = booked on-demand for a specific private or tour operator group. Passengers hold specific EU261 rights for severe delays.",
-      "correctExample": "✅ \"Our charter flight experienced a 4-hour technical delay at the stand, triggering duty of care obligations.\""
     }
   ],
   "cohortReflections": {
     "strengths": [
-      "Rapid adoption of technical aerodrome terminology (Airside, Apron, Stands, GPU).",
-      "Engaging peer discussions on commercial dilemmas (alcohol on board, budget airline trade-offs).",
-      "Accurate understanding of passenger rights under EU261 delay rules."
+      "Rapid adoption of technical aerodrome terminology (Airside, Apron, Stands, GPU, TRC).",
+      "Active use of travel collocations and idioms in role-play simulations (stressed passenger vs. airport staff).",
+      "Accurate grasp of reported speech backshifting rules and time adverb transformations."
     ],
     "growthAreas": [
-      "Spoken Fluency: Eliminating pauses while searching for specialized English nouns.",
-      "Sentence Speed: Building complex cause-and-effect sentences without hesitation.",
-      "Distinguishing subtle pairs: Scheduled vs Charter flight, Delay vs Cancellation."
+      "Spoken Fluency: Eliminating hesitation and pauses when searching for specialized English nouns.",
+      "Pronunciation Precision: Practicing multi-syllable travel terms (e.g., 'itinerary', 'aerodrome').",
+      "Sentence Speed: Building connected cause-and-effect sentences smoothly under time pressure."
     ],
-    "feAdvice": "Students agree that knowing exact physical zones of an airport (airside, apron, stands, taxiways) and ground jobs (TRC, aerodrome operator) is the single biggest factor to ace the 30-minute Formative Evaluation oral profile."
+    "feAdvice": "Students agree that mastering exact spatial airport zones (airside, apron, stands, taxiways) and practicing real-time spoken storytelling with travel collocations is the single best preparation for the 30-minute Formative Evaluation."
   }
 }
