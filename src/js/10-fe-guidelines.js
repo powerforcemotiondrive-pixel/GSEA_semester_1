@@ -2496,3 +2496,816 @@
       `;
     }
 
+    function renderFePrepTab(modNum, theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+      const prog = (modalState && modalState.program) || currentProgram || 'ag';
+      const isAas = (prog === 'aas');
+
+      if (modNum === 1 && !isAas) {
+        // AG (General English) Module 1 FE Quick-Prep
+        bodyEl.innerHTML = `
+        <div class="space-y-6">
+          <!-- Executive Header Banner -->
+          <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-slate-700">
+            <div class="flex flex-wrap items-center justify-between gap-2.5 mb-2.5">
+              <div class="flex items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide bg-amber-400 text-slate-900 shadow-xs">
+                  <span class="w-2 h-2 rounded-full bg-slate-900 animate-pulse"></span>
+                  FE1 Quick-Prep Cheat Sheet
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/10 text-slate-200 border border-white/15">
+                  General English (AG • LV101E)
+                </span>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                Evaluation: Friday 27 November 2026 (Week 48)
+              </span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-white">
+              Module 1 Formative Evaluation Mastery Hub
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1.5 max-w-3xl leading-relaxed">
+              Your 3-in-1 oral revision toolkit for <strong>Travel, Transport &amp; Leisure</strong>. Review high-scoring spoken delivery habits, subject-specific speaking tips, and the essential vocabulary from Sessions 1–4 required for your 30-minute pair evaluation.
+            </p>
+          </div>
+
+          <!-- Section 1: Universal Spoken Strategies -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
+              <h4 class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide">
+                1. Four Universal Golden Rules for the 30-Minute Oral Tutorial
+              </h4>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <!-- Strategy 1 -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                    <span class="text-[10px] font-black uppercase text-amber-600">Rule 01</span>
+                    <span class="text-xs">👥</span>
+                  </div>
+                  <h5 class="text-xs font-bold text-slate-900 mt-2">50/50 Speaking Balance</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                    Examiners grade <strong>active peer interaction</strong>. Never deliver two separate monologues. Pass the baton naturally: <em>"What's your take on that, [Name]?"</em> or <em>"Would you agree with that policy?"</em>
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-semibold">Equal talking time (~6 mins each)</div>
+              </div>
+
+              <!-- Strategy 2 -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                    <span class="text-[10px] font-black uppercase text-rose-600">Rule 02</span>
+                    <span class="text-xs">🚫</span>
+                  </div>
+                  <h5 class="text-xs font-bold text-slate-900 mt-2">Zero Slide Reading</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                    Prepare <strong>4 to 6 visual slides</strong> with maps, images, or route charts only. Reading complete sentences from slides or cue cards caps your fluency mark at <strong>10/20 maximum</strong>.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] text-rose-600 font-semibold">Keep eye contact with examiner</div>
+              </div>
+
+              <!-- Strategy 3 -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                    <span class="text-[10px] font-black uppercase text-indigo-600">Rule 03</span>
+                    <span class="text-xs">📱</span>
+                  </div>
+                  <h5 class="text-xs font-bold text-slate-900 mt-2">3-Minute Phone Rehearsal</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                    Record a 3-minute mock conversation with your partner on your smartphone voice memo app. Listen back together to eliminate filler noises (<em>"euh"</em>, <em>"like"</em>) and check sentence completion.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] text-indigo-600 font-semibold">Audio rehearsal builds fluency</div>
+              </div>
+
+              <!-- Strategy 4 -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                    <span class="text-[10px] font-black uppercase text-emerald-600">Rule 04</span>
+                    <span class="text-xs">📓</span>
+                  </div>
+                  <h5 class="text-xs font-bold text-slate-900 mt-2">Portfolio Readiness Check</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                    Stage 4 of your evaluation is an inspection of your <strong>personal learning log</strong> and TOEIC error tracker. Have 2 personal English strengths and 2 concrete action targets ready to state.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] text-emerald-600 font-semibold">Stage 4 contributes to final mark</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Subject-Specific Speaking Tips -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
+              <h4 class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide">
+                2. Module 1 Spoken Delivery Tips: Travel, Transport &amp; Leisure
+              </h4>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+              <!-- Tip 1 -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wide text-white" style="background-color: ${theme.primary};">Storytelling</span>
+                  <span class="text-[11px] font-bold text-slate-400">Past Tenses</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">The 3-Step Anecdote Arc</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  When sharing personal travel glitches or delayed connections, use narrative past tenses to create vivid flow:
+                </p>
+                <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-[11px] text-slate-700 space-y-1 font-mono">
+                  <div><strong class="text-indigo-600">1. Setting:</strong> "I was waiting on a tight 40-minute layover..."</div>
+                  <div><strong class="text-rose-600">2. Crisis:</strong> "Out of the blue, the boarding gate closed..."</div>
+                  <div><strong class="text-emerald-600">3. Resolution:</strong> "To my relief, ground staff rebooked us on a high-speed train."</div>
+                </div>
+              </div>
+
+              <!-- Tip 2 -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wide text-white" style="background-color: ${theme.primary};">Debate</span>
+                  <span class="text-[11px] font-bold text-slate-400">Nuanced Contrast</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Balanced Overtourism Arguments</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  Avoid simplistic <em>"tourism is good"</em> or <em>"tourism is bad"</em> statements. Contrast economic benefits against physical carrying capacity:
+                </p>
+                <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-[11px] text-slate-700 italic leading-relaxed">
+                  "On the one hand, tourism brings vital revenue to local merchants; on the other hand, peak season surges exceed infrastructure carrying capacity, triggering resident backlash and rent inflation."
+                </div>
+              </div>
+
+              <!-- Tip 3 -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wide text-white" style="background-color: ${theme.primary};">Solutions</span>
+                  <span class="text-[11px] font-bold text-slate-400">Green Mobility</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Actionable Eco-Solutions</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  In Option A (Eco-Friendly Itinerary) and Option B (Tourism Policies), recommend practical operational solutions:
+                </p>
+                <ul class="text-[11px] text-slate-600 space-y-1 list-disc pl-4 leading-relaxed">
+                  <li><strong>Modal Shift:</strong> High-speed rail for regional corridors under 500 km.</li>
+                  <li><strong>Visitor Dispersion:</strong> Encouraging visits off the beaten track.</li>
+                  <li><strong>Tourist Levies:</strong> Earmarking hotel taxes for local biodiversity reserves.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Sessions 1 to 4 Target Vocabulary Vault -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide">
+                  3. Session 1–4 Required Vocabulary Vault (Examiner Target Terms)
+                </h4>
+              </div>
+              <span class="text-[11px] text-slate-500 font-medium">Click checkbox when mastered</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+              <!-- Session 1 Vault -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div>
+                    <span class="text-[10px] font-black uppercase text-indigo-600">Session 01 Focus</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">Anecdotes, Delays &amp; Transit</h5>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">5 High-Yield Terms</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Layover</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">A scheduled stop between flights or transit legs.</p>
+                      <p class="text-[10px] text-indigo-700 mt-1 italic">"A tight 45-minute layover leaves zero margin for baggage glitches."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Off the beaten track</strong> <span class="text-[10px] text-slate-400 font-mono">(idiom)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">In an isolated, authentic, or uncrowded destination.</p>
+                      <p class="text-[10px] text-indigo-700 mt-1 italic">"We preferred traveling off the beaten track to escape honey-pot crowds."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Catch the travel bug</strong> <span class="text-[10px] text-slate-400 font-mono">(idiom)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Develop an intense enthusiasm for exploring the world.</p>
+                      <p class="text-[10px] text-indigo-700 mt-1 italic">"I first caught the travel bug during an international youth exchange."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Travel glitch</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">A minor, unexpected technical or logistical setback.</p>
+                      <p class="text-[10px] text-indigo-700 mt-1 italic">"Despite an initial baggage glitch, the rail connection ran on time."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Out of the blue</strong> <span class="text-[10px] text-slate-400 font-mono">(idiom)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Suddenly, unexpectedly, without any advance warning.</p>
+                      <p class="text-[10px] text-indigo-700 mt-1 italic">"Out of the blue, our gate was relocated to a distant satellite terminal."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Session 2 Vault -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div>
+                    <span class="text-[10px] font-black uppercase text-amber-600">Session 02 Focus</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">Evolution of Transport &amp; Mobility</h5>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200">5 High-Yield Terms</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Modal shift</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Switching passengers or freight from cars/planes to trains/buses.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Subsidized high-speed rail drives a 40% modal shift away from domestic flights."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">High-speed rail</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Passenger rail operating at speeds of 250 km/h or higher.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"High-speed rail delivers shorter door-to-door times on routes under 500 km."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Decarbonization</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">The systematic reduction or elimination of carbon emissions.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Fleet electrification accelerates urban transit decarbonization."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Door-to-door travel time</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Total elapsed duration from point of departure to final destination.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Factoring in airport checks, train journeys offer superior door-to-door times."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">First-mile / last-mile transit</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">The connecting trip between main transit hubs and origin/destination.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Shared e-bikes bridge the first-mile and last-mile connectivity gap."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Session 3 Vault -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div>
+                    <span class="text-[10px] font-black uppercase text-rose-600">Session 03 Focus</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">Overtourism &amp; Urban Carrying Capacity</h5>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-50 text-rose-700 border border-rose-200">5 High-Yield Terms</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Carrying capacity</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">The maximum population or visitor level an environment can sustain.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"Venice and Amsterdam have repeatedly surpassed their daily carrying capacity."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Tourist levy</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">A municipal tax levied per tourist night to fund local services.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"A €5 nightly tourist levy finances city historic preservation."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Resident backlash</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Adverse public reaction from local residents against excessive crowds.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"Skyrocketing residential rents ignited fierce resident backlash."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Honey-pot destination</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">A place that attracts an overwhelming influx of visitors.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"Santorini has become an extreme honey-pot destination during peak season."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Visitor dispersion</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Distributing tourist flows across peripheral regional attractions.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"Strategic marketing promotes visitor dispersion toward inland villages."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Session 4 Vault -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div>
+                    <span class="text-[10px] font-black uppercase text-emerald-600">Session 04 Focus</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">Sustainable &amp; Eco-Tourism</h5>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">5 High-Yield Terms</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Eco-tourism</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Responsible travel that protects wildlife and sustains local communities.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"Genuine eco-tourism reinvests tour profits directly into habitat conservation."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Greenwashing</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Deceptive claims making an unsustainable business appear eco-friendly.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"Reusing towels without eliminating single-use plastics is pure greenwashing."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Carbon offset</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Funding emissions reduction projects to compensate for personal travel.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"Travelers can purchase certified carbon offsets for unavoidable flights."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Biodiversity corridor</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">A connected strip of natural habitat allowing wildlife migration.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"Eco-resort developments must preserve contiguous biodiversity corridors."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Regenerative tourism</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Travel that leaves natural ecosystems healthier than before arrival.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"Regenerative tourism pairs travelers with local reforestation initiatives."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+      } else if (modNum === 1 && isAas) {
+        // AT (Technical English) Module 1 FE Quick-Prep
+        bodyEl.innerHTML = `
+        <div class="space-y-6">
+          <!-- Executive Header Banner -->
+          <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-sky-950 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-slate-700">
+            <div class="flex flex-wrap items-center justify-between gap-2.5 mb-2.5">
+              <div class="flex items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide bg-amber-400 text-slate-900 shadow-xs">
+                  <span class="w-2 h-2 rounded-full bg-slate-900 animate-pulse"></span>
+                  FE1 Quick-Prep Cheat Sheet
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/10 text-slate-200 border border-white/15">
+                  Technical English (AT • LV121E)
+                </span>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                Evaluation: Wednesday 25 November 2026 (Week 48)
+              </span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-white">
+              Module 1 Formative Evaluation Mastery Hub
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1.5 max-w-3xl leading-relaxed">
+              Your 3-in-1 operational revision toolkit for <strong>Aerodrome Operations, Airfield Layout &amp; Turnaround</strong>. Master high-scoring technical presentation habits, ramp chronology tips, and the essential aviation vocabulary from Sessions 1–4 required for your 30-minute pair evaluation.
+            </p>
+          </div>
+
+          <!-- Section 1: Universal Spoken Strategies -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
+              <h4 class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide">
+                1. Four Universal Golden Rules for the 30-Minute Oral Tutorial
+              </h4>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <!-- Strategy 1 -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                    <span class="text-[10px] font-black uppercase text-amber-600">Rule 01</span>
+                    <span class="text-xs">👥</span>
+                  </div>
+                  <h5 class="text-xs font-bold text-slate-900 mt-2">50/50 Talking Balance</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                    Divide your technical airport briefing equally (~6 mins each). Hand over smoothly: <em>"I will now hand over to my partner to explain the airside ramp layout and turnaround coordination."</em>
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-semibold">Equal technical speaking time</div>
+              </div>
+
+              <!-- Strategy 2 -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                    <span class="text-[10px] font-black uppercase text-rose-600">Rule 02</span>
+                    <span class="text-xs">🚫</span>
+                  </div>
+                  <h5 class="text-xs font-bold text-slate-900 mt-2">Zero Slide Reading</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                    Use aerodrome charts, runway diagrams, and apron maps. <strong>Never read technical descriptions aloud from notes.</strong> Speak spontaneously from diagram callouts.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] text-rose-600 font-semibold">Strict examiner grading criterion</div>
+              </div>
+
+              <!-- Strategy 3 -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                    <span class="text-[10px] font-black uppercase text-sky-600">Rule 03</span>
+                    <span class="text-xs">📱</span>
+                  </div>
+                  <h5 class="text-xs font-bold text-slate-900 mt-2">3-Minute Phone Drill</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                    Record a 3-minute technical description of a 35-minute turnaround sequence. Listen to your pronunciation of aviation acronyms (<em>GPU, FOD, TRC, GSE</em>) and eliminate hesitation.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] text-sky-600 font-semibold">Pronounce acronyms cleanly</div>
+              </div>
+
+              <!-- Strategy 4 -->
+              <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-2xs flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                    <span class="text-[10px] font-black uppercase text-emerald-600">Rule 04</span>
+                    <span class="text-xs">📓</span>
+                  </div>
+                  <h5 class="text-xs font-bold text-slate-900 mt-2">Portfolio Readiness Check</h5>
+                  <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                    In Stage 4, show your personal technical vocabulary log. Be ready to articulate 2 strong points (e.g. airport infrastructure knowledge) and 2 concrete speaking targets for Module 2.
+                  </p>
+                </div>
+                <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] text-emerald-600 font-semibold">Stage 4 evaluation readiness</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Subject-Specific Speaking Tips -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
+              <h4 class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide">
+                2. Module 1 Technical Speaking Tips: Aerodrome Briefing
+              </h4>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+              <!-- Tip 1 -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wide text-white" style="background-color: ${theme.primary};">Boundaries</span>
+                  <span class="text-[11px] font-bold text-slate-400">Spatial Precision</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Airside vs. Landside Delineation</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  Clearly articulate the operational security boundary in your selected airport:
+                </p>
+                <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-[11px] text-slate-700 space-y-1 font-mono">
+                  <div><strong class="text-sky-700">Landside:</strong> Public concourses, ticket counters, baggage drop, parking.</div>
+                  <div><strong class="text-indigo-700">Airside:</strong> Sterile zone beyond security: gates, apron, taxiways, runways. Access strictly controlled.</div>
+                </div>
+              </div>
+
+              <!-- Tip 2 -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wide text-white" style="background-color: ${theme.primary};">Turnaround</span>
+                  <span class="text-[11px] font-bold text-slate-400">Ramp Chronology</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">The 35-Minute Ramp Sequence</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  Describe ramp servicing sequentially using precise chronological time markers:
+                </p>
+                <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-[11px] text-slate-700 space-y-1 font-mono">
+                  <div><strong class="text-amber-700">1. On arrival:</strong> "Upon wheel chocking, the GPU supplies ground power."</div>
+                  <div><strong class="text-indigo-700">2. Servicing:</strong> "Simultaneously, belt loaders discharge bags while refueling proceeds."</div>
+                  <div><strong class="text-emerald-700">3. Departure:</strong> "Prior to pushback, the TRC confirms zero FOD on the stand."</div>
+                </div>
+              </div>
+
+              <!-- Tip 3 -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wide text-white" style="background-color: ${theme.primary};">Roles &amp; GSE</span>
+                  <span class="text-[11px] font-bold text-slate-400">Operational Division</span>
+                </div>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Human Roles &amp; Equipment Synergy</h5>
+                <p class="text-[11px] text-slate-600 leading-relaxed">
+                  Show clear mastery of who does what on the apron and which equipment is deployed:
+                </p>
+                <ul class="text-[11px] text-slate-600 space-y-1 list-disc pl-4 leading-relaxed">
+                  <li><strong>Marshaller:</strong> Directs aircraft safely onto stand centerline.</li>
+                  <li><strong>Turnaround Coordinator (TRC):</strong> Orchestrates ramp teams and signs load sheet.</li>
+                  <li><strong>Pushback Tug:</strong> Communicates with flight deck via nosegear headset.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Sessions 1 to 4 Target Vocabulary Vault -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide">
+                  3. Session 1–4 Required Vocabulary Vault (Examiner Target Terms)
+                </h4>
+              </div>
+              <span class="text-[11px] text-slate-500 font-medium">Click checkbox when mastered</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+              <!-- Session 1 Vault -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div>
+                    <span class="text-[10px] font-black uppercase text-sky-600">Session 01 Focus</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">Aviation Survey, Terminals &amp; Rights</h5>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-sky-50 text-sky-700 border border-sky-200">5 High-Yield Terms</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Airside</strong> <span class="text-[10px] text-slate-400 font-mono">(adj./n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">The secure operational zone beyond security including gates, ramps, and taxiways.</p>
+                      <p class="text-[10px] text-sky-700 mt-1 italic">"Airside personnel must display verified security credentials at all times."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Landside</strong> <span class="text-[10px] text-slate-400 font-mono">(adj./n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">The public areas of an airport terminal before security screening.</p>
+                      <p class="text-[10px] text-sky-700 mt-1 italic">"Check-in concourses and arrival greeting halls are located landside."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Aerodrome operator</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">The airport authority responsible for infrastructure maintenance and certification.</p>
+                      <p class="text-[10px] text-sky-700 mt-1 italic">"The aerodrome operator maintains runway friction and airport fire rescue services."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Duty of care</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Statutory legal obligation under EU261 to provide meals and lodging during delays.</p>
+                      <p class="text-[10px] text-sky-700 mt-1 italic">"Airlines must uphold their duty of care even during extraordinary circumstances."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">De-escalation</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Communication techniques used by ground staff to calm angry passengers.</p>
+                      <p class="text-[10px] text-sky-700 mt-1 italic">"Effective de-escalation prevents minor boarding delays from turning into gate disruptions."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Session 2 Vault -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div>
+                    <span class="text-[10px] font-black uppercase text-amber-600">Session 02 Focus</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">Movement Area, Holding Points &amp; FOD</h5>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200">5 High-Yield Terms</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Movement area</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Aerodrome surface used for takeoff, landing, and taxiing, including aprons.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Vehicular access across the movement area requires explicit ground control clearance."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Apron / Ramp</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Designated area where aircraft park for refueling, boarding, and servicing.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Strict speed restrictions are enforced across the apron to protect personnel."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Taxiway holding point</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Designated stop line where aircraft hold short before runway entry.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Flight 102 held short at holding point Bravo 2 awaiting departure clearance."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Jet bridge</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Enclosed movable bridge connecting gate terminal to aircraft cabin door.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Boarding via dual jet bridges reduces widebody turnarounds by 8 minutes."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Foreign Object Debris (FOD)</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Loose items on airfield surfaces that can cause severe engine or tire damage.</p>
+                      <p class="text-[10px] text-amber-700 mt-1 italic">"Daily magnetic FOD sweeps prevent jet engine ingestion hazards on active stands."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Session 3 Vault -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div>
+                    <span class="text-[10px] font-black uppercase text-rose-600">Session 03 Focus</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">Turnaround Coordination, GSE &amp; GPU</h5>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-50 text-rose-700 border border-rose-200">5 High-Yield Terms</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Turnaround Time (TAT)</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Duration an aircraft remains parked at stand between arrival and departure.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"Short-haul airlines target a 30-to-35 minute turnaround time to maximize aircraft utilization."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Turnaround Coordinator (TRC)</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Ramp specialist orchestrating all ground handling teams on the aircraft stand.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"The TRC coordinates refueling, catering, and baggage loading to meet off-block times."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Ground Power Unit (GPU)</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Mobile generator supplying electricity to an aircraft when engines are off.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"Using stand GPUs instead of the aircraft APU cuts fuel burn and ramp noise."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Ground Support Equipment (GSE)</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Apron vehicles and machinery (tugs, belt loaders, stairs, de-icing rigs).</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"Electric GSE vehicles significantly reduce apron emissions."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Pushback tug</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Heavy vehicle used to reverse aircraft out of nose-in parking gates.</p>
+                      <p class="text-[10px] text-rose-700 mt-1 italic">"The tug driver communicates directly with the flight deck via nosegear interphone."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Session 4 Vault -->
+              <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+                  <div>
+                    <span class="text-[10px] font-black uppercase text-emerald-600">Session 04 Focus</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">Aviation Roles &amp; Airfield Safety</h5>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">5 High-Yield Terms</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Marshaller</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Ramp agent using illuminated wands to guide aircraft into docking position.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"The marshaller stopped the Boeing 737 precisely on the stand nosewheel line."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Ramp handling agent</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Ground crew handling cargo loading, chocking, and stand safety cones.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"Ramp agents secured safety clearance cones around the wingtips."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Baggage handler</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Airside personnel managing sorting, loading, and baggage hold balance.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"Baggage handlers verified hold load distribution matched flight trim sheets."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">Airfield operations specialist</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Officer executing runway friction checks, bird hazard patrols, and surface safety.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"The operations officer conducted continuous bird dispersal patrols along Runway 14."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                  <div class="p-2.5 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-50 transition-all flex items-start justify-between gap-2">
+                    <div>
+                      <strong class="text-slate-900">AFISO</strong> <span class="text-[10px] text-slate-400 font-mono">(n.)</span>
+                      <p class="text-[11px] text-slate-600 mt-0.5">Aerodrome Flight Information Service Officer providing advisory guidance.</p>
+                      <p class="text-[10px] text-emerald-700 mt-1 italic">"At regional aerodromes, the AFISO provides essential weather and aerodrome advisories."</p>
+                    </div>
+                    <input type="checkbox" class="mt-1 rounded text-emerald-600 cursor-pointer" onclick="this.closest('div').classList.toggle('bg-emerald-50/60');">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+      } else {
+        // Module 2 or 3 roadmap state
+        bodyEl.innerHTML = `
+        <div class="space-y-6">
+          <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 text-white rounded-2xl p-6 sm:p-8 shadow-md border border-slate-700 text-center">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide bg-amber-400 text-slate-900 shadow-xs mb-3">
+              ⚡ Module ${modNum} FE Quick-Prep Milestone
+            </span>
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-white">
+              FE${modNum} Quick-Prep Cheat Sheet
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-2 max-w-xl mx-auto leading-relaxed">
+              This revision sprint sheet unlocks during <strong>Module ${modNum}</strong> ahead of Formative Evaluation ${modNum}. In the meantime, consult the <strong>FE Guidelines</strong> and <strong>FE Marking Criteria</strong> tabs for full evaluation standards.
+            </p>
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              <button type="button" onclick="switchModalTab('fe_guidelines')" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition-all border border-white/20 cursor-pointer">
+                View FE Guidelines &rarr;
+              </button>
+              <button type="button" onclick="switchModalTab('fe_criteria')" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition-all border border-white/20 cursor-pointer">
+                View Marking Rubric &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+    }
+

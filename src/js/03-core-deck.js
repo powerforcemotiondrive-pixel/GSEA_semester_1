@@ -1299,16 +1299,17 @@
       headerEl.style.borderColor = theme.primaryDark;
 
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
-      const isObjectivesSession = tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || tabKey === 'portfolio_summary' || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_') || modalState.tab === 'portfolio_summary';
+      const isObjectivesSession = tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || tabKey === 'portfolio_summary' || (modalState.sessionNum === 8 && tabKey === 'fe_prep') || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_') || modalState.tab === 'portfolio_summary' || (modalState.sessionNum === 8 && modalState.tab === 'fe_prep');
       const isImmersionSession = !isObjectivesSession && (tabKey === 'immersion' || tabKey.startsWith('immersion_'));
       const isAdminSession = !isObjectivesSession && !isImmersionSession && (modalState.sessionNum === 7 || tabKey.startsWith('admin_'));
-      const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (modalState.sessionNum === 5 || tabKey.startsWith('fe_'));
+      const isFeSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (modalState.sessionNum === 5 || tabKey.startsWith('fe_') || tabKey === 'fe_prep');
       const isDdrsSession = !isObjectivesSession && !isImmersionSession && !isAdminSession && (tabKey === 'ddrs' || modalState.sessionNum === 6);
 
       const studentGuideTab = document.getElementById('modal-tab-student-guide');
       const semObjEnTab = document.getElementById('modal-tab-sem-obj-en');
       const semObjFrTab = document.getElementById('modal-tab-sem-obj-fr');
       const portfolioSummaryTab = document.getElementById('modal-tab-portfolio-summary');
+      const fePrepTab = document.getElementById('modal-tab-fe-prep');
       const feGuidelinesTab = document.getElementById('modal-tab-fe-guidelines');
       const feObjectivesTab = document.getElementById('modal-tab-fe-objectives');
       const feCriteriaTab = document.getElementById('modal-tab-fe-criteria');
@@ -1346,6 +1347,10 @@
         if (semObjEnTab) semObjEnTab.classList.remove('hidden');
         if (semObjFrTab) semObjFrTab.classList.remove('hidden');
         if (portfolioSummaryTab) portfolioSummaryTab.classList.remove('hidden');
+        if (fePrepTab) {
+          fePrepTab.textContent = `⚡ FE${modalState.modNum || 1} Quick-Prep`;
+          fePrepTab.classList.remove('hidden');
+        }
 
         const isAas = (modalState.program === 'aas' || currentProgram === 'aas');
         tagEl.textContent = isAas ? "LV121E • Technical English" : "LV101E • General English";
@@ -1355,6 +1360,7 @@
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
+        if (fePrepTab) fePrepTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.add('hidden');
@@ -1376,6 +1382,7 @@
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
+        if (fePrepTab) fePrepTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
         if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
@@ -1409,6 +1416,10 @@
         if (feGuidelinesTab) feGuidelinesTab.classList.remove('hidden');
         if (feObjectivesTab) feObjectivesTab.classList.remove('hidden');
         if (feCriteriaTab) feCriteriaTab.classList.remove('hidden');
+        if (fePrepTab) {
+          fePrepTab.textContent = `⚡ FE${modalState.modNum || 1} Quick-Prep`;
+          fePrepTab.classList.remove('hidden');
+        }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session 5`;
         titleEl.textContent = "Session 5 - Formative Evaluation";
@@ -1417,6 +1428,7 @@
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
+        if (fePrepTab) fePrepTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
         if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
         if (adminGroupsTab) adminGroupsTab.classList.add('hidden');
@@ -1437,6 +1449,7 @@
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
         if (semObjFrTab) semObjFrTab.classList.add('hidden');
         if (portfolioSummaryTab) portfolioSummaryTab.classList.add('hidden');
+        if (fePrepTab) fePrepTab.classList.add('hidden');
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
         if (immersionCitiesTab) immersionCitiesTab.classList.add('hidden');
         if (adminGroupsTab) adminGroupsTab.classList.add('hidden');
@@ -1718,6 +1731,8 @@
         renderFeObjectivesTab(modalState.modNum, theme);
       } else if (modalState.tab === 'fe_criteria') {
         renderFeCriteriaTab(modalState.modNum, theme);
+      } else if (modalState.tab === 'fe_prep') {
+        renderFePrepTab(modalState.modNum, theme);
       } else if (modalState.tab === 'objectives') {
         const obj = sessionData.objectives || { items: [], summary: '' };
         bodyEl.innerHTML = `
