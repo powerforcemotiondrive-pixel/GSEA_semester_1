@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "30 Oct 2026",
-  "totalSubmissions": 18,
+  "lastUpdated": "1 Nov 2026",
+  "totalSubmissions": 22,
   "trackBreakdown": {
-    "at": 12,
-    "ag": 6
+    "at": 13,
+    "ag": 9
   },
   "metrics": {
     "avgFeConfidence": "4.1",
-    "avgToeicConfidence": "8.7",
+    "avgToeicConfidence": "8.0",
     "targetFeLevel": "CEFR B2",
     "feWindow": "Week 48 (FE1)"
   },
