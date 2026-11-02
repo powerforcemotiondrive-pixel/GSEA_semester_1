@@ -71,6 +71,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ### H. Student Privacy, Pseudonymization & Offline Moodle Packaging Protocol
 - **Strict Codebase Anonymity**: The Git codebase (`src/`, `admin.html`, `index.html`) must NEVER contain real student names or PII. All student rosters and FE evaluation rotas must use anonymous identifiers (`GRPA001`–`GRPA010`, `GRPB001`–`GRPB009`).
+- **Zero Student PII in AI Chat**: Real student names must NEVER be entered, printed, or output in the AI chat conversation or prompt history. All conversational responses, tables, summaries, logs, and examples must strictly and exclusively use anonymous student identifiers (`GRPA001`–`GRPB009`). Real student identities reside exclusively within local `students.private.json` files on the instructor's local machine for offline client-side package injection.
 - **Private Mapping Security**: Real student names are stored exclusively in the local file `students.private.json`, which is permanently listed in `.gitignore` and must never be committed to Git. A placeholder template `students.private.example.json` is tracked by Git for onboarding.
 - **Dual Packaging Pipelines**:
   1. `npm run package`: Generates `dist/GSEA_Semester_X_SCORM.zip` with 100% anonymous identifiers (safe for Git, GitHub Pages, and AI cloud pair-programming).
