@@ -82,15 +82,15 @@ headers.forEach((h, idx) => {
   const norm = h.toLowerCase().trim();
   if (norm.includes('timestamp')) colMap.timestamp = idx;
   else if (norm.includes('student name')) colMap.studentName = idx;
-  else if (norm.includes('module')) colMap.module = idx;
+  else if (norm.includes('formative') && norm.includes('rate out of 10')) colMap.feRate = idx;
+  else if (norm.includes('toeic') && norm.includes('rate out of 10')) colMap.toeicRate = idx;
+  else if (norm.includes('toeic prep') || norm.includes('done for toeic')) colMap.toeicPrep = idx;
   else if (norm.includes('session number')) colMap.session = idx;
+  else if (norm.includes('module')) colMap.module = idx;
   else if (norm.includes('key vocabulary')) colMap.vocab = idx;
   else if (norm.includes('lesson content review')) colMap.content = idx;
   else if (norm.includes('what i need to work on')) colMap.needs = idx;
-  else if (norm.includes('help me with my formative')) colMap.helpFe = idx;
-  else if (norm.includes('formative evaluation? (rate out of 10)')) colMap.feRate = idx;
-  else if (norm.includes('toeic prep')) colMap.toeicPrep = idx;
-  else if (norm.includes('toeic test? (rate out of 10)')) colMap.toeicRate = idx;
+  else if (norm.includes('help me with my formative') || norm.includes('help with my formative')) colMap.helpFe = idx;
   else if (norm.includes('curriculum track')) colMap.track = idx;
 });
 
