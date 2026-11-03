@@ -16,6 +16,7 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 | **`backup3`** | **Full Semester 3 Backup** | Bundles a dated full-project archive `.zip` into `/Documents/moodle_backups/GSEA_semester_3/` |
 | **`Semester 1 Update`**<br>*(or `Semester 2` / `Semester 3`)* | **Cohort & Roster Reconfiguration**<br>Edits from `PROMO_SETUP.private.md`. | • Updates student rosters & FE oral rotas<br>• Synchronizes `index.html` & `admin.html`<br>• Updates `portfolio.html` student selector<br>• Rebuilds all 4 distribution packages & commits |
 | **`Promo Admin: ...`** | **Inline Cohort Reconfiguration**<br>e.g. `Promo Admin: Promotion GSEA26A, Semester 1, Groups 2, A - 10 B - 9, Teachers AG 2 AT 2` | Same as above, but configured entirely inline in the chat prompt without editing markdown files. |
+| **`Media Update`** | **Weekly Media & Film Strip Update**<br>Attach or paste CSV with 5 links + statement. | • Updates Teachers Portal noticeboard & BBC articles<br>• Updates General Culture & Cinema (3 IMDb films)<br>• Rebuilds SCORM + ISO + DMG packages & commits |
 | **`Commit`**<br>*(or `Commit changes`)* | **Single-Step Remote Sync** | Atomically runs `git commit` AND `git push origin main` together, updating GitHub and GitHub Pages live. |
 
 ---
