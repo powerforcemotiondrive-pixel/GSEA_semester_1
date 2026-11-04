@@ -1,25 +1,90 @@
     function renderRevisionTab(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       const rev = sessionData.revision || { terms: [], summary: '' };
-      const terms = Array.isArray(rev) ? rev : (rev.terms || sessionData.vocabulary || []);
+      const sessionTerms = Array.isArray(rev) ? rev : (rev.terms || sessionData.vocabulary || []);
       const masteredList = getMasteredTerms(modalState.modNum, modalState.sessionNum);
       const isGrid = modalState.flashcardMode === 'grid';
+      modalState.vocabScope = modalState.vocabScope || 'session';
+
+      // Gather module terms across all sessions in this module
+      const modCourse = getActiveModalCourseData();
+      let moduleTerms = [];
+      if (modCourse && modCourse.sessions) {
+        const sKeys = Object.keys(modCourse.sessions).sort((a,b) => parseInt(a) - parseInt(b));
+        sKeys.forEach(sNum => {
+          const s = modCourse.sessions[sNum];
+          const sRev = s.revision || {};
+          const sTerms = Array.isArray(sRev) ? sRev : (sRev.terms || s.vocabulary || []);
+          sTerms.forEach(t => {
+            moduleTerms.push({ ...t, sessionNum: sNum });
+          });
+        });
+      }
+      if (moduleTerms.length === 0) {
+        moduleTerms = sessionTerms.map(t => ({ ...t, sessionNum: modalState.sessionNum }));
+      }
+
+      const activeTerms = (modalState.vocabScope === 'module' && isGrid)
+        ? moduleTerms
+        : sessionTerms.map(t => ({ ...t, sessionNum: modalState.sessionNum }));
+
+      const currentSearch = (modalState.vocabSearch || '').trim().toLowerCase();
 
       let innerContent = '';
       if (isGrid) {
         innerContent = `
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            ${terms.map(t => {
+          <!-- Real-Time Search & Scope Controls -->
+          <div class="p-3 bg-white border border-slate-200 rounded-xl shadow-xs space-y-2.5">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
+              
+              <!-- Search Input -->
+              <div class="relative flex-1">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                </div>
+                <input type="text" id="vocab-search-input" value="${modalState.vocabSearch || ''}" oninput="window.filterVocabCards(this.value)" placeholder="Search ${activeTerms.length} terms or definitions in real-time..." class="w-full pl-9 pr-8 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white text-slate-800 placeholder-slate-400">
+                ${modalState.vocabSearch ? `
+                  <button type="button" onclick="window.clearVocabSearch()" class="absolute inset-y-0 right-0 pr-2.5 flex items-center text-slate-400 hover:text-slate-600 cursor-pointer" title="Clear search">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                  </button>
+                ` : ''}
+              </div>
+
+              <!-- Scope Toggle (This Session vs All Module 1) -->
+              <div class="flex items-center gap-2 shrink-0">
+                <div class="inline-flex rounded-lg border border-slate-200 p-0.5 bg-slate-100 text-[11px] font-bold select-none">
+                  <button type="button" onclick="window.setVocabScope('session')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer ${modalState.vocabScope !== 'module' ? 'bg-white shadow-xs text-blue-600' : 'text-slate-500 hover:text-slate-800'}">This Session (${sessionTerms.length})</button>
+                  <button type="button" onclick="window.setVocabScope('module')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer ${modalState.vocabScope === 'module' ? 'bg-white shadow-xs text-blue-600' : 'text-slate-500 hover:text-slate-800'}">Module 1 (${moduleTerms.length})</button>
+                </div>
+                <span id="vocab-match-count" class="text-[11px] font-mono text-slate-500 hidden sm:inline shrink-0">${activeTerms.length} terms</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Empty Search State -->
+          <div id="vocab-empty-banner" class="hidden p-8 bg-white border border-slate-200 rounded-xl text-center text-slate-500 text-xs space-y-2">
+            <svg class="w-8 h-8 mx-auto text-slate-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path stroke-linecap="round" d="M9 11h4"/></svg>
+            <p>No vocabulary terms found matching your search.</p>
+            <button type="button" onclick="window.clearVocabSearch()" class="px-3 py-1 text-xs font-bold bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-md transition-all cursor-pointer">Clear Search Filter</button>
+          </div>
+
+          <!-- Cards Grid -->
+          <div id="vocab-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            ${activeTerms.map(t => {
               const isMastered = masteredList.includes(t.term);
+              const termLower = (t.term || '').toLowerCase();
+              const defLower = (t.definition || '').toLowerCase();
+              const matches = !currentSearch || termLower.includes(currentSearch) || defLower.includes(currentSearch);
               return `
-                <div class="bg-white border ${isMastered ? 'border-emerald-300 ring-1 ring-emerald-200' : 'border-slate-200'} rounded-xl p-3 flex flex-col justify-between shadow-xs transition-all">
+                <div class="vocab-card bg-white border ${isMastered ? 'border-emerald-300 ring-1 ring-emerald-200' : 'border-slate-200'} rounded-xl p-3 flex flex-col justify-between shadow-xs transition-all ${matches ? '' : 'hidden'}" data-term="${termLower.replace(/"/g, '&quot;')}" data-def="${defLower.replace(/"/g, '&quot;')}">
                   <div>
                     <div class="flex items-center justify-between pb-1.5 border-b border-slate-100 gap-1.5">
                       <div class="flex items-center gap-1.5 truncate">
                         <button type="button" onclick="speakWord('${t.term.replace(/'/g, "\\'")}')" title="Pronounce word" class="hover:scale-110 active:scale-95 transition-all text-slate-400 hover:text-slate-700 cursor-pointer flex items-center justify-center"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg></button>
                         <h4 class="text-xs sm:text-sm font-bold text-slate-800 truncate">${t.term}</h4>
                       </div>
-                      <span class="text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 shadow-xs" style="background-color: ${theme.accent};">${t.num}</span>
+                      <span class="text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 shadow-xs" style="background-color: ${theme.accent};">${modalState.vocabScope === 'module' ? `S${t.sessionNum} • ${t.num}` : t.num}</span>
                     </div>
                     <p class="text-[11px] text-slate-600 leading-relaxed pt-2">${t.definition}</p>
                   </div>
@@ -35,7 +100,8 @@
           </div>
         `;
       } else {
-        // Flashcard Trainer View
+        // Flashcard Trainer View (Always uses current session terms)
+        const terms = sessionTerms;
         if (terms.length === 0) {
           innerContent = `<div class="p-4 bg-white rounded-xl text-center text-slate-500 text-xs">No terms available.</div>`;
         } else {
@@ -107,11 +173,11 @@
         <div class="space-y-4">
           <div class="p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs flex flex-wrap items-center justify-between gap-3">
             <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Curriculum Vocabulary (18 Terms)</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Curriculum Vocabulary (${sessionTerms.length} Terms)</span>
               <div class="flex items-center gap-2 mt-0.5">
-                <span class="text-xs font-semibold text-slate-700">${masteredList.length} of ${terms.length} mastered</span>
+                <span class="text-xs font-semibold text-slate-700">${masteredList.length} of ${sessionTerms.length} mastered</span>
                 <div class="w-24 h-2 bg-slate-200 rounded-full overflow-hidden">
-                  <div class="h-full bg-emerald-500 rounded-full transition-all duration-300" style="width: ${(masteredList.length / (terms.length || 1)) * 100}%"></div>
+                  <div class="h-full bg-emerald-500 rounded-full transition-all duration-300" style="width: ${(masteredList.length / (sessionTerms.length || 1)) * 100}%"></div>
                 </div>
               </div>
             </div>
@@ -127,6 +193,36 @@
         </div>
       `;
     }
+
+    window.filterVocabCards = function(query) {
+      modalState.vocabSearch = query;
+      const q = (query || '').trim().toLowerCase();
+      const cards = document.querySelectorAll('.vocab-card');
+      let matchCount = 0;
+      cards.forEach(card => {
+        const term = card.getAttribute('data-term') || '';
+        const def = card.getAttribute('data-def') || '';
+        const matches = !q || term.includes(q) || def.includes(q);
+        card.classList.toggle('hidden', !matches);
+        if (matches) matchCount++;
+      });
+      const counter = document.getElementById('vocab-match-count');
+      if (counter) counter.textContent = q ? `Showing ${matchCount} of ${cards.length}` : `${cards.length} terms`;
+      const emptyBanner = document.getElementById('vocab-empty-banner');
+      if (emptyBanner) emptyBanner.classList.toggle('hidden', matchCount > 0);
+    };
+
+    window.clearVocabSearch = function() {
+      modalState.vocabSearch = '';
+      const input = document.getElementById('vocab-search-input');
+      if (input) input.value = '';
+      window.filterVocabCards('');
+    };
+
+    window.setVocabScope = function(scope) {
+      modalState.vocabScope = scope;
+      renderModalBody();
+    };
 
     function renderMaterialsTab(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
@@ -363,8 +459,8 @@
           <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
             <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
               <div>
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-500">TOEIC Practice Test • Reading Part 5</span>
-                <div class="text-xs text-slate-500 mt-0.5">Target pace: ~30 seconds per item</div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-500">${(sessionData.materials && sessionData.materials.quizTitle) || 'TOEIC Practice Test • Reading Part 5'}</span>
+                <div class="text-xs text-slate-500 mt-0.5">${(sessionData.materials && sessionData.materials.quizSubtitle) || 'Target pace: ~30 seconds per item'}</div>
               </div>
               <div class="flex items-center gap-2">
                 <span class="text-xs font-bold px-2.5 py-1 rounded-md ${answeredCount > 0 ? 'bg-slate-100 text-slate-700' : 'bg-slate-50 text-slate-400 border border-slate-200'}">
@@ -452,17 +548,17 @@
                 </span>
               </div>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                <strong>Grammar Rationale:</strong> ${currentQ.analysis}
+                <strong>${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Analysis & Safety Rule:' : 'Grammar Rationale:'}</strong> ${currentQ.analysis}
               </p>
               ${currentQ.strategy ? `
                 <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 leading-relaxed">
-                  <strong>📌 TOEIC Strategy Rule:</strong> ${currentQ.strategy}
+                  <strong>📌 ${(sessionData.materials && sessionData.materials.quizTitle) ? 'Operational Rule & Recommendation:' : 'TOEIC Strategy Rule:'}</strong> ${currentQ.strategy}
                 </div>
               ` : ''}
             </div>
           ` : `
             <div class="p-3 bg-slate-100 border border-slate-200 rounded-xl text-center text-xs text-slate-500">
-              Select an option above to check your answer and view grammatical analysis.
+              Select an option above to check your operational decision and view safety analysis.
             </div>
           `}
 

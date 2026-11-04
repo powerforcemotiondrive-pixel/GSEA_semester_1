@@ -25,6 +25,8 @@
 
     function setFlashcardMode(mode) {
       modalState.flashcardMode = mode;
+      modalState.flashcardIdx = 0;
+      modalState.flashcardFlipped = false;
       renderModalBody();
     }
 
