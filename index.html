@@ -1467,8 +1467,9 @@
         });
       });
 
-      // Enhanced keyboard navigation (Deck & Flashcards & Modal Escape)
+      // Enhanced keyboard navigation (Deck, Drawer Tabs, Flashcards & Modal Escape)
       document.addEventListener('keydown', (e) => {
+        // 1. ESCAPE KEY: Close topmost open modal or drawer
         const critModalEl = document.getElementById('criteria-modal');
         const isCritModalOpen = critModalEl && !critModalEl.classList.contains('hidden');
 
@@ -1493,15 +1494,58 @@
           return;
         }
 
-        if (isModalOpen && modalState.tab === 'revision' && modalState.flashcardMode === 'flashcards') {
-          if (e.key === 'ArrowLeft') { prevFlashcard(); return; }
-          if (e.key === 'ArrowRight') { nextFlashcard(); return; }
-          if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); toggleFlashcardFlip(); return; }
+        // 2. FORM INPUT GUARD: Never intercept arrow keys while typing in form fields
+        const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+        if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select' || document.activeElement?.isContentEditable) {
+          return;
         }
 
-        if (!isModalOpen && !isPortModalOpen && !isCritModalOpen) {
-          if (e.key === 'ArrowLeft') stepDeck(-1);
-          if (e.key === 'ArrowRight') stepDeck(1);
+        // 3. FLASHCARD FLIP (Space / Enter inside Flashcards mode)
+        const isFlashcardsMode = isModalOpen && modalState.tab === 'revision' && modalState.flashcardMode === 'flashcards';
+        if (isFlashcardsMode && (e.key === ' ' || e.key === 'Enter')) {
+          e.preventDefault();
+          toggleFlashcardFlip();
+          return;
+        }
+
+        // 4. ARROW KEYS: Left / Right Navigation (Drawer Tabs, Flashcards, or Deck Cards)
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+          // If drawer is open:
+          if (isModalOpen) {
+            // If in active flashcards mode without Shift key, step through flashcards
+            if (isFlashcardsMode && !e.shiftKey) {
+              if (e.key === 'ArrowLeft') { prevFlashcard(); return; }
+              if (e.key === 'ArrowRight') { nextFlashcard(); return; }
+            }
+
+            // Otherwise, navigate between all visible drawer tabs (Lesson Plan, Content, Vocabulary, Materials, Quizzes, etc.)
+            const tabStrip = document.getElementById('modal-tab-strip');
+            if (tabStrip) {
+              const visibleTabs = Array.from(tabStrip.querySelectorAll('.modal-tab-btn:not(.hidden):not([disabled])'));
+              if (visibleTabs.length > 1) {
+                const currentIndex = visibleTabs.findIndex(btn => btn.getAttribute('data-tab') === modalState.tab);
+                if (currentIndex !== -1) {
+                  e.preventDefault();
+                  if (e.key === 'ArrowRight') {
+                    const nextIndex = (currentIndex + 1) % visibleTabs.length;
+                    switchModalTab(visibleTabs[nextIndex].getAttribute('data-tab'));
+                  } else {
+                    const prevIndex = (currentIndex - 1 + visibleTabs.length) % visibleTabs.length;
+                    switchModalTab(visibleTabs[prevIndex].getAttribute('data-tab'));
+                  }
+                  return;
+                }
+              }
+            }
+            return;
+          }
+
+          // If no modal/drawer is open, step through main flight deck cards
+          if (!isModalOpen && !isPortModalOpen && !isCritModalOpen) {
+            e.preventDefault();
+            if (e.key === 'ArrowLeft') stepDeck(-1);
+            if (e.key === 'ArrowRight') stepDeck(1);
+          }
         }
       });
 
@@ -3121,6 +3165,9 @@
         if (isSelected) {
           btn.classList.add('text-white', 'bg-white/25', 'shadow-xs');
           btn.classList.remove('text-white/80', 'hover:bg-white/10');
+          if (btn.scrollIntoView) {
+            btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+          }
         } else {
           btn.classList.remove('text-white', 'bg-white/25', 'shadow-xs');
           btn.classList.add('text-white/80', 'hover:bg-white/10');
