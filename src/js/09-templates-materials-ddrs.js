@@ -1019,3 +1019,300 @@
       `;
     }
 
+
+    // DIGITAL STUDENT NOTEPAD TAB & CLIENT-SIDE EXPORT CONTROLLERS
+    // ============================================================================
+
+    window.handleNotepadInput = function(val) {
+      const progKey = modalState.program || currentProgram || "at";
+      const storageKey = "gsea_" + progKey + "_m" + modalState.modNum + "_s" + modalState.sessionNum + "_general_notes";
+      try {
+        localStorage.setItem(storageKey, val);
+      } catch (e) {
+        window.__GSEA_NOTES_CACHE = window.__GSEA_NOTES_CACHE || {};
+        window.__GSEA_NOTES_CACHE[storageKey] = val;
+      }
+      window.updateNotepadStats(val);
+      const indicator = document.getElementById("notepad-save-indicator");
+      if (indicator) {
+        indicator.innerHTML = `<svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span class="text-emerald-600">Saved locally</span>`;
+      }
+    };
+
+    window.updateNotepadStats = function(text) {
+      const statsEl = document.getElementById("notepad-stats");
+      if (!statsEl) return;
+      const clean = (text || "").trim();
+      const words = clean ? clean.split(/\s+/).length : 0;
+      const chars = (text || "").length;
+      statsEl.textContent = words + " words • " + chars + " characters";
+    };
+
+    window.insertNotepadHeader = function(headerText) {
+      const ta = document.getElementById("session-notepad-textarea");
+      if (!ta) return;
+      const divider = "\n\n--- [ " + headerText + " ] ---\n• ";
+      const start = ta.selectionStart || ta.value.length;
+      const end = ta.selectionEnd || ta.value.length;
+      ta.value = ta.value.substring(0, start) + divider + ta.value.substring(end);
+      ta.focus();
+      ta.selectionStart = ta.selectionEnd = start + divider.length;
+      window.handleNotepadInput(ta.value);
+    };
+
+    window.importWorksheetNotesToNotepad = function() {
+      const sNum = modalState.sessionNum;
+      const rpNote = window.getLessonNote ? window.getLessonNote(sNum, "roleplay") : "";
+      const sfNote = window.getLessonNote ? window.getLessonNote(sNum, "safety") : "";
+      if (!rpNote.trim() && !sfNote.trim()) {
+        alert("No in-worksheet activity notes recorded for this session yet.");
+        return;
+      }
+      let appendText = "\n\n=== [ Imported from Worksheet Activities ] ===";
+      if (rpNote.trim()) appendText += "\n• Negotiation / Spoken Task:\n" + rpNote.trim();
+      if (sfNote.trim()) appendText += "\n• Safety Decision / Fix-It Plan:\n" + sfNote.trim();
+
+      const ta = document.getElementById("session-notepad-textarea");
+      if (ta) {
+        ta.value = (ta.value ? ta.value + "\n" : "") + appendText;
+        window.handleNotepadInput(ta.value);
+        ta.scrollTop = ta.scrollHeight;
+      }
+    };
+
+    window.copyNotepadNotes = function() {
+      const ta = document.getElementById("session-notepad-textarea");
+      if (!ta || !ta.value.trim()) {
+        alert("Your notepad is currently empty.");
+        return;
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(ta.value).then(() => {
+          const btnText = document.getElementById("copy-btn-text");
+          if (btnText) {
+            btnText.textContent = "✓ Copied!";
+            setTimeout(() => { btnText.textContent = "📋 Copy All"; }, 2000);
+          }
+        }).catch(() => {
+          ta.select();
+          document.execCommand("copy");
+        });
+      } else {
+        ta.select();
+        document.execCommand("copy");
+      }
+    };
+
+    window.downloadNotepadNotes = function() {
+      const ta = document.getElementById("session-notepad-textarea");
+      const text = ta ? ta.value : "";
+      if (!text.trim()) {
+        alert("Your notepad is currently empty.");
+        return;
+      }
+      const progKey = (modalState.program || currentProgram || "at").toUpperCase();
+      const modCourse = getActiveModalCourseData();
+      const sessionData = (modCourse.sessions && modCourse.sessions[modalState.sessionNum]) || {};
+      const sessionTitle = (sessionData.objectives && sessionData.objectives.title) || ("Session " + modalState.sessionNum);
+      const timestamp = new Date().toLocaleString();
+
+      const fileContent = "=======================================================\n" +
+        "ENAC GSEA • " + progKey + " MODULE " + modalState.modNum + " • SESSION " + modalState.sessionNum + "\n" +
+        sessionTitle + "\n" +
+        "Date: " + timestamp + "\n" +
+        "=======================================================\n\n" +
+        text + "\n\n" +
+        "=======================================================\n" +
+        "End of Student Notes • Saved from ENAC Learning Deck\n";
+
+      const blob = new Blob([fileContent], { type: "text/plain;charset=utf-8" });
+      const filename = "GSEA_" + progKey + "_M" + modalState.modNum + "_Session" + modalState.sessionNum + "_Notes.txt";
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+    };
+
+    window.printNotepadNotes = function() {
+      const ta = document.getElementById("session-notepad-textarea");
+      const text = ta ? ta.value : "";
+      if (!text.trim()) {
+        alert("Your notepad is currently empty.");
+        return;
+      }
+      const progKey = (modalState.program || currentProgram || "at").toUpperCase();
+      const modCourse = getActiveModalCourseData();
+      const sessionData = (modCourse.sessions && modCourse.sessions[modalState.sessionNum]) || {};
+      const sessionTitle = (sessionData.objectives && sessionData.objectives.title) || ("Session " + modalState.sessionNum);
+      const timestamp = new Date().toLocaleDateString();
+
+      const printWindow = window.open("", "_blank", "width=800,height=900");
+      if (!printWindow) {
+        window.print();
+        return;
+      }
+      printWindow.document.write(
+        "<!DOCTYPE html><html><head><title>Notes - " + sessionTitle + "</title>" +
+        "<style>" +
+        "body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 40px; color: #1e293b; line-height: 1.6; }" +
+        ".header { border-bottom: 2px solid #0284c7; padding-bottom: 12px; margin-bottom: 24px; }" +
+        ".badge { display: inline-block; background: #0284c7; color: #fff; font-size: 11px; font-weight: bold; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; margin-bottom: 8px; }" +
+        "h1 { font-size: 20px; margin: 0 0 6px 0; color: #0f172a; }" +
+        ".meta { font-size: 12px; color: #64748b; font-family: monospace; }" +
+        ".notes-content { font-size: 14px; white-space: pre-wrap; background: #f8fafc; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px; font-family: monospace; }" +
+        ".footer { margin-top: 30px; font-size: 11px; color: #94a3b8; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 12px; }" +
+        "</style></head><body>" +
+        "<div class=\"header\">" +
+        "<div class=\"badge\">ENAC GSEA • " + progKey + " Module " + modalState.modNum + " • Session " + modalState.sessionNum + "</div>" +
+        "<h1>" + sessionTitle + "</h1>" +
+        "<div class=\"meta\">Printed: " + timestamp + " • Student Study Notes</div>" +
+        "</div>" +
+        "<div class=\"notes-content\">" + text.replace(/</g, "&lt;").replace(/>/g, "&gt;") + "</div>" +
+        "<div class=\"footer\">ENAC GSEA English Learning Portal • Student Digital Notes</div>" +
+        "<script>window.onload = function() { window.print(); }<\/script></body></html>"
+      );
+      printWindow.document.close();
+    };
+
+    window.clearNotepadNotes = function() {
+      if (!confirm("Are you sure you want to clear your notes for this session? This cannot be undone.")) return;
+      const progKey = modalState.program || currentProgram || "at";
+      const storageKey = "gsea_" + progKey + "_m" + modalState.modNum + "_s" + modalState.sessionNum + "_general_notes";
+      try {
+        localStorage.removeItem(storageKey);
+      } catch (e) {}
+      window.__GSEA_NOTES_CACHE = window.__GSEA_NOTES_CACHE || {};
+      window.__GSEA_NOTES_CACHE[storageKey] = "";
+      const ta = document.getElementById("session-notepad-textarea");
+      if (ta) ta.value = "";
+      window.updateNotepadStats("");
+      const indicator = document.getElementById("notepad-save-indicator");
+      if (indicator) {
+        indicator.innerHTML = `<span class="text-slate-400">Notes cleared</span>`;
+      }
+    };
+
+    function renderNotepadTab(sessionData, theme) {
+      const bodyEl = document.getElementById("modal-body");
+      if (!bodyEl) return;
+      const progKey = modalState.program || currentProgram || "at";
+      const storageKey = "gsea_" + progKey + "_m" + modalState.modNum + "_s" + modalState.sessionNum + "_general_notes";
+      let savedNotes = "";
+      try {
+        savedNotes = localStorage.getItem(storageKey) || (window.__GSEA_NOTES_CACHE && window.__GSEA_NOTES_CACHE[storageKey]) || "";
+      } catch (e) {
+        savedNotes = (window.__GSEA_NOTES_CACHE && window.__GSEA_NOTES_CACHE[storageKey]) || "";
+      }
+
+      const sessionTitle = (sessionData.objectives && sessionData.objectives.title) || ("Session " + modalState.sessionNum);
+      const progConfig = (typeof PROGRAMS_CONFIG !== "undefined" && (PROGRAMS_CONFIG[progKey] || PROGRAMS_CONFIG.at)) || { name: "Technical English", code: "AT" };
+
+      // Check if this session has any recorded worksheet notes
+      const sNum = modalState.sessionNum;
+      const hasWorksheetNotes = Boolean(
+        window.getLessonNote && (window.getLessonNote(sNum, "roleplay") || window.getLessonNote(sNum, "safety"))
+      );
+
+      bodyEl.innerHTML = `
+        <div class="space-y-4 max-w-4xl mx-auto">
+          <!-- Header Card with Action Toolbar -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-100 pb-3 mb-3">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[10px] font-bold text-white uppercase tracking-wider shadow-xs" style="background-color: ${theme.primary};">
+                    ${progConfig.code || "AT"} • Module ${modalState.modNum} • Session ${modalState.sessionNum}
+                  </span>
+                  <span class="text-xs font-bold text-slate-400">Digital Notepad</span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-slate-800">${sessionTitle}</h3>
+              </div>
+
+              <!-- Quick Action Toolbar -->
+              <div class="flex items-center flex-wrap gap-1.5 shrink-0">
+                <button type="button" onclick="window.copyNotepadNotes()" id="btn-copy-notepad" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
+                  <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                  <span id="copy-btn-text">📋 Copy All</span>
+                </button>
+                <button type="button" onclick="window.downloadNotepadNotes()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
+                  <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                  <span>💾 Download (.txt)</span>
+                </button>
+                <button type="button" onclick="window.printNotepadNotes()" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
+                  <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                  <span>🖨️ Print / PDF</span>
+                </button>
+                <button type="button" onclick="window.clearNotepadNotes()" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-600 text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs" title="Clear notes for this session">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                  <span>Clear</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Prominent Storage Notice Callout -->
+            <div class="p-3.5 bg-amber-50 border border-amber-200/90 rounded-xl text-amber-950 text-xs leading-relaxed flex items-start gap-3">
+              <span class="text-base shrink-0 mt-0.5">⚠️</span>
+              <div class="space-y-1">
+                <div class="font-bold uppercase tracking-wider text-[11px] text-amber-800">Local Browser Storage Notice &amp; Data Safety</div>
+                <p>
+                  Your notes are saved <strong>locally inside this web browser</strong> (<code class="bg-amber-100/80 px-1 py-0.5 rounded font-mono text-[10px]">HTML5 localStorage</code>). Your text is private to you and is never sent to the school server.
+                </p>
+                <p class="text-amber-900/90 text-[11px]">
+                  <strong>Risk of Data Loss:</strong> If you clear your browser cookies, browsing data, or cache, or if you use <strong>Private / Incognito mode</strong>, your notes will be permanently erased.
+                </p>
+                <p class="text-amber-900/90 text-[11px]">
+                  <strong>School / Shared Computers:</strong> On shared computers in ENAC classrooms or language labs, always click <strong>"💾 Download (.txt)"</strong> or <strong>"📋 Copy All"</strong> before leaving class to save a personal copy to your USB drive or cloud storage!
+                </p>
+              </div>
+            </div>
+
+            <!-- Quick Section Heading Inserters -->
+            <div class="mt-3 pt-3 border-t border-slate-100 flex items-center flex-wrap gap-1.5 text-xs">
+              <span class="text-[11px] font-bold text-slate-500 mr-1">Quick Add:</span>
+              <button type="button" onclick="window.insertNotepadHeader('Key Vocabulary &amp; Definitions')" class="px-2 py-0.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-md text-[11px] font-semibold transition-all cursor-pointer">+ Vocabulary</button>
+              <button type="button" onclick="window.insertNotepadHeader('Useful Phrasing &amp; Sentence Patterns')" class="px-2 py-0.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-md text-[11px] font-semibold transition-all cursor-pointer">+ Phrasing</button>
+              <button type="button" onclick="window.insertNotepadHeader('Role-Play &amp; Spoken Practice Notes')" class="px-2 py-0.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-md text-[11px] font-semibold transition-all cursor-pointer">+ Spoken Notes</button>
+              <button type="button" onclick="window.insertNotepadHeader('Questions for Teacher / FE Prep')" class="px-2 py-0.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-md text-[11px] font-semibold transition-all cursor-pointer">+ FE Questions</button>
+              ${hasWorksheetNotes ? `
+                <button type="button" onclick="window.importWorksheetNotesToNotepad()" class="px-2 py-0.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 rounded-md text-[11px] font-bold transition-all cursor-pointer flex items-center gap-1">
+                  <span>📥 Import Worksheet Notes</span>
+                </button>
+              ` : ""}
+            </div>
+          </div>
+
+          <!-- Notepad Typing Surface -->
+          <div class="relative bg-white border border-slate-200 rounded-xl shadow-xs overflow-hidden focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all">
+            <textarea id="session-notepad-textarea"
+              oninput="window.handleNotepadInput(this.value)"
+              rows="16"
+              class="w-full p-4 text-xs sm:text-sm font-sans text-slate-800 leading-relaxed bg-transparent resize-y outline-none placeholder-slate-400 select-text"
+              placeholder="Start typing your notes for this session here...&#10;&#10;Suggestions:&#10;• Write down useful phrases heard during pair discussions&#10;• Record new vocabulary with definitions and pronunciation notes&#10;• Draft answers for the spoken speaking tasks and scenarios&#10;• List questions to ask during the tutorial or Formative Evaluation"
+            >${savedNotes}</textarea>
+
+            <!-- Bottom Status Bar -->
+            <div class="flex items-center justify-between px-4 py-2 bg-slate-50 border-t border-slate-100 text-[11px] font-mono text-slate-500 select-none">
+              <div id="notepad-save-indicator" class="flex items-center gap-1.5 text-emerald-600 font-bold">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Saved locally</span>
+              </div>
+              <div id="notepad-stats" class="text-slate-500">
+                0 words • 0 characters
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Update initial stats
+      window.updateNotepadStats(savedNotes);
+
+      // Prevent deck keyboard shortcuts while typing inside textarea
+      const ta = document.getElementById("session-notepad-textarea");
+      if (ta) {
+        ta.addEventListener("keydown", (e) => e.stopPropagation());
+      }
+    }
