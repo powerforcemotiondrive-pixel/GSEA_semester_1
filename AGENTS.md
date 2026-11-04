@@ -122,8 +122,13 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **1:1 Strict Title Parity**: The lesson titles displayed in the weekly course calendar (`ADMIN_CALENDAR_SCHEDULES` in both `src/js/11-admin-hub.js` and `admin.html`) must **strictly mirror and maintain 1:1 parity** with the session titles and class titles in each deck card (`src/js/02-config.js`, `data/course-data.js`, and the digital worksheets).
 - **Mandatory Dual-File Synchronization**: Whenever a session title is modified, refined, or retitled in any deck card, the corresponding calendar entries in both `src/js/11-admin-hub.js` and `admin.html` **must** be updated concurrently to match exactly.
 
-### M. `Semester X Portfolio Summary` Automated Cohort Insights Protocol
-- **Trigger**: Whenever the user sends `Semester 1 Portfolio Summary` (with a CSV or spreadsheet attached or pasted), the assistant:
+### M. `Semester X Portfolio Summary` & `Semester X Dual Portfolio Update` Automated Cohort Insights Protocol
+- **Dual-Portal Update Trigger (`Semester 1 Dual Portfolio Update`)**: Whenever the user sends `Semester 1 Dual Portfolio Update` (or `Semester 1 Full Portfolio Update` / `Dual Portfolio Update S1`, with a CSV attached or pasted), the assistant:
+  1. Writes the raw CSV into BOTH `GSEA_semester_1/data/portfolio-latest.csv` AND `GSEA_teachers/data/portfolio-s1-latest.csv` (both strictly git-ignored).
+  2. In `GSEA_semester_1`: Runs `npm run portfolio:summary` (`node scripts/update-portfolio-summary.js && npm run package && npm run package:moodle`), updating Card 08/09, rebuilding all 4 packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`), and executing `git commit && git push origin main`.
+  3. In `GSEA_teachers`: Runs `npm run portfolio:s1` (`node scripts/update-portfolio.js 1 && npm run package`), updating `index.html` reflection matrix, rebuilding all 3 packages (`SCORM.zip`, `.iso`, `.dmg`), and executing `git commit && git push origin main`.
+  4. Confirms both repositories updated and synchronized live to GitHub in a single consolidated report.
+- **Single Deck Trigger (`Semester 1 Portfolio Summary`)**: Whenever the user sends `Semester 1 Portfolio Summary` (with a CSV or spreadsheet attached or pasted), the assistant:
   1. Writes the raw CSV into `data/portfolio-latest.csv` (which is permanently listed in `.gitignore` to protect student security codes and PII).
   2. Runs `npm run portfolio:summary` (`node scripts/update-portfolio-summary.js && npm run package && npm run package:moodle`), which extracts top keywords, grammar pitfalls, student reflections, and FE readiness scores, updates `data/portfolio-summary-s1.json`, synchronizes `PORTFOLIO_SUMMARY_DATA` in `src/js/11-admin-hub.js`, and rebuilds all packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`).
   3. Automatically executes `git commit` AND `git push origin main` in the same step.

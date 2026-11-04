@@ -10,6 +10,7 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 
 | Command | Action Performed | What it Updates |
 | :--- | :--- | :--- |
+| **`Semester 1 Dual Portfolio Update`**<br>*(or `Semester 1 Full Portfolio Update`)* | **Unified Dual-Portal Portfolio Update**<br>Attach or paste the latest Google Sheet export CSV. | • Ingests CSV once to update **both** Student Deck & Teachers Hub<br>• Updates Student deck Portfolio Summary tab (Card 08/09)<br>• Updates Teachers Hub Portfolio Analytics & Reflection Matrix<br>• Rebuilds all distribution packages across both repositories<br>• Atomically commits & pushes both repositories to GitHub |
 | **`Semester 1 Portfolio Summary`**<br>*(or `Semester 2` / `Semester 3`)* | **Cohort Portfolio Pulse Update**<br>Attach or paste the latest Google Sheet export CSV. | • Analyzes student reflections & keywords<br>• Extracts top grammar traps & FE readiness score<br>• Updates the "Portfolio Summary" tab in Card 08/09<br>• Rebuilds SCORM + ISO + DMG and pushes to GitHub |
 | **`backup1`** | **Full Semester 1 Backup** | Bundles a dated full-project archive `.zip` into `/Documents/moodle_backups/GSEA_semester_1/` |
 | **`backup2`** | **Full Semester 2 Backup** | Bundles a dated full-project archive `.zip` into `/Documents/moodle_backups/GSEA_semester_2/` |
@@ -23,7 +24,24 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 
 ## 2. Detailed Workflows & Guides
 
-### A. Updating the Learning Portfolio Summary Tab
+### A. Unified Dual-Portal Portfolio Update (`Semester 1 Dual Portfolio Update`)
+**When to use**: Whenever you download the latest Google Sheet responses containing student portfolio submissions and want to update **both** the student deck (`GSEA_semester_1`) and the teachers hub (`GSEA_teachers`) in a single step.
+
+1. Open your live Google Sheet collecting student portfolio responses.
+2. Click **File → Download → Comma Separated Values (.csv)**.
+3. In chat, attach the CSV file (or paste its text) and send:
+   ```text
+   Semester 1 Dual Portfolio Update
+   ```
+4. **What happens automatically under the hood**:
+   - Saves CSV to `GSEA_semester_1/data/portfolio-latest.csv` AND `GSEA_teachers/data/portfolio-s1-latest.csv` (both git-ignored).
+   - **Student Deck (`GSEA_semester_1`)**: Runs `npm run portfolio:summary`, compiles buzzwords & grammar traps into Card 08/09, rebuilds all 4 packages (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`), and commits & pushes to GitHub.
+   - **Teachers Hub (`GSEA_teachers`)**: Runs `npm run portfolio:s1`, updates `index.html` student reflection matrix, rebuilds all 3 packages (`SCORM.zip`, `.iso`, `.dmg`), and commits & pushes to GitHub.
+   - Outputs a unified summary report with student submission totals, track breakdown (AT vs AG), and average FE scores.
+
+---
+
+### B. Updating the Learning Portfolio Summary Tab (Single Repo Only)
 **When to use**: Every few weeks, after completing a module, or right before Formative Evaluations (FE1, FE2, FE3).
 
 1. Open your live Google Sheet collecting student portfolio responses.
