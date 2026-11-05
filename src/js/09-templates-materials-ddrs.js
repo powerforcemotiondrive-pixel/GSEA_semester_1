@@ -613,7 +613,7 @@
               </button>
             </div>
 
-            <!-- 3-Pillar Summary Grid -->
+            <!-- 3-Part Summary Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
               <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
                 <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Total Examination</span>

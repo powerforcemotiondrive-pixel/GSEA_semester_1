@@ -1,6 +1,6 @@
     /* ==========================================================================
        GENERAL ENGLISH (AG) • MODULE 3 LESSON CONTENT TEMPLATES (SESSIONS 1 TO 4)
-       - 4-Pillar Pedagogical Architecture (Vocab, Grammar, Scenario, Debrief)
+       - 4-Part Pedagogical Architecture (Vocab, Grammar, Scenario, Debrief)
        - Interactive Check-Answer & Show-Solution Toggles
        - Step-by-Step Numbered Student Instructions & Teacher Notes
        ========================================================================== */
@@ -48,7 +48,7 @@
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Format:</span>
-                <span class="bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">4-Pillar Audit Workshop</span>
+                <span class="bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">4-Part Audit Workshop</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
@@ -57,13 +57,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Machine Learning & Operational Automation Lexis -->
+          <!-- PART 1: Machine Learning & Operational Automation Lexis -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-blue-50 text-blue-700 font-black text-xs flex items-center justify-center border border-blue-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Machine Learning & Operational Automation Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Machine Learning & Operational Automation Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 core terms for AI systems, automated dispatch, and workforce interaction.</p>
                 </div>
               </div>
@@ -130,13 +130,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Active vs. Passive Voice in Tech -->
+          <!-- PART 2: Grammar Clinic • Active vs. Passive Voice in Tech -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Active vs. Passive Voice in Tech</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Active vs. Passive Voice in Tech</h4>
                   <p class="text-xs text-slate-500">Master the functional difference between automated process reporting (Passive) and human executive accountability (Active).</p>
                 </div>
               </div>
@@ -187,13 +187,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Automation Vulnerability Audit & Town Hall -->
+          <!-- PART 3: Automation Vulnerability Audit & Town Hall -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Automation Vulnerability Audit & Town Hall Simulation</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Automation Vulnerability Audit & Town Hall Simulation</h4>
                   <p class="text-xs text-slate-500">Audit 6 operational workflows, resolve dynamic crisis injects, and defend policies at a spoken town hall.</p>
                 </div>
               </div>
@@ -287,17 +287,17 @@
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
-                <p>• <strong>Passive Drill Timing:</strong> Spend 15 minutes max on Pillar 2. Emphasize that in safety reports, passive voice avoids personal blame ("The file was corrupted") while active voice establishes legal command ("The Captain declared").</p>
+                <p>• <strong>Passive Drill Timing:</strong> Spend 15 minutes max on Part 2. Emphasize that in safety reports, passive voice avoids personal blame ("The file was corrupted") while active voice establishes legal command ("The Captain declared").</p>
                 <p>• <strong>Crisis Inject:</strong> Activate Inject #2 (Algorithmic Discrimination) at T+20m of simulation to ignite debate between the AI Architect and Union Rep.</p>
                 <p>• <strong>Debrief Check:</strong> Ensure every group formulates at least 3 concrete operational override rules before the class ends.</p>
               </div>
             </details>
           </div>
 
-          <!-- PILLAR 4: Phrasing Review & FE3 Alignment -->
+          <!-- PART 4: Phrasing Review & FE3 Alignment -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Phrasing Review & FE3 Alignment:</span>
+              <span class="font-bold text-slate-800">Part 4: Phrasing Review & FE3 Alignment:</span>
               <span class="ml-1">Conduct peer evaluations on passive voice precision and executive town hall delivery. Calibrate presentation plans against the Formative Evaluation 3 (FE3) scoring rubric.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 1 Complete • 120 mins</span>
@@ -350,7 +350,7 @@
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Format:</span>
-                <span class="bg-teal-100 text-teal-800 font-bold px-2 py-0.5 rounded">4-Pillar Design Sprint</span>
+                <span class="bg-teal-100 text-teal-800 font-bold px-2 py-0.5 rounded">4-Part Design Sprint</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
@@ -359,13 +359,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Clean Propulsion & Multi-Modal Transit Lexis -->
+          <!-- PART 1: Clean Propulsion & Multi-Modal Transit Lexis -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-teal-50 text-teal-700 font-black text-xs flex items-center justify-center border border-teal-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Clean Propulsion & Multi-Modal Transit Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Clean Propulsion & Multi-Modal Transit Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 core engineering terms comparing alternative aviation propulsion with high-speed rail.</p>
                 </div>
               </div>
@@ -432,13 +432,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Future Forms & Predictive Certainty -->
+          <!-- PART 2: Grammar Clinic • Future Forms & Predictive Certainty -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Future Forms & Predictive Certainty</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Future Forms & Predictive Certainty</h4>
                   <p class="text-xs text-slate-500">Master calibrated expressions of technical confidence ('is bound to', 'is slated to', 'is unlikely to').</p>
                 </div>
               </div>
@@ -493,13 +493,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Comparative Showcase & €100M Clean Corridor Sprint -->
+          <!-- PART 3: Comparative Showcase & €100M Clean Corridor Sprint -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Comparative Showcase & €100M Clean Corridor Sprint</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Comparative Showcase & €100M Clean Corridor Sprint</h4>
                   <p class="text-xs text-slate-500">Contrast two future transit paradigms, allocate €100M in public infrastructure, and pitch to the Council.</p>
                 </div>
               </div>
@@ -616,10 +616,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: Council Vote & Feasibility Review -->
+          <!-- PART 4: Council Vote & Feasibility Review -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Council Vote & Feasibility Review:</span>
+              <span class="font-bold text-slate-800">Part 4: Council Vote & Feasibility Review:</span>
               <span class="ml-1">Class votes on the most resilient regional corridor blueprint based on CO₂ reduction and rural equity. Calibrate presentation plans against the FE3 rubric.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 2 Complete • 120 mins</span>
@@ -670,7 +670,7 @@
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Format:</span>
-                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">4-Pillar Regulatory Inquiry</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">4-Part Regulatory Inquiry</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
@@ -679,13 +679,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: AI Ethics & Regulatory Governance Lexis -->
+          <!-- PART 1: AI Ethics & Regulatory Governance Lexis -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: AI Ethics & Regulatory Governance Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: AI Ethics & Regulatory Governance Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 essential terms under the European Union AI Act legal framework.</p>
                 </div>
               </div>
@@ -752,13 +752,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Complex Conjunctions & Concessions -->
+          <!-- PART 2: Grammar Clinic • Complex Conjunctions & Concessions -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Complex Conjunctions & Concessions</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Complex Conjunctions & Concessions</h4>
                   <p class="text-xs text-slate-500">Master formal concessive debate syntax ('notwithstanding', 'inasmuch as', 'whereas', 'even if').</p>
                 </div>
               </div>
@@ -813,13 +813,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Project Argus-Eye Public Inquiry Hearing -->
+          <!-- PART 3: Project Argus-Eye Public Inquiry Hearing -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: The Project Argus-Eye Public Inquiry Hearing</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: The Project Argus-Eye Public Inquiry Hearing</h4>
                   <p class="text-xs text-slate-500">Examine sworn depositions under EU AI Act standards, execute cross-examinations, and deliver the tribunal verdict.</p>
                 </div>
               </div>
@@ -882,10 +882,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: Regulatory Debrief & Review -->
+          <!-- PART 4: Regulatory Debrief & Review -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Regulatory Debrief & Argument Evaluation:</span>
+              <span class="font-bold text-slate-800">Part 4: Regulatory Debrief & Argument Evaluation:</span>
               <span class="ml-1">Evaluate your opponent on (1) Legal precision, (2) Effective deployment of concessive clauses, and (3) Professional courtroom composure. Calibrate prep for FE3.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 3 Complete • 120 mins</span>
@@ -935,7 +935,7 @@
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Format:</span>
-                <span class="bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded">4-Pillar Stations & Treaty</span>
+                <span class="bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded">4-Part Stations & Treaty</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
@@ -944,13 +944,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Biometric & Cryptographic Security Lexis -->
+          <!-- PART 1: Biometric & Cryptographic Security Lexis -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-purple-50 text-purple-700 font-black text-xs flex items-center justify-center border border-purple-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Biometric & Cryptographic Security Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Biometric & Cryptographic Security Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 specialized terms covering frictionless travel and cryptographic data sovereignty.</p>
                 </div>
               </div>
@@ -1017,13 +1017,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Relative Clauses & Precision -->
+          <!-- PART 2: Grammar Clinic • Relative Clauses & Precision -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Relative Clauses & Technical Precision</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Relative Clauses & Technical Precision</h4>
                   <p class="text-xs text-slate-500">Master defining vs. non-defining relative clauses with relative pronouns ('which', 'who', 'whose', 'wherein').</p>
                 </div>
               </div>
@@ -1075,13 +1075,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Interactive Stations & Biometric Charter Tournament -->
+          <!-- PART 3: Interactive Stations & Biometric Charter Tournament -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Interactive Stations & Passenger Charter Tournament</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Interactive Stations & Passenger Charter Tournament</h4>
                   <p class="text-xs text-slate-500">Rotate through 3 contactless technology stations, negotiate a 5-point Passenger Charter, and ratify the treaty.</p>
                 </div>
               </div>
@@ -1159,10 +1159,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: FE3 Final Presentation Rehearsal & Sign-Off -->
+          <!-- PART 4: FE3 Final Presentation Rehearsal & Sign-Off -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Formative Evaluation 3 (FE3) Oral Rehearsal:</span>
+              <span class="font-bold text-slate-800">Part 4: Formative Evaluation 3 (FE3) Oral Rehearsal:</span>
               <span class="ml-1">Deliver a 2-minute timed partner pitch dry run against the FE3 rubric. Confirm slide deck outlines and secure final teacher sign-off for the Session 5 evaluation.</span>
             </div>
             <span class="text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-md shrink-0">✓ Ready for FE3 in Session 5</span>

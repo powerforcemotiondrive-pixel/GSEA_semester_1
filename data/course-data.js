@@ -2799,7 +2799,7 @@
               "tag": "DDRS",
               "videoId": "HVaXhEw0dJQ",
               "embedUrl": "https://www.youtube-nocookie.com/embed/HVaXhEw0dJQ",
-              "caption": "Focus: Understanding ecotourism core pillars, environmental audits, and distinguishing genuine sustainability from greenwashing."
+              "caption": "Focus: Understanding ecotourism core principles, environmental audits, and distinguishing genuine sustainability from greenwashing."
             },
             {
               "title": "Video 2: Community Tourism",
@@ -3227,7 +3227,7 @@
               "Step 2 (Blueprint Formulation - 15 mins): Allocate your €2,500,000 endowment across the 4 checklist domains: architecture (materials), clean energy/water, carrying capacity limits, and local community benefit.",
               "Step 3 (Pitch Preparation - 10 mins): Formulate a 2-minute project pitch slide or speaking outline. Designate speaking roles for the upcoming Green Investor Forum."
             ],
-            "deliverable": "A complete 4-pillar Eco-Resort Blueprint specifying site choice, budget allocation, carrying capacity limit, and community revenue sharing model.",
+            "deliverable": "A complete 4-part Eco-Resort Blueprint specifying site choice, budget allocation, carrying capacity limit, and community revenue sharing model.",
             "teacherNotes": "Circulate and challenge budget allocations. Ensure teams do not spend 80% on luxury amenities with only token amounts for renewable power or community employment.",
             "ecosystems": [
               {
@@ -10449,7 +10449,7 @@
                 "tag": "DDRS",
                 "videoId": "HVaXhEw0dJQ",
                 "embedUrl": "https://www.youtube-nocookie.com/embed/HVaXhEw0dJQ",
-                "caption": "Focus: Understanding ecotourism core pillars, environmental audits, and distinguishing genuine sustainability from greenwashing."
+                "caption": "Focus: Understanding ecotourism core principles, environmental audits, and distinguishing genuine sustainability from greenwashing."
               },
               {
                 "title": "Video 2: Community Tourism",
@@ -10877,7 +10877,7 @@
                 "Step 2 (Blueprint Formulation - 15 mins): Allocate your €2,500,000 endowment across the 4 checklist domains: architecture (materials), clean energy/water, carrying capacity limits, and local community benefit.",
                 "Step 3 (Pitch Preparation - 10 mins): Formulate a 2-minute project pitch slide or speaking outline. Designate speaking roles for the upcoming Green Investor Forum."
               ],
-              "deliverable": "A complete 4-pillar Eco-Resort Blueprint specifying site choice, budget allocation, carrying capacity limit, and community revenue sharing model.",
+              "deliverable": "A complete 4-part Eco-Resort Blueprint specifying site choice, budget allocation, carrying capacity limit, and community revenue sharing model.",
               "teacherNotes": "Circulate and challenge budget allocations. Ensure teams do not spend 80% on luxury amenities with only token amounts for renewable power or community employment.",
               "ecosystems": [
                 {
@@ -11121,7 +11121,7 @@
               },
               {
                 "num": 3,
-                "title": "Lead a Civic Emergency Taskforce Simulation (Pillar 3)",
+                "title": "Lead a Civic Emergency Taskforce Simulation (Part 3)",
                 "description": "Adopt departmental roles in pairs to negotiate an Urgency-Impact Matrix and respond to live crisis injects."
               },
               {
@@ -11136,22 +11136,22 @@
             "summary": "A operational syllabus combining disaster lexis drills, conditional grammar clinics, a 4-part emergency taskforce simulation, live spoken press conference, and FE2 alignment.",
             "items": [
               {
-                "title": "Pillar 1: Severe Weather & Disaster Vulnerability Lexis",
+                "title": "Part 1: Severe Weather & Disaster Vulnerability Lexis",
                 "description": "Analyze 8 core technical terms, examine real-world emergency bulletins, and complete the interactive vocabulary matching drill.",
                 "part": "Part 1"
               },
               {
-                "title": "Pillar 2: Grammar Clinic • Conditionals for Emergency Risk",
+                "title": "Part 2: Grammar Clinic • Conditionals for Emergency Risk",
                 "description": "Master 1st and 2nd conditionals in crisis management; complete 4 interactive risk assessment sentence transformations.",
                 "part": "Part 2"
               },
               {
-                "title": "Pillar 3: Emergency Taskforce Simulation & Press Conference",
+                "title": "Part 3: Emergency Taskforce Simulation & Press Conference",
                 "description": "Step-by-step roleplay: rank 6 acute threats, resolve dynamic crisis injects, and deliver a live spoken press conference under media scrutiny.",
                 "part": "Part 3"
               },
               {
-                "title": "Pillar 4: Pronunciation Clinic, Peer Review & FE2 Prep",
+                "title": "Part 4: Pronunciation Clinic, Peer Review & FE2 Prep",
                 "description": "Drill syllable stress on multi-syllable terms, conduct peer fluency evaluations, and review FE2 presentation requirements.",
                 "part": "Part 4"
               }
@@ -11666,22 +11666,22 @@
             "summary": "A visual analysis and collaborative engineering sprint moving from spatial photo analysis to relative clause grammar drills, €50M budget allocation, stakeholder rebuttal clinic, and spoken council presentations.",
             "items": [
               {
-                "title": "Pillar 1: Urban Architecture & Spatial Vocabulary",
+                "title": "Part 1: Urban Architecture & Spatial Vocabulary",
                 "description": "Master 8 key spatial design terms (permeable paving, active frontage, bioswale, superblock) with interactive visual matching.",
                 "part": "Part 1"
               },
               {
-                "title": "Pillar 2: Grammar Clinic • Spatial Prepositions & Relative Clauses",
+                "title": "Part 2: Grammar Clinic • Spatial Prepositions & Relative Clauses",
                 "description": "Punctuation and syntax rules for non-defining relative clauses; complete 4 sentence combining drills with instant feedback.",
                 "part": "Part 2"
               },
               {
-                "title": "Pillar 3: Photo Analysis & €50M Collaborative Design Sprint",
+                "title": "Part 3: Photo Analysis & €50M Collaborative Design Sprint",
                 "description": "Step-by-step: analyze comparative photos, allocate the €50M budget across 5 categories, and script counter-arguments to 4 stakeholder objections.",
                 "part": "Part 3"
               },
               {
-                "title": "Pillar 4: Spoken City Council Pitch & Democratic Vote",
+                "title": "Part 4: Spoken City Council Pitch & Democratic Vote",
                 "description": "Duos deliver spoken presentations to the City Council panel; class votes on the winning resilient blueprint.",
                 "part": "Part 4"
               }
@@ -12199,22 +12199,22 @@
             "summary": "A formal inquiry lab moving from environmental lexis to cautious argumentation clinics, witness deposition analysis, Oxford-style cross-examinations, and tribunal deliberations.",
             "items": [
               {
-                "title": "Pillar 1: Environmental Ethics & Inquiry Vocabulary",
+                "title": "Part 1: Environmental Ethics & Inquiry Vocabulary",
                 "description": "Examine 8 core debate terms; complete the interactive collocation matching challenge with instant answer reveal.",
                 "part": "Part 1"
               },
               {
-                "title": "Pillar 2: Grammar Clinic • Cautious Language & Concessions",
+                "title": "Part 2: Grammar Clinic • Cautious Language & Concessions",
                 "description": "Master diplomatic hedging formulas; rewrite 4 blunt statements into formal B2 inquiry arguments with check answers.",
                 "part": "Part 2"
               },
               {
-                "title": "Pillar 3: The Val-d'Or Rail Bypass Public Inquiry Hearing",
+                "title": "Part 3: The Val-d'Or Rail Bypass Public Inquiry Hearing",
                 "description": "Step-by-step: examine 4 sworn witness briefs, prepare cross-examination questions, convene the hearing, and deliver the tribunal verdict.",
                 "part": "Part 3"
               },
               {
-                "title": "Pillar 4: Argumentative Debrief & Peer Rhetorical Review",
+                "title": "Part 4: Argumentative Debrief & Peer Rhetorical Review",
                 "description": "Peer evaluation on hedging accuracy, evidence presentation, and alignment with FE2 presentation criteria.",
                 "part": "Part 4"
               }
@@ -12681,22 +12681,22 @@
             "summary": "A station-based workshop and treaty tournament combining eco-engineering lexis, regulatory modal grammar, a 3-station rotation, treaty negotiation, and FE2 oral rehearsal.",
             "items": [
               {
-                "title": "Pillar 1: Airfield Eco-Engineering Vocabulary",
+                "title": "Part 1: Airfield Eco-Engineering Vocabulary",
                 "description": "Explore the Meadow Paradox; complete the interactive 8-term technical summary gap-fill with instant answer reveals.",
                 "part": "Part 1"
               },
               {
-                "title": "Pillar 2: Grammar Clinic • Modals of Obligation & Necessity",
+                "title": "Part 2: Grammar Clinic • Modals of Obligation & Necessity",
                 "description": "Study regulatory modal formulas; complete 4 interactive gap-fill exercises matching modal strength to safety rules.",
                 "part": "Part 2"
               },
               {
-                "title": "Pillar 3: Interactive Stations & Land-Use Treaty Tournament",
+                "title": "Part 3: Interactive Stations & Land-Use Treaty Tournament",
                 "description": "Step-by-step: rotate through 3 technology stations, negotiate the 500-hectare zoning treaty, and sign the Tri-Party Accord.",
                 "part": "Part 3"
               },
               {
-                "title": "Pillar 4: FE2 Oral Presentation Rehearsal & Sign-Off",
+                "title": "Part 4: FE2 Oral Presentation Rehearsal & Sign-Off",
                 "description": "Deliver partner pitch dry runs against the FE2 rubric and confirm final teacher validation.",
                 "part": "Part 4"
               }
@@ -13289,22 +13289,22 @@
             "summary": "A operational workshop moving from automation lexis to active/passive voice grammar drills, a 6-workflow vulnerability audit, Human-in-the-Loop simulation, spoken town hall scrutiny, and FE3 alignment.",
             "items": [
               {
-                "title": "Pillar 1: Machine Learning & Operational Automation Lexis",
+                "title": "Part 1: Machine Learning & Operational Automation Lexis",
                 "description": "Analyze 8 key AI terms; complete the interactive concept-to-consequence matching drill with check answers.",
                 "part": "Part 1"
               },
               {
-                "title": "Pillar 2: Grammar Clinic • Active vs. Passive Voice in Tech",
+                "title": "Part 2: Grammar Clinic • Active vs. Passive Voice in Tech",
                 "description": "Master passive voice in system reporting vs active voice for human responsibility; complete 4 interactive conversion drills.",
                 "part": "Part 2"
               },
               {
-                "title": "Pillar 3: Automation Vulnerability Audit & Town Hall Simulation",
+                "title": "Part 3: Automation Vulnerability Audit & Town Hall Simulation",
                 "description": "Step-by-step: rank 6 critical workflows, resolve 3 dynamic crisis injects, and lead a spoken town hall defense under employee scrutiny.",
                 "part": "Part 3"
               },
               {
-                "title": "Pillar 4: Technical Phrasing Review & FE3 Alignment",
+                "title": "Part 4: Technical Phrasing Review & FE3 Alignment",
                 "description": "Peer review on passive voice accuracy, calibrate spoken delivery against the FE3 presentation rubric, and confirm topics.",
                 "part": "Part 4"
               }
@@ -13814,22 +13814,22 @@
             "summary": "A visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, practicing predictive certainty grammar, budgeting €100M in regional decarbonization infrastructure, and defending transit choices.",
             "items": [
               {
-                "title": "Pillar 1: Clean Propulsion & Multi-Modal Transit Lexis",
+                "title": "Part 1: Clean Propulsion & Multi-Modal Transit Lexis",
                 "description": "Master 8 alternative propulsion terms (cryogenic hydrogen, fuel-cell, vertiport, catenary electrification) with comparative analysis.",
                 "part": "Part 1"
               },
               {
-                "title": "Pillar 2: Grammar Clinic • Future Forms & Predictive Certainty",
+                "title": "Part 2: Grammar Clinic • Future Forms & Predictive Certainty",
                 "description": "Calibrate expressions of technical confidence; complete 4 interactive technological forecasts with instant answer check.",
                 "part": "Part 2"
               },
               {
-                "title": "Pillar 3: Comparative Showcase & €100M Design Sprint",
+                "title": "Part 3: Comparative Showcase & €100M Design Sprint",
                 "description": "Step-by-step: analyze comparative transit models, allocate €100M across 5 options, script stakeholder rebuttals, and pitch to the Council.",
                 "part": "Part 3"
               },
               {
-                "title": "Pillar 4: Council Vote & Feasibility Review",
+                "title": "Part 4: Council Vote & Feasibility Review",
                 "description": "Class votes on the most resilient corridor blueprint; peer feedback on predictive grammar and spoken persuasion.",
                 "part": "Part 4"
               }
@@ -14347,22 +14347,22 @@
             "summary": "A Oxford-style regulatory inquiry examining biometric surveillance, predictive profiling, complex concessive grammar, sworn witness depositions, and tribunal deliberations under the EU AI Act.",
             "items": [
               {
-                "title": "Pillar 1: AI Ethics & Regulatory Governance Lexis",
+                "title": "Part 1: AI Ethics & Regulatory Governance Lexis",
                 "description": "Classify AI systems into EU AI Act risk tiers; complete the interactive 8-term ethical vocabulary drill with check answers.",
                 "part": "Part 1"
               },
               {
-                "title": "Pillar 2: Grammar Clinic • Complex Conjunctions & Concessions",
+                "title": "Part 2: Grammar Clinic • Complex Conjunctions & Concessions",
                 "description": "Master high-level formal debate syntax; combine 4 pairs of arguments using concessive clauses with instant solution reveal.",
                 "part": "Part 2"
               },
               {
-                "title": "Pillar 3: The Project Argus-Eye Public Inquiry Hearing",
+                "title": "Part 3: The Project Argus-Eye Public Inquiry Hearing",
                 "description": "Step-by-step: analyze witness depositions, prepare targeted cross-examination challenges, convene the hearing, and deliver the verdict.",
                 "part": "Part 3"
               },
               {
-                "title": "Pillar 4: Regulatory Debrief & Argument Evaluation",
+                "title": "Part 4: Regulatory Debrief & Argument Evaluation",
                 "description": "Peer review on argumentative rigor, formal register, and alignment with FE3 presentation standards.",
                 "part": "Part 4"
               }
@@ -14829,22 +14829,22 @@
             "summary": "A station-based workshop and treaty tournament combining cryptographic lexis, relative clause grammar, a 3-station technology rotation, treaty negotiation, and FE3 presentation dry runs.",
             "items": [
               {
-                "title": "Pillar 1: Biometric & Cryptographic Security Lexis",
+                "title": "Part 1: Biometric & Cryptographic Security Lexis",
                 "description": "Trace the cryptographic passenger journey; complete the interactive 8-term data-flow ordering exercise with check answers.",
                 "part": "Part 1"
               },
               {
-                "title": "Pillar 2: Grammar Clinic • Relative Clauses & Precision",
+                "title": "Part 2: Grammar Clinic • Relative Clauses & Precision",
                 "description": "Master comma placement and relative pronouns; complete 4 interactive sentence combination drills with instant solution reveal.",
                 "part": "Part 2"
               },
               {
-                "title": "Pillar 3: Interactive Stations & Biometric Charter Tournament",
+                "title": "Part 3: Interactive Stations & Biometric Charter Tournament",
                 "description": "Step-by-step: rotate through 3 technology stations, negotiate the 5-point Passenger Charter, and ratify the international treaty.",
                 "part": "Part 3"
               },
               {
-                "title": "Pillar 4: FE3 Final Presentation Rehearsal & Sign-Off",
+                "title": "Part 4: FE3 Final Presentation Rehearsal & Sign-Off",
                 "description": "partner pitch dry runs against the FE3 rubric and final teacher validation of slide decks and topic outlines.",
                 "part": "Part 4"
               }
@@ -18961,22 +18961,22 @@
             "items": [
               {
                 "part": "Part 1",
-                "title": "Pillar 1: Aerodynamic Lexis & Pronunciation",
+                "title": "Part 1: Aerodynamic Lexis & Pronunciation",
                 "description": "Explore 8 core terms, practice phonetic syllable stress (/ˈkæm.bər/, /ˈeɪ.lə.rɒn/), and complete the interactive definition matching challenge."
               },
               {
                 "part": "Part 2",
-                "title": "Pillar 2: Technical Grammar Clinic • Cause & Effect",
+                "title": "Part 2: Technical Grammar Clinic • Cause & Effect",
                 "description": "Analyze the ❌ 'due to + verb' operational trap, study the ✅ professional B2 model, and complete 4 sentence transformation drills."
               },
               {
                 "part": "Part 3",
-                "title": "Pillar 3: Flight Deck Stall Buffet Simulation",
+                "title": "Part 3: Flight Deck Stall Buffet Simulation",
                 "description": "Step-by-step roleplay: Captain and First Officer diagnose instrument discrepancies, call out recovery inputs, and broadcast an emergency descent to ATC."
               },
               {
                 "part": "Part 4",
-                "title": "Pillar 4: Consolidation & FE2 Alignment",
+                "title": "Part 4: Consolidation & FE2 Alignment",
                 "description": "2-minute spoken peer challenge explaining how lift is generated using target words; review FE2 evaluation criteria."
               }
             ]
@@ -19175,22 +19175,22 @@
             "items": [
               {
                 "part": "Part 1",
-                "title": "Pillar 1: Airframe Structural Lexis & Pronunciation",
+                "title": "Part 1: Airframe Structural Lexis & Pronunciation",
                 "description": "Examine 8 key airframe terms, master syllable stress (/ˌɑːm.pəˈnɑːʒ/, /ˈreɪ.dəʊm/), and complete the airframe location matching drill."
               },
               {
                 "part": "Part 2",
-                "title": "Pillar 2: Technical Grammar Clinic • Spatial Defect Reporting",
+                "title": "Part 2: Technical Grammar Clinic • Spatial Defect Reporting",
                 "description": "Contrast the ❌ vague description trap with the ✅ precise B2 engineering model; complete 4 maintenance sentence transformation drills."
               },
               {
                 "part": "Part 3",
-                "title": "Pillar 3: Ramp Walkaround Inspection & MEL Triage",
+                "title": "Part 3: Ramp Walkaround Inspection & MEL Triage",
                 "description": "Paired simulation: Captain and Line Engineer evaluate a missing static wick and a hydraulic actuator drip 35 minutes before departure."
               },
               {
                 "part": "Part 4",
-                "title": "Pillar 4: Consolidation & FE2 Alignment",
+                "title": "Part 4: Consolidation & FE2 Alignment",
                 "description": "Spoken defect description challenge: describe imaginary damage on a hidden component; review FE2 evaluation criteria."
               }
             ]
@@ -19389,22 +19389,22 @@
             "items": [
               {
                 "part": "Part 1",
-                "title": "Pillar 1: Commercial Fleet Lexis & Pronunciation",
+                "title": "Part 1: Commercial Fleet Lexis & Pronunciation",
                 "description": "Master 8 commercial airline terms, practice stress patterns (/ˈnær.əʊˌbɒd.i/, /ˈpeɪ.ləʊd/), and complete the fleet categorization drill."
               },
               {
                 "part": "Part 2",
-                "title": "Pillar 2: Technical Grammar Clinic • Comparative Data Analysis",
+                "title": "Part 2: Technical Grammar Clinic • Comparative Data Analysis",
                 "description": "Contrast the ❌ 'more better' trap with the ✅ professional B2 data model; complete 4 comparative transformation drills."
               },
               {
                 "part": "Part 3",
-                "title": "Pillar 3: €2B Fleet Selection Committee Simulation",
+                "title": "Part 3: €2B Fleet Selection Committee Simulation",
                 "description": "Boardroom negotiation: CCO, CFO, Flight Ops, and Maintenance debate range, acquisition discounts, pilot commonality, and spare parts."
               },
               {
                 "part": "Part 4",
-                "title": "Pillar 4: Consolidation & FE2 Alignment",
+                "title": "Part 4: Consolidation & FE2 Alignment",
                 "description": "90-second spoken aircraft comparison challenge using comparative modifiers; review FE2 evaluation criteria."
               }
             ]
@@ -19603,22 +19603,22 @@
             "items": [
               {
                 "part": "Part 1",
-                "title": "Pillar 1: Accident Investigation Lexis & Pronunciation",
+                "title": "Part 1: Accident Investigation Lexis & Pronunciation",
                 "description": "Explore 8 official investigation terms, practice syllable stress (/ˈkɔː.zəl/, /dɪsˌɔː.ri.enˈteɪ.ʃən/), and complete the causal factor matching drill."
               },
               {
                 "part": "Part 2",
-                "title": "Pillar 2: Technical Grammar Clinic • Narrative Past Tenses",
+                "title": "Part 2: Technical Grammar Clinic • Narrative Past Tenses",
                 "description": "Analyze the ❌ past tense confusion trap with the ✅ chronological B2 model; complete 4 accident timeline transformation drills."
               },
               {
                 "part": "Part 3",
-                "title": "Pillar 3: Accident Investigation Board Hearing",
+                "title": "Part 3: Accident Investigation Board Hearing",
                 "description": "Public inquiry simulation: cross-examine evidence, evaluate crew resource management (CRM), and draft binding Safety Recommendations."
               },
               {
                 "part": "Part 4",
-                "title": "Pillar 4: Formative Evaluation 2 (FE2) Full Rehearsal",
+                "title": "Part 4: Formative Evaluation 2 (FE2) Full Rehearsal",
                 "description": "2-minute partner presentation dry runs graded against official criteria: Fluency, Lexis, Grammar, and Pronunciation."
               }
             ]

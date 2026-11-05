@@ -1,11 +1,11 @@
 /**
  * GSEA Semester 1 - Technical English (AAS/AT) Module 2 Templates
  * Aircraft and Aerodynamics (Sessions 1–4)
- * 4-Pillar Pedagogical Architecture:
- *   - Pillar 1: Interactive Aeronautical Lexis Bank (8 terms + syllable stress + matching challenge)
- *   - Pillar 2: Spoken Grammar Clinic (Rule + Error Correction + 4 Transformation Drills)
- *   - Pillar 3: Dynamic Communicative Simulation & Operational Dilemma
- *   - Pillar 4: Consolidation & Formative Evaluation 2 (FE2) Alignment
+ * 4-Part Pedagogical Architecture:
+ *   - Part 1: Interactive Aeronautical Lexis Bank (8 terms + syllable stress + matching challenge)
+ *   - Part 2: Spoken Grammar Clinic (Rule + Error Correction + 4 Transformation Drills)
+ *   - Part 3: Dynamic Communicative Simulation & Operational Dilemma
+ *   - Part 4: Consolidation & Formative Evaluation 2 (FE2) Alignment
  * Strict Rule 1.Q Adherence: Zero minute breakdowns, pure pedagogical stage progression.
  * Strict Rule 1.I Adherence: Plain English instructions, zero academic jargon.
  * Author: Phil PARRIS (LH/LAN)
@@ -34,12 +34,12 @@ function renderAas2LessonContentTabSession1(sessionData, theme) {
         </p>
       </div>
 
-      <!-- PILLAR 1: Target Lexis & Pronunciation -->
+      <!-- PART 1: Target Lexis & Pronunciation -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Aerodynamic Lexis &amp; Pronunciation</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 1: Aerodynamic Lexis &amp; Pronunciation</h4>
             <p class="text-[11px] text-slate-500">8 essential terms for explaining airflow, lift generation, and flight equilibrium.</p>
           </div>
         </div>
@@ -138,12 +138,12 @@ function renderAas2LessonContentTabSession1(sessionData, theme) {
         </div>
       </div>
 
-      <!-- PILLAR 2: Spoken Grammar Clinic -->
+      <!-- PART 2: Spoken Grammar Clinic -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Technical Grammar Clinic • Cause &amp; Effect in Flight Physics</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 2: Technical Grammar Clinic • Cause &amp; Effect in Flight Physics</h4>
             <p class="text-[11px] text-slate-500">Connecting physical actions to aerodynamic reactions with precision verbs and linkers.</p>
           </div>
         </div>
@@ -193,12 +193,12 @@ function renderAas2LessonContentTabSession1(sessionData, theme) {
         </div>
       </div>
 
-      <!-- PILLAR 3: Communicative Simulation & Operational Dilemma -->
+      <!-- PART 3: Communicative Simulation & Operational Dilemma -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Communicative Simulation • High-Altitude Stall Recovery</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 3: Communicative Simulation • High-Altitude Stall Recovery</h4>
             <p class="text-[11px] text-slate-500">Pair role-play: Captain &amp; First Officer respond to an unexpected high-altitude buffet alert.</p>
           </div>
         </div>
@@ -264,17 +264,17 @@ function renderAas2LessonContentTabSession1(sessionData, theme) {
         </details>
       </div>
 
-      <!-- PILLAR 4: Consolidation & FE2 Alignment -->
+      <!-- PART 4: Consolidation & FE2 Alignment -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-3">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.accent};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
             <p class="text-[11px] text-slate-500">Pair peer-check on technical explanation fluency.</p>
           </div>
         </div>
         <p class="text-xs text-slate-700 leading-relaxed">
-          <strong>Speaking Challenge:</strong> In pairs, take turns explaining how an aircraft wing generates lift using at least <strong>3 target terms</strong> from Pillar 1 (e.g., <em>camber</em>, <em>angle of attack</em>, <em>boundary layer</em>) without looking at your notes. Your partner gives feedback on clarity and technical accuracy.
+          <strong>Speaking Challenge:</strong> In pairs, take turns explaining how an aircraft wing generates lift using at least <strong>3 target terms</strong> from Part 1 (e.g., <em>camber</em>, <em>angle of attack</em>, <em>boundary layer</em>) without looking at your notes. Your partner gives feedback on clarity and technical accuracy.
         </p>
         <div class="p-3 bg-sky-50 rounded-xl border border-sky-100 flex items-center justify-between text-xs">
           <span class="text-sky-900 font-semibold">Formative Evaluation 2 Checklist: Can you clearly explain the difference between lift and induced drag?</span>
@@ -308,12 +308,12 @@ function renderAas2LessonContentTabSession2(sessionData, theme) {
         </p>
       </div>
 
-      <!-- PILLAR 1: Target Lexis & Pronunciation -->
+      <!-- PART 1: Target Lexis & Pronunciation -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Airframe Structural Lexis &amp; Pronunciation</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 1: Airframe Structural Lexis &amp; Pronunciation</h4>
             <p class="text-[11px] text-slate-500">8 key airframe, wing, and tail components used during ramp walkarounds and defect logging.</p>
           </div>
         </div>
@@ -412,12 +412,12 @@ function renderAas2LessonContentTabSession2(sessionData, theme) {
         </div>
       </div>
 
-      <!-- PILLAR 2: Spoken Grammar Clinic -->
+      <!-- PART 2: Spoken Grammar Clinic -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Technical Grammar Clinic • Spatial Descriptions &amp; Defect Reporting</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 2: Technical Grammar Clinic • Spatial Descriptions &amp; Defect Reporting</h4>
             <p class="text-[11px] text-slate-500">Mastering precise spatial prepositions when logging airframe maintenance findings.</p>
           </div>
         </div>
@@ -467,12 +467,12 @@ function renderAas2LessonContentTabSession2(sessionData, theme) {
         </div>
       </div>
 
-      <!-- PILLAR 3: Communicative Simulation & Operational Dilemma -->
+      <!-- PART 3: Communicative Simulation & Operational Dilemma -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Communicative Simulation • Ramp Walkaround &amp; MEL Dispatch</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 3: Communicative Simulation • Ramp Walkaround &amp; MEL Dispatch</h4>
             <p class="text-[11px] text-slate-500">Pair role-play: Captain &amp; Chief Line Engineer resolve a pre-departure maintenance defect dilemma.</p>
           </div>
         </div>
@@ -538,17 +538,17 @@ function renderAas2LessonContentTabSession2(sessionData, theme) {
         </details>
       </div>
 
-      <!-- PILLAR 4: Consolidation & FE2 Alignment -->
+      <!-- PART 4: Consolidation & FE2 Alignment -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-3">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.accent};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
             <p class="text-[11px] text-slate-500">Pair peer-check on structural defect reporting precision.</p>
           </div>
         </div>
         <p class="text-xs text-slate-700 leading-relaxed">
-          <strong>Speaking Challenge:</strong> In pairs, one student selects an airframe component from Pillar 1 and describes an imaginary damage (dent, leak, crack, missing fastener) using spatial prepositions. The partner must identify the component and log it in standard aviation English.
+          <strong>Speaking Challenge:</strong> In pairs, one student selects an airframe component from Part 1 and describes an imaginary damage (dent, leak, crack, missing fastener) using spatial prepositions. The partner must identify the component and log it in standard aviation English.
         </p>
         <div class="p-3 bg-indigo-50 rounded-xl border border-indigo-100 flex items-center justify-between text-xs">
           <span class="text-indigo-900 font-semibold">Formative Evaluation 2 Checklist: Can you describe damage on an aircraft using correct spatial prepositions?</span>
@@ -582,12 +582,12 @@ function renderAas2LessonContentTabSession3(sessionData, theme) {
         </p>
       </div>
 
-      <!-- PILLAR 1: Target Lexis & Pronunciation -->
+      <!-- PART 1: Target Lexis & Pronunciation -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Commercial Fleet Lexis &amp; Pronunciation</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 1: Commercial Fleet Lexis &amp; Pronunciation</h4>
             <p class="text-[11px] text-slate-500">8 specialized industry terms for aircraft categories, economics, and operational range.</p>
           </div>
         </div>
@@ -686,12 +686,12 @@ function renderAas2LessonContentTabSession3(sessionData, theme) {
         </div>
       </div>
 
-      <!-- PILLAR 2: Spoken Grammar Clinic -->
+      <!-- PART 2: Spoken Grammar Clinic -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Technical Grammar Clinic • Comparative &amp; Superlative Data Analysis</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 2: Technical Grammar Clinic • Comparative &amp; Superlative Data Analysis</h4>
             <p class="text-[11px] text-slate-500">Comparing aircraft performance metrics with modifiers: substantially, marginally, significantly.</p>
           </div>
         </div>
@@ -741,12 +741,12 @@ function renderAas2LessonContentTabSession3(sessionData, theme) {
         </div>
       </div>
 
-      <!-- PILLAR 3: Communicative Simulation & Operational Dilemma -->
+      <!-- PART 3: Communicative Simulation & Operational Dilemma -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Communicative Simulation • €2B Fleet Selection Committee</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 3: Communicative Simulation • €2B Fleet Selection Committee</h4>
             <p class="text-[11px] text-slate-500">Boardroom simulation: Evaluate and select 20 new narrowbody airliners for a growing European carrier.</p>
           </div>
         </div>
@@ -812,12 +812,12 @@ function renderAas2LessonContentTabSession3(sessionData, theme) {
         </details>
       </div>
 
-      <!-- PILLAR 4: Consolidation & FE2 Alignment -->
+      <!-- PART 4: Consolidation & FE2 Alignment -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-3">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.accent};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
             <p class="text-[11px] text-slate-500">Pair peer-check on comparative fleet presentation skills.</p>
           </div>
         </div>
@@ -856,12 +856,12 @@ function renderAas2LessonContentTabSession4(sessionData, theme) {
         </p>
       </div>
 
-      <!-- PILLAR 1: Target Lexis & Pronunciation -->
+      <!-- PART 1: Target Lexis & Pronunciation -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Accident Investigation Lexis &amp; Pronunciation</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 1: Accident Investigation Lexis &amp; Pronunciation</h4>
             <p class="text-[11px] text-slate-500">8 official technical terms used in accident investigation reports (BEA, NTSB, AAIB).</p>
           </div>
         </div>
@@ -960,12 +960,12 @@ function renderAas2LessonContentTabSession4(sessionData, theme) {
         </div>
       </div>
 
-      <!-- PILLAR 2: Spoken Grammar Clinic -->
+      <!-- PART 2: Spoken Grammar Clinic -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Technical Grammar Clinic • Past Narrative Tenses in Accident Chronologies</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 2: Technical Grammar Clinic • Past Narrative Tenses in Accident Chronologies</h4>
             <p class="text-[11px] text-slate-500">Contrasting Past Simple, Past Continuous, and Past Perfect to establish chronological sequences.</p>
           </div>
         </div>
@@ -1015,12 +1015,12 @@ function renderAas2LessonContentTabSession4(sessionData, theme) {
         </div>
       </div>
 
-      <!-- PILLAR 3: Communicative Simulation & Operational Dilemma -->
+      <!-- PART 3: Communicative Simulation & Operational Dilemma -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Communicative Simulation • Accident Investigation Board Hearing</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 3: Communicative Simulation • Accident Investigation Board Hearing</h4>
             <p class="text-[11px] text-slate-500">Public inquiry simulation: Present investigative findings and cross-examine flight operations on landmark safety lessons.</p>
           </div>
         </div>
@@ -1086,12 +1086,12 @@ function renderAas2LessonContentTabSession4(sessionData, theme) {
         </details>
       </div>
 
-      <!-- PILLAR 4: Consolidation & FE2 Full Rehearsal -->
+      <!-- PART 4: Consolidation & FE2 Full Rehearsal -->
       <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-3">
         <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
           <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.accent};"></span>
           <div>
-            <h4 class="font-bold text-slate-900 text-sm">Pillar 4: Formative Evaluation 2 (FE2) Full Rehearsal &amp; Sign-Off</h4>
+            <h4 class="font-bold text-slate-900 text-sm">Part 4: Formative Evaluation 2 (FE2) Full Rehearsal &amp; Sign-Off</h4>
             <p class="text-[11px] text-slate-500">Official preparation dry run for Session 5 Formative Evaluation.</p>
           </div>
         </div>

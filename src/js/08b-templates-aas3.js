@@ -1,7 +1,7 @@
     /* ==========================================================================
        AT MODULE 3 LESSON CONTENT TEMPLATES (SESSIONS 1 - 4)
        Module 3: Health, Meteorology, Safety & Security (LV121E)
-       4-Pillar Pedagogical Standard: modeBadges, instructions, deliverable, teacherNotes
+       4-Part Pedagogical Standard: modeBadges, instructions, deliverable, teacherNotes
        ========================================================================== */
 
     // Global toggle helper for AT Module 3 revealable answers

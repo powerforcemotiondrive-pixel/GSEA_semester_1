@@ -927,9 +927,9 @@
             </p>
           </div>
 
-          <!-- 4 Core Pillars Grid -->
+          <!-- 4 Core Areas Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <!-- Pillar 1: Academic Pacing -->
+            <!-- Part 1: Academic Pacing -->
             <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-2xs hover:shadow-xs transition-all">
               <div class="flex items-center gap-2.5 mb-2.5 pb-2 border-b border-slate-100">
                 <div class="w-8 h-8 rounded-lg bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 shrink-0 font-black text-sm">
@@ -945,7 +945,7 @@
               </p>
             </div>
 
-            <!-- Pillar 2: Host Family Immersion -->
+            <!-- Part 2: Host Family Immersion -->
             <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-2xs hover:shadow-xs transition-all">
               <div class="flex items-center gap-2.5 mb-2.5 pb-2 border-b border-slate-100">
                 <div class="w-8 h-8 rounded-lg bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 shrink-0 font-black text-sm">
@@ -961,7 +961,7 @@
               </p>
             </div>
 
-            <!-- Pillar 3: Cultural Excursions -->
+            <!-- Part 3: Cultural Excursions -->
             <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-2xs hover:shadow-xs transition-all">
               <div class="flex items-center gap-2.5 mb-2.5 pb-2 border-b border-slate-100">
                 <div class="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 shrink-0 font-black text-sm">
@@ -977,7 +977,7 @@
               </p>
             </div>
 
-            <!-- Pillar 4: Aviation Specific Visits -->
+            <!-- Part 4: Aviation Specific Visits -->
             <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-2xs hover:shadow-xs transition-all">
               <div class="flex items-center gap-2.5 mb-2.5 pb-2 border-b border-slate-100">
                 <div class="w-8 h-8 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shrink-0 font-black text-sm">

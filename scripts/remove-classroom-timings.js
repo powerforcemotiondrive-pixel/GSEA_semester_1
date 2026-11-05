@@ -154,3 +154,4 @@ if (context.window.COURSE_DATA && context.window.COURSE_DATA.ag) {
   console.error('❌ Fatal error: window.COURSE_DATA failed to initialize in VM!');
   process.exit(1);
 }
+
