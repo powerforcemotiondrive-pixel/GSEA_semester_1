@@ -735,3 +735,4 @@ const code = `    /* ===========================================================
 
 fs.writeFileSync(targetPath, code, 'utf8');
 console.log('✓ Successfully wrote refreshed, non-formulaic templates to src/js/06-templates-ag2.js');
+
