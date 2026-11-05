@@ -3457,32 +3457,27 @@
         "session": 1,
         "objectives": {
           "title": "Session 1 Objectives - Extreme Weather & Urban Climate Resilience",
-          "summary": "By the end of this session, you will be able to evaluate severe weather disaster briefings, deploy precise B2 language of urgency and risk, lead an emergency civic taskforce simulation, and deliver a live spoken press conference under media scrutiny.",
+          "summary": "By the end of this session, you will be able to discuss severe weather news, use 'if' sentences to talk about weather risks, work in a team to protect city services during a storm, and give a short spoken update to the public.",
           "items": [
             {
               "num": 1,
-              "title": "Analyze an Authentic Emergency Weather Dossier (Risk Assessment)",
-              "description": "Scan emergency alerts, flood forecasts, and infrastructure vulnerability metrics to identify acute urban hazards."
+              "title": "Learn Key Vocabulary: Severe Weather & Storms",
+              "description": "Learn 8 useful words for heavy rain, heatwaves, flooding, and storm damage."
             },
             {
               "num": 2,
-              "title": "Prioritize Interventions on an Urgency-Impact Matrix (Spoken Negotiation)",
-              "description": "Debate and rank six civic protection measures with a partner from immediate priority to secondary standby."
+              "title": "Grammar Focus: 'If' Sentences for Weather Warnings",
+              "description": "Practice 1st and 2nd conditionals to talk about weather emergencies ('If winds exceed 100 km/h...')."
             },
             {
               "num": 3,
-              "title": "Deploy Language of Urgency, Safeguards & Cause-and-Effect (Grammar Clinic)",
-              "description": "Master official directive structures: 'Priority must be given to...', 'Provided that...', and 'Failure to evacuate will result in...'."
+              "title": "Speaking Activity: City Emergency Taskforce",
+              "description": "Work in pairs to choose which city services (hospitals, trains, electricity) to protect first."
             },
             {
               "num": 4,
-              "title": "Coordinate an Escalating Multi-Stakeholder Crisis Simulation (Interactive Role-Play)",
-              "description": "Collaborate as Mayor's Office, Transit Director, Hospital Lead, or Public Communications to resolve breaking crisis updates."
-            },
-            {
-              "num": 5,
-              "title": "Deliver a Live Spoken Press Conference & Handle Journalist Scrutiny (Fluency & Q&A)",
-              "description": "Deliver a 3-minute public emergency broadcast and answer challenging questions from investigative media."
+              "title": "Speaking Practice: Emergency Public Update",
+              "description": "Give a short, clear public safety broadcast and answer questions from classmates."
             }
           ]
         },
@@ -3491,29 +3486,24 @@
           "summary": "A high-stakes, crisis workshop: students analyze an escalating meteorological disaster dossier, prioritize city defenses, role-play a city emergency taskforce, and defend decisions in a live press briefing.",
           "items": [
             {
-              "title": "Part 1: The Meteorological Dossier & Urgency Matrix",
-              "description": "Reading an escalating regional storm and heat emergency alert; teams place 6 civic threats on an interactive Urgency-Impact Diamond.",
+              "title": "Part 1: Key Vocabulary • Extreme Weather & Storms",
+              "description": "Learn 8 essential weather words, check syllable stress, and complete the matching challenge.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Language Clinic: Expressing Urgency, Conditionals & Directives",
-              "description": "Mastering high-priority language: 'Immediate priority must be given to...', 'Provided that auxiliary power holds...', 'Failure to act will lead to...'.",
+              "title": "Part 2: Grammar Focus • 'If' Sentences for Weather Warnings",
+              "description": "Spot the common speaking mistake, learn the clean B2 model, and complete 4 transformation sentences.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: The City Emergency Taskforce Simulation",
-              "description": "4 distinct roles (Mayor's Office, Transit Director, Hospital Network Lead, Communications Officer) responding to 3 breaking incident updates (blackout, hospital generator failure, flooded transit).",
+              "title": "Part 3: Speaking Activity • City Emergency Taskforce",
+              "description": "Work with a partner to rank 6 city threats and respond to unexpected weather alerts.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Spoken Live Press Conference & Media Scrutiny",
-              "description": "Taskforce leads deliver a 3-minute emergency broadcast to citizens and face tough questions from investigative reporters.",
+              "title": "Part 4: Speaking Review & Discussion Feedback",
+              "description": "Check your pronunciation, give your partner speaking feedback, and prepare for FE2.",
               "part": "Part 4"
-            },
-            {
-              "title": "Part 5: Crisis Debrief & Key Terminology Wrap-Up",
-              "description": "Peer language feedback, operational debrief, and vocabulary logging.",
-              "part": "Part 5"
             }
           ]
         },
@@ -3997,32 +3987,27 @@
         "session": 2,
         "objectives": {
           "title": "Session 2 Objectives - The 15-Minute Resilient City Blueprint",
-          "summary": "By the end of this session, you will be able to conduct a visual photo analysis comparing car-centric sprawl with pedestrian-first superblocks, deploy spatial prepositions and urban design vocabulary, collaborate on a €50M district redesign sprint, and defend your blueprint before a civic investor panel.",
+          "summary": "By the end of this session, you will be able to describe city neighborhoods and public transport, use prepositions of place and relative clauses, redesign a busy street in a group, and present your ideas to the class.",
           "items": [
             {
               "num": 1,
-              "title": "Conduct a Comparative Visual Photo Analysis (Spatial Observation & Contrast)",
-              "description": "Contrast car-centric sprawl with a pedestrian superblock using clickable hotspots and spatial prepositions."
+              "title": "Learn Key Vocabulary: City Design & Streets",
+              "description": "Learn 8 useful words for pedestrian areas, green spaces, bike lanes, and urban living."
             },
             {
               "num": 2,
-              "title": "Deploy Spatial Prepositions & Urban Planning Lexis (Language Clinic)",
-              "description": "Use precise locational phrases: 'flanked by', 'bisected by', 'adjacent to', and 'reclaimed from vehicular traffic'."
+              "title": "Grammar Focus: Describing Places & Locations",
+              "description": "Use prepositions ('adjacent to', 'within walking distance') and relative clauses ('where', 'which') with precision."
             },
             {
               "num": 3,
-              "title": "Collaborate on a €50M Urban District Redesign Sprint (Team Creative Design)",
-              "description": "Allocate a €50M municipal fund across transit, green canopy, affordable housing, and public plazas."
+              "title": "Speaking Activity: Redesigning the City Center",
+              "description": "Look at two street photos, debate traffic vs. walking areas, and choose how to spend a €50M budget."
             },
             {
               "num": 4,
-              "title": "Pitch the Blueprint to a Skeptical Civic Investor Panel (Spoken Persuasion)",
-              "description": "Deliver a structured visual pitch answering tough financial, social, and logistical objections."
-            },
-            {
-              "num": 5,
-              "title": "Critique Competitor Urban Designs with Constructive Rebuttals (Peer Evaluation)",
-              "description": "Conduct a gallery walk review and vote on the most viable sustainable urban district design."
+              "title": "Speaking Practice: Presenting City Ideas to the Council",
+              "description": "Present your redesigned street plan to the class and vote on the best design."
             }
           ]
         },
@@ -4031,29 +4016,24 @@
           "summary": "A creative hands-on design sprint: students analyze contrasting urban photos with interactive hotspots, master spatial prepositions, draft an integrated €50M district redesign, and defend it before a panel of community stakeholders.",
           "items": [
             {
-              "title": "Part 1: Urban Showcase: Visual Photo Analysis & Hotspot Clinic",
-              "description": "Side-by-side comparative analysis of car sprawl (urban_car_sprawl.jpg) vs. green superblock (urban_superblock.jpg) with clickable vocabulary hotspots and the Mayor's Dilemma speaking task.",
+              "title": "Part 1: Key Vocabulary • City Design & Streets",
+              "description": "Learn 8 city architecture words, check syllable stress, and complete the photo matching challenge.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Language Clinic: Spatial Prepositions & Planning Structures",
-              "description": "Mastering spatial precision: 'flanked by', 'adjacent to', 'bisected by', 'reclaimed from', 'within walking radius of'.",
+              "title": "Part 2: Grammar Focus • Describing Places & Locations",
+              "description": "Review spatial prepositions and relative pronouns; complete 4 sentence combination drills.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: The €50M District Redesign Sprint",
-              "description": "In teams of 3–4, students receive the blueprint of a congested transit corridor and allocate budget across transit, green canopy, social housing, and commerce.",
+              "title": "Part 3: Speaking Activity • Redesigning the City Center",
+              "description": "Compare the Barcelona Superblock to car sprawl, allocate the €50M budget, and answer resident questions.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: The Civic Investor Forum & Public Defense",
-              "description": "Teams deliver a 4-minute visual pitch and defend their choices against community questions (shopkeepers, suburban drivers, eco-activists).",
+              "title": "Part 4: Spoken City Council Pitch & Group Vote",
+              "description": "Deliver a short spoken pitch to the council panel and vote on the most livable project.",
               "part": "Part 4"
-            },
-            {
-              "title": "Part 5: Blueprint Showcase & Peer Voting",
-              "description": "Silent gallery walk, investment vote, and key design term consolidation.",
-              "part": "Part 5"
             }
           ]
         },
@@ -4540,32 +4520,27 @@
         "session": 3,
         "objectives": {
           "title": "Session 3 Objectives - Environmental Ethics & The Public Inquiry Hearing",
-          "summary": "By the end of this session, you will be able to detect logical fallacies in environmental arguments, deploy sophisticated phrases for polite disagreement and cautious concession, cross-examine opposing witnesses in a formal public inquiry, and deliver a compelling closing statement.",
+          "summary": "By the end of this session, you will be able to discuss environmental questions, express polite opinions and disagreement, participate in a mock public hearing, and evaluate arguments with a partner.",
           "items": [
             {
               "num": 1,
-              "title": "Evaluate Conflicting Environmental Evidence & Testimonies (Critical Reading)",
-              "description": "Analyze competing economic, ecological, and social impact claims regarding a high-speed transit corridor."
+              "title": "Learn Key Vocabulary: Environment & Public Debates",
+              "description": "Learn 8 useful words for environmental protection, construction projects, and community hearings."
             },
             {
               "num": 2,
-              "title": "Identify Logical Fallacies & Biased Claims (Critical Thinking)",
-              "description": "Spot false dichotomies, slippery slope arguments, and greenwashed marketing claims in public testimonies."
+              "title": "Grammar Focus: Expressing Opinions & Polite Disagreement",
+              "description": "Use polite and cautious phrases ('It seems likely that...', 'While I understand your point, I believe...')."
             },
             {
               "num": 3,
-              "title": "Deploy Cautious Concession & Counter-Argument Markers (Language Clinic)",
-              "description": "Master advanced discourse linkers: 'While I concede that...', 'Be that as it may...', and 'With respect, that conflates...'."
+              "title": "Speaking Activity: The New Railway Public Debate",
+              "description": "Role-play a debate between rail engineers, environmentalists, local residents, and government officials."
             },
             {
               "num": 4,
-              "title": "Simulate a Formal Public Inquiry Hearing (Structured Debate)",
-              "description": "Participate as Commission Judge, Infrastructure Advocate, Ecological Biologist, or Local Community Union."
-            },
-            {
-              "num": 5,
-              "title": "Deliver a Persuasive Closing Argument as Lead Advocate (Formal Spoken Fluency)",
-              "description": "Present a 2-minute evidence-based summation to secure judicial approval or injunction."
+              "title": "Speaking Practice: Asking Questions & Defending Your View",
+              "description": "Cross-examine witnesses, defend your position, and deliver a fair final decision."
             }
           ]
         },
@@ -4574,29 +4549,24 @@
           "summary": "An Oxford-style debate and legal lab: students analyze conflicting testimonies on a controversial transit infrastructure project through an ancient wetland, learn argument framing and nuanced concession, and hold a formal public inquiry.",
           "items": [
             {
-              "title": "Part 1: The Devil's Advocate Hook: Provocative Claims",
-              "description": "2-minute quick-fire sparring on ethical dilemmas: 'Economic growth must always take precedence over local habitat conservation'.",
+              "title": "Part 1: Key Vocabulary • Environment & Public Debates",
+              "description": "Learn 8 debate words, check syllable stress, and complete the matching challenge.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: The Disputed Valley Dossier & Evidence Cross-Check",
-              "description": "Evaluating four conflicting witness statements (Ecological Biologist, Chamber of Commerce, Commuter Union, Regional Planner).",
+              "title": "Part 2: Grammar Focus • Expressing Opinions & Polite Disagreement",
+              "description": "Master cautious language ('hedging') and polite disagreement; complete 4 rephrasing drills.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Language Clinic: Nuanced Concession & Reframing",
-              "description": "Mastering high-level debate signposts: 'While I concede that..., the empirical data demonstrates...', 'Be that as it may...', 'With respect, that conflates...'.",
+              "title": "Part 3: Speaking Activity • The New Railway Public Debate",
+              "description": "Role-play the Val-d'Or Rail Bypass hearing with sworn witness statements and cross-examination.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: The Formal Public Inquiry Hearing Simulation",
-              "description": "Formal judicial proceedings with opening testimonies, cross-examinations, witness challenges, and commissioner rulings.",
+              "title": "Part 4: Speaking Review & Discussion Feedback",
+              "description": "Evaluate who made the most convincing argument and review tips for your speaking exam.",
               "part": "Part 4"
-            },
-            {
-              "title": "Part 5: Judicial Verdict, Peer Assessment & Wrap-Up",
-              "description": "Commissioners deliver the binding ruling and debrief linguistic performance.",
-              "part": "Part 5"
             }
           ]
         },
@@ -5032,32 +5002,27 @@
         "session": 4,
         "objectives": {
           "title": "Session 4 Objectives - Airport Biodiversity & Ecological Coexistence",
-          "summary": "By the end of this session, you will be able to analyze the operational tension between aviation safety (wildlife deterrence) and habitat preservation, rotate through multi-perspective technical stations, negotiate a binding multi-stakeholder land-use treaty, and assess your readiness for Formative Evaluation 2 (FE2).",
+          "summary": "By the end of this session, you will be able to discuss wildlife management near airports, use modal verbs for rules and obligations, negotiate a land agreement in a group, and rehearse for your speaking evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Examine the Meadow Paradox: Wildlife Hazard vs. Ecological Corridor (Context Briefing)",
-              "description": "Analyze why airport airfields represent Europe's most fertile yet hazardous biodiversity sanctuaries."
+              "title": "Learn Key Vocabulary: Airport Nature & Wildlife",
+              "description": "Learn 8 useful words for bird hazard control, wildlife habitats, and airport green zones."
             },
             {
               "num": 2,
-              "title": "Rotate Through 3 Specialized Environmental Solution Stations (Technical Fluency)",
-              "description": "Explore non-lethal wildlife deterrence, solar-wildflower dual zoning, and sustainable drainage systems (SuDS)."
+              "title": "Grammar Focus: Rules & Obligations (Must, Should, Have to)",
+              "description": "Express clear rules and safety requirements using modal verbs of obligation and necessity."
             },
             {
               "num": 3,
-              "title": "Deploy Passive Voice & Impersonal Phrasing for Policy Recommendations (Grammar Clinic)",
-              "description": "Master formal policy language: 'Measures must be implemented to...', 'It is proposed that...', 'Runway safety zones are to be kept...'."
+              "title": "Speaking Activity: The Airport & Wildlife Agreement",
+              "description": "Work in teams to negotiate an agreement between airport directors, biologists, and local farmers."
             },
             {
               "num": 4,
-              "title": "Negotiate a 10-Year Airport Land-Use Treaty (Multi-Party Negotiation)",
-              "description": "Represent Airport Operations, Wildlife Protection League, or Regional Clean Energy Consortium to divide 500 hectares."
-            },
-            {
-              "num": 5,
-              "title": "Benchmark Individual Progress Against the Formative Evaluation 2 Rubric (FE2 Readiness)",
-              "description": "Evaluate speaking fluency, interactive turn-taking, and lexical range against official B2 criteria."
+              "title": "Speaking Practice: FE2 Presentation Rehearsal",
+              "description": "Rehearse a 2-minute presentation with a partner and review the official evaluation criteria."
             }
           ]
         },
@@ -5066,29 +5031,24 @@
           "summary": "A fast-moving station-based workshop and treaty negotiation: students explore non-lethal wildlife management, solar-pollinator zoning, and sustainable drainage, followed by a tri-partite land-use treaty negotiation and FE2 prep.",
           "items": [
             {
-              "title": "Part 1: The Meadow Paradox: Video & Case Hook",
-              "description": "Why airport grasslands represent some of Europe's most fertile yet hazardous biodiversity zones (pesticide-free perimeter fences vs. bird-strike risks).",
+              "title": "Part 1: Key Vocabulary • Airport Nature & Wildlife",
+              "description": "Learn 8 airport ecology terms, check syllable stress, and complete the matching drill.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: 3-Station Specialized Solutions Workshop",
-              "description": "Groups rotate through Station 1 (Non-Lethal Wildlife Deterrence), Station 2 (Solar-Pollinator Dual-Use Zoning), and Station 3 (Sustainable Drainage & Glycol Filtration).",
+              "title": "Part 2: Grammar Focus • Rules & Obligations (Must, Should, Have to)",
+              "description": "Practice modals of obligation, prohibition, and advice; complete 4 sentence transformation drills.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Language Clinic: Passive Voice & Impersonal Recommendations",
-              "description": "Professional formal English: 'It is strongly recommended that...', 'Measures must be implemented to ensure...', 'Runway buffer zones are to be maintained...'.",
+              "title": "Part 3: Speaking Activity • The Airport & Wildlife Agreement",
+              "description": "Rotate through 3 airport stations, negotiate the 4-point ecological agreement, and ratify the accord.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: The Tri-Partite Land-Use Treaty Negotiation",
-              "description": "Airport Authority, Wildlife Trust, and Clean Energy Consortium negotiate a binding 10-year accord over 500 perimeter hectares.",
+              "title": "Part 4: Speaking Practice & FE2 Preparation",
+              "description": "Timed 2-minute presentation rehearsal with your partner against the official FE2 scoring criteria.",
               "part": "Part 4"
-            },
-            {
-              "title": "Part 5: Formative Evaluation 2 (FE2) Roadmap & Review",
-              "description": "Treaty ratification, vocabulary consolidation, and FE2 rubric benchmarking.",
-              "part": "Part 5"
             }
           ]
         },
@@ -5650,27 +5610,27 @@
         "session": 1,
         "objectives": {
           "title": "Session 1 Objectives - Everyday AI & Workplace Automation",
-          "summary": "By the end of this session, you will be able to evaluate workplace automation risks across critical operations, analyze the trade-offs between computational efficiency and cognitive deskilling, formulate Human-in-the-Loop (HITL) safeguards, and defend operational automation policies during a spoken town hall inquiry.",
+          "summary": "By the end of this session, you will be able to discuss computers and AI in the workplace, describe automated tasks using the passive voice, solve practical workplace automation problems with a partner, and answer challenging questions during a group meeting.",
           "items": [
             {
               "num": 1,
-              "title": "Conduct an Operational Automation Vulnerability Audit",
-              "description": "Assess six workplace workflows using an Urgency vs. Human Oversight Matrix to identify automation bottlenecks."
+              "title": "Learn Key Vocabulary: AI & Computers in the Workplace",
+              "description": "Learn 8 useful words including machine learning, automated checks, human supervision, and data drift."
             },
             {
               "num": 2,
-              "title": "Formulate Human-in-the-Loop (HITL) Protocols",
-              "description": "Collaborate in interdisciplinary trios to draft mandatory operational override thresholds for autonomous systems."
+              "title": "Grammar Focus: Active & Passive Sentences in Tech",
+              "description": "Contrast automated system actions ('The flight was re-routed') with human decisions ('The manager approved')."
             },
             {
               "num": 3,
-              "title": "Master Active vs. Passive Voice in Technical Risk Briefings",
-              "description": "Contrast automated processes ('The flight plan was recalculated') with executive human accountability ('The dispatcher authorized')."
+              "title": "Speaking Activity: Workplace Meeting: Using AI at Work",
+              "description": "Review 6 workplace situations where computers make decisions and set clear rules for human supervision."
             },
             {
               "num": 4,
-              "title": "Lead a Spoken Workplace Town Hall Scrutiny Session",
-              "description": "Deliver an authoritative operational defense of algorithmic changes and respond to tough cross-examination from staff."
+              "title": "Speaking Practice: Answering Tough Questions About Technology",
+              "description": "Present your team's rules for safe AI use and answer skeptical questions from colleagues."
             }
           ]
         },
@@ -5679,23 +5639,23 @@
           "summary": "A operational workshop moving from an automation risk audit to a high-stakes Human-in-the-Loop policy simulation, spoken town hall cross-examination, and active/passive technical phrasing clinic.",
           "items": [
             {
-              "title": "Part 1: Workplace Automation Vulnerability Audit",
-              "description": "Analyze six operational workflows (dispatch algorithms, automated passenger re-booking, biometric bag drops, predictive maintenance) and rank them on a Risk vs. Autonomy Matrix.",
+              "title": "Part 1: Key Vocabulary • AI & Computers in the Workplace",
+              "description": "Learn 8 technology terms, check pronunciation and syllable stress, and complete the matching challenge.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: 'Human-in-the-Loop' (HITL) Policy Simulation",
-              "description": "Adopt specialized operational roles (Operations Director, Union Workforce Rep, AI Systems Architect) to manage 3 dynamic crisis injects involving algorithm hallucination and cascading system failure.",
+              "title": "Part 2: Grammar Focus • Active & Passive Sentences in Tech",
+              "description": "Spot the passive voice trap, study the clean B2 model, and complete 4 transformation sentences.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Spoken Workplace Town Hall & Cross-Examination",
-              "description": "Taskforce leads deliver a 3-minute spoken defense of their automation policy, followed by aggressive question-and-answer scrutiny from frontline employees.",
+              "title": "Part 3: Speaking Activity • Workplace Meeting: Using AI at Work",
+              "description": "Audit 6 workplace workflows, decide when humans must intervene, and resolve 3 live problem injects.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Technical Phrasing Clinic & FE3 Alignment",
-              "description": "Drill precise Active vs. Passive constructions in incident reporting and calibrate spoken delivery against the Formative Evaluation 3 (FE3) criteria.",
+              "title": "Part 4: Speaking Practice & Discussion Review",
+              "description": "Present your AI safety rules to colleagues, answer tough questions, and prepare for FE3.",
               "part": "Part 4"
             }
           ]
@@ -6175,27 +6135,27 @@
         "session": 2,
         "objectives": {
           "title": "Session 2 Objectives - Future Mobility & Clean Energy Transport",
-          "summary": "By the end of this session, you will be able to analyze competing zero-emission transport paradigms, evaluate the infrastructure trade-offs of hydrogen aviation and urban air mobility, apply high-level B2 language of predictive certainty, and negotiate a €100M Clean Corridor blueprint against stakeholder resistance.",
+          "summary": "By the end of this session, you will be able to discuss electric vehicles and clean energy transport, express degrees of certainty about the future (will, might, probably), plan a zero-emission transport route with a partner, and present your plan to the class.",
           "items": [
             {
               "num": 1,
-              "title": "Compare Competing Zero-Emission Transport Paradigms",
-              "description": "Analyze fixed-guideway high-speed transit vs. decentralized regional electric aviation across emissions, land take, and scalability."
+              "title": "Learn Key Vocabulary: Electric Vehicles & Future Transport",
+              "description": "Learn 8 useful words for electric aircraft, battery charging hubs, hydrogen power, and clean cities."
             },
             {
               "num": 2,
-              "title": "Master Future Forms & Predictive Certainty Phrasing",
-              "description": "Deploy graded modal phrases ('is bound to', 'is slated to', 'is highly improbable that') to express technical forecasts."
+              "title": "Grammar Focus: Talking About the Future (Will, Might, Going to)",
+              "description": "Express future certainty and probability accurately ('will definitely', 'is likely to', 'might')."
             },
             {
               "num": 3,
-              "title": "Lead a €100M Clean Corridor Collaborative Design Sprint",
-              "description": "Balance capital allocation across hydrogen hubs, electric commuter fleets, vertiports, and high-speed rail links."
+              "title": "Speaking Activity: Planning a Green Transport Route",
+              "description": "Work in a team with €100M to design a clean travel connection between an airport and a city center."
             },
             {
               "num": 4,
-              "title": "Overcome Vocal Stakeholder Pushback in Spoken Pitches",
-              "description": "Defend your regional clean mobility transition plan against fiscal conservatives, rural advocates, and climate skeptics."
+              "title": "Speaking Practice: Presenting a Green Transport Idea",
+              "description": "Present your green travel route to the class and vote on the most realistic project."
             }
           ]
         },
@@ -6204,19 +6164,24 @@
           "summary": "A visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, budgeting €100M in regional decarbonization infrastructure, and defending transit choices against stakeholder resistance.",
           "items": [
             {
-              "title": "Part 1: Future Mobility Showcase • Comparative Visual Analysis",
-              "description": "Examine two competing future transit paradigms (Decentralized Regional Electric/eVTOL Air Mobility vs. Centralized High-Speed Rail & Megaprojects) using interactive spatial hotspots and a 3-stage spoken protocol.",
+              "title": "Part 1: Key Vocabulary • Electric Vehicles & Future Transport",
+              "description": "Learn 8 clean energy terms, check syllable stress, and complete the transport matching drill.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: €100M Clean Corridor Collaborative Design Sprint",
-              "description": "Teams allocate €100,000,000 across 5 breakthrough propulsion and infrastructure options to transform the 'South-West Trans-Regional Corridor' by 2035.",
+              "title": "Part 2: Grammar Focus • Talking About the Future (Will, Might, Going to)",
+              "description": "Master predictive certainty and future probability; complete 4 sentence rephrasing drills.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Spoken Regional Council Pitch & Policy Defense",
-              "description": "Planning duos deliver 3-minute investment pitches to the Regional Transport Authority, counter stakeholder objections, and vote on the winning corridor design.",
+              "title": "Part 3: Speaking Activity • Planning a Green Transport Route",
+              "description": "Compare 3 clean vehicles, design the €100M transport route, and resolve 3 stakeholder challenges.",
               "part": "Part 3"
+            },
+            {
+              "title": "Part 4: Group Presentation & Project Review",
+              "description": "Deliver a 3-minute group presentation to the council and review tips for your speaking exam.",
+              "part": "Part 4"
             }
           ]
         },
@@ -6703,27 +6668,27 @@
         "session": 3,
         "objectives": {
           "title": "Session 3 Objectives - Technology Ethics & Automated Decisions in AI",
-          "summary": "By the end of this session, you will be able to analyze ethical dilemmas surrounding predictive AI and algorithmic surveillance, cross-examine technical witness depositions under EU AI Act standards, deploy persuasive B2 argumentation strategies, and deliver a formal public inquiry verdict.",
+          "summary": "By the end of this session, you will be able to discuss technology ethics and digital privacy, use linking words to connect contrasting ideas, participate in a public hearing about smart cameras, and agree on fair technology rules.",
           "items": [
             {
               "num": 1,
-              "title": "Evaluate High-Stakes Algorithmic Oversight Dossiers",
-              "description": "Scrutinize empirical evidence of automated profiling, false-positive biometric matches, and black-box decision models."
+              "title": "Learn Key Vocabulary: Technology Ethics & Digital Privacy",
+              "description": "Learn 8 useful words for privacy protection, facial scans, unfair bias, and transparency."
             },
             {
               "num": 2,
-              "title": "Conduct Formal Spoken Witness Cross-Examinations",
-              "description": "Adopt inquiry roles (Judicial Commissioner, Chief Data Ethics Auditor, Biometric Defense Vendor, Civil Rights Litigator) to challenge witness vulnerabilities."
+              "title": "Grammar Focus: Linking Words (Although, However, In spite of)",
+              "description": "Connect contrasting points smoothly in discussions ('Although the technology is fast, we must...')."
             },
             {
               "num": 3,
-              "title": "Deploy Advanced B2 Inquiry Argumentation Structures",
-              "description": "Master partial concessions ('While I acknowledge the security imperatives...'), causation challenges, and constructive regulatory remedies."
+              "title": "Speaking Activity: Public Hearing: Smart Cameras in Public",
+              "description": "Role-play a debate between police chiefs, software companies, privacy advocates, and passengers."
             },
             {
               "num": 4,
-              "title": "Deliver a Binding Public Inquiry Commission Ruling",
-              "description": "Formulate a majority judicial opinion balancing public security mandates against fundamental privacy rights."
+              "title": "Speaking Practice: Evaluating Arguments & Making Fair Rules",
+              "description": "Cross-examine speakers, defend your view, and decide which rules to enforce."
             }
           ]
         },
@@ -6732,23 +6697,23 @@
           "summary": "A Oxford-style regulatory inquiry examining biometric surveillance, predictive passenger profiling, and algorithmic accountability under the European AI Act framework.",
           "items": [
             {
-              "title": "Part 1: Devil's Advocate Warm-Up • Tech Fallacy Rebuttals",
-              "description": "Quick-fire spoken counter-arguments refuting three common tech governance myths regarding facial recognition and algorithmic infallibility.",
+              "title": "Part 1: Key Vocabulary • Technology Ethics & Digital Privacy",
+              "description": "Learn 8 digital ethics terms, check syllable stress, and complete the definition matching challenge.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: The High-Stakes Public Inquiry Dossier",
-              "description": "Analyze the official inquiry brief: Project 'Argus-Eye' (an automated AI profiling system deployed across 14 international border checkpoints).",
+              "title": "Part 2: Grammar Focus • Linking Words (Although, However, In spite of)",
+              "description": "Master contrast conjunctions and commas; complete 4 sentence combination drills.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Spoken Inquiry Argumentation & Cross-Exam Clinic",
-              "description": "Practice high-level rhetorical patterns: concessions, challenging false equivalence, and formulating proportionate regulatory safeguards.",
+              "title": "Part 3: Speaking Activity • Public Hearing: Smart Cameras in Public",
+              "description": "Participate in the Project Argus-Eye hearing, give sworn witness testimony, and cross-examine.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Oxford-Style Public Hearing & Commission Verdict",
-              "description": "Formal inquiry proceedings: witness depositions, 2-minute adversarial cross-examinations, commissioner deliberations, and delivery of the final binding verdict.",
+              "title": "Part 4: Discussion Review & Argument Evaluation",
+              "description": "Weigh privacy vs. safety arguments and review speaking feedback with your partner.",
               "part": "Part 4"
             }
           ]
@@ -7185,27 +7150,27 @@
         "session": 4,
         "objectives": {
           "title": "Session 4 Objectives - Biometrics, Digital IDs & Passenger Journey",
-          "summary": "By the end of this session, you will be able to analyze seamless airport passenger processing technologies, evaluate data sovereignty and cryptographic security safeguards, negotiate a multilateral Passenger Rights & Biometric Sovereignty Treaty, and calibrate your speaking performance for the Session 5 Formative Evaluation 3 (FE3).",
+          "summary": "By the end of this session, you will be able to explain how digital passports and biometric airport gates work, use relative clauses to define technical equipment, negotiate passenger rights in a team, and rehearse for your final presentation.",
           "items": [
             {
               "num": 1,
-              "title": "Examine Seamless Contactless Airport Architecture",
-              "description": "Rotate through three specialized technology stations covering walkthrough biometric tunnels, zero-knowledge proofs, and sovereign digital identity wallets."
+              "title": "Learn Key Vocabulary: Passports, Face Scans & Digital Travel",
+              "description": "Learn 8 useful words for digital passports, walkthrough gates, face recognition, and data privacy."
             },
             {
               "num": 2,
-              "title": "Evaluate Biometric Cyber-Vulnerabilities & Hash Encryption",
-              "description": "Analyze the operational difference between centralized facial image databases and decentralized cryptographic biometric hashes."
+              "title": "Grammar Focus: Relative Clauses (Who, Which, That, Where)",
+              "description": "Define equipment and procedures accurately using defining and non-defining relative clauses."
             },
             {
               "num": 3,
-              "title": "Negotiate the Tri-Party Passenger Biometric Charter",
-              "description": "Represent competing delegations (Border Agencies, Passenger Advocacy Groups, Cybersecurity Regulators) to ratify a binding operational treaty."
+              "title": "Speaking Activity: Agreeing on Airport Passenger Rules",
+              "description": "Work in a team to negotiate an international passenger charter on biometric data and opt-out rights."
             },
             {
               "num": 4,
-              "title": "Confirm Formative Evaluation 3 (FE3) Speaking Readiness",
-              "description": "Review presentation scoring rubrics, rehearse 2-minute technical pitch summaries with a partner, and finalize FE3 topic approvals."
+              "title": "Speaking Practice: FE3 Final Presentation Practice & Sign-Off",
+              "description": "Deliver a timed 2-minute partner presentation dry run against the official FE3 scoring rubric."
             }
           ]
         },
@@ -7214,23 +7179,23 @@
           "summary": "A station-based workshop and treaty negotiation tournament analyzing contactless travel architectures, biometric data sovereignty, and culminating in full rehearsal for the Formative Evaluation 3 (FE3) presentations.",
           "items": [
             {
-              "title": "Part 1: The Contactless Border Paradox Briefing",
-              "description": "Examine the friction between frictionless 10-second passenger throughput and the catastrophic cyber risks of permanent biometric data theft.",
+              "title": "Part 1: Key Vocabulary • Passports, Face Scans & Digital Travel",
+              "description": "Learn 8 digital travel words, check syllable stress, and complete the passenger step drill.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Interactive Technology Stations",
-              "description": "Pairs rotate through 3 operational engineering clinics: Station 1 (Lidar & Walkthrough E-Gates), Station 2 (Zero-Knowledge Cryptographic Hashes), and Station 3 (Digital Wallets & IATA One ID Interoperability).",
+              "title": "Part 2: Grammar Focus • Relative Clauses (Who, Which, That, Where)",
+              "description": "Master relative pronouns and comma placement; complete 4 sentence combination drills.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Tri-Party Passenger Biometric Charter Tournament",
-              "description": "Delegations negotiate the terms of a legally binding 5-point international treaty establishing data retention limits, opt-out rights, and audit penalties.",
+              "title": "Part 3: Speaking Activity • Agreeing on Airport Passenger Rules",
+              "description": "Rotate through 3 travel technology stations and negotiate the 5-point passenger charter.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Formative Evaluation 3 (FE3) Rehearsal & Sign-Off",
-              "description": "Verify presentation pairings, conduct a rapid-fire pitch rehearsal against the FE3 rubric, and confirm readiness for the Session 5 evaluation.",
+              "title": "Part 4: FE3 Final Presentation Practice & Sign-Off",
+              "description": "Deliver a timed 2-minute presentation dry run with your partner against the official FE3 criteria.",
               "part": "Part 4"
             }
           ]
@@ -11107,52 +11072,52 @@
           "session": 1,
           "objectives": {
             "title": "Session 1 Objectives - Extreme Weather & Urban Climate Resilience",
-            "summary": "By the end of this session, you will be able to evaluate severe weather disaster briefings, deploy precise B2 vocabulary of meteorological hazards, apply conditionals to formulate emergency risk assessments, lead a civic emergency taskforce simulation, and deliver an authoritative spoken press briefing under media scrutiny.",
+            "summary": "By the end of this session, you will be able to discuss severe weather news, use 'if' sentences to talk about weather risks, work in a team to protect city services during a storm, and give a short spoken update to the public.",
             "items": [
               {
                 "num": 1,
-                "title": "Master Severe Weather & Infrastructure Vulnerability Lexis",
-                "description": "Define and apply 8 essential terms including atmospheric river, inundation, storm surge, and cascading failure."
+                "title": "Learn Key Vocabulary: Severe Weather & Storms",
+                "description": "Learn 8 useful words for heavy rain, heatwaves, flooding, and storm damage."
               },
               {
                 "num": 2,
-                "title": "Deploy Conditionals for Emergency Risk Assessment (Grammar Clinic)",
-                "description": "Construct real and hypothetical conditional sentences (1st and 2nd conditionals) to link meteorological alerts directly to civic countermeasures."
+                "title": "Grammar Focus: 'If' Sentences for Weather Warnings",
+                "description": "Practice 1st and 2nd conditionals to talk about weather emergencies ('If winds exceed 100 km/h...')."
               },
               {
                 "num": 3,
-                "title": "Lead a Civic Emergency Taskforce Simulation (Part 3)",
-                "description": "Adopt departmental roles in pairs to negotiate an Urgency-Impact Matrix and respond to live crisis injects."
+                "title": "Speaking Activity: City Emergency Taskforce",
+                "description": "Work in pairs to choose which city services (hospitals, trains, electricity) to protect first."
               },
               {
                 "num": 4,
-                "title": "Deliver a Spoken Emergency Press Conference",
-                "description": "Present an authoritative 3-minute public safety broadcast and defend decisions against tough investigative reporter questions."
+                "title": "Speaking Practice: Emergency Public Update",
+                "description": "Give a short, clear public safety broadcast and answer questions from classmates."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan - Extreme Weather & Urban Climate Resilience (2 Hours)",
-            "summary": "A operational syllabus combining disaster lexis drills, conditional grammar clinics, a 4-part emergency taskforce simulation, live spoken press conference, and FE2 alignment.",
+            "summary": "A operational syllabus combining storm vocabulary drills, conditional grammar clinics, a 4-part emergency taskforce simulation, live spoken press conference, and FE2 alignment.",
             "items": [
               {
-                "title": "Part 1: Severe Weather & Disaster Vulnerability Lexis",
-                "description": "Analyze 8 core technical terms, examine real-world emergency bulletins, and complete the interactive vocabulary matching drill.",
+                "title": "Part 1: Key Vocabulary • Extreme Weather & Storms",
+                "description": "Learn 8 essential weather words, check syllable stress, and complete the matching challenge.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Clinic • Conditionals for Emergency Risk",
-                "description": "Master 1st and 2nd conditionals in crisis management; complete 4 interactive risk assessment sentence transformations.",
+                "title": "Part 2: Grammar Focus • 'If' Sentences for Weather Warnings",
+                "description": "Spot the common speaking mistake, learn the clean B2 model, and complete 4 transformation sentences.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Emergency Taskforce Simulation & Press Conference",
-                "description": "Step-by-step roleplay: rank 6 acute threats, resolve dynamic crisis injects, and deliver a live spoken press conference under media scrutiny.",
+                "title": "Part 3: Speaking Activity • City Emergency Taskforce",
+                "description": "Work with a partner to rank 6 city threats and respond to unexpected weather alerts.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Pronunciation Clinic, Peer Review & FE2 Prep",
-                "description": "Drill syllable stress on multi-syllable terms, conduct peer fluency evaluations, and review FE2 presentation requirements.",
+                "title": "Part 4: Speaking Review & Discussion Feedback",
+                "description": "Check your pronunciation, give your partner speaking feedback, and prepare for FE2.",
                 "part": "Part 4"
               }
             ]
@@ -11637,27 +11602,27 @@
           "session": 2,
           "objectives": {
             "title": "Session 2 Objectives - The 15-Minute Resilient City Blueprint",
-            "summary": "By the end of this session, you will be able to analyze contrasting urban spatial typologies, apply precise B2 spatial prepositions and relative clauses, allocate a €50,000,000 regeneration budget across resilient city infrastructure, and pitch a collaborative urban design blueprint to a City Council panel.",
+            "summary": "By the end of this session, you will be able to describe city neighborhoods and public transport, use prepositions of place and relative clauses, redesign a busy street in a group, and present your ideas to the class.",
             "items": [
               {
                 "num": 1,
-                "title": "Analyze Contrasting Urban Typologies (Photo Showcase)",
-                "description": "Contrast car-centric sprawl with European superblocks using interactive clickable hotspots and a 3-stage observation protocol."
+                "title": "Learn Key Vocabulary: City Design & Streets",
+                "description": "Learn 8 useful words for pedestrian areas, green spaces, bike lanes, and urban living."
               },
               {
                 "num": 2,
-                "title": "Master Spatial Prepositions & Relative Clauses (Grammar Clinic)",
-                "description": "Construct sophisticated descriptive sentences combining spatial markers ('flanked by', 'adjacent to') with non-defining relative clauses."
+                "title": "Grammar Focus: Describing Places & Locations",
+                "description": "Use prepositions ('adjacent to', 'within walking distance') and relative clauses ('where', 'which') with precision."
               },
               {
                 "num": 3,
-                "title": "Execute a €50M Collaborative Urban Design Sprint",
-                "description": "Allocate €50M across 5 resilient infrastructure categories while overcoming 4 tough stakeholder objections."
+                "title": "Speaking Activity: Redesigning the City Center",
+                "description": "Look at two street photos, debate traffic vs. walking areas, and choose how to spend a €50M budget."
               },
               {
                 "num": 4,
-                "title": "Deliver a Spoken City Council Pitch & Peer Vote",
-                "description": "Present a 3-minute spoken proposal defending your duo's blueprint and participate in the class council vote."
+                "title": "Speaking Practice: Presenting City Ideas to the Council",
+                "description": "Present your redesigned street plan to the class and vote on the best design."
               }
             ]
           },
@@ -11666,23 +11631,23 @@
             "summary": "A visual analysis and collaborative engineering sprint moving from spatial photo analysis to relative clause grammar drills, €50M budget allocation, stakeholder rebuttal clinic, and spoken council presentations.",
             "items": [
               {
-                "title": "Part 1: Urban Architecture & Spatial Vocabulary",
-                "description": "Master 8 key spatial design terms (permeable paving, active frontage, bioswale, superblock) with interactive visual matching.",
+                "title": "Part 1: Key Vocabulary • City Design & Streets",
+                "description": "Learn 8 city architecture words, check syllable stress, and complete the photo matching challenge.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Clinic • Spatial Prepositions & Relative Clauses",
-                "description": "Punctuation and syntax rules for non-defining relative clauses; complete 4 sentence combining drills with instant feedback.",
+                "title": "Part 2: Grammar Focus • Describing Places & Locations",
+                "description": "Review spatial prepositions and relative pronouns; complete 4 sentence combination drills.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Photo Analysis & €50M Collaborative Design Sprint",
-                "description": "Step-by-step: analyze comparative photos, allocate the €50M budget across 5 categories, and script counter-arguments to 4 stakeholder objections.",
+                "title": "Part 3: Speaking Activity • Redesigning the City Center",
+                "description": "Compare the Barcelona Superblock to car sprawl, allocate the €50M budget, and answer resident questions.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Spoken City Council Pitch & Democratic Vote",
-                "description": "Duos deliver spoken presentations to the City Council panel; class votes on the winning resilient blueprint.",
+                "title": "Part 4: Spoken City Council Pitch & Group Vote",
+                "description": "Deliver a short spoken pitch to the council panel and vote on the most livable project.",
                 "part": "Part 4"
               }
             ]
@@ -12170,52 +12135,52 @@
           "session": 3,
           "objectives": {
             "title": "Session 3 Objectives - Environmental Ethics & The Public Inquiry Hearing",
-            "summary": "By the end of this session, you will be able to analyze high-stakes infrastructure controversies, deploy diplomatic B2 hedging and concession formulas, conduct formal witness cross-examinations, and deliver a majority judicial commission ruling.",
+            "summary": "By the end of this session, you will be able to discuss environmental questions, express polite opinions and disagreement, participate in a mock public hearing, and evaluate arguments with a partner.",
             "items": [
               {
                 "num": 1,
-                "title": "Master Environmental Ethics & Public Inquiry Lexis",
-                "description": "Define and apply 8 high-level terms including empirical evidence, carbon sequestration, proportionality, and peatland aquifer."
+                "title": "Learn Key Vocabulary: Environment & Public Debates",
+                "description": "Learn 8 useful words for environmental protection, construction projects, and community hearings."
               },
               {
                 "num": 2,
-                "title": "Deploy Cautious Language (Hedging) & Concessions (Grammar Clinic)",
-                "description": "Construct formal argumentation sentences using partial concessions ('While I concede that...') and causality challenges."
+                "title": "Grammar Focus: Expressing Opinions & Polite Disagreement",
+                "description": "Use polite and cautious phrases ('It seems likely that...', 'While I understand your point, I believe...')."
               },
               {
                 "num": 3,
-                "title": "Conduct an Oxford-Style Public Inquiry Hearing",
-                "description": "Adopt sworn witness roles in the Val-d'Or Rail Bypass controversy and execute 2-minute adversarial cross-examinations."
+                "title": "Speaking Activity: The New Railway Public Debate",
+                "description": "Role-play a debate between rail engineers, environmentalists, local residents, and government officials."
               },
               {
                 "num": 4,
-                "title": "Formulate a Legally Binding Commission Ruling",
-                "description": "Synthesize economic and ecological evidence to deliver a formal majority tribunal verdict."
+                "title": "Speaking Practice: Asking Questions & Defending Your View",
+                "description": "Cross-examine witnesses, defend your position, and deliver a fair final decision."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 3 Lesson Plan - Environmental Ethics & The Public Inquiry Hearing (2 Hours)",
-            "summary": "A formal inquiry lab moving from environmental lexis to cautious argumentation clinics, witness deposition analysis, Oxford-style cross-examinations, and tribunal deliberations.",
+            "summary": "A formal inquiry lab moving from environmental vocabulary to cautious argumentation clinics, witness deposition analysis, Oxford-style cross-examinations, and tribunal deliberations.",
             "items": [
               {
-                "title": "Part 1: Environmental Ethics & Inquiry Vocabulary",
-                "description": "Examine 8 core debate terms; complete the interactive collocation matching challenge with instant answer reveal.",
+                "title": "Part 1: Key Vocabulary • Environment & Public Debates",
+                "description": "Learn 8 debate words, check syllable stress, and complete the matching challenge.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Clinic • Cautious Language & Concessions",
-                "description": "Master diplomatic hedging formulas; rewrite 4 blunt statements into formal B2 inquiry arguments with check answers.",
+                "title": "Part 2: Grammar Focus • Expressing Opinions & Polite Disagreement",
+                "description": "Master cautious language ('hedging') and polite disagreement; complete 4 rephrasing drills.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: The Val-d'Or Rail Bypass Public Inquiry Hearing",
-                "description": "Step-by-step: examine 4 sworn witness briefs, prepare cross-examination questions, convene the hearing, and deliver the tribunal verdict.",
+                "title": "Part 3: Speaking Activity • The New Railway Public Debate",
+                "description": "Role-play the Val-d'Or Rail Bypass hearing with sworn witness statements and cross-examination.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Argumentative Debrief & Peer Rhetorical Review",
-                "description": "Peer evaluation on hedging accuracy, evidence presentation, and alignment with FE2 presentation criteria.",
+                "title": "Part 4: Speaking Review & Discussion Feedback",
+                "description": "Evaluate who made the most convincing argument and review tips for your speaking exam.",
                 "part": "Part 4"
               }
             ]
@@ -12652,52 +12617,52 @@
           "session": 4,
           "objectives": {
             "title": "Session 4 Objectives - Airport Biodiversity & Ecological Coexistence",
-            "summary": "By the end of this session, you will be able to evaluate airfield eco-engineering solutions, deploy modals of obligation and necessity in regulatory contexts, negotiate a multilateral 500-hectare Airport Perimeter Treaty, and complete final preparation for Formative Evaluation 2 (FE2).",
+            "summary": "By the end of this session, you will be able to discuss wildlife management near airports, use modal verbs for rules and obligations, negotiate a land agreement in a group, and rehearse for your speaking evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Examine Airfield Eco-Engineering Technologies",
-                "description": "Analyze 8 specialized terms including meadow paradox, avian 3D radar, long-grass policy, and constructed reed beds."
+                "title": "Learn Key Vocabulary: Airport Nature & Wildlife",
+                "description": "Learn 8 useful words for bird hazard control, wildlife habitats, and airport green zones."
               },
               {
                 "num": 2,
-                "title": "Master Modals of Obligation, Prohibition & Necessity (Grammar Clinic)",
-                "description": "Apply graded modal verbs ('are mandated to', 'is strictly prohibited from', 'should') in airport safety regulations."
+                "title": "Grammar Focus: Rules & Obligations (Must, Should, Have to)",
+                "description": "Express clear rules and safety requirements using modal verbs of obligation and necessity."
               },
               {
                 "num": 3,
-                "title": "Negotiate the Tri-Party Airport Perimeter Land-Use Treaty",
-                "description": "Represent competing delegations (Flight Safety, Wildlife Trust, Clean Energy Consortium) to zone 500 hectares of perimeter land."
+                "title": "Speaking Activity: The Airport & Wildlife Agreement",
+                "description": "Work in teams to negotiate an agreement between airport directors, biologists, and local farmers."
               },
               {
                 "num": 4,
-                "title": "Complete Formative Evaluation 2 (FE2) Oral Rehearsal",
-                "description": "Conduct a 2-minute timed pitch rehearsal with your partner and verify slide outline approval with your teacher."
+                "title": "Speaking Practice: FE2 Presentation Rehearsal",
+                "description": "Rehearse a 2-minute presentation with a partner and review the official evaluation criteria."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan - Airport Biodiversity & Ecological Coexistence (2 Hours)",
-            "summary": "A station-based workshop and treaty tournament combining eco-engineering lexis, regulatory modal grammar, a 3-station rotation, treaty negotiation, and FE2 oral rehearsal.",
+            "summary": "A station-based workshop and treaty tournament combining airport wildlife vocabulary, regulatory modal grammar, a 3-station rotation, treaty negotiation, and FE2 oral rehearsal.",
             "items": [
               {
-                "title": "Part 1: Airfield Eco-Engineering Vocabulary",
-                "description": "Explore the Meadow Paradox; complete the interactive 8-term technical summary gap-fill with instant answer reveals.",
+                "title": "Part 1: Key Vocabulary • Airport Nature & Wildlife",
+                "description": "Learn 8 airport ecology terms, check syllable stress, and complete the matching drill.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Clinic • Modals of Obligation & Necessity",
-                "description": "Study regulatory modal formulas; complete 4 interactive gap-fill exercises matching modal strength to safety rules.",
+                "title": "Part 2: Grammar Focus • Rules & Obligations (Must, Should, Have to)",
+                "description": "Practice modals of obligation, prohibition, and advice; complete 4 sentence transformation drills.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Interactive Stations & Land-Use Treaty Tournament",
-                "description": "Step-by-step: rotate through 3 technology stations, negotiate the 500-hectare zoning treaty, and sign the Tri-Party Accord.",
+                "title": "Part 3: Speaking Activity • The Airport & Wildlife Agreement",
+                "description": "Rotate through 3 airport stations, negotiate the 4-point ecological agreement, and ratify the accord.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: FE2 Oral Presentation Rehearsal & Sign-Off",
-                "description": "Deliver partner pitch dry runs against the FE2 rubric and confirm final teacher validation.",
+                "title": "Part 4: Speaking Practice & FE2 Preparation",
+                "description": "Timed 2-minute presentation rehearsal with your partner against the official FE2 scoring criteria.",
                 "part": "Part 4"
               }
             ]
@@ -13260,52 +13225,52 @@
           "session": 1,
           "objectives": {
             "title": "Session 1 Objectives - Everyday AI & Workplace Automation",
-            "summary": "By the end of this session, you will be able to evaluate workplace automation risks across critical operations, analyze the trade-offs between computational efficiency and cognitive deskilling, apply the Passive Voice to describe automated system actions, formulate Human-in-the-Loop (HITL) safeguards, and defend operational automation policies during a spoken town hall inquiry.",
+            "summary": "By the end of this session, you will be able to discuss computers and AI in the workplace, describe automated tasks using the passive voice, solve practical workplace automation problems with a partner, and answer challenging questions during a group meeting.",
             "items": [
               {
                 "num": 1,
-                "title": "Master Machine Learning & Operational Automation Lexis",
-                "description": "Define and apply 8 essential terms including algorithmic drift, predictive telemetry, human-in-the-loop, and black-box models."
+                "title": "Learn Key Vocabulary: AI & Computers in the Workplace",
+                "description": "Learn 8 useful words including machine learning, automated checks, human supervision, and data drift."
               },
               {
                 "num": 2,
-                "title": "Deploy Active vs. Passive Voice in Technical Descriptions (Grammar Clinic)",
-                "description": "Contrast automated system outputs ('The flight plan was recalculated') with human executive agency ('The dispatcher authorized')."
+                "title": "Grammar Focus: Active & Passive Sentences in Tech",
+                "description": "Contrast automated system actions ('The flight was re-routed') with human decisions ('The manager approved')."
               },
               {
                 "num": 3,
-                "title": "Conduct an Operational Automation Vulnerability Audit",
-                "description": "Assess 6 workplace workflows using an Urgency vs. Oversight Matrix and resolve 3 dynamic crisis injects."
+                "title": "Speaking Activity: Workplace Meeting: Using AI at Work",
+                "description": "Review 6 workplace situations where computers make decisions and set clear rules for human supervision."
               },
               {
                 "num": 4,
-                "title": "Lead a Spoken Workplace Town Hall Scrutiny Session",
-                "description": "Deliver an authoritative operational defense of algorithmic changes and respond to tough cross-examination from frontline staff."
+                "title": "Speaking Practice: Answering Tough Questions About Technology",
+                "description": "Present your team's rules for safe AI use and answer skeptical questions from colleagues."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan - Everyday AI & Workplace Automation (2 Hours)",
-            "summary": "A operational workshop moving from automation lexis to active/passive voice grammar drills, a 6-workflow vulnerability audit, Human-in-the-Loop simulation, spoken town hall scrutiny, and FE3 alignment.",
+            "summary": "A operational workshop moving from technology vocabulary to active/passive voice grammar drills, a 6-workflow vulnerability audit, Human-in-the-Loop simulation, spoken town hall scrutiny, and FE3 alignment.",
             "items": [
               {
-                "title": "Part 1: Machine Learning & Operational Automation Lexis",
-                "description": "Analyze 8 key AI terms; complete the interactive concept-to-consequence matching drill with check answers.",
+                "title": "Part 1: Key Vocabulary • AI & Computers in the Workplace",
+                "description": "Learn 8 technology terms, check pronunciation and syllable stress, and complete the matching challenge.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Clinic • Active vs. Passive Voice in Tech",
-                "description": "Master passive voice in system reporting vs active voice for human responsibility; complete 4 interactive conversion drills.",
+                "title": "Part 2: Grammar Focus • Active & Passive Sentences in Tech",
+                "description": "Spot the passive voice trap, study the clean B2 model, and complete 4 transformation sentences.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Automation Vulnerability Audit & Town Hall Simulation",
-                "description": "Step-by-step: rank 6 critical workflows, resolve 3 dynamic crisis injects, and lead a spoken town hall defense under employee scrutiny.",
+                "title": "Part 3: Speaking Activity • Workplace Meeting: Using AI at Work",
+                "description": "Audit 6 workplace workflows, decide when humans must intervene, and resolve 3 live problem injects.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Technical Phrasing Review & FE3 Alignment",
-                "description": "Peer review on passive voice accuracy, calibrate spoken delivery against the FE3 presentation rubric, and confirm topics.",
+                "title": "Part 4: Speaking Practice & Discussion Review",
+                "description": "Present your AI safety rules to colleagues, answer tough questions, and prepare for FE3.",
                 "part": "Part 4"
               }
             ]
@@ -13785,27 +13750,27 @@
           "session": 2,
           "objectives": {
             "title": "Session 2 Objectives - Future Mobility & Clean Energy Transport",
-            "summary": "By the end of this session, you will be able to analyze competing zero-emission transport paradigms, evaluate the infrastructure trade-offs of hydrogen aviation and urban air mobility, apply high-level B2 language of predictive certainty, and negotiate a €100M Clean Corridor blueprint against stakeholder resistance.",
+            "summary": "By the end of this session, you will be able to discuss electric vehicles and clean energy transport, express degrees of certainty about the future (will, might, probably), plan a zero-emission transport route with a partner, and present your plan to the class.",
             "items": [
               {
                 "num": 1,
-                "title": "Compare Competing Zero-Emission Transport Paradigms",
-                "description": "Contrast decentralized regional electric aviation with high-density fixed-guideway rail across emissions, land take, and scalability."
+                "title": "Learn Key Vocabulary: Electric Vehicles & Future Transport",
+                "description": "Learn 8 useful words for electric aircraft, battery charging hubs, hydrogen power, and clean cities."
               },
               {
                 "num": 2,
-                "title": "Master Future Forms & Predictive Certainty (Grammar Clinic)",
-                "description": "Deploy graded modal phrases ('is bound to', 'is slated to', 'is highly improbable that') to express technical forecasts."
+                "title": "Grammar Focus: Talking About the Future (Will, Might, Going to)",
+                "description": "Express future certainty and probability accurately ('will definitely', 'is likely to', 'might')."
               },
               {
                 "num": 3,
-                "title": "Lead a €100M Clean Corridor Collaborative Design Sprint",
-                "description": "Allocate €100,000,000 across 5 breakthrough propulsion and infrastructure options to transform a regional corridor by 2035."
+                "title": "Speaking Activity: Planning a Green Transport Route",
+                "description": "Work in a team with €100M to design a clean travel connection between an airport and a city center."
               },
               {
                 "num": 4,
-                "title": "Deliver a Spoken Regional Council Investment Pitch",
-                "description": "Defend your regional clean mobility transition plan against fiscal conservatives, rural advocates, and climate skeptics."
+                "title": "Speaking Practice: Presenting a Green Transport Idea",
+                "description": "Present your green travel route to the class and vote on the most realistic project."
               }
             ]
           },
@@ -13814,23 +13779,23 @@
             "summary": "A visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, practicing predictive certainty grammar, budgeting €100M in regional decarbonization infrastructure, and defending transit choices.",
             "items": [
               {
-                "title": "Part 1: Clean Propulsion & Multi-Modal Transit Lexis",
-                "description": "Master 8 alternative propulsion terms (cryogenic hydrogen, fuel-cell, vertiport, catenary electrification) with comparative analysis.",
+                "title": "Part 1: Key Vocabulary • Electric Vehicles & Future Transport",
+                "description": "Learn 8 clean energy terms, check syllable stress, and complete the transport matching drill.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Clinic • Future Forms & Predictive Certainty",
-                "description": "Calibrate expressions of technical confidence; complete 4 interactive technological forecasts with instant answer check.",
+                "title": "Part 2: Grammar Focus • Talking About the Future (Will, Might, Going to)",
+                "description": "Master predictive certainty and future probability; complete 4 sentence rephrasing drills.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Comparative Showcase & €100M Design Sprint",
-                "description": "Step-by-step: analyze comparative transit models, allocate €100M across 5 options, script stakeholder rebuttals, and pitch to the Council.",
+                "title": "Part 3: Speaking Activity • Planning a Green Transport Route",
+                "description": "Compare 3 clean vehicles, design the €100M transport route, and resolve 3 stakeholder challenges.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Council Vote & Feasibility Review",
-                "description": "Class votes on the most resilient corridor blueprint; peer feedback on predictive grammar and spoken persuasion.",
+                "title": "Part 4: Group Presentation & Project Review",
+                "description": "Deliver a 3-minute group presentation to the council and review tips for your speaking exam.",
                 "part": "Part 4"
               }
             ]
@@ -14318,27 +14283,27 @@
           "session": 3,
           "objectives": {
             "title": "Session 3 Objectives - Technology Ethics & Automated Decisions in AI",
-            "summary": "By the end of this session, you will be able to analyze ethical dilemmas surrounding predictive AI and algorithmic surveillance, cross-examine technical witness depositions under EU AI Act standards, deploy complex conjunctions and concessive clauses, and deliver a formal public inquiry verdict.",
+            "summary": "By the end of this session, you will be able to discuss technology ethics and digital privacy, use linking words to connect contrasting ideas, participate in a public hearing about smart cameras, and agree on fair technology rules.",
             "items": [
               {
                 "num": 1,
-                "title": "Master AI Ethics & Regulatory Governance Lexis",
-                "description": "Define and apply 8 essential terms including biometric profiling, black-box model, false-positive rate, and conformity assessment."
+                "title": "Learn Key Vocabulary: Technology Ethics & Digital Privacy",
+                "description": "Learn 8 useful words for privacy protection, facial scans, unfair bias, and transparency."
               },
               {
                 "num": 2,
-                "title": "Deploy Complex Conjunctions & Concessive Clauses (Grammar Clinic)",
-                "description": "Construct formal legal debate sentences using 'notwithstanding', 'inasmuch as', 'whereas', and 'even if'."
+                "title": "Grammar Focus: Linking Words (Although, However, In spite of)",
+                "description": "Connect contrasting points smoothly in discussions ('Although the technology is fast, we must...')."
               },
               {
                 "num": 3,
-                "title": "Conduct an Oxford-Style Public Inquiry Hearing (Project Argus-Eye)",
-                "description": "Adopt sworn witness roles in an automated border surveillance controversy and execute formal cross-examinations."
+                "title": "Speaking Activity: Public Hearing: Smart Cameras in Public",
+                "description": "Role-play a debate between police chiefs, software companies, privacy advocates, and passengers."
               },
               {
                 "num": 4,
-                "title": "Deliver a Legally Binding Commission Ruling",
-                "description": "Balance European homeland security mandates against fundamental civil privacy rights to issue a formal majority ruling."
+                "title": "Speaking Practice: Evaluating Arguments & Making Fair Rules",
+                "description": "Cross-examine speakers, defend your view, and decide which rules to enforce."
               }
             ]
           },
@@ -14347,23 +14312,23 @@
             "summary": "A Oxford-style regulatory inquiry examining biometric surveillance, predictive profiling, complex concessive grammar, sworn witness depositions, and tribunal deliberations under the EU AI Act.",
             "items": [
               {
-                "title": "Part 1: AI Ethics & Regulatory Governance Lexis",
-                "description": "Classify AI systems into EU AI Act risk tiers; complete the interactive 8-term ethical vocabulary drill with check answers.",
+                "title": "Part 1: Key Vocabulary • Technology Ethics & Digital Privacy",
+                "description": "Learn 8 digital ethics terms, check syllable stress, and complete the definition matching challenge.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Clinic • Complex Conjunctions & Concessions",
-                "description": "Master high-level formal debate syntax; combine 4 pairs of arguments using concessive clauses with instant solution reveal.",
+                "title": "Part 2: Grammar Focus • Linking Words (Although, However, In spite of)",
+                "description": "Master contrast conjunctions and commas; complete 4 sentence combination drills.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: The Project Argus-Eye Public Inquiry Hearing",
-                "description": "Step-by-step: analyze witness depositions, prepare targeted cross-examination challenges, convene the hearing, and deliver the verdict.",
+                "title": "Part 3: Speaking Activity • Public Hearing: Smart Cameras in Public",
+                "description": "Participate in the Project Argus-Eye hearing, give sworn witness testimony, and cross-examine.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Regulatory Debrief & Argument Evaluation",
-                "description": "Peer review on argumentative rigor, formal register, and alignment with FE3 presentation standards.",
+                "title": "Part 4: Discussion Review & Argument Evaluation",
+                "description": "Weigh privacy vs. safety arguments and review speaking feedback with your partner.",
                 "part": "Part 4"
               }
             ]
@@ -14800,52 +14765,52 @@
           "session": 4,
           "objectives": {
             "title": "Session 4 Objectives - Biometrics, Digital IDs & Passenger Journey",
-            "summary": "By the end of this session, you will be able to analyze seamless airport passenger processing technologies, evaluate data sovereignty and cryptographic security safeguards, deploy defining and non-defining relative clauses with precision, negotiate a multilateral Passenger Rights & Biometric Sovereignty Treaty, and calibrate your speaking performance for the Session 5 Formative Evaluation 3 (FE3).",
+            "summary": "By the end of this session, you will be able to explain how digital passports and biometric airport gates work, use relative clauses to define technical equipment, negotiate passenger rights in a team, and rehearse for your final presentation.",
             "items": [
               {
                 "num": 1,
-                "title": "Master Biometric & Cryptographic Security Lexis",
-                "description": "Define and apply 8 specialized terms including zero-knowledge proof, cryptographic hash, hardware enclave, and data sovereignty."
+                "title": "Learn Key Vocabulary: Passports, Face Scans & Digital Travel",
+                "description": "Learn 8 useful words for digital passports, walkthrough gates, face recognition, and data privacy."
               },
               {
                 "num": 2,
-                "title": "Master Defining vs. Non-Defining Relative Clauses (Grammar Clinic)",
-                "description": "Punctuate and construct precision technical sentences with relative pronouns ('which', 'who', 'whose', 'wherein')."
+                "title": "Grammar Focus: Relative Clauses (Who, Which, That, Where)",
+                "description": "Define equipment and procedures accurately using defining and non-defining relative clauses."
               },
               {
                 "num": 3,
-                "title": "Negotiate the Tri-Party Passenger Biometric Charter",
-                "description": "Represent competing delegations (Border Agencies, Passenger Advocacy Groups, Cybersecurity Regulators) to ratify a binding operational treaty."
+                "title": "Speaking Activity: Agreeing on Airport Passenger Rules",
+                "description": "Work in a team to negotiate an international passenger charter on biometric data and opt-out rights."
               },
               {
                 "num": 4,
-                "title": "Execute Formative Evaluation 3 (FE3) Full Rehearsal",
-                "description": "Deliver a 2-minute timed presentation pitch rehearsal with your partner against the official FE3 scoring rubric."
+                "title": "Speaking Practice: FE3 Final Presentation Practice & Sign-Off",
+                "description": "Deliver a timed 2-minute partner presentation dry run against the official FE3 scoring rubric."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan - Biometrics, Digital IDs & Passenger Journey (2 Hours)",
-            "summary": "A station-based workshop and treaty tournament combining cryptographic lexis, relative clause grammar, a 3-station technology rotation, treaty negotiation, and FE3 presentation dry runs.",
+            "summary": "A station-based workshop and treaty tournament combining digital travel vocabulary, relative clause grammar, a 3-station technology rotation, treaty negotiation, and FE3 presentation dry runs.",
             "items": [
               {
-                "title": "Part 1: Biometric & Cryptographic Security Lexis",
-                "description": "Trace the cryptographic passenger journey; complete the interactive 8-term data-flow ordering exercise with check answers.",
+                "title": "Part 1: Key Vocabulary • Passports, Face Scans & Digital Travel",
+                "description": "Learn 8 digital travel words, check syllable stress, and complete the passenger step drill.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Clinic • Relative Clauses & Precision",
-                "description": "Master comma placement and relative pronouns; complete 4 interactive sentence combination drills with instant solution reveal.",
+                "title": "Part 2: Grammar Focus • Relative Clauses (Who, Which, That, Where)",
+                "description": "Master relative pronouns and comma placement; complete 4 sentence combination drills.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Interactive Stations & Biometric Charter Tournament",
-                "description": "Step-by-step: rotate through 3 technology stations, negotiate the 5-point Passenger Charter, and ratify the international treaty.",
+                "title": "Part 3: Speaking Activity • Agreeing on Airport Passenger Rules",
+                "description": "Rotate through 3 travel technology stations and negotiate the 5-point passenger charter.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: FE3 Final Presentation Rehearsal & Sign-Off",
-                "description": "partner pitch dry runs against the FE3 rubric and final teacher validation of slide decks and topic outlines.",
+                "title": "Part 4: FE3 Final Presentation Practice & Sign-Off",
+                "description": "Deliver a timed 2-minute presentation dry run with your partner against the official FE3 criteria.",
                 "part": "Part 4"
               }
             ]

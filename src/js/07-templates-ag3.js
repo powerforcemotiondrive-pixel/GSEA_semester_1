@@ -52,18 +52,18 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
-                <span>120 Minutes (AI Lexis • Passive Voice • Town Hall Defense)</span>
+                <span>General English • B1/B2 Speaking Workshop</span>
               </div>
             </div>
           </div>
 
-          <!-- PART 1: Machine Learning & Operational Automation Lexis -->
+          <!-- PART 1: Key Vocabulary • AI & Computers in the Workplace -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-blue-50 text-blue-700 font-black text-xs flex items-center justify-center border border-blue-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Machine Learning & Operational Automation Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Key Vocabulary • AI & Computers in the Workplace</h4>
                   <p class="text-xs text-slate-500">Master 8 core terms for AI systems, automated dispatch, and workforce interaction.</p>
                 </div>
               </div>
@@ -136,7 +136,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Active vs. Passive Voice in Tech</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Focus • Active & Passive Sentences in Tech</h4>
                   <p class="text-xs text-slate-500">Master the functional difference between automated process reporting (Passive) and human executive accountability (Active).</p>
                 </div>
               </div>
@@ -193,7 +193,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Automation Vulnerability Audit & Town Hall Simulation</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Speaking Activity • Workplace Meeting: Using AI at Work</h4>
                   <p class="text-xs text-slate-500">Audit 6 operational workflows, resolve dynamic crisis injects, and defend policies at a spoken town hall.</p>
                 </div>
               </div>
@@ -297,7 +297,7 @@
           <!-- PART 4: Phrasing Review & FE3 Alignment -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Part 4: Phrasing Review & FE3 Alignment:</span>
+              <span class="font-bold text-slate-800">Part 4: Speaking Practice & Discussion Review:</span>
               <span class="ml-1">Conduct peer evaluations on passive voice precision and executive town hall delivery. Calibrate presentation plans against the Formative Evaluation 3 (FE3) scoring rubric.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 1 Complete • 120 mins</span>
@@ -354,18 +354,18 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
-                <span>120 Minutes (Propulsion Lexis • Future Modals • Council Pitch)</span>
+                <span>General English • B1/B2 Speaking Workshop</span>
               </div>
             </div>
           </div>
 
-          <!-- PART 1: Clean Propulsion & Multi-Modal Transit Lexis -->
+          <!-- PART 1: Key Vocabulary • Electric Vehicles & Future Transport -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-teal-50 text-teal-700 font-black text-xs flex items-center justify-center border border-teal-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Clean Propulsion & Multi-Modal Transit Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Key Vocabulary • Electric Vehicles & Future Transport</h4>
                   <p class="text-xs text-slate-500">Master 8 core engineering terms comparing alternative aviation propulsion with high-speed rail.</p>
                 </div>
               </div>
@@ -438,7 +438,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Future Forms & Predictive Certainty</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Focus • Talking About the Future (Will, Might, Going to)</h4>
                   <p class="text-xs text-slate-500">Master calibrated expressions of technical confidence ('is bound to', 'is slated to', 'is unlikely to').</p>
                 </div>
               </div>
@@ -499,7 +499,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Comparative Showcase & €100M Clean Corridor Sprint</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Speaking Activity • Planning a Green Transport Route</h4>
                   <p class="text-xs text-slate-500">Contrast two future transit paradigms, allocate €100M in public infrastructure, and pitch to the Council.</p>
                 </div>
               </div>
@@ -619,7 +619,7 @@
           <!-- PART 4: Council Vote & Feasibility Review -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Part 4: Council Vote & Feasibility Review:</span>
+              <span class="font-bold text-slate-800">Part 4: Group Presentation & Project Review:</span>
               <span class="ml-1">Class votes on the most resilient regional corridor blueprint based on CO₂ reduction and rural equity. Calibrate presentation plans against the FE3 rubric.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 2 Complete • 120 mins</span>
@@ -674,18 +674,18 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
-                <span>120 Minutes (AI Ethics Lexis • Concessive Syntax • Tribunal Hearing)</span>
+                <span>General English • B1/B2 Speaking Workshop</span>
               </div>
             </div>
           </div>
 
-          <!-- PART 1: AI Ethics & Regulatory Governance Lexis -->
+          <!-- PART 1: Key Vocabulary • Technology Ethics & Digital Privacy -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 1: AI Ethics & Regulatory Governance Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Key Vocabulary • Technology Ethics & Digital Privacy</h4>
                   <p class="text-xs text-slate-500">Master 8 essential terms under the European Union AI Act legal framework.</p>
                 </div>
               </div>
@@ -758,7 +758,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Complex Conjunctions & Concessions</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Focus • Linking Words (Although, However, In spite of)</h4>
                   <p class="text-xs text-slate-500">Master formal concessive debate syntax ('notwithstanding', 'inasmuch as', 'whereas', 'even if').</p>
                 </div>
               </div>
@@ -819,7 +819,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 3: The Project Argus-Eye Public Inquiry Hearing</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Speaking Activity • Public Hearing: Smart Cameras in Public</h4>
                   <p class="text-xs text-slate-500">Examine sworn depositions under EU AI Act standards, execute cross-examinations, and deliver the tribunal verdict.</p>
                 </div>
               </div>
@@ -885,7 +885,7 @@
           <!-- PART 4: Regulatory Debrief & Review -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Part 4: Regulatory Debrief & Argument Evaluation:</span>
+              <span class="font-bold text-slate-800">Part 4: Discussion Review & Argument Evaluation:</span>
               <span class="ml-1">Evaluate your opponent on (1) Legal precision, (2) Effective deployment of concessive clauses, and (3) Professional courtroom composure. Calibrate prep for FE3.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 3 Complete • 120 mins</span>
@@ -939,18 +939,18 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
-                <span>120 Minutes (Biometric Lexis • Relative Clauses • FE3 Pitch Dry Run)</span>
+                <span>General English • B1/B2 Speaking Workshop</span>
               </div>
             </div>
           </div>
 
-          <!-- PART 1: Biometric & Cryptographic Security Lexis -->
+          <!-- PART 1: Key Vocabulary • Passports, Face Scans & Digital Travel -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-purple-50 text-purple-700 font-black text-xs flex items-center justify-center border border-purple-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Biometric & Cryptographic Security Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Key Vocabulary • Passports, Face Scans & Digital Travel</h4>
                   <p class="text-xs text-slate-500">Master 8 specialized terms covering frictionless travel and cryptographic data sovereignty.</p>
                 </div>
               </div>
@@ -1023,7 +1023,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Relative Clauses & Technical Precision</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Focus • Relative Clauses (Who, Which, That, Where)</h4>
                   <p class="text-xs text-slate-500">Master defining vs. non-defining relative clauses with relative pronouns ('which', 'who', 'whose', 'wherein').</p>
                 </div>
               </div>
@@ -1081,7 +1081,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Interactive Stations & Passenger Charter Tournament</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Speaking Activity • Agreeing on Airport Passenger Rules</h4>
                   <p class="text-xs text-slate-500">Rotate through 3 contactless technology stations, negotiate a 5-point Passenger Charter, and ratify the treaty.</p>
                 </div>
               </div>
@@ -1162,7 +1162,7 @@
           <!-- PART 4: FE3 Final Presentation Rehearsal & Sign-Off -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Part 4: Formative Evaluation 3 (FE3) Oral Rehearsal:</span>
+              <span class="font-bold text-slate-800">Part 4: FE3 Final Presentation Practice & Sign-Off:</span>
               <span class="ml-1">Deliver a 2-minute timed partner pitch dry run against the FE3 rubric. Confirm slide deck outlines and secure final teacher sign-off for the Session 5 evaluation.</span>
             </div>
             <span class="text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-md shrink-0">✓ Ready for FE3 in Session 5</span>

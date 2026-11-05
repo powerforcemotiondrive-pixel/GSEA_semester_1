@@ -75,3 +75,4 @@ if (verifyContext.window.COURSE_DATA && verifyContext.window.COURSE_DATA.aas && 
   console.error('❌ Fatal error: window.COURSE_DATA failed to initialize in VM!');
   process.exit(1);
 }
+

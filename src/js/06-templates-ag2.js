@@ -58,20 +58,20 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
-                <span>120 Minutes (Vocabulary • Grammar • Simulation • Debrief)</span>
+                <span>General English • B1/B2 Speaking Workshop</span>
               </div>
             </div>
           </div>
 
           <!-- ================================================================== -->
-          <!-- PART 1: Severe Weather & Disaster Vulnerability Lexis  -->
+          <!-- PART 1: Key Vocabulary • Extreme Weather & Storms  -->
           <!-- ================================================================== -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-rose-50 text-rose-700 font-black text-xs flex items-center justify-center border border-rose-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Severe Weather & Disaster Vulnerability Lexis</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Key Vocabulary • Extreme Weather & Storms</h4>
                   <p class="text-xs text-slate-500">Master 8 essential operational terms and complete the interactive threat-matching challenge.</p>
                 </div>
               </div>
@@ -149,7 +149,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Conditionals in Emergency Risk</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Focus • 'If' Sentences for Weather Warnings</h4>
                   <p class="text-xs text-slate-500">Master 1st (Real) and 2nd (Hypothetical) conditionals to express acute risks and preventive safeguards.</p>
                 </div>
               </div>
@@ -208,7 +208,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Civic Emergency Taskforce Simulation</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Speaking Activity • City Emergency Taskforce</h4>
                   <p class="text-xs text-slate-500">Adopt departmental roles, rank 6 acute threats, resolve live injects, and lead a press conference.</p>
                 </div>
               </div>
@@ -311,8 +311,8 @@
           <!-- ================================================================== -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Part 4: Consolidation & Spoken Peer Feedback:</span>
-              <span class="ml-1">Rate your partner on (1) Fluency under pressure, (2) Correct conditional structures, and (3) Deployment of disaster lexis. Confirm your chosen FE2 presentation topic.</span>
+              <span class="font-bold text-slate-800">Part 4: Speaking Review & Discussion Feedback:</span>
+              <span class="ml-1">Rate your partner on (1) Fluency under pressure, (2) Correct conditional structures, and (3) Use of key weather vocabulary. Confirm your chosen FE2 presentation topic.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 1 Complete • 120 mins</span>
           </div>
@@ -368,7 +368,7 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
-                <span>120 Minutes (Visual Analysis • Budgeting • Council Pitch)</span>
+                <span>General English • B1/B2 Speaking Workshop</span>
               </div>
             </div>
           </div>
@@ -379,7 +379,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-sky-50 text-sky-700 font-black text-xs flex items-center justify-center border border-sky-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Urban Architecture & Spatial Vocabulary</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Key Vocabulary • City Design & Streets</h4>
                   <p class="text-xs text-slate-500">Master 8 core spatial terms and examine contrasting urban design typologies.</p>
                 </div>
               </div>
@@ -452,7 +452,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Spatial Prepositions & Relative Clauses</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Focus • Describing Places & Locations</h4>
                   <p class="text-xs text-slate-500">Construct non-defining relative clauses with spatial prepositions ('flanked by', 'adjacent to', 'bisected by').</p>
                 </div>
               </div>
@@ -511,7 +511,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Visual Photo Analysis & €50M Collaborative Design Sprint</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Speaking Activity • Redesigning the City Center</h4>
                   <p class="text-xs text-slate-500">Examine comparative photos, allocate the €50M budget across 5 categories, and counter stakeholder resistance.</p>
                 </div>
               </div>
@@ -652,7 +652,7 @@
           <!-- PART 4: Spoken City Council Pitch & Vote -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Part 4: Spoken Council Pitch & Peer Vote:</span>
+              <span class="font-bold text-slate-800">Part 4: Spoken City Council Pitch & Group Vote:</span>
               <span class="ml-1">Each planning duo presents a 3-minute pitch to the City Council. The class votes on the winning design based on ecological resilience and economic fairness.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 2 Complete • 120 mins</span>
@@ -707,7 +707,7 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
-                <span>120 Minutes (Inquiry Lexis • Hedging Clinic • Cross-Exam Hearing)</span>
+                <span>General English • B1/B2 Speaking Workshop</span>
               </div>
             </div>
           </div>
@@ -718,7 +718,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-amber-50 text-amber-700 font-black text-xs flex items-center justify-center border border-amber-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Environmental Ethics & Inquiry Vocabulary</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Key Vocabulary • Environment & Public Debates</h4>
                   <p class="text-xs text-slate-500">Master 8 formal legal and ecological debate terms.</p>
                 </div>
               </div>
@@ -791,7 +791,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Cautious Language (Hedging) & Concessions</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Focus • Expressing Opinions & Polite Disagreement</h4>
                   <p class="text-xs text-slate-500">Master formal hedging patterns and diplomatic concessions for adversarial public hearings.</p>
                 </div>
               </div>
@@ -848,7 +848,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 3: The Val-d'Or Rail Bypass Public Inquiry Hearing</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Speaking Activity • The New Railway Public Debate</h4>
                   <p class="text-xs text-slate-500">Examine 4 witness depositions, execute targeted cross-examinations, and deliver the tribunal verdict.</p>
                 </div>
               </div>
@@ -915,7 +915,7 @@
           <!-- PART 4: Argumentative Debrief & Peer Review -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Part 4: Argumentative Debrief & Peer Review:</span>
+              <span class="font-bold text-slate-800">Part 4: Speaking Review & Discussion Feedback:</span>
               <span class="ml-1">Rate your opponent on (1) Diplomatic tone, (2) Evidence-based argumentation, and (3) Use of hedging expressions. Check progress for FE2 in Session 5.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 3 Complete • 120 mins</span>
@@ -969,7 +969,7 @@
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-700">Total Duration:</span>
-                <span>120 Minutes (Eco-Tech Lexis • Regulatory Modals • Treaty Ratification)</span>
+                <span>General English • B1/B2 Speaking Workshop</span>
               </div>
             </div>
           </div>
@@ -980,7 +980,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-teal-50 text-teal-700 font-black text-xs flex items-center justify-center border border-teal-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Airfield Eco-Engineering Vocabulary</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Key Vocabulary • Airport Nature & Wildlife</h4>
                   <p class="text-xs text-slate-500">Master 8 specialized airfield ecology and safety terms.</p>
                 </div>
               </div>
@@ -1053,7 +1053,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Clinic • Modals of Obligation, Prohibition & Necessity</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Grammar Focus • Rules & Obligations (Must, Should, Have to)</h4>
                   <p class="text-xs text-slate-500">Master graded modal verbs ('are mandated to', 'is strictly prohibited from', 'should') in aviation regulations.</p>
                 </div>
               </div>
@@ -1110,7 +1110,7 @@
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Interactive Stations & Land-Use Treaty Tournament</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Speaking Activity • The Airport & Wildlife Agreement</h4>
                   <p class="text-xs text-slate-500">Rotate through 3 specialized eco-engineering stations, negotiate 500 hectares of perimeter land, and ratify the Accord.</p>
                 </div>
               </div>
@@ -1191,7 +1191,7 @@
           <!-- PART 4: Formative Evaluation 2 (FE2) Final Rehearsal & Sign-Off -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Part 4: Formative Evaluation 2 (FE2) Oral Rehearsal:</span>
+              <span class="font-bold text-slate-800">Part 4: Speaking Practice & FE2 Preparation:</span>
               <span class="ml-1">Deliver a 2-minute timed partner pitch dry run against the FE2 rubric. Verify slide outlines and get final teacher sign-off for Session 5.</span>
             </div>
             <span class="text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-md shrink-0">✓ Ready for FE2 in Session 5</span>
