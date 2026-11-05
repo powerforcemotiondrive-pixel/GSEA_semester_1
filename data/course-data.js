@@ -1,5 +1,5 @@
 /**
- * GSEA Semester 1 - General English & Technical English (AT)
+ * GSEA Semester 1 - General English & Technical English (AAS)
  * Complete Course Data Architecture
  * Author: Phil PARRIS (LH/LAN)
  */
@@ -3456,64 +3456,64 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 Objectives - Extreme Weather",
-          "summary": "By the end of this session, you will be able to discuss extreme weather and climate impacts with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
+          "title": "Session 1 Objectives - Extreme Weather & Urban Climate Resilience",
+          "summary": "By the end of this session, you will be able to evaluate severe weather disaster briefings, deploy precise B2 language of urgency and risk, lead an emergency civic taskforce simulation, and deliver a live spoken press conference under media scrutiny.",
           "items": [
             {
               "num": 1,
-              "title": "Practice TOEIC Listening for Weather Bulletins",
-              "description": "Listen for key weather details, temperature extremes, and travel delay announcements typical of TOEIC Part 4."
+              "title": "Analyze an Authentic Emergency Weather Dossier (Risk Assessment)",
+              "description": "Scan emergency alerts, flood forecasts, and infrastructure vulnerability metrics to identify acute urban hazards."
             },
             {
               "num": 2,
-              "title": "Master Extreme Weather & Climate Vocabulary",
-              "description": "Learn and use high-frequency terms for severe weather events (heatwaves, flash floods, droughts) and climate resilience."
+              "title": "Prioritize Interventions on an Urgency-Impact Matrix (Spoken Negotiation)",
+              "description": "Debate and rank six civic protection measures with a partner from immediate priority to secondary standby."
             },
             {
               "num": 3,
-              "title": "Identify Word Forms & Suffixes in TOEIC Part 5",
-              "description": "Identify whether a blank needs a noun (-tion), adjective (-able), or adverb (-ly) when describing weather changes."
+              "title": "Deploy Language of Urgency, Safeguards & Cause-and-Effect (Grammar Clinic)",
+              "description": "Master official directive structures: 'Priority must be given to...', 'Provided that...', and 'Failure to evacuate will result in...'."
             },
             {
               "num": 4,
-              "title": "Discuss Community & Infrastructure Resilience (DDRS)",
-              "description": "Explore how cities and transport networks can protect communities and infrastructure against extreme weather."
+              "title": "Coordinate an Escalating Multi-Stakeholder Crisis Simulation (Interactive Role-Play)",
+              "description": "Collaborate as Mayor's Office, Transit Director, Hospital Lead, or Public Communications to resolve breaking crisis updates."
             },
             {
               "num": 5,
-              "title": "Build Fluency for the Session 5 Evaluation",
-              "description": "Practice speaking about weather disruptions and safety measures using clear pronunciation, fluency, and accurate vocabulary."
+              "title": "Deliver a Live Spoken Press Conference & Handle Journalist Scrutiny (Fluency & Q&A)",
+              "description": "Deliver a 3-minute public emergency broadcast and answer challenging questions from investigative media."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 1 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
+          "title": "Session 1 Lesson Plan - Extreme Weather & Urban Climate Resilience (2 Hours)",
+          "summary": "A high-stakes, 2-block crisis workshop: students analyze an escalating meteorological disaster dossier, prioritize city defenses, role-play a city emergency taskforce, and defend decisions in a live press briefing.",
           "items": [
             {
-              "time": "0-15",
-              "title": "Conversational Warm-Up: Weather Stories (15 mins)",
-              "description": "Students talk in pairs about the most extreme weather event they have ever witnessed and how they responded."
+              "time": "00-20",
+              "title": "Part 1: The Meteorological Dossier & Urgency Matrix (20 mins)",
+              "description": "Reading an escalating regional storm and heat emergency alert; teams place 6 civic threats on an interactive Urgency-Impact Diamond."
             },
             {
-              "time": "15-45",
-              "title": "TOEIC Strategy: Listening to Announcements (30 mins)",
-              "description": "Part 4 practice: listening to broadcast weather advisories, airport delay announcements, and emergency notices."
+              "time": "20-40",
+              "title": "Part 2: Language Clinic: Expressing Urgency, Conditionals & Directives (20 mins)",
+              "description": "Mastering high-priority language: 'Immediate priority must be given to...', 'Provided that auxiliary power holds...', 'Failure to act will lead to...'."
             },
             {
-              "time": "45-65",
-              "title": "Vocabulary Builder: Climate & Disruption (20 mins)",
-              "description": "High-frequency terms for weather phenomena (heatwave, flash flood, blizzard) and words formed with suffixes (-tion, -ment, -ly)."
+              "time": "40-95",
+              "title": "Part 3: The City Emergency Taskforce Simulation (55 mins)",
+              "description": "4 distinct roles (Mayor's Office, Transit Director, Hospital Network Lead, Communications Officer) responding to 3 breaking incident updates (blackout, hospital generator failure, flooded transit)."
             },
             {
-              "time": "65-110",
-              "title": "Structured Discussion & Grammar (45 mins)",
-              "description": "Discussing community resilience and infrastructure protection using Word Forms (nouns, adjectives, adverbs) in context."
+              "time": "95-115",
+              "title": "Part 4: Spoken Live Press Conference & Media Scrutiny (20 mins)",
+              "description": "Taskforce leads deliver a 3-minute emergency broadcast to citizens and face tough questions from investigative reporters."
             },
             {
-              "time": "110-120",
-              "title": "Debrief, Evaluation Prep & Wrap-Up (10 mins)",
-              "description": "Fluency feedback, pronunciation check for weather vocabulary, and self-evaluation logging."
+              "time": "115-120",
+              "title": "Part 5: Crisis Debrief & Key Terminology Wrap-Up (5 mins)",
+              "description": "Peer language feedback, operational debrief, and vocabulary logging."
             }
           ]
         },
@@ -3870,256 +3870,125 @@
           ]
         },
         "lessonContent": {
-          "overview": {
-            "image": "images/ag_m2card1.jpg",
-            "title": "Extreme Weather & Climate Hazards",
-            "subtitle": "Atmospheric Rivers, Heat Domes, Flash Floods & Airport Resilience",
-            "badge": "Session Overview • Extreme Weather & Climate Resilience"
-          },
           "hero": {
+            "title": "Extreme Weather & Urban Climate Resilience",
+            "subtitle": "Archetype A • Deep-Dive Crisis Workshop: Heat Domes, Flash Floods & Civic Emergency Management",
             "image": "images/ag_m2card1.jpg",
-            "title": "Extreme Weather & Climate Hazards",
-            "subtitle": "Atmospheric Rivers, Heat Domes, Flash Floods & Airport Resilience",
-            "badge": "Session Overview • Extreme Weather & Climate Resilience"
+            "badge": "AG Module 2 • Session 1 • Crisis Workshop"
           },
-          "openingSession": {
-            "modeBadges": [
-              "👥 Pair Recall",
-              "⏱️ 5 min pairs + 5 min plenary",
-              "🗣️ Weather Quick Check"
-            ],
-            "instructions": [
-              "Step 1 (Headlines - 3 mins): In pairs, ask each other: \"What major extreme weather or climate hazard story caught your attention recently?\" Discuss one operational challenge it posed for transport hubs.",
-              "Step 2 (Memory Recall - 4 mins): Take turns testing each other on the 4 foundational meteorological distinctions below without revealing the answers.",
-              "Step 3 (Verify & Calibrate - 3 mins): Click \"Reveal Answer\" to verify technical accuracy. Note down any terms needing consolidation (e.g., density altitude, convective cell)."
-            ],
-            "deliverable": "Accurately explain one meteorological distinction during the instructor spot-check using precise technical vocabulary.",
-            "teacherNotes": "Cold-call two student pairs to distinguish \"Supercell vs Convective Cell\" and \"Mitigation vs Adaptation\". Clarify how high temperatures thin air (density altitude) and affect aircraft takeoff weight. Board key terms.",
-            "title": "Activity 1: Extreme Weather News & Meteorological Warm-Up (10 mins)",
-            "summary": "Opening warm-up analyzing current severe atmospheric headlines and testing key meteorological distinctions.",
-            "newsPrompts": [
-              "Mediterranean airports register unprecedented tarmac surface temperatures (+52°C), impacting aircraft takeoff performance and ground crews.",
-              "A series of atmospheric rivers batter Northern California and Europe, triggering flash floods across low-lying transport corridors.",
-              "Aviation meteorologists deploy advanced Doppler radar algorithms to detect wind shear and microbursts ahead of convective squall lines."
-            ],
-            "diagnostic": {
-              "title": "Meteorological Concepts Quick Check",
-              "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "What is the critical distinction between a Supercell Thunderstorm and an ordinary Convective Cell?",
-                  "answer": "An ordinary convective thunderstorm lasts 30–60 minutes and dissipates under its own downdrafts. A supercell contains a deep, persistently rotating updraft (mesocyclone), allowing it to sustain violent destructive hail, severe wind shear, and tornadoes for hours."
-                },
-                {
-                  "id": 2,
-                  "q": "How does an Atmospheric River differ from the high-altitude Jet Stream?",
-                  "answer": "The jet stream is a fast-flowing, narrow air current at 9–16 km altitude driven by temperature contrasts. An atmospheric river is a low-to-mid-tropospheric ribbon of concentrated water vapor (often 400–600 km wide) that transports immense tropical moisture, causing historic deluge when forced over land or mountains."
-                },
-                {
-                  "id": 3,
-                  "q": "What is the operational difference between Flash Flooding and Riverine Flooding?",
-                  "answer": "Riverine flooding develops slowly over days or weeks as prolonged precipitation fills river basins. Flash flooding occurs within minutes or hours of extreme rainfall intensity, rapidly overwhelming tarmac drainage, culverts, and subway tunnels."
-                },
-                {
-                  "id": 4,
-                  "q": "In climate engineering, what is the difference between Climate Mitigation and Climate Adaptation?",
-                  "answer": "Mitigation tackles the causes of climate change by reducing or preventing greenhouse gas emissions (e.g., SAF, solar arrays, electric GSE). Adaptation deals with the effects by retrofitting infrastructure to withstand unavoidable severe weather shocks (e.g., sea walls, retention basins, reflective pavements)."
-                }
-              ]
-            }
-          },
-          "survey": {
-            "modeBadges": [
-              "🔄 Speed Survey",
-              "⏱️ 4 rotations × 4 mins + 9 min debrief",
-              "🎯 CEFR B2 Persuasive Argumentation"
-            ],
-            "instructions": [
-              "Step 1 (Partner Pairing - 2 mins): Partner A takes Topics 1 & 2; Partner B takes Topics 3 & 4. Review the core dilemma, pro/con points, and debate signposts.",
-              "Step 2 (Rotational Interviews - 16 mins): Conduct 4-minute bilateral interviews per topic. One student acts as interviewer asking the prompt; the other defends a balanced policy solution using signposts (\"While it is true that...\", \"We must weigh... against...\").",
-              "Step 3 (Synthesis & Plenary - 7 mins): Reconnect with your primary partner. Agree on the single highest-priority infrastructure investment for aerodrome climate resilience."
-            ],
-            "deliverable": "Deliver a 60-second spoken recommendation justifying one resilience investment with at least two signpost phrases.",
-            "teacherNotes": "Ensure students rotate speaking and listening roles. Enforce the use of formal concession markers (\"Granted,... nevertheless\"). Monitor for misuse of economic and environmental vocabulary.",
-            "title": "Activity 2: Severe Weather Incident Analysis: Speed Survey (25 mins)",
-            "summary": "Conduct structured speed-dating interviews on 4 prominent extreme weather vulnerabilities. Practice evaluating operational risks, recommending physical interventions, and signposting arguments.",
-            "signposts": [
-              "\"From an operational safety standpoint, ...\"",
-              "\"While high temperatures restrict takeoff weight, we can mitigate this by...\"",
-              "\"In response to intense flash precipitation, civil engineers must prioritize...\"",
-              "\"Empirical climate projections indicate that coastal aerodromes should...\""
-            ],
-            "topics": [
+          "dossier": {
+            "alertLevel": "RED ALERT • METEO-FRANCE / REGIONAL PREFECTURE",
+            "incidentTitle": "Convective Supercell 'Storm Hesper' & Concurrent 42°C Urban Heat Dome",
+            "timeframe": "T-minus 3 Hours Before Peak Atmospheric Impact",
+            "summary": "A catastrophic meteorological collision: a week-long 42°C urban heat dome is abruptly intercepted by a severe convective supercell line moving east at 75 km/h. Expected impacts include 90 mm of rainfall in 45 minutes, localized flash flooding, hurricane-force wind gusts of 120 km/h, and an overstressed regional electrical grid operating at 98% capacity.",
+            "threats": [
               {
-                "id": 1,
-                "badge": "Extreme Heat & Density Altitude",
-                "statement": "Should airports in extreme heat zones permanently shift heavy long-haul departures to night hours?",
-                "pro": "High temperatures thin the air, reducing aerodynamic lift and engine thrust. Shifting departures to cooler night temperatures avoids costly passenger and cargo weight penalties.",
-                "con": "Night flights disrupt local communities with noise pollution and conflict with nighttime curfew regulations at destination hubs.",
-                "prompt": "Interview your partner: How can airports adapt their runways and scheduling as summer heatwaves exceed 45°C?"
+                "id": "A",
+                "title": "Central Metro Line Flooding",
+                "desc": "Subway tunnels at Station République are 1.2m below storm sewer runoff capacity. Risk of complete subterranean inundation within 30 minutes of deluge.",
+                "sector": "Public Transit"
               },
               {
-                "id": 2,
-                "badge": "Flash Flood Inundation",
-                "statement": "Should aerodrome operators replace non-loadbearing taxiway shoulders with permeable asphalt and retention bioswales?",
-                "pro": "Permeable surfaces allow stormwater to infiltrate on-site, preventing apron submergence and protecting underground electrical conduits during cloudbursts.",
-                "con": "Permeable asphalt requires specialized vacuum-sweeping maintenance to avoid clogging with runway rubber debris and FOD.",
-                "prompt": "Interview your partner: How did recent flash floods in Nice and Frankfurt impact flight operations?"
+                "id": "B",
+                "title": "Regional Hospital Power Fragility",
+                "desc": "Main teaching hospital intensive care wing relies on aging rooftop backup diesel generators vulnerable to 120 km/h wind shear.",
+                "sector": "Healthcare"
               },
               {
-                "id": 3,
-                "badge": "Supercell Hail & Wind Shear",
-                "statement": "Should airports invest in real-time automated Doppler lidar systems over conventional radar forecasts?",
-                "pro": "Doppler lidar detects low-level wind shear and microburst turbulence in dry atmospheric conditions before radar echoes detect precipitation, giving pilots critical seconds to execute go-arounds.",
-                "con": "Lidar installations represent significant capital expenditure and require extensive integration with air traffic control sequencing towers.",
-                "prompt": "Interview your partner: What physical protections can protect parked aircraft and solar canopies from severe hail?"
+                "id": "C",
+                "title": "Vulnerable Senior Population Heatstroke",
+                "desc": "Over 8,500 elderly residents in non-air-conditioned top-floor apartments face indoor temperatures exceeding 39°C before the storm breaks.",
+                "sector": "Public Health"
               },
               {
-                "id": 4,
-                "badge": "Storm Surge & Sea-Level Rise",
-                "statement": "Should coastal low-lying airports be protected with massive sea dikes, or relocated inland over the next 50 years?",
-                "pro": "Reinforced tidal barriers and sea walls safeguard trillions of euros in existing terminal and runway assets against 100-year storm surges.",
-                "con": "Long-term sea-level rise and saltwater corrosion may render coastal dikes unsustainable; inland relocation offers permanent long-term resilience.",
-                "prompt": "Interview your partner: Compare the vulnerability of airports like Amsterdam Schiphol, Nice Côte d'Azur, and Singapore Changi."
+                "id": "D",
+                "title": "Suburban Industrial Chemical Runoff",
+                "desc": "Chemical storage depot in the southern flood basin risks toxic leachate contamination if containment dikes overflow into the municipal reservoir.",
+                "sector": "Environment"
+              },
+              {
+                "id": "E",
+                "title": "Airport Runway Drainage Saturation",
+                "desc": "Regional commercial airport reports retention pond capacity at 92%. Continuing operations will force multiple widebody diversions.",
+                "sector": "Aviation/Transport"
+              },
+              {
+                "id": "F",
+                "title": "Civil Protection Communication Congestion",
+                "desc": "Cellular networks are overloaded by panic calls; emergency SMS broadcast protocol requires urgent bandwidth prioritization.",
+                "sector": "Communications"
               }
             ]
           },
-          "grammarClinic": {
-            "modeBadges": [
-              "📝 Word Building & Grammar Focus",
-              "⏱️ 8 min rules + 12 min drill",
-              "🎯 TOEIC Part 5 Accuracy"
-            ],
-            "instructions": [
-              "Step 1 (Word Family Rules - 8 mins): Analyze the four common suffix families in the reference table. Identify sentence position clues (e.g., after determiners $\\rightarrow$ noun; between auxiliary and participle $\\rightarrow$ adverb).",
-              "Step 2 (Interactive Drills - 7 mins): Individually complete the 4 Part-5 style sentence gap-fills by identifying the grammatical category required before choosing the suffix.",
-              "Step 3 (Peer Check & Verify - 5 mins): Compare answers with your partner. Explain why the blank requires that exact word form before clicking \"Reveal Answer\"."
-            ],
-            "deliverable": "Achieve 100% accuracy on the 4 word form drill sentences with clear grammatical explanations.",
-            "teacherNotes": "Highlight the common TOEIC trap: confusing adjectives ending in \"-able/-ive\" with nouns in \"-tion/-ment\". Emphasize sentence position analysis over guesswork.",
-            "title": "Activity 3: Language Focus: Word Forms & Suffixes in Technical English (20 mins)",
-            "summary": "Mastering Word Families: converting verbs to nouns, adjectives, and adverbs using common English suffixes—essential for TOEIC Part 5 accuracy and professional writing.",
-            "rules": [
-              {
-                "type": "Nouns (-tion, -ment, -ence, -ity)",
-                "formula": "mitigate → mitigation | equip → equipment | resist → resilience | severe → severity",
-                "usage": "Occur as subjects, objects of verbs, or following prepositions and articles (the, a, an)."
-              },
-              {
-                "type": "Adjectives (-able, -al, -ive, -ous)",
-                "formula": "permeate → permeable | ecology → ecological | adapt → adaptive | hazard → hazardous",
-                "usage": "Modify nouns directly or serve as predicate adjectives following copular verbs (be, become, remain)."
-              },
-              {
-                "type": "Adverbs (-ly)",
-                "formula": "frequent → frequently | significant → significantly | rapid → rapidly | drastic → drastically",
-                "usage": "Modify verbs, adjectives, or entire clauses; explain manner, frequency, or degree."
-              }
-            ],
-            "drills": [
-              {
-                "id": 1,
-                "sentence": "The municipal authority committed to the immediate ________ of coastal flood defenses.",
-                "options": [
-                  "construct",
-                  "construction",
-                  "constructive",
-                  "constructively"
-                ],
-                "correct": "construction",
-                "explanation": "Follows the definite article 'the' and adjective 'immediate'; a noun is required."
-              },
-              {
-                "id": 2,
-                "sentence": "Modern runway pavements must remain ________ to heavy rainfall during summer storms.",
-                "options": [
-                  "permeability",
-                  "permeable",
-                  "permeably",
-                  "permeate"
-                ],
-                "correct": "permeable",
-                "explanation": "Follows the linking verb 'remain'; a predicate adjective is required."
-              },
-              {
-                "id": 3,
-                "sentence": "Sea levels along Mediterranean coastlines have been rising ________ faster than predicted.",
-                "options": [
-                  "substance",
-                  "substantial",
-                  "substantially",
-                  "substantiate"
-                ],
-                "correct": "substantially",
-                "explanation": "Modifies the comparative adverb/adjective 'faster'; an adverb of degree is required."
-              },
-              {
-                "id": 4,
-                "sentence": "Meteorologists must continually ________ radar reflectivity data during convective events.",
-                "options": [
-                  "assessment",
-                  "assessable",
-                  "assess",
-                  "assessingly"
-                ],
-                "correct": "assess",
-                "explanation": "Follows the modal auxiliary 'must continually'; a bare base verb is required."
-              }
-            ]
-          },
-          "roleplay": {
-            "modeBadges": [
-              "👥 4-Member Crisis Simulation",
-              "⏱️ 10 min prep + 25 min taskforce + 10 min debrief",
-              "🏆 Formative Taskforce Decision"
-            ],
-            "instructions": [
-              "Step 1 (Role Allocation & Briefing - 10 mins): Form groups of 4. Assign one role card per member. Review your operational priority, constraints, and proposed action plan.",
-              "Step 2 (Taskforce Crisis Meeting - 25 mins): The Aerodrome Operations Director convenes the meeting. Work through the 3 escalating crisis injects (wind shear alert, ramp lightning risk, passenger terminal overcrowding). Negotiate a unified 60-minute Action Protocol.",
-              "Step 3 (Press & Passenger Briefing - 10 mins): Elect a spokesperson to deliver a 2-minute public announcement summarizing runway status, passenger welfare measures, and ramp safety orders."
-            ],
-            "deliverable": "A unified 4-point Emergency Action Protocol agreed upon by all 4 roles and delivered via a 2-minute oral briefing.",
-            "teacherNotes": "Circulate between groups to inject realistic complications (e.g., \"Lightning detected 3km away—ramp closure mandatory under OSHA/EASA rules\"). Evaluate active listening, polite negotiation, and crisis vocabulary.",
-            "title": "Activity 4: Airport Severe Weather Crisis Taskforce (45 mins)",
-            "scenario": "An intense convective supercell accompanied by severe wind shear warnings and 75mm/hour torrential rain is projected to cross the airfield within 60 minutes. Form a four-member Emergency Response Taskforce to balance flight safety, ground crew welfare, passenger communications, and infrastructure protection.",
+          "taskforce": {
             "roles": [
               {
-                "title": "Aerodrome Operations Director",
-                "focus": "Overall airfield safety, decision to temporarily suspend runway operations, coordination with ATC on diversions and holding patterns."
+                "role": "Mayor's Chief of Staff (Taskforce Chair)",
+                "badge": "Leadership & Policy",
+                "mission": "Maintain overall public order, balance competing agency demands, approve emergency financial spending, and make the final call on mandatory evacuations vs. shelter-in-place orders.",
+                "keyPhrases": [
+                  "Our overarching objective is...",
+                  "I cannot authorize that expenditure unless...",
+                  "The legal threshold for mandatory evacuation requires..."
+                ]
               },
               {
-                "title": "Chief Meteorologist & Weather Advisor",
-                "focus": "Briefing the committee on barometric drops, microburst risk windows, hail probability, and estimated storm clearance timeline."
+                "role": "Director of Municipal Transit & Mobility",
+                "badge": "Infrastructure & Logistics",
+                "mission": "Safeguard transit passengers, decide whether to shut down subway stations or keep them open as storm shelters, and deploy emergency electric shuttle buses to high-risk zones.",
+                "keyPhrases": [
+                  "Subway line B is at acute risk of...",
+                  "Deploying rescue shuttles will require police escorts along...",
+                  "Halting all rail traffic will strand thousands unless..."
+                ]
               },
               {
-                "title": "Airline Station Manager & Hub Controller",
-                "focus": "Aircraft ground anchoring, lightning protocol for apron ramp crews (ramp closure), baggage hold security, and passenger re-accommodation."
+                "role": "Regional Hospital & Health Network Lead",
+                "badge": "Medical & Public Health",
+                "mission": "Protect critical care patients, secure backup power for ventilators and neonatal units, establish pop-up cooling centers, and manage the casualty triage surge.",
+                "keyPhrases": [
+                  "We are operating on razor-thin generator reserves...",
+                  "Immediate priority must be given to oxygen-dependent patients...",
+                  "Triage protocol mandates that we..."
+                ]
               },
               {
-                "title": "Civil Protection & Public Infrastructure Liaison",
-                "focus": "Perimeter drainage pumps activation, road access corridors to the airport, municipal coordination, and public emergency bulletins."
+                "role": "Public Communications & Media Officer",
+                "badge": "Civic Information & Press",
+                "mission": "Deliver clear, calm, authoritative emergency warnings, combat viral disinformation on social media, coordinate multi-lingual broadcasts, and prepare the live press conference.",
+                "keyPhrases": [
+                  "Citizens must be advised to immediately...",
+                  "To counter false rumors regarding the water supply, we confirm that...",
+                  "In our forthcoming live statement, we will emphasize..."
+                ]
+              }
+            ],
+            "injects": [
+              {
+                "time": "T+15m INJECT #1",
+                "title": "⚡ Sudden Power Outage in Sector 4",
+                "desc": "A lightning strike has disabled Substation Voltaire. The regional hospital has switched to generator power, but fuel pumps are overheating. What is your immediate action?"
+              },
+              {
+                "time": "T+30m INJECT #2",
+                "title": "🌊 Storm Drain Breach at Metro Central",
+                "desc": "Floodwaters have cascaded down Station République escalators. 400 passengers are stranded on platform level. Transit director demands immediate civil rescue teams."
+              },
+              {
+                "time": "T+45m INJECT #3",
+                "title": "📢 Breaking Media Accusation",
+                "desc": "A major news outlet goes live claiming the Mayor's office withheld flood warnings for 2 hours to avoid panicking tourists. Journalists are gathering for the press conference."
               }
             ]
           },
-          "closingReview": {
-            "modeBadges": [
-              "📋 Self-Assessment & FE2 Check",
-              "⏱️ 10 min pairs + 5 min Q&A",
-              "🎯 Oral Exam Readiness"
-            ],
-            "instructions": [
-              "Step 1 (FE2 Criteria Audit - 5 mins): Review the 3 formative checklist items. Verify how today's vocabulary and crisis simulation directly support your Session 5 evaluation.",
-              "Step 2 (Partner Reflection - 5 mins): Share 2 key technical takeaways and 1 pronunciation point you want to polish before next week.",
-              "Step 3 (Action Items - 5 mins): Log 5 new terms in your personal glossary and complete the online Module 2 Session 1 TOEIC practice questions."
-            ],
-            "deliverable": "Completed 3-item FE2 alignment checklist and 5 newly recorded technical entries in your vocabulary log.",
-            "teacherNotes": "Remind students of the FE2 oral format: paired debate/case study on climate resilience. Emphasize that professional B2 delivery requires fluent use of today's word forms and signposts.",
-            "title": "Session 1 Wrap-Up & FE2 Preparation (15 mins)",
-            "feChecklist": [
-              "Record 5 new extreme weather and resilience terms in your personal Vocabulary Log.",
-              "Complete the TOEIC Part 5 word forms drill on the Moodle deck.",
-              "Confirm with your partner whether you intend to tackle Option A (Airport) or Option B (City) for FE2."
+          "pressConference": {
+            "title": "Live Emergency Press Briefing (20 mins)",
+            "instructions": "The Taskforce delivers a 3-minute opening broadcast to the public, followed by intense 2-minute questions from the press corps (classmates acting as investigative reporters).",
+            "reporterQuestions": [
+              "Why were public transit stations not closed two hours earlier when meteorological radar clearly indicated an unprecedented flash flood risk?",
+              "Can the health director guarantee that ICU generators will not fail if the storm continues past midnight?",
+              "Reports indicate that low-income neighborhoods in Sector 4 had no functional emergency sirens. How do you respond to allegations of systemic neglect?",
+              "Who will be held legally accountable for the chemical storage overflow in the southern basin?"
             ]
           }
         }
@@ -4127,64 +3996,64 @@
       "2": {
         "session": 2,
         "objectives": {
-          "title": "Session 2 Objectives - Sustainable Cities",
-          "summary": "By the end of this session, you will be able to discuss sustainable cities with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
+          "title": "Session 2 Objectives - The 15-Minute Resilient City Blueprint",
+          "summary": "By the end of this session, you will be able to conduct a visual photo analysis comparing car-centric sprawl with pedestrian-first superblocks, deploy spatial prepositions and urban design vocabulary, collaborate on a €50M district redesign sprint, and defend your blueprint before a civic investor panel.",
           "items": [
             {
               "num": 1,
-              "title": "Practice TOEIC Reading Part 7: Urban Development & Green Policies",
-              "description": "Read city council proposals, public transit schedules, and environmental reports for key facts and data."
+              "title": "Conduct a Comparative Visual Photo Analysis (Spatial Observation & Contrast)",
+              "description": "Contrast car-centric sprawl with a pedestrian superblock using clickable hotspots and spatial prepositions."
             },
             {
               "num": 2,
-              "title": "Master Vocabulary for 15-Minute Cities, Clean Transit & Public Spaces",
-              "description": "Learn high-frequency terms for pedestrian zones, green corridors, cycling lanes, and renewable district heating."
+              "title": "Deploy Spatial Prepositions & Urban Planning Lexis (Language Clinic)",
+              "description": "Use precise locational phrases: 'flanked by', 'bisected by', 'adjacent to', and 'reclaimed from vehicular traffic'."
             },
             {
               "num": 3,
-              "title": "Apply Subject-Verb Agreement Rules with Complex Subject Phrases",
-              "description": "Ensure singular and plural verbs match when long descriptive phrases or collective nouns separate the subject from the verb."
+              "title": "Collaborate on a €50M Urban District Redesign Sprint (Team Creative Design)",
+              "description": "Allocate a €50M municipal fund across transit, green canopy, affordable housing, and public plazas."
             },
             {
               "num": 4,
-              "title": "Evaluate Green Neighborhoods & Public Transit Integration (DDRS)",
-              "description": "Assess how compact urban planning cuts vehicle pollution and creates healthier, fairer communities."
+              "title": "Pitch the Blueprint to a Skeptical Civic Investor Panel (Spoken Persuasion)",
+              "description": "Deliver a structured visual pitch answering tough financial, social, and logistical objections."
             },
             {
               "num": 5,
-              "title": "Compare Two Cities and Present Urban Sustainability Features",
-              "description": "Present and compare urban sustainability initiatives using clear comparative structures and confident delivery."
+              "title": "Critique Competitor Urban Designs with Constructive Rebuttals (Peer Evaluation)",
+              "description": "Conduct a gallery walk review and vote on the most viable sustainable urban district design."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 2 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
+          "title": "Session 2 Lesson Plan - The 15-Minute Resilient City Blueprint (2 Hours)",
+          "summary": "A creative hands-on design sprint: students analyze contrasting urban photos with interactive hotspots, master spatial prepositions, draft an integrated €50M district redesign, and defend it before a panel of community stakeholders.",
           "items": [
             {
-              "time": "0-15",
-              "title": "Conversational Warm-Up: My Ideal City (15 mins)",
-              "description": "Students discuss in pairs what features make a city enjoyable to live in (parks, cycle paths, public transport)."
+              "time": "00-20",
+              "title": "Part 1: Urban Showcase: Visual Photo Analysis & Hotspot Clinic (20 mins)",
+              "description": "Side-by-side comparative analysis of car sprawl (urban_car_sprawl.jpg) vs. green superblock (urban_superblock.jpg) with clickable vocabulary hotspots and the Mayor's Dilemma speaking task."
             },
             {
-              "time": "15-45",
-              "title": "TOEIC Strategy: Urban Notices & Bulletins (30 mins)",
-              "description": "Practice Part 7 reading comprehension with municipal updates, transit timetables, and environmental regulations."
+              "time": "20-40",
+              "title": "Part 2: Language Clinic: Spatial Prepositions & Planning Structures (20 mins)",
+              "description": "Mastering spatial precision: 'flanked by', 'adjacent to', 'bisected by', 'reclaimed from', 'within walking radius of'."
             },
             {
-              "time": "45-65",
-              "title": "Vocabulary Builder: 15-Minute City Concepts (20 mins)",
-              "description": "Vocabulary for urban planning: pedestrian zone, green corridor, district heating, and low-emission zones."
+              "time": "40-80",
+              "title": "Part 3: The €50M District Redesign Sprint (40 mins)",
+              "description": "In teams of 3–4, students receive the blueprint of a congested transit corridor and allocate budget across transit, green canopy, social housing, and commerce."
             },
             {
-              "time": "65-110",
-              "title": "Structured Discussion & Grammar (45 mins)",
-              "description": "Compare two European cities using Subject-Verb Agreement with collective nouns and long noun phrases."
+              "time": "80-110",
+              "title": "Part 4: The Civic Investor Forum & Public Defense (30 mins)",
+              "description": "Teams deliver a 4-minute visual pitch and defend their choices against community questions (shopkeepers, suburban drivers, eco-activists)."
             },
             {
               "time": "110-120",
-              "title": "Debrief, Evaluation Prep & Wrap-Up (10 mins)",
-              "description": "Class recap, key grammatical reminders for subject-verb agreement, and personal vocabulary logging."
+              "title": "Part 5: Blueprint Showcase & Peer Voting (10 mins)",
+              "description": "Silent gallery walk, investment vote, and key design term consolidation."
             }
           ]
         },
@@ -4540,256 +4409,129 @@
           ]
         },
         "lessonContent": {
-          "overview": {
-            "image": "images/ag_m2card2.jpg",
-            "title": "Sustainable Cities & Low-Emission Urban Mobility",
-            "subtitle": "Sponge Cities, 15-Minute Urbanism, Urban Heat Islands & Transit Corridors",
-            "badge": "Session Overview • Sustainable Cities & Urban Design"
-          },
           "hero": {
+            "title": "The 15-Minute Resilient City Blueprint",
+            "subtitle": "Archetype C • Collaborative Design Sprint: Superblocks, Micro-Mobility & Urban Transformation",
             "image": "images/ag_m2card2.jpg",
-            "title": "Sustainable Cities & Low-Emission Urban Mobility",
-            "subtitle": "Sponge Cities, 15-Minute Urbanism, Urban Heat Islands & Transit Corridors",
-            "badge": "Session Overview • Sustainable Cities & Urban Design"
+            "badge": "AG Module 2 • Session 2 • Design Sprint"
           },
-          "openingSession": {
-            "modeBadges": [
-              "⚡ Quick Check + Pair Peer-Check",
-              "⏱️ 5 min audit + 5 min debrief",
-              "🎯 Urban Vocabulary Differentiation"
-            ],
-            "instructions": [
-              "Step 1 (Headline Scan - 3 mins): Read the three weekly urban mobility news prompts. Identify which initiative has the greatest decarbonization potential.",
-              "Step 2 (Practice Quiz - 4 mins): Attempt the 4 urban planning vocabulary terms without consulting notes (e.g., district heating vs CHP, permeable pavements vs swales).",
-              "Step 3 (Pair Verification - 3 mins): Compare your answers with a partner. Click 'Reveal Answer' to verify technical definitions and operational context."
-            ],
-            "deliverable": "Clearly explain the technical distinction between 2 sustainable urban design concepts using precise environmental terminology.",
-            "teacherNotes": "Focus student attention on false friends in urban planning (e.g., 'urban sprawl' vs 'compact development'). Ensure students explain why permeable pavements reduce runoff rather than just repeating definitions.",
-            "title": "Activity 1: Sustainable Urbanism News & Opening Warm-Up (10 mins)",
-            "summary": "Opening warm-up on green municipal policies, pedestrianization, and urban heat island mitigation.",
-            "newsPrompts": [
-              "Paris, Barcelona, and Milan expand permanent low-emission zones, removing parking lanes in favor of micro-forests and cycle highways.",
-              "Copenhagen's 'Cloudburst Management Plan' transforms urban parks into temporary retention lakes during historic deluge events.",
-              "Singapore and Tokyo mandate extensive vertical living walls and green rooftops to combat the Urban Heat Island effect."
-            ],
-            "diagnostic": {
-              "title": "Urban Planning Vocabulary Quick Check",
-              "instructions": "Discuss each concept in pairs before verifying your explanation:",
-              "questions": [
+          "urbanShowcase": {
+            "photoA": {
+              "image": "images/urban_car_sprawl.jpg",
+              "title": "City A: Car-Centric Suburban Arterial Sprawl",
+              "caption": "Bumper-to-bumper 6-lane thoroughfare, asphalt surface parking, overhead flyovers, exhaust haze, zero pedestrian canopy.",
+              "hotspots": [
                 {
                   "id": 1,
-                  "q": "What is the Urban Heat Island (UHI) effect, and what primary factors amplify it?",
-                  "answer": "The UHI effect describes urban areas experiencing significantly warmer temperatures than surrounding rural areas. It is amplified by dark impermeable surfaces (asphalt, concrete) absorbing solar radiation, waste heat from air conditioners and engines, and tall buildings trapping heat."
+                  "label": "6-Lane Carriageway",
+                  "desc": "Dominated by vehicular congestion and bumper-to-bumper traffic, creating severe acoustic and particulate pollution."
                 },
                 {
                   "id": 2,
-                  "q": "What core principles define a 'Sponge City'?",
-                  "answer": "Rather than funneling stormwater rapidly into underground concrete pipes that quickly overload, a sponge city mimics nature by absorbing, storing, filtering, and releasing rainwater through permeable pavements, rain gardens, bioswales, and wetlands."
+                  "label": "Surface Asphalt Lot",
+                  "desc": "Impermeable asphalt heat island that absorbs solar radiation and prevents natural stormwater drainage."
                 },
                 {
                   "id": 3,
-                  "q": "What is the concept behind Carlos Moreno's '15-Minute City'?",
-                  "answer": "An urban planning model where every resident can access their daily necessities (work, grocery, education, healthcare, leisure) within a 15-minute walk or bike ride from home, drastically reducing private automobile dependency."
+                  "label": "Flyover Concrete Ramp",
+                  "desc": "Elevated road infrastructure that physically bisects the neighborhood and isolates residential blocks."
                 },
                 {
                   "id": 4,
-                  "q": "What is the difference between Permeable Paving and Conventional Asphalt?",
-                  "answer": "Conventional asphalt is totally waterproof, creating high surface runoff that floods storm drains. Permeable paving features porous matrices or interlocking gaps that allow rainwater to infiltrate through into sub-base aquifers or retention layers."
+                  "label": "Absence of Sidewalks",
+                  "desc": "Severely devoid of pedestrian walkways, cycling infrastructure, and protective tree shade."
                 }
               ]
-            }
-          },
-          "survey": {
-            "modeBadges": [
-              "👥 Paired Rotating Speed Survey",
-              "⏱️ 5 min prep + 15 min interviews + 5 min debrief",
-              "🎯 Structured Spoken Debate & Argumentation"
-            ],
-            "instructions": [
-              "Step 1 (Stance Preparation - 5 mins): Review the 4 municipal dilemmas. Formulate your personal stance using the suggested pros, cons, and linking phrases.",
-              "Step 2 (Rotating Speed Survey - 15 mins): Interview at least three different peers. Challenge their assumptions regarding costs, equity, and scalability.",
-              "Step 3 (Consensus & Summary - 5 mins): Return to your primary partner. Summarize the strongest trade-offs heard and prepare a 1-minute verbal briefing on the most contentious dilemma."
-            ],
-            "deliverable": "Complete the 4-dilemma survey grid with peer notes and present 1 consensus mitigation strategy to the class.",
-            "teacherNotes": "Enforce strict use of linking phrases ('On the one hand...', 'While acknowledging the upfront capital expenditure...'). Circulate and note recurring errors in modal verbs of deduction.",
-            "title": "Activity 2: Resilient Urban Innovations: Speed Survey (25 mins)",
-            "summary": "Conduct speed-dating interviews on 4 pioneering urban resilience strategies deployed worldwide. Weigh pros, cons, and community trade-offs in pairs.",
-            "signposts": [
-              "\"From an urban planning perspective, ...\"",
-              "\"While sponge infrastructure requires upfront investment, it significantly reduces...\"",
-              "\"To combat extreme summer heat, municipalities must prioritize...\"",
-              "\"The transition toward a 15-minute city relies heavily on...\""
-            ],
-            "topics": [
+            },
+            "photoB": {
+              "image": "images/urban_superblock.jpg",
+              "title": "City B: Pedestrian-First European Superblock",
+              "caption": "Reclaimed public space, protected cycle tracks, dappled tree canopy, outdoor terrace dining, permeable stone paving.",
+              "hotspots": [
+                {
+                  "id": 1,
+                  "label": "Reclaimed Pedestrian Plaza",
+                  "desc": "Former road surface converted into active public realm for foot traffic, social gatherings, and children's play."
+                },
+                {
+                  "id": 2,
+                  "label": "Protected Cycle Track",
+                  "desc": "Dedicated bi-directional bike corridor physically segregated from vehicular traffic by flowering planters."
+                },
+                {
+                  "id": 3,
+                  "label": "Permeable Green Canopy",
+                  "desc": "Mature deciduous trees and permeable light pavers that filter rainwater and lower ambient summer heat by 4°C."
+                },
+                {
+                  "id": 4,
+                  "label": "Outdoor Café Culture",
+                  "desc": "Flanked by ground-floor independent businesses and restaurant terraces that stimulate the local economy."
+                }
+              ]
+            },
+            "spokenProtocol": [
               {
-                "id": 1,
-                "badge": "Superblocks & Active Mobility",
-                "statement": "Should historic city centers completely ban private fossil-fuel automobiles in favor of pedestrian superblocks?",
-                "pro": "Superblocks cut local air pollution by 30%, reduce traffic noise, and reclaim street space for children, community plazas, and street trees.",
-                "con": "Businesses worry about freight delivery logistics, and outer-suburban commuters who lack convenient rail links face longer journeys.",
-                "prompt": "Interview your partner: How does Barcelona's superblock model compare to your hometown's city center?"
+                "step": "Step 1 (Spatial Observation - 4 mins)",
+                "prompt": "Partner A describes Photo A; Partner B describes Photo B using spatial prepositions ('In the foreground...', 'Flanked by...', 'Bisected by...')."
               },
               {
-                "id": 2,
-                "badge": "Sponge City Water Squares",
-                "statement": "Should all new public parks and city squares be designed as sunken stormwater flood retention basins?",
-                "pro": "Dual-purpose water plazas (like in Rotterdam) serve as dry skate parks and basketball courts in normal weather, and safely retain millions of liters during flash floods.",
-                "con": "Sediment and debris accumulation after flooding requires rapid municipal cleaning before public recreational use can resume.",
-                "prompt": "Interview your partner: How could your campus or neighborhood implement sponge city water retention features?"
+                "step": "Step 2 (Human Impact - 3 mins)",
+                "prompt": "Compare 3 quality-of-life factors: acoustic noise, local business vitality, and safety for children/elderly."
               },
               {
-                "id": 3,
-                "badge": "Transit-Oriented Development",
-                "statement": "Should municipal governments eliminate mandatory parking minimums for all new residential buildings near transit hubs?",
-                "pro": "Removing parking minimums lowers construction costs, increases housing affordability, and incentivizes residents to choose walking, cycling, and public transit.",
-                "con": "Without adequate car-sharing or electric vehicle infrastructure, overflow parking can spill over into adjacent residential streets.",
-                "prompt": "Interview your partner: What makes an urban transport hub truly attractive for daily commuters?"
-              },
-              {
-                "id": 4,
-                "badge": "District Cooling & Circular Energy",
-                "statement": "Should cities mandate centralized seawater or geothermal district cooling networks instead of individual building air conditioning?",
-                "pro": "Centralized district cooling is up to 50% more energy-efficient than separate rooftop chillers, eliminating localized hot exhaust air in pedestrian streets.",
-                "con": "Laying subterranean chilled water pipe networks beneath existing congested streets involves high capital cost and disruptive utility works.",
-                "prompt": "Interview your partner: How can cities solve the paradox of air conditioning making outdoor street temperatures hotter?"
+                "step": "Step 3 (The Mayor's Dilemma - 3 mins)",
+                "prompt": "If you were city mayor with funds for only ONE transformation in Photo A, which single element from Photo B would you build first, and why?"
               }
             ]
           },
-          "grammarClinic": {
-            "modeBadges": [
-              "🧠 Grammar Focus & Interactive Drills",
-              "⏱️ 7 min concept analysis + 8 min board drills + 5 min check",
-              "🎯 Agreement Precision with Groups & Institutions"
-            ],
-            "instructions": [
-              "Step 1 (Pattern Analysis - 7 mins): Study the 3 rules for collective nouns, measurement expressions, and percentages in technical English. Notice British vs American conventions.",
-              "Step 2 (Pair Transformation Drills - 8 mins): Work through the 4 interactive drills. Justify whether the subject acts as a singular unit or individual members.",
-              "Step 3 (Error Correction - 5 mins): Check answers using the reveal toggles. Formulate two original sentences about airport or municipal transport authorities."
-            ],
-            "deliverable": "Accurately complete all 4 interactive agreement drills and construct 2 original sentences applying collective noun agreement rules.",
-            "teacherNotes": "Highlight that in aviation and international engineering reports, institutional entities ('The committee', 'The board', 'The taskforce') take singular verbs when acting as a formal unit. Contrast with British casual usage.",
-            "title": "Activity 3: Language Focus: Subject-Verb Agreement with Collective Nouns (20 mins)",
-            "summary": "Navigating tricky subject-verb agreement rules with collective nouns, complex prepositional phrases, and quantifiers in professional writing and TOEIC Part 5.",
-            "rules": [
+          "redesignSprint": {
+            "budget": "€50,000,000",
+            "corridorName": "The Boulevard Carnot Regeneration Project (60-Hectare Mixed Zone)",
+            "categories": [
               {
-                "type": "Collective Nouns (Council, Committee, Team)",
-                "formula": "The municipal council [decides / has decided] (treated as a single entity).",
-                "usage": "In American and standard business English, singular verbs are preferred when the group acts together as one unit."
+                "name": "Active Mobility & Transit",
+                "costPerUnit": "€10M / 5km",
+                "desc": "Protected cycle superhighways, electric tramway extension, and smart micro-mobility docking hubs."
               },
               {
-                "type": "Complex Noun Phrases with Prepositions",
-                "formula": "A network [of permeable stormwater boulevards] IS required. (Agreement is with 'network', NOT 'boulevards').",
-                "usage": "Ignore the prepositional phrase between the true grammatical subject and the verb."
+                "name": "Urban Forestry & Bioswales",
+                "costPerUnit": "€8M / 10,000m²",
+                "desc": "Continuous tree canopy, natural sponge-city bioswales for flood retention, and pocket parks."
               },
               {
-                "type": "Quantifiers & Fractions (Majority, Percentage, Portion)",
-                "formula": "A majority of the surface IS permeable (uncountable) vs. A majority of residents ARE commuters (plural count).",
-                "usage": "When 'majority', 'percentage', or 'all' are followed by 'of + noun', the verb agrees with the following object noun."
+                "name": "Affordable & Low-Carbon Housing",
+                "costPerUnit": "€15M / 200 units",
+                "desc": "Energy-positive modular timber social housing with rooftop community vegetable gardens."
+              },
+              {
+                "name": "Civic Plazas & Local Commerce Hubs",
+                "costPerUnit": "€7M / plaza",
+                "desc": "Pedestrianized market squares, pop-up artisan retail stalls, and shaded outdoor cultural stages."
+              },
+              {
+                "name": "Subterranean Parking & Logistics Hub",
+                "costPerUnit": "€10M / facility",
+                "desc": "Consolidated underground perimeter parking to remove all surface on-street car storage."
               }
             ],
-            "drills": [
+            "stakeholders": [
               {
-                "id": 1,
-                "sentence": "A comprehensive network of bioswales and retention ponds ________ been installed around the perimeter.",
-                "options": [
-                  "have",
-                  "has",
-                  "are",
-                  "were"
-                ],
-                "correct": "has",
-                "explanation": "The subject is 'A comprehensive network' (singular), not 'bioswales and retention ponds'."
+                "role": "The Suburban Commuter Rep",
+                "objection": "If you remove 4 traffic lanes, my daily commute will double from 35 to 70 minutes. How will I reach my job without being penalized?"
               },
               {
-                "id": 2,
-                "sentence": "The municipal planning committee ________ meeting today to review zoning bylaws for the new eco-quarter.",
-                "options": [
-                  "is",
-                  "are",
-                  "were",
-                  "have been"
-                ],
-                "correct": "is",
-                "explanation": "The committee acts as a single body; in standard TOEIC grammar, a singular verb is required."
+                "role": "The Local Retail Association Lead",
+                "objection": "Our shopkeepers rely on customer curb-side parking. If clients can't park directly in front, our sales will plummet."
               },
               {
-                "id": 3,
-                "sentence": "A large percentage of the city's asphalt surfaces ________ impermeable to storm runoff.",
-                "options": [
-                  "remains",
-                  "remain",
-                  "are remaining",
-                  "is remaining"
-                ],
-                "correct": "remain",
-                "explanation": "With percentages/fractions followed by a plural count noun ('surfaces'), the verb takes plural agreement ('remain')."
+                "role": "The Climate Resilience Campaigner",
+                "objection": "A €50M budget must achieve net-zero runoff and at least 40% tree canopy coverage, not cosmetic greenwashing."
               },
               {
-                "id": 4,
-                "sentence": "Neither the city mayor nor the civil engineers ________ willing to compromise on flood defense standards.",
-                "options": [
-                  "was",
-                  "were",
-                  "is",
-                  "has been"
-                ],
-                "correct": "were",
-                "explanation": "In 'Neither... nor...', the verb agrees with the subject closest to it ('the civil engineers' -> plural 'were')."
+                "role": "The Senior Citizen Advocate",
+                "objection": "E-scooters and uneven cobblestones are dangerous for people with reduced mobility. How do you guarantee barrier-free access?"
               }
-            ]
-          },
-          "roleplay": {
-            "modeBadges": [
-              "🏛️ Municipal Steering Committee Simulation",
-              "⏱️ 10 min role prep + 25 min formal debate + 10 min vote & debrief",
-              "🎯 Multi-Stakeholder Negotiation & Public Presentation"
-            ],
-            "instructions": [
-              "Step 1 (Role Assignment & Briefing - 10 mins): Divide into groups of 4. Assign the four stakeholder roles (Urban Planning Director, Transport Authority Lead, Environmental NGO Advocate, Local Merchant Association Rep). Draft your 3 core non-negotiable priorities.",
-              "Step 2 (Formal Committee Debate - 25 mins): Convene the redevelopment committee session. Present your stakeholder brief, negotiate budget allocation for the €120M brownfield redevelopment, and manage conflicting demands (pedestrianization vs delivery access).",
-              "Step 3 (Consensus Charter & Debrief - 10 mins): Vote on the 3 compromise motions. Present your committee's final consensus blueprint to the plenary chamber in a 2-minute spoken summary."
-            ],
-            "deliverable": "Deliver a 3-minute oral stakeholder intervention defending your mandate with empirical data, followed by a signed consensus compromise charter.",
-            "teacherNotes": "Act as the Municipal Mayor presiding over the steering committee. Intervene if any stakeholder dominates without listening. Demand concrete metric compromises (e.g., delivery time windows: 05:00-09:00 to reconcile merchants and pedestrian safety).",
-            "title": "Activity 4: Urban Eco-District Redesign Committee (45 mins)",
-            "scenario": "A 50-hectare former industrial and transit depot adjacent to the central railway station is being redeveloped into a high-density, climate-resilient eco-quarter. Form a multi-disciplinary steering committee to reach a consensus on land use, green space, active mobility, and heat mitigation.",
-            "roles": [
-              {
-                "title": "Chief Urban Architect & Planner",
-                "focus": "Building heights, passive solar orientation, 15-minute zoning, and ensuring living green roofs on 100% of new structures."
-              },
-              {
-                "title": "Sustainable Transport & Mobility Director",
-                "focus": "Car-free pedestrian streets, two-way segregated cycle highways, electric tram extensions, and zero parking minimums for private cars."
-              },
-              {
-                "title": "Civil Water & Climate Resilience Engineer",
-                "focus": "Sponge city drainage, subterranean cisterns for stormwater recycling, permeable pavements, and flood retention squares."
-              },
-              {
-                "title": "Community Health & Economic Equity Advocate",
-                "focus": "Affordable social housing quotas (minimum 35%), shaded public parks for senior citizens, local zero-km food markets, and community clinics."
-              }
-            ]
-          },
-          "closingReview": {
-            "modeBadges": [
-              "🏁 Formative Evaluation 2 Alignment",
-              "⏱️ 5 min checklist + 5 min peer review + 5 min portfolio entry",
-              "🎯 Spoken Argumentation Assessment Readiness"
-            ],
-            "instructions": [
-              "Step 1 (Checklist Self-Audit - 5 mins): Work through the 4 Formative Evaluation 2 alignment criteria. Rate your readiness from 1 to 5.",
-              "Step 2 (Peer Feedback Exchange - 5 mins): Share one area of strength and one specific language focus (e.g., collective noun agreement, signposting) with your partner.",
-              "Step 3 (Digital Learning Log - 5 mins): Add 5 new urban planning and transport transition terms to your digital vocabulary portfolio before Session 3."
-            ],
-            "deliverable": "Complete the 4-point Formative Evaluation 2 readiness audit and commit 1 priority improvement goal to your learning log.",
-            "teacherNotes": "Remind students that Formative Evaluation 2 (FE2) focuses heavily on multi-stakeholder negotiation, managing disagreement diplomatically, and using accurate linking words. Check learning logs for consistent vocabulary recording.",
-            "title": "Session 2 Wrap-Up & FE2 Alignment (15 mins)",
-            "feChecklist": [
-              "Add 5 new urban planning and sponge city terms to your Vocabulary Log.",
-              "Review the Subject-Verb Agreement rules and complete the online drills.",
-              "Draft an outline of Dimension 2 (Physical & Civil Interventions) for your FE2 oral evaluation."
             ]
           }
         }
@@ -4797,64 +4539,64 @@
       "3": {
         "session": 3,
         "objectives": {
-          "title": "Session 3 Objectives - Building and Supporting Arguments",
-          "summary": "By the end of this session, you will be able to build and support persuasive arguments with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
+          "title": "Session 3 Objectives - Environmental Ethics & The Public Inquiry Hearing",
+          "summary": "By the end of this session, you will be able to detect logical fallacies in environmental arguments, deploy sophisticated phrases for polite disagreement and cautious concession, cross-examine opposing witnesses in a formal public inquiry, and deliver a compelling closing statement.",
           "items": [
             {
               "num": 1,
-              "title": "Practice Identifying Opinions, Facts & Tone in TOEIC Contexts",
-              "description": "Differentiate between objective facts and speaker opinions in workplace dialogues and business articles."
+              "title": "Evaluate Conflicting Environmental Evidence & Testimonies (Critical Reading)",
+              "description": "Analyze competing economic, ecological, and social impact claims regarding a high-speed transit corridor."
             },
             {
               "num": 2,
-              "title": "Learn Useful Phrases to Agree, Disagree, and Express Counter-Arguments",
-              "description": "Master polite, professional phrases to support your position, acknowledge counter-arguments, and make concessions."
+              "title": "Identify Logical Fallacies & Biased Claims (Critical Thinking)",
+              "description": "Spot false dichotomies, slippery slope arguments, and greenwashed marketing claims in public testimonies."
             },
             {
               "num": 3,
-              "title": "Master Gerunds & Infinitives (recommend doing vs. agree to do)",
-              "description": "Use verbs correctly followed by gerunds (-ing) or infinitives (to + verb) when proposing actions and solutions."
+              "title": "Deploy Cautious Concession & Counter-Argument Markers (Language Clinic)",
+              "description": "Master advanced discourse linkers: 'While I concede that...', 'Be that as it may...', and 'With respect, that conflates...'."
             },
             {
               "num": 4,
-              "title": "Structure Persuasive Arguments on Environmental Regulations (DDRS)",
-              "description": "Build logical points backed by data when debating carbon pricing, plastic bans, and corporate environmental rules."
+              "title": "Simulate a Formal Public Inquiry Hearing (Structured Debate)",
+              "description": "Participate as Commission Judge, Infrastructure Advocate, Ecological Biologist, or Local Community Union."
             },
             {
               "num": 5,
-              "title": "Practice Defending Your Point of View in Group Discussions",
-              "description": "Defend your ideas calmly in group exchanges while actively listening and responding to different perspectives."
+              "title": "Deliver a Persuasive Closing Argument as Lead Advocate (Formal Spoken Fluency)",
+              "description": "Present a 2-minute evidence-based summation to secure judicial approval or injunction."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 3 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
+          "title": "Session 3 Lesson Plan - Environmental Ethics & The Public Inquiry Hearing (2 Hours)",
+          "summary": "An Oxford-style debate and legal lab: students analyze conflicting testimonies on a controversial transit infrastructure project through an ancient wetland, learn argument framing and nuanced concession, and hold a formal public inquiry.",
           "items": [
             {
-              "time": "0-15",
-              "title": "Conversational Warm-Up: Quick Dilemmas (15 mins)",
-              "description": "In pairs, students quickly choose a side on simple dilemmas (e.g. banning cars in city centers) and give one strong reason."
+              "time": "00-15",
+              "title": "Part 1: The Devil's Advocate Hook: Provocative Claims (15 mins)",
+              "description": "2-minute quick-fire sparring on ethical dilemmas: 'Economic growth must always take precedence over local habitat conservation'."
             },
             {
-              "time": "15-45",
-              "title": "TOEIC Strategy: Detecting Opinion & Inference (30 mins)",
-              "description": "Practice identifying the speaker or author's main point, tone, and implied meaning in TOEIC dialogues and articles."
+              "time": "15-40",
+              "title": "Part 2: The Disputed Valley Dossier & Evidence Cross-Check (25 mins)",
+              "description": "Evaluating four conflicting witness statements (Ecological Biologist, Chamber of Commerce, Commuter Union, Regional Planner)."
             },
             {
-              "time": "45-65",
-              "title": "Vocabulary Builder: Persuasive Language (20 mins)",
-              "description": "Useful phrases for agreeing politely, making concessions, challenging claims, and summarizing evidence."
+              "time": "40-60",
+              "title": "Part 3: Language Clinic: Nuanced Concession & Reframing (20 mins)",
+              "description": "Mastering high-level debate signposts: 'While I concede that..., the empirical data demonstrates...', 'Be that as it may...', 'With respect, that conflates...'."
             },
             {
-              "time": "65-110",
-              "title": "Structured Discussion & Grammar (45 mins)",
-              "description": "Mini-debates on environmental rules using Gerunds & Infinitives (advocate doing, decide to ban, prioritize investing)."
+              "time": "60-105",
+              "title": "Part 4: The Formal Public Inquiry Hearing Simulation (45 mins)",
+              "description": "Formal judicial proceedings with opening testimonies, cross-examinations, witness challenges, and commissioner rulings."
             },
             {
-              "time": "110-120",
-              "title": "Debrief, Evaluation Prep & Wrap-Up (10 mins)",
-              "description": "Peer feedback on debate conduct, review of clear argumentation techniques, and Session 5 speaking checklist."
+              "time": "105-120",
+              "title": "Part 5: Judicial Verdict, Peer Assessment & Wrap-Up (15 mins)",
+              "description": "Commissioners deliver the binding ruling and debrief linguistic performance."
             }
           ]
         },
@@ -5210,261 +4952,78 @@
           ]
         },
         "lessonContent": {
-          "overview": {
-            "image": "images/ag_m2card3.jpg",
-            "title": "Building & Defending Environmental Arguments",
-            "subtitle": "Structuring Arguments, Linking Words, Polite Disagreement & Policy Debates",
-            "badge": "Session Overview • Environmental Argumentation & Policy"
-          },
           "hero": {
+            "title": "Environmental Ethics & The Public Inquiry Hearing",
+            "subtitle": "Archetype B • Media & Debate Lab: Infrastructure Expansion vs. Ecological Integrity",
             "image": "images/ag_m2card3.jpg",
-            "title": "Building & Defending Environmental Arguments",
-            "subtitle": "Structuring Arguments, Linking Words, Polite Disagreement & Policy Debates",
-            "badge": "Session Overview • Environmental Argumentation & Policy"
+            "badge": "AG Module 2 • Session 3 • Debate Lab"
           },
-          "openingSession": {
-            "title": "Activity 1: Environmental Policy News & Argument Warm-Up (10 mins)",
-            "summary": "Opening warm-up examining international policy controversies and diagnostic distinctions in argumentation.",
-            "modeBadges": [
-              "Pairs",
-              "Quick Check",
-              "10 Mins"
-            ],
-            "instructions": [
-              "Read the 3 weekly environmental policy headlines (short-haul flight bans, urban delivery mandates, greenwashing tribunals).",
-              "With your partner, discuss the 4 key distinctions: Claim vs. Evidence, Strategic Concession, Correlation vs. Causation, and the Straw Man fallacy.",
-              "Click 'Reveal Answer' on each card to evaluate your rhetorical reasoning against the model answers."
-            ],
-            "deliverable": "Accurate verbal distinction between assertions, empirical evidence, and concessive counter-arguments.",
-            "teacherNotes": "Ensure students recognize that in technical and environmental policy debates, an unbacked claim is easily dismissed. Emphasize that making a concession ('While upfront capex is elevated...') actually strengthens technical credibility.",
-            "newsPrompts": [
-              "European governments debate capping regional flight routes where high-speed trains offer sub-2.5-hour city connections.",
-              "City mayors clash with logistics carriers over mandatory zero-emission delivery vehicle mandates in low-emission zones.",
-              "Environmental tribunals scrutinize corporate carbon-neutrality pledges for evidence of greenwashing."
-            ],
-            "diagnostic": {
-              "title": "Argumentation & Linking Words Quick Check",
-              "instructions": "Discuss each rhetorical distinction in pairs before revealing the model explanation:",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "What is the structural difference between a Claim and Evidence when building an argument?",
-                  "answer": "A claim is an assertive statement of opinion or policy you want your audience to accept (e.g., 'We must mandate cool roofs'). Evidence (data, facts, case studies) provides the empirical foundation that supports and proves the claim."
-                },
-                {
-                  "id": 2,
-                  "q": "What is the strategic purpose of making a Concession during a technical debate?",
-                  "answer": "A concession acknowledges the partial validity of an opposing point (e.g., 'While I recognize the substantial upfront capex...'). It builds credibility, demonstrates open-mindedness, and strengthens your subsequent rebuttal."
-                },
-                {
-                  "id": 3,
-                  "q": "What is the difference between Correlation and Causation in environmental studies?",
-                  "answer": "Correlation means two events occur together (e.g., higher temperatures and increased ice cream sales). Causation means one event directly produces the other (e.g., rising greenhouse gas concentrations trap heat, directly causing global temperature rise)."
-                },
-                {
-                  "id": 4,
-                  "q": "What is a 'Straw Man' fallacy, and why must it be avoided in professional communication?",
-                  "answer": "A straw man fallacy misrepresents or exaggerates an opponent's argument to make it easy to defeat (e.g., 'Advocating cycle lanes means you want to destroy all business commerce!'). It damages professional credibility and prevents constructive problem-solving."
-                }
-              ]
+          "devilsAdvocate": [
+            {
+              "claim": "Economic progress demands sacrifice: a few hundred hectares of wetland cannot hold back a multi-billion euro transport artery.",
+              "challenge": "Challenge this position: How do intact wetlands provide quantifiable economic value through flood mitigation and carbon sequestration?"
+            },
+            {
+              "claim": "If we don't build new road connections, regional towns will die economically within twenty years.",
+              "challenge": "Challenge this position: Does expanding highway capacity genuinely revive small towns, or does it accelerate urban brain drain and strip-mall decay?"
+            },
+            {
+              "claim": "Individual citizens are solely responsible for climate change through their consumer choices; corporations and governments just meet market demand.",
+              "challenge": "Challenge this position: How does public infrastructure design dictate individual choices (e.g., if there are no trains, people must drive)?"
             }
-          },
-          "survey": {
-            "title": "Activity 2: Environmental Policy Dilemmas: Speed Sparring (25 mins)",
-            "summary": "Engage in timed 4-minute debate rounds on four controversial climate policies. Practice using structured arguments: Claim → Evidence → Reasoning → Concession → Rebuttal.",
-            "modeBadges": [
-              "Pairs",
-              "Timed Speed Sparring",
-              "25 Mins"
-            ],
-            "instructions": [
-              "Review the 4 policy dilemma cards: Short-Haul Flight Bans, Airport Night Curfews, Small Modular Nuclear Reactors, and Fast-Tracking Green Infrastructure Permits.",
-              "Take turns roleplaying the Pro (advocacy) and Con (counter) positions for each topic in rapid 4-minute sparring rounds.",
-              "Incorporate at least two of the mandatory spoken linking phrases into each round ('While I concede that...', 'Empirical evidence strongly suggests that...').",
-              "Switch partners after Dilemma 2 to defend the opposing viewpoint."
-            ],
-            "deliverable": "4 structured debate exchanges (Claim → Evidence → Reasoning → Concession → Response) utilizing polite connecting words for contrasting ideas.",
-            "teacherNotes": "Circulate to monitor linking words. Intervene if students rely on casual conversational fillers ('Yeah but...', 'I don't think so'). Hold students to formal hedging and concessive markers ('Admittedly...', 'Notwithstanding the operational challenges...').",
-            "signposts": [
-              "\"While I concede that [X] involves significant expenditure, ...\"",
-              "\"Empirical evidence strongly suggests that ...\"",
-              "\"To address the concern regarding [Y], we propose that ...\"",
-              "\"From a cost-benefit standpoint, the data clearly demonstrates that ...\""
-            ],
-            "topics": [
+          ],
+          "dossier": {
+            "projectName": "The Val-d'Or High-Speed Rail & Freight Bypass (Link A79)",
+            "controversy": "A proposed 42-km electrified rail bypass intended to divert 80,000 freight trucks annually away from regional city centers, but requiring the bisecting of the Marais-Sauvage Protected Biosphere Reserve.",
+            "witnesses": [
               {
-                "id": 1,
-                "badge": "Short-Haul Flights vs. High-Speed Rail",
-                "statement": "Should the European Union ban all commercial passenger flights where high-speed rail exists under 2.5 hours?",
-                "pro": "High-speed rail emits up to 90% less CO2 per passenger-kilometer than short-haul jet flights and brings travelers directly into central business districts.",
-                "con": "Airlines lose valuable feeder passenger traffic for long-haul intercontinental routes, and rail capacity is already saturated on peak corridors.",
-                "prompt": "Debate your partner: How should governments balance air-rail modal shift without stranding regional passengers?"
+                "role": "Dr. Elena Rostova • Chief Ecological Biologist",
+                "stance": "Total Opposition to Surface Route",
+                "testimony": "The Marais-Sauvage is a non-renewable peatland ecosystem sequestering 450,000 tons of carbon. Bisecting it with an embankment will sever hydrological aquifers and trigger irreversible methane release. The only acceptable compromise is a bored deep tunnel or complete re-routing.",
+                "vulnerability": "A deep tunnel route would inflate construction costs by €850M and delay completion by 6 years."
               },
               {
-                "id": 2,
-                "badge": "Airport Night Curfews",
-                "statement": "Should international airports enforce strict total flight curfews between 23h00 and 06h00?",
-                "pro": "Night aircraft noise disrupts sleep patterns, impairs cardiovascular health, and reduces cognitive performance for hundreds of thousands of nearby residents.",
-                "con": "Global air cargo relies on overnight rotations to deliver vital pharmaceuticals and just-in-time e-commerce, and hub carriers need morning arrival waves.",
-                "prompt": "Debate your partner: Should acoustic surcharges or complete flight bans be used to regulate night operations?"
+                "role": "Marcus Vance • Regional Chamber of Commerce Director",
+                "stance": "Full Support for Surface Route",
+                "testimony": "Regional highway gridlock currently costs local logistics firms €120M each year in delayed shipments and diesel waste. The bypass will cut freight delivery times by 48% and generate 3,500 permanent green logistics jobs for unemployed youth.",
+                "vulnerability": "Logistics firms are unwilling to pay the high rail track access charges unless heavily subsidized by public taxpayers."
               },
               {
-                "id": 3,
-                "badge": "Nuclear Base Load vs. Renewables",
-                "statement": "Should cities and industrial hubs invest in Small Modular Nuclear Reactors (SMRs) alongside wind and solar power?",
-                "pro": "SMRs provide dependable, zero-carbon baseload electricity regardless of cloudy weather or calm winds, occupying a tiny land footprint.",
-                "con": "Nuclear construction projects face historic cost overruns, regulatory delays, and lingering public concerns regarding long-term radioactive waste storage.",
-                "prompt": "Debate your partner: What is the optimal energy mix to achieve net-zero power grids by 2040?"
+                "role": "Amira Benali • Commuter Union Representative",
+                "stance": "Conditional Support for Multi-Modal Hub",
+                "testimony": "85,000 workers commute daily along the congested valley corridor. We support the bypass ONLY if it includes 4 intermediate passenger stations and subsidized regional commuter fares, rather than acting solely as a non-stop freight conduit.",
+                "vulnerability": "Adding four passenger stations will reduce high-speed freight capacity by 35%."
               },
               {
-                "id": 4,
-                "badge": "Fast-Tracking Green Infrastructure Permits",
-                "statement": "Should governments bypass local environmental inquiries to accelerate the construction of flood defenses and wind farms?",
-                "pro": "The climate emergency demands rapid deployment of protective sea walls and renewable power; 10-year planning appeals jeopardize public safety.",
-                "con": "Bypassing public consultation undermines democratic accountability, ignores localized ecological impacts, and sparks fierce community backlash.",
-                "prompt": "Debate your partner: How can infrastructure planning be accelerated without trampling democratic rights?"
+                "role": "Chief Commissioner Harrison • Judicial Inquiry Lead",
+                "stance": "Neutral Arbiter",
+                "testimony": "The Commission must balance binding European Biodiversity Directives against National Strategic Infrastructure Mandates. We demand rigorous cost-benefit data, not emotional rhetoric.",
+                "vulnerability": "Must deliver a definitive verdict that will inevitably anger either the economic lobby or the environmental coalition."
               }
             ]
           },
-          "grammarClinic": {
-            "title": "Activity 3: Language Focus: Gerunds vs. Infinitives & Connecting Words for Contrasting Ideas (20 mins)",
-            "summary": "Selecting the correct verb complementation patterns (Gerund vs. Infinitive) and mastering useful connecting words for persuasive speaking.",
-            "modeBadges": [
-              "Pairs / Individual",
-              "Grammar Drills",
-              "20 Mins"
-            ],
-            "instructions": [
-              "Review the 3 core grammatical structures: Verbs taking Gerunds (advocate doing, delay implementing), Verbs taking Infinitives (agree to fund, aim to achieve), and Contrasting Clauses (Although + clause vs. Despite + noun phrase).",
-              "Analyze the formula examples and identify which policy actions require an ongoing process focus (-ing) versus future commitments (to + verb).",
-              "Complete the 4 interactive TOEIC Part 5 drills independently, selecting the correct verb complementation pattern.",
-              "Click 'Check Answer & Explanation' and note the structural justification in your error log."
-            ],
-            "deliverable": "100% accuracy on the 4 verb complementation drills with written grammar justification in study logs.",
-            "teacherNotes": "Highlight that TOEIC frequently tests 'advocate + -ing', 'risk + -ing', and 'decide + infinitive'. Remind students that 'despite' is a preposition taking a noun phrase, whereas 'although' introduces a full subordinate clause with subject and verb.",
+          "argumentClinic": {
             "rules": [
               {
-                "type": "Verbs followed by Gerunds (-ing)",
-                "formula": "advocate investing | recommend retrofitting | consider banning | prioritize reducing | delay implementing",
-                "usage": "Used when expressing ongoing, habitual, or proposed actions in policy and project debates."
+                "title": "1. The Partial Concession",
+                "formula": "While I concede that [X is true], the empirical evidence demonstrates [Y].",
+                "example": "<em>While I concede that</em> freight volumes are rising, the environmental cost of destroying this aquifer is irreversible."
               },
               {
-                "type": "Verbs followed by Infinitives (to + base)",
-                "formula": "agree to fund | aim to achieve | decide to upgrade | refuse to compromise | fail to comply",
-                "usage": "Used when expressing intent, decisions, commitments, or future targets."
+                "title": "2. Rejecting False Equivalence",
+                "formula": "With respect, that conflates [minor issue A] with [catastrophic issue B].",
+                "example": "<em>With respect, that conflates</em> short-term highway convenience with multi-generational ecosystem collapse."
               },
               {
-                "type": "Contrasting Ideas & Polite Disagreement",
-                "formula": "\"While it is true that [X], empirical evidence indicates that [Y]...\" | \"Admittedly..., nevertheless...\"",
-                "usage": "Use to politely soften strong disagreements and frame your counter-argument persuasively."
+                "title": "3. The Proportionality Challenge",
+                "formula": "Even if we accept [premise], the proposed solution is completely disproportionate because [reason].",
+                "example": "<em>Even if we accept</em> that transit times must improve, spending €2 billion to pave over a wetland is wildly disproportionate."
+              },
+              {
+                "title": "4. The Constructive Counter-Proposal",
+                "formula": "Rather than [damaging course of action], a far more sustainable alternative would be [innovative solution].",
+                "example": "<em>Rather than</em> building a surface embankment, <em>a far more sustainable alternative would be</em> upgrading the existing northern corridor."
               }
-            ],
-            "drills": [
-              {
-                "id": 1,
-                "sentence": "The aviation working group advocates ________ a progressive carbon levy on private jet departures.",
-                "options": [
-                  "to introduce",
-                  "introducing",
-                  "introduce",
-                  "introduced"
-                ],
-                "correct": "introducing",
-                "explanation": "'Advocate' is followed by a gerund ('advocate doing something')."
-              },
-              {
-                "id": 2,
-                "sentence": "Municipal authorities have finally decided ________ 20 million euros in sustainable drainage systems.",
-                "options": [
-                  "investing",
-                  "to invest",
-                  "invest",
-                  "investment"
-                ],
-                "correct": "to invest",
-                "explanation": "'Decide' is followed by a to-infinitive ('decide to do something')."
-              },
-              {
-                "id": 3,
-                "sentence": "Civil aviation authorities cannot risk ________ runway maintenance during extreme heat episodes.",
-                "options": [
-                  "to delay",
-                  "delaying",
-                  "delay",
-                  "delayed"
-                ],
-                "correct": "delaying",
-                "explanation": "'Risk' takes a gerund ('risk doing something')."
-              },
-              {
-                "id": 4,
-                "sentence": "________ initial capital expenditures are high, permeable asphalt dramatically reduces long-term flood repair costs.",
-                "options": [
-                  "Despite",
-                  "Although",
-                  "In spite of",
-                  "However"
-                ],
-                "correct": "Although",
-                "explanation": "'Although' is a subordinating conjunction followed by a full clause with subject and verb ('initial capital expenditures are high')."
-              }
-            ]
-          },
-          "roleplay": {
-            "title": "Activity 4: Public Inquiry Hearing Simulation (45 mins)",
-            "summary": "Formal administrative inquiry and stakeholder Q&A on regional climate infrastructure.",
-            "modeBadges": [
-              "Groups of 4",
-              "Public Inquiry Hearing",
-              "45 Mins"
-            ],
-            "instructions": [
-              "Form a hearing committee of 4: Environmental Commissioner (Chair), Airline/Airport Association Spokesperson, Metropolitan Residents Coalition President, and Chief Civil Infrastructure Engineer.",
-              "Review the hearing scenario: a proposed €5 passenger surcharge and municipal tax levy to finance €150M in sea-wall defenses and district cooling networks.",
-              "Take 10 minutes to prepare your stakeholder position, anticipating two tough follow-up questions from opposing delegates.",
-              "Convene the 30-minute formal inquiry: the Chair opens testimony (3 mins per delegate), facilitates Q&A (15 mins), and leads consensus deliberations on an amended policy (5 mins)."
-            ],
-            "deliverable": "Formal verbal testimony, recorded Q&A exchanges, and a signed 3-clause compromise policy draft.",
-            "teacherNotes": "Keep time strictly. The Chair must maintain formal decorum ('The floor now recognizes the chief engineer...'). Encourage participants to challenge unverified claims by demanding empirical data or questioning long-term capex feasibility.",
-            "scenario": "The Regional Environmental Agency is holding a public inquiry on a proposed 'Climate Resilience Infrastructure Surcharge' (a 5-euro fee per passenger and a municipal tax increase) to fund 150 million euros in flood surge sea walls and district cooling networks. Stakeholders must defend their positions during Q&A.",
-            "roles": [
-              {
-                "title": "Regional Environmental Commissioner (Chair)",
-                "focus": "Upholding statutory carbon targets, reviewing scientific climate vulnerability models, and moderating Q&A."
-              },
-              {
-                "title": "Airlines & Airport Operators Association Spokesperson",
-                "focus": "Arguing against added passenger taxes, highlighting economic competitiveness, and pushing for voluntary industry adaptation."
-              },
-              {
-                "title": "President of the Metropolitan Residents Coalition",
-                "focus": "Demanding protection from catastrophic flash floods, demanding transparency on tax spending, and defending affordable housing."
-              },
-              {
-                "title": "Chief Civil Infrastructure Engineer & Resilience Expert",
-                "focus": "Presenting empirical data on 50-year return flood hazards, lifecycle cost-benefit analyses, and defending the proposed engineering interventions."
-              }
-            ]
-          },
-          "closingReview": {
-            "title": "Session 3 Wrap-Up & FE2 Argument Defense (15 mins)",
-            "summary": "Consolidation, phonetics, and portfolio check for Formative Evaluation 2 readiness.",
-            "modeBadges": [
-              "Plenary",
-              "Self-Assessment",
-              "15 Mins"
-            ],
-            "instructions": [
-              "Cross-check your learning notes against the 3 Formative Evaluation 2 readiness criteria.",
-              "Record 5 advanced rhetorical linking words and 4 verb complementation patterns in your personal study portfolio.",
-              "Rehearse an impromptu 90-second response with a peer answering a challenging environmental counter-argument without consulting notes."
-            ],
-            "deliverable": "Completed study log entries and verified readiness checklist for Formative Evaluation 2.",
-            "teacherNotes": "Remind students that FE2 evaluates spontaneous argument defense during the teacher Q&A. Students must not memorize a monologue; they must demonstrate dynamic responsiveness to unexpected challenges.",
-            "feChecklist": [
-              "Record 5 rhetorical markers and verbs taking gerunds/infinitives in your study log.",
-              "Prepare your spontaneous defense for the FE2 Teacher Q&A: anticipate 2 tough questions.",
-              "Ensure your visual slides do not contain continuous text paragraphs (visual cues only!)."
             ]
           }
         }
@@ -5472,64 +5031,64 @@
       "4": {
         "session": 4,
         "objectives": {
-          "title": "Session 4 Objectives - Biodiversity in Urban Areas and Airports",
-          "summary": "By the end of this session, you will be able to discuss urban biodiversity and green infrastructure with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
+          "title": "Session 4 Objectives - Airport Biodiversity & Ecological Coexistence",
+          "summary": "By the end of this session, you will be able to analyze the operational tension between aviation safety (wildlife deterrence) and habitat preservation, rotate through multi-perspective technical stations, negotiate a binding multi-stakeholder land-use treaty, and assess your readiness for Formative Evaluation 2 (FE2).",
           "items": [
             {
               "num": 1,
-              "title": "Practice TOEIC Part 5 Questions on Pronouns & Determiners",
-              "description": "Select the correct pronouns (its, their, themselves) and determiners (each, every, either) under timed test conditions."
+              "title": "Examine the Meadow Paradox: Wildlife Hazard vs. Ecological Corridor (Context Briefing)",
+              "description": "Analyze why airport airfields represent Europe's most fertile yet hazardous biodiversity sanctuaries."
             },
             {
               "num": 2,
-              "title": "Master Core Vocabulary for Urban Nature, Wildlife & Green Spaces",
-              "description": "Learn vocabulary for wildlife corridors, green roofs, native species, bird strike prevention, and ecological corridors."
+              "title": "Rotate Through 3 Specialized Environmental Solution Stations (Technical Fluency)",
+              "description": "Explore non-lethal wildlife deterrence, solar-wildflower dual zoning, and sustainable drainage systems (SuDS)."
             },
             {
               "num": 3,
-              "title": "Use Pronouns & Possessives Correctly for Organizations & Teams",
-              "description": "Maintain consistency between singular companies (the airport ... its plan) and plural teams or groups."
+              "title": "Deploy Passive Voice & Impersonal Phrasing for Policy Recommendations (Grammar Clinic)",
+              "description": "Master formal policy language: 'Measures must be implemented to...', 'It is proposed that...', 'Runway safety zones are to be kept...'."
             },
             {
               "num": 4,
-              "title": "Discuss How Infrastructure Projects Can Protect Living Nature (DDRS)",
-              "description": "Examine practical initiatives where transport hubs create protected natural habitats alongside daily operations."
+              "title": "Negotiate a 10-Year Airport Land-Use Treaty (Multi-Party Negotiation)",
+              "description": "Represent Airport Operations, Wildlife Protection League, or Regional Clean Energy Consortium to divide 500 hectares."
             },
             {
               "num": 5,
-              "title": "Finalize Speaking Skills and Timing for the Session 5 Evaluation",
-              "description": "Rehearse your individual presentation with a timer, checking your fluency, vocabulary range, and grammar accuracy."
+              "title": "Benchmark Individual Progress Against the Formative Evaluation 2 Rubric (FE2 Readiness)",
+              "description": "Evaluate speaking fluency, interactive turn-taking, and lexical range against official B2 criteria."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
+          "title": "Session 4 Lesson Plan - Airport Biodiversity & Ecological Coexistence (2 Hours)",
+          "summary": "A fast-moving station-based workshop and treaty negotiation: students explore non-lethal wildlife management, solar-pollinator zoning, and sustainable drainage, followed by a tri-partite land-use treaty negotiation and FE2 prep.",
           "items": [
             {
-              "time": "0-15",
-              "title": "Conversational Warm-Up: Nature Around Us (15 mins)",
-              "description": "Students share observations of urban wildlife, green spaces, and bird control measures at transport hubs."
+              "time": "00-15",
+              "title": "Part 1: The Meadow Paradox: Video & Case Hook (15 mins)",
+              "description": "Why airport grasslands represent some of Europe's most fertile yet hazardous biodiversity zones (pesticide-free perimeter fences vs. bird-strike risks)."
             },
             {
-              "time": "15-45",
-              "title": "TOEIC Strategy: Pronouns & Determiners in Part 5 (30 mins)",
-              "description": "Fast drills selecting correct pronouns (its, their, each, neither) in professional administrative memos."
+              "time": "15-50",
+              "title": "Part 2: 3-Station Specialized Solutions Workshop (35 mins)",
+              "description": "Groups rotate through Station 1 (Non-Lethal Wildlife Deterrence), Station 2 (Solar-Pollinator Dual-Use Zoning), and Station 3 (Sustainable Drainage & Glycol Filtration)."
             },
             {
-              "time": "45-65",
-              "title": "Vocabulary Builder: Urban Ecology (20 mins)",
-              "description": "Key terms for green roofs, wildlife corridors, native flora, habitat preservation, and ecological surveys."
+              "time": "50-70",
+              "title": "Part 3: Language Clinic: Passive Voice & Impersonal Recommendations (20 mins)",
+              "description": "Professional formal English: 'It is strongly recommended that...', 'Measures must be implemented to ensure...', 'Runway buffer zones are to be maintained...'."
             },
             {
-              "time": "65-110",
-              "title": "Structured Discussion & Grammar (45 mins)",
-              "description": "Proposing a green infrastructure plan for a local transport hub using Pronouns & Determiners accurately."
+              "time": "70-105",
+              "title": "Part 4: The Tri-Partite Land-Use Treaty Negotiation (35 mins)",
+              "description": "Airport Authority, Wildlife Trust, and Clean Energy Consortium negotiate a binding 10-year accord over 500 perimeter hectares."
             },
             {
-              "time": "110-120",
-              "title": "Evaluation Practice & Wrap-Up (10 mins)",
-              "description": "Timed individual speaking practice with rubric assessment (fluency, pronunciation, range, grammatical control)."
+              "time": "105-120",
+              "title": "Part 5: Formative Evaluation 2 (FE2) Roadmap & Review (15 mins)",
+              "description": "Treaty ratification, vocabulary consolidation, and FE2 rubric benchmarking."
             }
           ]
         },
@@ -5886,263 +5445,73 @@
           ]
         },
         "lessonContent": {
-          "overview": {
-            "image": "images/ag_m2card4.jpg",
-            "title": "Biodiversity in Urban Areas & Transport Hubs",
-            "subtitle": "Nature-Based Solutions, Constructed Wetlands, Ecological Corridors & Wildlife Hazard Mitigation",
-            "badge": "Session Overview • Biodiversity & Ecological Infrastructure"
-          },
           "hero": {
+            "title": "Airport Biodiversity & Ecological Coexistence",
+            "subtitle": "Archetype D • Interactive Stations & Treaty Negotiation: Bird-Strike Mitigation vs. Nature Sanctuaries",
             "image": "images/ag_m2card4.jpg",
-            "title": "Biodiversity in Urban Areas & Transport Hubs",
-            "subtitle": "Nature-Based Solutions, Constructed Wetlands, Ecological Corridors & Wildlife Hazard Mitigation",
-            "badge": "Session Overview • Biodiversity & Ecological Infrastructure"
+            "badge": "AG Module 2 • Session 4 • Interactive Stations"
           },
-          "openingSession": {
-            "title": "Activity 1: Airport Ecology News & Opening Warm-Up (10 mins)",
-            "summary": "Opening warm-up on nature-based solutions, aerodrome wildlife management, and biodiversity net gain.",
-            "modeBadges": [
-              "Pairs",
-              "Quick Check",
-              "10 Mins"
-            ],
-            "instructions": [
-              "Read the 3 news headlines regarding aerodrome wildflower meadows, statutory Biodiversity Net Gain (BNG) mandates, and AI bird radar systems.",
-              "Discuss the 4 diagnostic concepts with your partner: Nature-Based Solutions (NbS), BNG statutory metrics, ICAO Annex 14 Bird Strike Hazard balance, and Bioswales vs. concrete ditches.",
-              "Click 'Reveal Answer' to benchmark your technical definitions against civil aviation ecological standards."
-            ],
-            "deliverable": "Fluent oral definitions of key aerodrome ecology concepts and ICAO safety trade-offs.",
-            "teacherNotes": "Emphasize the unique tension at transport hubs: while urban sustainability calls for biodiversity, airfields must actively discourage hazardous flocking birds near runways.",
-            "newsPrompts": [
-              "International airports plant native wildflower meadows across non-manoeuvring safety zones, boosting wild pollinators while managing bird strike risks.",
-              "New transport regulations mandate 'Biodiversity Net Gain' (BNG) of at least 10% on all new motorway and rail infrastructure projects.",
-              "Autonomous AI radar systems track migratory bird flocks up to 10 kilometers away to alert pilots and reduce wildlife collisions."
-            ],
-            "diagnostic": {
-              "title": "Ecological & Aerodrome Vocabulary Quick Check",
-              "instructions": "Discuss each concept in pairs before verifying the technical explanation:",
-              "questions": [
-                {
-                  "id": 1,
-                  "q": "What is the fundamental concept behind Nature-Based Solutions (NbS)?",
-                  "answer": "Actions to protect, sustainably manage, and restore natural or modified ecosystems that address societal and climate challenges effectively (e.g., using wetlands for flood storage and cooling rather than concrete reservoirs)."
-                },
-                {
-                  "id": 2,
-                  "q": "What is meant by 'Biodiversity Net Gain' (BNG) in major civil infrastructure?",
-                  "answer": "An approach to development and land management that aims to leave the natural environment in a measurably better state than it was before the project began (at least a 10% net improvement in habitat quality and ecological connectivity)."
-                },
-                {
-                  "id": 3,
-                  "q": "How do aerodrome operators balance wildlife conservation with Bird Strike Hazard Mitigation?",
-                  "answer": "Aviation regulations (ICAO Annex 14) mandate that airside zones minimize attractants for flocking or large birds (e.g., maintaining long-grass policies, avoiding berry-bearing bushes, covering waste bins), while creating safe, dedicated biodiversity buffers far away from flight paths."
-                },
-                {
-                  "id": 4,
-                  "q": "What is the difference between a Bioswale and a standard Concrete Drainage Ditch?",
-                  "answer": "A concrete ditch merely moves runoff away quickly without filtering pollutants or slowing the flow. A bioswale is a vegetated swale with gently sloped sides and compost/soil layers that filters heavy metals and petroleum residues, cools runoff, and encourages groundwater infiltration."
-                }
+          "meadowParadox": {
+            "headline": "The Meadow Paradox: Europe's Accidental Wildlife Sanctuaries",
+            "context": "Commercial airports maintain vast grassland perimeters (often 1,000+ hectares) strictly enclosed by security fences, completely free of human foot traffic, hunting, domestic pets, and agricultural pesticides. Consequently, they have inadvertently become prime sanctuaries for endangered ground-nesting birds, rare orchids, and small mammals. However, large raptors and flocking birds pose a severe, potentially catastrophic bird-strike hazard to jet aircraft during takeoff and landing.",
+            "dilemma": "How can an international airport protect critically endangered species and maintain ecological corridors without compromising flight safety or exceeding zero-tolerance bird-strike risk thresholds?"
+          },
+          "stations": [
+            {
+              "num": 1,
+              "title": "Station 1: Non-Lethal Wildlife Deterrence & Grass Management",
+              "icon": "🦅",
+              "badge": "Airfield Safety",
+              "coreTech": "Avian 3D Radar + Tall-Grass Habitat Modification + Acoustic Dispersal",
+              "keyInsight": "Keeping perimeter grass maintained at exactly 20–30 cm ('long grass policy') discourages flocking birds like gulls and starlings because they cannot easily spot ground predators, while preventing raptors from seeing small rodents.",
+              "discussionPrompts": [
+                "Why is ecological habitat modification far more effective over time than firing pyrotechnic scare cartridges?",
+                "How can AI-guided acoustic distress calls disperse problem birds without causing acoustic disturbance to nearby residential towns?"
+              ]
+            },
+            {
+              "num": 2,
+              "title": "Station 2: Solar-Pollinator Dual-Use Zoning",
+              "icon": "☀️",
+              "badge": "Renewable Energy",
+              "coreTech": "Anti-Glare Photovoltaic Arrays + Native Wildflower Groundcover",
+              "keyInsight": "Installing 50 MW of solar panels on sterile airfield safety buffers provides clean airport power. Seeding low-growing native wildflower mixes beneath panels restores native bees and butterflies without attracting high-flying bird flocks.",
+              "discussionPrompts": [
+                "How must solar panel tilt angles be engineered to prevent hazardous pilot glare on short final approach?",
+                "What guarantees must be given to airfield maintenance teams regarding grass mowing and fire safety around electrical inverters?"
+              ]
+            },
+            {
+              "num": 3,
+              "title": "Station 3: Sustainable Drainage Systems (SuDS) & Water Treatment",
+              "icon": "💧",
+              "badge": "Water & Chemistry",
+              "coreTech": "Engineered Reed Beds + Underground De-Icing Glycol Recovery Tanks",
+              "keyInsight": "Runway stormwater runoff often carries aircraft de-icing fluid (propylene glycol) and rubber residues. Routing runoff through artificial reed-bed wetlands naturally breaks down organic contaminants before water enters local rivers.",
+              "discussionPrompts": [
+                "How do reed beds utilize natural microbiology to eliminate toxic chemical runoff without industrial chemical additives?",
+                "What sensory or physical barriers must be installed to prevent migratory waterfowl from settling in drainage retention ponds?"
               ]
             }
-          },
-          "survey": {
-            "title": "Activity 2: Biodiversity & Safety Dilemmas: Speed Survey (25 mins)",
-            "summary": "Explore 4 real-world operational challenges where environmental protection intersects with aviation safety and urban expansion.",
-            "modeBadges": [
-              "Pairs",
-              "Timed Technical Survey",
-              "25 Mins"
-            ],
-            "instructions": [
-              "Examine the 4 operational dilemmas: Airfield Long Grass Management (15-20 cm), Wildlife Overpasses (Ecoducts), AI Avian Radar & Acoustic Dispersal, and Terminal Green Roofs & Pollinators.",
-              "Interview your partner across 4 timed rounds, alternating between presenting the ecological benefit and challenging it with the aviation safety or cost constraint.",
-              "Use formal linking words to structure your responses ('From an ecological engineering standpoint...', 'Under ICAO Annex 14 regulations...').",
-              "Formulate an engineering compromise for at least two of the dilemma scenarios."
-            ],
-            "deliverable": "4 completed partner interview logs weighing biodiversity gains against operational safety risks.",
-            "teacherNotes": "Push students to move beyond simplistic 'trees are good' statements. Demand technical precision: What species of grass? What height? Why do starlings avoid long grass? How do steep pond banks prevent waterfowl nesting?",
-            "signposts": [
-              "\"From an ecological engineering standpoint, ...\"",
-              "\"To prevent hazardous wildlife strikes while fostering biodiversity, ...\"",
-              "\"Nature-based solutions offer significant co-benefits, notably...\"",
-              "\"Under ICAO Annex 14 regulations, aerodrome operators must balance...\""
-            ],
-            "topics": [
+          ],
+          "treatyNegotiation": {
+            "totalArea": "500 Hectares of Non-Runway Airfield Perimeter",
+            "parties": [
               {
-                "id": 1,
-                "badge": "Airfield Long Grass Management",
-                "statement": "Should all airports adopt a strict 15–20 cm Long Grass Management policy across runway safety strips?",
-                "pro": "Long grass prevents flocking birds (starlings, lapwings, gulls) from spotting earthworms or landing easily, cutting bird strike incidents by over 50% without lethal culling.",
-                "con": "Long grass requires precise mowing machinery, seasonal weed control, and specialized vegetation monitoring to prevent dry summer fire hazards.",
-                "prompt": "Interview your partner: How does grass height directly affect aviation safety and aerodrome biodiversity?"
+                "party": "Delegation A: Airport Operations & Flight Safety Division",
+                "priorities": "Zero-tolerance for bird strikes within 3km of runway thresholds. Demands clear visual sighting lines, radar-guided acoustic coverage, and immediate right-of-veto over any habitat that attracts raptors.",
+                "bargainingChip": "Controls capital infrastructure funding and can sponsor solar installation."
               },
               {
-                "id": 2,
-                "badge": "Wildlife Overpasses (Ecoducts)",
-                "statement": "Should national rail and road authorities be legally mandated to construct wildlife overpasses every 10 km?",
-                "pro": "Vegetated ecoducts reconnect fragmented forest ecosystems, reduce vehicular animal collisions, and maintain genetic diversity among wildlife populations.",
-                "con": "Each wildlife overpass costs 3 to 8 million euros to design and build, consuming significant transport infrastructure budgets.",
-                "prompt": "Interview your partner: How can linear transport corridors be adapted to preserve ecological migration routes?"
+                "party": "Delegation B: Regional Wildlife & Biodiversity Trust",
+                "priorities": "Preserve the 120-hectare southern wildflower meadow where rare bee orchids and endangered curlews nest. Demands pesticide-free biodiversity corridors connecting to the provincial nature reserve.",
+                "bargainingChip": "Holds legal power to file ecological injunctions under EU Habitats Directives."
               },
               {
-                "id": 3,
-                "badge": "AI Avian Radar & Acoustic Dispersal",
-                "statement": "Should aerodromes replace lethal bird control shooting with automated AI-guided acoustic distress laser dispersal?",
-                "pro": "AI 3D radar detects approaching flocks miles away and triggers humane bio-acoustic distress calls, habituation-free lasers, and trained falconry.",
-                "con": "Flocking birds can eventually become habituated to repeated artificial acoustic alarms if not varied continuously.",
-                "prompt": "Interview your partner: What non-lethal wildlife hazard mitigation methods are most effective near runways?"
-              },
-              {
-                "id": 4,
-                "badge": "Terminal Green Roofs & Pollinators",
-                "statement": "Should airport passenger terminals convert 100% of unused roof space into native pollinator wildflower meadows and bee colonies?",
-                "pro": "Sedum green roofs insulate terminal buildings, lower summer air conditioning loads by up to 25%, and support endangered urban bee populations.",
-                "con": "Engineers must verify that insect-rich green roofs do not inadvertently attract insect-feeding birds into final approach climb paths.",
-                "prompt": "Interview your partner: How can terminal architecture integrate living ecology safely?"
+                "party": "Delegation C: Regional Clean Energy & Climate Transition Consortium",
+                "priorities": "Deploy at least 150 hectares of high-density solar arrays to generate 80 GWh of renewable electricity annually, decarbonizing both the airport and 25,000 regional homes.",
+                "bargainingChip": "Brings €60M in private infrastructure capital and revenue-sharing promises."
               }
-            ]
-          },
-          "grammarClinic": {
-            "title": "Activity 3: Language Focus: Pronouns & Determiners in Technical English (20 mins)",
-            "summary": "Mastering agreement with singular and plural indefinite pronouns, possessive determiners (its vs. their), and reflexive forms in TOEIC Part 5.",
-            "modeBadges": [
-              "Pairs / Individual",
-              "Grammar Drills",
-              "20 Mins"
-            ],
-            "instructions": [
-              "Review the 3 grammar rules: Singular Indefinite Pronouns (Each/Every/Neither take singular verbs), Possessive Determiners for organizations (The airport released its report, NOT their), and Reflexive/Emphatic forms (itself, themselves).",
-              "Note the high-frequency TOEIC Part 5 traps: confusing 'its' (possessive) with 'it\\'s' (it is), and verb agreement after 'Each of [plural noun]'.",
-              "Complete the 4 interactive multiple-choice drills under timed conditions (30 seconds per item).",
-              "Click 'Check Answer & Explanation' and record the grammatical justification for each correct answer."
-            ],
-            "deliverable": "Accurate completion of the 4 grammar drills and error analysis documented in student study journals.",
-            "teacherNotes": "Highlight that corporate entities (authorities, airlines, airports, committees) are grammatically singular in international business English: 'The CAA published its findings'.",
-            "rules": [
-              {
-                "type": "Singular Indefinite Pronouns (Each, Every, Either, Neither)",
-                "formula": "Each of the aerodrome perimeters [is / was] monitored. (Takes a singular verb!).",
-                "usage": "Even when followed by a plural prepositional phrase ('of the perimeters'), the grammatical subject remains singular."
-              },
-              {
-                "type": "Possessive Determiner Agreement (Its vs. Their)",
-                "formula": "The airport completed its flood assessment (singular) vs. The airlines modified their flight schedules (plural).",
-                "usage": "Match the possessive determiner strictly to whether the entity is singular corporate/institutional or plural."
-              },
-              {
-                "type": "Reflexive & Emphatic Pronouns (Itself, Themselves)",
-                "formula": "The autonomous radar system resets itself following lightning strikes.",
-                "usage": "Use when the subject and object are the same entity, or for emphasis."
-              }
-            ],
-            "drills": [
-              {
-                "id": 1,
-                "sentence": "Each of the new stormwater retention basins ________ inspected twice monthly by the environmental team.",
-                "options": [
-                  "is",
-                  "are",
-                  "have been",
-                  "were"
-                ],
-                "correct": "is",
-                "explanation": "'Each of [plural noun]' always takes a singular verb ('is inspected')."
-              },
-              {
-                "id": 2,
-                "sentence": "Neither of the proposed flood barrier designs ________ the strict 100-year return criteria.",
-                "options": [
-                  "satisfy",
-                  "satisfies",
-                  "are satisfying",
-                  "have satisfied"
-                ],
-                "correct": "satisfies",
-                "explanation": "'Neither of [plural noun]' takes a singular verb in standard formal English ('satisfies')."
-              },
-              {
-                "id": 3,
-                "sentence": "The international airport published ________ annual sustainability report detailing a 12% drop in energy consumption.",
-                "options": [
-                  "their",
-                  "its",
-                  "it's",
-                  "theirs"
-                ],
-                "correct": "its",
-                "explanation": "'The international airport' is a singular organization; the possessive determiner is 'its' (no apostrophe!)."
-              },
-              {
-                "id": 4,
-                "sentence": "The wildlife control officers conducted the full aerodrome habitat survey ________.",
-                "options": [
-                  "themselves",
-                  "theirselves",
-                  "himself",
-                  "them"
-                ],
-                "correct": "themselves",
-                "explanation": "Plural emphatic reflexive pronoun referring back to 'The wildlife control officers'."
-              }
-            ]
-          },
-          "roleplay": {
-            "title": "Activity 4: Airport Wildlife Hazard & Ecological Transition Committee (45 mins)",
-            "summary": "Joint wildlife hazard mitigation and nature-based solutions committee.",
-            "modeBadges": [
-              "Groups of 4",
-              "Committee Simulation",
-              "45 Mins"
-            ],
-            "instructions": [
-              "Form a 4-person committee: Aerodrome Wildlife Hazard Officer, Regional Wetland Nature Reserve Director, Airport Operations & Flight Safety Liaison, and Ecological Landscape Architect.",
-              "Review the mission: expand airport stormwater retention basins while guaranteeing zero increase in bird strike risks within the 13 km runway hazard zone.",
-              "Conduct a 30-minute committee session: each officer delivers their 3-minute technical brief, followed by 15 minutes of cross-table negotiation and 5 minutes to agree on an actionable 5-point master plan.",
-              "Present the master plan recommendations to the class in a 2-minute executive summary."
-            ],
-            "deliverable": "A finalized 5-point Airport Ecological Mitigation Protocol balancing habitat conservation with runway safety zones.",
-            "teacherNotes": "Encourage realistic tension: the conservation director wants bird feeding wetlands; the safety officer demands netting and deterrents. Successful groups will find zoning compromises (e.g., steep embankments, floating netting, non-fruiting vegetation near the RESA).",
-            "scenario": "A major international coastal airport is surrounded by protected wetlands. The airport must expand its stormwater retention basins while ensuring zero increase in bird strike hazards. Convene the joint Wildlife Hazard & Ecological Transition Committee to draft an actionable 5-point master plan.",
-            "roles": [
-              {
-                "title": "Aerodrome Wildlife Hazard Management Officer",
-                "focus": "ICAO Annex 14 compliance, bird strike statistics, maintaining the long-grass regime, and deploying non-lethal acoustic deterrents."
-              },
-              {
-                "title": "Regional Wetland Nature Reserve Director",
-                "focus": "Protecting migratory bird flyways, ensuring water quality in surrounding estuaries, and creating alternative wetland feeding grounds 15 km away."
-              },
-              {
-                "title": "Airport Operations & Chief Flight Safety Liaison",
-                "focus": "Runway safety areas (RESA), approach path obstacle clearance, pilot hazard reporting, and emergency diversion protocols."
-              },
-              {
-                "title": "Ecological Landscape Architect & Civil Engineer",
-                "focus": "Designing steep-sided retention ponds with floating wire grids to deter waterfowl, native low-berry vegetative ground cover, and bioswales."
-              }
-            ]
-          },
-          "closingReview": {
-            "title": "Session 4 Wrap-Up & FE2 Launch Briefing (15 mins)",
-            "summary": "Final Formative Evaluation 2 checklist & topic confirmation.",
-            "modeBadges": [
-              "Plenary",
-              "FE2 Preparation",
-              "15 Mins"
-            ],
-            "instructions": [
-              "Review the 5 Formative Evaluation 2 readiness checkpoints: topic selection, 50/50 partner speaking equity, 4-dimension structure, vocabulary integration (6-8 terms), and portfolio readiness.",
-              "Confirm your partner pairing and final topic (Option A: Airport Climate Resilience or Option B: City Climate Resilience).",
-              "Review the evaluation rubric criteria: Spoken Fluency (5 pts), Technical Vocabulary Range (5 pts), Grammatical Accuracy (5 pts), and Interaction & Defense (5 pts)."
-            ],
-            "deliverable": "Finalized FE2 presentation plan, partner speaking distribution, and signed presentation topic declaration.",
-            "teacherNotes": "Ensure every student has an assigned partner and a confirmed topic before leaving class. Highlight that visual slides must serve as visual aids only (bullet prompts, diagrams, graphs)—reading from slides results in immediate point deductions.",
-            "feChecklist": [
-              "Select your topic: Option A (Airport Climate Resilience) or Option B (City Climate Resilience).",
-              "Verify that both partners have equal 50/50 speaking time (~6 minutes each).",
-              "Ensure your 4 core dimensions (Hazard Profile, Physical Interventions, Nature-Based Solutions, Contingency Operations) are clearly divided.",
-              "Check that you have integrated at least 6 to 8 platform vocabulary terms from Sessions 1 to 4.",
-              "Confirm that your Learning Portfolio and TOEIC Error Log are up-to-date and ready for your teacher."
             ]
           }
         }

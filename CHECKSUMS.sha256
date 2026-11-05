@@ -2,18 +2,18 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-05T10:04:36.113Z
+# Generated: 2026-11-05T11:21:39.650Z
 # ============================================================================
 
-6a7ee3752938133f61d9a0cea67eea13ac6136ffe884f3d4d861eaf84bc28c6a  imsmanifest.xml
+ecfe39d82276432e6b81b1c32b79289033b4ac2df4ba002c62dbf8b1f9e925ae  imsmanifest.xml
 f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
-c24d213408e4d88ebbe1cdd295abba6baaac65c2ce70e18f4127912af8e8f5fb  index.html
+701055e173076c800a524db94ceb9a36bc14962af9efacaff7b6c354308e1ae9  index.html
 25672b8cafbc53fb13202343168c8bae0e17fc14766ceb4852fcd16844c09623  admin.html
 438013b62da4a37d3227a380723251ae389ee216022e88641b7374183afcfa01  presentation.html
 9b942f25da36225224e622900519317a99e933076c0331a6ead9637d0c6c9ea6  portfolio.html
 93414830a71d1cb256196bf3bfde0a845a3a563520b07112247290d75c75b9aa  immersion.html
-c2b06bd83ffcee37c34b44e15a2e080fd7c8ac47523162319a1f1d9f35675b3d  output.css
-165f46b23dd242345c3cfea6ec8c8431363f5ffbce47c51574f7ff2095ee8219  data/course-data.js
+d730d195b156ad337cac6ae81453f81eb3d754d7d944ac5653ec166c38701f71  output.css
+b02ba24293557272cc5f8b656ae67fa7cc91eeaab9e8988dfb079dc312e83446  data/course-data.js
 933bd226539ac03ed3eea624ea587119416477d3b01c30f5b7ff68aef9164dd0  data/portfolio-latest.csv
 5252f84a7d3e4fa827646c6f4899cb726057e0a8732e0b7f13132a4ca02b8357  data/portfolio-summary-s1.json
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
@@ -54,3 +54,5 @@ c8b4a150c4ecff8b290cdbafba7dc6a4e7f84bb2f9ee48992bf6a5e883a0614d  images/ag_m3ca
 59342b87326c174d3600e7056d894bdbe4b0c3fbb4df3971ea44fa85bc0ed19a  images/immersion_card.jpg
 0a09399212bd7a24235638e477ea5e8c1441854c268c3edcd1bc45ab194e95d2  images/semester_objectives.jpg
 6970e2b956c8d6557969a7b3484ffc7590642b8b8e4450ef3ea1a35599700568  images/turnaround_apron.jpg
+1ec89f655af441402ffc433b9a039b6fae20cfe70e9e2b1457661d21cb4bc931  images/urban_car_sprawl.jpg
+1426722da0e7abff0c4cb21acc664505d53cd1b4da0c714f815ddeb6e55848cf  images/urban_superblock.jpg

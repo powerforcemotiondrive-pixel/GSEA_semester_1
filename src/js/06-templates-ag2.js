@@ -1,13 +1,23 @@
+    /* ==========================================================================
+       GENERAL ENGLISH (AG) • MODULE 2 LESSON CONTENT TEMPLATES (SESSIONS 1 TO 4)
+       - Archetype A (Session 1): The Deep-Dive Crisis Workshop
+       - Archetype C (Session 2): The Collaborative Design Sprint (Side-by-Side Visuals)
+       - Archetype B (Session 3): The Media & Debate Lab
+       - Archetype D (Session 4): Interactive Stations & Negotiation Tournament
+       ========================================================================== */
+
+    // --- SESSION 1: Extreme Weather & Urban Climate Resilience (Archetype A) ---
     function renderAg2LessonContentTabSession1(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
-      const ov = content.overview || content.hero || {};
-      const opening = content.openingSession || {};
-      const survey = content.survey || {};
-      const grammar = content.grammarClinic || {};
-      const roleplay = content.roleplay || {};
-      const closing = content.closingReview || {};
+      const hero = content.hero || {};
+      const dossier = content.dossier || {};
+      const threats = dossier.threats || [];
+      const taskforce = content.taskforce || {};
+      const roles = taskforce.roles || [];
+      const injects = taskforce.injects || [];
+      const press = content.pressConference || {};
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -18,7 +28,7 @@
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">General English (AG) • Module 2 • Session 1</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${ov.title || 'Extreme Weather & Climate Hazards'}</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Extreme Weather & Urban Climate Resilience'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -26,279 +36,183 @@
             </button>
           </div>
 
-          <!-- Session Overview Banner -->
+          <!-- Session Hero Banner -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${ov.image || 'images/ag_m2card1.jpg'}" alt="${ov.title || 'Extreme Weather'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m2card1.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">${ov.badge || 'Session Overview • Extreme Weather & Climate Resilience'}</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${ov.title || 'Extreme Weather & Climate Hazards'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${ov.subtitle || 'Atmospheric Rivers, Heat Domes, Flash Floods & Aerodrome Resilience'}</p>
+              <img src="${hero.image || 'images/ag_m2card1.jpg'}" alt="${hero.title || 'Extreme Weather'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m2card1.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-rose-300 uppercase tracking-wider">${hero.badge || 'AG Module 2 • Session 1 • Crisis Workshop'}</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Extreme Weather & Urban Climate Resilience'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Archetype A • Deep-Dive Crisis Workshop'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded">CEFR B2</span>
-                <span class="text-slate-400">&bull;</span>
-                <span class="font-bold text-slate-800">Context:</span>
-                <span class="text-slate-600">Civil Infrastructure &amp; Airport Operations</span>
+                <span class="font-bold text-slate-700">Format:</span>
+                <span class="bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded">Emergency Taskforce Simulation</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-700">Total Duration:</span>
+                <span>120 Minutes (Spoken Interaction Focus)</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Extreme Weather News & Meteorological Diagnostic -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+          <!-- Part 1: The Emergency Weather Dossier (25 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="w-7 h-7 rounded-lg bg-rose-50 text-rose-700 font-black text-xs flex items-center justify-center border border-rose-200">01</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Extreme Weather News & Meteorological Warm-Up (10 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: The Emergency Weather Dossier & Threat Analysis (25 mins)</h4>
+                  <p class="text-xs text-slate-500">Scan regional alerts, evaluate infrastructure vulnerabilities, and rank the top civic hazards.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200 shrink-0">${dossier.alertLevel || 'RED ALERT'}</span>
             </div>
 
-            ${renderActivityInstructions(opening, theme)}
-
-            <!-- News Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Weather &amp; Severe Climate Headlines</h5>
+            <!-- Incident Overview Card -->
+            <div class="p-4 rounded-xl bg-rose-50/70 border border-rose-200 space-y-2">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <h5 class="font-black text-rose-900 text-xs sm:text-sm">${dossier.incidentTitle || 'Severe Convective Supercell'}</h5>
+                <span class="text-[11px] font-bold text-rose-700 bg-white px-2 py-0.5 rounded border border-rose-200">${dossier.timeframe || 'T-minus 3 Hours'}</span>
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
-                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
-              </ul>
+              <p class="text-xs text-slate-700 leading-relaxed">${dossier.summary || ''}</p>
             </div>
 
-            <!-- Diagnostic Questions Grid -->
-            <div class="space-y-3 pt-1">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Meteorological Concepts Quick Check'}</h5>
-                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
-              </div>
+            <!-- Threat Grid -->
+            <div>
+              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5">Acute Threat Assessment Grid (Rank 1 to 6 in pairs)</h5>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Distinction 0${q.id}</span>
-                        <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
-                      </div>
-                      <p class="text-xs font-bold text-slate-900 mt-1">${q.q}</p>
+                ${threats.map(t => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl hover:border-rose-300 transition-colors">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-700 font-black text-[11px] flex items-center justify-center">${t.id}</span>
+                      <span class="text-[10px] font-bold px-2 py-0.5 bg-white border border-slate-200 rounded text-slate-600">${t.sector}</span>
                     </div>
-                    <div class="space-y-2">
-                      <div id="ag2-spotcheck-ans-1-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs">
-                        ${q.answer}
-                      </div>
-                      <button type="button" id="ag2-spotcheck-btn-1-${q.id}" onclick="window.toggleAg2SpotCheckAnswer(1, ${q.id})" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
-                        <span>Reveal Answer</span> &rarr;
-                      </button>
-                    </div>
+                    <h6 class="font-bold text-slate-900 text-xs mb-1">${t.title}</h6>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">${t.desc}</p>
                   </div>
                 `).join('')}
               </div>
             </div>
-          </div>
 
-          <!-- Activity 2: Severe Weather Incident Analysis: Speed Survey -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${survey.title || 'Activity 2: Severe Weather Incident Analysis: Speed Survey (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${survey.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Structured Discussion</span>
-            </div>
-
-            ${renderActivityInstructions(survey, theme)}
-
-            <!-- Signposts -->
-            ${survey.signposts ? `
-              <div class="p-3 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-1.5">
-                <span class="text-[11px] font-bold text-emerald-950 uppercase tracking-wide">Key Spoken Signposts &amp; Linking Words:</span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-emerald-900">
-                  ${survey.signposts.map(sp => `<div class="p-2 bg-white rounded border border-emerald-200/80 italic font-medium">${sp}</div>`).join('')}
-                </div>
-              </div>
-            ` : ''}
-
-            <!-- Topics Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(survey.topics || []).map(t => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between space-y-3 shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="text-xs font-black text-slate-900">Dilemma 0${t.id}</span>
-                      <span class="text-[10px] font-bold px-2 py-0.5 rounded text-white" style="background-color: ${theme.primary};">${t.badge}</span>
-                    </div>
-                    <h5 class="text-xs sm:text-sm font-bold text-slate-800 mt-2">${t.statement}</h5>
-                    <div class="mt-2.5 space-y-1.5 text-[11px] text-slate-600">
-                      <p><strong class="text-emerald-700">Pro / Operational Mitigation:</strong> ${t.pro}</p>
-                      <p><strong class="text-rose-700">Con / Constraint:</strong> ${t.con}</p>
-                    </div>
-                  </div>
-                  <div class="pt-2 border-t border-slate-200 text-[11px] font-bold text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200">
-                    <span>Interview Prompt:</span> ${t.prompt}
-                  </div>
-                </div>
-              `).join('')}
+            <!-- Spoken Prompt -->
+            <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg text-xs text-amber-900 flex items-start gap-2.5">
+              <span class="text-base shrink-0">🗣️</span>
+              <p><strong>Pair Negotiation Task:</strong> With your partner, rank Threats A to F in order of intervention urgency. You have emergency funding to address only THREE immediately. Justify your choices using phrases of probability and risk (<em>"If we fail to secure..., the knock-on impact will be..."</em>).</p>
             </div>
           </div>
 
-          <!-- Activity 3: Language Focus: Word Forms & Suffixes -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+          <!-- Part 2: Crisis Taskforce Simulation (45 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-55m</span>
+                <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">02</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 3: Language Focus: Word Forms & Suffixes in Technical English (20 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${grammar.summary || ''}</p>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Civic Emergency Taskforce Simulation (45 mins)</h4>
+                  <p class="text-xs text-slate-500">Adopt departmental roles, manage competing civic interests, and respond to live crisis injects.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Grammar in Context</span>
-            </div>
-
-            ${renderActivityInstructions(grammar, theme)}
-
-            <!-- Rules Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(grammar.rules || []).map(r => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
-                  <div>
-                    <h5 class="text-xs font-bold text-slate-900">${r.type}</h5>
-                    <div class="p-2 bg-white rounded border border-slate-200 text-[11px] font-mono text-slate-700 mt-1.5">
-                      ${r.formula}
-                    </div>
-                  </div>
-                  <div class="text-[11px] text-slate-600 leading-relaxed pt-2 border-t border-slate-200">
-                    ${r.usage}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Interactive Drills Grid -->
-            ${(grammar.drills && grammar.drills.length) ? `
-              <div class="p-4 bg-emerald-50/50 border border-emerald-200 rounded-xl space-y-3 mt-2">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Interactive Word Forms Accuracy Drills</h5>
-                  <span class="text-[11px] text-emerald-800 font-medium">Select the best option, then verify</span>
-                </div>
-                <div class="space-y-2.5">
-                  ${grammar.drills.map(q => `
-                    <div class="p-3 bg-white border border-emerald-200/80 rounded-lg space-y-2">
-                      <p class="text-xs font-bold text-slate-900">${q.id}. ${q.sentence}</p>
-                      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                        ${q.options.map(opt => `<div class="p-2 bg-slate-50 rounded border border-slate-200 font-medium">${opt}</div>`).join('')}
-                      </div>
-                      <div id="ag2-quiz-ans-s1-${q.id}" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded text-[11px] text-emerald-900">
-                        <strong class="block text-emerald-800">Correct Answer: ${q.correct}</strong>
-                        ${q.explanation}
-                      </div>
-                      <button type="button" id="ag2-quiz-btn-s1-${q.id}" onclick="window.toggleAg2QuizAnswer('s1-${q.id}')" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
-                        <span>Check Answer &amp; Explanation</span> &rarr;
-                      </button>
-                    </div>
-                  `).join('')}
-                </div>
-              </div>
-            ` : ''}
-          </div>
-
-          <!-- Activity 4: Airport Severe Weather Crisis Taskforce -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">55-100m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 4: Airport Severe Weather Crisis Taskforce (45 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">Collaborative emergency response taskforce simulation</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Classroom Simulation</span>
-            </div>
-
-            ${renderActivityInstructions(roleplay, theme)}
-
-            <!-- Scenario Card -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 block">Simulation Scenario Briefing</span>
-              <p class="text-xs text-slate-700 leading-relaxed">${roleplay.scenario}</p>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 shrink-0">Multi-Role Simulation</span>
             </div>
 
             <!-- Roles Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              ${(roleplay.roles || []).map(r => `
-                <div class="p-4 bg-white border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="text-xs font-bold text-slate-900">${r.title}</span>
-                      <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
+            <div>
+              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5">Taskforce Departmental Roles (Groups of 3 or 4)</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                ${roles.map(r => `
+                  <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                    <div class="flex items-center justify-between">
+                      <h6 class="font-black text-slate-900 text-xs sm:text-sm">${r.role}</h6>
+                      <span class="text-[10px] font-bold px-2 py-0.5 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded">${r.badge}</span>
                     </div>
-                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">${r.focus}</p>
-                  </div>
-                  <div class="pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-semibold uppercase tracking-wider">
-                    Key Mandate: Defend position with data &amp; technical trade-offs
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 5: Session 1 Wrap-Up & FE2 Preparation -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">100-120m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 5: Wrap-Up & FE2 Preparation (15 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">Consolidation, phonetics, and portfolio check</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Debrief &amp; Exit Ticket</span>
-            </div>
-
-            ${renderActivityInstructions(closing, theme)}
-
-            <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-3">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Session 1 Formative Evaluation Readiness Checklist</h5>
-                <span class="text-[11px] font-bold text-emerald-800">Verification</span>
-              </div>
-              <div class="space-y-2 text-xs text-emerald-900">
-                ${(closing.feChecklist || []).map(item => `
-                  <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
-                    <span class="text-emerald-600 font-bold">&check;</span>
-                    <span>${item}</span>
+                    <p class="text-[11px] text-slate-600 leading-relaxed"><strong>Mission:</strong> ${r.mission}</p>
+                    <div class="p-2.5 bg-white rounded-lg border border-slate-200">
+                      <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-1">Useful phrases:</span>
+                      <ul class="text-[11px] text-slate-700 space-y-0.5">
+                        ${(r.keyPhrases || []).map(p => `<li>• <em>"${p}"</em></li>`).join('')}
+                      </ul>
+                    </div>
                   </div>
                 `).join('')}
               </div>
             </div>
+
+            <!-- Injects Timeline -->
+            <div class="p-4 bg-rose-50/50 border border-rose-200 rounded-xl space-y-3">
+              <h5 class="text-xs font-bold text-rose-900 uppercase tracking-wider flex items-center gap-1.5">
+                <span>⚠️</span> Dynamic Crisis Injects (Introduced by the Teacher during negotiations)
+              </h5>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+                ${injects.map(inj => `
+                  <div class="p-3 bg-white border border-rose-200 rounded-lg space-y-1">
+                    <span class="text-[10px] font-black text-rose-700 block">${inj.time}</span>
+                    <h6 class="font-bold text-slate-900 text-xs">${inj.title}</h6>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">${inj.desc}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 3: Live Spoken Press Conference (30 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">03</span>
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Live Spoken Press Briefing & Media Scrutiny (30 mins)</h4>
+                  <p class="text-xs text-slate-500">Deliver an authoritative public broadcast and defend decisions against investigative journalists.</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0">Live Spoken Q&A</span>
+            </div>
+
+            <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-2">
+              <h5 class="font-bold text-emerald-900 text-xs sm:text-sm">${press.title || 'Live Emergency Press Briefing'}</h5>
+              <p class="text-xs text-slate-700 leading-relaxed">${press.instructions || ''}</p>
+            </div>
+
+            <!-- Tough Reporter Questions -->
+            <div>
+              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5">Investigative Reporter Questions (Classmate Q&A)</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${(press.reporterQuestions || []).map((q, idx) => `
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex items-start gap-2.5">
+                    <span class="w-5 h-5 rounded-full bg-slate-200 text-slate-700 font-bold text-[10px] flex items-center justify-center shrink-0 mt-0.5">Q${idx + 1}</span>
+                    <p class="text-xs text-slate-800 italic leading-relaxed">"${q}"</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 4: Language Clinic & Debrief (20 mins) -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
+            <div>
+              <span class="font-bold text-slate-800">Spoken Language Clinic:</span>
+              <span class="ml-1">Review pronunciation of key vocabulary (<em>resilience, infrastructure, containment, vulnerable</em>) and verify your FE2 speaking targets.</span>
+            </div>
+            <span class="text-slate-500 font-semibold shrink-0">Session 1 Complete • 120 mins</span>
           </div>
         </div>
       `;
     }
 
+    // --- SESSION 2: The 15-Minute Resilient City Blueprint (Archetype C) ---
     function renderAg2LessonContentTabSession2(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
-      const ov = content.overview || content.hero || {};
-      const opening = content.openingSession || {};
-      const survey = content.survey || {};
-      const grammar = content.grammarClinic || {};
-      const roleplay = content.roleplay || {};
-      const closing = content.closingReview || {};
+      const hero = content.hero || {};
+      const showcase = content.urbanShowcase || {};
+      const photoA = showcase.photoA || {};
+      const photoB = showcase.photoB || {};
+      const protocol = showcase.spokenProtocol || [];
+      const sprint = content.redesignSprint || {};
+      const categories = sprint.categories || [];
+      const stakeholders = sprint.stakeholders || [];
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -309,7 +223,7 @@
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">General English (AG) • Module 2 • Session 2</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${ov.title || 'Sustainable Cities & Low-Emission Urban Mobility'}</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'The 15-Minute Resilient City Blueprint'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -317,279 +231,204 @@
             </button>
           </div>
 
-          <!-- Session Overview Banner -->
+          <!-- Session Hero Banner -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${ov.image || 'images/ag_m2card2.jpg'}" alt="${ov.title || 'Sustainable Cities'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m2card2.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">${ov.badge || 'Session Overview • Sustainable Cities & Urban Design'}</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${ov.title || 'Sustainable Cities & Low-Emission Urban Mobility'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${ov.subtitle || 'Sponge Cities, 15-Minute Urbanism, Urban Heat Islands & Transit Corridors'}</p>
+              <img src="${hero.image || 'images/ag_m2card2.jpg'}" alt="${hero.title || 'Urban Showcase'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m2card2.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-sky-300 uppercase tracking-wider">${hero.badge || 'AG Module 2 • Session 2 • Design Sprint'}</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'The 15-Minute Resilient City Blueprint'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Archetype C • Collaborative Design Sprint'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded">CEFR B2</span>
-                <span class="text-slate-400">&bull;</span>
-                <span class="font-bold text-slate-800">Context:</span>
-                <span class="text-slate-600">Urban Planning &amp; Ecological Transition</span>
+                <span class="font-bold text-slate-700">Format:</span>
+                <span class="bg-sky-100 text-sky-800 font-bold px-2 py-0.5 rounded">Visual Analysis & €50M Urban Redesign Sprint</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-700">Total Duration:</span>
+                <span>120 Minutes (Visual & Collaborative Focus)</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Sustainable Urbanism News & Diagnostic Warm-Up -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+          <!-- Part 1: Visual Photo Analysis (Option 1 Side-by-Side with Interactive Hotspots) (35 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="w-7 h-7 rounded-lg bg-sky-50 text-sky-700 font-black text-xs flex items-center justify-center border border-sky-200">01</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Sustainable Urbanism News & Opening Warm-Up (10 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Urban Showcase • Side-by-Side Visual Photo Analysis (35 mins)</h4>
+                  <p class="text-xs text-slate-500">Analyze contrasting urban typologies, examine spatial design elements, and practice precise B2 descriptive vocabulary.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 shrink-0">Photo Investigation</span>
             </div>
 
-            ${renderActivityInstructions(opening, theme)}
+            <!-- Comparative Photo Display Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <!-- Photo A: Car Sprawl -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50 flex flex-col">
+                <div class="relative">
+                  <img src="${photoA.image || 'images/urban_car_sprawl.jpg'}" alt="Car Sprawl" class="w-full h-56 sm:h-64 object-cover" onerror="this.src='images/ag_m2card2.jpg'">
+                  <div class="absolute top-3 left-3 bg-rose-900/90 text-white text-[10px] font-black px-2.5 py-1 rounded shadow-xs uppercase tracking-wider">
+                    Model A: Car-Centric Sprawl
+                  </div>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+                  <div>
+                    <h5 class="font-black text-slate-900 text-xs sm:text-sm mb-1">${photoA.title}</h5>
+                    <p class="text-[11px] text-slate-600 leading-relaxed mb-3">${photoA.caption}</p>
+                    <div class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">Key Spatial Hotspots (Click to view vocabulary):</div>
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                      ${(photoA.hotspots || []).map(h => `
+                        <button type="button" onclick="document.getElementById('hotspot-desc-a-${h.id}').classList.toggle('hidden')" class="px-2.5 py-1 text-[11px] font-bold bg-white text-rose-800 border border-rose-200 hover:bg-rose-50 rounded-md transition-colors cursor-pointer text-left">
+                          📍 ${h.label}
+                        </button>
+                      `).join('')}
+                    </div>
+                    <!-- Hotspots Descriptions Container -->
+                    <div class="space-y-1.5">
+                      ${(photoA.hotspots || []).map(h => `
+                        <div id="hotspot-desc-a-${h.id}" class="hidden p-2.5 bg-rose-50/80 border border-rose-200 rounded-lg text-[11px] text-rose-900 leading-relaxed">
+                          <strong>${h.label}:</strong> ${h.desc}
+                        </div>
+                      `).join('')}
+                    </div>
+                  </div>
+                  <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-600">
+                    <span class="font-bold text-slate-800">Spatial Vocabulary:</span> <em>dominated by, bisected by, impermeable asphalt, pedestrian vacuum, traffic gridlock.</em>
+                  </div>
+                </div>
+              </div>
 
-            <!-- News Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
+              <!-- Photo B: Superblock -->
+              <div class="border border-slate-200 rounded-xl overflow-hidden bg-slate-50 flex flex-col">
+                <div class="relative">
+                  <img src="${photoB.image || 'images/urban_superblock.jpg'}" alt="Superblock" class="w-full h-56 sm:h-64 object-cover" onerror="this.src='images/ag_m2card2.jpg'">
+                  <div class="absolute top-3 left-3 bg-emerald-900/90 text-white text-[10px] font-black px-2.5 py-1 rounded shadow-xs uppercase tracking-wider">
+                    Model B: European Superblock
+                  </div>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+                  <div>
+                    <h5 class="font-black text-slate-900 text-xs sm:text-sm mb-1">${photoB.title}</h5>
+                    <p class="text-[11px] text-slate-600 leading-relaxed mb-3">${photoB.caption}</p>
+                    <div class="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">Key Spatial Hotspots (Click to view vocabulary):</div>
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                      ${(photoB.hotspots || []).map(h => `
+                        <button type="button" onclick="document.getElementById('hotspot-desc-b-${h.id}').classList.toggle('hidden')" class="px-2.5 py-1 text-[11px] font-bold bg-white text-emerald-800 border border-emerald-200 hover:bg-emerald-50 rounded-md transition-colors cursor-pointer text-left">
+                          📍 ${h.label}
+                        </button>
+                      `).join('')}
+                    </div>
+                    <!-- Hotspots Descriptions Container -->
+                    <div class="space-y-1.5">
+                      ${(photoB.hotspots || []).map(h => `
+                        <div id="hotspot-desc-b-${h.id}" class="hidden p-2.5 bg-emerald-50/80 border border-emerald-200 rounded-lg text-[11px] text-emerald-900 leading-relaxed">
+                          <strong>${h.label}:</strong> ${h.desc}
+                        </div>
+                      `).join('')}
+                    </div>
+                  </div>
+                  <div class="p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-600">
+                    <span class="font-bold text-slate-800">Spatial Vocabulary:</span> <em>reclaimed public realm, dappled shade canopy, permeable paving, active frontage, human-scale.</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3-Step Spoken Protocol -->
+            <div class="p-4 bg-sky-50/70 border border-sky-200 rounded-xl space-y-2.5">
+              <h5 class="font-bold text-sky-950 text-xs sm:text-sm flex items-center gap-1.5">
+                <span>🗣️</span> 3-Stage Spoken Observation Protocol (Pair Discussion)
+              </h5>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                ${protocol.map(p => `
+                  <div class="p-3 bg-white border border-sky-200 rounded-lg space-y-1">
+                    <span class="text-[10px] font-black text-sky-800 block">${p.step}</span>
+                    <p class="text-[11px] text-slate-700 leading-relaxed">${p.prompt}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 2: €50M Collaborative Design Sprint (55 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Urban Mobility &amp; Resilience Headlines</h5>
+                <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">02</span>
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Collaborative Urban Design Sprint (${sprint.budget || '€50,000,000'}) (55 mins)</h4>
+                  <p class="text-xs text-slate-500">Transform a congested corridor into a 15-minute resilient district while managing budget constraints and stakeholder pushback.</p>
+                </div>
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
-                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
-              </ul>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0">${sprint.budget} Budget</span>
             </div>
 
-            <!-- Diagnostic Questions Grid -->
-            <div class="space-y-3 pt-1">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Urban Planning Vocabulary Quick Check'}</h5>
-                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
+            <!-- Corridor Briefing -->
+            <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">Project Target Corridor:</span>
+              <h5 class="font-black text-slate-900 text-xs sm:text-sm">${sprint.corridorName}</h5>
+              <p class="text-[11px] text-slate-600 mt-1">Your urban planning team has <strong>€50,000,000</strong> to allocate across the 5 regeneration categories below. You cannot fund everything at 100%. Negotiate the optimal spending breakdown.</p>
+            </div>
+
+            <!-- Categories Grid -->
+            <div>
+              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5">Available Regeneration Interventions (Select & Budget)</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                ${categories.map((c, idx) => `
+                  <div class="p-3.5 bg-white border border-slate-200 rounded-xl space-y-1.5 shadow-2xs">
+                    <div class="flex items-center justify-between">
+                      <span class="text-[10px] font-black text-slate-500 uppercase">Option 0${idx + 1}</span>
+                      <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">${c.costPerUnit}</span>
+                    </div>
+                    <h6 class="font-bold text-slate-900 text-xs">${c.name}</h6>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">${c.desc}</p>
+                  </div>
+                `).join('')}
               </div>
+            </div>
+
+            <!-- Stakeholder Defense -->
+            <div>
+              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5">Stakeholder Pushback & Objection Clinic (Prepare Counter-Arguments)</h5>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Distinction 0${q.id}</span>
-                        <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
-                      </div>
-                      <p class="text-xs font-bold text-slate-900 mt-1">${q.q}</p>
-                    </div>
-                    <div class="space-y-2">
-                      <div id="ag2-spotcheck-ans-2-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs">
-                        ${q.answer}
-                      </div>
-                      <button type="button" id="ag2-spotcheck-btn-2-${q.id}" onclick="window.toggleAg2SpotCheckAnswer(2, ${q.id})" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
-                        <span>Reveal Answer</span> &rarr;
-                      </button>
-                    </div>
+                ${stakeholders.map(s => `
+                  <div class="p-3 bg-amber-50/60 border border-amber-200 rounded-xl space-y-1">
+                    <span class="text-[10px] font-bold text-amber-800 uppercase tracking-wider block">${s.role}</span>
+                    <p class="text-xs text-amber-950 italic">"${s.objection}"</p>
                   </div>
                 `).join('')}
               </div>
             </div>
           </div>
 
-          <!-- Activity 2: Resilient Urban Innovations: Speed Survey -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${survey.title || 'Activity 2: Resilient Urban Innovations: Speed Survey (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${survey.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Structured Discussion</span>
+          <!-- Part 3: Spoken Blueprint Pitch & Review (30 mins) -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
+            <div>
+              <span class="font-bold text-slate-800">Spoken Blueprint Pitch (Part 3):</span>
+              <span class="ml-1">Each planning duo delivers a 3-minute spoken proposal to the City Council. The class votes on the most resilient design.</span>
             </div>
-
-            ${renderActivityInstructions(survey, theme)}
-
-            <!-- Signposts -->
-            ${survey.signposts ? `
-              <div class="p-3 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-1.5">
-                <span class="text-[11px] font-bold text-emerald-950 uppercase tracking-wide">Key Spoken Signposts &amp; Linking Words:</span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-emerald-900">
-                  ${survey.signposts.map(sp => `<div class="p-2 bg-white rounded border border-emerald-200/80 italic font-medium">${sp}</div>`).join('')}
-                </div>
-              </div>
-            ` : ''}
-
-            <!-- Topics Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(survey.topics || []).map(t => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between space-y-3 shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="text-xs font-black text-slate-900">Dilemma 0${t.id}</span>
-                      <span class="text-[10px] font-bold px-2 py-0.5 rounded text-white" style="background-color: ${theme.primary};">${t.badge}</span>
-                    </div>
-                    <h5 class="text-xs sm:text-sm font-bold text-slate-800 mt-2">${t.statement}</h5>
-                    <div class="mt-2.5 space-y-1.5 text-[11px] text-slate-600">
-                      <p><strong class="text-emerald-700">Pro / Urban Benefit:</strong> ${t.pro}</p>
-                      <p><strong class="text-rose-700">Con / Constraint:</strong> ${t.con}</p>
-                    </div>
-                  </div>
-                  <div class="pt-2 border-t border-slate-200 text-[11px] font-bold text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200">
-                    <span>Interview Prompt:</span> ${t.prompt}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 3: Language Focus: Subject-Verb Agreement with Collective Nouns -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-55m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 3: Language Focus: Subject-Verb Agreement with Collective Nouns (20 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${grammar.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Grammar in Context</span>
-            </div>
-
-            ${renderActivityInstructions(grammar, theme)}
-
-            <!-- Rules Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(grammar.rules || []).map(r => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
-                  <div>
-                    <h5 class="text-xs font-bold text-slate-900">${r.type}</h5>
-                    <div class="p-2 bg-white rounded border border-slate-200 text-[11px] font-mono text-slate-700 mt-1.5">
-                      ${r.formula}
-                    </div>
-                  </div>
-                  <div class="text-[11px] text-slate-600 leading-relaxed pt-2 border-t border-slate-200">
-                    ${r.usage}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Interactive Drills Grid -->
-            ${(grammar.drills && grammar.drills.length) ? `
-              <div class="p-4 bg-emerald-50/50 border border-emerald-200 rounded-xl space-y-3 mt-2">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Interactive Agreement Accuracy Drills</h5>
-                  <span class="text-[11px] text-emerald-800 font-medium">Select the best option, then verify</span>
-                </div>
-                <div class="space-y-2.5">
-                  ${grammar.drills.map(q => `
-                    <div class="p-3 bg-white border border-emerald-200/80 rounded-lg space-y-2">
-                      <p class="text-xs font-bold text-slate-900">${q.id}. ${q.sentence}</p>
-                      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                        ${q.options.map(opt => `<div class="p-2 bg-slate-50 rounded border border-slate-200 font-medium">${opt}</div>`).join('')}
-                      </div>
-                      <div id="ag2-quiz-ans-s2-${q.id}" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded text-[11px] text-emerald-900">
-                        <strong class="block text-emerald-800">Correct Answer: ${q.correct}</strong>
-                        ${q.explanation}
-                      </div>
-                      <button type="button" id="ag2-quiz-btn-s2-${q.id}" onclick="window.toggleAg2QuizAnswer('s2-${q.id}')" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
-                        <span>Check Answer &amp; Explanation</span> &rarr;
-                      </button>
-                    </div>
-                  `).join('')}
-                </div>
-              </div>
-            ` : ''}
-          </div>
-
-          <!-- Activity 4: Urban Eco-District Redesign Committee -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">55-100m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 4: Urban Eco-District Redesign Committee (45 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">Collaborative municipal redevelopment steering committee</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Classroom Simulation</span>
-            </div>
-
-            ${renderActivityInstructions(roleplay, theme)}
-
-            <!-- Scenario Card -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 block">Simulation Scenario Briefing</span>
-              <p class="text-xs text-slate-700 leading-relaxed">${roleplay.scenario}</p>
-            </div>
-
-            <!-- Roles Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              ${(roleplay.roles || []).map(r => `
-                <div class="p-4 bg-white border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="text-xs font-bold text-slate-900">${r.title}</span>
-                      <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
-                    </div>
-                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">${r.focus}</p>
-                  </div>
-                  <div class="pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-semibold uppercase tracking-wider">
-                    Key Mandate: Defend position with data &amp; technical trade-offs
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 5: Session 2 Wrap-Up & FE2 Alignment -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">100-120m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 5: Wrap-Up & FE2 Alignment (15 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">Consolidation, phonetics, and portfolio check</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Debrief &amp; Exit Ticket</span>
-            </div>
-
-            ${renderActivityInstructions(closing, theme)}
-
-            <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-3">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Session 2 Formative Evaluation Readiness Checklist</h5>
-                <span class="text-[11px] font-bold text-emerald-800">Verification</span>
-              </div>
-              <div class="space-y-2 text-xs text-emerald-900">
-                ${(closing.feChecklist || []).map(item => `
-                  <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
-                    <span class="text-emerald-600 font-bold">&check;</span>
-                    <span>${item}</span>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
+            <span class="text-slate-500 font-semibold shrink-0">Session 2 Complete • 120 mins</span>
           </div>
         </div>
       `;
     }
 
+    // --- SESSION 3: Environmental Ethics & The Public Inquiry Hearing (Archetype B) ---
     function renderAg2LessonContentTabSession3(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
-      const ov = content.overview || content.hero || {};
-      const opening = content.openingSession || {};
-      const survey = content.survey || {};
-      const grammar = content.grammarClinic || {};
-      const roleplay = content.roleplay || {};
-      const closing = content.closingReview || {};
+      const hero = content.hero || {};
+      const devils = content.devilsAdvocate || [];
+      const dossier = content.dossier || {};
+      const witnesses = dossier.witnesses || [];
+      const clinic = content.argumentClinic || {};
+      const rules = clinic.rules || [];
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -600,7 +439,7 @@
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">General English (AG) • Module 2 • Session 3</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${ov.title || 'Building & Defending Environmental Arguments'}</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Environmental Ethics & The Public Inquiry Hearing'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -608,279 +447,141 @@
             </button>
           </div>
 
-          <!-- Session Overview Banner -->
+          <!-- Session Hero Banner -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${ov.image || 'images/ag_m2card3.jpg'}" alt="${ov.title || 'Building Arguments'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m2card3.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">${ov.badge || 'Session Overview • Environmental Argumentation & Policy'}</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${ov.title || 'Building & Defending Environmental Arguments'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${ov.subtitle || 'Structuring Arguments, Linking Words, Polite Disagreement & Policy Debates'}</p>
+              <img src="${hero.image || 'images/ag_m2card3.jpg'}" alt="${hero.title || 'Environmental Ethics'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m2card3.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">${hero.badge || 'AG Module 2 • Session 3 • Debate Lab'}</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Environmental Ethics & The Public Inquiry Hearing'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Archetype B • Media & Debate Lab'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded">CEFR B2</span>
-                <span class="text-slate-400">&bull;</span>
-                <span class="font-bold text-slate-800">Context:</span>
-                <span class="text-slate-600">Debate, Advocacy &amp; Technical Defense</span>
+                <span class="font-bold text-slate-700">Format:</span>
+                <span class="bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">Oxford-Style Public Inquiry Hearing</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-700">Total Duration:</span>
+                <span>120 Minutes (Spoken Argumentation Focus)</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Environmental Policy News & Argument Diagnostic -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+          <!-- Part 1: Devil's Advocate Warm-Up (20 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="w-7 h-7 rounded-lg bg-amber-50 text-amber-700 font-black text-xs flex items-center justify-center border border-amber-200">01</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Environmental Policy News & Argument Warm-Up (10 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: Devil's Advocate Warm-Up • Spoken Rebuttals (20 mins)</h4>
+                  <p class="text-xs text-slate-500">Practice swift, evidence-based refutation against common infrastructure fallacies.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 shrink-0">Warm-Up Refutation</span>
             </div>
 
-            ${renderActivityInstructions(opening, theme)}
-
-            <!-- News Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Environmental Policy &amp; Regulatory Debates</h5>
-              </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
-                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
-              </ul>
-            </div>
-
-            <!-- Diagnostic Questions Grid -->
-            <div class="space-y-3 pt-1">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Argumentation & Linking Words Quick Check'}</h5>
-                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
-              </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Distinction 0${q.id}</span>
-                        <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
-                      </div>
-                      <p class="text-xs font-bold text-slate-900 mt-1">${q.q}</p>
-                    </div>
-                    <div class="space-y-2">
-                      <div id="ag2-spotcheck-ans-3-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs">
-                        ${q.answer}
-                      </div>
-                      <button type="button" id="ag2-spotcheck-btn-3-${q.id}" onclick="window.toggleAg2SpotCheckAnswer(3, ${q.id})" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
-                        <span>Reveal Answer</span> &rarr;
-                      </button>
-                    </div>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          </div>
-
-          <!-- Activity 2: Environmental Policy Dilemmas: Speed Sparring -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${survey.title || 'Activity 2: Environmental Policy Dilemmas: Speed Sparring (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${survey.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Structured Debate</span>
-            </div>
-
-            ${renderActivityInstructions(survey, theme)}
-
-            <!-- Signposts -->
-            ${survey.signposts ? `
-              <div class="p-3 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-1.5">
-                <span class="text-[11px] font-bold text-emerald-950 uppercase tracking-wide">Key Spoken Signposts &amp; Linking Words:</span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-emerald-900">
-                  ${survey.signposts.map(sp => `<div class="p-2 bg-white rounded border border-emerald-200/80 italic font-medium">${sp}</div>`).join('')}
-                </div>
-              </div>
-            ` : ''}
-
-            <!-- Topics Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(survey.topics || []).map(t => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between space-y-3 shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="text-xs font-black text-slate-900">Dilemma 0${t.id}</span>
-                      <span class="text-[10px] font-bold px-2 py-0.5 rounded text-white" style="background-color: ${theme.primary};">${t.badge}</span>
-                    </div>
-                    <h5 class="text-xs sm:text-sm font-bold text-slate-800 mt-2">${t.statement}</h5>
-                    <div class="mt-2.5 space-y-1.5 text-[11px] text-slate-600">
-                      <p><strong class="text-emerald-700">Pro / Advocacy:</strong> ${t.pro}</p>
-                      <p><strong class="text-rose-700">Con / Counter:</strong> ${t.con}</p>
-                    </div>
-                  </div>
-                  <div class="pt-2 border-t border-slate-200 text-[11px] font-bold text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200">
-                    <span>Interview Prompt:</span> ${t.prompt}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 3: Language Focus: Gerunds vs. Infinitives & Connecting Words for Contrasting Ideas -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-55m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 3: Language Focus: Gerunds vs. Infinitives & Connecting Words for Contrasting Ideas (20 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${grammar.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Grammar in Context</span>
-            </div>
-
-            ${renderActivityInstructions(grammar, theme)}
-
-            <!-- Rules Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(grammar.rules || []).map(r => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
-                  <div>
-                    <h5 class="text-xs font-bold text-slate-900">${r.type}</h5>
-                    <div class="p-2 bg-white rounded border border-slate-200 text-[11px] font-mono text-slate-700 mt-1.5">
-                      ${r.formula}
-                    </div>
-                  </div>
-                  <div class="text-[11px] text-slate-600 leading-relaxed pt-2 border-t border-slate-200">
-                    ${r.usage}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Interactive Drills Grid -->
-            ${(grammar.drills && grammar.drills.length) ? `
-              <div class="p-4 bg-emerald-50/50 border border-emerald-200 rounded-xl space-y-3 mt-2">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Interactive Verb Complementation Drills</h5>
-                  <span class="text-[11px] text-emerald-800 font-medium">Select the best option, then verify</span>
-                </div>
-                <div class="space-y-2.5">
-                  ${grammar.drills.map(q => `
-                    <div class="p-3 bg-white border border-emerald-200/80 rounded-lg space-y-2">
-                      <p class="text-xs font-bold text-slate-900">${q.id}. ${q.sentence}</p>
-                      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                        ${q.options.map(opt => `<div class="p-2 bg-slate-50 rounded border border-slate-200 font-medium">${opt}</div>`).join('')}
-                      </div>
-                      <div id="ag2-quiz-ans-s3-${q.id}" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded text-[11px] text-emerald-900">
-                        <strong class="block text-emerald-800">Correct Answer: ${q.correct}</strong>
-                        ${q.explanation}
-                      </div>
-                      <button type="button" id="ag2-quiz-btn-s3-${q.id}" onclick="window.toggleAg2QuizAnswer('s3-${q.id}')" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
-                        <span>Check Answer &amp; Explanation</span> &rarr;
-                      </button>
-                    </div>
-                  `).join('')}
-                </div>
-              </div>
-            ` : ''}
-          </div>
-
-          <!-- Activity 4: Public Inquiry Hearing Simulation -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">55-100m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 4: Public Inquiry Hearing Simulation (45 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">Formal administrative inquiry and stakeholder Q&amp;A</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Classroom Simulation</span>
-            </div>
-
-            ${renderActivityInstructions(roleplay, theme)}
-
-            <!-- Scenario Card -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 block">Simulation Scenario Briefing</span>
-              <p class="text-xs text-slate-700 leading-relaxed">${roleplay.scenario}</p>
-            </div>
-
-            <!-- Roles Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              ${(roleplay.roles || []).map(r => `
-                <div class="p-4 bg-white border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="text-xs font-bold text-slate-900">${r.title}</span>
-                      <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
-                    </div>
-                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">${r.focus}</p>
-                  </div>
-                  <div class="pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-semibold uppercase tracking-wider">
-                    Key Mandate: Defend position with data &amp; technical trade-offs
+              ${devils.map((d, idx) => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                  <span class="text-[10px] font-black text-amber-700 uppercase tracking-wider block">Claim 0${idx + 1}</span>
+                  <p class="text-xs text-slate-800 font-medium italic">"${d.claim}"</p>
+                  <div class="p-2.5 bg-white border border-slate-200 rounded-lg">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-0.5">Your Spoken Challenge:</span>
+                    <p class="text-[11px] text-slate-600">${d.challenge}</p>
                   </div>
                 </div>
               `).join('')}
             </div>
           </div>
 
-          <!-- Activity 5: Session 3 Wrap-Up & FE2 Argument Defense -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+          <!-- Part 2: The Val-d'Or Public Inquiry Dossier (35 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">100-120m</span>
+                <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">02</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 5: Wrap-Up & FE2 Argument Defense (15 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">Consolidation, phonetics, and portfolio check</p>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: The Inquiry Dossier • ${dossier.projectName || 'Val-d\'Or Bypass'} (35 mins)</h4>
+                  <p class="text-xs text-slate-500">Examine witness statements, evaluate economic vs ecological arguments, and spot cross-examination weaknesses.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Debrief &amp; Exit Ticket</span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 shrink-0">Hearing Dossier</span>
             </div>
 
-            ${renderActivityInstructions(closing, theme)}
+            <!-- Controversy Summary -->
+            <div class="p-4 bg-indigo-50/60 border border-indigo-200 rounded-xl space-y-1">
+              <h5 class="font-bold text-indigo-950 text-xs sm:text-sm">The Strategic Dilemma:</h5>
+              <p class="text-xs text-slate-700 leading-relaxed">${dossier.controversy}</p>
+            </div>
 
-            <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-3">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Session 3 Formative Evaluation Readiness Checklist</h5>
-                <span class="text-[11px] font-bold text-emerald-800">Verification</span>
-              </div>
-              <div class="space-y-2 text-xs text-emerald-900">
-                ${(closing.feChecklist || []).map(item => `
-                  <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
-                    <span class="text-emerald-600 font-bold">&check;</span>
-                    <span>${item}</span>
+            <!-- Witnesses Grid -->
+            <div>
+              <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5">Key Witness Deponents (Adopt a Role in Pairs)</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                ${witnesses.map(w => `
+                  <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                    <div class="flex items-center justify-between">
+                      <h6 class="font-black text-slate-900 text-xs sm:text-sm">${w.role}</h6>
+                      <span class="text-[10px] font-bold px-2 py-0.5 bg-white border border-slate-200 rounded text-slate-700">${w.stance}</span>
+                    </div>
+                    <p class="text-[11px] text-slate-700 leading-relaxed italic">"${w.testimony}"</p>
+                    <div class="p-2.5 bg-rose-50/70 border border-rose-200 rounded-lg">
+                      <span class="text-[10px] font-bold text-rose-800 uppercase tracking-wider block">Cross-Examination Vulnerability:</span>
+                      <p class="text-[11px] text-rose-900">${w.vulnerability}</p>
+                    </div>
                   </div>
                 `).join('')}
               </div>
             </div>
+          </div>
+
+          <!-- Part 3: Spoken Argumentation Clinic (25 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">03</span>
+                <div>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Spoken Argumentation & Inquiry Clinic (25 mins)</h4>
+                  <p class="text-xs text-slate-500">Deploy high-level B2 debate structures for formal hearings.</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0">Debate Clinic</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              ${rules.map(r => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
+                  <h6 class="font-bold text-slate-900 text-xs">${r.title}</h6>
+                  <p class="text-[11px] text-indigo-700 font-mono bg-indigo-50/60 p-1.5 rounded border border-indigo-100">${r.formula}</p>
+                  <p class="text-[11px] text-slate-600 italic">${r.example}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Part 4: Oxford-Style Hearing Simulation (40 mins) -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
+            <div>
+              <span class="font-bold text-slate-800">Part 4: Public Inquiry Hearing & Verdict (40 mins):</span>
+              <span class="ml-1">The Commission convenes. Proponents and opponents deliver 2-minute testimonies, cross-examine witnesses, and vote on the final routing verdict.</span>
+            </div>
+            <span class="text-slate-500 font-semibold shrink-0">Session 3 Complete • 120 mins</span>
           </div>
         </div>
       `;
     }
 
+    // --- SESSION 4: Airport Biodiversity & Ecological Coexistence (Archetype D) ---
     function renderAg2LessonContentTabSession4(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
-      const ov = content.overview || content.hero || {};
-      const opening = content.openingSession || {};
-      const survey = content.survey || {};
-      const grammar = content.grammarClinic || {};
-      const roleplay = content.roleplay || {};
-      const closing = content.closingReview || {};
+      const hero = content.hero || {};
+      const paradox = content.meadowParadox || {};
+      const stations = content.stations || [];
+      const treaty = content.treatyNegotiation || {};
+      const parties = treaty.parties || [];
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
@@ -891,7 +592,7 @@
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">General English (AG) • Module 2 • Session 4</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${ov.title || 'Biodiversity in Urban Areas & Transport Hubs'}</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Airport Biodiversity & Ecological Coexistence'}</h3>
             </div>
             <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -899,300 +600,124 @@
             </button>
           </div>
 
-          <!-- Session Overview Banner -->
+          <!-- Session Hero Banner -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${ov.image || 'images/ag_m2card4.jpg'}" alt="${ov.title || 'Biodiversity'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m2card4.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">${ov.badge || 'Session Overview • Biodiversity & Ecological Infrastructure'}</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${ov.title || 'Biodiversity in Urban Areas & Transport Hubs'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${ov.subtitle || 'Nature-Based Solutions, Constructed Wetlands, Ecological Corridors & Wildlife Hazard Mitigation'}</p>
+              <img src="${hero.image || 'images/ag_m2card4.jpg'}" alt="${hero.title || 'Airport Biodiversity'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m2card4.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-teal-300 uppercase tracking-wider">${hero.badge || 'AG Module 2 • Session 4 • Interactive Stations'}</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Airport Biodiversity & Ecological Coexistence'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Archetype D • Interactive Stations & Negotiation Tournament'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded">CEFR B2</span>
-                <span class="text-slate-400">&bull;</span>
-                <span class="font-bold text-slate-800">Context:</span>
-                <span class="text-slate-600">Ecological Engineering &amp; Aviation Safety</span>
+                <span class="font-bold text-slate-700">Format:</span>
+                <span class="bg-teal-100 text-teal-800 font-bold px-2 py-0.5 rounded">Stations Investigation & 3-Way Treaty Tournament</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-700">Total Duration:</span>
+                <span>120 Minutes (Interactive Stations Focus)</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Aerodrome Ecology News & Diagnostic Warm-Up -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+          <!-- Part 1: The Meadow Paradox (20 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="w-7 h-7 rounded-lg bg-teal-50 text-teal-700 font-black text-xs flex items-center justify-center border border-teal-200">01</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Airport Ecology News & Opening Warm-Up (10 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 1: The Meadow Paradox • Operational Briefing (20 mins)</h4>
+                  <p class="text-xs text-slate-500">Unpack Europe's accidental nature sanctuaries and the bird-strike safety dilemma.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200 shrink-0">Case Briefing</span>
             </div>
 
-            ${renderActivityInstructions(opening, theme)}
-
-            <!-- News Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Transport Biodiversity &amp; Ecological News</h5>
-              </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
-                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
-              </ul>
-            </div>
-
-            <!-- Diagnostic Questions Grid -->
-            <div class="space-y-3 pt-1">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Ecological & Airport Vocabulary Quick Check'}</h5>
-                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
-              </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Distinction 0${q.id}</span>
-                        <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
-                      </div>
-                      <p class="text-xs font-bold text-slate-900 mt-1">${q.q}</p>
-                    </div>
-                    <div class="space-y-2">
-                      <div id="ag2-spotcheck-ans-4-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs">
-                        ${q.answer}
-                      </div>
-                      <button type="button" id="ag2-spotcheck-btn-4-${q.id}" onclick="window.toggleAg2SpotCheckAnswer(4, ${q.id})" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
-                        <span>Reveal Answer</span> &rarr;
-                      </button>
-                    </div>
-                  </div>
-                `).join('')}
+            <div class="p-4 bg-teal-50/60 border border-teal-200 rounded-xl space-y-2">
+              <h5 class="font-black text-teal-950 text-xs sm:text-sm">${paradox.headline}</h5>
+              <p class="text-xs text-slate-700 leading-relaxed">${paradox.context}</p>
+              <div class="p-2.5 bg-white border border-teal-200 rounded-lg">
+                <span class="text-[10px] font-bold text-teal-900 uppercase tracking-wider block mb-0.5">Core Operational Dilemma:</span>
+                <p class="text-[11px] text-slate-700 font-medium">${paradox.dilemma}</p>
               </div>
             </div>
           </div>
 
-          <!-- Activity 2: Biodiversity & Safety Dilemmas: Speed Survey -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+          <!-- Part 2: Interactive Technology Stations (45 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
+                <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">02</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${survey.title || 'Activity 2: Biodiversity & Safety Dilemmas: Speed Survey (25 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${survey.summary || ''}</p>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 2: Interactive Technology Stations (45 mins)</h4>
+                  <p class="text-xs text-slate-500">Rotate through 3 specialized airfield eco-engineering solutions.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Structured Debate</span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200 shrink-0">Station Rotation</span>
             </div>
 
-            ${renderActivityInstructions(survey, theme)}
-
-            <!-- Signposts -->
-            ${survey.signposts ? `
-              <div class="p-3 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-1.5">
-                <span class="text-[11px] font-bold text-emerald-950 uppercase tracking-wide">Key Spoken Signposts &amp; Linking Words:</span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-emerald-900">
-                  ${survey.signposts.map(sp => `<div class="p-2 bg-white rounded border border-emerald-200/80 italic font-medium">${sp}</div>`).join('')}
-                </div>
-              </div>
-            ` : ''}
-
-            <!-- Topics Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(survey.topics || []).map(t => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between space-y-3 shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="text-xs font-black text-slate-900">Dilemma 0${t.id}</span>
-                      <span class="text-[10px] font-bold px-2 py-0.5 rounded text-white" style="background-color: ${theme.primary};">${t.badge}</span>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+              ${stations.map(st => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between space-y-3">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="text-lg">${st.icon}</span>
+                      <span class="text-[10px] font-bold px-2 py-0.5 bg-white border border-slate-200 rounded text-slate-600">${st.badge}</span>
                     </div>
-                    <h5 class="text-xs sm:text-sm font-bold text-slate-800 mt-2">${t.statement}</h5>
-                    <div class="mt-2.5 space-y-1.5 text-[11px] text-slate-600">
-                      <p><strong class="text-emerald-700">Pro / Ecological Argument:</strong> ${t.pro}</p>
-                      <p><strong class="text-rose-700">Con / Aviation Safety Concern:</strong> ${t.con}</p>
+                    <h5 class="font-black text-slate-900 text-xs sm:text-sm">${st.title}</h5>
+                    <div class="text-[10px] font-mono text-indigo-700 bg-indigo-50/70 px-2 py-1 rounded border border-indigo-100">
+                      <strong>Tech:</strong> ${st.coreTech}
                     </div>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">${st.keyInsight}</p>
                   </div>
-                  <div class="pt-2 border-t border-slate-200 text-[11px] font-bold text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200">
-                    <span>Interview Prompt:</span> ${t.prompt}
+                  <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">Station Investigation Questions:</span>
+                    <ul class="text-[11px] text-slate-700 space-y-1">
+                      ${(st.discussionPrompts || []).map(dp => `<li>• ${dp}</li>`).join('')}
+                    </ul>
                   </div>
                 </div>
               `).join('')}
             </div>
           </div>
 
-          <!-- Activity 3: Language Focus: Pronouns & Determiners in Technical English -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+          <!-- Part 3: Tri-Party Treaty Negotiation (40 mins) -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-55m</span>
+                <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">03</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 3: Language Focus: Pronouns & Determiners in Technical English (20 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${grammar.summary || ''}</p>
+                  <h4 class="font-bold text-slate-900 text-sm">Part 3: Tri-Party Land-Use Treaty Tournament (40 mins)</h4>
+                  <p class="text-xs text-slate-500">Negotiate a legally binding zoning treaty for ${treaty.totalArea || '500 Hectares'}.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Grammar in Context</span>
+              <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0">Treaty Negotiation</span>
             </div>
 
-            ${renderActivityInstructions(grammar, theme)}
-
-            <!-- Rules Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(grammar.rules || []).map(r => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
-                  <div>
-                    <h5 class="text-xs font-bold text-slate-900">${r.type}</h5>
-                    <div class="p-2 bg-white rounded border border-slate-200 text-[11px] font-mono text-slate-700 mt-1.5">
-                      ${r.formula}
-                    </div>
-                  </div>
-                  <div class="text-[11px] text-slate-600 leading-relaxed pt-2 border-t border-slate-200">
-                    ${r.usage}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Interactive Drills Grid -->
-            ${(grammar.drills && grammar.drills.length) ? `
-              <div class="p-4 bg-emerald-50/50 border border-emerald-200 rounded-xl space-y-3 mt-2">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Interactive Pronoun &amp; Determiner Drills</h5>
-                  <span class="text-[11px] text-emerald-800 font-medium">Select the best option, then verify</span>
-                </div>
-                <div class="space-y-2.5">
-                  ${grammar.drills.map(q => `
-                    <div class="p-3 bg-white border border-emerald-200/80 rounded-lg space-y-2">
-                      <p class="text-xs font-bold text-slate-900">${q.id}. ${q.sentence}</p>
-                      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                        ${q.options.map(opt => `<div class="p-2 bg-slate-50 rounded border border-slate-200 font-medium">${opt}</div>`).join('')}
-                      </div>
-                      <div id="ag2-quiz-ans-s4-${q.id}" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded text-[11px] text-emerald-900">
-                        <strong class="block text-emerald-800">Correct Answer: ${q.correct}</strong>
-                        ${q.explanation}
-                      </div>
-                      <button type="button" id="ag2-quiz-btn-s4-${q.id}" onclick="window.toggleAg2QuizAnswer('s4-${q.id}')" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
-                        <span>Check Answer &amp; Explanation</span> &rarr;
-                      </button>
-                    </div>
-                  `).join('')}
-                </div>
-              </div>
-            ` : ''}
-          </div>
-
-          <!-- Activity 4: Aerodrome Wildlife Hazard & Ecological Transition Committee -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">55-100m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${roleplay.title || 'Activity 4: Aerodrome Wildlife Hazard & Ecological Transition Committee (45 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">Joint wildlife hazard mitigation and nature-based solutions committee</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Classroom Simulation</span>
-            </div>
-
-            ${renderActivityInstructions(roleplay, theme)}
-
-            <!-- Scenario Card -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 block">Simulation Scenario Briefing</span>
-              <p class="text-xs text-slate-700 leading-relaxed">${roleplay.scenario}</p>
-            </div>
-
-            <!-- Roles Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              ${(roleplay.roles || []).map(r => `
-                <div class="p-4 bg-white border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="text-xs font-bold text-slate-900">${r.title}</span>
-                      <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
-                    </div>
-                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">${r.focus}</p>
-                  </div>
-                  <div class="pt-2 border-t border-slate-100 text-[10px] text-slate-500 font-semibold uppercase tracking-wider">
-                    Key Mandate: Defend position with data &amp; technical trade-offs
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+              ${parties.map(p => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                  <h6 class="font-black text-slate-900 text-xs sm:text-sm">${p.party}</h6>
+                  <p class="text-[11px] text-slate-700 leading-relaxed"><strong>Priorities:</strong> ${p.priorities}</p>
+                  <div class="p-2.5 bg-emerald-50/70 border border-emerald-200 rounded-lg">
+                    <span class="text-[10px] font-bold text-emerald-800 uppercase tracking-wider block">Bargaining Chip:</span>
+                    <p class="text-[11px] text-emerald-900">${p.bargainingChip}</p>
                   </div>
                 </div>
               `).join('')}
             </div>
           </div>
 
-          <!-- Activity 5: Session 4 Wrap-Up & FE2 Launch Briefing -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">100-120m</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 5: Wrap-Up & FE2 Launch Briefing (15 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">Final Formative Evaluation 2 checklist &amp; topic confirmation</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Debrief &amp; Exit Ticket</span>
+          <!-- Part 4: FE2 Readiness & Treaty Sign-Off (15 mins) -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
+            <div>
+              <span class="font-bold text-slate-800">Formative Evaluation 2 (FE2) Alignment:</span>
+              <span class="ml-1">Review the Module 2 presentation criteria with your teacher. Confirm your FE2 partner and chosen technical topic.</span>
             </div>
-
-            ${renderActivityInstructions(closing, theme)}
-
-            <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-3">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Formative Evaluation 2 (FE2) Launch &amp; Readiness Checklist</h5>
-                <span class="text-[11px] font-bold text-emerald-800">Final Verification</span>
-              </div>
-              <div class="space-y-2 text-xs text-emerald-900">
-                ${(closing.feChecklist || []).map(item => `
-                  <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
-                    <span class="text-emerald-600 font-bold">&check;</span>
-                    <span>${item}</span>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
+            <span class="text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-md shrink-0">✓ Ready for FE2 in Session 5</span>
           </div>
         </div>
       `;
     }
-
-
-
-    /* =========================================================================
-       GENERAL ENGLISH (AG) • MODULE 3 SESSIONS 1 TO 4 LESSON CONTENT
-       ========================================================================= */
-
-    window.toggleAg3SpotCheckAnswer = function(sessNum, qId) {
-      const el = document.getElementById(`ag3-spotcheck-ans-${sessNum}-${qId}`);
-      const btn = document.getElementById(`ag3-spotcheck-btn-${sessNum}-${qId}`);
-      if (!el || !btn) return;
-      const isHidden = el.classList.contains('hidden');
-      if (isHidden) {
-        el.classList.remove('hidden');
-        btn.innerHTML = '<span>Hide Answer</span> &uarr;';
-      } else {
-        el.classList.add('hidden');
-        btn.innerHTML = '<span>Reveal Answer</span> &rarr;';
-      }
-    };
-
-    window.toggleAg3QuizAnswer = function(id) {
-      const el = document.getElementById(`ag3-quiz-ans-${id}`);
-      const btn = document.getElementById(`ag3-quiz-btn-${id}`);
-      if (!el || !btn) return;
-      const isHidden = el.classList.contains('hidden');
-      if (isHidden) {
-        el.classList.remove('hidden');
-        btn.innerHTML = '<span>Hide Explanation</span> &uarr;';
-      } else {
-        el.classList.add('hidden');
-        btn.innerHTML = '<span>Check Answer &amp; Explanation</span> &rarr;';
-      }
-    };
-
