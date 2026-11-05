@@ -241,3 +241,4 @@ const umdFooter = `;
 fs.writeFileSync(courseDataPath, umdHeader + JSON.stringify(courseData, null, 2) + umdFooter, 'utf8');
 console.log('✓ Successfully wrote enriched course data with intact UMD wrapper to data/course-data.js');
 
+

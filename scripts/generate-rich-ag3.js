@@ -1188,3 +1188,4 @@ const code = `    /* ===========================================================
 
 fs.writeFileSync(targetPath, code, 'utf8');
 console.log('✓ Successfully wrote enriched 4-pillar templates to src/js/07-templates-ag3.js');
+

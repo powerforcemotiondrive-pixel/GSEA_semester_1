@@ -165,6 +165,13 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   `Session X Lesson Plan - [Topic Title] (2 Hours)` or `Session X Lesson Plan (2 Hours)`.
 - **Tri-Project Consistency**: This rule applies permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
 
+### Q. Teacher Autonomy & Zero Classroom Timings Invariant (Tri-Project Permanent Invariant)
+- **Zero Classroom Minute Breakdowns**: All lesson plans, student worksheets, activities, and teacher facilitation notes must strictly omit rigid minute breakdowns and timestamps (e.g., never include `00–25`, `25–50`, `(20 mins)`, `(30 mins)`, `(45 mins)`).
+- **Pedagogical Stage Progression (`Part 1`–`Part 4` / `Step 1`–`Step 4`)**: All activities must be organized by clean, sequential pedagogical stages (e.g., `Part 1`, `Part 2`, `Part 3`, `Part 4` or `Step 1`, `Step 2`).
+- **Complete Teacher Pacing Autonomy**: Pacing, dwell time, and discussion depth are determined entirely by the classroom teacher based on real-time classroom dynamics, student speaking confidence, and communicative flow.
+- **Plain English Non-Technical Instructions**: All instructions for students and teachers must use clear, accessible, non-technical B2 English (e.g., `"Teacher Tips & Speaking Prompts"` instead of `"Timing Cues"` or pedagogical jargon per Rule 1.I).
+- **Session Block Title Retention**: Per Rule 1.P, the top-level lesson plan title retains its standard university schedule block designation (e.g., `Session X Lesson Plan - [Topic Title] (2 Hours)`), while all internal activity timings are strictly omitted.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)

@@ -1806,13 +1806,13 @@
         bodyEl.innerHTML = `
           <div class="space-y-4">
             <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
-              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">2-Hour Lesson Outline</span>
-              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mt-1">${plan.summary || 'Pacing and breakdown across the 2-hour lesson.'}</p>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Session Progression &amp; Learning Steps</span>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mt-1">${plan.summary || 'Structured sequence of learning stages. Pacing and depth are adapted by the teacher to class dynamics.'}</p>
             </div>
             <div class="space-y-2.5">
               ${(plan.items || []).map((item, idx) => `
                 <div class="grid grid-cols-[68px_1fr] items-center gap-3 p-3 bg-white border border-slate-200 rounded-xl shadow-xs">
-                  <span class="text-white text-xs font-black py-1 rounded-md text-center shrink-0 shadow-xs" style="background-color: ${theme.primary};">${item.time}</span>
+                  <span class="text-white text-xs font-black py-1 rounded-md text-center shrink-0 shadow-xs" style="background-color: ${theme.primary};">${item.part || item.step || ('Part ' + (idx + 1))}</span>
                   <div>
                     <div class="flex items-center gap-1.5">
                       <span class="text-xs font-black" style="color: ${theme.accent};">${idx + 1}.</span>
@@ -1886,16 +1886,16 @@
             </div>
           </div>
 
-          <!-- 2-Hour Pacing Timeline -->
+          <!-- Session Progression Steps -->
           <div class="space-y-3">
             <div class="flex items-center gap-2 border-b border-slate-200 pb-2">
               <div class="w-2 h-4 rounded-xs" style="background-color: ${theme.accent};"></div>
-              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700">2-Hour Pacing &amp; Lesson Breakdown</h4>
+              <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700">Session Progression &amp; Learning Steps</h4>
             </div>
             <div class="space-y-2.5">
               ${(plan.items || []).map((item, idx) => `
                 <div class="grid grid-cols-[68px_1fr] items-center gap-3 p-3.5 bg-white border border-slate-200 rounded-xl shadow-xs">
-                  <span class="text-white text-xs font-black py-1.5 rounded-md text-center shrink-0 shadow-xs" style="background-color: ${theme.primary};">${item.time}</span>
+                  <span class="text-white text-xs font-black py-1.5 rounded-md text-center shrink-0 shadow-xs" style="background-color: ${theme.primary};">${item.part || item.step || ('Part ' + (idx + 1))}</span>
                   <div>
                     <div class="flex items-center gap-1.5">
                       <span class="text-xs font-black" style="color: ${theme.accent};">${idx + 1}.</span>

@@ -57,13 +57,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Machine Learning & Operational Automation Lexis (25 mins) -->
+          <!-- PILLAR 1: Machine Learning & Operational Automation Lexis -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-blue-50 text-blue-700 font-black text-xs flex items-center justify-center border border-blue-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Machine Learning & Operational Automation Lexis (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Machine Learning & Operational Automation Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 core terms for AI systems, automated dispatch, and workforce interaction.</p>
                 </div>
               </div>
@@ -130,13 +130,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Active vs. Passive Voice in Tech (25 mins) -->
+          <!-- PILLAR 2: Grammar Clinic • Active vs. Passive Voice in Tech -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Active vs. Passive Voice in Tech (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Active vs. Passive Voice in Tech</h4>
                   <p class="text-xs text-slate-500">Master the functional difference between automated process reporting (Passive) and human executive accountability (Active).</p>
                 </div>
               </div>
@@ -187,13 +187,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Automation Vulnerability Audit & Town Hall (45 mins) -->
+          <!-- PILLAR 3: Automation Vulnerability Audit & Town Hall -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Automation Vulnerability Audit & Town Hall Simulation (45 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Automation Vulnerability Audit & Town Hall Simulation</h4>
                   <p class="text-xs text-slate-500">Audit 6 operational workflows, resolve dynamic crisis injects, and defend policies at a spoken town hall.</p>
                 </div>
               </div>
@@ -204,10 +204,10 @@
             <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
               <span class="font-bold text-blue-950 uppercase tracking-wider text-[10px] block">Step-by-Step Student Instructions:</span>
               <ol class="list-decimal pl-4 space-y-1 text-slate-700">
-                <li><strong>Step 1 (10 mins):</strong> Review the 6 Operational Workflows below. In pairs, rank them from highest risk (requiring 100% human sign-off) to lowest risk (safe for full automation).</li>
-                <li><strong>Step 2 (15 mins):</strong> Adopt departmental roles (*Operations Director, AI Systems Architect, Union Rep*). The teacher introduces 1 Crisis Inject. Formulate a 3-point Human-in-the-Loop policy.</li>
-                <li><strong>Step 3 (15 mins):</strong> Convene the Spoken Town Hall: Department leads deliver a 2-minute defense of the policy and answer 2 unscripted questions from staff (classmates).</li>
-                <li><strong>Step 4 (5 mins):</strong> Ratify the final 3 mandatory human override rules.</li>
+                <li><strong>Step 1:</strong> Review the 6 Operational Workflows below. In pairs, rank them from highest risk (requiring 100% human sign-off) to lowest risk (safe for full automation).</li>
+                <li><strong>Step 2:</strong> Adopt departmental roles (*Operations Director, AI Systems Architect, Union Rep*). The teacher introduces 1 Crisis Inject. Formulate a 3-point Human-in-the-Loop policy.</li>
+                <li><strong>Step 3:</strong> Convene the Spoken Town Hall: Department leads deliver a 2-minute defense of the policy and answer 2 unscripted questions from staff (classmates).</li>
+                <li><strong>Step 4:</strong> Ratify the final 3 mandatory human override rules.</li>
               </ol>
             </div>
 
@@ -283,7 +283,7 @@
             <!-- Collapsible Teacher Notes -->
             <details class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-950 cursor-pointer">
               <summary class="font-bold select-none flex items-center justify-between">
-                <span>👨‍🏫 Teacher Facilitation & Timing Cue (Click to expand)</span>
+                <span>👨‍🏫 Teacher Tips & Speaking Prompts (Click to expand)</span>
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
@@ -294,10 +294,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: Phrasing Review & FE3 Alignment (25 mins) -->
+          <!-- PILLAR 4: Phrasing Review & FE3 Alignment -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Phrasing Review & FE3 Alignment (25 mins):</span>
+              <span class="font-bold text-slate-800">Pillar 4: Phrasing Review & FE3 Alignment:</span>
               <span class="ml-1">Conduct peer evaluations on passive voice precision and executive town hall delivery. Calibrate presentation plans against the Formative Evaluation 3 (FE3) scoring rubric.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 1 Complete • 120 mins</span>
@@ -359,13 +359,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Clean Propulsion & Multi-Modal Transit Lexis (25 mins) -->
+          <!-- PILLAR 1: Clean Propulsion & Multi-Modal Transit Lexis -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-teal-50 text-teal-700 font-black text-xs flex items-center justify-center border border-teal-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Clean Propulsion & Multi-Modal Transit Lexis (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Clean Propulsion & Multi-Modal Transit Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 core engineering terms comparing alternative aviation propulsion with high-speed rail.</p>
                 </div>
               </div>
@@ -432,13 +432,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Future Forms & Predictive Certainty (25 mins) -->
+          <!-- PILLAR 2: Grammar Clinic • Future Forms & Predictive Certainty -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Future Forms & Predictive Certainty (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Future Forms & Predictive Certainty</h4>
                   <p class="text-xs text-slate-500">Master calibrated expressions of technical confidence ('is bound to', 'is slated to', 'is unlikely to').</p>
                 </div>
               </div>
@@ -493,13 +493,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Comparative Showcase & €100M Clean Corridor Sprint (45 mins) -->
+          <!-- PILLAR 3: Comparative Showcase & €100M Clean Corridor Sprint -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Comparative Showcase & €100M Clean Corridor Sprint (45 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Comparative Showcase & €100M Clean Corridor Sprint</h4>
                   <p class="text-xs text-slate-500">Contrast two future transit paradigms, allocate €100M in public infrastructure, and pitch to the Council.</p>
                 </div>
               </div>
@@ -510,9 +510,9 @@
             <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
               <span class="font-bold text-blue-950 uppercase tracking-wider text-[10px] block">Step-by-Step Student Instructions:</span>
               <ol class="list-decimal pl-4 space-y-1 text-slate-700">
-                <li><strong>Step 1 (10 mins):</strong> Contrast Paradigm A (Regional Air Mobility) vs. Paradigm B (High-Speed Rail) below. Discuss the 3-stage comparative protocol with your partner.</li>
-                <li><strong>Step 2 (20 mins):</strong> You have €100,000,000 to decarbonize the South-West Corridor by 2035. Allocate funding across the 5 options in the budget table.</li>
-                <li><strong>Step 3 (15 mins):</strong> Script spoken counter-arguments to 4 tough stakeholder objections using predictive certainty phrases (*"is bound to", "is slated to"*).</li>
+                <li><strong>Step 1:</strong> Contrast Paradigm A (Regional Air Mobility) vs. Paradigm B (High-Speed Rail) below. Discuss the 3-stage comparative protocol with your partner.</li>
+                <li><strong>Step 2:</strong> You have €100,000,000 to decarbonize the South-West Corridor by 2035. Allocate funding across the 5 options in the budget table.</li>
+                <li><strong>Step 3:</strong> Script spoken counter-arguments to 4 tough stakeholder objections using predictive certainty phrases (*"is bound to", "is slated to"*).</li>
               </ol>
             </div>
 
@@ -606,7 +606,7 @@
             <!-- Collapsible Teacher Notes -->
             <details class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-950 cursor-pointer">
               <summary class="font-bold select-none flex items-center justify-between">
-                <span>👨‍🏫 Teacher Facilitation & Timing Cue (Click to expand)</span>
+                <span>👨‍🏫 Teacher Tips & Speaking Prompts (Click to expand)</span>
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
@@ -616,10 +616,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: Council Vote & Feasibility Review (25 mins) -->
+          <!-- PILLAR 4: Council Vote & Feasibility Review -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Council Vote & Feasibility Review (25 mins):</span>
+              <span class="font-bold text-slate-800">Pillar 4: Council Vote & Feasibility Review:</span>
               <span class="ml-1">Class votes on the most resilient regional corridor blueprint based on CO₂ reduction and rural equity. Calibrate presentation plans against the FE3 rubric.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 2 Complete • 120 mins</span>
@@ -679,13 +679,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: AI Ethics & Regulatory Governance Lexis (25 mins) -->
+          <!-- PILLAR 1: AI Ethics & Regulatory Governance Lexis -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: AI Ethics & Regulatory Governance Lexis (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: AI Ethics & Regulatory Governance Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 essential terms under the European Union AI Act legal framework.</p>
                 </div>
               </div>
@@ -752,13 +752,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Complex Conjunctions & Concessions (25 mins) -->
+          <!-- PILLAR 2: Grammar Clinic • Complex Conjunctions & Concessions -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Complex Conjunctions & Concessions (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Complex Conjunctions & Concessions</h4>
                   <p class="text-xs text-slate-500">Master formal concessive debate syntax ('notwithstanding', 'inasmuch as', 'whereas', 'even if').</p>
                 </div>
               </div>
@@ -813,13 +813,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Project Argus-Eye Public Inquiry Hearing (45 mins) -->
+          <!-- PILLAR 3: Project Argus-Eye Public Inquiry Hearing -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: The Project Argus-Eye Public Inquiry Hearing (45 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: The Project Argus-Eye Public Inquiry Hearing</h4>
                   <p class="text-xs text-slate-500">Examine sworn depositions under EU AI Act standards, execute cross-examinations, and deliver the tribunal verdict.</p>
                 </div>
               </div>
@@ -830,10 +830,10 @@
             <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
               <span class="font-bold text-blue-950 uppercase tracking-wider text-[10px] block">Step-by-Step Student Instructions:</span>
               <ol class="list-decimal pl-4 space-y-1 text-slate-700">
-                <li><strong>Step 1 (10 mins):</strong> Review the Project Argus-Eye brief. Adopt 1 of 4 sworn witness roles (*Auditor, Security Chief, Passenger Lead, Tribunal Judge*).</li>
-                <li><strong>Step 2 (15 mins):</strong> Prepare your sworn statement and hone 2 cross-examination questions targeting your opponent's explicit vulnerability using concessive clauses.</li>
-                <li><strong>Step 3 (15 mins):</strong> Convene the Tribunal: Proponents and opponents cross-examine witnesses (2 minutes per witness).</li>
-                <li><strong>Step 4 (5 mins):</strong> The Tribunal Chair delivers a majority ruling classifying Argus-Eye as Prohibited, High-Risk with HITL, or Fully Authorized.</li>
+                <li><strong>Step 1:</strong> Review the Project Argus-Eye brief. Adopt 1 of 4 sworn witness roles (*Auditor, Security Chief, Passenger Lead, Tribunal Judge*).</li>
+                <li><strong>Step 2:</strong> Prepare your sworn statement and hone 2 cross-examination questions targeting your opponent's explicit vulnerability using concessive clauses.</li>
+                <li><strong>Step 3:</strong> Convene the Tribunal: Proponents and opponents cross-examine witnesses (2 minutes per witness).</li>
+                <li><strong>Step 4:</strong> The Tribunal Chair delivers a majority ruling classifying Argus-Eye as Prohibited, High-Risk with HITL, or Fully Authorized.</li>
               </ol>
             </div>
 
@@ -872,7 +872,7 @@
             <!-- Collapsible Teacher Notes -->
             <details class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-950 cursor-pointer">
               <summary class="font-bold select-none flex items-center justify-between">
-                <span>👨‍🏫 Teacher Facilitation & Timing Cue (Click to expand)</span>
+                <span>👨‍🏫 Teacher Tips & Speaking Prompts (Click to expand)</span>
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
@@ -882,10 +882,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: Regulatory Debrief & Review (25 mins) -->
+          <!-- PILLAR 4: Regulatory Debrief & Review -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Regulatory Debrief & Argument Evaluation (25 mins):</span>
+              <span class="font-bold text-slate-800">Pillar 4: Regulatory Debrief & Argument Evaluation:</span>
               <span class="ml-1">Evaluate your opponent on (1) Legal precision, (2) Effective deployment of concessive clauses, and (3) Professional courtroom composure. Calibrate prep for FE3.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 3 Complete • 120 mins</span>
@@ -944,13 +944,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Biometric & Cryptographic Security Lexis (25 mins) -->
+          <!-- PILLAR 1: Biometric & Cryptographic Security Lexis -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-purple-50 text-purple-700 font-black text-xs flex items-center justify-center border border-purple-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Biometric & Cryptographic Security Lexis (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Biometric & Cryptographic Security Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 specialized terms covering frictionless travel and cryptographic data sovereignty.</p>
                 </div>
               </div>
@@ -1017,13 +1017,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Relative Clauses & Precision (25 mins) -->
+          <!-- PILLAR 2: Grammar Clinic • Relative Clauses & Precision -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Relative Clauses & Technical Precision (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Relative Clauses & Technical Precision</h4>
                   <p class="text-xs text-slate-500">Master defining vs. non-defining relative clauses with relative pronouns ('which', 'who', 'whose', 'wherein').</p>
                 </div>
               </div>
@@ -1075,13 +1075,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Interactive Stations & Biometric Charter Tournament (45 mins) -->
+          <!-- PILLAR 3: Interactive Stations & Biometric Charter Tournament -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Interactive Stations & Passenger Charter Tournament (45 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Interactive Stations & Passenger Charter Tournament</h4>
                   <p class="text-xs text-slate-500">Rotate through 3 contactless technology stations, negotiate a 5-point Passenger Charter, and ratify the treaty.</p>
                 </div>
               </div>
@@ -1092,9 +1092,9 @@
             <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
               <span class="font-bold text-blue-950 uppercase tracking-wider text-[10px] block">Step-by-Step Student Instructions:</span>
               <ol class="list-decimal pl-4 space-y-1 text-slate-700">
-                <li><strong>Step 1 (20 mins):</strong> In duos, rotate through Stations 1, 2, and 3 below. Examine the core technology and answer the 2 investigation prompts per station.</li>
-                <li><strong>Step 2 (20 mins):</strong> Form 3-party delegations (*Border Agency, Passenger Rights Federation, Cybersecurity Regulators*). Negotiate the 5 articles of the Contactless Passenger Charter.</li>
-                <li><strong>Step 3 (5 mins):</strong> Ratify the Charter: Agree on mandatory data retention caps, opt-out protections, and €50M non-compliance penalties.</li>
+                <li><strong>Step 1:</strong> In duos, rotate through Stations 1, 2, and 3 below. Examine the core technology and answer the 2 investigation prompts per station.</li>
+                <li><strong>Step 2:</strong> Form 3-party delegations (*Border Agency, Passenger Rights Federation, Cybersecurity Regulators*). Negotiate the 5 articles of the Contactless Passenger Charter.</li>
+                <li><strong>Step 3:</strong> Ratify the Charter: Agree on mandatory data retention caps, opt-out protections, and €50M non-compliance penalties.</li>
               </ol>
             </div>
 
@@ -1148,7 +1148,7 @@
             <!-- Collapsible Teacher Notes -->
             <details class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-950 cursor-pointer">
               <summary class="font-bold select-none flex items-center justify-between">
-                <span>👨‍🏫 Teacher Facilitation & Timing Cue (Click to expand)</span>
+                <span>👨‍🏫 Teacher Tips & Speaking Prompts (Click to expand)</span>
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
@@ -1159,10 +1159,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: FE3 Final Presentation Rehearsal & Sign-Off (25 mins) -->
+          <!-- PILLAR 4: FE3 Final Presentation Rehearsal & Sign-Off -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Formative Evaluation 3 (FE3) Oral Rehearsal (25 mins):</span>
+              <span class="font-bold text-slate-800">Pillar 4: Formative Evaluation 3 (FE3) Oral Rehearsal:</span>
               <span class="ml-1">Deliver a 2-minute timed partner pitch dry run against the FE3 rubric. Confirm slide deck outlines and secure final teacher sign-off for the Session 5 evaluation.</span>
             </div>
             <span class="text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-md shrink-0">✓ Ready for FE3 in Session 5</span>

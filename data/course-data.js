@@ -177,34 +177,34 @@
           "summary": "A 2-hour interactive communicative session featuring personal travel anecdotes, an oral debate on modern travel dilemmas, essential travel collocations, narrative past tenses practice, a flight delay de-escalation role-play, and a 10-minute vocabulary review.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: Travel Anecdotes & Opening Spot-Check (15 mins)",
-              "description": "Tell a personal travel story about a memorable journey or travel glitch using helpful story words, followed by a quick check of foundational travel distinctions (layover vs. stopover, direct vs. non-stop)."
+              "title": "Part 1: Travel Anecdotes & Opening Spot-Check",
+              "description": "Tell a personal travel story about a memorable journey or travel glitch using helpful story words, followed by a quick check of foundational travel distinctions (layover vs. stopover, direct vs. non-stop).",
+              "part": "Part 1"
             },
             {
-              "time": "15-35",
-              "title": "Part 2: Global Travel Dilemmas: Speed Discussion (20 mins)",
-              "description": "Speed discussions in pairs on 4 prominent travel dilemmas (trains vs. planes, cabin luggage fees, biometric e-gates, and tourist taxes) using key opinion phrases."
+              "title": "Part 2: Global Travel Dilemmas: Speed Discussion",
+              "description": "Speed discussions in pairs on 4 prominent travel dilemmas (trains vs. planes, cabin luggage fees, biometric e-gates, and tourist taxes) using key opinion phrases.",
+              "part": "Part 2"
             },
             {
-              "time": "35-55",
-              "title": "Part 3: Essential Travel Collocations & Idioms (20 mins)",
-              "description": "Mastering high-frequency travel collocations (book in advance, clear customs, miss a connection) and common idioms (off the beaten track, hit the road, in the driver's seat) with interactive practice."
+              "title": "Part 3: Essential Travel Collocations & Idioms",
+              "description": "Mastering high-frequency travel collocations (book in advance, clear customs, miss a connection) and common idioms (off the beaten track, hit the road, in the driver's seat) with interactive practice.",
+              "part": "Part 3"
             },
             {
-              "time": "55-80",
-              "title": "Part 4: Grammar Focus: Narrative Past Tenses & Story Sequencing (25 mins)",
-              "description": "Using Past Simple, Past Continuous, and Past Perfect together to tell clear, engaging travel stories in chronological order with natural connecting words."
+              "title": "Part 4: Grammar Focus: Narrative Past Tenses & Story Sequencing",
+              "description": "Using Past Simple, Past Continuous, and Past Perfect together to tell clear, engaging travel stories in chronological order with natural connecting words.",
+              "part": "Part 4"
             },
             {
-              "time": "80-110",
-              "title": "Part 5: Role-Play Simulation: Flight Delay & Missing a Connection (30 mins)",
-              "description": "Practicing polite customer service and passenger de-escalation during a 2.5-hour delay with missed connections, focusing on clear explanations and active listening."
+              "title": "Part 5: Role-Play Simulation: Flight Delay & Missing a Connection",
+              "description": "Practicing polite customer service and passenger de-escalation during a 2.5-hour delay with missed connections, focusing on clear explanations and active listening.",
+              "part": "Part 5"
             },
             {
-              "time": "110-120",
-              "title": "Part 6: 10-Minute Vocabulary Review & Class Wrap-Up (10 mins)",
-              "description": "Final 10-minute consolidation: review of all 30 session vocabulary terms, pronunciation drill, and personal study log reflection."
+              "title": "Part 6: 10-Minute Vocabulary Review & Class Wrap-Up",
+              "description": "Final consolidation: review of all 30 session vocabulary terms, pronunciation drill, and personal study log reflection.",
+              "part": "Part 6"
             }
           ]
         },
@@ -1029,34 +1029,34 @@
           "summary": "A 2-hour session investigating how travel has evolved, comparing trains and flights along key routes, cause-and-effect grammar, TOEIC reading practice, and vocabulary fluency games.",
           "items": [
             {
-              "time": "0-10",
-              "title": "Part 1: Green Transport News & Session 1 Review (10 mins)",
-              "description": "Discussing recent green transport headlines and checking memory of Session 1 travel vocabulary (itinerary, layover, off the beaten track, carbon footprint)."
+              "title": "Part 1: Green Transport News & Session 1 Review",
+              "description": "Discussing recent green transport headlines and checking memory of Session 1 travel vocabulary (itinerary, layover, off the beaten track, carbon footprint).",
+              "part": "Part 1"
             },
             {
-              "time": "10-35",
-              "title": "Part 2: The Timeline Clash — 4 Epochs of Transport (25 mins)",
-              "description": "Analyzing 4 historical transport phases (1830s steam rail, 1950s post-war jet/car boom, 1980s containerization/TGV, 2030+ electrification and SAF) to weigh speed against emissions."
+              "title": "Part 2: The Timeline Clash — 4 Epochs of Transport",
+              "description": "Analyzing 4 historical transport phases (1830s steam rail, 1950s post-war jet/car boom, 1980s containerization/TGV, 2030+ electrification and SAF) to weigh speed against emissions.",
+              "part": "Part 2"
             },
             {
-              "time": "35-60",
-              "title": "Part 3: The Multi-Modal Corridor Pitch — Rail vs. Air (25 mins)",
-              "description": "Pitching high-speed rail versus regional flights on key European routes (Paris–Barcelona, London–Amsterdam, Toulouse–Paris) using journey time and kg CO₂ metrics."
+              "title": "Part 3: The Multi-Modal Corridor Pitch — Rail vs. Air",
+              "description": "Pitching high-speed rail versus regional flights on key European routes (Paris–Barcelona, London–Amsterdam, Toulouse–Paris) using journey time and kg CO₂ metrics.",
+              "part": "Part 3"
             },
             {
-              "time": "60-80",
-              "title": "Part 4: Grammar Focus — Cause, Effect & Complex Comparisons (20 mins)",
-              "description": "Replacing basic linkers with formal cause/result prepositions (owing to, as a result of, resulted in) and double comparatives (The more convenient... the less...)."
+              "title": "Part 4: Grammar Focus — Cause, Effect & Complex Comparisons",
+              "description": "Replacing basic linkers with formal cause/result prepositions (owing to, as a result of, resulted in) and double comparatives (The more convenient... the less...).",
+              "part": "Part 4"
             },
             {
-              "time": "80-110",
-              "title": "Part 5: DDRS Case Study — The ENAC Campus Mobility Audit (30 mins)",
-              "description": "\"The ENAC Transit Audit\" — Auditing institutional travel dilemmas (flights vs. day TGV vs. night sleeper train) and formulating spoken policy recommendations."
+              "title": "Part 5: DDRS Case Study — The ENAC Campus Mobility Audit",
+              "description": "\"The ENAC Transit Audit\" — Auditing institutional travel dilemmas (flights vs. day TGV vs. night sleeper train) and formulating spoken policy recommendations.",
+              "part": "Part 5"
             },
             {
-              "time": "110-120",
-              "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
-              "description": "Consolidation of the 30 transport terms with audio pronunciation and 45-second Taboo fluency game without using forbidden words."
+              "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge",
+              "description": "Consolidation of the 30 transport terms with audio pronunciation and 45-second Taboo fluency game without using forbidden words.",
+              "part": "Part 6"
             }
           ]
         },
@@ -1877,34 +1877,34 @@
           "summary": "A 2-hour session exploring visitor limits for popular destinations, city regulations against overcrowding, grammar for contrast and rules, TOEIC practice, and a group debate on sustainable island tourism.",
           "items": [
             {
-              "time": "0-10",
-              "title": "Part 1: Tourism Policy News & Session 2 Review (10 mins)",
-              "description": "Discussing current headlines on municipal tourist limits and checking memory of Session 2 words (modal shift, decarbonization, externalities, lifecycle assessment)."
+              "title": "Part 1: Tourism Policy News & Session 2 Review",
+              "description": "Discussing current headlines on municipal tourist limits and checking memory of Session 2 words (modal shift, decarbonization, externalities, lifecycle assessment).",
+              "part": "Part 1"
             },
             {
-              "time": "10-35",
-              "title": "Part 2: Destination Pressure & Visitor Capacity (25 mins)",
-              "description": "Analyzing carrying capacity data in Venice, Dubrovnik, Amsterdam, and Maya Bay to examine how visitor volume impacts local residents and natural sites."
+              "title": "Part 2: Destination Pressure & Visitor Capacity",
+              "description": "Analyzing carrying capacity data in Venice, Dubrovnik, Amsterdam, and Maya Bay to examine how visitor volume impacts local residents and natural sites.",
+              "part": "Part 2"
             },
             {
-              "time": "35-60",
-              "title": "Part 3: Pitching New Tourism Policies to the Mayor (25 mins)",
-              "description": "Teams pitch municipal policies (Airbnb quotas, peak-season daily entry levies, cruise ship bans) to the city council and defend against business objections."
+              "title": "Part 3: Pitching New Tourism Policies to the Mayor",
+              "description": "Teams pitch municipal policies (Airbnb quotas, peak-season daily entry levies, cruise ship bans) to the city council and defend against business objections.",
+              "part": "Part 3"
             },
             {
-              "time": "60-80",
-              "title": "Part 4: Grammar Focus — Causatives & Contrast Words (20 mins)",
-              "description": "Structuring municipal regulations with causatives (make, have, require to) and balancing opposing interests with contrast prepositions (despite, in spite of, whereas)."
+              "title": "Part 4: Grammar Focus — Causatives & Contrast Words",
+              "description": "Structuring municipal regulations with causatives (make, have, require to) and balancing opposing interests with contrast prepositions (despite, in spite of, whereas).",
+              "part": "Part 4"
             },
             {
-              "time": "80-110",
-              "title": "Part 5: DDRS Simulation — The Isla Serena Water Crisis (30 mins)",
-              "description": "4-role round-table negotiation resolving an acute summer water shortage (320% surge) vs. airport runway expansion. Teams agree on a 3-point policy resolution."
+              "title": "Part 5: DDRS Simulation — The Isla Serena Water Crisis",
+              "description": "4-role round-table negotiation resolving an acute summer water shortage (320% surge) vs. airport runway expansion. Teams agree on a 3-point policy resolution.",
+              "part": "Part 5"
             },
             {
-              "time": "110-120",
-              "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
-              "description": "Rapid recall of the 18 overtourism terms with audio pronunciation and 45-second Taboo fluency game without saying forbidden words."
+              "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge",
+              "description": "Rapid recall of the 18 overtourism terms with audio pronunciation and 45-second Taboo fluency game without saying forbidden words.",
+              "part": "Part 6"
             }
           ]
         },
@@ -2664,34 +2664,34 @@
           "summary": "A 2-hour interactive session comparing genuine ecotourism with greenwashing, practicing mixed conditionals and connectors, solving TOEIC reading questions, and designing a sustainable eco-resort.",
           "items": [
             {
-              "time": "0-10",
-              "title": "Part 1: Eco-Tourism News & Session 3 Review (10 mins)",
-              "description": "Discussing genuine green travel innovations and checking memory of Session 3 words (carrying capacity, de-marketing, resident backlash, tourist levy)."
+              "title": "Part 1: Eco-Tourism News & Session 3 Review",
+              "description": "Discussing genuine green travel innovations and checking memory of Session 3 words (carrying capacity, de-marketing, resident backlash, tourist levy).",
+              "part": "Part 1"
             },
             {
-              "time": "10-35",
-              "title": "Part 2: Genuine Eco-Tourism vs. Greenwashing (25 mins)",
-              "description": "Forensic evidence audit of 3 real-world projects (Costa Rica cloud forest, Kenya Maasai conservancies, Norway electric fjord cruise) against greenwashing checklists."
+              "title": "Part 2: Genuine Eco-Tourism vs. Greenwashing",
+              "description": "Forensic evidence audit of 3 real-world projects (Costa Rica cloud forest, Kenya Maasai conservancies, Norway electric fjord cruise) against greenwashing checklists.",
+              "part": "Part 2"
             },
             {
-              "time": "35-55",
-              "title": "Part 3: Grammar Focus — Mixed Conditionals & Purpose Clauses (20 mins)",
-              "description": "Contrasting past conservation actions with present outcomes (If + had + V3, would + V1) and using formal connecting words (so as to, in order that, provided that)."
+              "title": "Part 3: Grammar Focus — Mixed Conditionals & Purpose Clauses",
+              "description": "Contrasting past conservation actions with present outcomes (If + had + V3, would + V1) and using formal connecting words (so as to, in order that, provided that).",
+              "part": "Part 3"
             },
             {
-              "time": "55-85",
-              "title": "Part 4: Workshop — The €2,500,000 Eco-Resort Blueprint (30 mins)",
-              "description": "Designing a low-impact, 100% renewable resort in a fragile ecosystem (fjord, wetland, alpine valley) balancing visitor capacity and local community jobs."
+              "title": "Part 4: Workshop — The €2,500,000 Eco-Resort Blueprint",
+              "description": "Designing a low-impact, 100% renewable resort in a fragile ecosystem (fjord, wetland, alpine valley) balancing visitor capacity and local community jobs.",
+              "part": "Part 4"
             },
             {
-              "time": "85-110",
-              "title": "Part 5: The Green Investor Forum — Pitches & Defense (25 mins)",
-              "description": "2-minute competitive pitches to the Sustainability Investment Board answering tough stakeholder questions on visitor limits and greenwashing."
+              "title": "Part 5: The Green Investor Forum — Pitches & Defense",
+              "description": "competitive pitches to the Sustainability Investment Board answering tough stakeholder questions on visitor limits and greenwashing.",
+              "part": "Part 5"
             },
             {
-              "time": "110-120",
-              "title": "Part 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check (10 mins)",
-              "description": "Final consolidation of the 18 terms with audio pronunciation, partner verification, visual aids check, and self-critique readiness for Session 5."
+              "title": "Part 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check",
+              "description": "Final consolidation of the 18 terms with audio pronunciation, partner verification, visual aids check, and self-critique readiness for Session 5.",
+              "part": "Part 6"
             }
           ]
         },
@@ -3488,32 +3488,32 @@
         },
         "lessonPlan": {
           "title": "Session 1 Lesson Plan - Extreme Weather & Urban Climate Resilience (2 Hours)",
-          "summary": "A high-stakes, 2-block crisis workshop: students analyze an escalating meteorological disaster dossier, prioritize city defenses, role-play a city emergency taskforce, and defend decisions in a live press briefing.",
+          "summary": "A high-stakes, crisis workshop: students analyze an escalating meteorological disaster dossier, prioritize city defenses, role-play a city emergency taskforce, and defend decisions in a live press briefing.",
           "items": [
             {
-              "time": "00-20",
-              "title": "Part 1: The Meteorological Dossier & Urgency Matrix (20 mins)",
-              "description": "Reading an escalating regional storm and heat emergency alert; teams place 6 civic threats on an interactive Urgency-Impact Diamond."
+              "title": "Part 1: The Meteorological Dossier & Urgency Matrix",
+              "description": "Reading an escalating regional storm and heat emergency alert; teams place 6 civic threats on an interactive Urgency-Impact Diamond.",
+              "part": "Part 1"
             },
             {
-              "time": "20-40",
-              "title": "Part 2: Language Clinic: Expressing Urgency, Conditionals & Directives (20 mins)",
-              "description": "Mastering high-priority language: 'Immediate priority must be given to...', 'Provided that auxiliary power holds...', 'Failure to act will lead to...'."
+              "title": "Part 2: Language Clinic: Expressing Urgency, Conditionals & Directives",
+              "description": "Mastering high-priority language: 'Immediate priority must be given to...', 'Provided that auxiliary power holds...', 'Failure to act will lead to...'.",
+              "part": "Part 2"
             },
             {
-              "time": "40-95",
-              "title": "Part 3: The City Emergency Taskforce Simulation (55 mins)",
-              "description": "4 distinct roles (Mayor's Office, Transit Director, Hospital Network Lead, Communications Officer) responding to 3 breaking incident updates (blackout, hospital generator failure, flooded transit)."
+              "title": "Part 3: The City Emergency Taskforce Simulation",
+              "description": "4 distinct roles (Mayor's Office, Transit Director, Hospital Network Lead, Communications Officer) responding to 3 breaking incident updates (blackout, hospital generator failure, flooded transit).",
+              "part": "Part 3"
             },
             {
-              "time": "95-115",
-              "title": "Part 4: Spoken Live Press Conference & Media Scrutiny (20 mins)",
-              "description": "Taskforce leads deliver a 3-minute emergency broadcast to citizens and face tough questions from investigative reporters."
+              "title": "Part 4: Spoken Live Press Conference & Media Scrutiny",
+              "description": "Taskforce leads deliver a 3-minute emergency broadcast to citizens and face tough questions from investigative reporters.",
+              "part": "Part 4"
             },
             {
-              "time": "115-120",
-              "title": "Part 5: Crisis Debrief & Key Terminology Wrap-Up (5 mins)",
-              "description": "Peer language feedback, operational debrief, and vocabulary logging."
+              "title": "Part 5: Crisis Debrief & Key Terminology Wrap-Up",
+              "description": "Peer language feedback, operational debrief, and vocabulary logging.",
+              "part": "Part 5"
             }
           ]
         },
@@ -4031,29 +4031,29 @@
           "summary": "A creative hands-on design sprint: students analyze contrasting urban photos with interactive hotspots, master spatial prepositions, draft an integrated €50M district redesign, and defend it before a panel of community stakeholders.",
           "items": [
             {
-              "time": "00-20",
-              "title": "Part 1: Urban Showcase: Visual Photo Analysis & Hotspot Clinic (20 mins)",
-              "description": "Side-by-side comparative analysis of car sprawl (urban_car_sprawl.jpg) vs. green superblock (urban_superblock.jpg) with clickable vocabulary hotspots and the Mayor's Dilemma speaking task."
+              "title": "Part 1: Urban Showcase: Visual Photo Analysis & Hotspot Clinic",
+              "description": "Side-by-side comparative analysis of car sprawl (urban_car_sprawl.jpg) vs. green superblock (urban_superblock.jpg) with clickable vocabulary hotspots and the Mayor's Dilemma speaking task.",
+              "part": "Part 1"
             },
             {
-              "time": "20-40",
-              "title": "Part 2: Language Clinic: Spatial Prepositions & Planning Structures (20 mins)",
-              "description": "Mastering spatial precision: 'flanked by', 'adjacent to', 'bisected by', 'reclaimed from', 'within walking radius of'."
+              "title": "Part 2: Language Clinic: Spatial Prepositions & Planning Structures",
+              "description": "Mastering spatial precision: 'flanked by', 'adjacent to', 'bisected by', 'reclaimed from', 'within walking radius of'.",
+              "part": "Part 2"
             },
             {
-              "time": "40-80",
-              "title": "Part 3: The €50M District Redesign Sprint (40 mins)",
-              "description": "In teams of 3–4, students receive the blueprint of a congested transit corridor and allocate budget across transit, green canopy, social housing, and commerce."
+              "title": "Part 3: The €50M District Redesign Sprint",
+              "description": "In teams of 3–4, students receive the blueprint of a congested transit corridor and allocate budget across transit, green canopy, social housing, and commerce.",
+              "part": "Part 3"
             },
             {
-              "time": "80-110",
-              "title": "Part 4: The Civic Investor Forum & Public Defense (30 mins)",
-              "description": "Teams deliver a 4-minute visual pitch and defend their choices against community questions (shopkeepers, suburban drivers, eco-activists)."
+              "title": "Part 4: The Civic Investor Forum & Public Defense",
+              "description": "Teams deliver a 4-minute visual pitch and defend their choices against community questions (shopkeepers, suburban drivers, eco-activists).",
+              "part": "Part 4"
             },
             {
-              "time": "110-120",
-              "title": "Part 5: Blueprint Showcase & Peer Voting (10 mins)",
-              "description": "Silent gallery walk, investment vote, and key design term consolidation."
+              "title": "Part 5: Blueprint Showcase & Peer Voting",
+              "description": "Silent gallery walk, investment vote, and key design term consolidation.",
+              "part": "Part 5"
             }
           ]
         },
@@ -4574,29 +4574,29 @@
           "summary": "An Oxford-style debate and legal lab: students analyze conflicting testimonies on a controversial transit infrastructure project through an ancient wetland, learn argument framing and nuanced concession, and hold a formal public inquiry.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: The Devil's Advocate Hook: Provocative Claims (15 mins)",
-              "description": "2-minute quick-fire sparring on ethical dilemmas: 'Economic growth must always take precedence over local habitat conservation'."
+              "title": "Part 1: The Devil's Advocate Hook: Provocative Claims",
+              "description": "2-minute quick-fire sparring on ethical dilemmas: 'Economic growth must always take precedence over local habitat conservation'.",
+              "part": "Part 1"
             },
             {
-              "time": "15-40",
-              "title": "Part 2: The Disputed Valley Dossier & Evidence Cross-Check (25 mins)",
-              "description": "Evaluating four conflicting witness statements (Ecological Biologist, Chamber of Commerce, Commuter Union, Regional Planner)."
+              "title": "Part 2: The Disputed Valley Dossier & Evidence Cross-Check",
+              "description": "Evaluating four conflicting witness statements (Ecological Biologist, Chamber of Commerce, Commuter Union, Regional Planner).",
+              "part": "Part 2"
             },
             {
-              "time": "40-60",
-              "title": "Part 3: Language Clinic: Nuanced Concession & Reframing (20 mins)",
-              "description": "Mastering high-level debate signposts: 'While I concede that..., the empirical data demonstrates...', 'Be that as it may...', 'With respect, that conflates...'."
+              "title": "Part 3: Language Clinic: Nuanced Concession & Reframing",
+              "description": "Mastering high-level debate signposts: 'While I concede that..., the empirical data demonstrates...', 'Be that as it may...', 'With respect, that conflates...'.",
+              "part": "Part 3"
             },
             {
-              "time": "60-105",
-              "title": "Part 4: The Formal Public Inquiry Hearing Simulation (45 mins)",
-              "description": "Formal judicial proceedings with opening testimonies, cross-examinations, witness challenges, and commissioner rulings."
+              "title": "Part 4: The Formal Public Inquiry Hearing Simulation",
+              "description": "Formal judicial proceedings with opening testimonies, cross-examinations, witness challenges, and commissioner rulings.",
+              "part": "Part 4"
             },
             {
-              "time": "105-120",
-              "title": "Part 5: Judicial Verdict, Peer Assessment & Wrap-Up (15 mins)",
-              "description": "Commissioners deliver the binding ruling and debrief linguistic performance."
+              "title": "Part 5: Judicial Verdict, Peer Assessment & Wrap-Up",
+              "description": "Commissioners deliver the binding ruling and debrief linguistic performance.",
+              "part": "Part 5"
             }
           ]
         },
@@ -5066,29 +5066,29 @@
           "summary": "A fast-moving station-based workshop and treaty negotiation: students explore non-lethal wildlife management, solar-pollinator zoning, and sustainable drainage, followed by a tri-partite land-use treaty negotiation and FE2 prep.",
           "items": [
             {
-              "time": "00-15",
-              "title": "Part 1: The Meadow Paradox: Video & Case Hook (15 mins)",
-              "description": "Why airport grasslands represent some of Europe's most fertile yet hazardous biodiversity zones (pesticide-free perimeter fences vs. bird-strike risks)."
+              "title": "Part 1: The Meadow Paradox: Video & Case Hook",
+              "description": "Why airport grasslands represent some of Europe's most fertile yet hazardous biodiversity zones (pesticide-free perimeter fences vs. bird-strike risks).",
+              "part": "Part 1"
             },
             {
-              "time": "15-50",
-              "title": "Part 2: 3-Station Specialized Solutions Workshop (35 mins)",
-              "description": "Groups rotate through Station 1 (Non-Lethal Wildlife Deterrence), Station 2 (Solar-Pollinator Dual-Use Zoning), and Station 3 (Sustainable Drainage & Glycol Filtration)."
+              "title": "Part 2: 3-Station Specialized Solutions Workshop",
+              "description": "Groups rotate through Station 1 (Non-Lethal Wildlife Deterrence), Station 2 (Solar-Pollinator Dual-Use Zoning), and Station 3 (Sustainable Drainage & Glycol Filtration).",
+              "part": "Part 2"
             },
             {
-              "time": "50-70",
-              "title": "Part 3: Language Clinic: Passive Voice & Impersonal Recommendations (20 mins)",
-              "description": "Professional formal English: 'It is strongly recommended that...', 'Measures must be implemented to ensure...', 'Runway buffer zones are to be maintained...'."
+              "title": "Part 3: Language Clinic: Passive Voice & Impersonal Recommendations",
+              "description": "Professional formal English: 'It is strongly recommended that...', 'Measures must be implemented to ensure...', 'Runway buffer zones are to be maintained...'.",
+              "part": "Part 3"
             },
             {
-              "time": "70-105",
-              "title": "Part 4: The Tri-Partite Land-Use Treaty Negotiation (35 mins)",
-              "description": "Airport Authority, Wildlife Trust, and Clean Energy Consortium negotiate a binding 10-year accord over 500 perimeter hectares."
+              "title": "Part 4: The Tri-Partite Land-Use Treaty Negotiation",
+              "description": "Airport Authority, Wildlife Trust, and Clean Energy Consortium negotiate a binding 10-year accord over 500 perimeter hectares.",
+              "part": "Part 4"
             },
             {
-              "time": "105-120",
-              "title": "Part 5: Formative Evaluation 2 (FE2) Roadmap & Review (15 mins)",
-              "description": "Treaty ratification, vocabulary consolidation, and FE2 rubric benchmarking."
+              "title": "Part 5: Formative Evaluation 2 (FE2) Roadmap & Review",
+              "description": "Treaty ratification, vocabulary consolidation, and FE2 rubric benchmarking.",
+              "part": "Part 5"
             }
           ]
         },
@@ -5676,27 +5676,27 @@
         },
         "lessonPlan": {
           "title": "Session 1 Lesson Plan - Everyday AI & Workplace Automation (2 Hours)",
-          "summary": "A 120-minute operational workshop moving from an automation risk audit to a high-stakes Human-in-the-Loop policy simulation, spoken town hall cross-examination, and active/passive technical phrasing clinic.",
+          "summary": "A operational workshop moving from an automation risk audit to a high-stakes Human-in-the-Loop policy simulation, spoken town hall cross-examination, and active/passive technical phrasing clinic.",
           "items": [
             {
-              "time": "00–25",
-              "title": "Part 1: Workplace Automation Vulnerability Audit (25 mins)",
-              "description": "Analyze six operational workflows (dispatch algorithms, automated passenger re-booking, biometric bag drops, predictive maintenance) and rank them on a Risk vs. Autonomy Matrix."
+              "title": "Part 1: Workplace Automation Vulnerability Audit",
+              "description": "Analyze six operational workflows (dispatch algorithms, automated passenger re-booking, biometric bag drops, predictive maintenance) and rank them on a Risk vs. Autonomy Matrix.",
+              "part": "Part 1"
             },
             {
-              "time": "25–70",
-              "title": "Part 2: 'Human-in-the-Loop' (HITL) Policy Simulation (45 mins)",
-              "description": "Adopt specialized operational roles (Operations Director, Union Workforce Rep, AI Systems Architect) to manage 3 dynamic crisis injects involving algorithm hallucination and cascading system failure."
+              "title": "Part 2: 'Human-in-the-Loop' (HITL) Policy Simulation",
+              "description": "Adopt specialized operational roles (Operations Director, Union Workforce Rep, AI Systems Architect) to manage 3 dynamic crisis injects involving algorithm hallucination and cascading system failure.",
+              "part": "Part 2"
             },
             {
-              "time": "70–100",
-              "title": "Part 3: Spoken Workplace Town Hall & Cross-Examination (30 mins)",
-              "description": "Taskforce leads deliver a 3-minute spoken defense of their automation policy, followed by aggressive question-and-answer scrutiny from frontline employees."
+              "title": "Part 3: Spoken Workplace Town Hall & Cross-Examination",
+              "description": "Taskforce leads deliver a 3-minute spoken defense of their automation policy, followed by aggressive question-and-answer scrutiny from frontline employees.",
+              "part": "Part 3"
             },
             {
-              "time": "100–120",
-              "title": "Part 4: Technical Phrasing Clinic & FE3 Alignment (20 mins)",
-              "description": "Drill precise Active vs. Passive constructions in incident reporting and calibrate spoken delivery against the Formative Evaluation 3 (FE3) criteria."
+              "title": "Part 4: Technical Phrasing Clinic & FE3 Alignment",
+              "description": "Drill precise Active vs. Passive constructions in incident reporting and calibrate spoken delivery against the Formative Evaluation 3 (FE3) criteria.",
+              "part": "Part 4"
             }
           ]
         },
@@ -6201,22 +6201,22 @@
         },
         "lessonPlan": {
           "title": "Session 2 Lesson Plan - Future Mobility & Clean Energy Transport (2 Hours)",
-          "summary": "A 120-minute visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, budgeting €100M in regional decarbonization infrastructure, and defending transit choices against stakeholder resistance.",
+          "summary": "A visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, budgeting €100M in regional decarbonization infrastructure, and defending transit choices against stakeholder resistance.",
           "items": [
             {
-              "time": "00–35",
-              "title": "Part 1: Future Mobility Showcase • Comparative Visual Analysis (35 mins)",
-              "description": "Examine two competing future transit paradigms (Decentralized Regional Electric/eVTOL Air Mobility vs. Centralized High-Speed Rail & Megaprojects) using interactive spatial hotspots and a 3-stage spoken protocol."
+              "title": "Part 1: Future Mobility Showcase • Comparative Visual Analysis",
+              "description": "Examine two competing future transit paradigms (Decentralized Regional Electric/eVTOL Air Mobility vs. Centralized High-Speed Rail & Megaprojects) using interactive spatial hotspots and a 3-stage spoken protocol.",
+              "part": "Part 1"
             },
             {
-              "time": "35–90",
-              "title": "Part 2: €100M Clean Corridor Collaborative Design Sprint (55 mins)",
-              "description": "Teams allocate €100,000,000 across 5 breakthrough propulsion and infrastructure options to transform the 'South-West Trans-Regional Corridor' by 2035."
+              "title": "Part 2: €100M Clean Corridor Collaborative Design Sprint",
+              "description": "Teams allocate €100,000,000 across 5 breakthrough propulsion and infrastructure options to transform the 'South-West Trans-Regional Corridor' by 2035.",
+              "part": "Part 2"
             },
             {
-              "time": "90–120",
-              "title": "Part 3: Spoken Regional Council Pitch & Policy Defense (30 mins)",
-              "description": "Planning duos deliver 3-minute investment pitches to the Regional Transport Authority, counter stakeholder objections, and vote on the winning corridor design."
+              "title": "Part 3: Spoken Regional Council Pitch & Policy Defense",
+              "description": "Planning duos deliver 3-minute investment pitches to the Regional Transport Authority, counter stakeholder objections, and vote on the winning corridor design.",
+              "part": "Part 3"
             }
           ]
         },
@@ -6729,27 +6729,27 @@
         },
         "lessonPlan": {
           "title": "Session 3 Lesson Plan - Technology Ethics & Automated Decisions in AI (2 Hours)",
-          "summary": "A 120-minute Oxford-style regulatory inquiry examining biometric surveillance, predictive passenger profiling, and algorithmic accountability under the European AI Act framework.",
+          "summary": "A Oxford-style regulatory inquiry examining biometric surveillance, predictive passenger profiling, and algorithmic accountability under the European AI Act framework.",
           "items": [
             {
-              "time": "00–20",
-              "title": "Part 1: Devil's Advocate Warm-Up • Tech Fallacy Rebuttals (20 mins)",
-              "description": "Quick-fire spoken counter-arguments refuting three common tech governance myths regarding facial recognition and algorithmic infallibility."
+              "title": "Part 1: Devil's Advocate Warm-Up • Tech Fallacy Rebuttals",
+              "description": "Quick-fire spoken counter-arguments refuting three common tech governance myths regarding facial recognition and algorithmic infallibility.",
+              "part": "Part 1"
             },
             {
-              "time": "20–55",
-              "title": "Part 2: The High-Stakes Public Inquiry Dossier (35 mins)",
-              "description": "Analyze the official inquiry brief: Project 'Argus-Eye' (an automated AI profiling system deployed across 14 international border checkpoints)."
+              "title": "Part 2: The High-Stakes Public Inquiry Dossier",
+              "description": "Analyze the official inquiry brief: Project 'Argus-Eye' (an automated AI profiling system deployed across 14 international border checkpoints).",
+              "part": "Part 2"
             },
             {
-              "time": "55–80",
-              "title": "Part 3: Spoken Inquiry Argumentation & Cross-Exam Clinic (25 mins)",
-              "description": "Practice high-level rhetorical patterns: concessions, challenging false equivalence, and formulating proportionate regulatory safeguards."
+              "title": "Part 3: Spoken Inquiry Argumentation & Cross-Exam Clinic",
+              "description": "Practice high-level rhetorical patterns: concessions, challenging false equivalence, and formulating proportionate regulatory safeguards.",
+              "part": "Part 3"
             },
             {
-              "time": "80–120",
-              "title": "Part 4: Oxford-Style Public Hearing & Commission Verdict (40 mins)",
-              "description": "Formal inquiry proceedings: witness depositions, 2-minute adversarial cross-examinations, commissioner deliberations, and delivery of the final binding verdict."
+              "title": "Part 4: Oxford-Style Public Hearing & Commission Verdict",
+              "description": "Formal inquiry proceedings: witness depositions, 2-minute adversarial cross-examinations, commissioner deliberations, and delivery of the final binding verdict.",
+              "part": "Part 4"
             }
           ]
         },
@@ -7211,27 +7211,27 @@
         },
         "lessonPlan": {
           "title": "Session 4 Lesson Plan - Biometrics, Digital IDs & Passenger Journey (2 Hours)",
-          "summary": "A 120-minute station-based workshop and treaty negotiation tournament analyzing contactless travel architectures, biometric data sovereignty, and culminating in full rehearsal for the Formative Evaluation 3 (FE3) presentations.",
+          "summary": "A station-based workshop and treaty negotiation tournament analyzing contactless travel architectures, biometric data sovereignty, and culminating in full rehearsal for the Formative Evaluation 3 (FE3) presentations.",
           "items": [
             {
-              "time": "00–20",
-              "title": "Part 1: The Contactless Border Paradox Briefing (20 mins)",
-              "description": "Examine the friction between frictionless 10-second passenger throughput and the catastrophic cyber risks of permanent biometric data theft."
+              "title": "Part 1: The Contactless Border Paradox Briefing",
+              "description": "Examine the friction between frictionless 10-second passenger throughput and the catastrophic cyber risks of permanent biometric data theft.",
+              "part": "Part 1"
             },
             {
-              "time": "20–65",
-              "title": "Part 2: Interactive Technology Stations (45 mins)",
-              "description": "Pairs rotate through 3 operational engineering clinics: Station 1 (Lidar & Walkthrough E-Gates), Station 2 (Zero-Knowledge Cryptographic Hashes), and Station 3 (Digital Wallets & IATA One ID Interoperability)."
+              "title": "Part 2: Interactive Technology Stations",
+              "description": "Pairs rotate through 3 operational engineering clinics: Station 1 (Lidar & Walkthrough E-Gates), Station 2 (Zero-Knowledge Cryptographic Hashes), and Station 3 (Digital Wallets & IATA One ID Interoperability).",
+              "part": "Part 2"
             },
             {
-              "time": "65–105",
-              "title": "Part 3: Tri-Party Passenger Biometric Charter Tournament (40 mins)",
-              "description": "Delegations negotiate the terms of a legally binding 5-point international treaty establishing data retention limits, opt-out rights, and audit penalties."
+              "title": "Part 3: Tri-Party Passenger Biometric Charter Tournament",
+              "description": "Delegations negotiate the terms of a legally binding 5-point international treaty establishing data retention limits, opt-out rights, and audit penalties.",
+              "part": "Part 3"
             },
             {
-              "time": "105–120",
-              "title": "Part 4: Formative Evaluation 3 (FE3) Rehearsal & Sign-Off (15 mins)",
-              "description": "Verify presentation pairings, conduct a 2-minute rapid-fire pitch rehearsal against the FE3 rubric, and confirm readiness for the Session 5 evaluation."
+              "title": "Part 4: Formative Evaluation 3 (FE3) Rehearsal & Sign-Off",
+              "description": "Verify presentation pairings, conduct a rapid-fire pitch rehearsal against the FE3 rubric, and confirm readiness for the Session 5 evaluation.",
+              "part": "Part 4"
             }
           ]
         },
@@ -7827,34 +7827,34 @@
             "summary": "A 2-hour interactive communicative session featuring personal travel anecdotes, an oral debate on modern travel dilemmas, essential travel collocations, narrative past tenses practice, a flight delay de-escalation role-play, and a 10-minute vocabulary review.",
             "items": [
               {
-                "time": "00-15",
-                "title": "Part 1: Travel Anecdotes & Opening Spot-Check (15 mins)",
-                "description": "Tell a personal travel story about a memorable journey or travel glitch using helpful story words, followed by a quick check of foundational travel distinctions (layover vs. stopover, direct vs. non-stop)."
+                "title": "Part 1: Travel Anecdotes & Opening Spot-Check",
+                "description": "Tell a personal travel story about a memorable journey or travel glitch using helpful story words, followed by a quick check of foundational travel distinctions (layover vs. stopover, direct vs. non-stop).",
+                "part": "Part 1"
               },
               {
-                "time": "15-35",
-                "title": "Part 2: Global Travel Dilemmas: Speed Discussion (20 mins)",
-                "description": "Speed discussions in pairs on 4 prominent travel dilemmas (trains vs. planes, cabin luggage fees, biometric e-gates, and tourist taxes) using key opinion phrases."
+                "title": "Part 2: Global Travel Dilemmas: Speed Discussion",
+                "description": "Speed discussions in pairs on 4 prominent travel dilemmas (trains vs. planes, cabin luggage fees, biometric e-gates, and tourist taxes) using key opinion phrases.",
+                "part": "Part 2"
               },
               {
-                "time": "35-55",
-                "title": "Part 3: Essential Travel Collocations & Idioms (20 mins)",
-                "description": "Mastering high-frequency travel collocations (book in advance, clear customs, miss a connection) and common idioms (off the beaten track, hit the road, in the driver's seat) with interactive practice."
+                "title": "Part 3: Essential Travel Collocations & Idioms",
+                "description": "Mastering high-frequency travel collocations (book in advance, clear customs, miss a connection) and common idioms (off the beaten track, hit the road, in the driver's seat) with interactive practice.",
+                "part": "Part 3"
               },
               {
-                "time": "55-80",
-                "title": "Part 4: Grammar Focus: Narrative Past Tenses & Story Sequencing (25 mins)",
-                "description": "Using Past Simple, Past Continuous, and Past Perfect together to tell clear, engaging travel stories in chronological order with natural connecting words."
+                "title": "Part 4: Grammar Focus: Narrative Past Tenses & Story Sequencing",
+                "description": "Using Past Simple, Past Continuous, and Past Perfect together to tell clear, engaging travel stories in chronological order with natural connecting words.",
+                "part": "Part 4"
               },
               {
-                "time": "80-110",
-                "title": "Part 5: Role-Play Simulation: Flight Delay & Missing a Connection (30 mins)",
-                "description": "Practicing polite customer service and passenger de-escalation during a 2.5-hour delay with missed connections, focusing on clear explanations and active listening."
+                "title": "Part 5: Role-Play Simulation: Flight Delay & Missing a Connection",
+                "description": "Practicing polite customer service and passenger de-escalation during a 2.5-hour delay with missed connections, focusing on clear explanations and active listening.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: 10-Minute Vocabulary Review & Class Wrap-Up (10 mins)",
-                "description": "Final 10-minute consolidation: review of all 30 session vocabulary terms, pronunciation drill, and personal study log reflection."
+                "title": "Part 6: 10-Minute Vocabulary Review & Class Wrap-Up",
+                "description": "Final consolidation: review of all 30 session vocabulary terms, pronunciation drill, and personal study log reflection.",
+                "part": "Part 6"
               }
             ]
           },
@@ -8679,34 +8679,34 @@
             "summary": "A 2-hour session investigating how travel has evolved, comparing trains and flights along key routes, cause-and-effect grammar, TOEIC reading practice, and vocabulary fluency games.",
             "items": [
               {
-                "time": "0-10",
-                "title": "Part 1: Green Transport News & Session 1 Review (10 mins)",
-                "description": "Discussing recent green transport headlines and checking memory of Session 1 travel vocabulary (itinerary, layover, off the beaten track, carbon footprint)."
+                "title": "Part 1: Green Transport News & Session 1 Review",
+                "description": "Discussing recent green transport headlines and checking memory of Session 1 travel vocabulary (itinerary, layover, off the beaten track, carbon footprint).",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Part 2: The Timeline Clash — 4 Epochs of Transport (25 mins)",
-                "description": "Analyzing 4 historical transport phases (1830s steam rail, 1950s post-war jet/car boom, 1980s containerization/TGV, 2030+ electrification and SAF) to weigh speed against emissions."
+                "title": "Part 2: The Timeline Clash — 4 Epochs of Transport",
+                "description": "Analyzing 4 historical transport phases (1830s steam rail, 1950s post-war jet/car boom, 1980s containerization/TGV, 2030+ electrification and SAF) to weigh speed against emissions.",
+                "part": "Part 2"
               },
               {
-                "time": "35-60",
-                "title": "Part 3: The Multi-Modal Corridor Pitch — Rail vs. Air (25 mins)",
-                "description": "Pitching high-speed rail versus regional flights on key European routes (Paris–Barcelona, London–Amsterdam, Toulouse–Paris) using journey time and kg CO₂ metrics."
+                "title": "Part 3: The Multi-Modal Corridor Pitch — Rail vs. Air",
+                "description": "Pitching high-speed rail versus regional flights on key European routes (Paris–Barcelona, London–Amsterdam, Toulouse–Paris) using journey time and kg CO₂ metrics.",
+                "part": "Part 3"
               },
               {
-                "time": "60-80",
-                "title": "Part 4: Grammar Focus — Cause, Effect & Complex Comparisons (20 mins)",
-                "description": "Replacing basic linkers with formal cause/result prepositions (owing to, as a result of, resulted in) and double comparatives (The more convenient... the less...)."
+                "title": "Part 4: Grammar Focus — Cause, Effect & Complex Comparisons",
+                "description": "Replacing basic linkers with formal cause/result prepositions (owing to, as a result of, resulted in) and double comparatives (The more convenient... the less...).",
+                "part": "Part 4"
               },
               {
-                "time": "80-110",
-                "title": "Part 5: DDRS Case Study — The ENAC Campus Mobility Audit (30 mins)",
-                "description": "\"The ENAC Transit Audit\" — Auditing institutional travel dilemmas (flights vs. day TGV vs. night sleeper train) and formulating spoken policy recommendations."
+                "title": "Part 5: DDRS Case Study — The ENAC Campus Mobility Audit",
+                "description": "\"The ENAC Transit Audit\" — Auditing institutional travel dilemmas (flights vs. day TGV vs. night sleeper train) and formulating spoken policy recommendations.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
-                "description": "Consolidation of the 30 transport terms with audio pronunciation and 45-second Taboo fluency game without using forbidden words."
+                "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge",
+                "description": "Consolidation of the 30 transport terms with audio pronunciation and 45-second Taboo fluency game without using forbidden words.",
+                "part": "Part 6"
               }
             ]
           },
@@ -9527,34 +9527,34 @@
             "summary": "A 2-hour session exploring visitor limits for popular destinations, city regulations against overcrowding, grammar for contrast and rules, TOEIC practice, and a group debate on sustainable island tourism.",
             "items": [
               {
-                "time": "0-10",
-                "title": "Part 1: Tourism Policy News & Session 2 Review (10 mins)",
-                "description": "Discussing current headlines on municipal tourist limits and checking memory of Session 2 words (modal shift, decarbonization, externalities, lifecycle assessment)."
+                "title": "Part 1: Tourism Policy News & Session 2 Review",
+                "description": "Discussing current headlines on municipal tourist limits and checking memory of Session 2 words (modal shift, decarbonization, externalities, lifecycle assessment).",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Part 2: Destination Pressure & Visitor Capacity (25 mins)",
-                "description": "Analyzing carrying capacity data in Venice, Dubrovnik, Amsterdam, and Maya Bay to examine how visitor volume impacts local residents and natural sites."
+                "title": "Part 2: Destination Pressure & Visitor Capacity",
+                "description": "Analyzing carrying capacity data in Venice, Dubrovnik, Amsterdam, and Maya Bay to examine how visitor volume impacts local residents and natural sites.",
+                "part": "Part 2"
               },
               {
-                "time": "35-60",
-                "title": "Part 3: Pitching New Tourism Policies to the Mayor (25 mins)",
-                "description": "Teams pitch municipal policies (Airbnb quotas, peak-season daily entry levies, cruise ship bans) to the city council and defend against business objections."
+                "title": "Part 3: Pitching New Tourism Policies to the Mayor",
+                "description": "Teams pitch municipal policies (Airbnb quotas, peak-season daily entry levies, cruise ship bans) to the city council and defend against business objections.",
+                "part": "Part 3"
               },
               {
-                "time": "60-80",
-                "title": "Part 4: Grammar Focus — Causatives & Contrast Words (20 mins)",
-                "description": "Structuring municipal regulations with causatives (make, have, require to) and balancing opposing interests with contrast prepositions (despite, in spite of, whereas)."
+                "title": "Part 4: Grammar Focus — Causatives & Contrast Words",
+                "description": "Structuring municipal regulations with causatives (make, have, require to) and balancing opposing interests with contrast prepositions (despite, in spite of, whereas).",
+                "part": "Part 4"
               },
               {
-                "time": "80-110",
-                "title": "Part 5: DDRS Simulation — The Isla Serena Water Crisis (30 mins)",
-                "description": "4-role round-table negotiation resolving an acute summer water shortage (320% surge) vs. airport runway expansion. Teams agree on a 3-point policy resolution."
+                "title": "Part 5: DDRS Simulation — The Isla Serena Water Crisis",
+                "description": "4-role round-table negotiation resolving an acute summer water shortage (320% surge) vs. airport runway expansion. Teams agree on a 3-point policy resolution.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
-                "description": "Rapid recall of the 18 overtourism terms with audio pronunciation and 45-second Taboo fluency game without saying forbidden words."
+                "title": "Part 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge",
+                "description": "Rapid recall of the 18 overtourism terms with audio pronunciation and 45-second Taboo fluency game without saying forbidden words.",
+                "part": "Part 6"
               }
             ]
           },
@@ -10314,34 +10314,34 @@
             "summary": "A 2-hour interactive session comparing genuine ecotourism with greenwashing, practicing mixed conditionals and connectors, solving TOEIC reading questions, and designing a sustainable eco-resort.",
             "items": [
               {
-                "time": "0-10",
-                "title": "Part 1: Eco-Tourism News & Session 3 Review (10 mins)",
-                "description": "Discussing genuine green travel innovations and checking memory of Session 3 words (carrying capacity, de-marketing, resident backlash, tourist levy)."
+                "title": "Part 1: Eco-Tourism News & Session 3 Review",
+                "description": "Discussing genuine green travel innovations and checking memory of Session 3 words (carrying capacity, de-marketing, resident backlash, tourist levy).",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Part 2: Genuine Eco-Tourism vs. Greenwashing (25 mins)",
-                "description": "Forensic evidence audit of 3 real-world projects (Costa Rica cloud forest, Kenya Maasai conservancies, Norway electric fjord cruise) against greenwashing checklists."
+                "title": "Part 2: Genuine Eco-Tourism vs. Greenwashing",
+                "description": "Forensic evidence audit of 3 real-world projects (Costa Rica cloud forest, Kenya Maasai conservancies, Norway electric fjord cruise) against greenwashing checklists.",
+                "part": "Part 2"
               },
               {
-                "time": "35-55",
-                "title": "Part 3: Grammar Focus — Mixed Conditionals & Purpose Clauses (20 mins)",
-                "description": "Contrasting past conservation actions with present outcomes (If + had + V3, would + V1) and using formal connecting words (so as to, in order that, provided that)."
+                "title": "Part 3: Grammar Focus — Mixed Conditionals & Purpose Clauses",
+                "description": "Contrasting past conservation actions with present outcomes (If + had + V3, would + V1) and using formal connecting words (so as to, in order that, provided that).",
+                "part": "Part 3"
               },
               {
-                "time": "55-85",
-                "title": "Part 4: Workshop — The €2,500,000 Eco-Resort Blueprint (30 mins)",
-                "description": "Designing a low-impact, 100% renewable resort in a fragile ecosystem (fjord, wetland, alpine valley) balancing visitor capacity and local community jobs."
+                "title": "Part 4: Workshop — The €2,500,000 Eco-Resort Blueprint",
+                "description": "Designing a low-impact, 100% renewable resort in a fragile ecosystem (fjord, wetland, alpine valley) balancing visitor capacity and local community jobs.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Part 5: The Green Investor Forum — Pitches & Defense (25 mins)",
-                "description": "2-minute competitive pitches to the Sustainability Investment Board answering tough stakeholder questions on visitor limits and greenwashing."
+                "title": "Part 5: The Green Investor Forum — Pitches & Defense",
+                "description": "competitive pitches to the Sustainability Investment Board answering tough stakeholder questions on visitor limits and greenwashing.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check (10 mins)",
-                "description": "Final consolidation of the 18 terms with audio pronunciation, partner verification, visual aids check, and self-critique readiness for Session 5."
+                "title": "Part 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check",
+                "description": "Final consolidation of the 18 terms with audio pronunciation, partner verification, visual aids check, and self-critique readiness for Session 5.",
+                "part": "Part 6"
               }
             ]
           },
@@ -11133,27 +11133,27 @@
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan - Extreme Weather & Urban Climate Resilience (2 Hours)",
-            "summary": "A 120-minute operational syllabus combining disaster lexis drills, conditional grammar clinics, a 4-part emergency taskforce simulation, live spoken press conference, and FE2 alignment.",
+            "summary": "A operational syllabus combining disaster lexis drills, conditional grammar clinics, a 4-part emergency taskforce simulation, live spoken press conference, and FE2 alignment.",
             "items": [
               {
-                "time": "00–25",
-                "title": "Pillar 1: Severe Weather & Disaster Vulnerability Lexis (25 mins)",
-                "description": "Analyze 8 core technical terms, examine real-world emergency bulletins, and complete the interactive vocabulary matching drill."
+                "title": "Pillar 1: Severe Weather & Disaster Vulnerability Lexis",
+                "description": "Analyze 8 core technical terms, examine real-world emergency bulletins, and complete the interactive vocabulary matching drill.",
+                "part": "Part 1"
               },
               {
-                "time": "25–50",
-                "title": "Pillar 2: Grammar Clinic • Conditionals for Emergency Risk (25 mins)",
-                "description": "Master 1st and 2nd conditionals in crisis management; complete 4 interactive risk assessment sentence transformations."
+                "title": "Pillar 2: Grammar Clinic • Conditionals for Emergency Risk",
+                "description": "Master 1st and 2nd conditionals in crisis management; complete 4 interactive risk assessment sentence transformations.",
+                "part": "Part 2"
               },
               {
-                "time": "50–95",
-                "title": "Pillar 3: Emergency Taskforce Simulation & Press Conference (45 mins)",
-                "description": "Step-by-step roleplay: rank 6 acute threats, resolve dynamic crisis injects, and deliver a live spoken press conference under media scrutiny."
+                "title": "Pillar 3: Emergency Taskforce Simulation & Press Conference",
+                "description": "Step-by-step roleplay: rank 6 acute threats, resolve dynamic crisis injects, and deliver a live spoken press conference under media scrutiny.",
+                "part": "Part 3"
               },
               {
-                "time": "95–120",
-                "title": "Pillar 4: Pronunciation Clinic, Peer Review & FE2 Prep (25 mins)",
-                "description": "Drill syllable stress on multi-syllable terms, conduct peer fluency evaluations, and review FE2 presentation requirements."
+                "title": "Pillar 4: Pronunciation Clinic, Peer Review & FE2 Prep",
+                "description": "Drill syllable stress on multi-syllable terms, conduct peer fluency evaluations, and review FE2 presentation requirements.",
+                "part": "Part 4"
               }
             ]
           },
@@ -11663,27 +11663,27 @@
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan - The 15-Minute Resilient City Blueprint (2 Hours)",
-            "summary": "A 120-minute visual analysis and collaborative engineering sprint moving from spatial photo analysis to relative clause grammar drills, €50M budget allocation, stakeholder rebuttal clinic, and spoken council presentations.",
+            "summary": "A visual analysis and collaborative engineering sprint moving from spatial photo analysis to relative clause grammar drills, €50M budget allocation, stakeholder rebuttal clinic, and spoken council presentations.",
             "items": [
               {
-                "time": "00–25",
-                "title": "Pillar 1: Urban Architecture & Spatial Vocabulary (25 mins)",
-                "description": "Master 8 key spatial design terms (permeable paving, active frontage, bioswale, superblock) with interactive visual matching."
+                "title": "Pillar 1: Urban Architecture & Spatial Vocabulary",
+                "description": "Master 8 key spatial design terms (permeable paving, active frontage, bioswale, superblock) with interactive visual matching.",
+                "part": "Part 1"
               },
               {
-                "time": "25–50",
-                "title": "Pillar 2: Grammar Clinic • Spatial Prepositions & Relative Clauses (25 mins)",
-                "description": "Punctuation and syntax rules for non-defining relative clauses; complete 4 sentence combining drills with instant feedback."
+                "title": "Pillar 2: Grammar Clinic • Spatial Prepositions & Relative Clauses",
+                "description": "Punctuation and syntax rules for non-defining relative clauses; complete 4 sentence combining drills with instant feedback.",
+                "part": "Part 2"
               },
               {
-                "time": "50–95",
-                "title": "Pillar 3: Photo Analysis & €50M Collaborative Design Sprint (45 mins)",
-                "description": "Step-by-step: analyze comparative photos, allocate the €50M budget across 5 categories, and script counter-arguments to 4 stakeholder objections."
+                "title": "Pillar 3: Photo Analysis & €50M Collaborative Design Sprint",
+                "description": "Step-by-step: analyze comparative photos, allocate the €50M budget across 5 categories, and script counter-arguments to 4 stakeholder objections.",
+                "part": "Part 3"
               },
               {
-                "time": "95–120",
-                "title": "Pillar 4: Spoken City Council Pitch & Democratic Vote (25 mins)",
-                "description": "Duos deliver 3-minute spoken presentations to the City Council panel; class votes on the winning resilient blueprint."
+                "title": "Pillar 4: Spoken City Council Pitch & Democratic Vote",
+                "description": "Duos deliver spoken presentations to the City Council panel; class votes on the winning resilient blueprint.",
+                "part": "Part 4"
               }
             ]
           },
@@ -12196,27 +12196,27 @@
           },
           "lessonPlan": {
             "title": "Session 3 Lesson Plan - Environmental Ethics & The Public Inquiry Hearing (2 Hours)",
-            "summary": "A 120-minute formal inquiry lab moving from environmental lexis to cautious argumentation clinics, witness deposition analysis, Oxford-style cross-examinations, and tribunal deliberations.",
+            "summary": "A formal inquiry lab moving from environmental lexis to cautious argumentation clinics, witness deposition analysis, Oxford-style cross-examinations, and tribunal deliberations.",
             "items": [
               {
-                "time": "00–25",
-                "title": "Pillar 1: Environmental Ethics & Inquiry Vocabulary (25 mins)",
-                "description": "Examine 8 core debate terms; complete the interactive collocation matching challenge with instant answer reveal."
+                "title": "Pillar 1: Environmental Ethics & Inquiry Vocabulary",
+                "description": "Examine 8 core debate terms; complete the interactive collocation matching challenge with instant answer reveal.",
+                "part": "Part 1"
               },
               {
-                "time": "25–50",
-                "title": "Pillar 2: Grammar Clinic • Cautious Language & Concessions (25 mins)",
-                "description": "Master diplomatic hedging formulas; rewrite 4 blunt statements into formal B2 inquiry arguments with check answers."
+                "title": "Pillar 2: Grammar Clinic • Cautious Language & Concessions",
+                "description": "Master diplomatic hedging formulas; rewrite 4 blunt statements into formal B2 inquiry arguments with check answers.",
+                "part": "Part 2"
               },
               {
-                "time": "50–95",
-                "title": "Pillar 3: The Val-d'Or Rail Bypass Public Inquiry Hearing (45 mins)",
-                "description": "Step-by-step: examine 4 sworn witness briefs, prepare cross-examination questions, convene the hearing, and deliver the tribunal verdict."
+                "title": "Pillar 3: The Val-d'Or Rail Bypass Public Inquiry Hearing",
+                "description": "Step-by-step: examine 4 sworn witness briefs, prepare cross-examination questions, convene the hearing, and deliver the tribunal verdict.",
+                "part": "Part 3"
               },
               {
-                "time": "95–120",
-                "title": "Pillar 4: Argumentative Debrief & Peer Rhetorical Review (25 mins)",
-                "description": "Peer evaluation on hedging accuracy, evidence presentation, and alignment with FE2 presentation criteria."
+                "title": "Pillar 4: Argumentative Debrief & Peer Rhetorical Review",
+                "description": "Peer evaluation on hedging accuracy, evidence presentation, and alignment with FE2 presentation criteria.",
+                "part": "Part 4"
               }
             ]
           },
@@ -12678,27 +12678,27 @@
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan - Airport Biodiversity & Ecological Coexistence (2 Hours)",
-            "summary": "A 120-minute station-based workshop and treaty tournament combining eco-engineering lexis, regulatory modal grammar, a 3-station rotation, treaty negotiation, and FE2 oral rehearsal.",
+            "summary": "A station-based workshop and treaty tournament combining eco-engineering lexis, regulatory modal grammar, a 3-station rotation, treaty negotiation, and FE2 oral rehearsal.",
             "items": [
               {
-                "time": "00–25",
-                "title": "Pillar 1: Airfield Eco-Engineering Vocabulary (25 mins)",
-                "description": "Explore the Meadow Paradox; complete the interactive 8-term technical summary gap-fill with instant answer reveals."
+                "title": "Pillar 1: Airfield Eco-Engineering Vocabulary",
+                "description": "Explore the Meadow Paradox; complete the interactive 8-term technical summary gap-fill with instant answer reveals.",
+                "part": "Part 1"
               },
               {
-                "time": "25–50",
-                "title": "Pillar 2: Grammar Clinic • Modals of Obligation & Necessity (25 mins)",
-                "description": "Study regulatory modal formulas; complete 4 interactive gap-fill exercises matching modal strength to safety rules."
+                "title": "Pillar 2: Grammar Clinic • Modals of Obligation & Necessity",
+                "description": "Study regulatory modal formulas; complete 4 interactive gap-fill exercises matching modal strength to safety rules.",
+                "part": "Part 2"
               },
               {
-                "time": "50–95",
-                "title": "Pillar 3: Interactive Stations & Land-Use Treaty Tournament (45 mins)",
-                "description": "Step-by-step: rotate through 3 technology stations, negotiate the 500-hectare zoning treaty, and sign the Tri-Party Accord."
+                "title": "Pillar 3: Interactive Stations & Land-Use Treaty Tournament",
+                "description": "Step-by-step: rotate through 3 technology stations, negotiate the 500-hectare zoning treaty, and sign the Tri-Party Accord.",
+                "part": "Part 3"
               },
               {
-                "time": "95–120",
-                "title": "Pillar 4: FE2 Oral Presentation Rehearsal & Sign-Off (25 mins)",
-                "description": "Deliver 2-minute timed partner pitch dry runs against the FE2 rubric and confirm final teacher validation."
+                "title": "Pillar 4: FE2 Oral Presentation Rehearsal & Sign-Off",
+                "description": "Deliver partner pitch dry runs against the FE2 rubric and confirm final teacher validation.",
+                "part": "Part 4"
               }
             ]
           },
@@ -13286,27 +13286,27 @@
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan - Everyday AI & Workplace Automation (2 Hours)",
-            "summary": "A 120-minute operational workshop moving from automation lexis to active/passive voice grammar drills, a 6-workflow vulnerability audit, Human-in-the-Loop simulation, spoken town hall scrutiny, and FE3 alignment.",
+            "summary": "A operational workshop moving from automation lexis to active/passive voice grammar drills, a 6-workflow vulnerability audit, Human-in-the-Loop simulation, spoken town hall scrutiny, and FE3 alignment.",
             "items": [
               {
-                "time": "00–25",
-                "title": "Pillar 1: Machine Learning & Operational Automation Lexis (25 mins)",
-                "description": "Analyze 8 key AI terms; complete the interactive concept-to-consequence matching drill with check answers."
+                "title": "Pillar 1: Machine Learning & Operational Automation Lexis",
+                "description": "Analyze 8 key AI terms; complete the interactive concept-to-consequence matching drill with check answers.",
+                "part": "Part 1"
               },
               {
-                "time": "25–50",
-                "title": "Pillar 2: Grammar Clinic • Active vs. Passive Voice in Tech (25 mins)",
-                "description": "Master passive voice in system reporting vs active voice for human responsibility; complete 4 interactive conversion drills."
+                "title": "Pillar 2: Grammar Clinic • Active vs. Passive Voice in Tech",
+                "description": "Master passive voice in system reporting vs active voice for human responsibility; complete 4 interactive conversion drills.",
+                "part": "Part 2"
               },
               {
-                "time": "50–95",
-                "title": "Pillar 3: Automation Vulnerability Audit & Town Hall Simulation (45 mins)",
-                "description": "Step-by-step: rank 6 critical workflows, resolve 3 dynamic crisis injects, and lead a spoken town hall defense under employee scrutiny."
+                "title": "Pillar 3: Automation Vulnerability Audit & Town Hall Simulation",
+                "description": "Step-by-step: rank 6 critical workflows, resolve 3 dynamic crisis injects, and lead a spoken town hall defense under employee scrutiny.",
+                "part": "Part 3"
               },
               {
-                "time": "95–120",
-                "title": "Pillar 4: Technical Phrasing Review & FE3 Alignment (25 mins)",
-                "description": "Peer review on passive voice accuracy, calibrate spoken delivery against the FE3 presentation rubric, and confirm topics."
+                "title": "Pillar 4: Technical Phrasing Review & FE3 Alignment",
+                "description": "Peer review on passive voice accuracy, calibrate spoken delivery against the FE3 presentation rubric, and confirm topics.",
+                "part": "Part 4"
               }
             ]
           },
@@ -13811,27 +13811,27 @@
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan - Future Mobility & Clean Energy Transport (2 Hours)",
-            "summary": "A 120-minute visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, practicing predictive certainty grammar, budgeting €100M in regional decarbonization infrastructure, and defending transit choices.",
+            "summary": "A visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, practicing predictive certainty grammar, budgeting €100M in regional decarbonization infrastructure, and defending transit choices.",
             "items": [
               {
-                "time": "00–25",
-                "title": "Pillar 1: Clean Propulsion & Multi-Modal Transit Lexis (25 mins)",
-                "description": "Master 8 alternative propulsion terms (cryogenic hydrogen, fuel-cell, vertiport, catenary electrification) with comparative analysis."
+                "title": "Pillar 1: Clean Propulsion & Multi-Modal Transit Lexis",
+                "description": "Master 8 alternative propulsion terms (cryogenic hydrogen, fuel-cell, vertiport, catenary electrification) with comparative analysis.",
+                "part": "Part 1"
               },
               {
-                "time": "25–50",
-                "title": "Pillar 2: Grammar Clinic • Future Forms & Predictive Certainty (25 mins)",
-                "description": "Calibrate expressions of technical confidence; complete 4 interactive technological forecasts with instant answer check."
+                "title": "Pillar 2: Grammar Clinic • Future Forms & Predictive Certainty",
+                "description": "Calibrate expressions of technical confidence; complete 4 interactive technological forecasts with instant answer check.",
+                "part": "Part 2"
               },
               {
-                "time": "50–95",
-                "title": "Pillar 3: Comparative Showcase & €100M Design Sprint (45 mins)",
-                "description": "Step-by-step: analyze comparative transit models, allocate €100M across 5 options, script stakeholder rebuttals, and pitch to the Council."
+                "title": "Pillar 3: Comparative Showcase & €100M Design Sprint",
+                "description": "Step-by-step: analyze comparative transit models, allocate €100M across 5 options, script stakeholder rebuttals, and pitch to the Council.",
+                "part": "Part 3"
               },
               {
-                "time": "95–120",
-                "title": "Pillar 4: Council Vote & Feasibility Review (25 mins)",
-                "description": "Class votes on the most resilient corridor blueprint; peer feedback on predictive grammar and spoken persuasion."
+                "title": "Pillar 4: Council Vote & Feasibility Review",
+                "description": "Class votes on the most resilient corridor blueprint; peer feedback on predictive grammar and spoken persuasion.",
+                "part": "Part 4"
               }
             ]
           },
@@ -14344,27 +14344,27 @@
           },
           "lessonPlan": {
             "title": "Session 3 Lesson Plan - Technology Ethics & Automated Decisions in AI (2 Hours)",
-            "summary": "A 120-minute Oxford-style regulatory inquiry examining biometric surveillance, predictive profiling, complex concessive grammar, sworn witness depositions, and tribunal deliberations under the EU AI Act.",
+            "summary": "A Oxford-style regulatory inquiry examining biometric surveillance, predictive profiling, complex concessive grammar, sworn witness depositions, and tribunal deliberations under the EU AI Act.",
             "items": [
               {
-                "time": "00–25",
-                "title": "Pillar 1: AI Ethics & Regulatory Governance Lexis (25 mins)",
-                "description": "Classify AI systems into EU AI Act risk tiers; complete the interactive 8-term ethical vocabulary drill with check answers."
+                "title": "Pillar 1: AI Ethics & Regulatory Governance Lexis",
+                "description": "Classify AI systems into EU AI Act risk tiers; complete the interactive 8-term ethical vocabulary drill with check answers.",
+                "part": "Part 1"
               },
               {
-                "time": "25–50",
-                "title": "Pillar 2: Grammar Clinic • Complex Conjunctions & Concessions (25 mins)",
-                "description": "Master high-level formal debate syntax; combine 4 pairs of arguments using concessive clauses with instant solution reveal."
+                "title": "Pillar 2: Grammar Clinic • Complex Conjunctions & Concessions",
+                "description": "Master high-level formal debate syntax; combine 4 pairs of arguments using concessive clauses with instant solution reveal.",
+                "part": "Part 2"
               },
               {
-                "time": "50–95",
-                "title": "Pillar 3: The Project Argus-Eye Public Inquiry Hearing (45 mins)",
-                "description": "Step-by-step: analyze witness depositions, prepare targeted cross-examination challenges, convene the hearing, and deliver the verdict."
+                "title": "Pillar 3: The Project Argus-Eye Public Inquiry Hearing",
+                "description": "Step-by-step: analyze witness depositions, prepare targeted cross-examination challenges, convene the hearing, and deliver the verdict.",
+                "part": "Part 3"
               },
               {
-                "time": "95–120",
-                "title": "Pillar 4: Regulatory Debrief & Argument Evaluation (25 mins)",
-                "description": "Peer review on argumentative rigor, formal register, and alignment with FE3 presentation standards."
+                "title": "Pillar 4: Regulatory Debrief & Argument Evaluation",
+                "description": "Peer review on argumentative rigor, formal register, and alignment with FE3 presentation standards.",
+                "part": "Part 4"
               }
             ]
           },
@@ -14826,27 +14826,27 @@
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan - Biometrics, Digital IDs & Passenger Journey (2 Hours)",
-            "summary": "A 120-minute station-based workshop and treaty tournament combining cryptographic lexis, relative clause grammar, a 3-station technology rotation, treaty negotiation, and FE3 presentation dry runs.",
+            "summary": "A station-based workshop and treaty tournament combining cryptographic lexis, relative clause grammar, a 3-station technology rotation, treaty negotiation, and FE3 presentation dry runs.",
             "items": [
               {
-                "time": "00–25",
-                "title": "Pillar 1: Biometric & Cryptographic Security Lexis (25 mins)",
-                "description": "Trace the cryptographic passenger journey; complete the interactive 8-term data-flow ordering exercise with check answers."
+                "title": "Pillar 1: Biometric & Cryptographic Security Lexis",
+                "description": "Trace the cryptographic passenger journey; complete the interactive 8-term data-flow ordering exercise with check answers.",
+                "part": "Part 1"
               },
               {
-                "time": "25–50",
-                "title": "Pillar 2: Grammar Clinic • Relative Clauses & Precision (25 mins)",
-                "description": "Master comma placement and relative pronouns; complete 4 interactive sentence combination drills with instant solution reveal."
+                "title": "Pillar 2: Grammar Clinic • Relative Clauses & Precision",
+                "description": "Master comma placement and relative pronouns; complete 4 interactive sentence combination drills with instant solution reveal.",
+                "part": "Part 2"
               },
               {
-                "time": "50–95",
-                "title": "Pillar 3: Interactive Stations & Biometric Charter Tournament (45 mins)",
-                "description": "Step-by-step: rotate through 3 technology stations, negotiate the 5-point Passenger Charter, and ratify the international treaty."
+                "title": "Pillar 3: Interactive Stations & Biometric Charter Tournament",
+                "description": "Step-by-step: rotate through 3 technology stations, negotiate the 5-point Passenger Charter, and ratify the international treaty.",
+                "part": "Part 3"
               },
               {
-                "time": "95–120",
-                "title": "Pillar 4: FE3 Final Presentation Rehearsal & Sign-Off (25 mins)",
-                "description": "2-minute timed partner pitch dry runs against the FE3 rubric and final teacher validation of slide decks and topic outlines."
+                "title": "Pillar 4: FE3 Final Presentation Rehearsal & Sign-Off",
+                "description": "partner pitch dry runs against the FE3 rubric and final teacher validation of slide decks and topic outlines.",
+                "part": "Part 4"
               }
             ]
           },
@@ -15448,34 +15448,34 @@
             "summary": "A 2-hour interactive communicative session featuring an aviation news opening, foundational vocabulary diagnostic, the Global Aviation Survey, a regulatory modals clinic, an EU261 disruption role-play, a policy mini-debate, and a 10-minute closing vocabulary consolidation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Course Entry Warm-Up Check (10 mins)",
-                "description": "Opening 10-minute warm-up: discuss recent global aviation headlines followed by rapid spot-checking of essential everyday aviation concepts (landside vs airside, airline vs aerodrome operator, scheduled vs charter, delay vs cancellation)."
+                "title": "Part 1: Aviation News & Course Entry Warm-Up Check",
+                "description": "Opening warm-up: discuss recent global aviation headlines followed by rapid spot-checking of essential everyday aviation concepts (landside vs airside, airline vs aerodrome operator, scheduled vs charter, delay vs cancellation).",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Part 2: The Global Aviation Survey (25 mins)",
-                "description": "Speed-dating interviews: paired discussions on 4 prominent commercial dilemmas (in-flight alcohol caps, low-cost carrier fees, cockpit defense, and space tourism ethics) using formal phrases to express viewpoints and justify opinions."
+                "title": "Part 2: The Global Aviation Survey",
+                "description": "Speed-dating interviews: paired discussions on 4 prominent commercial dilemmas (in-flight alcohol caps, low-cost carrier fees, cockpit defense, and space tourism ethics) using formal phrases to express viewpoints and justify opinions.",
+                "part": "Part 2"
               },
               {
-                "time": "35-60",
-                "title": "Part 3: Language Focus: Modals of Obligation, Permission & Prohibition (25 mins)",
-                "description": "Contrast must, have to, be required to, be prohibited from, and be authorized to. Practice with an interactive 'Spot the Regulatory Flaw' challenge analyzing aerodrome safety rules."
+                "title": "Part 3: Language Focus: Modals of Obligation, Permission & Prohibition",
+                "description": "Contrast must, have to, be required to, be prohibited from, and be authorized to. Practice with an interactive 'Spot the Regulatory Flaw' challenge analyzing aerodrome safety rules.",
+                "part": "Part 3"
               },
               {
-                "time": "60-85",
-                "title": "Part 4: Operational Dilemma: EU261 & Delay Disruption Case Study (25 mins)",
-                "description": "Concourse role-play: Ground Liaison / AFISO Trainee and Frustrated Passenger resolve a 4-hour delay crisis at a regional aerodrome, practicing de-escalation and statutory passenger entitlements."
+                "title": "Part 4: Operational Dilemma: EU261 & Delay Disruption Case Study",
+                "description": "Concourse role-play: Ground Liaison / AFISO Trainee and Frustrated Passenger resolve a 4-hour delay crisis at a regional aerodrome, practicing de-escalation and statutory passenger entitlements.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Part 5: Station Mini-Debate & Spoken Consensus Briefing (25 mins)",
-                "description": "Small-group debate: 'Should all commercial aerodromes ban alcohol sales before boarding?' Teams deliver a structured 60-second verbal spokesperson briefing summarizing their consensus."
+                "title": "Part 5: Station Mini-Debate & Spoken Consensus Briefing",
+                "description": "Small-group debate: 'Should all commercial aerodromes ban alcohol sales before boarding?' Teams deliver a structured 60-second verbal spokesperson briefing summarizing their consensus.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Final 10-minute consolidation: rapid recall of the 30 introductory terms, word stress and syllable drill, personal learning reflection, and portfolio logging."
+                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
+                "description": "Final consolidation: rapid recall of the 30 introductory terms, word stress and syllable drill, personal learning reflection, and portfolio logging.",
+                "part": "Part 6"
               }
             ]
           },
@@ -16288,34 +16288,34 @@
             "summary": "A 2-hour communicative session exploring passenger terminal architecture, airside movement areas, directional prepositions, apron safety role-play, airfield markings, and a 10-minute vocabulary consolidation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Session 1 Catch-Up Spot-Check (10 mins)",
-                "description": "Opening 10-minute warm-up: discuss recent international airport technology headlines, followed by rapid paired recall of Session 1 key vocabulary (unruly passenger, ancillary revenue, EU261, TAT)."
+                "title": "Part 1: Aviation News & Session 1 Catch-Up Spot-Check",
+                "description": "Opening warm-up: discuss recent international airport technology headlines, followed by rapid paired recall of Session 1 key vocabulary (unruly passenger, ancillary revenue, EU261, TAT).",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Part 2: Passenger Terminal Flow & Facilitation Dilemmas (25 mins)",
-                "description": "Trace the 5-stage passenger journey from curb to gate, followed by paired discussion and agreement scoring on biometric screening ethics and baggage automation."
+                "title": "Part 2: Passenger Terminal Flow & Facilitation Dilemmas",
+                "description": "Trace the 5-stage passenger journey from curb to gate, followed by paired discussion and agreement scoring on biometric screening ethics and baggage automation.",
+                "part": "Part 2"
               },
               {
-                "time": "35-60",
-                "title": "Part 3: Language Focus: Prepositions of Place, Direction & Movement (25 mins)",
-                "description": "Contrast static positions (at, in, on) with traversal motion (across, along, through, onto). Practice with an interactive 'Spot the Preposition Flaw' challenge."
+                "title": "Part 3: Language Focus: Prepositions of Place, Direction & Movement",
+                "description": "Contrast static positions (at, in, on) with traversal motion (across, along, through, onto). Practice with an interactive 'Spot the Preposition Flaw' challenge.",
+                "part": "Part 3"
               },
               {
-                "time": "60-85",
-                "title": "Part 4: Operational Case Study: Unauthorized Apron Access (25 mins)",
-                "description": "Airside radio role-play: Aerodrome Ground Liaison / AFISO Trainee and Ramp Service Lead coordinate to intercept and de-escalate a disoriented passenger on the active apron."
+                "title": "Part 4: Operational Case Study: Unauthorized Apron Access",
+                "description": "Airside radio role-play: Aerodrome Ground Liaison / AFISO Trainee and Ramp Service Lead coordinate to intercept and de-escalate a disoriented passenger on the active apron.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Part 5: Airfield Guidance Markings & Spoken Briefing (25 mins)",
-                "description": "Workshop on runway magnetic headings (09/27), taxiway centerlines, and holding points. Small groups deliver a structured 60-second verbal safety briefing."
+                "title": "Part 5: Airfield Guidance Markings & Spoken Briefing",
+                "description": "Workshop on runway magnetic headings (09/27), taxiway centerlines, and holding points. Small groups deliver a structured 60-second verbal safety briefing.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Final 10-minute consolidation: rapid recall of the 30 terms, word stress and syllable drill, personal learning reflection, and portfolio logging."
+                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
+                "description": "Final consolidation: rapid recall of the 30 terms, word stress and syllable drill, personal learning reflection, and portfolio logging.",
+                "part": "Part 6"
               }
             ]
           },
@@ -17140,34 +17140,34 @@
             "summary": "A 2-hour communicative session featuring an aviation news opening, previous session vocabulary spot-checking, the turnaround timeline, airside vehicle defining games, ramp safety cause-effect language, collaborative AFISO/operations simulations, shift handover briefings, and a 10-minute vocabulary consolidation review.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News, Current Events & Session 2 Vocabulary Spot-Check (10 mins)",
-                "description": "Opening 10-minute warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 2 vocabulary (passenger terminal flow, security checkpoints, runway designators, taxiway markings)."
+                "title": "Part 1: Aviation News, Current Events & Session 2 Vocabulary Spot-Check",
+                "description": "Opening warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 2 vocabulary (passenger terminal flow, security checkpoints, runway designators, taxiway markings).",
+                "part": "Part 1"
               },
               {
-                "time": "10-25",
-                "title": "Part 2: The Turnaround Clock & Apron Narrative (15 mins)",
-                "description": "Explore the critical 35-to-45-minute turnaround window. Contrast Past Simple and Present Perfect to describe completed vs. pending ramp milestones (e.g. \"Flight BA342 landed at 14:15, but handlers have not closed the cargo doors yet\")."
+                "title": "Part 2: The Turnaround Clock & Apron Narrative",
+                "description": "Explore the critical 35-to-45-minute turnaround window. Contrast Past Simple and Present Perfect to describe completed vs. pending ramp milestones (e.g. \"Flight BA342 landed at 14:15, but handlers have not closed the cargo doors yet\").",
+                "part": "Part 2"
               },
               {
-                "time": "25-55",
-                "title": "Part 3: Airside Vehicles (GSE) Master Index & Defining Game (30 mins)",
-                "description": "Examine the 10 core ground support vehicles. Students practice communicative defining language using relative clauses and purpose frames (designed to, fitted with, used for) in an interactive paired mystery vehicle challenge."
+                "title": "Part 3: Airside Vehicles (GSE) Master Index & Defining Game",
+                "description": "Examine the 10 core ground support vehicles. Students practice communicative defining language using relative clauses and purpose frames (designed to, fitted with, used for) in an interactive paired mystery vehicle challenge.",
+                "part": "Part 3"
               },
               {
-                "time": "55-80",
-                "title": "Part 4: Apron Safety, Turnaround Bottlenecks & Cause-Effect Linkers (25 mins)",
-                "description": "Analyze common ramp delays (fuel spills, FOD, belt loader breakdowns). Build high-yield B2 cause and effect statements using due to, owing to, as a result, consequently, and led to."
+                "title": "Part 4: Apron Safety, Turnaround Bottlenecks & Cause-Effect Linkers",
+                "description": "Analyze common ramp delays (fuel spills, FOD, belt loader breakdowns). Build high-yield B2 cause and effect statements using due to, owing to, as a result, consequently, and led to.",
+                "part": "Part 4"
               },
               {
-                "time": "80-110",
-                "title": "Part 5: Operations Simulation & Shift Handover Briefing (30 mins)",
-                "description": "Paired role-play simulation: Ground Coordinator and TSEEAC Aerodrome Operations Officer (AFISO) resolve three simultaneous bottlenecks at Stand Charlie-4. Students deliver a structured 60-second verbal shift handover."
+                "title": "Part 5: Operations Simulation & Shift Handover Briefing",
+                "description": "Paired role-play simulation: Ground Coordinator and TSEEAC Aerodrome Operations Officer (AFISO) resolve three simultaneous bottlenecks at Stand Charlie-4. Students deliver a structured 60-second verbal shift handover.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Final 10-minute consolidation: rapid recall of the 18 turnaround terms, word stress and pronunciation spot-checking, personal portfolio reflection, and study log update."
+                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
+                "description": "Final consolidation: rapid recall of the 18 turnaround terms, word stress and pronunciation spot-checking, personal portfolio reflection, and study log update.",
+                "part": "Part 6"
               }
             ]
           },
@@ -18051,34 +18051,34 @@
             "summary": "A 2-hour communicative session featuring an aviation news opening, Session 3 turnaround spot-checking, the aviation roles overview, functional responsibility and authority grammar drills, 'Day in the Life' role handoffs, a winter weather operational dilemma debate, and a 10-minute vocabulary consolidation review.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News, Current Events & Session 3 Spot-Check (10 mins)",
-                "description": "Opening 10-minute warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader)."
+                "title": "Part 1: Aviation News, Current Events & Session 3 Spot-Check",
+                "description": "Opening warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader).",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Part 2: Aviation Roles Across the Industry (20 mins)",
-                "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities."
+                "title": "Part 2: Aviation Roles Across the Industry",
+                "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities.",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Part 3: Functional Grammar Focus: Responsibilities, Duties & Jurisdiction (20 mins)",
-                "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts."
+                "title": "Part 3: Functional Grammar Focus: Responsibilities, Duties & Jurisdiction",
+                "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts.",
+                "part": "Part 3"
               },
               {
-                "time": "50-75",
-                "title": "Part 4: Role-Play Simulation: 'A Day in the Life' Operational Handoffs (25 mins)",
-                "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between Turnaround Coordinator <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Duty Manager <-> Ramp Supervisor."
+                "title": "Part 4: Role-Play Simulation: 'A Day in the Life' Operational Handoffs",
+                "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between Turnaround Coordinator <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Duty Manager <-> Ramp Supervisor.",
+                "part": "Part 4"
               },
               {
-                "time": "75-110",
-                "title": "Part 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
-                "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Argue priorities, negotiate trade-offs, and establish a consensus sequence."
+                "title": "Part 5: Aviation Career Forum & Operational Dilemma Debate",
+                "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Argue priorities, negotiate trade-offs, and establish a consensus sequence.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Final 10-minute consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update."
+                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
+                "description": "Final consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update.",
+                "part": "Part 6"
               }
             ]
           },
@@ -18931,2574 +18931,856 @@
           "session": 1,
           "objectives": {
             "title": "Session 1 Objectives - Aerodynamics & Flight Principles",
-            "summary": "By the end of this session, you will be able to explain the four fundamental forces of flight, describe the three aircraft axes and their corresponding control surfaces, use cause-and-effect conditionals accurately, and communicate aerodynamic flight scenarios with professional B2 fluency.",
+            "summary": "By the end of this session, you will be able to explain how an aircraft wing generates lift, deploy cause-and-effect phrasal verbs to connect pilot control inputs to aerodynamic reactions, simulate a high-altitude stall buffet recovery sequence, and deliver a spoken radio briefing to Air Traffic Control.",
             "items": [
               {
                 "num": 1,
-                "title": "Explain the Four Forces of Flight in Equilibrium",
-                "description": "Describe how lift, weight, thrust, and drag interact during straight-and-level flight, climbs, descents, and turns without technical jargon."
+                "title": "Master Aerodynamic & Flight Physics Lexis",
+                "description": "Define and pronounce 8 essential terms including camber, angle of attack, boundary layer, stagnation point, and induced drag."
               },
               {
                 "num": 2,
-                "title": "Identify the Three Aircraft Axes and Primary Flight Controls",
-                "description": "Accurately name and describe the lateral (pitch / elevators), longitudinal (roll / ailerons), and vertical (yaw / rudder) axes."
+                "title": "Deploy Cause-and-Effect Grammar in Flight Physics",
+                "description": "Master linkers and phrasal verbs ('results in', 'leads to', 'acts upon', 'due to + noun') to describe aerodynamic reactions with precision."
               },
               {
                 "num": 3,
-                "title": "Deploy Cause & Effect Conditionals in Flight Physics",
-                "description": "Formulate zero and first conditionals with if, when, as, and unless to explain aerodynamic consequences and speed-drag dynamics."
+                "title": "Simulate a High-Altitude Stall Recovery Sequence",
+                "description": "Pair up as Pilot Flying and Pilot Monitoring to troubleshoot an unexpected buffet at FL370 and execute stall recovery standard operating procedures."
               },
               {
                 "num": 4,
-                "title": "Engage in Control Surface & Flight Simulation Role-Plays",
-                "description": "Role-play flight control inputs and aerodynamic feedback between pilots and flight test engineers in interactive partner games."
-              },
-              {
-                "num": 5,
-                "title": "Analyze Stall Dynamics and Operational Recovery Briefings",
-                "description": "Discuss angle of attack, boundary layer separation, stall warning systems, and recovery actions in clear, professional English."
+                "title": "Deliver a Spoken Emergency Radio Briefing & FE2 Alignment",
+                "description": "Deliver a clear, professional emergency radio broadcast to Air Traffic Control and peer-evaluate technical fluency for Formative Evaluation 2."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 1 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour communicative session featuring an aviation news warm-up, flight forces diagnostic, cause-and-effect language clinic, the 3-axes kinesthetic simulation, an operational stall scenario, and vocabulary consolidation.",
+            "title": "Session 1 Lesson Plan - Aerodynamics & Flight Principles (2 Hours)",
+            "summary": "A structured communicative syllabus moving from aerodynamic lexis discovery and cause-and-effect grammar drills to a paired flight deck stall buffet simulation and emergency radio call.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Course Entry Warm-Up Check (10 mins)",
-                "description": "Weekly aviation news warm-up and diagnostic spot-check connecting Module 1 aerodrome operations to airborne flight physics."
+                "part": "Part 1",
+                "title": "Pillar 1: Aerodynamic Lexis & Pronunciation",
+                "description": "Explore 8 core terms, practice phonetic syllable stress (/ˈkæm.bər/, /ˈeɪ.lə.rɒn/), and complete the interactive definition matching challenge."
               },
               {
-                "time": "10-30",
-                "title": "Part 2: The Four Forces & Airflow Quick Check (20 mins)",
-                "description": "Interactive vocabulary matching: connecting lift, thrust, weight, drag, airfoil camber, and angle of attack to real flight phases."
+                "part": "Part 2",
+                "title": "Pillar 2: Technical Grammar Clinic • Cause & Effect",
+                "description": "Analyze the ❌ 'due to + verb' operational trap, study the ✅ professional B2 model, and complete 4 sentence transformation drills."
               },
               {
-                "time": "30-50",
-                "title": "Part 3: Language Focus: Cause & Effect Linkers (20 mins)",
-                "description": "Expressing aerodynamic consequences with conditionals and causal connectors (if, when, as a result of, leads to, unless)."
+                "part": "Part 3",
+                "title": "Pillar 3: Flight Deck Stall Buffet Simulation",
+                "description": "Step-by-step roleplay: Captain and First Officer diagnose instrument discrepancies, call out recovery inputs, and broadcast an emergency descent to ATC."
               },
               {
-                "time": "50-80",
-                "title": "Part 4: The 3 Axes & Control Surfaces Game / Role-Play (30 mins)",
-                "description": "Interactive kinesthetic 'Human Flight Simulator' game and pilot-to-flight-test-engineer debriefing role-play."
-              },
-              {
-                "time": "80-110",
-                "title": "Part 5: Aerodynamic Dilemma: High-Altitude Stall Recovery (30 mins)",
-                "description": "Operational case study: analyzing stall warnings, high-altitude buffeting, and crew communication during flight envelope excursions."
-              },
-              {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Pronunciation stress practice (aero-DY-na-mics, cam-ber, sta-bi-LI-zer, ai-ler-on) and personal learning log entry."
+                "part": "Part 4",
+                "title": "Pillar 4: Consolidation & FE2 Alignment",
+                "description": "2-minute spoken peer challenge explaining how lift is generated using target words; review FE2 evaluation criteria."
               }
             ]
           },
-          "lessonContent": {
-            "hero": {
-              "title": "Aerodynamics & Flight Principles",
-              "subtitle": "The Four Forces of Flight, The Three Axes & Aerodynamic Control Surfaces",
-              "image": "images/aas_m2card1.jpg",
-              "level": "CEFR B2",
-              "role": "Flight Crew / Flight Test Engineer & ATCO",
-              "duration": "120 Minutes"
-            },
-            "openingSession": {
-              "modeBadges": [
-                "👥 Aerodynamic Spot-Check",
-                "⏱️ 5 min pairs + 5 min plenary",
-                "🎯 Flight Physics Quick Check"
-              ],
-              "instructions": [
-                "Step 1 (Aviation Headlines - 3 mins): In pairs, discuss the opening news bullet on composite winglets and stall training advisories. Why are airlines prioritizing aerodynamics for both fuel economy and safety?",
-                "Step 2 (Aerodynamics Quick Check - 4 mins): Test each other on the 4 foundational flight physics questions below without viewing the answers.",
-                "Step 3 (Verify & Clarify - 3 mins): Click \"Reveal Answer\" to check explanations. Clarify the essential difference between pitch attitude (horizon reference) and angle of attack (relative wind reference)."
-              ],
-              "deliverable": "Accurately explain the difference between Angle of Attack and Pitch Attitude during the instructor spot-check.",
-              "teacherNotes": "Use a model aircraft or your hands to demonstrate pitch attitude vs. relative wind and angle of attack. Ensure students realize AoA can exceed critical limit even in nose-low attitudes.",
-              "title": "Activity 1: Aviation News & Principles Warm-Up (10 mins)",
-              "summary": "Opening 10-minute warm-up examining current aerospace headlines and testing foundational aerodynamic concepts.",
-              "newsPrompts": [
-                "Airlines evaluate next-generation winglet retrofits to shave 3% off cruise fuel burn on transatlantic routes.",
-                "FAA issues updated training advisory for transport category pilots on high-altitude stall recognition and recovery.",
-                "Manufacturers test blended-wing-body prototypes offering up to 30% drag reduction for future commercial transports."
-              ],
-              "diagnostic": {
-                "title": "Aerodynamics Vocabulary Quick Check",
-                "instructions": "Discuss each question in pairs before revealing the operational distinction:",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "What is the critical difference between 'Angle of Attack' (AoA) and 'Pitch Attitude'?",
-                    "answer": "Pitch attitude is the angle of the aircraft's longitudinal axis relative to the horizon. Angle of attack (AoA) is the angle between the wing's chord line and the oncoming relative airflow. An aircraft can be in a nose-down attitude and still exceed the critical AoA!"
-                  },
-                  {
-                    "id": 2,
-                    "q": "How does 'induced drag' differ from 'parasitic drag' as an aircraft accelerates?",
-                    "answer": "Parasitic drag (friction and form drag) increases with the square of airspeed. Induced drag is the penalty for generating lift and decreases as airspeed increases. Total drag is minimized at the best glide speed (L/D max)."
-                  },
-                  {
-                    "id": 3,
-                    "q": "Which primary flight control surface produces yaw, and around which axis does it rotate?",
-                    "answer": "The rudder produces yaw, rotating the aircraft around its vertical (normal) axis. It is controlled by the pilot's rudder pedals."
-                  },
-                  {
-                    "id": 4,
-                    "q": "What occurs aerodynamically when an airfoil exceeds its critical angle of attack?",
-                    "answer": "The smooth boundary layer airflow separates from the upper wing surface, creating turbulent eddies, causing an abrupt loss of lift and a severe increase in drag—a stall."
-                  }
-                ]
-              }
-            },
-            "forcesPrinciples": {
-              "modeBadges": [
-                "⚖️ Force Balance Analysis",
-                "⏱️ 8 min study + 12 min paired explanation",
-                "🎯 Technical Equilibrium B2"
-              ],
-              "instructions": [
-                "Step 1 (Force Vector Review - 8 mins): Study the 4 forces interactive cards. Review the aerodynamic definitions, equilibrium equations, and how each vector acts on the aircraft center of gravity.",
-                "Step 2 (Maneuver Vector Challenge - 8 mins): In pairs, describe what happens to the vectors in 3 specific flight regimes: (1) Steady Climb, (2) 45-degree Coordinated Turn, (3) Clean Power-Off Glide.",
-                "Step 3 (Spoken Debrief - 4 mins): Volunteer or answer the teacher spot-check by explaining why total lift must increase during a banked turn to maintain altitude."
-              ],
-              "deliverable": "Clearly explain the force balance equations for both level flight and a banked turn in technical B2 English.",
-              "teacherNotes": "Emphasize that lift acts perpendicular to the flight path / relative wind, while weight acts toward Earth's center. In a turn, vertical component of lift balances weight, requiring increased total lift (load factor / G-load).",
-              "title": "Activity 2: The Four Forces in Equilibrium & Maneuvers (20 mins)",
-              "summary": "Analyze the 4 forces acting on an aircraft and explain how pilots create unbalance to maneuver.",
-              "forces": [
-                {
-                  "name": "Lift (L)",
-                  "badge": "Upward Aerodynamic Force",
-                  "formula": "L = 1/2 · ρ · V² · S · CL",
-                  "description": "Generated by the pressure differential created across the cambered airfoil (lower pressure above, higher pressure below) as air flows across the wing.",
-                  "operationalNote": "In straight-and-level unaccelerated flight, Lift equals Weight (L = W). In a banked turn, lift must increase to maintain altitude."
-                },
-                {
-                  "name": "Weight / Gravity (W)",
-                  "badge": "Downward Force",
-                  "formula": "W = mass · gravity",
-                  "description": "The downward gravitational pull directed toward the center of the Earth, acting continuously through the aircraft Center of Gravity (CG).",
-                  "operationalNote": "Weight varies continuously in flight as fuel is burned, changing the aircraft's stall speed, climb performance, and landing reference speeds (Vref)."
-                },
-                {
-                  "name": "Thrust (T)",
-                  "badge": "Forward Propulsive Force",
-                  "formula": "T = mass flow · acceleration",
-                  "description": "The forward force produced by the engines (turbofans, turboprops, or pistons) pushing air rearward to propel the aircraft through the air mass.",
-                  "operationalNote": "In steady unaccelerated level flight, Thrust equals Drag (T = D). Excess thrust allows the aircraft to climb or accelerate."
-                },
-                {
-                  "name": "Drag (D)",
-                  "badge": "Rearward Retarding Force",
-                  "formula": "D = D(parasitic) + D(induced)",
-                  "description": "The natural aerodynamic resistance force acting parallel and opposite to the direction of motion through the atmosphere.",
-                  "operationalNote": "Parasitic drag comes from skin friction, antennas, and form drag; induced drag is generated by high-pressure air curling around wingtips into vortices."
-                }
-              ]
-            },
-            "grammarClinic": {
-              "modeBadges": [
-                "⚡ Cause & Effect Workshop",
-                "⏱️ 8 min grammar + 12 min drills",
-                "🎯 Technical Precision"
-              ],
-              "instructions": [
-                "Step 1 (Aerodynamic Conditionals - 8 mins): Review the grammatical formulas for scientific invariants (Zero Conditional: If + present $\\rightarrow$ present) and operational contingencies (First Conditional: If + present $\\rightarrow$ will + verb).",
-                "Step 2 (Interactive Sentence Drills - 7 mins): Complete the 4 fill-in-the-blank causal sentences, selecting the correct connector (unless, due to, results in, provided that).",
-                "Step 3 (Peer Verification - 5 mins): Compare answers with your partner. Say each sentence aloud with natural sentence stress on key aerodynamic terms before clicking \"Reveal Answer\"."
-              ],
-              "deliverable": "Flawlessly formulate 4 conditional aerodynamic statements with correct tense agreement and causal connectors.",
-              "teacherNotes": "Warn students against common errors: using \"will\" in the if-clause (\"If airspeed will drop...\" ❌) and confusing \"due to\" (requires noun) with \"because\" (requires clause).",
-              "title": "Activity 3: Language Focus: Cause & Effect in Flight Physics (20 mins)",
-              "summary": "Mastering conditional structures and causal connectors to explain aerodynamic phenomena in plain B2 English.",
-              "structures": [
-                {
-                  "pattern": "Zero / First Conditionals (Physical Rules & Operational Truths)",
-                  "examples": [
-                    "If the angle of attack exceeds 16 degrees, the wing stalls immediately.",
-                    "When airspeed drops below Vapp, the flight control computers will trigger an audio stall warning."
-                  ]
-                },
-                {
-                  "pattern": "Causal Verbs & Prepositional Connectors",
-                  "examples": [
-                    "Deploying wingtip sharklets reduces induced drag, thereby improving cruise fuel burn.",
-                    "High density altitude results in longer takeoff ground rolls due to reduced air density."
-                  ]
-                }
-              ],
-              "drills": [
-                {
-                  "id": 1,
-                  "prompt": "Combine using 'As a result of': The airflow separates from the upper wing surface. The aircraft loses lift rapidly.",
-                  "answer": "As a result of airflow separating from the upper wing surface, the aircraft loses lift rapidly."
-                },
-                {
-                  "id": 2,
-                  "prompt": "Combine using 'Unless': The pilot increases engine thrust. The aircraft will not be able to maintain altitude in a steep turn.",
-                  "answer": "Unless the pilot increases engine thrust, the aircraft will not be able to maintain altitude in a steep turn."
-                },
-                {
-                  "id": 3,
-                  "prompt": "Combine using 'leads to': Cold air is denser than warm air. Cold weather creates shorter takeoff distances.",
-                  "answer": "Cold air is denser than warm air, which leads to shorter takeoff distances."
-                }
-              ]
-            },
-            "axesGame": {
-              "modeBadges": [
-                "🎮 Kinesthetic Simulator & Role-Play",
-                "⏱️ 12 min game + 18 min pilot debrief",
-                "🗣️ Dynamic Control Surfaces"
-              ],
-              "instructions": [
-                "Step 1 (Kinesthetic Simulator Game - 12 mins): Partner A acts as Pilot Flying giving control commands (\"Applying left rudder to counter crosswind\"); Partner B acts as Aircraft, demonstrating the physical motion with their hands and naming the axis and surface movement. Swap roles after 6 minutes.",
-                "Step 2 (Role-Play Briefing - 10 mins): Partner A takes Role Card 1 (Flight Test Captain); Partner B takes Role Card 2 (Avionics & Flight Control Engineer). Simulate a post-flight debrief analyzing flight control feedback, trimming issues, or crosswind control authority.",
-                "Step 3 (Class Demo - 8 mins): One pair demonstrates an uncoordinated flight scenario (skid/slip) and explains the corrective rudder-aileron input to the class."
-              ],
-              "deliverable": "A 2-minute fluent pilot-to-engineer debrief detailing control surface deflections and aircraft axis reactions.",
-              "teacherNotes": "This high-energy activity builds muscular and spatial memory. Ensure students use correct technical verbs: deflect, pivot, rotate, yaw, roll, pitch up/down. Check for proper preposition use (around the vertical axis).",
-              "title": "Activity 4: The 3 Axes & Control Surfaces Game / Role-Play (30 mins)",
-              "summary": "Interactive 'Human Flight Simulator' kinesthetic game and pilot-to-flight-test-engineer debrief role-play.",
-              "axes": [
-                {
-                  "axis": "Lateral Axis (Pitch)",
-                  "direction": "Runs from wingtip to wingtip through the Center of Gravity.",
-                  "movement": "Pitch Up / Pitch Down (Nose rises or falls).",
-                  "controlSurface": "Elevators (mounted on the horizontal stabilizer).",
-                  "cockpitInput": "Pulling back or pushing forward on the control column / sidestick."
-                },
-                {
-                  "axis": "Longitudinal Axis (Roll)",
-                  "direction": "Runs from the aircraft nose cone to the tail cone.",
-                  "movement": "Roll / Bank (Wings tilt left or right).",
-                  "controlSurface": "Ailerons (on the trailing edge of outer wings) + Roll Spoilers.",
-                  "cockpitInput": "Turning the control yoke or deflecting the sidestick laterally."
-                },
-                {
-                  "axis": "Vertical / Normal Axis (Yaw)",
-                  "direction": "Runs vertically through the top and bottom of the fuselage.",
-                  "movement": "Yaw (Nose points left or right relative to flight path).",
-                  "controlSurface": "Rudder (hinged to the vertical fin).",
-                  "cockpitInput": "Pressing the left or right rudder pedals on the cockpit floor."
-                }
-              ],
-              "roleplayCards": [
-                {
-                  "role": "Test Pilot",
-                  "prompt": "You are testing control sensitivity on a flight test. Report unusual flutter on the ailerons when rolling into a 30-degree bank and explain the aerodynamic feeling to your engineer."
-                },
-                {
-                  "role": "Flight Test Engineer",
-                  "prompt": "Ask the pilot specific questions about airspeed, trim position, and elevator feedback during the maneuver. Propose a checklist verification."
-                }
-              ]
-            },
-            "stallScenario": {
-              "modeBadges": [
-                "🚨 Cockpit Emergency Case Study",
-                "⏱️ 8 min reading + 15 min crew response + 7 min debrief",
-                "🎯 Standard Operating Procedures"
-              ],
-              "instructions": [
-                "Step 1 (Scenario Analysis - 8 mins): Read the authentic flight deck incident transcript. Identify the dangerous aerodynamic misconception made by the First Officer (confusing altitude loss with pitch attitude).",
-                "Step 2 (Cockpit Communication & Callouts - 15 mins): In pairs, role-play the cockpit crew communication. Draft the Captain's clear callouts (\"STALL, I have control, pitching down\") and the First Officer's verbal confirmations.",
-                "Step 3 (Cockpit Debrief Role-Play - 7 mins): Role-play the debrief between Captain and FO after leveling off at FL330. Address crew resource management (CRM), sensor iced-over pitot tubes, and aerodynamic AoA awareness."
-              ],
-              "deliverable": "A clear 3-step cockpit communication script followed by an authentic 2-minute cockpit CRM debrief.",
-              "teacherNotes": "Reference high-profile real-world accidents (AF447, Colgan 3407) where pulling back on the stick stalled the aircraft into the ground or ocean. Reinforce the aerodynamic invariant: The only way to recover from a stall is to reduce the angle of attack below the critical limit.",
-              "title": "Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence (30 mins)",
-              "summary": "Team case study analyzing stall warnings, stick-shaker activation, and crew coordination during atmospheric turbulence.",
-              "scenarioText": "Cruising at FL370 in turbulent air near the equator, Flight 204 encounters severe mountain wave downdrafts. The airspeed drops rapidly toward the low-speed buffet boundary. Suddenly, the master warning chimes and the stick-shaker vibrates violently. The junior First Officer reflexively pulls back on the sidestick, increasing the angle of attack.",
-              "tasks": [
-                "Identify the dangerous aerodynamic error made by the First Officer and explain why pulling back worsens a stall.",
-                "Practice the clear standard aviation English callouts the Captain and First Officer use to coordinate recovery (pitching down, leveling wings, advancing thrust smoothly).",
-                "Role-play the cockpit debrief after recovering safe airspeed and stabilizing at FL330."
-              ]
-            },
-            "closingReview": {
-              "modeBadges": [
-                "🏁 Final Technical Wrap-Up",
-                "⏱️ 5 min audit + 5 min pronunciation",
-                "🎯 Aerodynamic Vocabulary Mastery"
-              ],
-              "instructions": [
-                "Step 1 (Core Checkpoints Audit - 5 mins): In pairs, run through the 3 technical checkpoints. Confirm you can explain the 4 forces, 3 axes, and stall recovery without hesitation.",
-                "Step 2 (Pronunciation Rapid Fire - 3 mins): Drill the tricky multisyllabic aerodynamic terms (ae-ro-dy-NAM-ic, al-ti-tude, e-qui-LIB-ri-um, hor-i-ZON-tal, sta-bi-LI-zer).",
-                "Step 3 (Self-Study Assignment - 2 mins): Review the 18 vocabulary flashcards in the Revision tab and complete the 5 TOEIC questions for Session 1 before Session 2."
-              ],
-              "deliverable": "Verbally confirm mastery of the 3 technical checkpoints and demonstrate accurate stress placement on key aerodynamic terms.",
-              "teacherNotes": "Quickly drill the class on word stress for \"aerodynamics\" (stress on NAM) and \"equilibrium\" (stress on LIB). Preview Session 2: Aircraft Anatomy (internal systems and external walkarounds).",
-              "title": "Activity 6: Vocabulary Review & Class Wrap-Up (10 mins)",
-              "summary": "Consolidate the 18 key aerodynamic terms, verify pronunciation stress, and prepare for Session 2 Aircraft Anatomy.",
-              "checkpoints": [
-                "Can you explain the 4 forces of flight and how they balance in level cruise?",
-                "Can you name the 3 axes of rotation and their corresponding primary control surfaces without hesitating?",
-                "Can you use cause-and-effect linkers (leads to, results in, unless, if) when describing aerodynamic stall conditions?"
-              ]
-            }
-          },
           "revision": {
-            "title": "Session 1 Revision - Aerodynamics & Flight Principles",
-            "summary": "Master the 18 core vocabulary terms for Aerodynamics & Flight Principles to discuss the four forces, aircraft axes, and flight control surfaces.",
+            "title": "Session 1: Aerodynamics & Flight Principles",
+            "summary": "Review the 18 specialized terms for airflow physics, aerofoils, and flight forces to build your spoken technical accuracy.",
             "terms": [
               {
-                "num": "01",
-                "term": "Lift",
-                "definition": "The aerodynamic upward force generated by the wings perpendicular to the relative airflow, overcoming weight."
-              },
-              {
-                "num": "02",
-                "term": "Thrust",
-                "definition": "The forward force produced by the engines that overcomes aerodynamic drag."
-              },
-              {
-                "num": "03",
-                "term": "Weight",
-                "definition": "The downward gravitational force pulling the aircraft toward the Earth, directly opposed by lift."
-              },
-              {
-                "num": "04",
-                "term": "Drag",
-                "definition": "The retarding aerodynamic resistance force acting parallel and opposite to the direction of flight."
-              },
-              {
-                "num": "05",
-                "term": "Angle of Attack (AoA)",
-                "definition": "The acute angle formed between the chord line of the airfoil and the oncoming relative wind."
-              },
-              {
-                "num": "06",
-                "term": "Airfoil",
-                "definition": "A streamlined surface, such as an aircraft wing or rotor blade, designed to create lift as air flows over it."
-              },
-              {
-                "num": "07",
                 "term": "Camber",
-                "definition": "The convex asymmetry or curvature between the upper and lower surfaces of an airfoil."
+                "ipa": "/ˈkæm.bər/",
+                "definition": "The asymmetry between the upper and lower surfaces of an aerofoil.",
+                "french": "Courbure (d'un profil)"
               },
               {
-                "num": "08",
+                "term": "Angle of Attack (AoA)",
+                "ipa": "/ˌæŋ.ɡəl əv əˈtæk/",
+                "definition": "The acute angle between the wing chord line and the oncoming relative wind.",
+                "french": "Angle d'attaque / incidence"
+              },
+              {
                 "term": "Boundary Layer",
-                "definition": "The thin layer of air immediately adjacent to the aircraft surface where viscous forces slow the airflow."
+                "ipa": "/ˈbaʊn.dər.i ˈleɪ.ər/",
+                "definition": "The thin layer of slower-moving air immediately adjacent to the aircraft skin.",
+                "french": "Couche limite"
               },
               {
-                "num": "09",
-                "term": "Stall",
-                "definition": "A sudden reduction in lift caused by exceeding the critical angle of attack, resulting in airflow separation from the upper wing."
+                "term": "Stagnation Point",
+                "ipa": "/stæɡˈneɪ.ʃən pɔɪnt/",
+                "definition": "The point on the leading edge where local airflow velocity drops to zero.",
+                "french": "Point d'arrêt"
               },
               {
-                "num": "10",
-                "term": "Lateral Axis",
-                "definition": "The imaginary horizontal line running wingtip-to-wingtip around which the aircraft pitches up or down."
+                "term": "Induced Drag",
+                "ipa": "/ɪnˈdjuːst dræɡ/",
+                "definition": "Drag generated as an inevitable by-product of creating aerodynamic lift.",
+                "french": "Traînée induite"
               },
               {
-                "num": "11",
-                "term": "Longitudinal Axis",
-                "definition": "The imaginary line running from nose to tail around which the aircraft rolls or banks."
+                "term": "Aerodynamic Stall",
+                "ipa": "/ˌeə.rəʊ.daɪˈnæm.ɪk stɔːl/",
+                "definition": "Sudden loss of lift caused by airflow separation above the critical angle of attack.",
+                "french": "Décrochage aérodynamique"
               },
               {
-                "num": "12",
-                "term": "Vertical Axis",
-                "definition": "The imaginary vertical line running top-to-bottom through the center of gravity around which the aircraft yaws."
+                "term": "Center of Pressure",
+                "ipa": "/ˈsen.tər əv ˈpreʃ.ər/",
+                "definition": "The point along the wing chord where the total aerodynamic force acts.",
+                "french": "Centre de poussée"
               },
               {
-                "num": "13",
-                "term": "Pitch",
-                "definition": "The rotational movement around the lateral axis causing the nose of the aircraft to move up or down."
+                "term": "Aspect Ratio",
+                "ipa": "/ˈæs.pekt ˈreɪ.ʃi.əʊ/",
+                "definition": "The ratio of the wingspan to the mean wing chord.",
+                "french": "Allongement (d'une aile)"
               },
               {
-                "num": "14",
-                "term": "Roll",
-                "definition": "The rotational movement around the longitudinal axis causing the aircraft wings to bank left or right."
+                "term": "Parasite Drag",
+                "ipa": "/ˈpær.ə.saɪt dræɡ/",
+                "definition": "Total drag caused by friction and form, unrelated to lift generation.",
+                "french": "Traînée parasite"
               },
               {
-                "num": "15",
-                "term": "Yaw",
-                "definition": "The rotational movement around the vertical axis causing the aircraft nose to turn left or right."
+                "term": "Chord Line",
+                "ipa": "/kɔːd laɪn/",
+                "definition": "The imaginary straight line connecting the leading and trailing edges of an aerofoil.",
+                "french": "Corde (de profil)"
               },
               {
-                "num": "16",
-                "term": "Elevator",
-                "definition": "The movable horizontal flight control surface on the tail empennage used to control pitch."
+                "term": "Vortex",
+                "ipa": "/ˈvɔː.teks/",
+                "definition": "A whirling mass of air generated at the wingtips by pressure differentials.",
+                "french": "Tourbillon marginal / vortex"
               },
               {
-                "num": "17",
-                "term": "Aileron",
-                "definition": "A hinged control surface on the trailing edge of each wing used to control roll and banking."
+                "term": "Laminar Flow",
+                "ipa": "/ˈlæm.ɪ.nər fləʊ/",
+                "definition": "Smooth, orderly airflow in parallel layers over the aerofoil surface.",
+                "french": "Écoulement laminaire"
               },
               {
-                "num": "18",
-                "term": "Rudder",
-                "definition": "The primary vertical flight control surface hinged to the fin used to control yaw."
+                "term": "Turbulent Flow",
+                "ipa": "/ˈtɜː.bjə.lənt fləʊ/",
+                "definition": "Disordered, swirling airflow that increases skin friction drag.",
+                "french": "Écoulement turbulent"
+              },
+              {
+                "term": "Critical Angle",
+                "ipa": "/ˈkrɪt.ɪ.kəl ˈæŋ.ɡəl/",
+                "definition": "The angle of attack beyond which maximum lift is exceeded and stall begins.",
+                "french": "Angle critique / incidence de décrochage"
+              },
+              {
+                "term": "Airflow Separation",
+                "ipa": "/ˈeə.fləʊ ˌsep.ərˈeɪ.ʃən/",
+                "definition": "Detachment of the boundary layer from the wing surface during a stall.",
+                "french": "Décollement des filets d'air"
+              },
+              {
+                "term": "Buffet",
+                "ipa": "/ˈbʌf.ɪt/",
+                "definition": "Aerodynamic vibration felt on the airframe when approaching a stall.",
+                "french": "Buffeting / tremblement aérodynamique"
+              },
+              {
+                "term": "Pitch Attitude",
+                "ipa": "/pɪtʃ ˈæt.ɪ.tjuːd/",
+                "definition": "The orientation of the aircraft longitudinal axis relative to the horizon.",
+                "french": "Assiette à cabrer / piquer"
+              },
+              {
+                "term": "Relative Wind",
+                "ipa": "/ˈrel.ə.tɪv wɪnd/",
+                "definition": "The direction of oncoming airflow relative to the aircraft motion.",
+                "french": "Vent relatif"
               }
             ]
           },
           "materials": {
-            "videos": [
-              {
-                "title": "Video 1: The Four Forces of Flight Simply Explained",
-                "watchUrl": "https://www.youtube.com/watch?v=5ltjFEei3AI",
-                "tag": "Flight Physics",
-                "videoId": "5ltjFEei3AI",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/5ltjFEei3AI",
-                "caption": "Focus: Watch how lift, weight, thrust, and drag achieve aerodynamic equilibrium in steady flight."
-              },
-              {
-                "title": "Video 2: Primary Flight Controls: Ground Lesson",
-                "watchUrl": "https://www.youtube.com/watch?v=LZFehDh7LxI",
-                "tag": "Flight Controls",
-                "videoId": "LZFehDh7LxI",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/LZFehDh7LxI",
-                "caption": "Focus: Master the 3 axes of rotation (pitch, roll, yaw) and how elevators, ailerons, and rudder manipulate airflow."
-              },
-              {
-                "title": "Video 3: What Causes an Airplane to Stall?",
-                "watchUrl": "https://www.youtube.com/watch?v=hIv-BLf6PoE",
-                "tag": "Flight Safety",
-                "videoId": "hIv-BLf6PoE",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/hIv-BLf6PoE",
-                "caption": "Focus: Examine critical angle of attack (AOA), airflow detachment from the upper camber, stick-shakers, and recovery technique."
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Aerodynamic Engineering",
-                "sourceTag": "Aviation Today",
-                "heading": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
-                "snippet": "Examine how blended winglets and sharklets manage high-pressure wingtip vortices, reducing induced drag by up to 5% on commercial flights.",
-                "url": "https://www.aviationtoday.com",
-                "readTime": "Estimated read: 4-5 mins"
-              },
-              {
-                "topic": "Flight Safety Operations",
-                "sourceTag": "Flight Safety Foundation",
-                "heading": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
-                "snippet": "Review how angle of attack sensors, stick shakers, and fly-by-wire flight envelope protection prevent catastrophic boundary layer separation.",
-                "url": "https://flightsafety.org",
-                "readTime": "Estimated read: 5-6 mins"
-              }
-            ],
-            "resources": [
-              {
-                "url": "https://www.grc.nasa.gov/www/k-12/airplane/index.html",
-                "tag": "01 • Flight Physics",
-                "name": "NASA Glenn Beginner's Guide to Aeronautics",
-                "desc": "Official educational guides on Bernoulli's principle, lift equations, and airfoil camber."
-              },
-              {
-                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
-                "tag": "02 • Flight Manual",
-                "name": "FAA Pilot's Handbook of Aeronautical Knowledge",
-                "desc": "Chapter 5: Aerodynamics of flight, aircraft stability, and stall/spin recovery procedures."
-              },
-              {
-                "url": "https://ocw.mit.edu",
-                "tag": "03 • Academic Courses",
-                "name": "MIT OpenCourseWare Flight Dynamics",
-                "desc": "Open aerospace engineering lecture notes on boundary layer control and drag polar curves."
-              },
-              {
-                "url": "https://aircraft.airbus.com/en/services/maintain/fast-technical-magazine",
-                "tag": "04 • Airbus Engineering",
-                "name": "Airbus FAST Magazine: Aerodynamic Optimization",
-                "desc": "In-depth technical articles on sharklet wingtip designs and laminar flow aerodynamics."
-              },
-              {
-                "url": "https://www.boeing.com/commercial/aeromagazine",
-                "tag": "05 • Boeing Technology",
-                "name": "Boeing AERO Magazine: Fuel & Drag Reduction",
-                "desc": "Engineering case studies on surface finishes, drag cleanup, and flight control optimization."
-              },
-              {
-                "url": "https://www.skybrary.aero/articles/aerodynamic-stall",
-                "tag": "06 • Safety Portal",
-                "name": "Skybrary: Aerodynamic Stall & Angle of Attack",
-                "desc": "Operational aviation safety portal on stall warning margins, stick-shakers, and recovery."
-              }
-            ],
             "grammar": {
-              "title": "Cause-and-Effect Structures & Conditional Relationships in Flight Physics",
-              "badge": "Flight Physics",
-              "patternTitle": "Aero Cause & Effect Formula",
-              "formula": "Due to / As a result of + Noun Phrase, [Consequence] || If + Present, [Result]",
-              "rulesTitle": "Core Communicative Guidelines",
+              "title": "Cause-and-Effect Structures & Phrasal Verbs in Flight Physics",
+              "badge": "Flight Physics Grammar",
+              "patternTitle": "Cause & Effect Formula",
+              "formula": "Due to + Noun Phrase, [Consequence] || [Action], resulting in / leading to + Noun",
+              "rulesTitle": "Key Technical Rules",
               "rules": [
-                "<strong style=\"color: #1e293b;\">1. Cause & Prepositional Linkers (Due to / Owing to / Because of):</strong> Introduces aerodynamic forces triggering an outcome (<em>'Due to increased camber, airflow accelerates over the upper surface'</em>).",
-                "<strong style=\"color: #1e293b;\">2. Result Linkers (Consequently / As a result / Leading to):</strong> Links physical actions to reactions (<em>'Air pressure decreases above the wing, consequently generating lift'</em>).",
-                "<strong style=\"color: #1e293b;\">3. Zero Conditional (Scientific Invariants):</strong> Expresses universal physical laws (<em>'If the angle of attack exceeds 15 degrees, the airflow separates and the wing stalls'</em>).",
-                "<strong style=\"color: #1e293b;\">4. First Conditional (Operational Contingencies):</strong> Expresses flight deck actions (<em>'If airspeed drops below Vref during approach, the flight crew will advance the throttles immediately'</em>)."
+                "<strong style=\"color: #1e293b;\">1. 'Due to' vs. 'Because':</strong> <em>'Due to'</em> must be followed by a noun or noun phrase (<em>'Due to boundary layer separation...'</em>). <em>'Because'</em> introduces a full subject + verb clause.",
+                "<strong style=\"color: #1e293b;\">2. Participle Result Clauses:</strong> Use <em>', resulting in...'</em> or <em>', leading to...'</em> to express an immediate physical consequence (<em>'Flaps extend, resulting in increased camber'</em>).",
+                "<strong style=\"color: #1e293b;\">3. Active Aerodynamic Verbs:</strong> Use active scientific verbs: <em>accelerates</em>, <em>separates</em>, <em>acts upon</em>, <em>dissipates</em>."
               ],
-              "trap": "⚠️ TOEIC Part 5 Cause Linker Alert: 'Due to' and 'because of' MUST be followed by a noun or noun phrase. 'Because' and 'since' are conjunctions followed by a subject + verb clause.",
-              "examplesTitle": "Authentic Operational Examples",
+              "trap": "⚠️ Operational Trap: Never say 'Due to the wing stalled'. Say 'Due to the stall' or 'Because the wing stalled'.",
+              "examplesTitle": "Authentic Cockpit Examples",
               "examples": [
-                "Due to boundary layer separation at high angles of attack, the aircraft experiences severe aerodynamic buffeting.",
-                "If the pilot increases pitch attitude without adding thrust, airspeed will decay rapidly."
+                "Due to high-altitude turbulence, airspeed decayed rapidly, leading to aerodynamic buffeting.",
+                "As pitch attitude increased beyond 16 degrees, airflow separated from the upper wing skin."
               ]
             },
-            "toeicQuestions": [
-              {
-                "stem": "Because the aircraft was climbing rapidly, the pilots had to increase engine thrust in order to maintain ________ over the wings.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "lifting"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "lift"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "lifted"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "lifter"
-                  }
-                ],
-                "correctLetter": "B",
-                "correctText": "lift",
-                "analysis": "The transitive verb 'maintain' requires a direct object noun phrase. 'Lift' functions as the aerodynamic noun representing the upward aerodynamic force opposing aircraft weight.",
-                "strategy": "After transitive verbs like 'maintain', 'generate', 'produce', or 'increase', look for the primary technical noun rather than participle or agentive forms.",
-                "id": 1
-              },
-              {
-                "stem": "When turbulent air forces the angle of attack beyond its critical limit, a sudden loss of lift ________.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "occurred"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "occurring"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "occurs"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "to occur"
-                  }
-                ],
-                "correctLetter": "C",
-                "correctText": "occurs",
-                "analysis": "This sentence states a factual law of aerodynamics (zero conditional). In factual cause-and-effect statements governed by 'when + present simple', the main clause takes the present simple ('occurs').",
-                "strategy": "Conditionals expressing scientific facts or aerodynamic principles take present simple in both clauses (When + V1 -> V1).",
-                "id": 2
-              },
-              {
-                "stem": "The rudder, which controls movement around the vertical axis, is hinged ________ the trailing edge of the vertical stabilizer.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "to"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "at"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "with"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "by"
-                  }
-                ],
-                "correctLetter": "A",
-                "correctText": "to",
-                "analysis": "The participle/adjective 'hinged' pairs idiomatically with the preposition 'to' when describing physical attachment to another structure ('hinged to the vertical stabilizer').",
-                "strategy": "Watch for fixed mechanical and anatomical collocations: hinged to, mounted on/along, attached to, connected with.",
-                "id": 3
-              },
-              {
-                "stem": "________ the flight crew recognizes the onset of a stall early, recovery can be accomplished with minimal loss of altitude.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "In spite of"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "Provided that"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "Due to"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "Whereas"
-                  }
-                ],
-                "correctLetter": "B",
-                "correctText": "Provided that",
-                "analysis": "'Provided that' is a conditional conjunction equivalent to 'on the condition that' or 'only if', introducing a full finite clause ('the flight crew recognizes...'). 'In spite of' and 'Due to' require noun phrases, while 'Whereas' indicates a contrast.",
-                "strategy": "Check whether the blank is followed by a full clause (subject + verb) or a noun phrase. 'Provided that' must be followed by a complete clause.",
-                "id": 4
-              },
-              {
-                "stem": "Airlines install lightweight composite winglets primarily to reduce induced drag, ________ overall fuel efficiency.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "improve"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "improved"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "improves"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "improving"
-                  }
-                ],
-                "correctLetter": "D",
-                "correctText": "improving",
-                "analysis": "The present participle clause 'improving overall fuel efficiency' expresses an attendant result or consequence of the primary action ('to reduce induced drag').",
-                "strategy": "A comma following a complete main clause often introduces an -ing participle clause indicating result or simultaneous action.",
-                "id": 5
-              }
-            ],
-            "pageUrl": "session1/admat_aas2.html"
+            "toeic": {
+              "stem": "Due to ice accretion along the leading edge, the aircraft ________ severe aerodynamic buffeting prior to the stall warning.",
+              "options": [
+                "A) experienced",
+                "B) experiencing",
+                "C) to experience",
+                "D) was experienced"
+              ],
+              "correctLetter": "A",
+              "correctText": "experienced",
+              "analysis": "The sentence requires a finite past simple verb ('experienced') to complete the main clause following the introductory prepositional phrase.",
+              "strategy": "Identify the main clause subject ('the aircraft') and ensure it has an active, conjugated past verb."
+            },
+            "resources": [],
+            "articles": [],
+            "videos": [],
+            "toeicQuestions": []
+          },
+          "lessonContent": {
+            "hero": {
+              "title": "Aerodynamics & Flight Principles",
+              "subtitle": "AAS Module 2 • Session 1 • Flight Physics, Control Surfaces & Stall Recovery",
+              "image": "images/aas_m2card1.jpg",
+              "badge": "AT Module 2 • Session 1"
+            }
           }
         },
         "2": {
           "session": 2,
           "objectives": {
             "title": "Session 2 Objectives - Aircraft Anatomy: Structure & Systems",
-            "summary": "By the end of this session, you will be able to identify external and internal aircraft parts from diagrams, use spatial prepositions and functional descriptors accurately, conduct a simulated pre-flight exterior walkaround, and report mechanical defects in professional B2 English.",
+            "summary": "By the end of this session, you will be able to identify key airframe components and control surfaces, master spatial prepositions to log exterior maintenance defects, conduct a pre-flight ramp walkaround inspection, and debate a go/no-go dispatch dilemma using an airline Minimum Equipment List (MEL).",
             "items": [
               {
                 "num": 1,
-                "title": "Identify External & Internal Aircraft Components",
-                "description": "Accurately name key airframe components including slats, flaps, ailerons, empennage, radome, landing gear, flight deck instruments, and cabin bulkheads."
+                "title": "Master Airframe & Structural Systems Lexis",
+                "description": "Define and pronounce 8 essential structural terms including empennage, radome, pitot-static probe, leading-edge slat, and static discharger."
               },
               {
                 "num": 2,
-                "title": "Deploy Spatial Prepositions & Functional Descriptors",
-                "description": "Describe the physical position and operational purpose of parts using prepositions (along, behind, flush-mounted, adjacent to) and purpose clauses."
+                "title": "Deploy Spatial Prepositions in Defect Reporting",
+                "description": "Describe exact aircraft component locations with precision prepositions ('on the underside of', 'flush with', 'adjacent to', 'protruding from')."
               },
               {
                 "num": 3,
-                "title": "Perform a 360-Degree Pre-Flight Walkaround Inspection Role-Play",
-                "description": "Simulate a captain or maintenance engineer inspecting the airframe, identifying foreign object damage (FOD), leaks, and structural dents."
+                "title": "Conduct a Ramp Walkaround & MEL Dispatch Triage",
+                "description": "Role-play as Captain and Chief Ground Engineer to inspect two discovered airframe defects and consult the MEL under departure pressure."
               },
               {
                 "num": 4,
-                "title": "Communicate Cockpit & Cabin Defect Handovers",
-                "description": "Discuss whether unserviceable components violate the Minimum Equipment List (MEL) and agree on dispatch decisions."
-              },
-              {
-                "num": 5,
-                "title": "Master High-Frequency Structural Pronunciation",
-                "description": "Correctly pronounce and stress specialized aeronautical components without hesitating during oral interactions."
+                "title": "Execute Technical Logbook Sign-Off & FE2 Alignment",
+                "description": "Formulate an official spoken aircraft release or grounding statement and peer-review structural description accuracy."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 2 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour communicative session combining aviation news, an airframe diagram labeling challenge, spatial grammar clinic, a 360-degree walkaround inspection simulation, MEL defect handovers, and pronunciation drills.",
+            "title": "Session 2 Lesson Plan - Aircraft Anatomy: Structure & Systems (2 Hours)",
+            "summary": "A practical technical syllabus covering airframe components, spatial defect reporting grammar, an exterior ramp inspection simulation, and an MEL go/no-go dispatch decision.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Session 1 Aerodynamics Spot-Check (10 mins)",
-                "description": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes."
+                "part": "Part 1",
+                "title": "Pillar 1: Airframe Structural Lexis & Pronunciation",
+                "description": "Examine 8 key airframe terms, master syllable stress (/ˌɑːm.pəˈnɑːʒ/, /ˈreɪ.dəʊm/), and complete the airframe location matching drill."
               },
               {
-                "time": "10-35",
-                "title": "Part 2: Airframe Diagram Labeling Race (25 mins)",
-                "description": "Collaborative visual diagram race: identifying and labeling external control surfaces and internal cabin/cockpit zones."
+                "part": "Part 2",
+                "title": "Pillar 2: Technical Grammar Clinic • Spatial Defect Reporting",
+                "description": "Contrast the ❌ vague description trap with the ✅ precise B2 engineering model; complete 4 maintenance sentence transformation drills."
               },
               {
-                "time": "35-55",
-                "title": "Part 3: Language Focus: Spatial Prepositions & Functions (20 mins)",
-                "description": "Describing locations and mechanical functions using relative clauses and spatial prepositions (situated along, mounted to, designed to)."
+                "part": "Part 3",
+                "title": "Pillar 3: Ramp Walkaround Inspection & MEL Triage",
+                "description": "Paired simulation: Captain and Line Engineer evaluate a missing static wick and a hydraulic actuator drip 35 minutes before departure."
               },
               {
-                "time": "55-85",
-                "title": "Part 4: Pre-Flight Walkaround Inspection Role-Play (30 mins)",
-                "description": "Captain & Ramp Maintenance Engineer simulation: performing an exterior walkaround and reporting simulated defects."
-              },
-              {
-                "time": "85-110",
-                "title": "Part 5: Cockpit & Cabin Defect Handover Workshop (25 mins)",
-                "description": "Consulting the Minimum Equipment List (MEL) to negotiate dispatch decisions for inoperative cabin or airframe items."
-              },
-              {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Pronunciation stress practice (fu-se-lage, emp-en-nage, hy-drau-lic, ra-dome) and vocabulary log consolidation."
+                "part": "Part 4",
+                "title": "Pillar 4: Consolidation & FE2 Alignment",
+                "description": "Spoken defect description challenge: describe imaginary damage on a hidden component; review FE2 evaluation criteria."
               }
             ]
           },
-          "lessonContent": {
-            "hero": {
-              "title": "Aircraft Anatomy: Structure & Systems",
-              "subtitle": "External Airframe Components, Flight Deck Controls & Pre-Flight Walkaround Inspections",
-              "image": "images/aas_m2card2.jpg",
-              "level": "CEFR B2",
-              "role": "Flight Crew / Line Maintenance Engineer",
-              "duration": "120 Minutes"
-            },
-            "openingSession": {
-              "modeBadges": [
-                "⚡ Opening Warm-Up & News Scan",
-                "⏱️ 3 min news + 4 min quick check + 3 min verification",
-                "🎯 Aerodynamics to Anatomy Transition"
-              ],
-              "instructions": [
-                "Step 1 (Maintenance Headlines - 3 mins): Read the three weekly maintenance and structural headlines. Identify the airframe component most vulnerable to composite fatigue.",
-                "Step 2 (Session 1 Review Check - 4 mins): Answer the 4 review questions covering forces in equilibrium and control surfaces without consulting Session 1 notes.",
-                "Step 3 (Pair Verification - 3 mins): Compare your responses with your wingman. Toggle answers to verify technical precision and aerodynamic terminology."
-              ],
-              "deliverable": "Verbally answer all 4 spot-check questions with technical accuracy using correct aviation vocabulary.",
-              "teacherNotes": "Ensure students connect Session 1's aerodynamic concepts (pitch, roll, yaw, lift) to the physical surfaces examined today (elevators, ailerons, rudder, flaps, slats).",
-              "title": "Activity 1: Aviation News & Session 1 Spot-Check (10 mins)",
-              "summary": "Opening news debrief followed by a rapid-fire check on aerodynamics from Session 1.",
-              "newsPrompts": [
-                "Airbus introduces lightweight titanium-printed hydraulic brackets to save airframe weight on new deliveries.",
-                "EASA mandates ultrasonic inspections of horizontal stabilizer attach pins across regional turboprop fleets.",
-                "Airport ground handler in London penalized after conveyor belt loader strikes engine cowling during pushback."
-              ],
-              "diagnostic": {
-                "title": "Session 1 Knowledge Check",
-                "instructions": "Confirm these 4 points before beginning aircraft anatomy:",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "Which control surface controls roll, and where is it located on the wing?",
-                    "answer": "Ailerons control roll; they are hinged to the trailing edge of each outer wing and move in opposite directions."
-                  },
-                  {
-                    "id": 2,
-                    "q": "What is the difference between leading-edge slats and trailing-edge flaps?",
-                    "answer": "Slats extend from the leading edge to delay stall at high angles of attack; flaps extend from the trailing edge to increase both lift and drag at low speeds."
-                  },
-                  {
-                    "id": 3,
-                    "q": "Why are pitot tubes and static ports heated electrically?",
-                    "answer": "To prevent atmospheric ice accumulation from blocking dynamic and static pressure sensing, which would cause false airspeed indications."
-                  },
-                  {
-                    "id": 4,
-                    "q": "What is the radome, and what sensitive equipment does it protect?",
-                    "answer": "The radome is the fiberglass dielectric nose cone that shields the weather radar antenna from aerodynamic weather without blocking radar signals."
-                  }
-                ]
-              }
-            },
-            "diagramLabeling": {
-              "modeBadges": [
-                "✈️ Aircraft Components & Anatomy",
-                "⏱️ 5 min diagram review + 15 min peer-teaching + 5 min plenary check",
-                "🎯 External Airframe Structural Vocabulary"
-              ],
-              "instructions": [
-                "Step 1 (Component Scan - 5 mins): Examine the 12 external aircraft components in the visual diagram. Review their English names, physical locations, and primary functions.",
-                "Step 2 (Peer-Teaching Walkthrough - 15 mins): In pairs, Student A describes a component's physical location and operational purpose without naming it; Student B identifies the part and its primary failure mode. Then swap.",
-                "Step 3 (Plenary Quick-Fire - 5 mins): Rapid-fire quiz on component abbreviations (APU, RAT, VOR/LOC, Pitot probes, static ports). Confirm precise technical pronunciation."
-              ],
-              "deliverable": "Accurately describe the location, function, and pre-flight inspection checkpoint for at least 4 airframe components to your partner.",
-              "teacherNotes": "Emphasize correct stress on aviation compound nouns: PITOT probe, HORIZONTAL stabilizer, VORTEX generator, RADOME. Watch for confusion between flaps (lift augmentation) and spoilers (lift dumping).",
-              "title": "Activity 2: Airframe Anatomy Labeling Challenge (25 mins)",
-              "summary": "Identify and describe the key external parts and internal zones of a commercial transport aircraft.",
-              "externalParts": [
-                {
-                  "id": "01",
-                  "name": "Radome (Nose Cone)",
-                  "location": "Forward fuselage tip",
-                  "purpose": "Houses weather radar antenna; made of RF-transparent composites."
-                },
-                {
-                  "id": "02",
-                  "name": "Pitot-Static Probes",
-                  "location": "Forward side fuselage",
-                  "purpose": "Measures dynamic ram air and ambient atmospheric pressure for flight instruments."
-                },
-                {
-                  "id": "03",
-                  "name": "Fuselage",
-                  "location": "Central main body",
-                  "purpose": "Pressurized tube holding passengers, flight crew, and lower cargo holds."
-                },
-                {
-                  "id": "04",
-                  "name": "Leading-Edge Slats",
-                  "location": "Front edge of wings",
-                  "purpose": "Extend forward and down to increase camber and delay stall during takeoff and landing."
-                },
-                {
-                  "id": "05",
-                  "name": "Trailing-Edge Flaps",
-                  "location": "Inboard rear wing",
-                  "purpose": "Extend backward and down to increase wing surface area, generating high lift and drag."
-                },
-                {
-                  "id": "06",
-                  "name": "Ailerons",
-                  "location": "Outboard rear wing",
-                  "purpose": "Deflect differentially (one up, one down) to roll the aircraft into a bank."
-                },
-                {
-                  "id": "07",
-                  "name": "Roll Spoilers & Speed Brakes",
-                  "location": "Upper wing surface",
-                  "purpose": "Deploy upward to dump lift, assist roll, and act as airbrakes during descent and rollout."
-                },
-                {
-                  "id": "08",
-                  "name": "Engine Nacelle & Pylon",
-                  "location": "Underwing pylons",
-                  "purpose": "Aerodynamic housing and structural mounting holding the turbofan engine."
-                },
-                {
-                  "id": "09",
-                  "name": "Main & Nose Landing Gear",
-                  "location": "Undercarriage bay",
-                  "purpose": "Absorbs landing impact with oleo-pneumatic struts; retractable with steering nosewheel."
-                },
-                {
-                  "id": "10",
-                  "name": "Vertical Fin & Rudder",
-                  "location": "Tail empennage",
-                  "purpose": "Vertical fin provides directional stability; hinged rudder controls aerodynamic yaw."
-                },
-                {
-                  "id": "11",
-                  "name": "Horizontal Stabilizer & Elevators",
-                  "location": "Tail empennage",
-                  "purpose": "Stabilizer provides longitudinal stability; elevators control aircraft pitch."
-                },
-                {
-                  "id": "12",
-                  "name": "Winglets / Sharklets",
-                  "location": "Outer wingtips",
-                  "purpose": "Reduces induced drag by mitigating high-pressure wingtip vortex roll-up."
-                }
-              ]
-            },
-            "spatialClinic": {
-              "modeBadges": [
-                "📐 Technical Language Workshop",
-                "⏱️ 7 min spatial syntax + 8 min description drills + 5 min check",
-                "🎯 Spatial Prepositions & Functional Relative Clauses"
-              ],
-              "instructions": [
-                "Step 1 (Spatial Grammar Analysis - 7 mins): Review the spatial preposition patterns and functional relative clauses ('located aft of', 'mounted flush with', 'which serves to prevent').",
-                "Step 2 (Guided Description Drills - 8 mins): Using the airframe diagram, construct 3 complex sentences locating antennas, sensors, and structural panels relative to major datum lines.",
-                "Step 3 (Peer Verification - 5 mins): Read your descriptions to your partner. They must identify the exact airframe zone based solely on your verbal cues."
-              ],
-              "deliverable": "Produce 3 grammatically sound spoken technical sentences combining spatial prepositions with functional relative clauses.",
-              "teacherNotes": "Drill the prepositional phrases that often cause trouble: 'forward of', 'aft of', 'inboard of', 'outboard of', 'underneath the belly'. Insist on relative clauses: '...which is designed to relieve...', '...through which air flows...'.",
-              "title": "Activity 3: Language Focus: Spatial Prepositions & Functions (20 mins)",
-              "summary": "Formulating clear, professional technical descriptions of aircraft parts and their relative positions.",
-              "patterns": [
-                {
-                  "title": "Precise Spatial Prepositions",
-                  "examples": [
-                    "The auxiliary power unit (APU) is situated inside the tail cone, aft of the rear pressure bulkhead.",
-                    "The ram air turbine (RAT) is flush-mounted beneath the fuselage, ready to deploy into the relative airflow."
-                  ]
-                },
-                {
-                  "title": "Purposive Relative Clauses",
-                  "examples": [
-                    "Flaps are high-lift devices which extend from the trailing edge, serving to decrease landing speeds.",
-                    "The oleo strut is an oleo-pneumatic shock absorber designed to cushion touchdown impacts."
-                  ]
-                }
-              ]
-            },
-            "walkaroundRoleplay": {
-              "modeBadges": [
-                "👨‍✈️ Flight Crew & Ramp Engineer Role-Play",
-                "⏱️ 5 min card study + 20 min bilateral simulation + 5 min debrief",
-                "🎯 Defect Reporting & Technical Dialogue"
-              ],
-              "instructions": [
-                "Step 1 (Defect Briefing - 5 mins): Study the 3 defect scenario cards. Student A takes the role of the Captain conducting the pre-departure walkaround; Student B takes the role of the Ramp Line Maintenance Engineer.",
-                "Step 2 (Spoken Walkaround Simulation - 20 mins): Perform the bilateral spoken inspection dialogue for all defect cards. Captain describes the physical defect observed; Engineer assesses airworthiness and recommends maintenance action or deferral.",
-                "Step 3 (Role Reversal & Debrief - 5 mins): Swap roles for the second scenario. Evaluate whether your dialogue maintained professional aviation decorum and clear technical phraseology."
-              ],
-              "deliverable": "Conduct a realistic walkaround dialogue applying standard aviation terminology for damage (gouges, delamination, hydraulic weeping, bird strike).",
-              "teacherNotes": "Listen for realistic aviation communication: clear, concise, objective. Discourage vague language ('it looks broken'); require specific technical descriptors ('there is hydraulic weeping around the actuator seal', 'delamination extending 3 centimeters').",
-              "title": "Activity 4: Pre-Flight Exterior Walkaround Role-Play (30 mins)",
-              "summary": "Captain & Line Maintenance Engineer simulation: performing a 360-degree exterior walkaround and reporting simulated defects.",
-              "defectCards": [
-                {
-                  "item": "Card 1: Radome Inspection",
-                  "defect": "Circular dent (8 cm diameter) with chipped paint on the lower right radome, likely caused by a bird strike on the previous flight.",
-                  "pilotDialogue": "Ramp, Captain here. I'm looking at a noticeable dent on the lower starboard radome. Could you bring the gauge to check if it's within structural limits?",
-                  "engineerDialogue": "Copy that, Captain. I'll inspect the honeycomb core with a tap hammer to confirm there's no delamination or radar interference."
-                },
-                {
-                  "item": "Card 2: Left Main Landing Gear",
-                  "defect": "Fresh reddish hydraulic fluid dripping slowly (approx. 5 drops per minute) from the brake line fitting onto the brake assembly.",
-                  "pilotDialogue": "We have hydraulic seepage near the port main gear brake line. It looks fresh. Can we get maintenance to torque this fitting?",
-                  "engineerDialogue": "I see it. That's Skydrol hydraulic fluid. Let me wipe it clean, verify the B-nut torque, and run a brake pressurization check."
-                },
-                {
-                  "item": "Card 3: Right Winglet Static Discharger",
-                  "defect": "One of the three trailing static discharger wicks on the right sharklet is broken off and missing.",
-                  "pilotDialogue": "I noticed one static wick missing on the starboard winglet tip. Can we dispatch with two wicks installed?",
-                  "engineerDialogue": "Let me check the Configuration Deviation List (CDL). Under CDL 23-60, flight is permitted with one wick missing provided lightning risk is low."
-                }
-              ]
-            },
-            "cockpitSystemsHandover": {
-              "modeBadges": [
-                "📋 Dispatch & MEL Technical Workshop",
-                "⏱️ 5 min MEL review + 15 min crew deliberation + 5 min dispatch decision",
-                "🎯 Minimum Equipment List & Airworthiness Assessment"
-              ],
-              "instructions": [
-                "Step 1 (MEL Dispatch Framework - 5 mins): Review the 3 maintenance status items in the Minimum Equipment List (MEL) log (APU inoperative, lavatory door latch jammed, weather radar inoperative).",
-                "Step 2 (Crew Deliberation - 15 mins): In pairs, deliberate on each defect. Determine whether the aircraft is: (A) Go / Fit to Dispatch, (B) Go with Operational Limitations, or (C) No-Go / Grounded until rectification.",
-                "Step 3 (Technical Dispatch Briefing - 5 mins): Deliver your final verbal dispatch briefing to the Station Operations Control (SOC) justifying your go/no-go recommendation based on MEL conditions."
-              ],
-              "deliverable": "Present a structured 2-minute verbal dispatch recommendation to the class for all 3 MEL items citing operational restrictions.",
-              "teacherNotes": "Ensure students know what MEL Category A, B, C, and D mean in aviation. Ask: 'Can we dispatch with an inoperative APU if ground power and air start units are available at the destination?' Require technical justification.",
-              "title": "Activity 5: Minimum Equipment List (MEL) Dispatch Workshop (25 mins)",
-              "summary": "Reviewing the Minimum Equipment List (MEL) to make safe dispatch decisions for inoperative equipment.",
-              "melItems": [
-                {
-                  "item": "APU (Auxiliary Power Unit) Generator Inoperative",
-                  "status": "Permitted for 10 days provided both engine generators and external GPU are fully operational."
-                },
-                {
-                  "item": "Passenger Cabin Lavatory Door Latch Jammed",
-                  "status": "Permitted provided the lavatory is locked out, placarded 'INOPERATIVE', and passenger-to-lavatory ratio is respected."
-                },
-                {
-                  "item": "Weather Radar System Inoperative",
-                  "status": "Strictly prohibited if convective storms or IMC (Instrument Meteorological Conditions) are forecast along route."
-                }
-              ]
-            },
-            "closingReview": {
-              "modeBadges": [
-                "🏁 Final Technical Wrap-Up",
-                "⏱️ 5 min pronunciation drill + 5 min portfolio audit",
-                "🎯 Aircraft Anatomy Vocabulary & Syllable Stress"
-              ],
-              "instructions": [
-                "Step 1 (Syllable Stress Drill - 5 mins): Drill the tricky multisyllabic aircraft components (fu-se-LAGE, emp-en-NAGE, hy-DRAU-lic, RA-dome, sta-bi-LI-zer, AI-ler-on). Focus on primary and secondary stress.",
-                "Step 2 (Technical Checkpoints Audit - 3 mins): In pairs, confirm you can name 6 external parts, explain 2 walkaround defect types, and define the purpose of an MEL dispatch item.",
-                "Step 3 (Study Assignment - 2 mins): Review the 18 vocabulary flashcards in the Revision tab and complete the Session 2 TOEIC practice questions before Session 3."
-              ],
-              "deliverable": "Demonstrate accurate pronunciation and primary stress placement on 6 multisyllabic aircraft parts and confirm mastery of key anatomy concepts.",
-              "teacherNotes": "Conduct a choral pronunciation drill for 'fuselage' (/ˈfjuːzəlɑːʒ/) and 'empennage' (/ˌɒmpɪˈnɑːʒ/). Preview Session 3: Commercial Aircraft & Fleet Types (narrow-body, wide-body, regional).",
-              "title": "Activity 6: Vocabulary Review & Class Wrap-Up (10 mins)",
-              "summary": "Drill tricky aeronautical component pronunciation and consolidate learning logs ahead of Session 3.",
-              "wordsToPronounce": [
-                "fu-se-lage",
-                "emp-en-nage",
-                "hy-drau-lic",
-                "ra-dome",
-                "sta-bi-li-zer",
-                "ail-er-on"
-              ],
-              "checkpoints": [
-                "Can you accurately describe the location and function of the radome, pitot probes, APU, and static ports?",
-                "Can you use spatial prepositions (forward of, aft of, mounted flush with) to direct an engineer to an airframe defect?",
-                "Can you evaluate an airframe defect against the Minimum Equipment List (MEL) and justify a dispatch decision?"
-              ]
-            }
-          },
           "revision": {
-            "title": "Session 2 Revision - Aircraft Anatomy: Structure & Systems",
-            "summary": "Master the 18 key vocabulary terms for Aircraft Anatomy to describe airframe structures, control devices, and pre-flight inspections.",
+            "title": "Session 2: Aircraft Anatomy: Structure & Systems",
+            "summary": "Review the 18 specialized terms for aircraft structures, control surfaces, and maintenance components.",
             "terms": [
               {
-                "num": "01",
-                "term": "Fuselage",
-                "definition": "The central main body structure of an aircraft holding passengers, flight crew, and cargo."
-              },
-              {
-                "num": "02",
                 "term": "Empennage",
-                "definition": "The tail assembly of an aircraft, consisting of the vertical fin, rudder, horizontal stabilizer, and elevators."
+                "ipa": "/ˌɑːm.pəˈnɑːʒ/",
+                "definition": "The complete tail assembly of an aircraft, including stabilizers, rudder, and elevator.",
+                "french": "Empennage"
               },
               {
-                "num": "03",
-                "term": "Leading Edge",
-                "definition": "The forwardmost edge of an airfoil or wing that first meets the relative airflow."
-              },
-              {
-                "num": "04",
-                "term": "Trailing Edge",
-                "definition": "The aft rear edge of an airfoil or wing where airflow passing over and under meets."
-              },
-              {
-                "num": "05",
-                "term": "Slats",
-                "definition": "Movable aerodynamic surfaces on the leading edge that extend to delay stall at high angles of attack."
-              },
-              {
-                "num": "06",
-                "term": "Flaps",
-                "definition": "High-lift hinged surfaces on the trailing edge deployed to increase wing surface area and camber during takeoff and landing."
-              },
-              {
-                "num": "07",
-                "term": "Spoiler (Speed Brake)",
-                "definition": "Hinged plates on the upper wing surface that deploy upward to spoil lift and slow the aircraft."
-              },
-              {
-                "num": "08",
-                "term": "Horizontal Stabilizer",
-                "definition": "The fixed or trimmable horizontal tail surface providing longitudinal stability in pitch."
-              },
-              {
-                "num": "09",
-                "term": "Vertical Fin",
-                "definition": "The vertical tail surface that provides directional stability against yaw."
-              },
-              {
-                "num": "10",
-                "term": "Landing Gear",
-                "definition": "The undercarriage assembly (wheels, oleo struts, brakes) supporting the aircraft on the ground."
-              },
-              {
-                "num": "11",
                 "term": "Radome",
-                "definition": "The streamlined fiberglass nose cone protecting the weather radar antenna from aerodynamic weather."
+                "ipa": "/ˈreɪ.dəʊm/",
+                "definition": "The weatherproof aerodynamic nose cone enclosing the forward weather radar antenna.",
+                "french": "Radôme"
               },
               {
-                "num": "12",
-                "term": "Pitot Tube",
-                "definition": "A forward-facing tube mounted on the airframe that measures dynamic ram air pressure for the airspeed indicator."
+                "term": "Pitot-Static Probe",
+                "ipa": "/ˈpiː.təʊ ˈstæt.ɪk prəʊb/",
+                "definition": "Fuselage-mounted sensors measuring dynamic and static air pressure for instruments.",
+                "french": "Sonde anémométrique / tube Pitot"
               },
               {
-                "num": "13",
-                "term": "Static Port",
-                "definition": "A flush-mounted opening on the fuselage side that senses ambient atmospheric pressure for altimeters and VSI."
+                "term": "Leading-Edge Slat",
+                "ipa": "/ˈliː.dɪŋ edʒ slæt/",
+                "definition": "Moveable aerodynamic surfaces extending from the wing leading edge to delay stalls.",
+                "french": "Bec de bord d'attaque"
               },
               {
-                "num": "14",
-                "term": "Sidestick",
-                "definition": "The cockpit hand control stick mounted on the side console used by pilots to send electronic roll and pitch inputs."
+                "term": "Trailing-Edge Flap",
+                "ipa": "/ˈtreɪ.lɪŋ edʒ flæp/",
+                "definition": "High-lift devices mounted on the rear of the wing that increase camber and drag.",
+                "french": "Volet de bord de fuite"
               },
               {
-                "num": "15",
-                "term": "Throttle Quadrant",
-                "definition": "The center cockpit console containing engine thrust levers and reverse thrust triggers."
+                "term": "Aileron",
+                "ipa": "/ˈeɪ.lə.rɒn/",
+                "definition": "Primary flight control surface on the outer trailing edge controlling aircraft roll.",
+                "french": "Aileron"
               },
               {
-                "num": "16",
-                "term": "Flight Deck",
-                "definition": "The cockpit area at the front of the aircraft where the flight crew operates the flight controls and instruments."
+                "term": "Static Discharger",
+                "ipa": "/ˈstæt.ɪk dɪsˈtʃɑː.dʒər/",
+                "definition": "Wicks mounted on wing and tail edges to bleed static electricity into the air.",
+                "french": "Déperditeur de potentiel statique"
               },
               {
-                "num": "17",
-                "term": "Galley",
-                "definition": "The aircraft onboard kitchen area where flight attendants prepare passenger meals and store service carts."
+                "term": "Hydraulic Actuator",
+                "ipa": "/haɪˈdrɒl.ɪk ˈæk.tʃu.eɪ.tər/",
+                "definition": "A mechanical cylinder driven by pressurized fluid to move heavy control surfaces.",
+                "french": "Vérin hydraulique"
               },
               {
-                "num": "18",
-                "term": "Bulkhead",
-                "definition": "A structural vertical dividing wall separating passenger cabins, galleys, or pressurized zones."
+                "term": "Fuselage",
+                "ipa": "/ˈfjuː.zə.lɑːʒ/",
+                "definition": "The central body portion of an aircraft holding passengers, crew, and cargo.",
+                "french": "Fuselage"
+              },
+              {
+                "term": "Winglet",
+                "ipa": "/ˈwɪŋ.lət/",
+                "definition": "Vertical or angled wingtip extension designed to reduce induced drag and vortices.",
+                "french": "Ailette marginale / winglet"
+              },
+              {
+                "term": "Rudder",
+                "ipa": "/ˈrʌd.ər/",
+                "definition": "Hinged vertical control surface on the tail fin controlling aircraft yaw.",
+                "french": "Gouverne de direction"
+              },
+              {
+                "term": "Elevator",
+                "ipa": "/ˈel.ɪ.veɪ.tər/",
+                "definition": "Horizontal control surface on the tailplane controlling aircraft pitch.",
+                "french": "Gouverne de profondeur"
+              },
+              {
+                "term": "Spoiler",
+                "ipa": "/ˈspɔɪ.lər/",
+                "definition": "Plates deployed on the upper wing surface to dump lift and act as speed brakes.",
+                "french": "Destructeur de portance / spoiler"
+              },
+              {
+                "term": "Landing Gear",
+                "ipa": "/ˈlæn.dɪŋ ɡɪər/",
+                "definition": "The undercarriage assembly supporting the aircraft during ground operations.",
+                "french": "Train d'atterrissage"
+              },
+              {
+                "term": "Engine Cowling",
+                "ipa": "/ˈen.dʒɪn ˈkaʊ.lɪŋ/",
+                "definition": "The removable aerodynamic fairing enclosing an aircraft engine.",
+                "french": "Capot moteur"
+              },
+              {
+                "term": "APU (Auxiliary Power Unit)",
+                "ipa": "/ˌeɪ.piːˈjuː/",
+                "definition": "A small gas turbine in the tail providing electrical power and bleed air on ground.",
+                "french": "Groupe auxiliaire de puissance (GAP / APU)"
+              },
+              {
+                "term": "Pylon",
+                "ipa": "/ˈpaɪ.lɒn/",
+                "definition": "The structural mount connecting an engine nacelle to the wing underside.",
+                "french": "Mât de réacteur"
+              },
+              {
+                "term": "De-Icing Boot",
+                "ipa": "/diːˈaɪ.sɪŋ buːt/",
+                "definition": "Pneumatic rubber bladders on leading edges that inflate to break accumulated ice.",
+                "french": "Boudin de dégivrage pneumatique"
               }
             ]
           },
           "materials": {
-            "videos": [
-              {
-                "title": "Video 1: Airbus A320 Preflight: Technical Exterior Walkaround",
-                "watchUrl": "https://www.youtube.com/watch?v=Tdf_Ac7_gwA",
-                "tag": "Pre-Flight",
-                "videoId": "Tdf_Ac7_gwA",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/Tdf_Ac7_gwA",
-                "caption": "Focus: Step-by-step exterior pre-departure walkaround checking pitot-static probes, gear assemblies, tires, and control surfaces."
-              },
-              {
-                "title": "Video 2: How Airplane Flaps and Slats Work",
-                "watchUrl": "https://www.youtube.com/watch?v=fUPNN3N-oDI",
-                "tag": "Airframe Systems",
-                "videoId": "fUPNN3N-oDI",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/fUPNN3N-oDI",
-                "caption": "Focus: Understand trailing-edge flaps and leading-edge slats, hydraulic actuator tracks, camber change, and stall speed reduction."
-              },
-              {
-                "title": "Video 3: Turbofan Architecture: CFM56 Jet Engines",
-                "watchUrl": "https://www.youtube.com/watch?v=S2HymZd3GEE",
-                "tag": "Propulsion",
-                "videoId": "S2HymZd3GEE",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/S2HymZd3GEE",
-                "caption": "Focus: Inspect the compressor stages, combustion chamber, turbine blades, bypass ratio, and thrust generation in modern turbofans."
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Airframe Technology",
-                "sourceTag": "Aerospace Manufacturing",
-                "heading": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
-                "snippet": "How carbon-fiber-reinforced polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion and reduce empty weight.",
-                "url": "https://www.aero-mag.com",
-                "readTime": "Estimated read: 4-5 mins"
-              },
-              {
-                "topic": "Line Maintenance",
-                "sourceTag": "Aviation Maintenance Magazine",
-                "heading": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
-                "snippet": "A practical guide for ramp engineers and line pilots identifying structural damage on engine cowlings, radomes, and leading edges.",
-                "url": "https://www.av-maint.com",
-                "readTime": "Estimated read: 5-6 mins"
-              }
-            ],
-            "resources": [
-              {
-                "url": "https://www.skybrary.aero/articles/flight-control-surfaces",
-                "tag": "01 • Flight Controls",
-                "name": "Skybrary: Aircraft Flight Control Surfaces",
-                "desc": "Comprehensive encyclopedia entries on primary and secondary flight control systems."
-              },
-              {
-                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/aircraft_airframe_handbook",
-                "tag": "02 • Airframe Engineering",
-                "name": "FAA AMT Airframe Handbook (FAA-H-8083-31A)",
-                "desc": "Authoritative technical manual on aircraft structures, composite repairs, and hydraulics."
-              },
-              {
-                "url": "https://aircraft.airbus.com/en/aircraft",
-                "tag": "03 • Airbus Specifications",
-                "name": "Airbus Aircraft Family Technical Data",
-                "desc": "Official payload, dimensions, and structural specifications for the A220, A320, and A350 families."
-              },
-              {
-                "url": "https://www.boeing.com/commercial",
-                "tag": "04 • Boeing Engineering",
-                "name": "Boeing Commercial Airplanes Technical Highlights",
-                "desc": "Detailed structural diagrams and systems overview of the 737 MAX and 787 Dreamliner."
-              },
-              {
-                "url": "https://www.easa.europa.eu",
-                "tag": "05 • Maintenance Standards",
-                "name": "EASA Part-66 Aircraft Maintenance Standards",
-                "desc": "European airworthiness regulations and syllabus requirements for airframe certifications."
-              },
-              {
-                "url": "https://www.rolls-royce.com/products-and-services/civil-aerospace.aspx",
-                "tag": "06 • Engine Architecture",
-                "name": "Rolls-Royce Trent Engine Cutaway & Architecture",
-                "desc": "Interactive visualization and explanatory guides on high-bypass turbofan components."
-              }
-            ],
             "grammar": {
-              "title": "Spatial Prepositions & Passive Voice for Pre-Flight Defect Reporting",
-              "badge": "Line Operations",
-              "patternTitle": "Aircraft Inspection Formula",
-              "formula": "Subject + is/are/was/were + Past Participle (+ Prepositional Location)",
-              "rulesTitle": "Core Communicative Guidelines",
+              "title": "Spatial Prepositions & Technical Defect Descriptions",
+              "badge": "Airframe Grammar",
+              "patternTitle": "Spatial Phrasing Formula",
+              "formula": "[Defect Dimension/Type] + located on / protruding from / flush with + [Airframe Component]",
+              "rulesTitle": "Technical Spatial Guidelines",
               "rules": [
-                "<strong style=\"color: #1e293b;\">1. Spatial Prepositions for Airframe Anatomy:</strong> Locates external parts precisely (<em>'Leading-edge slats are mounted along the forward wing skin; trailing-edge flaps are situated adjacent to the engine pylon'</em>).",
-                "<strong style=\"color: #1e293b;\">2. Present Passive for Structural Functions:</strong> Explains standard operational mechanisms (<em>'Hydraulic actuators are powered by redundant engine-driven pumps'</em>).",
-                "<strong style=\"color: #1e293b;\">3. Past Passive for Walkaround Defect Reports:</strong> Documents pre-departure technical anomalies (<em>'A hydraulic leak was observed near the main gear brake lines'</em>).",
-                "<strong style=\"color: #1e293b;\">4. Modal Passive for Maintenance Clearance:</strong> Mandates safety release actions (<em>'All inspection panels must be securely fastened before the aircraft is cleared for pushback'</em>)."
+                "<strong style=\"color: #1e293b;\">1. Exact Surfaces:</strong> Use <em>'on the underside of'</em> (lower surface), <em>'on the upper skin'</em>, <em>'along the leading edge'</em>, <em>'on the outboard trailing edge'</em>.",
+                "<strong style=\"color: #1e293b;\">2. Proximity:</strong> Use <em>'adjacent to'</em>, <em>'flush with'</em> (level with surface), <em>'protruding from'</em> (sticking out).",
+                "<strong style=\"color: #1e293b;\">3. Passive Defect States:</strong> <em>'Hairline crack was detected...'</em>, <em>'Hydraulic seepage was observed...'</em>."
               ],
-              "trap": "⚠️ TOEIC Part 5 Passive Voice Alert: Be sure to check subject-verb agreement with collective or plural aviation nouns (e.g., 'The landing gear IS inspected' vs. 'The main gear assemblies ARE inspected').",
-              "examplesTitle": "Authentic Operational Examples",
+              "trap": "⚠️ Operational Trap: Never say 'crack in the left wing'. Be exact: '3-cm crack on the upper surface of the port winglet'.",
+              "examplesTitle": "Authentic Maintenance Log Examples",
               "examples": [
-                "During the exterior walkaround, minor surface abrasions were detected on the composite radome.",
-                "The pitot-static probes are electrically heated to prevent ice formation during climb."
+                "A 5-centimeter dent was discovered on the forward radome, adjacent to the localizer antenna.",
+                "Hydraulic fluid seepage was noted on the underside of the starboard landing gear actuator."
               ]
             },
-            "toeicQuestions": [
-              {
-                "stem": "The line maintenance engineer conducted a thorough exterior walkaround to ensure that no hydraulic fluid was ________ from the landing gear.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "leaking"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "leaked"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "leaks"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "leak"
-                  }
-                ],
-                "correctLetter": "A",
-                "correctText": "leaking",
-                "analysis": "The auxiliary verb 'was' combined with the active continuous context requires the present participle '-ing' form ('was leaking') to indicate an ongoing fluid drip.",
-                "strategy": "Be careful with active vs. passive after 'was/were': fluid leaks (active continuous = was leaking), fluid is drained (passive = was drained).",
-                "id": 1
-              },
-              {
-                "stem": "Slats are high-lift aerodynamic devices mounted ________ the leading edge of the wing to prevent boundary layer separation.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "through"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "along"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "between"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "into"
-                  }
-                ],
-                "correctLetter": "B",
-                "correctText": "along",
-                "analysis": "The preposition 'along' denotes continuous linear extension from the root to the tip of the wing's leading edge.",
-                "strategy": "Prepositions of location: use 'along' for items running parallel to a linear edge or boundary (along the leading edge, along the taxiway).",
-                "id": 2
-              },
-              {
-                "stem": "According to the Minimum Equipment List, the aircraft is permitted to dispatch ________ the weather radar is certified as fully operational.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "in case of"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "despite"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "provided that"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "although"
-                  }
-                ],
-                "correctLetter": "C",
-                "correctText": "provided that",
-                "analysis": "'Provided that' introduces the essential airworthiness condition required for flight release under MEL restrictions.",
-                "strategy": "MEL (Minimum Equipment List) regulatory sentences frequently test conditional conjunctions like 'provided that' or 'on condition that'.",
-                "id": 3
-              },
-              {
-                "stem": "The radome is constructed from radio-frequency transparent composite materials in order to shield the antenna without ________ radar signals.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "block"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "blocked"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "blockage"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "blocking"
-                  }
-                ],
-                "correctLetter": "D",
-                "correctText": "blocking",
-                "analysis": "The preposition 'without' requires a gerund (-ing form) when taking an action and an object ('without blocking radar signals').",
-                "strategy": "All prepositions (without, by, for, in, after, before) require a gerund (-ing) when immediately followed by a verb form.",
-                "id": 4
-              },
-              {
-                "stem": "Flight deck instruments provide real-time information regarding airspeed, altitude, and heading directly ________ the Primary Flight Display.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "on"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "at"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "of"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "by"
-                  }
-                ],
-                "correctLetter": "A",
-                "correctText": "on",
-                "analysis": "Electronic and visual information is displayed 'on' a screen, monitor, or avionics display ('on the Primary Flight Display').",
-                "strategy": "Fixed tech preposition: information appears 'on' screens, displays, radars, monitors, and instruments.",
-                "id": 5
-              }
-            ],
-            "pageUrl": "session2/admat_aas2.html"
+            "toeic": {
+              "stem": "The line maintenance engineer confirmed that the newly installed sensor was mounted completely ________ with the composite skin.",
+              "options": [
+                "A) flush",
+                "B) flushes",
+                "C) flushing",
+                "D) flushness"
+              ],
+              "correctLetter": "A",
+              "correctText": "flush",
+              "analysis": "The adjective 'flush' (meaning completely level or even with a surface) is required following the adverb 'completely'.",
+              "strategy": "Learn the standard technical collocation 'flush with the airframe/skin'."
+            },
+            "resources": [],
+            "articles": [],
+            "videos": [],
+            "toeicQuestions": []
+          },
+          "lessonContent": {
+            "hero": {
+              "title": "Aircraft Anatomy: Structure & Systems",
+              "subtitle": "AAS Module 2 • Session 2 • Airframe Components, Defect Reporting & Ramp Inspection",
+              "image": "images/aas_m2card2.jpg",
+              "badge": "AT Module 2 • Session 2"
+            }
           }
         },
         "3": {
           "session": 3,
           "objectives": {
             "title": "Session 3 Objectives - Commercial Aircraft & Airlines",
-            "summary": "By the end of this session, you will be able to categorize commercial aircraft types, compare airliner specifications and manufacturer strategies (Airbus vs. Boeing), deploy comparative structures with confidence, and participate in an airline fleet selection committee simulation.",
+            "summary": "By the end of this session, you will be able to categorize commercial airliners by payload-range capabilities, evaluate airline seat-mile economics (CASM), deploy comparative and superlative modifiers to evaluate fleet metrics, and lead a boardroom simulation to negotiate a €2 Billion airline fleet order.",
             "items": [
               {
                 "num": 1,
-                "title": "Classify Commercial Aircraft Families",
-                "description": "Differentiate between regional turboprops/jets, single-aisle narrowbodies, twin-aisle widebodies, and dedicated freighters."
+                "title": "Master Commercial Fleet & Economics Lexis",
+                "description": "Define and apply 8 essential terms including narrowbody, widebody, payload-range envelope, seat-mile cost (CASM), and dispatch reliability."
               },
               {
                 "num": 2,
-                "title": "Compare Manufacturer Strategies & Fleet Data",
-                "description": "Analyze the global duopoly of Airbus and Boeing alongside emerging players (ATR, Embraer, COMAC) in range, capacity, and efficiency."
+                "title": "Deploy Comparative & Superlative Modifiers in Data Analysis",
+                "description": "Evaluate aircraft performance using precision degree modifiers ('substantially lower', 'marginally higher', 'far more cost-effective')."
               },
               {
                 "num": 3,
-                "title": "Deploy Comparative & Superlative Language for Data Evaluation",
-                "description": "Accurately use comparative modifiers (substantially more efficient, lowest fuel burn, twice as heavy) when presenting fleet statistics."
+                "title": "Lead a €2B Airline Fleet Selection Committee Sprint",
+                "description": "Adopt executive roles (CCO, CFO, Flight Ops, Maintenance) to evaluate the Airbus A321XLR vs. Boeing 737 MAX 10 for a 20-aircraft order."
               },
               {
                 "num": 4,
-                "title": "Role-Play an Airline Fleet Selection Committee",
-                "description": "Simulate an executive airline fleet planning committee evaluating candidate aircraft orders for regional and long-haul routes."
-              },
-              {
-                "num": 5,
-                "title": "Examine Airline Operating Models (Legacy vs. Low-Cost)",
-                "description": "Contrast hub-and-spoke vs. point-to-point network economics, fleet commonality benefits, and turnaround speed."
+                "title": "Deliver an Executive Boardroom Pitch & FE2 Alignment",
+                "description": "Present a 2-minute spoken business case defending your fleet selection and peer-review comparative reasoning for FE2."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 3 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour communicative session covering commercial aviation news, commercial aircraft classification, comparative data clinic, an airline fleet selection pitch simulation, and duopoly debates.",
+            "title": "Session 3 Lesson Plan - Commercial Aircraft & Airlines (2 Hours)",
+            "summary": "An executive-level commercial aviation syllabus moving from fleet categories and operating economics to comparative grammar drills and a €2 Billion aircraft procurement simulation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Session 2 Anatomy Spot-Check (10 mins)",
-                "description": "Weekly aviation news review and rapid spot-check on aircraft parts and pre-flight walkaround defect reporting."
+                "part": "Part 1",
+                "title": "Pillar 1: Commercial Fleet Lexis & Pronunciation",
+                "description": "Master 8 commercial airline terms, practice stress patterns (/ˈnær.əʊˌbɒd.i/, /ˈpeɪ.ləʊd/), and complete the fleet categorization drill."
               },
               {
-                "time": "10-35",
-                "title": "Part 2: Commercial Aircraft Classification Table (25 mins)",
-                "description": "Interactive fleet categorization: classifying regional, narrowbody, widebody, and freighter models by range, capacity, and mission."
+                "part": "Part 2",
+                "title": "Pillar 2: Technical Grammar Clinic • Comparative Data Analysis",
+                "description": "Contrast the ❌ 'more better' trap with the ✅ professional B2 data model; complete 4 comparative transformation drills."
               },
               {
-                "time": "35-55",
-                "title": "Part 3: Language Focus: Comparative & Superlative Data (20 mins)",
-                "description": "Evaluating commercial figures with comparative structures (burns 20% less fuel, substantially greater range, the most cost-effective)."
+                "part": "Part 3",
+                "title": "Pillar 3: €2B Fleet Selection Committee Simulation",
+                "description": "Boardroom negotiation: CCO, CFO, Flight Ops, and Maintenance debate range, acquisition discounts, pilot commonality, and spare parts."
               },
               {
-                "time": "55-85",
-                "title": "Part 4: Airline Fleet Selection Committee Simulation (30 mins)",
-                "description": "Pairs act as airline fleet planning directors preparing an aircraft purchase pitch for new routes, defending their choice to classmates."
-              },
-              {
-                "time": "85-110",
-                "title": "Part 5: Global Manufacturer Debate & Industry Trends (25 mins)",
-                "description": "Class debate: Hub-and-spoke vs. point-to-point routes; Airbus vs. Boeing duopoly competition; the entry of COMAC C919."
-              },
-              {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Pronunciation drill on commercial terms (ma-nu-fac-tu-rer, tur-bo-prop, ca-pa-ci-ty, ef-fi-cien-cy) and learning log consolidation."
+                "part": "Part 4",
+                "title": "Pillar 4: Consolidation & FE2 Alignment",
+                "description": "90-second spoken aircraft comparison challenge using comparative modifiers; review FE2 evaluation criteria."
               }
             ]
           },
-          "lessonContent": {
-            "hero": {
-              "title": "Commercial Aircraft & Airlines",
-              "subtitle": "Commercial Aircraft Types, Aerospace Manufacturers & Airline Business Models",
-              "image": "images/aas_m2card3.jpg",
-              "level": "CEFR B2",
-              "role": "Airline Fleet Planner / Network Strategy Director",
-              "duration": "120 Minutes"
-            },
-            "openingSession": {
-              "title": "Activity 1: Aviation News & Session 2 Spot-Check (10 mins)",
-              "summary": "News review followed by quick vocabulary check on aircraft parts.",
-              "modeBadges": [
-                "Pairs",
-                "News & Warm-Up",
-                "10 Mins"
-              ],
-              "instructions": [
-                "Read the 3 fleet news prompts (Airbus A321XLR deliveries, Boeing 747 freighter retirement, Air France-KLM A350 fleet renewal).",
-                "Test your partner on the 4 aircraft anatomy spot-check questions (narrowbody vs. widebody, LCC fleet commonality benefits, regional manufacturers, MTOW definition).",
-                "Toggle each question answer to verify your technical accuracy and terminology."
-              ],
-              "deliverable": "Fluent oral explanations of commercial aircraft classifications and fleet economics.",
-              "teacherNotes": "Verify students understand why single-aisle fleet commonality is so profitable for budget carriers (crew interchangeability, maintenance pooling, standardized quick turnarounds).",
-              "newsPrompts": [
-                "Transatlantic low-cost airline announces order for 20 Airbus A321XLR aircraft to pioneer point-to-point routes from secondary airports.",
-                "Boeing delivers final 747 freighter, marking the end of 54 years of iconic quad-jet Queen of the Skies production.",
-                "Air France-KLM outlines €1 billion investment in ultra-efficient Airbus A350-900 fleet renewal to cut emissions by 25%."
-              ],
-              "diagnostic": {
-                "title": "Session 2 Anatomy Quick Check",
-                "instructions": "Answer these 4 rapid spot-check questions:",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "What is the primary difference between a narrowbody and a widebody aircraft?",
-                    "answer": "A narrowbody (single-aisle) aircraft has one passenger aisle with up to 6 seats abreast (e.g. A320, 737). A widebody (twin-aisle) aircraft has two passenger aisles with 7 to 10 seats abreast (e.g. A350, 787)."
-                  },
-                  {
-                    "id": 2,
-                    "q": "Why do low-cost carriers (LCCs) like Ryanair and Southwest operate only one single aircraft type?",
-                    "answer": "Fleet commonality dramatically lowers pilot training costs, simplifies maintenance spare parts inventory, and ensures any crew can operate any aircraft on short notice."
-                  },
-                  {
-                    "id": 3,
-                    "q": "Name two major regional aircraft manufacturers outside the Airbus-Boeing duopoly.",
-                    "answer": "ATR (Franco-Italian turboprop manufacturer) and Embraer (Brazilian regional jet manufacturer)."
-                  },
-                  {
-                    "id": 4,
-                    "q": "What is Maximum Takeoff Weight (MTOW), and why is it important for airline route planning?",
-                    "answer": "MTOW is the maximum permissible total weight (airframe, fuel, passengers, cargo) at brake release. It determines runway length requirements, landing fees, and maximum payload-range capability."
-                  }
-                ]
-              }
-            },
-            "fleetTaxonomy": {
-              "title": "Activity 2: Commercial Aircraft Classification Table (25 mins)",
-              "summary": "Classify commercial passenger and freighter aircraft into operational categories.",
-              "modeBadges": [
-                "Pairs / Small Groups",
-                "Fleet Analysis",
-                "25 Mins"
-              ],
-              "instructions": [
-                "Analyze the 4 commercial aircraft categories: Regional Turboprops & Jets, Single-Aisle Narrowbodies, Twin-Aisle Widebodies, and Dedicated Freighters.",
-                "Compare seat capacities, operational ranges, and typical airline missions across models (ATR 72, A220, A320neo, 737 MAX, A350, 777F).",
-                "Identify which aircraft category is optimal for 3 distinct routes: Paris-Orly to Brest, Paris-CDG to New York JFK, and Toulouse to Bastia."
-              ],
-              "deliverable": "Completed route-to-aircraft matching matrix with operational and financial justifications.",
-              "teacherNotes": "Emphasize the transformative role of the A321XLR in allowing narrowbody single-aisle aircraft to fly thin long-haul transatlantic routes profitably without needing a 300-seat widebody.",
-              "categories": [
-                {
-                  "category": "Regional Turboprops & Jets",
-                  "examples": "ATR 72-600, Embraer E195-E2, Dash 8-Q400",
-                  "capacity": "40 to 130 seats",
-                  "range": "1,500 to 4,500 km",
-                  "typicalMission": "Short-haul feeder flights connecting small regional communities to hub airports; short runways and rough airfields."
-                },
-                {
-                  "category": "Single-Aisle Narrowbodies (The Workhorses)",
-                  "examples": "Airbus A320neo, Boeing 737 MAX, Airbus A220-300",
-                  "capacity": "140 to 240 seats",
-                  "range": "5,500 to 8,700 km (A321XLR)",
-                  "typicalMission": "High-frequency domestic and regional international routes; rapid 30-minute turnarounds; expanding into thin transatlantic flights."
-                },
-                {
-                  "category": "Twin-Aisle Widebodies (Long-Haul Flagships)",
-                  "examples": "Airbus A350-900/1000, Boeing 787-9/10, Boeing 777-300ER/777X",
-                  "capacity": "250 to 450 seats",
-                  "range": "13,000 to 18,000 km",
-                  "typicalMission": "Intercontinental long-haul trunk routes connecting global megahubs; high belly cargo payload capacity; premium cabin configurations."
-                },
-                {
-                  "category": "Dedicated Freighters & Cargo Conversions",
-                  "examples": "Boeing 777F, Airbus A350F, Boeing 767-300BCF, A321P2F",
-                  "capacity": "25 to 110 tonnes of cargo",
-                  "range": "7,000 to 10,000 km",
-                  "typicalMission": "Scheduled express freight networks (FedEx, DHL, UPS) operating main-deck containerized pallets with high-value time-sensitive goods."
-                }
-              ]
-            },
-            "comparativeClinic": {
-              "title": "Activity 3: Language Focus: Comparative & Superlative Data (20 mins)",
-              "summary": "Mastering modifiers and comparative structures to evaluate aircraft efficiency and fleet statistics.",
-              "modeBadges": [
-                "Pairs / Individual",
-                "Data Analysis & Grammar",
-                "20 Mins"
-              ],
-              "instructions": [
-                "Study the 3 comparative structures: Quantified Comparatives (Percentage/Factor + more/less... than), Emphatic Modifiers (substantially / significantly / considerably), and Superlative Benchmarks (the longest range... in its class).",
-                "Review the aircraft performance data and formulate 4 spoken sentences comparing the fuel burn, seat capacity, MTOW, and range of the A350-900 vs. Boeing 777-300ER.",
-                "Share your comparative statements with your partner, verifying accurate preposition and modifier usage."
-              ],
-              "deliverable": "4 mathematically and grammatically accurate comparative statements benchmarking commercial airliner performance.",
-              "teacherNotes": "Target common French speaker interference: 'more economical than' (not 'more economic'), '25% less fuel' (not 'fewer fuel'), and placing modifiers correctly ('considerably higher', not 'high considerably').",
-              "rules": [
-                {
-                  "structure": "Quantified Comparatives",
-                  "formula": "[Percentage / Factor] + more/less + [adjective/noun] + than",
-                  "example": "The A350-900 burns 25% less fuel per seat than the previous-generation A340 quad-jet."
-                },
-                {
-                  "structure": "Emphatic Modifiers",
-                  "formula": "substantially / significantly / considerably + [comparative]",
-                  "example": "Turboprops are considerably more economical than regional jets on stage lengths under 500 kilometers."
-                },
-                {
-                  "structure": "Superlative Benchmarks",
-                  "formula": "the + [superlative] + [noun] + in its class / on the market",
-                  "example": "The A321XLR offers the longest range of any commercial single-aisle airliner on the market."
-                }
-              ]
-            },
-            "fleetCommitteeSimulation": {
-              "title": "Activity 4: Airline Fleet Selection Committee Simulation (30 mins)",
-              "summary": "Pairs represent airline management committees pitching an aircraft purchase order for a new route network.",
-              "modeBadges": [
-                "Pairs",
-                "Executive Simulation",
-                "30 Mins"
-              ],
-              "instructions": [
-                "Select one of the two business cases: Case 1 (Transatlantic Expansion: A321XLR vs. Boeing 787-8) or Case 2 (Regional Feeder Fleet: ATR 72-600 vs. Embraer E175).",
-                "With your partner, spend 15 minutes analyzing the payload, range, trip cost, and passenger appeal trade-offs of Option A versus Option B.",
-                "Structure a 3-minute executive board pitch recommending one aircraft, using comparative grammar and economic metrics.",
-                "Present your pitch to a peer pair acting as the airline Board of Directors, defending your choice against a 2-minute counter-challenge."
-              ],
-              "deliverable": "3-minute executive board presentation recommending an aircraft procurement strategy with quantitative support.",
-              "teacherNotes": "Ensure students support their choices with financial logic: widebodies generate higher belly-cargo revenue and passenger comfort, but narrowbodies feature vastly lower trip break-even factors on thin secondary routes.",
-              "cases": [
-                {
-                  "title": "Case 1: Transatlantic Expansion for a European Airline",
-                  "network": "New routes from secondary French and UK cities (Lyon, Manchester) to the US East Coast (Boston, Philadelphia).",
-                  "optionA": "Airbus A321XLR (Narrowbody): 180 seats, lower total trip cost, easy to fill daily, limited belly cargo capacity.",
-                  "optionB": "Boeing 787-8 (Widebody): 242 seats, higher passenger comfort, superior cargo revenue, higher landing fees and trip cost."
-                },
-                {
-                  "title": "Case 2: Regional Feeder Fleet Modernization",
-                  "network": "High-frequency domestic island-hopping and mountainous routes (Corsica, Pyrenees, Scottish Highlands).",
-                  "optionA": "ATR 72-600 (Turboprop): 70 seats, lowest fuel burn, excellent short-field performance, slower cruise speed (510 km/h).",
-                  "optionB": "Embraer E175 (Regional Jet): 76 seats, faster cruise speed (870 km/h), greater passenger appeal, higher fuel burn on short hops."
-                }
-              ]
-            },
-            "globalLandscapeDebate": {
-              "title": "Activity 5: Global Manufacturer Debate & Industry Trends (25 mins)",
-              "summary": "Class debate exploring the Airbus-Boeing duopoly, supply chain bottlenecks, and the emergence of COMAC.",
-              "modeBadges": [
-                "Plenary / Fishbowl",
-                "Industry Debate",
-                "25 Mins"
-              ],
-              "instructions": [
-                "Review the 3 industry debate topics: point-to-point narrowbody flying vs. hub widebodies, COMAC C919 challenging the Western duopoly, and dual-sourcing vs. single-manufacturer fleet commonality.",
-                "Form two debate teams (or use a fishbowl format) to debate whether airlines should risk split orders to avoid multi-year delivery backlogs.",
-                "Deploy structured debate connectors: 'While the duopoly offers proven dispatch reliability, ...', 'From a supply chain resilience standpoint, ...'."
-              ],
-              "deliverable": "Active spoken participation in plenary debates utilizing strategic argumentation and aero-economic terms.",
-              "teacherNotes": "Moderate the debate to ensure all students contribute. Challenge assumptions: Why can't COMAC easily enter Western markets? (EASA/FAA certification, global spare parts networks, Western component export controls).",
-              "topics": [
-                "Will point-to-point narrowbody flying permanently replace the traditional hub-and-spoke widebody model?",
-                "Can COMAC's C919 realistically challenge the Airbus A320 and Boeing 737 duopoly on international routes by 2035?",
-                "Should airlines prioritize fleet commonality with a single manufacturer or split orders to hedge delivery delays?"
-              ]
-            },
-            "closingReview": {
-              "title": "Activity 6: Vocabulary Review & Pronunciation Wrap-Up (10 mins)",
-              "summary": "Consolidate the 18 commercial fleet terms and prepare for Session 4 Aviation Accidents.",
-              "modeBadges": [
-                "Plenary",
-                "Pronunciation Drill",
-                "10 Mins"
-              ],
-              "instructions": [
-                "Complete the syllable stress drills on the 5 technical terms: ma-nu-FAC-tu-rer, du-OP-o-ly, TUR-bo-prop, ca-PA-ci-ty, con-fig-u-RA-tion.",
-                "Review the 18 commercial fleet flashcard definitions in the Revision tab.",
-                "Log any lingering pronunciation difficulties and prepare for Session 4 (Aviation Accidents & Safety)."
-              ],
-              "deliverable": "Accurate pronunciation and word stress demonstrated on all 5 polysyllabic aviation terms.",
-              "teacherNotes": "Drill word stress energetically. French speakers tend to stress the final syllable; reinforce strong primary stress on the accented syllables (e.g., du-OP-o-ly, not du-op-o-LY).",
-              "checkpoints": [
-                "Mastered 18 commercial aircraft & fleet planning terms",
-                "Practiced comparative modifiers in oral pitches",
-                "Completed syllable stress drills on aeronautical vocabulary"
-              ],
-              "pronunciationFocus": [
-                "ma-nu-fac-tu-rer",
-                "du-op-o-ly",
-                "tur-bo-prop",
-                "ca-pa-ci-ty",
-                "con-fig-u-ra-tion"
-              ]
-            }
-          },
           "revision": {
-            "title": "Session 3 Revision - Commercial Aircraft & Airlines",
-            "summary": "Master the 18 key vocabulary terms for Commercial Aircraft & Airlines to analyze aircraft categories, fleet planning, and airline business models.",
+            "title": "Session 3: Commercial Aircraft & Airlines",
+            "summary": "Review the 18 specialized terms for commercial aircraft types, airline business models, and fleet operations.",
             "terms": [
               {
-                "num": "01",
                 "term": "Narrowbody",
-                "definition": "A single-aisle commercial passenger aircraft typically seating 100 to 240 passengers with 6 seats abreast."
+                "ipa": "/ˈnær.əʊˌbɒd.i/",
+                "definition": "A single-aisle commercial aircraft carrying typically 100 to 240 passengers.",
+                "french": "Moyen-courrier monocouloir"
               },
               {
-                "num": "02",
                 "term": "Widebody",
-                "definition": "A twin-aisle commercial airliner seating 250 to 500+ passengers with 7 to 10 seats abreast used for long-haul routes."
+                "ipa": "/ˈwaɪdˌbɒd.i/",
+                "definition": "A twin-aisle airliner designed for medium- to long-haul routes.",
+                "french": "Gros-porteur / bicouloir"
               },
               {
-                "num": "03",
-                "term": "Regional Jet",
-                "definition": "A short-to-medium-range jet airliner typically seating 50 to 120 passengers on feeder routes."
+                "term": "Payload-Range Envelope",
+                "ipa": "/ˈpeɪ.ləʊd reɪndʒ/",
+                "definition": "The operational trade-off curve between maximum cargo/passenger weight and flight range.",
+                "french": "Courbe charge marchande - distance"
               },
               {
-                "num": "04",
+                "term": "Seat-Mile Cost (CASM)",
+                "ipa": "/siːt maɪl kɒst/",
+                "definition": "Cost per Available Seat-Mile: foundational metric of airline operating efficiency.",
+                "french": "Coût au siège-kilomètre offert (CSKO / CASM)"
+              },
+              {
                 "term": "Turboprop",
-                "definition": "An aircraft powered by a gas turbine engine geared to a propeller, highly efficient at low altitudes and short distances."
+                "ipa": "/ˈtɜː.bəʊ.prɒp/",
+                "definition": "A gas-turbine engine driving an external propeller, optimal for short regional sectors.",
+                "french": "Turbopropulseur"
               },
               {
-                "num": "05",
-                "term": "Freighter",
-                "definition": "A dedicated cargo aircraft with main-deck loading doors designed exclusively to carry freight containers."
+                "term": "Freighter Conversion",
+                "ipa": "/ˈfreɪ.tər kənˈvɜː.ʃən/",
+                "definition": "Modifying retired passenger airliners with reinforced main-deck floors and cargo doors.",
+                "french": "Conversion passagers en tout-cargo (P2F)"
               },
               {
-                "num": "06",
-                "term": "Range",
-                "definition": "The maximum distance an aircraft can fly between takeoff and landing without refueling."
+                "term": "Dispatch Reliability",
+                "ipa": "/dɪˈspætʃ rɪˌlaɪ.əˈbɪl.ə.ti/",
+                "definition": "Percentage of scheduled flights departing without maintenance delays or cancellations.",
+                "french": "Régularité technique d'exploitation"
               },
               {
-                "num": "07",
-                "term": "Payload",
-                "definition": "The total revenue-generating load carrying capacity of an aircraft, including passengers, luggage, and commercial cargo."
+                "term": "ETOPS Certification",
+                "ipa": "/ˈiː.tɒps ˌsɜː.tɪ.fɪˈkeɪ.ʃən/",
+                "definition": "Extended-range Twin-engine Operational Performance Standards: rules for oceanic flights.",
+                "french": "Certification ETOPS"
               },
               {
-                "num": "08",
-                "term": "Maximum Takeoff Weight (MTOW)",
-                "definition": "The maximum certified total weight at which an aircraft is legally permitted to attempt takeoff."
+                "term": "Secondary Route",
+                "ipa": "/ˈsek.ən.dri ruːt/",
+                "definition": "Point-to-point routes bypassing major hubs, connecting mid-sized regional cities.",
+                "french": "Ligne secondaire / point à point"
               },
               {
-                "num": "09",
                 "term": "Fuel Burn",
-                "definition": "The rate of fuel consumed by an aircraft engine during flight, measured in kilograms or liters per hour."
+                "ipa": "/ˈfjuː.əl bɜːn/",
+                "definition": "The rate of aviation fuel consumed per flight hour or nautical mile.",
+                "french": "Consommation spécifique de carburant"
               },
               {
-                "num": "10",
-                "term": "Manufacturer",
-                "definition": "An aerospace corporation, such as Airbus or Boeing, that designs, certifies, and builds aircraft."
+                "term": "Type Rating",
+                "ipa": "/taɪp ˈreɪ.tɪŋ/",
+                "definition": "Regulatory pilot certification required to operate a specific aircraft model.",
+                "french": "Qualification de type (QT)"
               },
               {
-                "num": "11",
-                "term": "Duopoly",
-                "definition": "A market condition where two major suppliers dominate sales, notably Airbus and Boeing in large commercial jetliners."
+                "term": "Commonality",
+                "ipa": "/ˌkɒm.əˈnæl.ə.ti/",
+                "definition": "Design standardization across aircraft families reducing training and parts costs.",
+                "french": "Communalité (de flotte)"
               },
               {
-                "num": "12",
-                "term": "Flag Carrier",
-                "definition": "A legacy national airline registered in a specific country, often historically state-owned (e.g. Air France, British Airways)."
+                "term": "List Price",
+                "ipa": "/lɪst praɪs/",
+                "definition": "The published catalog price of an airframe before negotiated airline discounts.",
+                "french": "Prix catalogue"
               },
               {
-                "num": "13",
-                "term": "Low-Cost Carrier (LCC)",
-                "definition": "An airline operating with a lean cost structure, high fleet utilization, point-to-point routes, and unbundled fares (e.g. Ryanair, easyJet)."
+                "term": "Firm Order",
+                "ipa": "/fɜːm ˈɔː.dər/",
+                "definition": "A legally binding contract to purchase aircraft with scheduled delivery dates.",
+                "french": "Commande ferme"
               },
               {
-                "num": "14",
-                "term": "Hub-and-Spoke",
-                "definition": "A route network model where flights connect through a central hub airport to transfer passengers onto connecting flights."
+                "term": "Purchase Option",
+                "ipa": "/ˈpɜː.tʃəs ˈɒp.ʃən/",
+                "definition": "An agreement reserving future production slots at a pre-negotiated price.",
+                "french": "Option d'achat"
               },
               {
-                "num": "15",
-                "term": "Point-to-Point",
-                "definition": "A route network model providing direct nonstop flights between origin and destination without transiting a central hub."
+                "term": "Turnaround Time",
+                "ipa": "/ˈtɜːn.ə.raʊnd taɪm/",
+                "definition": "The duration required between aircraft arrival at gate and subsequent departure.",
+                "french": "Temps d'escale / rotation"
               },
               {
-                "num": "16",
-                "term": "Fleet Renewal",
-                "definition": "The phased retirement of aging aircraft and replacement with newer, quieter, and more fuel-efficient models."
+                "term": "Block Hour",
+                "ipa": "/blɒk aʊər/",
+                "definition": "Time from aircraft door closure and pushback until gate arrival and engine shutdown.",
+                "french": "Heure bloc"
               },
               {
-                "num": "17",
-                "term": "Cabin Configuration",
-                "definition": "The physical seating arrangement inside an airliner, divided into Economy, Premium, Business, and First Class."
-              },
-              {
-                "num": "18",
-                "term": "Turnaround Efficiency",
-                "definition": "The capability of an airline and ground crew to deplane, service, refuel, and reboard an aircraft in minimum gate time."
+                "term": "Utilization Rate",
+                "ipa": "/ˌjuː.tɪ.laɪˈzeɪ.ʃən reɪt/",
+                "definition": "Average hours per day an aircraft is actively flown in revenue service.",
+                "french": "Taux d'utilisation quotidien"
               }
             ]
           },
           "materials": {
-            "videos": [
-              {
-                "title": "Video 1: How Airlines Pick Between The A350 & 787",
-                "watchUrl": "https://www.youtube.com/watch?v=XQHMFnJ1nMw",
-                "tag": "Fleet Strategy",
-                "videoId": "XQHMFnJ1nMw",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/XQHMFnJ1nMw",
-                "caption": "Focus: Contrast composite airframe design, range economics, fuel burn per seat, and route deployment between Airbus and Boeing."
-              },
-              {
-                "title": "Video 2: How Budget Airlines Work: Fleet Commonality & Economics",
-                "watchUrl": "https://www.youtube.com/watch?v=069y1MpOkQY",
-                "tag": "Airline Economics",
-                "videoId": "069y1MpOkQY",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/069y1MpOkQY",
-                "caption": "Focus: Discover why single-fleet commonality (A320/B737) and 25-minute turnarounds form the financial backbone of low-cost carriers."
-              },
-              {
-                "title": "Video 3: The Airbus A321XLR Could Change Air Travel Forever",
-                "watchUrl": "https://www.youtube.com/watch?v=NeRygjT-hGM",
-                "tag": "Emerging Aircraft",
-                "videoId": "NeRygjT-hGM",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/NeRygjT-hGM",
-                "caption": "Focus: Analyze how extra-long-range single-aisle airliners displace widebodies on thin transatlantic and secondary city routes."
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Commercial Fleet Trends",
-                "sourceTag": "FlightGlobal",
-                "heading": "The Rise of the Long-Range Narrowbody: How the A321XLR is Reshaping Aviation",
-                "snippet": "Examine how single-aisle airliners are replacing widebodies on long-haul secondary routes across the Atlantic.",
-                "url": "https://www.flightglobal.com",
-                "readTime": "Estimated read: 4-5 mins"
-              },
-              {
-                "topic": "Aerospace Competition",
-                "sourceTag": "Aviation Week",
-                "heading": "Airbus, Boeing, and the Global Duopoly: Supply Chain Realities and Emerging Rivals",
-                "snippet": "An analysis of global order backlogs, titanium shortages, and COMAC's efforts to scale C919 production in Asia.",
-                "url": "https://aviationweek.com",
-                "readTime": "Estimated read: 5-6 mins"
-              }
-            ],
-            "resources": [
-              {
-                "url": "https://www.iata.org",
-                "tag": "01 • Airline Statistics",
-                "name": "IATA World Air Transport Statistics (WATS)",
-                "desc": "Global airline passenger numbers, cargo traffic yields, and operating fleet benchmarks."
-              },
-              {
-                "url": "https://www.flightglobal.com",
-                "tag": "02 • Fleet Intelligence",
-                "name": "FlightGlobal Commercial Fleets Directory",
-                "desc": "Comprehensive commercial airliner order books, lease agreements, and retirement data."
-              },
-              {
-                "url": "https://aircraft.airbus.com/en/market-forecast",
-                "tag": "03 • Market Projections",
-                "name": "Airbus Global Market Forecast (GMF 2024–2043)",
-                "desc": "20-year demand outlook for passenger narrowbodies, widebodies, and freighter conversions."
-              },
-              {
-                "url": "https://www.boeing.com/commercial/market/commercial-market-outlook",
-                "tag": "04 • Industry Outlook",
-                "name": "Boeing Commercial Market Outlook (CMO)",
-                "desc": "Global economic projections, passenger traffic expansion rates, and fleet renewal patterns."
-              },
-              {
-                "url": "https://airlineweekly.skift.com",
-                "tag": "05 • Airline Analysis",
-                "name": "Airline Weekly Global Airline Business News",
-                "desc": "Weekly strategic analysis of airline balance sheets, network route expansions, and fuel costs."
-              },
-              {
-                "url": "https://www.ch-aviation.com",
-                "tag": "06 • Fleet Database",
-                "name": "ch-aviation Aircraft & Fleet Database",
-                "desc": "Real-time fleet tracker detailing aircraft age, engine variants, and operator distributions."
-              }
-            ],
             "grammar": {
-              "title": "Comparative, Superlative & Ratio Structures in Fleet Economics",
-              "badge": "Fleet Strategy",
-              "patternTitle": "Fleet Evaluation Formula",
-              "formula": "[Aircraft A] + is considerably more/less + Adj + than [Aircraft B] || Twice as + Adj + as",
-              "rulesTitle": "Core Communicative Guidelines",
+              "title": "Comparative & Superlative Data Analysis with Modifiers",
+              "badge": "Fleet Economics Grammar",
+              "patternTitle": "Comparative Modifier Formula",
+              "formula": "Modifier (substantially / marginally / far) + Comparative (lower / greater / more cost-effective) + than",
+              "rulesTitle": "Technical Data Guidelines",
               "rules": [
-                "<strong style=\"color: #1e293b;\">1. Modified Comparatives for Operational Metrics:</strong> Accentuates fleet performance differences (<em>'The A321neo is significantly more fuel-efficient per seat-kilometer than older generation twinjets'</em>).",
-                "<strong style=\"color: #1e293b;\">2. Superlatives for Market Extremes:</strong> Identifies category leaders (<em>'The Boeing 777X boasts the widest commercial passenger cabin and longest range among new twin-aisle jets'</em>).",
-                "<strong style=\"color: #1e293b;\">3. Expressing Multipliers & Ratios:</strong> Compares financial and cargo yields (<em>'Widebody freighters carry nearly three times as much cargo payload as regional turboprops'</em>).",
-                "<strong style=\"color: #1e293b;\">4. Proportional Statements (The more... the more...):</strong> Links variables (<em>'The lighter the composite fuselage structure, the lower the fuel burn over long-haul sectors'</em>)."
+                "<strong style=\"color: #1e293b;\">1. Degree of Difference:</strong> Use <em>'substantially'</em> or <em>'significantly'</em> for large contrasts; use <em>'marginally'</em> or <em>'slightly'</em> for minor differences.",
+                "<strong style=\"color: #1e293b;\">2. Proportional Comparisons:</strong> Use <em>'twice as many'</em>, <em>'three times the payload'</em>, <em>'half the fuel burn'</em>.",
+                "<strong style=\"color: #1e293b;\">3. Parity Expressions:</strong> Use <em>'virtually identical'</em>, <em>'on a par with'</em>, <em>'comparable to'</em>."
               ],
-              "trap": "⚠️ TOEIC Part 5 Comparative Modifiers Alert: Never use 'very' or 'more' with comparative adjectives (incorrect: 'very cheaper'). Always use degree modifiers: 'significantly', 'considerably', 'substantially', or 'slightly' (correct: 'significantly cheaper').",
-              "examplesTitle": "Authentic Operational Examples",
+              "trap": "⚠️ Operational Trap: Never say 'more cheaper' or 'more better'. Say 'substantially cheaper' or 'far superior'.",
+              "examplesTitle": "Authentic Fleet Analysis Examples",
               "examples": [
-                "Low-cost carriers achieve considerably higher daily aircraft utilization than legacy network carriers.",
-                "The new turbofan variant delivers a 15% reduction in carbon emissions compared to its predecessor."
+                "The A321XLR delivers substantially lower trip costs than twin-aisle widebodies on transatlantic long-thin routes.",
+                "Both airframes maintain a virtually identical dispatch reliability record of 99.6%."
               ]
             },
-            "toeicQuestions": [
-              {
-                "stem": "The newly ordered twin-engine widebodies are substantially ________ fuel-efficient than the quad-jet airliners they will replace.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "much"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "more"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "most"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "many"
-                  }
-                ],
-                "correctLetter": "B",
-                "correctText": "more",
-                "analysis": "The presence of the comparative connector 'than' requires the comparative degree 'more' with the multi-syllable adjective 'fuel-efficient'. 'Substantially' acts as an adverb of degree modifying 'more'.",
-                "strategy": "Always scan ahead for 'than'. The marker 'than' always demands a comparative form (more, -er, less).",
-                "id": 1
-              },
-              {
-                "stem": "Airbus and Boeing dominate commercial airliner manufacturing, holding an effective global ________ in large passenger jet production.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "autonomy"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "monopoly"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "duopoly"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "subsidy"
-                  }
-                ],
-                "correctLetter": "C",
-                "correctText": "duopoly",
-                "analysis": "A market situation where two commercial entities dominate the supply of a commodity or aircraft type is legally and economically defined as a 'duopoly'.",
-                "strategy": "Prefix clues: mono- (one supplier), duo- (two dominant suppliers), poly- (many). Airbus + Boeing = 2, hence duopoly.",
-                "id": 2
-              },
-              {
-                "stem": "By operating a single aircraft family across its entire network, the low-cost carrier achieved significant ________ in crew training and spare parts inventory.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "economies of scale"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "flight limitations"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "cabin disruptions"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "baggage delays"
-                  }
-                ],
-                "correctLetter": "A",
-                "correctText": "economies of scale",
-                "analysis": "'Economies of scale' is the precise financial collocation for cost savings and operational efficiencies gained through increased volume or fleet standardization.",
-                "strategy": "High-yield business vocabulary: 'achieve economies of scale' is a staple TOEIC business strategy phrase.",
-                "id": 3
-              },
-              {
-                "stem": "The airline decided to retire its older aircraft earlier than planned because the escalating cost of maintenance was no longer ________.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "justify"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "justifiable"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "justifiably"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "justification"
-                  }
-                ],
-                "correctLetter": "B",
-                "correctText": "justifiable",
-                "analysis": "The linking verb 'was' accompanied by the adverbial phrase 'no longer' requires a predicate adjective ('justifiable') to describe the cost of maintenance.",
-                "strategy": "After copular/linking verbs (be, become, remain, seem), select an adjective (ending in -able, -ive, -al) rather than a noun or adverb.",
-                "id": 4
-              },
-              {
-                "stem": "Regional turboprops remain the most economical solution for short routes ________ their low fuel burn at regional cruising altitudes.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "although"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "despite"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "whereas"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "because of"
-                  }
-                ],
-                "correctLetter": "D",
-                "correctText": "because of",
-                "analysis": "'Because of' is a compound preposition followed by a noun phrase ('their low fuel burn...') indicating the positive causal reason for their economical nature.",
-                "strategy": "Cause vs. concession: 'their low fuel burn' is the reason for high economy (causal), so use 'because of', not concessive words like 'despite' or 'although'.",
-                "id": 5
-              }
-            ],
-            "pageUrl": "session3/admat_aas2.html"
+            "toeic": {
+              "stem": "The fleet director noted that the new engine variant burns ________ less fuel per passenger than previous models.",
+              "options": [
+                "A) substantially",
+                "B) substantial",
+                "C) substance",
+                "D) substantiate"
+              ],
+              "correctLetter": "A",
+              "correctText": "substantially",
+              "analysis": "The adverb of degree 'substantially' is required to modify the comparative expression 'less fuel'.",
+              "strategy": "Adverbs ending in -ly (substantially, marginally, significantly) modify comparative adjectives."
+            },
+            "resources": [],
+            "articles": [],
+            "videos": [],
+            "toeicQuestions": []
+          },
+          "lessonContent": {
+            "hero": {
+              "title": "Commercial Aircraft & Airlines",
+              "subtitle": "AAS Module 2 • Session 3 • Fleet Categories, Operating Economics & Boardroom Procurement",
+              "image": "images/aas_m2card3.jpg",
+              "badge": "AT Module 2 • Session 3"
+            }
           }
         },
         "4": {
           "session": 4,
           "objectives": {
             "title": "Session 4 Objectives - Significant Aviation Accidents & Aircraft Types",
-            "summary": "By the end of this session, you will be able to analyze landmark aviation accidents and the aircraft types involved, use past narrative tenses and sequencing linkers, conduct a 15-minute quick-fire group research sprint, and deliver a collaborative 5-minute accident briefing to classmates.",
+            "summary": "By the end of this session, you will be able to interpret flight recorder evidence (CVR and FDR), reconstruct accident timelines using narrative past tenses, simulate a formal public inquiry hearing into landmark aviation accidents, and conduct a full Formative Evaluation 2 (FE2) presentation rehearsal.",
             "items": [
               {
                 "num": 1,
-                "title": "Examine Landmark Historical Aviation Accidents",
-                "description": "Analyze major historical accidents (e.g., Tenerife 1977, BA 38, US Airways 1549, AF 447, Aloha 243, 737 MAX) and identify the specific aircraft types involved."
+                "title": "Master Accident Investigation & Safety Lexis",
+                "description": "Define and apply 8 official investigation terms including cockpit voice recorder (CVR), flight data recorder (FDR), spatial disorientation, and CFIT."
               },
               {
                 "num": 2,
-                "title": "Master Accident Investigation Vocabulary & Causal Analysis",
-                "description": "Deploy technical terms including Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), root causes, human factors, and Swiss Cheese model."
+                "title": "Deploy Narrative Past Tenses in Technical Chronologies",
+                "description": "Interweave Past Simple, Past Continuous, and Past Perfect to construct clear, chronological accident causal sequences."
               },
               {
                 "num": 3,
-                "title": "Deploy Past Narrative Tenses & Chronological Sequencers",
-                "description": "Accurately combine past simple, past continuous, and past perfect tenses to describe flight incident sequences and timelines."
+                "title": "Convene an Accident Investigation Board Hearing",
+                "description": "Simulate a multi-stakeholder inquiry (Investigator, Manufacturer, Airline, Regulator) examining landmark accidents (e.g., AF447)."
               },
               {
                 "num": 4,
-                "title": "Execute a 15-Minute Group Research & Preparation Sprint",
-                "description": "Collaborate in small groups (3-4 students) within a strict 15-minute timeframe to extract technical causes, timelines, and safety outcomes."
-              },
-              {
-                "num": 5,
-                "title": "Deliver a 5-Minute Spoken Safety Briefing & Peer Q&A",
-                "description": "Present the accident analysis collaboratively to classmates without reading word-for-word from notes, answering spontaneous questions."
+                "title": "Execute Formative Evaluation 2 (FE2) Full Rehearsal",
+                "description": "Deliver a timed 2-minute partner presentation dry run against the official FE2 rubric with teacher sign-off."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 4 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+            "title": "Session 4 Lesson Plan - Significant Aviation Accidents & Aircraft Types (2 Hours)",
+            "summary": "A high-stakes investigative safety syllabus moving from flight recorder terminology and narrative past tenses to a formal public inquiry simulation and FE2 presentation rehearsal.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
-                "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
+                "part": "Part 1",
+                "title": "Pillar 1: Accident Investigation Lexis & Pronunciation",
+                "description": "Explore 8 official investigation terms, practice syllable stress (/ˈkɔː.zəl/, /dɪsˌɔː.ri.enˈteɪ.ʃən/), and complete the causal factor matching drill."
               },
               {
-                "time": "10-30",
-                "title": "Part 2: Accident Investigation Terminology (20 mins)",
-                "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
+                "part": "Part 2",
+                "title": "Pillar 2: Technical Grammar Clinic • Narrative Past Tenses",
+                "description": "Analyze the ❌ past tense confusion trap with the ✅ chronological B2 model; complete 4 accident timeline transformation drills."
               },
               {
-                "time": "30-50",
-                "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
-                "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
+                "part": "Part 3",
+                "title": "Pillar 3: Accident Investigation Board Hearing",
+                "description": "Public inquiry simulation: cross-examine evidence, evaluate crew resource management (CRM), and draft binding Safety Recommendations."
               },
               {
-                "time": "50-65",
-                "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
-                "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
-              },
-              {
-                "time": "65-110",
-                "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
-                "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
-              },
-              {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
-                "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
+                "part": "Part 4",
+                "title": "Pillar 4: Formative Evaluation 2 (FE2) Full Rehearsal",
+                "description": "2-minute partner presentation dry runs graded against official criteria: Fluency, Lexis, Grammar, and Pronunciation."
               }
             ]
           },
-          "lessonContent": {
-            "hero": {
-              "title": "Significant Aviation Accidents & Aircraft Types",
-              "subtitle": "Landmark Air Accidents, Technical Causal Analysis & The Evolution of Flight Safety",
-              "image": "images/aas_m2card4.jpg",
-              "level": "CEFR B2",
-              "role": "Safety Investigator / Flight Safety Officer",
-              "duration": "120 Minutes"
-            },
-            "openingSession": {
-              "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
-              "summary": "News review followed by quick vocabulary check on commercial fleets.",
-              "modeBadges": [
-                "Pairs",
-                "News & Warm-Up",
-                "10 Mins"
-              ],
-              "instructions": [
-                "Read the 3 aviation safety news items (BEA annual report, NTSB automation symposium, ICAO 25-hour CVR mandate).",
-                "Test your partner on the 4 core accident investigation questions: Accident vs. Incident (ICAO Annex 13), FDR vs. CVR capabilities, CFIT definition, and the Swiss Cheese safety model.",
-                "Toggle each answer to verify definitions against official ICAO investigation terminology."
-              ],
-              "deliverable": "Concise verbal explanations of core safety concepts and accident classification criteria.",
-              "teacherNotes": "Stress that aviation safety investigations exist solely to determine causes and prevent recurrence, NOT to apportion blame or legal liability (ICAO Annex 13 principle).",
-              "newsPrompts": [
-                "French accident bureau BEA issues annual safety synthesis highlighting stable commercial airline safety records in Europe.",
-                "NTSB safety symposium examines pilot-machine interface and automated flight envelope protections.",
-                "ICAO mandates enhanced 25-hour Cockpit Voice Recorder (CVR) duration on newly manufactured commercial jet transports."
-              ],
-              "diagnostic": {
-                "title": "Session 3 Knowledge Check",
-                "instructions": "Answer these 4 rapid spot-check questions:",
-                "questions": [
-                  {
-                    "id": 1,
-                    "q": "What is the difference between an 'accident' and an 'incident' according to ICAO Annex 13?",
-                    "answer": "An accident involves serious injury, loss of life, or substantial structural damage affecting airworthiness. An incident affects or could affect flight safety, but without catastrophic damage or serious injury."
-                  },
-                  {
-                    "id": 2,
-                    "q": "What are the two components of the aircraft 'black box', and what does each record?",
-                    "answer": "The Cockpit Voice Recorder (CVR) records cockpit sounds, pilot communications, and warnings. The Flight Data Recorder (FDR) records flight parameters like altitude, airspeed, heading, control positions, and engine settings."
-                  },
-                  {
-                    "id": 3,
-                    "q": "What is Controlled Flight Into Terrain (CFIT)?",
-                    "answer": "CFIT occurs when an airworthy aircraft under the control of the flight crew is unintentionally flown into terrain, obstacles, or water without the crew realizing the impending impact."
-                  },
-                  {
-                    "id": 4,
-                    "q": "Explain the 'Swiss Cheese' safety model in accident investigation.",
-                    "answer": "Aviation accidents rarely result from a single failure; they occur when latent organizational weaknesses and active errors line up through holes in multiple protective defensive layers."
-                  }
-                ]
-              }
-            },
-            "investigationLexis": {
-              "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
-              "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
-              "modeBadges": [
-                "Pairs",
-                "Vocabulary Acquisition",
-                "20 Mins"
-              ],
-              "instructions": [
-                "Review the 5 core investigation concepts: Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), Root Cause vs. Contributing Factor, Human Factors & CRM, and Airworthiness Directives (AD).",
-                "Pair up to explain how a minor technical glitch can cascade into a catastrophic event when multiple contributing factors align.",
-                "Match each term to its real-world investigation document (preliminary report, FDR readout, final safety recommendation)."
-              ],
-              "deliverable": "Precise deployment of causal terminology in simulated incident descriptions.",
-              "teacherNotes": "Check understanding of the distinction between 'root cause' (the underlying trigger without which the accident would not occur) and 'contributing factors' (environmental, fatigue, organizational conditions that aggravated the event).",
-              "terms": [
-                {
-                  "term": "Flight Data Recorder (FDR)",
-                  "role": "Records hundreds of digital flight parameters (airspeed, control deflections, engine parameters) for crash investigation."
-                },
-                {
-                  "term": "Cockpit Voice Recorder (CVR)",
-                  "role": "Captures cockpit audio, pilot communications, and acoustic warnings on an endless recording loop."
-                },
-                {
-                  "term": "Root Cause vs. Contributing Factor",
-                  "role": "Root cause is the core failure without which the event would not have occurred; contributing factors heighten risk or accelerate the chain."
-                },
-                {
-                  "term": "Human Factors & Crew Resource Management (CRM)",
-                  "role": "Addressing human error, stress, cognitive overload, communication breakdown, and hierarchical authority gradient in the cockpit."
-                },
-                {
-                  "term": "Airworthiness Directive (AD)",
-                  "role": "A legally binding safety regulation issued by aviation authorities (FAA, EASA) mandating structural or systems modifications."
-                }
-              ]
-            },
-            "pastNarrativesClinic": {
-              "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
-              "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
-              "modeBadges": [
-                "Pairs / Individual",
-                "Narrative Grammar",
-                "20 Mins"
-              ],
-              "instructions": [
-                "Examine the narrative timeline formula combining Past Continuous (background condition: 'was cruising at FL350'), Past Perfect (prior action: 'ice crystals had blocked the probes'), and Past Simple (consecutive events: 'the autopilot disconnected, the alarm sounded, and the crew pitched up').",
-                "Identify the time sequencers used in professional accident reports: 'subsequently', 'concurrently', 'prior to impact', 'thereafter'.",
-                "Reconstruct a 3-sentence chronological sequence of an in-flight engine failure using all three past tenses accurately."
-              ],
-              "deliverable": "Written and spoken chronological narrative accurately coordinating Past Simple, Past Continuous, and Past Perfect.",
-              "teacherNotes": "Non-native speakers often overuse the past simple. Insist on the past perfect for actions completed before another past event: 'The aircraft crashed because the maintenance crew had forgotten to lock the cowl latch.'",
-              "rules": [
-                {
-                  "tense": "Past Continuous (Background Action in Progress)",
-                  "formula": "was/were + [verb-ing]",
-                  "example": "The aircraft was cruising at FL350 in calm air when the airspeed indicators suddenly disagreed."
-                },
-                {
-                  "tense": "Past Perfect (Prior Action Completed Earlier)",
-                  "formula": "had + [past participle]",
-                  "example": "The crew had disconnected the autopilot because ice crystals had accumulated inside the pitot probes."
-                },
-                {
-                  "tense": "Past Simple (Sequential Events)",
-                  "formula": "[past verb] + then / subsequently",
-                  "example": "The captain reduced pitch, applied rudder, and subsequently regained visual contact with the runway."
-                }
-              ]
-            },
-            "groupResearchSprint": {
-              "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
-              "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
-              "modeBadges": [
-                "Small Groups (3-4)",
-                "Research Sprint",
-                "15 Mins"
-              ],
-              "instructions": [
-                "Form groups of 3-4 and select one of the 6 landmark accident case studies: Tenerife (1977), AF447 (2009), US Airways 1549 (2009), BA038 (2008), Aloha 243 (1988), or Boeing 737 MAX (2018-2019).",
-                "In a 15-minute timed sprint, extract the 4 mandatory briefing pillars: (1) Aircraft type & context, (2) Chronology of events, (3) Technical & human root causes, (4) Permanent safety upgrades.",
-                "Assign speaking roles so that each group member presents one specific pillar without reading directly from notes."
-              ],
-              "deliverable": "Structured 4-part presentation outline ready for spoken delivery within the 15-minute timebox.",
-              "teacherNotes": "Act as a timekeeper. Do not allow groups to spend 10 minutes choosing a topic; assign immediately if needed. Check that notes contain only bullet prompts, key acronyms, and flight numbers.",
-              "caseStudies": [
-                {
-                  "id": 1,
-                  "title": "Tenerife Airport Disaster (1977)",
-                  "aircraft": "Two Boeing 747s (KLM Flight 4805 & Pan Am Flight 1736)",
-                  "context": "Dense fog on the runway at Los Rodeos Airport. Non-standard radio phraseology ('at takeoff') and authority gradient led KLM to begin takeoff while Pan Am was still back-taxiing on the runway.",
-                  "safetyOutcome": "Complete overhaul of international ATC phraseology; birth of Crew Resource Management (CRM); mandatory readbacks of all runway clearances."
-                },
-                {
-                  "id": 2,
-                  "title": "Air France Flight 447 (2009)",
-                  "aircraft": "Airbus A330-200",
-                  "context": "En route from Rio to Paris across the ITCZ. Supercooled water ice crystals blocked all three pitot tubes, causing autopilot disconnect and unreliable airspeed. Crew pitched up, entering an unrecognized aerodynamic stall.",
-                  "safetyOutcome": "Redesigned Thales pitot probes; mandatory high-altitude stall recovery training; enhanced angle of attack awareness protocols."
-                },
-                {
-                  "id": 3,
-                  "title": "US Airways Flight 1549 'Miracle on the Hudson' (2009)",
-                  "aircraft": "Airbus A320-200",
-                  "context": "Shortly after departure from LaGuardia at 2,800 ft, aircraft strikes a flock of Canada geese, causing complete dual engine failure. Pilots assess landing options and execute successful ditching in Hudson River.",
-                  "safetyOutcome": "Wildlife management programs at airports; revised dual engine failure checklists; improved pilot water survival training."
-                },
-                {
-                  "id": 4,
-                  "title": "British Airways Flight 38 (2008)",
-                  "aircraft": "Boeing 777-200ER",
-                  "context": "On short final into London Heathrow after transpolar flight from Beijing. Uncommanded dual engine thrust rollback at 700 ft due to ice crystals clogging fuel-oil heat exchangers (FOHE).",
-                  "safetyOutcome": "Redesigned Rolls-Royce Trent 800 fuel-oil heat exchangers preventing internal ice accretion; updated cold weather fuel management procedures."
-                },
-                {
-                  "id": 5,
-                  "title": "Aloha Airlines Flight 243 (1988)",
-                  "aircraft": "Boeing 737-200",
-                  "context": "High-cycle inter-island flight in Hawaii at FL240. Severe multi-site fatigue cracking and corrosion caused an explosive decompression, tearing off 5.5 meters of upper cabin fuselage.",
-                  "safetyOutcome": "Mandatory aging aircraft inspection programs; strict lap-joint fatigue crack testing; revised cyclic pressurization inspection intervals."
-                },
-                {
-                  "id": 6,
-                  "title": "Boeing 737 MAX Accidents (Lion Air 610 / Ethiopian 302, 2018-2019)",
-                  "aircraft": "Boeing 737 MAX 8",
-                  "context": "Single angle-of-attack (AoA) sensor failure triggered repeated, uncommanded MCAS nose-down trim activation that overwhelmed flight crews unfamiliar with the system.",
-                  "safetyOutcome": "Complete MCAS redesign requiring dual AoA sensor agreement; uncommanded trim override limits; mandatory simulator training for all MAX pilots."
-                }
-              ]
-            },
-            "presentationsDebrief": {
-              "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
-              "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
-              "modeBadges": [
-                "Small Groups",
-                "Spoken Presentation",
-                "45 Mins"
-              ],
-              "instructions": [
-                "Deliver your 5-minute accident briefing to the class, using the whiteboard or bullet slides to support your narrative.",
-                "Ensure talking time is distributed equally among all team members. Strictly no reading from pre-written essays!",
-                "After each presentation, the audience formulates at least two technical questions regarding the investigation findings or regulatory follow-up.",
-                "Summarize how the accident contributed to the modern aviation safety ecosystem."
-              ],
-              "deliverable": "5-minute spoken briefing delivered without word-for-word notes and active engagement in technical peer Q&A.",
-              "teacherNotes": "Enforce equal speaking time strictly. If one student dominates, prompt the other team members: 'Could the second speaker explain the human factors component?' Assess pronunciation of past tense -ed endings (e.g., disconnected, pitched, descended).",
-              "presentationGuidelines": [
-                "Structure: (1) Aircraft type & context, (2) Chronology of events, (3) Root causes, (4) Permanent safety fixes.",
-                "Speaking rules: Share talking time equally among all group members. Strictly no reading word-for-word from notes!",
-                "Audience task: Classmates formulate one technical follow-up question regarding the investigation findings."
-              ]
-            },
-            "closingReview": {
-              "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
-              "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
-              "modeBadges": [
-                "Plenary",
-                "FE2 Preparation",
-                "10 Mins"
-              ],
-              "instructions": [
-                "Review the 18 accident and safety terms in the Revision tab flashcards.",
-                "Note the expectations for Session 5 Formative Evaluation 2: 10-12 minute paired presentation of an Aircraft or Airline Profile, followed by teacher Q&A.",
-                "Verify your presentation partner, topic selection, and slide preparation plan."
-              ],
-              "deliverable": "Confirmed FE2 preparation roadmap and mastery of the 18 accident investigation vocabulary items.",
-              "teacherNotes": "Remind students that FE2 in Session 5 is formative, providing detailed formative feedback on pronunciation, technical vocabulary, and spontaneous Q&A defense.",
-              "checkpoints": [
-                "Mastered 18 accident investigation & safety terms",
-                "Coordinated past simple, continuous, and perfect in chronology",
-                "Confirmed FE2 partner, topic, and presentation structure"
-              ],
-              "fe2Preview": "In Session 5, you and your partner will present an Aircraft or Airline Profile for 10-12 minutes, followed by teacher Q&A, covering technical specs, operational metrics, historical milestones, and safety records."
-            }
-          },
           "revision": {
-            "title": "Session 4 Revision - Significant Aviation Accidents & Aircraft Types",
-            "summary": "Master the 18 key vocabulary terms for Aviation Accidents & Safety to analyze investigation methodologies, causal factors, and safety upgrades.",
+            "title": "Session 4: Significant Aviation Accidents & Aircraft Types",
+            "summary": "Review the 18 specialized terms for accident investigation, flight recorders, and aviation safety analysis.",
             "terms": [
               {
-                "num": "01",
-                "term": "Accident",
-                "definition": "An occurrence associated with the operation of an aircraft causing serious injury, death, or major structural failure."
-              },
-              {
-                "num": "02",
-                "term": "Incident",
-                "definition": "An occurrence, other than an accident, associated with aircraft operation that affects or could affect the safety of operation."
-              },
-              {
-                "num": "03",
-                "term": "Flight Data Recorder (FDR)",
-                "definition": "A flight recorder device that records operating parameters (altitude, airspeed, heading, control positions) to reconstruct accidents."
-              },
-              {
-                "num": "04",
                 "term": "Cockpit Voice Recorder (CVR)",
-                "definition": "A flight recorder device that records audio inside the cockpit, including pilot voices, radio communications, and alarms."
+                "ipa": "/ˈkɒk.pɪt vɔɪs rɪˈkɔː.dər/",
+                "definition": "Crash-survivable audio recorder capturing crew speech, radio transmissions, and ambient sounds.",
+                "french": "Enregistreur phonique / boîte noire audio (CVR)"
               },
               {
-                "num": "05",
-                "term": "Investigation Bureau",
-                "definition": "An independent national safety authority (e.g. BEA in France, NTSB in the US) tasked with determining accident causes."
+                "term": "Flight Data Recorder (FDR)",
+                "ipa": "/flaɪt ˈdeɪ.tə rɪˈkɔː.dər/",
+                "definition": "Electronic device logging hundreds of technical parameters: airspeed, altitude, pitch, thrust.",
+                "french": "Enregistreur de paramètres de vol (FDR)"
               },
               {
-                "num": "06",
-                "term": "Root Cause",
-                "definition": "The fundamental underlying failure or condition that directly initiated the sequence resulting in the accident."
+                "term": "Pitot Icing",
+                "ipa": "/ˈpiː.təʊ ˈaɪ.sɪŋ/",
+                "definition": "Blockage of airspeed probes by ice crystals, leading to conflicting cockpit readings.",
+                "french": "Givrage des sondes Pitot"
               },
               {
-                "num": "07",
-                "term": "Contributing Factor",
-                "definition": "An environmental, mechanical, or human factor that increased the likelihood or severity of an accident."
+                "term": "Spatial Disorientation",
+                "ipa": "/ˈspeɪ.ʃəl dɪsˌɔː.ri.enˈteɪ.ʃən/",
+                "definition": "Inability of a pilot to correctly perceive aircraft attitude, altitude, or speed relative to Earth.",
+                "french": "Désorientation spatiale"
               },
               {
-                "num": "08",
-                "term": "Metal Fatigue",
-                "definition": "Progressive structural damage and cracking that occurs when metal airframe components are subjected to repeated cyclic stress."
+                "term": "CFIT",
+                "ipa": "/ˌsiː.ef.aɪˈtiː/",
+                "definition": "Controlled Flight Into Terrain: an airworthy aircraft flown unintentionally into obstacles.",
+                "french": "Impact sans perte de contrôle (CFIT)"
               },
               {
-                "num": "09",
-                "term": "Decompression",
-                "definition": "The loss of internal cabin pressure in an aircraft due to structural failure, door seal rupture, or system malfunction."
+                "term": "Causal Chain",
+                "ipa": "/ˈkɔː.zəl tʃeɪn/",
+                "definition": "The linked sequence of mechanical, human, and organizational failures leading to an accident.",
+                "french": "Chaîne causale d'événements"
               },
               {
-                "num": "10",
-                "term": "Engine Failure",
-                "definition": "The unexpected shutdown, flameout, or mechanical destruction of an aircraft engine during operation."
-              },
-              {
-                "num": "11",
-                "term": "Bird Strike",
-                "definition": "A collision between an airborne animal (bird or bat) and an aircraft in flight or during takeoff/landing."
-              },
-              {
-                "num": "12",
-                "term": "Icing",
-                "definition": "The accumulation of atmospheric ice on wings, control surfaces, or pitot probes, severely degrading aerodynamic performance."
-              },
-              {
-                "num": "13",
-                "term": "Controlled Flight Into Terrain (CFIT)",
-                "definition": "An accident in which an airworthy aircraft under crew control is inadvertently flown into ground, water, or obstacles."
-              },
-              {
-                "num": "14",
-                "term": "Loss of Control In-Flight (LOC-I)",
-                "definition": "A severe deviation from the intended flight path caused by aerodynamic stall, spatial disorientation, or systems failure."
-              },
-              {
-                "num": "15",
-                "term": "Human Factors",
-                "definition": "The study of human capabilities, cognitive limitations, communication, and ergonomics in aviation operations."
-              },
-              {
-                "num": "16",
-                "term": "Situational Awareness",
-                "definition": "An accurate mental perception of the aircraft position, flight condition, environmental threats, and systems status."
-              },
-              {
-                "num": "17",
                 "term": "Safety Recommendation",
-                "definition": "A formal proposal by an accident investigation board recommending mandatory regulatory, operational, or design changes."
+                "ipa": "/ˈseɪf.ti ˌrek.ə.menˈdeɪ.ʃən/",
+                "definition": "Formal advisory issued by investigators to prevent recurrence (never intended to assign blame).",
+                "french": "Recommandation de sécurité"
               },
               {
-                "num": "18",
                 "term": "Airworthiness Directive (AD)",
-                "definition": "A legally enforceable regulation issued by a civil aviation authority mandating inspections or modifications to resolve an unsafe condition."
+                "ipa": "/ˌeə.wɜː.ði.nəs dɪˈrek.tɪv/",
+                "definition": "A legally binding regulation issued by authorities requiring mandatory aircraft modifications.",
+                "french": "Consigne de navigabilité (CN / AD)"
+              },
+              {
+                "term": "Unreliable Airspeed",
+                "ipa": "/ˌʌn.rɪˈlaɪ.ə.bəl ˈeə.spiːd/",
+                "definition": "Abnormal flight condition where airspeed indicators disagree or show false readings.",
+                "french": "Vitesse anémométrique douteuse"
+              },
+              {
+                "term": "Crew Resource Management (CRM)",
+                "ipa": "/kruː rɪˈsɔːs ˈmæn.ɪdʒ.mənt/",
+                "definition": "Training optimizing communication, situational awareness, and leadership on the flight deck.",
+                "french": "Gestion des ressources de l'équipage (CRM)"
+              },
+              {
+                "term": "Situational Awareness",
+                "ipa": "/ˌsɪtʃ.uˈeɪ.ʃən.əl əˈweə.nəs/",
+                "definition": "Accurate real-time perception of aircraft location, environmental threats, and systems.",
+                "french": "Conscience de la situation"
+              },
+              {
+                "term": "Microburst",
+                "ipa": "/ˈmaɪ.krəʊ.bɜːst/",
+                "definition": "A localized, intense downdraft causing catastrophic wind shear near the ground.",
+                "french": "Micro-rafale descendante"
+              },
+              {
+                "term": "Wind Shear",
+                "ipa": "/wɪnd ʃɪər/",
+                "definition": "A sudden, drastic change in wind speed or direction over a short distance.",
+                "french": "Cisaillement du vent"
+              },
+              {
+                "term": "Go-Around",
+                "ipa": "/ˈɡəʊ.əˌraʊnd/",
+                "definition": "Aborted landing procedure where pilots apply full thrust to climb away and re-sequence.",
+                "french": "Remise de gaz (RDG)"
+              },
+              {
+                "term": "Ground Proximity Warning (EGPWS)",
+                "ipa": "/iː.dʒiː.piːˈdʌb.əl.juː.es/",
+                "definition": "Cockpit terrain alert system warning pilots of impending collision with ground.",
+                "french": "Avertisseur de proximité du sol (EGPWS)"
+              },
+              {
+                "term": "Decompression",
+                "ipa": "/ˌdiː.kəmˈpreʃ.ən/",
+                "definition": "Loss of cabin pressurization requiring immediate emergency descent on supplemental oxygen.",
+                "french": "Dépressurisation (rapide / explosive)"
+              },
+              {
+                "term": "Emergency Descent",
+                "ipa": "/ɪˈmɜː.dʒən.si dɪˈsent/",
+                "definition": "Maximum rate descent executed by pilots following severe cabin depressurization.",
+                "french": "Descente d'urgence"
+              },
+              {
+                "term": "Root Cause",
+                "ipa": "/ruːt kɔːz/",
+                "definition": "The fundamental underlying deficiency that initiated the failure sequence.",
+                "french": "Cause profonde / cause racine"
               }
             ]
           },
           "materials": {
-            "videos": [
-              {
-                "title": "Video 1: Black Box, FDR & CVR Explained by Captain Joe",
-                "watchUrl": "https://www.youtube.com/watch?v=lPiWlBG16Wo",
-                "tag": "Flight Recorders",
-                "videoId": "lPiWlBG16Wo",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/lPiWlBG16Wo",
-                "caption": "Focus: Understand how underwater locator beacons, Flight Data Recorders, and Cockpit Voice Recorders withstand impacts to preserve telemetry."
-              },
-              {
-                "title": "Video 2: NTSB Animation Flight 1549 Hudson River Landing US Airways",
-                "watchUrl": "https://www.youtube.com/watch?v=pWpSAfF6elI",
-                "tag": "Accident Reconstruction",
-                "videoId": "pWpSAfF6elI",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/pWpSAfF6elI",
-                "caption": "Focus: Analyze the official NTSB synchronized FDR data, ATC radar track, and radio transcripts during the dual-engine goose ingestion ditching."
-              },
-              {
-                "title": "Video 3: Boeing 737 MAX and Swiss Cheese: Systemic Accident Causation",
-                "watchUrl": "https://www.youtube.com/watch?v=ol0L9quUq_Y",
-                "tag": "Human Factors",
-                "videoId": "ol0L9quUq_Y",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/ol0L9quUq_Y",
-                "caption": "Focus: Explore how latent engineering vulnerabilities, regulatory delegation, and flight crew alerting lined up in the Swiss Cheese model."
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Aviation Safety Evolution",
-                "sourceTag": "Flight Safety Foundation",
-                "heading": "From Tragedy to Technology: How Historical Accidents Made Modern Flying the Safest Transit Mode",
-                "snippet": "An examination of how Crew Resource Management (CRM), TCAS collision avoidance, and GPWS terrain warnings originated from accident investigations.",
-                "url": "https://flightsafety.org",
-                "readTime": "Estimated read: 4-5 mins"
-              },
-              {
-                "topic": "Accident Investigation",
-                "sourceTag": "BEA France",
-                "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
-                "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-                "url": "https://www.bea.aero",
-                "readTime": "Estimated read: 5-6 mins"
-              }
-            ],
-            "resources": [
-              {
-                "url": "https://bea.aero/en",
-                "tag": "01 • Official Reports",
-                "name": "BEA (Bureau d'Enquêtes et d'Analyses)",
-                "desc": "French civil aviation safety authority publishing authoritative final accident investigation reports."
-              },
-              {
-                "url": "https://www.ntsb.gov/investigations/accidentreports/pages/aviation.aspx",
-                "tag": "02 • Investigation Database",
-                "name": "NTSB Aviation Accident Investigation Database",
-                "desc": "US National Transportation Safety Board database with factual dockets and probable cause findings."
-              },
-              {
-                "url": "https://www.icao.int/safety/air-navigation/Pages/aig.aspx",
-                "tag": "03 • International Standards",
-                "name": "ICAO Annex 13: Aircraft Accident Investigation",
-                "desc": "Standardized international treaty protocols governing investigator rights and report transparency."
-              },
-              {
-                "url": "https://aviation-safety.net",
-                "tag": "04 • Safety Knowledgebase",
-                "name": "Aviation Safety Network (ASN) Database",
-                "desc": "Global historical flight occurrence archive tracking hull losses, airframe types, and fatalities."
-              },
-              {
-                "url": "https://www.skybrary.aero/articles/accident-and-incident-investigation",
-                "tag": "05 • Safety Research",
-                "name": "Skybrary: Aviation Accident Investigation Toolkit",
-                "desc": "In-depth tutorials on black box data extraction, metallurgical analysis, and human factors."
-              },
-              {
-                "url": "https://www.eurocontrol.int/safety",
-                "tag": "06 • European Safety",
-                "name": "EUROCONTROL Safety Improvement Initiatives",
-                "desc": "European air navigation safety briefings on runway incursions, level busts, and wake turbulence."
-              }
-            ],
             "grammar": {
-              "title": "Past Narrative Tenses & Time Linkers in Accident Chronologies",
-              "badge": "Flight Recorders",
-              "patternTitle": "Accident Investigation Formula",
-              "formula": "While + Past Continuous, Past Simple || Subject + had + Past Participle (Past Perfect)",
-              "rulesTitle": "Core Communicative Guidelines",
+              "title": "Narrative Past Tenses & Time Sequencers in Chronologies",
+              "badge": "Accident Investigation Grammar",
+              "patternTitle": "Narrative Tense Formula",
+              "formula": "While + Past Continuous, [Past Simple Action] || [Past Simple], after [Past Perfect]",
+              "rulesTitle": "Chronological Sequence Rules",
               "rules": [
-                "<strong style=\"color: #1e293b;\">1. Past Continuous for Background Conditions:</strong> Sets the atmospheric and operational scene (<em>'While the flight was cruising in severe icing conditions at FL350, the pitot probes iced over'</em>).",
-                "<strong style=\"color: #1e293b;\">2. Past Simple for Sequential Chain of Events:</strong> Recounts the chronological trigger events (<em>'The autopilot disconnected, the master warning sounded, and the captain initiated recovery'</em>).",
-                "<strong style=\"color: #1e293b;\">3. Past Perfect for Pre-Existing Latent Conditions:</strong> Identifies maintenance or regulatory oversights prior to departure (<em>'Investigators revealed that technicians had installed an incorrect adhesive during an overhaul six months earlier'</em>).",
-                "<strong style=\"color: #1e293b;\">4. Cause-and-Effect Narrative Subordinators:</strong> Connects human factors to systemic outcomes (<em>'Because the flight crew had received insufficient simulator training on the new trim system, they failed to recognize the runaway trim'</em>)."
+                "<strong style=\"color: #1e293b;\">1. Background Context (Past Continuous):</strong> Used for ongoing background states when an event occurred (<em>'While the aircraft was cruising at FL350...'</em>).",
+                "<strong style=\"color: #1e293b;\">2. Completed Events (Past Simple):</strong> Used for sequential actions in the timeline (<em>'...the autopilot disconnected and alarms sounded'</em>).",
+                "<strong style=\"color: #1e293b;\">3. Prior Events (Past Perfect):</strong> Used for events that happened before another past event (<em>'The crew had already initiated recovery before entering the cloud'</em>)."
               ],
-              "trap": "⚠️ TOEIC Part 5 Narrative Tense Alert: When two actions happened in the past, the earlier event MUST use the Past Perfect ('had + verb3'), not the Past Simple (<em>'The crew realized that the controller had assigned them the wrong heading'</em>).",
-              "examplesTitle": "Authentic Operational Examples",
+              "trap": "⚠️ Operational Trap: Never say 'The pilot was hearing the alarm'. Say 'The pilot heard the alarm' (stative verbs cannot be continuous).",
+              "examplesTitle": "Authentic Investigation Chronology Examples",
               "examples": [
-                "While the aircraft was descending on approach, the ground proximity warning system alerted the crew to rising terrain.",
-                "The BEA safety board determined that sensor discrepancy had triggered inappropriate flight control law degradation."
+                "While the aircraft was climbing through FL330, the captain had already left the flight deck for rest.",
+                "The flight crew had not recognized the stall warning before applying pitch-up inputs."
               ]
             },
-            "toeicQuestions": [
-              {
-                "stem": "The accident investigation bureau concluded that the aircraft ________ at cruise altitude for three hours before the electrical failure occurred.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "is flying"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "was flown"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "had been flying"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "has flown"
-                  }
-                ],
-                "correctLetter": "C",
-                "correctText": "had been flying",
-                "analysis": "The past perfect continuous ('had been flying') indicates an ongoing action that was in progress for a specified duration ('for three hours') before another definitive past event ('the failure occurred').",
-                "strategy": "Duration markers ('for X hours') preceding a past event ('before + past simple') signal the Past Perfect Continuous (had been + -ing).",
-                "id": 1
-              },
-              {
-                "stem": "Civil aviation authorities issued an emergency Airworthiness Directive requiring mandatory ________ of all engine fuel-oil heat exchangers.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "inspections"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "inspects"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "inspected"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "inspect"
-                  }
-                ],
-                "correctLetter": "A",
-                "correctText": "inspections",
-                "analysis": "The transitive participle 'requiring' followed by the adjective 'mandatory' requires a direct object noun. The plural noun 'inspections' completes the meaning.",
-                "strategy": "After an adjective (mandatory, regulatory, annual, periodic), select the noun form (ending in -tion, -ment, -ance).",
-                "id": 2
-              },
-              {
-                "stem": "Investigators determined that the flight crew had lost situational awareness ________ extreme fatigue and high cognitive workload in severe weather.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "because of"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "although"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "whereas"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "in spite"
-                  }
-                ],
-                "correctLetter": "A",
-                "correctText": "because of",
-                "analysis": "'Because of' correctly introduces the noun phrase cause ('extreme fatigue and high cognitive workload'). 'In spite' lacks 'of', and 'although' / 'whereas' introduce full clauses.",
-                "strategy": "Identify cause vs. contrast: fatigue caused the loss of awareness (direct cause = because of).",
-                "id": 3
-              },
-              {
-                "stem": "The Flight Data Recorder provided accurate telemetry data that enabled engineers ________ the exact sequence of events leading to the incident.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "reconstruct"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "to reconstruct"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "reconstructing"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "reconstructed"
-                  }
-                ],
-                "correctLetter": "B",
-                "correctText": "to reconstruct",
-                "analysis": "The causative verb 'enable' follows the structural pattern 'enable + someone / something + to-infinitive' ('enabled engineers to reconstruct').",
-                "strategy": "Causative & permissive verbs taking object + to-infinitive: enable, allow, require, permit, instruct, authorize.",
-                "id": 4
-              },
-              {
-                "stem": "Following the publication of the final report, airlines implemented enhanced crew training programs in order to ________ future communication errors.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "preventing"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "prevention"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "prevent"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "preventable"
-                  }
-                ],
-                "correctLetter": "C",
-                "correctText": "prevent",
-                "analysis": "The purpose clause connector 'in order to' is strictly followed by the base bare form of the verb ('in order to prevent').",
-                "strategy": "In order to / so as to are purpose markers that must be followed by a bare infinitive (base verb form V1).",
-                "id": 5
-              }
-            ],
-            "pageUrl": "session4/admat_aas2.html"
+            "toeic": {
+              "stem": "By the time the accident investigation team arrived at the crash site, local authorities ________ already secured the flight recorders.",
+              "options": [
+                "A) had",
+                "B) have",
+                "C) having",
+                "D) will have"
+              ],
+              "correctLetter": "A",
+              "correctText": "had",
+              "analysis": "The time expression 'By the time [past event]' requires the Past Perfect ('had + already + past participle') for the prior action.",
+              "strategy": "Look for 'By the time + past simple' — it always triggers the Past Perfect."
+            },
+            "resources": [],
+            "articles": [],
+            "videos": [],
+            "toeicQuestions": []
+          },
+          "lessonContent": {
+            "hero": {
+              "title": "Significant Aviation Accidents & Aircraft Types",
+              "subtitle": "AAS Module 2 • Session 4 • Flight Recorders, Causal Chains & Accident Investigation Board",
+              "image": "images/aas_m2card4.jpg",
+              "badge": "AT Module 2 • Session 4"
+            }
           }
         }
       }
@@ -21617,37 +19899,37 @@
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan: Health & Human Factors (2 Hours)",
-            "summary": "A 120-minute operational syllabus combining warm-up aeromedical checks, condition triage vocabulary, fatigue regulations clinic, airborne medical diversion simulation, and pronunciation consolidation.",
+            "summary": "A operational syllabus combining warm-up aeromedical checks, condition triage vocabulary, fatigue regulations clinic, airborne medical diversion simulation, and pronunciation consolidation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Activity 1: Aviation Health News & Quick Check (10 mins)",
-                "description": "Plenary warm-up discussing recent medical diversions and completing a 5-question baseline aeromedical diagnostic."
+                "title": "Activity 1: Aviation Health News & Quick Check",
+                "description": "Plenary warm-up discussing recent medical diversions and completing a 5-question baseline aeromedical diagnostic.",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Activity 2: In-Flight Medical Emergencies & Triage Vocabulary (20 mins)",
-                "description": "Paired classification of 18 medical conditions, cabin emergency medical kits (EMK), and ground telemedicine (MedLink) procedures."
+                "title": "Activity 2: In-Flight Medical Emergencies & Triage Vocabulary",
+                "description": "Paired classification of 18 medical conditions, cabin emergency medical kits (EMK), and ground telemedicine (MedLink) procedures.",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Activity 3: Language Focus: Crew & Controller Fatigue, Circadian Rhythms & FTL (20 mins)",
-                "description": "Analysis of circadian disruptions, sleep debt, EASA Flight Time Limitations, and applying the IMSAFE fitness model."
+                "title": "Activity 3: Language Focus: Crew & Controller Fatigue, Circadian Rhythms & FTL",
+                "description": "Analysis of circadian disruptions, sleep debt, EASA Flight Time Limitations, and applying the IMSAFE fitness model.",
+                "part": "Part 3"
               },
               {
-                "time": "50-85",
-                "title": "Activity 4: Airborne Medical Diversion Simulation & Decision Guide (35 mins)",
-                "description": "Small-group simulation evaluating 3 critical airborne medical emergency scenarios requiring operational diversion and ATC priority."
+                "title": "Activity 4: Airborne Medical Diversion Simulation & Decision Guide",
+                "description": "Small-group simulation evaluating 3 critical airborne medical emergency scenarios requiring operational diversion and ATC priority.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia & Emergency Descent (25 mins)",
-                "description": "Plenary debrief on vestibular illusions, rapid decompression protocols, and Time of Useful Consciousness (TUC)."
+                "title": "Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia & Emergency Descent",
+                "description": "Plenary debrief on vestibular illusions, rapid decompression protocols, and Time of Useful Consciousness (TUC).",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Activity 6: Medical & Human Factors Consolidation & Syllable Stress (10 mins)",
-                "description": "Pronunciation drills on medical terminology, checkpoints audit, and flashcard revision."
+                "title": "Activity 6: Medical & Human Factors Consolidation & Syllable Stress",
+                "description": "Pronunciation drills on medical terminology, checkpoints audit, and flashcard revision.",
+                "part": "Part 6"
               }
             ]
           },
@@ -22285,37 +20567,37 @@
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan: Meteorology & Severe Weather (2 Hours)",
-            "summary": "A 120-minute operational syllabus combining weather news warm-ups, atmospheric vocabulary classification, METAR/TAF decoding clinic, 15-minute landmark weather case study research sprint, and severe weather diversion simulation.",
+            "summary": "A operational syllabus combining weather news warm-ups, atmospheric vocabulary classification, METAR/TAF decoding clinic, 15-minute landmark weather case study research sprint, and severe weather diversion simulation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Activity 1: Aviation Weather Briefing & Meteorological Warm-Up (10 mins)",
-                "description": "Plenary opening examining current weather hazard charts, satellite imagery, and completing a 5-question baseline meteorological diagnostic."
+                "title": "Activity 1: Aviation Weather Briefing & Meteorological Warm-Up",
+                "description": "Plenary opening examining current weather hazard charts, satellite imagery, and completing a 5-question baseline meteorological diagnostic.",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Activity 2: Severe Atmospheric Phenomena & Flight Impacts (20 mins)",
-                "description": "Paired classification of 18 severe weather terms, aerodynamic impact matrices, and pilot tactical avoidance maneuvers."
+                "title": "Activity 2: Severe Atmospheric Phenomena & Flight Impacts",
+                "description": "Paired classification of 18 severe weather terms, aerodynamic impact matrices, and pilot tactical avoidance maneuvers.",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Activity 3: Language Focus: Decoding METAR, TAF & SIGMET Advisories (20 mins)",
-                "description": "Interactive translation and interpretation of real-world coded aviation weather reports for dispatchers and pilots."
+                "title": "Activity 3: Language Focus: Decoding METAR, TAF & SIGMET Advisories",
+                "description": "Interactive translation and interpretation of real-world coded aviation weather reports for dispatchers and pilots.",
+                "part": "Part 3"
               },
               {
-                "time": "50-65",
-                "title": "Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies (15 mins)",
-                "description": "Small-group rapid research analyzing Delta 191 (DFW microburst) or BA 009 (volcanic ash ingestion), extracting safety fixes and crew actions."
+                "title": "Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies",
+                "description": "Small-group rapid research analyzing Delta 191 (DFW microburst) or BA 009 (volcanic ash ingestion), extracting safety fixes and crew actions.",
+                "part": "Part 4"
               },
               {
-                "time": "65-110",
-                "title": "Activity 5: Severe Weather En-Route & Terminal Diversion Simulation (45 mins)",
-                "description": "Flight crew and dispatcher teams reroute aircraft around a massive squall line with fuel reserve calculations and ATC coordination."
+                "title": "Activity 5: Severe Weather En-Route & Terminal Diversion Simulation",
+                "description": "Flight crew and dispatcher teams reroute aircraft around a massive squall line with fuel reserve calculations and ATC coordination.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Activity 6: Meteorology Consolidation & Pronunciation Wrap-Up (10 mins)",
-                "description": "Multi-syllabic stress drills on meteorological terms, checkpoints verification, and link to Session 3."
+                "title": "Activity 6: Meteorology Consolidation & Pronunciation Wrap-Up",
+                "description": "Multi-syllabic stress drills on meteorological terms, checkpoints verification, and link to Session 3.",
+                "part": "Part 6"
               }
             ]
           },
@@ -22962,37 +21244,37 @@
           },
           "lessonPlan": {
             "title": "Session 3 Lesson Plan: Safety vs. Security (2 Hours)",
-            "summary": "A 120-minute operational syllabus combining warm-up security warm-ups, safety vs. security conceptual matrix, airport screening architecture, pre-flight walkaround clinic, and dual-track emergency simulation.",
+            "summary": "A operational syllabus combining warm-up security warm-ups, safety vs. security conceptual matrix, airport screening architecture, pre-flight walkaround clinic, and dual-track emergency simulation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Activity 1: Safety & Security News & Quick Check (10 mins)",
-                "description": "Plenary opening discussing recent airport security breaches, CT baggage scanner rules, and completing a 5-question baseline diagnostic."
+                "title": "Activity 1: Safety & Security News & Quick Check",
+                "description": "Plenary opening discussing recent airport security breaches, CT baggage scanner rules, and completing a 5-question baseline diagnostic.",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Activity 2: The Literal & Operational Distinction: Safety vs. Security (20 mins)",
-                "description": "Paired analysis of 18 technical terms and establishing the strict legal boundary between ICAO Annex 17 (Security) and Annex 19 (Safety)."
+                "title": "Activity 2: The Literal & Operational Distinction: Safety vs. Security",
+                "description": "Paired analysis of 18 technical terms and establishing the strict legal boundary between ICAO Annex 17 (Security) and Annex 19 (Safety).",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Activity 3: Airport Security Architecture: Landside to Airside (20 mins)",
-                "description": "Detailed examination of passenger and baggage screening workflows, millimeter-wave scanners, CT tomography, and sterile area protection."
+                "title": "Activity 3: Airport Security Architecture: Landside to Airside",
+                "description": "Detailed examination of passenger and baggage screening workflows, millimeter-wave scanners, CT tomography, and sterile area protection.",
+                "part": "Part 3"
               },
               {
-                "time": "50-75",
-                "title": "Activity 4: Aircraft Security Search & Pre-Flight Sterile Checks (25 mins)",
-                "description": "Interactive cabin security sweep workshop identifying unattended baggage, tamper-evident seals, and spoken security sign-off to the Captain."
+                "title": "Activity 4: Aircraft Security Search & Pre-Flight Sterile Checks",
+                "description": "Interactive cabin security sweep workshop identifying unattended baggage, tamper-evident seals, and spoken security sign-off to the Captain.",
+                "part": "Part 4"
               },
               {
-                "time": "75-110",
-                "title": "Activity 5: Dual-Track Safety & Security Crisis Scenario (35 mins)",
-                "description": "Multi-agency emergency simulation coordinating response between Airport Police, ARFF fire services, and ATC for a perimeter breach and hydraulic emergency."
+                "title": "Activity 5: Dual-Track Safety & Security Crisis Scenario",
+                "description": "Multi-agency emergency simulation coordinating response between Airport Police, ARFF fire services, and ATC for a perimeter breach and hydraulic emergency.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Activity 6: Safety vs. Security Wrap-Up & FE3 Preview (10 mins)",
-                "description": "Consolidation checkpoints, pronunciation audit, and introduction to Session 4 Global Review and Session 5 FE3."
+                "title": "Activity 6: Safety vs. Security Wrap-Up & FE3 Preview",
+                "description": "Consolidation checkpoints, pronunciation audit, and introduction to Session 4 Global Review and Session 5 FE3.",
+                "part": "Part 6"
               }
             ]
           },
@@ -23601,37 +21883,37 @@
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan: Global Review & Grand Prix Quiz (2 Hours)",
-            "summary": "A 120-minute capstone tournament combining rules setup, 3 competitive quiz rounds (Aerodromes/Systems, Health/Weather, Safety/Security), the FE3 Press Briefing Masterclass, and final semester wrap-up.",
+            "summary": "A capstone tournament combining rules setup, 3 competitive quiz rounds (Aerodromes/Systems, Health/Weather, Safety/Security), the FE3 Press Briefing Masterclass, and final semester wrap-up.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Activity 1: Semester 1 Retrospective & Competition Rules (10 mins)",
-                "description": "Plenary setup, forming Team Alpha, Team Bravo, and Team Charlie, assigning team captains, and reviewing the Grand Prix scoreboard rules."
+                "title": "Activity 1: Semester 1 Retrospective & Competition Rules",
+                "description": "Plenary setup, forming Team Alpha, Team Bravo, and Team Charlie, assigning team captains, and reviewing the Grand Prix scoreboard rules.",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy & Systems (25 mins)",
-                "description": "Competitive round covering Module 1 and Module 2: runway numbering, GSE turnaround, flight control surfaces, and turbofan bypass ratios."
+                "title": "Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy & Systems",
+                "description": "Competitive round covering Module 1 and Module 2: runway numbering, GSE turnaround, flight control surfaces, and turbofan bypass ratios.",
+                "part": "Part 2"
               },
               {
-                "time": "35-60",
-                "title": "Activity 3: Grand Prix Round 2: Human Factors, Health & Severe Meteorology (25 mins)",
-                "description": "Competitive round covering Module 3: medical triage, EASA FTL fatigue rules, METAR decoding, and microburst physics."
+                "title": "Activity 3: Grand Prix Round 2: Human Factors, Health & Severe Meteorology",
+                "description": "Competitive round covering Module 3: medical triage, EASA FTL fatigue rules, METAR decoding, and microburst physics.",
+                "part": "Part 3"
               },
               {
-                "time": "60-85",
-                "title": "Activity 4: Grand Prix Round 3: Safety vs. Security & Landmark Case Studies (25 mins)",
-                "description": "Competitive round covering airport security screening, pre-flight walkaround, Delta 191/BA 009 case studies, and tournament tiebreaker."
+                "title": "Activity 4: Grand Prix Round 3: Safety vs. Security & Landmark Case Studies",
+                "description": "Competitive round covering airport security screening, pre-flight walkaround, Delta 191/BA 009 case studies, and tournament tiebreaker.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Activity 5: FE3 Current Events Press Briefing Masterclass (25 mins)",
-                "description": "Pairs workshop preparing the 10-12 minute Press Briefing for Session 5 Formative Evaluation 3, verifying slides and Q&A strategies."
+                "title": "Activity 5: FE3 Current Events Press Briefing Masterclass",
+                "description": "Pairs prepare their Press Briefing for Session 5 Formative Evaluation 3, verifying slides and Q&A strategies.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Activity 6: Semester 1 Grand Finale & FE3 Action Plan (10 mins)",
-                "description": "Podium celebration for Grand Prix champions, portfolio audit guidelines, and final encouragement for FE3."
+                "title": "Activity 6: Semester 1 Grand Finale & FE3 Action Plan",
+                "description": "Podium celebration for Grand Prix champions, portfolio audit guidelines, and final encouragement for FE3.",
+                "part": "Part 6"
               }
             ]
           },

@@ -50,13 +50,13 @@
         html += '</div>';
       }
 
-      // 3. Collapsible Teacher Facilitation & Timing Cue
+      // 3. Collapsible Teacher Tips & Speaking Prompts
       if (teacherNotes) {
         html += '<details class="group rounded-xl border border-purple-200 bg-purple-50/50 p-2.5 transition-all text-xs">';
         html += '<summary class="flex items-center justify-between font-bold text-purple-950 cursor-pointer select-none">';
         html += '<span class="flex items-center gap-2">';
         html += '<svg width="15" height="15" class="text-purple-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>';
-        html += '<span>👨‍🏫 Teacher Facilitation &amp; Timing Cue</span>';
+        html += '<span>👨‍🏫 Teacher Tips &amp; Speaking Prompts</span>';
         html += '</span>';
         html += '<span class="text-[11px] text-purple-700 font-semibold group-open:rotate-180 transition-transform duration-200">▾</span>';
         html += '</summary>';

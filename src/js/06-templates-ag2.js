@@ -64,14 +64,14 @@
           </div>
 
           <!-- ================================================================== -->
-          <!-- PILLAR 1: Severe Weather & Disaster Vulnerability Lexis (25 mins)  -->
+          <!-- PILLAR 1: Severe Weather & Disaster Vulnerability Lexis  -->
           <!-- ================================================================== -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-rose-50 text-rose-700 font-black text-xs flex items-center justify-center border border-rose-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Severe Weather & Disaster Vulnerability Lexis (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Severe Weather & Disaster Vulnerability Lexis</h4>
                   <p class="text-xs text-slate-500">Master 8 essential operational terms and complete the interactive threat-matching challenge.</p>
                 </div>
               </div>
@@ -142,14 +142,14 @@
           </div>
 
           <!-- ================================================================== -->
-          <!-- PILLAR 2: Grammar Clinic • Conditionals in Emergency Risk (25 mins)-->
+          <!-- PILLAR 2: Grammar Clinic • Conditionals in Emergency Risk-->
           <!-- ================================================================== -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Conditionals in Emergency Risk (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Conditionals in Emergency Risk</h4>
                   <p class="text-xs text-slate-500">Master 1st (Real) and 2nd (Hypothetical) conditionals to express acute risks and preventive safeguards.</p>
                 </div>
               </div>
@@ -201,14 +201,14 @@
           </div>
 
           <!-- ================================================================== -->
-          <!-- PILLAR 3: Emergency Taskforce Simulation & Press Briefing (45 mins)-->
+          <!-- PILLAR 3: Emergency Taskforce Simulation & Press Briefing-->
           <!-- ================================================================== -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Civic Emergency Taskforce Simulation (45 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Civic Emergency Taskforce Simulation</h4>
                   <p class="text-xs text-slate-500">Adopt departmental roles, rank 6 acute threats, resolve live injects, and lead a press conference.</p>
                 </div>
               </div>
@@ -219,10 +219,10 @@
             <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
               <span class="font-bold text-blue-950 uppercase tracking-wider text-[10px] block">Step-by-Step Student Instructions:</span>
               <ol class="list-decimal pl-4 space-y-1 text-slate-700">
-                <li><strong>Step 1 (10 mins):</strong> Review the Red Alert Dossier below. Form pairs or trios and assign one departmental role each (*Chief of Staff, Transit Director, Hospital Lead, Communications Officer*).</li>
-                <li><strong>Step 2 (15 mins):</strong> Negotiate the Threat Grid. You have budget to protect only THREE sectors immediately. Defend your sector using required 1st and 2nd conditionals.</li>
-                <li><strong>Step 3 (10 mins):</strong> The teacher activates one Dynamic Crisis Inject. Formulate a 3-point emergency response within 3 minutes.</li>
-                <li><strong>Step 4 (10 mins):</strong> Deliver a live 3-minute Press Briefing to the class (journalists) and answer 2 unscripted questions.</li>
+                <li><strong>Step 1:</strong> Review the Red Alert Dossier below. Form pairs or trios and assign one departmental role each (*Chief of Staff, Transit Director, Hospital Lead, Communications Officer*).</li>
+                <li><strong>Step 2:</strong> Negotiate the Threat Grid. You have budget to protect only THREE sectors immediately. Defend your sector using required 1st and 2nd conditionals.</li>
+                <li><strong>Step 3:</strong> The teacher activates one Dynamic Crisis Inject. Formulate a 3-point emergency response within 3 minutes.</li>
+                <li><strong>Step 4:</strong> Deliver a live 3-minute Press Briefing to the class (journalists) and answer 2 unscripted questions.</li>
               </ol>
             </div>
 
@@ -295,7 +295,7 @@
             <!-- Collapsible Teacher Notes -->
             <details class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-950 cursor-pointer">
               <summary class="font-bold select-none flex items-center justify-between">
-                <span>👨‍🏫 Teacher Facilitation & Timing Cue (Click to expand)</span>
+                <span>👨‍🏫 Teacher Tips & Speaking Prompts (Click to expand)</span>
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
@@ -307,11 +307,11 @@
           </div>
 
           <!-- ================================================================== -->
-          <!-- PILLAR 4: Consolidation, Peer Feedback & FE2 Prep (25 mins)        -->
+          <!-- PILLAR 4: Consolidation, Peer Feedback & FE2 Prep        -->
           <!-- ================================================================== -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Consolidation & Spoken Peer Feedback (25 mins):</span>
+              <span class="font-bold text-slate-800">Pillar 4: Consolidation & Spoken Peer Feedback:</span>
               <span class="ml-1">Rate your partner on (1) Fluency under pressure, (2) Correct conditional structures, and (3) Deployment of disaster lexis. Confirm your chosen FE2 presentation topic.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 1 Complete • 120 mins</span>
@@ -373,13 +373,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Urban Architecture & Spatial Vocabulary (25 mins) -->
+          <!-- PILLAR 1: Urban Architecture & Spatial Vocabulary -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-sky-50 text-sky-700 font-black text-xs flex items-center justify-center border border-sky-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Urban Architecture & Spatial Vocabulary (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Urban Architecture & Spatial Vocabulary</h4>
                   <p class="text-xs text-slate-500">Master 8 core spatial terms and examine contrasting urban design typologies.</p>
                 </div>
               </div>
@@ -446,13 +446,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Spatial Prepositions & Relative Clauses (25 mins) -->
+          <!-- PILLAR 2: Grammar Clinic • Spatial Prepositions & Relative Clauses -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Spatial Prepositions & Relative Clauses (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Spatial Prepositions & Relative Clauses</h4>
                   <p class="text-xs text-slate-500">Construct non-defining relative clauses with spatial prepositions ('flanked by', 'adjacent to', 'bisected by').</p>
                 </div>
               </div>
@@ -505,13 +505,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Option 1 Visual Analysis & €50M Design Sprint (45 mins) -->
+          <!-- PILLAR 3: Option 1 Visual Analysis & €50M Design Sprint -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Visual Photo Analysis & €50M Collaborative Design Sprint (45 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Visual Photo Analysis & €50M Collaborative Design Sprint</h4>
                   <p class="text-xs text-slate-500">Examine comparative photos, allocate the €50M budget across 5 categories, and counter stakeholder resistance.</p>
                 </div>
               </div>
@@ -522,9 +522,9 @@
             <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
               <span class="font-bold text-blue-950 uppercase tracking-wider text-[10px] block">Step-by-Step Student Instructions:</span>
               <ol class="list-decimal pl-4 space-y-1 text-slate-700">
-                <li><strong>Step 1 (10 mins):</strong> Click the interactive spatial hotspots below both photos. Complete the 3-stage spoken observation protocol with your partner.</li>
-                <li><strong>Step 2 (20 mins):</strong> You have €50,000,000 to regenerate 'The Boulevard Carnot Mixed Zone'. Allocate funding across the 5 categories in the budget table.</li>
-                <li><strong>Step 3 (15 mins):</strong> Review the 4 Stakeholder Objections. Script clear spoken counter-arguments using relative clauses and spatial prepositions.</li>
+                <li><strong>Step 1:</strong> Click the interactive spatial hotspots below both photos. Complete the 3-stage spoken observation protocol with your partner.</li>
+                <li><strong>Step 2:</strong> You have €50,000,000 to regenerate 'The Boulevard Carnot Mixed Zone'. Allocate funding across the 5 categories in the budget table.</li>
+                <li><strong>Step 3:</strong> Review the 4 Stakeholder Objections. Script clear spoken counter-arguments using relative clauses and spatial prepositions.</li>
               </ol>
             </div>
 
@@ -638,7 +638,7 @@
             <!-- Collapsible Teacher Notes -->
             <details class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-950 cursor-pointer">
               <summary class="font-bold select-none flex items-center justify-between">
-                <span>👨‍🏫 Teacher Facilitation & Timing Cue (Click to expand)</span>
+                <span>👨‍🏫 Teacher Tips & Speaking Prompts (Click to expand)</span>
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
@@ -649,10 +649,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: Spoken City Council Pitch & Vote (25 mins) -->
+          <!-- PILLAR 4: Spoken City Council Pitch & Vote -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Spoken Council Pitch & Peer Vote (25 mins):</span>
+              <span class="font-bold text-slate-800">Pillar 4: Spoken Council Pitch & Peer Vote:</span>
               <span class="ml-1">Each planning duo presents a 3-minute pitch to the City Council. The class votes on the winning design based on ecological resilience and economic fairness.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 2 Complete • 120 mins</span>
@@ -712,13 +712,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Environmental Ethics & Public Inquiry Vocabulary (25 mins) -->
+          <!-- PILLAR 1: Environmental Ethics & Public Inquiry Vocabulary -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-amber-50 text-amber-700 font-black text-xs flex items-center justify-center border border-amber-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Environmental Ethics & Inquiry Vocabulary (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Environmental Ethics & Inquiry Vocabulary</h4>
                   <p class="text-xs text-slate-500">Master 8 formal legal and ecological debate terms.</p>
                 </div>
               </div>
@@ -785,13 +785,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Cautious Language (Hedging) & Concessions (25 mins) -->
+          <!-- PILLAR 2: Grammar Clinic • Cautious Language (Hedging) & Concessions -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Cautious Language (Hedging) & Concessions (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Cautious Language (Hedging) & Concessions</h4>
                   <p class="text-xs text-slate-500">Master formal hedging patterns and diplomatic concessions for adversarial public hearings.</p>
                 </div>
               </div>
@@ -842,13 +842,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Oxford-Style Public Inquiry Hearing (45 mins) -->
+          <!-- PILLAR 3: Oxford-Style Public Inquiry Hearing -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: The Val-d'Or Rail Bypass Public Inquiry Hearing (45 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: The Val-d'Or Rail Bypass Public Inquiry Hearing</h4>
                   <p class="text-xs text-slate-500">Examine 4 witness depositions, execute targeted cross-examinations, and deliver the tribunal verdict.</p>
                 </div>
               </div>
@@ -859,10 +859,10 @@
             <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
               <span class="font-bold text-blue-950 uppercase tracking-wider text-[10px] block">Step-by-Step Student Instructions:</span>
               <ol class="list-decimal pl-4 space-y-1 text-slate-700">
-                <li><strong>Step 1 (10 mins):</strong> Review the Val-d'Or Rail Bypass dossier. Form pairs and assign one of the 4 sworn witness roles (*Biologist, Chamber of Commerce, Commuter Union, Judicial Arbiter*).</li>
-                <li><strong>Step 2 (15 mins):</strong> Prepare your 2-minute sworn testimony. Note your witness's explicit 'Cross-Examination Flaw' and prepare your defense using hedging formulas.</li>
-                <li><strong>Step 3 (15 mins):</strong> Convene the Tribunal: Proponents and opponents cross-examine each deponent (2 minutes per witness).</li>
-                <li><strong>Step 4 (5 mins):</strong> The Judicial Commissioners deliberate and deliver a majority ruling on surface rail vs tunnel vs moratorium.</li>
+                <li><strong>Step 1:</strong> Review the Val-d'Or Rail Bypass dossier. Form pairs and assign one of the 4 sworn witness roles (*Biologist, Chamber of Commerce, Commuter Union, Judicial Arbiter*).</li>
+                <li><strong>Step 2:</strong> Prepare your 2-minute sworn testimony. Note your witness's explicit 'Cross-Examination Flaw' and prepare your defense using hedging formulas.</li>
+                <li><strong>Step 3:</strong> Convene the Tribunal: Proponents and opponents cross-examine each deponent (2 minutes per witness).</li>
+                <li><strong>Step 4:</strong> The Judicial Commissioners deliberate and deliver a majority ruling on surface rail vs tunnel vs moratorium.</li>
               </ol>
             </div>
 
@@ -901,7 +901,7 @@
             <!-- Collapsible Teacher Notes -->
             <details class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-950 cursor-pointer">
               <summary class="font-bold select-none flex items-center justify-between">
-                <span>👨‍🏫 Teacher Facilitation & Timing Cue (Click to expand)</span>
+                <span>👨‍🏫 Teacher Tips & Speaking Prompts (Click to expand)</span>
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
@@ -912,10 +912,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: Argumentative Debrief & Peer Review (25 mins) -->
+          <!-- PILLAR 4: Argumentative Debrief & Peer Review -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Argumentative Debrief & Peer Review (25 mins):</span>
+              <span class="font-bold text-slate-800">Pillar 4: Argumentative Debrief & Peer Review:</span>
               <span class="ml-1">Rate your opponent on (1) Diplomatic tone, (2) Evidence-based argumentation, and (3) Use of hedging expressions. Check progress for FE2 in Session 5.</span>
             </div>
             <span class="text-slate-500 font-semibold shrink-0">Session 3 Complete • 120 mins</span>
@@ -974,13 +974,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 1: Airfield Eco-Engineering Vocabulary (25 mins) -->
+          <!-- PILLAR 1: Airfield Eco-Engineering Vocabulary -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-teal-50 text-teal-700 font-black text-xs flex items-center justify-center border border-teal-200">P1</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Airfield Eco-Engineering Vocabulary (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 1: Airfield Eco-Engineering Vocabulary</h4>
                   <p class="text-xs text-slate-500">Master 8 specialized airfield ecology and safety terms.</p>
                 </div>
               </div>
@@ -1047,13 +1047,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 2: Grammar Clinic • Modals of Obligation & Necessity (25 mins) -->
+          <!-- PILLAR 2: Grammar Clinic • Modals of Obligation & Necessity -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-indigo-50 text-indigo-700 font-black text-xs flex items-center justify-center border border-indigo-200">P2</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Modals of Obligation, Prohibition & Necessity (25 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 2: Grammar Clinic • Modals of Obligation, Prohibition & Necessity</h4>
                   <p class="text-xs text-slate-500">Master graded modal verbs ('are mandated to', 'is strictly prohibited from', 'should') in aviation regulations.</p>
                 </div>
               </div>
@@ -1104,13 +1104,13 @@
             </div>
           </div>
 
-          <!-- PILLAR 3: Interactive Stations & Treaty Tournament (45 mins) -->
+          <!-- PILLAR 3: Interactive Stations & Treaty Tournament -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-700 font-black text-xs flex items-center justify-center border border-emerald-200">P3</span>
                 <div>
-                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Interactive Stations & Land-Use Treaty Tournament (45 mins)</h4>
+                  <h4 class="font-bold text-slate-900 text-sm">Pillar 3: Interactive Stations & Land-Use Treaty Tournament</h4>
                   <p class="text-xs text-slate-500">Rotate through 3 specialized eco-engineering stations, negotiate 500 hectares of perimeter land, and ratify the Accord.</p>
                 </div>
               </div>
@@ -1121,9 +1121,9 @@
             <div class="p-3.5 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1.5 text-xs">
               <span class="font-bold text-blue-950 uppercase tracking-wider text-[10px] block">Step-by-Step Student Instructions:</span>
               <ol class="list-decimal pl-4 space-y-1 text-slate-700">
-                <li><strong>Step 1 (20 mins):</strong> In duos, rotate through Stations 1, 2, and 3 below. Read the core technology and answer the 2 investigation prompts per station.</li>
-                <li><strong>Step 2 (20 mins):</strong> Form 3-party delegations (*Airport Operations, Wildlife Trust, Clean Energy Consortium*). Negotiate the zoning of 500 hectares of perimeter land using regulatory modals.</li>
-                <li><strong>Step 3 (5 mins):</strong> Ratify the Airport Ecological Accord: Confirm exact hectare allocations for Safety Buffers, Solar Arrays, and Wetland Sanctuaries.</li>
+                <li><strong>Step 1:</strong> In duos, rotate through Stations 1, 2, and 3 below. Read the core technology and answer the 2 investigation prompts per station.</li>
+                <li><strong>Step 2:</strong> Form 3-party delegations (*Airport Operations, Wildlife Trust, Clean Energy Consortium*). Negotiate the zoning of 500 hectares of perimeter land using regulatory modals.</li>
+                <li><strong>Step 3:</strong> Ratify the Airport Ecological Accord: Confirm exact hectare allocations for Safety Buffers, Solar Arrays, and Wetland Sanctuaries.</li>
               </ol>
             </div>
 
@@ -1177,7 +1177,7 @@
             <!-- Collapsible Teacher Notes -->
             <details class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl text-xs text-purple-950 cursor-pointer">
               <summary class="font-bold select-none flex items-center justify-between">
-                <span>👨‍🏫 Teacher Facilitation & Timing Cue (Click to expand)</span>
+                <span>👨‍🏫 Teacher Tips & Speaking Prompts (Click to expand)</span>
                 <span class="text-[11px] text-purple-600">▾</span>
               </summary>
               <div class="mt-2.5 pt-2.5 border-t border-purple-200/70 space-y-1.5 text-slate-700 leading-relaxed">
@@ -1188,10 +1188,10 @@
             </details>
           </div>
 
-          <!-- PILLAR 4: Formative Evaluation 2 (FE2) Final Rehearsal & Sign-Off (25 mins) -->
+          <!-- PILLAR 4: Formative Evaluation 2 (FE2) Final Rehearsal & Sign-Off -->
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
             <div>
-              <span class="font-bold text-slate-800">Pillar 4: Formative Evaluation 2 (FE2) Oral Rehearsal (25 mins):</span>
+              <span class="font-bold text-slate-800">Pillar 4: Formative Evaluation 2 (FE2) Oral Rehearsal:</span>
               <span class="ml-1">Deliver a 2-minute timed partner pitch dry run against the FE2 rubric. Verify slide outlines and get final teacher sign-off for Session 5.</span>
             </div>
             <span class="text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-md shrink-0">✓ Ready for FE2 in Session 5</span>
