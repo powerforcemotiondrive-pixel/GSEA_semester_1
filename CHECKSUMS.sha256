@@ -2,7 +2,7 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-05T12:02:28.205Z
+# Generated: 2026-11-05T12:09:42.293Z
 # ============================================================================
 
 ecfe39d82276432e6b81b1c32b79289033b4ac2df4ba002c62dbf8b1f9e925ae  imsmanifest.xml
@@ -13,7 +13,7 @@ f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
 9b942f25da36225224e622900519317a99e933076c0331a6ead9637d0c6c9ea6  portfolio.html
 93414830a71d1cb256196bf3bfde0a845a3a563520b07112247290d75c75b9aa  immersion.html
 2642f640b60e36007738ef56fd216bda69f76662898057549092fdb55f2586a5  output.css
-5132b4482bd1252deefd8707286dd34edc1d2669a0745be84b0f0569d1f4f78e  data/course-data.js
+5ab6a810a84bf3bd4b2b8aa94f4c20d7c3e3c63b79018ad6ec908ac7f0683fda  data/course-data.js
 933bd226539ac03ed3eea624ea587119416477d3b01c30f5b7ff68aef9164dd0  data/portfolio-latest.csv
 5252f84a7d3e4fa827646c6f4899cb726057e0a8732e0b7f13132a4ca02b8357  data/portfolio-summary-s1.json
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
