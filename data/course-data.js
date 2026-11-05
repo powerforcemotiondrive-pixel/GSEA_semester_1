@@ -174,7 +174,7 @@
         },
         "lessonPlan": {
           "title": "Session 1 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive communicative session featuring personal travel anecdotes, an oral debate on modern travel dilemmas, essential travel collocations, narrative past tenses practice, a flight delay de-escalation role-play, and a 10-minute vocabulary review.",
+          "summary": "A 2-hour interactive communicative session featuring personal travel anecdotes, an oral debate on modern travel dilemmas, essential travel collocations, narrative past tenses practice, a flight delay de-escalation role-play, and a vocabulary review.",
           "items": [
             {
               "title": "Part 1: Travel Anecdotes & Opening Spot-Check",
@@ -670,7 +670,7 @@
             "modelStory": "Two summers ago, my friends and I took a train from Munich to Salzburg. Everything was going smoothly until our train stopped in the countryside because of an engine problem. Before we knew it, we had missed our connection! Luckily, a friendly local passenger helped us find a bus, and we reached our hostel just in time. Looking back now, it turned an ordinary trip into a fun adventure.",
             "deliverable": "Tell a 90-second personal travel story to your partner and explain one travel distinction.",
             "teacherNotes": "Circulate to listen for past tense usage (Past Continuous for background, Past Simple for events). Invite two students with entertaining or relatable stories to share briefly with the class.",
-            "title": "Activity 1: Travel Anecdotes — My Most Memorable Trip (15 mins)",
+            "title": "Activity 1: Travel Anecdotes — My Most Memorable Trip",
             "summary": "Share a personal travel anecdote about a memorable trip, unexpected travel glitch, or great adventure with your partner using helpful story words.",
             "diagnostic": {
               "title": "Quick Travel Distinction Check",
@@ -703,7 +703,7 @@
             ],
             "deliverable": "Summarize your partner's most convincing counter-argument during the class roundup.",
             "teacherNotes": "Enforce active speed-dating rotation: call \"Switch roles!\" every 4 minutes. Circulate to check usage of polite opinion phrases (\"While I see your point, ...\"). Board 2 strong student phrases.",
-            "title": "Activity 2: Global Travel Dilemmas: Speed Discussion (20 mins)",
+            "title": "Activity 2: Global Travel Dilemmas: Speed Discussion",
             "summary": "Conduct structured speed discussions on 4 prominent travel dilemmas. Practice expressing clear agreement or disagreement, providing concrete reasons, and using polite phrases to express your opinion.",
             "signposts": [
               "\"In my view, travelers should definitely...\"",
@@ -760,7 +760,7 @@
             ],
             "deliverable": "Achieve 4/4 on the practice quiz and record one new collocation in your personal study log.",
             "teacherNotes": "Encourage students to practice saying the collocations in full sentences. Focus on natural word partnerships (e.g. 'book in advance', 'clear customs').",
-            "title": "Activity 3: Language Focus: Essential Travel Collocations & Idioms (20 mins)",
+            "title": "Activity 3: Language Focus: Essential Travel Collocations & Idioms",
             "summary": "Master high-frequency B2 collocations and common idioms used in travel, tourism, and everyday transport contexts.",
             "items": [
               {
@@ -853,7 +853,7 @@
             ],
             "deliverable": "Write or say a 3-sentence mini-story using Past Simple, Past Continuous, and Past Perfect.",
             "teacherNotes": "Check that students use the Past Continuous for background actions and Past Simple for single completed events. Encourage natural story connectors.",
-            "title": "Activity 4: Grammar Focus: Narrative Past Tenses & Story Sequencing (25 mins)",
+            "title": "Activity 4: Grammar Focus: Narrative Past Tenses & Story Sequencing",
             "summary": "Use Past Simple, Past Continuous, and Past Perfect together to tell travel stories clearly in the order they happened.",
             "rules": [
               {
@@ -899,7 +899,7 @@
             ],
             "deliverable": "Formulate a mutually agreed rebooking and meal voucher compensation agreement.",
             "teacherNotes": "Act as the Station Operations Director. Circulate and intervene with unexpected injects: \"Announcement: The Tokyo flight departure is delayed by 45 minutes; you now have a 50-minute window.\" Observe how students adjust their negotiation strategy.",
-            "title": "Activity 5: Role-Play Simulation: Flight Delay & Missing a Connection (30 mins)",
+            "title": "Activity 5: Role-Play Simulation: Flight Delay & Missing a Connection",
             "summary": "Practice de-escalating customer frustration and explaining options calmly during a travel disruption.",
             "scenario": "Flight LH2214 from Toulouse to Munich is delayed by 2.5 hours because of bad weather and technical checks. Several passengers have tight onward connections to Tokyo and Chicago.",
             "roles": [
@@ -940,7 +940,7 @@
             ],
             "deliverable": "Submit your completed 3-sentence exit ticket and study log entry.",
             "teacherNotes": "Lead a choral pronunciation drill focusing on difficult phonemes: \"itinerary\" /aɪˈtɪnərəri/, \"infrastructure\", \"scheduled\". Collect quick verbal exit tickets at the door.",
-            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Exit Ticket (10 mins)",
+            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Exit Ticket",
             "summary": "Consolidate today's learning: review the pronunciation of all 30 key terms, check your word stress, and write one reflection in your study log.",
             "vocabWords": [
               "Itinerary",
@@ -977,6 +977,82 @@
             "reflectionPrompts": [
               "Which travel collocation or story word from today will you use in your next conversation?",
               "Write one sentence using narrative past tenses (Past Continuous + Past Simple) about a past trip."
+            ]
+          }
+        },
+        "overview": {
+          "intro": "In this opening session, you develop your spoken confidence by sharing personal travel stories, airport journeys, and memorable transport delays in English. Working in pairs and small groups, you will practise narrative tenses, descriptive travel vocabulary, and spontaneous storytelling without translating word-for-word from French. This interactive practice helps you break the ice and speak more naturally from day one.",
+          "whyItMatters": "Telling clear, engaging anecdotes in English is a vital interpersonal skill in international workplaces, airport environments, and social conversations. When you can describe a journey or explain an unexpected problem smoothly, you build immediate rapport with international colleagues and passengers, while building the natural fluency needed for your end-of-module Formative Evaluation.",
+          "keyTerms": [
+            {
+              "term": "Itinerary",
+              "ipa": "/aɪˈtɪn.ər.ər.i/",
+              "definition": "A planned route or journey with scheduled stops, flights, and activities."
+            },
+            {
+              "term": "Layover",
+              "ipa": "/ˈleɪˌoʊ.vər/",
+              "definition": "A period of waiting at a transit airport between connecting flights."
+            },
+            {
+              "term": "Baggage Allowance",
+              "ipa": "/ˈbæɡ.ɪdʒ əˌlaʊ.əns/",
+              "definition": "The permitted weight or number of bags a passenger can take without extra fees."
+            },
+            {
+              "term": "Off the Beaten Track",
+              "ipa": "/ɒf ðə ˈbiː.tən træk/",
+              "definition": "Traveling to quiet, unusual destinations away from crowded tourist hotspots."
+            },
+            {
+              "term": "Round-Trip",
+              "ipa": "/ˈraʊnd.trɪp/",
+              "definition": "A return journey going to a destination and coming back to the start."
+            },
+            {
+              "term": "Miss a Connection",
+              "ipa": "/mɪs ə kəˈnek.ʃən/",
+              "definition": "Arriving too late for a scheduled connecting flight or train due to earlier delays."
+            },
+            {
+              "term": "Peak Season",
+              "ipa": "/piːk ˈsiː.zən/",
+              "definition": "The time of year when travel demand, crowds, and ticket prices are highest."
+            },
+            {
+              "term": "Red-Eye Flight",
+              "ipa": "/ˈred.aɪ flaɪt/",
+              "definition": "An overnight commercial flight that leaves late at night and arrives early the next morning."
+            },
+            {
+              "term": "Boarding Pass",
+              "ipa": "/ˈbɔː.dɪŋ pɑːs/",
+              "definition": "An official document or phone barcode allowing a passenger to board an aircraft."
+            },
+            {
+              "term": "De-escalation",
+              "ipa": "/diːˌes.kəˈleɪ.ʃən/",
+              "definition": "Calm, professional communication used to resolve anger and defuse tension during travel delays."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or personal examples to support your group's view.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Public transport in modern European cities is now so convenient and affordable that private cars should be completely banned from city centres.",
+              "group2": "Short-haul flights between cities connected by high-speed rail should be prohibited to reduce carbon emissions, even if train tickets are more expensive.",
+              "group3": "The biggest barrier to international travel today is not the cost of tickets, but the stress and complexity of navigating airport security and transit connections."
+            },
+            "usefulPhrases": [
+              "Our group discussed whether...",
+              "We strongly agree / disagree with this statement because...",
+              "In our personal travel experience, one major factor is...",
+              "To summarise our group's main argument..."
             ]
           }
         }
@@ -1484,8 +1560,8 @@
             "badge": "Session Overview • Transport Evolution & Green Mobility"
           },
           "openingSession": {
-            "title": "Activity 1: Green Transport News & Session 1 Review (10 mins)",
-            "summary": "10-minute opening: discuss recent headlines on green transport innovations and check your memory of Session 1 travel vocabulary.",
+            "title": "Activity 1: Green Transport News & Session 1 Review",
+            "summary": "Opening warm-up: discuss recent headlines on green transport innovations and check your memory of Session 1 travel vocabulary.",
             "newsPrompts": [
               "What new green transit initiatives (night trains, electric bus fleets, cycling highways) have you heard about recently?",
               "How are European countries encouraging travelers to switch from airplanes to trains?"
@@ -1531,7 +1607,7 @@
             "teacherNotes": "Cold-call 2 random pairs to summarize modal shift initiatives in European rail. Check pronunciation of 'infrastructure', 'subsidized', and 'intermodality'."
           },
           "timelineClash": {
-            "title": "Activity 2: The Timeline Clash: 4 Epochs of Transport (25 mins)",
+            "title": "Activity 2: The Timeline Clash: 4 Epochs of Transport",
             "summary": "Compare 4 key eras of modern transport. Examine how travel speed, comfort, and greenhouse gas emissions have changed over time.",
             "epochs": [
               {
@@ -1586,7 +1662,7 @@
             "teacherNotes": "Ensure students do not simply read dates. Encourage rapid turn-taking and formal comparative structures ('Far more consequential than...', 'Resulted in an unprecedented rise in...')."
           },
           "corridorPitch": {
-            "title": "Activity 3: The Multi-Modal Corridor Pitch: Rail vs. Air (25 mins)",
+            "title": "Activity 3: The Multi-Modal Corridor Pitch: Rail vs. Air",
             "summary": "In teams, pitch high-speed rail versus regional flights on popular European travel corridors. Compare total travel time, carbon emissions, and passenger convenience.",
             "corridors": [
               {
@@ -1629,7 +1705,7 @@
             "teacherNotes": "Write key evaluation criteria on the board: Door-to-door transit time, carbon footprint per passenger-km, and productive working time. Enforce strict time limits on pitches."
           },
           "grammarClinic": {
-            "title": "Activity 4: Grammar Focus: Cause, Effect & Complex Comparisons (20 mins)",
+            "title": "Activity 4: Grammar Focus: Cause, Effect & Complex Comparisons",
             "summary": "Replace basic linkers ('because', 'so') with formal prepositions of cause and effect, and use double comparatives to describe linked trends.",
             "rules": [
               {
@@ -1690,7 +1766,7 @@
             "teacherNotes": "Highlight the sentence pattern in double comparatives ('The faster the train travels, the lower the per-seat energy consumption becomes'). Correct common error of using 'that' instead of 'as' with comparisons."
           },
           "caseStudy": {
-            "title": "Activity 5: DDRS Case Study: The Campus Travel Dilemma (30 mins)",
+            "title": "Activity 5: DDRS Case Study: The Campus Travel Dilemma",
             "summary": "\"The ENAC Transit Audit\" — Audit real university travel dilemmas and formulate spoken policy recommendations to balance budget, travel time, and carbon emissions.",
             "scenario": "A delegation of 6 ENAC professors and student representatives must travel from Toulouse to a partner university in Brussels for an annual 2-day European aviation conference.",
             "options": [
@@ -1732,7 +1808,7 @@
             "teacherNotes": "Circulate and push groups to justify their budget trade-offs. Challenge them: 'What will you tell students who live 25km away with no bus route?'"
           },
           "closingReview": {
-            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
+            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge",
             "summary": "Consolidate today's 30 transport terms with rapid audio pronunciation and a fast-paced 45-second Taboo fluency challenge.",
             "vocabWords": [
               "Modal Shift",
@@ -1826,6 +1902,82 @@
             ],
             "deliverable": "Successfully explain 3 taboo terms under time pressure and complete the personal Session 2 learning log.",
             "teacherNotes": "Keep the energy high. Rapidly drill choral pronunciation of difficult terms: 'intermodality', 'conurbation', 'decarbonization'."
+          }
+        },
+        "overview": {
+          "intro": "This session focuses on expanding your ability to compare urban transport options, discuss environmental sustainability, and debate modern smart city mobility in English. Through group discussions and communicative roleplays, you will practise expressing opinions, evaluating comparative advantages, and proposing greener travel solutions using clear, convincing language.",
+          "whyItMatters": "Sustainable mobility and green transport policies are major topics of discussion worldwide. Developing the English vocabulary to explain environmental choices, compare energy efficiency, and discuss public policy prepares you to take an active part in professional meetings and directly supports your spoken arguments in the Formative Evaluation.",
+          "keyTerms": [
+            {
+              "term": "Micromobility",
+              "ipa": "/ˌmaɪ.kroʊ.moʊˈbɪl.ə.ti/",
+              "definition": "Lightweight urban transport options like electric scooters, bikes, and shared mopeds."
+            },
+            {
+              "term": "Congestion Pricing",
+              "ipa": "/kənˈdʒes.tʃən ˈpraɪ.sɪŋ/",
+              "definition": "A toll charged to drivers entering busy urban centres during peak travel hours."
+            },
+            {
+              "term": "Carbon Neutral",
+              "ipa": "/ˈkɑː.bən ˈnjuː.trəl/",
+              "definition": "Achieving net-zero carbon emissions by balancing emissions with carbon absorption."
+            },
+            {
+              "term": "Intermodal Transport",
+              "ipa": "/ˌɪn.təˈmoʊ.dəl ˈtræns.pɔːt/",
+              "definition": "A journey that connects multiple modes of travel (e.g. train, metro, and bike) with one ticket."
+            },
+            {
+              "term": "High-Speed Rail",
+              "ipa": "/haɪ spiːd reɪl/",
+              "definition": "Passenger trains operating on dedicated tracks at speeds over 250 km/h."
+            },
+            {
+              "term": "Ride-Sharing",
+              "ipa": "/ˈraɪdˌʃeə.rɪŋ/",
+              "definition": "An arrangement where passengers book rides together in a shared private vehicle."
+            },
+            {
+              "term": "Pedestrianised Zone",
+              "ipa": "/pəˈdes.tri.ə.naɪzd zoʊn/",
+              "definition": "An urban street or district where motor vehicles are prohibited for safety and air quality."
+            },
+            {
+              "term": "Infrastructure",
+              "ipa": "/ˈɪn.frəˌstrʌk.tʃər/",
+              "definition": "The basic physical systems of a transport network, including tracks, roads, and bridges."
+            },
+            {
+              "term": "First-Mile / Last-Mile",
+              "ipa": "/fɜːst maɪl lɑːst maɪl/",
+              "definition": "The beginning or end of an individual passenger trip between a transit hub and home or work."
+            },
+            {
+              "term": "Autonomous Shuttle",
+              "ipa": "/ɔːˈtɒn.ə.məs ˈʃʌt.əl/",
+              "definition": "A self-driving small bus designed to transport groups along fixed urban routes."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or real-world examples to support your group's position.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Free public transport funded entirely by local tax revenue is the only realistic way to persuade citizens to abandon their private vehicles.",
+              "group2": "Shared e-scooters and micromobility devices create more urban clutter, safety risks, and accidents than genuine environmental benefits.",
+              "group3": "Within twenty years, autonomous driverless electric shuttles will completely replace conventional municipal bus and tram networks."
+            },
+            "usefulPhrases": [
+              "Our group weighed the benefits and drawbacks of...",
+              "From a practical urban mobility standpoint...",
+              "One convincing argument against this statement is...",
+              "In conclusion, our group believes that..."
+            ]
           }
         }
       },
@@ -2274,8 +2426,8 @@
             "badge": "Session Overview • Managing Tourism & City Life"
           },
           "openingSession": {
-            "title": "Activity 1: Tourism Policy News & Session 2 Review (10 mins)",
-            "summary": "10-minute opening: analyze current news on city tourist limits and check your memory of Session 2 transport words.",
+            "title": "Activity 1: Tourism Policy News & Session 2 Review",
+            "summary": "Opening warm-up: analyze current news on city tourist limits and check your memory of Session 2 transport words.",
             "newsPrompts": [
               "What European cities have recently introduced visitor caps, tourist taxes, or cruise bans?",
               "How can local city councils prevent historic neighborhoods from losing their permanent residents?"
@@ -2321,7 +2473,7 @@
             "teacherNotes": "Cold-call 2 random pairs. Ask: 'Why are European cities switching from destination promotion to destination stewardship?' Check pronunciation of 'carrying capacity' and 'inhabitants'."
           },
           "pressureMatrix": {
-            "title": "Activity 2: Destination Pressure & Visitor Capacity (25 mins)",
+            "title": "Activity 2: Destination Pressure & Visitor Capacity",
             "summary": "Examine how massive visitor numbers impact local residents and natural sites across 4 famous international destinations.",
             "destinations": [
               {
@@ -2373,7 +2525,7 @@
             "teacherNotes": "Highlight the distinction between 'overtourism' (perceived crowding & social pressure) and 'carrying capacity' (physical infrastructure limits). Ensure students use formal comparative vocabulary."
           },
           "policyPitch": {
-            "title": "Activity 3: Pitching New Tourism Policies to the Mayor (25 mins)",
+            "title": "Activity 3: Pitching New Tourism Policies to the Mayor",
             "summary": "In pairs, choose one controversial municipal policy, prepare a 2-minute pitch to the city council, and anticipate objections from local business lobbies.",
             "policies": [
               {
@@ -2410,7 +2562,7 @@
             "teacherNotes": "Act as the Mayor observing the pitch. Demand concrete answers on: revenue distribution, enforcement costs, and impact on small local shopkeepers. Board key persuasive phrases."
           },
           "grammarClinic": {
-            "title": "Activity 4: Grammar Focus: Causatives & Contrast Words (20 mins)",
+            "title": "Activity 4: Grammar Focus: Causatives & Contrast Words",
             "summary": "Use causative verbs (make, have, get) to express regulations and authority, and use contrast linkers (despite, in spite of, whereas) to balance competing interests.",
             "rules": [
               {
@@ -2471,7 +2623,7 @@
             "teacherNotes": "Emphasize prepositional vs. clausal contrast linkers: 'in spite of' + noun phrase/gerund vs. 'although' + full clause. Point out common error: '*despite of'."
           },
           "simulation": {
-            "title": "Activity 5: DDRS Simulation: The Isla Serena Water Crisis (30 mins)",
+            "title": "Activity 5: DDRS Simulation: The Isla Serena Water Crisis",
             "summary": "A 4-role negotiation resolving an acute summer water shortage (320% surge in consumption) vs. a proposal to expand the island airport runway to welcome more tourists.",
             "crisisBriefing": {
               "title": "Crisis Dossier: Isla Serena Emergency Water Summit",
@@ -2531,7 +2683,7 @@
             "teacherNotes": "Timekeeper and moderator: cut off circular debates. If groups reach a stalemate, introduce a crisis prompt: 'A heatwave has pushed reservoir levels down to 12%—you have 3 minutes to finalize water cuts!'"
           },
           "closingReview": {
-            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
+            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge",
             "summary": "Consolidate today's 18 overtourism terms with rapid audio pronunciation and a fast-paced 45-second Taboo fluency challenge.",
             "vocabWords": [
               "Overtourism",
@@ -2613,6 +2765,82 @@
             ],
             "deliverable": "Successfully define 3 taboo terms under time pressure and complete the personal Session 3 learning log.",
             "teacherNotes": "Keep tempo fast and competitive. Conduct whole-class choral drill on high-risk pronunciation items: 'carrying capacity', 'moratorium', 'inhabitants', 'gentrification'."
+          }
+        },
+        "overview": {
+          "intro": "In this session, you explore the international challenge of overtourism, examining how excessive visitor numbers impact local communities, historic landmarks, and natural ecosystems. You will practise negotiating solutions, presenting balanced points of view, and debating visitor caps and tourism taxes in spoken English.",
+          "whyItMatters": "Balancing economic revenue with cultural preservation is one of the most critical debates in global tourism today. Learning to discuss complex social and economic trade-offs in English helps you articulate nuanced positions, challenge ideas respectfully, and demonstrate advanced communicative range during your FE presentation.",
+          "keyTerms": [
+            {
+              "term": "Overtourism",
+              "ipa": "/ˌoʊ.vəˈtʊə.rɪ.zəm/",
+              "definition": "A situation where too many tourists visit a place, negatively impacting residents and heritage."
+            },
+            {
+              "term": "Carrying Capacity",
+              "ipa": "/ˈkær.i.ɪŋ kəˌpæs.ə.ti/",
+              "definition": "The maximum number of visitors a site or city can sustain without environmental or social harm."
+            },
+            {
+              "term": "Tourism Tax",
+              "ipa": "/ˈtʊə.rɪ.zəm tæks/",
+              "definition": "A small fee paid by hotel guests or cruise visitors to help maintain public infrastructure."
+            },
+            {
+              "term": "Cultural Heritage",
+              "ipa": "/ˈkʌl.tʃər.əl ˈher.ɪ.tɪdʒ/",
+              "definition": "Historic traditions, monuments, and customs inherited from previous generations."
+            },
+            {
+              "term": "Gentrification",
+              "ipa": "/ˌdʒen.trɪ.fɪˈkeɪ.ʃən/",
+              "definition": "The transformation of a neighbourhood that raises living costs and displaces local residents."
+            },
+            {
+              "term": "Cruise Ship Levy",
+              "ipa": "/kruːz ʃɪp ˈlev.i/",
+              "definition": "A mandatory environmental tariff charged to cruise lines when docking at delicate ports."
+            },
+            {
+              "term": "Short-Term Rental",
+              "ipa": "/ʃɔːt tɜːm ˈren.təl/",
+              "definition": "Renting residential apartments to tourists for brief holiday stays rather than local residents."
+            },
+            {
+              "term": "Visitor Cap",
+              "ipa": "/ˈvɪz.ɪ.tər kæp/",
+              "definition": "A strict daily or seasonal limit on the number of tourists admitted to an attraction."
+            },
+            {
+              "term": "Dispersal Strategy",
+              "ipa": "/dɪˈspɜː.səl ˈstræt.ə.dʒi/",
+              "definition": "Encouraging tourists to visit lesser-known regional attractions to relieve crowded city centres."
+            },
+            {
+              "term": "Local Preservation",
+              "ipa": "/ˈloʊ.kəl ˌprez.əˈveɪ.ʃən/",
+              "definition": "Protecting community traditions, local shops, and heritage buildings from mass commercialization."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or case examples to support your group's argument.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Historic cities like Venice, Dubrovnik, and Amsterdam should establish strict daily quotas and ban giant cruise ships permanently.",
+              "group2": "Short-term holiday rental platforms like Airbnb should be banned in residential city centres to protect local housing affordability.",
+              "group3": "Higher tourism taxes only make travel an exclusive privilege for wealthy tourists rather than solving the root problems of crowd management."
+            },
+            "usefulPhrases": [
+              "When examining the impact of overtourism, our group noticed...",
+              "While some argue that tourism revenue is essential, we believe...",
+              "A major problem with this approach is...",
+              "To summarize our perspective..."
+            ]
           }
         }
       },
@@ -3061,8 +3289,8 @@
             "badge": "Session Overview • Eco-Tourism & Green Certification"
           },
           "openingSession": {
-            "title": "Activity 1: Eco-Tourism News & Session 3 Review (10 mins)",
-            "summary": "10-minute opening: discuss genuine green travel innovations and check your memory of Session 3 overtourism terms.",
+            "title": "Activity 1: Eco-Tourism News & Session 3 Review",
+            "summary": "Opening warm-up: discuss genuine green travel innovations and check your memory of Session 3 overtourism terms.",
             "modeBadges": [
               "👥 Pairs / Plenary",
               "⏱️ 10 mins",
@@ -3108,7 +3336,7 @@
             }
           },
           "forensicAudit": {
-            "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing (25 mins)",
+            "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing",
             "summary": "Conduct a forensic evidence audit of 3 real-world tourism projects. Separate verified environmental stewardship from superficial marketing buzzwords.",
             "modeBadges": [
               "👥 Small Groups (3-4)",
@@ -3153,7 +3381,7 @@
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Grammar Focus: Mixed Conditionals & Purpose Clauses (20 mins)",
+            "title": "Activity 3: Grammar Focus: Mixed Conditionals & Purpose Clauses",
             "summary": "Connect past actions with present consequences using mixed conditionals, and express goals and conditions with formal connectors.",
             "modeBadges": [
               "👤 Individual -> 👥 Pairs",
@@ -3214,7 +3442,7 @@
             }
           },
           "workshop": {
-            "title": "Activity 4: Workshop: The €2,500,000 Eco-Resort Blueprint (30 mins)",
+            "title": "Activity 4: Workshop: The €2,500,000 Eco-Resort Blueprint",
             "summary": "In teams of 3 to 4, design a low-impact, 100% sustainable tourism project with a €2,500,000 green endowment. Balance visitor capacity, clean energy, and local employment.",
             "modeBadges": [
               "👥 Teams (3-4)",
@@ -3257,7 +3485,7 @@
             ]
           },
           "investorForum": {
-            "title": "Activity 5: The Green Investor Forum: Pitches & Defense (25 mins)",
+            "title": "Activity 5: The Green Investor Forum: Pitches & Defense",
             "summary": "Deliver a concise 2-minute pitch to the Sustainability Investment Board. Defend your project against tough questions regarding profitability, greenwashing, and visitor limits.",
             "modeBadges": [
               "🎤 Team Pitch -> 👥 Plenary Defense",
@@ -3279,7 +3507,7 @@
             ]
           },
           "closingReview": {
-            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check (10 mins)",
+            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check",
             "summary": "Final preparation for Session 5 Formative Evaluation: audio pronunciation drill of 18 terms and partner readiness review.",
             "modeBadges": [
               "👤 Individual & 👥 Pairs",
@@ -3319,6 +3547,82 @@
               "✅ 4 to 6 clean visual slides prepared without dense paragraphs of text (no reading aloud from notes!).",
               "✅ Personal Vocabulary Study Log and TOEIC Error Log ready to show your teacher.",
               "✅ Self-Critique ready: 2 personal English strengths and 2 concrete action targets for Semester 2."
+            ]
+          }
+        },
+        "overview": {
+          "intro": "This session invites you to pitch and defend sustainable destination concepts, exploring ecotourism, low-impact travel, and community-led conservation in English. You will practise structuring persuasive pitches, answering counter-arguments, and explaining the economic and environmental benefits of responsible travel with professional confidence.",
+          "whyItMatters": "Being able to deliver an engaging pitch and defend project ideas before an audience is a fundamental communicative competency. Practising how to organize arguments, present clear solutions, and respond to peer questions directly builds the speaking fluency evaluated in your Module 1 Formative Evaluation.",
+          "keyTerms": [
+            {
+              "term": "Ecotourism",
+              "ipa": "/ˈiː.koʊˌtʊə.rɪ.zəm/",
+              "definition": "Responsible travel to natural areas that conserves the environment and improves local welfare."
+            },
+            {
+              "term": "Greenwashing",
+              "ipa": "/ˈɡriːnˌwɒʃ.ɪŋ/",
+              "definition": "Misleading marketing that falsely presents a product or company as environmentally friendly."
+            },
+            {
+              "term": "Biodegradable",
+              "ipa": "/ˌbaɪ.oʊ.dɪˈɡreɪ.də.bəl/",
+              "definition": "Capable of being decomposed naturally by bacteria or living organisms without pollution."
+            },
+            {
+              "term": "Carbon Offsetting",
+              "ipa": "/ˈkɑː.bən ˌɒfˈset.ɪŋ/",
+              "definition": "Compensating for carbon dioxide emissions by funding equivalent carbon-saving projects elsewhere."
+            },
+            {
+              "term": "Renewable Energy",
+              "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
+              "definition": "Energy collected from resources that are naturally replenished on a human timescale, like solar or wind."
+            },
+            {
+              "term": "Community-Led",
+              "ipa": "/kəˈmjuː.nə.ti led/",
+              "definition": "Initiatives planned, managed, and economically owned by local residents rather than foreign chains."
+            },
+            {
+              "term": "Low-Impact Travel",
+              "ipa": "/loʊ ˈɪm.pækt ˈtræv.əl/",
+              "definition": "Travel practices designed to minimize ecological footprints, waste generation, and energy use."
+            },
+            {
+              "term": "Leave No Trace",
+              "ipa": "/liːv noʊ treɪs/",
+              "definition": "An outdoor ethical code promoting leaving natural environments entirely undisturbed."
+            },
+            {
+              "term": "Sustainable Certification",
+              "ipa": "/səˈsteɪ.nə.bəl ˌsɜː.tɪ.fɪˈkeɪ.ʃən/",
+              "definition": "An independent audit verifying that a tourism operator meets rigorous ecological standards."
+            },
+            {
+              "term": "Regenerative Tourism",
+              "ipa": "/rɪˈdʒen.ər.ə.tɪv ˈtʊə.rɪ.zəm/",
+              "definition": "Travel that actively restores, regenerates, and revitalizes natural habitats and local culture."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or examples to support your group's position.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Carbon offsetting schemes offered by airlines are simply modern greenwashing that encourages passengers to avoid making genuine lifestyle changes.",
+              "group2": "True ecotourism is only possible if travelers are willing to accept significantly higher costs and fewer luxury amenities.",
+              "group3": "Governments should introduce a personal annual flight allowance for all citizens to enforce equitable reductions in aviation emissions."
+            },
+            "usefulPhrases": [
+              "Our pitch focuses on the concept that...",
+              "One key strength of our argument is...",
+              "In response to common criticisms, we would emphasize...",
+              "Ultimately, our group recommends that..."
             ]
           }
         }
@@ -3456,54 +3760,64 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 Objectives - Extreme Weather & Urban Climate Resilience",
-          "summary": "By the end of this session, you will be able to discuss severe weather news, use 'if' sentences to talk about weather risks, work in a team to protect city services during a storm, and give a short spoken update to the public.",
+          "title": "Session 1 - Extreme Weather Objectives",
+          "summary": "By the end of this session, you will be able to discuss extreme weather and climate impacts with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Learn Key Vocabulary: Severe Weather & Storms",
-              "description": "Learn 8 useful words for heavy rain, heatwaves, flooding, and storm damage."
+              "title": "Practice TOEIC Listening for Weather Bulletins",
+              "description": "Listen for key weather details, temperature extremes, and travel delay announcements typical of TOEIC Part 4."
             },
             {
               "num": 2,
-              "title": "Grammar Focus: 'If' Sentences for Weather Warnings",
-              "description": "Practice 1st and 2nd conditionals to talk about weather emergencies ('If winds exceed 100 km/h...')."
+              "title": "Master Extreme Weather & Climate Vocabulary",
+              "description": "Learn and use high-frequency terms for severe weather events (heatwaves, flash floods, droughts) and climate resilience."
             },
             {
               "num": 3,
-              "title": "Speaking Activity: City Emergency Taskforce",
-              "description": "Work in pairs to choose which city services (hospitals, trains, electricity) to protect first."
+              "title": "Identify Word Forms & Suffixes in TOEIC Part 5",
+              "description": "Identify whether a blank needs a noun (-tion), adjective (-able), or adverb (-ly) when describing weather changes."
             },
             {
               "num": 4,
-              "title": "Speaking Practice: Emergency Public Update",
-              "description": "Give a short, clear public safety broadcast and answer questions from classmates."
+              "title": "Discuss Community & Infrastructure Resilience (DDRS)",
+              "description": "Explore how cities and transport networks can protect communities and infrastructure against extreme weather."
+            },
+            {
+              "num": 5,
+              "title": "Build Fluency for the Session 5 Evaluation",
+              "description": "Practice speaking about weather disruptions and safety measures using clear pronunciation, fluency, and accurate vocabulary."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 1 Lesson Plan - Extreme Weather & Urban Climate Resilience (2 Hours)",
-          "summary": "A high-stakes, crisis workshop: students analyze an escalating meteorological disaster dossier, prioritize city defenses, role-play a city emergency taskforce, and defend decisions in a live press briefing.",
+          "title": "Session 1 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
           "items": [
             {
-              "title": "Part 1: Key Vocabulary • Extreme Weather & Storms",
-              "description": "Learn 8 essential weather words, check syllable stress, and complete the matching challenge.",
+              "title": "Conversational Warm-Up: Weather Stories",
+              "description": "Students talk in pairs about the most extreme weather event they have ever witnessed and how they responded.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Grammar Focus • 'If' Sentences for Weather Warnings",
-              "description": "Spot the common speaking mistake, learn the clean B2 model, and complete 4 transformation sentences.",
+              "title": "TOEIC Strategy: Listening to Announcements",
+              "description": "Part 4 practice: listening to broadcast weather advisories, airport delay announcements, and emergency notices.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Speaking Activity • City Emergency Taskforce",
-              "description": "Work with a partner to rank 6 city threats and respond to unexpected weather alerts.",
+              "title": "Vocabulary Builder: Climate & Disruption",
+              "description": "High-frequency terms for weather phenomena (heatwave, flash flood, blizzard) and words formed with suffixes (-tion, -ment, -ly).",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Speaking Review & Discussion Feedback",
-              "description": "Check your pronunciation, give your partner speaking feedback, and prepare for FE2.",
+              "title": "Structured Discussion & Grammar",
+              "description": "Discussing community resilience and infrastructure protection using Word Forms (nouns, adjectives, adverbs) in context.",
               "part": "Part 4"
+            },
+            {
+              "title": "Debrief, Evaluation Prep & Wrap-Up",
+              "description": "Fluency feedback, pronunciation check for weather vocabulary, and self-evaluation logging.",
+              "part": "Part 5"
             }
           ]
         },
@@ -3860,125 +4174,332 @@
           ]
         },
         "lessonContent": {
-          "hero": {
-            "title": "Extreme Weather & Urban Climate Resilience",
-            "subtitle": "Archetype A • Deep-Dive Crisis Workshop: Heat Domes, Flash Floods & Civic Emergency Management",
+          "overview": {
             "image": "images/ag_m2card1.jpg",
-            "badge": "AG Module 2 • Session 1 • Crisis Workshop"
+            "title": "Extreme Weather & Climate Hazards",
+            "subtitle": "Atmospheric Rivers, Heat Domes, Flash Floods & Airport Resilience",
+            "badge": "Session Overview • Extreme Weather & Climate Resilience"
           },
-          "dossier": {
-            "alertLevel": "RED ALERT • METEO-FRANCE / REGIONAL PREFECTURE",
-            "incidentTitle": "Convective Supercell 'Storm Hesper' & Concurrent 42°C Urban Heat Dome",
-            "timeframe": "T-minus 3 Hours Before Peak Atmospheric Impact",
-            "summary": "A catastrophic meteorological collision: a week-long 42°C urban heat dome is abruptly intercepted by a severe convective supercell line moving east at 75 km/h. Expected impacts include 90 mm of rainfall in 45 minutes, localized flash flooding, hurricane-force wind gusts of 120 km/h, and an overstressed regional electrical grid operating at 98% capacity.",
-            "threats": [
+          "hero": {
+            "image": "images/ag_m2card1.jpg",
+            "title": "Extreme Weather & Climate Hazards",
+            "subtitle": "Atmospheric Rivers, Heat Domes, Flash Floods & Airport Resilience",
+            "badge": "Session Overview • Extreme Weather & Climate Resilience"
+          },
+          "openingSession": {
+            "modeBadges": [
+              "👥 Pair Recall",
+              "⏱️ 5 min pairs + 5 min plenary",
+              "🗣️ Weather Quick Check"
+            ],
+            "instructions": [
+              "Step 1 (Headlines - 3 mins): In pairs, ask each other: \"What major extreme weather or climate hazard story caught your attention recently?\" Discuss one operational challenge it posed for transport hubs.",
+              "Step 2 (Memory Recall - 4 mins): Take turns testing each other on the 4 foundational meteorological distinctions below without revealing the answers.",
+              "Step 3 (Verify & Calibrate - 3 mins): Click \"Reveal Answer\" to verify technical accuracy. Note down any terms needing consolidation (e.g., density altitude, convective cell)."
+            ],
+            "deliverable": "Accurately explain one meteorological distinction during the instructor spot-check using precise technical vocabulary.",
+            "teacherNotes": "Cold-call two student pairs to distinguish \"Supercell vs Convective Cell\" and \"Mitigation vs Adaptation\". Clarify how high temperatures thin air (density altitude) and affect aircraft takeoff weight. Board key terms.",
+            "title": "Activity 1: Extreme Weather News & Meteorological Warm-Up",
+            "summary": "Opening warm-up analyzing current severe atmospheric headlines and testing key meteorological distinctions.",
+            "newsPrompts": [
+              "Mediterranean airports register unprecedented tarmac surface temperatures (+52°C), impacting aircraft takeoff performance and ground crews.",
+              "A series of atmospheric rivers batter Northern California and Europe, triggering flash floods across low-lying transport corridors.",
+              "Aviation meteorologists deploy advanced Doppler radar algorithms to detect wind shear and microbursts ahead of convective squall lines."
+            ],
+            "diagnostic": {
+              "title": "Meteorological Concepts Quick Check",
+              "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the critical distinction between a Supercell Thunderstorm and an ordinary Convective Cell?",
+                  "answer": "An ordinary convective thunderstorm lasts 30–60 minutes and dissipates under its own downdrafts. A supercell contains a deep, persistently rotating updraft (mesocyclone), allowing it to sustain violent destructive hail, severe wind shear, and tornadoes for hours."
+                },
+                {
+                  "id": 2,
+                  "q": "How does an Atmospheric River differ from the high-altitude Jet Stream?",
+                  "answer": "The jet stream is a fast-flowing, narrow air current at 9–16 km altitude driven by temperature contrasts. An atmospheric river is a low-to-mid-tropospheric ribbon of concentrated water vapor (often 400–600 km wide) that transports immense tropical moisture, causing historic deluge when forced over land or mountains."
+                },
+                {
+                  "id": 3,
+                  "q": "What is the operational difference between Flash Flooding and Riverine Flooding?",
+                  "answer": "Riverine flooding develops slowly over days or weeks as prolonged precipitation fills river basins. Flash flooding occurs within minutes or hours of extreme rainfall intensity, rapidly overwhelming tarmac drainage, culverts, and subway tunnels."
+                },
+                {
+                  "id": 4,
+                  "q": "In climate engineering, what is the difference between Climate Mitigation and Climate Adaptation?",
+                  "answer": "Mitigation tackles the causes of climate change by reducing or preventing greenhouse gas emissions (e.g., SAF, solar arrays, electric GSE). Adaptation deals with the effects by retrofitting infrastructure to withstand unavoidable severe weather shocks (e.g., sea walls, retention basins, reflective pavements)."
+                }
+              ]
+            }
+          },
+          "survey": {
+            "modeBadges": [
+              "🔄 Speed Survey",
+              "⏱️ 4 rotations × 4 mins + 9 min debrief",
+              "🎯 CEFR B2 Persuasive Argumentation"
+            ],
+            "instructions": [
+              "Step 1 (Partner Pairing - 2 mins): Partner A takes Topics 1 & 2; Partner B takes Topics 3 & 4. Review the core dilemma, pro/con points, and debate signposts.",
+              "Step 2 (Rotational Interviews - 16 mins): Conduct 4-minute bilateral interviews per topic. One student acts as interviewer asking the prompt; the other defends a balanced policy solution using signposts (\"While it is true that...\", \"We must weigh... against...\").",
+              "Step 3 (Synthesis & Plenary - 7 mins): Reconnect with your primary partner. Agree on the single highest-priority infrastructure investment for aerodrome climate resilience."
+            ],
+            "deliverable": "Deliver a 60-second spoken recommendation justifying one resilience investment with at least two signpost phrases.",
+            "teacherNotes": "Ensure students rotate speaking and listening roles. Enforce the use of formal concession markers (\"Granted,... nevertheless\"). Monitor for misuse of economic and environmental vocabulary.",
+            "title": "Activity 2: Severe Weather Incident Analysis: Speed Survey",
+            "summary": "Conduct structured speed-dating interviews on 4 prominent extreme weather vulnerabilities. Practice evaluating operational risks, recommending physical interventions, and signposting arguments.",
+            "signposts": [
+              "\"From an operational safety standpoint, ...\"",
+              "\"While high temperatures restrict takeoff weight, we can mitigate this by...\"",
+              "\"In response to intense flash precipitation, civil engineers must prioritize...\"",
+              "\"Empirical climate projections indicate that coastal aerodromes should...\""
+            ],
+            "topics": [
               {
-                "id": "A",
-                "title": "Central Metro Line Flooding",
-                "desc": "Subway tunnels at Station République are 1.2m below storm sewer runoff capacity. Risk of complete subterranean inundation within 30 minutes of deluge.",
-                "sector": "Public Transit"
+                "id": 1,
+                "badge": "Extreme Heat & Density Altitude",
+                "statement": "Should airports in extreme heat zones permanently shift heavy long-haul departures to night hours?",
+                "pro": "High temperatures thin the air, reducing aerodynamic lift and engine thrust. Shifting departures to cooler night temperatures avoids costly passenger and cargo weight penalties.",
+                "con": "Night flights disrupt local communities with noise pollution and conflict with nighttime curfew regulations at destination hubs.",
+                "prompt": "Interview your partner: How can airports adapt their runways and scheduling as summer heatwaves exceed 45°C?"
               },
               {
-                "id": "B",
-                "title": "Regional Hospital Power Fragility",
-                "desc": "Main teaching hospital intensive care wing relies on aging rooftop backup diesel generators vulnerable to 120 km/h wind shear.",
-                "sector": "Healthcare"
+                "id": 2,
+                "badge": "Flash Flood Inundation",
+                "statement": "Should aerodrome operators replace non-loadbearing taxiway shoulders with permeable asphalt and retention bioswales?",
+                "pro": "Permeable surfaces allow stormwater to infiltrate on-site, preventing apron submergence and protecting underground electrical conduits during cloudbursts.",
+                "con": "Permeable asphalt requires specialized vacuum-sweeping maintenance to avoid clogging with runway rubber debris and FOD.",
+                "prompt": "Interview your partner: How did recent flash floods in Nice and Frankfurt impact flight operations?"
               },
               {
-                "id": "C",
-                "title": "Vulnerable Senior Population Heatstroke",
-                "desc": "Over 8,500 elderly residents in non-air-conditioned top-floor apartments face indoor temperatures exceeding 39°C before the storm breaks.",
-                "sector": "Public Health"
+                "id": 3,
+                "badge": "Supercell Hail & Wind Shear",
+                "statement": "Should airports invest in real-time automated Doppler lidar systems over conventional radar forecasts?",
+                "pro": "Doppler lidar detects low-level wind shear and microburst turbulence in dry atmospheric conditions before radar echoes detect precipitation, giving pilots critical seconds to execute go-arounds.",
+                "con": "Lidar installations represent significant capital expenditure and require extensive integration with air traffic control sequencing towers.",
+                "prompt": "Interview your partner: What physical protections can protect parked aircraft and solar canopies from severe hail?"
               },
               {
-                "id": "D",
-                "title": "Suburban Industrial Chemical Runoff",
-                "desc": "Chemical storage depot in the southern flood basin risks toxic leachate contamination if containment dikes overflow into the municipal reservoir.",
-                "sector": "Environment"
-              },
-              {
-                "id": "E",
-                "title": "Airport Runway Drainage Saturation",
-                "desc": "Regional commercial airport reports retention pond capacity at 92%. Continuing operations will force multiple widebody diversions.",
-                "sector": "Aviation/Transport"
-              },
-              {
-                "id": "F",
-                "title": "Civil Protection Communication Congestion",
-                "desc": "Cellular networks are overloaded by panic calls; emergency SMS broadcast protocol requires urgent bandwidth prioritization.",
-                "sector": "Communications"
+                "id": 4,
+                "badge": "Storm Surge & Sea-Level Rise",
+                "statement": "Should coastal low-lying airports be protected with massive sea dikes, or relocated inland over the next 50 years?",
+                "pro": "Reinforced tidal barriers and sea walls safeguard trillions of euros in existing terminal and runway assets against 100-year storm surges.",
+                "con": "Long-term sea-level rise and saltwater corrosion may render coastal dikes unsustainable; inland relocation offers permanent long-term resilience.",
+                "prompt": "Interview your partner: Compare the vulnerability of airports like Amsterdam Schiphol, Nice Côte d'Azur, and Singapore Changi."
               }
             ]
           },
-          "taskforce": {
-            "roles": [
+          "grammarClinic": {
+            "modeBadges": [
+              "📝 Word Building & Grammar Focus",
+              "⏱️ 8 min rules + 12 min drill",
+              "🎯 TOEIC Part 5 Accuracy"
+            ],
+            "instructions": [
+              "Step 1 (Word Family Rules - 8 mins): Analyze the four common suffix families in the reference table. Identify sentence position clues (e.g., after determiners $\\rightarrow$ noun; between auxiliary and participle $\\rightarrow$ adverb).",
+              "Step 2 (Interactive Drills - 7 mins): Individually complete the 4 Part-5 style sentence gap-fills by identifying the grammatical category required before choosing the suffix.",
+              "Step 3 (Peer Check & Verify - 5 mins): Compare answers with your partner. Explain why the blank requires that exact word form before clicking \"Reveal Answer\"."
+            ],
+            "deliverable": "Achieve 100% accuracy on the 4 word form drill sentences with clear grammatical explanations.",
+            "teacherNotes": "Highlight the common TOEIC trap: confusing adjectives ending in \"-able/-ive\" with nouns in \"-tion/-ment\". Emphasize sentence position analysis over guesswork.",
+            "title": "Activity 3: Language Focus: Word Forms & Suffixes in Technical English",
+            "summary": "Mastering Word Families: converting verbs to nouns, adjectives, and adverbs using common English suffixes—essential for TOEIC Part 5 accuracy and professional writing.",
+            "rules": [
               {
-                "role": "Mayor's Chief of Staff (Taskforce Chair)",
-                "badge": "Leadership & Policy",
-                "mission": "Maintain overall public order, balance competing agency demands, approve emergency financial spending, and make the final call on mandatory evacuations vs. shelter-in-place orders.",
-                "keyPhrases": [
-                  "Our overarching objective is...",
-                  "I cannot authorize that expenditure unless...",
-                  "The legal threshold for mandatory evacuation requires..."
-                ]
+                "type": "Nouns (-tion, -ment, -ence, -ity)",
+                "formula": "mitigate → mitigation | equip → equipment | resist → resilience | severe → severity",
+                "usage": "Occur as subjects, objects of verbs, or following prepositions and articles (the, a, an)."
               },
               {
-                "role": "Director of Municipal Transit & Mobility",
-                "badge": "Infrastructure & Logistics",
-                "mission": "Safeguard transit passengers, decide whether to shut down subway stations or keep them open as storm shelters, and deploy emergency electric shuttle buses to high-risk zones.",
-                "keyPhrases": [
-                  "Subway line B is at acute risk of...",
-                  "Deploying rescue shuttles will require police escorts along...",
-                  "Halting all rail traffic will strand thousands unless..."
-                ]
+                "type": "Adjectives (-able, -al, -ive, -ous)",
+                "formula": "permeate → permeable | ecology → ecological | adapt → adaptive | hazard → hazardous",
+                "usage": "Modify nouns directly or serve as predicate adjectives following copular verbs (be, become, remain)."
               },
               {
-                "role": "Regional Hospital & Health Network Lead",
-                "badge": "Medical & Public Health",
-                "mission": "Protect critical care patients, secure backup power for ventilators and neonatal units, establish pop-up cooling centers, and manage the casualty triage surge.",
-                "keyPhrases": [
-                  "We are operating on razor-thin generator reserves...",
-                  "Immediate priority must be given to oxygen-dependent patients...",
-                  "Triage protocol mandates that we..."
-                ]
-              },
-              {
-                "role": "Public Communications & Media Officer",
-                "badge": "Civic Information & Press",
-                "mission": "Deliver clear, calm, authoritative emergency warnings, combat viral disinformation on social media, coordinate multi-lingual broadcasts, and prepare the live press conference.",
-                "keyPhrases": [
-                  "Citizens must be advised to immediately...",
-                  "To counter false rumors regarding the water supply, we confirm that...",
-                  "In our forthcoming live statement, we will emphasize..."
-                ]
+                "type": "Adverbs (-ly)",
+                "formula": "frequent → frequently | significant → significantly | rapid → rapidly | drastic → drastically",
+                "usage": "Modify verbs, adjectives, or entire clauses; explain manner, frequency, or degree."
               }
             ],
-            "injects": [
+            "drills": [
               {
-                "time": "T+15m INJECT #1",
-                "title": "⚡ Sudden Power Outage in Sector 4",
-                "desc": "A lightning strike has disabled Substation Voltaire. The regional hospital has switched to generator power, but fuel pumps are overheating. What is your immediate action?"
+                "id": 1,
+                "sentence": "The municipal authority committed to the immediate ________ of coastal flood defenses.",
+                "options": [
+                  "construct",
+                  "construction",
+                  "constructive",
+                  "constructively"
+                ],
+                "correct": "construction",
+                "explanation": "Follows the definite article 'the' and adjective 'immediate'; a noun is required."
               },
               {
-                "time": "T+30m INJECT #2",
-                "title": "🌊 Storm Drain Breach at Metro Central",
-                "desc": "Floodwaters have cascaded down Station République escalators. 400 passengers are stranded on platform level. Transit director demands immediate civil rescue teams."
+                "id": 2,
+                "sentence": "Modern runway pavements must remain ________ to heavy rainfall during summer storms.",
+                "options": [
+                  "permeability",
+                  "permeable",
+                  "permeably",
+                  "permeate"
+                ],
+                "correct": "permeable",
+                "explanation": "Follows the linking verb 'remain'; a predicate adjective is required."
               },
               {
-                "time": "T+45m INJECT #3",
-                "title": "📢 Breaking Media Accusation",
-                "desc": "A major news outlet goes live claiming the Mayor's office withheld flood warnings for 2 hours to avoid panicking tourists. Journalists are gathering for the press conference."
+                "id": 3,
+                "sentence": "Sea levels along Mediterranean coastlines have been rising ________ faster than predicted.",
+                "options": [
+                  "substance",
+                  "substantial",
+                  "substantially",
+                  "substantiate"
+                ],
+                "correct": "substantially",
+                "explanation": "Modifies the comparative adverb/adjective 'faster'; an adverb of degree is required."
+              },
+              {
+                "id": 4,
+                "sentence": "Meteorologists must continually ________ radar reflectivity data during convective events.",
+                "options": [
+                  "assessment",
+                  "assessable",
+                  "assess",
+                  "assessingly"
+                ],
+                "correct": "assess",
+                "explanation": "Follows the modal auxiliary 'must continually'; a bare base verb is required."
               }
             ]
           },
-          "pressConference": {
-            "title": "Live Emergency Press Briefing (20 mins)",
-            "instructions": "The Taskforce delivers a 3-minute opening broadcast to the public, followed by intense 2-minute questions from the press corps (classmates acting as investigative reporters).",
-            "reporterQuestions": [
-              "Why were public transit stations not closed two hours earlier when meteorological radar clearly indicated an unprecedented flash flood risk?",
-              "Can the health director guarantee that ICU generators will not fail if the storm continues past midnight?",
-              "Reports indicate that low-income neighborhoods in Sector 4 had no functional emergency sirens. How do you respond to allegations of systemic neglect?",
-              "Who will be held legally accountable for the chemical storage overflow in the southern basin?"
+          "roleplay": {
+            "modeBadges": [
+              "👥 4-Member Crisis Simulation",
+              "⏱️ 10 min prep + 25 min taskforce + 10 min debrief",
+              "🏆 Formative Taskforce Decision"
+            ],
+            "instructions": [
+              "Step 1 (Role Allocation & Briefing - 10 mins): Form groups of 4. Assign one role card per member. Review your operational priority, constraints, and proposed action plan.",
+              "Step 2 (Taskforce Crisis Meeting - 25 mins): The Aerodrome Operations Director convenes the meeting. Work through the 3 escalating crisis injects (wind shear alert, ramp lightning risk, passenger terminal overcrowding). Negotiate a unified 60-minute Action Protocol.",
+              "Step 3 (Press & Passenger Briefing - 10 mins): Elect a spokesperson to deliver a 2-minute public announcement summarizing runway status, passenger welfare measures, and ramp safety orders."
+            ],
+            "deliverable": "A unified 4-point Emergency Action Protocol agreed upon by all 4 roles and delivered via a 2-minute oral briefing.",
+            "teacherNotes": "Circulate between groups to inject realistic complications (e.g., \"Lightning detected 3km away—ramp closure mandatory under OSHA/EASA rules\"). Evaluate active listening, polite negotiation, and crisis vocabulary.",
+            "title": "Activity 4: Airport Severe Weather Crisis Taskforce",
+            "scenario": "An intense convective supercell accompanied by severe wind shear warnings and 75mm/hour torrential rain is projected to cross the airfield within 60 minutes. Form a four-member Emergency Response Taskforce to balance flight safety, ground crew welfare, passenger communications, and infrastructure protection.",
+            "roles": [
+              {
+                "title": "Aerodrome Operations Director",
+                "focus": "Overall airfield safety, decision to temporarily suspend runway operations, coordination with ATC on diversions and holding patterns."
+              },
+              {
+                "title": "Chief Meteorologist & Weather Advisor",
+                "focus": "Briefing the committee on barometric drops, microburst risk windows, hail probability, and estimated storm clearance timeline."
+              },
+              {
+                "title": "Airline Station Manager & Hub Controller",
+                "focus": "Aircraft ground anchoring, lightning protocol for apron ramp crews (ramp closure), baggage hold security, and passenger re-accommodation."
+              },
+              {
+                "title": "Civil Protection & Public Infrastructure Liaison",
+                "focus": "Perimeter drainage pumps activation, road access corridors to the airport, municipal coordination, and public emergency bulletins."
+              }
+            ]
+          },
+          "closingReview": {
+            "modeBadges": [
+              "📋 Self-Assessment & FE2 Check",
+              "⏱️ 10 min pairs + 5 min Q&A",
+              "🎯 Oral Exam Readiness"
+            ],
+            "instructions": [
+              "Step 1 (FE2 Criteria Audit - 5 mins): Review the 3 formative checklist items. Verify how today's vocabulary and crisis simulation directly support your Session 5 evaluation.",
+              "Step 2 (Partner Reflection - 5 mins): Share 2 key technical takeaways and 1 pronunciation point you want to polish before next week.",
+              "Step 3 (Action Items - 5 mins): Log 5 new terms in your personal glossary and complete the online Module 2 Session 1 TOEIC practice questions."
+            ],
+            "deliverable": "Completed 3-item FE2 alignment checklist and 5 newly recorded technical entries in your vocabulary log.",
+            "teacherNotes": "Remind students of the FE2 oral format: paired debate/case study on climate resilience. Emphasize that professional B2 delivery requires fluent use of today's word forms and signposts.",
+            "title": "Session 1 Wrap-Up & FE2 Preparation",
+            "feChecklist": [
+              "Record 5 new extreme weather and resilience terms in your personal Vocabulary Log.",
+              "Complete the TOEIC Part 5 word forms drill on the Moodle deck.",
+              "Confirm with your partner whether you intend to tackle Option A (Airport) or Option B (City) for FE2."
+            ]
+          }
+        },
+        "overview": {
+          "intro": "In this session, you expand your English vocabulary for describing extreme weather events, seasonal hazards, and climatic disruptions. Working in pairs and small groups, you will practise explaining severe storms, reporting weather disruptions, and comparing regional climate trends in spoken English with accuracy and expressive confidence.",
+          "whyItMatters": "Weather is a universal talking point and an operational reality in transport, aviation, and daily life worldwide. Being able to describe severe conditions, interpret forecasts, and discuss climate adaptation in clear English ensures you can communicate without hesitation during international operations and your Formative Evaluation.",
+          "keyTerms": [
+            {
+              "term": "Flash Flood",
+              "ipa": "/flæʃ flʌd/",
+              "definition": "A sudden and rapid flood caused by torrential rainfall over a short duration."
+            },
+            {
+              "term": "Heatwave",
+              "ipa": "/ˈhiːtˌweɪv/",
+              "definition": "An extended period of abnormally hot weather, often accompanied by high humidity."
+            },
+            {
+              "term": "Gale-Force Winds",
+              "ipa": "/ɡeɪl fɔːs wɪndz/",
+              "definition": "Extremely strong winds measuring between 62 and 88 km/h on the Beaufort scale."
+            },
+            {
+              "term": "Drought",
+              "ipa": "/draʊt/",
+              "definition": "A prolonged period of abnormally low rainfall leading to severe water shortages."
+            },
+            {
+              "term": "Blizzard",
+              "ipa": "/ˈblɪz.əd/",
+              "definition": "A severe snowstorm characterized by freezing winds and blinding snow with near-zero visibility."
+            },
+            {
+              "term": "Wildfire",
+              "ipa": "/ˈwaɪldˌfaɪ.ər/",
+              "definition": "A large, uncontrolled fire that spreads rapidly across dry vegetation, forests, or scrubland."
+            },
+            {
+              "term": "Storm Surge",
+              "ipa": "/stɔːm sɜːdʒ/",
+              "definition": "A rising of coastal sea waters above normal levels caused by low atmospheric pressure and wind."
+            },
+            {
+              "term": "Tornado Alert",
+              "ipa": "/tɔːˈneɪ.doʊ əˌlɜːt/",
+              "definition": "An official emergency warning indicating that a destructive rotating column of air has formed."
+            },
+            {
+              "term": "Severe Turbulence",
+              "ipa": "/sɪˈvɪər ˈtɜː.bjə.ləns/",
+              "definition": "Violent atmospheric motion causing large, abrupt changes in an aircraft's altitude or attitude."
+            },
+            {
+              "term": "Climate Resilience",
+              "ipa": "/ˈklaɪ.mət rɪˈzɪl.jəns/",
+              "definition": "The capacity of a community or system to anticipate, absorb, and recover from hazardous climate events."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or recent examples to support your group's argument.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Major international airports should automatically suspend all flight operations whenever temperatures exceed 40°C due to performance safety risks.",
+              "group2": "Extreme weather events are becoming so frequent that public emergency services should have legal power to enforce mandatory civilian curfews.",
+              "group3": "Airlines and rail operators should not be legally required to compensate stranded passengers when cancellations are caused by unforecast severe storms."
+            },
+            "usefulPhrases": [
+              "Our group discussed the operational risks of...",
+              "From an emergency response standpoint...",
+              "A major counter-argument to consider is...",
+              "In conclusion, we strongly maintain that..."
             ]
           }
         }
@@ -3986,54 +4507,64 @@
       "2": {
         "session": 2,
         "objectives": {
-          "title": "Session 2 Objectives - The 15-Minute Resilient City Blueprint",
-          "summary": "By the end of this session, you will be able to describe city neighborhoods and public transport, use prepositions of place and relative clauses, redesign a busy street in a group, and present your ideas to the class.",
+          "title": "Session 2 - Sustainable Cities Objectives",
+          "summary": "By the end of this session, you will be able to discuss sustainable cities with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Learn Key Vocabulary: City Design & Streets",
-              "description": "Learn 8 useful words for pedestrian areas, green spaces, bike lanes, and urban living."
+              "title": "Practice TOEIC Reading Part 7: Urban Development & Green Policies",
+              "description": "Read city council proposals, public transit schedules, and environmental reports for key facts and data."
             },
             {
               "num": 2,
-              "title": "Grammar Focus: Describing Places & Locations",
-              "description": "Use prepositions ('adjacent to', 'within walking distance') and relative clauses ('where', 'which') with precision."
+              "title": "Master Vocabulary for 15-Minute Cities, Clean Transit & Public Spaces",
+              "description": "Learn high-frequency terms for pedestrian zones, green corridors, cycling lanes, and renewable district heating."
             },
             {
               "num": 3,
-              "title": "Speaking Activity: Redesigning the City Center",
-              "description": "Look at two street photos, debate traffic vs. walking areas, and choose how to spend a €50M budget."
+              "title": "Apply Subject-Verb Agreement Rules with Complex Subject Phrases",
+              "description": "Ensure singular and plural verbs match when long descriptive phrases or collective nouns separate the subject from the verb."
             },
             {
               "num": 4,
-              "title": "Speaking Practice: Presenting City Ideas to the Council",
-              "description": "Present your redesigned street plan to the class and vote on the best design."
+              "title": "Evaluate Green Neighborhoods & Public Transit Integration (DDRS)",
+              "description": "Assess how compact urban planning cuts vehicle pollution and creates healthier, fairer communities."
+            },
+            {
+              "num": 5,
+              "title": "Compare Two Cities and Present Urban Sustainability Features",
+              "description": "Present and compare urban sustainability initiatives using clear comparative structures and confident delivery."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 2 Lesson Plan - The 15-Minute Resilient City Blueprint (2 Hours)",
-          "summary": "A creative hands-on design sprint: students analyze contrasting urban photos with interactive hotspots, master spatial prepositions, draft an integrated €50M district redesign, and defend it before a panel of community stakeholders.",
+          "title": "Session 2 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
           "items": [
             {
-              "title": "Part 1: Key Vocabulary • City Design & Streets",
-              "description": "Learn 8 city architecture words, check syllable stress, and complete the photo matching challenge.",
+              "title": "Conversational Warm-Up: My Ideal City",
+              "description": "Students discuss in pairs what features make a city enjoyable to live in (parks, cycle paths, public transport).",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Grammar Focus • Describing Places & Locations",
-              "description": "Review spatial prepositions and relative pronouns; complete 4 sentence combination drills.",
+              "title": "TOEIC Strategy: Urban Notices & Bulletins",
+              "description": "Practice Part 7 reading comprehension with municipal updates, transit timetables, and environmental regulations.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Speaking Activity • Redesigning the City Center",
-              "description": "Compare the Barcelona Superblock to car sprawl, allocate the €50M budget, and answer resident questions.",
+              "title": "Vocabulary Builder: 15-Minute City Concepts",
+              "description": "Vocabulary for urban planning: pedestrian zone, green corridor, district heating, and low-emission zones.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Spoken City Council Pitch & Group Vote",
-              "description": "Deliver a short spoken pitch to the council panel and vote on the most livable project.",
+              "title": "Structured Discussion & Grammar",
+              "description": "Compare two European cities using Subject-Verb Agreement with collective nouns and long noun phrases.",
               "part": "Part 4"
+            },
+            {
+              "title": "Debrief, Evaluation Prep & Wrap-Up",
+              "description": "Class recap, key grammatical reminders for subject-verb agreement, and personal vocabulary logging.",
+              "part": "Part 5"
             }
           ]
         },
@@ -4389,129 +4920,332 @@
           ]
         },
         "lessonContent": {
-          "hero": {
-            "title": "The 15-Minute Resilient City Blueprint",
-            "subtitle": "Archetype C • Collaborative Design Sprint: Superblocks, Micro-Mobility & Urban Transformation",
+          "overview": {
             "image": "images/ag_m2card2.jpg",
-            "badge": "AG Module 2 • Session 2 • Design Sprint"
+            "title": "Sustainable Cities & Low-Emission Urban Mobility",
+            "subtitle": "Sponge Cities, 15-Minute Urbanism, Urban Heat Islands & Transit Corridors",
+            "badge": "Session Overview • Sustainable Cities & Urban Design"
           },
-          "urbanShowcase": {
-            "photoA": {
-              "image": "images/urban_car_sprawl.jpg",
-              "title": "City A: Car-Centric Suburban Arterial Sprawl",
-              "caption": "Bumper-to-bumper 6-lane thoroughfare, asphalt surface parking, overhead flyovers, exhaust haze, zero pedestrian canopy.",
-              "hotspots": [
+          "hero": {
+            "image": "images/ag_m2card2.jpg",
+            "title": "Sustainable Cities & Low-Emission Urban Mobility",
+            "subtitle": "Sponge Cities, 15-Minute Urbanism, Urban Heat Islands & Transit Corridors",
+            "badge": "Session Overview • Sustainable Cities & Urban Design"
+          },
+          "openingSession": {
+            "modeBadges": [
+              "⚡ Quick Check + Pair Peer-Check",
+              "⏱️ 5 min audit + 5 min debrief",
+              "🎯 Urban Vocabulary Differentiation"
+            ],
+            "instructions": [
+              "Step 1 (Headline Scan - 3 mins): Read the three weekly urban mobility news prompts. Identify which initiative has the greatest decarbonization potential.",
+              "Step 2 (Practice Quiz - 4 mins): Attempt the 4 urban planning vocabulary terms without consulting notes (e.g., district heating vs CHP, permeable pavements vs swales).",
+              "Step 3 (Pair Verification - 3 mins): Compare your answers with a partner. Click 'Reveal Answer' to verify technical definitions and operational context."
+            ],
+            "deliverable": "Clearly explain the technical distinction between 2 sustainable urban design concepts using precise environmental terminology.",
+            "teacherNotes": "Focus student attention on false friends in urban planning (e.g., 'urban sprawl' vs 'compact development'). Ensure students explain why permeable pavements reduce runoff rather than just repeating definitions.",
+            "title": "Activity 1: Sustainable Urbanism News & Opening Warm-Up",
+            "summary": "Opening warm-up on green municipal policies, pedestrianization, and urban heat island mitigation.",
+            "newsPrompts": [
+              "Paris, Barcelona, and Milan expand permanent low-emission zones, removing parking lanes in favor of micro-forests and cycle highways.",
+              "Copenhagen's 'Cloudburst Management Plan' transforms urban parks into temporary retention lakes during historic deluge events.",
+              "Singapore and Tokyo mandate extensive vertical living walls and green rooftops to combat the Urban Heat Island effect."
+            ],
+            "diagnostic": {
+              "title": "Urban Planning Vocabulary Quick Check",
+              "instructions": "Discuss each concept in pairs before verifying your explanation:",
+              "questions": [
                 {
                   "id": 1,
-                  "label": "6-Lane Carriageway",
-                  "desc": "Dominated by vehicular congestion and bumper-to-bumper traffic, creating severe acoustic and particulate pollution."
+                  "q": "What is the Urban Heat Island (UHI) effect, and what primary factors amplify it?",
+                  "answer": "The UHI effect describes urban areas experiencing significantly warmer temperatures than surrounding rural areas. It is amplified by dark impermeable surfaces (asphalt, concrete) absorbing solar radiation, waste heat from air conditioners and engines, and tall buildings trapping heat."
                 },
                 {
                   "id": 2,
-                  "label": "Surface Asphalt Lot",
-                  "desc": "Impermeable asphalt heat island that absorbs solar radiation and prevents natural stormwater drainage."
+                  "q": "What core principles define a 'Sponge City'?",
+                  "answer": "Rather than funneling stormwater rapidly into underground concrete pipes that quickly overload, a sponge city mimics nature by absorbing, storing, filtering, and releasing rainwater through permeable pavements, rain gardens, bioswales, and wetlands."
                 },
                 {
                   "id": 3,
-                  "label": "Flyover Concrete Ramp",
-                  "desc": "Elevated road infrastructure that physically bisects the neighborhood and isolates residential blocks."
+                  "q": "What is the concept behind Carlos Moreno's '15-Minute City'?",
+                  "answer": "An urban planning model where every resident can access their daily necessities (work, grocery, education, healthcare, leisure) within a 15-minute walk or bike ride from home, drastically reducing private automobile dependency."
                 },
                 {
                   "id": 4,
-                  "label": "Absence of Sidewalks",
-                  "desc": "Severely devoid of pedestrian walkways, cycling infrastructure, and protective tree shade."
+                  "q": "What is the difference between Permeable Paving and Conventional Asphalt?",
+                  "answer": "Conventional asphalt is totally waterproof, creating high surface runoff that floods storm drains. Permeable paving features porous matrices or interlocking gaps that allow rainwater to infiltrate through into sub-base aquifers or retention layers."
                 }
               ]
-            },
-            "photoB": {
-              "image": "images/urban_superblock.jpg",
-              "title": "City B: Pedestrian-First European Superblock",
-              "caption": "Reclaimed public space, protected cycle tracks, dappled tree canopy, outdoor terrace dining, permeable stone paving.",
-              "hotspots": [
-                {
-                  "id": 1,
-                  "label": "Reclaimed Pedestrian Plaza",
-                  "desc": "Former road surface converted into active public realm for foot traffic, social gatherings, and children's play."
-                },
-                {
-                  "id": 2,
-                  "label": "Protected Cycle Track",
-                  "desc": "Dedicated bi-directional bike corridor physically segregated from vehicular traffic by flowering planters."
-                },
-                {
-                  "id": 3,
-                  "label": "Permeable Green Canopy",
-                  "desc": "Mature deciduous trees and permeable light pavers that filter rainwater and lower ambient summer heat by 4°C."
-                },
-                {
-                  "id": 4,
-                  "label": "Outdoor Café Culture",
-                  "desc": "Flanked by ground-floor independent businesses and restaurant terraces that stimulate the local economy."
-                }
-              ]
-            },
-            "spokenProtocol": [
+            }
+          },
+          "survey": {
+            "modeBadges": [
+              "👥 Paired Rotating Speed Survey",
+              "⏱️ 5 min prep + 15 min interviews + 5 min debrief",
+              "🎯 Structured Spoken Debate & Argumentation"
+            ],
+            "instructions": [
+              "Step 1 (Stance Preparation - 5 mins): Review the 4 municipal dilemmas. Formulate your personal stance using the suggested pros, cons, and linking phrases.",
+              "Step 2 (Rotating Speed Survey - 15 mins): Interview at least three different peers. Challenge their assumptions regarding costs, equity, and scalability.",
+              "Step 3 (Consensus & Summary - 5 mins): Return to your primary partner. Summarize the strongest trade-offs heard and prepare a 1-minute verbal briefing on the most contentious dilemma."
+            ],
+            "deliverable": "Complete the 4-dilemma survey grid with peer notes and present 1 consensus mitigation strategy to the class.",
+            "teacherNotes": "Enforce strict use of linking phrases ('On the one hand...', 'While acknowledging the upfront capital expenditure...'). Circulate and note recurring errors in modal verbs of deduction.",
+            "title": "Activity 2: Resilient Urban Innovations: Speed Survey",
+            "summary": "Conduct speed-dating interviews on 4 pioneering urban resilience strategies deployed worldwide. Weigh pros, cons, and community trade-offs in pairs.",
+            "signposts": [
+              "\"From an urban planning perspective, ...\"",
+              "\"While sponge infrastructure requires upfront investment, it significantly reduces...\"",
+              "\"To combat extreme summer heat, municipalities must prioritize...\"",
+              "\"The transition toward a 15-minute city relies heavily on...\""
+            ],
+            "topics": [
               {
-                "step": "Step 1 (Spatial Observation - 4 mins)",
-                "prompt": "Partner A describes Photo A; Partner B describes Photo B using spatial prepositions ('In the foreground...', 'Flanked by...', 'Bisected by...')."
+                "id": 1,
+                "badge": "Superblocks & Active Mobility",
+                "statement": "Should historic city centers completely ban private fossil-fuel automobiles in favor of pedestrian superblocks?",
+                "pro": "Superblocks cut local air pollution by 30%, reduce traffic noise, and reclaim street space for children, community plazas, and street trees.",
+                "con": "Businesses worry about freight delivery logistics, and outer-suburban commuters who lack convenient rail links face longer journeys.",
+                "prompt": "Interview your partner: How does Barcelona's superblock model compare to your hometown's city center?"
               },
               {
-                "step": "Step 2 (Human Impact - 3 mins)",
-                "prompt": "Compare 3 quality-of-life factors: acoustic noise, local business vitality, and safety for children/elderly."
+                "id": 2,
+                "badge": "Sponge City Water Squares",
+                "statement": "Should all new public parks and city squares be designed as sunken stormwater flood retention basins?",
+                "pro": "Dual-purpose water plazas (like in Rotterdam) serve as dry skate parks and basketball courts in normal weather, and safely retain millions of liters during flash floods.",
+                "con": "Sediment and debris accumulation after flooding requires rapid municipal cleaning before public recreational use can resume.",
+                "prompt": "Interview your partner: How could your campus or neighborhood implement sponge city water retention features?"
               },
               {
-                "step": "Step 3 (The Mayor's Dilemma - 3 mins)",
-                "prompt": "If you were city mayor with funds for only ONE transformation in Photo A, which single element from Photo B would you build first, and why?"
+                "id": 3,
+                "badge": "Transit-Oriented Development",
+                "statement": "Should municipal governments eliminate mandatory parking minimums for all new residential buildings near transit hubs?",
+                "pro": "Removing parking minimums lowers construction costs, increases housing affordability, and incentivizes residents to choose walking, cycling, and public transit.",
+                "con": "Without adequate car-sharing or electric vehicle infrastructure, overflow parking can spill over into adjacent residential streets.",
+                "prompt": "Interview your partner: What makes an urban transport hub truly attractive for daily commuters?"
+              },
+              {
+                "id": 4,
+                "badge": "District Cooling & Circular Energy",
+                "statement": "Should cities mandate centralized seawater or geothermal district cooling networks instead of individual building air conditioning?",
+                "pro": "Centralized district cooling is up to 50% more energy-efficient than separate rooftop chillers, eliminating localized hot exhaust air in pedestrian streets.",
+                "con": "Laying subterranean chilled water pipe networks beneath existing congested streets involves high capital cost and disruptive utility works.",
+                "prompt": "Interview your partner: How can cities solve the paradox of air conditioning making outdoor street temperatures hotter?"
               }
             ]
           },
-          "redesignSprint": {
-            "budget": "€50,000,000",
-            "corridorName": "The Boulevard Carnot Regeneration Project (60-Hectare Mixed Zone)",
-            "categories": [
+          "grammarClinic": {
+            "modeBadges": [
+              "🧠 Grammar Focus & Interactive Drills",
+              "⏱️ 7 min concept analysis + 8 min board drills + 5 min check",
+              "🎯 Agreement Precision with Groups & Institutions"
+            ],
+            "instructions": [
+              "Step 1 (Pattern Analysis - 7 mins): Study the 3 rules for collective nouns, measurement expressions, and percentages in technical English. Notice British vs American conventions.",
+              "Step 2 (Pair Transformation Drills - 8 mins): Work through the 4 interactive drills. Justify whether the subject acts as a singular unit or individual members.",
+              "Step 3 (Error Correction - 5 mins): Check answers using the reveal toggles. Formulate two original sentences about airport or municipal transport authorities."
+            ],
+            "deliverable": "Accurately complete all 4 interactive agreement drills and construct 2 original sentences applying collective noun agreement rules.",
+            "teacherNotes": "Highlight that in aviation and international engineering reports, institutional entities ('The committee', 'The board', 'The taskforce') take singular verbs when acting as a formal unit. Contrast with British casual usage.",
+            "title": "Activity 3: Language Focus: Subject-Verb Agreement with Collective Nouns",
+            "summary": "Navigating tricky subject-verb agreement rules with collective nouns, complex prepositional phrases, and quantifiers in professional writing and TOEIC Part 5.",
+            "rules": [
               {
-                "name": "Active Mobility & Transit",
-                "costPerUnit": "€10M / 5km",
-                "desc": "Protected cycle superhighways, electric tramway extension, and smart micro-mobility docking hubs."
+                "type": "Collective Nouns (Council, Committee, Team)",
+                "formula": "The municipal council [decides / has decided] (treated as a single entity).",
+                "usage": "In American and standard business English, singular verbs are preferred when the group acts together as one unit."
               },
               {
-                "name": "Urban Forestry & Bioswales",
-                "costPerUnit": "€8M / 10,000m²",
-                "desc": "Continuous tree canopy, natural sponge-city bioswales for flood retention, and pocket parks."
+                "type": "Complex Noun Phrases with Prepositions",
+                "formula": "A network [of permeable stormwater boulevards] IS required. (Agreement is with 'network', NOT 'boulevards').",
+                "usage": "Ignore the prepositional phrase between the true grammatical subject and the verb."
               },
               {
-                "name": "Affordable & Low-Carbon Housing",
-                "costPerUnit": "€15M / 200 units",
-                "desc": "Energy-positive modular timber social housing with rooftop community vegetable gardens."
-              },
-              {
-                "name": "Civic Plazas & Local Commerce Hubs",
-                "costPerUnit": "€7M / plaza",
-                "desc": "Pedestrianized market squares, pop-up artisan retail stalls, and shaded outdoor cultural stages."
-              },
-              {
-                "name": "Subterranean Parking & Logistics Hub",
-                "costPerUnit": "€10M / facility",
-                "desc": "Consolidated underground perimeter parking to remove all surface on-street car storage."
+                "type": "Quantifiers & Fractions (Majority, Percentage, Portion)",
+                "formula": "A majority of the surface IS permeable (uncountable) vs. A majority of residents ARE commuters (plural count).",
+                "usage": "When 'majority', 'percentage', or 'all' are followed by 'of + noun', the verb agrees with the following object noun."
               }
             ],
-            "stakeholders": [
+            "drills": [
               {
-                "role": "The Suburban Commuter Rep",
-                "objection": "If you remove 4 traffic lanes, my daily commute will double from 35 to 70 minutes. How will I reach my job without being penalized?"
+                "id": 1,
+                "sentence": "A comprehensive network of bioswales and retention ponds ________ been installed around the perimeter.",
+                "options": [
+                  "have",
+                  "has",
+                  "are",
+                  "were"
+                ],
+                "correct": "has",
+                "explanation": "The subject is 'A comprehensive network' (singular), not 'bioswales and retention ponds'."
               },
               {
-                "role": "The Local Retail Association Lead",
-                "objection": "Our shopkeepers rely on customer curb-side parking. If clients can't park directly in front, our sales will plummet."
+                "id": 2,
+                "sentence": "The municipal planning committee ________ meeting today to review zoning bylaws for the new eco-quarter.",
+                "options": [
+                  "is",
+                  "are",
+                  "were",
+                  "have been"
+                ],
+                "correct": "is",
+                "explanation": "The committee acts as a single body; in standard TOEIC grammar, a singular verb is required."
               },
               {
-                "role": "The Climate Resilience Campaigner",
-                "objection": "A €50M budget must achieve net-zero runoff and at least 40% tree canopy coverage, not cosmetic greenwashing."
+                "id": 3,
+                "sentence": "A large percentage of the city's asphalt surfaces ________ impermeable to storm runoff.",
+                "options": [
+                  "remains",
+                  "remain",
+                  "are remaining",
+                  "is remaining"
+                ],
+                "correct": "remain",
+                "explanation": "With percentages/fractions followed by a plural count noun ('surfaces'), the verb takes plural agreement ('remain')."
               },
               {
-                "role": "The Senior Citizen Advocate",
-                "objection": "E-scooters and uneven cobblestones are dangerous for people with reduced mobility. How do you guarantee barrier-free access?"
+                "id": 4,
+                "sentence": "Neither the city mayor nor the civil engineers ________ willing to compromise on flood defense standards.",
+                "options": [
+                  "was",
+                  "were",
+                  "is",
+                  "has been"
+                ],
+                "correct": "were",
+                "explanation": "In 'Neither... nor...', the verb agrees with the subject closest to it ('the civil engineers' -> plural 'were')."
               }
+            ]
+          },
+          "roleplay": {
+            "modeBadges": [
+              "🏛️ Municipal Steering Committee Simulation",
+              "⏱️ 10 min role prep + 25 min formal debate + 10 min vote & debrief",
+              "🎯 Multi-Stakeholder Negotiation & Public Presentation"
+            ],
+            "instructions": [
+              "Step 1 (Role Assignment & Briefing - 10 mins): Divide into groups of 4. Assign the four stakeholder roles (Urban Planning Director, Transport Authority Lead, Environmental NGO Advocate, Local Merchant Association Rep). Draft your 3 core non-negotiable priorities.",
+              "Step 2 (Formal Committee Debate - 25 mins): Convene the redevelopment committee session. Present your stakeholder brief, negotiate budget allocation for the €120M brownfield redevelopment, and manage conflicting demands (pedestrianization vs delivery access).",
+              "Step 3 (Consensus Charter & Debrief - 10 mins): Vote on the 3 compromise motions. Present your committee's final consensus blueprint to the plenary chamber in a 2-minute spoken summary."
+            ],
+            "deliverable": "Deliver a 3-minute oral stakeholder intervention defending your mandate with empirical data, followed by a signed consensus compromise charter.",
+            "teacherNotes": "Act as the Municipal Mayor presiding over the steering committee. Intervene if any stakeholder dominates without listening. Demand concrete metric compromises (e.g., delivery time windows: 05:00-09:00 to reconcile merchants and pedestrian safety).",
+            "title": "Activity 4: Urban Eco-District Redesign Committee",
+            "scenario": "A 50-hectare former industrial and transit depot adjacent to the central railway station is being redeveloped into a high-density, climate-resilient eco-quarter. Form a multi-disciplinary steering committee to reach a consensus on land use, green space, active mobility, and heat mitigation.",
+            "roles": [
+              {
+                "title": "Chief Urban Architect & Planner",
+                "focus": "Building heights, passive solar orientation, 15-minute zoning, and ensuring living green roofs on 100% of new structures."
+              },
+              {
+                "title": "Sustainable Transport & Mobility Director",
+                "focus": "Car-free pedestrian streets, two-way segregated cycle highways, electric tram extensions, and zero parking minimums for private cars."
+              },
+              {
+                "title": "Civil Water & Climate Resilience Engineer",
+                "focus": "Sponge city drainage, subterranean cisterns for stormwater recycling, permeable pavements, and flood retention squares."
+              },
+              {
+                "title": "Community Health & Economic Equity Advocate",
+                "focus": "Affordable social housing quotas (minimum 35%), shaded public parks for senior citizens, local zero-km food markets, and community clinics."
+              }
+            ]
+          },
+          "closingReview": {
+            "modeBadges": [
+              "🏁 Formative Evaluation 2 Alignment",
+              "⏱️ 5 min checklist + 5 min peer review + 5 min portfolio entry",
+              "🎯 Spoken Argumentation Assessment Readiness"
+            ],
+            "instructions": [
+              "Step 1 (Checklist Self-Audit - 5 mins): Work through the 4 Formative Evaluation 2 alignment criteria. Rate your readiness from 1 to 5.",
+              "Step 2 (Peer Feedback Exchange - 5 mins): Share one area of strength and one specific language focus (e.g., collective noun agreement, signposting) with your partner.",
+              "Step 3 (Digital Learning Log - 5 mins): Add 5 new urban planning and transport transition terms to your digital vocabulary portfolio before Session 3."
+            ],
+            "deliverable": "Complete the 4-point Formative Evaluation 2 readiness audit and commit 1 priority improvement goal to your learning log.",
+            "teacherNotes": "Remind students that Formative Evaluation 2 (FE2) focuses heavily on multi-stakeholder negotiation, managing disagreement diplomatically, and using accurate linking words. Check learning logs for consistent vocabulary recording.",
+            "title": "Session 2 Wrap-Up & FE2 Alignment",
+            "feChecklist": [
+              "Add 5 new urban planning and sponge city terms to your Vocabulary Log.",
+              "Review the Subject-Verb Agreement rules and complete the online drills.",
+              "Draft an outline of Dimension 2 (Physical & Civil Interventions) for your FE2 oral evaluation."
+            ]
+          }
+        },
+        "overview": {
+          "intro": "This session focuses on discussing sustainable cities, green urban planning, and environmental architecture in spoken English. Working in teams, you will practise describing eco-friendly infrastructure, evaluating renewable energy systems, and explaining how urban design can reduce carbon emissions and improve quality of life.",
+          "whyItMatters": "Explaining complex technical concepts like sustainable infrastructure and energy transitions in simple, persuasive English is an essential workplace communication skill. This practice helps you formulate convincing arguments, structure clear explanations, and perform confidently in your Module 2 Formative Evaluation.",
+          "keyTerms": [
+            {
+              "term": "Green Infrastructure",
+              "ipa": "/ɡriːn ˈɪn.frəˌstrʌk.tʃər/",
+              "definition": "A network of natural and semi-natural green spaces designed to manage stormwater and cool cities."
+            },
+            {
+              "term": "Urban Heat Island",
+              "ipa": "/ˈɜː.bən hiːt ˈaɪ.lənd/",
+              "definition": "An urban area that is significantly warmer than surrounding rural regions due to concrete and human activity."
+            },
+            {
+              "term": "District Heating",
+              "ipa": "/ˈdɪs.trɪkt ˈhiː.tɪŋ/",
+              "definition": "A system for distributing heat generated in a centralized location to urban buildings via insulated pipes."
+            },
+            {
+              "term": "Passive Solar",
+              "ipa": "/ˈpæs.ɪv ˈsoʊ.lər/",
+              "definition": "Building design that captures natural sunlight to heat spaces without active mechanical systems."
+            },
+            {
+              "term": "Permeable Pavement",
+              "ipa": "/ˈpɜː.mi.ə.bəl ˈpeɪv.mənt/",
+              "definition": "Paving material that allows rainwater to seep through into underlying soils, reducing runoff."
+            },
+            {
+              "term": "Living Wall",
+              "ipa": "/ˈlɪv.ɪŋ wɔːl/",
+              "definition": "A vertical garden attached to an exterior or interior building facade to purify air and insulate."
+            },
+            {
+              "term": "Circular Economy",
+              "ipa": "/ˈsɜː.kjə.lər iˈkɒn.ə.mi/",
+              "definition": "An economic model emphasizing product reuse, refurbishment, and recycling over disposal."
+            },
+            {
+              "term": "Zero-Emission Zone",
+              "ipa": "/ˈzɪə.roʊ iˈmɪʃ.ən zoʊn/",
+              "definition": "An urban district where only zero-emission vehicles (electric or bicycles) are permitted entry."
+            },
+            {
+              "term": "Smart Grid",
+              "ipa": "/smɑːt ɡrɪd/",
+              "definition": "An electrical grid using digital communications technology to detect and react to local energy usage changes."
+            },
+            {
+              "term": "Urban Density",
+              "ipa": "/ˈɜː.bən ˈden.sə.ti/",
+              "definition": "The concentration of residents and dwellings within a given urban area to optimize land use."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or architectural examples to support your group's view.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "All new commercial office buildings should be legally mandated to feature solar panels and green rooftop gardens, regardless of cost.",
+              "group2": "High-density urban living with compact apartments is far more environmentally sustainable than suburban homes with gardens.",
+              "group3": "Air conditioning in residential and retail buildings should be strictly regulated and capped during summer heatwaves to protect the power grid."
+            },
+            "usefulPhrases": [
+              "When analyzing modern sustainable cities, we noticed...",
+              "The main environmental advantage of this approach is...",
+              "Critics often point out the financial cost, but we believe...",
+              "To conclude our presentation..."
             ]
           }
         }
@@ -4519,54 +5253,64 @@
       "3": {
         "session": 3,
         "objectives": {
-          "title": "Session 3 Objectives - Environmental Ethics & The Public Inquiry Hearing",
-          "summary": "By the end of this session, you will be able to discuss environmental questions, express polite opinions and disagreement, participate in a mock public hearing, and evaluate arguments with a partner.",
+          "title": "Session 3 - Building and Supporting Arguments Objectives",
+          "summary": "By the end of this session, you will be able to build and support persuasive arguments with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Learn Key Vocabulary: Environment & Public Debates",
-              "description": "Learn 8 useful words for environmental protection, construction projects, and community hearings."
+              "title": "Practice Identifying Opinions, Facts & Tone in TOEIC Contexts",
+              "description": "Differentiate between objective facts and speaker opinions in workplace dialogues and business articles."
             },
             {
               "num": 2,
-              "title": "Grammar Focus: Expressing Opinions & Polite Disagreement",
-              "description": "Use polite and cautious phrases ('It seems likely that...', 'While I understand your point, I believe...')."
+              "title": "Learn Useful Phrases to Agree, Disagree, and Express Counter-Arguments",
+              "description": "Master polite, professional phrases to support your position, acknowledge counter-arguments, and make concessions."
             },
             {
               "num": 3,
-              "title": "Speaking Activity: The New Railway Public Debate",
-              "description": "Role-play a debate between rail engineers, environmentalists, local residents, and government officials."
+              "title": "Master Gerunds & Infinitives (recommend doing vs. agree to do)",
+              "description": "Use verbs correctly followed by gerunds (-ing) or infinitives (to + verb) when proposing actions and solutions."
             },
             {
               "num": 4,
-              "title": "Speaking Practice: Asking Questions & Defending Your View",
-              "description": "Cross-examine witnesses, defend your position, and deliver a fair final decision."
+              "title": "Structure Persuasive Arguments on Environmental Regulations (DDRS)",
+              "description": "Build logical points backed by data when debating carbon pricing, plastic bans, and corporate environmental rules."
+            },
+            {
+              "num": 5,
+              "title": "Practice Defending Your Point of View in Group Discussions",
+              "description": "Defend your ideas calmly in group exchanges while actively listening and responding to different perspectives."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 3 Lesson Plan - Environmental Ethics & The Public Inquiry Hearing (2 Hours)",
-          "summary": "An Oxford-style debate and legal lab: students analyze conflicting testimonies on a controversial transit infrastructure project through an ancient wetland, learn argument framing and nuanced concession, and hold a formal public inquiry.",
+          "title": "Session 3 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
           "items": [
             {
-              "title": "Part 1: Key Vocabulary • Environment & Public Debates",
-              "description": "Learn 8 debate words, check syllable stress, and complete the matching challenge.",
+              "title": "Conversational Warm-Up: Quick Dilemmas",
+              "description": "In pairs, students quickly choose a side on simple dilemmas (e.g. banning cars in city centers) and give one strong reason.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Grammar Focus • Expressing Opinions & Polite Disagreement",
-              "description": "Master cautious language ('hedging') and polite disagreement; complete 4 rephrasing drills.",
+              "title": "TOEIC Strategy: Detecting Opinion & Inference",
+              "description": "Practice identifying the speaker or author's main point, tone, and implied meaning in TOEIC dialogues and articles.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Speaking Activity • The New Railway Public Debate",
-              "description": "Role-play the Val-d'Or Rail Bypass hearing with sworn witness statements and cross-examination.",
+              "title": "Vocabulary Builder: Persuasive Language",
+              "description": "Useful phrases for agreeing politely, making concessions, challenging claims, and summarizing evidence.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Speaking Review & Discussion Feedback",
-              "description": "Evaluate who made the most convincing argument and review tips for your speaking exam.",
+              "title": "Structured Discussion & Grammar",
+              "description": "Mini-debates on environmental rules using Gerunds & Infinitives (advocate doing, decide to ban, prioritize investing).",
               "part": "Part 4"
+            },
+            {
+              "title": "Debrief, Evaluation Prep & Wrap-Up",
+              "description": "Peer feedback on debate conduct, review of clear argumentation techniques, and Session 5 speaking checklist.",
+              "part": "Part 5"
             }
           ]
         },
@@ -4922,78 +5666,337 @@
           ]
         },
         "lessonContent": {
-          "hero": {
-            "title": "Environmental Ethics & The Public Inquiry Hearing",
-            "subtitle": "Archetype B • Media & Debate Lab: Infrastructure Expansion vs. Ecological Integrity",
+          "overview": {
             "image": "images/ag_m2card3.jpg",
-            "badge": "AG Module 2 • Session 3 • Debate Lab"
+            "title": "Building & Defending Environmental Arguments",
+            "subtitle": "Structuring Arguments, Linking Words, Polite Disagreement & Policy Debates",
+            "badge": "Session Overview • Environmental Argumentation & Policy"
           },
-          "devilsAdvocate": [
-            {
-              "claim": "Economic progress demands sacrifice: a few hundred hectares of wetland cannot hold back a multi-billion euro transport artery.",
-              "challenge": "Challenge this position: How do intact wetlands provide quantifiable economic value through flood mitigation and carbon sequestration?"
-            },
-            {
-              "claim": "If we don't build new road connections, regional towns will die economically within twenty years.",
-              "challenge": "Challenge this position: Does expanding highway capacity genuinely revive small towns, or does it accelerate urban brain drain and strip-mall decay?"
-            },
-            {
-              "claim": "Individual citizens are solely responsible for climate change through their consumer choices; corporations and governments just meet market demand.",
-              "challenge": "Challenge this position: How does public infrastructure design dictate individual choices (e.g., if there are no trains, people must drive)?"
+          "hero": {
+            "image": "images/ag_m2card3.jpg",
+            "title": "Building & Defending Environmental Arguments",
+            "subtitle": "Structuring Arguments, Linking Words, Polite Disagreement & Policy Debates",
+            "badge": "Session Overview • Environmental Argumentation & Policy"
+          },
+          "openingSession": {
+            "title": "Activity 1: Environmental Policy News & Argument Warm-Up",
+            "summary": "Opening warm-up examining international policy controversies and diagnostic distinctions in argumentation.",
+            "modeBadges": [
+              "Pairs",
+              "Quick Check",
+              "10 Mins"
+            ],
+            "instructions": [
+              "Read the 3 weekly environmental policy headlines (short-haul flight bans, urban delivery mandates, greenwashing tribunals).",
+              "With your partner, discuss the 4 key distinctions: Claim vs. Evidence, Strategic Concession, Correlation vs. Causation, and the Straw Man fallacy.",
+              "Click 'Reveal Answer' on each card to evaluate your rhetorical reasoning against the model answers."
+            ],
+            "deliverable": "Accurate verbal distinction between assertions, empirical evidence, and concessive counter-arguments.",
+            "teacherNotes": "Ensure students recognize that in technical and environmental policy debates, an unbacked claim is easily dismissed. Emphasize that making a concession ('While upfront capex is elevated...') actually strengthens technical credibility.",
+            "newsPrompts": [
+              "European governments debate capping regional flight routes where high-speed trains offer sub-2.5-hour city connections.",
+              "City mayors clash with logistics carriers over mandatory zero-emission delivery vehicle mandates in low-emission zones.",
+              "Environmental tribunals scrutinize corporate carbon-neutrality pledges for evidence of greenwashing."
+            ],
+            "diagnostic": {
+              "title": "Argumentation & Linking Words Quick Check",
+              "instructions": "Discuss each rhetorical distinction in pairs before revealing the model explanation:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the structural difference between a Claim and Evidence when building an argument?",
+                  "answer": "A claim is an assertive statement of opinion or policy you want your audience to accept (e.g., 'We must mandate cool roofs'). Evidence (data, facts, case studies) provides the empirical foundation that supports and proves the claim."
+                },
+                {
+                  "id": 2,
+                  "q": "What is the strategic purpose of making a Concession during a technical debate?",
+                  "answer": "A concession acknowledges the partial validity of an opposing point (e.g., 'While I recognize the substantial upfront capex...'). It builds credibility, demonstrates open-mindedness, and strengthens your subsequent rebuttal."
+                },
+                {
+                  "id": 3,
+                  "q": "What is the difference between Correlation and Causation in environmental studies?",
+                  "answer": "Correlation means two events occur together (e.g., higher temperatures and increased ice cream sales). Causation means one event directly produces the other (e.g., rising greenhouse gas concentrations trap heat, directly causing global temperature rise)."
+                },
+                {
+                  "id": 4,
+                  "q": "What is a 'Straw Man' fallacy, and why must it be avoided in professional communication?",
+                  "answer": "A straw man fallacy misrepresents or exaggerates an opponent's argument to make it easy to defeat (e.g., 'Advocating cycle lanes means you want to destroy all business commerce!'). It damages professional credibility and prevents constructive problem-solving."
+                }
+              ]
             }
-          ],
-          "dossier": {
-            "projectName": "The Val-d'Or High-Speed Rail & Freight Bypass (Link A79)",
-            "controversy": "A proposed 42-km electrified rail bypass intended to divert 80,000 freight trucks annually away from regional city centers, but requiring the bisecting of the Marais-Sauvage Protected Biosphere Reserve.",
-            "witnesses": [
+          },
+          "survey": {
+            "title": "Activity 2: Environmental Policy Dilemmas: Speed Sparring",
+            "summary": "Engage in timed 4-minute debate rounds on four controversial climate policies. Practice using structured arguments: Claim → Evidence → Reasoning → Concession → Rebuttal.",
+            "modeBadges": [
+              "Pairs",
+              "Timed Speed Sparring",
+              "25 Mins"
+            ],
+            "instructions": [
+              "Review the 4 policy dilemma cards: Short-Haul Flight Bans, Airport Night Curfews, Small Modular Nuclear Reactors, and Fast-Tracking Green Infrastructure Permits.",
+              "Take turns roleplaying the Pro (advocacy) and Con (counter) positions for each topic in rapid 4-minute sparring rounds.",
+              "Incorporate at least two of the mandatory spoken linking phrases into each round ('While I concede that...', 'Empirical evidence strongly suggests that...').",
+              "Switch partners after Dilemma 2 to defend the opposing viewpoint."
+            ],
+            "deliverable": "4 structured debate exchanges (Claim → Evidence → Reasoning → Concession → Response) utilizing polite connecting words for contrasting ideas.",
+            "teacherNotes": "Circulate to monitor linking words. Intervene if students rely on casual conversational fillers ('Yeah but...', 'I don't think so'). Hold students to formal hedging and concessive markers ('Admittedly...', 'Notwithstanding the operational challenges...').",
+            "signposts": [
+              "\"While I concede that [X] involves significant expenditure, ...\"",
+              "\"Empirical evidence strongly suggests that ...\"",
+              "\"To address the concern regarding [Y], we propose that ...\"",
+              "\"From a cost-benefit standpoint, the data clearly demonstrates that ...\""
+            ],
+            "topics": [
               {
-                "role": "Dr. Elena Rostova • Chief Ecological Biologist",
-                "stance": "Total Opposition to Surface Route",
-                "testimony": "The Marais-Sauvage is a non-renewable peatland ecosystem sequestering 450,000 tons of carbon. Bisecting it with an embankment will sever hydrological aquifers and trigger irreversible methane release. The only acceptable compromise is a bored deep tunnel or complete re-routing.",
-                "vulnerability": "A deep tunnel route would inflate construction costs by €850M and delay completion by 6 years."
+                "id": 1,
+                "badge": "Short-Haul Flights vs. High-Speed Rail",
+                "statement": "Should the European Union ban all commercial passenger flights where high-speed rail exists under 2.5 hours?",
+                "pro": "High-speed rail emits up to 90% less CO2 per passenger-kilometer than short-haul jet flights and brings travelers directly into central business districts.",
+                "con": "Airlines lose valuable feeder passenger traffic for long-haul intercontinental routes, and rail capacity is already saturated on peak corridors.",
+                "prompt": "Debate your partner: How should governments balance air-rail modal shift without stranding regional passengers?"
               },
               {
-                "role": "Marcus Vance • Regional Chamber of Commerce Director",
-                "stance": "Full Support for Surface Route",
-                "testimony": "Regional highway gridlock currently costs local logistics firms €120M each year in delayed shipments and diesel waste. The bypass will cut freight delivery times by 48% and generate 3,500 permanent green logistics jobs for unemployed youth.",
-                "vulnerability": "Logistics firms are unwilling to pay the high rail track access charges unless heavily subsidized by public taxpayers."
+                "id": 2,
+                "badge": "Airport Night Curfews",
+                "statement": "Should international airports enforce strict total flight curfews between 23h00 and 06h00?",
+                "pro": "Night aircraft noise disrupts sleep patterns, impairs cardiovascular health, and reduces cognitive performance for hundreds of thousands of nearby residents.",
+                "con": "Global air cargo relies on overnight rotations to deliver vital pharmaceuticals and just-in-time e-commerce, and hub carriers need morning arrival waves.",
+                "prompt": "Debate your partner: Should acoustic surcharges or complete flight bans be used to regulate night operations?"
               },
               {
-                "role": "Amira Benali • Commuter Union Representative",
-                "stance": "Conditional Support for Multi-Modal Hub",
-                "testimony": "85,000 workers commute daily along the congested valley corridor. We support the bypass ONLY if it includes 4 intermediate passenger stations and subsidized regional commuter fares, rather than acting solely as a non-stop freight conduit.",
-                "vulnerability": "Adding four passenger stations will reduce high-speed freight capacity by 35%."
+                "id": 3,
+                "badge": "Nuclear Base Load vs. Renewables",
+                "statement": "Should cities and industrial hubs invest in Small Modular Nuclear Reactors (SMRs) alongside wind and solar power?",
+                "pro": "SMRs provide dependable, zero-carbon baseload electricity regardless of cloudy weather or calm winds, occupying a tiny land footprint.",
+                "con": "Nuclear construction projects face historic cost overruns, regulatory delays, and lingering public concerns regarding long-term radioactive waste storage.",
+                "prompt": "Debate your partner: What is the optimal energy mix to achieve net-zero power grids by 2040?"
               },
               {
-                "role": "Chief Commissioner Harrison • Judicial Inquiry Lead",
-                "stance": "Neutral Arbiter",
-                "testimony": "The Commission must balance binding European Biodiversity Directives against National Strategic Infrastructure Mandates. We demand rigorous cost-benefit data, not emotional rhetoric.",
-                "vulnerability": "Must deliver a definitive verdict that will inevitably anger either the economic lobby or the environmental coalition."
+                "id": 4,
+                "badge": "Fast-Tracking Green Infrastructure Permits",
+                "statement": "Should governments bypass local environmental inquiries to accelerate the construction of flood defenses and wind farms?",
+                "pro": "The climate emergency demands rapid deployment of protective sea walls and renewable power; 10-year planning appeals jeopardize public safety.",
+                "con": "Bypassing public consultation undermines democratic accountability, ignores localized ecological impacts, and sparks fierce community backlash.",
+                "prompt": "Debate your partner: How can infrastructure planning be accelerated without trampling democratic rights?"
               }
             ]
           },
-          "argumentClinic": {
+          "grammarClinic": {
+            "title": "Activity 3: Language Focus: Gerunds vs. Infinitives & Connecting Words for Contrasting Ideas",
+            "summary": "Selecting the correct verb complementation patterns (Gerund vs. Infinitive) and mastering useful connecting words for persuasive speaking.",
+            "modeBadges": [
+              "Pairs / Individual",
+              "Grammar Drills",
+              "20 Mins"
+            ],
+            "instructions": [
+              "Review the 3 core grammatical structures: Verbs taking Gerunds (advocate doing, delay implementing), Verbs taking Infinitives (agree to fund, aim to achieve), and Contrasting Clauses (Although + clause vs. Despite + noun phrase).",
+              "Analyze the formula examples and identify which policy actions require an ongoing process focus (-ing) versus future commitments (to + verb).",
+              "Complete the 4 interactive TOEIC Part 5 drills independently, selecting the correct verb complementation pattern.",
+              "Click 'Check Answer & Explanation' and note the structural justification in your error log."
+            ],
+            "deliverable": "100% accuracy on the 4 verb complementation drills with written grammar justification in study logs.",
+            "teacherNotes": "Highlight that TOEIC frequently tests 'advocate + -ing', 'risk + -ing', and 'decide + infinitive'. Remind students that 'despite' is a preposition taking a noun phrase, whereas 'although' introduces a full subordinate clause with subject and verb.",
             "rules": [
               {
-                "title": "1. The Partial Concession",
-                "formula": "While I concede that [X is true], the empirical evidence demonstrates [Y].",
-                "example": "<em>While I concede that</em> freight volumes are rising, the environmental cost of destroying this aquifer is irreversible."
+                "type": "Verbs followed by Gerunds (-ing)",
+                "formula": "advocate investing | recommend retrofitting | consider banning | prioritize reducing | delay implementing",
+                "usage": "Used when expressing ongoing, habitual, or proposed actions in policy and project debates."
               },
               {
-                "title": "2. Rejecting False Equivalence",
-                "formula": "With respect, that conflates [minor issue A] with [catastrophic issue B].",
-                "example": "<em>With respect, that conflates</em> short-term highway convenience with multi-generational ecosystem collapse."
+                "type": "Verbs followed by Infinitives (to + base)",
+                "formula": "agree to fund | aim to achieve | decide to upgrade | refuse to compromise | fail to comply",
+                "usage": "Used when expressing intent, decisions, commitments, or future targets."
               },
               {
-                "title": "3. The Proportionality Challenge",
-                "formula": "Even if we accept [premise], the proposed solution is completely disproportionate because [reason].",
-                "example": "<em>Even if we accept</em> that transit times must improve, spending €2 billion to pave over a wetland is wildly disproportionate."
-              },
-              {
-                "title": "4. The Constructive Counter-Proposal",
-                "formula": "Rather than [damaging course of action], a far more sustainable alternative would be [innovative solution].",
-                "example": "<em>Rather than</em> building a surface embankment, <em>a far more sustainable alternative would be</em> upgrading the existing northern corridor."
+                "type": "Contrasting Ideas & Polite Disagreement",
+                "formula": "\"While it is true that [X], empirical evidence indicates that [Y]...\" | \"Admittedly..., nevertheless...\"",
+                "usage": "Use to politely soften strong disagreements and frame your counter-argument persuasively."
               }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "The aviation working group advocates ________ a progressive carbon levy on private jet departures.",
+                "options": [
+                  "to introduce",
+                  "introducing",
+                  "introduce",
+                  "introduced"
+                ],
+                "correct": "introducing",
+                "explanation": "'Advocate' is followed by a gerund ('advocate doing something')."
+              },
+              {
+                "id": 2,
+                "sentence": "Municipal authorities have finally decided ________ 20 million euros in sustainable drainage systems.",
+                "options": [
+                  "investing",
+                  "to invest",
+                  "invest",
+                  "investment"
+                ],
+                "correct": "to invest",
+                "explanation": "'Decide' is followed by a to-infinitive ('decide to do something')."
+              },
+              {
+                "id": 3,
+                "sentence": "Civil aviation authorities cannot risk ________ runway maintenance during extreme heat episodes.",
+                "options": [
+                  "to delay",
+                  "delaying",
+                  "delay",
+                  "delayed"
+                ],
+                "correct": "delaying",
+                "explanation": "'Risk' takes a gerund ('risk doing something')."
+              },
+              {
+                "id": 4,
+                "sentence": "________ initial capital expenditures are high, permeable asphalt dramatically reduces long-term flood repair costs.",
+                "options": [
+                  "Despite",
+                  "Although",
+                  "In spite of",
+                  "However"
+                ],
+                "correct": "Although",
+                "explanation": "'Although' is a subordinating conjunction followed by a full clause with subject and verb ('initial capital expenditures are high')."
+              }
+            ]
+          },
+          "roleplay": {
+            "title": "Activity 4: Public Inquiry Hearing Simulation",
+            "summary": "Formal administrative inquiry and stakeholder Q&A on regional climate infrastructure.",
+            "modeBadges": [
+              "Groups of 4",
+              "Public Inquiry Hearing",
+              "45 Mins"
+            ],
+            "instructions": [
+              "Form a hearing committee of 4: Environmental Commissioner (Chair), Airline/Airport Association Spokesperson, Metropolitan Residents Coalition President, and Chief Civil Infrastructure Engineer.",
+              "Review the hearing scenario: a proposed €5 passenger surcharge and municipal tax levy to finance €150M in sea-wall defenses and district cooling networks.",
+              "Take 10 minutes to prepare your stakeholder position, anticipating two tough follow-up questions from opposing delegates.",
+              "Convene the 30-minute formal inquiry: the Chair opens testimony (3 mins per delegate), facilitates Q&A (15 mins), and leads consensus deliberations on an amended policy (5 mins)."
+            ],
+            "deliverable": "Formal verbal testimony, recorded Q&A exchanges, and a signed 3-clause compromise policy draft.",
+            "teacherNotes": "Keep time strictly. The Chair must maintain formal decorum ('The floor now recognizes the chief engineer...'). Encourage participants to challenge unverified claims by demanding empirical data or questioning long-term capex feasibility.",
+            "scenario": "The Regional Environmental Agency is holding a public inquiry on a proposed 'Climate Resilience Infrastructure Surcharge' (a 5-euro fee per passenger and a municipal tax increase) to fund 150 million euros in flood surge sea walls and district cooling networks. Stakeholders must defend their positions during Q&A.",
+            "roles": [
+              {
+                "title": "Regional Environmental Commissioner (Chair)",
+                "focus": "Upholding statutory carbon targets, reviewing scientific climate vulnerability models, and moderating Q&A."
+              },
+              {
+                "title": "Airlines & Airport Operators Association Spokesperson",
+                "focus": "Arguing against added passenger taxes, highlighting economic competitiveness, and pushing for voluntary industry adaptation."
+              },
+              {
+                "title": "President of the Metropolitan Residents Coalition",
+                "focus": "Demanding protection from catastrophic flash floods, demanding transparency on tax spending, and defending affordable housing."
+              },
+              {
+                "title": "Chief Civil Infrastructure Engineer & Resilience Expert",
+                "focus": "Presenting empirical data on 50-year return flood hazards, lifecycle cost-benefit analyses, and defending the proposed engineering interventions."
+              }
+            ]
+          },
+          "closingReview": {
+            "title": "Session 3 Wrap-Up & FE2 Argument Defense",
+            "summary": "Consolidation, phonetics, and portfolio check for Formative Evaluation 2 readiness.",
+            "modeBadges": [
+              "Plenary",
+              "Self-Assessment",
+              "15 Mins"
+            ],
+            "instructions": [
+              "Cross-check your learning notes against the 3 Formative Evaluation 2 readiness criteria.",
+              "Record 5 advanced rhetorical linking words and 4 verb complementation patterns in your personal study portfolio.",
+              "Rehearse an impromptu 90-second response with a peer answering a challenging environmental counter-argument without consulting notes."
+            ],
+            "deliverable": "Completed study log entries and verified readiness checklist for Formative Evaluation 2.",
+            "teacherNotes": "Remind students that FE2 evaluates spontaneous argument defense during the teacher Q&A. Students must not memorize a monologue; they must demonstrate dynamic responsiveness to unexpected challenges.",
+            "feChecklist": [
+              "Record 5 rhetorical markers and verbs taking gerunds/infinitives in your study log.",
+              "Prepare your spontaneous defense for the FE2 Teacher Q&A: anticipate 2 tough questions.",
+              "Ensure your visual slides do not contain continuous text paragraphs (visual cues only!)."
+            ]
+          }
+        },
+        "overview": {
+          "intro": "In this session, you sharpen your skills in building, supporting, and defending arguments in spoken English. Through interactive debate rounds and structured discussion games, you will practise using persuasive signposting, providing supporting evidence, and politely refuting counter-arguments on controversial environmental policies.",
+          "whyItMatters": "Spoken debate is the heart of professional decision-making and international committee work. Knowing how to present a clear claim, back it with credible reasons, and respond calmly to objections without losing your train of thought is precisely what examiners look for in your Formative Evaluation.",
+          "keyTerms": [
+            {
+              "term": "Contention",
+              "ipa": "/kənˈten.ʃən/",
+              "definition": "A central claim or assertion advanced in an argument or debate."
+            },
+            {
+              "term": "Counter-Argument",
+              "ipa": "/ˈkaʊn.tər ˈɑːɡ.jə.mənt/",
+              "definition": "An objection or opposing reason put forward to undermine an opponent's point."
+            },
+            {
+              "term": "Rebuttal",
+              "ipa": "/rɪˈbʌt.əl/",
+              "definition": "A spoken response that provides evidence to disprove or refute a counter-argument."
+            },
+            {
+              "term": "Empirical Evidence",
+              "ipa": "/ɪmˈpɪr.ɪ.kəl ˈev.ɪ.dəns/",
+              "definition": "Verifiable data and facts gathered through direct observation, experiment, or documented study."
+            },
+            {
+              "term": "Consensus",
+              "ipa": "/kənˈsen.səs/",
+              "definition": "A general agreement reached among a group of people or international bodies."
+            },
+            {
+              "term": "Trade-Off",
+              "ipa": "/ˈtreɪd.ɒf/",
+              "definition": "A situational decision that involves giving up one desired benefit in exchange for another."
+            },
+            {
+              "term": "Subsidies",
+              "ipa": "/ˈsʌb.sə.diz/",
+              "definition": "Government financial grants paid to support an industry or energy sector to keep prices low."
+            },
+            {
+              "term": "Vested Interest",
+              "ipa": "/ˌves.tɪd ˈɪn.trəst/",
+              "definition": "A personal or corporate stake in an outcome, often leading to biased arguments."
+            },
+            {
+              "term": "Carbon Taxation",
+              "ipa": "/ˈkɑː.bən tækˈseɪ.ʃən/",
+              "definition": "A fee imposed on the burning of fossil fuels directly proportional to their greenhouse gas output."
+            },
+            {
+              "term": "Policy Feasibility",
+              "ipa": "/ˈpɒl.ə.si ˌfiː.zəˈbɪl.ə.ti/",
+              "definition": "The realistic likelihood that a proposed regulation can be implemented and enforced."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or pieces of evidence to support your group's argument.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Nuclear energy is the only realistic, scalable zero-carbon power source capable of replacing fossil fuels in time to meet international climate goals.",
+              "group2": "Individual consumer choices have negligible impact on climate change compared to direct government regulation of fossil fuel corporations.",
+              "group3": "Rich industrialized nations have a moral obligation to fund the entire renewable energy transition of developing countries without conditions."
+            },
+            "usefulPhrases": [
+              "Our primary contention is that...",
+              "In response to the opposing viewpoint, we would argue...",
+              "The empirical evidence clearly indicates that...",
+              "In summary, our group's position remains that..."
             ]
           }
         }
@@ -5001,54 +6004,64 @@
       "4": {
         "session": 4,
         "objectives": {
-          "title": "Session 4 Objectives - Airport Biodiversity & Ecological Coexistence",
-          "summary": "By the end of this session, you will be able to discuss wildlife management near airports, use modal verbs for rules and obligations, negotiate a land agreement in a group, and rehearse for your speaking evaluation.",
+          "title": "Session 4 - Biodiversity in Urban Areas and Airports Objectives",
+          "summary": "By the end of this session, you will be able to discuss urban biodiversity and green infrastructure with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Learn Key Vocabulary: Airport Nature & Wildlife",
-              "description": "Learn 8 useful words for bird hazard control, wildlife habitats, and airport green zones."
+              "title": "Practice TOEIC Part 5 Questions on Pronouns & Determiners",
+              "description": "Select the correct pronouns (its, their, themselves) and determiners (each, every, either) under timed test conditions."
             },
             {
               "num": 2,
-              "title": "Grammar Focus: Rules & Obligations (Must, Should, Have to)",
-              "description": "Express clear rules and safety requirements using modal verbs of obligation and necessity."
+              "title": "Master Core Vocabulary for Urban Nature, Wildlife & Green Spaces",
+              "description": "Learn vocabulary for wildlife corridors, green roofs, native species, bird strike prevention, and ecological corridors."
             },
             {
               "num": 3,
-              "title": "Speaking Activity: The Airport & Wildlife Agreement",
-              "description": "Work in teams to negotiate an agreement between airport directors, biologists, and local farmers."
+              "title": "Use Pronouns & Possessives Correctly for Organizations & Teams",
+              "description": "Maintain consistency between singular companies (the airport ... its plan) and plural teams or groups."
             },
             {
               "num": 4,
-              "title": "Speaking Practice: FE2 Presentation Rehearsal",
-              "description": "Rehearse a 2-minute presentation with a partner and review the official evaluation criteria."
+              "title": "Discuss How Infrastructure Projects Can Protect Living Nature (DDRS)",
+              "description": "Examine practical initiatives where transport hubs create protected natural habitats alongside daily operations."
+            },
+            {
+              "num": 5,
+              "title": "Finalize Speaking Skills and Timing for the Session 5 Evaluation",
+              "description": "Rehearse your individual presentation with a timer, checking your fluency, vocabulary range, and grammar accuracy."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 4 Lesson Plan - Airport Biodiversity & Ecological Coexistence (2 Hours)",
-          "summary": "A fast-moving station-based workshop and treaty negotiation: students explore non-lethal wildlife management, solar-pollinator zoning, and sustainable drainage, followed by a tri-partite land-use treaty negotiation and FE2 prep.",
+          "title": "Session 4 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
           "items": [
             {
-              "title": "Part 1: Key Vocabulary • Airport Nature & Wildlife",
-              "description": "Learn 8 airport ecology terms, check syllable stress, and complete the matching drill.",
+              "title": "Conversational Warm-Up: Nature Around Us",
+              "description": "Students share observations of urban wildlife, green spaces, and bird control measures at transport hubs.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Grammar Focus • Rules & Obligations (Must, Should, Have to)",
-              "description": "Practice modals of obligation, prohibition, and advice; complete 4 sentence transformation drills.",
+              "title": "TOEIC Strategy: Pronouns & Determiners in Part 5",
+              "description": "Fast drills selecting correct pronouns (its, their, each, neither) in professional administrative memos.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Speaking Activity • The Airport & Wildlife Agreement",
-              "description": "Rotate through 3 airport stations, negotiate the 4-point ecological agreement, and ratify the accord.",
+              "title": "Vocabulary Builder: Urban Ecology",
+              "description": "Key terms for green roofs, wildlife corridors, native flora, habitat preservation, and ecological surveys.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Speaking Practice & FE2 Preparation",
-              "description": "Timed 2-minute presentation rehearsal with your partner against the official FE2 scoring criteria.",
+              "title": "Structured Discussion & Grammar",
+              "description": "Proposing a green infrastructure plan for a local transport hub using Pronouns & Determiners accurately.",
               "part": "Part 4"
+            },
+            {
+              "title": "Evaluation Practice & Wrap-Up",
+              "description": "Timed individual speaking practice with rubric assessment (fluency, pronunciation, range, grammatical control).",
+              "part": "Part 5"
             }
           ]
         },
@@ -5405,73 +6418,339 @@
           ]
         },
         "lessonContent": {
-          "hero": {
-            "title": "Airport Biodiversity & Ecological Coexistence",
-            "subtitle": "Archetype D • Interactive Stations & Treaty Negotiation: Bird-Strike Mitigation vs. Nature Sanctuaries",
+          "overview": {
             "image": "images/ag_m2card4.jpg",
-            "badge": "AG Module 2 • Session 4 • Interactive Stations"
+            "title": "Biodiversity in Urban Areas & Transport Hubs",
+            "subtitle": "Nature-Based Solutions, Constructed Wetlands, Ecological Corridors & Wildlife Hazard Mitigation",
+            "badge": "Session Overview • Biodiversity & Ecological Infrastructure"
           },
-          "meadowParadox": {
-            "headline": "The Meadow Paradox: Europe's Accidental Wildlife Sanctuaries",
-            "context": "Commercial airports maintain vast grassland perimeters (often 1,000+ hectares) strictly enclosed by security fences, completely free of human foot traffic, hunting, domestic pets, and agricultural pesticides. Consequently, they have inadvertently become prime sanctuaries for endangered ground-nesting birds, rare orchids, and small mammals. However, large raptors and flocking birds pose a severe, potentially catastrophic bird-strike hazard to jet aircraft during takeoff and landing.",
-            "dilemma": "How can an international airport protect critically endangered species and maintain ecological corridors without compromising flight safety or exceeding zero-tolerance bird-strike risk thresholds?"
+          "hero": {
+            "image": "images/ag_m2card4.jpg",
+            "title": "Biodiversity in Urban Areas & Transport Hubs",
+            "subtitle": "Nature-Based Solutions, Constructed Wetlands, Ecological Corridors & Wildlife Hazard Mitigation",
+            "badge": "Session Overview • Biodiversity & Ecological Infrastructure"
           },
-          "stations": [
-            {
-              "num": 1,
-              "title": "Station 1: Non-Lethal Wildlife Deterrence & Grass Management",
-              "icon": "🦅",
-              "badge": "Airfield Safety",
-              "coreTech": "Avian 3D Radar + Tall-Grass Habitat Modification + Acoustic Dispersal",
-              "keyInsight": "Keeping perimeter grass maintained at exactly 20–30 cm ('long grass policy') discourages flocking birds like gulls and starlings because they cannot easily spot ground predators, while preventing raptors from seeing small rodents.",
-              "discussionPrompts": [
-                "Why is ecological habitat modification far more effective over time than firing pyrotechnic scare cartridges?",
-                "How can AI-guided acoustic distress calls disperse problem birds without causing acoustic disturbance to nearby residential towns?"
-              ]
-            },
-            {
-              "num": 2,
-              "title": "Station 2: Solar-Pollinator Dual-Use Zoning",
-              "icon": "☀️",
-              "badge": "Renewable Energy",
-              "coreTech": "Anti-Glare Photovoltaic Arrays + Native Wildflower Groundcover",
-              "keyInsight": "Installing 50 MW of solar panels on sterile airfield safety buffers provides clean airport power. Seeding low-growing native wildflower mixes beneath panels restores native bees and butterflies without attracting high-flying bird flocks.",
-              "discussionPrompts": [
-                "How must solar panel tilt angles be engineered to prevent hazardous pilot glare on short final approach?",
-                "What guarantees must be given to airfield maintenance teams regarding grass mowing and fire safety around electrical inverters?"
-              ]
-            },
-            {
-              "num": 3,
-              "title": "Station 3: Sustainable Drainage Systems (SuDS) & Water Treatment",
-              "icon": "💧",
-              "badge": "Water & Chemistry",
-              "coreTech": "Engineered Reed Beds + Underground De-Icing Glycol Recovery Tanks",
-              "keyInsight": "Runway stormwater runoff often carries aircraft de-icing fluid (propylene glycol) and rubber residues. Routing runoff through artificial reed-bed wetlands naturally breaks down organic contaminants before water enters local rivers.",
-              "discussionPrompts": [
-                "How do reed beds utilize natural microbiology to eliminate toxic chemical runoff without industrial chemical additives?",
-                "What sensory or physical barriers must be installed to prevent migratory waterfowl from settling in drainage retention ponds?"
+          "openingSession": {
+            "title": "Activity 1: Airport Ecology News & Opening Warm-Up",
+            "summary": "Opening warm-up on nature-based solutions, aerodrome wildlife management, and biodiversity net gain.",
+            "modeBadges": [
+              "Pairs",
+              "Quick Check",
+              "10 Mins"
+            ],
+            "instructions": [
+              "Read the 3 news headlines regarding aerodrome wildflower meadows, statutory Biodiversity Net Gain (BNG) mandates, and AI bird radar systems.",
+              "Discuss the 4 diagnostic concepts with your partner: Nature-Based Solutions (NbS), BNG statutory metrics, ICAO Annex 14 Bird Strike Hazard balance, and Bioswales vs. concrete ditches.",
+              "Click 'Reveal Answer' to benchmark your technical definitions against civil aviation ecological standards."
+            ],
+            "deliverable": "Fluent oral definitions of key aerodrome ecology concepts and ICAO safety trade-offs.",
+            "teacherNotes": "Emphasize the unique tension at transport hubs: while urban sustainability calls for biodiversity, airfields must actively discourage hazardous flocking birds near runways.",
+            "newsPrompts": [
+              "International airports plant native wildflower meadows across non-manoeuvring safety zones, boosting wild pollinators while managing bird strike risks.",
+              "New transport regulations mandate 'Biodiversity Net Gain' (BNG) of at least 10% on all new motorway and rail infrastructure projects.",
+              "Autonomous AI radar systems track migratory bird flocks up to 10 kilometers away to alert pilots and reduce wildlife collisions."
+            ],
+            "diagnostic": {
+              "title": "Ecological & Aerodrome Vocabulary Quick Check",
+              "instructions": "Discuss each concept in pairs before verifying the technical explanation:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the fundamental concept behind Nature-Based Solutions (NbS)?",
+                  "answer": "Actions to protect, sustainably manage, and restore natural or modified ecosystems that address societal and climate challenges effectively (e.g., using wetlands for flood storage and cooling rather than concrete reservoirs)."
+                },
+                {
+                  "id": 2,
+                  "q": "What is meant by 'Biodiversity Net Gain' (BNG) in major civil infrastructure?",
+                  "answer": "An approach to development and land management that aims to leave the natural environment in a measurably better state than it was before the project began (at least a 10% net improvement in habitat quality and ecological connectivity)."
+                },
+                {
+                  "id": 3,
+                  "q": "How do aerodrome operators balance wildlife conservation with Bird Strike Hazard Mitigation?",
+                  "answer": "Aviation regulations (ICAO Annex 14) mandate that airside zones minimize attractants for flocking or large birds (e.g., maintaining long-grass policies, avoiding berry-bearing bushes, covering waste bins), while creating safe, dedicated biodiversity buffers far away from flight paths."
+                },
+                {
+                  "id": 4,
+                  "q": "What is the difference between a Bioswale and a standard Concrete Drainage Ditch?",
+                  "answer": "A concrete ditch merely moves runoff away quickly without filtering pollutants or slowing the flow. A bioswale is a vegetated swale with gently sloped sides and compost/soil layers that filters heavy metals and petroleum residues, cools runoff, and encourages groundwater infiltration."
+                }
               ]
             }
-          ],
-          "treatyNegotiation": {
-            "totalArea": "500 Hectares of Non-Runway Airfield Perimeter",
-            "parties": [
+          },
+          "survey": {
+            "title": "Activity 2: Biodiversity & Safety Dilemmas: Speed Survey",
+            "summary": "Explore 4 real-world operational challenges where environmental protection intersects with aviation safety and urban expansion.",
+            "modeBadges": [
+              "Pairs",
+              "Timed Technical Survey",
+              "25 Mins"
+            ],
+            "instructions": [
+              "Examine the 4 operational dilemmas: Airfield Long Grass Management (15-20 cm), Wildlife Overpasses (Ecoducts), AI Avian Radar & Acoustic Dispersal, and Terminal Green Roofs & Pollinators.",
+              "Interview your partner across 4 timed rounds, alternating between presenting the ecological benefit and challenging it with the aviation safety or cost constraint.",
+              "Use formal linking words to structure your responses ('From an ecological engineering standpoint...', 'Under ICAO Annex 14 regulations...').",
+              "Formulate an engineering compromise for at least two of the dilemma scenarios."
+            ],
+            "deliverable": "4 completed partner interview logs weighing biodiversity gains against operational safety risks.",
+            "teacherNotes": "Push students to move beyond simplistic 'trees are good' statements. Demand technical precision: What species of grass? What height? Why do starlings avoid long grass? How do steep pond banks prevent waterfowl nesting?",
+            "signposts": [
+              "\"From an ecological engineering standpoint, ...\"",
+              "\"To prevent hazardous wildlife strikes while fostering biodiversity, ...\"",
+              "\"Nature-based solutions offer significant co-benefits, notably...\"",
+              "\"Under ICAO Annex 14 regulations, aerodrome operators must balance...\""
+            ],
+            "topics": [
               {
-                "party": "Delegation A: Airport Operations & Flight Safety Division",
-                "priorities": "Zero-tolerance for bird strikes within 3km of runway thresholds. Demands clear visual sighting lines, radar-guided acoustic coverage, and immediate right-of-veto over any habitat that attracts raptors.",
-                "bargainingChip": "Controls capital infrastructure funding and can sponsor solar installation."
+                "id": 1,
+                "badge": "Airfield Long Grass Management",
+                "statement": "Should all airports adopt a strict 15–20 cm Long Grass Management policy across runway safety strips?",
+                "pro": "Long grass prevents flocking birds (starlings, lapwings, gulls) from spotting earthworms or landing easily, cutting bird strike incidents by over 50% without lethal culling.",
+                "con": "Long grass requires precise mowing machinery, seasonal weed control, and specialized vegetation monitoring to prevent dry summer fire hazards.",
+                "prompt": "Interview your partner: How does grass height directly affect aviation safety and aerodrome biodiversity?"
               },
               {
-                "party": "Delegation B: Regional Wildlife & Biodiversity Trust",
-                "priorities": "Preserve the 120-hectare southern wildflower meadow where rare bee orchids and endangered curlews nest. Demands pesticide-free biodiversity corridors connecting to the provincial nature reserve.",
-                "bargainingChip": "Holds legal power to file ecological injunctions under EU Habitats Directives."
+                "id": 2,
+                "badge": "Wildlife Overpasses (Ecoducts)",
+                "statement": "Should national rail and road authorities be legally mandated to construct wildlife overpasses every 10 km?",
+                "pro": "Vegetated ecoducts reconnect fragmented forest ecosystems, reduce vehicular animal collisions, and maintain genetic diversity among wildlife populations.",
+                "con": "Each wildlife overpass costs 3 to 8 million euros to design and build, consuming significant transport infrastructure budgets.",
+                "prompt": "Interview your partner: How can linear transport corridors be adapted to preserve ecological migration routes?"
               },
               {
-                "party": "Delegation C: Regional Clean Energy & Climate Transition Consortium",
-                "priorities": "Deploy at least 150 hectares of high-density solar arrays to generate 80 GWh of renewable electricity annually, decarbonizing both the airport and 25,000 regional homes.",
-                "bargainingChip": "Brings €60M in private infrastructure capital and revenue-sharing promises."
+                "id": 3,
+                "badge": "AI Avian Radar & Acoustic Dispersal",
+                "statement": "Should aerodromes replace lethal bird control shooting with automated AI-guided acoustic distress laser dispersal?",
+                "pro": "AI 3D radar detects approaching flocks miles away and triggers humane bio-acoustic distress calls, habituation-free lasers, and trained falconry.",
+                "con": "Flocking birds can eventually become habituated to repeated artificial acoustic alarms if not varied continuously.",
+                "prompt": "Interview your partner: What non-lethal wildlife hazard mitigation methods are most effective near runways?"
+              },
+              {
+                "id": 4,
+                "badge": "Terminal Green Roofs & Pollinators",
+                "statement": "Should airport passenger terminals convert 100% of unused roof space into native pollinator wildflower meadows and bee colonies?",
+                "pro": "Sedum green roofs insulate terminal buildings, lower summer air conditioning loads by up to 25%, and support endangered urban bee populations.",
+                "con": "Engineers must verify that insect-rich green roofs do not inadvertently attract insect-feeding birds into final approach climb paths.",
+                "prompt": "Interview your partner: How can terminal architecture integrate living ecology safely?"
               }
+            ]
+          },
+          "grammarClinic": {
+            "title": "Activity 3: Language Focus: Pronouns & Determiners in Technical English",
+            "summary": "Mastering agreement with singular and plural indefinite pronouns, possessive determiners (its vs. their), and reflexive forms in TOEIC Part 5.",
+            "modeBadges": [
+              "Pairs / Individual",
+              "Grammar Drills",
+              "20 Mins"
+            ],
+            "instructions": [
+              "Review the 3 grammar rules: Singular Indefinite Pronouns (Each/Every/Neither take singular verbs), Possessive Determiners for organizations (The airport released its report, NOT their), and Reflexive/Emphatic forms (itself, themselves).",
+              "Note the high-frequency TOEIC Part 5 traps: confusing 'its' (possessive) with 'it\\'s' (it is), and verb agreement after 'Each of [plural noun]'.",
+              "Complete the 4 interactive multiple-choice drills under timed conditions (30 seconds per item).",
+              "Click 'Check Answer & Explanation' and record the grammatical justification for each correct answer."
+            ],
+            "deliverable": "Accurate completion of the 4 grammar drills and error analysis documented in student study journals.",
+            "teacherNotes": "Highlight that corporate entities (authorities, airlines, airports, committees) are grammatically singular in international business English: 'The CAA published its findings'.",
+            "rules": [
+              {
+                "type": "Singular Indefinite Pronouns (Each, Every, Either, Neither)",
+                "formula": "Each of the aerodrome perimeters [is / was] monitored. (Takes a singular verb!).",
+                "usage": "Even when followed by a plural prepositional phrase ('of the perimeters'), the grammatical subject remains singular."
+              },
+              {
+                "type": "Possessive Determiner Agreement (Its vs. Their)",
+                "formula": "The airport completed its flood assessment (singular) vs. The airlines modified their flight schedules (plural).",
+                "usage": "Match the possessive determiner strictly to whether the entity is singular corporate/institutional or plural."
+              },
+              {
+                "type": "Reflexive & Emphatic Pronouns (Itself, Themselves)",
+                "formula": "The autonomous radar system resets itself following lightning strikes.",
+                "usage": "Use when the subject and object are the same entity, or for emphasis."
+              }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "Each of the new stormwater retention basins ________ inspected twice monthly by the environmental team.",
+                "options": [
+                  "is",
+                  "are",
+                  "have been",
+                  "were"
+                ],
+                "correct": "is",
+                "explanation": "'Each of [plural noun]' always takes a singular verb ('is inspected')."
+              },
+              {
+                "id": 2,
+                "sentence": "Neither of the proposed flood barrier designs ________ the strict 100-year return criteria.",
+                "options": [
+                  "satisfy",
+                  "satisfies",
+                  "are satisfying",
+                  "have satisfied"
+                ],
+                "correct": "satisfies",
+                "explanation": "'Neither of [plural noun]' takes a singular verb in standard formal English ('satisfies')."
+              },
+              {
+                "id": 3,
+                "sentence": "The international airport published ________ annual sustainability report detailing a 12% drop in energy consumption.",
+                "options": [
+                  "their",
+                  "its",
+                  "it's",
+                  "theirs"
+                ],
+                "correct": "its",
+                "explanation": "'The international airport' is a singular organization; the possessive determiner is 'its' (no apostrophe!)."
+              },
+              {
+                "id": 4,
+                "sentence": "The wildlife control officers conducted the full aerodrome habitat survey ________.",
+                "options": [
+                  "themselves",
+                  "theirselves",
+                  "himself",
+                  "them"
+                ],
+                "correct": "themselves",
+                "explanation": "Plural emphatic reflexive pronoun referring back to 'The wildlife control officers'."
+              }
+            ]
+          },
+          "roleplay": {
+            "title": "Activity 4: Airport Wildlife Hazard & Ecological Transition Committee",
+            "summary": "Joint wildlife hazard mitigation and nature-based solutions committee.",
+            "modeBadges": [
+              "Groups of 4",
+              "Committee Simulation",
+              "45 Mins"
+            ],
+            "instructions": [
+              "Form a 4-person committee: Aerodrome Wildlife Hazard Officer, Regional Wetland Nature Reserve Director, Airport Operations & Flight Safety Liaison, and Ecological Landscape Architect.",
+              "Review the mission: expand airport stormwater retention basins while guaranteeing zero increase in bird strike risks within the 13 km runway hazard zone.",
+              "Conduct a 30-minute committee session: each officer delivers their 3-minute technical brief, followed by 15 minutes of cross-table negotiation and 5 minutes to agree on an actionable 5-point master plan.",
+              "Present the master plan recommendations to the class in a 2-minute executive summary."
+            ],
+            "deliverable": "A finalized 5-point Airport Ecological Mitigation Protocol balancing habitat conservation with runway safety zones.",
+            "teacherNotes": "Encourage realistic tension: the conservation director wants bird feeding wetlands; the safety officer demands netting and deterrents. Successful groups will find zoning compromises (e.g., steep embankments, floating netting, non-fruiting vegetation near the RESA).",
+            "scenario": "A major international coastal airport is surrounded by protected wetlands. The airport must expand its stormwater retention basins while ensuring zero increase in bird strike hazards. Convene the joint Wildlife Hazard & Ecological Transition Committee to draft an actionable 5-point master plan.",
+            "roles": [
+              {
+                "title": "Aerodrome Wildlife Hazard Management Officer",
+                "focus": "ICAO Annex 14 compliance, bird strike statistics, maintaining the long-grass regime, and deploying non-lethal acoustic deterrents."
+              },
+              {
+                "title": "Regional Wetland Nature Reserve Director",
+                "focus": "Protecting migratory bird flyways, ensuring water quality in surrounding estuaries, and creating alternative wetland feeding grounds 15 km away."
+              },
+              {
+                "title": "Airport Operations & Chief Flight Safety Liaison",
+                "focus": "Runway safety areas (RESA), approach path obstacle clearance, pilot hazard reporting, and emergency diversion protocols."
+              },
+              {
+                "title": "Ecological Landscape Architect & Civil Engineer",
+                "focus": "Designing steep-sided retention ponds with floating wire grids to deter waterfowl, native low-berry vegetative ground cover, and bioswales."
+              }
+            ]
+          },
+          "closingReview": {
+            "title": "Session 4 Wrap-Up & FE2 Launch Briefing",
+            "summary": "Final Formative Evaluation 2 checklist & topic confirmation.",
+            "modeBadges": [
+              "Plenary",
+              "FE2 Preparation",
+              "15 Mins"
+            ],
+            "instructions": [
+              "Review the 5 Formative Evaluation 2 readiness checkpoints: topic selection, 50/50 partner speaking equity, 4-dimension structure, vocabulary integration (6-8 terms), and portfolio readiness.",
+              "Confirm your partner pairing and final topic (Option A: Airport Climate Resilience or Option B: City Climate Resilience).",
+              "Review the evaluation rubric criteria: Spoken Fluency (5 pts), Technical Vocabulary Range (5 pts), Grammatical Accuracy (5 pts), and Interaction & Defense (5 pts)."
+            ],
+            "deliverable": "Finalized FE2 presentation plan, partner speaking distribution, and signed presentation topic declaration.",
+            "teacherNotes": "Ensure every student has an assigned partner and a confirmed topic before leaving class. Highlight that visual slides must serve as visual aids only (bullet prompts, diagrams, graphs)—reading from slides results in immediate point deductions.",
+            "feChecklist": [
+              "Select your topic: Option A (Airport Climate Resilience) or Option B (City Climate Resilience).",
+              "Verify that both partners have equal 50/50 speaking time (~6 minutes each).",
+              "Ensure your 4 core dimensions (Hazard Profile, Physical Interventions, Nature-Based Solutions, Contingency Operations) are clearly divided.",
+              "Check that you have integrated at least 6 to 8 platform vocabulary terms from Sessions 1 to 4.",
+              "Confirm that your Learning Portfolio and TOEIC Error Log are up-to-date and ready for your teacher."
+            ]
+          }
+        },
+        "overview": {
+          "intro": "This session examines the fascinating intersection of biodiversity, wildlife conservation, and modern transport hubs like international airports. You will practise describing wildlife management strategies, explaining ecological corridors, and debating the balance between human transport safety and animal habitat protection in spoken English.",
+          "whyItMatters": "Airports and transport corridors manage vast expanses of open green space where safety requirements directly encounter nature. Developing the spoken English to describe habitat management, species monitoring, and ecological impact ensures you can contribute intelligently to modern environmental discussions and perform strongly in your FE.",
+          "keyTerms": [
+            {
+              "term": "Biodiversity",
+              "ipa": "/ˌbaɪ.oʊ.daɪˈvɜː.sə.ti/",
+              "definition": "The variety of plant and animal life in a particular habitat or ecosystem."
+            },
+            {
+              "term": "Ecological Corridor",
+              "ipa": "/ˌek.əˈlɒdʒ.ɪ.kəl ˈkɒr.ɪ.dɔːr/",
+              "definition": "A protected strip of natural habitat connecting wildlife populations separated by human activity."
+            },
+            {
+              "term": "Habitat Fragmentation",
+              "ipa": "/ˈhæb.ɪ.tæt ˌfræɡ.mənˈteɪ.ʃən/",
+              "definition": "The splitting of continuous natural ecosystems into small, isolated patches by roads or airports."
+            },
+            {
+              "term": "Wildlife Hazard",
+              "ipa": "/ˈwaɪldˌlaɪf ˈhæz.əd/",
+              "definition": "Animals, particularly bird flocks or mammals, that present direct collision risks to aircraft."
+            },
+            {
+              "term": "Acoustic Dispersal",
+              "ipa": "/əˈkuː.stɪk dɪˈspɜː.səl/",
+              "definition": "Using natural bird distress calls or loud sound generators to safely disperse flocks from runways."
+            },
+            {
+              "term": "Rewilding",
+              "ipa": "/ˌriːˈwaɪl.dɪŋ/",
+              "definition": "Restoring natural ecological processes and native species to land that was previously managed."
+            },
+            {
+              "term": "Pollinator Habitat",
+              "ipa": "/ˈpɒl.ɪ.neɪ.tər ˈhæb.ɪ.tæt/",
+              "definition": "Landscaped meadows planted with native flowers specifically to support bees and butterflies."
+            },
+            {
+              "term": "Runoff Retention Basin",
+              "ipa": "/ˈrʌn.ɒf rɪˈten.ʃən ˈbeɪ.sən/",
+              "definition": "Artificial ponds designed to hold and filter airport stormwater, which often become rich wetland habitats."
+            },
+            {
+              "term": "Invasive Species",
+              "ipa": "/ɪnˈveɪ.sɪv ˈspiː.ʃiːz/",
+              "definition": "Non-native organisms that spread aggressively, damaging local ecosystems and economic activity."
+            },
+            {
+              "term": "Environmental Stewardship",
+              "ipa": "/ɪnˌvaɪ.rənˈmen.təl ˈstjuː.əd.ʃɪp/",
+              "definition": "The responsible management and protection of the natural environment through conservation."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or examples to support your group's argument.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Airport perimeter zones should be transformed into protected wildlife sanctuaries, as long as bird-strike management technology guarantees flight safety.",
+              "group2": "Whenever a major transport infrastructure project threatens the habitat of an endangered species, the project should be cancelled regardless of economic cost.",
+              "group3": "Using trained predatory birds (falcons) and acoustic dispersal is far more humane and effective than lethal methods for managing airfield wildlife."
+            },
+            "usefulPhrases": [
+              "Our group investigated the balance between...",
+              "From a wildlife stewardship perspective...",
+              "A key counter-argument that must be addressed is...",
+              "To summarize our group's consensus..."
             ]
           }
         }
@@ -5609,54 +6888,64 @@
       "1": {
         "session": 1,
         "objectives": {
-          "title": "Session 1 Objectives - Everyday AI & Workplace Automation",
-          "summary": "By the end of this session, you will be able to discuss computers and AI in the workplace, describe automated tasks using the passive voice, solve practical workplace automation problems with a partner, and answer challenging questions during a group meeting.",
+          "title": "Session 1 - Artificial Intelligence Objectives",
+          "summary": "By the end of this session, you will be able to discuss artificial intelligence and automation in everyday life and workplaces with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Learn Key Vocabulary: AI & Computers in the Workplace",
-              "description": "Learn 8 useful words including machine learning, automated checks, human supervision, and data drift."
+              "title": "Practice Reading TOEIC Technology Notices & Emails",
+              "description": "Read technical announcements, office memos, and software update notices typical of TOEIC Part 7."
             },
             {
               "num": 2,
-              "title": "Grammar Focus: Active & Passive Sentences in Tech",
-              "description": "Contrast automated system actions ('The flight was re-routed') with human decisions ('The manager approved')."
+              "title": "Master Everyday AI & Automation Vocabulary",
+              "description": "Learn and use key terms for machine learning, predictive tools, autonomous systems, and digital assistants."
             },
             {
               "num": 3,
-              "title": "Speaking Activity: Workplace Meeting: Using AI at Work",
-              "description": "Review 6 workplace situations where computers make decisions and set clear rules for human supervision."
+              "title": "Understand Active vs. Passive Voice in Technical English",
+              "description": "Identify when an action is done by a system (active) versus to a system (passive: is tested, must be reviewed)."
             },
             {
               "num": 4,
-              "title": "Speaking Practice: Answering Tough Questions About Technology",
-              "description": "Present your team's rules for safe AI use and answer skeptical questions from colleagues."
+              "title": "Evaluate AI Ethics, Employment & Social Impact (DDRS)",
+              "description": "Discuss how artificial intelligence affects employment, data privacy, and ethical decision-making in society."
+            },
+            {
+              "num": 5,
+              "title": "Build Fluency for the Session 5 Evaluation",
+              "description": "Practice expressing opinions and evaluating technology trends clearly in pair and group discussions."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 1 Lesson Plan - Everyday AI & Workplace Automation (2 Hours)",
-          "summary": "A operational workshop moving from an automation risk audit to a high-stakes Human-in-the-Loop policy simulation, spoken town hall cross-examination, and active/passive technical phrasing clinic.",
+          "title": "Session 1 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
           "items": [
             {
-              "title": "Part 1: Key Vocabulary • AI & Computers in the Workplace",
-              "description": "Learn 8 technology terms, check pronunciation and syllable stress, and complete the matching challenge.",
+              "title": "Conversational Warm-Up: AI in Daily Life",
+              "description": "Students discuss which AI tools they use regularly and whether AI improves their productivity or creates challenges.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Grammar Focus • Active & Passive Sentences in Tech",
-              "description": "Spot the passive voice trap, study the clean B2 model, and complete 4 transformation sentences.",
+              "title": "TOEIC Strategy: Tech Notices & Work Memos",
+              "description": "Practice reading workplace IT guidelines, software rollouts, and tech policy announcements in Part 6 and 7.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Speaking Activity • Workplace Meeting: Using AI at Work",
-              "description": "Audit 6 workplace workflows, decide when humans must intervene, and resolve 3 live problem injects.",
+              "title": "Vocabulary Builder: Automation & Intelligence",
+              "description": "Everyday terms for algorithms, machine learning, predictive analytics, automation, and algorithmic bias.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Speaking Practice & Discussion Review",
-              "description": "Present your AI safety rules to colleagues, answer tough questions, and prepare for FE3.",
+              "title": "Structured Discussion & Grammar",
+              "description": "Discuss the social and job impacts of AI using the Passive Voice (data is collected, decisions are made by algorithms).",
               "part": "Part 4"
+            },
+            {
+              "title": "Debrief, Evaluation Prep & Wrap-Up",
+              "description": "Language review, feedback on passive voice accuracy, and Session 5 evaluation rubric check.",
+              "part": "Part 5"
             }
           ]
         },
@@ -6012,121 +7301,351 @@
           ]
         },
         "lessonContent": {
-          "hero": {
-            "title": "Everyday AI & Workplace Automation",
-            "subtitle": "Archetype A • Crisis & Automation Audit Workshop: Algorithmic Workflows, Human-in-the-Loop Safeguards & Spoken Town Hall Scrutiny",
+          "overview": {
             "image": "images/ag_m3card1.jpg",
-            "badge": "AG Module 3 • Session 1 • Automation Audit"
+            "title": "Everyday AI & Workplace Automation",
+            "subtitle": "Machine Learning, Predictive Analytics, Autonomous Systems & Human-in-the-Loop",
+            "badge": "Session Overview • Artificial Intelligence & Machine Learning"
           },
-          "auditDossier": {
-            "incidentTitle": "Algorithmic Drift & Cascading Dispatch Automation Failure",
-            "alertLevel": "LEVEL 2 OPERATIONAL VULNERABILITY ALERT",
-            "timeframe": "Immediate System Audit Mandate",
-            "summary": "Following the deployment of autonomous machine learning schedulers across regional hubs, operational data reveals recurring algorithmic hallucinations: automated re-routing software miscalculated alternate fuel reserves during weather diversions, while automated passenger rebooking stranded 1,400 transit passengers due to rigid algorithmic parameters.",
-            "workflows": [
+          "hero": {
+            "image": "images/ag_m3card1.jpg",
+            "title": "Everyday AI & Workplace Automation",
+            "subtitle": "Machine Learning, Predictive Analytics, Autonomous Systems & Human-in-the-Loop",
+            "badge": "Session Overview • Artificial Intelligence & Machine Learning"
+          },
+          "openingSession": {
+            "title": "Activity 1: AI Disruption News & Core Concepts Warm-Up",
+            "summary": "Opening warm-up examining cutting-edge enterprise AI developments and testing key conceptual distinctions in automation.",
+            "newsPrompts": [
+              "Major international carriers deploy neural network algorithms to predict engine component fatigue 50 flight hours before scheduled line maintenance.",
+              "Air traffic management authorities evaluate machine-learning algorithms to optimize sector entry times and reduce tactical controller workload.",
+              "Enterprise tech firms mandate strict Human-in-the-Loop (HITL) validation for all automated customer flight rebooking and compensation claims."
+            ],
+            "diagnostic": {
+              "title": "Artificial Intelligence Concepts Quick Check",
+              "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the critical distinction between Generative AI and Predictive Machine Learning?",
+                  "answer": "Generative AI creates original content (text, synthetic imagery, code, audio) by sampling probability distributions learned from massive datasets. Predictive Machine Learning analyzes historical telemetry and operational data to forecast future values, detect anomalies, or classify risk states (e.g. component failure or weather routing)."
+                },
+                {
+                  "id": 2,
+                  "q": "How does an Autonomous Decision Loop differ from a Human-in-the-Loop (HITL) system?",
+                  "answer": "An autonomous decision loop executes sensing, analysis, decision-making, and action without manual intervention (e.g., automated braking or financial micro-trading). In a Human-in-the-Loop architecture, the algorithm generates recommendations or confidence scores, but a qualified human operator must review and confirm safety-critical actions."
+                },
+                {
+                  "id": 3,
+                  "q": "What is the operational difference between a Digital Twin and a Computer Simulation?",
+                  "answer": "A standard simulation models theoretical physics based on predefined mathematical formulas under hypothetical conditions. A Digital Twin is an active, real-time virtual replica of a physical asset (such as an aircraft engine or terminal HVAC) continuously synchronized with live telemetry from Internet-of-Things (IoT) sensors."
+                },
+                {
+                  "id": 4,
+                  "q": "In data science, what distinguishes Algorithmic Bias from a System Glitch?",
+                  "answer": "A software glitch is an isolated programming or runtime error that causes a system crash or incorrect calculation. Algorithmic bias is a systemic, repeatable unfairness or error pattern rooted in skewed historical training datasets, flawed weighting, or biased sampling."
+                }
+              ]
+            },
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 10 mins",
+              "🗣️ Spoken Retrieval Drill",
+              "🎯 Vocabulary & Warm-Up"
+            ],
+            "instructions": [
+              "Step 1 (Headline Scan - 3 mins): Read the three real-world AI news prompts with your partner. Discuss which application has the greatest immediate impact on aviation or engineering.",
+              "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Narrow AI vs. General AI, Supervised Learning vs. Unsupervised Learning, Machine Learning vs. Deep Learning, Predictive Analytics vs. Generative Models).",
+              "Step 3 (Class Roundup - 3 mins): Two pairs share their definitions of Supervised Learning and Predictive Analytics with the class."
+            ],
+            "deliverable": "Clear spoken definition of 1 real-world AI application and 1 machine learning distinction during the teacher check.",
+            "teacherNotes": "Keep pace rapid. Drill correct pronunciation of 'analytics' (an-uh-LIT-iks) and 'algorithm' (AL-guh-ri-thm). Ensure students do not read definitions word-for-word."
+          },
+          "survey": {
+            "title": "Activity 2: Workplace Automation & AI Dilemmas: Speed Survey",
+            "summary": "Conduct structured speed-dating interviews on 4 pressing dilemmas in enterprise automation and artificial intelligence. Practice defending technical viewpoints, evaluating trade-offs, and signposting arguments.",
+            "signposts": [
+              "\"From an operational efficiency standpoint, ...\"",
+              "\"While algorithms accelerate throughput, human operators are indispensable when...\"",
+              "\"To prevent catastrophic algorithmic failure, systems engineering mandates that...\"",
+              "\"Empirical reliability studies demonstrate that predictive analytics can...\""
+            ],
+            "topics": [
               {
-                "id": "W1",
-                "title": "Automated Flight Dispatch & Fuel Load Optimization",
-                "desc": "Machine learning algorithms compute fuel burns using live weather feeds. Human dispatchers rubber-stamp recommendations with only 45 seconds of review.",
-                "risk": "Severe Risk of Cognitive Deskilling & Fuel Starvation",
-                "sector": "Flight Operations"
+                "id": 1,
+                "badge": "Predictive Fleet Maintenance",
+                "statement": "Should airlines ground an aircraft based solely on an automated neural network alert without visual defect confirmation?",
+                "pro": "Predictive telemetry identifies microscopic internal turbine fatigue and hydraulic pressure anomalies before physical sensors trigger cockpit warnings, preventing in-flight shutdowns.",
+                "con": "False-positive algorithmic alerts lead to unscheduled aircraft on ground (AOG) costs, cascading flight cancellations, and passenger disruptions.",
+                "prompt": "Interview your partner: How can maintenance departments calibrate algorithmic confidence thresholds to prevent false alarms?"
               },
               {
-                "id": "W2",
-                "title": "Dynamic Crew Rostering & Fatigue Prediction",
-                "desc": "Black-box AI models assign crew pairings based on predictive fatigue algorithms without considering unrecorded micro-delays or commuting stressors.",
-                "risk": "Acute Crew Burnout & Silent Non-Compliance",
-                "sector": "Human Resources"
+                "id": 2,
+                "badge": "Automated Air Traffic Sequencing",
+                "statement": "Should machine-learning algorithms autonomously sequence and space aircraft on final approach without controller intervention?",
+                "pro": "Automated sequencing reduces wake turbulence separation buffers dynamically, optimizes runway throughput by 15%, and minimizes fuel burn during peak arrival banks.",
+                "con": "Controllers risk cognitive deskilling and loss of situational awareness during sudden algorithmic drop-outs or severe convective weather reroutes.",
+                "prompt": "Interview your partner: How does the European ATM Master Plan define the transition toward higher levels of automation?"
               },
               {
-                "id": "W3",
-                "title": "Automated Irregular Operations (IROPS) Passenger Recovery",
-                "desc": "Autonomous bots issue rebooking vouchers during massive weather cancellations, creating conflicting gate assignments and stranded passenger clusters.",
-                "risk": "Reputational Collapse & Terminal Overcrowding",
-                "sector": "Customer Experience"
+                "id": 3,
+                "badge": "Generative AI in Corporate Operations",
+                "statement": "Should companies allow employees to use unvetted public Large Language Models to draft official engineering and legal documents?",
+                "pro": "Generative AI increases drafting speed by 40%, automates routine technical report formatting, and accelerates cross-language technical documentation.",
+                "con": "Public models create severe cybersecurity risks, expose proprietary flight data, and produce authoritative hallucinations that bypass peer review.",
+                "prompt": "Interview your partner: What corporate data governance policies are essential when integrating enterprise generative AI?"
               },
               {
-                "id": "W4",
-                "title": "Predictive Airframe Component Health Monitoring",
-                "desc": "Sensor telemetry automatically flags hydraulic pump degradation. Maintenance teams face alert fatigue from an 18% false-positive warning rate.",
-                "risk": "Premature Maintenance Overhauls & Alert Fatigue",
-                "sector": "Engineering"
-              },
-              {
-                "id": "W5",
-                "title": "Biometric Self-Boarding E-Gate Supervision",
-                "desc": "One gate agent currently monitors 6 simultaneous automated biometric boarding lanes, creating vulnerability to piggybacking and manual override delays.",
-                "risk": "Physical Security Breach & Boarding Bottlenecks",
-                "sector": "Ground Operations"
-              },
-              {
-                "id": "W6",
-                "title": "AI-Generated Internal Safety Incident Summaries",
-                "desc": "Large language models summarize confidential pilot safety reports for executive dashboards, inadvertently scrubbing critical contextual nuances.",
-                "risk": "Loss of Critical Human Factors Insights",
-                "sector": "Safety Compliance"
+                "id": 4,
+                "badge": "Robotic Ramp Automation",
+                "statement": "Should international airports transition entirely to autonomous electric pushback tugs and robotic baggage loaders by 2030?",
+                "pro": "Autonomous electric ramp equipment eliminates human apron errors, reduces ground handling accidents, and cuts ground emissions to zero.",
+                "con": "High initial capital expenditure, complex integration with legacy ground support equipment, and widespread displacement of ground handling personnel.",
+                "prompt": "Interview your partner: How can airport management balance automation efficiency with social equity (DDRS)?"
               }
-            ]
+            ],
+            "modeBadges": [
+              "👥 Rotating Pairs",
+              "⏱️ 25 mins",
+              "🗣️ Speed Discussion",
+              "🎯 Stance & Linking Words"
+            ],
+            "instructions": [
+              "Step 1 (Stance Preparation - 4 mins): Review the 4 workplace automation dilemmas below. Choose your personal stance on each dilemma, noting one strong reason and one counter-argument.",
+              "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). State your stance clearly and support it with empirical evidence, using at least two linking phrases ('On the one hand...', 'While I accept that...', 'In contrast to...').",
+              "Step 3 (Consensus - 5 mins): Return to your primary partner. Agree on which engineering task should always require final human sign-off."
+            ],
+            "deliverable": "4 completed partner discussion notes with balanced arguments on operational efficiency vs. human oversight.",
+            "teacherNotes": "Signal partner rotation every 4 minutes. Monitor turn-taking so one student doesn't dominate. Prompt students to use linking words to acknowledge counter-arguments."
           },
-          "hitlSimulation": {
+          "grammarClinic": {
+            "title": "Activity 3: Language Focus: Active vs. Passive Voice in Technical Descriptions",
+            "summary": "Mastering active versus passive voice to describe technical procedures, automated software pipelines, and system audits with precision—vital for TOEIC Part 5/6 and professional technical presentations.",
+            "rules": [
+              {
+                "type": "Active Voice (Focus on Agent / System)",
+                "formula": "Subject (Agent/Tool) + Verb + Object",
+                "usage": "Use when emphasizing what an algorithm, engineer, or system actively performs. (e.g., 'The neural network analyzes flight telemetry in real time.')"
+              },
+              {
+                "type": "Passive Voice (Focus on Action / Object Affected)",
+                "formula": "Receiver + [auxiliary be] + Past Participle (V3) (+ by agent)",
+                "usage": "Essential in technical reports, scientific abstracts, and manuals when the procedure, outcome, or asset is more important than who performed it. (e.g., 'Turbine vibration data is logged every millisecond.')"
+              },
+              {
+                "type": "Passive with Modal Auxiliaries",
+                "formula": "Modal (must / can / should / will) + be + Past Participle",
+                "usage": "Used for specifications, regulatory mandates, and future forecasts. (e.g., 'Critical software updates must be verified prior to pushback.')"
+              }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "Flight telemetry data ________ continuously by the airline's centralized analytics hub.",
+                "options": [
+                  "ingests",
+                  "is ingested",
+                  "ingesting",
+                  "is ingesting"
+                ],
+                "correct": "is ingested",
+                "explanation": "Passive voice present simple ('is ingested') is required because the telemetry data receives the action."
+              },
+              {
+                "id": 2,
+                "sentence": "All automated schedule modifications must ________ by a certified flight operations supervisor.",
+                "options": [
+                  "authorize",
+                  "be authorized",
+                  "authorization",
+                  "authorizing"
+                ],
+                "correct": "be authorized",
+                "explanation": "Follows modal 'must'; passive infinitive ('be authorized') is required for modifications receiving approval."
+              },
+              {
+                "id": 3,
+                "sentence": "The engineering team ________ the machine-learning pipeline to reduce false-positive vibration warnings.",
+                "options": [
+                  "calibrated",
+                  "was calibrated",
+                  "calibration",
+                  "calibratingly"
+                ],
+                "correct": "calibrated",
+                "explanation": "Active past simple verb ('calibrated') is required; 'the engineering team' is the active agent."
+              },
+              {
+                "id": 4,
+                "sentence": "By the end of the decade, autonomous baggage tugs ________ at over fifty European hubs.",
+                "options": [
+                  "will deploy",
+                  "will have been deployed",
+                  "deployed",
+                  "deploying"
+                ],
+                "correct": "will have been deployed",
+                "explanation": "Time marker 'By the end of the decade' combined with passive subject requires Future Perfect Passive ('will have been deployed')."
+              }
+            ],
+            "modeBadges": [
+              "👥 Pairs / Solo",
+              "⏱️ 20 mins",
+              "✍️ Grammar Practice",
+              "🎯 Technical Passive Voice"
+            ],
+            "instructions": [
+              "Step 1 (Rule Review - 5 mins): Study the 3 technical passive voice formulas: Present Simple Passive ('is/are analyzed'), Present Continuous Passive ('is/are being processed'), and Modal Passive ('must/should be verified'). Note why engineering reports favor passive constructions to maintain objective neutrality.",
+              "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive grammar challenge questions individually, converting active sentences to passive voice without notes.",
+              "Step 3 (Pair Verification - 7 mins): Click 'Reveal Answer & Explanation' to check your solutions. Discuss why the agent ('by the engineer') is often omitted in technical procedures when the process is the primary focus."
+            ],
+            "deliverable": "Accurate completion of the 4 passive voice transformation drills documented in student study journals.",
+            "teacherNotes": "Emphasize that the passive voice puts the focus on the object and process rather than the actor: 'Telemetry data is continuously monitored' instead of 'We monitor telemetry data.'"
+          },
+          "roleplay": {
+            "title": "Activity 4: Enterprise AI Deployment Tribunal",
+            "scenario": "Global Skies Airlines is preparing to deploy an automated, generative AI passenger rebooking and flight compensation bot. One student represents the Chief Information Officer arguing for immediate rollout to slash customer service backlogs. The other represents the Aviation Compliance & Passenger Rights Director, demanding explainability audits, error safeguards, and Human-in-the-Loop oversight.",
             "roles": [
               {
-                "role": "Director of Flight Operations",
-                "badge": "Operational Leadership",
-                "mission": "Safeguard flight safety, demand rigid human verification thresholds, and resist unchecked cost-cutting automation.",
+                "role": "Chief Information Officer (CIO)",
+                "title": "Pro-Automation Advocate",
+                "objectives": [
+                  "Demonstrate 70% reduction in response latency and €12M annual operating savings.",
+                  "Argue that machine learning models resolve standard rebooking faster than manual desks.",
+                  "Propose automated escalation only for passengers whose flights involve missed connections."
+                ],
                 "keyPhrases": [
-                  "No algorithm can replace the legal command authority of...",
-                  "We must implement a mandatory fail-safe checkpoint whenever...",
-                  "The operational threshold for full manual override requires..."
+                  "\"Our benchmark trials indicate that 85% of standard delays are resolved within seconds...\"",
+                  "\"From a scalability perspective, manual service desks cannot absorb irregular operations spikes...\"",
+                  "\"Automated algorithmic rerouting significantly reduces passenger dwell times in departure concourses...\""
                 ]
               },
               {
-                "role": "Chief AI Systems Architect",
-                "badge": "Technical Engineering",
-                "mission": "Champion computational efficiency, explain model confidence intervals, and warn against excessive manual interference.",
+                "role": "Aviation Compliance & Rights Director",
+                "title": "Regulatory & Ethical Auditor",
+                "objectives": [
+                  "Highlight risk of algorithmic discrimination against passengers requiring special assistance.",
+                  "Demand that automated compensation calculations comply 100% with EU Regulation 261/2004.",
+                  "Insist on mandatory Human-in-the-Loop validation before any booking cancellation is finalized."
+                ],
                 "keyPhrases": [
-                  "Human dispatchers introduce inconsistent cognitive bias into...",
-                  "The predictive model demonstrates a 99.4% accuracy rate when...",
-                  "Frequent manual overrides degrade the system's ability to..."
-                ]
-              },
-              {
-                "role": "Staff & Union Workforce Representative",
-                "badge": "Human Factors & Labor",
-                "mission": "Protect staff from cognitive overload and deskilling, defend workers' right to challenge automated decisions, and prevent punitive telemetry tracking.",
-                "keyPhrases": [
-                  "Frontline employees are experiencing acute cognitive burnout due to...",
-                  "Staff cannot be held legally liable for decisions dictated by...",
-                  "We demand rigorous training and clear ergonomic boundaries before..."
+                  "\"Under European air passenger rights legislation, automated denials of compensation require clear auditability...\"",
+                  "\"If an algorithmic hallucination rebooks a passenger on an invalid route, legal liability falls squarely on the carrier...\"",
+                  "\"We must maintain human supervisory desks for vulnerable, unaccompanied, and reduced-mobility travelers...\""
                 ]
               }
             ],
-            "injects": [
-              {
-                "time": "T+15m INJECT #1",
-                "title": "⚠️ Cloud Telemetry Outage",
-                "desc": "A fiber sever takes down the cloud prediction engine. Junior dispatchers discover they cannot manually calculate oceanic step-climbs without software assistance."
-              },
-              {
-                "time": "T+30m INJECT #2",
-                "title": "🚨 Algorithmic Discrimination Scandal",
-                "desc": "The crew rostering algorithm is leaked: it systematically assigned night shifts to junior personnel while shielding senior management from weekend duties."
-              },
-              {
-                "time": "T+45m INJECT #3",
-                "title": "📢 Breaking Union Walkout Threat",
-                "desc": "Ground staff threaten immediate industrial action unless management commits to a minimum of two human agents per four automated biometric lanes."
-              }
-            ]
+            "modeBadges": [
+              "👥 Small Groups (3-4)",
+              "⏱️ 45 mins",
+              "🎭 Design Hearing & Defense",
+              "🎯 Negotiation & Critical Thinking"
+            ],
+            "instructions": [
+              "Step 1 (Role Allocation - 5 mins): Form small groups of 3 or 4 and select your stakeholder roles: Chief Technology Officer (CTO), Head of Flight Operations, Union Ramp Safety Representative, or Data Privacy Officer.",
+              "Step 2 (Position Preparation - 15 mins): Prepare your 2-minute opening statement regarding the deployment of an autonomous baggage loading and predictive turn-around system. Identify 2 productivity benefits and 2 workforce safety or reliability risks.",
+              "Step 3 (Tribunal Hearing - 20 mins): Convene the formal hearing: each stakeholder presents their position, followed by a moderated Q&A session with tough questions from opposing delegates.",
+              "Step 4 (Compromise Protocol - 5 mins): Draft and agree on a signed 3-point deployment compromise protocol balancing automation efficiency with worker safety guarantees."
+            ],
+            "deliverable": "A signed 3-point compromise agreement and active spoken defense during the tribunal hearing.",
+            "teacherNotes": "Act as the tribunal chair or appoint a confident student. Ensure every student speaks for at least 2 minutes. Enforce polite disagreement formulas ('While I see your point,...', 'With respect, the data indicates...')."
           },
-          "townHall": {
-            "title": "Spoken Workplace Town Hall & Executive Scrutiny (30 mins)",
-            "instructions": "The Operational Taskforce presents their newly drafted Human-in-the-Loop Charter to frontline employees and journalists. Frontline staff pose tough, skeptical questions.",
-            "questions": [
-              "If a junior dispatcher accepts an automated fuel calculation that results in a forced diversion, who will be held legally responsible: the dispatcher or the software vendor?",
-              "How will the company guarantee that human staff do not lose their fundamental manual operational competence after years of AI automation?",
-              "Why should ground personnel trust automated biometric gates when false-reject rates for passengers with mobility limitations exceed 12%?",
-              "What concrete assurances can you provide that algorithmic productivity metrics will not be used punitively against individual workers?"
+          "feChecklist": [
+            "Add 5 artificial intelligence and automation terms to your Vocabulary Log.",
+            "Review the Active vs. Passive Voice rules and complete the interactive drills.",
+            "Brainstorm potential emerging technology topics for your Formative Evaluation 3 (FE3)."
+          ],
+          "closingReview": {
+            "title": "Activity 5: Wrap-Up & FE3 Preparation",
+            "summary": "Consolidation, pronunciation practice, and portfolio check",
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 15 mins",
+              "🎧 Audio Drill & Exit Summary",
+              "🎯 Portfolio & FE3 Prep"
+            ],
+            "instructions": [
+              "Step 1 (Checklist Audit - 5 mins): Complete the 3-point Formative Evaluation readiness checklist with your partner, verifying personal understanding of narrow vs. general AI and passive voice mastery.",
+              "Step 2 (Vocabulary Audio Drill - 6 mins): Review the 18 key technical AI terms. Click to listen to audio pronunciations and practice syllable stress aloud with your partner.",
+              "Step 3 (Exit Summary - 4 mins): Write down two technical AI collocations and one passive sentence you plan to use in your upcoming FE3 presentation."
+            ],
+            "deliverable": "Completed FE3 readiness checklist and verified pronunciation of 3 multisyllabic AI terms in personal study journals.",
+            "teacherNotes": "Check learning logs for passive voice notes. Remind students that Formative Evaluation 3 (FE3) in Week 08 evaluates spontaneous speaking, pronunciation clarity, and active use of Module 3 vocabulary."
+          }
+        },
+        "overview": {
+          "intro": "In this session, you explore the rise of Artificial Intelligence and machine learning in daily life, customer service, and education. Working in pairs and small groups, you will practise describing AI applications, expressing personal attitudes toward automated tools, and debating the benefits and risks of smart algorithms in spoken English.",
+          "whyItMatters": "AI is reshaping every industry and profession across the globe. Being able to explain how automated systems assist human work, articulate ethical concerns, and discuss future technology in clear, conversational English gives you high professional relevance and directly enriches your Module 3 Formative Evaluation.",
+          "keyTerms": [
+            {
+              "term": "Artificial Intelligence",
+              "ipa": "/ˌɑː.tɪˈfɪʃ.əl ɪnˈtel.ɪ.dʒəns/",
+              "definition": "Computer systems designed to perform tasks normally requiring human intelligence."
+            },
+            {
+              "term": "Machine Learning",
+              "ipa": "/məˈʃiːn ˈlɜː.nɪŋ/",
+              "definition": "A branch of AI where software learns from data patterns without explicit programming."
+            },
+            {
+              "term": "Algorithm",
+              "ipa": "/ˈæl.ɡə.rɪ.ðəm/",
+              "definition": "A step-by-step set of rules or instructions followed by a computer to solve a problem."
+            },
+            {
+              "term": "Predictive Analytics",
+              "ipa": "/prɪˈdɪk.tɪv ˌæn.əˈlɪt.ɪks/",
+              "definition": "Using statistical models to forecast future trends based on historical data."
+            },
+            {
+              "term": "Natural Language",
+              "ipa": "/ˈnætʃ.ər.əl ˈlæŋ.ɡwɪdʒ/",
+              "definition": "Human speech or text, which modern AI models process and generate conversational responses to."
+            },
+            {
+              "term": "Data Privacy",
+              "ipa": "/ˈdeɪ.tə ˈprɪv.ə.si/",
+              "definition": "The proper handling, security, and consent surrounding personal information collected online."
+            },
+            {
+              "term": "Automated Decision",
+              "ipa": "/ˈɔː.tə.meɪ.tɪd dɪˈsɪʒ.ən/",
+              "definition": "A choice made instantly by a computer model without human intervention or review."
+            },
+            {
+              "term": "Algorithmic Bias",
+              "ipa": "/ˌæl.ɡəˈrɪð.mɪk ˈbaɪ.əs/",
+              "definition": "Systematic errors in computer systems that create unfair outcomes, often reflecting training data."
+            },
+            {
+              "term": "Chatbot Interface",
+              "ipa": "/ˈtʃæt.bɒt ˈɪn.tə.feɪs/",
+              "definition": "A software application used to conduct online chat conversations via text or text-to-speech."
+            },
+            {
+              "term": "Human-in-the-Loop",
+              "ipa": "/ˈhjuː.mən ɪn ðə luːp/",
+              "definition": "A system design where human oversight and approval remain mandatory for critical actions."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or real-life examples to support your group's argument.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Generative AI writing tools like ChatGPT should be completely integrated into university exams rather than restricted or banned.",
+              "group2": "Companies should be legally prohibited from using automated AI algorithms to filter and reject job applicants without human review.",
+              "group3": "Within a decade, AI virtual assistants will provide better, more empathetic customer service than human call centre agents."
+            },
+            "usefulPhrases": [
+              "Our group explored the implications of...",
+              "From a practical perspective, we believe that...",
+              "A major concern raised by our group is...",
+              "In conclusion, we strongly maintain that..."
             ]
           }
         }
@@ -6134,54 +7653,64 @@
       "2": {
         "session": 2,
         "objectives": {
-          "title": "Session 2 Objectives - Future Mobility & Clean Energy Transport",
-          "summary": "By the end of this session, you will be able to discuss electric vehicles and clean energy transport, express degrees of certainty about the future (will, might, probably), plan a zero-emission transport route with a partner, and present your plan to the class.",
+          "title": "Session 2 - Future of travel Objectives",
+          "summary": "By the end of this session, you will be able to discuss the future of travel with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Learn Key Vocabulary: Electric Vehicles & Future Transport",
-              "description": "Learn 8 useful words for electric aircraft, battery charging hubs, hydrogen power, and clean cities."
+              "title": "Practice TOEIC Listening Part 3: Business & Innovation Discussions",
+              "description": "Catch key details and technical specifications in conversations between engineers, planners, and clients."
             },
             {
               "num": 2,
-              "title": "Grammar Focus: Talking About the Future (Will, Might, Going to)",
-              "description": "Express future certainty and probability accurately ('will definitely', 'is likely to', 'might')."
+              "title": "Master Vocabulary for Future Mobility, Electric Vehicles & Clean Energy",
+              "description": "Learn and use words for battery range, hydrogen fuel cells, autonomous shuttles, and charging infrastructure."
             },
             {
               "num": 3,
-              "title": "Speaking Activity: Planning a Green Transport Route",
-              "description": "Work in a team with €100M to design a clean travel connection between an airport and a city center."
+              "title": "Form and Use Comparatives & Degree Words (much faster, more costly than)",
+              "description": "Use comparative adjectives and degree modifiers (far more efficient, slightly slower) to compare transit technologies."
             },
             {
               "num": 4,
-              "title": "Speaking Practice: Presenting a Green Transport Idea",
-              "description": "Present your green travel route to the class and vote on the most realistic project."
+              "title": "Analyze the Long-Term Environmental Benefits of Future Transit (DDRS)",
+              "description": "Weigh the life-cycle carbon savings of electric and hydrogen systems against the resources needed to build them."
+            },
+            {
+              "num": 5,
+              "title": "Present Your Vision of Future Transportation in Pairs",
+              "description": "Describe and defend an innovative transit idea in paired presentations, focusing on fluency and convincing delivery."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 2 Lesson Plan - Future Mobility & Clean Energy Transport (2 Hours)",
-          "summary": "A visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, budgeting €100M in regional decarbonization infrastructure, and defending transit choices against stakeholder resistance.",
+          "title": "Session 2 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
           "items": [
             {
-              "title": "Part 1: Key Vocabulary • Electric Vehicles & Future Transport",
-              "description": "Learn 8 clean energy terms, check syllable stress, and complete the transport matching drill.",
+              "title": "Conversational Warm-Up: Travel in 2050",
+              "description": "In pairs, students predict how long-distance travel will look in 30 years and brainstorm emerging technologies.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Grammar Focus • Talking About the Future (Will, Might, Going to)",
-              "description": "Master predictive certainty and future probability; complete 4 sentence rephrasing drills.",
+              "title": "TOEIC Strategy: Listening to Product Pitches",
+              "description": "Practice Part 3 conversations featuring tech presentations, innovation pitches, and investment decisions.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Speaking Activity • Planning a Green Transport Route",
-              "description": "Compare 3 clean vehicles, design the €100M transport route, and resolve 3 stakeholder challenges.",
+              "title": "Vocabulary Builder: Next-Gen Mobility",
+              "description": "High-frequency terms for autonomous vehicles, hydrogen fuel cells, eVTOL shuttles, and charging networks.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Group Presentation & Project Review",
-              "description": "Deliver a 3-minute group presentation to the council and review tips for your speaking exam.",
+              "title": "Structured Discussion & Grammar",
+              "description": "Pitching and comparing future transport modes using Comparatives and Superlatives (far cleaner than, the most cost-effective).",
               "part": "Part 4"
+            },
+            {
+              "title": "Debrief, Evaluation Prep & Wrap-Up",
+              "description": "Teacher language points, peer feedback on pitch clarity, and personal study targets.",
+              "part": "Part 5"
             }
           ]
         },
@@ -6537,129 +8066,351 @@
           ]
         },
         "lessonContent": {
-          "hero": {
-            "title": "Future Mobility & Clean Energy Transport",
-            "subtitle": "Archetype C • Collaborative Clean Mobility Sprint: Hydrogen Propulsion, Regional Electric Aviation, eVTOL Vertiports & High-Speed Transit",
+          "overview": {
             "image": "images/ag_m3card2.jpg",
-            "badge": "AG Module 3 • Session 2 • Design Sprint"
+            "title": "Future Mobility & Clean Energy Transport",
+            "subtitle": "Hydrogen Propulsion, Battery-Electric Aviation, Urban Air Mobility & Multi-Modal Corridors",
+            "badge": "Session Overview • Clean Propulsion & Future Mobility"
           },
-          "showcase": {
-            "modelA": {
-              "title": "Paradigm A: Decentralized Regional Air Mobility & eVTOL Vertiports",
-              "caption": "On-demand electric commuter aviation, zero-emission vertiport nodes on commercial rooftops, and point-to-point regional connectivity.",
-              "hotspots": [
+          "hero": {
+            "image": "images/ag_m3card2.jpg",
+            "title": "Future Mobility & Clean Energy Transport",
+            "subtitle": "Hydrogen Propulsion, Battery-Electric Aviation, Urban Air Mobility & Multi-Modal Corridors",
+            "badge": "Session Overview • Clean Propulsion & Future Mobility"
+          },
+          "openingSession": {
+            "title": "Activity 1: Clean Transport Breakthroughs & Propulsion Warm-Up",
+            "summary": "Opening warm-up evaluating next-generation aircraft concepts, zero-emission fuels, and key thermodynamic distinctions.",
+            "newsPrompts": [
+              "Airbus progresses cryogenic hydrogen tank ground testing for the ZEROe aircraft demonstrator program targeting commercial service by 2035.",
+              "Heart Aerospace and magniX successfully conduct test flights of 19-passenger regional battery-electric commuter prototypes on Nordic island routes.",
+              "European civil aviation regulators publish world-first airworthiness and vertiport certification baselines for commercial electric Vertical Take-Off and Landing (eVTOL) vehicles."
+            ],
+            "diagnostic": {
+              "title": "Clean Propulsion Concepts Quick Check",
+              "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+              "questions": [
                 {
                   "id": 1,
-                  "label": "Rooftop Vertiport Hub",
-                  "desc": "Multi-pad vertiport infrastructure integrated into urban railway stations with ultra-fast megawatt battery chargers."
+                  "q": "What is the difference between Direct Hydrogen Combustion and a Hydrogen Fuel Cell?",
+                  "answer": "Direct hydrogen combustion burns liquid or gaseous hydrogen in modified gas turbine engines, producing water vapor and trace NOx emissions. A hydrogen fuel cell converts chemical energy electrochemically into electricity through a reaction with oxygen, powering electric motors with zero NOx emissions and pure water as the sole byproduct."
                 },
                 {
                   "id": 2,
-                  "label": "19-Seat Regional Commuter Aircraft",
-                  "desc": "Short-takeoff hybrid-electric aircraft connecting secondary regional towns bypassed by traditional high-speed rail networks."
+                  "q": "How does Sustainable Aviation Fuel (SAF) differ fundamentally from Hydrogen in airport distribution?",
+                  "answer": "SAF is a 'drop-in' hydrocarbon fuel chemically identical to conventional fossil Jet A-1. It requires zero modifications to existing aircraft fuel systems, hydrants, or airport storage tanks. Liquid hydrogen requires cryogenic storage at -253°C, heavily insulated vacuum-jacketed pipelines, and entirely redesigned aircraft airframes with bulbous fuselage fuel tanks."
                 },
                 {
                   "id": 3,
-                  "label": "Liquid Hydrogen Refueling Rig",
-                  "desc": "Cryogenic fuel storage facility supporting regional zero-emission fuel-cell flights under 800 km."
+                  "q": "What is the operational distinction between an eVTOL aircraft and a traditional turbine helicopter?",
+                  "answer": "Conventional helicopters rely on a single massive main rotor powered by a noisy kerosene turboshaft engine with high mechanical complexity. eVTOLs employ Distributed Electric Propulsion (DEP) with multiple smaller electric rotors, dramatically reducing acoustic footprints, eliminating single-point mechanical failure traps, and operating at substantially lower seat-kilometer energy costs."
                 },
                 {
                   "id": 4,
-                  "label": "Autonomous Fleet Swarm Dispatch",
-                  "desc": "Centralized AI traffic management routing electric air taxis through segregated low-altitude urban air corridors."
+                  "q": "In energy systems, what distinguishes Volumetric Energy Density from Gravimetric Specific Energy?",
+                  "answer": "Gravimetric energy density (specific energy) measures energy per unit mass (Wh/kg)—critical for aviation payload limits. Volumetric energy density measures energy per unit volume (Wh/L)—critical for aerodynamic fuselage drag. While liquid hydrogen has triple the gravimetric energy of kerosene, its volumetric density is four times lower, requiring enormous internal fuel volumes."
                 }
-              ],
-              "spatialVocab": "point-to-point connectivity, localized noise footprint, cryogenic containment, low-altitude routing, agile infrastructure."
+              ]
             },
-            "modelB": {
-              "title": "Paradigm B: High-Density High-Speed Electric Rail & Maglev Corridors",
-              "caption": "Mass-capacity intercity rail, subterranean downtown terminals, overhead catenary electrification, and heavy-duty freight integration.",
-              "hotspots": [
-                {
-                  "id": 1,
-                  "label": "Subterranean Multi-Modal Terminal",
-                  "desc": "Centralized transit hub processing 45,000 passengers per hour with direct seamless subway and light-rail connections."
-                },
-                {
-                  "id": 2,
-                  "label": "320 km/h High-Speed Trainsets",
-                  "desc": "High-capacity electric rolling stock moving thousands of passengers simultaneously with zero localized atmospheric emissions."
-                },
-                {
-                  "id": 3,
-                  "label": "Linear Infrastructure Footprint",
-                  "desc": "Fenced high-speed rail corridor requiring continuous land expropriation, extensive bridges, and deep mountain tunnels."
-                },
-                {
-                  "id": 4,
-                  "label": "Shared High-Volume Freight Rails",
-                  "desc": "Dual-use track network allowing midnight electric freight trains to displace 120,000 diesel heavy trucks annually."
-                }
-              ],
-              "spatialVocab": "massive passenger throughput, fixed-guideway permanence, landscape fragmentation, catenary electrification, economies of scale."
-            },
-            "spokenProtocol": [
-              {
-                "step": "Stage 1 (Comparative Physics - 4 mins)",
-                "prompt": "Partner A argues the energetic and operational benefits of Model A; Partner B defends Model B using technical comparative structures ('Whereas rail demands massive initial civil engineering...', 'Electric aviation offers agile flexibility, yet...')."
-              },
-              {
-                "step": "Stage 2 (Capital Efficiency - 3 mins)",
-                "prompt": "Compare the 30-year lifecycle cost: civil land acquisition and tunneling vs. rapid battery replacement and airspace management infrastructure."
-              },
-              {
-                "step": "Stage 3 (The Regional Dilemma - 3 mins)",
-                "prompt": "If your province has €100M to spend, would you connect 2 major cities with a rail extension or 12 remote rural communities with regional electric flight hubs?"
-              }
-            ]
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 10 mins",
+              "🗣️ Spoken Retrieval Drill",
+              "🎯 Vocabulary & Warm-Up"
+            ],
+            "instructions": [
+              "Step 1 (Headline Scan - 3 mins): Read the three clean transport news prompts with your partner. Discuss which propulsion technology (hydrogen fuel cells, sustainable aviation fuels, battery-electric) is nearest commercial maturity.",
+              "Step 2 (Memory Recall - 4 mins): Without looking at notes, test each other on the 4 propulsion distinctions below (Cryogenic Liquid Hydrogen vs. High-Pressure Gas, SAF Drop-In Fuel vs. Clean-Sheet Airframe, Gravimetric Energy Density vs. Volumetric Density, High-Speed Rail vs. Short-Haul Turboprop).",
+              "Step 3 (Class Roundup - 3 mins): One student explains why gravimetric energy density is the biggest limiting factor for battery-electric passenger aircraft."
+            ],
+            "deliverable": "Clear spoken explanation of 1 clean propulsion concept and 1 energy storage challenge during teacher Q&A.",
+            "teacherNotes": "Keep pace brisk. Drill correct pronunciation of 'cryogenic' (cry-oh-JEN-ik) and 'gravimetric' (grav-ih-MET-rik)."
           },
-          "designSprint": {
-            "budget": "€100,000,000",
-            "corridorName": "The 2035 Trans-Regional Green Corridor (Toulouse – Pau – Bayonne – Bordeaux)",
-            "categories": [
+          "survey": {
+            "title": "Activity 2: Clean Transit Corridor Pitch: Speed Survey",
+            "summary": "Conduct structured speed-dating interviews on 4 disruptive mobility concepts. Compare travel times, infrastructure requirements, and decarbonization potential.",
+            "signposts": [
+              "\"Regarding thermodynamic efficiency, ...\"",
+              "\"While capital expenditure for hydrogen infrastructure is formidable, the lifecycle decarbonization...\"",
+              "\"On short-haul regional corridors of under 400 km, battery-electric flight is projected to...\"",
+              "\"Taking into account total door-to-door transit time, high-speed rail will inevitably...\""
+            ],
+            "topics": [
               {
-                "name": "Green Hydrogen Production & Airport Fueling Rigs",
-                "costPerUnit": "€25M / regional hub",
-                "desc": "Construct localized water electrolysis plants and cryogenic liquid hydrogen storage facilities at secondary airports."
+                "id": 1,
+                "badge": "Regional Electric Commuter Flight",
+                "statement": "Can 19-seat battery-electric aircraft replace regional turboprops on sub-400 km routes by 2030?",
+                "pro": "Electric motors reduce operating and maintenance costs by 60%, produce zero direct emissions, and permit flight operations from short suburban airfields without acoustic noise bans.",
+                "con": "Current battery gravimetric densities (~250–300 Wh/kg) severely constrain payload and reserve diversion ranges compared to kerosene.",
+                "prompt": "Interview your partner: How can regional carriers leverage electric aircraft for lifeline island and mountain valley routes?"
               },
               {
-                "name": "Intercity High-Speed Rail Modernization & Bypass",
-                "costPerUnit": "€35M / 20km section",
-                "desc": "Electrify and straighten regional track bottlenecks to elevate maximum train speeds from 140 km/h to 220 km/h."
+                "id": 2,
+                "badge": "Cryogenic Hydrogen Airliners",
+                "statement": "Will hydrogen-powered commercial airliners dominate medium-haul European trunk routes by 2045?",
+                "pro": "Hydrogen eliminates all fossil CO₂ emissions at the tailpipe and decouples airline operational costs from volatile global petroleum markets.",
+                "con": "Cryogenic hydrogen fuel tanks occupy massive internal cabin volume, reducing passenger seat capacity and requiring multi-billion-euro airport fuel storage overhauls.",
+                "prompt": "Interview your partner: Compare the feasibility of Airbus ZEROe against 100% synthetic e-kerosene drop-in fuels."
               },
               {
-                "name": "Regional Electric Commuter Flight Fleet Subsidy",
-                "costPerUnit": "€20M / 5 aircraft",
-                "desc": "Subsidize airline acquisition of 19-seat hybrid-electric regional turboprops to restore discontinued rural routes."
+                "id": 3,
+                "badge": "Urban Air Mobility (eVTOL) Shuttles",
+                "statement": "Are eVTOL air taxis a genuine urban transport solution or an exclusive novelty for affluent executives?",
+                "pro": "eVTOL networks provide zero-emission point-to-point connections, bypass highway congestion, and accelerate emergency medical organ transport between urban medical centers.",
+                "con": "Vertiport construction faces fierce public resistance regarding privacy, low-altitude visual disturbance, and potential airspace conflicts with commercial arrival funnels.",
+                "prompt": "Interview your partner: What public consultation criteria should municipal councils mandate before licensing urban vertiports?"
               },
               {
-                "name": "Urban Air Mobility Vertiport Network & Charging",
-                "costPerUnit": "€15M / 3 vertiports",
-                "desc": "Build 3 city-center rooftop vertiports with multi-megawatt battery swapping stations for automated air ambulances and air taxis."
-              },
-              {
-                "name": "Multi-Modal Mobility Digital Ticketing & Rail-Air Links",
-                "costPerUnit": "€5M / full corridor integration",
-                "desc": "Deploy a single synchronized booking API and baggage-transfer system connecting high-speed trains directly to flights."
+                "id": 4,
+                "badge": "Hyperloop vs. High-Speed Rail",
+                "statement": "Should transport ministries invest in experimental vacuum-tube hyperloops or expand proven high-speed rail networks?",
+                "pro": "Hyperloop concepts target 1,000 km/h cruising speeds with fractional aerodynamic resistance, competing directly with airline block times over 1,200 km corridors.",
+                "con": "Proven high-speed rail lines (TGV/ICE) carry 1,000+ passengers per departure with established safety standards, whereas vacuum maintenance on hundreds of kilometers remains technically unproven.",
+                "prompt": "Interview your partner: How does the European Green Deal evaluate high-speed rail expansion vs. emerging magnetic levitation?"
               }
             ],
-            "stakeholders": [
+            "modeBadges": [
+              "👥 Rotating Pairs",
+              "⏱️ 25 mins",
+              "🗣️ Speed Discussion",
+              "🎯 Stance & Linking Words"
+            ],
+            "instructions": [
+              "Step 1 (Corridor Evaluation - 4 mins): Review the 4 transport corridor dilemmas below. Formulate your personal stance on domestic flight bans vs. high-speed rail and SAF blend mandates.",
+              "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Defend your policy choice using at least two linking phrases ('In comparison to...', 'The fundamental trade-off is...', 'Whereas rail infrastructure requires...').",
+              "Step 3 (Consensus - 5 mins): Return to your primary partner. Agree on which public policy would produce the greatest net emissions reduction over a 10-year timeline."
+            ],
+            "deliverable": "4 completed partner discussion notes comparing infrastructure costs, carbon reduction, and passenger transit times.",
+            "teacherNotes": "Enforce rotation timing strictly. Check that students compare metrics (capital cost vs. carbon savings) rather than just stating general opinions."
+          },
+          "grammarClinic": {
+            "title": "Activity 3: Language Focus: Future Forms, Modals & Predictive Certainty",
+            "summary": "Calibrating language to express degrees of future technical probability, planned milestones, and tentative hypotheses—essential for B2 presentations and engineering roadmaps.",
+            "rules": [
               {
-                "role": "The Fiscal Conservative Council Member",
-                "objection": "€100M is public taxpayers' money. Hydrogen aircraft are unproven technology. We should only invest in standard off-the-shelf electric buses."
+                "type": "High Certainty / Inevitable (will / is bound to / is certain to)",
+                "formula": "Subject + is bound to / is certain to + base verb",
+                "usage": "Used for technological evolutions backed by clear empirical and regulatory trajectories. (e.g., 'Aviation emissions regulations are bound to tighten over the next decade.')"
               },
               {
-                "role": "The Rural Community Mayor",
-                "objection": "High-speed rail whizzes right through our villages without stopping. Electric commuter planes are luxury toys for business travelers. What about our local roads?"
+                "type": "Projected Probability (is projected to / is likely that / will probably)",
+                "formula": "Subject + is projected / scheduled / expected to + base verb",
+                "usage": "Standard in engineering business cases and lifecycle projections. (e.g., 'Green hydrogen production is projected to reach parity with fossil fuels by 2035.')"
               },
               {
-                "role": "The Deep Ecology Campaigner",
-                "objection": "eVTOL air taxis generate acoustic annoyance and consume 3 times more kilowatt-hours per passenger-kilometer than electric trains. They are an ecological distraction."
-              },
-              {
-                "role": "The Regional Airline Executive",
-                "objection": "If you fund rail modernization without subsidizing our clean fleet renewal, our airline will go bankrupt and regional aerospace jobs will disappear."
+                "type": "Tentative Possibility / Conditionality (may / might / could)",
+                "formula": "Subject + may / might / could + base verb",
+                "usage": "Crucial for cautious technical claims and risk assessments. (e.g., 'Severe battery degradation during rapid turnaround charging could limit daily flight cycles.')"
               }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "Given current battery density advancements, regional electric commercial flights ________ feasible on sub-400 km routes by 2030.",
+                "options": [
+                  "is bound to be",
+                  "are bound to be",
+                  "are bound to being",
+                  "bound to be"
+                ],
+                "correct": "are bound to be",
+                "explanation": "Plural subject 'flights' requires plural auxiliary 'are' followed by 'bound to be'."
+              },
+              {
+                "id": 2,
+                "sentence": "Hydrogen fuel infrastructure at major hubs is ________ cost billions of euros in cryogenic storage facilities.",
+                "options": [
+                  "projecting to",
+                  "projected to",
+                  "projection of",
+                  "projectedly"
+                ],
+                "correct": "projected to",
+                "explanation": "Passive participial construction 'is projected to + verb' expresses calculated future estimates."
+              },
+              {
+                "id": 3,
+                "sentence": "Without substantial government subsidies, private investors ________ reluctant to fund vertiport construction in downtown districts.",
+                "options": [
+                  "may remain",
+                  "must to remain",
+                  "will remaining",
+                  "are having remained"
+                ],
+                "correct": "may remain",
+                "explanation": "Modal 'may' followed by base verb 'remain' accurately expresses tentative conditionality."
+              },
+              {
+                "id": 4,
+                "sentence": "Strict noise abatement regulations ________ introduced around metropolitan vertiports before commercial flights begin.",
+                "options": [
+                  "will be",
+                  "will been",
+                  "is being",
+                  "were"
+                ],
+                "correct": "will be",
+                "explanation": "Future passive 'will be introduced' matches the future timeframe before operations begin."
+              }
+            ],
+            "modeBadges": [
+              "👥 Pairs / Solo",
+              "⏱️ 20 mins",
+              "✍️ Grammar Practice",
+              "🎯 Predictive Language"
+            ],
+            "instructions": [
+              "Step 1 (Rule Review - 5 mins): Review the 4 levels of predictive certainty: Definite ('is bound to / will inevitably'), High Probability ('is likely to / is projected to'), Moderate Possibility ('may well / could potentially'), and Unlikely ('is doubtful that / is unlikely to').",
+              "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive forecasting sentences individually, selecting the correct predictive modal and adverb according to empirical probability.",
+              "Step 3 (Pair Verification - 7 mins): Check answers and explanations together. In pairs, practice converting absolute statements into calibrated professional forecasts ('Hybrid aircraft are projected to enter regional service by 2035')."
+            ],
+            "deliverable": "4 correctly completed predictive sentences and 2 calibrated oral forecasts recorded in study journals.",
+            "teacherNotes": "Emphasize that engineers and analysts rarely make 100% absolute claims. Professional credibility relies on calibrated predictive language: 'is bound to', 'is projected to', 'could potentially'."
+          },
+          "roleplay": {
+            "title": "Activity 4: Airline Boardroom Clean Fleet Transition Pitch",
+            "scenario": "EuroWings Regional is planning its fleet renewal strategy for 2028–2035. Student A (Head of Fleet Strategy & Sustainability) pitches a bold investment into 20 electric commuter aircraft and 10 hydrogen-ready slots. Student B (Chief Financial Officer) interrogates residual aircraft values, battery replacement costs, and airport charging infrastructure availability.",
+            "roles": [
+              {
+                "role": "Head of Fleet Strategy & Sustainability",
+                "title": "Green Transition Advocate",
+                "objectives": [
+                  "Demonstrate zero tailpipe emissions on domestic routes and complete exemption from EU ETS carbon taxes.",
+                  "Show that electric motor maintenance costs are 50% lower than turboprops due to fewer moving parts.",
+                  "Argue that early adoption secures prime airport green gate allocations and brand loyalty."
+                ],
+                "keyPhrases": [
+                  "\"By transitioning our regional fleet to electric propulsion, we eliminate local NOx and acoustic emissions...\"",
+                  "\"Lifecycle operating calculations project a 40% reduction in direct seat-kilometer costs...\"",
+                  "\"Securing early delivery slots positions EuroWings as the benchmark sustainable carrier in Western Europe...\""
+                ]
+              },
+              {
+                "role": "Chief Financial Officer (CFO)",
+                "title": "Fiscal Risk Auditor",
+                "objectives": [
+                  "Highlight battery replacement amortization costs every 1,500 flight cycles.",
+                  "Question whether secondary regional airports will install multi-megawatt rapid charging stations in time.",
+                  "Demand a contingency plan if battery weight limits passenger baggage during winter holiday flights."
+                ],
+                "keyPhrases": [
+                  "\"How do you propose amortizing the substantial battery replacement expenditure over a 10-year hull life?\"",
+                  "\"If regional hubs fail to commission high-voltage charging grids by 2029, these aircraft will remain grounded...\"",
+                  "\"We cannot compromise airline profitability on uncertified cryogenic hydrogen delivery promises...\""
+                ]
+              }
+            ],
+            "modeBadges": [
+              "👥 Small Groups (3-4)",
+              "⏱️ 45 mins",
+              "🎭 Boardroom Presentation & Defense",
+              "🎯 Fleet Strategy & Q&A"
+            ],
+            "instructions": [
+              "Step 1 (Fleet Strategy Preparation - 10 mins): In teams of 3 or 4 representing an airline executive committee, prepare a €1.2 billion fleet renewal pitch for the Board of Directors. Select your transition pathway: (A) Accelerated SAF blend procurement, (B) Fleet of 40 hydrogen-hybrid regional turboprops, or (C) High-density conventional fleet retrofits with winglets and geared turbofans.",
+              "Step 2 (Pitch Delivery - 15 mins): Present your 3-minute investment pitch to the Board, detailing capital costs, emissions reductions, fuel supply chain reliability, and return on investment.",
+              "Step 3 (Board Q&A & Defense - 15 mins): Defend your fleet strategy against tough follow-up questions from peer board members and the instructor regarding fuel availability and financial risk.",
+              "Step 4 (Boardroom Vote - 5 mins): The Board votes on which fleet strategy delivers the strongest balance between environmental sustainability and financial solvency."
+            ],
+            "deliverable": "A 3-minute executive pitch and successful defense during the board Q&A session.",
+            "teacherNotes": "Ensure all team members speak during the pitch. Push back on unrealistic assumptions: 'Where will your airline source 100,000 tonnes of green hydrogen at Charles de Gaulle by 2030?'"
+          },
+          "feChecklist": [
+            "Add 5 clean propulsion and mobility terms to your Vocabulary Log.",
+            "Practice calibrating future predictions using 'is projected to' and 'is bound to'.",
+            "Draft Dimension 1 (Operating Mechanism) and Dimension 2 (Operational Benefits) for your FE3 presentation."
+          ],
+          "closingReview": {
+            "title": "Activity 5: Wrap-Up & FE3 Preparation",
+            "summary": "Consolidation, pronunciation practice, and portfolio check",
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 15 mins",
+              "🎧 Audio Drill & Exit Summary",
+              "🎯 Portfolio & FE3 Prep"
+            ],
+            "instructions": [
+              "Step 1 (Checklist Audit - 5 mins): Audit your partner's understanding of clean propulsion pathways and predictive certainty formulas using the Session 2 FE3 checklist.",
+              "Step 2 (Pronunciation Drill - 6 mins): Practice syllable stress on 18 clean transport terms aloud: 'al-TER-na-tive', 'pro-PUL-sion', 'hy-po-THET-i-cal', 'in-fra-STRUC-ture'.",
+              "Step 3 (Exit Summary - 4 mins): Record your chosen clean mobility topic and 2 predictive phrases for your FE3 presentation plan."
+            ],
+            "deliverable": "Signed partner readiness checklist and verified pronunciation log in student portfolios.",
+            "teacherNotes": "Review learning logs for predictive certainty formulas. Praise accurate use of 'is projected to' and 'is bound to'."
+          }
+        },
+        "overview": {
+          "intro": "This session focuses on the future of travel and digital disruption, exploring how high-speed digital ticketing, biometric gates, and autonomous vehicles are changing the passenger experience. Working in teams, you will practise pitching future transport innovations, explaining digital customer journeys, and debating whether digital systems make travel more efficient or more stressful.",
+          "whyItMatters": "International travel is undergoing massive digital transformation. Being able to explain digital passenger processing, evaluate smart airport technologies, and discuss customer convenience in spoken English equips you with the modern vocabulary needed for airport management and your Formative Evaluation.",
+          "keyTerms": [
+            {
+              "term": "Biometric Screening",
+              "ipa": "/ˌbaɪ.oʊˈmet.rɪk ˈskriː.nɪŋ/",
+              "definition": "Using facial recognition or fingerprints to instantly verify passenger identity at airport gates."
+            },
+            {
+              "term": "Digital Wallet",
+              "ipa": "/ˈdɪdʒ.ɪ.təl ˈwɒl.ɪt/",
+              "definition": "An electronic system on a smartphone holding boarding passes, payment cards, and digital passports."
+            },
+            {
+              "term": "Contactless Journey",
+              "ipa": "/ˈkɒn.tækt.ləs ˈdʒɜː.ni/",
+              "definition": "A seamless airport passage where passengers move from curb to gate without touching physical screens."
+            },
+            {
+              "term": "Hyperloop",
+              "ipa": "/ˈhaɪ.pə.luːp/",
+              "definition": "A proposed high-speed transport system carrying passenger pods in low-pressure vacuum tubes."
+            },
+            {
+              "term": "Electric Vertical Take-off",
+              "ipa": "/iˈlek.trɪk ˈvɜː.tɪ.kəl ˈteɪk.ɒf/",
+              "definition": "eVTOL aircraft designed for urban air mobility and short point-to-point air taxi journeys."
+            },
+            {
+              "term": "Augmented Reality",
+              "ipa": "/ɔːɡˈmen.tɪd riˈæl.ə.ti/",
+              "definition": "Interactive digital wayfinding graphics superimposed onto real-world airport terminal views."
+            },
+            {
+              "term": "Self-Service Kiosk",
+              "ipa": "/self ˈsɜː.vɪs ˈkiː.ɒsk/",
+              "definition": "An interactive terminal allowing passengers to print bag tags and check in independently."
+            },
+            {
+              "term": "Digital Disruption",
+              "ipa": "/ˈdɪdʒ.ɪ.təl dɪsˈrʌp.ʃən/",
+              "definition": "The transformation of traditional industries caused by innovative digital technologies and business models."
+            },
+            {
+              "term": "Predictive Maintenance",
+              "ipa": "/prɪˈdɪk.tɪv ˈmeɪn.tə.nəns/",
+              "definition": "Using sensors to anticipate equipment failures on aircraft or trains before they occur."
+            },
+            {
+              "term": "Autonomous Pod",
+              "ipa": "/ɔːˈtɒn.ə.məs pɒd/",
+              "definition": "A self-driving small electric carriage operating along dedicated corridors in airports or campuses."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or examples to support your group's argument.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Within fifteen years, electric air taxis (eVTOL) will replace airport express trains for business travelers connecting to city centres.",
+              "group2": "Traditional paper boarding passes and physical passports should be entirely abolished in favor of mandatory biometric smartphone IDs.",
+              "group3": "Hyperloop vacuum-tube travel will remain an expensive technological fantasy that will never achieve commercial viability for mass passengers."
+            },
+            "usefulPhrases": [
+              "Our group evaluated the future feasibility of...",
+              "While this innovation sounds exciting, we noticed that...",
+              "From a passenger convenience perspective...",
+              "In conclusion, our group believes that..."
             ]
           }
         }
@@ -6667,54 +8418,64 @@
       "3": {
         "session": 3,
         "objectives": {
-          "title": "Session 3 Objectives - Technology Ethics & Automated Decisions in AI",
-          "summary": "By the end of this session, you will be able to discuss technology ethics and digital privacy, use linking words to connect contrasting ideas, participate in a public hearing about smart cameras, and agree on fair technology rules.",
+          "title": "Session 3 - Debate and Critical Thinking Objectives",
+          "summary": "By the end of this session, you will be able to engage in debates and critical discussions with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Learn Key Vocabulary: Technology Ethics & Digital Privacy",
-              "description": "Learn 8 useful words for privacy protection, facial scans, unfair bias, and transparency."
+              "title": "Practice Identifying Argument Structures & Cause/Effect in TOEIC Reading",
+              "description": "Analyze editorial articles and opinion pieces to separate central claims from supporting evidence and assumptions."
             },
             {
               "num": 2,
-              "title": "Grammar Focus: Linking Words (Although, However, In spite of)",
-              "description": "Connect contrasting points smoothly in discussions ('Although the technology is fast, we must...')."
+              "title": "Master Polite Debate Language, Concessions, and Rhetorical Questions",
+              "description": "Use diplomatic phrasing to question assumptions, acknowledge opposing arguments, and clarify misunderstandings."
             },
             {
               "num": 3,
-              "title": "Speaking Activity: Public Hearing: Smart Cameras in Public",
-              "description": "Role-play a debate between police chiefs, software companies, privacy advocates, and passengers."
+              "title": "Use Conjunctions (although, because) vs. Prepositions (despite, due to)",
+              "description": "Correctly choose between conjunctions requiring a full clause and prepositions followed by a noun phrase or gerund."
             },
             {
               "num": 4,
-              "title": "Speaking Practice: Evaluating Arguments & Making Fair Rules",
-              "description": "Cross-examine speakers, defend your view, and decide which rules to enforce."
+              "title": "Debate Technological Innovation vs. Environmental Caution (DDRS)",
+              "description": "Explore the balance between rapid tech adoption and the precautionary principle for public safety and ecology."
+            },
+            {
+              "num": 5,
+              "title": "Participate in an Interactive Class Debate with Constructive Feedback",
+              "description": "Deliver concise, persuasive spoken contributions during a team debate while staying polite and focused on the topic."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 3 Lesson Plan - Technology Ethics & Automated Decisions in AI (2 Hours)",
-          "summary": "A Oxford-style regulatory inquiry examining biometric surveillance, predictive passenger profiling, and algorithmic accountability under the European AI Act framework.",
+          "title": "Session 3 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
           "items": [
             {
-              "title": "Part 1: Key Vocabulary • Technology Ethics & Digital Privacy",
-              "description": "Learn 8 digital ethics terms, check syllable stress, and complete the definition matching challenge.",
+              "title": "Conversational Warm-Up: Agree or Disagree?",
+              "description": "Students quickly vote and give one reason for controversial tech statements (e.g. banning short-haul flights).",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Grammar Focus • Linking Words (Although, However, In spite of)",
-              "description": "Master contrast conjunctions and commas; complete 4 sentence combination drills.",
+              "title": "TOEIC Strategy: Cause & Effect in Part 7",
+              "description": "Practice analyzing texts for cause-and-effect relationships, contrasting arguments, and author stance.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Speaking Activity • Public Hearing: Smart Cameras in Public",
-              "description": "Participate in the Project Argus-Eye hearing, give sworn witness testimony, and cross-examine.",
+              "title": "Vocabulary Builder: Debate & Discussion Linking Words",
+              "description": "Linking words and phrases for counter-arguments, concessions, rhetorical questions, and conclusions.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Discussion Review & Argument Evaluation",
-              "description": "Weigh privacy vs. safety arguments and review speaking feedback with your partner.",
+              "title": "Structured Discussion & Grammar",
+              "description": "Structured classroom debate using Conjunctions (whereas, provided that) vs. Prepositions (despite, in spite of).",
               "part": "Part 4"
+            },
+            {
+              "title": "Debrief, Evaluation Prep & Wrap-Up",
+              "description": "Peer debate feedback, pronunciation check, and preparation checklist for the Session 5 evaluation.",
+              "part": "Part 5"
             }
           ]
         },
@@ -7070,78 +8831,351 @@
           ]
         },
         "lessonContent": {
-          "hero": {
-            "title": "Technology Ethics & Automated Decisions in AI",
-            "subtitle": "Archetype B • Media & Debate Lab: The High-Stakes Public Inquiry into Algorithmic Profiling, Biometric Surveillance & the EU AI Act",
+          "overview": {
             "image": "images/ag_m3card3.jpg",
-            "badge": "AG Module 3 • Session 3 • Debate Lab"
+            "title": "Technology Ethics & Automated Decisions in AI",
+            "subtitle": "Algorithmic Fairness, Explainable AI (XAI), Digital Surveillance & Tech Governance",
+            "badge": "Session Overview • Technology Ethics & Algorithmic Accountability"
           },
-          "devilsAdvocate": [
-            {
-              "claim": "If you have nothing to hide, you have nothing to fear from 24/7 facial recognition and biometric tracking at airports.",
-              "challenge": "Challenge this position: How does ubiquitous mass surveillance chill lawful civil liberties, and what happens when the algorithm makes a false-positive match?"
+          "hero": {
+            "image": "images/ag_m3card3.jpg",
+            "title": "Technology Ethics & Automated Decisions in AI",
+            "subtitle": "Algorithmic Fairness, Explainable AI (XAI), Digital Surveillance & Tech Governance",
+            "badge": "Session Overview • Technology Ethics & Algorithmic Accountability"
+          },
+          "openingSession": {
+            "title": "Activity 1: Tech Ethics Headlines & Quick Check",
+            "summary": "Opening warm-up investigating landmark regulatory rulings, algorithmic bias scandals, and fundamental governance concepts.",
+            "newsPrompts": [
+              "The European Union implements enforcement of the EU AI Act, establishing strict auditability mandates for high-risk automated decision systems.",
+              "Civil aviation safety authorities mandate that automated pilot assist software must provide explainable telemetry logs to allow human auditing during safety reviews.",
+              "Independent university researchers expose significant demographic bias in commercial facial recognition algorithms deployed at international border checkpoints."
+            ],
+            "diagnostic": {
+              "title": "Technology Ethics Concepts Quick Check",
+              "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the fundamental difference between a 'Black Box' algorithm and Explainable AI (XAI)?",
+                  "answer": "In a black-box model (such as a deep neural network with billions of parameters), the internal mathematical weights and decision paths cannot be directly understood or audited by human engineers. Explainable AI (XAI) employs interpretable architectures or post-hoc auditing methods that provide clear, human-understandable justifications for why a specific prediction or decision was made."
+                },
+                {
+                  "id": 2,
+                  "q": "How does Algorithmic Bias differ from intentional human discrimination?",
+                  "answer": "Intentional discrimination stems from deliberate prejudice by an individual or organization. Algorithmic bias occurs when an automated model reproduces or amplifies historical societal inequalities because its training data was skewed, unrepresentative, or reflected biased human decisions of the past—even when developers had no intent to discriminate."
+                },
+                {
+                  "id": 3,
+                  "q": "What is the distinction between Data Minimization and Indiscriminate Surveillance?",
+                  "answer": "Data minimization (mandated by GDPR and the EU AI Act) requires that automated systems collect, process, and retain only the absolute minimum personal data necessary to perform a specific authorized task. Indiscriminate surveillance involves mass, continuous collection and long-term retention of biometric and behavioral data across entire populations without targeted suspicion."
+                },
+                {
+                  "id": 4,
+                  "q": "In tech governance, what is the difference between Legal Compliance and Ethical Responsibility (DDRS)?",
+                  "answer": "Legal compliance means strictly adhering to written statutes and regulations currently in force. Ethical responsibility goes beyond statutory law to proactively evaluate the wider social, environmental, and human rights impacts of technology deployment, anticipating harm before legislation catches up."
+                }
+              ]
             },
-            {
-              "claim": "Algorithms are purely mathematical; therefore, they are completely immune to human bias, prejudice, and emotional error.",
-              "challenge": "Challenge this position: How does training an AI on historical policing and border data inevitably institutionalize and amplify historical societal biases?"
-            },
-            {
-              "claim": "Regulating AI with strict laws like the EU AI Act will only strangle European innovation while American and Asian tech giants dominate the globe.",
-              "challenge": "Challenge this position: Why does strong regulatory trust and transparent explainability actually create a competitive global advantage for European enterprises?"
-            }
-          ],
-          "inquiryDossier": {
-            "projectName": "Project 'Argus-Eye': The Pan-European Predictive Border Neural Network",
-            "controversy": "An automated passenger risk-scoring AI deployed across 14 international transit hubs. The system scans facial micro-expressions, analyzes luggage purchase telemetry, and automatically assigns green, amber, or red detention flags to travelers before they reach customs.",
-            "witnesses": [
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 10 mins",
+              "🗣️ Spoken Retrieval Drill",
+              "🎯 Vocabulary & Warm-Up"
+            ],
+            "instructions": [
+              "Step 1 (Headline Scan - 3 mins): Read the three headlines on autonomous AI decisions, algorithmic bias, and facial recognition bans. Discuss which controversy raises the greatest legal liability.",
+              "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Algorithmic Bias vs. Training Data Imbalance, Explainable AI [XAI] vs. Black-Box Neural Networks, Human-in-the-Loop vs. Human-on-the-Loop, Data Minimization vs. Bulk Surveillance).",
+              "Step 3 (Class Roundup - 3 mins): One student explains why 'Explainable AI' is mandatory for automated flight control and air traffic advisory tools."
+            ],
+            "deliverable": "Clear spoken definition of 1 ethical AI principle and 1 algorithmic risk concept during the teacher check.",
+            "teacherNotes": "Keep pace rapid. Emphasize that 'Black-box' models are unacceptable in safety-critical aviation systems because investigators cannot trace why a decision was made."
+          },
+          "survey": {
+            "title": "Activity 2: Ethical Tech Dilemmas & Speed Sparring",
+            "summary": "Conduct fast-paced paired debates on 4 provocative technology dilemmas. Practice making measured concessions, using polite disagreement, and softening controversial claims with cautious language.",
+            "signposts": [
+              "\"Admittedly, the operational convenience is undeniable; however, ...\"",
+              "\"While efficiency increases markedly, it is worth questioning whether...\"",
+              "\"Evidence tends to suggest that automated screening disproportionately...\"",
+              "\"To ensure ethical compliance, regulatory frameworks should require that...\""
+            ],
+            "topics": [
               {
-                "role": "Dr. Soraya Morales • Independent Algorithmic Ethics Auditor",
-                "stance": "Total Opposition • Demands Immediate System Moratorium",
-                "testimony": "Our independent audit revealed that Argus-Eye exhibits a 14.8% false-positive rate on non-Caucasian travelers. Its emotion-detection module conflates travel fatigue and stress with deception. It is an unscientific black-box violating Article 5 of the EU AI Act.",
-                "vulnerability": "Morales's audit methodology evaluated only 2,500 travelers and did not account for the latest neural network patch."
+                "id": 1,
+                "badge": "Automated CV & Hiring Algorithms",
+                "statement": "Should aviation companies allow AI algorithms to reject job applicants without human review?",
+                "pro": "Algorithms parse tens of thousands of technical resumes in seconds, objectively matching engineering qualifications without unconscious human bias regarding nationality or age.",
+                "con": "Language models trained on historical hiring patterns frequently penalize non-traditional career paths, gender diversity, and non-native English phrasing.",
+                "prompt": "Interview your partner: How can recruitment departments establish ethical auditing of automated hiring tools?"
               },
               {
-                "role": "Viktor Lindholm • Chief Security Officer, Trans-Continental Border Agency",
-                "stance": "Full Defense • Cites Unprecedented Threat Neutralization",
-                "testimony": "Argus-Eye processes 250,000 travelers daily in under 2 seconds each. In six months, it intercepted 42 human-trafficking suspects and 110 fraudulent identity rings that human border guards completely missed. Shutting it down compromises European homeland security.",
-                "vulnerability": "Lindholm cannot explain the mathematical weighting behind the risk scores because the software is proprietary black-box code."
+                "id": 2,
+                "badge": "Facial Recognition in Public Spaces",
+                "statement": "Should international transport hubs deploy real-time facial recognition surveillance across all terminal concourses?",
+                "pro": "Real-time biometric surveillance instantly detects flagged security suspects and missing persons, elevating public safety across crowded critical infrastructure.",
+                "con": "Continuous public surveillance creates chilling civil liberties erosion, high false-identification rates among minority demographics, and risks of state surveillance overreach.",
+                "prompt": "Interview your partner: Where should society draw the line between public security and biometric privacy rights?"
               },
               {
-                "role": "Hélène Dupont • Commercial Airline Passenger Coalition Lead",
-                "stance": "Conditional Reform • Demands Human-in-the-Loop Safeguards",
-                "testimony": "Passengers appreciate skipping 45-minute passport queues with biometric walkthroughs. However, when an amber flag occurs, travelers are subjected to humiliating cavity searches with zero right to know why the algorithm flagged them. We demand a guaranteed human appeals officer at every gate.",
-                "vulnerability": "Mandatory human appeals officers at every terminal will increase operating overhead by €45M annually, raising passenger airfare tickets."
+                "id": 3,
+                "badge": "Autonomous Safety Triage Systems",
+                "statement": "Should automated systems make life-or-death prioritization decisions during catastrophic emergency scenarios?",
+                "pro": "Algorithms compute multivariate physics equations in milliseconds without human panic, executing optimal risk-minimization actions far faster than human pilots.",
+                "con": "Delegating moral and ethical choices to software code dehumanizes safety decisions and creates impossible legal liability voids when fatalities occur.",
+                "prompt": "Interview your partner: How should system architects program ethical fail-safes into automated collision-avoidance systems?"
               },
               {
-                "role": "Chief Justice Karen Sterling • European Inquiry Tribunal Chair",
-                "stance": "Judicial Arbiter • Mandating Evidence-Based Reconciliation",
-                "testimony": "The Commission must determine whether Project Argus-Eye falls under the 'Unacceptable Risk' tier (prohibited under EU law) or 'High-Risk' tier (permitted with strict conformity audits and human oversight). We require clear empirical standards, not speculative fear.",
-                "vulnerability": "Must deliver a consensus ruling enforceable across 27 sovereign member states with sharply divergent national security priorities."
+                "id": 4,
+                "badge": "Generative Code & IP Sovereignty",
+                "statement": "Should engineering firms restrict software developers from using generative AI coding assistants?",
+                "pro": "Restricting AI assistants prevents corporate intellectual property from leaking into training datasets and avoids copyright infringement liabilities.",
+                "con": "AI coding assistants accelerate software prototyping by 30% and help junior programmers identify syntax bugs and vulnerabilities faster.",
+                "prompt": "Interview your partner: How can aerospace firms establish secure, closed-loop generative coding environments?"
               }
-            ]
+            ],
+            "modeBadges": [
+              "👥 Rotating Pairs",
+              "⏱️ 25 mins",
+              "🗣️ Speed Discussion",
+              "🎯 Stance & Linking Words"
+            ],
+            "instructions": [
+              "Step 1 (Stance Preparation - 4 mins): Review the 4 ethical technology dilemmas below (Autonomous Drone Delivery, AI Recruitment Filtering, Predictive Policing at Customs, Generative AI for Maintenance Manuals). Decide your ethical boundary on each.",
+              "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Debate each topic using polite disagreement and concession linkers ('While I concede that efficiency increases,... nevertheless...', 'Granted, the model is fast, but...').",
+              "Step 3 (Consensus - 5 mins): Return to your primary partner. Agree on which automated decision should be banned completely in civil aviation."
+            ],
+            "deliverable": "4 completed partner debate records with documented arguments and counter-arguments on technology ethics.",
+            "teacherNotes": "Listen for polite concession phrases: 'Granted,... nevertheless', 'While it is true that...'. Encourage students to challenge each other diplomatically."
           },
-          "argumentClinic": {
+          "grammarClinic": {
+            "title": "Activity 3: Language Focus: Cautious Language & Polite Disagreement",
+            "summary": "Mastering diplomatic arguments, polite concession, and cautious phrasing to sound professional, objective, and persuasive in B2 workplace debates.",
             "rules": [
               {
-                "title": "1. The Ethical Concession & Pivot",
-                "formula": "While I do not contest [the security value of X], it cannot justify [the systemic breach of Y].",
-                "example": "<em>While I do not contest the need to intercept traffickers</em>, that objective cannot justify deploying racially biased black-box algorithms across millions of innocent travelers."
+                "type": "Concession Structures (Admittedly... nevertheless / While it is true that...)",
+                "formula": "Admittedly, [concession]; however / nevertheless, [counter-argument]",
+                "usage": "Acknowledge the validity of an opposing point before presenting your stronger counter-argument. (e.g., 'Admittedly, automated screening expedites passenger flow; nevertheless, false-rejection error rates remain problematic.')"
               },
               {
-                "title": "2. The Burden-of-Proof Reversal",
-                "formula": "Before this technology is unleashed, the burden of proof rests entirely on [proponent] to demonstrate that [safety claim].",
-                "example": "<em>The burden of proof rests entirely on the agency</em> to demonstrate scientifically that micro-expression analysis is not pseudoscience."
+                "type": "Cautious Verbs & Modifiers (tend to / suggest / appear to / arguably)",
+                "formula": "Subject + tends to / appears to / suggests that + clause",
+                "usage": "Softens dogmatic claims into professional, evidence-based assertions. (e.g., 'The empirical data appears to indicate that algorithmic bias decreases with diverse training sets.')"
               },
               {
-                "title": "3. Challenging False Dichotomies",
-                "formula": "It is a dangerous false dichotomy to suggest that we must sacrifice [fundamental right A] in order to preserve [security benefit B].",
-                "example": "<em>It is a dangerous false dichotomy to suggest</em> that Europeans must choose between civil privacy and physical aviation security."
-              },
-              {
-                "title": "4. The Constructive Regulatory Remedy",
-                "formula": "Rather than an outright ban or unregulated deployment, the legally proportionate remedy is [precise safeguard].",
-                "example": "<em>Rather than an outright ban</em>, <em>the legally proportionate remedy is</em> mandatory open-source algorithm auditing and immediate right-of-explanation for every flagged traveler."
+                "type": "Qualifying Generalizations (In many respects / To a certain extent / For the most part)",
+                "formula": "[Qualifying phrase], [main proposition]",
+                "usage": "Avoids sweeping overstatements like 'all AI is dangerous' or 'automation always fails'. (e.g., 'To a certain extent, ethical guidelines have mitigated algorithmic discrimination.')"
               }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "________ biometric surveillance enhances security, its threat to civil liberties remains profound.",
+                "options": [
+                  "Admittedly",
+                  "While",
+                  "Nevertheless",
+                  "Despite"
+                ],
+                "correct": "While",
+                "explanation": "Subordinating conjunction 'While' introduces the concession clause linked to the main clause."
+              },
+              {
+                "id": 2,
+                "sentence": "The audit findings ________ suggest that the automated screening model was trained on skewed historical datasets.",
+                "options": [
+                  "tend to",
+                  "tending",
+                  "tendency",
+                  "is tending"
+                ],
+                "correct": "tend to",
+                "explanation": "Cautious expression 'tend to + base verb' accurately softens the statement without sounding overly certain."
+              },
+              {
+                "id": 3,
+                "sentence": "High-risk algorithms must undergo rigorous third-party auditing; ________, regulatory enforcement remains inconsistent across regions.",
+                "options": [
+                  "furthermore",
+                  "nonetheless",
+                  "because",
+                  "similarly"
+                ],
+                "correct": "nonetheless",
+                "explanation": "Adverbial conjunction 'nonetheless' signals a strong contrastive counter-point."
+              },
+              {
+                "id": 4,
+                "sentence": "To a certain ________, automated flight rebooking systems reduce stress during massive storm cancellations.",
+                "options": [
+                  "extend",
+                  "extent",
+                  "extensive",
+                  "extensively"
+                ],
+                "correct": "extent",
+                "explanation": "Fixed qualifying collocation 'To a certain extent' requires the noun form 'extent'."
+              }
+            ],
+            "modeBadges": [
+              "👥 Pairs / Solo",
+              "⏱️ 20 mins",
+              "✍️ Grammar Practice",
+              "🎯 Diplomatic Language"
+            ],
+            "instructions": [
+              "Step 1 (Rule Review - 5 mins): Study the 3 formulas for diplomatic counter-argumentation: Polite Concession ('While I understand that X, we must consider Y'), Cautious Assertion ('It could be argued that...', 'Evidence suggests that...'), and Formal Refutation ('That claim is not supported by empirical data').",
+              "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive practice prompts individually, rewriting blunt, aggressive statements into polite, professional diplomatic phrases.",
+              "Step 3 (Pair Verification - 7 mins): Practice speaking your revised sentences aloud with your partner. Focus on natural, calm intonation rather than defensive tone."
+            ],
+            "deliverable": "4 accurately reformulated diplomatic counter-arguments documented in study notes.",
+            "teacherNotes": "French speakers often translate 'Je pense que' into blunt English: 'You are wrong' or 'I disagree completely.' Train students to soften disagreements: 'While I take your point, the risk appears too high.'"
+          },
+          "roleplay": {
+            "title": "Activity 4: AI Ethics Oversight Committee Hearing",
+            "scenario": "A European transport authority is reviewing the commercial deployment of an AI-driven behavioral anomaly detection system at major hub stations. Student A (Lead Algorithmic Systems Engineer) defends the accuracy, threat detection efficacy, and compliance of the platform. Student B (Civil Liberties & Ethics Commissioner) interrogates bias rates, false arrests, and human dignity safeguards.",
+            "roles": [
+              {
+                "role": "Lead Algorithmic Systems Engineer",
+                "title": "System Architect",
+                "objectives": [
+                  "Explain that the neural network analyzes only movement vectors, luggage dwell times, and perimeter breaches—not personal identities.",
+                  "Show that 98.4% of detected anomalies are verified as genuine safety hazards.",
+                  "Propose automated log anonymization every 24 hours to protect commuter privacy."
+                ],
+                "keyPhrases": [
+                  "\"Our behavioral model processes spatial vectors rather than demographic or facial profiles...\"",
+                  "\"Admittedly, sensor occlusion can cause false flags; nevertheless, human operators verify all alerts...\"",
+                  "\"The system operates under strict data minimization guidelines compliant with the EU AI Act...\""
+                ]
+              },
+              {
+                "role": "Civil Liberties & Ethics Commissioner",
+                "title": "Regulatory Oversight Auditor",
+                "objectives": [
+                  "Interrogate the 1.6% false-positive rate and its real-world impact on innocent commuters.",
+                  "Demand full compliance with the European AI Act's high-risk transparency and explainability mandates.",
+                  "Insist on strict criminal penalties if facial recognition or demographic profiling is secretly enabled."
+                ],
+                "keyPhrases": [
+                  "\"In a high-throughput hub serving 100,000 commuters daily, a 1.6% false-positive rate subjects 1,600 innocent citizens to harassment...\"",
+                  "\"Can you provide verifiable cryptographic proof that facial biometrics are not extracted during vector analysis?\"",
+                  "\"Without independent algorithmic auditing and transparent appeal mechanisms, this deployment cannot be certified...\""
+                ]
+              }
+            ],
+            "modeBadges": [
+              "👥 Small Groups (3-4)",
+              "⏱️ 45 mins",
+              "🎭 Ethics Hearing & Defense",
+              "🎯 Regulatory Defense & Q&A"
+            ],
+            "instructions": [
+              "Step 1 (Stakeholder Briefing - 10 mins): In groups of 3 or 4, take on assigned roles: Lead AI Research Engineer, Civil Aviation Authority Safety Inspector, Passenger Rights Advocate, or Corporate Legal Counsel.",
+              "Step 2 (Position Preparation - 15 mins): Prepare your 2-minute testimony regarding an airline's proposed dynamic pricing and algorithmic overbooking model that uses passenger biometric tracking and credit scoring.",
+              "Step 3 (Oversight Hearing - 15 mins): Convene the hearing: each delegate delivers their testimony and answers tough follow-up questions from the Safety Inspector and Passenger Advocate.",
+              "Step 4 (Regulatory Ruling - 5 mins): The Committee votes to approve, amend, or reject the AI deployment, citing specific GDPR and aviation safety regulations."
+            ],
+            "deliverable": "A written 3-clause ethics ruling and active participation during the committee Q&A session.",
+            "teacherNotes": "Challenge the Lead Engineer: 'If an emergency occurs and your algorithmic model cancels 200 passenger seats, who takes legal liability?'"
+          },
+          "feChecklist": [
+            "Add 5 technology ethics and governance terms to your Vocabulary Log.",
+            "Practice framing technical debate arguments using concession and cautious language structures.",
+            "Draft Dimension 3 (DDRS, Ethical, Regulatory & Societal Challenges) for your FE3 presentation."
+          ],
+          "closingReview": {
+            "title": "Activity 5: Wrap-Up & FE3 Preparation",
+            "summary": "Consolidation, pronunciation practice, and portfolio check",
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 15 mins",
+              "🎧 Audio Drill & Exit Summary",
+              "🎯 Portfolio & FE3 Prep"
+            ],
+            "instructions": [
+              "Step 1 (Checklist Audit - 5 mins): Audit your partner's portfolio using the Session 3 FE3 checklist: verify notes on algorithmic bias, explainable AI, and diplomatic concession phrases.",
+              "Step 2 (Pronunciation Drill - 6 mins): Practice pronouncing complex ethical terms aloud: 'au-TON-o-mous', 'trans-PAR-en-cy', 'lia-BIL-i-ty', 'al-go-RITH-mic'.",
+              "Step 3 (Exit Summary - 4 mins): Write one personal reflection on how ethical engineering principles will impact your future career at ENAC or DGAC."
+            ],
+            "deliverable": "Completed FE3 readiness checklist and verified pronunciation log in student portfolios.",
+            "teacherNotes": "Remind students that Formative Evaluation 3 (FE3) takes place in Week 08. Active use of diplomatic linking words carries significant marks in Spoken Interaction."
+          }
+        },
+        "overview": {
+          "intro": "In this session, you hone your debate and critical thinking skills on the wider impact of emerging technology on society, employment, and ethics. Through structured group debates, you will practise challenging assumptions, defending ethical boundaries, and expressing complex viewpoints in fluent, clear spoken English.",
+          "whyItMatters": "As technology evolves, professionals must not only understand how systems work, but also debate their societal consequences. Learning to articulate ethical positions, present balanced arguments, and handle rapid peer debate in English gives you advanced communicative polish for your Formative Evaluation and international discussions.",
+          "keyTerms": [
+            {
+              "term": "Ethical Dilemma",
+              "ipa": "/ˈeθ.ɪ.kəl daɪˈlem.ə/",
+              "definition": "A complex situation involving a difficult choice between two morally conflicting principles."
+            },
+            {
+              "term": "Digital Divide",
+              "ipa": "/ˈdɪdʒ.ɪ.təl dɪˈvaɪd/",
+              "definition": "The socio-economic gap between those who have ready access to computers and the internet and those who do not."
+            },
+            {
+              "term": "Technological Unemployment",
+              "ipa": "/ˌtek.nəˈlɒdʒ.ɪ.kəl ˌʌn.ɪmˈplɔɪ.mənt/",
+              "definition": "Job losses caused by the introduction of labor-saving machines and software automation."
+            },
+            {
+              "term": "Surveillance Society",
+              "ipa": "/səˈveɪ.ləns səˈsaɪ.ə.ti/",
+              "definition": "A community where people's daily movements and communications are monitored systematically by cameras or data."
+            },
+            {
+              "term": "Accountability",
+              "ipa": "/əˌkaʊn.təˈbɪl.ə.ti/",
+              "definition": "The legal and moral obligation of individuals and companies to accept responsibility for their actions."
+            },
+            {
+              "term": "Disinformation",
+              "ipa": "/ˌdɪs.ɪn.fəˈmeɪ.ʃən/",
+              "definition": "False or misleading information deliberately spread to deceive public opinion or manipulate elections."
+            },
+            {
+              "term": "Deepfake",
+              "ipa": "/ˈdiːp.feɪk/",
+              "definition": "Synthetic digital media in which a person's face or voice is convincingly replaced using deep neural networks."
+            },
+            {
+              "term": "Right to Disconnect",
+              "ipa": "/raɪt tuː ˌdɪs.kəˈnekt/",
+              "definition": "The legal right of workers not to engage in work-related communications outside of contracted hours."
+            },
+            {
+              "term": "Technological Determinism",
+              "ipa": "/ˌtek.nəˈlɒdʒ.ɪ.kəl dɪˈtɜː.mɪ.nɪ.zəm/",
+              "definition": "The theory that technology is the principal driver of social, cultural, and historical change."
+            },
+            {
+              "term": "Regulatory Framework",
+              "ipa": "/ˈreɡ.jə.lə.tər.i ˈfreɪm.wɜːk/",
+              "definition": "A formal system of laws, standards, and rules designed to guide and limit technological use."
+            }
+          ],
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or ethical considerations to support your group's argument.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Artificial intelligence models that generate hyper-realistic deepfake audio and video should be banned by international law.",
+              "group2": "The rapid automation of routine white-collar and administrative jobs will create mass technological unemployment that society cannot absorb.",
+              "group3": "Governments should enforce a strict legal 'Right to Disconnect' with heavy fines for employers who email staff outside work hours."
+            },
+            "usefulPhrases": [
+              "Our group tackled the ethical question of...",
+              "A fundamental principle we must consider is...",
+              "While proponents argue for technological progress, we believe...",
+              "To summarize our group's consensus..."
             ]
           }
         }
@@ -7149,54 +9183,64 @@
       "4": {
         "session": 4,
         "objectives": {
-          "title": "Session 4 Objectives - Biometrics, Digital IDs & Passenger Journey",
-          "summary": "By the end of this session, you will be able to explain how digital passports and biometric airport gates work, use relative clauses to define technical equipment, negotiate passenger rights in a team, and rehearse for your final presentation.",
+          "title": "Session 4 - Biometrics and digital identity Objectives",
+          "summary": "By the end of this session, you will be able to discuss biometrics and digital identity with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
           "items": [
             {
               "num": 1,
-              "title": "Learn Key Vocabulary: Passports, Face Scans & Digital Travel",
-              "description": "Learn 8 useful words for digital passports, walkthrough gates, face recognition, and data privacy."
+              "title": "Practice TOEIC Part 5 Dependent Prepositions & Common Collocations",
+              "description": "Identify high-frequency verb + preposition combinations (comply with, specialize in, account for) in test sentences."
             },
             {
               "num": 2,
-              "title": "Grammar Focus: Relative Clauses (Who, Which, That, Where)",
-              "description": "Define equipment and procedures accurately using defining and non-defining relative clauses."
+              "title": "Master Vocabulary for Digital Passports, Facial Recognition & Data Privacy",
+              "description": "Learn key vocabulary for contactless travel, biometric authentication, encrypted data, and cybersecurity."
             },
             {
               "num": 3,
-              "title": "Speaking Activity: Agreeing on Airport Passenger Rules",
-              "description": "Work in a team to negotiate an international passenger charter on biometric data and opt-out rights."
+              "title": "Form Common Business Collocations (comply with, meet standards)",
+              "description": "Use natural word pairings in professional speaking and writing to sound more fluent and accurate."
             },
             {
               "num": 4,
-              "title": "Speaking Practice: FE3 Final Presentation Practice & Sign-Off",
-              "description": "Deliver a timed 2-minute partner presentation dry run against the official FE3 scoring rubric."
+              "title": "Discuss Privacy Rights and Ethical Data Governance in Travel (DDRS)",
+              "description": "Evaluate how border authorities and tech companies can respect passenger privacy and fundamental rights."
+            },
+            {
+              "num": 5,
+              "title": "Rehearse and Polish Your Session 5 Formative Evaluation Topic",
+              "description": "Deliver a mock assessment talk, focusing on clear signposting, fluent delivery, and responding to follow-up questions."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 4 Lesson Plan - Biometrics, Digital IDs & Passenger Journey (2 Hours)",
-          "summary": "A station-based workshop and treaty negotiation tournament analyzing contactless travel architectures, biometric data sovereignty, and culminating in full rehearsal for the Formative Evaluation 3 (FE3) presentations.",
+          "title": "Session 4 Lesson Plan (2 Hours)",
+          "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
           "items": [
             {
-              "title": "Part 1: Key Vocabulary • Passports, Face Scans & Digital Travel",
-              "description": "Learn 8 digital travel words, check syllable stress, and complete the passenger step drill.",
+              "title": "Conversational Warm-Up: Digital Check-in",
+              "description": "Students share experiences with digital boarding passes, e-gates, and smartphone authentication.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Grammar Focus • Relative Clauses (Who, Which, That, Where)",
-              "description": "Master relative pronouns and comma placement; complete 4 sentence combination drills.",
+              "title": "TOEIC Strategy: Collocations & Prepositions in Part 5",
+              "description": "Timed completion of Part 5 questions testing verb-noun collocations and dependent prepositions.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Speaking Activity • Agreeing on Airport Passenger Rules",
-              "description": "Rotate through 3 travel technology stations and negotiate the 5-point passenger charter.",
+              "title": "Vocabulary Builder: Identity & Cybersecurity",
+              "description": "Key vocabulary for biometric authentication, facial recognition, data privacy, GDPR, and cyber protection.",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: FE3 Final Presentation Practice & Sign-Off",
-              "description": "Deliver a timed 2-minute presentation dry run with your partner against the official FE3 criteria.",
+              "title": "Structured Discussion & Grammar",
+              "description": "Debate the balance between seamless travel and personal privacy using Business Collocations (ensure compliance, uphold standards).",
               "part": "Part 4"
+            },
+            {
+              "title": "Final Evaluation Simulation & Wrap-Up",
+              "description": "Complete mock evaluation talk under timed conditions with teacher and peer rubric scoring.",
+              "part": "Part 5"
             }
           ]
         },
@@ -7552,73 +9596,351 @@
           ]
         },
         "lessonContent": {
-          "hero": {
-            "title": "Biometrics, Digital IDs & Passenger Journey",
-            "subtitle": "Archetype D • Interactive Stations & Negotiation Tournament: Contactless Airport Corridors, Biometric Sovereignty & FE3 Readiness",
+          "overview": {
             "image": "images/ag_m3card4.jpg",
-            "badge": "AG Module 3 • Session 4 • Interactive Stations"
+            "title": "Biometrics, Digital IDs & Passenger Journey",
+            "subtitle": "Contactless E-Gates, IATA One ID, Cybersecurity & Biometric Data Sovereignty",
+            "badge": "Session Overview • Biometrics & Digital Identity"
           },
-          "borderParadox": {
-            "headline": "The Frictionless Paradox: The 10-Second Curb-to-Gate Dream vs. Biometric Permanence",
-            "context": "Global international air travel is projected to reach 8 billion passengers annually. Traditional physical passport checks and paper boarding passes cannot scale to meet this volume without creating 3-hour airport queues. In response, international hubs are deploying seamless 'One ID' biometrics where a traveler's face serves as their passport, ticket, and credit card from curb to aircraft door. However, unlike a password or physical credit card that can be reissued if compromised, your biological face and iris cannot be changed if the central database is breached by state-sponsored hackers.",
-            "dilemma": "How can aviation authorities deliver seamless, high-throughput passenger movement while guaranteeing 100% cryptographic sovereignty and giving travelers an unpenalized right to opt out?"
+          "hero": {
+            "image": "images/ag_m3card4.jpg",
+            "title": "Biometrics, Digital IDs & Passenger Journey",
+            "subtitle": "Contactless E-Gates, IATA One ID, Cybersecurity & Biometric Data Sovereignty",
+            "badge": "Session Overview • Biometrics & Digital Identity"
           },
-          "stations": [
-            {
-              "num": 1,
-              "title": "Station 1: High-Throughput Walkthrough Biometric Tunnels",
-              "icon": "🚶",
-              "badge": "Terminal Architecture",
-              "coreTech": "High-Speed Infrared Stereoscopy + Lidar Gait Analysis + Automated Turnstiles",
-              "keyInsight": "Passengers walk at a normal pace of 1.4 m/s through an open glass corridor without stopping or looking directly at cameras. Infrared sensors capture facial geometry and iris patterns in 180 milliseconds, validating credentials against the airline departure control manifest.",
-              "discussionPrompts": [
-                "How do walkthrough biometric tunnels prevent tailgating or simultaneous double-entries without requiring physical barrier gates to slam shut?",
-                "What backup operational protocol must activate within 5 seconds if a passenger wearing heavy cosmetic makeup or religious headwear is rejected?"
+          "openingSession": {
+            "title": "Activity 1: Smart Airport News & Biometric Warm-Up Check",
+            "summary": "Opening warm-up examining international contactless airport implementations and key cryptographic/biometric distinctions.",
+            "newsPrompts": [
+              "Singapore Changi and Dubai International roll out passport-free 'curb-to-gate' biometric boarding using single-token facial recognition.",
+              "International air transport bodies publish interoperability standards for decentralized digital identity wallets, replacing paper boarding passes.",
+              "Cybersecurity agencies issue alerts regarding credential stuffing and biometric database breaches targeting international transit networks."
+            ],
+            "diagnostic": {
+              "title": "Biometric & Identity Concepts Quick Check",
+              "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "What is the critical distinction between Biometric Verification (1:1) and Biometric Identification (1:N)?",
+                  "answer": "Biometric verification (one-to-one, 1:1) matches a newly captured scan directly against an existing credential presented by the user (such as comparing a live face scan to the encrypted chip on their passport). Biometric identification (one-to-many, 1:N) searches an unknown person's scan across an entire database of millions of records to find a match without any presented identity document."
+                },
+                {
+                  "id": 2,
+                  "q": "How does a Centralized Biometric Database differ from Decentralized Digital Identity (Self-Sovereign Identity)?",
+                  "answer": "A centralized database stores the biometric templates of millions of travelers in a single government or corporate server—creating an irresistible high-value target for hackers. Decentralized digital identity stores encrypted verifiable credentials locally on the traveler's secure smartphone hardware enclave, sharing only cryptographic proofs rather than raw biometric files."
+                },
+                {
+                  "id": 3,
+                  "q": "What is the difference between a Barcode Boarding Pass and a Biometric Single Token?",
+                  "answer": "A barcode boarding pass is a static printed or digital 2D optical code that must be manually presented and scanned alongside a passport at every checkpoint (bag drop, security, border, boarding gate). A biometric single token creates a temporary encrypted digital profile linking the traveler's face to their itinerary, allowing walk-through access through all checkpoints without ever showing a document."
+                },
+                {
+                  "id": 4,
+                  "q": "In biometric systems engineering, what is the trade-off between False Acceptance Rate (FAR) and False Rejection Rate (FRR)?",
+                  "answer": "False Acceptance Rate (FAR) is the percentage of unauthorized individuals incorrectly accepted as a match (a critical security failure). False Rejection Rate (FRR) is the percentage of legitimate travelers incorrectly rejected (a passenger convenience and throughput failure). Calibrating the algorithm to achieve zero FAR inherently raises FRR, causing gate bottlenecks."
+                }
               ]
             },
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 10 mins",
+              "🗣️ Spoken Retrieval Drill",
+              "🎯 Vocabulary & Warm-Up"
+            ],
+            "instructions": [
+              "Step 1 (Headline Scan - 3 mins): Read the 3 real-world smart airport news prompts with your partner. Discuss which biometric technology has the greatest operational benefit.",
+              "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Facial Recognition vs. Contactless Iris Scanning, Data Sovereignty vs. Centralized Cloud, IATA One ID vs. Legacy Boarding Passes, False Acceptance Rate [FAR] vs. False Rejection Rate [FRR]).",
+              "Step 3 (Class Roundup - 3 mins): One pair shares their definition of Data Sovereignty with the class."
+            ],
+            "deliverable": "Clear spoken definition of 1 biometric passenger technology and 1 privacy protection concept during the teacher check.",
+            "teacherNotes": "Keep pace brisk. Elicit student opinions on e-Gates and ensure correct pronunciation of 'biometric' (bye-oh-MET-rik) and 'sovereignty' (SOV-rin-tee)."
+          },
+          "survey": {
+            "title": "Activity 2: Seamless Travel & Digital Privacy: Speed Survey",
+            "summary": "Conduct structured speed-dating interviews on 4 controversial frontiers in digital travel credentials. Practice deploying complex noun phrases, defining relative clauses, and defending cybersecurity safeguards.",
+            "signposts": [
+              "\"In terms of terminal throughput, contactless e-gates...\"",
+              "\"The fundamental vulnerability of centralized biometric storage is that...\"",
+              "\"Under international data privacy frameworks like GDPR, passengers must retain...\"",
+              "\"To reconcile border security with civil rights, systems must implement...\""
+            ],
+            "topics": [
+              {
+                "id": 1,
+                "badge": "Passport-Free Walk-Through Terminals",
+                "statement": "Should all international airports eliminate physical passport checks in favor of mandatory facial biometric boarding?",
+                "pro": "Biometric tokens slash boarding times from 40 minutes to under 15 minutes per widebody flight, eliminate boarding pass fraud, and create a frictionless passenger experience.",
+                "con": "Mandatory biometrics excludes travelers who decline facial recognition, concentrates immense surveillance power in private airport hands, and creates border bottlenecks if scanners fail.",
+                "prompt": "Interview your partner: How can airports preserve seamless travel while offering robust non-biometric manual opt-outs?"
+              },
+              {
+                "id": 2,
+                "badge": "Biometric Data Breaches",
+                "statement": "Is storing biometric scans fundamentally more hazardous than storing alphanumeric passwords or credit cards?",
+                "pro": "Unlike passwords or credit card numbers, you cannot cancel or reset your facial geometry, iris patterns, or fingerprints if a database is compromised.",
+                "con": "Modern biometric systems do not store raw photos; they store one-way irreversibly encrypted mathematical hashes that are useless to hackers without the cryptographic key.",
+                "prompt": "Interview your partner: What cybersecurity protocols must airports implement to protect biometric hash databases?"
+              },
+              {
+                "id": 3,
+                "badge": "Global Digital Health & Climate Credentials",
+                "statement": "Should digital identity wallets integrate passenger carbon footprint tracking and health records for international travel?",
+                "pro": "Integrated digital wallets streamline immigration clearances, reward low-carbon travel choices, and prevent the spread of infectious pathogens during global health emergencies.",
+                "con": "Merging health, carbon, and travel data into a single digital identity creates dystopian digital surveillance and social credit risks.",
+                "prompt": "Interview your partner: How can data minimization prevent digital identity creep?"
+              },
+              {
+                "id": 4,
+                "badge": "Interoperability & Cross-Border Sovereignty",
+                "statement": "Can sovereign nations establish a unified international biometric standard without compromising citizen data privacy?",
+                "pro": "IATA One ID and ICAO digital travel credentials demonstrate that standardized cryptographic verification works globally without sharing raw citizen databases.",
+                "con": "Authoritarian regimes may use international biometric protocols to track political dissidents abroad and restrict travel freedom.",
+                "prompt": "Interview your partner: How does the European Union regulate cross-border biometric data transfers with third-party nations?"
+              }
+            ],
+            "modeBadges": [
+              "👥 Rotating Pairs",
+              "⏱️ 25 mins",
+              "🗣️ Speed Discussion",
+              "🎯 Stance & Linking Words"
+            ],
+            "instructions": [
+              "Step 1 (Stance Preparation - 4 mins): Review the 4 passenger privacy dilemmas below (Mandatory Facial Scans at Boarding, Commercial Data Sharing with Retailers, Biometric Cyber Attacks, Opt-Out Rights). Choose your stance on each.",
+              "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Discuss one dilemma per round using at least two linking phrases ('On the one hand...', 'While I accept that...', 'In contrast to...').",
+              "Step 3 (Consensus - 5 mins): Return to your primary partner. Agree on which biometric check should remain strictly voluntary for passengers."
+            ],
+            "deliverable": "4 completed partner discussion notes with balanced arguments on biometric convenience vs. civil liberties.",
+            "teacherNotes": "Ring a bell or call time every 4 minutes to force partner rotation. Listen for natural linking phrases and polite disagreement."
+          },
+          "grammarClinic": {
+            "title": "Activity 3: Language Focus: Relative Clauses & Complex Noun Phrases",
+            "summary": "Mastering defining vs. non-defining relative clauses and information-dense technical noun phrases to construct sophisticated descriptions of complex engineering systems.",
+            "rules": [
+              {
+                "type": "Defining Relative Clauses (Essential Information / No Commas)",
+                "formula": "Noun + that / who / which + clause",
+                "usage": "Defines exactly which item is being discussed; cannot be omitted. (e.g., 'Biometric algorithms that rely on single-angle 2D cameras exhibit higher error rates in low lighting.')"
+              },
+              {
+                "type": "Non-Defining Relative Clauses (Extra Information / Separated by Commas)",
+                "formula": "Noun, which / who + clause,",
+                "usage": "Provides interesting or supplementary context about a noun already clearly identified; 'that' cannot be used. (e.g., 'The IATA One ID platform, which was introduced to streamline hub departures, employs decentralized cryptographic tokens.')"
+              },
+              {
+                "type": "Preposition + Relative Pronoun (Formal Technical Register)",
+                "formula": "Noun + preposition + whom / which + clause",
+                "usage": "Standard in official engineering specifications. (e.g., 'The secure hardware enclave from which the biometric proof is generated never transmits raw facial imagery.')"
+              }
+            ],
+            "drills": [
+              {
+                "id": 1,
+                "sentence": "Passengers ________ opt out of biometric scanning are directed to traditional manual document inspection desks.",
+                "options": [
+                  "which",
+                  "who",
+                  "whom",
+                  "whose"
+                ],
+                "correct": "who",
+                "explanation": "Relative pronoun 'who' refers to human subjects ('passengers') in a defining relative clause."
+              },
+              {
+                "id": 2,
+                "sentence": "The e-gate optical sensors, ________ manufactured by an accredited aerospace defense contractor, meet ICAO Category 1 precision standards.",
+                "options": [
+                  "that are",
+                  "which are",
+                  "what are",
+                  "whom are"
+                ],
+                "correct": "which are",
+                "explanation": "Non-defining relative clause enclosed by commas requires 'which are', not 'that'."
+              },
+              {
+                "id": 3,
+                "sentence": "The encrypted terminal server ________ which passenger flight tokens are validated requires multi-factor authentication.",
+                "options": [
+                  "at",
+                  "on",
+                  "through",
+                  "with"
+                ],
+                "correct": "through",
+                "explanation": "Preposition 'through' logically describes the validation pathway ('validated through which')."
+              },
+              {
+                "id": 4,
+                "sentence": "Biometric algorithms ________ train on ethnically diverse facial datasets show significantly lower false-rejection error rates.",
+                "options": [
+                  "that",
+                  "whose",
+                  "whom",
+                  "what"
+                ],
+                "correct": "that",
+                "explanation": "Defining relative pronoun 'that' correctly modifies the system subject ('algorithms')."
+              }
+            ],
+            "modeBadges": [
+              "👥 Pairs / Solo",
+              "⏱️ 20 mins",
+              "✍️ Grammar Practice",
+              "🎯 Sentence Combining"
+            ],
+            "instructions": [
+              "Step 1 (Rule Review - 5 mins): Examine the 3 relative clause formulas: Defining ('who, which, that'), Non-defining ('which, who' with commas), and Preposition + Relative Pronoun ('through which, for whom').",
+              "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive sentence combining challenge questions individually. Combine short technical sentences into elegant complex structures.",
+              "Step 3 (Pair Verification - 7 mins): Click 'Reveal Answer & Explanation' to verify your solutions. Discuss why non-defining clauses require commas in written technical English."
+            ],
+            "deliverable": "Accurate completion of the 4 relative clause drills with correct punctuation documented in study notes.",
+            "teacherNotes": "Highlight that non-defining clauses provide extra non-essential detail and must have commas: 'The new biometric gates, which cost €4 million, opened yesterday.'"
+          },
+          "roleplay": {
+            "title": "Activity 4: Designing the 2030 Smart Travel Terminal",
+            "scenario": "AirHub International is designing a new €800M contactless departure terminal concourse. Student A (Airport Passenger Experience Director) presents a completely biometric walk-through passenger flow. Student B (Chief Information Security Officer & Data Privacy Ombudsman) interrogates cybersecurity resilience, hardware fallback procedures during network blackouts, and passenger consent protocols.",
+            "roles": [
+              {
+                "role": "Passenger Experience Director",
+                "title": "Seamless Flow Architect",
+                "objectives": [
+                  "Demonstrate average curb-to-aircraft boarding time of 9 minutes per traveler.",
+                  "Propose automated baggage drop stands that link baggage tags directly to the passenger's face scan.",
+                  "Argue that 90% of business travelers prefer biometric convenience over paper documents."
+                ],
+                "keyPhrases": [
+                  "\"Single-token biometric processing eliminates physical document checks at five consecutive touchpoints...\"",
+                  "\"Boarding gate throughput accelerates by 300%, allowing widebody aircraft to turnaround in 35 minutes...\"",
+                  "\"Travelers enroll securely from their smartphones before arriving at the airport...\""
+                ]
+              },
+              {
+                "role": "Chief Information Security Officer (CISO)",
+                "title": "Cybersecurity & Privacy Ombudsman",
+                "objectives": [
+                  "Demand that all biometric hashes be permanently deleted from terminal cache memory 60 minutes after flight departure.",
+                  "Require an unhackable local offline fallback protocol for manual document checks during IT or cloud network outages.",
+                  "Mandate clearly signposted, dignified manual opt-out corridors with identical throughput speeds."
+                ],
+                "keyPhrases": [
+                  "\"Zero-trust cybersecurity architecture mandates that no biometric templates are retained on local gate controllers...\"",
+                  "\"If a wide-area cloud outage occurs, we must possess manual verification corridors to prevent total airport gridlock...\"",
+                  "\"Under European privacy regulations, biometric participation must be strictly consensual with zero discrimination for opt-outs...\""
+                ]
+              }
+            ],
+            "modeBadges": [
+              "👥 Small Groups (3-4)",
+              "⏱️ 45 mins",
+              "🎭 Design Taskforce & Hearing",
+              "🎯 Negotiation & Defense"
+            ],
+            "instructions": [
+              "Step 1 (Role Allocation - 5 mins): Form groups of 3 or 4 and assign stakeholder roles: (A) Airport Operational Director, (B) Data Protection & Privacy Commissioner, (C) International Airline Operations Manager, (D) Cybersecurity Specialist.",
+              "Step 2 (Terminal Blueprint Design - 15 mins): Design a 4-step passenger journey from curbside to gate (Bag Drop, Security Checkpoint, Duty-Free, Boarding Gate) specifying biometric touchpoints and privacy safeguards.",
+              "Step 3 (Stakeholder Hearing - 20 mins): Present your terminal design to the class. Defend your data storage policy against tough follow-up questions from the Privacy Commissioner and Cybersecurity Lead.",
+              "Step 4 (Plenary Verdict - 5 mins): The class votes on which group created the best balance of speed, convenience, and GDPR compliance."
+            ],
+            "deliverable": "A complete 4-step biometric terminal blueprint and a 2-minute verbal defense during the stakeholder hearing.",
+            "teacherNotes": "Ensure all group members speak during the hearing. Challenge students on data retention: 'Where are the facial scans stored, and for how long?'"
+          },
+          "feChecklist": [
+            "Add 5 biometrics, digital identity, and cybersecurity terms to your Vocabulary Log.",
+            "Refine your presentation slides with technical relative clauses and clear data visualizations.",
+            "Finalize your Formative Evaluation 3 (FE3) rehearsal: verify 50/50 talking balance and ensure zero reading from slides or notes."
+          ],
+          "closingReview": {
+            "title": "Activity 5: 10-Minute Vocabulary Wrap-Up & FE3 Readiness Check",
+            "summary": "Consolidation, pronunciation practice, and portfolio check",
+            "modeBadges": [
+              "👥 Pairs / Plenary",
+              "⏱️ 10 mins",
+              "🎧 Audio Drill & Exit Summary",
+              "🎯 FE3 Milestone Prep"
+            ],
+            "instructions": [
+              "Step 1 (Audio Pronunciation Drill - 4 mins): Click through the 18 key technical vocabulary items to hear authentic pronunciation. Practice repeating aloud with your partner.",
+              "Step 2 (Rapid Definition Test - 4 mins): Test your partner on 3 random terms from the word cloud (e.g., contactless e-Gate, encryption key, single token travel).",
+              "Step 3 (Exit Summary - 2 mins): Write down two target biometric vocabulary terms and one relative clause structure you will use in your FE3 presentation."
+            ],
+            "deliverable": "Signed partner vocabulary verification and completed 2-sentence exit summary.",
+            "teacherNotes": "Remind students that FE3 is coming up in Week 08. Emphasize that spontaneous speaking and accurate technical vocabulary carry significant weighting."
+          }
+        },
+        "overview": {
+          "intro": "This final session of Module 3 focuses on biometrics, digital identity, cyber security, and individual privacy rights. Working in pairs and small groups, you will practise explaining biometric verification technologies, debating the trade-off between personal privacy and public security, and presenting recommendations on digital data governance in spoken English.",
+          "whyItMatters": "Biometrics and cybersecurity are central to modern border control, aviation security, and digital administration worldwide. Practising how to explain privacy concerns, describe authentication systems, and argue for robust regulatory protections in English ensures you are fully prepared to present with poise in your Formative Evaluation.",
+          "keyTerms": [
             {
-              "num": 2,
-              "title": "Station 2: Zero-Knowledge Proofs & Biometric Hash Encryption",
-              "icon": "🔐",
-              "badge": "Cryptographic Security",
-              "coreTech": "Irreversible Mathematical Hashes + Decentralized Local Enclaves",
-              "keyInsight": "Instead of storing actual high-resolution photos of passenger faces in a central vulnerable database, the sensor converts facial measurements into a 512-bit encrypted mathematical hash. Once hashed, the original facial photo is purged immediately, making database theft completely useless to hackers.",
-              "discussionPrompts": [
-                "Why is mathematical hashing exponentially safer than encrypting traditional JPEG or PNG facial image files on a centralized server?",
-                "How does a Zero-Knowledge Proof allow an airport gate to verify that a passenger is 'over 18 and holds a valid visa' without revealing their name, exact birthdate, or nationality?"
-              ]
+              "term": "Facial Recognition",
+              "ipa": "/ˈfeɪ.ʃəl ˌrek.əɡˈnɪʃ.ən/",
+              "definition": "A biometric software application that identifies or verifies an individual by mapping facial features."
             },
             {
-              "num": 3,
-              "title": "Station 3: Sovereign Digital Identity Wallets & IATA One ID",
-              "icon": "📱",
-              "badge": "Global Interoperability",
-              "coreTech": "W3C Verifiable Credentials + ICAO Digital Travel Credentials (DTC)",
-              "keyInsight": "The traveler holds their digital passport inside a secure hardware enclave on their personal smartphone. During airport transit, the phone shares temporary cryptographic tokens via short-range Ultra-Wideband (UWB) wireless, ensuring the passenger retains 100% physical ownership of their identity credentials at all times.",
-              "discussionPrompts": [
-                "What happens if a passenger's smartphone battery dies or is lost during an international transit layover?",
-                "How can sovereign digital wallets remain universally interoperable when passing between different national customs jurisdictions (e.g., EU Schengen vs. US CBP)?"
-              ]
+              "term": "Iris Scanning",
+              "ipa": "/ˈaɪ.rɪs ˌskæn.ɪŋ/",
+              "definition": "An automated biometric identification method that uses mathematical pattern recognition on iris images."
+            },
+            {
+              "term": "Data Breach",
+              "ipa": "/ˈdeɪ.tə briːtʃ/",
+              "definition": "A security incident where sensitive, protected, or confidential data is copied or accessed illegally."
+            },
+            {
+              "term": "Encryption",
+              "ipa": "/ɪnˈkrɪp.ʃən/",
+              "definition": "The process of converting information into a secret code that obscures the data's true meaning."
+            },
+            {
+              "term": "Identity Theft",
+              "ipa": "/aɪˈden.tə.ti θeft/",
+              "definition": "The fraudulent acquisition and use of a person's private identifying information, usually for financial gain."
+            },
+            {
+              "term": "Two-Factor Authentication",
+              "ipa": "/tuː ˈfæk.tər ɔːˌθen.tɪˈkeɪ.ʃən/",
+              "definition": "A security process where a user provides two distinct authentication factors to verify their identity."
+            },
+            {
+              "term": "Cyber Espionage",
+              "ipa": "/ˈsaɪ.bər ˈes.pi.ə.nɑːʒ/",
+              "definition": "The act of obtaining confidential information without permission from computer systems or networks."
+            },
+            {
+              "term": "Right to be Forgotten",
+              "ipa": "/raɪt tuː biː fəˈɡɒt.ən/",
+              "definition": "The legal right to have personal data permanently removed from internet searches and databases."
+            },
+            {
+              "term": "Biometric Template",
+              "ipa": "/ˌbaɪ.oʊˈmet.rɪk ˈtem.pleɪt/",
+              "definition": "A mathematical representation of biometric features stored securely in an identification database."
+            },
+            {
+              "term": "Critical Infrastructure",
+              "ipa": "/ˈkrɪt.ɪ.kəl ˈɪn.frəˌstrʌk.tʃər/",
+              "definition": "Essential physical and digital assets whose disruption would severely impact national security or the economy."
             }
           ],
-          "treatyNegotiation": {
-            "treatyTitle": "The International Contactless Passenger Sovereignty Charter (5 Key Articles)",
-            "parties": [
-              {
-                "party": "Delegation A: International Airport Operators & Border Security Agency",
-                "priorities": "Demands minimum 98% passenger adoption of biometric e-gates to process 45 flights per hour. Rejects cumbersome paper backup lanes that cause terminal congestion. Demands right to retain biometric hashes for 72 hours for security auditing.",
-                "bargainingChip": "Controls terminal gate funding and automated fast-track access."
-              },
-              {
-                "party": "Delegation B: Global Airline Passenger Rights Federation",
-                "priorities": "Demands an absolute, non-penalized right for any passenger to opt out and use traditional human passport desks without experiencing delays. Insists that all biometric hashes must be mathematically purged within 60 minutes of aircraft takeoff.",
-                "bargainingChip": "Can mobilize consumer boycotts and file collective legal injunctions."
-              },
-              {
-                "party": "Delegation C: Cybersecurity & Data Protection Regulatory Authority",
-                "priorities": "Demands mandatory Zero-Knowledge cryptographic architecture. Any airport storing raw facial image files faces immediate €50M non-compliance fines. Demands unannounced annual penetration audits by white-hat hackers.",
-                "bargainingChip": "Holds the legal power to revoke operational licenses under the GDPR and EU AI Act."
-              }
+          "speakingTask": {
+            "title": "Additional Speaking Activity • Practice in Groups of 3",
+            "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two clear reasons or real-world examples to support your group's argument.",
+              "Ensure all 3 team members speak during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Public facial recognition surveillance cameras should be completely banned in public spaces to protect individual privacy rights.",
+              "group2": "Passengers who refuse biometric facial scans at airport gates should be required to undergo extensive manual security screening and delay.",
+              "group3": "Companies that suffer preventable customer data breaches should face mandatory criminal penalties rather than simple administrative fines."
+            },
+            "usefulPhrases": [
+              "When debating biometric security, our group recognized that...",
+              "A crucial balance must be struck between...",
+              "From a privacy and human rights viewpoint, we contend...",
+              "To conclude our final presentation..."
             ]
           }
         }
@@ -7789,7 +10111,7 @@
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour interactive communicative session featuring personal travel anecdotes, an oral debate on modern travel dilemmas, essential travel collocations, narrative past tenses practice, a flight delay de-escalation role-play, and a 10-minute vocabulary review.",
+            "summary": "A 2-hour interactive communicative session featuring personal travel anecdotes, an oral debate on modern travel dilemmas, essential travel collocations, narrative past tenses practice, a flight delay de-escalation role-play, and a vocabulary review.",
             "items": [
               {
                 "title": "Part 1: Travel Anecdotes & Opening Spot-Check",
@@ -8285,7 +10607,7 @@
               "modelStory": "Two summers ago, my friends and I took a train from Munich to Salzburg. Everything was going smoothly until our train stopped in the countryside because of an engine problem. Before we knew it, we had missed our connection! Luckily, a friendly local passenger helped us find a bus, and we reached our hostel just in time. Looking back now, it turned an ordinary trip into a fun adventure.",
               "deliverable": "Tell a 90-second personal travel story to your partner and explain one travel distinction.",
               "teacherNotes": "Circulate to listen for past tense usage (Past Continuous for background, Past Simple for events). Invite two students with entertaining or relatable stories to share briefly with the class.",
-              "title": "Activity 1: Travel Anecdotes — My Most Memorable Trip (15 mins)",
+              "title": "Activity 1: Travel Anecdotes — My Most Memorable Trip",
               "summary": "Share a personal travel anecdote about a memorable trip, unexpected travel glitch, or great adventure with your partner using helpful story words.",
               "diagnostic": {
                 "title": "Quick Travel Distinction Check",
@@ -8318,7 +10640,7 @@
               ],
               "deliverable": "Summarize your partner's most convincing counter-argument during the class roundup.",
               "teacherNotes": "Enforce active speed-dating rotation: call \"Switch roles!\" every 4 minutes. Circulate to check usage of polite opinion phrases (\"While I see your point, ...\"). Board 2 strong student phrases.",
-              "title": "Activity 2: Global Travel Dilemmas: Speed Discussion (20 mins)",
+              "title": "Activity 2: Global Travel Dilemmas: Speed Discussion",
               "summary": "Conduct structured speed discussions on 4 prominent travel dilemmas. Practice expressing clear agreement or disagreement, providing concrete reasons, and using polite phrases to express your opinion.",
               "signposts": [
                 "\"In my view, travelers should definitely...\"",
@@ -8375,7 +10697,7 @@
               ],
               "deliverable": "Achieve 4/4 on the practice quiz and record one new collocation in your personal study log.",
               "teacherNotes": "Encourage students to practice saying the collocations in full sentences. Focus on natural word partnerships (e.g. 'book in advance', 'clear customs').",
-              "title": "Activity 3: Language Focus: Essential Travel Collocations & Idioms (20 mins)",
+              "title": "Activity 3: Language Focus: Essential Travel Collocations & Idioms",
               "summary": "Master high-frequency B2 collocations and common idioms used in travel, tourism, and everyday transport contexts.",
               "items": [
                 {
@@ -8468,7 +10790,7 @@
               ],
               "deliverable": "Write or say a 3-sentence mini-story using Past Simple, Past Continuous, and Past Perfect.",
               "teacherNotes": "Check that students use the Past Continuous for background actions and Past Simple for single completed events. Encourage natural story connectors.",
-              "title": "Activity 4: Grammar Focus: Narrative Past Tenses & Story Sequencing (25 mins)",
+              "title": "Activity 4: Grammar Focus: Narrative Past Tenses & Story Sequencing",
               "summary": "Use Past Simple, Past Continuous, and Past Perfect together to tell travel stories clearly in the order they happened.",
               "rules": [
                 {
@@ -8514,7 +10836,7 @@
               ],
               "deliverable": "Formulate a mutually agreed rebooking and meal voucher compensation agreement.",
               "teacherNotes": "Act as the Station Operations Director. Circulate and intervene with unexpected injects: \"Announcement: The Tokyo flight departure is delayed by 45 minutes; you now have a 50-minute window.\" Observe how students adjust their negotiation strategy.",
-              "title": "Activity 5: Role-Play Simulation: Flight Delay & Missing a Connection (30 mins)",
+              "title": "Activity 5: Role-Play Simulation: Flight Delay & Missing a Connection",
               "summary": "Practice de-escalating customer frustration and explaining options calmly during a travel disruption.",
               "scenario": "Flight LH2214 from Toulouse to Munich is delayed by 2.5 hours because of bad weather and technical checks. Several passengers have tight onward connections to Tokyo and Chicago.",
               "roles": [
@@ -8555,7 +10877,7 @@
               ],
               "deliverable": "Submit your completed 3-sentence exit ticket and study log entry.",
               "teacherNotes": "Lead a choral pronunciation drill focusing on difficult phonemes: \"itinerary\" /aɪˈtɪnərəri/, \"infrastructure\", \"scheduled\". Collect quick verbal exit tickets at the door.",
-              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Exit Ticket (10 mins)",
+              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Exit Ticket",
               "summary": "Consolidate today's learning: review the pronunciation of all 30 key terms, check your word stress, and write one reflection in your study log.",
               "vocabWords": [
                 "Itinerary",
@@ -8592,6 +10914,82 @@
               "reflectionPrompts": [
                 "Which travel collocation or story word from today will you use in your next conversation?",
                 "Write one sentence using narrative past tenses (Past Continuous + Past Simple) about a past trip."
+              ]
+            }
+          },
+          "overview": {
+            "intro": "In this opening session, you develop your spoken confidence by sharing personal travel stories, airport journeys, and memorable transport delays in English. Working in pairs and small groups, you will practise narrative tenses, descriptive travel vocabulary, and spontaneous storytelling without translating word-for-word from French. This interactive practice helps you break the ice and speak more naturally from day one.",
+            "whyItMatters": "Telling clear, engaging anecdotes in English is a vital interpersonal skill in international workplaces, airport environments, and social conversations. When you can describe a journey or explain an unexpected problem smoothly, you build immediate rapport with international colleagues and passengers, while building the natural fluency needed for your end-of-module Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Itinerary",
+                "ipa": "/aɪˈtɪn.ər.ər.i/",
+                "definition": "A planned route or journey with scheduled stops, flights, and activities."
+              },
+              {
+                "term": "Layover",
+                "ipa": "/ˈleɪˌoʊ.vər/",
+                "definition": "A period of waiting at a transit airport between connecting flights."
+              },
+              {
+                "term": "Baggage Allowance",
+                "ipa": "/ˈbæɡ.ɪdʒ əˌlaʊ.əns/",
+                "definition": "The permitted weight or number of bags a passenger can take without extra fees."
+              },
+              {
+                "term": "Off the Beaten Track",
+                "ipa": "/ɒf ðə ˈbiː.tən træk/",
+                "definition": "Traveling to quiet, unusual destinations away from crowded tourist hotspots."
+              },
+              {
+                "term": "Round-Trip",
+                "ipa": "/ˈraʊnd.trɪp/",
+                "definition": "A return journey going to a destination and coming back to the start."
+              },
+              {
+                "term": "Miss a Connection",
+                "ipa": "/mɪs ə kəˈnek.ʃən/",
+                "definition": "Arriving too late for a scheduled connecting flight or train due to earlier delays."
+              },
+              {
+                "term": "Peak Season",
+                "ipa": "/piːk ˈsiː.zən/",
+                "definition": "The time of year when travel demand, crowds, and ticket prices are highest."
+              },
+              {
+                "term": "Red-Eye Flight",
+                "ipa": "/ˈred.aɪ flaɪt/",
+                "definition": "An overnight commercial flight that leaves late at night and arrives early the next morning."
+              },
+              {
+                "term": "Boarding Pass",
+                "ipa": "/ˈbɔː.dɪŋ pɑːs/",
+                "definition": "An official document or phone barcode allowing a passenger to board an aircraft."
+              },
+              {
+                "term": "De-escalation",
+                "ipa": "/diːˌes.kəˈleɪ.ʃən/",
+                "definition": "Calm, professional communication used to resolve anger and defuse tension during travel delays."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or personal examples to support your group's view.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Public transport in modern European cities is now so convenient and affordable that private cars should be completely banned from city centres.",
+                "group2": "Short-haul flights between cities connected by high-speed rail should be prohibited to reduce carbon emissions, even if train tickets are more expensive.",
+                "group3": "The biggest barrier to international travel today is not the cost of tickets, but the stress and complexity of navigating airport security and transit connections."
+              },
+              "usefulPhrases": [
+                "Our group discussed whether...",
+                "We strongly agree / disagree with this statement because...",
+                "In our personal travel experience, one major factor is...",
+                "To summarise our group's main argument..."
               ]
             }
           }
@@ -9099,8 +11497,8 @@
               "badge": "Session Overview • Transport Evolution & Green Mobility"
             },
             "openingSession": {
-              "title": "Activity 1: Green Transport News & Session 1 Review (10 mins)",
-              "summary": "10-minute opening: discuss recent headlines on green transport innovations and check your memory of Session 1 travel vocabulary.",
+              "title": "Activity 1: Green Transport News & Session 1 Review",
+              "summary": "Opening warm-up: discuss recent headlines on green transport innovations and check your memory of Session 1 travel vocabulary.",
               "newsPrompts": [
                 "What new green transit initiatives (night trains, electric bus fleets, cycling highways) have you heard about recently?",
                 "How are European countries encouraging travelers to switch from airplanes to trains?"
@@ -9146,7 +11544,7 @@
               "teacherNotes": "Cold-call 2 random pairs to summarize modal shift initiatives in European rail. Check pronunciation of 'infrastructure', 'subsidized', and 'intermodality'."
             },
             "timelineClash": {
-              "title": "Activity 2: The Timeline Clash: 4 Epochs of Transport (25 mins)",
+              "title": "Activity 2: The Timeline Clash: 4 Epochs of Transport",
               "summary": "Compare 4 key eras of modern transport. Examine how travel speed, comfort, and greenhouse gas emissions have changed over time.",
               "epochs": [
                 {
@@ -9201,7 +11599,7 @@
               "teacherNotes": "Ensure students do not simply read dates. Encourage rapid turn-taking and formal comparative structures ('Far more consequential than...', 'Resulted in an unprecedented rise in...')."
             },
             "corridorPitch": {
-              "title": "Activity 3: The Multi-Modal Corridor Pitch: Rail vs. Air (25 mins)",
+              "title": "Activity 3: The Multi-Modal Corridor Pitch: Rail vs. Air",
               "summary": "In teams, pitch high-speed rail versus regional flights on popular European travel corridors. Compare total travel time, carbon emissions, and passenger convenience.",
               "corridors": [
                 {
@@ -9244,7 +11642,7 @@
               "teacherNotes": "Write key evaluation criteria on the board: Door-to-door transit time, carbon footprint per passenger-km, and productive working time. Enforce strict time limits on pitches."
             },
             "grammarClinic": {
-              "title": "Activity 4: Grammar Focus: Cause, Effect & Complex Comparisons (20 mins)",
+              "title": "Activity 4: Grammar Focus: Cause, Effect & Complex Comparisons",
               "summary": "Replace basic linkers ('because', 'so') with formal prepositions of cause and effect, and use double comparatives to describe linked trends.",
               "rules": [
                 {
@@ -9305,7 +11703,7 @@
               "teacherNotes": "Highlight the sentence pattern in double comparatives ('The faster the train travels, the lower the per-seat energy consumption becomes'). Correct common error of using 'that' instead of 'as' with comparisons."
             },
             "caseStudy": {
-              "title": "Activity 5: DDRS Case Study: The Campus Travel Dilemma (30 mins)",
+              "title": "Activity 5: DDRS Case Study: The Campus Travel Dilemma",
               "summary": "\"The ENAC Transit Audit\" — Audit real university travel dilemmas and formulate spoken policy recommendations to balance budget, travel time, and carbon emissions.",
               "scenario": "A delegation of 6 ENAC professors and student representatives must travel from Toulouse to a partner university in Brussels for an annual 2-day European aviation conference.",
               "options": [
@@ -9347,7 +11745,7 @@
               "teacherNotes": "Circulate and push groups to justify their budget trade-offs. Challenge them: 'What will you tell students who live 25km away with no bus route?'"
             },
             "closingReview": {
-              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
+              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge",
               "summary": "Consolidate today's 30 transport terms with rapid audio pronunciation and a fast-paced 45-second Taboo fluency challenge.",
               "vocabWords": [
                 "Modal Shift",
@@ -9441,6 +11839,82 @@
               ],
               "deliverable": "Successfully explain 3 taboo terms under time pressure and complete the personal Session 2 learning log.",
               "teacherNotes": "Keep the energy high. Rapidly drill choral pronunciation of difficult terms: 'intermodality', 'conurbation', 'decarbonization'."
+            }
+          },
+          "overview": {
+            "intro": "This session focuses on expanding your ability to compare urban transport options, discuss environmental sustainability, and debate modern smart city mobility in English. Through group discussions and communicative roleplays, you will practise expressing opinions, evaluating comparative advantages, and proposing greener travel solutions using clear, convincing language.",
+            "whyItMatters": "Sustainable mobility and green transport policies are major topics of discussion worldwide. Developing the English vocabulary to explain environmental choices, compare energy efficiency, and discuss public policy prepares you to take an active part in professional meetings and directly supports your spoken arguments in the Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Micromobility",
+                "ipa": "/ˌmaɪ.kroʊ.moʊˈbɪl.ə.ti/",
+                "definition": "Lightweight urban transport options like electric scooters, bikes, and shared mopeds."
+              },
+              {
+                "term": "Congestion Pricing",
+                "ipa": "/kənˈdʒes.tʃən ˈpraɪ.sɪŋ/",
+                "definition": "A toll charged to drivers entering busy urban centres during peak travel hours."
+              },
+              {
+                "term": "Carbon Neutral",
+                "ipa": "/ˈkɑː.bən ˈnjuː.trəl/",
+                "definition": "Achieving net-zero carbon emissions by balancing emissions with carbon absorption."
+              },
+              {
+                "term": "Intermodal Transport",
+                "ipa": "/ˌɪn.təˈmoʊ.dəl ˈtræns.pɔːt/",
+                "definition": "A journey that connects multiple modes of travel (e.g. train, metro, and bike) with one ticket."
+              },
+              {
+                "term": "High-Speed Rail",
+                "ipa": "/haɪ spiːd reɪl/",
+                "definition": "Passenger trains operating on dedicated tracks at speeds over 250 km/h."
+              },
+              {
+                "term": "Ride-Sharing",
+                "ipa": "/ˈraɪdˌʃeə.rɪŋ/",
+                "definition": "An arrangement where passengers book rides together in a shared private vehicle."
+              },
+              {
+                "term": "Pedestrianised Zone",
+                "ipa": "/pəˈdes.tri.ə.naɪzd zoʊn/",
+                "definition": "An urban street or district where motor vehicles are prohibited for safety and air quality."
+              },
+              {
+                "term": "Infrastructure",
+                "ipa": "/ˈɪn.frəˌstrʌk.tʃər/",
+                "definition": "The basic physical systems of a transport network, including tracks, roads, and bridges."
+              },
+              {
+                "term": "First-Mile / Last-Mile",
+                "ipa": "/fɜːst maɪl lɑːst maɪl/",
+                "definition": "The beginning or end of an individual passenger trip between a transit hub and home or work."
+              },
+              {
+                "term": "Autonomous Shuttle",
+                "ipa": "/ɔːˈtɒn.ə.məs ˈʃʌt.əl/",
+                "definition": "A self-driving small bus designed to transport groups along fixed urban routes."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or real-world examples to support your group's position.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Free public transport funded entirely by local tax revenue is the only realistic way to persuade citizens to abandon their private vehicles.",
+                "group2": "Shared e-scooters and micromobility devices create more urban clutter, safety risks, and accidents than genuine environmental benefits.",
+                "group3": "Within twenty years, autonomous driverless electric shuttles will completely replace conventional municipal bus and tram networks."
+              },
+              "usefulPhrases": [
+                "Our group weighed the benefits and drawbacks of...",
+                "From a practical urban mobility standpoint...",
+                "One convincing argument against this statement is...",
+                "In conclusion, our group believes that..."
+              ]
             }
           }
         },
@@ -9889,8 +12363,8 @@
               "badge": "Session Overview • Managing Tourism & City Life"
             },
             "openingSession": {
-              "title": "Activity 1: Tourism Policy News & Session 2 Review (10 mins)",
-              "summary": "10-minute opening: analyze current news on city tourist limits and check your memory of Session 2 transport words.",
+              "title": "Activity 1: Tourism Policy News & Session 2 Review",
+              "summary": "Opening warm-up: analyze current news on city tourist limits and check your memory of Session 2 transport words.",
               "newsPrompts": [
                 "What European cities have recently introduced visitor caps, tourist taxes, or cruise bans?",
                 "How can local city councils prevent historic neighborhoods from losing their permanent residents?"
@@ -9936,7 +12410,7 @@
               "teacherNotes": "Cold-call 2 random pairs. Ask: 'Why are European cities switching from destination promotion to destination stewardship?' Check pronunciation of 'carrying capacity' and 'inhabitants'."
             },
             "pressureMatrix": {
-              "title": "Activity 2: Destination Pressure & Visitor Capacity (25 mins)",
+              "title": "Activity 2: Destination Pressure & Visitor Capacity",
               "summary": "Examine how massive visitor numbers impact local residents and natural sites across 4 famous international destinations.",
               "destinations": [
                 {
@@ -9988,7 +12462,7 @@
               "teacherNotes": "Highlight the distinction between 'overtourism' (perceived crowding & social pressure) and 'carrying capacity' (physical infrastructure limits). Ensure students use formal comparative vocabulary."
             },
             "policyPitch": {
-              "title": "Activity 3: Pitching New Tourism Policies to the Mayor (25 mins)",
+              "title": "Activity 3: Pitching New Tourism Policies to the Mayor",
               "summary": "In pairs, choose one controversial municipal policy, prepare a 2-minute pitch to the city council, and anticipate objections from local business lobbies.",
               "policies": [
                 {
@@ -10025,7 +12499,7 @@
               "teacherNotes": "Act as the Mayor observing the pitch. Demand concrete answers on: revenue distribution, enforcement costs, and impact on small local shopkeepers. Board key persuasive phrases."
             },
             "grammarClinic": {
-              "title": "Activity 4: Grammar Focus: Causatives & Contrast Words (20 mins)",
+              "title": "Activity 4: Grammar Focus: Causatives & Contrast Words",
               "summary": "Use causative verbs (make, have, get) to express regulations and authority, and use contrast linkers (despite, in spite of, whereas) to balance competing interests.",
               "rules": [
                 {
@@ -10086,7 +12560,7 @@
               "teacherNotes": "Emphasize prepositional vs. clausal contrast linkers: 'in spite of' + noun phrase/gerund vs. 'although' + full clause. Point out common error: '*despite of'."
             },
             "simulation": {
-              "title": "Activity 5: DDRS Simulation: The Isla Serena Water Crisis (30 mins)",
+              "title": "Activity 5: DDRS Simulation: The Isla Serena Water Crisis",
               "summary": "A 4-role negotiation resolving an acute summer water shortage (320% surge in consumption) vs. a proposal to expand the island airport runway to welcome more tourists.",
               "crisisBriefing": {
                 "title": "Crisis Dossier: Isla Serena Emergency Water Summit",
@@ -10146,7 +12620,7 @@
               "teacherNotes": "Timekeeper and moderator: cut off circular debates. If groups reach a stalemate, introduce a crisis prompt: 'A heatwave has pushed reservoir levels down to 12%—you have 3 minutes to finalize water cuts!'"
             },
             "closingReview": {
-              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge (10 mins)",
+              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & Taboo Fluency Challenge",
               "summary": "Consolidate today's 18 overtourism terms with rapid audio pronunciation and a fast-paced 45-second Taboo fluency challenge.",
               "vocabWords": [
                 "Overtourism",
@@ -10228,6 +12702,82 @@
               ],
               "deliverable": "Successfully define 3 taboo terms under time pressure and complete the personal Session 3 learning log.",
               "teacherNotes": "Keep tempo fast and competitive. Conduct whole-class choral drill on high-risk pronunciation items: 'carrying capacity', 'moratorium', 'inhabitants', 'gentrification'."
+            }
+          },
+          "overview": {
+            "intro": "In this session, you explore the international challenge of overtourism, examining how excessive visitor numbers impact local communities, historic landmarks, and natural ecosystems. You will practise negotiating solutions, presenting balanced points of view, and debating visitor caps and tourism taxes in spoken English.",
+            "whyItMatters": "Balancing economic revenue with cultural preservation is one of the most critical debates in global tourism today. Learning to discuss complex social and economic trade-offs in English helps you articulate nuanced positions, challenge ideas respectfully, and demonstrate advanced communicative range during your FE presentation.",
+            "keyTerms": [
+              {
+                "term": "Overtourism",
+                "ipa": "/ˌoʊ.vəˈtʊə.rɪ.zəm/",
+                "definition": "A situation where too many tourists visit a place, negatively impacting residents and heritage."
+              },
+              {
+                "term": "Carrying Capacity",
+                "ipa": "/ˈkær.i.ɪŋ kəˌpæs.ə.ti/",
+                "definition": "The maximum number of visitors a site or city can sustain without environmental or social harm."
+              },
+              {
+                "term": "Tourism Tax",
+                "ipa": "/ˈtʊə.rɪ.zəm tæks/",
+                "definition": "A small fee paid by hotel guests or cruise visitors to help maintain public infrastructure."
+              },
+              {
+                "term": "Cultural Heritage",
+                "ipa": "/ˈkʌl.tʃər.əl ˈher.ɪ.tɪdʒ/",
+                "definition": "Historic traditions, monuments, and customs inherited from previous generations."
+              },
+              {
+                "term": "Gentrification",
+                "ipa": "/ˌdʒen.trɪ.fɪˈkeɪ.ʃən/",
+                "definition": "The transformation of a neighbourhood that raises living costs and displaces local residents."
+              },
+              {
+                "term": "Cruise Ship Levy",
+                "ipa": "/kruːz ʃɪp ˈlev.i/",
+                "definition": "A mandatory environmental tariff charged to cruise lines when docking at delicate ports."
+              },
+              {
+                "term": "Short-Term Rental",
+                "ipa": "/ʃɔːt tɜːm ˈren.təl/",
+                "definition": "Renting residential apartments to tourists for brief holiday stays rather than local residents."
+              },
+              {
+                "term": "Visitor Cap",
+                "ipa": "/ˈvɪz.ɪ.tər kæp/",
+                "definition": "A strict daily or seasonal limit on the number of tourists admitted to an attraction."
+              },
+              {
+                "term": "Dispersal Strategy",
+                "ipa": "/dɪˈspɜː.səl ˈstræt.ə.dʒi/",
+                "definition": "Encouraging tourists to visit lesser-known regional attractions to relieve crowded city centres."
+              },
+              {
+                "term": "Local Preservation",
+                "ipa": "/ˈloʊ.kəl ˌprez.əˈveɪ.ʃən/",
+                "definition": "Protecting community traditions, local shops, and heritage buildings from mass commercialization."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or case examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Historic cities like Venice, Dubrovnik, and Amsterdam should establish strict daily quotas and ban giant cruise ships permanently.",
+                "group2": "Short-term holiday rental platforms like Airbnb should be banned in residential city centres to protect local housing affordability.",
+                "group3": "Higher tourism taxes only make travel an exclusive privilege for wealthy tourists rather than solving the root problems of crowd management."
+              },
+              "usefulPhrases": [
+                "When examining the impact of overtourism, our group noticed...",
+                "While some argue that tourism revenue is essential, we believe...",
+                "A major problem with this approach is...",
+                "To summarize our perspective..."
+              ]
             }
           }
         },
@@ -10676,8 +13226,8 @@
               "badge": "Session Overview • Eco-Tourism & Green Certification"
             },
             "openingSession": {
-              "title": "Activity 1: Eco-Tourism News & Session 3 Review (10 mins)",
-              "summary": "10-minute opening: discuss genuine green travel innovations and check your memory of Session 3 overtourism terms.",
+              "title": "Activity 1: Eco-Tourism News & Session 3 Review",
+              "summary": "Opening warm-up: discuss genuine green travel innovations and check your memory of Session 3 overtourism terms.",
               "modeBadges": [
                 "👥 Pairs / Plenary",
                 "⏱️ 10 mins",
@@ -10723,7 +13273,7 @@
               }
             },
             "forensicAudit": {
-              "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing (25 mins)",
+              "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing",
               "summary": "Conduct a forensic evidence audit of 3 real-world tourism projects. Separate verified environmental stewardship from superficial marketing buzzwords.",
               "modeBadges": [
                 "👥 Small Groups (3-4)",
@@ -10768,7 +13318,7 @@
               ]
             },
             "grammarClinic": {
-              "title": "Activity 3: Grammar Focus: Mixed Conditionals & Purpose Clauses (20 mins)",
+              "title": "Activity 3: Grammar Focus: Mixed Conditionals & Purpose Clauses",
               "summary": "Connect past actions with present consequences using mixed conditionals, and express goals and conditions with formal connectors.",
               "modeBadges": [
                 "👤 Individual -> 👥 Pairs",
@@ -10829,7 +13379,7 @@
               }
             },
             "workshop": {
-              "title": "Activity 4: Workshop: The €2,500,000 Eco-Resort Blueprint (30 mins)",
+              "title": "Activity 4: Workshop: The €2,500,000 Eco-Resort Blueprint",
               "summary": "In teams of 3 to 4, design a low-impact, 100% sustainable tourism project with a €2,500,000 green endowment. Balance visitor capacity, clean energy, and local employment.",
               "modeBadges": [
                 "👥 Teams (3-4)",
@@ -10872,7 +13422,7 @@
               ]
             },
             "investorForum": {
-              "title": "Activity 5: The Green Investor Forum: Pitches & Defense (25 mins)",
+              "title": "Activity 5: The Green Investor Forum: Pitches & Defense",
               "summary": "Deliver a concise 2-minute pitch to the Sustainability Investment Board. Defend your project against tough questions regarding profitability, greenwashing, and visitor limits.",
               "modeBadges": [
                 "🎤 Team Pitch -> 👥 Plenary Defense",
@@ -10894,7 +13444,7 @@
               ]
             },
             "closingReview": {
-              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check (10 mins)",
+              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check",
               "summary": "Final preparation for Session 5 Formative Evaluation: audio pronunciation drill of 18 terms and partner readiness review.",
               "modeBadges": [
                 "👤 Individual & 👥 Pairs",
@@ -10934,6 +13484,82 @@
                 "✅ 4 to 6 clean visual slides prepared without dense paragraphs of text (no reading aloud from notes!).",
                 "✅ Personal Vocabulary Study Log and TOEIC Error Log ready to show your teacher.",
                 "✅ Self-Critique ready: 2 personal English strengths and 2 concrete action targets for Semester 2."
+              ]
+            }
+          },
+          "overview": {
+            "intro": "This session invites you to pitch and defend sustainable destination concepts, exploring ecotourism, low-impact travel, and community-led conservation in English. You will practise structuring persuasive pitches, answering counter-arguments, and explaining the economic and environmental benefits of responsible travel with professional confidence.",
+            "whyItMatters": "Being able to deliver an engaging pitch and defend project ideas before an audience is a fundamental communicative competency. Practising how to organize arguments, present clear solutions, and respond to peer questions directly builds the speaking fluency evaluated in your Module 1 Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Ecotourism",
+                "ipa": "/ˈiː.koʊˌtʊə.rɪ.zəm/",
+                "definition": "Responsible travel to natural areas that conserves the environment and improves local welfare."
+              },
+              {
+                "term": "Greenwashing",
+                "ipa": "/ˈɡriːnˌwɒʃ.ɪŋ/",
+                "definition": "Misleading marketing that falsely presents a product or company as environmentally friendly."
+              },
+              {
+                "term": "Biodegradable",
+                "ipa": "/ˌbaɪ.oʊ.dɪˈɡreɪ.də.bəl/",
+                "definition": "Capable of being decomposed naturally by bacteria or living organisms without pollution."
+              },
+              {
+                "term": "Carbon Offsetting",
+                "ipa": "/ˈkɑː.bən ˌɒfˈset.ɪŋ/",
+                "definition": "Compensating for carbon dioxide emissions by funding equivalent carbon-saving projects elsewhere."
+              },
+              {
+                "term": "Renewable Energy",
+                "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
+                "definition": "Energy collected from resources that are naturally replenished on a human timescale, like solar or wind."
+              },
+              {
+                "term": "Community-Led",
+                "ipa": "/kəˈmjuː.nə.ti led/",
+                "definition": "Initiatives planned, managed, and economically owned by local residents rather than foreign chains."
+              },
+              {
+                "term": "Low-Impact Travel",
+                "ipa": "/loʊ ˈɪm.pækt ˈtræv.əl/",
+                "definition": "Travel practices designed to minimize ecological footprints, waste generation, and energy use."
+              },
+              {
+                "term": "Leave No Trace",
+                "ipa": "/liːv noʊ treɪs/",
+                "definition": "An outdoor ethical code promoting leaving natural environments entirely undisturbed."
+              },
+              {
+                "term": "Sustainable Certification",
+                "ipa": "/səˈsteɪ.nə.bəl ˌsɜː.tɪ.fɪˈkeɪ.ʃən/",
+                "definition": "An independent audit verifying that a tourism operator meets rigorous ecological standards."
+              },
+              {
+                "term": "Regenerative Tourism",
+                "ipa": "/rɪˈdʒen.ər.ə.tɪv ˈtʊə.rɪ.zəm/",
+                "definition": "Travel that actively restores, regenerates, and revitalizes natural habitats and local culture."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or examples to support your group's position.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Carbon offsetting schemes offered by airlines are simply modern greenwashing that encourages passengers to avoid making genuine lifestyle changes.",
+                "group2": "True ecotourism is only possible if travelers are willing to accept significantly higher costs and fewer luxury amenities.",
+                "group3": "Governments should introduce a personal annual flight allowance for all citizens to enforce equitable reductions in aviation emissions."
+              },
+              "usefulPhrases": [
+                "Our pitch focuses on the concept that...",
+                "One key strength of our argument is...",
+                "In response to common criticisms, we would emphasize...",
+                "Ultimately, our group recommends that..."
               ]
             }
           }
@@ -11071,54 +13697,64 @@
         "1": {
           "session": 1,
           "objectives": {
-            "title": "Session 1 Objectives - Extreme Weather & Urban Climate Resilience",
-            "summary": "By the end of this session, you will be able to discuss severe weather news, use 'if' sentences to talk about weather risks, work in a team to protect city services during a storm, and give a short spoken update to the public.",
+            "title": "Session 1 - Extreme Weather Objectives",
+            "summary": "By the end of this session, you will be able to discuss extreme weather and climate impacts with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Learn Key Vocabulary: Severe Weather & Storms",
-                "description": "Learn 8 useful words for heavy rain, heatwaves, flooding, and storm damage."
+                "title": "Practice TOEIC Listening for Weather Bulletins",
+                "description": "Listen for key weather details, temperature extremes, and travel delay announcements typical of TOEIC Part 4."
               },
               {
                 "num": 2,
-                "title": "Grammar Focus: 'If' Sentences for Weather Warnings",
-                "description": "Practice 1st and 2nd conditionals to talk about weather emergencies ('If winds exceed 100 km/h...')."
+                "title": "Master Extreme Weather & Climate Vocabulary",
+                "description": "Learn and use high-frequency terms for severe weather events (heatwaves, flash floods, droughts) and climate resilience."
               },
               {
                 "num": 3,
-                "title": "Speaking Activity: City Emergency Taskforce",
-                "description": "Work in pairs to choose which city services (hospitals, trains, electricity) to protect first."
+                "title": "Identify Word Forms & Suffixes in TOEIC Part 5",
+                "description": "Identify whether a blank needs a noun (-tion), adjective (-able), or adverb (-ly) when describing weather changes."
               },
               {
                 "num": 4,
-                "title": "Speaking Practice: Emergency Public Update",
-                "description": "Give a short, clear public safety broadcast and answer questions from classmates."
+                "title": "Discuss Community & Infrastructure Resilience (DDRS)",
+                "description": "Explore how cities and transport networks can protect communities and infrastructure against extreme weather."
+              },
+              {
+                "num": 5,
+                "title": "Build Fluency for the Session 5 Evaluation",
+                "description": "Practice speaking about weather disruptions and safety measures using clear pronunciation, fluency, and accurate vocabulary."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 1 Lesson Plan - Extreme Weather & Urban Climate Resilience (2 Hours)",
-            "summary": "A operational syllabus combining storm vocabulary drills, conditional grammar clinics, a 4-part emergency taskforce simulation, live spoken press conference, and FE2 alignment.",
+            "title": "Session 1 Lesson Plan (2 Hours)",
+            "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
             "items": [
               {
-                "title": "Part 1: Key Vocabulary • Extreme Weather & Storms",
-                "description": "Learn 8 essential weather words, check syllable stress, and complete the matching challenge.",
+                "title": "Conversational Warm-Up: Weather Stories",
+                "description": "Students talk in pairs about the most extreme weather event they have ever witnessed and how they responded.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Focus • 'If' Sentences for Weather Warnings",
-                "description": "Spot the common speaking mistake, learn the clean B2 model, and complete 4 transformation sentences.",
+                "title": "TOEIC Strategy: Listening to Announcements",
+                "description": "Part 4 practice: listening to broadcast weather advisories, airport delay announcements, and emergency notices.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Speaking Activity • City Emergency Taskforce",
-                "description": "Work with a partner to rank 6 city threats and respond to unexpected weather alerts.",
+                "title": "Vocabulary Builder: Climate & Disruption",
+                "description": "High-frequency terms for weather phenomena (heatwave, flash flood, blizzard) and words formed with suffixes (-tion, -ment, -ly).",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Speaking Review & Discussion Feedback",
-                "description": "Check your pronunciation, give your partner speaking feedback, and prepare for FE2.",
+                "title": "Structured Discussion & Grammar",
+                "description": "Discussing community resilience and infrastructure protection using Word Forms (nouns, adjectives, adverbs) in context.",
                 "part": "Part 4"
+              },
+              {
+                "title": "Debrief, Evaluation Prep & Wrap-Up",
+                "description": "Fluency feedback, pronunciation check for weather vocabulary, and self-evaluation logging.",
+                "part": "Part 5"
               }
             ]
           },
@@ -11475,125 +14111,332 @@
             ]
           },
           "lessonContent": {
-            "hero": {
-              "title": "Extreme Weather & Urban Climate Resilience",
-              "subtitle": "Archetype A • Deep-Dive Crisis Workshop: Heat Domes, Flash Floods & Civic Emergency Management",
+            "overview": {
               "image": "images/ag_m2card1.jpg",
-              "badge": "AG Module 2 • Session 1 • Crisis Workshop"
+              "title": "Extreme Weather & Climate Hazards",
+              "subtitle": "Atmospheric Rivers, Heat Domes, Flash Floods & Airport Resilience",
+              "badge": "Session Overview • Extreme Weather & Climate Resilience"
             },
-            "dossier": {
-              "alertLevel": "RED ALERT • METEO-FRANCE / REGIONAL PREFECTURE",
-              "incidentTitle": "Convective Supercell 'Storm Hesper' & Concurrent 42°C Urban Heat Dome",
-              "timeframe": "T-minus 3 Hours Before Peak Atmospheric Impact",
-              "summary": "A catastrophic meteorological collision: a week-long 42°C urban heat dome is abruptly intercepted by a severe convective supercell line moving east at 75 km/h. Expected impacts include 90 mm of rainfall in 45 minutes, localized flash flooding, hurricane-force wind gusts of 120 km/h, and an overstressed regional electrical grid operating at 98% capacity.",
-              "threats": [
+            "hero": {
+              "image": "images/ag_m2card1.jpg",
+              "title": "Extreme Weather & Climate Hazards",
+              "subtitle": "Atmospheric Rivers, Heat Domes, Flash Floods & Airport Resilience",
+              "badge": "Session Overview • Extreme Weather & Climate Resilience"
+            },
+            "openingSession": {
+              "modeBadges": [
+                "👥 Pair Recall",
+                "⏱️ 5 min pairs + 5 min plenary",
+                "🗣️ Weather Quick Check"
+              ],
+              "instructions": [
+                "Step 1 (Headlines - 3 mins): In pairs, ask each other: \"What major extreme weather or climate hazard story caught your attention recently?\" Discuss one operational challenge it posed for transport hubs.",
+                "Step 2 (Memory Recall - 4 mins): Take turns testing each other on the 4 foundational meteorological distinctions below without revealing the answers.",
+                "Step 3 (Verify & Calibrate - 3 mins): Click \"Reveal Answer\" to verify technical accuracy. Note down any terms needing consolidation (e.g., density altitude, convective cell)."
+              ],
+              "deliverable": "Accurately explain one meteorological distinction during the instructor spot-check using precise technical vocabulary.",
+              "teacherNotes": "Cold-call two student pairs to distinguish \"Supercell vs Convective Cell\" and \"Mitigation vs Adaptation\". Clarify how high temperatures thin air (density altitude) and affect aircraft takeoff weight. Board key terms.",
+              "title": "Activity 1: Extreme Weather News & Meteorological Warm-Up",
+              "summary": "Opening warm-up analyzing current severe atmospheric headlines and testing key meteorological distinctions.",
+              "newsPrompts": [
+                "Mediterranean airports register unprecedented tarmac surface temperatures (+52°C), impacting aircraft takeoff performance and ground crews.",
+                "A series of atmospheric rivers batter Northern California and Europe, triggering flash floods across low-lying transport corridors.",
+                "Aviation meteorologists deploy advanced Doppler radar algorithms to detect wind shear and microbursts ahead of convective squall lines."
+              ],
+              "diagnostic": {
+                "title": "Meteorological Concepts Quick Check",
+                "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+                "questions": [
+                  {
+                    "id": 1,
+                    "q": "What is the critical distinction between a Supercell Thunderstorm and an ordinary Convective Cell?",
+                    "answer": "An ordinary convective thunderstorm lasts 30–60 minutes and dissipates under its own downdrafts. A supercell contains a deep, persistently rotating updraft (mesocyclone), allowing it to sustain violent destructive hail, severe wind shear, and tornadoes for hours."
+                  },
+                  {
+                    "id": 2,
+                    "q": "How does an Atmospheric River differ from the high-altitude Jet Stream?",
+                    "answer": "The jet stream is a fast-flowing, narrow air current at 9–16 km altitude driven by temperature contrasts. An atmospheric river is a low-to-mid-tropospheric ribbon of concentrated water vapor (often 400–600 km wide) that transports immense tropical moisture, causing historic deluge when forced over land or mountains."
+                  },
+                  {
+                    "id": 3,
+                    "q": "What is the operational difference between Flash Flooding and Riverine Flooding?",
+                    "answer": "Riverine flooding develops slowly over days or weeks as prolonged precipitation fills river basins. Flash flooding occurs within minutes or hours of extreme rainfall intensity, rapidly overwhelming tarmac drainage, culverts, and subway tunnels."
+                  },
+                  {
+                    "id": 4,
+                    "q": "In climate engineering, what is the difference between Climate Mitigation and Climate Adaptation?",
+                    "answer": "Mitigation tackles the causes of climate change by reducing or preventing greenhouse gas emissions (e.g., SAF, solar arrays, electric GSE). Adaptation deals with the effects by retrofitting infrastructure to withstand unavoidable severe weather shocks (e.g., sea walls, retention basins, reflective pavements)."
+                  }
+                ]
+              }
+            },
+            "survey": {
+              "modeBadges": [
+                "🔄 Speed Survey",
+                "⏱️ 4 rotations × 4 mins + 9 min debrief",
+                "🎯 CEFR B2 Persuasive Argumentation"
+              ],
+              "instructions": [
+                "Step 1 (Partner Pairing - 2 mins): Partner A takes Topics 1 & 2; Partner B takes Topics 3 & 4. Review the core dilemma, pro/con points, and debate signposts.",
+                "Step 2 (Rotational Interviews - 16 mins): Conduct 4-minute bilateral interviews per topic. One student acts as interviewer asking the prompt; the other defends a balanced policy solution using signposts (\"While it is true that...\", \"We must weigh... against...\").",
+                "Step 3 (Synthesis & Plenary - 7 mins): Reconnect with your primary partner. Agree on the single highest-priority infrastructure investment for aerodrome climate resilience."
+              ],
+              "deliverable": "Deliver a 60-second spoken recommendation justifying one resilience investment with at least two signpost phrases.",
+              "teacherNotes": "Ensure students rotate speaking and listening roles. Enforce the use of formal concession markers (\"Granted,... nevertheless\"). Monitor for misuse of economic and environmental vocabulary.",
+              "title": "Activity 2: Severe Weather Incident Analysis: Speed Survey",
+              "summary": "Conduct structured speed-dating interviews on 4 prominent extreme weather vulnerabilities. Practice evaluating operational risks, recommending physical interventions, and signposting arguments.",
+              "signposts": [
+                "\"From an operational safety standpoint, ...\"",
+                "\"While high temperatures restrict takeoff weight, we can mitigate this by...\"",
+                "\"In response to intense flash precipitation, civil engineers must prioritize...\"",
+                "\"Empirical climate projections indicate that coastal aerodromes should...\""
+              ],
+              "topics": [
                 {
-                  "id": "A",
-                  "title": "Central Metro Line Flooding",
-                  "desc": "Subway tunnels at Station République are 1.2m below storm sewer runoff capacity. Risk of complete subterranean inundation within 30 minutes of deluge.",
-                  "sector": "Public Transit"
+                  "id": 1,
+                  "badge": "Extreme Heat & Density Altitude",
+                  "statement": "Should airports in extreme heat zones permanently shift heavy long-haul departures to night hours?",
+                  "pro": "High temperatures thin the air, reducing aerodynamic lift and engine thrust. Shifting departures to cooler night temperatures avoids costly passenger and cargo weight penalties.",
+                  "con": "Night flights disrupt local communities with noise pollution and conflict with nighttime curfew regulations at destination hubs.",
+                  "prompt": "Interview your partner: How can airports adapt their runways and scheduling as summer heatwaves exceed 45°C?"
                 },
                 {
-                  "id": "B",
-                  "title": "Regional Hospital Power Fragility",
-                  "desc": "Main teaching hospital intensive care wing relies on aging rooftop backup diesel generators vulnerable to 120 km/h wind shear.",
-                  "sector": "Healthcare"
+                  "id": 2,
+                  "badge": "Flash Flood Inundation",
+                  "statement": "Should aerodrome operators replace non-loadbearing taxiway shoulders with permeable asphalt and retention bioswales?",
+                  "pro": "Permeable surfaces allow stormwater to infiltrate on-site, preventing apron submergence and protecting underground electrical conduits during cloudbursts.",
+                  "con": "Permeable asphalt requires specialized vacuum-sweeping maintenance to avoid clogging with runway rubber debris and FOD.",
+                  "prompt": "Interview your partner: How did recent flash floods in Nice and Frankfurt impact flight operations?"
                 },
                 {
-                  "id": "C",
-                  "title": "Vulnerable Senior Population Heatstroke",
-                  "desc": "Over 8,500 elderly residents in non-air-conditioned top-floor apartments face indoor temperatures exceeding 39°C before the storm breaks.",
-                  "sector": "Public Health"
+                  "id": 3,
+                  "badge": "Supercell Hail & Wind Shear",
+                  "statement": "Should airports invest in real-time automated Doppler lidar systems over conventional radar forecasts?",
+                  "pro": "Doppler lidar detects low-level wind shear and microburst turbulence in dry atmospheric conditions before radar echoes detect precipitation, giving pilots critical seconds to execute go-arounds.",
+                  "con": "Lidar installations represent significant capital expenditure and require extensive integration with air traffic control sequencing towers.",
+                  "prompt": "Interview your partner: What physical protections can protect parked aircraft and solar canopies from severe hail?"
                 },
                 {
-                  "id": "D",
-                  "title": "Suburban Industrial Chemical Runoff",
-                  "desc": "Chemical storage depot in the southern flood basin risks toxic leachate contamination if containment dikes overflow into the municipal reservoir.",
-                  "sector": "Environment"
-                },
-                {
-                  "id": "E",
-                  "title": "Airport Runway Drainage Saturation",
-                  "desc": "Regional commercial airport reports retention pond capacity at 92%. Continuing operations will force multiple widebody diversions.",
-                  "sector": "Aviation/Transport"
-                },
-                {
-                  "id": "F",
-                  "title": "Civil Protection Communication Congestion",
-                  "desc": "Cellular networks are overloaded by panic calls; emergency SMS broadcast protocol requires urgent bandwidth prioritization.",
-                  "sector": "Communications"
+                  "id": 4,
+                  "badge": "Storm Surge & Sea-Level Rise",
+                  "statement": "Should coastal low-lying airports be protected with massive sea dikes, or relocated inland over the next 50 years?",
+                  "pro": "Reinforced tidal barriers and sea walls safeguard trillions of euros in existing terminal and runway assets against 100-year storm surges.",
+                  "con": "Long-term sea-level rise and saltwater corrosion may render coastal dikes unsustainable; inland relocation offers permanent long-term resilience.",
+                  "prompt": "Interview your partner: Compare the vulnerability of airports like Amsterdam Schiphol, Nice Côte d'Azur, and Singapore Changi."
                 }
               ]
             },
-            "taskforce": {
-              "roles": [
+            "grammarClinic": {
+              "modeBadges": [
+                "📝 Word Building & Grammar Focus",
+                "⏱️ 8 min rules + 12 min drill",
+                "🎯 TOEIC Part 5 Accuracy"
+              ],
+              "instructions": [
+                "Step 1 (Word Family Rules - 8 mins): Analyze the four common suffix families in the reference table. Identify sentence position clues (e.g., after determiners $\\rightarrow$ noun; between auxiliary and participle $\\rightarrow$ adverb).",
+                "Step 2 (Interactive Drills - 7 mins): Individually complete the 4 Part-5 style sentence gap-fills by identifying the grammatical category required before choosing the suffix.",
+                "Step 3 (Peer Check & Verify - 5 mins): Compare answers with your partner. Explain why the blank requires that exact word form before clicking \"Reveal Answer\"."
+              ],
+              "deliverable": "Achieve 100% accuracy on the 4 word form drill sentences with clear grammatical explanations.",
+              "teacherNotes": "Highlight the common TOEIC trap: confusing adjectives ending in \"-able/-ive\" with nouns in \"-tion/-ment\". Emphasize sentence position analysis over guesswork.",
+              "title": "Activity 3: Language Focus: Word Forms & Suffixes in Technical English",
+              "summary": "Mastering Word Families: converting verbs to nouns, adjectives, and adverbs using common English suffixes—essential for TOEIC Part 5 accuracy and professional writing.",
+              "rules": [
                 {
-                  "role": "Mayor's Chief of Staff (Taskforce Chair)",
-                  "badge": "Leadership & Policy",
-                  "mission": "Maintain overall public order, balance competing agency demands, approve emergency financial spending, and make the final call on mandatory evacuations vs. shelter-in-place orders.",
-                  "keyPhrases": [
-                    "Our overarching objective is...",
-                    "I cannot authorize that expenditure unless...",
-                    "The legal threshold for mandatory evacuation requires..."
-                  ]
+                  "type": "Nouns (-tion, -ment, -ence, -ity)",
+                  "formula": "mitigate → mitigation | equip → equipment | resist → resilience | severe → severity",
+                  "usage": "Occur as subjects, objects of verbs, or following prepositions and articles (the, a, an)."
                 },
                 {
-                  "role": "Director of Municipal Transit & Mobility",
-                  "badge": "Infrastructure & Logistics",
-                  "mission": "Safeguard transit passengers, decide whether to shut down subway stations or keep them open as storm shelters, and deploy emergency electric shuttle buses to high-risk zones.",
-                  "keyPhrases": [
-                    "Subway line B is at acute risk of...",
-                    "Deploying rescue shuttles will require police escorts along...",
-                    "Halting all rail traffic will strand thousands unless..."
-                  ]
+                  "type": "Adjectives (-able, -al, -ive, -ous)",
+                  "formula": "permeate → permeable | ecology → ecological | adapt → adaptive | hazard → hazardous",
+                  "usage": "Modify nouns directly or serve as predicate adjectives following copular verbs (be, become, remain)."
                 },
                 {
-                  "role": "Regional Hospital & Health Network Lead",
-                  "badge": "Medical & Public Health",
-                  "mission": "Protect critical care patients, secure backup power for ventilators and neonatal units, establish pop-up cooling centers, and manage the casualty triage surge.",
-                  "keyPhrases": [
-                    "We are operating on razor-thin generator reserves...",
-                    "Immediate priority must be given to oxygen-dependent patients...",
-                    "Triage protocol mandates that we..."
-                  ]
-                },
-                {
-                  "role": "Public Communications & Media Officer",
-                  "badge": "Civic Information & Press",
-                  "mission": "Deliver clear, calm, authoritative emergency warnings, combat viral disinformation on social media, coordinate multi-lingual broadcasts, and prepare the live press conference.",
-                  "keyPhrases": [
-                    "Citizens must be advised to immediately...",
-                    "To counter false rumors regarding the water supply, we confirm that...",
-                    "In our forthcoming live statement, we will emphasize..."
-                  ]
+                  "type": "Adverbs (-ly)",
+                  "formula": "frequent → frequently | significant → significantly | rapid → rapidly | drastic → drastically",
+                  "usage": "Modify verbs, adjectives, or entire clauses; explain manner, frequency, or degree."
                 }
               ],
-              "injects": [
+              "drills": [
                 {
-                  "time": "T+15m INJECT #1",
-                  "title": "⚡ Sudden Power Outage in Sector 4",
-                  "desc": "A lightning strike has disabled Substation Voltaire. The regional hospital has switched to generator power, but fuel pumps are overheating. What is your immediate action?"
+                  "id": 1,
+                  "sentence": "The municipal authority committed to the immediate ________ of coastal flood defenses.",
+                  "options": [
+                    "construct",
+                    "construction",
+                    "constructive",
+                    "constructively"
+                  ],
+                  "correct": "construction",
+                  "explanation": "Follows the definite article 'the' and adjective 'immediate'; a noun is required."
                 },
                 {
-                  "time": "T+30m INJECT #2",
-                  "title": "🌊 Storm Drain Breach at Metro Central",
-                  "desc": "Floodwaters have cascaded down Station République escalators. 400 passengers are stranded on platform level. Transit director demands immediate civil rescue teams."
+                  "id": 2,
+                  "sentence": "Modern runway pavements must remain ________ to heavy rainfall during summer storms.",
+                  "options": [
+                    "permeability",
+                    "permeable",
+                    "permeably",
+                    "permeate"
+                  ],
+                  "correct": "permeable",
+                  "explanation": "Follows the linking verb 'remain'; a predicate adjective is required."
                 },
                 {
-                  "time": "T+45m INJECT #3",
-                  "title": "📢 Breaking Media Accusation",
-                  "desc": "A major news outlet goes live claiming the Mayor's office withheld flood warnings for 2 hours to avoid panicking tourists. Journalists are gathering for the press conference."
+                  "id": 3,
+                  "sentence": "Sea levels along Mediterranean coastlines have been rising ________ faster than predicted.",
+                  "options": [
+                    "substance",
+                    "substantial",
+                    "substantially",
+                    "substantiate"
+                  ],
+                  "correct": "substantially",
+                  "explanation": "Modifies the comparative adverb/adjective 'faster'; an adverb of degree is required."
+                },
+                {
+                  "id": 4,
+                  "sentence": "Meteorologists must continually ________ radar reflectivity data during convective events.",
+                  "options": [
+                    "assessment",
+                    "assessable",
+                    "assess",
+                    "assessingly"
+                  ],
+                  "correct": "assess",
+                  "explanation": "Follows the modal auxiliary 'must continually'; a bare base verb is required."
                 }
               ]
             },
-            "pressConference": {
-              "title": "Live Emergency Press Briefing (20 mins)",
-              "instructions": "The Taskforce delivers a 3-minute opening broadcast to the public, followed by intense 2-minute questions from the press corps (classmates acting as investigative reporters).",
-              "reporterQuestions": [
-                "Why were public transit stations not closed two hours earlier when meteorological radar clearly indicated an unprecedented flash flood risk?",
-                "Can the health director guarantee that ICU generators will not fail if the storm continues past midnight?",
-                "Reports indicate that low-income neighborhoods in Sector 4 had no functional emergency sirens. How do you respond to allegations of systemic neglect?",
-                "Who will be held legally accountable for the chemical storage overflow in the southern basin?"
+            "roleplay": {
+              "modeBadges": [
+                "👥 4-Member Crisis Simulation",
+                "⏱️ 10 min prep + 25 min taskforce + 10 min debrief",
+                "🏆 Formative Taskforce Decision"
+              ],
+              "instructions": [
+                "Step 1 (Role Allocation & Briefing - 10 mins): Form groups of 4. Assign one role card per member. Review your operational priority, constraints, and proposed action plan.",
+                "Step 2 (Taskforce Crisis Meeting - 25 mins): The Aerodrome Operations Director convenes the meeting. Work through the 3 escalating crisis injects (wind shear alert, ramp lightning risk, passenger terminal overcrowding). Negotiate a unified 60-minute Action Protocol.",
+                "Step 3 (Press & Passenger Briefing - 10 mins): Elect a spokesperson to deliver a 2-minute public announcement summarizing runway status, passenger welfare measures, and ramp safety orders."
+              ],
+              "deliverable": "A unified 4-point Emergency Action Protocol agreed upon by all 4 roles and delivered via a 2-minute oral briefing.",
+              "teacherNotes": "Circulate between groups to inject realistic complications (e.g., \"Lightning detected 3km away—ramp closure mandatory under OSHA/EASA rules\"). Evaluate active listening, polite negotiation, and crisis vocabulary.",
+              "title": "Activity 4: Airport Severe Weather Crisis Taskforce",
+              "scenario": "An intense convective supercell accompanied by severe wind shear warnings and 75mm/hour torrential rain is projected to cross the airfield within 60 minutes. Form a four-member Emergency Response Taskforce to balance flight safety, ground crew welfare, passenger communications, and infrastructure protection.",
+              "roles": [
+                {
+                  "title": "Aerodrome Operations Director",
+                  "focus": "Overall airfield safety, decision to temporarily suspend runway operations, coordination with ATC on diversions and holding patterns."
+                },
+                {
+                  "title": "Chief Meteorologist & Weather Advisor",
+                  "focus": "Briefing the committee on barometric drops, microburst risk windows, hail probability, and estimated storm clearance timeline."
+                },
+                {
+                  "title": "Airline Station Manager & Hub Controller",
+                  "focus": "Aircraft ground anchoring, lightning protocol for apron ramp crews (ramp closure), baggage hold security, and passenger re-accommodation."
+                },
+                {
+                  "title": "Civil Protection & Public Infrastructure Liaison",
+                  "focus": "Perimeter drainage pumps activation, road access corridors to the airport, municipal coordination, and public emergency bulletins."
+                }
+              ]
+            },
+            "closingReview": {
+              "modeBadges": [
+                "📋 Self-Assessment & FE2 Check",
+                "⏱️ 10 min pairs + 5 min Q&A",
+                "🎯 Oral Exam Readiness"
+              ],
+              "instructions": [
+                "Step 1 (FE2 Criteria Audit - 5 mins): Review the 3 formative checklist items. Verify how today's vocabulary and crisis simulation directly support your Session 5 evaluation.",
+                "Step 2 (Partner Reflection - 5 mins): Share 2 key technical takeaways and 1 pronunciation point you want to polish before next week.",
+                "Step 3 (Action Items - 5 mins): Log 5 new terms in your personal glossary and complete the online Module 2 Session 1 TOEIC practice questions."
+              ],
+              "deliverable": "Completed 3-item FE2 alignment checklist and 5 newly recorded technical entries in your vocabulary log.",
+              "teacherNotes": "Remind students of the FE2 oral format: paired debate/case study on climate resilience. Emphasize that professional B2 delivery requires fluent use of today's word forms and signposts.",
+              "title": "Session 1 Wrap-Up & FE2 Preparation",
+              "feChecklist": [
+                "Record 5 new extreme weather and resilience terms in your personal Vocabulary Log.",
+                "Complete the TOEIC Part 5 word forms drill on the Moodle deck.",
+                "Confirm with your partner whether you intend to tackle Option A (Airport) or Option B (City) for FE2."
+              ]
+            }
+          },
+          "overview": {
+            "intro": "In this session, you expand your English vocabulary for describing extreme weather events, seasonal hazards, and climatic disruptions. Working in pairs and small groups, you will practise explaining severe storms, reporting weather disruptions, and comparing regional climate trends in spoken English with accuracy and expressive confidence.",
+            "whyItMatters": "Weather is a universal talking point and an operational reality in transport, aviation, and daily life worldwide. Being able to describe severe conditions, interpret forecasts, and discuss climate adaptation in clear English ensures you can communicate without hesitation during international operations and your Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Flash Flood",
+                "ipa": "/flæʃ flʌd/",
+                "definition": "A sudden and rapid flood caused by torrential rainfall over a short duration."
+              },
+              {
+                "term": "Heatwave",
+                "ipa": "/ˈhiːtˌweɪv/",
+                "definition": "An extended period of abnormally hot weather, often accompanied by high humidity."
+              },
+              {
+                "term": "Gale-Force Winds",
+                "ipa": "/ɡeɪl fɔːs wɪndz/",
+                "definition": "Extremely strong winds measuring between 62 and 88 km/h on the Beaufort scale."
+              },
+              {
+                "term": "Drought",
+                "ipa": "/draʊt/",
+                "definition": "A prolonged period of abnormally low rainfall leading to severe water shortages."
+              },
+              {
+                "term": "Blizzard",
+                "ipa": "/ˈblɪz.əd/",
+                "definition": "A severe snowstorm characterized by freezing winds and blinding snow with near-zero visibility."
+              },
+              {
+                "term": "Wildfire",
+                "ipa": "/ˈwaɪldˌfaɪ.ər/",
+                "definition": "A large, uncontrolled fire that spreads rapidly across dry vegetation, forests, or scrubland."
+              },
+              {
+                "term": "Storm Surge",
+                "ipa": "/stɔːm sɜːdʒ/",
+                "definition": "A rising of coastal sea waters above normal levels caused by low atmospheric pressure and wind."
+              },
+              {
+                "term": "Tornado Alert",
+                "ipa": "/tɔːˈneɪ.doʊ əˌlɜːt/",
+                "definition": "An official emergency warning indicating that a destructive rotating column of air has formed."
+              },
+              {
+                "term": "Severe Turbulence",
+                "ipa": "/sɪˈvɪər ˈtɜː.bjə.ləns/",
+                "definition": "Violent atmospheric motion causing large, abrupt changes in an aircraft's altitude or attitude."
+              },
+              {
+                "term": "Climate Resilience",
+                "ipa": "/ˈklaɪ.mət rɪˈzɪl.jəns/",
+                "definition": "The capacity of a community or system to anticipate, absorb, and recover from hazardous climate events."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or recent examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Major international airports should automatically suspend all flight operations whenever temperatures exceed 40°C due to performance safety risks.",
+                "group2": "Extreme weather events are becoming so frequent that public emergency services should have legal power to enforce mandatory civilian curfews.",
+                "group3": "Airlines and rail operators should not be legally required to compensate stranded passengers when cancellations are caused by unforecast severe storms."
+              },
+              "usefulPhrases": [
+                "Our group discussed the operational risks of...",
+                "From an emergency response standpoint...",
+                "A major counter-argument to consider is...",
+                "In conclusion, we strongly maintain that..."
               ]
             }
           }
@@ -11601,54 +14444,64 @@
         "2": {
           "session": 2,
           "objectives": {
-            "title": "Session 2 Objectives - The 15-Minute Resilient City Blueprint",
-            "summary": "By the end of this session, you will be able to describe city neighborhoods and public transport, use prepositions of place and relative clauses, redesign a busy street in a group, and present your ideas to the class.",
+            "title": "Session 2 - Sustainable Cities Objectives",
+            "summary": "By the end of this session, you will be able to discuss sustainable cities with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Learn Key Vocabulary: City Design & Streets",
-                "description": "Learn 8 useful words for pedestrian areas, green spaces, bike lanes, and urban living."
+                "title": "Practice TOEIC Reading Part 7: Urban Development & Green Policies",
+                "description": "Read city council proposals, public transit schedules, and environmental reports for key facts and data."
               },
               {
                 "num": 2,
-                "title": "Grammar Focus: Describing Places & Locations",
-                "description": "Use prepositions ('adjacent to', 'within walking distance') and relative clauses ('where', 'which') with precision."
+                "title": "Master Vocabulary for 15-Minute Cities, Clean Transit & Public Spaces",
+                "description": "Learn high-frequency terms for pedestrian zones, green corridors, cycling lanes, and renewable district heating."
               },
               {
                 "num": 3,
-                "title": "Speaking Activity: Redesigning the City Center",
-                "description": "Look at two street photos, debate traffic vs. walking areas, and choose how to spend a €50M budget."
+                "title": "Apply Subject-Verb Agreement Rules with Complex Subject Phrases",
+                "description": "Ensure singular and plural verbs match when long descriptive phrases or collective nouns separate the subject from the verb."
               },
               {
                 "num": 4,
-                "title": "Speaking Practice: Presenting City Ideas to the Council",
-                "description": "Present your redesigned street plan to the class and vote on the best design."
+                "title": "Evaluate Green Neighborhoods & Public Transit Integration (DDRS)",
+                "description": "Assess how compact urban planning cuts vehicle pollution and creates healthier, fairer communities."
+              },
+              {
+                "num": 5,
+                "title": "Compare Two Cities and Present Urban Sustainability Features",
+                "description": "Present and compare urban sustainability initiatives using clear comparative structures and confident delivery."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 2 Lesson Plan - The 15-Minute Resilient City Blueprint (2 Hours)",
-            "summary": "A visual analysis and collaborative engineering sprint moving from spatial photo analysis to relative clause grammar drills, €50M budget allocation, stakeholder rebuttal clinic, and spoken council presentations.",
+            "title": "Session 2 Lesson Plan (2 Hours)",
+            "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
             "items": [
               {
-                "title": "Part 1: Key Vocabulary • City Design & Streets",
-                "description": "Learn 8 city architecture words, check syllable stress, and complete the photo matching challenge.",
+                "title": "Conversational Warm-Up: My Ideal City",
+                "description": "Students discuss in pairs what features make a city enjoyable to live in (parks, cycle paths, public transport).",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Focus • Describing Places & Locations",
-                "description": "Review spatial prepositions and relative pronouns; complete 4 sentence combination drills.",
+                "title": "TOEIC Strategy: Urban Notices & Bulletins",
+                "description": "Practice Part 7 reading comprehension with municipal updates, transit timetables, and environmental regulations.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Speaking Activity • Redesigning the City Center",
-                "description": "Compare the Barcelona Superblock to car sprawl, allocate the €50M budget, and answer resident questions.",
+                "title": "Vocabulary Builder: 15-Minute City Concepts",
+                "description": "Vocabulary for urban planning: pedestrian zone, green corridor, district heating, and low-emission zones.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Spoken City Council Pitch & Group Vote",
-                "description": "Deliver a short spoken pitch to the council panel and vote on the most livable project.",
+                "title": "Structured Discussion & Grammar",
+                "description": "Compare two European cities using Subject-Verb Agreement with collective nouns and long noun phrases.",
                 "part": "Part 4"
+              },
+              {
+                "title": "Debrief, Evaluation Prep & Wrap-Up",
+                "description": "Class recap, key grammatical reminders for subject-verb agreement, and personal vocabulary logging.",
+                "part": "Part 5"
               }
             ]
           },
@@ -12004,129 +14857,332 @@
             ]
           },
           "lessonContent": {
-            "hero": {
-              "title": "The 15-Minute Resilient City Blueprint",
-              "subtitle": "Archetype C • Collaborative Design Sprint: Superblocks, Micro-Mobility & Urban Transformation",
+            "overview": {
               "image": "images/ag_m2card2.jpg",
-              "badge": "AG Module 2 • Session 2 • Design Sprint"
+              "title": "Sustainable Cities & Low-Emission Urban Mobility",
+              "subtitle": "Sponge Cities, 15-Minute Urbanism, Urban Heat Islands & Transit Corridors",
+              "badge": "Session Overview • Sustainable Cities & Urban Design"
             },
-            "urbanShowcase": {
-              "photoA": {
-                "image": "images/urban_car_sprawl.jpg",
-                "title": "City A: Car-Centric Suburban Arterial Sprawl",
-                "caption": "Bumper-to-bumper 6-lane thoroughfare, asphalt surface parking, overhead flyovers, exhaust haze, zero pedestrian canopy.",
-                "hotspots": [
+            "hero": {
+              "image": "images/ag_m2card2.jpg",
+              "title": "Sustainable Cities & Low-Emission Urban Mobility",
+              "subtitle": "Sponge Cities, 15-Minute Urbanism, Urban Heat Islands & Transit Corridors",
+              "badge": "Session Overview • Sustainable Cities & Urban Design"
+            },
+            "openingSession": {
+              "modeBadges": [
+                "⚡ Quick Check + Pair Peer-Check",
+                "⏱️ 5 min audit + 5 min debrief",
+                "🎯 Urban Vocabulary Differentiation"
+              ],
+              "instructions": [
+                "Step 1 (Headline Scan - 3 mins): Read the three weekly urban mobility news prompts. Identify which initiative has the greatest decarbonization potential.",
+                "Step 2 (Practice Quiz - 4 mins): Attempt the 4 urban planning vocabulary terms without consulting notes (e.g., district heating vs CHP, permeable pavements vs swales).",
+                "Step 3 (Pair Verification - 3 mins): Compare your answers with a partner. Click 'Reveal Answer' to verify technical definitions and operational context."
+              ],
+              "deliverable": "Clearly explain the technical distinction between 2 sustainable urban design concepts using precise environmental terminology.",
+              "teacherNotes": "Focus student attention on false friends in urban planning (e.g., 'urban sprawl' vs 'compact development'). Ensure students explain why permeable pavements reduce runoff rather than just repeating definitions.",
+              "title": "Activity 1: Sustainable Urbanism News & Opening Warm-Up",
+              "summary": "Opening warm-up on green municipal policies, pedestrianization, and urban heat island mitigation.",
+              "newsPrompts": [
+                "Paris, Barcelona, and Milan expand permanent low-emission zones, removing parking lanes in favor of micro-forests and cycle highways.",
+                "Copenhagen's 'Cloudburst Management Plan' transforms urban parks into temporary retention lakes during historic deluge events.",
+                "Singapore and Tokyo mandate extensive vertical living walls and green rooftops to combat the Urban Heat Island effect."
+              ],
+              "diagnostic": {
+                "title": "Urban Planning Vocabulary Quick Check",
+                "instructions": "Discuss each concept in pairs before verifying your explanation:",
+                "questions": [
                   {
                     "id": 1,
-                    "label": "6-Lane Carriageway",
-                    "desc": "Dominated by vehicular congestion and bumper-to-bumper traffic, creating severe acoustic and particulate pollution."
+                    "q": "What is the Urban Heat Island (UHI) effect, and what primary factors amplify it?",
+                    "answer": "The UHI effect describes urban areas experiencing significantly warmer temperatures than surrounding rural areas. It is amplified by dark impermeable surfaces (asphalt, concrete) absorbing solar radiation, waste heat from air conditioners and engines, and tall buildings trapping heat."
                   },
                   {
                     "id": 2,
-                    "label": "Surface Asphalt Lot",
-                    "desc": "Impermeable asphalt heat island that absorbs solar radiation and prevents natural stormwater drainage."
+                    "q": "What core principles define a 'Sponge City'?",
+                    "answer": "Rather than funneling stormwater rapidly into underground concrete pipes that quickly overload, a sponge city mimics nature by absorbing, storing, filtering, and releasing rainwater through permeable pavements, rain gardens, bioswales, and wetlands."
                   },
                   {
                     "id": 3,
-                    "label": "Flyover Concrete Ramp",
-                    "desc": "Elevated road infrastructure that physically bisects the neighborhood and isolates residential blocks."
+                    "q": "What is the concept behind Carlos Moreno's '15-Minute City'?",
+                    "answer": "An urban planning model where every resident can access their daily necessities (work, grocery, education, healthcare, leisure) within a 15-minute walk or bike ride from home, drastically reducing private automobile dependency."
                   },
                   {
                     "id": 4,
-                    "label": "Absence of Sidewalks",
-                    "desc": "Severely devoid of pedestrian walkways, cycling infrastructure, and protective tree shade."
+                    "q": "What is the difference between Permeable Paving and Conventional Asphalt?",
+                    "answer": "Conventional asphalt is totally waterproof, creating high surface runoff that floods storm drains. Permeable paving features porous matrices or interlocking gaps that allow rainwater to infiltrate through into sub-base aquifers or retention layers."
                   }
                 ]
-              },
-              "photoB": {
-                "image": "images/urban_superblock.jpg",
-                "title": "City B: Pedestrian-First European Superblock",
-                "caption": "Reclaimed public space, protected cycle tracks, dappled tree canopy, outdoor terrace dining, permeable stone paving.",
-                "hotspots": [
-                  {
-                    "id": 1,
-                    "label": "Reclaimed Pedestrian Plaza",
-                    "desc": "Former road surface converted into active public realm for foot traffic, social gatherings, and children's play."
-                  },
-                  {
-                    "id": 2,
-                    "label": "Protected Cycle Track",
-                    "desc": "Dedicated bi-directional bike corridor physically segregated from vehicular traffic by flowering planters."
-                  },
-                  {
-                    "id": 3,
-                    "label": "Permeable Green Canopy",
-                    "desc": "Mature deciduous trees and permeable light pavers that filter rainwater and lower ambient summer heat by 4°C."
-                  },
-                  {
-                    "id": 4,
-                    "label": "Outdoor Café Culture",
-                    "desc": "Flanked by ground-floor independent businesses and restaurant terraces that stimulate the local economy."
-                  }
-                ]
-              },
-              "spokenProtocol": [
+              }
+            },
+            "survey": {
+              "modeBadges": [
+                "👥 Paired Rotating Speed Survey",
+                "⏱️ 5 min prep + 15 min interviews + 5 min debrief",
+                "🎯 Structured Spoken Debate & Argumentation"
+              ],
+              "instructions": [
+                "Step 1 (Stance Preparation - 5 mins): Review the 4 municipal dilemmas. Formulate your personal stance using the suggested pros, cons, and linking phrases.",
+                "Step 2 (Rotating Speed Survey - 15 mins): Interview at least three different peers. Challenge their assumptions regarding costs, equity, and scalability.",
+                "Step 3 (Consensus & Summary - 5 mins): Return to your primary partner. Summarize the strongest trade-offs heard and prepare a 1-minute verbal briefing on the most contentious dilemma."
+              ],
+              "deliverable": "Complete the 4-dilemma survey grid with peer notes and present 1 consensus mitigation strategy to the class.",
+              "teacherNotes": "Enforce strict use of linking phrases ('On the one hand...', 'While acknowledging the upfront capital expenditure...'). Circulate and note recurring errors in modal verbs of deduction.",
+              "title": "Activity 2: Resilient Urban Innovations: Speed Survey",
+              "summary": "Conduct speed-dating interviews on 4 pioneering urban resilience strategies deployed worldwide. Weigh pros, cons, and community trade-offs in pairs.",
+              "signposts": [
+                "\"From an urban planning perspective, ...\"",
+                "\"While sponge infrastructure requires upfront investment, it significantly reduces...\"",
+                "\"To combat extreme summer heat, municipalities must prioritize...\"",
+                "\"The transition toward a 15-minute city relies heavily on...\""
+              ],
+              "topics": [
                 {
-                  "step": "Step 1 (Spatial Observation - 4 mins)",
-                  "prompt": "Partner A describes Photo A; Partner B describes Photo B using spatial prepositions ('In the foreground...', 'Flanked by...', 'Bisected by...')."
+                  "id": 1,
+                  "badge": "Superblocks & Active Mobility",
+                  "statement": "Should historic city centers completely ban private fossil-fuel automobiles in favor of pedestrian superblocks?",
+                  "pro": "Superblocks cut local air pollution by 30%, reduce traffic noise, and reclaim street space for children, community plazas, and street trees.",
+                  "con": "Businesses worry about freight delivery logistics, and outer-suburban commuters who lack convenient rail links face longer journeys.",
+                  "prompt": "Interview your partner: How does Barcelona's superblock model compare to your hometown's city center?"
                 },
                 {
-                  "step": "Step 2 (Human Impact - 3 mins)",
-                  "prompt": "Compare 3 quality-of-life factors: acoustic noise, local business vitality, and safety for children/elderly."
+                  "id": 2,
+                  "badge": "Sponge City Water Squares",
+                  "statement": "Should all new public parks and city squares be designed as sunken stormwater flood retention basins?",
+                  "pro": "Dual-purpose water plazas (like in Rotterdam) serve as dry skate parks and basketball courts in normal weather, and safely retain millions of liters during flash floods.",
+                  "con": "Sediment and debris accumulation after flooding requires rapid municipal cleaning before public recreational use can resume.",
+                  "prompt": "Interview your partner: How could your campus or neighborhood implement sponge city water retention features?"
                 },
                 {
-                  "step": "Step 3 (The Mayor's Dilemma - 3 mins)",
-                  "prompt": "If you were city mayor with funds for only ONE transformation in Photo A, which single element from Photo B would you build first, and why?"
+                  "id": 3,
+                  "badge": "Transit-Oriented Development",
+                  "statement": "Should municipal governments eliminate mandatory parking minimums for all new residential buildings near transit hubs?",
+                  "pro": "Removing parking minimums lowers construction costs, increases housing affordability, and incentivizes residents to choose walking, cycling, and public transit.",
+                  "con": "Without adequate car-sharing or electric vehicle infrastructure, overflow parking can spill over into adjacent residential streets.",
+                  "prompt": "Interview your partner: What makes an urban transport hub truly attractive for daily commuters?"
+                },
+                {
+                  "id": 4,
+                  "badge": "District Cooling & Circular Energy",
+                  "statement": "Should cities mandate centralized seawater or geothermal district cooling networks instead of individual building air conditioning?",
+                  "pro": "Centralized district cooling is up to 50% more energy-efficient than separate rooftop chillers, eliminating localized hot exhaust air in pedestrian streets.",
+                  "con": "Laying subterranean chilled water pipe networks beneath existing congested streets involves high capital cost and disruptive utility works.",
+                  "prompt": "Interview your partner: How can cities solve the paradox of air conditioning making outdoor street temperatures hotter?"
                 }
               ]
             },
-            "redesignSprint": {
-              "budget": "€50,000,000",
-              "corridorName": "The Boulevard Carnot Regeneration Project (60-Hectare Mixed Zone)",
-              "categories": [
+            "grammarClinic": {
+              "modeBadges": [
+                "🧠 Grammar Focus & Interactive Drills",
+                "⏱️ 7 min concept analysis + 8 min board drills + 5 min check",
+                "🎯 Agreement Precision with Groups & Institutions"
+              ],
+              "instructions": [
+                "Step 1 (Pattern Analysis - 7 mins): Study the 3 rules for collective nouns, measurement expressions, and percentages in technical English. Notice British vs American conventions.",
+                "Step 2 (Pair Transformation Drills - 8 mins): Work through the 4 interactive drills. Justify whether the subject acts as a singular unit or individual members.",
+                "Step 3 (Error Correction - 5 mins): Check answers using the reveal toggles. Formulate two original sentences about airport or municipal transport authorities."
+              ],
+              "deliverable": "Accurately complete all 4 interactive agreement drills and construct 2 original sentences applying collective noun agreement rules.",
+              "teacherNotes": "Highlight that in aviation and international engineering reports, institutional entities ('The committee', 'The board', 'The taskforce') take singular verbs when acting as a formal unit. Contrast with British casual usage.",
+              "title": "Activity 3: Language Focus: Subject-Verb Agreement with Collective Nouns",
+              "summary": "Navigating tricky subject-verb agreement rules with collective nouns, complex prepositional phrases, and quantifiers in professional writing and TOEIC Part 5.",
+              "rules": [
                 {
-                  "name": "Active Mobility & Transit",
-                  "costPerUnit": "€10M / 5km",
-                  "desc": "Protected cycle superhighways, electric tramway extension, and smart micro-mobility docking hubs."
+                  "type": "Collective Nouns (Council, Committee, Team)",
+                  "formula": "The municipal council [decides / has decided] (treated as a single entity).",
+                  "usage": "In American and standard business English, singular verbs are preferred when the group acts together as one unit."
                 },
                 {
-                  "name": "Urban Forestry & Bioswales",
-                  "costPerUnit": "€8M / 10,000m²",
-                  "desc": "Continuous tree canopy, natural sponge-city bioswales for flood retention, and pocket parks."
+                  "type": "Complex Noun Phrases with Prepositions",
+                  "formula": "A network [of permeable stormwater boulevards] IS required. (Agreement is with 'network', NOT 'boulevards').",
+                  "usage": "Ignore the prepositional phrase between the true grammatical subject and the verb."
                 },
                 {
-                  "name": "Affordable & Low-Carbon Housing",
-                  "costPerUnit": "€15M / 200 units",
-                  "desc": "Energy-positive modular timber social housing with rooftop community vegetable gardens."
-                },
-                {
-                  "name": "Civic Plazas & Local Commerce Hubs",
-                  "costPerUnit": "€7M / plaza",
-                  "desc": "Pedestrianized market squares, pop-up artisan retail stalls, and shaded outdoor cultural stages."
-                },
-                {
-                  "name": "Subterranean Parking & Logistics Hub",
-                  "costPerUnit": "€10M / facility",
-                  "desc": "Consolidated underground perimeter parking to remove all surface on-street car storage."
+                  "type": "Quantifiers & Fractions (Majority, Percentage, Portion)",
+                  "formula": "A majority of the surface IS permeable (uncountable) vs. A majority of residents ARE commuters (plural count).",
+                  "usage": "When 'majority', 'percentage', or 'all' are followed by 'of + noun', the verb agrees with the following object noun."
                 }
               ],
-              "stakeholders": [
+              "drills": [
                 {
-                  "role": "The Suburban Commuter Rep",
-                  "objection": "If you remove 4 traffic lanes, my daily commute will double from 35 to 70 minutes. How will I reach my job without being penalized?"
+                  "id": 1,
+                  "sentence": "A comprehensive network of bioswales and retention ponds ________ been installed around the perimeter.",
+                  "options": [
+                    "have",
+                    "has",
+                    "are",
+                    "were"
+                  ],
+                  "correct": "has",
+                  "explanation": "The subject is 'A comprehensive network' (singular), not 'bioswales and retention ponds'."
                 },
                 {
-                  "role": "The Local Retail Association Lead",
-                  "objection": "Our shopkeepers rely on customer curb-side parking. If clients can't park directly in front, our sales will plummet."
+                  "id": 2,
+                  "sentence": "The municipal planning committee ________ meeting today to review zoning bylaws for the new eco-quarter.",
+                  "options": [
+                    "is",
+                    "are",
+                    "were",
+                    "have been"
+                  ],
+                  "correct": "is",
+                  "explanation": "The committee acts as a single body; in standard TOEIC grammar, a singular verb is required."
                 },
                 {
-                  "role": "The Climate Resilience Campaigner",
-                  "objection": "A €50M budget must achieve net-zero runoff and at least 40% tree canopy coverage, not cosmetic greenwashing."
+                  "id": 3,
+                  "sentence": "A large percentage of the city's asphalt surfaces ________ impermeable to storm runoff.",
+                  "options": [
+                    "remains",
+                    "remain",
+                    "are remaining",
+                    "is remaining"
+                  ],
+                  "correct": "remain",
+                  "explanation": "With percentages/fractions followed by a plural count noun ('surfaces'), the verb takes plural agreement ('remain')."
                 },
                 {
-                  "role": "The Senior Citizen Advocate",
-                  "objection": "E-scooters and uneven cobblestones are dangerous for people with reduced mobility. How do you guarantee barrier-free access?"
+                  "id": 4,
+                  "sentence": "Neither the city mayor nor the civil engineers ________ willing to compromise on flood defense standards.",
+                  "options": [
+                    "was",
+                    "were",
+                    "is",
+                    "has been"
+                  ],
+                  "correct": "were",
+                  "explanation": "In 'Neither... nor...', the verb agrees with the subject closest to it ('the civil engineers' -> plural 'were')."
                 }
+              ]
+            },
+            "roleplay": {
+              "modeBadges": [
+                "🏛️ Municipal Steering Committee Simulation",
+                "⏱️ 10 min role prep + 25 min formal debate + 10 min vote & debrief",
+                "🎯 Multi-Stakeholder Negotiation & Public Presentation"
+              ],
+              "instructions": [
+                "Step 1 (Role Assignment & Briefing - 10 mins): Divide into groups of 4. Assign the four stakeholder roles (Urban Planning Director, Transport Authority Lead, Environmental NGO Advocate, Local Merchant Association Rep). Draft your 3 core non-negotiable priorities.",
+                "Step 2 (Formal Committee Debate - 25 mins): Convene the redevelopment committee session. Present your stakeholder brief, negotiate budget allocation for the €120M brownfield redevelopment, and manage conflicting demands (pedestrianization vs delivery access).",
+                "Step 3 (Consensus Charter & Debrief - 10 mins): Vote on the 3 compromise motions. Present your committee's final consensus blueprint to the plenary chamber in a 2-minute spoken summary."
+              ],
+              "deliverable": "Deliver a 3-minute oral stakeholder intervention defending your mandate with empirical data, followed by a signed consensus compromise charter.",
+              "teacherNotes": "Act as the Municipal Mayor presiding over the steering committee. Intervene if any stakeholder dominates without listening. Demand concrete metric compromises (e.g., delivery time windows: 05:00-09:00 to reconcile merchants and pedestrian safety).",
+              "title": "Activity 4: Urban Eco-District Redesign Committee",
+              "scenario": "A 50-hectare former industrial and transit depot adjacent to the central railway station is being redeveloped into a high-density, climate-resilient eco-quarter. Form a multi-disciplinary steering committee to reach a consensus on land use, green space, active mobility, and heat mitigation.",
+              "roles": [
+                {
+                  "title": "Chief Urban Architect & Planner",
+                  "focus": "Building heights, passive solar orientation, 15-minute zoning, and ensuring living green roofs on 100% of new structures."
+                },
+                {
+                  "title": "Sustainable Transport & Mobility Director",
+                  "focus": "Car-free pedestrian streets, two-way segregated cycle highways, electric tram extensions, and zero parking minimums for private cars."
+                },
+                {
+                  "title": "Civil Water & Climate Resilience Engineer",
+                  "focus": "Sponge city drainage, subterranean cisterns for stormwater recycling, permeable pavements, and flood retention squares."
+                },
+                {
+                  "title": "Community Health & Economic Equity Advocate",
+                  "focus": "Affordable social housing quotas (minimum 35%), shaded public parks for senior citizens, local zero-km food markets, and community clinics."
+                }
+              ]
+            },
+            "closingReview": {
+              "modeBadges": [
+                "🏁 Formative Evaluation 2 Alignment",
+                "⏱️ 5 min checklist + 5 min peer review + 5 min portfolio entry",
+                "🎯 Spoken Argumentation Assessment Readiness"
+              ],
+              "instructions": [
+                "Step 1 (Checklist Self-Audit - 5 mins): Work through the 4 Formative Evaluation 2 alignment criteria. Rate your readiness from 1 to 5.",
+                "Step 2 (Peer Feedback Exchange - 5 mins): Share one area of strength and one specific language focus (e.g., collective noun agreement, signposting) with your partner.",
+                "Step 3 (Digital Learning Log - 5 mins): Add 5 new urban planning and transport transition terms to your digital vocabulary portfolio before Session 3."
+              ],
+              "deliverable": "Complete the 4-point Formative Evaluation 2 readiness audit and commit 1 priority improvement goal to your learning log.",
+              "teacherNotes": "Remind students that Formative Evaluation 2 (FE2) focuses heavily on multi-stakeholder negotiation, managing disagreement diplomatically, and using accurate linking words. Check learning logs for consistent vocabulary recording.",
+              "title": "Session 2 Wrap-Up & FE2 Alignment",
+              "feChecklist": [
+                "Add 5 new urban planning and sponge city terms to your Vocabulary Log.",
+                "Review the Subject-Verb Agreement rules and complete the online drills.",
+                "Draft an outline of Dimension 2 (Physical & Civil Interventions) for your FE2 oral evaluation."
+              ]
+            }
+          },
+          "overview": {
+            "intro": "This session focuses on discussing sustainable cities, green urban planning, and environmental architecture in spoken English. Working in teams, you will practise describing eco-friendly infrastructure, evaluating renewable energy systems, and explaining how urban design can reduce carbon emissions and improve quality of life.",
+            "whyItMatters": "Explaining complex technical concepts like sustainable infrastructure and energy transitions in simple, persuasive English is an essential workplace communication skill. This practice helps you formulate convincing arguments, structure clear explanations, and perform confidently in your Module 2 Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Green Infrastructure",
+                "ipa": "/ɡriːn ˈɪn.frəˌstrʌk.tʃər/",
+                "definition": "A network of natural and semi-natural green spaces designed to manage stormwater and cool cities."
+              },
+              {
+                "term": "Urban Heat Island",
+                "ipa": "/ˈɜː.bən hiːt ˈaɪ.lənd/",
+                "definition": "An urban area that is significantly warmer than surrounding rural regions due to concrete and human activity."
+              },
+              {
+                "term": "District Heating",
+                "ipa": "/ˈdɪs.trɪkt ˈhiː.tɪŋ/",
+                "definition": "A system for distributing heat generated in a centralized location to urban buildings via insulated pipes."
+              },
+              {
+                "term": "Passive Solar",
+                "ipa": "/ˈpæs.ɪv ˈsoʊ.lər/",
+                "definition": "Building design that captures natural sunlight to heat spaces without active mechanical systems."
+              },
+              {
+                "term": "Permeable Pavement",
+                "ipa": "/ˈpɜː.mi.ə.bəl ˈpeɪv.mənt/",
+                "definition": "Paving material that allows rainwater to seep through into underlying soils, reducing runoff."
+              },
+              {
+                "term": "Living Wall",
+                "ipa": "/ˈlɪv.ɪŋ wɔːl/",
+                "definition": "A vertical garden attached to an exterior or interior building facade to purify air and insulate."
+              },
+              {
+                "term": "Circular Economy",
+                "ipa": "/ˈsɜː.kjə.lər iˈkɒn.ə.mi/",
+                "definition": "An economic model emphasizing product reuse, refurbishment, and recycling over disposal."
+              },
+              {
+                "term": "Zero-Emission Zone",
+                "ipa": "/ˈzɪə.roʊ iˈmɪʃ.ən zoʊn/",
+                "definition": "An urban district where only zero-emission vehicles (electric or bicycles) are permitted entry."
+              },
+              {
+                "term": "Smart Grid",
+                "ipa": "/smɑːt ɡrɪd/",
+                "definition": "An electrical grid using digital communications technology to detect and react to local energy usage changes."
+              },
+              {
+                "term": "Urban Density",
+                "ipa": "/ˈɜː.bən ˈden.sə.ti/",
+                "definition": "The concentration of residents and dwellings within a given urban area to optimize land use."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or architectural examples to support your group's view.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "All new commercial office buildings should be legally mandated to feature solar panels and green rooftop gardens, regardless of cost.",
+                "group2": "High-density urban living with compact apartments is far more environmentally sustainable than suburban homes with gardens.",
+                "group3": "Air conditioning in residential and retail buildings should be strictly regulated and capped during summer heatwaves to protect the power grid."
+              },
+              "usefulPhrases": [
+                "When analyzing modern sustainable cities, we noticed...",
+                "The main environmental advantage of this approach is...",
+                "Critics often point out the financial cost, but we believe...",
+                "To conclude our presentation..."
               ]
             }
           }
@@ -12134,54 +15190,64 @@
         "3": {
           "session": 3,
           "objectives": {
-            "title": "Session 3 Objectives - Environmental Ethics & The Public Inquiry Hearing",
-            "summary": "By the end of this session, you will be able to discuss environmental questions, express polite opinions and disagreement, participate in a mock public hearing, and evaluate arguments with a partner.",
+            "title": "Session 3 - Building and Supporting Arguments Objectives",
+            "summary": "By the end of this session, you will be able to build and support persuasive arguments with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Learn Key Vocabulary: Environment & Public Debates",
-                "description": "Learn 8 useful words for environmental protection, construction projects, and community hearings."
+                "title": "Practice Identifying Opinions, Facts & Tone in TOEIC Contexts",
+                "description": "Differentiate between objective facts and speaker opinions in workplace dialogues and business articles."
               },
               {
                 "num": 2,
-                "title": "Grammar Focus: Expressing Opinions & Polite Disagreement",
-                "description": "Use polite and cautious phrases ('It seems likely that...', 'While I understand your point, I believe...')."
+                "title": "Learn Useful Phrases to Agree, Disagree, and Express Counter-Arguments",
+                "description": "Master polite, professional phrases to support your position, acknowledge counter-arguments, and make concessions."
               },
               {
                 "num": 3,
-                "title": "Speaking Activity: The New Railway Public Debate",
-                "description": "Role-play a debate between rail engineers, environmentalists, local residents, and government officials."
+                "title": "Master Gerunds & Infinitives (recommend doing vs. agree to do)",
+                "description": "Use verbs correctly followed by gerunds (-ing) or infinitives (to + verb) when proposing actions and solutions."
               },
               {
                 "num": 4,
-                "title": "Speaking Practice: Asking Questions & Defending Your View",
-                "description": "Cross-examine witnesses, defend your position, and deliver a fair final decision."
+                "title": "Structure Persuasive Arguments on Environmental Regulations (DDRS)",
+                "description": "Build logical points backed by data when debating carbon pricing, plastic bans, and corporate environmental rules."
+              },
+              {
+                "num": 5,
+                "title": "Practice Defending Your Point of View in Group Discussions",
+                "description": "Defend your ideas calmly in group exchanges while actively listening and responding to different perspectives."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 3 Lesson Plan - Environmental Ethics & The Public Inquiry Hearing (2 Hours)",
-            "summary": "A formal inquiry lab moving from environmental vocabulary to cautious argumentation clinics, witness deposition analysis, Oxford-style cross-examinations, and tribunal deliberations.",
+            "title": "Session 3 Lesson Plan (2 Hours)",
+            "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
             "items": [
               {
-                "title": "Part 1: Key Vocabulary • Environment & Public Debates",
-                "description": "Learn 8 debate words, check syllable stress, and complete the matching challenge.",
+                "title": "Conversational Warm-Up: Quick Dilemmas",
+                "description": "In pairs, students quickly choose a side on simple dilemmas (e.g. banning cars in city centers) and give one strong reason.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Focus • Expressing Opinions & Polite Disagreement",
-                "description": "Master cautious language ('hedging') and polite disagreement; complete 4 rephrasing drills.",
+                "title": "TOEIC Strategy: Detecting Opinion & Inference",
+                "description": "Practice identifying the speaker or author's main point, tone, and implied meaning in TOEIC dialogues and articles.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Speaking Activity • The New Railway Public Debate",
-                "description": "Role-play the Val-d'Or Rail Bypass hearing with sworn witness statements and cross-examination.",
+                "title": "Vocabulary Builder: Persuasive Language",
+                "description": "Useful phrases for agreeing politely, making concessions, challenging claims, and summarizing evidence.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Speaking Review & Discussion Feedback",
-                "description": "Evaluate who made the most convincing argument and review tips for your speaking exam.",
+                "title": "Structured Discussion & Grammar",
+                "description": "Mini-debates on environmental rules using Gerunds & Infinitives (advocate doing, decide to ban, prioritize investing).",
                 "part": "Part 4"
+              },
+              {
+                "title": "Debrief, Evaluation Prep & Wrap-Up",
+                "description": "Peer feedback on debate conduct, review of clear argumentation techniques, and Session 5 speaking checklist.",
+                "part": "Part 5"
               }
             ]
           },
@@ -12537,78 +15603,337 @@
             ]
           },
           "lessonContent": {
-            "hero": {
-              "title": "Environmental Ethics & The Public Inquiry Hearing",
-              "subtitle": "Archetype B • Media & Debate Lab: Infrastructure Expansion vs. Ecological Integrity",
+            "overview": {
               "image": "images/ag_m2card3.jpg",
-              "badge": "AG Module 2 • Session 3 • Debate Lab"
+              "title": "Building & Defending Environmental Arguments",
+              "subtitle": "Structuring Arguments, Linking Words, Polite Disagreement & Policy Debates",
+              "badge": "Session Overview • Environmental Argumentation & Policy"
             },
-            "devilsAdvocate": [
-              {
-                "claim": "Economic progress demands sacrifice: a few hundred hectares of wetland cannot hold back a multi-billion euro transport artery.",
-                "challenge": "Challenge this position: How do intact wetlands provide quantifiable economic value through flood mitigation and carbon sequestration?"
-              },
-              {
-                "claim": "If we don't build new road connections, regional towns will die economically within twenty years.",
-                "challenge": "Challenge this position: Does expanding highway capacity genuinely revive small towns, or does it accelerate urban brain drain and strip-mall decay?"
-              },
-              {
-                "claim": "Individual citizens are solely responsible for climate change through their consumer choices; corporations and governments just meet market demand.",
-                "challenge": "Challenge this position: How does public infrastructure design dictate individual choices (e.g., if there are no trains, people must drive)?"
+            "hero": {
+              "image": "images/ag_m2card3.jpg",
+              "title": "Building & Defending Environmental Arguments",
+              "subtitle": "Structuring Arguments, Linking Words, Polite Disagreement & Policy Debates",
+              "badge": "Session Overview • Environmental Argumentation & Policy"
+            },
+            "openingSession": {
+              "title": "Activity 1: Environmental Policy News & Argument Warm-Up",
+              "summary": "Opening warm-up examining international policy controversies and diagnostic distinctions in argumentation.",
+              "modeBadges": [
+                "Pairs",
+                "Quick Check",
+                "10 Mins"
+              ],
+              "instructions": [
+                "Read the 3 weekly environmental policy headlines (short-haul flight bans, urban delivery mandates, greenwashing tribunals).",
+                "With your partner, discuss the 4 key distinctions: Claim vs. Evidence, Strategic Concession, Correlation vs. Causation, and the Straw Man fallacy.",
+                "Click 'Reveal Answer' on each card to evaluate your rhetorical reasoning against the model answers."
+              ],
+              "deliverable": "Accurate verbal distinction between assertions, empirical evidence, and concessive counter-arguments.",
+              "teacherNotes": "Ensure students recognize that in technical and environmental policy debates, an unbacked claim is easily dismissed. Emphasize that making a concession ('While upfront capex is elevated...') actually strengthens technical credibility.",
+              "newsPrompts": [
+                "European governments debate capping regional flight routes where high-speed trains offer sub-2.5-hour city connections.",
+                "City mayors clash with logistics carriers over mandatory zero-emission delivery vehicle mandates in low-emission zones.",
+                "Environmental tribunals scrutinize corporate carbon-neutrality pledges for evidence of greenwashing."
+              ],
+              "diagnostic": {
+                "title": "Argumentation & Linking Words Quick Check",
+                "instructions": "Discuss each rhetorical distinction in pairs before revealing the model explanation:",
+                "questions": [
+                  {
+                    "id": 1,
+                    "q": "What is the structural difference between a Claim and Evidence when building an argument?",
+                    "answer": "A claim is an assertive statement of opinion or policy you want your audience to accept (e.g., 'We must mandate cool roofs'). Evidence (data, facts, case studies) provides the empirical foundation that supports and proves the claim."
+                  },
+                  {
+                    "id": 2,
+                    "q": "What is the strategic purpose of making a Concession during a technical debate?",
+                    "answer": "A concession acknowledges the partial validity of an opposing point (e.g., 'While I recognize the substantial upfront capex...'). It builds credibility, demonstrates open-mindedness, and strengthens your subsequent rebuttal."
+                  },
+                  {
+                    "id": 3,
+                    "q": "What is the difference between Correlation and Causation in environmental studies?",
+                    "answer": "Correlation means two events occur together (e.g., higher temperatures and increased ice cream sales). Causation means one event directly produces the other (e.g., rising greenhouse gas concentrations trap heat, directly causing global temperature rise)."
+                  },
+                  {
+                    "id": 4,
+                    "q": "What is a 'Straw Man' fallacy, and why must it be avoided in professional communication?",
+                    "answer": "A straw man fallacy misrepresents or exaggerates an opponent's argument to make it easy to defeat (e.g., 'Advocating cycle lanes means you want to destroy all business commerce!'). It damages professional credibility and prevents constructive problem-solving."
+                  }
+                ]
               }
-            ],
-            "dossier": {
-              "projectName": "The Val-d'Or High-Speed Rail & Freight Bypass (Link A79)",
-              "controversy": "A proposed 42-km electrified rail bypass intended to divert 80,000 freight trucks annually away from regional city centers, but requiring the bisecting of the Marais-Sauvage Protected Biosphere Reserve.",
-              "witnesses": [
+            },
+            "survey": {
+              "title": "Activity 2: Environmental Policy Dilemmas: Speed Sparring",
+              "summary": "Engage in timed 4-minute debate rounds on four controversial climate policies. Practice using structured arguments: Claim → Evidence → Reasoning → Concession → Rebuttal.",
+              "modeBadges": [
+                "Pairs",
+                "Timed Speed Sparring",
+                "25 Mins"
+              ],
+              "instructions": [
+                "Review the 4 policy dilemma cards: Short-Haul Flight Bans, Airport Night Curfews, Small Modular Nuclear Reactors, and Fast-Tracking Green Infrastructure Permits.",
+                "Take turns roleplaying the Pro (advocacy) and Con (counter) positions for each topic in rapid 4-minute sparring rounds.",
+                "Incorporate at least two of the mandatory spoken linking phrases into each round ('While I concede that...', 'Empirical evidence strongly suggests that...').",
+                "Switch partners after Dilemma 2 to defend the opposing viewpoint."
+              ],
+              "deliverable": "4 structured debate exchanges (Claim → Evidence → Reasoning → Concession → Response) utilizing polite connecting words for contrasting ideas.",
+              "teacherNotes": "Circulate to monitor linking words. Intervene if students rely on casual conversational fillers ('Yeah but...', 'I don't think so'). Hold students to formal hedging and concessive markers ('Admittedly...', 'Notwithstanding the operational challenges...').",
+              "signposts": [
+                "\"While I concede that [X] involves significant expenditure, ...\"",
+                "\"Empirical evidence strongly suggests that ...\"",
+                "\"To address the concern regarding [Y], we propose that ...\"",
+                "\"From a cost-benefit standpoint, the data clearly demonstrates that ...\""
+              ],
+              "topics": [
                 {
-                  "role": "Dr. Elena Rostova • Chief Ecological Biologist",
-                  "stance": "Total Opposition to Surface Route",
-                  "testimony": "The Marais-Sauvage is a non-renewable peatland ecosystem sequestering 450,000 tons of carbon. Bisecting it with an embankment will sever hydrological aquifers and trigger irreversible methane release. The only acceptable compromise is a bored deep tunnel or complete re-routing.",
-                  "vulnerability": "A deep tunnel route would inflate construction costs by €850M and delay completion by 6 years."
+                  "id": 1,
+                  "badge": "Short-Haul Flights vs. High-Speed Rail",
+                  "statement": "Should the European Union ban all commercial passenger flights where high-speed rail exists under 2.5 hours?",
+                  "pro": "High-speed rail emits up to 90% less CO2 per passenger-kilometer than short-haul jet flights and brings travelers directly into central business districts.",
+                  "con": "Airlines lose valuable feeder passenger traffic for long-haul intercontinental routes, and rail capacity is already saturated on peak corridors.",
+                  "prompt": "Debate your partner: How should governments balance air-rail modal shift without stranding regional passengers?"
                 },
                 {
-                  "role": "Marcus Vance • Regional Chamber of Commerce Director",
-                  "stance": "Full Support for Surface Route",
-                  "testimony": "Regional highway gridlock currently costs local logistics firms €120M each year in delayed shipments and diesel waste. The bypass will cut freight delivery times by 48% and generate 3,500 permanent green logistics jobs for unemployed youth.",
-                  "vulnerability": "Logistics firms are unwilling to pay the high rail track access charges unless heavily subsidized by public taxpayers."
+                  "id": 2,
+                  "badge": "Airport Night Curfews",
+                  "statement": "Should international airports enforce strict total flight curfews between 23h00 and 06h00?",
+                  "pro": "Night aircraft noise disrupts sleep patterns, impairs cardiovascular health, and reduces cognitive performance for hundreds of thousands of nearby residents.",
+                  "con": "Global air cargo relies on overnight rotations to deliver vital pharmaceuticals and just-in-time e-commerce, and hub carriers need morning arrival waves.",
+                  "prompt": "Debate your partner: Should acoustic surcharges or complete flight bans be used to regulate night operations?"
                 },
                 {
-                  "role": "Amira Benali • Commuter Union Representative",
-                  "stance": "Conditional Support for Multi-Modal Hub",
-                  "testimony": "85,000 workers commute daily along the congested valley corridor. We support the bypass ONLY if it includes 4 intermediate passenger stations and subsidized regional commuter fares, rather than acting solely as a non-stop freight conduit.",
-                  "vulnerability": "Adding four passenger stations will reduce high-speed freight capacity by 35%."
+                  "id": 3,
+                  "badge": "Nuclear Base Load vs. Renewables",
+                  "statement": "Should cities and industrial hubs invest in Small Modular Nuclear Reactors (SMRs) alongside wind and solar power?",
+                  "pro": "SMRs provide dependable, zero-carbon baseload electricity regardless of cloudy weather or calm winds, occupying a tiny land footprint.",
+                  "con": "Nuclear construction projects face historic cost overruns, regulatory delays, and lingering public concerns regarding long-term radioactive waste storage.",
+                  "prompt": "Debate your partner: What is the optimal energy mix to achieve net-zero power grids by 2040?"
                 },
                 {
-                  "role": "Chief Commissioner Harrison • Judicial Inquiry Lead",
-                  "stance": "Neutral Arbiter",
-                  "testimony": "The Commission must balance binding European Biodiversity Directives against National Strategic Infrastructure Mandates. We demand rigorous cost-benefit data, not emotional rhetoric.",
-                  "vulnerability": "Must deliver a definitive verdict that will inevitably anger either the economic lobby or the environmental coalition."
+                  "id": 4,
+                  "badge": "Fast-Tracking Green Infrastructure Permits",
+                  "statement": "Should governments bypass local environmental inquiries to accelerate the construction of flood defenses and wind farms?",
+                  "pro": "The climate emergency demands rapid deployment of protective sea walls and renewable power; 10-year planning appeals jeopardize public safety.",
+                  "con": "Bypassing public consultation undermines democratic accountability, ignores localized ecological impacts, and sparks fierce community backlash.",
+                  "prompt": "Debate your partner: How can infrastructure planning be accelerated without trampling democratic rights?"
                 }
               ]
             },
-            "argumentClinic": {
+            "grammarClinic": {
+              "title": "Activity 3: Language Focus: Gerunds vs. Infinitives & Connecting Words for Contrasting Ideas",
+              "summary": "Selecting the correct verb complementation patterns (Gerund vs. Infinitive) and mastering useful connecting words for persuasive speaking.",
+              "modeBadges": [
+                "Pairs / Individual",
+                "Grammar Drills",
+                "20 Mins"
+              ],
+              "instructions": [
+                "Review the 3 core grammatical structures: Verbs taking Gerunds (advocate doing, delay implementing), Verbs taking Infinitives (agree to fund, aim to achieve), and Contrasting Clauses (Although + clause vs. Despite + noun phrase).",
+                "Analyze the formula examples and identify which policy actions require an ongoing process focus (-ing) versus future commitments (to + verb).",
+                "Complete the 4 interactive TOEIC Part 5 drills independently, selecting the correct verb complementation pattern.",
+                "Click 'Check Answer & Explanation' and note the structural justification in your error log."
+              ],
+              "deliverable": "100% accuracy on the 4 verb complementation drills with written grammar justification in study logs.",
+              "teacherNotes": "Highlight that TOEIC frequently tests 'advocate + -ing', 'risk + -ing', and 'decide + infinitive'. Remind students that 'despite' is a preposition taking a noun phrase, whereas 'although' introduces a full subordinate clause with subject and verb.",
               "rules": [
                 {
-                  "title": "1. The Partial Concession",
-                  "formula": "While I concede that [X is true], the empirical evidence demonstrates [Y].",
-                  "example": "<em>While I concede that</em> freight volumes are rising, the environmental cost of destroying this aquifer is irreversible."
+                  "type": "Verbs followed by Gerunds (-ing)",
+                  "formula": "advocate investing | recommend retrofitting | consider banning | prioritize reducing | delay implementing",
+                  "usage": "Used when expressing ongoing, habitual, or proposed actions in policy and project debates."
                 },
                 {
-                  "title": "2. Rejecting False Equivalence",
-                  "formula": "With respect, that conflates [minor issue A] with [catastrophic issue B].",
-                  "example": "<em>With respect, that conflates</em> short-term highway convenience with multi-generational ecosystem collapse."
+                  "type": "Verbs followed by Infinitives (to + base)",
+                  "formula": "agree to fund | aim to achieve | decide to upgrade | refuse to compromise | fail to comply",
+                  "usage": "Used when expressing intent, decisions, commitments, or future targets."
                 },
                 {
-                  "title": "3. The Proportionality Challenge",
-                  "formula": "Even if we accept [premise], the proposed solution is completely disproportionate because [reason].",
-                  "example": "<em>Even if we accept</em> that transit times must improve, spending €2 billion to pave over a wetland is wildly disproportionate."
-                },
-                {
-                  "title": "4. The Constructive Counter-Proposal",
-                  "formula": "Rather than [damaging course of action], a far more sustainable alternative would be [innovative solution].",
-                  "example": "<em>Rather than</em> building a surface embankment, <em>a far more sustainable alternative would be</em> upgrading the existing northern corridor."
+                  "type": "Contrasting Ideas & Polite Disagreement",
+                  "formula": "\"While it is true that [X], empirical evidence indicates that [Y]...\" | \"Admittedly..., nevertheless...\"",
+                  "usage": "Use to politely soften strong disagreements and frame your counter-argument persuasively."
                 }
+              ],
+              "drills": [
+                {
+                  "id": 1,
+                  "sentence": "The aviation working group advocates ________ a progressive carbon levy on private jet departures.",
+                  "options": [
+                    "to introduce",
+                    "introducing",
+                    "introduce",
+                    "introduced"
+                  ],
+                  "correct": "introducing",
+                  "explanation": "'Advocate' is followed by a gerund ('advocate doing something')."
+                },
+                {
+                  "id": 2,
+                  "sentence": "Municipal authorities have finally decided ________ 20 million euros in sustainable drainage systems.",
+                  "options": [
+                    "investing",
+                    "to invest",
+                    "invest",
+                    "investment"
+                  ],
+                  "correct": "to invest",
+                  "explanation": "'Decide' is followed by a to-infinitive ('decide to do something')."
+                },
+                {
+                  "id": 3,
+                  "sentence": "Civil aviation authorities cannot risk ________ runway maintenance during extreme heat episodes.",
+                  "options": [
+                    "to delay",
+                    "delaying",
+                    "delay",
+                    "delayed"
+                  ],
+                  "correct": "delaying",
+                  "explanation": "'Risk' takes a gerund ('risk doing something')."
+                },
+                {
+                  "id": 4,
+                  "sentence": "________ initial capital expenditures are high, permeable asphalt dramatically reduces long-term flood repair costs.",
+                  "options": [
+                    "Despite",
+                    "Although",
+                    "In spite of",
+                    "However"
+                  ],
+                  "correct": "Although",
+                  "explanation": "'Although' is a subordinating conjunction followed by a full clause with subject and verb ('initial capital expenditures are high')."
+                }
+              ]
+            },
+            "roleplay": {
+              "title": "Activity 4: Public Inquiry Hearing Simulation",
+              "summary": "Formal administrative inquiry and stakeholder Q&A on regional climate infrastructure.",
+              "modeBadges": [
+                "Groups of 4",
+                "Public Inquiry Hearing",
+                "45 Mins"
+              ],
+              "instructions": [
+                "Form a hearing committee of 4: Environmental Commissioner (Chair), Airline/Airport Association Spokesperson, Metropolitan Residents Coalition President, and Chief Civil Infrastructure Engineer.",
+                "Review the hearing scenario: a proposed €5 passenger surcharge and municipal tax levy to finance €150M in sea-wall defenses and district cooling networks.",
+                "Take 10 minutes to prepare your stakeholder position, anticipating two tough follow-up questions from opposing delegates.",
+                "Convene the 30-minute formal inquiry: the Chair opens testimony (3 mins per delegate), facilitates Q&A (15 mins), and leads consensus deliberations on an amended policy (5 mins)."
+              ],
+              "deliverable": "Formal verbal testimony, recorded Q&A exchanges, and a signed 3-clause compromise policy draft.",
+              "teacherNotes": "Keep time strictly. The Chair must maintain formal decorum ('The floor now recognizes the chief engineer...'). Encourage participants to challenge unverified claims by demanding empirical data or questioning long-term capex feasibility.",
+              "scenario": "The Regional Environmental Agency is holding a public inquiry on a proposed 'Climate Resilience Infrastructure Surcharge' (a 5-euro fee per passenger and a municipal tax increase) to fund 150 million euros in flood surge sea walls and district cooling networks. Stakeholders must defend their positions during Q&A.",
+              "roles": [
+                {
+                  "title": "Regional Environmental Commissioner (Chair)",
+                  "focus": "Upholding statutory carbon targets, reviewing scientific climate vulnerability models, and moderating Q&A."
+                },
+                {
+                  "title": "Airlines & Airport Operators Association Spokesperson",
+                  "focus": "Arguing against added passenger taxes, highlighting economic competitiveness, and pushing for voluntary industry adaptation."
+                },
+                {
+                  "title": "President of the Metropolitan Residents Coalition",
+                  "focus": "Demanding protection from catastrophic flash floods, demanding transparency on tax spending, and defending affordable housing."
+                },
+                {
+                  "title": "Chief Civil Infrastructure Engineer & Resilience Expert",
+                  "focus": "Presenting empirical data on 50-year return flood hazards, lifecycle cost-benefit analyses, and defending the proposed engineering interventions."
+                }
+              ]
+            },
+            "closingReview": {
+              "title": "Session 3 Wrap-Up & FE2 Argument Defense",
+              "summary": "Consolidation, phonetics, and portfolio check for Formative Evaluation 2 readiness.",
+              "modeBadges": [
+                "Plenary",
+                "Self-Assessment",
+                "15 Mins"
+              ],
+              "instructions": [
+                "Cross-check your learning notes against the 3 Formative Evaluation 2 readiness criteria.",
+                "Record 5 advanced rhetorical linking words and 4 verb complementation patterns in your personal study portfolio.",
+                "Rehearse an impromptu 90-second response with a peer answering a challenging environmental counter-argument without consulting notes."
+              ],
+              "deliverable": "Completed study log entries and verified readiness checklist for Formative Evaluation 2.",
+              "teacherNotes": "Remind students that FE2 evaluates spontaneous argument defense during the teacher Q&A. Students must not memorize a monologue; they must demonstrate dynamic responsiveness to unexpected challenges.",
+              "feChecklist": [
+                "Record 5 rhetorical markers and verbs taking gerunds/infinitives in your study log.",
+                "Prepare your spontaneous defense for the FE2 Teacher Q&A: anticipate 2 tough questions.",
+                "Ensure your visual slides do not contain continuous text paragraphs (visual cues only!)."
+              ]
+            }
+          },
+          "overview": {
+            "intro": "In this session, you sharpen your skills in building, supporting, and defending arguments in spoken English. Through interactive debate rounds and structured discussion games, you will practise using persuasive signposting, providing supporting evidence, and politely refuting counter-arguments on controversial environmental policies.",
+            "whyItMatters": "Spoken debate is the heart of professional decision-making and international committee work. Knowing how to present a clear claim, back it with credible reasons, and respond calmly to objections without losing your train of thought is precisely what examiners look for in your Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Contention",
+                "ipa": "/kənˈten.ʃən/",
+                "definition": "A central claim or assertion advanced in an argument or debate."
+              },
+              {
+                "term": "Counter-Argument",
+                "ipa": "/ˈkaʊn.tər ˈɑːɡ.jə.mənt/",
+                "definition": "An objection or opposing reason put forward to undermine an opponent's point."
+              },
+              {
+                "term": "Rebuttal",
+                "ipa": "/rɪˈbʌt.əl/",
+                "definition": "A spoken response that provides evidence to disprove or refute a counter-argument."
+              },
+              {
+                "term": "Empirical Evidence",
+                "ipa": "/ɪmˈpɪr.ɪ.kəl ˈev.ɪ.dəns/",
+                "definition": "Verifiable data and facts gathered through direct observation, experiment, or documented study."
+              },
+              {
+                "term": "Consensus",
+                "ipa": "/kənˈsen.səs/",
+                "definition": "A general agreement reached among a group of people or international bodies."
+              },
+              {
+                "term": "Trade-Off",
+                "ipa": "/ˈtreɪd.ɒf/",
+                "definition": "A situational decision that involves giving up one desired benefit in exchange for another."
+              },
+              {
+                "term": "Subsidies",
+                "ipa": "/ˈsʌb.sə.diz/",
+                "definition": "Government financial grants paid to support an industry or energy sector to keep prices low."
+              },
+              {
+                "term": "Vested Interest",
+                "ipa": "/ˌves.tɪd ˈɪn.trəst/",
+                "definition": "A personal or corporate stake in an outcome, often leading to biased arguments."
+              },
+              {
+                "term": "Carbon Taxation",
+                "ipa": "/ˈkɑː.bən tækˈseɪ.ʃən/",
+                "definition": "A fee imposed on the burning of fossil fuels directly proportional to their greenhouse gas output."
+              },
+              {
+                "term": "Policy Feasibility",
+                "ipa": "/ˈpɒl.ə.si ˌfiː.zəˈbɪl.ə.ti/",
+                "definition": "The realistic likelihood that a proposed regulation can be implemented and enforced."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or pieces of evidence to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Nuclear energy is the only realistic, scalable zero-carbon power source capable of replacing fossil fuels in time to meet international climate goals.",
+                "group2": "Individual consumer choices have negligible impact on climate change compared to direct government regulation of fossil fuel corporations.",
+                "group3": "Rich industrialized nations have a moral obligation to fund the entire renewable energy transition of developing countries without conditions."
+              },
+              "usefulPhrases": [
+                "Our primary contention is that...",
+                "In response to the opposing viewpoint, we would argue...",
+                "The empirical evidence clearly indicates that...",
+                "In summary, our group's position remains that..."
               ]
             }
           }
@@ -12616,54 +15941,64 @@
         "4": {
           "session": 4,
           "objectives": {
-            "title": "Session 4 Objectives - Airport Biodiversity & Ecological Coexistence",
-            "summary": "By the end of this session, you will be able to discuss wildlife management near airports, use modal verbs for rules and obligations, negotiate a land agreement in a group, and rehearse for your speaking evaluation.",
+            "title": "Session 4 - Biodiversity in Urban Areas and Airports Objectives",
+            "summary": "By the end of this session, you will be able to discuss urban biodiversity and green infrastructure with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Learn Key Vocabulary: Airport Nature & Wildlife",
-                "description": "Learn 8 useful words for bird hazard control, wildlife habitats, and airport green zones."
+                "title": "Practice TOEIC Part 5 Questions on Pronouns & Determiners",
+                "description": "Select the correct pronouns (its, their, themselves) and determiners (each, every, either) under timed test conditions."
               },
               {
                 "num": 2,
-                "title": "Grammar Focus: Rules & Obligations (Must, Should, Have to)",
-                "description": "Express clear rules and safety requirements using modal verbs of obligation and necessity."
+                "title": "Master Core Vocabulary for Urban Nature, Wildlife & Green Spaces",
+                "description": "Learn vocabulary for wildlife corridors, green roofs, native species, bird strike prevention, and ecological corridors."
               },
               {
                 "num": 3,
-                "title": "Speaking Activity: The Airport & Wildlife Agreement",
-                "description": "Work in teams to negotiate an agreement between airport directors, biologists, and local farmers."
+                "title": "Use Pronouns & Possessives Correctly for Organizations & Teams",
+                "description": "Maintain consistency between singular companies (the airport ... its plan) and plural teams or groups."
               },
               {
                 "num": 4,
-                "title": "Speaking Practice: FE2 Presentation Rehearsal",
-                "description": "Rehearse a 2-minute presentation with a partner and review the official evaluation criteria."
+                "title": "Discuss How Infrastructure Projects Can Protect Living Nature (DDRS)",
+                "description": "Examine practical initiatives where transport hubs create protected natural habitats alongside daily operations."
+              },
+              {
+                "num": 5,
+                "title": "Finalize Speaking Skills and Timing for the Session 5 Evaluation",
+                "description": "Rehearse your individual presentation with a timer, checking your fluency, vocabulary range, and grammar accuracy."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 4 Lesson Plan - Airport Biodiversity & Ecological Coexistence (2 Hours)",
-            "summary": "A station-based workshop and treaty tournament combining airport wildlife vocabulary, regulatory modal grammar, a 3-station rotation, treaty negotiation, and FE2 oral rehearsal.",
+            "title": "Session 4 Lesson Plan (2 Hours)",
+            "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
             "items": [
               {
-                "title": "Part 1: Key Vocabulary • Airport Nature & Wildlife",
-                "description": "Learn 8 airport ecology terms, check syllable stress, and complete the matching drill.",
+                "title": "Conversational Warm-Up: Nature Around Us",
+                "description": "Students share observations of urban wildlife, green spaces, and bird control measures at transport hubs.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Focus • Rules & Obligations (Must, Should, Have to)",
-                "description": "Practice modals of obligation, prohibition, and advice; complete 4 sentence transformation drills.",
+                "title": "TOEIC Strategy: Pronouns & Determiners in Part 5",
+                "description": "Fast drills selecting correct pronouns (its, their, each, neither) in professional administrative memos.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Speaking Activity • The Airport & Wildlife Agreement",
-                "description": "Rotate through 3 airport stations, negotiate the 4-point ecological agreement, and ratify the accord.",
+                "title": "Vocabulary Builder: Urban Ecology",
+                "description": "Key terms for green roofs, wildlife corridors, native flora, habitat preservation, and ecological surveys.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Speaking Practice & FE2 Preparation",
-                "description": "Timed 2-minute presentation rehearsal with your partner against the official FE2 scoring criteria.",
+                "title": "Structured Discussion & Grammar",
+                "description": "Proposing a green infrastructure plan for a local transport hub using Pronouns & Determiners accurately.",
                 "part": "Part 4"
+              },
+              {
+                "title": "Evaluation Practice & Wrap-Up",
+                "description": "Timed individual speaking practice with rubric assessment (fluency, pronunciation, range, grammatical control).",
+                "part": "Part 5"
               }
             ]
           },
@@ -13020,73 +16355,339 @@
             ]
           },
           "lessonContent": {
-            "hero": {
-              "title": "Airport Biodiversity & Ecological Coexistence",
-              "subtitle": "Archetype D • Interactive Stations & Treaty Negotiation: Bird-Strike Mitigation vs. Nature Sanctuaries",
+            "overview": {
               "image": "images/ag_m2card4.jpg",
-              "badge": "AG Module 2 • Session 4 • Interactive Stations"
+              "title": "Biodiversity in Urban Areas & Transport Hubs",
+              "subtitle": "Nature-Based Solutions, Constructed Wetlands, Ecological Corridors & Wildlife Hazard Mitigation",
+              "badge": "Session Overview • Biodiversity & Ecological Infrastructure"
             },
-            "meadowParadox": {
-              "headline": "The Meadow Paradox: Europe's Accidental Wildlife Sanctuaries",
-              "context": "Commercial airports maintain vast grassland perimeters (often 1,000+ hectares) strictly enclosed by security fences, completely free of human foot traffic, hunting, domestic pets, and agricultural pesticides. Consequently, they have inadvertently become prime sanctuaries for endangered ground-nesting birds, rare orchids, and small mammals. However, large raptors and flocking birds pose a severe, potentially catastrophic bird-strike hazard to jet aircraft during takeoff and landing.",
-              "dilemma": "How can an international airport protect critically endangered species and maintain ecological corridors without compromising flight safety or exceeding zero-tolerance bird-strike risk thresholds?"
+            "hero": {
+              "image": "images/ag_m2card4.jpg",
+              "title": "Biodiversity in Urban Areas & Transport Hubs",
+              "subtitle": "Nature-Based Solutions, Constructed Wetlands, Ecological Corridors & Wildlife Hazard Mitigation",
+              "badge": "Session Overview • Biodiversity & Ecological Infrastructure"
             },
-            "stations": [
-              {
-                "num": 1,
-                "title": "Station 1: Non-Lethal Wildlife Deterrence & Grass Management",
-                "icon": "🦅",
-                "badge": "Airfield Safety",
-                "coreTech": "Avian 3D Radar + Tall-Grass Habitat Modification + Acoustic Dispersal",
-                "keyInsight": "Keeping perimeter grass maintained at exactly 20–30 cm ('long grass policy') discourages flocking birds like gulls and starlings because they cannot easily spot ground predators, while preventing raptors from seeing small rodents.",
-                "discussionPrompts": [
-                  "Why is ecological habitat modification far more effective over time than firing pyrotechnic scare cartridges?",
-                  "How can AI-guided acoustic distress calls disperse problem birds without causing acoustic disturbance to nearby residential towns?"
-                ]
-              },
-              {
-                "num": 2,
-                "title": "Station 2: Solar-Pollinator Dual-Use Zoning",
-                "icon": "☀️",
-                "badge": "Renewable Energy",
-                "coreTech": "Anti-Glare Photovoltaic Arrays + Native Wildflower Groundcover",
-                "keyInsight": "Installing 50 MW of solar panels on sterile airfield safety buffers provides clean airport power. Seeding low-growing native wildflower mixes beneath panels restores native bees and butterflies without attracting high-flying bird flocks.",
-                "discussionPrompts": [
-                  "How must solar panel tilt angles be engineered to prevent hazardous pilot glare on short final approach?",
-                  "What guarantees must be given to airfield maintenance teams regarding grass mowing and fire safety around electrical inverters?"
-                ]
-              },
-              {
-                "num": 3,
-                "title": "Station 3: Sustainable Drainage Systems (SuDS) & Water Treatment",
-                "icon": "💧",
-                "badge": "Water & Chemistry",
-                "coreTech": "Engineered Reed Beds + Underground De-Icing Glycol Recovery Tanks",
-                "keyInsight": "Runway stormwater runoff often carries aircraft de-icing fluid (propylene glycol) and rubber residues. Routing runoff through artificial reed-bed wetlands naturally breaks down organic contaminants before water enters local rivers.",
-                "discussionPrompts": [
-                  "How do reed beds utilize natural microbiology to eliminate toxic chemical runoff without industrial chemical additives?",
-                  "What sensory or physical barriers must be installed to prevent migratory waterfowl from settling in drainage retention ponds?"
+            "openingSession": {
+              "title": "Activity 1: Airport Ecology News & Opening Warm-Up",
+              "summary": "Opening warm-up on nature-based solutions, aerodrome wildlife management, and biodiversity net gain.",
+              "modeBadges": [
+                "Pairs",
+                "Quick Check",
+                "10 Mins"
+              ],
+              "instructions": [
+                "Read the 3 news headlines regarding aerodrome wildflower meadows, statutory Biodiversity Net Gain (BNG) mandates, and AI bird radar systems.",
+                "Discuss the 4 diagnostic concepts with your partner: Nature-Based Solutions (NbS), BNG statutory metrics, ICAO Annex 14 Bird Strike Hazard balance, and Bioswales vs. concrete ditches.",
+                "Click 'Reveal Answer' to benchmark your technical definitions against civil aviation ecological standards."
+              ],
+              "deliverable": "Fluent oral definitions of key aerodrome ecology concepts and ICAO safety trade-offs.",
+              "teacherNotes": "Emphasize the unique tension at transport hubs: while urban sustainability calls for biodiversity, airfields must actively discourage hazardous flocking birds near runways.",
+              "newsPrompts": [
+                "International airports plant native wildflower meadows across non-manoeuvring safety zones, boosting wild pollinators while managing bird strike risks.",
+                "New transport regulations mandate 'Biodiversity Net Gain' (BNG) of at least 10% on all new motorway and rail infrastructure projects.",
+                "Autonomous AI radar systems track migratory bird flocks up to 10 kilometers away to alert pilots and reduce wildlife collisions."
+              ],
+              "diagnostic": {
+                "title": "Ecological & Aerodrome Vocabulary Quick Check",
+                "instructions": "Discuss each concept in pairs before verifying the technical explanation:",
+                "questions": [
+                  {
+                    "id": 1,
+                    "q": "What is the fundamental concept behind Nature-Based Solutions (NbS)?",
+                    "answer": "Actions to protect, sustainably manage, and restore natural or modified ecosystems that address societal and climate challenges effectively (e.g., using wetlands for flood storage and cooling rather than concrete reservoirs)."
+                  },
+                  {
+                    "id": 2,
+                    "q": "What is meant by 'Biodiversity Net Gain' (BNG) in major civil infrastructure?",
+                    "answer": "An approach to development and land management that aims to leave the natural environment in a measurably better state than it was before the project began (at least a 10% net improvement in habitat quality and ecological connectivity)."
+                  },
+                  {
+                    "id": 3,
+                    "q": "How do aerodrome operators balance wildlife conservation with Bird Strike Hazard Mitigation?",
+                    "answer": "Aviation regulations (ICAO Annex 14) mandate that airside zones minimize attractants for flocking or large birds (e.g., maintaining long-grass policies, avoiding berry-bearing bushes, covering waste bins), while creating safe, dedicated biodiversity buffers far away from flight paths."
+                  },
+                  {
+                    "id": 4,
+                    "q": "What is the difference between a Bioswale and a standard Concrete Drainage Ditch?",
+                    "answer": "A concrete ditch merely moves runoff away quickly without filtering pollutants or slowing the flow. A bioswale is a vegetated swale with gently sloped sides and compost/soil layers that filters heavy metals and petroleum residues, cools runoff, and encourages groundwater infiltration."
+                  }
                 ]
               }
-            ],
-            "treatyNegotiation": {
-              "totalArea": "500 Hectares of Non-Runway Airfield Perimeter",
-              "parties": [
+            },
+            "survey": {
+              "title": "Activity 2: Biodiversity & Safety Dilemmas: Speed Survey",
+              "summary": "Explore 4 real-world operational challenges where environmental protection intersects with aviation safety and urban expansion.",
+              "modeBadges": [
+                "Pairs",
+                "Timed Technical Survey",
+                "25 Mins"
+              ],
+              "instructions": [
+                "Examine the 4 operational dilemmas: Airfield Long Grass Management (15-20 cm), Wildlife Overpasses (Ecoducts), AI Avian Radar & Acoustic Dispersal, and Terminal Green Roofs & Pollinators.",
+                "Interview your partner across 4 timed rounds, alternating between presenting the ecological benefit and challenging it with the aviation safety or cost constraint.",
+                "Use formal linking words to structure your responses ('From an ecological engineering standpoint...', 'Under ICAO Annex 14 regulations...').",
+                "Formulate an engineering compromise for at least two of the dilemma scenarios."
+              ],
+              "deliverable": "4 completed partner interview logs weighing biodiversity gains against operational safety risks.",
+              "teacherNotes": "Push students to move beyond simplistic 'trees are good' statements. Demand technical precision: What species of grass? What height? Why do starlings avoid long grass? How do steep pond banks prevent waterfowl nesting?",
+              "signposts": [
+                "\"From an ecological engineering standpoint, ...\"",
+                "\"To prevent hazardous wildlife strikes while fostering biodiversity, ...\"",
+                "\"Nature-based solutions offer significant co-benefits, notably...\"",
+                "\"Under ICAO Annex 14 regulations, aerodrome operators must balance...\""
+              ],
+              "topics": [
                 {
-                  "party": "Delegation A: Airport Operations & Flight Safety Division",
-                  "priorities": "Zero-tolerance for bird strikes within 3km of runway thresholds. Demands clear visual sighting lines, radar-guided acoustic coverage, and immediate right-of-veto over any habitat that attracts raptors.",
-                  "bargainingChip": "Controls capital infrastructure funding and can sponsor solar installation."
+                  "id": 1,
+                  "badge": "Airfield Long Grass Management",
+                  "statement": "Should all airports adopt a strict 15–20 cm Long Grass Management policy across runway safety strips?",
+                  "pro": "Long grass prevents flocking birds (starlings, lapwings, gulls) from spotting earthworms or landing easily, cutting bird strike incidents by over 50% without lethal culling.",
+                  "con": "Long grass requires precise mowing machinery, seasonal weed control, and specialized vegetation monitoring to prevent dry summer fire hazards.",
+                  "prompt": "Interview your partner: How does grass height directly affect aviation safety and aerodrome biodiversity?"
                 },
                 {
-                  "party": "Delegation B: Regional Wildlife & Biodiversity Trust",
-                  "priorities": "Preserve the 120-hectare southern wildflower meadow where rare bee orchids and endangered curlews nest. Demands pesticide-free biodiversity corridors connecting to the provincial nature reserve.",
-                  "bargainingChip": "Holds legal power to file ecological injunctions under EU Habitats Directives."
+                  "id": 2,
+                  "badge": "Wildlife Overpasses (Ecoducts)",
+                  "statement": "Should national rail and road authorities be legally mandated to construct wildlife overpasses every 10 km?",
+                  "pro": "Vegetated ecoducts reconnect fragmented forest ecosystems, reduce vehicular animal collisions, and maintain genetic diversity among wildlife populations.",
+                  "con": "Each wildlife overpass costs 3 to 8 million euros to design and build, consuming significant transport infrastructure budgets.",
+                  "prompt": "Interview your partner: How can linear transport corridors be adapted to preserve ecological migration routes?"
                 },
                 {
-                  "party": "Delegation C: Regional Clean Energy & Climate Transition Consortium",
-                  "priorities": "Deploy at least 150 hectares of high-density solar arrays to generate 80 GWh of renewable electricity annually, decarbonizing both the airport and 25,000 regional homes.",
-                  "bargainingChip": "Brings €60M in private infrastructure capital and revenue-sharing promises."
+                  "id": 3,
+                  "badge": "AI Avian Radar & Acoustic Dispersal",
+                  "statement": "Should aerodromes replace lethal bird control shooting with automated AI-guided acoustic distress laser dispersal?",
+                  "pro": "AI 3D radar detects approaching flocks miles away and triggers humane bio-acoustic distress calls, habituation-free lasers, and trained falconry.",
+                  "con": "Flocking birds can eventually become habituated to repeated artificial acoustic alarms if not varied continuously.",
+                  "prompt": "Interview your partner: What non-lethal wildlife hazard mitigation methods are most effective near runways?"
+                },
+                {
+                  "id": 4,
+                  "badge": "Terminal Green Roofs & Pollinators",
+                  "statement": "Should airport passenger terminals convert 100% of unused roof space into native pollinator wildflower meadows and bee colonies?",
+                  "pro": "Sedum green roofs insulate terminal buildings, lower summer air conditioning loads by up to 25%, and support endangered urban bee populations.",
+                  "con": "Engineers must verify that insect-rich green roofs do not inadvertently attract insect-feeding birds into final approach climb paths.",
+                  "prompt": "Interview your partner: How can terminal architecture integrate living ecology safely?"
                 }
+              ]
+            },
+            "grammarClinic": {
+              "title": "Activity 3: Language Focus: Pronouns & Determiners in Technical English",
+              "summary": "Mastering agreement with singular and plural indefinite pronouns, possessive determiners (its vs. their), and reflexive forms in TOEIC Part 5.",
+              "modeBadges": [
+                "Pairs / Individual",
+                "Grammar Drills",
+                "20 Mins"
+              ],
+              "instructions": [
+                "Review the 3 grammar rules: Singular Indefinite Pronouns (Each/Every/Neither take singular verbs), Possessive Determiners for organizations (The airport released its report, NOT their), and Reflexive/Emphatic forms (itself, themselves).",
+                "Note the high-frequency TOEIC Part 5 traps: confusing 'its' (possessive) with 'it\\'s' (it is), and verb agreement after 'Each of [plural noun]'.",
+                "Complete the 4 interactive multiple-choice drills under timed conditions (30 seconds per item).",
+                "Click 'Check Answer & Explanation' and record the grammatical justification for each correct answer."
+              ],
+              "deliverable": "Accurate completion of the 4 grammar drills and error analysis documented in student study journals.",
+              "teacherNotes": "Highlight that corporate entities (authorities, airlines, airports, committees) are grammatically singular in international business English: 'The CAA published its findings'.",
+              "rules": [
+                {
+                  "type": "Singular Indefinite Pronouns (Each, Every, Either, Neither)",
+                  "formula": "Each of the aerodrome perimeters [is / was] monitored. (Takes a singular verb!).",
+                  "usage": "Even when followed by a plural prepositional phrase ('of the perimeters'), the grammatical subject remains singular."
+                },
+                {
+                  "type": "Possessive Determiner Agreement (Its vs. Their)",
+                  "formula": "The airport completed its flood assessment (singular) vs. The airlines modified their flight schedules (plural).",
+                  "usage": "Match the possessive determiner strictly to whether the entity is singular corporate/institutional or plural."
+                },
+                {
+                  "type": "Reflexive & Emphatic Pronouns (Itself, Themselves)",
+                  "formula": "The autonomous radar system resets itself following lightning strikes.",
+                  "usage": "Use when the subject and object are the same entity, or for emphasis."
+                }
+              ],
+              "drills": [
+                {
+                  "id": 1,
+                  "sentence": "Each of the new stormwater retention basins ________ inspected twice monthly by the environmental team.",
+                  "options": [
+                    "is",
+                    "are",
+                    "have been",
+                    "were"
+                  ],
+                  "correct": "is",
+                  "explanation": "'Each of [plural noun]' always takes a singular verb ('is inspected')."
+                },
+                {
+                  "id": 2,
+                  "sentence": "Neither of the proposed flood barrier designs ________ the strict 100-year return criteria.",
+                  "options": [
+                    "satisfy",
+                    "satisfies",
+                    "are satisfying",
+                    "have satisfied"
+                  ],
+                  "correct": "satisfies",
+                  "explanation": "'Neither of [plural noun]' takes a singular verb in standard formal English ('satisfies')."
+                },
+                {
+                  "id": 3,
+                  "sentence": "The international airport published ________ annual sustainability report detailing a 12% drop in energy consumption.",
+                  "options": [
+                    "their",
+                    "its",
+                    "it's",
+                    "theirs"
+                  ],
+                  "correct": "its",
+                  "explanation": "'The international airport' is a singular organization; the possessive determiner is 'its' (no apostrophe!)."
+                },
+                {
+                  "id": 4,
+                  "sentence": "The wildlife control officers conducted the full aerodrome habitat survey ________.",
+                  "options": [
+                    "themselves",
+                    "theirselves",
+                    "himself",
+                    "them"
+                  ],
+                  "correct": "themselves",
+                  "explanation": "Plural emphatic reflexive pronoun referring back to 'The wildlife control officers'."
+                }
+              ]
+            },
+            "roleplay": {
+              "title": "Activity 4: Airport Wildlife Hazard & Ecological Transition Committee",
+              "summary": "Joint wildlife hazard mitigation and nature-based solutions committee.",
+              "modeBadges": [
+                "Groups of 4",
+                "Committee Simulation",
+                "45 Mins"
+              ],
+              "instructions": [
+                "Form a 4-person committee: Aerodrome Wildlife Hazard Officer, Regional Wetland Nature Reserve Director, Airport Operations & Flight Safety Liaison, and Ecological Landscape Architect.",
+                "Review the mission: expand airport stormwater retention basins while guaranteeing zero increase in bird strike risks within the 13 km runway hazard zone.",
+                "Conduct a 30-minute committee session: each officer delivers their 3-minute technical brief, followed by 15 minutes of cross-table negotiation and 5 minutes to agree on an actionable 5-point master plan.",
+                "Present the master plan recommendations to the class in a 2-minute executive summary."
+              ],
+              "deliverable": "A finalized 5-point Airport Ecological Mitigation Protocol balancing habitat conservation with runway safety zones.",
+              "teacherNotes": "Encourage realistic tension: the conservation director wants bird feeding wetlands; the safety officer demands netting and deterrents. Successful groups will find zoning compromises (e.g., steep embankments, floating netting, non-fruiting vegetation near the RESA).",
+              "scenario": "A major international coastal airport is surrounded by protected wetlands. The airport must expand its stormwater retention basins while ensuring zero increase in bird strike hazards. Convene the joint Wildlife Hazard & Ecological Transition Committee to draft an actionable 5-point master plan.",
+              "roles": [
+                {
+                  "title": "Aerodrome Wildlife Hazard Management Officer",
+                  "focus": "ICAO Annex 14 compliance, bird strike statistics, maintaining the long-grass regime, and deploying non-lethal acoustic deterrents."
+                },
+                {
+                  "title": "Regional Wetland Nature Reserve Director",
+                  "focus": "Protecting migratory bird flyways, ensuring water quality in surrounding estuaries, and creating alternative wetland feeding grounds 15 km away."
+                },
+                {
+                  "title": "Airport Operations & Chief Flight Safety Liaison",
+                  "focus": "Runway safety areas (RESA), approach path obstacle clearance, pilot hazard reporting, and emergency diversion protocols."
+                },
+                {
+                  "title": "Ecological Landscape Architect & Civil Engineer",
+                  "focus": "Designing steep-sided retention ponds with floating wire grids to deter waterfowl, native low-berry vegetative ground cover, and bioswales."
+                }
+              ]
+            },
+            "closingReview": {
+              "title": "Session 4 Wrap-Up & FE2 Launch Briefing",
+              "summary": "Final Formative Evaluation 2 checklist & topic confirmation.",
+              "modeBadges": [
+                "Plenary",
+                "FE2 Preparation",
+                "15 Mins"
+              ],
+              "instructions": [
+                "Review the 5 Formative Evaluation 2 readiness checkpoints: topic selection, 50/50 partner speaking equity, 4-dimension structure, vocabulary integration (6-8 terms), and portfolio readiness.",
+                "Confirm your partner pairing and final topic (Option A: Airport Climate Resilience or Option B: City Climate Resilience).",
+                "Review the evaluation rubric criteria: Spoken Fluency (5 pts), Technical Vocabulary Range (5 pts), Grammatical Accuracy (5 pts), and Interaction & Defense (5 pts)."
+              ],
+              "deliverable": "Finalized FE2 presentation plan, partner speaking distribution, and signed presentation topic declaration.",
+              "teacherNotes": "Ensure every student has an assigned partner and a confirmed topic before leaving class. Highlight that visual slides must serve as visual aids only (bullet prompts, diagrams, graphs)—reading from slides results in immediate point deductions.",
+              "feChecklist": [
+                "Select your topic: Option A (Airport Climate Resilience) or Option B (City Climate Resilience).",
+                "Verify that both partners have equal 50/50 speaking time (~6 minutes each).",
+                "Ensure your 4 core dimensions (Hazard Profile, Physical Interventions, Nature-Based Solutions, Contingency Operations) are clearly divided.",
+                "Check that you have integrated at least 6 to 8 platform vocabulary terms from Sessions 1 to 4.",
+                "Confirm that your Learning Portfolio and TOEIC Error Log are up-to-date and ready for your teacher."
+              ]
+            }
+          },
+          "overview": {
+            "intro": "This session examines the fascinating intersection of biodiversity, wildlife conservation, and modern transport hubs like international airports. You will practise describing wildlife management strategies, explaining ecological corridors, and debating the balance between human transport safety and animal habitat protection in spoken English.",
+            "whyItMatters": "Airports and transport corridors manage vast expanses of open green space where safety requirements directly encounter nature. Developing the spoken English to describe habitat management, species monitoring, and ecological impact ensures you can contribute intelligently to modern environmental discussions and perform strongly in your FE.",
+            "keyTerms": [
+              {
+                "term": "Biodiversity",
+                "ipa": "/ˌbaɪ.oʊ.daɪˈvɜː.sə.ti/",
+                "definition": "The variety of plant and animal life in a particular habitat or ecosystem."
+              },
+              {
+                "term": "Ecological Corridor",
+                "ipa": "/ˌek.əˈlɒdʒ.ɪ.kəl ˈkɒr.ɪ.dɔːr/",
+                "definition": "A protected strip of natural habitat connecting wildlife populations separated by human activity."
+              },
+              {
+                "term": "Habitat Fragmentation",
+                "ipa": "/ˈhæb.ɪ.tæt ˌfræɡ.mənˈteɪ.ʃən/",
+                "definition": "The splitting of continuous natural ecosystems into small, isolated patches by roads or airports."
+              },
+              {
+                "term": "Wildlife Hazard",
+                "ipa": "/ˈwaɪldˌlaɪf ˈhæz.əd/",
+                "definition": "Animals, particularly bird flocks or mammals, that present direct collision risks to aircraft."
+              },
+              {
+                "term": "Acoustic Dispersal",
+                "ipa": "/əˈkuː.stɪk dɪˈspɜː.səl/",
+                "definition": "Using natural bird distress calls or loud sound generators to safely disperse flocks from runways."
+              },
+              {
+                "term": "Rewilding",
+                "ipa": "/ˌriːˈwaɪl.dɪŋ/",
+                "definition": "Restoring natural ecological processes and native species to land that was previously managed."
+              },
+              {
+                "term": "Pollinator Habitat",
+                "ipa": "/ˈpɒl.ɪ.neɪ.tər ˈhæb.ɪ.tæt/",
+                "definition": "Landscaped meadows planted with native flowers specifically to support bees and butterflies."
+              },
+              {
+                "term": "Runoff Retention Basin",
+                "ipa": "/ˈrʌn.ɒf rɪˈten.ʃən ˈbeɪ.sən/",
+                "definition": "Artificial ponds designed to hold and filter airport stormwater, which often become rich wetland habitats."
+              },
+              {
+                "term": "Invasive Species",
+                "ipa": "/ɪnˈveɪ.sɪv ˈspiː.ʃiːz/",
+                "definition": "Non-native organisms that spread aggressively, damaging local ecosystems and economic activity."
+              },
+              {
+                "term": "Environmental Stewardship",
+                "ipa": "/ɪnˌvaɪ.rənˈmen.təl ˈstjuː.əd.ʃɪp/",
+                "definition": "The responsible management and protection of the natural environment through conservation."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Airport perimeter zones should be transformed into protected wildlife sanctuaries, as long as bird-strike management technology guarantees flight safety.",
+                "group2": "Whenever a major transport infrastructure project threatens the habitat of an endangered species, the project should be cancelled regardless of economic cost.",
+                "group3": "Using trained predatory birds (falcons) and acoustic dispersal is far more humane and effective than lethal methods for managing airfield wildlife."
+              },
+              "usefulPhrases": [
+                "Our group investigated the balance between...",
+                "From a wildlife stewardship perspective...",
+                "A key counter-argument that must be addressed is...",
+                "To summarize our group's consensus..."
               ]
             }
           }
@@ -13224,54 +16825,64 @@
         "1": {
           "session": 1,
           "objectives": {
-            "title": "Session 1 Objectives - Everyday AI & Workplace Automation",
-            "summary": "By the end of this session, you will be able to discuss computers and AI in the workplace, describe automated tasks using the passive voice, solve practical workplace automation problems with a partner, and answer challenging questions during a group meeting.",
+            "title": "Session 1 - Artificial Intelligence Objectives",
+            "summary": "By the end of this session, you will be able to discuss artificial intelligence and automation in everyday life and workplaces with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Learn Key Vocabulary: AI & Computers in the Workplace",
-                "description": "Learn 8 useful words including machine learning, automated checks, human supervision, and data drift."
+                "title": "Practice Reading TOEIC Technology Notices & Emails",
+                "description": "Read technical announcements, office memos, and software update notices typical of TOEIC Part 7."
               },
               {
                 "num": 2,
-                "title": "Grammar Focus: Active & Passive Sentences in Tech",
-                "description": "Contrast automated system actions ('The flight was re-routed') with human decisions ('The manager approved')."
+                "title": "Master Everyday AI & Automation Vocabulary",
+                "description": "Learn and use key terms for machine learning, predictive tools, autonomous systems, and digital assistants."
               },
               {
                 "num": 3,
-                "title": "Speaking Activity: Workplace Meeting: Using AI at Work",
-                "description": "Review 6 workplace situations where computers make decisions and set clear rules for human supervision."
+                "title": "Understand Active vs. Passive Voice in Technical English",
+                "description": "Identify when an action is done by a system (active) versus to a system (passive: is tested, must be reviewed)."
               },
               {
                 "num": 4,
-                "title": "Speaking Practice: Answering Tough Questions About Technology",
-                "description": "Present your team's rules for safe AI use and answer skeptical questions from colleagues."
+                "title": "Evaluate AI Ethics, Employment & Social Impact (DDRS)",
+                "description": "Discuss how artificial intelligence affects employment, data privacy, and ethical decision-making in society."
+              },
+              {
+                "num": 5,
+                "title": "Build Fluency for the Session 5 Evaluation",
+                "description": "Practice expressing opinions and evaluating technology trends clearly in pair and group discussions."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 1 Lesson Plan - Everyday AI & Workplace Automation (2 Hours)",
-            "summary": "A operational workshop moving from technology vocabulary to active/passive voice grammar drills, a 6-workflow vulnerability audit, Human-in-the-Loop simulation, spoken town hall scrutiny, and FE3 alignment.",
+            "title": "Session 1 Lesson Plan (2 Hours)",
+            "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
             "items": [
               {
-                "title": "Part 1: Key Vocabulary • AI & Computers in the Workplace",
-                "description": "Learn 8 technology terms, check pronunciation and syllable stress, and complete the matching challenge.",
+                "title": "Conversational Warm-Up: AI in Daily Life",
+                "description": "Students discuss which AI tools they use regularly and whether AI improves their productivity or creates challenges.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Focus • Active & Passive Sentences in Tech",
-                "description": "Spot the passive voice trap, study the clean B2 model, and complete 4 transformation sentences.",
+                "title": "TOEIC Strategy: Tech Notices & Work Memos",
+                "description": "Practice reading workplace IT guidelines, software rollouts, and tech policy announcements in Part 6 and 7.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Speaking Activity • Workplace Meeting: Using AI at Work",
-                "description": "Audit 6 workplace workflows, decide when humans must intervene, and resolve 3 live problem injects.",
+                "title": "Vocabulary Builder: Automation & Intelligence",
+                "description": "Everyday terms for algorithms, machine learning, predictive analytics, automation, and algorithmic bias.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Speaking Practice & Discussion Review",
-                "description": "Present your AI safety rules to colleagues, answer tough questions, and prepare for FE3.",
+                "title": "Structured Discussion & Grammar",
+                "description": "Discuss the social and job impacts of AI using the Passive Voice (data is collected, decisions are made by algorithms).",
                 "part": "Part 4"
+              },
+              {
+                "title": "Debrief, Evaluation Prep & Wrap-Up",
+                "description": "Language review, feedback on passive voice accuracy, and Session 5 evaluation rubric check.",
+                "part": "Part 5"
               }
             ]
           },
@@ -13627,121 +17238,351 @@
             ]
           },
           "lessonContent": {
-            "hero": {
-              "title": "Everyday AI & Workplace Automation",
-              "subtitle": "Archetype A • Crisis & Automation Audit Workshop: Algorithmic Workflows, Human-in-the-Loop Safeguards & Spoken Town Hall Scrutiny",
+            "overview": {
               "image": "images/ag_m3card1.jpg",
-              "badge": "AG Module 3 • Session 1 • Automation Audit"
+              "title": "Everyday AI & Workplace Automation",
+              "subtitle": "Machine Learning, Predictive Analytics, Autonomous Systems & Human-in-the-Loop",
+              "badge": "Session Overview • Artificial Intelligence & Machine Learning"
             },
-            "auditDossier": {
-              "incidentTitle": "Algorithmic Drift & Cascading Dispatch Automation Failure",
-              "alertLevel": "LEVEL 2 OPERATIONAL VULNERABILITY ALERT",
-              "timeframe": "Immediate System Audit Mandate",
-              "summary": "Following the deployment of autonomous machine learning schedulers across regional hubs, operational data reveals recurring algorithmic hallucinations: automated re-routing software miscalculated alternate fuel reserves during weather diversions, while automated passenger rebooking stranded 1,400 transit passengers due to rigid algorithmic parameters.",
-              "workflows": [
+            "hero": {
+              "image": "images/ag_m3card1.jpg",
+              "title": "Everyday AI & Workplace Automation",
+              "subtitle": "Machine Learning, Predictive Analytics, Autonomous Systems & Human-in-the-Loop",
+              "badge": "Session Overview • Artificial Intelligence & Machine Learning"
+            },
+            "openingSession": {
+              "title": "Activity 1: AI Disruption News & Core Concepts Warm-Up",
+              "summary": "Opening warm-up examining cutting-edge enterprise AI developments and testing key conceptual distinctions in automation.",
+              "newsPrompts": [
+                "Major international carriers deploy neural network algorithms to predict engine component fatigue 50 flight hours before scheduled line maintenance.",
+                "Air traffic management authorities evaluate machine-learning algorithms to optimize sector entry times and reduce tactical controller workload.",
+                "Enterprise tech firms mandate strict Human-in-the-Loop (HITL) validation for all automated customer flight rebooking and compensation claims."
+              ],
+              "diagnostic": {
+                "title": "Artificial Intelligence Concepts Quick Check",
+                "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+                "questions": [
+                  {
+                    "id": 1,
+                    "q": "What is the critical distinction between Generative AI and Predictive Machine Learning?",
+                    "answer": "Generative AI creates original content (text, synthetic imagery, code, audio) by sampling probability distributions learned from massive datasets. Predictive Machine Learning analyzes historical telemetry and operational data to forecast future values, detect anomalies, or classify risk states (e.g. component failure or weather routing)."
+                  },
+                  {
+                    "id": 2,
+                    "q": "How does an Autonomous Decision Loop differ from a Human-in-the-Loop (HITL) system?",
+                    "answer": "An autonomous decision loop executes sensing, analysis, decision-making, and action without manual intervention (e.g., automated braking or financial micro-trading). In a Human-in-the-Loop architecture, the algorithm generates recommendations or confidence scores, but a qualified human operator must review and confirm safety-critical actions."
+                  },
+                  {
+                    "id": 3,
+                    "q": "What is the operational difference between a Digital Twin and a Computer Simulation?",
+                    "answer": "A standard simulation models theoretical physics based on predefined mathematical formulas under hypothetical conditions. A Digital Twin is an active, real-time virtual replica of a physical asset (such as an aircraft engine or terminal HVAC) continuously synchronized with live telemetry from Internet-of-Things (IoT) sensors."
+                  },
+                  {
+                    "id": 4,
+                    "q": "In data science, what distinguishes Algorithmic Bias from a System Glitch?",
+                    "answer": "A software glitch is an isolated programming or runtime error that causes a system crash or incorrect calculation. Algorithmic bias is a systemic, repeatable unfairness or error pattern rooted in skewed historical training datasets, flawed weighting, or biased sampling."
+                  }
+                ]
+              },
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "⏱️ 10 mins",
+                "🗣️ Spoken Retrieval Drill",
+                "🎯 Vocabulary & Warm-Up"
+              ],
+              "instructions": [
+                "Step 1 (Headline Scan - 3 mins): Read the three real-world AI news prompts with your partner. Discuss which application has the greatest immediate impact on aviation or engineering.",
+                "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Narrow AI vs. General AI, Supervised Learning vs. Unsupervised Learning, Machine Learning vs. Deep Learning, Predictive Analytics vs. Generative Models).",
+                "Step 3 (Class Roundup - 3 mins): Two pairs share their definitions of Supervised Learning and Predictive Analytics with the class."
+              ],
+              "deliverable": "Clear spoken definition of 1 real-world AI application and 1 machine learning distinction during the teacher check.",
+              "teacherNotes": "Keep pace rapid. Drill correct pronunciation of 'analytics' (an-uh-LIT-iks) and 'algorithm' (AL-guh-ri-thm). Ensure students do not read definitions word-for-word."
+            },
+            "survey": {
+              "title": "Activity 2: Workplace Automation & AI Dilemmas: Speed Survey",
+              "summary": "Conduct structured speed-dating interviews on 4 pressing dilemmas in enterprise automation and artificial intelligence. Practice defending technical viewpoints, evaluating trade-offs, and signposting arguments.",
+              "signposts": [
+                "\"From an operational efficiency standpoint, ...\"",
+                "\"While algorithms accelerate throughput, human operators are indispensable when...\"",
+                "\"To prevent catastrophic algorithmic failure, systems engineering mandates that...\"",
+                "\"Empirical reliability studies demonstrate that predictive analytics can...\""
+              ],
+              "topics": [
                 {
-                  "id": "W1",
-                  "title": "Automated Flight Dispatch & Fuel Load Optimization",
-                  "desc": "Machine learning algorithms compute fuel burns using live weather feeds. Human dispatchers rubber-stamp recommendations with only 45 seconds of review.",
-                  "risk": "Severe Risk of Cognitive Deskilling & Fuel Starvation",
-                  "sector": "Flight Operations"
+                  "id": 1,
+                  "badge": "Predictive Fleet Maintenance",
+                  "statement": "Should airlines ground an aircraft based solely on an automated neural network alert without visual defect confirmation?",
+                  "pro": "Predictive telemetry identifies microscopic internal turbine fatigue and hydraulic pressure anomalies before physical sensors trigger cockpit warnings, preventing in-flight shutdowns.",
+                  "con": "False-positive algorithmic alerts lead to unscheduled aircraft on ground (AOG) costs, cascading flight cancellations, and passenger disruptions.",
+                  "prompt": "Interview your partner: How can maintenance departments calibrate algorithmic confidence thresholds to prevent false alarms?"
                 },
                 {
-                  "id": "W2",
-                  "title": "Dynamic Crew Rostering & Fatigue Prediction",
-                  "desc": "Black-box AI models assign crew pairings based on predictive fatigue algorithms without considering unrecorded micro-delays or commuting stressors.",
-                  "risk": "Acute Crew Burnout & Silent Non-Compliance",
-                  "sector": "Human Resources"
+                  "id": 2,
+                  "badge": "Automated Air Traffic Sequencing",
+                  "statement": "Should machine-learning algorithms autonomously sequence and space aircraft on final approach without controller intervention?",
+                  "pro": "Automated sequencing reduces wake turbulence separation buffers dynamically, optimizes runway throughput by 15%, and minimizes fuel burn during peak arrival banks.",
+                  "con": "Controllers risk cognitive deskilling and loss of situational awareness during sudden algorithmic drop-outs or severe convective weather reroutes.",
+                  "prompt": "Interview your partner: How does the European ATM Master Plan define the transition toward higher levels of automation?"
                 },
                 {
-                  "id": "W3",
-                  "title": "Automated Irregular Operations (IROPS) Passenger Recovery",
-                  "desc": "Autonomous bots issue rebooking vouchers during massive weather cancellations, creating conflicting gate assignments and stranded passenger clusters.",
-                  "risk": "Reputational Collapse & Terminal Overcrowding",
-                  "sector": "Customer Experience"
+                  "id": 3,
+                  "badge": "Generative AI in Corporate Operations",
+                  "statement": "Should companies allow employees to use unvetted public Large Language Models to draft official engineering and legal documents?",
+                  "pro": "Generative AI increases drafting speed by 40%, automates routine technical report formatting, and accelerates cross-language technical documentation.",
+                  "con": "Public models create severe cybersecurity risks, expose proprietary flight data, and produce authoritative hallucinations that bypass peer review.",
+                  "prompt": "Interview your partner: What corporate data governance policies are essential when integrating enterprise generative AI?"
                 },
                 {
-                  "id": "W4",
-                  "title": "Predictive Airframe Component Health Monitoring",
-                  "desc": "Sensor telemetry automatically flags hydraulic pump degradation. Maintenance teams face alert fatigue from an 18% false-positive warning rate.",
-                  "risk": "Premature Maintenance Overhauls & Alert Fatigue",
-                  "sector": "Engineering"
-                },
-                {
-                  "id": "W5",
-                  "title": "Biometric Self-Boarding E-Gate Supervision",
-                  "desc": "One gate agent currently monitors 6 simultaneous automated biometric boarding lanes, creating vulnerability to piggybacking and manual override delays.",
-                  "risk": "Physical Security Breach & Boarding Bottlenecks",
-                  "sector": "Ground Operations"
-                },
-                {
-                  "id": "W6",
-                  "title": "AI-Generated Internal Safety Incident Summaries",
-                  "desc": "Large language models summarize confidential pilot safety reports for executive dashboards, inadvertently scrubbing critical contextual nuances.",
-                  "risk": "Loss of Critical Human Factors Insights",
-                  "sector": "Safety Compliance"
+                  "id": 4,
+                  "badge": "Robotic Ramp Automation",
+                  "statement": "Should international airports transition entirely to autonomous electric pushback tugs and robotic baggage loaders by 2030?",
+                  "pro": "Autonomous electric ramp equipment eliminates human apron errors, reduces ground handling accidents, and cuts ground emissions to zero.",
+                  "con": "High initial capital expenditure, complex integration with legacy ground support equipment, and widespread displacement of ground handling personnel.",
+                  "prompt": "Interview your partner: How can airport management balance automation efficiency with social equity (DDRS)?"
                 }
-              ]
+              ],
+              "modeBadges": [
+                "👥 Rotating Pairs",
+                "⏱️ 25 mins",
+                "🗣️ Speed Discussion",
+                "🎯 Stance & Linking Words"
+              ],
+              "instructions": [
+                "Step 1 (Stance Preparation - 4 mins): Review the 4 workplace automation dilemmas below. Choose your personal stance on each dilemma, noting one strong reason and one counter-argument.",
+                "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). State your stance clearly and support it with empirical evidence, using at least two linking phrases ('On the one hand...', 'While I accept that...', 'In contrast to...').",
+                "Step 3 (Consensus - 5 mins): Return to your primary partner. Agree on which engineering task should always require final human sign-off."
+              ],
+              "deliverable": "4 completed partner discussion notes with balanced arguments on operational efficiency vs. human oversight.",
+              "teacherNotes": "Signal partner rotation every 4 minutes. Monitor turn-taking so one student doesn't dominate. Prompt students to use linking words to acknowledge counter-arguments."
             },
-            "hitlSimulation": {
+            "grammarClinic": {
+              "title": "Activity 3: Language Focus: Active vs. Passive Voice in Technical Descriptions",
+              "summary": "Mastering active versus passive voice to describe technical procedures, automated software pipelines, and system audits with precision—vital for TOEIC Part 5/6 and professional technical presentations.",
+              "rules": [
+                {
+                  "type": "Active Voice (Focus on Agent / System)",
+                  "formula": "Subject (Agent/Tool) + Verb + Object",
+                  "usage": "Use when emphasizing what an algorithm, engineer, or system actively performs. (e.g., 'The neural network analyzes flight telemetry in real time.')"
+                },
+                {
+                  "type": "Passive Voice (Focus on Action / Object Affected)",
+                  "formula": "Receiver + [auxiliary be] + Past Participle (V3) (+ by agent)",
+                  "usage": "Essential in technical reports, scientific abstracts, and manuals when the procedure, outcome, or asset is more important than who performed it. (e.g., 'Turbine vibration data is logged every millisecond.')"
+                },
+                {
+                  "type": "Passive with Modal Auxiliaries",
+                  "formula": "Modal (must / can / should / will) + be + Past Participle",
+                  "usage": "Used for specifications, regulatory mandates, and future forecasts. (e.g., 'Critical software updates must be verified prior to pushback.')"
+                }
+              ],
+              "drills": [
+                {
+                  "id": 1,
+                  "sentence": "Flight telemetry data ________ continuously by the airline's centralized analytics hub.",
+                  "options": [
+                    "ingests",
+                    "is ingested",
+                    "ingesting",
+                    "is ingesting"
+                  ],
+                  "correct": "is ingested",
+                  "explanation": "Passive voice present simple ('is ingested') is required because the telemetry data receives the action."
+                },
+                {
+                  "id": 2,
+                  "sentence": "All automated schedule modifications must ________ by a certified flight operations supervisor.",
+                  "options": [
+                    "authorize",
+                    "be authorized",
+                    "authorization",
+                    "authorizing"
+                  ],
+                  "correct": "be authorized",
+                  "explanation": "Follows modal 'must'; passive infinitive ('be authorized') is required for modifications receiving approval."
+                },
+                {
+                  "id": 3,
+                  "sentence": "The engineering team ________ the machine-learning pipeline to reduce false-positive vibration warnings.",
+                  "options": [
+                    "calibrated",
+                    "was calibrated",
+                    "calibration",
+                    "calibratingly"
+                  ],
+                  "correct": "calibrated",
+                  "explanation": "Active past simple verb ('calibrated') is required; 'the engineering team' is the active agent."
+                },
+                {
+                  "id": 4,
+                  "sentence": "By the end of the decade, autonomous baggage tugs ________ at over fifty European hubs.",
+                  "options": [
+                    "will deploy",
+                    "will have been deployed",
+                    "deployed",
+                    "deploying"
+                  ],
+                  "correct": "will have been deployed",
+                  "explanation": "Time marker 'By the end of the decade' combined with passive subject requires Future Perfect Passive ('will have been deployed')."
+                }
+              ],
+              "modeBadges": [
+                "👥 Pairs / Solo",
+                "⏱️ 20 mins",
+                "✍️ Grammar Practice",
+                "🎯 Technical Passive Voice"
+              ],
+              "instructions": [
+                "Step 1 (Rule Review - 5 mins): Study the 3 technical passive voice formulas: Present Simple Passive ('is/are analyzed'), Present Continuous Passive ('is/are being processed'), and Modal Passive ('must/should be verified'). Note why engineering reports favor passive constructions to maintain objective neutrality.",
+                "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive grammar challenge questions individually, converting active sentences to passive voice without notes.",
+                "Step 3 (Pair Verification - 7 mins): Click 'Reveal Answer & Explanation' to check your solutions. Discuss why the agent ('by the engineer') is often omitted in technical procedures when the process is the primary focus."
+              ],
+              "deliverable": "Accurate completion of the 4 passive voice transformation drills documented in student study journals.",
+              "teacherNotes": "Emphasize that the passive voice puts the focus on the object and process rather than the actor: 'Telemetry data is continuously monitored' instead of 'We monitor telemetry data.'"
+            },
+            "roleplay": {
+              "title": "Activity 4: Enterprise AI Deployment Tribunal",
+              "scenario": "Global Skies Airlines is preparing to deploy an automated, generative AI passenger rebooking and flight compensation bot. One student represents the Chief Information Officer arguing for immediate rollout to slash customer service backlogs. The other represents the Aviation Compliance & Passenger Rights Director, demanding explainability audits, error safeguards, and Human-in-the-Loop oversight.",
               "roles": [
                 {
-                  "role": "Director of Flight Operations",
-                  "badge": "Operational Leadership",
-                  "mission": "Safeguard flight safety, demand rigid human verification thresholds, and resist unchecked cost-cutting automation.",
+                  "role": "Chief Information Officer (CIO)",
+                  "title": "Pro-Automation Advocate",
+                  "objectives": [
+                    "Demonstrate 70% reduction in response latency and €12M annual operating savings.",
+                    "Argue that machine learning models resolve standard rebooking faster than manual desks.",
+                    "Propose automated escalation only for passengers whose flights involve missed connections."
+                  ],
                   "keyPhrases": [
-                    "No algorithm can replace the legal command authority of...",
-                    "We must implement a mandatory fail-safe checkpoint whenever...",
-                    "The operational threshold for full manual override requires..."
+                    "\"Our benchmark trials indicate that 85% of standard delays are resolved within seconds...\"",
+                    "\"From a scalability perspective, manual service desks cannot absorb irregular operations spikes...\"",
+                    "\"Automated algorithmic rerouting significantly reduces passenger dwell times in departure concourses...\""
                   ]
                 },
                 {
-                  "role": "Chief AI Systems Architect",
-                  "badge": "Technical Engineering",
-                  "mission": "Champion computational efficiency, explain model confidence intervals, and warn against excessive manual interference.",
+                  "role": "Aviation Compliance & Rights Director",
+                  "title": "Regulatory & Ethical Auditor",
+                  "objectives": [
+                    "Highlight risk of algorithmic discrimination against passengers requiring special assistance.",
+                    "Demand that automated compensation calculations comply 100% with EU Regulation 261/2004.",
+                    "Insist on mandatory Human-in-the-Loop validation before any booking cancellation is finalized."
+                  ],
                   "keyPhrases": [
-                    "Human dispatchers introduce inconsistent cognitive bias into...",
-                    "The predictive model demonstrates a 99.4% accuracy rate when...",
-                    "Frequent manual overrides degrade the system's ability to..."
-                  ]
-                },
-                {
-                  "role": "Staff & Union Workforce Representative",
-                  "badge": "Human Factors & Labor",
-                  "mission": "Protect staff from cognitive overload and deskilling, defend workers' right to challenge automated decisions, and prevent punitive telemetry tracking.",
-                  "keyPhrases": [
-                    "Frontline employees are experiencing acute cognitive burnout due to...",
-                    "Staff cannot be held legally liable for decisions dictated by...",
-                    "We demand rigorous training and clear ergonomic boundaries before..."
+                    "\"Under European air passenger rights legislation, automated denials of compensation require clear auditability...\"",
+                    "\"If an algorithmic hallucination rebooks a passenger on an invalid route, legal liability falls squarely on the carrier...\"",
+                    "\"We must maintain human supervisory desks for vulnerable, unaccompanied, and reduced-mobility travelers...\""
                   ]
                 }
               ],
-              "injects": [
-                {
-                  "time": "T+15m INJECT #1",
-                  "title": "⚠️ Cloud Telemetry Outage",
-                  "desc": "A fiber sever takes down the cloud prediction engine. Junior dispatchers discover they cannot manually calculate oceanic step-climbs without software assistance."
-                },
-                {
-                  "time": "T+30m INJECT #2",
-                  "title": "🚨 Algorithmic Discrimination Scandal",
-                  "desc": "The crew rostering algorithm is leaked: it systematically assigned night shifts to junior personnel while shielding senior management from weekend duties."
-                },
-                {
-                  "time": "T+45m INJECT #3",
-                  "title": "📢 Breaking Union Walkout Threat",
-                  "desc": "Ground staff threaten immediate industrial action unless management commits to a minimum of two human agents per four automated biometric lanes."
-                }
-              ]
+              "modeBadges": [
+                "👥 Small Groups (3-4)",
+                "⏱️ 45 mins",
+                "🎭 Design Hearing & Defense",
+                "🎯 Negotiation & Critical Thinking"
+              ],
+              "instructions": [
+                "Step 1 (Role Allocation - 5 mins): Form small groups of 3 or 4 and select your stakeholder roles: Chief Technology Officer (CTO), Head of Flight Operations, Union Ramp Safety Representative, or Data Privacy Officer.",
+                "Step 2 (Position Preparation - 15 mins): Prepare your 2-minute opening statement regarding the deployment of an autonomous baggage loading and predictive turn-around system. Identify 2 productivity benefits and 2 workforce safety or reliability risks.",
+                "Step 3 (Tribunal Hearing - 20 mins): Convene the formal hearing: each stakeholder presents their position, followed by a moderated Q&A session with tough questions from opposing delegates.",
+                "Step 4 (Compromise Protocol - 5 mins): Draft and agree on a signed 3-point deployment compromise protocol balancing automation efficiency with worker safety guarantees."
+              ],
+              "deliverable": "A signed 3-point compromise agreement and active spoken defense during the tribunal hearing.",
+              "teacherNotes": "Act as the tribunal chair or appoint a confident student. Ensure every student speaks for at least 2 minutes. Enforce polite disagreement formulas ('While I see your point,...', 'With respect, the data indicates...')."
             },
-            "townHall": {
-              "title": "Spoken Workplace Town Hall & Executive Scrutiny (30 mins)",
-              "instructions": "The Operational Taskforce presents their newly drafted Human-in-the-Loop Charter to frontline employees and journalists. Frontline staff pose tough, skeptical questions.",
-              "questions": [
-                "If a junior dispatcher accepts an automated fuel calculation that results in a forced diversion, who will be held legally responsible: the dispatcher or the software vendor?",
-                "How will the company guarantee that human staff do not lose their fundamental manual operational competence after years of AI automation?",
-                "Why should ground personnel trust automated biometric gates when false-reject rates for passengers with mobility limitations exceed 12%?",
-                "What concrete assurances can you provide that algorithmic productivity metrics will not be used punitively against individual workers?"
+            "feChecklist": [
+              "Add 5 artificial intelligence and automation terms to your Vocabulary Log.",
+              "Review the Active vs. Passive Voice rules and complete the interactive drills.",
+              "Brainstorm potential emerging technology topics for your Formative Evaluation 3 (FE3)."
+            ],
+            "closingReview": {
+              "title": "Activity 5: Wrap-Up & FE3 Preparation",
+              "summary": "Consolidation, pronunciation practice, and portfolio check",
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "⏱️ 15 mins",
+                "🎧 Audio Drill & Exit Summary",
+                "🎯 Portfolio & FE3 Prep"
+              ],
+              "instructions": [
+                "Step 1 (Checklist Audit - 5 mins): Complete the 3-point Formative Evaluation readiness checklist with your partner, verifying personal understanding of narrow vs. general AI and passive voice mastery.",
+                "Step 2 (Vocabulary Audio Drill - 6 mins): Review the 18 key technical AI terms. Click to listen to audio pronunciations and practice syllable stress aloud with your partner.",
+                "Step 3 (Exit Summary - 4 mins): Write down two technical AI collocations and one passive sentence you plan to use in your upcoming FE3 presentation."
+              ],
+              "deliverable": "Completed FE3 readiness checklist and verified pronunciation of 3 multisyllabic AI terms in personal study journals.",
+              "teacherNotes": "Check learning logs for passive voice notes. Remind students that Formative Evaluation 3 (FE3) in Week 08 evaluates spontaneous speaking, pronunciation clarity, and active use of Module 3 vocabulary."
+            }
+          },
+          "overview": {
+            "intro": "In this session, you explore the rise of Artificial Intelligence and machine learning in daily life, customer service, and education. Working in pairs and small groups, you will practise describing AI applications, expressing personal attitudes toward automated tools, and debating the benefits and risks of smart algorithms in spoken English.",
+            "whyItMatters": "AI is reshaping every industry and profession across the globe. Being able to explain how automated systems assist human work, articulate ethical concerns, and discuss future technology in clear, conversational English gives you high professional relevance and directly enriches your Module 3 Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Artificial Intelligence",
+                "ipa": "/ˌɑː.tɪˈfɪʃ.əl ɪnˈtel.ɪ.dʒəns/",
+                "definition": "Computer systems designed to perform tasks normally requiring human intelligence."
+              },
+              {
+                "term": "Machine Learning",
+                "ipa": "/məˈʃiːn ˈlɜː.nɪŋ/",
+                "definition": "A branch of AI where software learns from data patterns without explicit programming."
+              },
+              {
+                "term": "Algorithm",
+                "ipa": "/ˈæl.ɡə.rɪ.ðəm/",
+                "definition": "A step-by-step set of rules or instructions followed by a computer to solve a problem."
+              },
+              {
+                "term": "Predictive Analytics",
+                "ipa": "/prɪˈdɪk.tɪv ˌæn.əˈlɪt.ɪks/",
+                "definition": "Using statistical models to forecast future trends based on historical data."
+              },
+              {
+                "term": "Natural Language",
+                "ipa": "/ˈnætʃ.ər.əl ˈlæŋ.ɡwɪdʒ/",
+                "definition": "Human speech or text, which modern AI models process and generate conversational responses to."
+              },
+              {
+                "term": "Data Privacy",
+                "ipa": "/ˈdeɪ.tə ˈprɪv.ə.si/",
+                "definition": "The proper handling, security, and consent surrounding personal information collected online."
+              },
+              {
+                "term": "Automated Decision",
+                "ipa": "/ˈɔː.tə.meɪ.tɪd dɪˈsɪʒ.ən/",
+                "definition": "A choice made instantly by a computer model without human intervention or review."
+              },
+              {
+                "term": "Algorithmic Bias",
+                "ipa": "/ˌæl.ɡəˈrɪð.mɪk ˈbaɪ.əs/",
+                "definition": "Systematic errors in computer systems that create unfair outcomes, often reflecting training data."
+              },
+              {
+                "term": "Chatbot Interface",
+                "ipa": "/ˈtʃæt.bɒt ˈɪn.tə.feɪs/",
+                "definition": "A software application used to conduct online chat conversations via text or text-to-speech."
+              },
+              {
+                "term": "Human-in-the-Loop",
+                "ipa": "/ˈhjuː.mən ɪn ðə luːp/",
+                "definition": "A system design where human oversight and approval remain mandatory for critical actions."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or real-life examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Generative AI writing tools like ChatGPT should be completely integrated into university exams rather than restricted or banned.",
+                "group2": "Companies should be legally prohibited from using automated AI algorithms to filter and reject job applicants without human review.",
+                "group3": "Within a decade, AI virtual assistants will provide better, more empathetic customer service than human call centre agents."
+              },
+              "usefulPhrases": [
+                "Our group explored the implications of...",
+                "From a practical perspective, we believe that...",
+                "A major concern raised by our group is...",
+                "In conclusion, we strongly maintain that..."
               ]
             }
           }
@@ -13749,54 +17590,64 @@
         "2": {
           "session": 2,
           "objectives": {
-            "title": "Session 2 Objectives - Future Mobility & Clean Energy Transport",
-            "summary": "By the end of this session, you will be able to discuss electric vehicles and clean energy transport, express degrees of certainty about the future (will, might, probably), plan a zero-emission transport route with a partner, and present your plan to the class.",
+            "title": "Session 2 - Future of travel Objectives",
+            "summary": "By the end of this session, you will be able to discuss the future of travel with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Learn Key Vocabulary: Electric Vehicles & Future Transport",
-                "description": "Learn 8 useful words for electric aircraft, battery charging hubs, hydrogen power, and clean cities."
+                "title": "Practice TOEIC Listening Part 3: Business & Innovation Discussions",
+                "description": "Catch key details and technical specifications in conversations between engineers, planners, and clients."
               },
               {
                 "num": 2,
-                "title": "Grammar Focus: Talking About the Future (Will, Might, Going to)",
-                "description": "Express future certainty and probability accurately ('will definitely', 'is likely to', 'might')."
+                "title": "Master Vocabulary for Future Mobility, Electric Vehicles & Clean Energy",
+                "description": "Learn and use words for battery range, hydrogen fuel cells, autonomous shuttles, and charging infrastructure."
               },
               {
                 "num": 3,
-                "title": "Speaking Activity: Planning a Green Transport Route",
-                "description": "Work in a team with €100M to design a clean travel connection between an airport and a city center."
+                "title": "Form and Use Comparatives & Degree Words (much faster, more costly than)",
+                "description": "Use comparative adjectives and degree modifiers (far more efficient, slightly slower) to compare transit technologies."
               },
               {
                 "num": 4,
-                "title": "Speaking Practice: Presenting a Green Transport Idea",
-                "description": "Present your green travel route to the class and vote on the most realistic project."
+                "title": "Analyze the Long-Term Environmental Benefits of Future Transit (DDRS)",
+                "description": "Weigh the life-cycle carbon savings of electric and hydrogen systems against the resources needed to build them."
+              },
+              {
+                "num": 5,
+                "title": "Present Your Vision of Future Transportation in Pairs",
+                "description": "Describe and defend an innovative transit idea in paired presentations, focusing on fluency and convincing delivery."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 2 Lesson Plan - Future Mobility & Clean Energy Transport (2 Hours)",
-            "summary": "A visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, practicing predictive certainty grammar, budgeting €100M in regional decarbonization infrastructure, and defending transit choices.",
+            "title": "Session 2 Lesson Plan (2 Hours)",
+            "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
             "items": [
               {
-                "title": "Part 1: Key Vocabulary • Electric Vehicles & Future Transport",
-                "description": "Learn 8 clean energy terms, check syllable stress, and complete the transport matching drill.",
+                "title": "Conversational Warm-Up: Travel in 2050",
+                "description": "In pairs, students predict how long-distance travel will look in 30 years and brainstorm emerging technologies.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Focus • Talking About the Future (Will, Might, Going to)",
-                "description": "Master predictive certainty and future probability; complete 4 sentence rephrasing drills.",
+                "title": "TOEIC Strategy: Listening to Product Pitches",
+                "description": "Practice Part 3 conversations featuring tech presentations, innovation pitches, and investment decisions.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Speaking Activity • Planning a Green Transport Route",
-                "description": "Compare 3 clean vehicles, design the €100M transport route, and resolve 3 stakeholder challenges.",
+                "title": "Vocabulary Builder: Next-Gen Mobility",
+                "description": "High-frequency terms for autonomous vehicles, hydrogen fuel cells, eVTOL shuttles, and charging networks.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Group Presentation & Project Review",
-                "description": "Deliver a 3-minute group presentation to the council and review tips for your speaking exam.",
+                "title": "Structured Discussion & Grammar",
+                "description": "Pitching and comparing future transport modes using Comparatives and Superlatives (far cleaner than, the most cost-effective).",
                 "part": "Part 4"
+              },
+              {
+                "title": "Debrief, Evaluation Prep & Wrap-Up",
+                "description": "Teacher language points, peer feedback on pitch clarity, and personal study targets.",
+                "part": "Part 5"
               }
             ]
           },
@@ -14152,129 +18003,351 @@
             ]
           },
           "lessonContent": {
-            "hero": {
-              "title": "Future Mobility & Clean Energy Transport",
-              "subtitle": "Archetype C • Collaborative Clean Mobility Sprint: Hydrogen Propulsion, Regional Electric Aviation, eVTOL Vertiports & High-Speed Transit",
+            "overview": {
               "image": "images/ag_m3card2.jpg",
-              "badge": "AG Module 3 • Session 2 • Design Sprint"
+              "title": "Future Mobility & Clean Energy Transport",
+              "subtitle": "Hydrogen Propulsion, Battery-Electric Aviation, Urban Air Mobility & Multi-Modal Corridors",
+              "badge": "Session Overview • Clean Propulsion & Future Mobility"
             },
-            "showcase": {
-              "modelA": {
-                "title": "Paradigm A: Decentralized Regional Air Mobility & eVTOL Vertiports",
-                "caption": "On-demand electric commuter aviation, zero-emission vertiport nodes on commercial rooftops, and point-to-point regional connectivity.",
-                "hotspots": [
+            "hero": {
+              "image": "images/ag_m3card2.jpg",
+              "title": "Future Mobility & Clean Energy Transport",
+              "subtitle": "Hydrogen Propulsion, Battery-Electric Aviation, Urban Air Mobility & Multi-Modal Corridors",
+              "badge": "Session Overview • Clean Propulsion & Future Mobility"
+            },
+            "openingSession": {
+              "title": "Activity 1: Clean Transport Breakthroughs & Propulsion Warm-Up",
+              "summary": "Opening warm-up evaluating next-generation aircraft concepts, zero-emission fuels, and key thermodynamic distinctions.",
+              "newsPrompts": [
+                "Airbus progresses cryogenic hydrogen tank ground testing for the ZEROe aircraft demonstrator program targeting commercial service by 2035.",
+                "Heart Aerospace and magniX successfully conduct test flights of 19-passenger regional battery-electric commuter prototypes on Nordic island routes.",
+                "European civil aviation regulators publish world-first airworthiness and vertiport certification baselines for commercial electric Vertical Take-Off and Landing (eVTOL) vehicles."
+              ],
+              "diagnostic": {
+                "title": "Clean Propulsion Concepts Quick Check",
+                "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+                "questions": [
                   {
                     "id": 1,
-                    "label": "Rooftop Vertiport Hub",
-                    "desc": "Multi-pad vertiport infrastructure integrated into urban railway stations with ultra-fast megawatt battery chargers."
+                    "q": "What is the difference between Direct Hydrogen Combustion and a Hydrogen Fuel Cell?",
+                    "answer": "Direct hydrogen combustion burns liquid or gaseous hydrogen in modified gas turbine engines, producing water vapor and trace NOx emissions. A hydrogen fuel cell converts chemical energy electrochemically into electricity through a reaction with oxygen, powering electric motors with zero NOx emissions and pure water as the sole byproduct."
                   },
                   {
                     "id": 2,
-                    "label": "19-Seat Regional Commuter Aircraft",
-                    "desc": "Short-takeoff hybrid-electric aircraft connecting secondary regional towns bypassed by traditional high-speed rail networks."
+                    "q": "How does Sustainable Aviation Fuel (SAF) differ fundamentally from Hydrogen in airport distribution?",
+                    "answer": "SAF is a 'drop-in' hydrocarbon fuel chemically identical to conventional fossil Jet A-1. It requires zero modifications to existing aircraft fuel systems, hydrants, or airport storage tanks. Liquid hydrogen requires cryogenic storage at -253°C, heavily insulated vacuum-jacketed pipelines, and entirely redesigned aircraft airframes with bulbous fuselage fuel tanks."
                   },
                   {
                     "id": 3,
-                    "label": "Liquid Hydrogen Refueling Rig",
-                    "desc": "Cryogenic fuel storage facility supporting regional zero-emission fuel-cell flights under 800 km."
+                    "q": "What is the operational distinction between an eVTOL aircraft and a traditional turbine helicopter?",
+                    "answer": "Conventional helicopters rely on a single massive main rotor powered by a noisy kerosene turboshaft engine with high mechanical complexity. eVTOLs employ Distributed Electric Propulsion (DEP) with multiple smaller electric rotors, dramatically reducing acoustic footprints, eliminating single-point mechanical failure traps, and operating at substantially lower seat-kilometer energy costs."
                   },
                   {
                     "id": 4,
-                    "label": "Autonomous Fleet Swarm Dispatch",
-                    "desc": "Centralized AI traffic management routing electric air taxis through segregated low-altitude urban air corridors."
+                    "q": "In energy systems, what distinguishes Volumetric Energy Density from Gravimetric Specific Energy?",
+                    "answer": "Gravimetric energy density (specific energy) measures energy per unit mass (Wh/kg)—critical for aviation payload limits. Volumetric energy density measures energy per unit volume (Wh/L)—critical for aerodynamic fuselage drag. While liquid hydrogen has triple the gravimetric energy of kerosene, its volumetric density is four times lower, requiring enormous internal fuel volumes."
                   }
-                ],
-                "spatialVocab": "point-to-point connectivity, localized noise footprint, cryogenic containment, low-altitude routing, agile infrastructure."
+                ]
               },
-              "modelB": {
-                "title": "Paradigm B: High-Density High-Speed Electric Rail & Maglev Corridors",
-                "caption": "Mass-capacity intercity rail, subterranean downtown terminals, overhead catenary electrification, and heavy-duty freight integration.",
-                "hotspots": [
-                  {
-                    "id": 1,
-                    "label": "Subterranean Multi-Modal Terminal",
-                    "desc": "Centralized transit hub processing 45,000 passengers per hour with direct seamless subway and light-rail connections."
-                  },
-                  {
-                    "id": 2,
-                    "label": "320 km/h High-Speed Trainsets",
-                    "desc": "High-capacity electric rolling stock moving thousands of passengers simultaneously with zero localized atmospheric emissions."
-                  },
-                  {
-                    "id": 3,
-                    "label": "Linear Infrastructure Footprint",
-                    "desc": "Fenced high-speed rail corridor requiring continuous land expropriation, extensive bridges, and deep mountain tunnels."
-                  },
-                  {
-                    "id": 4,
-                    "label": "Shared High-Volume Freight Rails",
-                    "desc": "Dual-use track network allowing midnight electric freight trains to displace 120,000 diesel heavy trucks annually."
-                  }
-                ],
-                "spatialVocab": "massive passenger throughput, fixed-guideway permanence, landscape fragmentation, catenary electrification, economies of scale."
-              },
-              "spokenProtocol": [
-                {
-                  "step": "Stage 1 (Comparative Physics - 4 mins)",
-                  "prompt": "Partner A argues the energetic and operational benefits of Model A; Partner B defends Model B using technical comparative structures ('Whereas rail demands massive initial civil engineering...', 'Electric aviation offers agile flexibility, yet...')."
-                },
-                {
-                  "step": "Stage 2 (Capital Efficiency - 3 mins)",
-                  "prompt": "Compare the 30-year lifecycle cost: civil land acquisition and tunneling vs. rapid battery replacement and airspace management infrastructure."
-                },
-                {
-                  "step": "Stage 3 (The Regional Dilemma - 3 mins)",
-                  "prompt": "If your province has €100M to spend, would you connect 2 major cities with a rail extension or 12 remote rural communities with regional electric flight hubs?"
-                }
-              ]
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "⏱️ 10 mins",
+                "🗣️ Spoken Retrieval Drill",
+                "🎯 Vocabulary & Warm-Up"
+              ],
+              "instructions": [
+                "Step 1 (Headline Scan - 3 mins): Read the three clean transport news prompts with your partner. Discuss which propulsion technology (hydrogen fuel cells, sustainable aviation fuels, battery-electric) is nearest commercial maturity.",
+                "Step 2 (Memory Recall - 4 mins): Without looking at notes, test each other on the 4 propulsion distinctions below (Cryogenic Liquid Hydrogen vs. High-Pressure Gas, SAF Drop-In Fuel vs. Clean-Sheet Airframe, Gravimetric Energy Density vs. Volumetric Density, High-Speed Rail vs. Short-Haul Turboprop).",
+                "Step 3 (Class Roundup - 3 mins): One student explains why gravimetric energy density is the biggest limiting factor for battery-electric passenger aircraft."
+              ],
+              "deliverable": "Clear spoken explanation of 1 clean propulsion concept and 1 energy storage challenge during teacher Q&A.",
+              "teacherNotes": "Keep pace brisk. Drill correct pronunciation of 'cryogenic' (cry-oh-JEN-ik) and 'gravimetric' (grav-ih-MET-rik)."
             },
-            "designSprint": {
-              "budget": "€100,000,000",
-              "corridorName": "The 2035 Trans-Regional Green Corridor (Toulouse – Pau – Bayonne – Bordeaux)",
-              "categories": [
+            "survey": {
+              "title": "Activity 2: Clean Transit Corridor Pitch: Speed Survey",
+              "summary": "Conduct structured speed-dating interviews on 4 disruptive mobility concepts. Compare travel times, infrastructure requirements, and decarbonization potential.",
+              "signposts": [
+                "\"Regarding thermodynamic efficiency, ...\"",
+                "\"While capital expenditure for hydrogen infrastructure is formidable, the lifecycle decarbonization...\"",
+                "\"On short-haul regional corridors of under 400 km, battery-electric flight is projected to...\"",
+                "\"Taking into account total door-to-door transit time, high-speed rail will inevitably...\""
+              ],
+              "topics": [
                 {
-                  "name": "Green Hydrogen Production & Airport Fueling Rigs",
-                  "costPerUnit": "€25M / regional hub",
-                  "desc": "Construct localized water electrolysis plants and cryogenic liquid hydrogen storage facilities at secondary airports."
+                  "id": 1,
+                  "badge": "Regional Electric Commuter Flight",
+                  "statement": "Can 19-seat battery-electric aircraft replace regional turboprops on sub-400 km routes by 2030?",
+                  "pro": "Electric motors reduce operating and maintenance costs by 60%, produce zero direct emissions, and permit flight operations from short suburban airfields without acoustic noise bans.",
+                  "con": "Current battery gravimetric densities (~250–300 Wh/kg) severely constrain payload and reserve diversion ranges compared to kerosene.",
+                  "prompt": "Interview your partner: How can regional carriers leverage electric aircraft for lifeline island and mountain valley routes?"
                 },
                 {
-                  "name": "Intercity High-Speed Rail Modernization & Bypass",
-                  "costPerUnit": "€35M / 20km section",
-                  "desc": "Electrify and straighten regional track bottlenecks to elevate maximum train speeds from 140 km/h to 220 km/h."
+                  "id": 2,
+                  "badge": "Cryogenic Hydrogen Airliners",
+                  "statement": "Will hydrogen-powered commercial airliners dominate medium-haul European trunk routes by 2045?",
+                  "pro": "Hydrogen eliminates all fossil CO₂ emissions at the tailpipe and decouples airline operational costs from volatile global petroleum markets.",
+                  "con": "Cryogenic hydrogen fuel tanks occupy massive internal cabin volume, reducing passenger seat capacity and requiring multi-billion-euro airport fuel storage overhauls.",
+                  "prompt": "Interview your partner: Compare the feasibility of Airbus ZEROe against 100% synthetic e-kerosene drop-in fuels."
                 },
                 {
-                  "name": "Regional Electric Commuter Flight Fleet Subsidy",
-                  "costPerUnit": "€20M / 5 aircraft",
-                  "desc": "Subsidize airline acquisition of 19-seat hybrid-electric regional turboprops to restore discontinued rural routes."
+                  "id": 3,
+                  "badge": "Urban Air Mobility (eVTOL) Shuttles",
+                  "statement": "Are eVTOL air taxis a genuine urban transport solution or an exclusive novelty for affluent executives?",
+                  "pro": "eVTOL networks provide zero-emission point-to-point connections, bypass highway congestion, and accelerate emergency medical organ transport between urban medical centers.",
+                  "con": "Vertiport construction faces fierce public resistance regarding privacy, low-altitude visual disturbance, and potential airspace conflicts with commercial arrival funnels.",
+                  "prompt": "Interview your partner: What public consultation criteria should municipal councils mandate before licensing urban vertiports?"
                 },
                 {
-                  "name": "Urban Air Mobility Vertiport Network & Charging",
-                  "costPerUnit": "€15M / 3 vertiports",
-                  "desc": "Build 3 city-center rooftop vertiports with multi-megawatt battery swapping stations for automated air ambulances and air taxis."
-                },
-                {
-                  "name": "Multi-Modal Mobility Digital Ticketing & Rail-Air Links",
-                  "costPerUnit": "€5M / full corridor integration",
-                  "desc": "Deploy a single synchronized booking API and baggage-transfer system connecting high-speed trains directly to flights."
+                  "id": 4,
+                  "badge": "Hyperloop vs. High-Speed Rail",
+                  "statement": "Should transport ministries invest in experimental vacuum-tube hyperloops or expand proven high-speed rail networks?",
+                  "pro": "Hyperloop concepts target 1,000 km/h cruising speeds with fractional aerodynamic resistance, competing directly with airline block times over 1,200 km corridors.",
+                  "con": "Proven high-speed rail lines (TGV/ICE) carry 1,000+ passengers per departure with established safety standards, whereas vacuum maintenance on hundreds of kilometers remains technically unproven.",
+                  "prompt": "Interview your partner: How does the European Green Deal evaluate high-speed rail expansion vs. emerging magnetic levitation?"
                 }
               ],
-              "stakeholders": [
+              "modeBadges": [
+                "👥 Rotating Pairs",
+                "⏱️ 25 mins",
+                "🗣️ Speed Discussion",
+                "🎯 Stance & Linking Words"
+              ],
+              "instructions": [
+                "Step 1 (Corridor Evaluation - 4 mins): Review the 4 transport corridor dilemmas below. Formulate your personal stance on domestic flight bans vs. high-speed rail and SAF blend mandates.",
+                "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Defend your policy choice using at least two linking phrases ('In comparison to...', 'The fundamental trade-off is...', 'Whereas rail infrastructure requires...').",
+                "Step 3 (Consensus - 5 mins): Return to your primary partner. Agree on which public policy would produce the greatest net emissions reduction over a 10-year timeline."
+              ],
+              "deliverable": "4 completed partner discussion notes comparing infrastructure costs, carbon reduction, and passenger transit times.",
+              "teacherNotes": "Enforce rotation timing strictly. Check that students compare metrics (capital cost vs. carbon savings) rather than just stating general opinions."
+            },
+            "grammarClinic": {
+              "title": "Activity 3: Language Focus: Future Forms, Modals & Predictive Certainty",
+              "summary": "Calibrating language to express degrees of future technical probability, planned milestones, and tentative hypotheses—essential for B2 presentations and engineering roadmaps.",
+              "rules": [
                 {
-                  "role": "The Fiscal Conservative Council Member",
-                  "objection": "€100M is public taxpayers' money. Hydrogen aircraft are unproven technology. We should only invest in standard off-the-shelf electric buses."
+                  "type": "High Certainty / Inevitable (will / is bound to / is certain to)",
+                  "formula": "Subject + is bound to / is certain to + base verb",
+                  "usage": "Used for technological evolutions backed by clear empirical and regulatory trajectories. (e.g., 'Aviation emissions regulations are bound to tighten over the next decade.')"
                 },
                 {
-                  "role": "The Rural Community Mayor",
-                  "objection": "High-speed rail whizzes right through our villages without stopping. Electric commuter planes are luxury toys for business travelers. What about our local roads?"
+                  "type": "Projected Probability (is projected to / is likely that / will probably)",
+                  "formula": "Subject + is projected / scheduled / expected to + base verb",
+                  "usage": "Standard in engineering business cases and lifecycle projections. (e.g., 'Green hydrogen production is projected to reach parity with fossil fuels by 2035.')"
                 },
                 {
-                  "role": "The Deep Ecology Campaigner",
-                  "objection": "eVTOL air taxis generate acoustic annoyance and consume 3 times more kilowatt-hours per passenger-kilometer than electric trains. They are an ecological distraction."
-                },
-                {
-                  "role": "The Regional Airline Executive",
-                  "objection": "If you fund rail modernization without subsidizing our clean fleet renewal, our airline will go bankrupt and regional aerospace jobs will disappear."
+                  "type": "Tentative Possibility / Conditionality (may / might / could)",
+                  "formula": "Subject + may / might / could + base verb",
+                  "usage": "Crucial for cautious technical claims and risk assessments. (e.g., 'Severe battery degradation during rapid turnaround charging could limit daily flight cycles.')"
                 }
+              ],
+              "drills": [
+                {
+                  "id": 1,
+                  "sentence": "Given current battery density advancements, regional electric commercial flights ________ feasible on sub-400 km routes by 2030.",
+                  "options": [
+                    "is bound to be",
+                    "are bound to be",
+                    "are bound to being",
+                    "bound to be"
+                  ],
+                  "correct": "are bound to be",
+                  "explanation": "Plural subject 'flights' requires plural auxiliary 'are' followed by 'bound to be'."
+                },
+                {
+                  "id": 2,
+                  "sentence": "Hydrogen fuel infrastructure at major hubs is ________ cost billions of euros in cryogenic storage facilities.",
+                  "options": [
+                    "projecting to",
+                    "projected to",
+                    "projection of",
+                    "projectedly"
+                  ],
+                  "correct": "projected to",
+                  "explanation": "Passive participial construction 'is projected to + verb' expresses calculated future estimates."
+                },
+                {
+                  "id": 3,
+                  "sentence": "Without substantial government subsidies, private investors ________ reluctant to fund vertiport construction in downtown districts.",
+                  "options": [
+                    "may remain",
+                    "must to remain",
+                    "will remaining",
+                    "are having remained"
+                  ],
+                  "correct": "may remain",
+                  "explanation": "Modal 'may' followed by base verb 'remain' accurately expresses tentative conditionality."
+                },
+                {
+                  "id": 4,
+                  "sentence": "Strict noise abatement regulations ________ introduced around metropolitan vertiports before commercial flights begin.",
+                  "options": [
+                    "will be",
+                    "will been",
+                    "is being",
+                    "were"
+                  ],
+                  "correct": "will be",
+                  "explanation": "Future passive 'will be introduced' matches the future timeframe before operations begin."
+                }
+              ],
+              "modeBadges": [
+                "👥 Pairs / Solo",
+                "⏱️ 20 mins",
+                "✍️ Grammar Practice",
+                "🎯 Predictive Language"
+              ],
+              "instructions": [
+                "Step 1 (Rule Review - 5 mins): Review the 4 levels of predictive certainty: Definite ('is bound to / will inevitably'), High Probability ('is likely to / is projected to'), Moderate Possibility ('may well / could potentially'), and Unlikely ('is doubtful that / is unlikely to').",
+                "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive forecasting sentences individually, selecting the correct predictive modal and adverb according to empirical probability.",
+                "Step 3 (Pair Verification - 7 mins): Check answers and explanations together. In pairs, practice converting absolute statements into calibrated professional forecasts ('Hybrid aircraft are projected to enter regional service by 2035')."
+              ],
+              "deliverable": "4 correctly completed predictive sentences and 2 calibrated oral forecasts recorded in study journals.",
+              "teacherNotes": "Emphasize that engineers and analysts rarely make 100% absolute claims. Professional credibility relies on calibrated predictive language: 'is bound to', 'is projected to', 'could potentially'."
+            },
+            "roleplay": {
+              "title": "Activity 4: Airline Boardroom Clean Fleet Transition Pitch",
+              "scenario": "EuroWings Regional is planning its fleet renewal strategy for 2028–2035. Student A (Head of Fleet Strategy & Sustainability) pitches a bold investment into 20 electric commuter aircraft and 10 hydrogen-ready slots. Student B (Chief Financial Officer) interrogates residual aircraft values, battery replacement costs, and airport charging infrastructure availability.",
+              "roles": [
+                {
+                  "role": "Head of Fleet Strategy & Sustainability",
+                  "title": "Green Transition Advocate",
+                  "objectives": [
+                    "Demonstrate zero tailpipe emissions on domestic routes and complete exemption from EU ETS carbon taxes.",
+                    "Show that electric motor maintenance costs are 50% lower than turboprops due to fewer moving parts.",
+                    "Argue that early adoption secures prime airport green gate allocations and brand loyalty."
+                  ],
+                  "keyPhrases": [
+                    "\"By transitioning our regional fleet to electric propulsion, we eliminate local NOx and acoustic emissions...\"",
+                    "\"Lifecycle operating calculations project a 40% reduction in direct seat-kilometer costs...\"",
+                    "\"Securing early delivery slots positions EuroWings as the benchmark sustainable carrier in Western Europe...\""
+                  ]
+                },
+                {
+                  "role": "Chief Financial Officer (CFO)",
+                  "title": "Fiscal Risk Auditor",
+                  "objectives": [
+                    "Highlight battery replacement amortization costs every 1,500 flight cycles.",
+                    "Question whether secondary regional airports will install multi-megawatt rapid charging stations in time.",
+                    "Demand a contingency plan if battery weight limits passenger baggage during winter holiday flights."
+                  ],
+                  "keyPhrases": [
+                    "\"How do you propose amortizing the substantial battery replacement expenditure over a 10-year hull life?\"",
+                    "\"If regional hubs fail to commission high-voltage charging grids by 2029, these aircraft will remain grounded...\"",
+                    "\"We cannot compromise airline profitability on uncertified cryogenic hydrogen delivery promises...\""
+                  ]
+                }
+              ],
+              "modeBadges": [
+                "👥 Small Groups (3-4)",
+                "⏱️ 45 mins",
+                "🎭 Boardroom Presentation & Defense",
+                "🎯 Fleet Strategy & Q&A"
+              ],
+              "instructions": [
+                "Step 1 (Fleet Strategy Preparation - 10 mins): In teams of 3 or 4 representing an airline executive committee, prepare a €1.2 billion fleet renewal pitch for the Board of Directors. Select your transition pathway: (A) Accelerated SAF blend procurement, (B) Fleet of 40 hydrogen-hybrid regional turboprops, or (C) High-density conventional fleet retrofits with winglets and geared turbofans.",
+                "Step 2 (Pitch Delivery - 15 mins): Present your 3-minute investment pitch to the Board, detailing capital costs, emissions reductions, fuel supply chain reliability, and return on investment.",
+                "Step 3 (Board Q&A & Defense - 15 mins): Defend your fleet strategy against tough follow-up questions from peer board members and the instructor regarding fuel availability and financial risk.",
+                "Step 4 (Boardroom Vote - 5 mins): The Board votes on which fleet strategy delivers the strongest balance between environmental sustainability and financial solvency."
+              ],
+              "deliverable": "A 3-minute executive pitch and successful defense during the board Q&A session.",
+              "teacherNotes": "Ensure all team members speak during the pitch. Push back on unrealistic assumptions: 'Where will your airline source 100,000 tonnes of green hydrogen at Charles de Gaulle by 2030?'"
+            },
+            "feChecklist": [
+              "Add 5 clean propulsion and mobility terms to your Vocabulary Log.",
+              "Practice calibrating future predictions using 'is projected to' and 'is bound to'.",
+              "Draft Dimension 1 (Operating Mechanism) and Dimension 2 (Operational Benefits) for your FE3 presentation."
+            ],
+            "closingReview": {
+              "title": "Activity 5: Wrap-Up & FE3 Preparation",
+              "summary": "Consolidation, pronunciation practice, and portfolio check",
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "⏱️ 15 mins",
+                "🎧 Audio Drill & Exit Summary",
+                "🎯 Portfolio & FE3 Prep"
+              ],
+              "instructions": [
+                "Step 1 (Checklist Audit - 5 mins): Audit your partner's understanding of clean propulsion pathways and predictive certainty formulas using the Session 2 FE3 checklist.",
+                "Step 2 (Pronunciation Drill - 6 mins): Practice syllable stress on 18 clean transport terms aloud: 'al-TER-na-tive', 'pro-PUL-sion', 'hy-po-THET-i-cal', 'in-fra-STRUC-ture'.",
+                "Step 3 (Exit Summary - 4 mins): Record your chosen clean mobility topic and 2 predictive phrases for your FE3 presentation plan."
+              ],
+              "deliverable": "Signed partner readiness checklist and verified pronunciation log in student portfolios.",
+              "teacherNotes": "Review learning logs for predictive certainty formulas. Praise accurate use of 'is projected to' and 'is bound to'."
+            }
+          },
+          "overview": {
+            "intro": "This session focuses on the future of travel and digital disruption, exploring how high-speed digital ticketing, biometric gates, and autonomous vehicles are changing the passenger experience. Working in teams, you will practise pitching future transport innovations, explaining digital customer journeys, and debating whether digital systems make travel more efficient or more stressful.",
+            "whyItMatters": "International travel is undergoing massive digital transformation. Being able to explain digital passenger processing, evaluate smart airport technologies, and discuss customer convenience in spoken English equips you with the modern vocabulary needed for airport management and your Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Biometric Screening",
+                "ipa": "/ˌbaɪ.oʊˈmet.rɪk ˈskriː.nɪŋ/",
+                "definition": "Using facial recognition or fingerprints to instantly verify passenger identity at airport gates."
+              },
+              {
+                "term": "Digital Wallet",
+                "ipa": "/ˈdɪdʒ.ɪ.təl ˈwɒl.ɪt/",
+                "definition": "An electronic system on a smartphone holding boarding passes, payment cards, and digital passports."
+              },
+              {
+                "term": "Contactless Journey",
+                "ipa": "/ˈkɒn.tækt.ləs ˈdʒɜː.ni/",
+                "definition": "A seamless airport passage where passengers move from curb to gate without touching physical screens."
+              },
+              {
+                "term": "Hyperloop",
+                "ipa": "/ˈhaɪ.pə.luːp/",
+                "definition": "A proposed high-speed transport system carrying passenger pods in low-pressure vacuum tubes."
+              },
+              {
+                "term": "Electric Vertical Take-off",
+                "ipa": "/iˈlek.trɪk ˈvɜː.tɪ.kəl ˈteɪk.ɒf/",
+                "definition": "eVTOL aircraft designed for urban air mobility and short point-to-point air taxi journeys."
+              },
+              {
+                "term": "Augmented Reality",
+                "ipa": "/ɔːɡˈmen.tɪd riˈæl.ə.ti/",
+                "definition": "Interactive digital wayfinding graphics superimposed onto real-world airport terminal views."
+              },
+              {
+                "term": "Self-Service Kiosk",
+                "ipa": "/self ˈsɜː.vɪs ˈkiː.ɒsk/",
+                "definition": "An interactive terminal allowing passengers to print bag tags and check in independently."
+              },
+              {
+                "term": "Digital Disruption",
+                "ipa": "/ˈdɪdʒ.ɪ.təl dɪsˈrʌp.ʃən/",
+                "definition": "The transformation of traditional industries caused by innovative digital technologies and business models."
+              },
+              {
+                "term": "Predictive Maintenance",
+                "ipa": "/prɪˈdɪk.tɪv ˈmeɪn.tə.nəns/",
+                "definition": "Using sensors to anticipate equipment failures on aircraft or trains before they occur."
+              },
+              {
+                "term": "Autonomous Pod",
+                "ipa": "/ɔːˈtɒn.ə.məs pɒd/",
+                "definition": "A self-driving small electric carriage operating along dedicated corridors in airports or campuses."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Within fifteen years, electric air taxis (eVTOL) will replace airport express trains for business travelers connecting to city centres.",
+                "group2": "Traditional paper boarding passes and physical passports should be entirely abolished in favor of mandatory biometric smartphone IDs.",
+                "group3": "Hyperloop vacuum-tube travel will remain an expensive technological fantasy that will never achieve commercial viability for mass passengers."
+              },
+              "usefulPhrases": [
+                "Our group evaluated the future feasibility of...",
+                "While this innovation sounds exciting, we noticed that...",
+                "From a passenger convenience perspective...",
+                "In conclusion, our group believes that..."
               ]
             }
           }
@@ -14282,54 +18355,64 @@
         "3": {
           "session": 3,
           "objectives": {
-            "title": "Session 3 Objectives - Technology Ethics & Automated Decisions in AI",
-            "summary": "By the end of this session, you will be able to discuss technology ethics and digital privacy, use linking words to connect contrasting ideas, participate in a public hearing about smart cameras, and agree on fair technology rules.",
+            "title": "Session 3 - Debate and Critical Thinking Objectives",
+            "summary": "By the end of this session, you will be able to engage in debates and critical discussions with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Learn Key Vocabulary: Technology Ethics & Digital Privacy",
-                "description": "Learn 8 useful words for privacy protection, facial scans, unfair bias, and transparency."
+                "title": "Practice Identifying Argument Structures & Cause/Effect in TOEIC Reading",
+                "description": "Analyze editorial articles and opinion pieces to separate central claims from supporting evidence and assumptions."
               },
               {
                 "num": 2,
-                "title": "Grammar Focus: Linking Words (Although, However, In spite of)",
-                "description": "Connect contrasting points smoothly in discussions ('Although the technology is fast, we must...')."
+                "title": "Master Polite Debate Language, Concessions, and Rhetorical Questions",
+                "description": "Use diplomatic phrasing to question assumptions, acknowledge opposing arguments, and clarify misunderstandings."
               },
               {
                 "num": 3,
-                "title": "Speaking Activity: Public Hearing: Smart Cameras in Public",
-                "description": "Role-play a debate between police chiefs, software companies, privacy advocates, and passengers."
+                "title": "Use Conjunctions (although, because) vs. Prepositions (despite, due to)",
+                "description": "Correctly choose between conjunctions requiring a full clause and prepositions followed by a noun phrase or gerund."
               },
               {
                 "num": 4,
-                "title": "Speaking Practice: Evaluating Arguments & Making Fair Rules",
-                "description": "Cross-examine speakers, defend your view, and decide which rules to enforce."
+                "title": "Debate Technological Innovation vs. Environmental Caution (DDRS)",
+                "description": "Explore the balance between rapid tech adoption and the precautionary principle for public safety and ecology."
+              },
+              {
+                "num": 5,
+                "title": "Participate in an Interactive Class Debate with Constructive Feedback",
+                "description": "Deliver concise, persuasive spoken contributions during a team debate while staying polite and focused on the topic."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 3 Lesson Plan - Technology Ethics & Automated Decisions in AI (2 Hours)",
-            "summary": "A Oxford-style regulatory inquiry examining biometric surveillance, predictive profiling, complex concessive grammar, sworn witness depositions, and tribunal deliberations under the EU AI Act.",
+            "title": "Session 3 Lesson Plan (2 Hours)",
+            "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
             "items": [
               {
-                "title": "Part 1: Key Vocabulary • Technology Ethics & Digital Privacy",
-                "description": "Learn 8 digital ethics terms, check syllable stress, and complete the definition matching challenge.",
+                "title": "Conversational Warm-Up: Agree or Disagree?",
+                "description": "Students quickly vote and give one reason for controversial tech statements (e.g. banning short-haul flights).",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Focus • Linking Words (Although, However, In spite of)",
-                "description": "Master contrast conjunctions and commas; complete 4 sentence combination drills.",
+                "title": "TOEIC Strategy: Cause & Effect in Part 7",
+                "description": "Practice analyzing texts for cause-and-effect relationships, contrasting arguments, and author stance.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Speaking Activity • Public Hearing: Smart Cameras in Public",
-                "description": "Participate in the Project Argus-Eye hearing, give sworn witness testimony, and cross-examine.",
+                "title": "Vocabulary Builder: Debate & Discussion Linking Words",
+                "description": "Linking words and phrases for counter-arguments, concessions, rhetorical questions, and conclusions.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Discussion Review & Argument Evaluation",
-                "description": "Weigh privacy vs. safety arguments and review speaking feedback with your partner.",
+                "title": "Structured Discussion & Grammar",
+                "description": "Structured classroom debate using Conjunctions (whereas, provided that) vs. Prepositions (despite, in spite of).",
                 "part": "Part 4"
+              },
+              {
+                "title": "Debrief, Evaluation Prep & Wrap-Up",
+                "description": "Peer debate feedback, pronunciation check, and preparation checklist for the Session 5 evaluation.",
+                "part": "Part 5"
               }
             ]
           },
@@ -14685,78 +18768,351 @@
             ]
           },
           "lessonContent": {
-            "hero": {
-              "title": "Technology Ethics & Automated Decisions in AI",
-              "subtitle": "Archetype B • Media & Debate Lab: The High-Stakes Public Inquiry into Algorithmic Profiling, Biometric Surveillance & the EU AI Act",
+            "overview": {
               "image": "images/ag_m3card3.jpg",
-              "badge": "AG Module 3 • Session 3 • Debate Lab"
+              "title": "Technology Ethics & Automated Decisions in AI",
+              "subtitle": "Algorithmic Fairness, Explainable AI (XAI), Digital Surveillance & Tech Governance",
+              "badge": "Session Overview • Technology Ethics & Algorithmic Accountability"
             },
-            "devilsAdvocate": [
-              {
-                "claim": "If you have nothing to hide, you have nothing to fear from 24/7 facial recognition and biometric tracking at airports.",
-                "challenge": "Challenge this position: How does ubiquitous mass surveillance chill lawful civil liberties, and what happens when the algorithm makes a false-positive match?"
+            "hero": {
+              "image": "images/ag_m3card3.jpg",
+              "title": "Technology Ethics & Automated Decisions in AI",
+              "subtitle": "Algorithmic Fairness, Explainable AI (XAI), Digital Surveillance & Tech Governance",
+              "badge": "Session Overview • Technology Ethics & Algorithmic Accountability"
+            },
+            "openingSession": {
+              "title": "Activity 1: Tech Ethics Headlines & Quick Check",
+              "summary": "Opening warm-up investigating landmark regulatory rulings, algorithmic bias scandals, and fundamental governance concepts.",
+              "newsPrompts": [
+                "The European Union implements enforcement of the EU AI Act, establishing strict auditability mandates for high-risk automated decision systems.",
+                "Civil aviation safety authorities mandate that automated pilot assist software must provide explainable telemetry logs to allow human auditing during safety reviews.",
+                "Independent university researchers expose significant demographic bias in commercial facial recognition algorithms deployed at international border checkpoints."
+              ],
+              "diagnostic": {
+                "title": "Technology Ethics Concepts Quick Check",
+                "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+                "questions": [
+                  {
+                    "id": 1,
+                    "q": "What is the fundamental difference between a 'Black Box' algorithm and Explainable AI (XAI)?",
+                    "answer": "In a black-box model (such as a deep neural network with billions of parameters), the internal mathematical weights and decision paths cannot be directly understood or audited by human engineers. Explainable AI (XAI) employs interpretable architectures or post-hoc auditing methods that provide clear, human-understandable justifications for why a specific prediction or decision was made."
+                  },
+                  {
+                    "id": 2,
+                    "q": "How does Algorithmic Bias differ from intentional human discrimination?",
+                    "answer": "Intentional discrimination stems from deliberate prejudice by an individual or organization. Algorithmic bias occurs when an automated model reproduces or amplifies historical societal inequalities because its training data was skewed, unrepresentative, or reflected biased human decisions of the past—even when developers had no intent to discriminate."
+                  },
+                  {
+                    "id": 3,
+                    "q": "What is the distinction between Data Minimization and Indiscriminate Surveillance?",
+                    "answer": "Data minimization (mandated by GDPR and the EU AI Act) requires that automated systems collect, process, and retain only the absolute minimum personal data necessary to perform a specific authorized task. Indiscriminate surveillance involves mass, continuous collection and long-term retention of biometric and behavioral data across entire populations without targeted suspicion."
+                  },
+                  {
+                    "id": 4,
+                    "q": "In tech governance, what is the difference between Legal Compliance and Ethical Responsibility (DDRS)?",
+                    "answer": "Legal compliance means strictly adhering to written statutes and regulations currently in force. Ethical responsibility goes beyond statutory law to proactively evaluate the wider social, environmental, and human rights impacts of technology deployment, anticipating harm before legislation catches up."
+                  }
+                ]
               },
-              {
-                "claim": "Algorithms are purely mathematical; therefore, they are completely immune to human bias, prejudice, and emotional error.",
-                "challenge": "Challenge this position: How does training an AI on historical policing and border data inevitably institutionalize and amplify historical societal biases?"
-              },
-              {
-                "claim": "Regulating AI with strict laws like the EU AI Act will only strangle European innovation while American and Asian tech giants dominate the globe.",
-                "challenge": "Challenge this position: Why does strong regulatory trust and transparent explainability actually create a competitive global advantage for European enterprises?"
-              }
-            ],
-            "inquiryDossier": {
-              "projectName": "Project 'Argus-Eye': The Pan-European Predictive Border Neural Network",
-              "controversy": "An automated passenger risk-scoring AI deployed across 14 international transit hubs. The system scans facial micro-expressions, analyzes luggage purchase telemetry, and automatically assigns green, amber, or red detention flags to travelers before they reach customs.",
-              "witnesses": [
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "⏱️ 10 mins",
+                "🗣️ Spoken Retrieval Drill",
+                "🎯 Vocabulary & Warm-Up"
+              ],
+              "instructions": [
+                "Step 1 (Headline Scan - 3 mins): Read the three headlines on autonomous AI decisions, algorithmic bias, and facial recognition bans. Discuss which controversy raises the greatest legal liability.",
+                "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Algorithmic Bias vs. Training Data Imbalance, Explainable AI [XAI] vs. Black-Box Neural Networks, Human-in-the-Loop vs. Human-on-the-Loop, Data Minimization vs. Bulk Surveillance).",
+                "Step 3 (Class Roundup - 3 mins): One student explains why 'Explainable AI' is mandatory for automated flight control and air traffic advisory tools."
+              ],
+              "deliverable": "Clear spoken definition of 1 ethical AI principle and 1 algorithmic risk concept during the teacher check.",
+              "teacherNotes": "Keep pace rapid. Emphasize that 'Black-box' models are unacceptable in safety-critical aviation systems because investigators cannot trace why a decision was made."
+            },
+            "survey": {
+              "title": "Activity 2: Ethical Tech Dilemmas & Speed Sparring",
+              "summary": "Conduct fast-paced paired debates on 4 provocative technology dilemmas. Practice making measured concessions, using polite disagreement, and softening controversial claims with cautious language.",
+              "signposts": [
+                "\"Admittedly, the operational convenience is undeniable; however, ...\"",
+                "\"While efficiency increases markedly, it is worth questioning whether...\"",
+                "\"Evidence tends to suggest that automated screening disproportionately...\"",
+                "\"To ensure ethical compliance, regulatory frameworks should require that...\""
+              ],
+              "topics": [
                 {
-                  "role": "Dr. Soraya Morales • Independent Algorithmic Ethics Auditor",
-                  "stance": "Total Opposition • Demands Immediate System Moratorium",
-                  "testimony": "Our independent audit revealed that Argus-Eye exhibits a 14.8% false-positive rate on non-Caucasian travelers. Its emotion-detection module conflates travel fatigue and stress with deception. It is an unscientific black-box violating Article 5 of the EU AI Act.",
-                  "vulnerability": "Morales's audit methodology evaluated only 2,500 travelers and did not account for the latest neural network patch."
+                  "id": 1,
+                  "badge": "Automated CV & Hiring Algorithms",
+                  "statement": "Should aviation companies allow AI algorithms to reject job applicants without human review?",
+                  "pro": "Algorithms parse tens of thousands of technical resumes in seconds, objectively matching engineering qualifications without unconscious human bias regarding nationality or age.",
+                  "con": "Language models trained on historical hiring patterns frequently penalize non-traditional career paths, gender diversity, and non-native English phrasing.",
+                  "prompt": "Interview your partner: How can recruitment departments establish ethical auditing of automated hiring tools?"
                 },
                 {
-                  "role": "Viktor Lindholm • Chief Security Officer, Trans-Continental Border Agency",
-                  "stance": "Full Defense • Cites Unprecedented Threat Neutralization",
-                  "testimony": "Argus-Eye processes 250,000 travelers daily in under 2 seconds each. In six months, it intercepted 42 human-trafficking suspects and 110 fraudulent identity rings that human border guards completely missed. Shutting it down compromises European homeland security.",
-                  "vulnerability": "Lindholm cannot explain the mathematical weighting behind the risk scores because the software is proprietary black-box code."
+                  "id": 2,
+                  "badge": "Facial Recognition in Public Spaces",
+                  "statement": "Should international transport hubs deploy real-time facial recognition surveillance across all terminal concourses?",
+                  "pro": "Real-time biometric surveillance instantly detects flagged security suspects and missing persons, elevating public safety across crowded critical infrastructure.",
+                  "con": "Continuous public surveillance creates chilling civil liberties erosion, high false-identification rates among minority demographics, and risks of state surveillance overreach.",
+                  "prompt": "Interview your partner: Where should society draw the line between public security and biometric privacy rights?"
                 },
                 {
-                  "role": "Hélène Dupont • Commercial Airline Passenger Coalition Lead",
-                  "stance": "Conditional Reform • Demands Human-in-the-Loop Safeguards",
-                  "testimony": "Passengers appreciate skipping 45-minute passport queues with biometric walkthroughs. However, when an amber flag occurs, travelers are subjected to humiliating cavity searches with zero right to know why the algorithm flagged them. We demand a guaranteed human appeals officer at every gate.",
-                  "vulnerability": "Mandatory human appeals officers at every terminal will increase operating overhead by €45M annually, raising passenger airfare tickets."
+                  "id": 3,
+                  "badge": "Autonomous Safety Triage Systems",
+                  "statement": "Should automated systems make life-or-death prioritization decisions during catastrophic emergency scenarios?",
+                  "pro": "Algorithms compute multivariate physics equations in milliseconds without human panic, executing optimal risk-minimization actions far faster than human pilots.",
+                  "con": "Delegating moral and ethical choices to software code dehumanizes safety decisions and creates impossible legal liability voids when fatalities occur.",
+                  "prompt": "Interview your partner: How should system architects program ethical fail-safes into automated collision-avoidance systems?"
                 },
                 {
-                  "role": "Chief Justice Karen Sterling • European Inquiry Tribunal Chair",
-                  "stance": "Judicial Arbiter • Mandating Evidence-Based Reconciliation",
-                  "testimony": "The Commission must determine whether Project Argus-Eye falls under the 'Unacceptable Risk' tier (prohibited under EU law) or 'High-Risk' tier (permitted with strict conformity audits and human oversight). We require clear empirical standards, not speculative fear.",
-                  "vulnerability": "Must deliver a consensus ruling enforceable across 27 sovereign member states with sharply divergent national security priorities."
+                  "id": 4,
+                  "badge": "Generative Code & IP Sovereignty",
+                  "statement": "Should engineering firms restrict software developers from using generative AI coding assistants?",
+                  "pro": "Restricting AI assistants prevents corporate intellectual property from leaking into training datasets and avoids copyright infringement liabilities.",
+                  "con": "AI coding assistants accelerate software prototyping by 30% and help junior programmers identify syntax bugs and vulnerabilities faster.",
+                  "prompt": "Interview your partner: How can aerospace firms establish secure, closed-loop generative coding environments?"
                 }
-              ]
+              ],
+              "modeBadges": [
+                "👥 Rotating Pairs",
+                "⏱️ 25 mins",
+                "🗣️ Speed Discussion",
+                "🎯 Stance & Linking Words"
+              ],
+              "instructions": [
+                "Step 1 (Stance Preparation - 4 mins): Review the 4 ethical technology dilemmas below (Autonomous Drone Delivery, AI Recruitment Filtering, Predictive Policing at Customs, Generative AI for Maintenance Manuals). Decide your ethical boundary on each.",
+                "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Debate each topic using polite disagreement and concession linkers ('While I concede that efficiency increases,... nevertheless...', 'Granted, the model is fast, but...').",
+                "Step 3 (Consensus - 5 mins): Return to your primary partner. Agree on which automated decision should be banned completely in civil aviation."
+              ],
+              "deliverable": "4 completed partner debate records with documented arguments and counter-arguments on technology ethics.",
+              "teacherNotes": "Listen for polite concession phrases: 'Granted,... nevertheless', 'While it is true that...'. Encourage students to challenge each other diplomatically."
             },
-            "argumentClinic": {
+            "grammarClinic": {
+              "title": "Activity 3: Language Focus: Cautious Language & Polite Disagreement",
+              "summary": "Mastering diplomatic arguments, polite concession, and cautious phrasing to sound professional, objective, and persuasive in B2 workplace debates.",
               "rules": [
                 {
-                  "title": "1. The Ethical Concession & Pivot",
-                  "formula": "While I do not contest [the security value of X], it cannot justify [the systemic breach of Y].",
-                  "example": "<em>While I do not contest the need to intercept traffickers</em>, that objective cannot justify deploying racially biased black-box algorithms across millions of innocent travelers."
+                  "type": "Concession Structures (Admittedly... nevertheless / While it is true that...)",
+                  "formula": "Admittedly, [concession]; however / nevertheless, [counter-argument]",
+                  "usage": "Acknowledge the validity of an opposing point before presenting your stronger counter-argument. (e.g., 'Admittedly, automated screening expedites passenger flow; nevertheless, false-rejection error rates remain problematic.')"
                 },
                 {
-                  "title": "2. The Burden-of-Proof Reversal",
-                  "formula": "Before this technology is unleashed, the burden of proof rests entirely on [proponent] to demonstrate that [safety claim].",
-                  "example": "<em>The burden of proof rests entirely on the agency</em> to demonstrate scientifically that micro-expression analysis is not pseudoscience."
+                  "type": "Cautious Verbs & Modifiers (tend to / suggest / appear to / arguably)",
+                  "formula": "Subject + tends to / appears to / suggests that + clause",
+                  "usage": "Softens dogmatic claims into professional, evidence-based assertions. (e.g., 'The empirical data appears to indicate that algorithmic bias decreases with diverse training sets.')"
                 },
                 {
-                  "title": "3. Challenging False Dichotomies",
-                  "formula": "It is a dangerous false dichotomy to suggest that we must sacrifice [fundamental right A] in order to preserve [security benefit B].",
-                  "example": "<em>It is a dangerous false dichotomy to suggest</em> that Europeans must choose between civil privacy and physical aviation security."
-                },
-                {
-                  "title": "4. The Constructive Regulatory Remedy",
-                  "formula": "Rather than an outright ban or unregulated deployment, the legally proportionate remedy is [precise safeguard].",
-                  "example": "<em>Rather than an outright ban</em>, <em>the legally proportionate remedy is</em> mandatory open-source algorithm auditing and immediate right-of-explanation for every flagged traveler."
+                  "type": "Qualifying Generalizations (In many respects / To a certain extent / For the most part)",
+                  "formula": "[Qualifying phrase], [main proposition]",
+                  "usage": "Avoids sweeping overstatements like 'all AI is dangerous' or 'automation always fails'. (e.g., 'To a certain extent, ethical guidelines have mitigated algorithmic discrimination.')"
                 }
+              ],
+              "drills": [
+                {
+                  "id": 1,
+                  "sentence": "________ biometric surveillance enhances security, its threat to civil liberties remains profound.",
+                  "options": [
+                    "Admittedly",
+                    "While",
+                    "Nevertheless",
+                    "Despite"
+                  ],
+                  "correct": "While",
+                  "explanation": "Subordinating conjunction 'While' introduces the concession clause linked to the main clause."
+                },
+                {
+                  "id": 2,
+                  "sentence": "The audit findings ________ suggest that the automated screening model was trained on skewed historical datasets.",
+                  "options": [
+                    "tend to",
+                    "tending",
+                    "tendency",
+                    "is tending"
+                  ],
+                  "correct": "tend to",
+                  "explanation": "Cautious expression 'tend to + base verb' accurately softens the statement without sounding overly certain."
+                },
+                {
+                  "id": 3,
+                  "sentence": "High-risk algorithms must undergo rigorous third-party auditing; ________, regulatory enforcement remains inconsistent across regions.",
+                  "options": [
+                    "furthermore",
+                    "nonetheless",
+                    "because",
+                    "similarly"
+                  ],
+                  "correct": "nonetheless",
+                  "explanation": "Adverbial conjunction 'nonetheless' signals a strong contrastive counter-point."
+                },
+                {
+                  "id": 4,
+                  "sentence": "To a certain ________, automated flight rebooking systems reduce stress during massive storm cancellations.",
+                  "options": [
+                    "extend",
+                    "extent",
+                    "extensive",
+                    "extensively"
+                  ],
+                  "correct": "extent",
+                  "explanation": "Fixed qualifying collocation 'To a certain extent' requires the noun form 'extent'."
+                }
+              ],
+              "modeBadges": [
+                "👥 Pairs / Solo",
+                "⏱️ 20 mins",
+                "✍️ Grammar Practice",
+                "🎯 Diplomatic Language"
+              ],
+              "instructions": [
+                "Step 1 (Rule Review - 5 mins): Study the 3 formulas for diplomatic counter-argumentation: Polite Concession ('While I understand that X, we must consider Y'), Cautious Assertion ('It could be argued that...', 'Evidence suggests that...'), and Formal Refutation ('That claim is not supported by empirical data').",
+                "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive practice prompts individually, rewriting blunt, aggressive statements into polite, professional diplomatic phrases.",
+                "Step 3 (Pair Verification - 7 mins): Practice speaking your revised sentences aloud with your partner. Focus on natural, calm intonation rather than defensive tone."
+              ],
+              "deliverable": "4 accurately reformulated diplomatic counter-arguments documented in study notes.",
+              "teacherNotes": "French speakers often translate 'Je pense que' into blunt English: 'You are wrong' or 'I disagree completely.' Train students to soften disagreements: 'While I take your point, the risk appears too high.'"
+            },
+            "roleplay": {
+              "title": "Activity 4: AI Ethics Oversight Committee Hearing",
+              "scenario": "A European transport authority is reviewing the commercial deployment of an AI-driven behavioral anomaly detection system at major hub stations. Student A (Lead Algorithmic Systems Engineer) defends the accuracy, threat detection efficacy, and compliance of the platform. Student B (Civil Liberties & Ethics Commissioner) interrogates bias rates, false arrests, and human dignity safeguards.",
+              "roles": [
+                {
+                  "role": "Lead Algorithmic Systems Engineer",
+                  "title": "System Architect",
+                  "objectives": [
+                    "Explain that the neural network analyzes only movement vectors, luggage dwell times, and perimeter breaches—not personal identities.",
+                    "Show that 98.4% of detected anomalies are verified as genuine safety hazards.",
+                    "Propose automated log anonymization every 24 hours to protect commuter privacy."
+                  ],
+                  "keyPhrases": [
+                    "\"Our behavioral model processes spatial vectors rather than demographic or facial profiles...\"",
+                    "\"Admittedly, sensor occlusion can cause false flags; nevertheless, human operators verify all alerts...\"",
+                    "\"The system operates under strict data minimization guidelines compliant with the EU AI Act...\""
+                  ]
+                },
+                {
+                  "role": "Civil Liberties & Ethics Commissioner",
+                  "title": "Regulatory Oversight Auditor",
+                  "objectives": [
+                    "Interrogate the 1.6% false-positive rate and its real-world impact on innocent commuters.",
+                    "Demand full compliance with the European AI Act's high-risk transparency and explainability mandates.",
+                    "Insist on strict criminal penalties if facial recognition or demographic profiling is secretly enabled."
+                  ],
+                  "keyPhrases": [
+                    "\"In a high-throughput hub serving 100,000 commuters daily, a 1.6% false-positive rate subjects 1,600 innocent citizens to harassment...\"",
+                    "\"Can you provide verifiable cryptographic proof that facial biometrics are not extracted during vector analysis?\"",
+                    "\"Without independent algorithmic auditing and transparent appeal mechanisms, this deployment cannot be certified...\""
+                  ]
+                }
+              ],
+              "modeBadges": [
+                "👥 Small Groups (3-4)",
+                "⏱️ 45 mins",
+                "🎭 Ethics Hearing & Defense",
+                "🎯 Regulatory Defense & Q&A"
+              ],
+              "instructions": [
+                "Step 1 (Stakeholder Briefing - 10 mins): In groups of 3 or 4, take on assigned roles: Lead AI Research Engineer, Civil Aviation Authority Safety Inspector, Passenger Rights Advocate, or Corporate Legal Counsel.",
+                "Step 2 (Position Preparation - 15 mins): Prepare your 2-minute testimony regarding an airline's proposed dynamic pricing and algorithmic overbooking model that uses passenger biometric tracking and credit scoring.",
+                "Step 3 (Oversight Hearing - 15 mins): Convene the hearing: each delegate delivers their testimony and answers tough follow-up questions from the Safety Inspector and Passenger Advocate.",
+                "Step 4 (Regulatory Ruling - 5 mins): The Committee votes to approve, amend, or reject the AI deployment, citing specific GDPR and aviation safety regulations."
+              ],
+              "deliverable": "A written 3-clause ethics ruling and active participation during the committee Q&A session.",
+              "teacherNotes": "Challenge the Lead Engineer: 'If an emergency occurs and your algorithmic model cancels 200 passenger seats, who takes legal liability?'"
+            },
+            "feChecklist": [
+              "Add 5 technology ethics and governance terms to your Vocabulary Log.",
+              "Practice framing technical debate arguments using concession and cautious language structures.",
+              "Draft Dimension 3 (DDRS, Ethical, Regulatory & Societal Challenges) for your FE3 presentation."
+            ],
+            "closingReview": {
+              "title": "Activity 5: Wrap-Up & FE3 Preparation",
+              "summary": "Consolidation, pronunciation practice, and portfolio check",
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "⏱️ 15 mins",
+                "🎧 Audio Drill & Exit Summary",
+                "🎯 Portfolio & FE3 Prep"
+              ],
+              "instructions": [
+                "Step 1 (Checklist Audit - 5 mins): Audit your partner's portfolio using the Session 3 FE3 checklist: verify notes on algorithmic bias, explainable AI, and diplomatic concession phrases.",
+                "Step 2 (Pronunciation Drill - 6 mins): Practice pronouncing complex ethical terms aloud: 'au-TON-o-mous', 'trans-PAR-en-cy', 'lia-BIL-i-ty', 'al-go-RITH-mic'.",
+                "Step 3 (Exit Summary - 4 mins): Write one personal reflection on how ethical engineering principles will impact your future career at ENAC or DGAC."
+              ],
+              "deliverable": "Completed FE3 readiness checklist and verified pronunciation log in student portfolios.",
+              "teacherNotes": "Remind students that Formative Evaluation 3 (FE3) takes place in Week 08. Active use of diplomatic linking words carries significant marks in Spoken Interaction."
+            }
+          },
+          "overview": {
+            "intro": "In this session, you hone your debate and critical thinking skills on the wider impact of emerging technology on society, employment, and ethics. Through structured group debates, you will practise challenging assumptions, defending ethical boundaries, and expressing complex viewpoints in fluent, clear spoken English.",
+            "whyItMatters": "As technology evolves, professionals must not only understand how systems work, but also debate their societal consequences. Learning to articulate ethical positions, present balanced arguments, and handle rapid peer debate in English gives you advanced communicative polish for your Formative Evaluation and international discussions.",
+            "keyTerms": [
+              {
+                "term": "Ethical Dilemma",
+                "ipa": "/ˈeθ.ɪ.kəl daɪˈlem.ə/",
+                "definition": "A complex situation involving a difficult choice between two morally conflicting principles."
+              },
+              {
+                "term": "Digital Divide",
+                "ipa": "/ˈdɪdʒ.ɪ.təl dɪˈvaɪd/",
+                "definition": "The socio-economic gap between those who have ready access to computers and the internet and those who do not."
+              },
+              {
+                "term": "Technological Unemployment",
+                "ipa": "/ˌtek.nəˈlɒdʒ.ɪ.kəl ˌʌn.ɪmˈplɔɪ.mənt/",
+                "definition": "Job losses caused by the introduction of labor-saving machines and software automation."
+              },
+              {
+                "term": "Surveillance Society",
+                "ipa": "/səˈveɪ.ləns səˈsaɪ.ə.ti/",
+                "definition": "A community where people's daily movements and communications are monitored systematically by cameras or data."
+              },
+              {
+                "term": "Accountability",
+                "ipa": "/əˌkaʊn.təˈbɪl.ə.ti/",
+                "definition": "The legal and moral obligation of individuals and companies to accept responsibility for their actions."
+              },
+              {
+                "term": "Disinformation",
+                "ipa": "/ˌdɪs.ɪn.fəˈmeɪ.ʃən/",
+                "definition": "False or misleading information deliberately spread to deceive public opinion or manipulate elections."
+              },
+              {
+                "term": "Deepfake",
+                "ipa": "/ˈdiːp.feɪk/",
+                "definition": "Synthetic digital media in which a person's face or voice is convincingly replaced using deep neural networks."
+              },
+              {
+                "term": "Right to Disconnect",
+                "ipa": "/raɪt tuː ˌdɪs.kəˈnekt/",
+                "definition": "The legal right of workers not to engage in work-related communications outside of contracted hours."
+              },
+              {
+                "term": "Technological Determinism",
+                "ipa": "/ˌtek.nəˈlɒdʒ.ɪ.kəl dɪˈtɜː.mɪ.nɪ.zəm/",
+                "definition": "The theory that technology is the principal driver of social, cultural, and historical change."
+              },
+              {
+                "term": "Regulatory Framework",
+                "ipa": "/ˈreɡ.jə.lə.tər.i ˈfreɪm.wɜːk/",
+                "definition": "A formal system of laws, standards, and rules designed to guide and limit technological use."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or ethical considerations to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Artificial intelligence models that generate hyper-realistic deepfake audio and video should be banned by international law.",
+                "group2": "The rapid automation of routine white-collar and administrative jobs will create mass technological unemployment that society cannot absorb.",
+                "group3": "Governments should enforce a strict legal 'Right to Disconnect' with heavy fines for employers who email staff outside work hours."
+              },
+              "usefulPhrases": [
+                "Our group tackled the ethical question of...",
+                "A fundamental principle we must consider is...",
+                "While proponents argue for technological progress, we believe...",
+                "To summarize our group's consensus..."
               ]
             }
           }
@@ -14764,54 +19120,64 @@
         "4": {
           "session": 4,
           "objectives": {
-            "title": "Session 4 Objectives - Biometrics, Digital IDs & Passenger Journey",
-            "summary": "By the end of this session, you will be able to explain how digital passports and biometric airport gates work, use relative clauses to define technical equipment, negotiate passenger rights in a team, and rehearse for your final presentation.",
+            "title": "Session 4 - Biometrics and digital identity Objectives",
+            "summary": "By the end of this session, you will be able to discuss biometrics and digital identity with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
             "items": [
               {
                 "num": 1,
-                "title": "Learn Key Vocabulary: Passports, Face Scans & Digital Travel",
-                "description": "Learn 8 useful words for digital passports, walkthrough gates, face recognition, and data privacy."
+                "title": "Practice TOEIC Part 5 Dependent Prepositions & Common Collocations",
+                "description": "Identify high-frequency verb + preposition combinations (comply with, specialize in, account for) in test sentences."
               },
               {
                 "num": 2,
-                "title": "Grammar Focus: Relative Clauses (Who, Which, That, Where)",
-                "description": "Define equipment and procedures accurately using defining and non-defining relative clauses."
+                "title": "Master Vocabulary for Digital Passports, Facial Recognition & Data Privacy",
+                "description": "Learn key vocabulary for contactless travel, biometric authentication, encrypted data, and cybersecurity."
               },
               {
                 "num": 3,
-                "title": "Speaking Activity: Agreeing on Airport Passenger Rules",
-                "description": "Work in a team to negotiate an international passenger charter on biometric data and opt-out rights."
+                "title": "Form Common Business Collocations (comply with, meet standards)",
+                "description": "Use natural word pairings in professional speaking and writing to sound more fluent and accurate."
               },
               {
                 "num": 4,
-                "title": "Speaking Practice: FE3 Final Presentation Practice & Sign-Off",
-                "description": "Deliver a timed 2-minute partner presentation dry run against the official FE3 scoring rubric."
+                "title": "Discuss Privacy Rights and Ethical Data Governance in Travel (DDRS)",
+                "description": "Evaluate how border authorities and tech companies can respect passenger privacy and fundamental rights."
+              },
+              {
+                "num": 5,
+                "title": "Rehearse and Polish Your Session 5 Formative Evaluation Topic",
+                "description": "Deliver a mock assessment talk, focusing on clear signposting, fluent delivery, and responding to follow-up questions."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 4 Lesson Plan - Biometrics, Digital IDs & Passenger Journey (2 Hours)",
-            "summary": "A station-based workshop and treaty tournament combining digital travel vocabulary, relative clause grammar, a 3-station technology rotation, treaty negotiation, and FE3 presentation dry runs.",
+            "title": "Session 4 Lesson Plan (2 Hours)",
+            "summary": "A 2-hour session agenda combining conversational warm-ups, TOEIC test practice, vocabulary building, speaking activities, and evaluation preparation.",
             "items": [
               {
-                "title": "Part 1: Key Vocabulary • Passports, Face Scans & Digital Travel",
-                "description": "Learn 8 digital travel words, check syllable stress, and complete the passenger step drill.",
+                "title": "Conversational Warm-Up: Digital Check-in",
+                "description": "Students share experiences with digital boarding passes, e-gates, and smartphone authentication.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Grammar Focus • Relative Clauses (Who, Which, That, Where)",
-                "description": "Master relative pronouns and comma placement; complete 4 sentence combination drills.",
+                "title": "TOEIC Strategy: Collocations & Prepositions in Part 5",
+                "description": "Timed completion of Part 5 questions testing verb-noun collocations and dependent prepositions.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Speaking Activity • Agreeing on Airport Passenger Rules",
-                "description": "Rotate through 3 travel technology stations and negotiate the 5-point passenger charter.",
+                "title": "Vocabulary Builder: Identity & Cybersecurity",
+                "description": "Key vocabulary for biometric authentication, facial recognition, data privacy, GDPR, and cyber protection.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: FE3 Final Presentation Practice & Sign-Off",
-                "description": "Deliver a timed 2-minute presentation dry run with your partner against the official FE3 criteria.",
+                "title": "Structured Discussion & Grammar",
+                "description": "Debate the balance between seamless travel and personal privacy using Business Collocations (ensure compliance, uphold standards).",
                 "part": "Part 4"
+              },
+              {
+                "title": "Final Evaluation Simulation & Wrap-Up",
+                "description": "Complete mock evaluation talk under timed conditions with teacher and peer rubric scoring.",
+                "part": "Part 5"
               }
             ]
           },
@@ -15167,73 +19533,351 @@
             ]
           },
           "lessonContent": {
-            "hero": {
-              "title": "Biometrics, Digital IDs & Passenger Journey",
-              "subtitle": "Archetype D • Interactive Stations & Negotiation Tournament: Contactless Airport Corridors, Biometric Sovereignty & FE3 Readiness",
+            "overview": {
               "image": "images/ag_m3card4.jpg",
-              "badge": "AG Module 3 • Session 4 • Interactive Stations"
+              "title": "Biometrics, Digital IDs & Passenger Journey",
+              "subtitle": "Contactless E-Gates, IATA One ID, Cybersecurity & Biometric Data Sovereignty",
+              "badge": "Session Overview • Biometrics & Digital Identity"
             },
-            "borderParadox": {
-              "headline": "The Frictionless Paradox: The 10-Second Curb-to-Gate Dream vs. Biometric Permanence",
-              "context": "Global international air travel is projected to reach 8 billion passengers annually. Traditional physical passport checks and paper boarding passes cannot scale to meet this volume without creating 3-hour airport queues. In response, international hubs are deploying seamless 'One ID' biometrics where a traveler's face serves as their passport, ticket, and credit card from curb to aircraft door. However, unlike a password or physical credit card that can be reissued if compromised, your biological face and iris cannot be changed if the central database is breached by state-sponsored hackers.",
-              "dilemma": "How can aviation authorities deliver seamless, high-throughput passenger movement while guaranteeing 100% cryptographic sovereignty and giving travelers an unpenalized right to opt out?"
+            "hero": {
+              "image": "images/ag_m3card4.jpg",
+              "title": "Biometrics, Digital IDs & Passenger Journey",
+              "subtitle": "Contactless E-Gates, IATA One ID, Cybersecurity & Biometric Data Sovereignty",
+              "badge": "Session Overview • Biometrics & Digital Identity"
             },
-            "stations": [
-              {
-                "num": 1,
-                "title": "Station 1: High-Throughput Walkthrough Biometric Tunnels",
-                "icon": "🚶",
-                "badge": "Terminal Architecture",
-                "coreTech": "High-Speed Infrared Stereoscopy + Lidar Gait Analysis + Automated Turnstiles",
-                "keyInsight": "Passengers walk at a normal pace of 1.4 m/s through an open glass corridor without stopping or looking directly at cameras. Infrared sensors capture facial geometry and iris patterns in 180 milliseconds, validating credentials against the airline departure control manifest.",
-                "discussionPrompts": [
-                  "How do walkthrough biometric tunnels prevent tailgating or simultaneous double-entries without requiring physical barrier gates to slam shut?",
-                  "What backup operational protocol must activate within 5 seconds if a passenger wearing heavy cosmetic makeup or religious headwear is rejected?"
+            "openingSession": {
+              "title": "Activity 1: Smart Airport News & Biometric Warm-Up Check",
+              "summary": "Opening warm-up examining international contactless airport implementations and key cryptographic/biometric distinctions.",
+              "newsPrompts": [
+                "Singapore Changi and Dubai International roll out passport-free 'curb-to-gate' biometric boarding using single-token facial recognition.",
+                "International air transport bodies publish interoperability standards for decentralized digital identity wallets, replacing paper boarding passes.",
+                "Cybersecurity agencies issue alerts regarding credential stuffing and biometric database breaches targeting international transit networks."
+              ],
+              "diagnostic": {
+                "title": "Biometric & Identity Concepts Quick Check",
+                "instructions": "Discuss each distinction in pairs before revealing the technical explanation:",
+                "questions": [
+                  {
+                    "id": 1,
+                    "q": "What is the critical distinction between Biometric Verification (1:1) and Biometric Identification (1:N)?",
+                    "answer": "Biometric verification (one-to-one, 1:1) matches a newly captured scan directly against an existing credential presented by the user (such as comparing a live face scan to the encrypted chip on their passport). Biometric identification (one-to-many, 1:N) searches an unknown person's scan across an entire database of millions of records to find a match without any presented identity document."
+                  },
+                  {
+                    "id": 2,
+                    "q": "How does a Centralized Biometric Database differ from Decentralized Digital Identity (Self-Sovereign Identity)?",
+                    "answer": "A centralized database stores the biometric templates of millions of travelers in a single government or corporate server—creating an irresistible high-value target for hackers. Decentralized digital identity stores encrypted verifiable credentials locally on the traveler's secure smartphone hardware enclave, sharing only cryptographic proofs rather than raw biometric files."
+                  },
+                  {
+                    "id": 3,
+                    "q": "What is the difference between a Barcode Boarding Pass and a Biometric Single Token?",
+                    "answer": "A barcode boarding pass is a static printed or digital 2D optical code that must be manually presented and scanned alongside a passport at every checkpoint (bag drop, security, border, boarding gate). A biometric single token creates a temporary encrypted digital profile linking the traveler's face to their itinerary, allowing walk-through access through all checkpoints without ever showing a document."
+                  },
+                  {
+                    "id": 4,
+                    "q": "In biometric systems engineering, what is the trade-off between False Acceptance Rate (FAR) and False Rejection Rate (FRR)?",
+                    "answer": "False Acceptance Rate (FAR) is the percentage of unauthorized individuals incorrectly accepted as a match (a critical security failure). False Rejection Rate (FRR) is the percentage of legitimate travelers incorrectly rejected (a passenger convenience and throughput failure). Calibrating the algorithm to achieve zero FAR inherently raises FRR, causing gate bottlenecks."
+                  }
                 ]
               },
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "⏱️ 10 mins",
+                "🗣️ Spoken Retrieval Drill",
+                "🎯 Vocabulary & Warm-Up"
+              ],
+              "instructions": [
+                "Step 1 (Headline Scan - 3 mins): Read the 3 real-world smart airport news prompts with your partner. Discuss which biometric technology has the greatest operational benefit.",
+                "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Facial Recognition vs. Contactless Iris Scanning, Data Sovereignty vs. Centralized Cloud, IATA One ID vs. Legacy Boarding Passes, False Acceptance Rate [FAR] vs. False Rejection Rate [FRR]).",
+                "Step 3 (Class Roundup - 3 mins): One pair shares their definition of Data Sovereignty with the class."
+              ],
+              "deliverable": "Clear spoken definition of 1 biometric passenger technology and 1 privacy protection concept during the teacher check.",
+              "teacherNotes": "Keep pace brisk. Elicit student opinions on e-Gates and ensure correct pronunciation of 'biometric' (bye-oh-MET-rik) and 'sovereignty' (SOV-rin-tee)."
+            },
+            "survey": {
+              "title": "Activity 2: Seamless Travel & Digital Privacy: Speed Survey",
+              "summary": "Conduct structured speed-dating interviews on 4 controversial frontiers in digital travel credentials. Practice deploying complex noun phrases, defining relative clauses, and defending cybersecurity safeguards.",
+              "signposts": [
+                "\"In terms of terminal throughput, contactless e-gates...\"",
+                "\"The fundamental vulnerability of centralized biometric storage is that...\"",
+                "\"Under international data privacy frameworks like GDPR, passengers must retain...\"",
+                "\"To reconcile border security with civil rights, systems must implement...\""
+              ],
+              "topics": [
+                {
+                  "id": 1,
+                  "badge": "Passport-Free Walk-Through Terminals",
+                  "statement": "Should all international airports eliminate physical passport checks in favor of mandatory facial biometric boarding?",
+                  "pro": "Biometric tokens slash boarding times from 40 minutes to under 15 minutes per widebody flight, eliminate boarding pass fraud, and create a frictionless passenger experience.",
+                  "con": "Mandatory biometrics excludes travelers who decline facial recognition, concentrates immense surveillance power in private airport hands, and creates border bottlenecks if scanners fail.",
+                  "prompt": "Interview your partner: How can airports preserve seamless travel while offering robust non-biometric manual opt-outs?"
+                },
+                {
+                  "id": 2,
+                  "badge": "Biometric Data Breaches",
+                  "statement": "Is storing biometric scans fundamentally more hazardous than storing alphanumeric passwords or credit cards?",
+                  "pro": "Unlike passwords or credit card numbers, you cannot cancel or reset your facial geometry, iris patterns, or fingerprints if a database is compromised.",
+                  "con": "Modern biometric systems do not store raw photos; they store one-way irreversibly encrypted mathematical hashes that are useless to hackers without the cryptographic key.",
+                  "prompt": "Interview your partner: What cybersecurity protocols must airports implement to protect biometric hash databases?"
+                },
+                {
+                  "id": 3,
+                  "badge": "Global Digital Health & Climate Credentials",
+                  "statement": "Should digital identity wallets integrate passenger carbon footprint tracking and health records for international travel?",
+                  "pro": "Integrated digital wallets streamline immigration clearances, reward low-carbon travel choices, and prevent the spread of infectious pathogens during global health emergencies.",
+                  "con": "Merging health, carbon, and travel data into a single digital identity creates dystopian digital surveillance and social credit risks.",
+                  "prompt": "Interview your partner: How can data minimization prevent digital identity creep?"
+                },
+                {
+                  "id": 4,
+                  "badge": "Interoperability & Cross-Border Sovereignty",
+                  "statement": "Can sovereign nations establish a unified international biometric standard without compromising citizen data privacy?",
+                  "pro": "IATA One ID and ICAO digital travel credentials demonstrate that standardized cryptographic verification works globally without sharing raw citizen databases.",
+                  "con": "Authoritarian regimes may use international biometric protocols to track political dissidents abroad and restrict travel freedom.",
+                  "prompt": "Interview your partner: How does the European Union regulate cross-border biometric data transfers with third-party nations?"
+                }
+              ],
+              "modeBadges": [
+                "👥 Rotating Pairs",
+                "⏱️ 25 mins",
+                "🗣️ Speed Discussion",
+                "🎯 Stance & Linking Words"
+              ],
+              "instructions": [
+                "Step 1 (Stance Preparation - 4 mins): Review the 4 passenger privacy dilemmas below (Mandatory Facial Scans at Boarding, Commercial Data Sharing with Retailers, Biometric Cyber Attacks, Opt-Out Rights). Choose your stance on each.",
+                "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Discuss one dilemma per round using at least two linking phrases ('On the one hand...', 'While I accept that...', 'In contrast to...').",
+                "Step 3 (Consensus - 5 mins): Return to your primary partner. Agree on which biometric check should remain strictly voluntary for passengers."
+              ],
+              "deliverable": "4 completed partner discussion notes with balanced arguments on biometric convenience vs. civil liberties.",
+              "teacherNotes": "Ring a bell or call time every 4 minutes to force partner rotation. Listen for natural linking phrases and polite disagreement."
+            },
+            "grammarClinic": {
+              "title": "Activity 3: Language Focus: Relative Clauses & Complex Noun Phrases",
+              "summary": "Mastering defining vs. non-defining relative clauses and information-dense technical noun phrases to construct sophisticated descriptions of complex engineering systems.",
+              "rules": [
+                {
+                  "type": "Defining Relative Clauses (Essential Information / No Commas)",
+                  "formula": "Noun + that / who / which + clause",
+                  "usage": "Defines exactly which item is being discussed; cannot be omitted. (e.g., 'Biometric algorithms that rely on single-angle 2D cameras exhibit higher error rates in low lighting.')"
+                },
+                {
+                  "type": "Non-Defining Relative Clauses (Extra Information / Separated by Commas)",
+                  "formula": "Noun, which / who + clause,",
+                  "usage": "Provides interesting or supplementary context about a noun already clearly identified; 'that' cannot be used. (e.g., 'The IATA One ID platform, which was introduced to streamline hub departures, employs decentralized cryptographic tokens.')"
+                },
+                {
+                  "type": "Preposition + Relative Pronoun (Formal Technical Register)",
+                  "formula": "Noun + preposition + whom / which + clause",
+                  "usage": "Standard in official engineering specifications. (e.g., 'The secure hardware enclave from which the biometric proof is generated never transmits raw facial imagery.')"
+                }
+              ],
+              "drills": [
+                {
+                  "id": 1,
+                  "sentence": "Passengers ________ opt out of biometric scanning are directed to traditional manual document inspection desks.",
+                  "options": [
+                    "which",
+                    "who",
+                    "whom",
+                    "whose"
+                  ],
+                  "correct": "who",
+                  "explanation": "Relative pronoun 'who' refers to human subjects ('passengers') in a defining relative clause."
+                },
+                {
+                  "id": 2,
+                  "sentence": "The e-gate optical sensors, ________ manufactured by an accredited aerospace defense contractor, meet ICAO Category 1 precision standards.",
+                  "options": [
+                    "that are",
+                    "which are",
+                    "what are",
+                    "whom are"
+                  ],
+                  "correct": "which are",
+                  "explanation": "Non-defining relative clause enclosed by commas requires 'which are', not 'that'."
+                },
+                {
+                  "id": 3,
+                  "sentence": "The encrypted terminal server ________ which passenger flight tokens are validated requires multi-factor authentication.",
+                  "options": [
+                    "at",
+                    "on",
+                    "through",
+                    "with"
+                  ],
+                  "correct": "through",
+                  "explanation": "Preposition 'through' logically describes the validation pathway ('validated through which')."
+                },
+                {
+                  "id": 4,
+                  "sentence": "Biometric algorithms ________ train on ethnically diverse facial datasets show significantly lower false-rejection error rates.",
+                  "options": [
+                    "that",
+                    "whose",
+                    "whom",
+                    "what"
+                  ],
+                  "correct": "that",
+                  "explanation": "Defining relative pronoun 'that' correctly modifies the system subject ('algorithms')."
+                }
+              ],
+              "modeBadges": [
+                "👥 Pairs / Solo",
+                "⏱️ 20 mins",
+                "✍️ Grammar Practice",
+                "🎯 Sentence Combining"
+              ],
+              "instructions": [
+                "Step 1 (Rule Review - 5 mins): Examine the 3 relative clause formulas: Defining ('who, which, that'), Non-defining ('which, who' with commas), and Preposition + Relative Pronoun ('through which, for whom').",
+                "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive sentence combining challenge questions individually. Combine short technical sentences into elegant complex structures.",
+                "Step 3 (Pair Verification - 7 mins): Click 'Reveal Answer & Explanation' to verify your solutions. Discuss why non-defining clauses require commas in written technical English."
+              ],
+              "deliverable": "Accurate completion of the 4 relative clause drills with correct punctuation documented in study notes.",
+              "teacherNotes": "Highlight that non-defining clauses provide extra non-essential detail and must have commas: 'The new biometric gates, which cost €4 million, opened yesterday.'"
+            },
+            "roleplay": {
+              "title": "Activity 4: Designing the 2030 Smart Travel Terminal",
+              "scenario": "AirHub International is designing a new €800M contactless departure terminal concourse. Student A (Airport Passenger Experience Director) presents a completely biometric walk-through passenger flow. Student B (Chief Information Security Officer & Data Privacy Ombudsman) interrogates cybersecurity resilience, hardware fallback procedures during network blackouts, and passenger consent protocols.",
+              "roles": [
+                {
+                  "role": "Passenger Experience Director",
+                  "title": "Seamless Flow Architect",
+                  "objectives": [
+                    "Demonstrate average curb-to-aircraft boarding time of 9 minutes per traveler.",
+                    "Propose automated baggage drop stands that link baggage tags directly to the passenger's face scan.",
+                    "Argue that 90% of business travelers prefer biometric convenience over paper documents."
+                  ],
+                  "keyPhrases": [
+                    "\"Single-token biometric processing eliminates physical document checks at five consecutive touchpoints...\"",
+                    "\"Boarding gate throughput accelerates by 300%, allowing widebody aircraft to turnaround in 35 minutes...\"",
+                    "\"Travelers enroll securely from their smartphones before arriving at the airport...\""
+                  ]
+                },
+                {
+                  "role": "Chief Information Security Officer (CISO)",
+                  "title": "Cybersecurity & Privacy Ombudsman",
+                  "objectives": [
+                    "Demand that all biometric hashes be permanently deleted from terminal cache memory 60 minutes after flight departure.",
+                    "Require an unhackable local offline fallback protocol for manual document checks during IT or cloud network outages.",
+                    "Mandate clearly signposted, dignified manual opt-out corridors with identical throughput speeds."
+                  ],
+                  "keyPhrases": [
+                    "\"Zero-trust cybersecurity architecture mandates that no biometric templates are retained on local gate controllers...\"",
+                    "\"If a wide-area cloud outage occurs, we must possess manual verification corridors to prevent total airport gridlock...\"",
+                    "\"Under European privacy regulations, biometric participation must be strictly consensual with zero discrimination for opt-outs...\""
+                  ]
+                }
+              ],
+              "modeBadges": [
+                "👥 Small Groups (3-4)",
+                "⏱️ 45 mins",
+                "🎭 Design Taskforce & Hearing",
+                "🎯 Negotiation & Defense"
+              ],
+              "instructions": [
+                "Step 1 (Role Allocation - 5 mins): Form groups of 3 or 4 and assign stakeholder roles: (A) Airport Operational Director, (B) Data Protection & Privacy Commissioner, (C) International Airline Operations Manager, (D) Cybersecurity Specialist.",
+                "Step 2 (Terminal Blueprint Design - 15 mins): Design a 4-step passenger journey from curbside to gate (Bag Drop, Security Checkpoint, Duty-Free, Boarding Gate) specifying biometric touchpoints and privacy safeguards.",
+                "Step 3 (Stakeholder Hearing - 20 mins): Present your terminal design to the class. Defend your data storage policy against tough follow-up questions from the Privacy Commissioner and Cybersecurity Lead.",
+                "Step 4 (Plenary Verdict - 5 mins): The class votes on which group created the best balance of speed, convenience, and GDPR compliance."
+              ],
+              "deliverable": "A complete 4-step biometric terminal blueprint and a 2-minute verbal defense during the stakeholder hearing.",
+              "teacherNotes": "Ensure all group members speak during the hearing. Challenge students on data retention: 'Where are the facial scans stored, and for how long?'"
+            },
+            "feChecklist": [
+              "Add 5 biometrics, digital identity, and cybersecurity terms to your Vocabulary Log.",
+              "Refine your presentation slides with technical relative clauses and clear data visualizations.",
+              "Finalize your Formative Evaluation 3 (FE3) rehearsal: verify 50/50 talking balance and ensure zero reading from slides or notes."
+            ],
+            "closingReview": {
+              "title": "Activity 5: 10-Minute Vocabulary Wrap-Up & FE3 Readiness Check",
+              "summary": "Consolidation, pronunciation practice, and portfolio check",
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "⏱️ 10 mins",
+                "🎧 Audio Drill & Exit Summary",
+                "🎯 FE3 Milestone Prep"
+              ],
+              "instructions": [
+                "Step 1 (Audio Pronunciation Drill - 4 mins): Click through the 18 key technical vocabulary items to hear authentic pronunciation. Practice repeating aloud with your partner.",
+                "Step 2 (Rapid Definition Test - 4 mins): Test your partner on 3 random terms from the word cloud (e.g., contactless e-Gate, encryption key, single token travel).",
+                "Step 3 (Exit Summary - 2 mins): Write down two target biometric vocabulary terms and one relative clause structure you will use in your FE3 presentation."
+              ],
+              "deliverable": "Signed partner vocabulary verification and completed 2-sentence exit summary.",
+              "teacherNotes": "Remind students that FE3 is coming up in Week 08. Emphasize that spontaneous speaking and accurate technical vocabulary carry significant weighting."
+            }
+          },
+          "overview": {
+            "intro": "This final session of Module 3 focuses on biometrics, digital identity, cyber security, and individual privacy rights. Working in pairs and small groups, you will practise explaining biometric verification technologies, debating the trade-off between personal privacy and public security, and presenting recommendations on digital data governance in spoken English.",
+            "whyItMatters": "Biometrics and cybersecurity are central to modern border control, aviation security, and digital administration worldwide. Practising how to explain privacy concerns, describe authentication systems, and argue for robust regulatory protections in English ensures you are fully prepared to present with poise in your Formative Evaluation.",
+            "keyTerms": [
               {
-                "num": 2,
-                "title": "Station 2: Zero-Knowledge Proofs & Biometric Hash Encryption",
-                "icon": "🔐",
-                "badge": "Cryptographic Security",
-                "coreTech": "Irreversible Mathematical Hashes + Decentralized Local Enclaves",
-                "keyInsight": "Instead of storing actual high-resolution photos of passenger faces in a central vulnerable database, the sensor converts facial measurements into a 512-bit encrypted mathematical hash. Once hashed, the original facial photo is purged immediately, making database theft completely useless to hackers.",
-                "discussionPrompts": [
-                  "Why is mathematical hashing exponentially safer than encrypting traditional JPEG or PNG facial image files on a centralized server?",
-                  "How does a Zero-Knowledge Proof allow an airport gate to verify that a passenger is 'over 18 and holds a valid visa' without revealing their name, exact birthdate, or nationality?"
-                ]
+                "term": "Facial Recognition",
+                "ipa": "/ˈfeɪ.ʃəl ˌrek.əɡˈnɪʃ.ən/",
+                "definition": "A biometric software application that identifies or verifies an individual by mapping facial features."
               },
               {
-                "num": 3,
-                "title": "Station 3: Sovereign Digital Identity Wallets & IATA One ID",
-                "icon": "📱",
-                "badge": "Global Interoperability",
-                "coreTech": "W3C Verifiable Credentials + ICAO Digital Travel Credentials (DTC)",
-                "keyInsight": "The traveler holds their digital passport inside a secure hardware enclave on their personal smartphone. During airport transit, the phone shares temporary cryptographic tokens via short-range Ultra-Wideband (UWB) wireless, ensuring the passenger retains 100% physical ownership of their identity credentials at all times.",
-                "discussionPrompts": [
-                  "What happens if a passenger's smartphone battery dies or is lost during an international transit layover?",
-                  "How can sovereign digital wallets remain universally interoperable when passing between different national customs jurisdictions (e.g., EU Schengen vs. US CBP)?"
-                ]
+                "term": "Iris Scanning",
+                "ipa": "/ˈaɪ.rɪs ˌskæn.ɪŋ/",
+                "definition": "An automated biometric identification method that uses mathematical pattern recognition on iris images."
+              },
+              {
+                "term": "Data Breach",
+                "ipa": "/ˈdeɪ.tə briːtʃ/",
+                "definition": "A security incident where sensitive, protected, or confidential data is copied or accessed illegally."
+              },
+              {
+                "term": "Encryption",
+                "ipa": "/ɪnˈkrɪp.ʃən/",
+                "definition": "The process of converting information into a secret code that obscures the data's true meaning."
+              },
+              {
+                "term": "Identity Theft",
+                "ipa": "/aɪˈden.tə.ti θeft/",
+                "definition": "The fraudulent acquisition and use of a person's private identifying information, usually for financial gain."
+              },
+              {
+                "term": "Two-Factor Authentication",
+                "ipa": "/tuː ˈfæk.tər ɔːˌθen.tɪˈkeɪ.ʃən/",
+                "definition": "A security process where a user provides two distinct authentication factors to verify their identity."
+              },
+              {
+                "term": "Cyber Espionage",
+                "ipa": "/ˈsaɪ.bər ˈes.pi.ə.nɑːʒ/",
+                "definition": "The act of obtaining confidential information without permission from computer systems or networks."
+              },
+              {
+                "term": "Right to be Forgotten",
+                "ipa": "/raɪt tuː biː fəˈɡɒt.ən/",
+                "definition": "The legal right to have personal data permanently removed from internet searches and databases."
+              },
+              {
+                "term": "Biometric Template",
+                "ipa": "/ˌbaɪ.oʊˈmet.rɪk ˈtem.pleɪt/",
+                "definition": "A mathematical representation of biometric features stored securely in an identification database."
+              },
+              {
+                "term": "Critical Infrastructure",
+                "ipa": "/ˈkrɪt.ɪ.kəl ˈɪn.frəˌstrʌk.tʃər/",
+                "definition": "Essential physical and digital assets whose disruption would severely impact national security or the economy."
               }
             ],
-            "treatyNegotiation": {
-              "treatyTitle": "The International Contactless Passenger Sovereignty Charter (5 Key Articles)",
-              "parties": [
-                {
-                  "party": "Delegation A: International Airport Operators & Border Security Agency",
-                  "priorities": "Demands minimum 98% passenger adoption of biometric e-gates to process 45 flights per hour. Rejects cumbersome paper backup lanes that cause terminal congestion. Demands right to retain biometric hashes for 72 hours for security auditing.",
-                  "bargainingChip": "Controls terminal gate funding and automated fast-track access."
-                },
-                {
-                  "party": "Delegation B: Global Airline Passenger Rights Federation",
-                  "priorities": "Demands an absolute, non-penalized right for any passenger to opt out and use traditional human passport desks without experiencing delays. Insists that all biometric hashes must be mathematically purged within 60 minutes of aircraft takeoff.",
-                  "bargainingChip": "Can mobilize consumer boycotts and file collective legal injunctions."
-                },
-                {
-                  "party": "Delegation C: Cybersecurity & Data Protection Regulatory Authority",
-                  "priorities": "Demands mandatory Zero-Knowledge cryptographic architecture. Any airport storing raw facial image files faces immediate €50M non-compliance fines. Demands unannounced annual penetration audits by white-hat hackers.",
-                  "bargainingChip": "Holds the legal power to revoke operational licenses under the GDPR and EU AI Act."
-                }
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or real-world examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Public facial recognition surveillance cameras should be completely banned in public spaces to protect individual privacy rights.",
+                "group2": "Passengers who refuse biometric facial scans at airport gates should be required to undergo extensive manual security screening and delay.",
+                "group3": "Companies that suffer preventable customer data breaches should face mandatory criminal penalties rather than simple administrative fines."
+              },
+              "usefulPhrases": [
+                "When debating biometric security, our group recognized that...",
+                "A crucial balance must be struck between...",
+                "From a privacy and human rights viewpoint, we contend...",
+                "To conclude our final presentation..."
               ]
             }
           }
@@ -15464,7 +20108,7 @@
               ],
               "deliverable": "Clearly explain the operational distinction between one pair of roles.",
               "teacherNotes": "Focus on professional aviation register. Board the core acronyms: AODB (Airport Operational Database), TRC (Turnaround Coordinator), GPU (Ground Power Unit), GSE (Ground Support Equipment). Elicit why clear role boundaries between airlines, aerodrome operators, and ground handlers prevent airside safety incidents.",
-              "title": "Activity 1: Aviation News & Course Entry Warm-Up Check (10 mins)",
+              "title": "Activity 1: Aviation News & Course Entry Warm-Up Check",
               "summary": "Every class begins with a 10-minute professional opening: analyzing current aviation headlines and discussing recent news stories and events from the world of aviation.",
               "newsPrompts": [
                 "What major commercial aviation, airline, or airport developments have you noticed in the headlines this week?",
@@ -15512,7 +20156,7 @@
               ],
               "deliverable": "Summarize your partner's argument and deliver a 30-second spoken consensus.",
               "teacherNotes": "Keep pace brisk. Ring a bell at 4 minutes to force rotation. Note down grammatical errors with modal verbs (\"must to comply\" -> \"must comply\") for the upcoming Language Clinic.",
-              "title": "Activity 2: The Global Aviation Survey (25 mins)",
+              "title": "Activity 2: The Global Aviation Survey",
               "summary": "Conduct structured speed-dating interviews on 4 prominent commercial aviation dilemmas. Practice expressing nuanced agreement, providing concrete justifications, and using professional phrases to structure your arguments.",
               "signposts": [
                 "\"From an operational standpoint, I believe...\"",
@@ -15568,7 +20212,7 @@
               ],
               "deliverable": "Complete 5 regulatory sentences using accurate ICAO standard modal phrasing.",
               "teacherNotes": "Highlight that in ICAO Annexes, \"shall\" indicates mandatory standard, while \"should\" is a recommended practice. Point out TOEIC traps where modal verbs are followed by bare infinitives.",
-              "title": "Activity 3: Language Focus: Modals of Obligation, Permission & Prohibition (25 mins)",
+              "title": "Activity 3: Language Focus: Modals of Obligation, Permission & Prohibition",
               "summary": "Master the precise grammar of operational authority. Distinguish absolute safety obligations from prohibitions, official authorizations, and operational advice without relying on technical jargon.",
               "rules": [
                 {
@@ -15660,7 +20304,7 @@
               ],
               "deliverable": "Draft a 3-point operational passenger briefing resolving the disruption.",
               "teacherNotes": "Challenge pairs with a curveball: \"The captain claims weather, but maintenance records show a deferred hydraulic valve.\" How does this affect airline liability? Elicit precise modal arguments.",
-              "title": "Activity 4: Operational Dilemma: The EU261 Delay & Disruption Case Study (25 mins)",
+              "title": "Activity 4: Operational Dilemma: The EU261 Delay & Disruption Case Study",
               "summary": "A realistic airport concourse scenario: Flight AF1420 to Paris-CDG is delayed by 4 hours due to an incoming maintenance issue and a destination night curfew. Passengers are anxious and demanding cash payouts.",
               "incidentBriefing": {
                 "flight": "Flight AF1420",
@@ -15735,7 +20379,7 @@
               ],
               "deliverable": "Deliver a 60-second spoken policy consensus pitch summarizing the committee's agreed solution.",
               "teacherNotes": "Act as the Civil Aviation Authority Observer. Time each spokesperson strictly at 60 seconds. Evaluate against clarity, target vocabulary, and professional composure.",
-              "title": "Activity 5: Station Mini-Debate & Spoken Consensus Briefing (25 mins)",
+              "title": "Activity 5: Station Mini-Debate & Spoken Consensus Briefing",
               "summary": "In small groups of 3 to 4, prepare and deliver structured arguments on an aerodrome management policy debate. Structure your arguments with a clear Claim, Operational Evidence, and Real-World Impact.",
               "motion": "Motion: All commercial aerodromes should introduce a total ban on alcohol retail sales in departure lounges and on flights under 3 hours.",
               "framework": [
@@ -15779,7 +20423,7 @@
               ],
               "deliverable": "Complete the session exit ticket and submit your self-assessment log.",
               "teacherNotes": "Lead choral repetition on tricky stress patterns: \"au'thority\", \"juris'diction\", \"con'tingency\". Remind students about next week's Session 2 content.",
-              "title": "Activity 6: 10-Minute Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "title": "Activity 6: 10-Minute Vocabulary Review, Pronunciation & Class Wrap-Up",
               "summary": "Consolidate today's 30 vocabulary terms, test your word stress, and update your personal English learning portfolio.",
               "reviewPrompts": [
                 {
@@ -16208,6 +20852,82 @@
               }
             ],
             "pageUrl": "session1/admat_aas1.html"
+          },
+          "overview": {
+            "intro": "Welcome to Technical English! In this opening session, you build the spoken confidence to describe aerodrome infrastructure, airfield layouts, and runway designations in English. Working in pairs and small groups, you will practise explaining airfield movement, identifying holding points, and describing visual markings without translating hesitatingly from French.",
+            "whyItMatters": "Airfields are complex, high-risk operational environments where clear English is the mandatory international standard. Being able to describe runway headings, taxiway intersections, and movement zones accurately in English prevents runway incursions, ensures smooth international teamwork, and prepares you directly for your end-of-module Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Runway Heading",
+                "ipa": "/ˈrʌn.weɪ ˈhed.ɪŋ/",
+                "definition": "The magnetic direction of a runway rounded to the nearest ten degrees and displayed as two digits."
+              },
+              {
+                "term": "Taxiway",
+                "ipa": "/ˈtæk.si.weɪ/",
+                "definition": "A paved path connecting runways with aprons, terminals, and maintenance hangars."
+              },
+              {
+                "term": "Holding Point",
+                "ipa": "/ˈhoʊl.dɪŋ pɔɪnt/",
+                "definition": "A marked stop line where aircraft must hold until cleared by air traffic control to enter a runway."
+              },
+              {
+                "term": "Apron",
+                "ipa": "/ˈeɪ.prən/",
+                "definition": "The paved area where aircraft are parked, boarded, fueled, and serviced (also called the ramp)."
+              },
+              {
+                "term": "Threshold",
+                "ipa": "/ˈθreʃ.hoʊld/",
+                "definition": "The beginning portion of a runway usable for landing."
+              },
+              {
+                "term": "Displaced Threshold",
+                "ipa": "/dɪsˈpleɪst ˈθreʃ.hoʊld/",
+                "definition": "A threshold located at a point other than the physical beginning of the runway, usable for taxi and takeoff only."
+              },
+              {
+                "term": "Touchdown Zone",
+                "ipa": "/ˈtʌtʃ.daʊn zoʊn/",
+                "definition": "The portion of a runway beyond the threshold intended for landing aircraft wheels to touch first."
+              },
+              {
+                "term": "Runway Incursion",
+                "ipa": "/ˈrʌn.weɪ ɪnˈkɜː.ʒən/",
+                "definition": "Any unauthorized presence of an aircraft, vehicle, or person on the runway surface."
+              },
+              {
+                "term": "Blast Pad",
+                "ipa": "/blɑːst pæd/",
+                "definition": "A paved area before the runway threshold designed to prevent erosion from jet blast."
+              },
+              {
+                "term": "Stopway",
+                "ipa": "/ˈstɒp.weɪ/",
+                "definition": "A defined rectangular area at the end of a runway prepared to support an aircraft during an aborted takeoff."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or operational examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Installing automated cockpit audio alarms that trigger when entering a runway without clearance is more effective than improving airfield painted markings.",
+                "group2": "All ground service vehicles operating on the active airfield should be equipped with mandatory transponders tracked directly on ATC radar screens.",
+                "group3": "Airports should eliminate parallel runway operations in low-visibility conditions to eliminate the risk of runway incursions, even if delays increase."
+              },
+              "usefulPhrases": [
+                "Our group analyzed the operational safety of...",
+                "From an air traffic control perspective...",
+                "One critical safety factor to consider is...",
+                "In conclusion, our group recommends that..."
+              ]
+            }
           }
         },
         "2": {
@@ -16291,7 +21011,7 @@
               "subtitle": "Terminal Facilitation, Spatial Prepositions & Airside Guidance Systems"
             },
             "openingSession": {
-              "title": "Activity 1: Aviation News & Session 1 Catch-Up Spot-Check (10 mins)",
+              "title": "Activity 1: Aviation News & Session 1 Catch-Up Spot-Check",
               "summary": "Every class begins with a 10-minute professional opening: analyzing current airport technology headlines and spot-checking vocabulary from our previous session.",
               "newsPrompts": [
                 "What recent airport terminal innovations (biometric facial recognition e-gates, CT carry-on scanners, automated baggage drops) have appeared in global travel news?",
@@ -16342,7 +21062,7 @@
               "teacherNotes": "Target confusing spatial terminology. Ask: 'Where does ATC ground control authority end and apron management begin?'"
             },
             "terminalJourney": {
-              "title": "Activity 2: Passenger Terminal Flow & Facilitation Dilemmas (25 mins)",
+              "title": "Activity 2: Passenger Terminal Flow & Facilitation Dilemmas",
               "summary": "Examine the 5 sequential touchpoints of the passenger journey from landside to airside, followed by paired debate on passenger automation dilemmas.",
               "stages": [
                 {
@@ -16409,7 +21129,7 @@
               "teacherNotes": "Check for correct passive voice ('luggage is screened', 'passports are checked'). Emphasize ICAO Annex 9 facilitation principles."
             },
             "prepositionsClinic": {
-              "title": "Activity 3: Language Focus: Prepositions of Place, Direction & Movement (25 mins)",
+              "title": "Activity 3: Language Focus: Prepositions of Place, Direction & Movement",
               "summary": "Master the spatial grammar of aerodrome navigation. Distinguish fixed nodes (AT) from enclosed halls (IN), flat operational surfaces (ON), and linear traversal (ALONG, ACROSS, THROUGH).",
               "rules": [
                 {
@@ -16502,7 +21222,7 @@
               "teacherNotes": "Emphasize ICAO standard phraseology: 'hold short of' vs 'stop at', 'vacate via' vs 'exit on'. Highlight runway incursion accidents caused by preposition ambiguity."
             },
             "airsideCaseStudy": {
-              "title": "Activity 4: Operational Case Study: Unauthorized Apron Access (25 mins)",
+              "title": "Activity 4: Operational Case Study: Unauthorized Apron Access",
               "summary": "A disoriented passenger who missed their boarding call pushed through an emergency exit door onto the terminal apron looking for their plane, triggering a ramp safety alert.",
               "incidentBriefing": {
                 "incidentId": "SEC-2026-1102-TLS",
@@ -16555,7 +21275,7 @@
               "teacherNotes": "Act as the Airport Operations Director receiving the incident briefing. Ask probing questions: 'What immediate actions were taken to safeguard the passenger from the active engine hazard on Stand 3?'"
             },
             "guidanceWorkshop": {
-              "title": "Activity 5: Airfield Guidance Markings & Spoken Briefing (25 mins)",
+              "title": "Activity 5: Airfield Guidance Markings & Spoken Briefing",
               "summary": "Analyze the visual aids, taxiway guidance lines, and runway designators that ensure safe ground navigation, then deliver a 60-second spoken safety briefing.",
               "markings": [
                 {
@@ -16602,7 +21322,7 @@
               "teacherNotes": "Strictly enforce readback rules: runway designators, hold short instructions, and altimeter settings must be read back verbatim."
             },
             "closingReview": {
-              "title": "Activity 6: 10-Minute Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "title": "Activity 6: 10-Minute Vocabulary Review, Pronunciation & Class Wrap-Up",
               "summary": "Consolidate today's 30 technical vocabulary terms, practice syllable stress, and update your personal English learning portfolio.",
               "reviewPrompts": [
                 {
@@ -17060,6 +21780,82 @@
               }
             ],
             "pageUrl": "session2/admat_aas1.html"
+          },
+          "overview": {
+            "intro": "This session focuses on expanding your ability to describe the complete passenger terminal journey and airfield movement in technical English. Through pairwork simulations and communicative dialogues, you will practise explaining check-in flows, security screening protocols, baggage handling systems, and boarding procedures using precise operational terminology.",
+            "whyItMatters": "Coordinating airport passenger movements and baggage logistics requires seamless communication between international airlines, ground handlers, and airport authorities. Developing this operational vocabulary in English ensures you can explain procedures, resolve bottlenecks, and perform with confidence during your Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Baggage Reclaim",
+                "ipa": "/ˈbæɡ.ɪdʒ rɪˈkleɪm/",
+                "definition": "The terminal area where arriving passengers collect checked luggage from automated carousels."
+              },
+              {
+                "term": "Jet Bridge",
+                "ipa": "/dʒet brɪdʒ/",
+                "definition": "An enclosed, movable bridge extending from an airport terminal gate to an aircraft door."
+              },
+              {
+                "term": "Boarding Gate",
+                "ipa": "/ˈbɔː.dɪŋ ɡeɪt/",
+                "definition": "The terminal area where passengers assemble and have boarding passes checked before entering an aircraft."
+              },
+              {
+                "term": "Security Checkpoint",
+                "ipa": "/sɪˈkjʊə.rə.ti ˈtʃek.pɔɪnt/",
+                "definition": "The inspection station where passengers and carry-on bags are screened for prohibited items."
+              },
+              {
+                "term": "Customs Clearance",
+                "ipa": "/ˈkʌs.təmz ˈklɪə.rəns/",
+                "definition": "Official inspection and documentation of imported goods and passenger declarations entering a country."
+              },
+              {
+                "term": "Airside",
+                "ipa": "/ˈeə.saɪd/",
+                "definition": "The secure part of an airport beyond customs and security controls, including gates and ramps."
+              },
+              {
+                "term": "Landside",
+                "ipa": "/ˈlænd.saɪd/",
+                "definition": "The public area of an airport terminal before security and passport screening."
+              },
+              {
+                "term": "Transit Passenger",
+                "ipa": "/ˈtræn.zɪt ˈpæs.ɪn.dʒər/",
+                "definition": "A traveler changing planes at an intermediate airport without officially entering the host country."
+              },
+              {
+                "term": "Baggage Carousel",
+                "ipa": "/ˈbæɡ.ɪdʒ ˌkær.əˈsel/",
+                "definition": "A continuous rotating conveyor belt from which arriving passengers pick up their luggage."
+              },
+              {
+                "term": "Stand Allocation",
+                "ipa": "/stænd ˌæl.əˈkeɪ.ʃən/",
+                "definition": "The assigned parking spot or gate where an arriving aircraft is scheduled to park."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or operational examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Full self-service automated biometric gates without human boarding agents improve terminal efficiency and passenger satisfaction.",
+                "group2": "Limiting all commercial passengers to a single small carry-on bag would speed up turnaround times and reduce flight departure delays significantly.",
+                "group3": "Airport transit passenger terminals should be designed to completely separate arriving and departing passenger streams for biosecurity and customs reasons."
+              },
+              "usefulPhrases": [
+                "When evaluating passenger terminal flow, our group noted...",
+                "From an operational ground handling point of view...",
+                "A major bottleneck we identified is...",
+                "To conclude our group's assessment..."
+              ]
+            }
           }
         },
         "3": {
@@ -17143,7 +21939,7 @@
               "subtitle": "Apron Servicing Envelope & Communicative Ramp Coordination"
             },
             "openingSession": {
-              "title": "Activity 1: Aviation News & Previous Session Vocabulary Spot-Check (10 mins)",
+              "title": "Activity 1: Aviation News & Previous Session Vocabulary Spot-Check",
               "summary": "Every class begins with a 10-minute professional opening: analyzing current aviation headlines and spot-checking vocabulary from our previous session.",
               "newsPrompts": [
                 "What major aviation, airline, or airport news stories have you noticed in the headlines this week?",
@@ -17189,7 +21985,7 @@
               "teacherNotes": "Cold-call pairs. Probe beyond basic definitions: ask why confusing an enhanced centerline with a standard centerline creates a runway incursion risk."
             },
             "turnaroundClock": {
-              "title": "Activity 2: The Turnaround Clock (15 mins)",
+              "title": "Activity 2: The Turnaround Clock",
               "summary": "The turnaround is the critical period between an aircraft parking at the gate (chocks-on) and departing for its next flight (chocks-off). Modern regional and short-haul turnarounds typically target a 35 to 45-minute servicing window where multiple teams work simultaneously.",
               "milestones": [
                 {
@@ -17433,7 +22229,7 @@
               }
             ],
             "safetyDelays": {
-              "title": "Activity 4: Apron Safety & Cause-Effect Linkers (25 mins)",
+              "title": "Activity 4: Apron Safety & Cause-Effect Linkers",
               "summary": "Every minute on the ramp is strictly accounted for. When an unexpected incident occurs, TSEEAC aerodrome operations officers, AFISOs, and ramp coordinators must communicate the root cause and immediate consequence clearly using formal linkers.",
               "linkers": [
                 {
@@ -17497,7 +22293,7 @@
               "teacherNotes": "Highlight the difference between prepositional linkers ('due to heavy snow') and conjunctive adverbs ('consequently, the apron was closed'). Point out common error: '*due to because'."
             },
             "simulation": {
-              "title": "Activity 5: TSEEAC Operations Simulation & Shift Handover Briefing (30 mins)",
+              "title": "Activity 5: TSEEAC Operations Simulation & Shift Handover Briefing",
               "context": "Flight BA342 (Airbus A320) is scheduled for a tight 40-minute turnaround. The aircraft arrived on stand at 14:15. Target off-blocks time (pushback) is 14:55. It is currently 14:32. Three simultaneous operational complications have just occurred on the ramp.",
               "bottlenecks": [
                 {
@@ -17569,7 +22365,7 @@
               "spokenModel": "\"Stand Charlie-4 is currently servicing Flight BA342 to London Heathrow. Passenger deboarding concluded on schedule at 14:25; however, cargo loading and refueling have been disrupted. Due to an electrical trip on the GPU and an overheated conveyor on the aft belt loader, handlers were forced to request replacement equipment. Consequently, the turnaround is running 15 minutes behind schedule. The replacement loader has just arrived on stand, and fueling is underway. We have coordinated with air traffic services for a revised departure slot at 15:15. Please monitor the final pushback clearance.\""
             },
             "closingReview": {
-              "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
               "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress, and review personal learning objectives.",
               "reviewPrompts": [
                 {
@@ -17966,6 +22762,82 @@
                 "strategy": "Check whether the blank is followed by a noun phrase or a full clause. A noun phrase requires a preposition like \"owing to\"."
               }
             ]
+          },
+          "overview": {
+            "intro": "In this session, you examine aircraft turnaround operations, ramp safety protocols, and ground handling coordination in spoken English. Working in teams, you will practise describing simultaneous ramp services (pushback, refuelling, catering, de-icing, and baggage loading), reporting ground hazards, and giving clear operational briefings.",
+            "whyItMatters": "The 30-to-45 minute aircraft turnaround is the most time-critical and dangerous phase of airline ground operations. Practising spoken English for apron communication, hazard warnings, and marshaling coordination ensures you can express operational needs clearly and succeed in your Module 1 Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Turnaround Time",
+                "ipa": "/ˈtɜːn.əˌraʊnd taɪm/",
+                "definition": "The total elapsed time between an aircraft arriving on stand and departing on its next scheduled flight."
+              },
+              {
+                "term": "Pushback Tug",
+                "ipa": "/ˈpʊʃ.bæk tʌɡ/",
+                "definition": "A specialized heavy vehicle used to push an aircraft backwards away from an airport gate."
+              },
+              {
+                "term": "Chocks",
+                "ipa": "/tʃɒks/",
+                "definition": "Heavy rubber or wooden blocks placed against aircraft wheels to prevent accidental movement when parked."
+              },
+              {
+                "term": "Ground Power Unit",
+                "ipa": "/ɡraʊnd ˈpaʊ.ər ˈjuː.nɪt/",
+                "definition": "An external electrical generator connecting to an aircraft to supply electricity while main engines are off."
+              },
+              {
+                "term": "De-icing",
+                "ipa": "/diːˈaɪ.sɪŋ/",
+                "definition": "The operational process of removing frost, ice, or snow from aircraft control surfaces using heated glycol."
+              },
+              {
+                "term": "Marshaling",
+                "ipa": "/ˈmɑː.ʃəl.ɪŋ/",
+                "definition": "Directing an aircraft into its parking stand using hand signals, lighted wands, or automated guidance displays."
+              },
+              {
+                "term": "Foreign Object Debris",
+                "ipa": "/ˈfɒr.ən ˈɒb.dʒekt ˈdeb.riː/",
+                "definition": "Any loose item on the runway or apron that could damage an aircraft engine or tire (FOD)."
+              },
+              {
+                "term": "Baggage Handler",
+                "ipa": "/ˈbæɡ.ɪdʒ ˈhænd.lər/",
+                "definition": "A ramp operative responsible for loading, securing, and unloading passenger luggage and cargo."
+              },
+              {
+                "term": "Refuelling Bowser",
+                "ipa": "/ˌriːˈfjuː.əl.ɪŋ ˈbaʊ.zər/",
+                "definition": "A tanker truck carrying aviation fuel or connecting to underground fuel hydrant pits on the apron."
+              },
+              {
+                "term": "Wingtip Clearance",
+                "ipa": "/ˈwɪŋ.tɪp ˈklɪə.rəns/",
+                "definition": "The safe buffer distance maintained between an aircraft's wingtip and nearby buildings, poles, or aircraft."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or operational safety examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Shortening aircraft turnaround times below 30 minutes compromises ground safety checks and significantly increases apron collision risks.",
+                "group2": "All apron ground service vehicles (tugs, fuelers, belt loaders) should be fully automated and electric to eliminate human driving errors.",
+                "group3": "Pilots should only initiate engine start after pushback is completely finished and the ground crew headset is disconnected."
+              },
+              "usefulPhrases": [
+                "Our group explored the safety challenges of turnaround operations...",
+                "From a ramp coordination perspective, we believe...",
+                "One critical hazard to consider is...",
+                "In conclusion, our group's recommendation is that..."
+              ]
+            }
           }
         },
         "4": {
@@ -18054,7 +22926,7 @@
               "subtitle": "Landside, Airside, Flight Crew, Air Traffic Services & Civil Aviation Corps (TSEEAC)"
             },
             "openingSession": {
-              "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+              "title": "Activity 1: Aviation News & Session 3 Spot-Check",
               "summary": "Every session begins with a 10-minute professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
               "modeBadges": [
                 "👥 Pairs / Plenary",
@@ -18100,7 +22972,7 @@
               }
             },
             "jobTaxonomy": {
-              "title": "Activity 2: Aviation Roles Across the Industry (20 mins)",
+              "title": "Activity 2: Aviation Roles Across the Industry",
               "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
               "modeBadges": [
                 "👥 Small Groups (3-4)",
@@ -18190,7 +23062,7 @@
               ]
             },
             "grammarClinic": {
-              "title": "Activity 3: Language Focus: Roles, Responsibilities & Authority (20 mins)",
+              "title": "Activity 3: Language Focus: Roles, Responsibilities & Authority",
               "summary": "Professional aviation communication demands absolute precision when describing who does what, who reports to whom, and who holds regulatory authority.",
               "modeBadges": [
                 "👤 Individual -> 👥 Pairs",
@@ -18265,7 +23137,7 @@
               ]
             },
             "handoffSimulation": {
-              "title": "Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff (25 mins)",
+              "title": "Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff",
               "summary": "Effective inter-departmental handoffs prevent bottlenecks and eliminate miscommunication. Work in pairs or triads to conduct professional operational handovers.",
               "modeBadges": [
                 "👥 Pairs / Triads",
@@ -18320,7 +23192,7 @@
               ]
             },
             "careerForumDebate": {
-              "title": "Activity 5: Aviation Career Forum & Operational Dilemma Debate (35 mins)",
+              "title": "Activity 5: Aviation Career Forum & Operational Dilemma Debate",
               "summary": "A fast-moving winter weather front brings freezing fog, reducing Runway Visual Range (RVR) to 350m at a regional aerodrome. Stand capacity is at 95%, de-icing rigs are working at maximum throughput, and two inbound diversions are requesting priority due to fuel minimums. Each team represents an aviation profession, defends operational priorities, and negotiates a consensus action plan.",
               "modeBadges": [
                 "👥 4-Way Multi-Stakeholder Forum",
@@ -18361,7 +23233,7 @@
               "consensusChallenge": "In mixed teams of 4, negotiate a step-by-step priority sequence using conditional structures ('Provided that...', 'As long as...', 'On condition that...') to resolve the standoff safely and efficiently."
             },
             "closingReview": {
-              "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
+              "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
               "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress on professional job titles, and update your personal continuous assessment log.",
               "modeBadges": [
                 "👤 Individual & 👥 Pairs",
@@ -18760,6 +23632,82 @@
                 "strategy": "Check what follows the blank. \"Severe winter weather conditions\" is a noun phrase, so a preposition (\"despite\") is required rather than a subordinating conjunction like \"although\"."
               }
             ]
+          },
+          "overview": {
+            "intro": "This session explores the wide variety of professional careers, qualifications, and operational roles across modern aviation. You will practise describing job responsibilities, asking interview questions, and discussing career pathways for air traffic controllers, pilots, airport operations managers, and safety auditors in fluent spoken English.",
+            "whyItMatters": "As an ENAC student preparing for an international career, you will frequently introduce your role, describe professional competencies, and collaborate across departments in English. Practising professional profile presentations directly prepares you for both job interviews and your Formative Evaluation presentation.",
+            "keyTerms": [
+              {
+                "term": "Air Traffic Controller",
+                "ipa": "/eər ˈtræf.ɪk kənˈtroʊ.lər/",
+                "definition": "A licensed professional who manages the safe, orderly, and expeditious flow of aircraft in the air and on the ground."
+              },
+              {
+                "term": "Ramp Agent",
+                "ipa": "/ræmp ˈeɪ.dʒənt/",
+                "definition": "An airport professional coordinating ground handling, baggage loading, and aircraft servicing on the ramp."
+              },
+              {
+                "term": "Safety Auditor",
+                "ipa": "/ˈseɪf.ti ˈɔː.dɪ.tər/",
+                "definition": "An inspector who examines operational procedures and records to ensure compliance with aviation safety regulations."
+              },
+              {
+                "term": "Flight Dispatcher",
+                "ipa": "/flaɪt dɪˈspætʃ.ər/",
+                "definition": "A licensed specialist who plans flight routes, calculates fuel requirements, and monitors flights in progress."
+              },
+              {
+                "term": "Avionics Technician",
+                "ipa": "/ˌeɪ.viˈɒn.ɪks tekˈnɪʃ.ən/",
+                "definition": "A specialist technician responsible for installing, inspecting, and testing aircraft electronic flight systems."
+              },
+              {
+                "term": "Ground Operations Manager",
+                "ipa": "/ɡraʊnd ˌɒp.ərˈeɪ.ʃənz ˈmæn.ɪ.dʒər/",
+                "definition": "A senior executive supervising all airline or airport ramp operations, turnaround efficiency, and safety."
+              },
+              {
+                "term": "Crew Scheduling",
+                "ipa": "/kruː ˈskedʒ.uː.lɪŋ/",
+                "definition": "The operational department responsible for rostering pilots and flight attendants in compliance with flight time limits."
+              },
+              {
+                "term": "Meteorological Forecaster",
+                "ipa": "/ˌmiː.ti.ə.rəˈlɒdʒ.ɪ.kəl ˈfɔː.kɑː.stər/",
+                "definition": "A specialist analyzing atmospheric conditions to issue METARs, TAFs, and severe weather warnings for pilots."
+              },
+              {
+                "term": "Bird Hazard Officer",
+                "ipa": "/bɜːd ˈhæz.əd ˈɒf.ɪ.sər/",
+                "definition": "A wildlife biologist or airfield operative monitoring and dispersing birds and animals away from runways."
+              },
+              {
+                "term": "Aviation Licensing",
+                "ipa": "/ˌeɪ.viˈeɪ.ʃən ˈlaɪ.sən.sɪŋ/",
+                "definition": "The formal process of granting and renewing official regulatory certification to pilots, ATCOs, and technicians."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or professional examples to support your group's view.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Air traffic controller training should prioritize simulated emergency stress management over manual radar separation exercises.",
+                "group2": "Mandatory retirement ages for commercial pilots and air traffic controllers are outdated and should be replaced by individual competency testing.",
+                "group3": "The most demanding job in commercial aviation is not the airline captain, but the ground operations manager coordinating tight turnaround slots."
+              },
+              "usefulPhrases": [
+                "When examining professional responsibilities in aviation, our group found...",
+                "From a career and training perspective...",
+                "A major challenge in this role is...",
+                "In summary, our group concludes that..."
+              ]
+            }
           }
         }
       }
@@ -18930,34 +23878,34 @@
             "summary": "A 2-hour communicative session featuring an aviation news warm-up, flight forces diagnostic, cause-and-effect language clinic, the 3-axes kinesthetic simulation, an operational stall scenario, and vocabulary consolidation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Course Entry Warm-Up Check (10 mins)",
-                "description": "Weekly aviation news warm-up and diagnostic spot-check connecting Module 1 aerodrome operations to airborne flight physics."
+                "title": "Part 1: Aviation News & Course Entry Warm-Up Check",
+                "description": "Weekly aviation news warm-up and diagnostic spot-check connecting Module 1 aerodrome operations to airborne flight physics.",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Part 2: The Four Forces & Airflow Quick Check (20 mins)",
-                "description": "Interactive vocabulary matching: connecting lift, thrust, weight, drag, airfoil camber, and angle of attack to real flight phases."
+                "title": "Part 2: The Four Forces & Airflow Quick Check",
+                "description": "Interactive vocabulary matching: connecting lift, thrust, weight, drag, airfoil camber, and angle of attack to real flight phases.",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Part 3: Language Focus: Cause & Effect Linkers (20 mins)",
-                "description": "Expressing aerodynamic consequences with conditionals and causal connectors (if, when, as a result of, leads to, unless)."
+                "title": "Part 3: Language Focus: Cause & Effect Linkers",
+                "description": "Expressing aerodynamic consequences with conditionals and causal connectors (if, when, as a result of, leads to, unless).",
+                "part": "Part 3"
               },
               {
-                "time": "50-80",
-                "title": "Part 4: The 3 Axes & Control Surfaces Game / Role-Play (30 mins)",
-                "description": "Interactive kinesthetic 'Human Flight Simulator' game and pilot-to-flight-test-engineer debriefing role-play."
+                "title": "Part 4: The 3 Axes & Control Surfaces Game / Role-Play",
+                "description": "Interactive kinesthetic 'Human Flight Simulator' game and pilot-to-flight-test-engineer debriefing role-play.",
+                "part": "Part 4"
               },
               {
-                "time": "80-110",
-                "title": "Part 5: Aerodynamic Dilemma: High-Altitude Stall Recovery (30 mins)",
-                "description": "Operational case study: analyzing stall warnings, high-altitude buffeting, and crew communication during flight envelope excursions."
+                "title": "Part 5: Aerodynamic Dilemma: High-Altitude Stall Recovery",
+                "description": "Operational case study: analyzing stall warnings, high-altitude buffeting, and crew communication during flight envelope excursions.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Pronunciation stress practice (aero-DY-na-mics, cam-ber, sta-bi-LI-zer, ai-ler-on) and personal learning log entry."
+                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
+                "description": "Pronunciation stress practice (aero-DY-na-mics, cam-ber, sta-bi-LI-zer, ai-ler-on) and personal learning log entry.",
+                "part": "Part 6"
               }
             ]
           },
@@ -18983,8 +23931,8 @@
               ],
               "deliverable": "Accurately explain the difference between Angle of Attack and Pitch Attitude during the instructor spot-check.",
               "teacherNotes": "Use a model aircraft or your hands to demonstrate pitch attitude vs. relative wind and angle of attack. Ensure students realize AoA can exceed critical limit even in nose-low attitudes.",
-              "title": "Activity 1: Aviation News & Principles Warm-Up (10 mins)",
-              "summary": "Opening 10-minute warm-up examining current aerospace headlines and testing foundational aerodynamic concepts.",
+              "title": "Activity 1: Aviation News & Principles Warm-Up",
+              "summary": "Opening warm-up examining current aerospace headlines and testing foundational aerodynamic concepts.",
               "newsPrompts": [
                 "Airlines evaluate next-generation winglet retrofits to shave 3% off cruise fuel burn on transatlantic routes.",
                 "FAA issues updated training advisory for transport category pilots on high-altitude stall recognition and recovery.",
@@ -19030,7 +23978,7 @@
               ],
               "deliverable": "Clearly explain the force balance equations for both level flight and a banked turn in technical B2 English.",
               "teacherNotes": "Emphasize that lift acts perpendicular to the flight path / relative wind, while weight acts toward Earth's center. In a turn, vertical component of lift balances weight, requiring increased total lift (load factor / G-load).",
-              "title": "Activity 2: The Four Forces in Equilibrium & Maneuvers (20 mins)",
+              "title": "Activity 2: The Four Forces in Equilibrium & Maneuvers",
               "summary": "Analyze the 4 forces acting on an aircraft and explain how pilots create unbalance to maneuver.",
               "forces": [
                 {
@@ -19076,7 +24024,7 @@
               ],
               "deliverable": "Flawlessly formulate 4 conditional aerodynamic statements with correct tense agreement and causal connectors.",
               "teacherNotes": "Warn students against common errors: using \"will\" in the if-clause (\"If airspeed will drop...\" ❌) and confusing \"due to\" (requires noun) with \"because\" (requires clause).",
-              "title": "Activity 3: Language Focus: Cause & Effect in Flight Physics (20 mins)",
+              "title": "Activity 3: Language Focus: Cause & Effect in Flight Physics",
               "summary": "Mastering conditional structures and causal connectors to explain aerodynamic phenomena in plain B2 English.",
               "structures": [
                 {
@@ -19125,7 +24073,7 @@
               ],
               "deliverable": "A 2-minute fluent pilot-to-engineer debrief detailing control surface deflections and aircraft axis reactions.",
               "teacherNotes": "This high-energy activity builds muscular and spatial memory. Ensure students use correct technical verbs: deflect, pivot, rotate, yaw, roll, pitch up/down. Check for proper preposition use (around the vertical axis).",
-              "title": "Activity 4: The 3 Axes & Control Surfaces Game / Role-Play (30 mins)",
+              "title": "Activity 4: The 3 Axes & Control Surfaces Game / Role-Play",
               "summary": "Interactive 'Human Flight Simulator' kinesthetic game and pilot-to-flight-test-engineer debrief role-play.",
               "axes": [
                 {
@@ -19174,7 +24122,7 @@
               ],
               "deliverable": "A clear 3-step cockpit communication script followed by an authentic 2-minute cockpit CRM debrief.",
               "teacherNotes": "Reference high-profile real-world accidents (AF447, Colgan 3407) where pulling back on the stick stalled the aircraft into the ground or ocean. Reinforce the aerodynamic invariant: The only way to recover from a stall is to reduce the angle of attack below the critical limit.",
-              "title": "Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence (30 mins)",
+              "title": "Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence",
               "summary": "Team case study analyzing stall warnings, stick-shaker activation, and crew coordination during atmospheric turbulence.",
               "scenarioText": "Cruising at FL370 in turbulent air near the equator, Flight 204 encounters severe mountain wave downdrafts. The airspeed drops rapidly toward the low-speed buffet boundary. Suddenly, the master warning chimes and the stick-shaker vibrates violently. The junior First Officer reflexively pulls back on the sidestick, increasing the angle of attack.",
               "tasks": [
@@ -19196,7 +24144,7 @@
               ],
               "deliverable": "Verbally confirm mastery of the 3 technical checkpoints and demonstrate accurate stress placement on key aerodynamic terms.",
               "teacherNotes": "Quickly drill the class on word stress for \"aerodynamics\" (stress on NAM) and \"equilibrium\" (stress on LIB). Preview Session 2: Aircraft Anatomy (internal systems and external walkarounds).",
-              "title": "Activity 6: Vocabulary Review & Class Wrap-Up (10 mins)",
+              "title": "Activity 6: Vocabulary Review & Class Wrap-Up",
               "summary": "Consolidate the 18 key aerodynamic terms, verify pronunciation stress, and prepare for Session 2 Aircraft Anatomy.",
               "checkpoints": [
                 "Can you explain the 4 forces of flight and how they balance in level cruise?",
@@ -19536,6 +24484,82 @@
               }
             ],
             "pageUrl": "session1/admat_aas2.html"
+          },
+          "overview": {
+            "intro": "In this session, you develop your ability to clearly explain flight principles, aerodynamic forces (lift, weight, thrust, drag), and airfoil performance in spoken English. Working in pairs, you will practise describing how aircraft fly, explaining angle of attack changes, and discussing stall recovery procedures without translating in your head.",
+            "whyItMatters": "Explaining aerodynamic concepts in clear, simple English is an essential skill when discussing aircraft handling, flight safety, and operational performance with international pilots and colleagues. Practising these descriptive patterns ensures you can express technical ideas confidently during your Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Aerodynamic Lift",
+                "ipa": "/ˌeə.roʊ.daɪˈnæm.ɪk lɪft/",
+                "definition": "The upward aerodynamic force generated by the airflow over an airfoil that overcomes aircraft weight."
+              },
+              {
+                "term": "Thrust",
+                "ipa": "/θrʌst/",
+                "definition": "The forward force produced by engines that propels an aircraft through the surrounding air mass."
+              },
+              {
+                "term": "Parasite Drag",
+                "ipa": "/ˈpær.ə.saɪt dræɡ/",
+                "definition": "The aerodynamic resistance created by an aircraft's surface friction, shape, and external components."
+              },
+              {
+                "term": "Induced Drag",
+                "ipa": "/ɪnˈdjuːst dræɡ/",
+                "definition": "The drag inevitably created as a direct byproduct of generating aerodynamic lift, highest at low speeds."
+              },
+              {
+                "term": "Angle of Attack",
+                "ipa": "/ˈæŋ.ɡəl əv əˈtæk/",
+                "definition": "The acute angle between the chord line of an airfoil and the oncoming relative wind direction."
+              },
+              {
+                "term": "Aerodynamic Stall",
+                "ipa": "/ˌeə.roʊ.daɪˈnæm.ɪk stɔːl/",
+                "definition": "A sudden loss of lift occurring when the critical angle of attack is exceeded and airflow separates from the wing."
+              },
+              {
+                "term": "Airfoil Camber",
+                "ipa": "/ˈeə.fɔɪl ˈkæm.bər/",
+                "definition": "The degree of asymmetry between the upper and lower curved surfaces of an aircraft wing."
+              },
+              {
+                "term": "Wingtip Vortices",
+                "ipa": "/ˈwɪŋ.tɪp ˈvɔː.tɪ.siːz/",
+                "definition": "Circular patterns of rotating air left behind a wing as it generates lift, creating wake turbulence."
+              },
+              {
+                "term": "Ground Effect",
+                "ipa": "/ɡraʊnd ɪˈfekt/",
+                "definition": "Increased lift and decreased induced drag that occurs when an aircraft flies within one wingspan of the ground."
+              },
+              {
+                "term": "Aspect Ratio",
+                "ipa": "/ˈæs.pekt ˈreɪ.ʃi.oʊ/",
+                "definition": "The ratio of a wing's span to its mean chord line, determining aerodynamic glide efficiency."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or operational examples to support your group's position.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Pilots rely too much on automated angle-of-attack protection systems and are gradually losing basic manual aerodynamic stall recovery instincts.",
+                "group2": "Winglets and blended wingtips provide such significant fuel efficiency gains that older airliners without them should pay higher landing fees.",
+                "group3": "Wake turbulence separation behind heavy airliners should be determined dynamically by real-time wind sensors rather than rigid distance matrices."
+              },
+              "usefulPhrases": [
+                "Our group investigated the aerodynamic principle of...",
+                "From a flight operations perspective, we believe...",
+                "A crucial point that is often misunderstood is...",
+                "To summarize our group's technical argument..."
+              ]
+            }
           }
         },
         "2": {
@@ -19576,34 +24600,34 @@
             "summary": "A 2-hour communicative session combining aviation news, an airframe diagram labeling challenge, spatial grammar clinic, a 360-degree walkaround inspection simulation, MEL defect handovers, and pronunciation drills.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Session 1 Aerodynamics Spot-Check (10 mins)",
-                "description": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes."
+                "title": "Part 1: Aviation News & Session 1 Aerodynamics Spot-Check",
+                "description": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes.",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Part 2: Airframe Diagram Labeling Race (25 mins)",
-                "description": "Collaborative visual diagram race: identifying and labeling external control surfaces and internal cabin/cockpit zones."
+                "title": "Part 2: Airframe Diagram Labeling Race",
+                "description": "Collaborative visual diagram race: identifying and labeling external control surfaces and internal cabin/cockpit zones.",
+                "part": "Part 2"
               },
               {
-                "time": "35-55",
-                "title": "Part 3: Language Focus: Spatial Prepositions & Functions (20 mins)",
-                "description": "Describing locations and mechanical functions using relative clauses and spatial prepositions (situated along, mounted to, designed to)."
+                "title": "Part 3: Language Focus: Spatial Prepositions & Functions",
+                "description": "Describing locations and mechanical functions using relative clauses and spatial prepositions (situated along, mounted to, designed to).",
+                "part": "Part 3"
               },
               {
-                "time": "55-85",
-                "title": "Part 4: Pre-Flight Walkaround Inspection Role-Play (30 mins)",
-                "description": "Captain & Ramp Maintenance Engineer simulation: performing an exterior walkaround and reporting simulated defects."
+                "title": "Part 4: Pre-Flight Walkaround Inspection Role-Play",
+                "description": "Captain & Ramp Maintenance Engineer simulation: performing an exterior walkaround and reporting simulated defects.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Part 5: Cockpit & Cabin Defect Handover Workshop (25 mins)",
-                "description": "Consulting the Minimum Equipment List (MEL) to negotiate dispatch decisions for inoperative cabin or airframe items."
+                "title": "Part 5: Cockpit & Cabin Defect Handover Workshop",
+                "description": "Consulting the Minimum Equipment List (MEL) to negotiate dispatch decisions for inoperative cabin or airframe items.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Pronunciation stress practice (fu-se-lage, emp-en-nage, hy-drau-lic, ra-dome) and vocabulary log consolidation."
+                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
+                "description": "Pronunciation stress practice (fu-se-lage, emp-en-nage, hy-drau-lic, ra-dome) and vocabulary log consolidation.",
+                "part": "Part 6"
               }
             ]
           },
@@ -19629,7 +24653,7 @@
               ],
               "deliverable": "Verbally answer all 4 spot-check questions with technical accuracy using correct aviation vocabulary.",
               "teacherNotes": "Ensure students connect Session 1's aerodynamic concepts (pitch, roll, yaw, lift) to the physical surfaces examined today (elevators, ailerons, rudder, flaps, slats).",
-              "title": "Activity 1: Aviation News & Session 1 Spot-Check (10 mins)",
+              "title": "Activity 1: Aviation News & Session 1 Spot-Check",
               "summary": "Opening news debrief followed by a rapid-fire check on aerodynamics from Session 1.",
               "newsPrompts": [
                 "Airbus introduces lightweight titanium-printed hydraulic brackets to save airframe weight on new deliveries.",
@@ -19676,7 +24700,7 @@
               ],
               "deliverable": "Accurately describe the location, function, and pre-flight inspection checkpoint for at least 4 airframe components to your partner.",
               "teacherNotes": "Emphasize correct stress on aviation compound nouns: PITOT probe, HORIZONTAL stabilizer, VORTEX generator, RADOME. Watch for confusion between flaps (lift augmentation) and spoilers (lift dumping).",
-              "title": "Activity 2: Airframe Anatomy Labeling Challenge (25 mins)",
+              "title": "Activity 2: Airframe Anatomy Labeling Challenge",
               "summary": "Identify and describe the key external parts and internal zones of a commercial transport aircraft.",
               "externalParts": [
                 {
@@ -19766,7 +24790,7 @@
               ],
               "deliverable": "Produce 3 grammatically sound spoken technical sentences combining spatial prepositions with functional relative clauses.",
               "teacherNotes": "Drill the prepositional phrases that often cause trouble: 'forward of', 'aft of', 'inboard of', 'outboard of', 'underneath the belly'. Insist on relative clauses: '...which is designed to relieve...', '...through which air flows...'.",
-              "title": "Activity 3: Language Focus: Spatial Prepositions & Functions (20 mins)",
+              "title": "Activity 3: Language Focus: Spatial Prepositions & Functions",
               "summary": "Formulating clear, professional technical descriptions of aircraft parts and their relative positions.",
               "patterns": [
                 {
@@ -19798,7 +24822,7 @@
               ],
               "deliverable": "Conduct a realistic walkaround dialogue applying standard aviation terminology for damage (gouges, delamination, hydraulic weeping, bird strike).",
               "teacherNotes": "Listen for realistic aviation communication: clear, concise, objective. Discourage vague language ('it looks broken'); require specific technical descriptors ('there is hydraulic weeping around the actuator seal', 'delamination extending 3 centimeters').",
-              "title": "Activity 4: Pre-Flight Exterior Walkaround Role-Play (30 mins)",
+              "title": "Activity 4: Pre-Flight Exterior Walkaround Role-Play",
               "summary": "Captain & Line Maintenance Engineer simulation: performing a 360-degree exterior walkaround and reporting simulated defects.",
               "defectCards": [
                 {
@@ -19834,7 +24858,7 @@
               ],
               "deliverable": "Present a structured 2-minute verbal dispatch recommendation to the class for all 3 MEL items citing operational restrictions.",
               "teacherNotes": "Ensure students know what MEL Category A, B, C, and D mean in aviation. Ask: 'Can we dispatch with an inoperative APU if ground power and air start units are available at the destination?' Require technical justification.",
-              "title": "Activity 5: Minimum Equipment List (MEL) Dispatch Workshop (25 mins)",
+              "title": "Activity 5: Minimum Equipment List (MEL) Dispatch Workshop",
               "summary": "Reviewing the Minimum Equipment List (MEL) to make safe dispatch decisions for inoperative equipment.",
               "melItems": [
                 {
@@ -19864,7 +24888,7 @@
               ],
               "deliverable": "Demonstrate accurate pronunciation and primary stress placement on 6 multisyllabic aircraft parts and confirm mastery of key anatomy concepts.",
               "teacherNotes": "Conduct a choral pronunciation drill for 'fuselage' (/ˈfjuːzəlɑːʒ/) and 'empennage' (/ˌɒmpɪˈnɑːʒ/). Preview Session 3: Commercial Aircraft & Fleet Types (narrow-body, wide-body, regional).",
-              "title": "Activity 6: Vocabulary Review & Class Wrap-Up (10 mins)",
+              "title": "Activity 6: Vocabulary Review & Class Wrap-Up",
               "summary": "Drill tricky aeronautical component pronunciation and consolidate learning logs ahead of Session 3.",
               "wordsToPronounce": [
                 "fu-se-lage",
@@ -20212,6 +25236,82 @@
               }
             ],
             "pageUrl": "session2/admat_aas2.html"
+          },
+          "overview": {
+            "intro": "In this session, you develop your ability to clearly describe and discuss aircraft structures and flight control systems in spoken English. Working in pairs and small groups, you will practise explaining how key aerodynamic surfaces function, describing mechanical and hydraulic issues clearly, and asking precise questions using standard technical vocabulary. This interactive practice helps you move beyond basic descriptions to explain operational situations naturally and accurately.",
+            "whyItMatters": "In international aviation, English is the shared global language between pilots, air traffic controllers, and airport teams. When communicating during flight operations or debriefings, you must be able to describe mechanical systems, report anomalies, and clarify technical details without hesitation or misunderstanding. Developing this specialised vocabulary and spoken confidence gives you the language skills you need to participate effectively in technical discussions and perform with confidence in your end-of-module Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Fuselage",
+                "ipa": "/ˈfjuː.zə.lɑːʒ/",
+                "definition": "The central body of an aircraft holding crew, passengers, baggage, and structural connection points."
+              },
+              {
+                "term": "Empennage",
+                "ipa": "/ˌɑːm.pəˈnɑːʒ/",
+                "definition": "The complete tail assembly of an aircraft, consisting of the vertical fin and horizontal stabilizer."
+              },
+              {
+                "term": "Leading Edge",
+                "ipa": "/ˈliː.dɪŋ edʒ/",
+                "definition": "The forwardmost edge of an airfoil that meets the oncoming relative wind first."
+              },
+              {
+                "term": "Trailing Edge",
+                "ipa": "/ˈtreɪ.lɪŋ edʒ/",
+                "definition": "The rear edge of a wing where the airflows from the upper and lower surfaces recombine."
+              },
+              {
+                "term": "Aileron",
+                "ipa": "/ˈeɪ.lə.rɒn/",
+                "definition": "A primary flight control surface hinged on the outer trailing edge of a wing that controls aircraft roll."
+              },
+              {
+                "term": "Elevator",
+                "ipa": "/ˈel.ə.veɪ.tər/",
+                "definition": "A horizontal flight control surface hinged to the empennage that controls pitch about the lateral axis."
+              },
+              {
+                "term": "Rudder",
+                "ipa": "/ˈrʌd.ər/",
+                "definition": "A vertical control surface hinged on the tail fin that controls aircraft yaw about the vertical axis."
+              },
+              {
+                "term": "Hydraulic Actuator",
+                "ipa": "/haɪˈdrɔː.lɪk ˈæk.tʃu.eɪ.tər/",
+                "definition": "A mechanical piston powered by pressurized fluid that moves primary flight control surfaces."
+              },
+              {
+                "term": "Flaps and Slats",
+                "ipa": "/flæps ənd slæts/",
+                "definition": "High-lift movable surfaces on the wing edges extended during takeoff and landing to increase camber."
+              },
+              {
+                "term": "Flight Control Surface",
+                "ipa": "/flaɪt kənˈtroʊl ˈsɜː.fɪs/",
+                "definition": "Movable aerodynamic panels allowing pilots to adjust aircraft attitude, direction, and roll."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or operational examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Modern automated fly-by-wire flight control computers are now so reliable that manual mechanical backup systems will soon become completely unnecessary on commercial airliners.",
+                "group2": "Clear spoken English and standardized communication between technical teams and pilots prevent far more safety incidents than redundant mechanical systems.",
+                "group3": "Routine aircraft structural inspections should be performed primarily by automated drones and AI cameras rather than human maintenance technicians."
+              },
+              "usefulPhrases": [
+                "Our group explored the operational balance between...",
+                "From a flight safety and maintenance perspective...",
+                "One key operational challenge we identified is...",
+                "In conclusion, our group recommends that..."
+              ]
+            }
           }
         },
         "3": {
@@ -20252,34 +25352,34 @@
             "summary": "A 2-hour communicative session covering commercial aviation news, commercial aircraft classification, comparative data clinic, an airline fleet selection pitch simulation, and duopoly debates.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Session 2 Anatomy Spot-Check (10 mins)",
-                "description": "Weekly aviation news review and rapid spot-check on aircraft parts and pre-flight walkaround defect reporting."
+                "title": "Part 1: Aviation News & Session 2 Anatomy Spot-Check",
+                "description": "Weekly aviation news review and rapid spot-check on aircraft parts and pre-flight walkaround defect reporting.",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Part 2: Commercial Aircraft Classification Table (25 mins)",
-                "description": "Interactive fleet categorization: classifying regional, narrowbody, widebody, and freighter models by range, capacity, and mission."
+                "title": "Part 2: Commercial Aircraft Classification Table",
+                "description": "Interactive fleet categorization: classifying regional, narrowbody, widebody, and freighter models by range, capacity, and mission.",
+                "part": "Part 2"
               },
               {
-                "time": "35-55",
-                "title": "Part 3: Language Focus: Comparative & Superlative Data (20 mins)",
-                "description": "Evaluating commercial figures with comparative structures (burns 20% less fuel, substantially greater range, the most cost-effective)."
+                "title": "Part 3: Language Focus: Comparative & Superlative Data",
+                "description": "Evaluating commercial figures with comparative structures (burns 20% less fuel, substantially greater range, the most cost-effective).",
+                "part": "Part 3"
               },
               {
-                "time": "55-85",
-                "title": "Part 4: Airline Fleet Selection Committee Simulation (30 mins)",
-                "description": "Pairs act as airline fleet planning directors preparing an aircraft purchase pitch for new routes, defending their choice to classmates."
+                "title": "Part 4: Airline Fleet Selection Committee Simulation",
+                "description": "Pairs act as airline fleet planning directors preparing an aircraft purchase pitch for new routes, defending their choice to classmates.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Part 5: Global Manufacturer Debate & Industry Trends (25 mins)",
-                "description": "Class debate: Hub-and-spoke vs. point-to-point routes; Airbus vs. Boeing duopoly competition; the entry of COMAC C919."
+                "title": "Part 5: Global Manufacturer Debate & Industry Trends",
+                "description": "Class debate: Hub-and-spoke vs. point-to-point routes; Airbus vs. Boeing duopoly competition; the entry of COMAC C919.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up (10 mins)",
-                "description": "Pronunciation drill on commercial terms (ma-nu-fac-tu-rer, tur-bo-prop, ca-pa-ci-ty, ef-fi-cien-cy) and learning log consolidation."
+                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
+                "description": "Pronunciation drill on commercial terms (ma-nu-fac-tu-rer, tur-bo-prop, ca-pa-ci-ty, ef-fi-cien-cy) and learning log consolidation.",
+                "part": "Part 6"
               }
             ]
           },
@@ -20293,7 +25393,7 @@
               "duration": "120 Minutes"
             },
             "openingSession": {
-              "title": "Activity 1: Aviation News & Session 2 Spot-Check (10 mins)",
+              "title": "Activity 1: Aviation News & Session 2 Spot-Check",
               "summary": "News review followed by quick vocabulary check on aircraft parts.",
               "modeBadges": [
                 "Pairs",
@@ -20340,7 +25440,7 @@
               }
             },
             "fleetTaxonomy": {
-              "title": "Activity 2: Commercial Aircraft Classification Table (25 mins)",
+              "title": "Activity 2: Commercial Aircraft Classification Table",
               "summary": "Classify commercial passenger and freighter aircraft into operational categories.",
               "modeBadges": [
                 "Pairs / Small Groups",
@@ -20386,7 +25486,7 @@
               ]
             },
             "comparativeClinic": {
-              "title": "Activity 3: Language Focus: Comparative & Superlative Data (20 mins)",
+              "title": "Activity 3: Language Focus: Comparative & Superlative Data",
               "summary": "Mastering modifiers and comparative structures to evaluate aircraft efficiency and fleet statistics.",
               "modeBadges": [
                 "Pairs / Individual",
@@ -20419,7 +25519,7 @@
               ]
             },
             "fleetCommitteeSimulation": {
-              "title": "Activity 4: Airline Fleet Selection Committee Simulation (30 mins)",
+              "title": "Activity 4: Airline Fleet Selection Committee Simulation",
               "summary": "Pairs represent airline management committees pitching an aircraft purchase order for a new route network.",
               "modeBadges": [
                 "Pairs",
@@ -20450,7 +25550,7 @@
               ]
             },
             "globalLandscapeDebate": {
-              "title": "Activity 5: Global Manufacturer Debate & Industry Trends (25 mins)",
+              "title": "Activity 5: Global Manufacturer Debate & Industry Trends",
               "summary": "Class debate exploring the Airbus-Boeing duopoly, supply chain bottlenecks, and the emergence of COMAC.",
               "modeBadges": [
                 "Plenary / Fishbowl",
@@ -20471,7 +25571,7 @@
               ]
             },
             "closingReview": {
-              "title": "Activity 6: Vocabulary Review & Pronunciation Wrap-Up (10 mins)",
+              "title": "Activity 6: Vocabulary Review & Pronunciation Wrap-Up",
               "summary": "Consolidate the 18 commercial fleet terms and prepare for Session 4 Aviation Accidents.",
               "modeBadges": [
                 "Plenary",
@@ -20830,6 +25930,82 @@
               }
             ],
             "pageUrl": "session3/admat_aas2.html"
+          },
+          "overview": {
+            "intro": "This session examines commercial aircraft families, airline fleet choices, and business models in technical English. Working in teams, you will practise comparing aircraft performance specifications, discussing range capabilities, and debating the operational merits of twin-engine long-haul jets versus historic four-engine aircraft in spoken English.",
+            "whyItMatters": "Airlines and aviation authorities make multi-billion euro fleet investment decisions based on route economics and fuel efficiency. Being able to discuss aircraft specifications, seat-kilometer costs, and airline business models in fluent English prepares you for commercial strategy discussions and enhances your Formative Evaluation presentation.",
+            "keyTerms": [
+              {
+                "term": "Narrow-Body Aircraft",
+                "ipa": "/ˈnær.oʊ ˈbɒd.i ˈeə.krɑːft/",
+                "definition": "A single-aisle commercial airliner seating between 100 and 240 passengers (e.g. A320, B737)."
+              },
+              {
+                "term": "Wide-Body Aircraft",
+                "ipa": "/waɪd ˈbɒd.i ˈeə.krɑːft/",
+                "definition": "A twin-aisle commercial airliner with a cabin diameter over 5 metres seating 250 to 500+ passengers."
+              },
+              {
+                "term": "Fleet Commonality",
+                "ipa": "/fliːt ˌkɒm.əˈnæl.ə.ti/",
+                "definition": "Operating identical or related aircraft types to save costs on pilot training, spare parts, and tooling."
+              },
+              {
+                "term": "Payload Range",
+                "ipa": "/ˈpeɪ.loʊd reɪndʒ/",
+                "definition": "The maximum distance an aircraft can fly with a given weight of revenue passengers and cargo."
+              },
+              {
+                "term": "Fuel Burn Efficiency",
+                "ipa": "/fjuːəl bɜːn ɪˈfɪʃ.ən.si/",
+                "definition": "The quantity of jet fuel consumed per passenger-kilometer or revenue ton-kilometer flown."
+              },
+              {
+                "term": "Low-Cost Carrier",
+                "ipa": "/loʊ kɒst ˈkær.i.ər/",
+                "definition": "An airline operating a simplified business model emphasizing point-to-point flights and high seat density."
+              },
+              {
+                "term": "Legacy Carrier",
+                "ipa": "/ˈleɡ.ə.si ˈkær.i.ər/",
+                "definition": "A traditional full-service flag carrier airline operating global hub-and-spoke international routes."
+              },
+              {
+                "term": "ETOPS Certification",
+                "ipa": "/iː tɒps ˌsɜː.tɪ.fɪˈkeɪ.ʃən/",
+                "definition": "Extended-range Twin-engine Operational Performance Standards allowing twin-jets to fly distant ocean routes."
+              },
+              {
+                "term": "Turnaround Efficiency",
+                "ipa": "/ˈtɜːn.əˌraʊnd ɪˈfɪʃ.ən.si/",
+                "definition": "Optimizing ground operations to minimize aircraft time spent parked at gates between revenue flights."
+              },
+              {
+                "term": "Auxiliary Power Unit",
+                "ipa": "/ɔːɡˈzɪl.jə.ri ˈpaʊ.ər ˈjuː.nɪt/",
+                "definition": "A small gas turbine engine in an aircraft tail providing electrical power and air conditioning on the ground (APU)."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or airline examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Long-haul point-to-point routes flown by modern narrow-body jets (A321XLR) will completely eliminate the traditional hub-and-spoke mega-hub model.",
+                "group2": "Ultra-low-cost airlines provide superior environmental efficiency per passenger-seat than full-service legacy airlines due to higher cabin load factors.",
+                "group3": "Operating a 100% single-type fleet provides such overwhelming maintenance savings that multi-type legacy fleets will soon be economically unviable."
+              },
+              "usefulPhrases": [
+                "When analyzing airline fleet economics, our group observed...",
+                "From an operational and commercial viewpoint, we contend...",
+                "One major counter-argument raised in our discussion is...",
+                "To summarize our group's conclusion..."
+              ]
+            }
           }
         },
         "4": {
@@ -20867,37 +26043,37 @@
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the 15-minute group research sprint, 5-minute class accident presentations, and FE2 briefing.",
+            "summary": "A 2-hour interactive workshop covering aviation safety news, crash investigation vocabulary, past tenses clinic, the group research sprint, 5-minute class accident presentations, and FE2 briefing.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check (10 mins)",
-                "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models."
+                "title": "Part 1: Aviation News & Session 3 Fleet Spot-Check",
+                "description": "Weekly aviation news review and rapid spot-check on commercial aircraft categories and airline operating models.",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Part 2: Accident Investigation Terminology (20 mins)",
-                "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors."
+                "title": "Part 2: Accident Investigation Terminology",
+                "description": "Key vocabulary of air crash investigation: CVR/FDR black boxes, BEA/NTSB roles, CFIT, mechanical failure vs. human factors.",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
-                "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because)."
+                "title": "Part 3: Language Focus: Narrative Past Tenses & Sequencers",
+                "description": "Grammar focus: past simple, past continuous, and past perfect for accident chronology (had leveled off when, was descending because).",
+                "part": "Part 3"
               },
               {
-                "time": "50-65",
-                "title": "Part 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
-                "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes."
+                "title": "Part 4: 15-Minute Group Research & Preparation Sprint",
+                "description": "Small teams (3-4 students) select an accident case study, extract the timeline, aircraft specifications, root causes, and safety fixes.",
+                "part": "Part 4"
               },
               {
-                "time": "65-110",
-                "title": "Part 5: Spoken Group Presentations & Safety Debrief (45 mins)",
-                "description": "Each team delivers a 5-minute presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A."
+                "title": "Part 5: Spoken Group Presentations & Safety Debrief",
+                "description": "Each team delivers a spoken presentation to the class using whiteboard / screen bullet supports, followed by peer Q&A.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep (10 mins)",
-                "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation."
+                "title": "Part 6: Vocabulary Review, Pronunciation & FE2 Prep",
+                "description": "Pronunciation drill (in-ves-ti-GA-tion, mal-func-tion, pre-ci-pi-ta-tion, fa-tigue) and guidelines for the Session 5 Formative Evaluation.",
+                "part": "Part 6"
               }
             ]
           },
@@ -20911,7 +26087,7 @@
               "duration": "120 Minutes"
             },
             "openingSession": {
-              "title": "Activity 1: Aviation News & Session 3 Spot-Check (10 mins)",
+              "title": "Activity 1: Aviation News & Session 3 Spot-Check",
               "summary": "News review followed by quick vocabulary check on commercial fleets.",
               "modeBadges": [
                 "Pairs",
@@ -20958,7 +26134,7 @@
               }
             },
             "investigationLexis": {
-              "title": "Activity 2: Accident Investigation Terminology & Causal Chains (20 mins)",
+              "title": "Activity 2: Accident Investigation Terminology & Causal Chains",
               "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
               "modeBadges": [
                 "Pairs",
@@ -20996,7 +26172,7 @@
               ]
             },
             "pastNarrativesClinic": {
-              "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers (20 mins)",
+              "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers",
               "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
               "modeBadges": [
                 "Pairs / Individual",
@@ -21029,7 +26205,7 @@
               ]
             },
             "groupResearchSprint": {
-              "title": "Activity 4: 15-Minute Group Research & Preparation Sprint (15 mins)",
+              "title": "Activity 4: 15-Minute Group Research & Preparation Sprint",
               "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
               "modeBadges": [
                 "Small Groups (3-4)",
@@ -21089,7 +26265,7 @@
               ]
             },
             "presentationsDebrief": {
-              "title": "Activity 5: Spoken Group Presentations & Class Debrief (45 mins)",
+              "title": "Activity 5: Spoken Group Presentations & Class Debrief",
               "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
               "modeBadges": [
                 "Small Groups",
@@ -21111,7 +26287,7 @@
               ]
             },
             "closingReview": {
-              "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep (10 mins)",
+              "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep",
               "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
               "modeBadges": [
                 "Plenary",
@@ -21464,6 +26640,82 @@
               }
             ],
             "pageUrl": "session4/admat_aas2.html"
+          },
+          "overview": {
+            "intro": "In this session, you examine historic aviation accidents and investigate how lessons learned have transformed global flight safety standards. Working in pairs and small groups, you will practise describing safety chains of events, discussing non-punitive reporting cultures, and explaining procedural improvements in precise spoken English.",
+            "whyItMatters": "Commercial aviation has achieved its unprecedented safety record through open, honest analysis of past incidents. Being able to explain safety investigations, discuss human factors, and present accident findings in objective, professional English is an essential leadership skill and forms a central topic in your Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Air Accident Investigation",
+                "ipa": "/eər ˈæk.sɪ.dənt ɪnˌves.tɪˈɡeɪ.ʃən/",
+                "definition": "The formal technical process of determining the causes of an aircraft occurrence to prevent repetition."
+              },
+              {
+                "term": "Flight Data Recorder",
+                "ipa": "/flaɪt ˈdeɪ.tə rɪˈkɔː.dər/",
+                "definition": "An armored device recording hundreds of flight parameters like airspeed, altitude, and control inputs (FDR)."
+              },
+              {
+                "term": "Cockpit Voice Recorder",
+                "ipa": "/ˈkɒk.pɪt vɔɪs rɪˈkɔː.dər/",
+                "definition": "An armored device recording cockpit conversations, radio transmissions, and background sounds (CVR)."
+              },
+              {
+                "term": "Just Culture",
+                "ipa": "/dʒʌst ˈkʌl.tʃər/",
+                "definition": "A safety culture where operational staff are not punished for human errors, but reckless behavior is not tolerated."
+              },
+              {
+                "term": "Root Cause Analysis",
+                "ipa": "/ruːt kɔːz əˈnæl.ə.sɪs/",
+                "definition": "A structured problem-solving method identifying the fundamental underlying factor causing a safety incident."
+              },
+              {
+                "term": "Airworthiness Directive",
+                "ipa": "/ˈeəˌwɜː.ði.nəs dɪˈrek.tɪv/",
+                "definition": "A legally mandatory notification issued by an aviation regulator to correct an unsafe condition in an aircraft."
+              },
+              {
+                "term": "Safety Management System",
+                "ipa": "/ˈseɪf.ti ˈmæn.ɪdʒ.mənt ˈsɪs.təm/",
+                "definition": "A systematic approach to managing aviation safety, including organizational structures, policies, and procedures (SMS)."
+              },
+              {
+                "term": "Situational Awareness",
+                "ipa": "/ˌsɪtʃ.uˈeɪ.ʃən.əl əˈweə.nəs/",
+                "definition": "An accurate mental perception of an aircraft's position, systems state, and surrounding environmental hazards."
+              },
+              {
+                "term": "Controlled Flight Into Terrain",
+                "ipa": "/kənˈtroʊld flaɪt ˈɪn.tuː təˈreɪn/",
+                "definition": "An accident where an airworthy aircraft under pilot control is unintentionally flown into terrain or water (CFIT)."
+              },
+              {
+                "term": "Safety Recommendation",
+                "ipa": "/ˈseɪf.ti ˌrek.ə.menˈdeɪ.ʃən/",
+                "definition": "A preventive proposal made by an accident investigation board to improve aviation safety standards."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or investigation examples to support your group's position.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Cockpit voice recorder audio should be streamed live to ground servers via satellite rather than relying exclusively on physical crash-protected black boxes.",
+                "group2": "Mandatory confidential incident reporting without fear of punishment has contributed more to global aviation safety than advanced avionics technology.",
+                "group3": "Aviation accident reports should strictly omit individual pilot names to protect safety culture and prevent sensationalized media trials."
+              },
+              "usefulPhrases": [
+                "Our group examined the safety implications of...",
+                "From an accident investigation and lessons-learned standpoint...",
+                "A fundamental principle in modern safety management is...",
+                "In conclusion, our group's assessment is that..."
+              ]
+            }
           }
         }
       }
@@ -21582,37 +26834,37 @@
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan: Health & Human Factors (2 Hours)",
-            "summary": "A 120-minute operational syllabus combining warm-up aeromedical checks, condition triage vocabulary, fatigue regulations clinic, airborne medical diversion simulation, and pronunciation consolidation.",
+            "summary": "A operational syllabus combining warm-up aeromedical checks, condition triage vocabulary, fatigue regulations clinic, airborne medical diversion simulation, and pronunciation consolidation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Activity 1: Aviation Health News & Quick Check (10 mins)",
-                "description": "Plenary warm-up discussing recent medical diversions and completing a 5-question baseline aeromedical diagnostic."
+                "title": "Activity 1: Aviation Health News & Quick Check",
+                "description": "Plenary warm-up discussing recent medical diversions and completing a 5-question baseline aeromedical diagnostic.",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Activity 2: In-Flight Medical Emergencies & Triage Vocabulary (20 mins)",
-                "description": "Paired classification of 18 medical conditions, cabin emergency medical kits (EMK), and ground telemedicine (MedLink) procedures."
+                "title": "Activity 2: In-Flight Medical Emergencies & Triage Vocabulary",
+                "description": "Paired classification of 18 medical conditions, cabin emergency medical kits (EMK), and ground telemedicine (MedLink) procedures.",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Activity 3: Language Focus: Crew & Controller Fatigue, Circadian Rhythms & FTL (20 mins)",
-                "description": "Analysis of circadian disruptions, sleep debt, EASA Flight Time Limitations, and applying the IMSAFE fitness model."
+                "title": "Activity 3: Language Focus: Crew & Controller Fatigue, Circadian Rhythms & FTL",
+                "description": "Analysis of circadian disruptions, sleep debt, EASA Flight Time Limitations, and applying the IMSAFE fitness model.",
+                "part": "Part 3"
               },
               {
-                "time": "50-85",
-                "title": "Activity 4: Airborne Medical Diversion Simulation & Decision Guide (35 mins)",
-                "description": "Small-group simulation evaluating 3 critical airborne medical emergency scenarios requiring operational diversion and ATC priority."
+                "title": "Activity 4: Airborne Medical Diversion Simulation & Decision Guide",
+                "description": "Small-group simulation evaluating 3 critical airborne medical emergency scenarios requiring operational diversion and ATC priority.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia & Emergency Descent (25 mins)",
-                "description": "Plenary debrief on vestibular illusions, rapid decompression protocols, and Time of Useful Consciousness (TUC)."
+                "title": "Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia & Emergency Descent",
+                "description": "Plenary debrief on vestibular illusions, rapid decompression protocols, and Time of Useful Consciousness (TUC).",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Activity 6: Medical & Human Factors Consolidation & Syllable Stress (10 mins)",
-                "description": "Pronunciation drills on medical terminology, checkpoints audit, and flashcard revision."
+                "title": "Activity 6: Medical & Human Factors Consolidation & Syllable Stress",
+                "description": "Pronunciation drills on medical terminology, checkpoints audit, and flashcard revision.",
+                "part": "Part 6"
               }
             ]
           },
@@ -21985,7 +27237,7 @@
               "image": "images/aas_m3card1.jpg"
             },
             "openingSession": {
-              "title": "Activity 1: Aviation Health News & Quick Check (10 mins)",
+              "title": "Activity 1: Aviation Health News & Quick Check",
               "summary": "Analyze recent in-flight medical incidents, crew fatigue advisories, and complete a 5-question baseline aeromedical diagnostic.",
               "modeBadges": [
                 "Plenary",
@@ -22036,7 +27288,7 @@
               }
             },
             "medicalIncidentsLexis": {
-              "title": "Activity 2: In-Flight Medical Emergencies & Triage Vocabulary (20 mins)",
+              "title": "Activity 2: In-Flight Medical Emergencies & Triage Vocabulary",
               "summary": "Master specialized medical condition terminology, cabin emergency medical kits (EMK), and passenger triage.",
               "modeBadges": [
                 "Pairs",
@@ -22084,7 +27336,7 @@
               ]
             },
             "fatigueHumanFactorsClinic": {
-              "title": "Activity 3: Crew & Controller Fatigue, Circadian Rhythms & FTL (20 mins)",
+              "title": "Activity 3: Crew & Controller Fatigue, Circadian Rhythms & FTL",
               "summary": "Examine the physiological mechanisms of fatigue, sleep debt, circadian disruption, and flight time limitations.",
               "modeBadges": [
                 "Individual & Pairs",
@@ -22118,7 +27370,7 @@
               ]
             },
             "medicalDiversionSimulation": {
-              "title": "Activity 4: Airborne Medical Diversion Simulation & Decision Guide (35 mins)",
+              "title": "Activity 4: Airborne Medical Diversion Simulation & Decision Guide",
               "summary": "Roleplay a flight crew facing an acute in-flight medical crisis over continental / transoceanic airspace.",
               "modeBadges": [
                 "Small Groups (3-4)",
@@ -22155,7 +27407,7 @@
               ]
             },
             "humanFactorsDebrief": {
-              "title": "Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia & Emergency Descent (25 mins)",
+              "title": "Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia & Emergency Descent",
               "summary": "Analyze physiological illusions in instrument flight, hypoxia progression, and emergency descent maneuvers.",
               "modeBadges": [
                 "Plenary & Pairs",
@@ -22185,7 +27437,7 @@
               ]
             },
             "closingReview": {
-              "title": "Activity 6: Medical & Human Factors Consolidation & Syllable Stress (10 mins)",
+              "title": "Activity 6: Medical & Human Factors Consolidation & Syllable Stress",
               "summary": "Consolidate the 18 aeromedical terms, conduct syllable stress drills, and prepare for Session 2 Meteorology.",
               "modeBadges": [
                 "Plenary",
@@ -22211,6 +27463,82 @@
                 "Differentiated PAN-PAN MEDICO vs. MAYDAY urgency calls",
                 "Applied EASA FTL rules and the IMSAFE fitness checklist",
                 "Executed airborne medical diversion decision guide"
+              ]
+            }
+          },
+          "overview": {
+            "intro": "In this session, you explore aviation meteorology, weather hazards, and operational decision-making in spoken English. Working in pairs, you will practise reading and interpreting METAR and TAF weather reports, explaining severe weather risks (icing, microbursts, wind shear), and discussing go-around criteria in fluent technical English.",
+            "whyItMatters": "Weather remains the primary external factor influencing flight planning, diversions, and terminal safety. Being able to decode meteorological reports aloud, describe atmospheric threats, and justify diversion decisions in clear English is fundamental for operational coordination and your Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "METAR Report",
+                "ipa": "/ˈmiː.tɑːr rɪˈpɔːt/",
+                "definition": "A standardized international routine aerodrome meteorological report issued every 30 or 60 minutes."
+              },
+              {
+                "term": "TAF Forecast",
+                "ipa": "/tæf ˈfɔː.kɑːst/",
+                "definition": "Terminal Aerodrome Forecast predicting expected weather conditions within 5 nautical miles over 24 to 30 hours."
+              },
+              {
+                "term": "Wind Shear",
+                "ipa": "/wɪnd ʃɪər/",
+                "definition": "A sudden, drastic change in wind speed and/or direction over a very short distance, critical near runways."
+              },
+              {
+                "term": "Microburst",
+                "ipa": "/ˈmaɪ.kroʊˌbɜːst/",
+                "definition": "A localized column of sinking air (downdraft) within a thunderstorm that spreads outward violently at ground level."
+              },
+              {
+                "term": "Structural Icing",
+                "ipa": "/ˈstrʌk.tʃər.əl ˈaɪ.sɪŋ/",
+                "definition": "The accumulation of ice on the airframe and wings during flight, increasing weight and degrading lift."
+              },
+              {
+                "term": "Runway Visual Range",
+                "ipa": "/ˈrʌn.weɪ ˈvɪʒ.u.əl reɪndʒ/",
+                "definition": "The distance over which a pilot on the runway centerline can see runway surface markings or lights (RVR)."
+              },
+              {
+                "term": "Ceiling",
+                "ipa": "/ˈsiː.lɪŋ/",
+                "definition": "The height above the earth's surface of the lowest layer of clouds reported as broken (BKN) or overcast (OVC)."
+              },
+              {
+                "term": "Clear Air Turbulence",
+                "ipa": "/klɪər eər ˈtɜː.bjə.ləns/",
+                "definition": "Severe atmospheric turbulence occurring in cloud-free skies, typically associated with high-altitude jet streams."
+              },
+              {
+                "term": "Instrument Meteorological Conditions",
+                "ipa": "/ˈɪn.strə.mənt ˌmiː.ti.ə.rəˈlɒdʒ.ɪ.kəl kənˈdɪʃ.ənz/",
+                "definition": "Weather conditions where flight by outside visual references is not safe (IMC), requiring instrument flight rules."
+              },
+              {
+                "term": "Freezing Rain",
+                "ipa": "/ˈfriː.zɪŋ reɪn/",
+                "definition": "Rain that falls in liquid form but freezes immediately upon contact with sub-zero aircraft surfaces, creating glaze."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or operational examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Pilots should be legally prohibited from attempting an approach whenever the reported runway visual range drops below category minimums.",
+                "group2": "Automated weather reporting sensors (AWOS) are now more reliable for runway visual range than human meteorological observers.",
+                "group3": "Executing a precautionary go-around due to sudden wind shear should be completely routine and never investigated as an incident."
+              },
+              "usefulPhrases": [
+                "Our group analyzed the meteorological challenge of...",
+                "From a flight operations and weather minimums standpoint...",
+                "A critical hazard that demands immediate action is...",
+                "In conclusion, our group recommends that..."
               ]
             }
           }
@@ -22250,37 +27578,37 @@
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan: Meteorology & Severe Weather (2 Hours)",
-            "summary": "A 120-minute operational syllabus combining weather news warm-ups, atmospheric vocabulary classification, METAR/TAF decoding clinic, 15-minute landmark weather case study research sprint, and severe weather diversion simulation.",
+            "summary": "A operational syllabus combining weather news warm-ups, atmospheric vocabulary classification, METAR/TAF decoding clinic, 15-minute landmark weather case study research sprint, and severe weather diversion simulation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Activity 1: Aviation Weather Briefing & Meteorological Warm-Up (10 mins)",
-                "description": "Plenary opening examining current weather hazard charts, satellite imagery, and completing a 5-question baseline meteorological diagnostic."
+                "title": "Activity 1: Aviation Weather Briefing & Meteorological Warm-Up",
+                "description": "Plenary opening examining current weather hazard charts, satellite imagery, and completing a 5-question baseline meteorological diagnostic.",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Activity 2: Severe Atmospheric Phenomena & Flight Impacts (20 mins)",
-                "description": "Paired classification of 18 severe weather terms, aerodynamic impact matrices, and pilot tactical avoidance maneuvers."
+                "title": "Activity 2: Severe Atmospheric Phenomena & Flight Impacts",
+                "description": "Paired classification of 18 severe weather terms, aerodynamic impact matrices, and pilot tactical avoidance maneuvers.",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Activity 3: Language Focus: Decoding METAR, TAF & SIGMET Advisories (20 mins)",
-                "description": "Interactive translation and interpretation of real-world coded aviation weather reports for dispatchers and pilots."
+                "title": "Activity 3: Language Focus: Decoding METAR, TAF & SIGMET Advisories",
+                "description": "Interactive translation and interpretation of real-world coded aviation weather reports for dispatchers and pilots.",
+                "part": "Part 3"
               },
               {
-                "time": "50-65",
-                "title": "Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies (15 mins)",
-                "description": "Small-group rapid research analyzing Delta 191 (DFW microburst) or BA 009 (volcanic ash ingestion), extracting safety fixes and crew actions."
+                "title": "Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies",
+                "description": "Small-group rapid research analyzing Delta 191 (DFW microburst) or BA 009 (volcanic ash ingestion), extracting safety fixes and crew actions.",
+                "part": "Part 4"
               },
               {
-                "time": "65-110",
-                "title": "Activity 5: Severe Weather En-Route & Terminal Diversion Simulation (45 mins)",
-                "description": "Flight crew and dispatcher teams reroute aircraft around a massive squall line with fuel reserve calculations and ATC coordination."
+                "title": "Activity 5: Severe Weather En-Route & Terminal Diversion Simulation",
+                "description": "Flight crew and dispatcher teams reroute aircraft around a massive squall line with fuel reserve calculations and ATC coordination.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Activity 6: Meteorology Consolidation & Pronunciation Wrap-Up (10 mins)",
-                "description": "Multi-syllabic stress drills on meteorological terms, checkpoints verification, and link to Session 3."
+                "title": "Activity 6: Meteorology Consolidation & Pronunciation Wrap-Up",
+                "description": "Multi-syllabic stress drills on meteorological terms, checkpoints verification, and link to Session 3.",
+                "part": "Part 6"
               }
             ]
           },
@@ -22653,7 +27981,7 @@
               "image": "images/aas_m3card2.jpg"
             },
             "openingSession": {
-              "title": "Activity 1: Aviation Weather Briefing & Meteorological Warm-Up (10 mins)",
+              "title": "Activity 1: Aviation Weather Briefing & Meteorological Warm-Up",
               "summary": "Review current convective storm advisories, satellite imagery, and complete a 5-question baseline meteorological diagnostic.",
               "modeBadges": [
                 "Plenary",
@@ -22704,7 +28032,7 @@
               }
             },
             "weatherPhenomenaLexis": {
-              "title": "Activity 2: Severe Atmospheric Phenomena & Flight Impacts (20 mins)",
+              "title": "Activity 2: Severe Atmospheric Phenomena & Flight Impacts",
               "summary": "Master specialized meteorological terminology, aerodynamic degradation mechanisms, and pilot avoidance maneuvers.",
               "modeBadges": [
                 "Pairs",
@@ -22752,7 +28080,7 @@
               ]
             },
             "weatherBriefingClinic": {
-              "title": "Activity 3: Language Focus: Decoding METAR, TAF & SIGMET Advisories (20 mins)",
+              "title": "Activity 3: Language Focus: Decoding METAR, TAF & SIGMET Advisories",
               "summary": "Interactive translation and interpretation of real-world coded aviation weather reports for dispatchers and pilots.",
               "modeBadges": [
                 "Individual",
@@ -22785,7 +28113,7 @@
               ]
             },
             "weatherCaseStudiesSprint": {
-              "title": "Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies (15 mins)",
+              "title": "Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies",
               "summary": "Small-group rapid research analyzing Delta 191 (DFW microburst) or BA 009 (volcanic ash ingestion), extracting safety fixes and crew actions.",
               "modeBadges": [
                 "Small Groups (3-4)",
@@ -22819,7 +28147,7 @@
               ]
             },
             "weatherDiversionSimulation": {
-              "title": "Activity 5: Severe Weather En-Route & Terminal Diversion Simulation (45 mins)",
+              "title": "Activity 5: Severe Weather En-Route & Terminal Diversion Simulation",
               "summary": "Flight crew and dispatcher teams reroute aircraft around a massive squall line with fuel reserve calculations and ATC coordination.",
               "modeBadges": [
                 "Teams (3-4)",
@@ -22862,7 +28190,7 @@
               }
             },
             "closingReview": {
-              "title": "Activity 6: Meteorology Consolidation & Pronunciation Wrap-Up (10 mins)",
+              "title": "Activity 6: Meteorology Consolidation & Pronunciation Wrap-Up",
               "summary": "Consolidate the 18 meteorological terms, conduct syllable stress drills, and prepare for Session 3 Safety vs. Security.",
               "modeBadges": [
                 "Plenary",
@@ -22888,6 +28216,82 @@
                 "Decoded operational METAR, TAF, and SIGMET reports",
                 "Explained microburst windshear and structural icing physics",
                 "Analyzed Delta 191 & BA 009 landmark safety outcomes"
+              ]
+            }
+          },
+          "overview": {
+            "intro": "This session examines flight planning, fuel reserve calculations, and alternate aerodrome selection in technical English. Working in teams, you will practise explaining operational flight plans (OFP), calculating contingency fuel margins, and justifying diversion decisions under simulated operational disruptions in spoken English.",
+            "whyItMatters": "Fuel planning and diversion decisions involve balancing commercial punctuality with absolute flight safety. Developing the English communication skills to debate diversion options, explain fuel states, and coordinate with international dispatchers ensures you perform with confidence in your Formative Evaluation.",
+            "keyTerms": [
+              {
+                "term": "Operational Flight Plan",
+                "ipa": "/ˌɒp.ərˈeɪ.ʃən.əl flaɪt plæn/",
+                "definition": "The official flight dispatch document outlining route, altitudes, fuel requirements, and alternate airports (OFP)."
+              },
+              {
+                "term": "Contingency Fuel",
+                "ipa": "/kənˈtɪn.dʒən.si fjuːəl/",
+                "definition": "Extra fuel carried to compensate for unforeseen factors like route deviations, wind changes, or altitude holds."
+              },
+              {
+                "term": "Alternate Aerodrome",
+                "ipa": "/ˈɔːl.tər.nət ˈeə.rə.droʊm/",
+                "definition": "An adequate secondary airport to which an aircraft may proceed when landing at the destination becomes impossible."
+              },
+              {
+                "term": "Final Reserve Fuel",
+                "ipa": "/ˈfaɪ.nəl rɪˈzɜːv fjuːəl/",
+                "definition": "The minimum mandatory fuel required to fly for 30 minutes (jet) or 45 minutes (prop) at holding speed at 1,500 ft."
+              },
+              {
+                "term": "Holding Pattern",
+                "ipa": "/ˈhoʊl.dɪŋ ˈpæt.ən/",
+                "definition": "A predetermined racetrack flight path flown by an aircraft awaiting air traffic control landing clearance."
+              },
+              {
+                "term": "Point of Safe Return",
+                "ipa": "/pɔɪnt əv seɪf rɪˈtɜːn/",
+                "definition": "The furthest geographic point along a flight path from which an aircraft can return to its departure airfield."
+              },
+              {
+                "term": "Fuel Diversion",
+                "ipa": "/fjuːəl daɪˈvɜː.ʒən/",
+                "definition": "A flight reroute to an alternate airport made when fuel reserves are depleted to minimum acceptable levels."
+              },
+              {
+                "term": "Payload Restriction",
+                "ipa": "/ˈpeɪ.loʊd rɪˈstrɪk.ʃən/",
+                "definition": "Limiting passenger or cargo weight to allow extra fuel carriage for long-distance or headwind routes."
+              },
+              {
+                "term": "En-Route Alternate",
+                "ipa": "/ɒn ruːt ˈɔːl.tər.nət/",
+                "definition": "An intermediate airport suitable for emergency landing along an extended flight path."
+              },
+              {
+                "term": "Minimum Fuel Declaration",
+                "ipa": "/ˈmɪn.ɪ.məm fjuːəl ˌdek.ləˈreɪ.ʃən/",
+                "definition": "An operational radio call informing ATC that any unexpected delay would result in landing with less than final reserve fuel."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or operational examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Carrying significant extra 'tankering' fuel from cheap airports increases aircraft weight and carbon emissions to an unacceptable degree.",
+                "group2": "Airlines should never penalize dispatchers or captains who elect to carry maximum contingency fuel for unpredictable weather.",
+                "group3": "Declaring a 'Mayday Fuel' emergency should carry zero blame or administrative investigation if unexpected holding forced the decision."
+              },
+              "usefulPhrases": [
+                "Our group evaluated the fuel planning scenario involving...",
+                "From an operational dispatch perspective, we believe...",
+                "One critical safety threshold that cannot be compromised is...",
+                "To summarize our group's recommendation..."
               ]
             }
           }
@@ -22927,37 +28331,37 @@
           },
           "lessonPlan": {
             "title": "Session 3 Lesson Plan: Safety vs. Security (2 Hours)",
-            "summary": "A 120-minute operational syllabus combining warm-up security warm-ups, safety vs. security conceptual matrix, airport screening architecture, pre-flight walkaround clinic, and dual-track emergency simulation.",
+            "summary": "A operational syllabus combining warm-up security warm-ups, safety vs. security conceptual matrix, airport screening architecture, pre-flight walkaround clinic, and dual-track emergency simulation.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Activity 1: Safety & Security News & Quick Check (10 mins)",
-                "description": "Plenary opening discussing recent airport security breaches, CT baggage scanner rules, and completing a 5-question baseline diagnostic."
+                "title": "Activity 1: Safety & Security News & Quick Check",
+                "description": "Plenary opening discussing recent airport security breaches, CT baggage scanner rules, and completing a 5-question baseline diagnostic.",
+                "part": "Part 1"
               },
               {
-                "time": "10-30",
-                "title": "Activity 2: The Literal & Operational Distinction: Safety vs. Security (20 mins)",
-                "description": "Paired analysis of 18 technical terms and establishing the strict legal boundary between ICAO Annex 17 (Security) and Annex 19 (Safety)."
+                "title": "Activity 2: The Literal & Operational Distinction: Safety vs. Security",
+                "description": "Paired analysis of 18 technical terms and establishing the strict legal boundary between ICAO Annex 17 (Security) and Annex 19 (Safety).",
+                "part": "Part 2"
               },
               {
-                "time": "30-50",
-                "title": "Activity 3: Airport Security Architecture: Landside to Airside (20 mins)",
-                "description": "Detailed examination of passenger and baggage screening workflows, millimeter-wave scanners, CT tomography, and sterile area protection."
+                "title": "Activity 3: Airport Security Architecture: Landside to Airside",
+                "description": "Detailed examination of passenger and baggage screening workflows, millimeter-wave scanners, CT tomography, and sterile area protection.",
+                "part": "Part 3"
               },
               {
-                "time": "50-75",
-                "title": "Activity 4: Aircraft Security Search & Pre-Flight Sterile Checks (25 mins)",
-                "description": "Interactive cabin security sweep workshop identifying unattended baggage, tamper-evident seals, and spoken security sign-off to the Captain."
+                "title": "Activity 4: Aircraft Security Search & Pre-Flight Sterile Checks",
+                "description": "Interactive cabin security sweep workshop identifying unattended baggage, tamper-evident seals, and spoken security sign-off to the Captain.",
+                "part": "Part 4"
               },
               {
-                "time": "75-110",
-                "title": "Activity 5: Dual-Track Safety & Security Crisis Scenario (35 mins)",
-                "description": "Multi-agency emergency simulation coordinating response between Airport Police, ARFF fire services, and ATC for a perimeter breach and hydraulic emergency."
+                "title": "Activity 5: Dual-Track Safety & Security Crisis Scenario",
+                "description": "Multi-agency emergency simulation coordinating response between Airport Police, ARFF fire services, and ATC for a perimeter breach and hydraulic emergency.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Activity 6: Safety vs. Security Wrap-Up & FE3 Preview (10 mins)",
-                "description": "Consolidation checkpoints, pronunciation audit, and introduction to Session 4 Global Review and Session 5 FE3."
+                "title": "Activity 6: Safety vs. Security Wrap-Up & FE3 Preview",
+                "description": "Consolidation checkpoints, pronunciation audit, and introduction to Session 4 Global Review and Session 5 FE3.",
+                "part": "Part 6"
               }
             ]
           },
@@ -23330,7 +28734,7 @@
               "image": "images/aas_m3card3.jpg"
             },
             "openingSession": {
-              "title": "Activity 1: Safety & Security News & Quick Check (10 mins)",
+              "title": "Activity 1: Safety & Security News & Quick Check",
               "summary": "Review recent aviation security incidents, airworthiness directives, and complete a 5-question baseline diagnostic.",
               "modeBadges": [
                 "Plenary",
@@ -23381,7 +28785,7 @@
               }
             },
             "safetyVsSecurityLexis": {
-              "title": "Activity 2: The Literal & Operational Distinction: Safety vs. Security (20 mins)",
+              "title": "Activity 2: The Literal & Operational Distinction: Safety vs. Security",
               "summary": "Establish the clear, unambiguous distinction between Aviation Safety and Aviation Security.",
               "modeBadges": [
                 "Pairs",
@@ -23411,7 +28815,7 @@
               ]
             },
             "airportSecurityArchitecture": {
-              "title": "Activity 3: Airport Security Architecture: Landside to Airside (20 mins)",
+              "title": "Activity 3: Airport Security Architecture: Landside to Airside",
               "summary": "Detailed examination of passenger and baggage screening workflows, millimeter-wave scanners, CT tomography, and sterile area protection.",
               "modeBadges": [
                 "Pairs",
@@ -23445,7 +28849,7 @@
               ]
             },
             "aircraftSafetyChecksClinic": {
-              "title": "Activity 4: Aircraft Security Search & Sterile Pre-Flight Checks (25 mins)",
+              "title": "Activity 4: Aircraft Security Search & Sterile Pre-Flight Checks",
               "summary": "Pre-flight security sweep workshop identifying cabin search protocols, unattended baggage, and spoken handover to the flight crew.",
               "modeBadges": [
                 "Pairs",
@@ -23479,7 +28883,7 @@
               ]
             },
             "securityThreatSimulation": {
-              "title": "Activity 5: Dual-Track Safety & Security Crisis Scenario (35 mins)",
+              "title": "Activity 5: Dual-Track Safety & Security Crisis Scenario",
               "summary": "Multi-agency emergency simulation coordinating response between Airport Police, ARFF fire services, and ATC for a perimeter breach and hydraulic emergency.",
               "modeBadges": [
                 "Teams (3-4)",
@@ -23501,7 +28905,7 @@
               }
             },
             "closingReview": {
-              "title": "Activity 6: Safety vs. Security Wrap-Up & FE3 Preview (10 mins)",
+              "title": "Activity 6: Safety vs. Security Wrap-Up & FE3 Preview",
               "summary": "Consolidation checkpoints, pronunciation audit, and introduction to Session 4 Global Review and Session 5 FE3.",
               "modeBadges": [
                 "Plenary",
@@ -23527,6 +28931,82 @@
                 "Traced concentric airport security layers from landside to airside",
                 "Conducted exterior aircraft walkaround safety check",
                 "Applied Minimum Equipment List (MEL) dispatch rules"
+              ]
+            }
+          },
+          "overview": {
+            "intro": "In this session, you explore aviation safety versus airport security, threat screening protocols, and aircraft inspection procedures. Working in pairs and small groups, you will practise explaining security screening steps, reporting suspicious ramp activity, and distinguishing between unintentional safety hazards and intentional security threats in spoken English.",
+            "whyItMatters": "Safety and security require distinct operational responses and vocabulary. Being able to explain baggage screening, discuss perimeter protection, and communicate threat levels in clear, unambiguous English is essential for airport personnel and directly enriches your Formative Evaluation presentation.",
+            "keyTerms": [
+              {
+                "term": "Aviation Security",
+                "ipa": "/ˌeɪ.viˈeɪ.ʃən sɪˈkjʊə.rə.ti/",
+                "definition": "Measures and resources designed to prevent intentional unlawful acts against civil aviation (AVSEC)."
+              },
+              {
+                "term": "Aviation Safety",
+                "ipa": "/ˌeɪ.viˈeɪ.ʃən ˈseɪf.ti/",
+                "definition": "The state in which risks associated with aviation activities are reduced and controlled to an acceptable level."
+              },
+              {
+                "term": "Perimeter Security",
+                "ipa": "/pəˈrɪm.ɪ.tər sɪˈkjʊə.rə.ti/",
+                "definition": "Physical fences, cameras, and intrusion detection systems protecting an airport's operational boundary."
+              },
+              {
+                "term": "Threat Assessment",
+                "ipa": "/θret əˈses.mənt/",
+                "definition": "The formal evaluation of potential security risks to identify vulnerabilities and determine necessary safeguards."
+              },
+              {
+                "term": "Ramp Access Control",
+                "ipa": "/ræmp ˈæk.ses kənˌtroʊl/",
+                "definition": "Strict security protocols verifying identity badges and authorization before individuals enter airside zones."
+              },
+              {
+                "term": "Hold Baggage Screening",
+                "ipa": "/hoʊld ˈbæɡ.ɪdʒ ˈskriː.nɪŋ/",
+                "definition": "Automated X-ray and computed tomography (CT) scanning of checked passenger luggage for explosives."
+              },
+              {
+                "term": "Sterile Area",
+                "ipa": "/ˈster.aɪl ˈeə.ri.ə/",
+                "definition": "The secure terminal zone between security checkpoints and aircraft doors accessible only to screened passengers."
+              },
+              {
+                "term": "Unruly Passenger",
+                "ipa": "/ʌnˈruː.li ˈpæs.ɪn.dʒər/",
+                "definition": "A traveler who commits violent, disruptive, or non-compliant acts that threaten aircraft order and safety."
+              },
+              {
+                "term": "Security Audit",
+                "ipa": "/sɪˈkjʊə.rə.ti ˈɔː.dɪt/",
+                "definition": "An independent regulatory examination verifying that an airport or airline complies with security standards."
+              },
+              {
+                "term": "Laser Illumination",
+                "ipa": "/ˈleɪ.zər ɪˌluː.mɪˈneɪ.ʃən/",
+                "definition": "The illegal act of aiming high-powered handheld lasers at cockpits during takeoff or landing, blinding flight crew."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or security examples to support your group's argument.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Full-body millimeter-wave scanners should completely replace manual physical pat-down searches at all airport checkpoints.",
+                "group2": "Airlines should maintain a shared international lifetime ban list for passengers convicted of violent or unruly cabin behavior.",
+                "group3": "Airside perimeter security is now more vulnerable to unauthorized commercial drone intrusions than to ground physical fence breaches."
+              },
+              "usefulPhrases": [
+                "Our group investigated the operational distinction between safety and security...",
+                "From an airport threat assessment perspective...",
+                "A major vulnerability that must be addressed is...",
+                "In conclusion, our group recommends that..."
               ]
             }
           }
@@ -23566,37 +29046,37 @@
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan: Global Review & Grand Prix Quiz (2 Hours)",
-            "summary": "A 120-minute capstone tournament combining rules setup, 3 competitive quiz rounds (Aerodromes/Systems, Health/Weather, Safety/Security), the FE3 Press Briefing Masterclass, and final semester wrap-up.",
+            "summary": "A capstone tournament combining rules setup, 3 competitive quiz rounds (Aerodromes/Systems, Health/Weather, Safety/Security), the FE3 Press Briefing Masterclass, and final semester wrap-up.",
             "items": [
               {
-                "time": "00-10",
-                "title": "Activity 1: Semester 1 Retrospective & Competition Rules (10 mins)",
-                "description": "Plenary setup, forming Team Alpha, Team Bravo, and Team Charlie, assigning team captains, and reviewing the Grand Prix scoreboard rules."
+                "title": "Activity 1: Semester 1 Retrospective & Competition Rules",
+                "description": "Plenary setup, forming Team Alpha, Team Bravo, and Team Charlie, assigning team captains, and reviewing the Grand Prix scoreboard rules.",
+                "part": "Part 1"
               },
               {
-                "time": "10-35",
-                "title": "Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy & Systems (25 mins)",
-                "description": "Competitive round covering Module 1 and Module 2: runway numbering, GSE turnaround, flight control surfaces, and turbofan bypass ratios."
+                "title": "Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy & Systems",
+                "description": "Competitive round covering Module 1 and Module 2: runway numbering, GSE turnaround, flight control surfaces, and turbofan bypass ratios.",
+                "part": "Part 2"
               },
               {
-                "time": "35-60",
-                "title": "Activity 3: Grand Prix Round 2: Human Factors, Health & Severe Meteorology (25 mins)",
-                "description": "Competitive round covering Module 3: medical triage, EASA FTL fatigue rules, METAR decoding, and microburst physics."
+                "title": "Activity 3: Grand Prix Round 2: Human Factors, Health & Severe Meteorology",
+                "description": "Competitive round covering Module 3: medical triage, EASA FTL fatigue rules, METAR decoding, and microburst physics.",
+                "part": "Part 3"
               },
               {
-                "time": "60-85",
-                "title": "Activity 4: Grand Prix Round 3: Safety vs. Security & Landmark Case Studies (25 mins)",
-                "description": "Competitive round covering airport security screening, pre-flight walkaround, Delta 191/BA 009 case studies, and tournament tiebreaker."
+                "title": "Activity 4: Grand Prix Round 3: Safety vs. Security & Landmark Case Studies",
+                "description": "Competitive round covering airport security screening, pre-flight walkaround, Delta 191/BA 009 case studies, and tournament tiebreaker.",
+                "part": "Part 4"
               },
               {
-                "time": "85-110",
-                "title": "Activity 5: FE3 Current Events Press Briefing Masterclass (25 mins)",
-                "description": "Pairs workshop preparing the 10-12 minute Press Briefing for Session 5 Formative Evaluation 3, verifying slides and Q&A strategies."
+                "title": "Activity 5: FE3 Current Events Press Briefing Masterclass",
+                "description": "Pairs prepare their Press Briefing for Session 5 Formative Evaluation 3, verifying slides and Q&A strategies.",
+                "part": "Part 5"
               },
               {
-                "time": "110-120",
-                "title": "Activity 6: Semester 1 Grand Finale & FE3 Action Plan (10 mins)",
-                "description": "Podium celebration for Grand Prix champions, portfolio audit guidelines, and final encouragement for FE3."
+                "title": "Activity 6: Semester 1 Grand Finale & FE3 Action Plan",
+                "description": "Podium celebration for Grand Prix champions, portfolio audit guidelines, and final encouragement for FE3.",
+                "part": "Part 6"
               }
             ]
           },
@@ -23969,7 +29449,7 @@
               "image": "images/aas_m3card4.jpg"
             },
             "openingSession": {
-              "title": "Activity 1: Semester 1 Retrospective & Competition Rules (10 mins)",
+              "title": "Activity 1: Semester 1 Retrospective & Competition Rules",
               "summary": "Review the full Semester 1 aeronautical syllabus, divide into 3 teams, and establish the Grand Prix tournament rules.",
               "modeBadges": [
                 "Plenary",
@@ -24002,7 +29482,7 @@
               ]
             },
             "teamGrandPrixRound1": {
-              "title": "Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy & Systems (25 mins)",
+              "title": "Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy & Systems",
               "summary": "Competitive round covering Module 1 and Module 2: runway numbering, GSE turnaround, flight control surfaces, and turbofan bypass ratios.",
               "modeBadges": [
                 "3 Teams (Alpha/Bravo/Charlie)",
@@ -24056,7 +29536,7 @@
               ]
             },
             "teamGrandPrixRound2": {
-              "title": "Activity 3: Grand Prix Round 2: Human Factors, Health & Severe Meteorology (25 mins)",
+              "title": "Activity 3: Grand Prix Round 2: Human Factors, Health & Severe Meteorology",
               "summary": "Competitive round covering Module 3: medical triage, EASA FTL fatigue rules, METAR decoding, and microburst physics.",
               "modeBadges": [
                 "3 Teams (Alpha/Bravo/Charlie)",
@@ -24110,7 +29590,7 @@
               ]
             },
             "teamGrandPrixRound3": {
-              "title": "Activity 4: Grand Prix Round 3: Safety vs. Security & Landmark Case Studies (25 mins)",
+              "title": "Activity 4: Grand Prix Round 3: Safety vs. Security & Landmark Case Studies",
               "summary": "Competitive round covering airport security screening, pre-flight walkaround, Delta 191/BA 009 case studies, and tournament tiebreaker.",
               "modeBadges": [
                 "3 Teams (Alpha/Bravo/Charlie)",
@@ -24164,8 +29644,8 @@
               ]
             },
             "fe3MasteryWorkshop": {
-              "title": "Activity 5: FE3 Current Events Press Briefing Masterclass (25 mins)",
-              "summary": "Pairs workshop preparing the 10-12 minute Press Briefing for Session 5 Formative Evaluation 3, verifying slides and Q&A strategies.",
+              "title": "Activity 5: FE3 Current Events Press Briefing Masterclass",
+              "summary": "Pairs prepare their Press Briefing for Session 5 Formative Evaluation 3, verifying slides and Q&A strategies.",
               "modeBadges": [
                 "Pairs / Trios",
                 "FE3 Workshop",
@@ -24180,25 +29660,25 @@
               "teacherNotes": "Remind students that FE3 is an oral media briefing simulation. Reading written paragraphs word-for-word results in a lower grade in Fluency. Bullet cards and visual slides only!",
               "briefingFramework": [
                 {
-                  "stage": "Stage 1: Situation Overview (2-3 mins)",
+                  "stage": "Stage 1: Situation Overview",
                   "content": "Welcome journalists, state flight number/airline, date, route, aircraft type, and summarize the emergency situation factually without sensationalism."
                 },
                 {
-                  "stage": "Stage 2: Technical Causal Analysis (3-4 mins)",
+                  "stage": "Stage 2: Technical Causal Analysis",
                   "content": "Explain the root engineering, meteorological, aeromedical, or security causal factors using precise aeronautical terminology from Module 3."
                 },
                 {
-                  "stage": "Stage 3: Immediate Operational Response (2-3 mins)",
+                  "stage": "Stage 3: Immediate Operational Response",
                   "content": "Detail flight crew actions, ATC coordination, emergency diversion execution, passenger triage, and airport emergency service response."
                 },
                 {
-                  "stage": "Stage 4: Corrective Actions & Regulatory Follow-up (2 mins)",
+                  "stage": "Stage 4: Corrective Actions & Regulatory Follow-up",
                   "content": "Outline airline internal investigations, BEA/EASA cooperation, fleetwide inspections, and revised standard operating procedures (SOPs)."
                 }
               ]
             },
             "closingReview": {
-              "title": "Activity 6: Semester 1 Grand Finale & FE3 Action Plan (10 mins)",
+              "title": "Activity 6: Semester 1 Grand Finale & FE3 Action Plan",
               "summary": "Podium celebration for Grand Prix champions, portfolio audit guidelines, and final encouragement for FE3.",
               "modeBadges": [
                 "Plenary",
@@ -24217,6 +29697,82 @@
                 "Synthesized Semester 1 knowledge across Aerodromes, Aircraft & Safety",
                 "Competed in the 3-team Grand Prix Tournament",
                 "Finalized FE3 Current Events Press Briefing outline and slide deck"
+              ]
+            }
+          },
+          "overview": {
+            "intro": "This final session of Semester 1 brings together all technical topics in a comprehensive multi-team aviation review and quiz. Working in small groups, you will practise rapid-fire technical explanations, review key aeronautical vocabulary from across the semester, and consolidate the spoken confidence needed to excel in your final Formative Evaluation.",
+            "whyItMatters": "Spontaneous recall of technical terminology and the ability to formulate clear spoken answers under time limits are the hallmarks of a confident English speaker. This collaborative session consolidates your learning across all modules and ensures you enter your evaluation fully prepared.",
+            "keyTerms": [
+              {
+                "term": "Standard Phraseology",
+                "ipa": "/ˈstæn.dəd ˌfreɪ.ziˈɒl.ə.dʒi/",
+                "definition": "A standardized set of concise, unambiguous English words and phrases mandatory for international aviation radio."
+              },
+              {
+                "term": "Readback Requirement",
+                "ipa": "/ˈriːd.bæk rɪˈkwaɪə.mənt/",
+                "definition": "The safety rule requiring pilots to repeat back safety-critical ATC clearances to confirm accurate reception."
+              },
+              {
+                "term": "Go-Around Maneuver",
+                "ipa": "/ɡoʊ əˈraʊnd məˈnuː.vər/",
+                "definition": "An aborted landing procedure where a pilot discontinues an approach and climbs away to re-enter the traffic pattern."
+              },
+              {
+                "term": "Critical Phase of Flight",
+                "ipa": "/ˈkrɪt.ɪ.kəl feɪz əv flaɪt/",
+                "definition": "Flight operations below 10,000 feet, including taxi, takeoff, and landing, where sterile cockpit rules apply."
+              },
+              {
+                "term": "Sterile Cockpit Rule",
+                "ipa": "/ˈster.aɪl ˈkɒk.pɪt ruːl/",
+                "definition": "The regulation prohibiting flight crew from engaging in non-essential conversations during critical flight phases."
+              },
+              {
+                "term": "Non-Normal Checklist",
+                "ipa": "/nɒn ˈnɔː.məl ˈtʃek.lɪst/",
+                "definition": "A printed or electronic quick-reference handbook of step-by-step procedures used during in-flight malfunctions."
+              },
+              {
+                "term": "Crosswind Component",
+                "ipa": "/ˈkrɒs.wɪnd kəmˈpoʊ.nənt/",
+                "definition": "The portion of wind blowing perpendicular to a runway heading that affects aircraft directional control."
+              },
+              {
+                "term": "Traffic Alert Collision Avoidance",
+                "ipa": "/ˈtræf.ɪk əˌlɜːt kəˈlɪʒ.ən əˈvɔɪ.dəns/",
+                "definition": "An onboard transponder-based system detecting conflicting aircraft and issuing resolution advisories (TCAS)."
+              },
+              {
+                "term": "Debriefing Session",
+                "ipa": "/ˌdiːˈbriː.fɪŋ ˈseʃ.ən/",
+                "definition": "A structured post-flight meeting where crew review performance, discuss anomalies, and share feedback."
+              },
+              {
+                "term": "Human Factors Principles",
+                "ipa": "/ˈhjuː.mən ˈfæk.tərz ˈprɪn.sə.pəlz/",
+                "definition": "The science of understanding human capabilities, limitations, and teamwork to optimize aviation safety."
+              }
+            ],
+            "speakingTask": {
+              "title": "Additional Speaking Activity • Practice in Groups of 3",
+              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two clear reasons or operational examples to support your group's position.",
+                "Ensure all 3 team members speak during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Strict adherence to standardized ICAO phraseology is far more critical for aviation safety than having high general conversational fluency.",
+                "group2": "Mandatory flight simulator recurrent training should focus primarily on unexpected human factors dilemmas rather than textbook system failures.",
+                "group3": "The single most important skill developed during Semester 1 English is the confidence to ask for clarification when an operational instruction is unclear."
+              },
+              "usefulPhrases": [
+                "In our final semester technical review, our group agreed that...",
+                "From a practical operational communication perspective...",
+                "A vital lesson learned across this semester is that...",
+                "To conclude our group's presentation..."
               ]
             }
           }

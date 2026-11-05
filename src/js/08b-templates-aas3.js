@@ -105,9 +105,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation Health News &amp; Quick Check (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation Health News &amp; Quick Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || 'Analyze recent airborne medical incidents and evaluate entry knowledge of aeromedical regulations.'}</p>
                 </div>
               </div>
@@ -161,9 +161,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-30m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${medLexis.title || 'Activity 2: In-Flight Medical Emergencies &amp; Triage Vocabulary (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${medLexis.title || 'Activity 2: In-Flight Medical Emergencies &amp; Triage Vocabulary'}</h4>
                   <p class="text-[11px] text-slate-500">${medLexis.summary || 'Master essential medical terms, clinical symptoms, and cabin response procedures.'}</p>
                 </div>
               </div>
@@ -193,9 +193,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">30-50m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fatigue.title || 'Activity 3: Crew &amp; Controller Fatigue, Circadian Rhythms &amp; FTL (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fatigue.title || 'Activity 3: Crew &amp; Controller Fatigue, Circadian Rhythms &amp; FTL'}</h4>
                   <p class="text-[11px] text-slate-500">${fatigue.summary || 'Analyze Flight Time Limitations, Window of Circadian Low, and FRMS countermeasures.'}</p>
                 </div>
               </div>
@@ -264,9 +264,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">50-85m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${diversion.title || 'Activity 4: Airborne Medical Diversion Simulation &amp; Decision Guide (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${diversion.title || 'Activity 4: Airborne Medical Diversion Simulation &amp; Decision Guide'}</h4>
                   <p class="text-[11px] text-slate-500">${diversion.summary || 'Simulate high-stakes airborne medical emergencies requiring real-time ATC and flight dispatch coordination.'}</p>
                 </div>
               </div>
@@ -304,9 +304,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">85-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${humanFactors.title || 'Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia &amp; Emergency Descent (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${humanFactors.title || 'Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia &amp; Emergency Descent'}</h4>
                   <p class="text-[11px] text-slate-500">${humanFactors.summary || 'Analyze vestibular illusions, hypoxia onset, and rapid depressurization descent profiles.'}</p>
                 </div>
               </div>
@@ -358,9 +358,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Medical &amp; Human Factors Consolidation &amp; Syllable Stress (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Medical &amp; Human Factors Consolidation &amp; Syllable Stress'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || 'Master syllable stress patterns and review aeromedical safety competencies.'}</p>
                 </div>
               </div>
@@ -476,9 +476,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation Weather Briefing &amp; Meteorological Quick Check (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation Weather Briefing &amp; Meteorological Quick Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || 'Analyze real-time meteorological advisories and test baseline aviation weather comprehension.'}</p>
                 </div>
               </div>
@@ -532,9 +532,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-30m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${phenomenaAct.title || 'Activity 2: Severe Atmospheric Phenomena &amp; Flight Impacts (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${phenomenaAct.title || 'Activity 2: Severe Atmospheric Phenomena &amp; Flight Impacts'}</h4>
                   <p class="text-[11px] text-slate-500">${phenomenaAct.summary || 'Analyze severe hazards: windshear, microbursts, CAT, supercooled icing, and volcanic ash.'}</p>
                 </div>
               </div>
@@ -562,9 +562,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">30-50m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${briefingClinic.title || 'Activity 3: Language Focus: Decoding METAR, TAF &amp; SIGMET Advisories (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${briefingClinic.title || 'Activity 3: Language Focus: Decoding METAR, TAF &amp; SIGMET Advisories'}</h4>
                   <p class="text-[11px] text-slate-500">${briefingClinic.summary || 'Deconstruct raw international meteorological telecommunication strings into fluent operational English.'}</p>
                 </div>
               </div>
@@ -593,13 +593,13 @@
             </div>
           </div>
 
-          <!-- Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies -->
+          <!-- Activity 4: group research sprint: Landmark Weather Case Studies -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">50-65m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${caseStudiesAct.title || 'Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${caseStudiesAct.title || 'Activity 4: group research sprint: Landmark Weather Case Studies'}</h4>
                   <p class="text-[11px] text-slate-500">${caseStudiesAct.summary || 'Analyze pivotal weather accidents that transformed commercial aviation technology and training.'}</p>
                 </div>
               </div>
@@ -638,9 +638,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${simAct.title || 'Activity 5: Severe Weather En-Route &amp; Terminal Diversion Simulation (45 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${simAct.title || 'Activity 5: Severe Weather En-Route &amp; Terminal Diversion Simulation'}</h4>
                   <p class="text-[11px] text-slate-500">${simAct.summary || 'Execute an in-flight weather diversion decision guide evaluating fuel reserves, alternates, and ATC limits.'}</p>
                 </div>
               </div>
@@ -685,9 +685,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Meteorology Consolidation &amp; Pronunciation Wrap-Up (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Meteorology Consolidation &amp; Pronunciation Wrap-Up'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || 'Master syllable stress in meteorological vocabulary and consolidate operational takeaways.'}</p>
                 </div>
               </div>
@@ -802,9 +802,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Safety &amp; Security News &amp; Quick Check (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Safety &amp; Security News &amp; Quick Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || 'Analyze recent global airport security events and test legal understanding of ICAO annexes.'}</p>
                 </div>
               </div>
@@ -858,9 +858,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-30m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safetyLexis.title || 'Activity 2: The Literal &amp; Operational Distinction: Safety vs. Security (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${safetyLexis.title || 'Activity 2: The Literal &amp; Operational Distinction: Safety vs. Security'}</h4>
                   <p class="text-[11px] text-slate-500">${safetyLexis.summary || 'Compare ICAO Annex 19 Safety Management and ICAO Annex 17 Security standards.'}</p>
                 </div>
               </div>
@@ -903,9 +903,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">30-50m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${secArch.title || 'Activity 3: Airport Security Architecture: Landside to Airside (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${secArch.title || 'Activity 3: Airport Security Architecture: Landside to Airside'}</h4>
                   <p class="text-[11px] text-slate-500">${secArch.summary || 'Analyze the 5 concentric concentric security screening perimeters protecting civil aviation.'}</p>
                 </div>
               </div>
@@ -931,9 +931,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">50-75m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${walkaroundAct.title || 'Activity 4: Aircraft Safety Checks &amp; Pre-Flight Walkaround Inspection (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${walkaroundAct.title || 'Activity 4: Aircraft Safety Checks &amp; Pre-Flight Walkaround Inspection'}</h4>
                   <p class="text-[11px] text-slate-500">${walkaroundAct.summary || 'Conduct a clockwise external airframe inspection and evaluate critical airworthiness checkpoints.'}</p>
                 </div>
               </div>
@@ -958,9 +958,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">75-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${crisisAct.title || 'Activity 5: Dual-Track Safety &amp; Security Crisis Scenario (35 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${crisisAct.title || 'Activity 5: Dual-Track Safety &amp; Security Crisis Scenario'}</h4>
                   <p class="text-[11px] text-slate-500">${crisisAct.summary || 'Manage a simultaneous active ramp security breach and runway brake fire emergency.'}</p>
                 </div>
               </div>
@@ -995,9 +995,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Safety vs. Security Wrap-Up &amp; FE3 Preview (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Safety vs. Security Wrap-Up &amp; FE3 Preview'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || 'Review essential distinctions and review preparation milestones for Formative Evaluation 3.'}</p>
                 </div>
               </div>
@@ -1112,9 +1112,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Semester 1 Retrospective &amp; Competition Rules (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Semester 1 Retrospective &amp; Competition Rules'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || 'Form 3 squads, establish buzzer protocol, and review tournament point structure.'}</p>
                 </div>
               </div>
@@ -1178,9 +1178,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${round1.title || 'Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy &amp; Systems (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${round1.title || 'Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy &amp; Systems'}</h4>
                   <p class="text-[11px] text-slate-500">${round1.summary || 'Test knowledge of aerodrome signage, runway markings, hydraulics, flight controls, and bleed air.'}</p>
                 </div>
               </div>
@@ -1216,9 +1216,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-60m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${round2.title || 'Activity 3: Grand Prix Round 2: Human Factors, Health &amp; Severe Meteorology (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${round2.title || 'Activity 3: Grand Prix Round 2: Human Factors, Health &amp; Severe Meteorology'}</h4>
                   <p class="text-[11px] text-slate-500">${round2.summary || 'Test mastery of airborne medical triage, circadian fatigue, METAR/TAF codes, and microbursts.'}</p>
                 </div>
               </div>
@@ -1254,9 +1254,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">60-85m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${round3.title || 'Activity 4: Grand Prix Round 3: Safety vs. Security &amp; Landmark Case Studies (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${round3.title || 'Activity 4: Grand Prix Round 3: Safety vs. Security &amp; Landmark Case Studies'}</h4>
                   <p class="text-[11px] text-slate-500">${round3.summary || 'Test command of airport screening layers, pre-flight inspections, Annex 17 vs 19, and the Golden Tiebreaker.'}</p>
                 </div>
               </div>
@@ -1292,9 +1292,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">85-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fe3Workshop.title || 'Activity 5: FE3 Current Events Press Briefing Masterclass (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fe3Workshop.title || 'Activity 5: FE3 Current Events Press Briefing Masterclass'}</h4>
                   <p class="text-[11px] text-slate-500">${fe3Workshop.summary || 'Rehearse the 4-stage press briefing architecture and field aggressive journalistic inquiries.'}</p>
                 </div>
               </div>
@@ -1330,9 +1330,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Semester 1 Grand Finale &amp; FE3 Action Plan (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Semester 1 Grand Finale &amp; FE3 Action Plan'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || 'Crown the winning Grand Prix squad and confirm individual FE3 examination slots.'}</p>
                 </div>
               </div>

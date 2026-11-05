@@ -3979,19 +3979,26 @@
 
     /* --- PORTFOLIO_SUMMARY_DATA_START --- */
 const PORTFOLIO_SUMMARY_DATA = {
-  "lastUpdated": "4 Nov 2026",
-  "totalSubmissions": 27,
+  "lastUpdated": "5 Nov 2026",
+  "totalSubmissions": 38,
   "trackBreakdown": {
-    "at": 12,
-    "ag": 15
+    "at": 22,
+    "ag": 16
   },
   "metrics": {
-    "avgFeConfidence": "4.0",
-    "avgToeicConfidence": "7.4",
+    "avgFeConfidence": "4.6",
+    "avgToeicConfidence": "8.1",
     "targetFeLevel": "CEFR B2",
     "feWindow": "Week 48 (FE1)"
   },
   "topBuzzwords": [
+    {
+      "term": "Safety vs. Security",
+      "track": "at",
+      "category": "Aviation Protection",
+      "frequency": "90% of cohort",
+      "definition": "French 'Sécurité' splits in English: Safety = protection from unintentional hazards and system failures; Security = protection against intentional threats, unlawful acts, and terrorism."
+    },
     {
       "term": "Airside vs. Landside",
       "track": "at",
@@ -4000,11 +4007,25 @@ const PORTFOLIO_SUMMARY_DATA = {
       "definition": "Landside = public areas before security (check-in, arrivals hall). Airside = strictly secured operations areas beyond security (gates, apron, taxiways, runways)."
     },
     {
+      "term": "Concourse vs. Bottleneck",
+      "track": "at",
+      "category": "Terminal Navigation",
+      "frequency": "75% of cohort",
+      "definition": "Concourse = large, open public hall where passengers circulate and relax. Bottleneck = narrow transit corridor or checkpoint causing localized movement congestion."
+    },
+    {
+      "term": "Dwell Time & Smart Terminals",
+      "track": "at",
+      "category": "Passenger Flow",
+      "frequency": "70% of cohort",
+      "definition": "Dwell time = elapsed time passengers spend in the terminal between security screening and boarding. Reduced via automated bag drop, e-gates, CT scanners, and facial recognition."
+    },
+    {
       "term": "Apron / Ramp & Stands",
       "track": "at",
       "category": "Movement Area",
       "frequency": "75% of cohort",
-      "definition": "The designated paved area where aircraft park at designated stands to board/deboard, refuel, load baggage, and undergo ground servicing."
+      "definition": "The designated paved area where aircraft park at designated stands to board/deboard, refuel, load baggage, and undergo ground servicing (called 'Ramp' in the US, 'Apron' in the UK)."
     },
     {
       "term": "Travel Collocations & Booking",
@@ -4049,13 +4070,6 @@ const PORTFOLIO_SUMMARY_DATA = {
       "definition": "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
     },
     {
-      "term": "Scheduled vs. Charter Flights & EU261",
-      "track": "at",
-      "category": "Passenger Rights & Ops",
-      "frequency": "35% of cohort",
-      "definition": "Scheduled = timetabled regular airline service. Charter = booked on-demand for a specific private/tour group. Severe delays trigger passenger statutory care."
-    },
-    {
       "term": "Get Off to a Flying Start & Word of Mouth",
       "track": "ag",
       "category": "High-Impact Idioms",
@@ -4063,92 +4077,85 @@ const PORTFOLIO_SUMMARY_DATA = {
       "definition": "Get off to a flying start = beginning a semester or project with immediate success and momentum. Word of mouth = organic communication from person to person."
     },
     {
-      "term": "Overbooked Flight & Denied Boarding",
-      "track": "ag",
-      "category": "Airline Regulations",
-      "frequency": "50% of cohort",
-      "definition": "When an airline sells more tickets than available seats in anticipation of no-shows, risking involuntary denied boarding and statutory compensation obligations."
-    },
-    {
       "term": "Direct vs. Non-Stop Flight",
       "track": "ag",
       "category": "Travel Operations",
       "frequency": "45% of cohort",
       "definition": "Direct flight = keeps the same single flight number but may include intermediate tech stops. Non-stop flight = flies between origin and destination with zero stops."
+    },
+    {
+      "term": "Overbooked Flight & Denied Boarding",
+      "track": "ag",
+      "category": "Airline Regulations",
+      "frequency": "50% of cohort",
+      "definition": "When an airline sells more tickets than available seats in anticipation of no-shows, risking involuntary denied boarding and statutory compensation obligations."
     }
   ],
   "grammarTrapsCaught": [
     {
+      "title": "🛡️ Safety vs. Security in English",
+      "track": "at",
+      "rule": "French 'Sécurité' splits into two distinct operational English terms. Never confuse them: 'Safety' prevents unintentional accidents and hazards; 'Security' protects against intentional human threats and attacks.",
+      "correctExample": "✅ \"Aviation safety deals with bird strikes and de-icing; aviation security handles passenger screening, CT scanners, and hijackings.\""
+    },
+    {
       "title": "❌ 'Luggages' and 'Trainings' do NOT exist!",
       "track": "ag",
-      "rule": "Both 'luggage' and 'training' are uncountable nouns in English. Never add an 's'.",
-      "correctExample": "✅ \"We checked three pieces of luggage and completed our training course.\""
+      "rule": "Both 'luggage' and 'training' are uncountable nouns in English. Never add an 's'. Use 'pieces of luggage' or 'training courses'.",
+      "correctExample": "✅ \"We checked three pieces of luggage and completed our training course on ramp safety.\""
+    },
+    {
+      "title": "📍 Spatial Prepositions: At vs. In vs. On vs. Through",
+      "track": "all",
+      "rule": "Use 'at' for specific nodes and facilities (at the gate, at the checkpoint), 'in' for enclosed spaces (in the concourse, in the cabin), 'on' for pavement surfaces (on the apron, on Runway 14L), and 'through/along' for movement.",
+      "correctExample": "✅ \"Passengers wait in the concourse, board at gate 12, walk along the jet bridge, while the aircraft holds on taxiway Bravo.\""
+    },
+    {
+      "title": "🗣️ Pronunciation Trap: Alternate (Verb vs. Noun)",
+      "track": "at",
+      "rule": "Word stress changes with grammatical function: the verb 'to alternate' is stressed /ˈɔːl.tər.neɪt/, but the noun/adjective 'an alternate airport' is pronounced /ɔːlˈtɜː.nət/.",
+      "correctExample": "✅ \"If weather drops below minimums at Toulouse, the captain will divert to an alternate airport.\""
     },
     {
       "title": "🗣️ Pronunciation Trap: Itinerary",
       "track": "ag",
       "rule": "Multiple students flagged pronunciation difficulty with 'itinerary'. Stress is on the second syllable: /aɪˈtɪn.ər.ər.i/ (eye-TIN-er-uh-ree).",
-      "correctExample": "✅ \"Could you please confirm our flight itinerary before we head to the gate?\""
+      "correctExample": "✅ \"Could you please confirm our flight itinerary before we head to the boarding gate?\""
     },
     {
       "title": "⏱️ Reported Speech Backshift & Time References",
       "track": "ag",
       "rule": "When reporting past dialogue, tenses shift back (present -> past, past -> past perfect; will -> would), and time adverbs shift ('today' -> 'that day', 'yesterday' -> 'the day before', 'tomorrow' -> 'the following day').",
       "correctExample": "✅ \"He said he was running on empty that day and would take the train the following morning.\""
-    },
-    {
-      "title": "📍 Preposition Trap: At vs. In vs. Into",
-      "track": "ag",
-      "rule": "Watch out for spatial prepositions: use 'at' for a specific point/facility (at the airport, at the gate), 'in' for an enclosed space (in the cabin), and 'into' for direction/movement (boarded into the aircraft).",
-      "correctExample": "✅ \"We arrived at Toulouse-Blagnac Airport, waited at gate 12, and boarded into the aircraft.\""
-    },
-    {
-      "title": "✈️ Apron vs. Taxiway vs. Runway",
-      "track": "at",
-      "rule": "Exact spatial precision is required in operational briefings. Never refer to the runway when you mean parking on the apron or taxiing on taxiway Alpha.",
-      "correctExample": "✅ \"The aircraft pushed back from stand B4 onto the apron, taxied via Charlie, and lined up on Runway 14L.\""
-    },
-    {
-      "title": "💡 'Used to do' vs. 'Be used to doing'",
-      "track": "ag",
-      "rule": "'I used to work' expresses a past habit that is finished. 'I am used to working' means you are accustomed/familiar with it now.",
-      "correctExample": "✅ \"I used to live in Paris, but now I am used to living in Toulouse.\""
     }
   ],
   "cohortReflections": {
     "strengths": [
-      "Rapid adoption of technical aerodrome terminology (Airside, Apron, Stands, GPU, TRC).",
-      "Active use of travel collocations and idioms in role-play simulations (customer service support & stressed passengers).",
-      "Accurate grasp of reported speech backshifting rules and narrative past tense sequencing."
+      "Rapid grasp of the crucial operational distinction between Safety (unintentional hazards) and Security (intentional threats).",
+      "Fast adoption of modern aerodrome and terminal infrastructure terminology (Concourse, Jet Bridge, Apron, Stands, GPU, Dwell Time).",
+      "Active use of travel collocations, idioms, and reported speech backshifting in communicative peer simulations."
     ],
     "growthAreas": [
-      "Spoken Fluency: Eliminating hesitation and pauses when searching for specialized English nouns.",
-      "Spatial Prepositions: Practicing 'at', 'in', and 'into' when describing airport movements.",
-      "Sentence Speed: Building connected cause-and-effect sentences smoothly under time pressure."
+      "Spatial Preposition Accuracy: Mastering 'at' (nodes), 'in' (spaces), and 'on' (pavement surfaces) during real-time spoken descriptions.",
+      "Spoken Fluency & Hesitation: Reducing pauses and sentence-building delays when searching for specialized English nouns.",
+      "Pronunciation Phonetics: Drilling vowel sounds and word stress in tricky multi-syllable terms ('itinerary', 'alternate', 'throughout')."
     ],
-    "feAdvice": "Students agree that mastering exact spatial airport zones (airside, apron, stands, taxiways) and practicing real-time spoken storytelling with travel collocations is the single best preparation for the 30-minute Formative Evaluation."
+    "feAdvice": "Students strongly emphasize that knowing aerodrome zones (airside, landside, concourse, apron, holding points) and using precise prepositions ('on the apron', 'at the gate', 'in the concourse') gives immediate authority and fluency during the 30-minute Formative Evaluation."
   },
   "verbatimQuotes": [
     {
       "track": "at",
-      "session": "Mod 1 • Session 1",
-      "topic": "Oral Presentation & Ground Infrastructure",
-      "quote": "Knowing the different geographical parts of an airport, as well as the jobs, will be very important in the airport presentation. The oral presentation won't be possible without being able to name the different parts.",
-      "takeaway": "Mastering aerodrome spatial vocabulary is non-negotiable for FE1."
+      "session": "Mod 1 • Session 2",
+      "topic": "Safety vs. Security & Prepositions",
+      "quote": "We talked mostly about security and safety and I was surprised to discover the difference with the French words since 'Sécurité' doesn't mean 'Security' but 'Safety'. Today we also talked about prepositions: 'in' when it's in an enclosed space, 'at' when it's a specific location, and 'on' when it's on a surface.",
+      "takeaway": "Mastering the Safety/Security distinction and spatial prepositions prevents operational ambiguity."
     },
     {
       "track": "at",
-      "session": "Mod 1 • Session 1",
-      "topic": "Spoken Fluency & Hesitation",
-      "quote": "My main problem is fluency because I am always looking for a word when talking to someone. I also need some time to build my sentences, so I think that I have to talk as much as possible to improve on these points.",
-      "takeaway": "Spoken practice in pairs reduces mid-sentence hesitations."
-    },
-    {
-      "track": "ag",
-      "session": "Mod 1 • Session 1",
-      "topic": "Pronunciation & Spoken Grammar",
-      "quote": "I realized with a few words like 'itinerary' that I have to work on my pronunciation. Knowing what tense I should use to properly speak in every situation is probably what I get from this class.",
-      "takeaway": "Drill tricky multi-syllable terms out loud before speaking evaluations."
+      "session": "Mod 1 • Session 2",
+      "topic": "Aerodrome Zones & Presentation Readiness",
+      "quote": "During our airport presentation, this vocabulary will help me explain where I am at any point: from the concourse to the gates, the apron with the different runways and taxiways... all while using the correct preposition. I'm sure that learning all this vocab will go a long way concerning our fluency.",
+      "takeaway": "Mental mapping of the airport infrastructure drives fluent spoken delivery."
     },
     {
       "track": "ag",
@@ -4156,6 +4163,13 @@ const PORTFOLIO_SUMMARY_DATA = {
       "topic": "Tense Learning & Active Quizzing",
       "quote": "Testing myself with the TOEIC questions in here as well as on GlobalExam is a funnier way to incorporate the information in my brain than the old way of learning by heart with a copybook. Discussion skills worked in pairs surely are unavoidable to make a great formative evaluation.",
       "takeaway": "Interactive daily quizzing and peer dialogue outperform rote memorization."
+    },
+    {
+      "track": "ag",
+      "session": "Mod 1 • Session 1",
+      "topic": "Spoken Fluency & Word Retrieval",
+      "quote": "My main problem is fluency because I am always looking for a word when talking to someone. I also need some time to build my sentences, so I think that I have to talk as much as possible to improve on these points.",
+      "takeaway": "Regular communicative pairwork reduces hesitation and builds sentence speed."
     }
   ]
 };

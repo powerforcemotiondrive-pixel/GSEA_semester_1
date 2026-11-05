@@ -59,9 +59,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Principles Warm-Up (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Principles Warm-Up'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -115,9 +115,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-30m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${forcesPrinciples.title || 'Activity 2: The Four Forces in Equilibrium &amp; Maneuvers (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${forcesPrinciples.title || 'Activity 2: The Four Forces in Equilibrium &amp; Maneuvers'}</h4>
                   <p class="text-[11px] text-slate-500">${forcesPrinciples.summary || 'Analyze the four forces acting on an aircraft and explain how pilots create unbalance to climb, descend, turn, and accelerate.'}</p>
                 </div>
               </div>
@@ -148,9 +148,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">30-50m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 3: Language Focus: Cause & Effect in Flight Physics (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 3: Language Focus: Cause & Effect in Flight Physics'}</h4>
                   <p class="text-[11px] text-slate-500">${grammar.summary || ''}</p>
                 </div>
               </div>
@@ -193,9 +193,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">50-80m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${axesGame.title || 'Activity 4: The 3 Axes &amp; Control Surfaces Game / Role-Play (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${axesGame.title || 'Activity 4: The 3 Axes &amp; Control Surfaces Game / Role-Play'}</h4>
                   <p class="text-[11px] text-slate-500">${axesGame.summary || 'Interactive kinesthetic \'Human Flight Simulator\' game and pilot-to-flight-test-engineer debrief role-play.'}</p>
                 </div>
               </div>
@@ -239,9 +239,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">80-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${stall.title || 'Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${stall.title || 'Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence'}</h4>
                   <p class="text-[11px] text-slate-500">${stall.summary || ''}</p>
                 </div>
               </div>
@@ -267,9 +267,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review & Class Wrap-Up (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review & Class Wrap-Up'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || 'Consolidate the 18 key aerodynamic terms, verify pronunciation stress, and prepare for Session 2 Aircraft Anatomy.'}</p>
                 </div>
               </div>
@@ -368,9 +368,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 1 Spot-Check (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 1 Spot-Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -410,9 +410,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${diagramLabeling.title || 'Activity 2: Airframe Anatomy Labeling Challenge (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${diagramLabeling.title || 'Activity 2: Airframe Anatomy Labeling Challenge'}</h4>
                   <p class="text-[11px] text-slate-500">${diagramLabeling.summary || 'Identify and describe key external parts and internal zones of commercial aircraft.'}</p>
                 </div>
               </div>
@@ -723,9 +723,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-55m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spatialClinic.title || 'Activity 3: Language Focus: Spatial Prepositions &amp; Functions (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spatialClinic.title || 'Activity 3: Language Focus: Spatial Prepositions &amp; Functions'}</h4>
                   <p class="text-[11px] text-slate-500">${spatialClinic.summary || 'Mastering precise spatial locations and functional relative clauses for maintenance communication.'}</p>
                 </div>
               </div>
@@ -750,9 +750,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">55-85m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${walkaroundRoleplay.title || 'Activity 4: Pre-Flight Exterior Walkaround Role-Play (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${walkaroundRoleplay.title || 'Activity 4: Pre-Flight Exterior Walkaround Role-Play'}</h4>
                   <p class="text-[11px] text-slate-500">${walkaroundRoleplay.summary || 'Captain &amp; Line Maintenance Engineer simulation: reporting and assessing airframe defects.'}</p>
                 </div>
               </div>
@@ -788,9 +788,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">85-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${cockpitSystemsHandover.title || 'Activity 5: Minimum Equipment List (MEL) Dispatch Workshop (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${cockpitSystemsHandover.title || 'Activity 5: Minimum Equipment List (MEL) Dispatch Workshop'}</h4>
                   <p class="text-[11px] text-slate-500">${cockpitSystemsHandover.summary || 'Reviewing the Minimum Equipment List (MEL) to make safe dispatch decisions for inoperative equipment.'}</p>
                 </div>
               </div>
@@ -814,9 +814,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Class Wrap-Up (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Class Wrap-Up'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || 'Drill tricky aeronautical component pronunciation and consolidate learning logs ahead of Session 3.'}</p>
                 </div>
               </div>
@@ -928,9 +928,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 2 Spot-Check (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 2 Spot-Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -970,9 +970,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fleetTaxonomy.title || 'Activity 2: Commercial Aircraft Classification Table (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fleetTaxonomy.title || 'Activity 2: Commercial Aircraft Classification Table'}</h4>
                   <p class="text-[11px] text-slate-500">${fleetTaxonomy.summary || 'Classify commercial passenger and freighter aircraft into operational categories.'}</p>
                 </div>
               </div>
@@ -1002,9 +1002,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-55m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${comparativeClinic.title || 'Activity 3: Language Focus: Comparative &amp; Superlative Data (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${comparativeClinic.title || 'Activity 3: Language Focus: Comparative &amp; Superlative Data'}</h4>
                   <p class="text-[11px] text-slate-500">${comparativeClinic.summary || 'Mastering modifiers and comparative structures to evaluate aircraft efficiency and fleet statistics.'}</p>
                 </div>
               </div>
@@ -1028,9 +1028,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">55-85m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fleetCommitteeSimulation.title || 'Activity 4: Airline Fleet Selection Committee Simulation (30 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fleetCommitteeSimulation.title || 'Activity 4: Airline Fleet Selection Committee Simulation'}</h4>
                   <p class="text-[11px] text-slate-500">${fleetCommitteeSimulation.summary || 'Pairs act as airline fleet planning directors preparing an aircraft purchase pitch for new routes.'}</p>
                 </div>
               </div>
@@ -1065,9 +1065,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">85-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${globalLandscapeDebate.title || 'Activity 5: Global Manufacturer Debate &amp; Industry Trends (25 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${globalLandscapeDebate.title || 'Activity 5: Global Manufacturer Debate &amp; Industry Trends'}</h4>
                   <p class="text-[11px] text-slate-500">${globalLandscapeDebate.summary || 'Class debate exploring the Airbus-Boeing duopoly, supply chain bottlenecks, and the emergence of COMAC.'}</p>
                 </div>
               </div>
@@ -1090,9 +1090,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Pronunciation Wrap-Up (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Pronunciation Wrap-Up'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || 'Consolidate the 18 commercial fleet terms and prepare for Session 4 Aviation Accidents.'}</p>
                 </div>
               </div>
@@ -1188,9 +1188,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 3 Spot-Check (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 3 Spot-Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -1230,9 +1230,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-30m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${investigationLexis.title || 'Activity 2: Accident Investigation Terminology &amp; Causal Chains (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${investigationLexis.title || 'Activity 2: Accident Investigation Terminology &amp; Causal Chains'}</h4>
                   <p class="text-[11px] text-slate-500">${investigationLexis.summary || 'Learn and deploy specialized safety vocabulary used by investigation authorities.'}</p>
                 </div>
               </div>
@@ -1255,9 +1255,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">30-50m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${pastNarrativesClinic.title || 'Activity 3: Language Focus: Narrative Past Tenses &amp; Sequencers (20 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${pastNarrativesClinic.title || 'Activity 3: Language Focus: Narrative Past Tenses &amp; Sequencers'}</h4>
                   <p class="text-[11px] text-slate-500">${pastNarrativesClinic.summary || 'Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.'}</p>
                 </div>
               </div>
@@ -1277,13 +1277,13 @@
             </div>
           </div>
 
-          <!-- Activity 4: 15-Minute Group Research Sprint -->
+          <!-- Activity 4: group research sprint -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">50-65m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${groupResearchSprint.title || 'Activity 4: 15-Minute Group Research &amp; Preparation Sprint (15 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${groupResearchSprint.title || 'Activity 4: 15-Minute Group Research &amp; Preparation Sprint'}</h4>
                   <p class="text-[11px] text-slate-500">${groupResearchSprint.summary || 'In small groups (3-4 students), select one historical accident case study. You have 15 minutes to research and structure your 5-minute briefing.'}</p>
                 </div>
               </div>
@@ -1315,10 +1315,10 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-110m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${presentationsDebrief.title || 'Activity 5: Spoken Group Presentations &amp; Safety Debrief (45 mins)'}</h4>
-                  <p class="text-[11px] text-slate-500">${presentationsDebrief.summary || 'Each group presents their 5-minute accident analysis using whiteboard or bullet slides, followed by class Q&amp;A.'}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${presentationsDebrief.title || 'Activity 5: Spoken Group Presentations &amp; Safety Debrief'}</h4>
+                  <p class="text-[11px] text-slate-500">${presentationsDebrief.summary || 'Each group presents their accident analysis using whiteboard or bullet slides, followed by class Q&amp;A.'}</p>
                 </div>
               </div>
               <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Class Presentations</span>
@@ -1338,9 +1338,9 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Formative Evaluation 2 Prep (10 mins)'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Formative Evaluation 2 Prep'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || 'Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.'}</p>
                 </div>
               </div>

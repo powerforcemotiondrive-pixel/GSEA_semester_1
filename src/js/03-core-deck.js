@@ -37,6 +37,14 @@
           return;
         }
 
+        const overviewModalEl = document.getElementById('session-overview-modal');
+        const isOverviewModalOpen = overviewModalEl && !overviewModalEl.classList.contains('hidden');
+
+        if (e.key === 'Escape' && isOverviewModalOpen) {
+          closeSessionOverviewModal();
+          return;
+        }
+
         const portModalEl = document.getElementById('deck-portfolio-modal');
         const isPortModalOpen = portModalEl && !portModalEl.classList.contains('hidden');
 
@@ -904,28 +912,6 @@
       const actionContainer = document.getElementById('action-links-container');
       actionContainer.innerHTML = '';
 
-
-
-      // Update Action Dock Label
-      const dockDot = document.getElementById('action-dock-dot');
-      const dockTitle = document.getElementById('action-dock-title');
-      if (dockDot) dockDot.style.backgroundColor = mod.accent || mod.primary;
-      if (dockTitle) {
-        if (page.isImmersion || (page.tag && page.tag.includes("Immersion"))) {
-          dockTitle.textContent = "English Immersion & Destinations";
-        } else if (page.isObjectives || page.title === "Semester Objectives" || page.title === "Student Guide & Objectives") {
-          dockTitle.textContent = "Semester 1 Objectives";
-        } else if (page.isAdmin || currentIndex === 6) {
-          dockTitle.textContent = "GSEA26A Administration Hub";
-        } else if (page.detailsUrl || currentIndex === 5) {
-          dockTitle.textContent = "DDRS Sustainability Guide";
-        } else if (currentIndex === 4) {
-          dockTitle.textContent = `Session 0${currentIndex + 1} Evaluation Center`;
-        } else {
-          dockTitle.textContent = `Session 0${currentIndex + 1} Study Resources`;
-        }
-      }
-
       const createThemedCTA = (label, tabKey, fallbackHref) => {
         const btn = document.createElement('button');
         btn.type = 'button';
@@ -955,6 +941,22 @@
       } else {
         // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
         actionContainer.appendChild(createThemedCTA("Open Resources", "objectives", ""));
+
+        // Secondary CTA: Session Overview & Speaking Task Pop-Up (matching module theme color)
+        const overviewBtn = document.createElement('button');
+        overviewBtn.type = 'button';
+        overviewBtn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
+        const ctaBg = mod.accent || mod.primary;
+        const ctaHover = mod.accentDark || mod.primaryDark;
+        overviewBtn.style.backgroundColor = ctaBg;
+        overviewBtn.onmouseenter = () => overviewBtn.style.backgroundColor = ctaHover;
+        overviewBtn.onmouseleave = () => overviewBtn.style.backgroundColor = ctaBg;
+        overviewBtn.innerHTML = `<span>Overview &amp; Speaking Task</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
+        overviewBtn.title = "Open Session Overview, 10 Useful Words & Group Speaking Task";
+        overviewBtn.addEventListener('click', () => {
+          openSessionOverviewModal(mod.id, currentIndex + 1);
+        });
+        actionContainer.appendChild(overviewBtn);
       }
 
       const accessiblePages = pages.filter(p => !p.isMuted);
@@ -1263,9 +1265,285 @@
       }, 200);
     }
 
+    // --- Session Overview & Group Speaking Task Modal Controller ---
+    function openSessionOverviewModal(modNum, sessionNum) {
+      const modalEl = document.getElementById('session-overview-modal');
+      const backdropEl = document.getElementById('overview-modal-backdrop');
+      const cardEl = document.getElementById('overview-modal-card');
+      const headerEl = document.getElementById('overview-modal-header');
+      const badgeEl = document.getElementById('overview-modal-badge');
+      const trackTagEl = document.getElementById('overview-modal-track-tag');
+      const sessionNumEl = document.getElementById('overview-modal-session-num');
+      const titleEl = document.getElementById('overview-modal-title');
+      const bodyEl = document.getElementById('overview-modal-body');
+
+      if (!modalEl || !bodyEl) return;
+
+      const progKey = currentProgram || 'ag';
+      const rootData = window.COURSE_DATA || {};
+      const progData = rootData[progKey] || rootData.ag || rootData;
+      const modCourse = progData[modNum] || rootData[modNum] || {};
+      const sessionData = (modCourse.sessions && modCourse.sessions[sessionNum]) || {};
+      const overview = sessionData.overview;
+      const modTheme = modulesData[modNum - 1] || { accent: '#ea580c', primary: '#374151', primaryDark: '#1f2937' };
+      const progConfig = PROGRAMS_CONFIG[progKey] || PROGRAMS_CONFIG.ag;
+      const trackName = progConfig.name || (progKey === 'aas' ? 'Technical English' : 'General English');
+
+      if (trackTagEl) trackTagEl.textContent = `${progConfig.code} • ${trackName}`;
+      if (sessionNumEl) sessionNumEl.textContent = `Session 0${sessionNum}`;
+      if (badgeEl) {
+        badgeEl.style.backgroundColor = modTheme.accent || '#ea580c';
+      }
+      if (headerEl) {
+        headerEl.style.backgroundColor = modTheme.primaryDark || '#1f2937';
+      }
+
+      const sessionTitle = (modTheme.pages && modTheme.pages[sessionNum - 1] && modTheme.pages[sessionNum - 1].title) ||
+                           (sessionData.objectives && sessionData.objectives.title) ||
+                           `Session ${sessionNum}`;
+      if (titleEl) {
+        titleEl.textContent = sessionTitle;
+      }
+
+      bodyEl.innerHTML = renderOverviewBodyHTML(overview, sessionData, modTheme);
+
+      modalEl.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      void modalEl.offsetWidth; // force reflow
+      if (backdropEl) backdropEl.classList.remove('opacity-0');
+      if (cardEl) {
+        cardEl.classList.remove('scale-95', 'opacity-0');
+        cardEl.classList.add('scale-100', 'opacity-100');
+      }
+    }
+
+    function closeSessionOverviewModal() {
+      const modalEl = document.getElementById('session-overview-modal');
+      const backdropEl = document.getElementById('overview-modal-backdrop');
+      const cardEl = document.getElementById('overview-modal-card');
+      if (!modalEl || modalEl.classList.contains('hidden')) return;
+
+      if (backdropEl) backdropEl.classList.add('opacity-0');
+      if (cardEl) {
+        cardEl.classList.remove('scale-100', 'opacity-100');
+        cardEl.classList.add('scale-95', 'opacity-0');
+      }
+      document.body.style.overflow = '';
+
+      setTimeout(() => {
+        modalEl.classList.add('hidden');
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }, 200);
+    }
+
+    function renderOverviewBodyHTML(overview, sessionData, modTheme) {
+      const accent = modTheme.accent || '#ea580c';
+
+      // 1. Note to Students & Teachers (Permanent Instruction)
+      const noteHTML = `
+        <div class="p-3.5 sm:p-4 rounded-xl bg-amber-50/90 border border-amber-200 text-amber-950 text-xs sm:text-[13px] leading-relaxed shadow-2xs">
+          <div class="flex items-center gap-2 font-bold text-amber-900 uppercase tracking-wider text-[11px] mb-1.5">
+            <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span>Important Note for Students &amp; Teachers</span>
+          </div>
+          <p class="text-amber-900/90 leading-relaxed">
+            The class content in these sessions is here to assist you with your English development. You will find natural repetition across exercises, and your teacher may choose to omit some parts of the lesson and develop other parts more deeply. You are not expected to learn everything in all of these sessions. The material is here to guide your language progress and help you produce your Formative Evaluation (FE) for the end of the module. We are here at all times to assist you, and if you feel that you need help with any aspect of your English, please feel free to contact us at any time: <a href="mailto:philip.parris@enac.fr" class="font-bold underline text-amber-950 hover:text-amber-800">philip.parris@enac.fr</a>.
+          </p>
+        </div>
+      `;
+
+      // Fallback values if overview is missing
+      const intro = (overview && overview.intro) ||
+                    (sessionData.objectives && sessionData.objectives.summary) ||
+                    "This session focuses on practical spoken communication, essential workplace vocabulary, and interactive discussions in English.";
+
+      const whyItMatters = (overview && overview.whyItMatters) ||
+                           "Developing accurate spoken communication and clear technical terminology is essential for international collaboration in modern aviation and engineering.";
+
+      // 10 Useful Words
+      let terms = (overview && overview.keyTerms) || [];
+      if (!terms || terms.length === 0) {
+        const revTerms = (sessionData.revision && sessionData.revision.terms) || [];
+        terms = revTerms.slice(0, 10).map(t => ({
+          term: t.term,
+          ipa: "",
+          definition: t.definition
+        }));
+      }
+
+      const keyTermsHTML = terms.map((t, idx) => `
+        <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200/80 hover:bg-slate-100/80 transition-colors flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-1 mb-1">
+              <div class="flex items-center gap-1.5 min-w-0">
+                <span class="text-[10px] font-mono font-bold text-slate-400">#${idx + 1}</span>
+                <span class="font-bold text-xs text-slate-900 truncate">${t.term}</span>
+              </div>
+              <button type="button" onclick="speakWord('${t.term.replace(/'/g, "\\'")}')" class="p-1 rounded text-slate-400 hover:text-slate-700 hover:bg-slate-200/60 transition-colors cursor-pointer shrink-0" title="Listen to pronunciation">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+              </button>
+            </div>
+            ${t.ipa ? `<div class="text-[10.5px] font-mono text-slate-500 mb-1">${t.ipa}</div>` : ''}
+            <p class="text-[11.5px] text-slate-600 leading-snug">${t.definition}</p>
+          </div>
+        </div>
+      `).join('');
+
+      // Speaking Task (Additional Speaking Activity • 3 Groups)
+      const task = (overview && overview.speakingTask) || {
+        title: "Additional Speaking Activity • Practice in Groups of 3",
+        instructions: "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
+        requirements: [
+          "Use at least 4 of today's 10 useful words.",
+          "Give at least two clear reasons or real-world examples to support your group's position.",
+          "Ensure all 3 team members speak during your 2-minute spoken summary."
+        ],
+        statements: {
+          group1: "Group 1 Statement: Discuss your opinion with supporting arguments.",
+          group2: "Group 2 Statement: Discuss your opinion with supporting arguments.",
+          group3: "Group 3 Statement: Discuss your opinion with supporting arguments."
+        },
+        usefulPhrases: [
+          "Our group discussed whether...",
+          "We strongly agree / disagree with this statement because...",
+          "In our opinion, one major factor is...",
+          "To summarise our group's main argument..."
+        ]
+      };
+
+      const checklistHTML = (task.requirements || []).map(r => `
+        <li class="flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>${r}</span>
+        </li>
+      `).join('');
+
+      // Build 3 statements for 3 groups
+      let rawStatements = [];
+      if (task.statements) {
+        if (Array.isArray(task.statements)) {
+          rawStatements = task.statements;
+        } else if (typeof task.statements === 'object') {
+          if (task.statements.group1) rawStatements.push({ group: "Group 1", statement: task.statements.group1 });
+          if (task.statements.group2) rawStatements.push({ group: "Group 2", statement: task.statements.group2 });
+          if (task.statements.group3) rawStatements.push({ group: "Group 3", statement: task.statements.group3 });
+        }
+      } else if (task.scenarios && task.scenarios.length > 0) {
+        rawStatements = task.scenarios.map((s, idx) => ({
+          group: `Group ${idx + 1}`,
+          statement: s.prompt || s.title
+        }));
+      }
+
+      const statementsHTML = rawStatements.map((item, idx) => `
+        <div class="p-3.5 rounded-xl bg-white border border-emerald-200/90 shadow-2xs space-y-1.5">
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded-md bg-emerald-700 text-white font-bold text-[10px] uppercase tracking-wider">${item.group || `Group ${idx + 1}`} Statement</span>
+              <span class="text-[11px] font-semibold text-slate-500">Discuss &amp; defend your position</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-[12.5px] text-slate-800 font-medium leading-relaxed italic">
+            &ldquo;${item.statement || item.prompt || item}&rdquo;
+          </p>
+        </div>
+      `).join('');
+
+      const phrasesHTML = (task.usefulPhrases || []).map(ph => `
+        <span class="inline-block px-2.5 py-1 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-900 font-medium text-[11px]">${ph}</span>
+      `).join('');
+
+      return `
+        <!-- Section 0: Important Note for Students & Teachers -->
+        ${noteHTML}
+
+        <!-- Section 1: About This Session -->
+        <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-2xs">
+          <div class="flex items-center gap-2 mb-2 text-slate-900 font-bold text-xs uppercase tracking-wider">
+            <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${accent};"></span>
+            <span>About This Session</span>
+          </div>
+          <p class="text-slate-700 leading-relaxed text-xs sm:text-[13px]">${intro}</p>
+        </div>
+
+        <!-- Section 2: Why This Subject Matters -->
+        <div class="p-4 rounded-xl bg-sky-50/70 border border-sky-100 shadow-2xs">
+          <div class="flex items-center gap-2 mb-2 text-sky-950 font-bold text-xs uppercase tracking-wider">
+            <svg class="w-4 h-4 text-sky-600 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <span>Why This Subject Matters</span>
+          </div>
+          <p class="text-slate-700 leading-relaxed text-xs sm:text-[13px]">${whyItMatters}</p>
+        </div>
+
+        <!-- Section 3: 10 Useful Words -->
+        <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-2xs space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 text-slate-900 font-bold text-xs uppercase tracking-wider">
+              <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${accent};"></span>
+              <span>10 Useful Words for This Session</span>
+            </div>
+            <span class="text-[11px] font-mono text-slate-400">Click speaker to listen</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            ${keyTermsHTML}
+          </div>
+        </div>
+
+        <!-- Section 4: ADDITIONAL SPEAKING ACTIVITY -->
+        <div class="p-4 sm:p-5 rounded-xl bg-emerald-50/80 border border-emerald-200 shadow-2xs space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-emerald-200/80 pb-3">
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-700 text-white font-black text-[10px] uppercase tracking-wider mb-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                <span>ADDITIONAL SPEAKING ACTIVITY</span>
+              </div>
+              <h4 class="text-sm font-bold text-emerald-950">3-Group Spoken Discussion &amp; Presentation</h4>
+            </div>
+            <span class="inline-flex items-center text-[11px] font-semibold text-emerald-800 bg-white px-2.5 py-1 rounded-md border border-emerald-200 shrink-0">
+              Optional Practice • Groups of 3
+            </span>
+          </div>
+
+          <p class="text-xs sm:text-[13px] text-emerald-950 leading-relaxed font-medium">
+            This additional speaking activity provides extra spoken English practice. Divide the class into <strong>3 groups</strong> (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.
+          </p>
+
+          <div class="p-2.5 rounded-lg bg-white/90 border border-emerald-200/80 text-[11.5px] text-emerald-900 flex items-start gap-2">
+            <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span><strong>Research Tip:</strong> Open the <strong>Additional Materials</strong> tab in the resource drawer for supporting articles, data, and background reading.</span>
+          </div>
+
+          <div class="space-y-1.5">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-900">Speaking Criteria</div>
+            <ul class="space-y-1 text-xs text-emerald-900">
+              ${checklistHTML}
+            </ul>
+          </div>
+
+          <div class="space-y-2.5 pt-1">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-900">Statements for the 3 Groups</div>
+            <div class="grid grid-cols-1 gap-2.5">
+              ${statementsHTML}
+            </div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-white border border-emerald-200/90 shadow-2xs space-y-1.5">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-800">Useful Speaking Phrases for Your 2-Minute Presentation</div>
+            <div class="flex flex-wrap gap-1.5">
+              ${phrasesHTML}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
     window.speakWord = speakWord;
     window.showCriteriaModal = showCriteriaModal;
     window.closeCriteriaModal = closeCriteriaModal;
+    window.openSessionOverviewModal = openSessionOverviewModal;
+    window.closeSessionOverviewModal = closeSessionOverviewModal;
 
     // --- Mastered Vocabulary Learning State ---
     function getMasteredKey(modNum, sessionNum, progKey = (modalState && modalState.program) || currentProgram || 'ag') {

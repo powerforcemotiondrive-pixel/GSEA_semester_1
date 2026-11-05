@@ -291,3 +291,4 @@ ag3 = ag3
 
 fs.writeFileSync(ag3Path, ag3, 'utf8');
 console.log('✓ Successfully updated src/js/07-templates-ag3.js with plain B1/B2 titles.');
+
