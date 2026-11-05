@@ -165,17 +165,6 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   `Session X Lesson Plan - [Topic Title] (2 Hours)` or `Session X Lesson Plan (2 Hours)`.
 - **Tri-Project Consistency**: This rule applies permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
 
-### Q. Communicative Warm-Up: Weekly News & Student Spotlight (Tri-Project Permanent Invariant)
-- **Standardized Part 1 Architecture**: Part 1 (Activity 1: 00–15 mins) of every lesson across **all semesters (Semester 1, Semester 2, and Semester 3)** and **all modules (AG, AAS, and AT)** must always begin with an open, communicative current-affairs icebreaker:
-  1. **Weekly Student Spotlight (2–3 mins)**: One designated student per session presents a brief 2-minute news story from world/general news or aviation, followed by 1–2 quick peer questions.
-  2. **News & Current World Affairs Pair Discussion (6–8 mins)**: In pairs, students discuss 2 to 3 open, accessible conversational prompts connecting recent headlines, global trends, travel, technology, or airside developments.
-  3. **Entry Spot-Check Diagnostic (4–5 mins)**: 4 accessible, confidence-building spot-check questions connecting the world/news context to the lesson.
-- **Track Nuances**:
-  - *General English (AG)*: Global world news, environment, society, technology, tourism, and travel trends.
-  - *Aeronautical / Technical English (AAS / AT)*: Aviation news, aerospace innovations, airlines, airports, and safety developments.
-- **Strict Prohibition of Meta/Heavy Academic Openings**: Never open lessons with academic or overly technical meta-exercises (e.g. discussing the difficulty of reading 300-page official manuals). Warm-ups must remain accessible, low-stress, and focused on spontaneous spoken fluency.
-- **Universal Rollout Scope**: Applies permanently across all modules in `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
-
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
