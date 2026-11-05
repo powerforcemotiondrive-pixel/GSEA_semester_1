@@ -1,1108 +1,1460 @@
-/**
- * GSEA Semester 1 - Technical English (AAS/AT) Module 2 Templates
- * Aircraft and Aerodynamics (Sessions 1–4)
- * 4-Part Pedagogical Architecture:
- *   - Part 1: Interactive Aeronautical Lexis Bank (8 terms + syllable stress + matching challenge)
- *   - Part 2: Spoken Grammar Clinic (Rule + Error Correction + 4 Transformation Drills)
- *   - Part 3: Dynamic Communicative Simulation & Operational Dilemma
- *   - Part 4: Consolidation & Formative Evaluation 2 (FE2) Alignment
- * Strict Rule 1.Q Adherence: Zero minute breakdowns, pure pedagogical stage progression.
- * Strict Rule 1.I Adherence: Plain English instructions, zero academic jargon.
- * Author: Phil PARRIS (LH/LAN)
- */
+    function renderAas2LessonContentTabSession1(sessionData, theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+      const content = sessionData.lessonContent || {};
+      const hero = content.hero || {};
+      const opening = content.openingSession || {};
+      const forcesPrinciples = content.forcesPrinciples || {};
+      const forces = forcesPrinciples.forces || [];
+      const grammar = content.grammarClinic || {};
+      const axesGame = content.axesGame || {};
+      const axes = axesGame.axes || [];
+      const roleplayCards = axesGame.roleplayCards || [];
+      const stall = content.stallScenario || {};
+      const closing = content.closingReview || {};
 
-/* ==========================================================================
-   SESSION 1: Aerodynamics & Flight Principles
-   ========================================================================== */
-function renderAas2LessonContentTabSession1(sessionData, theme) {
-  const bodyEl = document.getElementById('modal-body');
-  if (!bodyEl) return;
-
-  bodyEl.innerHTML = `
-    <div class="space-y-6 printable-lesson-container text-left">
-      <!-- HERO HEADER CARD -->
-      <div class="p-5 bg-gradient-to-r from-slate-900 to-sky-950 text-white rounded-2xl shadow-sm border border-slate-800">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-          <span class="px-2.5 py-1 rounded-md text-[11px] font-black uppercase tracking-wider bg-sky-500/20 text-sky-300 border border-sky-400/30">
-            AAS Module 2 • Session 1 • Flight Physics
-          </span>
-          <span class="text-xs text-sky-200/80 font-medium">Technical English (AT)</span>
-        </div>
-        <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">Aerodynamics &amp; Flight Principles</h3>
-        <p class="text-xs sm:text-sm text-sky-100/90 leading-relaxed mt-1.5 max-w-3xl">
-          Master the four fundamental forces of flight, explore airflow dynamics across an aerofoil, and simulate flight deck recovery during an aerodynamic stall buffet.
-        </p>
-      </div>
-
-      <!-- PART 1: Target Lexis & Pronunciation -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 1: Aerodynamic Lexis &amp; Pronunciation</h4>
-            <p class="text-[11px] text-slate-500">8 essential terms for explaining airflow, lift generation, and flight equilibrium.</p>
-          </div>
-        </div>
-
-        <!-- 8-WORD VOCABULARY GRID -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">1. Camber</span>
-              <span class="text-[10px] font-mono text-sky-700 bg-sky-100 px-1.5 py-0.5 rounded">/ˈkæm.bər/</span>
+      bodyEl.innerHTML = `
+        <div class="space-y-6 printable-lesson-container">
+          <!-- Printable Action Bar -->
+          <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
+                <span class="text-xs font-bold text-slate-700">AT Module 2 • Session 1</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Aerodynamics &amp; Flight Principles</h3>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The asymmetry between the upper and lower surfaces of an aerofoil.</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">2. Angle of Attack</span>
-              <span class="text-[10px] font-mono text-sky-700 bg-sky-100 px-1.5 py-0.5 rounded">/ˌæŋ.ɡəl əv əˈtæk/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The acute angle between the wing chord line and the oncoming relative airflow.</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">3. Boundary Layer</span>
-              <span class="text-[10px] font-mono text-sky-700 bg-sky-100 px-1.5 py-0.5 rounded">/ˈbaʊn.dər.i ˈleɪ.ər/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The thin layer of slower-moving air immediately adjacent to the aircraft skin.</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">4. Stagnation Point</span>
-              <span class="text-[10px] font-mono text-sky-700 bg-sky-100 px-1.5 py-0.5 rounded">/stæɡˈneɪ.ʃən pɔɪnt/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The point on the leading edge where local airflow velocity drops to zero.</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">5. Induced Drag</span>
-              <span class="text-[10px] font-mono text-sky-700 bg-sky-100 px-1.5 py-0.5 rounded">/ɪnˈdjuːst dræɡ/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Aerodynamic drag generated as an inevitable by-product of creating lift.</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">6. Aerodynamic Stall</span>
-              <span class="text-[10px] font-mono text-sky-700 bg-sky-100 px-1.5 py-0.5 rounded">/ˌeə.rəʊ.daɪˈnæm.ɪk stɔːl/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Sudden reduction in lift caused by airflow separation above the critical angle of attack.</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">7. Center of Pressure</span>
-              <span class="text-[10px] font-mono text-sky-700 bg-sky-100 px-1.5 py-0.5 rounded">/ˈsen.tər əv ˈpreʃ.ər/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The theoretical point along the chord where the total aerodynamic force acts.</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">8. Aspect Ratio</span>
-              <span class="text-[10px] font-mono text-sky-700 bg-sky-100 px-1.5 py-0.5 rounded">/ˈæs.pekt ˈreɪ.ʃi.əʊ/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The ratio of the wingspan to the mean wing chord (high ratio = lower induced drag).</p>
-          </div>
-        </div>
-
-        <!-- INTERACTIVE MATCHING CHALLENGE -->
-        <div class="p-3.5 bg-sky-50/60 border border-sky-200/70 rounded-xl space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-sky-600"></span>
-              <span class="text-xs font-bold text-sky-950 uppercase tracking-wide">Interactive Check: Term Definition Matching</span>
-            </div>
-            <button onclick="const d = document.getElementById('aas2-s1-vocab-answers'); d.classList.toggle('hidden');" class="text-[11px] font-bold text-sky-700 hover:text-sky-900 hover:underline cursor-pointer">
-              [Show / Hide Answers]
+            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+              <span>Print / Save Lesson PDF</span>
             </button>
           </div>
-          <p class="text-xs text-slate-600">Match each numbered scenario below to the correct technical aerodynamic term:</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>A.</strong> The wingtip vortices curl inward, creating resistance that increases at low speeds.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>B.</strong> When pitch exceeds 16°, turbulent air tears away from the upper skin, causing shuddering.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>C.</strong> Long, slender glider wings produce very low induced drag compared to short fighter jet wings.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>D.</strong> As speed accelerates, the single point where aerodynamic forces concentrate shifts forward.</div>
+
+          <!-- Hero Banner & Context -->
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+            <div class="relative">
+              <img src="${hero.image || 'images/aas_m2card1.jpg'}" alt="${hero.title || 'Aerodynamics & Flight Principles'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m2card1.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Flight Physics &amp; Aerodynamic Controls</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Aerodynamics &amp; Flight Principles'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'The Four Forces of Flight, The Three Axes &amp; Aerodynamic Control'}</p>
+              </div>
+            </div>
+            <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Target Level:</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="text-slate-400">&bull;</span>
+                <span class="font-bold text-slate-800">Role Context:</span>
+                <span class="text-slate-600">Flight Crew / Flight Test Engineer &amp; ATCO</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Total Duration:</span>
+                <span class="font-bold text-slate-900">120 Minutes</span>
+              </div>
+            </div>
           </div>
-          <div id="aas2-s1-vocab-answers" class="hidden p-3 bg-white border border-sky-300 rounded-lg text-xs space-y-1 text-sky-950">
-            <div>• <strong>A:</strong> <strong>Induced Drag</strong> (by-product of lift generation and wingtip vortex pressure differential).</div>
-            <div>• <strong>B:</strong> <strong>Aerodynamic Stall</strong> (boundary layer separation above the critical angle of attack).</div>
-            <div>• <strong>C:</strong> <strong>Aspect Ratio</strong> (wingspan squared divided by wing area).</div>
-            <div>• <strong>D:</strong> <strong>Center of Pressure</strong> (point of resultant aerodynamic force).</div>
+
+          <!-- Activity 1: Aviation News & Entry Diagnostic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Principles Warm-Up (10 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
+            </div>
+
+            ${renderActivityInstructions(opening, theme)}
+
+            <!-- Aviation News Prompts -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
+              <div class="flex items-center gap-2">
+                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aviation Headlines &amp; Aerodynamic Innovations</h5>
+              </div>
+              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
+                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- Diagnostic Questions Grid -->
+            <div class="space-y-3 pt-1">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Aerodynamics Quick Check: Foundational Principles'}</h5>
+                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
+                    <div>
+                      <div class="flex items-center justify-between gap-2">
+                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Question 0${q.id}</span>
+                        <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
+                      </div>
+                      <p class="text-xs font-bold text-slate-800 mt-1">${q.q}</p>
+                    </div>
+                    <div>
+                      <div id="diagnostic-ans-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
+                        <span class="font-bold text-slate-900">Operational Explanation:</span> ${q.answer}
+                      </div>
+                      <button type="button" id="diagnostic-btn-${q.id}" onclick="window.toggleDiagnosticAnswer(${q.id})" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                        <span>Reveal Answer</span> &rarr;
+                      </button>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 2: The Four Forces in Equilibrium -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-30m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${forcesPrinciples.title || 'Activity 2: The Four Forces in Equilibrium &amp; Maneuvers (20 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${forcesPrinciples.summary || 'Analyze the four forces acting on an aircraft and explain how pilots create unbalance to climb, descend, turn, and accelerate.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Aerodynamic Equilibrium</span>
+            </div>
+
+            ${renderActivityInstructions(forcesPrinciples, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${forces.map(f => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
+                  <div>
+                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
+                      <span class="font-bold text-sm text-slate-900">${f.name}</span>
+                      <span class="text-[10px] font-bold px-2 py-0.5 rounded text-white font-mono" style="background-color: ${theme.accent};">${f.badge}</span>
+                    </div>
+                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">${f.description}</p>
+                    <div class="mt-2.5 p-2 bg-white rounded border border-slate-200 text-[11px] text-slate-700">
+                      <strong>Operational Application:</strong> ${f.operationalNote}
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Activity 3: Language Focus: Cause & Effect in Flight Physics -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">30-50m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 3: Language Focus: Cause & Effect in Flight Physics (20 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${grammar.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Conditionals &amp; Connectors</span>
+            </div>
+
+            ${renderActivityInstructions(grammar, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${(grammar.structures || []).map(s => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                  <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 pb-1 border-b border-slate-200">${s.pattern}</h5>
+                  <ul class="text-xs text-slate-600 space-y-1.5 pl-4 list-disc pt-1">
+                    ${s.examples.map(ex => `<li class="italic font-medium text-slate-700">&ldquo;${ex}&rdquo;</li>`).join('')}
+                  </ul>
+                </div>
+              `).join('')}
+            </div>
+
+            <!-- Transformation Drills -->
+            <div class="space-y-2.5 pt-2">
+              <h5 class="text-xs font-bold text-slate-800 uppercase tracking-wide">Interactive Sentence Transformation Drills</h5>
+              <div class="space-y-2">
+                ${(grammar.drills || []).map(d => `
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between gap-2">
+                    <p class="text-xs font-bold text-slate-800">${d.id}. ${d.prompt}</p>
+                    <div id="drill-ans-${d.id}" class="hidden p-2 bg-white border border-emerald-300 rounded text-[11px] text-emerald-950 font-medium">
+                      &check; <strong>Model Response:</strong> ${d.answer}
+                    </div>
+                    <button type="button" onclick="document.getElementById('drill-ans-${d.id}').classList.toggle('hidden')" class="no-print text-left text-[11px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer">
+                      <span>Toggle Model Answer &rarr;</span>
+                    </button>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 4: The 3 Axes & Control Surfaces Game -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">50-80m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${axesGame.title || 'Activity 4: The 3 Axes &amp; Control Surfaces Game / Role-Play (30 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${axesGame.summary || 'Interactive kinesthetic \'Human Flight Simulator\' game and pilot-to-flight-test-engineer debrief role-play.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Kinesthetic Simulation</span>
+            </div>
+
+            ${renderActivityInstructions(axesGame, theme)}
+
+            <!-- Axes Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+              ${axes.map(a => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
+                  <div>
+                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
+                      <span class="font-bold text-xs sm:text-sm text-slate-900">${a.axis}</span>
+                    </div>
+                    <p class="text-[11px] text-slate-600 mt-2"><strong>Direction:</strong> ${a.direction}</p>
+                    <p class="text-[11px] text-slate-600"><strong>Movement:</strong> ${a.movement}</p>
+                    <p class="text-[11px] text-slate-800 font-bold mt-1"><strong>Primary Surface:</strong> ${a.controlSurface}</p>
+                    <p class="text-[11px] text-slate-500"><strong>Cockpit Input:</strong> ${a.cockpitInput}</p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+
+            <!-- Roleplay Prompt -->
+            <div class="p-4 bg-indigo-50/70 border border-indigo-200 rounded-xl space-y-2">
+              <h5 class="text-xs font-bold text-indigo-900 uppercase tracking-wider">Pilot &amp; Flight Test Engineer Spoken Debrief:</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-indigo-950">
+                ${roleplayCards.map(c => `
+                  <div class="p-2.5 bg-white rounded-lg border border-indigo-200 space-y-1">
+                    <strong class="text-indigo-900 block">${c.role}:</strong>
+                    <p class="text-slate-700 leading-relaxed">${c.prompt}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 5: Operational Scenario: Stall Recovery -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">80-110m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${stall.title || 'Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence (30 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${stall.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Case Study</span>
+            </div>
+
+            ${renderActivityInstructions(stall, theme)}
+
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 text-xs text-slate-700 leading-relaxed">
+              <strong class="text-slate-900 block text-xs uppercase tracking-wide">Flight Scenario Briefing:</strong>
+              <p>${stall.scenarioText || ''}</p>
+            </div>
+
+            <div class="space-y-2">
+              <h5 class="text-xs font-bold text-slate-800 uppercase tracking-wide">Crew Analysis Tasks (Work in Pairs):</h5>
+              <ol class="list-decimal pl-5 space-y-1.5 text-xs text-slate-600">
+                ${(stall.tasks || []).map(t => `<li class="leading-relaxed">${t}</li>`).join('')}
+              </ol>
+            </div>
+          </div>
+
+          <!-- Activity 6: Wrap-up -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review & Class Wrap-Up (10 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${closing.summary || 'Consolidate the 18 key aerodynamic terms, verify pronunciation stress, and prepare for Session 2 Aircraft Anatomy.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Closing Consolidation</span>
+            </div>
+
+            ${renderActivityInstructions(closing, theme)}
+
+            ${(closing.checkpoints && closing.checkpoints.length) ? `
+              <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-3">
+                <div class="flex items-center justify-between">
+                  <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Aerodynamics Mastery Checkpoints</h5>
+                  <span class="text-[11px] font-bold text-emerald-800">Verification</span>
+                </div>
+                <div class="space-y-2 text-xs text-emerald-900">
+                  ${closing.checkpoints.map(cp => `
+                    <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
+                      <span class="text-emerald-600 font-bold">&check;</span>
+                      <span>${cp}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
+
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700">
+              <span class="text-[11px] text-slate-600">Review all 18 aerodynamic vocabulary terms and practice pronunciation flashcards.</span>
+              <button onclick="switchModalTab('revision')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white shadow-xs hover:opacity-90 transition-all cursor-pointer shrink-0" style="background-color: ${theme.primary};">
+                <span>View Vocabulary Flashcards</span> &rarr;
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      `;
+    }
 
-      <!-- PART 2: Spoken Grammar Clinic -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 2: Technical Grammar Clinic • Cause &amp; Effect in Flight Physics</h4>
-            <p class="text-[11px] text-slate-500">Connecting physical actions to aerodynamic reactions with precision verbs and linkers.</p>
-          </div>
-        </div>
+    function renderAas2LessonContentTabSession2(sessionData, theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+      const content = sessionData.lessonContent || {};
+      const hero = content.hero || {};
+      const opening = content.openingSession || {};
+      const diagramLabeling = content.diagramLabeling || {};
+      const externalParts = diagramLabeling.externalParts || [];
+      const spatialClinic = content.spatialClinic || {};
+      const spatialPatterns = spatialClinic.patterns || [];
+      const walkaroundRoleplay = content.walkaroundRoleplay || {};
+      const defectCards = walkaroundRoleplay.defectCards || [];
+      const cockpitSystemsHandover = content.cockpitSystemsHandover || {};
+      const melItems = cockpitSystemsHandover.melItems || [];
+      const closing = content.closingReview || {};
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-          <div class="p-3.5 bg-rose-50/70 border border-rose-200/80 rounded-xl space-y-1.5">
-            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-200 text-rose-900">
-              ❌ Operational Trap (Common Mistake)
-            </span>
-            <p class="text-rose-950 font-medium">"Due to the pilot increased the pitch, the wing was stalled."</p>
-            <p class="text-rose-800 text-[11px] leading-relaxed">
-              <strong>Why it is wrong:</strong> <em>'Due to'</em> is a prepositional phrase and must be followed by a noun phrase, never by a full subject + verb clause.
-            </p>
-          </div>
-
-          <div class="p-3.5 bg-emerald-50/70 border border-emerald-200/80 rounded-xl space-y-1.5">
-            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-emerald-200 text-emerald-900">
-              ✅ Professional B2 Model
-            </span>
-            <p class="text-emerald-950 font-bold">"Due to an abrupt pitch increase, airflow separated, resulting in an immediate stall."</p>
-            <p class="text-emerald-800 text-[11px] leading-relaxed">
-              <strong>Why it works:</strong> Uses <em>'Due to' + noun phrase</em>, followed by the main clause and a clean participle result clause (<em>'resulting in...'</em>).
-            </p>
-          </div>
-        </div>
-
-        <!-- 4 TRANSFORMATION DRILLS -->
-        <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-slate-800 uppercase tracking-wide">Speaking Drills: Rephrase into Professional Technical English</span>
-            <button onclick="const d = document.getElementById('aas2-s1-grammar-answers'); d.classList.toggle('hidden');" class="text-[11px] font-bold text-sky-700 hover:text-sky-900 hover:underline cursor-pointer">
-              [Show / Hide Solutions]
+      bodyEl.innerHTML = `
+        <div class="space-y-6 printable-lesson-container">
+          <!-- Printable Action Bar -->
+          <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
+                <span class="text-xs font-bold text-slate-700">AT Module 2 • Session 2</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Aircraft Anatomy: Structure &amp; Systems'}</h3>
+            </div>
+            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+              <span>Print / Save Lesson PDF</span>
             </button>
           </div>
-          <ol class="space-y-2 text-xs text-slate-700 list-decimal list-inside">
-            <li>The flaps extend. Therefore, the wing camber increases and lift rises. (Use: <em>'results in'</em>)</li>
-            <li>Ice formed on the leading edge. Because of that, the boundary layer separated early. (Use: <em>'Due to'</em>)</li>
-            <li>The aircraft flies faster. Consequently, parasite drag increases rapidly. (Use: <em>'As airspeed accelerates...'</em>)</li>
-            <li>The pilot pulled the yoke back too hard. This caused the angle of attack to exceed 16 degrees. (Use: <em>'...leading to...'</em>)</li>
-          </ol>
-          <div id="aas2-s1-grammar-answers" class="hidden p-3 bg-white border border-slate-300 rounded-lg text-xs space-y-1 text-slate-900">
-            <div>• <strong>1:</strong> Flap extension increases wing camber, <strong>resulting in</strong> higher lift at lower airspeeds.</div>
-            <div>• <strong>2:</strong> <strong>Due to</strong> ice accretion on the leading edge, the boundary layer separated prematurely.</div>
-            <div>• <strong>3:</strong> <strong>As airspeed accelerates</strong>, parasite drag rises proportionally to the square of velocity.</div>
-            <div>• <strong>4:</strong> The pilot pulled back abruptly on the yoke, <strong>leading to</strong> an angle of attack exceeding 16 degrees.</div>
-          </div>
-        </div>
-      </div>
 
-      <!-- PART 3: Communicative Simulation & Operational Dilemma -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 3: Communicative Simulation • High-Altitude Stall Recovery</h4>
-            <p class="text-[11px] text-slate-500">Pair role-play: Captain &amp; First Officer respond to an unexpected high-altitude buffet alert.</p>
-          </div>
-        </div>
-
-        <!-- SCENARIO BRIEFING -->
-        <div class="p-3.5 bg-amber-50 border border-amber-200 rounded-xl space-y-2">
-          <div class="flex items-center gap-2 text-amber-900 font-bold text-xs uppercase tracking-wide">
-            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-            Operational Scenario Briefing: Flight Level 370
-          </div>
-          <p class="text-xs text-amber-950 leading-relaxed">
-            You are cruising at FL370 over the Alps in moderate turbulence. Due to mountain wave updrafts, airspeed decays by 18 knots while pitch increases. Suddenly, the control column begins buffeting violently, and the stall warning audio alarm sounds: <em>"STALL! STALL!"</em>.
-          </p>
-        </div>
-
-        <!-- ACTION STEPS -->
-        <div class="p-3 bg-white border border-sky-200 rounded-xl space-y-2">
-          <span class="text-xs font-bold uppercase tracking-wide text-sky-950">Student Instructions &amp; Action Steps</span>
-          <ol class="space-y-1.5 text-xs text-slate-700 leading-relaxed">
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 1 (Role Assignment):</strong> In pairs, assign <strong>Pilot Flying (PF)</strong> and <strong>Pilot Monitoring (PM)</strong>.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 2 (Diagnostic):</strong> PF calls out the stall symptoms (buffet, pitch attitude, decay in airspeed). PM cross-checks flight instruments.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 3 (Execute Standard Operating Procedure):</strong> PF explains every recovery action out loud: nose-down pitch input, roll wings level, thrust adjustment. PM reads the Stall Recovery Checklist.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 4 (ATC Radio Report):</strong> Deliver a clear, professional spoken PAN-PAN or MAYDAY radio broadcast to Air Traffic Control explaining the emergency descent.</span>
-            </li>
-          </ol>
-        </div>
-
-        <!-- USEFUL PHRASES BOX -->
-        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
-          <span class="text-[11px] font-bold text-slate-800 uppercase tracking-wide">Useful Spoken Phrases for Flight Deck Handover</span>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-            <div>• <em>"I have control — disconnecting autopilot and autothrottle."</em></div>
-            <div>• <em>"Nose down elevator — reducing angle of attack immediately."</em></div>
-            <div>• <em>"Wings level — checking airspeed trend and vertical speed."</em></div>
-            <div>• <em>"Airflow reattached — stall warning clear, advancing thrust smoothly."</em></div>
-          </div>
-        </div>
-
-        <!-- COLLAPSIBLE TEACHER TIPS -->
-        <details class="group rounded-xl border border-purple-200 bg-purple-50/50 p-2.5 transition-all text-xs">
-          <summary class="flex items-center justify-between font-bold text-purple-950 cursor-pointer select-none">
-            <span class="flex items-center gap-2">
-              <span>👨‍🏫 Teacher Tips &amp; Speaking Prompts</span>
-            </span>
-            <span class="text-[11px] text-purple-700 font-semibold group-open:rotate-180 transition-transform duration-200">▾</span>
-          </summary>
-          <div class="mt-2 pt-2 border-t border-purple-200/80 text-purple-900 leading-relaxed pl-4 space-y-1">
-            <p>• Encourage students to act out the sequence with physical flight deck gestures (calling out instruments, moving imaginary throttles).</p>
-            <p>• Make sure the Pilot Monitoring challenges any incorrect impulse (e.g., pulling up to stop losing altitude).</p>
-            <p>• Highlight the pronunciation of <em>'camber'</em>, <em>'buffet'</em> (/ˈbʌf.ɪt/), and <em>'aileron'</em> (/ˈeɪ.lə.rɒn/).</p>
-          </div>
-        </details>
-      </div>
-
-      <!-- PART 4: Consolidation & FE2 Alignment -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-3">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.accent};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
-            <p class="text-[11px] text-slate-500">Pair peer-check on technical explanation fluency.</p>
-          </div>
-        </div>
-        <p class="text-xs text-slate-700 leading-relaxed">
-          <strong>Speaking Challenge:</strong> In pairs, take turns explaining how an aircraft wing generates lift using at least <strong>3 target terms</strong> from Part 1 (e.g., <em>camber</em>, <em>angle of attack</em>, <em>boundary layer</em>) without looking at your notes. Your partner gives feedback on clarity and technical accuracy.
-        </p>
-        <div class="p-3 bg-sky-50 rounded-xl border border-sky-100 flex items-center justify-between text-xs">
-          <span class="text-sky-900 font-semibold">Formative Evaluation 2 Checklist: Can you clearly explain the difference between lift and induced drag?</span>
-          <span class="px-2 py-0.5 rounded font-bold text-sky-800 bg-white border border-sky-200">FE2 Target</span>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-/* ==========================================================================
-   SESSION 2: Aircraft Anatomy: Structure & Systems
-   ========================================================================== */
-function renderAas2LessonContentTabSession2(sessionData, theme) {
-  const bodyEl = document.getElementById('modal-body');
-  if (!bodyEl) return;
-
-  bodyEl.innerHTML = `
-    <div class="space-y-6 printable-lesson-container text-left">
-      <!-- HERO HEADER CARD -->
-      <div class="p-5 bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl shadow-sm border border-slate-800">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-          <span class="px-2.5 py-1 rounded-md text-[11px] font-black uppercase tracking-wider bg-indigo-500/20 text-indigo-300 border border-indigo-400/30">
-            AAS Module 2 • Session 2 • Airframe &amp; Systems
-          </span>
-          <span class="text-xs text-indigo-200/80 font-medium">Technical English (AT)</span>
-        </div>
-        <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">Aircraft Anatomy: Structure &amp; Systems</h3>
-        <p class="text-xs sm:text-sm text-indigo-100/90 leading-relaxed mt-1.5 max-w-3xl">
-          Identify major airframe components and flight control surfaces, master spatial defect reporting, and conduct a ramp walkaround inspection with a go/no-go dispatch dilemma.
-        </p>
-      </div>
-
-      <!-- PART 1: Target Lexis & Pronunciation -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 1: Airframe Structural Lexis &amp; Pronunciation</h4>
-            <p class="text-[11px] text-slate-500">8 key airframe, wing, and tail components used during ramp walkarounds and defect logging.</p>
-          </div>
-        </div>
-
-        <!-- 8-WORD VOCABULARY GRID -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">1. Empennage</span>
-              <span class="text-[10px] font-mono text-indigo-700 bg-indigo-100 px-1.5 py-0.5 rounded">/ˌɑːm.pəˈnɑːʒ/</span>
+          <!-- Hero Banner -->
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+            <div class="relative">
+              <img src="${hero.image || 'images/aas_m2card2.jpg'}" alt="${hero.title || 'Aircraft Anatomy'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m2card2.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Airframe Structures &amp; Walkaround Inspection</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Aircraft Anatomy: Structure &amp; Systems'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'External Airframe Components, Flight Deck Controls &amp; Pre-Flight Walkaround Inspections'}</p>
+              </div>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The complete tail assembly of an aircraft, including the vertical and horizontal stabilizers.</p>
+            <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Target Level:</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="text-slate-400">&bull;</span>
+                <span class="font-bold text-slate-800">Role Context:</span>
+                <span class="text-slate-600">Flight Crew / Line Maintenance Engineer</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Total Duration:</span>
+                <span class="font-bold text-slate-900">120 Minutes</span>
+              </div>
+            </div>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">2. Radome</span>
-              <span class="text-[10px] font-mono text-indigo-700 bg-indigo-100 px-1.5 py-0.5 rounded">/ˈreɪ.dəʊm/</span>
+          <!-- Activity 1: News & Session 1 Check -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 1 Spot-Check (10 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The weatherproof aerodynamic nose cone enclosing the forward weather radar antenna.</p>
+
+            ${renderActivityInstructions(opening, theme)}
+
+            <!-- News Prompts -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
+              <div class="flex items-center gap-2">
+                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aircraft Maintenance &amp; Structural News</h5>
+              </div>
+              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
+                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- Spot check -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+              ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+                  <p class="text-xs font-bold text-slate-800">${q.id}. ${q.q}</p>
+                  <div id="diag-ans-s2-${q.id}" class="hidden p-2 bg-white border border-slate-200 rounded text-[11px] text-slate-700 mt-2">
+                    ${q.answer}
+                  </div>
+                  <button type="button" onclick="document.getElementById('diag-ans-s2-${q.id}').classList.toggle('hidden')" class="no-print text-left text-[11px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer mt-2">
+                    <span>Toggle Answer &rarr;</span>
+                  </button>
+                </div>
+              `).join('')}
+            </div>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">3. Pitot-Static Probe</span>
-              <span class="text-[10px] font-mono text-indigo-700 bg-indigo-100 px-1.5 py-0.5 rounded">/ˈpiː.təʊ ˈstæt.ɪk/</span>
+          <!-- Activity 2: Airframe Diagram Labeling -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${diagramLabeling.title || 'Activity 2: Airframe Anatomy Labeling Challenge (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${diagramLabeling.summary || 'Identify and describe key external parts and internal zones of commercial aircraft.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Aircraft Components Chart</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Fuselage-mounted sensors measuring dynamic and static air pressure for flight instruments.</p>
+
+            ${renderActivityInstructions(diagramLabeling, theme)}
+
+            <!-- Interactive Airframe Anatomy Diagram Container -->
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-3 sm:p-5 shadow-lg space-y-4 text-white overflow-hidden">
+              <!-- Mode Bar & Controls -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-indigo-500 text-white shadow-2xs">Interactive Blueprint</span>
+                  <span class="text-xs font-bold text-slate-200">Twin-Engine Commercial Jetliner (Dorsal Planform View)</span>
+                </div>
+                
+                <!-- Controls (Study Mode vs Challenge Mode) -->
+                <div class="no-print flex flex-wrap items-center gap-2">
+                  <button type="button" id="airframe-mode-study-btn" onclick="window.setAirframeDiagramMode('study')" class="px-2.5 py-1 rounded text-xs font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer">
+                    Study Mode (All Labeled)
+                  </button>
+                  <button type="button" id="airframe-mode-quiz-btn" onclick="window.setAirframeDiagramMode('quiz')" class="px-2.5 py-1 rounded text-xs font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 cursor-pointer">
+                    Labeling Challenge (Test Yourself)
+                  </button>
+                  <button type="button" onclick="window.resetAirframeChallenge()" id="airframe-reset-btn" class="hidden px-2.5 py-1 rounded text-xs font-bold bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 cursor-pointer">
+                    Reset Blanks
+                  </button>
+                </div>
+              </div>
+
+              <!-- SVG Viewport -->
+              <div class="relative w-full overflow-x-auto flex justify-center py-1">
+                <svg viewBox="0 0 920 545" class="w-full h-auto max-w-4xl select-none" xmlns="http://www.w3.org/2000/svg" style="min-width: 650px;">
+                  <!-- Background Blueprint Guide Lines -->
+                  <g opacity="0.18">
+                    <circle cx="460" cy="275" r="140" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+                    <circle cx="460" cy="275" r="230" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+                    <line x1="460" y1="20" x2="460" y2="525" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+                    <line x1="70" y1="275" x2="850" y2="275" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/>
+                  </g>
+
+                  <!-- Horizontal Stabilizers (Tailplane) -->
+                  <g id="svg-horizontal-stabilizers">
+                    <!-- Port Tailplane -->
+                    <polygon points="446,438 290,472 292,488 450,482" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+                    <polygon points="350,478 292,488 350,487 450,482" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Starboard Tailplane -->
+                    <polygon points="474,438 630,472 628,488 470,482" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+                    <polygon points="570,478 628,488 570,487 470,482" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                  </g>
+
+                  <!-- Main Wings -->
+                  <g id="svg-wings">
+                    <!-- Port Wing Body -->
+                    <polygon points="440,215 105,308 105,328 330,322 440,318" fill="#334155" stroke="#475569" stroke-width="2"/>
+                    <!-- Port Leading Edge Slat -->
+                    <polygon points="440,215 105,308 107,314 440,224" fill="#64748b" stroke="#38bdf8" stroke-width="1"/>
+                    <!-- Port Inboard Trailing Flap -->
+                    <polygon points="440,318 330,322 328,310 440,305" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Port Outboard Aileron -->
+                    <polygon points="225,324 105,328 108,319 225,316" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Port Roll Spoilers -->
+                    <rect x="250" y="296" width="60" height="15" transform="rotate(7 280 300)" fill="#1e293b" stroke="#94a3b8" stroke-width="1" rx="2"/>
+                    <!-- Port Winglet -->
+                    <path d="M 105,300 L 98,285 L 105,328 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+
+                    <!-- Starboard Wing Body -->
+                    <polygon points="480,215 815,308 815,328 590,322 480,318" fill="#334155" stroke="#475569" stroke-width="2"/>
+                    <!-- Starboard Leading Edge Slat -->
+                    <polygon points="480,215 815,308 813,314 480,224" fill="#64748b" stroke="#38bdf8" stroke-width="1"/>
+                    <!-- Starboard Inboard Trailing Flap -->
+                    <polygon points="480,318 590,322 592,310 480,305" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Starboard Outboard Aileron -->
+                    <polygon points="695,324 815,328 812,319 695,316" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Starboard Roll Spoilers -->
+                    <rect x="610" y="296" width="60" height="15" transform="rotate(-7 640 300)" fill="#1e293b" stroke="#94a3b8" stroke-width="1" rx="2"/>
+                    <!-- Starboard Winglet -->
+                    <path d="M 815,300 L 822,285 L 815,328 Z" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5"/>
+                  </g>
+
+                  <!-- Turbofan Engines & Pylons -->
+                  <g id="svg-engines">
+                    <!-- Port Engine -->
+                    <rect x="325" y="215" width="8" height="30" fill="#475569" rx="2"/>
+                    <rect x="312" y="235" width="34" height="62" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+                    <ellipse cx="329" cy="235" rx="14" ry="5" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+                    <polygon points="320,297 338,297 329,308" fill="#f59e0b"/>
+                    
+                    <!-- Starboard Engine -->
+                    <rect x="587" y="215" width="8" height="30" fill="#475569" rx="2"/>
+                    <rect x="574" y="235" width="34" height="62" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+                    <ellipse cx="591" cy="235" rx="14" ry="5" fill="#0f172a" stroke="#60a5fa" stroke-width="1.5"/>
+                    <polygon points="582,297 600,297 591,308" fill="#f59e0b"/>
+                  </g>
+
+                  <!-- Fuselage Main Body & Empennage -->
+                  <g id="svg-fuselage">
+                    <!-- Fuselage Shell -->
+                    <path d="M 440,95 Q 460,45 480,95 L 480,435 Q 460,488 440,435 Z" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+                    <!-- Radome Boundary Curve -->
+                    <path d="M 442,95 Q 460,102 478,95" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <!-- Cockpit Windscreen -->
+                    <polygon points="447,102 453,99 460,100 467,99 473,102 471,108 460,106 449,108" fill="#38bdf8"/>
+                    <!-- Centerline Keel -->
+                    <line x1="460" y1="95" x2="460" y2="440" stroke="#334155" stroke-width="1" stroke-dasharray="3 3"/>
+                    <!-- Vertical Fin Dorsal Spine -->
+                    <polygon points="457,400 463,400 462,485 458,485" fill="#475569" stroke="#94a3b8" stroke-width="1"/>
+                    <!-- Rudder Trailing Edge -->
+                    <polygon points="458,445 462,445 461,485 459,485" fill="#f8fafc" stroke="#f59e0b" stroke-width="1.5"/>
+                    <!-- APU Exhaust Nozzle -->
+                    <circle cx="460" cy="488" r="3.5" fill="#f59e0b" stroke="#d97706" stroke-width="1"/>
+                  </g>
+
+                  <!-- Leader Lines to Callouts -->
+                  <g stroke="#94a3b8" stroke-width="1.2" fill="none" opacity="0.85">
+                    <!-- Left Leaders -->
+                    <path d="M 460,68 L 300,47 L 220,47"/>
+                    <path d="M 440,115 L 290,107 L 220,107"/>
+                    <path d="M 460,165 L 300,167 L 220,167"/>
+                    <path d="M 329,255 L 260,227 L 220,227"/>
+                    <path d="M 260,260 L 250,287 L 220,287"/>
+                    <path d="M 280,305 L 260,347 L 220,347"/>
+                    
+                    <!-- Right Leaders -->
+                    <path d="M 460,310 L 630,227 L 700,227"/>
+                    <path d="M 818,298 L 780,287 L 700,287"/>
+                    <path d="M 750,324 L 740,347 L 700,347"/>
+                    <path d="M 535,320 L 640,407 L 700,407"/>
+                    <path d="M 555,465 L 640,467 L 700,467"/>
+                    <path d="M 460,465 L 630,522 L 700,522"/>
+                  </g>
+
+                  <!-- Target Pin Dots on Aircraft Surface -->
+                  <g fill="#38bdf8" stroke="#ffffff" stroke-width="1.5">
+                    <circle cx="460" cy="68" r="4.5"/>
+                    <circle cx="440" cy="115" r="4.5"/>
+                    <circle cx="460" cy="165" r="4.5"/>
+                    <circle cx="329" cy="255" r="4.5"/>
+                    <circle cx="260" cy="260" r="4.5"/>
+                    <circle cx="280" cy="305" r="4.5"/>
+                    <circle cx="460" cy="310" r="4.5"/>
+                    <circle cx="818" cy="298" r="4.5"/>
+                    <circle cx="750" cy="324" r="4.5"/>
+                    <circle cx="535" cy="320" r="4.5"/>
+                    <circle cx="555" cy="465" r="4.5"/>
+                    <circle cx="460" cy="465" r="4.5"/>
+                  </g>
+
+                  <!-- 12 Interactive Callout Badges -->
+                  <!-- LEFT BADGES -->
+                  <!-- 01: Radome -->
+                  <g id="svg-callout-01" onclick="window.selectAirframePart('01', 'Radome (Nose Cone)')" class="cursor-pointer transition-all">
+                    <rect x="20" y="25" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="32" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="50" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">01</text>
+                    <text id="svg-part-text-01" data-real-name="Radome (Nose Cone)" x="58" y="44" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Radome (Nose Cone)</text>
+                    <text x="58" y="58" font-family="sans-serif" font-size="9" fill="#94a3b8">Weather Radar Housing</text>
+                  </g>
+
+                  <!-- 02: Pitot-Static Probes -->
+                  <g id="svg-callout-02" onclick="window.selectAirframePart('02', 'Pitot-Static Probes')" class="cursor-pointer transition-all">
+                    <rect x="20" y="85" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="92" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="110" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">02</text>
+                    <text id="svg-part-text-02" data-real-name="Pitot-Static Probes" x="58" y="104" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Pitot-Static Probes</text>
+                    <text x="58" y="118" font-family="sans-serif" font-size="9" fill="#94a3b8">Dynamic &amp; Static Pressure</text>
+                  </g>
+
+                  <!-- 03: Fuselage -->
+                  <g id="svg-callout-03" onclick="window.selectAirframePart('03', 'Fuselage')" class="cursor-pointer transition-all">
+                    <rect x="20" y="145" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="152" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="170" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">03</text>
+                    <text id="svg-part-text-03" data-real-name="Fuselage" x="58" y="164" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Fuselage</text>
+                    <text x="58" y="178" font-family="sans-serif" font-size="9" fill="#94a3b8">Pressurized Cabin &amp; Hold</text>
+                  </g>
+
+                  <!-- 08: Engine Nacelle & Pylon -->
+                  <g id="svg-callout-08" onclick="window.selectAirframePart('08', 'Engine Nacelle & Pylon')" class="cursor-pointer transition-all">
+                    <rect x="20" y="205" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="212" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="230" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">08</text>
+                    <text id="svg-part-text-08" data-real-name="Engine Nacelle & Pylon" x="58" y="224" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">Engine Nacelle &amp; Pylon</text>
+                    <text x="58" y="238" font-family="sans-serif" font-size="9" fill="#94a3b8">Turbofan Housing &amp; Mount</text>
+                  </g>
+
+                  <!-- 04: Leading-Edge Slats -->
+                  <g id="svg-callout-04" onclick="window.selectAirframePart('04', 'Leading-Edge Slats')" class="cursor-pointer transition-all">
+                    <rect x="20" y="265" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="272" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="290" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">04</text>
+                    <text id="svg-part-text-04" data-real-name="Leading-Edge Slats" x="58" y="284" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Leading-Edge Slats</text>
+                    <text x="58" y="298" font-family="sans-serif" font-size="9" fill="#94a3b8">Wing Camber &amp; Stall Delay</text>
+                  </g>
+
+                  <!-- 07: Roll Spoilers & Speed Brakes -->
+                  <g id="svg-callout-07" onclick="window.selectAirframePart('07', 'Roll Spoilers & Speed Brakes')" class="cursor-pointer transition-all">
+                    <rect x="20" y="325" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="26" y="332" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="39" y="350" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">07</text>
+                    <text id="svg-part-text-07" data-real-name="Roll Spoilers & Speed Brakes" x="58" y="344" font-family="sans-serif" font-size="10" font-weight="700" fill="#f8fafc">Roll Spoilers &amp; Brakes</text>
+                    <text x="58" y="358" font-family="sans-serif" font-size="9" fill="#94a3b8">Lift Dumper &amp; Roll Assist</text>
+                  </g>
+
+                  <!-- RIGHT BADGES -->
+                  <!-- 09: Main & Nose Landing Gear -->
+                  <g id="svg-callout-09" onclick="window.selectAirframePart('09', 'Main & Nose Landing Gear')" class="cursor-pointer transition-all">
+                    <rect x="705" y="205" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="212" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="230" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">09</text>
+                    <text id="svg-part-text-09" data-real-name="Main & Nose Landing Gear" x="743" y="224" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">Landing Gear Assembly</text>
+                    <text x="743" y="238" font-family="sans-serif" font-size="9" fill="#94a3b8">Oleo Struts &amp; Wheels</text>
+                  </g>
+
+                  <!-- 12: Winglets / Sharklets -->
+                  <g id="svg-callout-12" onclick="window.selectAirframePart('12', 'Winglets / Sharklets')" class="cursor-pointer transition-all">
+                    <rect x="705" y="265" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="272" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="290" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">12</text>
+                    <text id="svg-part-text-12" data-real-name="Winglets / Sharklets" x="743" y="284" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Winglets / Sharklets</text>
+                    <text x="743" y="298" font-family="sans-serif" font-size="9" fill="#94a3b8">Vortex Drag Reduction</text>
+                  </g>
+
+                  <!-- 06: Ailerons -->
+                  <g id="svg-callout-06" onclick="window.selectAirframePart('06', 'Ailerons')" class="cursor-pointer transition-all">
+                    <rect x="705" y="325" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="332" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="350" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">06</text>
+                    <text id="svg-part-text-06" data-real-name="Ailerons" x="743" y="344" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Ailerons</text>
+                    <text x="743" y="358" font-family="sans-serif" font-size="9" fill="#94a3b8">Differential Roll Control</text>
+                  </g>
+
+                  <!-- 05: Trailing-Edge Flaps -->
+                  <g id="svg-callout-05" onclick="window.selectAirframePart('05', 'Trailing-Edge Flaps')" class="cursor-pointer transition-all">
+                    <rect x="705" y="385" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="392" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="410" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">05</text>
+                    <text id="svg-part-text-05" data-real-name="Trailing-Edge Flaps" x="743" y="404" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Trailing-Edge Flaps</text>
+                    <text x="743" y="418" font-family="sans-serif" font-size="9" fill="#94a3b8">High Lift &amp; Drag Extenders</text>
+                  </g>
+
+                  <!-- 11: Horizontal Stabilizer & Elevators -->
+                  <g id="svg-callout-11" onclick="window.selectAirframePart('11', 'Horizontal Stabilizer & Elevators')" class="cursor-pointer transition-all">
+                    <rect x="705" y="445" width="195" height="44" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="452" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="470" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">11</text>
+                    <text id="svg-part-text-11" data-real-name="Horizontal Stabilizer & Elevators" x="743" y="464" font-family="sans-serif" font-size="10" font-weight="700" fill="#f8fafc">Stabilizer &amp; Elevators</text>
+                    <text x="743" y="478" font-family="sans-serif" font-size="9" fill="#94a3b8">Pitch Stability &amp; Control</text>
+                  </g>
+
+                  <!-- 10: Vertical Fin & Rudder -->
+                  <g id="svg-callout-10" onclick="window.selectAirframePart('10', 'Vertical Fin & Rudder')" class="cursor-pointer transition-all">
+                    <rect x="705" y="500" width="195" height="40" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="711" y="506" width="26" height="28" rx="5" fill="#4f46e5"/>
+                    <text x="724" y="524" font-family="sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">10</text>
+                    <text id="svg-part-text-10" data-real-name="Vertical Fin & Rudder" x="743" y="518" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Vertical Fin &amp; Rudder</text>
+                    <text x="743" y="531" font-family="sans-serif" font-size="9" fill="#94a3b8">Yaw Control &amp; Stability</text>
+                  </g>
+                </svg>
+              </div>
+              
+              <!-- Diagram Footer / Hint -->
+              <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-800 text-[11px] text-slate-400">
+                <div class="flex items-center gap-2">
+                  <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span id="airframe-diagram-tip">Click any numbered pin or component badge on the blueprint to listen to pronunciation and inspect its functional purpose.</span>
+                </div>
+                <span class="font-mono text-slate-500 text-[10px]">ICAO Aerodrome Operations • Airframe Technical English</span>
+              </div>
+            </div>
+
+            <!-- 12 External Component Cards -->
+            <div class="space-y-2 pt-2">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Component Technical Specifications &amp; Walkaround Checkpoints:</h5>
+                <span class="text-[11px] text-slate-500">12 Primary Airframe Structures</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                ${externalParts.map(p => `
+                  <div id="airframe-card-${p.id}" class="airframe-component-card p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between shadow-2xs transition-all">
+                    <div>
+                      <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
+                        <div class="flex items-center gap-1.5">
+                          <span class="text-[10px] font-mono font-bold text-white px-1.5 py-0.5 rounded shadow-2xs" style="background-color: ${theme.primary};">${p.id}</span>
+                          <span id="card-part-name-${p.id}" data-real-name="${p.name}" class="font-bold text-xs text-slate-900">${p.name}</span>
+                        </div>
+                        <button type="button" onclick="speakWord('${p.name.replace(/'/g, "\\'")}')" class="p-1 rounded bg-white hover:bg-slate-200 border border-slate-200 text-slate-600 transition-all cursor-pointer" title="Listen to pronunciation">
+                          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
+                        </button>
+                      </div>
+                      <p class="text-[11px] text-slate-500 mt-2"><strong>Location:</strong> ${p.location}</p>
+                      <p class="text-[11px] text-slate-700 mt-1 leading-relaxed">${p.purpose}</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-200/80 mt-2 flex items-center justify-between text-[10px]">
+                      <button type="button" onclick="window.selectAirframePart('${p.id}', '${p.name.replace(/'/g, "\\'")}')" class="font-bold text-indigo-600 hover:text-indigo-800 transition-all cursor-pointer">
+                        Locate on Blueprint &uarr;
+                      </button>
+                      <span class="text-slate-400 font-mono">Airframe Item ${p.id}</span>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">4. Leading-Edge Slat</span>
-              <span class="text-[10px] font-mono text-indigo-700 bg-indigo-100 px-1.5 py-0.5 rounded">/ˈliː.dɪŋ edʒ slæt/</span>
+          <!-- Activity 3: Language Focus: Spatial Prepositions -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-55m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spatialClinic.title || 'Activity 3: Language Focus: Spatial Prepositions &amp; Functions (20 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${spatialClinic.summary || 'Mastering precise spatial locations and functional relative clauses for maintenance communication.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Spatial Descriptors</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Moveable aerodynamic surfaces extending forward from the wing leading edge to delay stalls.</p>
+
+            ${renderActivityInstructions(spatialClinic, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${spatialPatterns.map(p => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                  <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 pb-1 border-b border-slate-200">${p.title}</h5>
+                  <ul class="text-xs text-slate-700 space-y-1.5 pl-4 list-disc pt-1">
+                    ${p.examples.map(ex => `<li class="italic font-medium">&ldquo;${ex}&rdquo;</li>`).join('')}
+                  </ul>
+                </div>
+              `).join('')}
+            </div>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">5. Trailing-Edge Flap</span>
-              <span class="text-[10px] font-mono text-indigo-700 bg-indigo-100 px-1.5 py-0.5 rounded">/ˈtreɪ.lɪŋ edʒ flæp/</span>
+          <!-- Activity 4: Walkaround Inspection Role-Play -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">55-85m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${walkaroundRoleplay.title || 'Activity 4: Pre-Flight Exterior Walkaround Role-Play (30 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${walkaroundRoleplay.summary || 'Captain &amp; Line Maintenance Engineer simulation: reporting and assessing airframe defects.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Walkaround Role-Play</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">High-lift devices mounted on the rear of the wing that increase camber and drag for landing.</p>
+
+            ${renderActivityInstructions(walkaroundRoleplay, theme)}
+
+            <div class="space-y-3">
+              ${defectCards.map(d => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
+                  <div class="flex items-center justify-between pb-1 border-b border-slate-200">
+                    <span class="font-bold text-xs text-slate-900 uppercase">${d.item}</span>
+                    <span class="text-[10px] font-bold text-rose-700 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded">Simulated Defect</span>
+                  </div>
+                  <p class="text-xs text-slate-700 font-medium"><strong>Observed Defect:</strong> ${d.defect}</p>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs pt-1">
+                    <div class="p-2.5 bg-white border border-slate-200 rounded">
+                      <strong class="text-indigo-900 block mb-0.5">Captain Dialogue:</strong>
+                      <p class="italic text-slate-600">&ldquo;${d.pilotDialogue}&rdquo;</p>
+                    </div>
+                    <div class="p-2.5 bg-white border border-slate-200 rounded">
+                      <strong class="text-emerald-900 block mb-0.5">Engineer Dialogue:</strong>
+                      <p class="italic text-slate-600">&ldquo;${d.engineerDialogue}&rdquo;</p>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">6. Aileron</span>
-              <span class="text-[10px] font-mono text-indigo-700 bg-indigo-100 px-1.5 py-0.5 rounded">/ˈeɪ.lə.rɒn/</span>
+          <!-- Activity 5: MEL Handover -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">85-110m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${cockpitSystemsHandover.title || 'Activity 5: Minimum Equipment List (MEL) Dispatch Workshop (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${cockpitSystemsHandover.summary || 'Reviewing the Minimum Equipment List (MEL) to make safe dispatch decisions for inoperative equipment.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">MEL Workshop</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Primary flight control surface hinged on the outer trailing edge to control aircraft roll.</p>
+
+            ${renderActivityInstructions(cockpitSystemsHandover, theme)}
+
+            <p class="text-xs text-slate-600">Review these 3 maintenance status items and decide whether the aircraft is legally permitted to dispatch:</p>
+            <div class="space-y-2 text-xs">
+              ${melItems.map(m => `
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <span class="font-bold text-slate-800">${m.item}</span>
+                  <span class="text-[11px] p-1.5 bg-white rounded border border-slate-200 text-slate-600">${m.status}</span>
+                </div>
+              `).join('')}
+            </div>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">7. Static Discharger</span>
-              <span class="text-[10px] font-mono text-indigo-700 bg-indigo-100 px-1.5 py-0.5 rounded">/ˈstæt.ɪk dɪsˈtʃɑː.dʒər/</span>
+          <!-- Activity 6: Wrap-up -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Class Wrap-Up (10 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${closing.summary || 'Drill tricky aeronautical component pronunciation and consolidate learning logs ahead of Session 3.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Closing Consolidation</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Wicks mounted on wing and tail trailing edges to bleed static electricity into the atmosphere.</p>
-          </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">8. Hydraulic Actuator</span>
-              <span class="text-[10px] font-mono text-indigo-700 bg-indigo-100 px-1.5 py-0.5 rounded">/haɪˈdrɒl.ɪk ˈæk.tʃu.eɪ.tər/</span>
+            ${renderActivityInstructions(closing, theme)}
+
+            <!-- Pronunciation Syllable Badges -->
+            ${(closing.wordsToPronounce && closing.wordsToPronounce.length) ? `
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 block">Syllable Stress &amp; Pronunciation Focus:</span>
+                <div class="flex flex-wrap gap-2">
+                  ${closing.wordsToPronounce.map(w => `
+                    <span class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 shadow-2xs">${w}</span>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
+
+            <!-- Technical Checkpoints -->
+            ${(closing.checkpoints && closing.checkpoints.length) ? `
+              <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-3">
+                <div class="flex items-center justify-between">
+                  <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Aircraft Anatomy Mastery Checkpoints</h5>
+                  <span class="text-[11px] font-bold text-emerald-800">Verification</span>
+                </div>
+                <div class="space-y-2 text-xs text-emerald-900">
+                  ${closing.checkpoints.map(cp => `
+                    <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
+                      <span class="text-emerald-600 font-bold">&check;</span>
+                      <span>${cp}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
+
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700">
+              <span class="text-[11px] text-slate-600">Review all 18 aircraft anatomy vocabulary terms and practice pronunciation flashcards.</span>
+              <button onclick="switchModalTab('revision')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white shadow-xs hover:opacity-90 transition-all cursor-pointer shrink-0" style="background-color: ${theme.primary};">
+                <span>View Vocabulary Flashcards</span> &rarr;
+              </button>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">A mechanical cylinder driven by high-pressure fluid to move heavy flight control surfaces.</p>
           </div>
         </div>
+      `;
+    }
 
-        <!-- AIRFRAME LOCATION MATCHING -->
-        <div class="p-3.5 bg-indigo-50/60 border border-indigo-200/70 rounded-xl space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
-              <span class="text-xs font-bold text-indigo-950 uppercase tracking-wide">Interactive Check: Airframe Location Drill</span>
+    function renderAas2LessonContentTabSession3(sessionData, theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+      const content = sessionData.lessonContent || {};
+      const hero = content.hero || {};
+      const opening = content.openingSession || {};
+      const fleetTaxonomy = content.fleetTaxonomy || {};
+      const categories = fleetTaxonomy.categories || [];
+      const comparativeClinic = content.comparativeClinic || {};
+      const rules = comparativeClinic.rules || [];
+      const fleetCommitteeSimulation = content.fleetCommitteeSimulation || {};
+      const cases = fleetCommitteeSimulation.cases || [];
+      const globalLandscapeDebate = content.globalLandscapeDebate || {};
+      const topics = globalLandscapeDebate.topics || [];
+      const closing = content.closingReview || {};
+
+      bodyEl.innerHTML = `
+        <div class="space-y-6 printable-lesson-container">
+          <!-- Printable Action Bar -->
+          <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
+                <span class="text-xs font-bold text-slate-700">AT Module 2 • Session 3</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Commercial Aircraft &amp; Airlines</h3>
             </div>
-            <button onclick="const d = document.getElementById('aas2-s2-vocab-answers'); d.classList.toggle('hidden');" class="text-[11px] font-bold text-indigo-700 hover:text-indigo-900 hover:underline cursor-pointer">
-              [Show / Hide Answers]
+            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+              <span>Print / Save Lesson PDF</span>
             </button>
           </div>
-          <p class="text-xs text-slate-600">Where are these components physically located on a commercial airliner?</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>A.</strong> Positioned at the very front tip of the fuselage, fabricated from composite fiberglass.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>B.</strong> Located on the outboard trailing edge of each main wing.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>C.</strong> Protruding along the lower forward fuselage beneath the cockpit side windows.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>D.</strong> Thin metallic pins extending rearward from wingtips and elevator trailing edges.</div>
+
+          <!-- Hero Banner -->
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+            <div class="relative">
+              <img src="${hero.image || 'images/aas_m2card3.jpg'}" alt="Commercial Aircraft & Airlines" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m2card3.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Commercial Aircraft Types &amp; Fleet Strategy</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Commercial Aircraft &amp; Airlines'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Commercial Aircraft Types, Aerospace Manufacturers &amp; Airline Business Models'}</p>
+              </div>
+            </div>
+            <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Target Level:</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="text-slate-400">&bull;</span>
+                <span class="font-bold text-slate-800">Role Context:</span>
+                <span class="text-slate-600">Airline Fleet Planner / Network Strategy Director</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Total Duration:</span>
+                <span class="font-bold text-slate-900">120 Minutes</span>
+              </div>
+            </div>
           </div>
-          <div id="aas2-s2-vocab-answers" class="hidden p-3 bg-white border border-indigo-300 rounded-lg text-xs space-y-1 text-indigo-950">
-            <div>• <strong>A:</strong> <strong>Radome</strong> (houses weather radar; non-metallic to allow radar waves to pass).</div>
-            <div>• <strong>B:</strong> <strong>Ailerons</strong> (outer trailing edge; moves up on one wing and down on the other).</div>
-            <div>• <strong>C:</strong> <strong>Pitot-Static Probes</strong> (forward fuselage airflow capture).</div>
-            <div>• <strong>D:</strong> <strong>Static Dischargers</strong> (trailing edge static dissipation wicks).</div>
+
+          <!-- Activity 1: News & Session 2 Check -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 2 Spot-Check (10 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
+            </div>
+
+            ${renderActivityInstructions(opening, theme)}
+
+            <!-- News Prompts -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
+              <div class="flex items-center gap-2">
+                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Airline Fleet &amp; Order News</h5>
+              </div>
+              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
+                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- Spot check -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+              ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+                  <p class="text-xs font-bold text-slate-800">${q.id}. ${q.q}</p>
+                  <div id="diag-ans-s3-${q.id}" class="hidden p-2 bg-white border border-slate-200 rounded text-[11px] text-slate-700 mt-2">
+                    ${q.answer}
+                  </div>
+                  <button type="button" onclick="document.getElementById('diag-ans-s3-${q.id}').classList.toggle('hidden')" class="no-print text-left text-[11px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer mt-2">
+                    <span>Toggle Answer &rarr;</span>
+                  </button>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Activity 2: Commercial Aircraft Classification -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-35m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fleetTaxonomy.title || 'Activity 2: Commercial Aircraft Classification Table (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${fleetTaxonomy.summary || 'Classify commercial passenger and freighter aircraft into operational categories.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Fleet Table</span>
+            </div>
+
+            ${renderActivityInstructions(fleetTaxonomy, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${categories.map(c => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
+                  <div>
+                    <h5 class="font-bold text-sm text-slate-900 pb-1 border-b border-slate-200">${c.category}</h5>
+                    <p class="text-xs text-indigo-900 font-bold mt-2">Examples: ${c.examples}</p>
+                    <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-600 mt-2">
+                      <p><strong>Capacity:</strong> ${c.capacity}</p>
+                      <p><strong>Range:</strong> ${c.range}</p>
+                    </div>
+                    <p class="text-[11px] text-slate-700 mt-2 leading-relaxed"><strong>Mission:</strong> ${c.typicalMission}</p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Activity 3: Comparative Language Clinic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">35-55m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${comparativeClinic.title || 'Activity 3: Language Focus: Comparative &amp; Superlative Data (20 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${comparativeClinic.summary || 'Mastering modifiers and comparative structures to evaluate aircraft efficiency and fleet statistics.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Comparative Structures</span>
+            </div>
+
+            ${renderActivityInstructions(comparativeClinic, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              ${rules.map(r => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
+                  <h5 class="text-xs font-bold text-slate-900 uppercase">${r.structure}</h5>
+                  <p class="text-[10px] font-mono text-slate-500 bg-white p-1 rounded border border-slate-200">${r.formula}</p>
+                  <p class="text-[11px] italic text-slate-700 pt-1">&ldquo;${r.example}&rdquo;</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Activity 4: Fleet Selection Committee Simulation -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">55-85m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${fleetCommitteeSimulation.title || 'Activity 4: Airline Fleet Selection Committee Simulation (30 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${fleetCommitteeSimulation.summary || 'Pairs act as airline fleet planning directors preparing an aircraft purchase pitch for new routes.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Executive Pitch</span>
+            </div>
+
+            ${renderActivityInstructions(fleetCommitteeSimulation, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${cases.map(cs => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
+                  <div>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900 pb-1 border-b border-slate-200">${cs.title}</h5>
+                    <p class="text-xs text-slate-600 mt-2"><strong>Network:</strong> ${cs.network}</p>
+                    <div class="space-y-2 text-xs mt-3">
+                      <div class="p-2.5 bg-white border border-slate-200 rounded-lg">
+                        <strong class="text-indigo-900 block mb-0.5">Option A:</strong>
+                        <p class="text-slate-700">${cs.optionA}</p>
+                      </div>
+                      <div class="p-2.5 bg-white border border-slate-200 rounded-lg">
+                        <strong class="text-emerald-900 block mb-0.5">Option B:</strong>
+                        <p class="text-slate-700">${cs.optionB}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Activity 5: Industry Debate -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">85-110m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${globalLandscapeDebate.title || 'Activity 5: Global Manufacturer Debate &amp; Industry Trends (25 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${globalLandscapeDebate.summary || 'Class debate exploring the Airbus-Boeing duopoly, supply chain bottlenecks, and the emergence of COMAC.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Industry Debate</span>
+            </div>
+
+            ${renderActivityInstructions(globalLandscapeDebate, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-slate-700">
+              ${topics.map(tp => `
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex items-center gap-2">
+                  <span class="text-amber-600 font-bold">&bull;</span>
+                  <p class="font-medium">${tp}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Activity 6: Wrap-up -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Pronunciation Wrap-Up (10 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${closing.summary || 'Consolidate the 18 commercial fleet terms and prepare for Session 4 Aviation Accidents.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Closing Consolidation</span>
+            </div>
+
+            ${renderActivityInstructions(closing, theme)}
+
+            ${(closing.pronunciationFocus && closing.pronunciationFocus.length) ? `
+              <div class="p-3.5 bg-indigo-50/60 border border-indigo-200 rounded-xl space-y-2">
+                <span class="text-[11px] font-bold text-indigo-950 uppercase tracking-wide">Pronunciation &amp; Syllable Stress Focus:</span>
+                <div class="flex flex-wrap gap-2 text-xs">
+                  ${closing.pronunciationFocus.map(w => `<span class="px-2.5 py-1 bg-white rounded-lg border border-indigo-200 font-mono font-bold text-indigo-900 shadow-2xs">${w}</span>`).join('')}
+                </div>
+              </div>
+            ` : ''}
+
+            <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+              <div class="space-y-1">
+                <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Consolidation Checkpoints</span>
+                <ul class="space-y-1 text-slate-700">
+                  ${(closing.checkpoints || ['Mastered 18 commercial aircraft & fleet planning terms', 'Practiced comparative modifiers in oral pitches', 'Completed syllable stress drills on aeronautical vocabulary']).map(cp => `<li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">&check;</span> ${cp}</li>`).join('')}
+                </ul>
+              </div>
+              <button onclick="switchModalTab('revision')" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold text-white shadow-xs hover:opacity-90 transition-all cursor-pointer shrink-0" style="background-color: ${theme.primary};">
+                <span>View Vocabulary Flashcards</span> &rarr;
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      `;
+    }
 
-      <!-- PART 2: Spoken Grammar Clinic -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 2: Technical Grammar Clinic • Spatial Descriptions &amp; Defect Reporting</h4>
-            <p class="text-[11px] text-slate-500">Mastering precise spatial prepositions when logging airframe maintenance findings.</p>
-          </div>
-        </div>
+    function renderAas2LessonContentTabSession4(sessionData, theme) {
+      const bodyEl = document.getElementById('modal-body');
+      if (!bodyEl) return;
+      const content = sessionData.lessonContent || {};
+      const hero = content.hero || {};
+      const opening = content.openingSession || {};
+      const investigationLexis = content.investigationLexis || {};
+      const vocabTerms = investigationLexis.terms || [];
+      const pastNarrativesClinic = content.pastNarrativesClinic || {};
+      const pastRules = pastNarrativesClinic.rules || [];
+      const groupResearchSprint = content.groupResearchSprint || {};
+      const caseStudies = groupResearchSprint.caseStudies || [];
+      const presentationsDebrief = content.presentationsDebrief || {};
+      const guidelines = presentationsDebrief.presentationGuidelines || [];
+      const closing = content.closingReview || {};
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-          <div class="p-3.5 bg-rose-50/70 border border-rose-200/80 rounded-xl space-y-1.5">
-            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-200 text-rose-900">
-              ❌ Operational Trap (Vague Description)
-            </span>
-            <p class="text-rose-950 font-medium">"There is a crack into the left wing near the engine."</p>
-            <p class="text-rose-800 text-[11px] leading-relaxed">
-              <strong>Why it is wrong:</strong> <em>'into'</em> indicates directional motion, not static position. <em>'Near the engine'</em> is too imprecise for aircraft maintenance logging.
-            </p>
-          </div>
-
-          <div class="p-3.5 bg-emerald-50/70 border border-emerald-200/80 rounded-xl space-y-1.5">
-            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-emerald-200 text-emerald-900">
-              ✅ Professional B2 Model
-            </span>
-            <p class="text-emerald-950 font-bold">"A 4-centimeter hairline crack was detected on the underside of the left engine pylon, adjacent to the fuel line."</p>
-            <p class="text-emerald-800 text-[11px] leading-relaxed">
-              <strong>Why it works:</strong> Combines exact dimensions, precise location (<em>'on the underside of'</em>), and relative spatial landmarks (<em>'adjacent to'</em>).
-            </p>
-          </div>
-        </div>
-
-        <!-- 4 TRANSFORMATION DRILLS -->
-        <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-slate-800 uppercase tracking-wide">Speaking Drills: Transform into Precise Maintenance Defect Logs</span>
-            <button onclick="const d = document.getElementById('aas2-s2-grammar-answers'); d.classList.toggle('hidden');" class="text-[11px] font-bold text-indigo-700 hover:text-indigo-900 hover:underline cursor-pointer">
-              [Show / Hide Solutions]
+      bodyEl.innerHTML = `
+        <div class="space-y-6 printable-lesson-container">
+          <!-- Printable Action Bar -->
+          <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
+                <span class="text-xs font-bold text-slate-700">AT Module 2 • Session 4</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Significant Aviation Accidents &amp; Aircraft Types</h3>
+            </div>
+            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+              <span>Print / Save Lesson PDF</span>
             </button>
           </div>
-          <ol class="space-y-2 text-xs text-slate-700 list-decimal list-inside">
-            <li>Oil is coming out from the bottom of engine 1. (Use: <em>'seepage observed on the underside of'</em>)</li>
-            <li>One static wick on the right wing tip is broken off. (Use: <em>'missing static discharger on the trailing edge of'</em>)</li>
-            <li>A bird hit the nose cone and dented it. (Use: <em>'impact dent noted on the forward radome'</em>)</li>
-            <li>The door seal is not flat with the fuselage skin. (Use: <em>'not flush with the surrounding airframe'</em>)</li>
-          </ol>
-          <div id="aas2-s2-grammar-answers" class="hidden p-3 bg-white border border-slate-300 rounded-lg text-xs space-y-1 text-slate-900">
-            <div>• <strong>1:</strong> Hydraulic oil seepage was observed <strong>on the underside of</strong> the number one engine cowling.</div>
-            <div>• <strong>2:</strong> A missing static discharger was noted <strong>on the outboard trailing edge of</strong> the starboard wing.</div>
-            <div>• <strong>3:</strong> A 10-cm bird-strike impact dent was identified <strong>on the forward radome</strong> surface.</div>
-            <div>• <strong>4:</strong> The forward passenger entry door seal is <strong>not flush with</strong> the surrounding fuselage skin.</div>
-          </div>
-        </div>
-      </div>
 
-      <!-- PART 3: Communicative Simulation & Operational Dilemma -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 3: Communicative Simulation • Ramp Walkaround &amp; MEL Dispatch</h4>
-            <p class="text-[11px] text-slate-500">Pair role-play: Captain &amp; Chief Line Engineer resolve a pre-departure maintenance defect dilemma.</p>
-          </div>
-        </div>
-
-        <!-- SCENARIO BRIEFING -->
-        <div class="p-3.5 bg-amber-50 border border-amber-200 rounded-xl space-y-2">
-          <div class="flex items-center gap-2 text-amber-900 font-bold text-xs uppercase tracking-wide">
-            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-            Operational Walkaround Dilemma: 35 Minutes to Departure
-          </div>
-          <p class="text-xs text-amber-950 leading-relaxed">
-            During the exterior walkaround inspection at Paris-CDG, the Captain discovers two issues: a missing static discharger on the right winglet, and a slow hydraulic fluid drip under the left main landing gear actuator. Boarding is underway with 180 passengers. The airline Minimum Equipment List (MEL) allows flight with one missing static wick, but hydraulic leaks require strict pressure tests.
-          </p>
-        </div>
-
-        <!-- ACTION STEPS -->
-        <div class="p-3 bg-white border border-indigo-200 rounded-xl space-y-2">
-          <span class="text-xs font-bold uppercase tracking-wide text-indigo-950">Student Instructions &amp; Action Steps</span>
-          <ol class="space-y-1.5 text-xs text-slate-700 leading-relaxed">
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 1 (Roles):</strong> Pair up as <strong>Captain</strong> (focused on safety and schedule) and <strong>Line Maintenance Engineer</strong> (focused on airworthiness standards).</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 2 (Defect Debrief):</strong> The Captain explains the two discoveries using precise spatial vocabulary (<em>'underside'</em>, <em>'adjacent'</em>, <em>'trailing edge'</em>).</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 3 (MEL Cross-Check &amp; Triage):</strong> The Engineer consults the Minimum Equipment List (MEL) and Maintenance Manual. Decide whether the aircraft can be released under an MEL deferral, or if departure must be delayed for a seal replacement.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 4 (Technical Logbook Sign-Off):</strong> Script and speak the official handover sentence: <em>"Aircraft released under MEL Item 23-60... with condition that..."</em> or <em>"Aircraft grounded pending actuator seal replacement."</em></span>
-            </li>
-          </ol>
-        </div>
-
-        <!-- USEFUL PHRASES BOX -->
-        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
-          <span class="text-[11px] font-bold text-slate-800 uppercase tracking-wide">Useful Spoken Phrases for Ramp Handover</span>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-            <div>• <em>"I noticed a steady drip coming from the actuator B-nut connection."</em></div>
-            <div>• <em>"According to the MEL Chapter 32, this is a 'No-Go' item unless leak rate is within limits."</em></div>
-            <div>• <em>"We need to wipe the fitting and pressurize the Yellow hydraulic system for 5 minutes."</em></div>
-            <div>• <em>"I'm signing off the technical logbook with a deferred maintenance entry."</em></div>
-          </div>
-        </div>
-
-        <!-- COLLAPSIBLE TEACHER TIPS -->
-        <details class="group rounded-xl border border-purple-200 bg-purple-50/50 p-2.5 transition-all text-xs">
-          <summary class="flex items-center justify-between font-bold text-purple-950 cursor-pointer select-none">
-            <span class="flex items-center gap-2">
-              <span>👨‍🏫 Teacher Tips &amp; Speaking Prompts</span>
-            </span>
-            <span class="text-[11px] text-purple-700 font-semibold group-open:rotate-180 transition-transform duration-200">▾</span>
-          </summary>
-          <div class="mt-2 pt-2 border-t border-purple-200/80 text-purple-900 leading-relaxed pl-4 space-y-1">
-            <p>• Encourage students to act out the professional tension between on-time departure pressure and safety compliance.</p>
-            <p>• Challenge pairs: <em>"What if weather en route includes severe thunderstorms? Does the missing static wick matter now?"</em></p>
-            <p>• Check pronunciation of <em>'actuator'</em> (/ˈæk.tʃu.eɪ.tər/) and <em>'empennage'</em> (/ˌɑːm.pəˈnɑːʒ/).</p>
-          </div>
-        </details>
-      </div>
-
-      <!-- PART 4: Consolidation & FE2 Alignment -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-3">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.accent};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
-            <p class="text-[11px] text-slate-500">Pair peer-check on structural defect reporting precision.</p>
-          </div>
-        </div>
-        <p class="text-xs text-slate-700 leading-relaxed">
-          <strong>Speaking Challenge:</strong> In pairs, one student selects an airframe component from Part 1 and describes an imaginary damage (dent, leak, crack, missing fastener) using spatial prepositions. The partner must identify the component and log it in standard aviation English.
-        </p>
-        <div class="p-3 bg-indigo-50 rounded-xl border border-indigo-100 flex items-center justify-between text-xs">
-          <span class="text-indigo-900 font-semibold">Formative Evaluation 2 Checklist: Can you describe damage on an aircraft using correct spatial prepositions?</span>
-          <span class="px-2 py-0.5 rounded font-bold text-indigo-800 bg-white border border-indigo-200">FE2 Target</span>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-/* ==========================================================================
-   SESSION 3: Commercial Aircraft & Airlines
-   ========================================================================== */
-function renderAas2LessonContentTabSession3(sessionData, theme) {
-  const bodyEl = document.getElementById('modal-body');
-  if (!bodyEl) return;
-
-  bodyEl.innerHTML = `
-    <div class="space-y-6 printable-lesson-container text-left">
-      <!-- HERO HEADER CARD -->
-      <div class="p-5 bg-gradient-to-r from-slate-900 to-emerald-950 text-white rounded-2xl shadow-sm border border-slate-800">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-          <span class="px-2.5 py-1 rounded-md text-[11px] font-black uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
-            AAS Module 2 • Session 3 • Commercial Fleets
-          </span>
-          <span class="text-xs text-emerald-200/80 font-medium">Technical English (AT)</span>
-        </div>
-        <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">Commercial Aircraft &amp; Airlines</h3>
-        <p class="text-xs sm:text-sm text-emerald-100/90 leading-relaxed mt-1.5 max-w-3xl">
-          Classify commercial jetliners by payload-range envelopes, analyze seat-mile economics, and debate a €2 Billion airline fleet selection committee simulation.
-        </p>
-      </div>
-
-      <!-- PART 1: Target Lexis & Pronunciation -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 1: Commercial Fleet Lexis &amp; Pronunciation</h4>
-            <p class="text-[11px] text-slate-500">8 specialized industry terms for aircraft categories, economics, and operational range.</p>
-          </div>
-        </div>
-
-        <!-- 8-WORD VOCABULARY GRID -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">1. Narrowbody</span>
-              <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">/ˈnær.əʊˌbɒd.i/</span>
+          <!-- Hero Banner -->
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+            <div class="relative">
+              <img src="${hero.image || 'images/aas_m2card4.jpg'}" alt="Aviation Accidents & Aircraft Types" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m2card4.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Accident Investigation &amp; Safety Revolution</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Significant Aviation Accidents &amp; Aircraft Types'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'Landmark Air Accidents, Technical Causal Analysis &amp; The Evolution of Flight Safety'}</p>
+              </div>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">A single-aisle commercial aircraft carrying typically 100 to 240 passengers (e.g., A320, 737).</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">2. Widebody</span>
-              <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">/ˈwaɪdˌbɒd.i/</span>
+            <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Target Level:</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="text-slate-400">&bull;</span>
+                <span class="font-bold text-slate-800">Role Context:</span>
+                <span class="text-slate-600">Safety Investigator / Flight Safety Officer</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Total Duration:</span>
+                <span class="font-bold text-slate-900">120 Minutes</span>
+              </div>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">A twin-aisle airliner designed for medium- to long-haul routes (e.g., A350, 787, 777).</p>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">3. Payload-Range Envelope</span>
-              <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">/ˈpeɪ.ləʊd reɪndʒ/</span>
+          <!-- Activity 1: News & Session 3 Check -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">00-10m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 3 Spot-Check (10 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The operational trade-off curve between maximum cargo/passenger weight and flight distance.</p>
-          </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">4. Seat-Mile Cost (CASM)</span>
-              <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">/siːt maɪl kɒst/</span>
+            ${renderActivityInstructions(opening, theme)}
+
+            <!-- News Prompts -->
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
+              <div class="flex items-center gap-2">
+                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aviation Safety &amp; Investigation Briefs</h5>
+              </div>
+              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
+                ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
+              </ul>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Cost per Available Seat-Mile: the foundational metric of airline operating efficiency.</p>
-          </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">5. Turboprop</span>
-              <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">/ˈtɜː.bəʊ.prɒp/</span>
+            <!-- Spot check -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+              ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+                  <p class="text-xs font-bold text-slate-800">${q.id}. ${q.q}</p>
+                  <div id="diag-ans-s4-${q.id}" class="hidden p-2 bg-white border border-slate-200 rounded text-[11px] text-slate-700 mt-2">
+                    ${q.answer}
+                  </div>
+                  <button type="button" onclick="document.getElementById('diag-ans-s4-${q.id}').classList.toggle('hidden')" class="no-print text-left text-[11px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer mt-2">
+                    <span>Toggle Answer &rarr;</span>
+                  </button>
+                </div>
+              `).join('')}
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">A gas-turbine engine driving an external propeller, optimal for short regional hops (e.g., ATR 72).</p>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">6. Freighter Conversion</span>
-              <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">/ˈfreɪ.tər kənˈvɜː.ʃən/</span>
+          <!-- Activity 2: Investigation Vocabulary -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">10-30m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${investigationLexis.title || 'Activity 2: Accident Investigation Terminology &amp; Causal Chains (20 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${investigationLexis.summary || 'Learn and deploy specialized safety vocabulary used by investigation authorities.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Investigation Vocabulary</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Modifying retired passenger airliners with reinforced main-deck floors and cargo loading doors.</p>
-          </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">7. Dispatch Reliability</span>
-              <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">/dɪˈspætʃ rɪˌlaɪ.əˈbɪl.ə.ti/</span>
+            ${renderActivityInstructions(investigationLexis, theme)}
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              ${vocabTerms.map(lx => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
+                  <h5 class="text-xs font-bold text-slate-900">${lx.term}</h5>
+                  <p class="text-[11px] text-slate-600 leading-relaxed">${lx.role}</p>
+                </div>
+              `).join('')}
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Percentage of scheduled flights departing without maintenance-related delays or cancellations.</p>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">8. ETOPS Certification</span>
-              <span class="text-[10px] font-mono text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">/ˈiː.tɒps ˌsɜː.tɪ.fɪˈkeɪ.ʃən/</span>
+          <!-- Activity 3: Narrative Past Tenses -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">30-50m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${pastNarrativesClinic.title || 'Activity 3: Language Focus: Narrative Past Tenses &amp; Sequencers (20 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${pastNarrativesClinic.summary || 'Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Narrative Grammar</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Extended-range Twin-engine Operational Performance Standards: rules for flying over oceans.</p>
-          </div>
-        </div>
 
-        <!-- FLEET CATEGORIZATION CHALLENGE -->
-        <div class="p-3.5 bg-emerald-50/60 border border-emerald-200/70 rounded-xl space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-              <span class="text-xs font-bold text-emerald-950 uppercase tracking-wide">Interactive Check: Fleet Classification Drill</span>
+            ${renderActivityInstructions(pastNarrativesClinic, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              ${pastRules.map(r => `
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
+                  <h5 class="text-xs font-bold text-slate-900 uppercase">${r.tense}</h5>
+                  <p class="text-[10px] font-mono text-slate-500 bg-white p-1 rounded border border-slate-200">${r.formula}</p>
+                  <p class="text-[11px] italic text-slate-700 pt-1">&ldquo;${r.example}&rdquo;</p>
+                </div>
+              `).join('')}
             </div>
-            <button onclick="const d = document.getElementById('aas2-s3-vocab-answers'); d.classList.toggle('hidden');" class="text-[11px] font-bold text-emerald-700 hover:text-emerald-900 hover:underline cursor-pointer">
-              [Show / Hide Answers]
-            </button>
-          </div>
-          <p class="text-xs text-slate-600">Match each commercial aircraft model to its operational category:</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>A. Airbus A350-900:</strong> 325 seats, 15,000 km range, twin-aisle carbon composite.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>B. ATR 72-600:</strong> 72 seats, 1,400 km range, unpaved runway capability.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>C. Boeing 737 MAX 8:</strong> 178 seats, single-aisle, 6,570 km range.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>D. Airbus A321P2F:</strong> Retired passenger airframe fitted with a main-deck cargo door.</div>
-          </div>
-          <div id="aas2-s3-vocab-answers" class="hidden p-3 bg-white border border-emerald-300 rounded-lg text-xs space-y-1 text-emerald-950">
-            <div>• <strong>A:</strong> <strong>Widebody Long-Haul</strong> (high-capacity, high ETOPS rating).</div>
-            <div>• <strong>B:</strong> <strong>Regional Turboprop</strong> (low CASM on short sectors under 500 km).</div>
-            <div>• <strong>C:</strong> <strong>Narrowbody Medium-Haul</strong> (backbone of short/medium haul fleets).</div>
-            <div>• <strong>D:</strong> <strong>Freighter Conversion</strong> (Passenger-to-Freighter repurposing).</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PART 2: Spoken Grammar Clinic -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 2: Technical Grammar Clinic • Comparative &amp; Superlative Data Analysis</h4>
-            <p class="text-[11px] text-slate-500">Comparing aircraft performance metrics with modifiers: substantially, marginally, significantly.</p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-          <div class="p-3.5 bg-rose-50/70 border border-rose-200/80 rounded-xl space-y-1.5">
-            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-200 text-rose-900">
-              ❌ Operational Trap (Weak Comparison)
-            </span>
-            <p class="text-rose-950 font-medium">"The A321 is more better for fuel than old 757."</p>
-            <p class="text-rose-800 text-[11px] leading-relaxed">
-              <strong>Why it is wrong:</strong> Double comparative (<em>'more better'</em>) is grammatically incorrect and lacks technical precision.
-            </p>
           </div>
 
-          <div class="p-3.5 bg-emerald-50/70 border border-emerald-200/80 rounded-xl space-y-1.5">
-            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-emerald-200 text-emerald-900">
-              ✅ Professional B2 Model
-            </span>
-            <p class="text-emerald-950 font-bold">"The A321XLR burns substantially less fuel per seat-mile than legacy Boeing 757s on transatlantic secondary routes."</p>
-            <p class="text-emerald-800 text-[11px] leading-relaxed">
-              <strong>Why it works:</strong> Combines degree modifier (<em>'substantially'</em>) with precise unit of measurement (<em>'per seat-mile'</em>) and route context.
-            </p>
-          </div>
-        </div>
-
-        <!-- 4 TRANSFORMATION DRILLS -->
-        <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-slate-800 uppercase tracking-wide">Speaking Drills: Upgrade to Professional Fleet Comparisons</span>
-            <button onclick="const d = document.getElementById('aas2-s3-grammar-answers'); d.classList.toggle('hidden');" class="text-[11px] font-bold text-emerald-700 hover:text-emerald-900 hover:underline cursor-pointer">
-              [Show / Hide Solutions]
-            </button>
-          </div>
-          <ol class="space-y-2 text-xs text-slate-700 list-decimal list-inside">
-            <li>The A350 has longer range than the 787-8. (Use: <em>'offers a significantly greater operational range'</em>)</li>
-            <li>The 737 MAX burns a little less fuel than the 737 NG. (Use: <em>'marginally lower fuel consumption'</em>)</li>
-            <li>Turboprops are much cheaper to operate on 300-km flights than regional jets. (Use: <em>'far more cost-effective'</em>)</li>
-            <li>Fleet A and Fleet B have almost the same dispatch reliability (99.6% vs 99.5%). (Use: <em>'virtually identical'</em>)</li>
-          </ol>
-          <div id="aas2-s3-grammar-answers" class="hidden p-3 bg-white border border-slate-300 rounded-lg text-xs space-y-1 text-slate-900">
-            <div>• <strong>1:</strong> The Airbus A350-900 <strong>offers a significantly greater operational range</strong> than the Boeing 787-8.</div>
-            <div>• <strong>2:</strong> The new variant delivers <strong>marginally lower fuel consumption</strong> compared to previous generation airframes.</div>
-            <div>• <strong>3:</strong> Turboprops are <strong>far more cost-effective</strong> on regional sectors under 300 km than comparable regional jets.</div>
-            <div>• <strong>4:</strong> Both fleets maintain a <strong>virtually identical</strong> dispatch reliability rate of over 99.5%.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PART 3: Communicative Simulation & Operational Dilemma -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 3: Communicative Simulation • €2B Fleet Selection Committee</h4>
-            <p class="text-[11px] text-slate-500">Boardroom simulation: Evaluate and select 20 new narrowbody airliners for a growing European carrier.</p>
-          </div>
-        </div>
-
-        <!-- SCENARIO BRIEFING -->
-        <div class="p-3.5 bg-amber-50 border border-amber-200 rounded-xl space-y-2">
-          <div class="flex items-center gap-2 text-amber-900 font-bold text-xs uppercase tracking-wide">
-            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-            Airline Boardroom Dilemma: €2,000,000,000 Fleet Order
-          </div>
-          <p class="text-xs text-amber-950 leading-relaxed">
-            Your airline operates an all-Airbus A320 fleet of 45 aircraft. To expand into transatlantic secondary cities (e.g., Toulouse to Boston), the board has budgeted €2 Billion for 20 new aircraft. The committee is deadlocked between the <strong>Airbus A321XLR</strong> (higher range, pilot cross-crew qualification) and the <strong>Boeing 737 MAX 10</strong> (cheaper purchase price, aggressive discount, but requires establishing a new Boeing pilot and maintenance type-rating pool).
-          </p>
-        </div>
-
-        <!-- ACTION STEPS -->
-        <div class="p-3 bg-white border border-emerald-200 rounded-xl space-y-2">
-          <span class="text-xs font-bold uppercase tracking-wide text-emerald-950">Student Instructions &amp; Action Steps</span>
-          <ol class="space-y-1.5 text-xs text-slate-700 leading-relaxed">
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 1 (Role Allocation):</strong> Form groups of 3 or 4: <strong>Chief Commercial Officer (CCO)</strong>, <strong>Chief Financial Officer (CFO)</strong>, <strong>Head of Flight Operations</strong>, and <strong>Director of Maintenance</strong>.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 2 (Data Defense):</strong> Each executive advocates for their priorities: CCO wants range and payload; CFO wants lowest acquisition cost; Flight Ops wants common pilot type-ratings; Maintenance wants single-supplier spare parts.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 3 (Boardroom Debate):</strong> Use comparative grammar modifiers (<em>'substantially lower'</em>, <em>'far more efficient'</em>) to debate the trade-offs.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 4 (Final Recommendation):</strong> Present a spoken 2-minute executive summary to the CEO announcing the final fleet decision.</span>
-            </li>
-          </ol>
-        </div>
-
-        <!-- USEFUL PHRASES BOX -->
-        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
-          <span class="text-[11px] font-bold text-slate-800 uppercase tracking-wide">Useful Spoken Phrases for Boardroom Negotiation</span>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-            <div>• <em>"Introducing a dual fleet will substantially increase our pilot training overhead."</em></div>
-            <div>• <em>"However, the manufacturer is offering a 40% discount on airframe list price."</em></div>
-            <div>• <em>"From a network perspective, the extra 700 nautical miles of range unlocks 6 new routes."</em></div>
-            <div>• <em>"We recommend securing 15 firm orders with 5 purchase options."</em></div>
-          </div>
-        </div>
-
-        <!-- COLLAPSIBLE TEACHER TIPS -->
-        <details class="group rounded-xl border border-purple-200 bg-purple-50/50 p-2.5 transition-all text-xs">
-          <summary class="flex items-center justify-between font-bold text-purple-950 cursor-pointer select-none">
-            <span class="flex items-center gap-2">
-              <span>👨‍🏫 Teacher Tips &amp; Speaking Prompts</span>
-            </span>
-            <span class="text-[11px] text-purple-700 font-semibold group-open:rotate-180 transition-transform duration-200">▾</span>
-          </summary>
-          <div class="mt-2 pt-2 border-t border-purple-200/80 text-purple-900 leading-relaxed pl-4 space-y-1">
-            <p>• Push the CFO role to emphasize financial risk while Flight Ops pushes pilot fatigue and licensing.</p>
-            <p>• Encourage students to invent realistic airline names and route maps.</p>
-            <p>• Check pronunciation of <em>'narrowbody'</em> and <em>'turboprop'</em>.</p>
-          </div>
-        </details>
-      </div>
-
-      <!-- PART 4: Consolidation & FE2 Alignment -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-3">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.accent};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 4: Consolidation &amp; Formative Evaluation 2 (FE2) Alignment</h4>
-            <p class="text-[11px] text-slate-500">Pair peer-check on comparative fleet presentation skills.</p>
-          </div>
-        </div>
-        <p class="text-xs text-slate-700 leading-relaxed">
-          <strong>Speaking Challenge:</strong> In pairs, deliver a spoken 90-second comparison between two aircraft models of your choice. Use at least 2 degree modifiers (<em>'substantially'</em>, <em>'marginally'</em>) and one economic term (<em>'CASM'</em>, <em>'dispatch reliability'</em>).
-        </p>
-        <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-100 flex items-center justify-between text-xs">
-          <span class="text-emerald-900 font-semibold">Formative Evaluation 2 Checklist: Can you defend an operational aircraft choice using comparative metrics?</span>
-          <span class="px-2 py-0.5 rounded font-bold text-emerald-800 bg-white border border-emerald-200">FE2 Target</span>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-/* ==========================================================================
-   SESSION 4: Significant Aviation Accidents & Aircraft Types
-   ========================================================================== */
-function renderAas2LessonContentTabSession4(sessionData, theme) {
-  const bodyEl = document.getElementById('modal-body');
-  if (!bodyEl) return;
-
-  bodyEl.innerHTML = `
-    <div class="space-y-6 printable-lesson-container text-left">
-      <!-- HERO HEADER CARD -->
-      <div class="p-5 bg-gradient-to-r from-slate-900 to-rose-950 text-white rounded-2xl shadow-sm border border-slate-800">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-          <span class="px-2.5 py-1 rounded-md text-[11px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-400/30">
-            AAS Module 2 • Session 4 • Investigation &amp; Safety
-          </span>
-          <span class="text-xs text-rose-200/80 font-medium">Technical English (AT)</span>
-        </div>
-        <h3 class="text-xl sm:text-2xl font-black text-white tracking-tight">Significant Aviation Accidents &amp; Aircraft Types</h3>
-        <p class="text-xs sm:text-sm text-rose-100/90 leading-relaxed mt-1.5 max-w-3xl">
-          Examine flight recorder data and causal chains in landmark aviation accidents, deploy narrative past tenses to establish timelines, and simulate a formal Accident Investigation Board hearing.
-        </p>
-      </div>
-
-      <!-- PART 1: Target Lexis & Pronunciation -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 1: Accident Investigation Lexis &amp; Pronunciation</h4>
-            <p class="text-[11px] text-slate-500">8 official technical terms used in accident investigation reports (BEA, NTSB, AAIB).</p>
-          </div>
-        </div>
-
-        <!-- 8-WORD VOCABULARY GRID -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">1. Cockpit Voice Recorder (CVR)</span>
-              <span class="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">/ˈkɒk.pɪt vɔɪs/</span>
+          <!-- Activity 4: 15-Minute Group Research Sprint -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">50-65m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${groupResearchSprint.title || 'Activity 4: 15-Minute Group Research &amp; Preparation Sprint (15 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${groupResearchSprint.summary || 'In small groups (3-4 students), select one historical accident case study. You have 15 minutes to research and structure your 5-minute briefing.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-rose-700 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-md uppercase tracking-wider shrink-0">15-Min Sprint</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Crash-survivable audio recorder capturing crew speech, radio transmissions, and ambient sounds.</p>
-          </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">2. Flight Data Recorder (FDR)</span>
-              <span class="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">/flaɪt ˈdeɪ.tə/</span>
+            ${renderActivityInstructions(groupResearchSprint, theme)}
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+              ${caseStudies.map(cs => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
+                  <div>
+                    <div class="flex items-center justify-between pb-1 border-b border-slate-200">
+                      <span class="font-bold text-xs text-slate-900">${cs.title}</span>
+                      <span class="text-[10px] font-mono font-bold text-white px-1.5 py-0.5 rounded" style="background-color: ${theme.accent};">0${cs.id}</span>
+                    </div>
+                    <p class="text-[11px] text-indigo-900 font-bold mt-2">Aircraft: ${cs.aircraft}</p>
+                    <p class="text-[11px] text-slate-600 mt-1 leading-relaxed"><strong>Context:</strong> ${cs.context}</p>
+                  </div>
+                  <div class="p-2 bg-emerald-50/70 border border-emerald-200 rounded text-[10.5px] text-emerald-950 mt-2">
+                    <strong>Permanent Safety Fix:</strong> ${cs.safetyOutcome}
+                  </div>
+                </div>
+              `).join('')}
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Electronic device logging hundreds of technical parameters: airspeed, altitude, pitch, thrust.</p>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">3. Pitot Icing</span>
-              <span class="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">/ˈpiː.təʊ ˈaɪ.sɪŋ/</span>
+          <!-- Activity 5: Spoken Group Presentations -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">65-110m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${presentationsDebrief.title || 'Activity 5: Spoken Group Presentations &amp; Safety Debrief (45 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${presentationsDebrief.summary || 'Each group presents their 5-minute accident analysis using whiteboard or bullet slides, followed by class Q&amp;A.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Class Presentations</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Blockage of airspeed probes by ice crystals, leading to conflicting or erroneous cockpit readings.</p>
-          </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">4. Spatial Disorientation</span>
-              <span class="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">/dɪsˌɔː.ri.enˈteɪ.ʃən/</span>
+            ${renderActivityInstructions(presentationsDebrief, theme)}
+
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+              <h5 class="text-xs font-bold text-slate-800 uppercase tracking-wide">Presentation Rubric &amp; Delivery Rules:</h5>
+              <ul class="list-disc pl-5 text-xs text-slate-600 space-y-1">
+                ${guidelines.map(g => `<li class="leading-relaxed">${g}</li>`).join('')}
+              </ul>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The inability of a pilot to correctly perceive aircraft attitude, altitude, or airspeed relative to Earth.</p>
           </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">5. CFIT</span>
-              <span class="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">/ˌsiː.ef.aɪˈtiː/</span>
+          <!-- Activity 6: FE2 Prep & Wrap-Up -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">110-120m</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Formative Evaluation 2 Prep (10 mins)'}</h4>
+                  <p class="text-[11px] text-slate-500">${closing.summary || 'Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.'}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Closing Consolidation</span>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Controlled Flight Into Terrain: an airworthy aircraft flown unintentionally into ground or water.</p>
-          </div>
 
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">6. Causal Chain</span>
-              <span class="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">/ˈkɔː.zəl tʃeɪn/</span>
+            ${renderActivityInstructions(closing, theme)}
+
+            ${closing.fe2Preview ? `
+              <div class="p-3.5 bg-indigo-50/60 border border-indigo-200 rounded-xl space-y-1.5">
+                <span class="text-[11px] font-bold text-indigo-950 uppercase tracking-wide">Session 5 Formative Evaluation 2 Format:</span>
+                <p class="text-xs text-indigo-900 leading-relaxed">${closing.fe2Preview}</p>
+              </div>
+            ` : ''}
+
+            <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+              <div class="space-y-1">
+                <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Consolidation Checkpoints</span>
+                <ul class="space-y-1 text-slate-700">
+                  ${(closing.checkpoints || ['Mastered 18 accident investigation & safety terms', 'Coordinated past simple, continuous, and perfect in chronology', 'Confirmed FE2 partner, topic, and presentation structure']).map(cp => `<li class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">&check;</span> ${cp}</li>`).join('')}
+                </ul>
+              </div>
+              <div class="flex flex-wrap items-center gap-2 shrink-0">
+                <button onclick="switchModalTab('revision')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-slate-700 bg-white border border-slate-300 shadow-2xs hover:bg-slate-100 transition-all cursor-pointer">
+                  <span>Vocabulary Flashcards</span>
+                </button>
+                <button onclick="switchModalTab('fe_guidelines')" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-white shadow-xs hover:opacity-90 transition-all cursor-pointer" style="background-color: ${theme.primary};">
+                  <span>View FE2 Guidelines</span> &rarr;
+                </button>
+              </div>
             </div>
-            <p class="text-[11px] text-slate-600 leading-snug">The linked sequence of mechanical, human, and organizational failures leading to an accident.</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">7. Safety Recommendation</span>
-              <span class="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">/ˌrek.ə.menˈdeɪ.ʃən/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">Formal advisory issued by investigators to prevent recurrence (never intended to assign blame).</p>
-          </div>
-
-          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 space-y-1">
-            <div class="flex items-baseline justify-between">
-              <span class="font-black text-xs text-slate-900">8. Airworthiness Directive</span>
-              <span class="text-[10px] font-mono text-rose-700 bg-rose-100 px-1.5 py-0.5 rounded">/dɪˈrek.tɪv/</span>
-            </div>
-            <p class="text-[11px] text-slate-600 leading-snug">A legally binding regulation issued by aviation authorities requiring mandatory aircraft modifications.</p>
           </div>
         </div>
+      `;
+    }
 
-        <!-- CAUSAL CHAIN MATCHING -->
-        <div class="p-3.5 bg-rose-50/60 border border-rose-200/70 rounded-xl space-y-3">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-rose-600"></span>
-              <span class="text-xs font-bold text-rose-950 uppercase tracking-wide">Interactive Check: Accident Factor Identification</span>
-            </div>
-            <button onclick="const d = document.getElementById('aas2-s4-vocab-answers'); d.classList.toggle('hidden');" class="text-[11px] font-bold text-rose-700 hover:text-rose-900 hover:underline cursor-pointer">
-              [Show / Hide Answers]
-            </button>
-          </div>
-          <p class="text-xs text-slate-600">Match each investigative summary to its official classification:</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>A.</strong> The captain believed the aircraft was climbing while it was actually descending into water.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>B.</strong> Both pilots followed a faulty glide slope signal on approach in fog into a mountain ridge.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>C.</strong> FAA mandates an immediate inspection of all engine fan blades within 20 flight cycles.</div>
-            <div class="p-2 bg-white rounded-lg border border-slate-200"><strong>D.</strong> High-altitude convective ice blocked the speed sensors, triggering autopilot disconnect.</div>
-          </div>
-          <div id="aas2-s4-vocab-answers" class="hidden p-3 bg-white border border-rose-300 rounded-lg text-xs space-y-1 text-rose-950">
-            <div>• <strong>A:</strong> <strong>Spatial Disorientation</strong> (vestibular illusion in night flying).</div>
-            <div>• <strong>B:</strong> <strong>CFIT (Controlled Flight Into Terrain)</strong> (loss of situational awareness).</div>
-            <div>• <strong>C:</strong> <strong>Airworthiness Directive (AD)</strong> (legally mandatory regulatory action).</div>
-            <div>• <strong>D:</strong> <strong>Pitot Icing</strong> (sensor obstruction leading to unreliable airspeed).</div>
-          </div>
-        </div>
-      </div>
+    // ==========================================
+    // Interactive Airframe Diagram Controllers
+    // ==========================================
+    window.setAirframeDiagramMode = function(mode) {
+      const studyBtn = document.getElementById('airframe-mode-study-btn');
+      const quizBtn = document.getElementById('airframe-mode-quiz-btn');
+      const resetBtn = document.getElementById('airframe-reset-btn');
+      const tipEl = document.getElementById('airframe-diagram-tip');
 
-      <!-- PART 2: Spoken Grammar Clinic -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 2: Technical Grammar Clinic • Past Narrative Tenses in Accident Chronologies</h4>
-            <p class="text-[11px] text-slate-500">Contrasting Past Simple, Past Continuous, and Past Perfect to establish chronological sequences.</p>
-          </div>
-        </div>
+      if (mode === 'study') {
+        if (studyBtn) { studyBtn.className = 'px-2.5 py-1 rounded text-xs font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer'; }
+        if (quizBtn) { quizBtn.className = 'px-2.5 py-1 rounded text-xs font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 cursor-pointer'; }
+        if (resetBtn) { resetBtn.classList.add('hidden'); }
+        if (tipEl) { tipEl.textContent = 'Click any numbered pin or component badge on the blueprint to listen to pronunciation and inspect its functional purpose.'; }
+        window.revealAllAirframeParts();
+      } else {
+        if (studyBtn) { studyBtn.className = 'px-2.5 py-1 rounded text-xs font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 cursor-pointer'; }
+        if (quizBtn) { quizBtn.className = 'px-2.5 py-1 rounded text-xs font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer'; }
+        if (resetBtn) { resetBtn.classList.remove('hidden'); }
+        if (tipEl) { tipEl.textContent = 'Challenge Mode: Click any [ ? ] badge on the blueprint to test your memory and reveal the aeronautical term.'; }
+        window.resetAirframeChallenge();
+      }
+    };
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
-          <div class="p-3.5 bg-rose-50/70 border border-rose-200/80 rounded-xl space-y-1.5">
-            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-200 text-rose-900">
-              ❌ Operational Trap (Tense Confusion)
-            </span>
-            <p class="text-rose-950 font-medium">"When the alarms sounded, the pilots were already deciding to go-around."</p>
-            <p class="text-rose-800 text-[11px] leading-relaxed">
-              <strong>Why it is wrong:</strong> Past Continuous (<em>'were deciding'</em>) incorrectly describes a completed prior decision. Use Past Perfect (<em>'had decided'</em>) for an action completed before another past event.
-            </p>
-          </div>
+    window.selectAirframePart = function(partId, partName) {
+      if (typeof speakWord === 'function' && partName) {
+        speakWord(partName);
+      }
+      window.revealAirframePart(partId);
 
-          <div class="p-3.5 bg-emerald-50/70 border border-emerald-200/80 rounded-xl space-y-1.5">
-            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-emerald-200 text-emerald-900">
-              ✅ Professional B2 Model
-            </span>
-            <p class="text-emerald-950 font-bold">"While the aircraft was cruising at FL350, the pitot probes iced over; the crew had not yet identified the discrepancy when the autopilot disconnected."</p>
-            <p class="text-emerald-800 text-[11px] leading-relaxed">
-              <strong>Why it works:</strong> Flawlessly interweaves background continuous state, sudden event, and prior condition using Past Perfect.
-            </p>
-          </div>
-        </div>
+      // Highlight corresponding card in the lower grid
+      document.querySelectorAll('.airframe-component-card').forEach(c => {
+        c.classList.remove('ring-2', 'ring-indigo-500', 'bg-indigo-50/60');
+      });
+      const targetCard = document.getElementById('airframe-card-' + partId);
+      if (targetCard) {
+        targetCard.classList.add('ring-2', 'ring-indigo-500', 'bg-indigo-50/60');
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
 
-        <!-- 4 TRANSFORMATION DRILLS -->
-        <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-slate-800 uppercase tracking-wide">Speaking Drills: Build Chronological Accident Timelines</span>
-            <button onclick="const d = document.getElementById('aas2-s4-grammar-answers'); d.classList.toggle('hidden');" class="text-[11px] font-bold text-rose-700 hover:text-rose-900 hover:underline cursor-pointer">
-              [Show / Hide Solutions]
-            </button>
-          </div>
-          <ol class="space-y-2 text-xs text-slate-700 list-decimal list-inside">
-            <li>The plane flew in storms. Then the speed sensors stopped working. (Use: <em>'While... was flying..., the sensors iced over.'</em>)</li>
-            <li>First, the warning alarm sounded. Then the pilot pushed the control column forward. (Use: <em>'had already sounded before...'</em>)</li>
-            <li>Maintenance forgot to remove the pitot cover before flight. This caused wrong readings during takeoff. (Use: <em>'...because ground crew had failed to...'</em>)</li>
-            <li>The captain tried to recover the stall. At that exact time, the aircraft entered cloud. (Use: <em>'As the captain was attempting...'</em>)</li>
-          </ol>
-          <div id="aas2-s4-grammar-answers" class="hidden p-3 bg-white border border-slate-300 rounded-lg text-xs space-y-1 text-slate-900">
-            <div>• <strong>1:</strong> <strong>While the aircraft was flying through</strong> convective turbulence, the speed sensors iced over.</div>
-            <div>• <strong>2:</strong> The stall warning <strong>had already sounded</strong> before the pilot pushed the control column forward.</div>
-            <div>• <strong>3:</strong> The instruments displayed erroneous data because the ground crew <strong>had failed to remove</strong> the pitot probe covers.</div>
-            <div>• <strong>4:</strong> <strong>As the captain was attempting</strong> to recover from the stall, the aircraft entered thick cloud cover.</div>
-          </div>
-        </div>
-      </div>
+    window.revealAirframePart = function(partId) {
+      const textEl = document.getElementById('svg-part-text-' + partId);
+      if (textEl && textEl.dataset.realName) {
+        textEl.textContent = textEl.dataset.realName;
+        textEl.setAttribute('fill', '#f8fafc');
+      }
+      const cardName = document.getElementById('card-part-name-' + partId);
+      if (cardName && cardName.dataset.realName) {
+        cardName.textContent = cardName.dataset.realName;
+      }
+    };
 
-      <!-- PART 3: Communicative Simulation & Operational Dilemma -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-4">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.primary};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 3: Communicative Simulation • Accident Investigation Board Hearing</h4>
-            <p class="text-[11px] text-slate-500">Public inquiry simulation: Present investigative findings and cross-examine flight operations on landmark safety lessons.</p>
-          </div>
-        </div>
+    window.revealAllAirframeParts = function() {
+      document.querySelectorAll('[id^="svg-part-text-"]').forEach(el => {
+        if (el.dataset.realName) {
+          el.textContent = el.dataset.realName;
+          el.setAttribute('fill', '#f8fafc');
+        }
+      });
+      document.querySelectorAll('[id^="card-part-name-"]').forEach(el => {
+        if (el.dataset.realName) {
+          el.textContent = el.dataset.realName;
+        }
+      });
+    };
 
-        <!-- SCENARIO BRIEFING -->
-        <div class="p-3.5 bg-amber-50 border border-amber-200 rounded-xl space-y-2">
-          <div class="flex items-center gap-2 text-amber-900 font-bold text-xs uppercase tracking-wide">
-            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-            Investigation Board Hearing: Landmark Case Review
-          </div>
-          <p class="text-xs text-amber-950 leading-relaxed">
-            The national Air Accident Investigation Board has convened a special hearing into a landmark high-altitude upset event involving sensor icing, contradictory cockpit warnings, and crew response. The inquiry panel must determine the chronological sequence, assess crew resource management (CRM), and formulate binding safety recommendations.
-          </p>
-        </div>
+    window.resetAirframeChallenge = function() {
+      document.querySelectorAll('[id^="svg-part-text-"]').forEach(el => {
+        if (el.dataset.realName) {
+          el.textContent = '[ Click to Reveal ]';
+          el.setAttribute('fill', '#fbbf24');
+        }
+      });
+      document.querySelectorAll('[id^="card-part-name-"]').forEach(el => {
+        if (el.dataset.realName) {
+          el.textContent = 'Part ' + el.id.replace('card-part-name-', '') + ' [ ? ]';
+        }
+      });
+    };
 
-        <!-- ACTION STEPS -->
-        <div class="p-3 bg-white border border-rose-200 rounded-xl space-y-2">
-          <span class="text-xs font-bold uppercase tracking-wide text-rose-950">Student Instructions &amp; Action Steps</span>
-          <ol class="space-y-1.5 text-xs text-slate-700 leading-relaxed">
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 1 (Role Allocation):</strong> Form groups of 4: <strong>Chief Technical Investigator</strong>, <strong>Aircraft Manufacturer Representative</strong>, <strong>Airline Chief Pilot</strong>, and <strong>Aviation Authority Regulator</strong>.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 2 (Chronology Presentation):</strong> The Chief Investigator opens the hearing, presenting the FDR timeline using accurate narrative past tenses (<em>'While the aircraft was cruising...', 'The crew had not noticed...'</em>).</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 3 (Cross-Examination):</strong> The Regulator questions the Manufacturer about pitot tube heating design, and questions the Airline about simulator high-altitude stall training.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0 mt-1.5"></span>
-              <span><strong>Step 4 (Safety Directive):</strong> The panel agrees on two official Safety Recommendations to prevent future occurrences.</span>
-            </li>
-          </ol>
-        </div>
-
-        <!-- USEFUL PHRASES BOX -->
-        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
-          <span class="text-[11px] font-bold text-slate-800 uppercase tracking-wide">Useful Spoken Phrases for Investigation Hearing</span>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-            <div>• <em>"According to FDR telemetry, the aircraft had entered the storm system 4 minutes earlier."</em></div>
-            <div>• <em>"Why had the airline not mandated high-altitude manual handling simulator sessions?"</em></div>
-            <div>• <em>"The evidence confirms that the crew were acting in accordance with standard checklists at the time."</em></div>
-            <div>• <em>"We recommend an immediate Airworthiness Directive requiring probe replacement."</em></div>
-          </div>
-        </div>
-
-        <!-- COLLAPSIBLE TEACHER TIPS -->
-        <details class="group rounded-xl border border-purple-200 bg-purple-50/50 p-2.5 transition-all text-xs">
-          <summary class="flex items-center justify-between font-bold text-purple-950 cursor-pointer select-none">
-            <span class="flex items-center gap-2">
-              <span>👨‍🏫 Teacher Tips &amp; Speaking Prompts</span>
-            </span>
-            <span class="text-[11px] text-purple-700 font-semibold group-open:rotate-180 transition-transform duration-200">▾</span>
-          </summary>
-          <div class="mt-2 pt-2 border-t border-purple-200/80 text-purple-900 leading-relaxed pl-4 space-y-1">
-            <p>• Remind students that accident investigation never seeks to blame individuals; its purpose is purely preventing future accidents.</p>
-            <p>• Encourage students to cross-examine each other assertively but professionally.</p>
-            <p>• Check pronunciation of <em>'causal'</em> (/ˈkɔː.zəl/) and <em>'disorientation'</em> (/dɪsˌɔː.ri.enˈteɪ.ʃən/).</p>
-          </div>
-        </details>
-      </div>
-
-      <!-- PART 4: Consolidation & FE2 Full Rehearsal -->
-      <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-2xl shadow-xs space-y-3">
-        <div class="flex items-center gap-2 border-b border-slate-100 pb-2">
-          <span class="w-2.5 h-5 rounded-xs" style="background-color: ${theme.accent};"></span>
-          <div>
-            <h4 class="font-bold text-slate-900 text-sm">Part 4: Formative Evaluation 2 (FE2) Full Rehearsal &amp; Sign-Off</h4>
-            <p class="text-[11px] text-slate-500">Official preparation dry run for Session 5 Formative Evaluation.</p>
-          </div>
-        </div>
-        <p class="text-xs text-slate-700 leading-relaxed">
-          <strong>FE2 Presentation Rehearsal:</strong> In pairs, deliver your 2-minute technical briefing to your partner. One student presents while the partner grades them against the 4 official evaluation criteria: <strong>Fluency &amp; Interaction</strong>, <strong>Technical Lexical Range</strong>, <strong>Grammatical Accuracy</strong>, and <strong>Pronunciation &amp; Stress</strong>.
-        </p>
-        <div class="p-3 bg-rose-50 rounded-xl border border-rose-100 flex items-center justify-between text-xs">
-          <span class="text-rose-900 font-semibold">Formative Evaluation 2 Checklist: Have you verified your evaluation pairing, topic outline, and visual aid?</span>
-          <span class="px-2 py-0.5 rounded font-bold text-rose-800 bg-white border border-rose-200">FE2 Ready</span>
-        </div>
-      </div>
-    </div>
-  `;
-}

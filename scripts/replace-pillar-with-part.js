@@ -89,3 +89,4 @@ jsFiles.forEach(relPath => {
 });
 
 console.log('✓ Successfully retired the term "Pillar" in favor of "Part 1..4" across Semester 1.');
+
