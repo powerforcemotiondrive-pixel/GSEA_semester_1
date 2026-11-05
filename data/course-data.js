@@ -11107,63 +11107,53 @@
           "session": 1,
           "objectives": {
             "title": "Session 1 Objectives - Extreme Weather & Urban Climate Resilience",
-            "summary": "By the end of this session, you will be able to evaluate severe weather disaster briefings, deploy precise B2 language of urgency and risk, lead an emergency civic taskforce simulation, and deliver a live spoken press conference under media scrutiny.",
+            "summary": "By the end of this session, you will be able to evaluate severe weather disaster briefings, deploy precise B2 vocabulary of meteorological hazards, apply conditionals to formulate emergency risk assessments, lead a civic emergency taskforce simulation, and deliver an authoritative spoken press briefing under media scrutiny.",
             "items": [
               {
                 "num": 1,
-                "title": "Analyze an Authentic Emergency Weather Dossier (Risk Assessment)",
-                "description": "Scan emergency alerts, flood forecasts, and infrastructure vulnerability metrics to identify acute urban hazards."
+                "title": "Master Severe Weather & Infrastructure Vulnerability Lexis",
+                "description": "Define and apply 8 essential terms including atmospheric river, inundation, storm surge, and cascading failure."
               },
               {
                 "num": 2,
-                "title": "Prioritize Interventions on an Urgency-Impact Matrix (Spoken Negotiation)",
-                "description": "Debate and rank six civic protection measures with a partner from immediate priority to secondary standby."
+                "title": "Deploy Conditionals for Emergency Risk Assessment (Grammar Clinic)",
+                "description": "Construct real and hypothetical conditional sentences (1st and 2nd conditionals) to link meteorological alerts directly to civic countermeasures."
               },
               {
                 "num": 3,
-                "title": "Deploy Language of Urgency, Safeguards & Cause-and-Effect (Grammar Clinic)",
-                "description": "Master official directive structures: 'Priority must be given to...', 'Provided that...', and 'Failure to evacuate will result in...'."
+                "title": "Lead a Civic Emergency Taskforce Simulation (Pillar 3)",
+                "description": "Adopt departmental roles in pairs to negotiate an Urgency-Impact Matrix and respond to live crisis injects."
               },
               {
                 "num": 4,
-                "title": "Coordinate an Escalating Multi-Stakeholder Crisis Simulation (Interactive Role-Play)",
-                "description": "Collaborate as Mayor's Office, Transit Director, Hospital Lead, or Public Communications to resolve breaking crisis updates."
-              },
-              {
-                "num": 5,
-                "title": "Deliver a Live Spoken Press Conference & Handle Journalist Scrutiny (Fluency & Q&A)",
-                "description": "Deliver a 3-minute public emergency broadcast and answer challenging questions from investigative media."
+                "title": "Deliver a Spoken Emergency Press Conference",
+                "description": "Present an authoritative 3-minute public safety broadcast and defend decisions against tough investigative reporter questions."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan - Extreme Weather & Urban Climate Resilience (2 Hours)",
-            "summary": "A high-stakes, 2-block crisis workshop: students analyze an escalating meteorological disaster dossier, prioritize city defenses, role-play a city emergency taskforce, and defend decisions in a live press briefing.",
+            "summary": "A 120-minute operational syllabus combining disaster lexis drills, conditional grammar clinics, a 4-part emergency taskforce simulation, live spoken press conference, and FE2 alignment.",
             "items": [
               {
-                "time": "00-20",
-                "title": "Part 1: The Meteorological Dossier & Urgency Matrix (20 mins)",
-                "description": "Reading an escalating regional storm and heat emergency alert; teams place 6 civic threats on an interactive Urgency-Impact Diamond."
+                "time": "00–25",
+                "title": "Pillar 1: Severe Weather & Disaster Vulnerability Lexis (25 mins)",
+                "description": "Analyze 8 core technical terms, examine real-world emergency bulletins, and complete the interactive vocabulary matching drill."
               },
               {
-                "time": "20-40",
-                "title": "Part 2: Language Clinic: Expressing Urgency, Conditionals & Directives (20 mins)",
-                "description": "Mastering high-priority language: 'Immediate priority must be given to...', 'Provided that auxiliary power holds...', 'Failure to act will lead to...'."
+                "time": "25–50",
+                "title": "Pillar 2: Grammar Clinic • Conditionals for Emergency Risk (25 mins)",
+                "description": "Master 1st and 2nd conditionals in crisis management; complete 4 interactive risk assessment sentence transformations."
               },
               {
-                "time": "40-95",
-                "title": "Part 3: The City Emergency Taskforce Simulation (55 mins)",
-                "description": "4 distinct roles (Mayor's Office, Transit Director, Hospital Network Lead, Communications Officer) responding to 3 breaking incident updates (blackout, hospital generator failure, flooded transit)."
+                "time": "50–95",
+                "title": "Pillar 3: Emergency Taskforce Simulation & Press Conference (45 mins)",
+                "description": "Step-by-step roleplay: rank 6 acute threats, resolve dynamic crisis injects, and deliver a live spoken press conference under media scrutiny."
               },
               {
-                "time": "95-115",
-                "title": "Part 4: Spoken Live Press Conference & Media Scrutiny (20 mins)",
-                "description": "Taskforce leads deliver a 3-minute emergency broadcast to citizens and face tough questions from investigative reporters."
-              },
-              {
-                "time": "115-120",
-                "title": "Part 5: Crisis Debrief & Key Terminology Wrap-Up (5 mins)",
-                "description": "Peer language feedback, operational debrief, and vocabulary logging."
+                "time": "95–120",
+                "title": "Pillar 4: Pronunciation Clinic, Peer Review & FE2 Prep (25 mins)",
+                "description": "Drill syllable stress on multi-syllable terms, conduct peer fluency evaluations, and review FE2 presentation requirements."
               }
             ]
           },
@@ -11647,63 +11637,53 @@
           "session": 2,
           "objectives": {
             "title": "Session 2 Objectives - The 15-Minute Resilient City Blueprint",
-            "summary": "By the end of this session, you will be able to conduct a visual photo analysis comparing car-centric sprawl with pedestrian-first superblocks, deploy spatial prepositions and urban design vocabulary, collaborate on a €50M district redesign sprint, and defend your blueprint before a civic investor panel.",
+            "summary": "By the end of this session, you will be able to analyze contrasting urban spatial typologies, apply precise B2 spatial prepositions and relative clauses, allocate a €50,000,000 regeneration budget across resilient city infrastructure, and pitch a collaborative urban design blueprint to a City Council panel.",
             "items": [
               {
                 "num": 1,
-                "title": "Conduct a Comparative Visual Photo Analysis (Spatial Observation & Contrast)",
-                "description": "Contrast car-centric sprawl with a pedestrian superblock using clickable hotspots and spatial prepositions."
+                "title": "Analyze Contrasting Urban Typologies (Photo Showcase)",
+                "description": "Contrast car-centric sprawl with European superblocks using interactive clickable hotspots and a 3-stage observation protocol."
               },
               {
                 "num": 2,
-                "title": "Deploy Spatial Prepositions & Urban Planning Lexis (Language Clinic)",
-                "description": "Use precise locational phrases: 'flanked by', 'bisected by', 'adjacent to', and 'reclaimed from vehicular traffic'."
+                "title": "Master Spatial Prepositions & Relative Clauses (Grammar Clinic)",
+                "description": "Construct sophisticated descriptive sentences combining spatial markers ('flanked by', 'adjacent to') with non-defining relative clauses."
               },
               {
                 "num": 3,
-                "title": "Collaborate on a €50M Urban District Redesign Sprint (Team Creative Design)",
-                "description": "Allocate a €50M municipal fund across transit, green canopy, affordable housing, and public plazas."
+                "title": "Execute a €50M Collaborative Urban Design Sprint",
+                "description": "Allocate €50M across 5 resilient infrastructure categories while overcoming 4 tough stakeholder objections."
               },
               {
                 "num": 4,
-                "title": "Pitch the Blueprint to a Skeptical Civic Investor Panel (Spoken Persuasion)",
-                "description": "Deliver a structured visual pitch answering tough financial, social, and logistical objections."
-              },
-              {
-                "num": 5,
-                "title": "Critique Competitor Urban Designs with Constructive Rebuttals (Peer Evaluation)",
-                "description": "Conduct a gallery walk review and vote on the most viable sustainable urban district design."
+                "title": "Deliver a Spoken City Council Pitch & Peer Vote",
+                "description": "Present a 3-minute spoken proposal defending your duo's blueprint and participate in the class council vote."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan - The 15-Minute Resilient City Blueprint (2 Hours)",
-            "summary": "A creative hands-on design sprint: students analyze contrasting urban photos with interactive hotspots, master spatial prepositions, draft an integrated €50M district redesign, and defend it before a panel of community stakeholders.",
+            "summary": "A 120-minute visual analysis and collaborative engineering sprint moving from spatial photo analysis to relative clause grammar drills, €50M budget allocation, stakeholder rebuttal clinic, and spoken council presentations.",
             "items": [
               {
-                "time": "00-20",
-                "title": "Part 1: Urban Showcase: Visual Photo Analysis & Hotspot Clinic (20 mins)",
-                "description": "Side-by-side comparative analysis of car sprawl (urban_car_sprawl.jpg) vs. green superblock (urban_superblock.jpg) with clickable vocabulary hotspots and the Mayor's Dilemma speaking task."
+                "time": "00–25",
+                "title": "Pillar 1: Urban Architecture & Spatial Vocabulary (25 mins)",
+                "description": "Master 8 key spatial design terms (permeable paving, active frontage, bioswale, superblock) with interactive visual matching."
               },
               {
-                "time": "20-40",
-                "title": "Part 2: Language Clinic: Spatial Prepositions & Planning Structures (20 mins)",
-                "description": "Mastering spatial precision: 'flanked by', 'adjacent to', 'bisected by', 'reclaimed from', 'within walking radius of'."
+                "time": "25–50",
+                "title": "Pillar 2: Grammar Clinic • Spatial Prepositions & Relative Clauses (25 mins)",
+                "description": "Punctuation and syntax rules for non-defining relative clauses; complete 4 sentence combining drills with instant feedback."
               },
               {
-                "time": "40-80",
-                "title": "Part 3: The €50M District Redesign Sprint (40 mins)",
-                "description": "In teams of 3–4, students receive the blueprint of a congested transit corridor and allocate budget across transit, green canopy, social housing, and commerce."
+                "time": "50–95",
+                "title": "Pillar 3: Photo Analysis & €50M Collaborative Design Sprint (45 mins)",
+                "description": "Step-by-step: analyze comparative photos, allocate the €50M budget across 5 categories, and script counter-arguments to 4 stakeholder objections."
               },
               {
-                "time": "80-110",
-                "title": "Part 4: The Civic Investor Forum & Public Defense (30 mins)",
-                "description": "Teams deliver a 4-minute visual pitch and defend their choices against community questions (shopkeepers, suburban drivers, eco-activists)."
-              },
-              {
-                "time": "110-120",
-                "title": "Part 5: Blueprint Showcase & Peer Voting (10 mins)",
-                "description": "Silent gallery walk, investment vote, and key design term consolidation."
+                "time": "95–120",
+                "title": "Pillar 4: Spoken City Council Pitch & Democratic Vote (25 mins)",
+                "description": "Duos deliver 3-minute spoken presentations to the City Council panel; class votes on the winning resilient blueprint."
               }
             ]
           },
@@ -12190,63 +12170,53 @@
           "session": 3,
           "objectives": {
             "title": "Session 3 Objectives - Environmental Ethics & The Public Inquiry Hearing",
-            "summary": "By the end of this session, you will be able to detect logical fallacies in environmental arguments, deploy sophisticated phrases for polite disagreement and cautious concession, cross-examine opposing witnesses in a formal public inquiry, and deliver a compelling closing statement.",
+            "summary": "By the end of this session, you will be able to analyze high-stakes infrastructure controversies, deploy diplomatic B2 hedging and concession formulas, conduct formal witness cross-examinations, and deliver a majority judicial commission ruling.",
             "items": [
               {
                 "num": 1,
-                "title": "Evaluate Conflicting Environmental Evidence & Testimonies (Critical Reading)",
-                "description": "Analyze competing economic, ecological, and social impact claims regarding a high-speed transit corridor."
+                "title": "Master Environmental Ethics & Public Inquiry Lexis",
+                "description": "Define and apply 8 high-level terms including empirical evidence, carbon sequestration, proportionality, and peatland aquifer."
               },
               {
                 "num": 2,
-                "title": "Identify Logical Fallacies & Biased Claims (Critical Thinking)",
-                "description": "Spot false dichotomies, slippery slope arguments, and greenwashed marketing claims in public testimonies."
+                "title": "Deploy Cautious Language (Hedging) & Concessions (Grammar Clinic)",
+                "description": "Construct formal argumentation sentences using partial concessions ('While I concede that...') and causality challenges."
               },
               {
                 "num": 3,
-                "title": "Deploy Cautious Concession & Counter-Argument Markers (Language Clinic)",
-                "description": "Master advanced discourse linkers: 'While I concede that...', 'Be that as it may...', and 'With respect, that conflates...'."
+                "title": "Conduct an Oxford-Style Public Inquiry Hearing",
+                "description": "Adopt sworn witness roles in the Val-d'Or Rail Bypass controversy and execute 2-minute adversarial cross-examinations."
               },
               {
                 "num": 4,
-                "title": "Simulate a Formal Public Inquiry Hearing (Structured Debate)",
-                "description": "Participate as Commission Judge, Infrastructure Advocate, Ecological Biologist, or Local Community Union."
-              },
-              {
-                "num": 5,
-                "title": "Deliver a Persuasive Closing Argument as Lead Advocate (Formal Spoken Fluency)",
-                "description": "Present a 2-minute evidence-based summation to secure judicial approval or injunction."
+                "title": "Formulate a Legally Binding Commission Ruling",
+                "description": "Synthesize economic and ecological evidence to deliver a formal majority tribunal verdict."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 3 Lesson Plan - Environmental Ethics & The Public Inquiry Hearing (2 Hours)",
-            "summary": "An Oxford-style debate and legal lab: students analyze conflicting testimonies on a controversial transit infrastructure project through an ancient wetland, learn argument framing and nuanced concession, and hold a formal public inquiry.",
+            "summary": "A 120-minute formal inquiry lab moving from environmental lexis to cautious argumentation clinics, witness deposition analysis, Oxford-style cross-examinations, and tribunal deliberations.",
             "items": [
               {
-                "time": "00-15",
-                "title": "Part 1: The Devil's Advocate Hook: Provocative Claims (15 mins)",
-                "description": "2-minute quick-fire sparring on ethical dilemmas: 'Economic growth must always take precedence over local habitat conservation'."
+                "time": "00–25",
+                "title": "Pillar 1: Environmental Ethics & Inquiry Vocabulary (25 mins)",
+                "description": "Examine 8 core debate terms; complete the interactive collocation matching challenge with instant answer reveal."
               },
               {
-                "time": "15-40",
-                "title": "Part 2: The Disputed Valley Dossier & Evidence Cross-Check (25 mins)",
-                "description": "Evaluating four conflicting witness statements (Ecological Biologist, Chamber of Commerce, Commuter Union, Regional Planner)."
+                "time": "25–50",
+                "title": "Pillar 2: Grammar Clinic • Cautious Language & Concessions (25 mins)",
+                "description": "Master diplomatic hedging formulas; rewrite 4 blunt statements into formal B2 inquiry arguments with check answers."
               },
               {
-                "time": "40-60",
-                "title": "Part 3: Language Clinic: Nuanced Concession & Reframing (20 mins)",
-                "description": "Mastering high-level debate signposts: 'While I concede that..., the empirical data demonstrates...', 'Be that as it may...', 'With respect, that conflates...'."
+                "time": "50–95",
+                "title": "Pillar 3: The Val-d'Or Rail Bypass Public Inquiry Hearing (45 mins)",
+                "description": "Step-by-step: examine 4 sworn witness briefs, prepare cross-examination questions, convene the hearing, and deliver the tribunal verdict."
               },
               {
-                "time": "60-105",
-                "title": "Part 4: The Formal Public Inquiry Hearing Simulation (45 mins)",
-                "description": "Formal judicial proceedings with opening testimonies, cross-examinations, witness challenges, and commissioner rulings."
-              },
-              {
-                "time": "105-120",
-                "title": "Part 5: Judicial Verdict, Peer Assessment & Wrap-Up (15 mins)",
-                "description": "Commissioners deliver the binding ruling and debrief linguistic performance."
+                "time": "95–120",
+                "title": "Pillar 4: Argumentative Debrief & Peer Rhetorical Review (25 mins)",
+                "description": "Peer evaluation on hedging accuracy, evidence presentation, and alignment with FE2 presentation criteria."
               }
             ]
           },
@@ -12682,63 +12652,53 @@
           "session": 4,
           "objectives": {
             "title": "Session 4 Objectives - Airport Biodiversity & Ecological Coexistence",
-            "summary": "By the end of this session, you will be able to analyze the operational tension between aviation safety (wildlife deterrence) and habitat preservation, rotate through multi-perspective technical stations, negotiate a binding multi-stakeholder land-use treaty, and assess your readiness for Formative Evaluation 2 (FE2).",
+            "summary": "By the end of this session, you will be able to evaluate airfield eco-engineering solutions, deploy modals of obligation and necessity in regulatory contexts, negotiate a multilateral 500-hectare Airport Perimeter Treaty, and complete final preparation for Formative Evaluation 2 (FE2).",
             "items": [
               {
                 "num": 1,
-                "title": "Examine the Meadow Paradox: Wildlife Hazard vs. Ecological Corridor (Context Briefing)",
-                "description": "Analyze why airport airfields represent Europe's most fertile yet hazardous biodiversity sanctuaries."
+                "title": "Examine Airfield Eco-Engineering Technologies",
+                "description": "Analyze 8 specialized terms including meadow paradox, avian 3D radar, long-grass policy, and constructed reed beds."
               },
               {
                 "num": 2,
-                "title": "Rotate Through 3 Specialized Environmental Solution Stations (Technical Fluency)",
-                "description": "Explore non-lethal wildlife deterrence, solar-wildflower dual zoning, and sustainable drainage systems (SuDS)."
+                "title": "Master Modals of Obligation, Prohibition & Necessity (Grammar Clinic)",
+                "description": "Apply graded modal verbs ('are mandated to', 'is strictly prohibited from', 'should') in airport safety regulations."
               },
               {
                 "num": 3,
-                "title": "Deploy Passive Voice & Impersonal Phrasing for Policy Recommendations (Grammar Clinic)",
-                "description": "Master formal policy language: 'Measures must be implemented to...', 'It is proposed that...', 'Runway safety zones are to be kept...'."
+                "title": "Negotiate the Tri-Party Airport Perimeter Land-Use Treaty",
+                "description": "Represent competing delegations (Flight Safety, Wildlife Trust, Clean Energy Consortium) to zone 500 hectares of perimeter land."
               },
               {
                 "num": 4,
-                "title": "Negotiate a 10-Year Airport Land-Use Treaty (Multi-Party Negotiation)",
-                "description": "Represent Airport Operations, Wildlife Protection League, or Regional Clean Energy Consortium to divide 500 hectares."
-              },
-              {
-                "num": 5,
-                "title": "Benchmark Individual Progress Against the Formative Evaluation 2 Rubric (FE2 Readiness)",
-                "description": "Evaluate speaking fluency, interactive turn-taking, and lexical range against official B2 criteria."
+                "title": "Complete Formative Evaluation 2 (FE2) Oral Rehearsal",
+                "description": "Conduct a 2-minute timed pitch rehearsal with your partner and verify slide outline approval with your teacher."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan - Airport Biodiversity & Ecological Coexistence (2 Hours)",
-            "summary": "A fast-moving station-based workshop and treaty negotiation: students explore non-lethal wildlife management, solar-pollinator zoning, and sustainable drainage, followed by a tri-partite land-use treaty negotiation and FE2 prep.",
+            "summary": "A 120-minute station-based workshop and treaty tournament combining eco-engineering lexis, regulatory modal grammar, a 3-station rotation, treaty negotiation, and FE2 oral rehearsal.",
             "items": [
               {
-                "time": "00-15",
-                "title": "Part 1: The Meadow Paradox: Video & Case Hook (15 mins)",
-                "description": "Why airport grasslands represent some of Europe's most fertile yet hazardous biodiversity zones (pesticide-free perimeter fences vs. bird-strike risks)."
+                "time": "00–25",
+                "title": "Pillar 1: Airfield Eco-Engineering Vocabulary (25 mins)",
+                "description": "Explore the Meadow Paradox; complete the interactive 8-term technical summary gap-fill with instant answer reveals."
               },
               {
-                "time": "15-50",
-                "title": "Part 2: 3-Station Specialized Solutions Workshop (35 mins)",
-                "description": "Groups rotate through Station 1 (Non-Lethal Wildlife Deterrence), Station 2 (Solar-Pollinator Dual-Use Zoning), and Station 3 (Sustainable Drainage & Glycol Filtration)."
+                "time": "25–50",
+                "title": "Pillar 2: Grammar Clinic • Modals of Obligation & Necessity (25 mins)",
+                "description": "Study regulatory modal formulas; complete 4 interactive gap-fill exercises matching modal strength to safety rules."
               },
               {
-                "time": "50-70",
-                "title": "Part 3: Language Clinic: Passive Voice & Impersonal Recommendations (20 mins)",
-                "description": "Professional formal English: 'It is strongly recommended that...', 'Measures must be implemented to ensure...', 'Runway buffer zones are to be maintained...'."
+                "time": "50–95",
+                "title": "Pillar 3: Interactive Stations & Land-Use Treaty Tournament (45 mins)",
+                "description": "Step-by-step: rotate through 3 technology stations, negotiate the 500-hectare zoning treaty, and sign the Tri-Party Accord."
               },
               {
-                "time": "70-105",
-                "title": "Part 4: The Tri-Partite Land-Use Treaty Negotiation (35 mins)",
-                "description": "Airport Authority, Wildlife Trust, and Clean Energy Consortium negotiate a binding 10-year accord over 500 perimeter hectares."
-              },
-              {
-                "time": "105-120",
-                "title": "Part 5: Formative Evaluation 2 (FE2) Roadmap & Review (15 mins)",
-                "description": "Treaty ratification, vocabulary consolidation, and FE2 rubric benchmarking."
+                "time": "95–120",
+                "title": "Pillar 4: FE2 Oral Presentation Rehearsal & Sign-Off (25 mins)",
+                "description": "Deliver 2-minute timed partner pitch dry runs against the FE2 rubric and confirm final teacher validation."
               }
             ]
           },
@@ -13300,53 +13260,53 @@
           "session": 1,
           "objectives": {
             "title": "Session 1 Objectives - Everyday AI & Workplace Automation",
-            "summary": "By the end of this session, you will be able to evaluate workplace automation risks across critical operations, analyze the trade-offs between computational efficiency and cognitive deskilling, formulate Human-in-the-Loop (HITL) safeguards, and defend operational automation policies during a spoken town hall inquiry.",
+            "summary": "By the end of this session, you will be able to evaluate workplace automation risks across critical operations, analyze the trade-offs between computational efficiency and cognitive deskilling, apply the Passive Voice to describe automated system actions, formulate Human-in-the-Loop (HITL) safeguards, and defend operational automation policies during a spoken town hall inquiry.",
             "items": [
               {
                 "num": 1,
-                "title": "Conduct an Operational Automation Vulnerability Audit",
-                "description": "Assess six workplace workflows using an Urgency vs. Human Oversight Matrix to identify automation bottlenecks."
+                "title": "Master Machine Learning & Operational Automation Lexis",
+                "description": "Define and apply 8 essential terms including algorithmic drift, predictive telemetry, human-in-the-loop, and black-box models."
               },
               {
                 "num": 2,
-                "title": "Formulate Human-in-the-Loop (HITL) Protocols",
-                "description": "Collaborate in interdisciplinary trios to draft mandatory operational override thresholds for autonomous systems."
+                "title": "Deploy Active vs. Passive Voice in Technical Descriptions (Grammar Clinic)",
+                "description": "Contrast automated system outputs ('The flight plan was recalculated') with human executive agency ('The dispatcher authorized')."
               },
               {
                 "num": 3,
-                "title": "Master Active vs. Passive Voice in Technical Risk Briefings",
-                "description": "Contrast automated processes ('The flight plan was recalculated') with executive human accountability ('The dispatcher authorized')."
+                "title": "Conduct an Operational Automation Vulnerability Audit",
+                "description": "Assess 6 workplace workflows using an Urgency vs. Oversight Matrix and resolve 3 dynamic crisis injects."
               },
               {
                 "num": 4,
                 "title": "Lead a Spoken Workplace Town Hall Scrutiny Session",
-                "description": "Deliver an authoritative operational defense of algorithmic changes and respond to tough cross-examination from staff."
+                "description": "Deliver an authoritative operational defense of algorithmic changes and respond to tough cross-examination from frontline staff."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan - Everyday AI & Workplace Automation (2 Hours)",
-            "summary": "A 120-minute operational workshop moving from an automation risk audit to a high-stakes Human-in-the-Loop policy simulation, spoken town hall cross-examination, and active/passive technical phrasing clinic.",
+            "summary": "A 120-minute operational workshop moving from automation lexis to active/passive voice grammar drills, a 6-workflow vulnerability audit, Human-in-the-Loop simulation, spoken town hall scrutiny, and FE3 alignment.",
             "items": [
               {
                 "time": "00–25",
-                "title": "Part 1: Workplace Automation Vulnerability Audit (25 mins)",
-                "description": "Analyze six operational workflows (dispatch algorithms, automated passenger re-booking, biometric bag drops, predictive maintenance) and rank them on a Risk vs. Autonomy Matrix."
+                "title": "Pillar 1: Machine Learning & Operational Automation Lexis (25 mins)",
+                "description": "Analyze 8 key AI terms; complete the interactive concept-to-consequence matching drill with check answers."
               },
               {
-                "time": "25–70",
-                "title": "Part 2: 'Human-in-the-Loop' (HITL) Policy Simulation (45 mins)",
-                "description": "Adopt specialized operational roles (Operations Director, Union Workforce Rep, AI Systems Architect) to manage 3 dynamic crisis injects involving algorithm hallucination and cascading system failure."
+                "time": "25–50",
+                "title": "Pillar 2: Grammar Clinic • Active vs. Passive Voice in Tech (25 mins)",
+                "description": "Master passive voice in system reporting vs active voice for human responsibility; complete 4 interactive conversion drills."
               },
               {
-                "time": "70–100",
-                "title": "Part 3: Spoken Workplace Town Hall & Cross-Examination (30 mins)",
-                "description": "Taskforce leads deliver a 3-minute spoken defense of their automation policy, followed by aggressive question-and-answer scrutiny from frontline employees."
+                "time": "50–95",
+                "title": "Pillar 3: Automation Vulnerability Audit & Town Hall Simulation (45 mins)",
+                "description": "Step-by-step: rank 6 critical workflows, resolve 3 dynamic crisis injects, and lead a spoken town hall defense under employee scrutiny."
               },
               {
-                "time": "100–120",
-                "title": "Part 4: Technical Phrasing Clinic & FE3 Alignment (20 mins)",
-                "description": "Drill precise Active vs. Passive constructions in incident reporting and calibrate spoken delivery against the Formative Evaluation 3 (FE3) criteria."
+                "time": "95–120",
+                "title": "Pillar 4: Technical Phrasing Review & FE3 Alignment (25 mins)",
+                "description": "Peer review on passive voice accuracy, calibrate spoken delivery against the FE3 presentation rubric, and confirm topics."
               }
             ]
           },
@@ -13830,43 +13790,48 @@
               {
                 "num": 1,
                 "title": "Compare Competing Zero-Emission Transport Paradigms",
-                "description": "Analyze fixed-guideway high-speed transit vs. decentralized regional electric aviation across emissions, land take, and scalability."
+                "description": "Contrast decentralized regional electric aviation with high-density fixed-guideway rail across emissions, land take, and scalability."
               },
               {
                 "num": 2,
-                "title": "Master Future Forms & Predictive Certainty Phrasing",
+                "title": "Master Future Forms & Predictive Certainty (Grammar Clinic)",
                 "description": "Deploy graded modal phrases ('is bound to', 'is slated to', 'is highly improbable that') to express technical forecasts."
               },
               {
                 "num": 3,
                 "title": "Lead a €100M Clean Corridor Collaborative Design Sprint",
-                "description": "Balance capital allocation across hydrogen hubs, electric commuter fleets, vertiports, and high-speed rail links."
+                "description": "Allocate €100,000,000 across 5 breakthrough propulsion and infrastructure options to transform a regional corridor by 2035."
               },
               {
                 "num": 4,
-                "title": "Overcome Vocal Stakeholder Pushback in Spoken Pitches",
+                "title": "Deliver a Spoken Regional Council Investment Pitch",
                 "description": "Defend your regional clean mobility transition plan against fiscal conservatives, rural advocates, and climate skeptics."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan - Future Mobility & Clean Energy Transport (2 Hours)",
-            "summary": "A 120-minute visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, budgeting €100M in regional decarbonization infrastructure, and defending transit choices against stakeholder resistance.",
+            "summary": "A 120-minute visual analysis and collaborative engineering sprint comparing competing clean mobility paradigms, practicing predictive certainty grammar, budgeting €100M in regional decarbonization infrastructure, and defending transit choices.",
             "items": [
               {
-                "time": "00–35",
-                "title": "Part 1: Future Mobility Showcase • Comparative Visual Analysis (35 mins)",
-                "description": "Examine two competing future transit paradigms (Decentralized Regional Electric/eVTOL Air Mobility vs. Centralized High-Speed Rail & Megaprojects) using interactive spatial hotspots and a 3-stage spoken protocol."
+                "time": "00–25",
+                "title": "Pillar 1: Clean Propulsion & Multi-Modal Transit Lexis (25 mins)",
+                "description": "Master 8 alternative propulsion terms (cryogenic hydrogen, fuel-cell, vertiport, catenary electrification) with comparative analysis."
               },
               {
-                "time": "35–90",
-                "title": "Part 2: €100M Clean Corridor Collaborative Design Sprint (55 mins)",
-                "description": "Teams allocate €100,000,000 across 5 breakthrough propulsion and infrastructure options to transform the 'South-West Trans-Regional Corridor' by 2035."
+                "time": "25–50",
+                "title": "Pillar 2: Grammar Clinic • Future Forms & Predictive Certainty (25 mins)",
+                "description": "Calibrate expressions of technical confidence; complete 4 interactive technological forecasts with instant answer check."
               },
               {
-                "time": "90–120",
-                "title": "Part 3: Spoken Regional Council Pitch & Policy Defense (30 mins)",
-                "description": "Planning duos deliver 3-minute investment pitches to the Regional Transport Authority, counter stakeholder objections, and vote on the winning corridor design."
+                "time": "50–95",
+                "title": "Pillar 3: Comparative Showcase & €100M Design Sprint (45 mins)",
+                "description": "Step-by-step: analyze comparative transit models, allocate €100M across 5 options, script stakeholder rebuttals, and pitch to the Council."
+              },
+              {
+                "time": "95–120",
+                "title": "Pillar 4: Council Vote & Feasibility Review (25 mins)",
+                "description": "Class votes on the most resilient corridor blueprint; peer feedback on predictive grammar and spoken persuasion."
               }
             ]
           },
@@ -14353,53 +14318,53 @@
           "session": 3,
           "objectives": {
             "title": "Session 3 Objectives - Technology Ethics & Automated Decisions in AI",
-            "summary": "By the end of this session, you will be able to analyze ethical dilemmas surrounding predictive AI and algorithmic surveillance, cross-examine technical witness depositions under EU AI Act standards, deploy persuasive B2 argumentation strategies, and deliver a formal public inquiry verdict.",
+            "summary": "By the end of this session, you will be able to analyze ethical dilemmas surrounding predictive AI and algorithmic surveillance, cross-examine technical witness depositions under EU AI Act standards, deploy complex conjunctions and concessive clauses, and deliver a formal public inquiry verdict.",
             "items": [
               {
                 "num": 1,
-                "title": "Evaluate High-Stakes Algorithmic Oversight Dossiers",
-                "description": "Scrutinize empirical evidence of automated profiling, false-positive biometric matches, and black-box decision models."
+                "title": "Master AI Ethics & Regulatory Governance Lexis",
+                "description": "Define and apply 8 essential terms including biometric profiling, black-box model, false-positive rate, and conformity assessment."
               },
               {
                 "num": 2,
-                "title": "Conduct Formal Spoken Witness Cross-Examinations",
-                "description": "Adopt inquiry roles (Judicial Commissioner, Chief Data Ethics Auditor, Biometric Defense Vendor, Civil Rights Litigator) to challenge witness vulnerabilities."
+                "title": "Deploy Complex Conjunctions & Concessive Clauses (Grammar Clinic)",
+                "description": "Construct formal legal debate sentences using 'notwithstanding', 'inasmuch as', 'whereas', and 'even if'."
               },
               {
                 "num": 3,
-                "title": "Deploy Advanced B2 Inquiry Argumentation Structures",
-                "description": "Master partial concessions ('While I acknowledge the security imperatives...'), causation challenges, and constructive regulatory remedies."
+                "title": "Conduct an Oxford-Style Public Inquiry Hearing (Project Argus-Eye)",
+                "description": "Adopt sworn witness roles in an automated border surveillance controversy and execute formal cross-examinations."
               },
               {
                 "num": 4,
-                "title": "Deliver a Binding Public Inquiry Commission Ruling",
-                "description": "Formulate a majority judicial opinion balancing public security mandates against fundamental privacy rights."
+                "title": "Deliver a Legally Binding Commission Ruling",
+                "description": "Balance European homeland security mandates against fundamental civil privacy rights to issue a formal majority ruling."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 3 Lesson Plan - Technology Ethics & Automated Decisions in AI (2 Hours)",
-            "summary": "A 120-minute Oxford-style regulatory inquiry examining biometric surveillance, predictive passenger profiling, and algorithmic accountability under the European AI Act framework.",
+            "summary": "A 120-minute Oxford-style regulatory inquiry examining biometric surveillance, predictive profiling, complex concessive grammar, sworn witness depositions, and tribunal deliberations under the EU AI Act.",
             "items": [
               {
-                "time": "00–20",
-                "title": "Part 1: Devil's Advocate Warm-Up • Tech Fallacy Rebuttals (20 mins)",
-                "description": "Quick-fire spoken counter-arguments refuting three common tech governance myths regarding facial recognition and algorithmic infallibility."
+                "time": "00–25",
+                "title": "Pillar 1: AI Ethics & Regulatory Governance Lexis (25 mins)",
+                "description": "Classify AI systems into EU AI Act risk tiers; complete the interactive 8-term ethical vocabulary drill with check answers."
               },
               {
-                "time": "20–55",
-                "title": "Part 2: The High-Stakes Public Inquiry Dossier (35 mins)",
-                "description": "Analyze the official inquiry brief: Project 'Argus-Eye' (an automated AI profiling system deployed across 14 international border checkpoints)."
+                "time": "25–50",
+                "title": "Pillar 2: Grammar Clinic • Complex Conjunctions & Concessions (25 mins)",
+                "description": "Master high-level formal debate syntax; combine 4 pairs of arguments using concessive clauses with instant solution reveal."
               },
               {
-                "time": "55–80",
-                "title": "Part 3: Spoken Inquiry Argumentation & Cross-Exam Clinic (25 mins)",
-                "description": "Practice high-level rhetorical patterns: concessions, challenging false equivalence, and formulating proportionate regulatory safeguards."
+                "time": "50–95",
+                "title": "Pillar 3: The Project Argus-Eye Public Inquiry Hearing (45 mins)",
+                "description": "Step-by-step: analyze witness depositions, prepare targeted cross-examination challenges, convene the hearing, and deliver the verdict."
               },
               {
-                "time": "80–120",
-                "title": "Part 4: Oxford-Style Public Hearing & Commission Verdict (40 mins)",
-                "description": "Formal inquiry proceedings: witness depositions, 2-minute adversarial cross-examinations, commissioner deliberations, and delivery of the final binding verdict."
+                "time": "95–120",
+                "title": "Pillar 4: Regulatory Debrief & Argument Evaluation (25 mins)",
+                "description": "Peer review on argumentative rigor, formal register, and alignment with FE3 presentation standards."
               }
             ]
           },
@@ -14835,17 +14800,17 @@
           "session": 4,
           "objectives": {
             "title": "Session 4 Objectives - Biometrics, Digital IDs & Passenger Journey",
-            "summary": "By the end of this session, you will be able to analyze seamless airport passenger processing technologies, evaluate data sovereignty and cryptographic security safeguards, negotiate a multilateral Passenger Rights & Biometric Sovereignty Treaty, and calibrate your speaking performance for the Session 5 Formative Evaluation 3 (FE3).",
+            "summary": "By the end of this session, you will be able to analyze seamless airport passenger processing technologies, evaluate data sovereignty and cryptographic security safeguards, deploy defining and non-defining relative clauses with precision, negotiate a multilateral Passenger Rights & Biometric Sovereignty Treaty, and calibrate your speaking performance for the Session 5 Formative Evaluation 3 (FE3).",
             "items": [
               {
                 "num": 1,
-                "title": "Examine Seamless Contactless Airport Architecture",
-                "description": "Rotate through three specialized technology stations covering walkthrough biometric tunnels, zero-knowledge proofs, and sovereign digital identity wallets."
+                "title": "Master Biometric & Cryptographic Security Lexis",
+                "description": "Define and apply 8 specialized terms including zero-knowledge proof, cryptographic hash, hardware enclave, and data sovereignty."
               },
               {
                 "num": 2,
-                "title": "Evaluate Biometric Cyber-Vulnerabilities & Hash Encryption",
-                "description": "Analyze the operational difference between centralized facial image databases and decentralized cryptographic biometric hashes."
+                "title": "Master Defining vs. Non-Defining Relative Clauses (Grammar Clinic)",
+                "description": "Punctuate and construct precision technical sentences with relative pronouns ('which', 'who', 'whose', 'wherein')."
               },
               {
                 "num": 3,
@@ -14854,34 +14819,34 @@
               },
               {
                 "num": 4,
-                "title": "Confirm Formative Evaluation 3 (FE3) Speaking Readiness",
-                "description": "Review presentation scoring rubrics, rehearse 2-minute technical pitch summaries with a partner, and finalize FE3 topic approvals."
+                "title": "Execute Formative Evaluation 3 (FE3) Full Rehearsal",
+                "description": "Deliver a 2-minute timed presentation pitch rehearsal with your partner against the official FE3 scoring rubric."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 4 Lesson Plan - Biometrics, Digital IDs & Passenger Journey (2 Hours)",
-            "summary": "A 120-minute station-based workshop and treaty negotiation tournament analyzing contactless travel architectures, biometric data sovereignty, and culminating in full rehearsal for the Formative Evaluation 3 (FE3) presentations.",
+            "summary": "A 120-minute station-based workshop and treaty tournament combining cryptographic lexis, relative clause grammar, a 3-station technology rotation, treaty negotiation, and FE3 presentation dry runs.",
             "items": [
               {
-                "time": "00–20",
-                "title": "Part 1: The Contactless Border Paradox Briefing (20 mins)",
-                "description": "Examine the friction between frictionless 10-second passenger throughput and the catastrophic cyber risks of permanent biometric data theft."
+                "time": "00–25",
+                "title": "Pillar 1: Biometric & Cryptographic Security Lexis (25 mins)",
+                "description": "Trace the cryptographic passenger journey; complete the interactive 8-term data-flow ordering exercise with check answers."
               },
               {
-                "time": "20–65",
-                "title": "Part 2: Interactive Technology Stations (45 mins)",
-                "description": "Pairs rotate through 3 operational engineering clinics: Station 1 (Lidar & Walkthrough E-Gates), Station 2 (Zero-Knowledge Cryptographic Hashes), and Station 3 (Digital Wallets & IATA One ID Interoperability)."
+                "time": "25–50",
+                "title": "Pillar 2: Grammar Clinic • Relative Clauses & Precision (25 mins)",
+                "description": "Master comma placement and relative pronouns; complete 4 interactive sentence combination drills with instant solution reveal."
               },
               {
-                "time": "65–105",
-                "title": "Part 3: Tri-Party Passenger Biometric Charter Tournament (40 mins)",
-                "description": "Delegations negotiate the terms of a legally binding 5-point international treaty establishing data retention limits, opt-out rights, and audit penalties."
+                "time": "50–95",
+                "title": "Pillar 3: Interactive Stations & Biometric Charter Tournament (45 mins)",
+                "description": "Step-by-step: rotate through 3 technology stations, negotiate the 5-point Passenger Charter, and ratify the international treaty."
               },
               {
-                "time": "105–120",
-                "title": "Part 4: Formative Evaluation 3 (FE3) Rehearsal & Sign-Off (15 mins)",
-                "description": "Verify presentation pairings, conduct a 2-minute rapid-fire pitch rehearsal against the FE3 rubric, and confirm readiness for the Session 5 evaluation."
+                "time": "95–120",
+                "title": "Pillar 4: FE3 Final Presentation Rehearsal & Sign-Off (25 mins)",
+                "description": "2-minute timed partner pitch dry runs against the FE3 rubric and final teacher validation of slide decks and topic outlines."
               }
             ]
           },

@@ -31,3 +31,4 @@ const footer = `;
 
 fs.writeFileSync(courseDataPath, header + JSON.stringify(courseData, null, 2) + footer, 'utf8');
 console.log('✓ Successfully wrapped data/course-data.js with UMD wrapper (setting root.COURSE_DATA in browser)');
+
