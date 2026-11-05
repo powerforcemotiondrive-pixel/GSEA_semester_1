@@ -157,6 +157,14 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **General Culture Focus**: Film recommendations are curated for broad cultural perspective, creative storytelling, and critical reflection beyond language boundaries, and are not restricted to English-language cinema.
 - **Privacy & Clean Code Invariants**: Raw `data/*.csv` files remain in `.gitignore`. Example template is tracked at `data/media-latest.example.csv`. Prohibited term `"faculty"` must never appear in generated copy or UI.
 
+### P. Session Objectives & Lesson Plan Title Invariant (Tri-Project Permanent Invariant)
+- **Objectives Title Syntax**: All session objectives titles must follow the strict format:
+  `Session X Objectives - [Topic Title]`
+  *(Never use trailing suffix `Session X - [Topic] Objectives`).*
+- **Lesson Plan Title Syntax**: All session lesson plan titles must follow:
+  `Session X Lesson Plan - [Topic Title] (2 Hours)` or `Session X Lesson Plan (2 Hours)`.
+- **Tri-Project Consistency**: This rule applies permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
