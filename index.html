@@ -3713,10 +3713,11 @@
       }
 
       const rootData = window.COURSE_DATA || {};
-      const progKey = window.currentProgram || "aas";
-      const progData = rootData[progKey] || rootData["1"] || rootData.aas || {};
-      const modCourse = progData["1"] || rootData["1"] || {};
-      const sessionData = (modCourse.sessions && modCourse.sessions[sessionNum]) || {};
+      const progKey = (window.modalState && window.modalState.program) || window.currentProgram || "ag";
+      const modNum = (window.modalState && window.modalState.modNum) || 1;
+      const progData = rootData[progKey] || rootData[progKey.toLowerCase()] || rootData["1"] || rootData.ag || {};
+      const modCourse = progData[modNum] || progData[String(modNum)] || progData["1"] || rootData[String(modNum)] || {};
+      const sessionData = (modCourse.sessions && (modCourse.sessions[sessionNum] || modCourse.sessions[String(sessionNum)])) || {};
       const articles = (sessionData.materials && sessionData.materials.articles) || [];
       const a = articles[articleIndex] || {};
 
@@ -3726,6 +3727,8 @@
       const snippet = a.snippet || a.summary || "";
       const readTime = a.readTime || "5 min read";
       const url = a.url || "https://www.easa.europa.eu";
+
+      const hasContent = Boolean((Array.isArray(a.content) && a.content.length > 0) || (typeof a.content === "string" && a.content.trim().length > 0));
 
       let bodyParagraphsHTML = "";
       if (Array.isArray(a.content)) {
@@ -3778,7 +3781,7 @@
           <div class="p-4 sm:p-6 overflow-y-auto space-y-3">
             <h2 class="text-base sm:text-xl font-black text-slate-900 leading-snug">${heading}</h2>
             
-            ${snippet ? `
+            ${(snippet && hasContent) ? `
               <div class="p-3 rounded-xl bg-slate-50 border-l-4 border-sky-600 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
                 ${snippet}
               </div>

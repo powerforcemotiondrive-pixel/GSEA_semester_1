@@ -475,20 +475,58 @@
           "pageUrl": "session1/admat1.html",
           "articles": [
             {
-              "topic": "Travel &amp; Communication",
-              "sourceTag": "Cultural Insights",
+              "topic": "Travel & Communication",
+              "sourceTag": "Cultural Insights • British Council",
               "heading": "The Art of the Travel Anecdote: Why Personal Journeys Build Spoken Fluency",
               "snippet": "Sharing personal travel anecdotes and navigating unexpected transit disruptions provides the ideal foundation for natural narrative tenses, descriptive vocabulary, and conversational confidence in English.",
-              "readTime": "Estimated read: 4 mins",
-              "url": "https://www.bbc.com/travel"
+              "readTime": "4 min read",
+              "url": "https://www.bbc.com/travel",
+              "title": "The Art of the Travel Anecdote: Why Personal Journeys Build Spoken Fluency",
+              "summary": "Sharing personal travel anecdotes and navigating unexpected transit disruptions provides the ideal foundation for natural narrative tenses, descriptive vocabulary, and conversational confidence in English.",
+              "content": [
+                "Every traveler has experienced the unexpected: a missed connecting train in a foreign city, lost luggage on a rainy evening, or a humorous linguistic misunderstanding in a local café. While these situations feel stressful when they happen, they make the best stories once you return home. In spoken English, travel anecdotes serve as an ideal springboard for natural conversation.",
+                "Telling an engaging story requires a blend of narrative tenses. Fluent speakers naturally shift between the past simple to outline main events ('I arrived at the station'), the past continuous to set the background scene ('Rain was pouring down and people were running for shelter'), and the past perfect to clarify earlier background actions ('I realized I had left my passport at the hotel desk').",
+                "Beyond grammar, great storytellers use connecting phrases to maintain suspense. Expressions like 'Out of the blue,' 'To make matters worse,' and 'In the end' signal twists and turns to listeners, inviting reactions like 'You're joking!' or 'What did you do next?' Practicing these patterns builds spontaneous spoken confidence faster than memorizing static word lists."
+              ],
+              "takeaways": [
+                "Unexpected travel disruptions create the most engaging, relatable conversation starters.",
+                "Combining past simple, past continuous, and past perfect creates vivid narrative depth.",
+                "Conversational signposts like 'To make matters worse' keep listeners actively engaged."
+              ],
+              "vocab": [
+                "Travel Anecdote",
+                "Out of the Blue",
+                "To Make Matters Worse",
+                "Narrative Flow",
+                "Spontaneous Fluency"
+              ]
             },
             {
-              "topic": "Exam Preparation",
-              "sourceTag": "ETS Global Insights",
+              "topic": "Academic & Career Benchmarks",
+              "sourceTag": "Global Language Standards • ETS",
               "heading": "Understanding the Global TOEIC Benchmark: Essential Strategies for B2 Learners",
-              "snippet": "Learn how the 990-point scaled scoring system maps to CEFR B2 and C1 competencies, and why time management pacing in Parts 5, 6, and 7 is decisive for overall test success.",
-              "readTime": "Estimated read: 5 mins",
-              "url": "https://www.etsglobal.org/fr/fr"
+              "snippet": "Demystifying the 785-point TOEIC threshold: practical techniques to conquer listening distractors, manage reading time pressure, and secure certified B2 international mobility.",
+              "readTime": "5 min read",
+              "url": "https://www.ets.org/toeic",
+              "title": "Understanding the Global TOEIC Benchmark: Essential Strategies for B2 Learners",
+              "summary": "Demystifying the 785-point TOEIC threshold: practical techniques to conquer listening distractors, manage reading time pressure, and secure certified B2 international mobility.",
+              "content": [
+                "For engineering students and aviation professionals worldwide, achieving a certified B2 score on the TOEIC (Test of English for International Communication)—typically 785 points or higher—is an essential graduation requirement and career milestone. The test measures your ability to communicate effectively in international workplace environments, from telephone inquiries to technical meetings.",
+                "In the Listening section, high scorers rely on active anticipation. Rather than passively waiting for the audio recording to begin, experienced test-takers quickly skim the three printed question stems and answer choices during the introductory pause. This technique allows your brain to focus on specific keywords, dates, or speaker roles, helping you filter out common distractors such as similar-sounding words or negative prefixes.",
+                "In the Reading section, time management is the decisive factor. Candidates have exactly 75 minutes to complete 100 questions. Spending more than thirty seconds on an incomplete sentence in Part 5 leaves insufficient time for the complex double and triple reading passages in Part 7. Building a steady, disciplined testing rhythm through timed practice is the key to reaching your target score."
+              ],
+              "takeaways": [
+                "The 785-point TOEIC score verifies independent operational B2 communication skills.",
+                "Pre-reading question stems in Parts 3 and 4 helps isolate key information and eliminate traps.",
+                "Strict pacing in the reading section ensures you have enough time to finish multi-text passages."
+              ],
+              "vocab": [
+                "TOEIC Benchmark",
+                "Distractor Word",
+                "Pacing Strategy",
+                "Target Score",
+                "Operational Proficiency"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -1402,20 +1440,58 @@
           "pageUrl": "session2/admat1.html",
           "articles": [
             {
-              "topic": "Modal Shift &amp; Rail Policy",
-              "sourceTag": "Industry Press",
+              "topic": "Sustainable Mobility & Policy",
+              "sourceTag": "Transport & Environment • European Rail Study",
               "heading": "The European Rail Revival: Banning Short-Haul Domestic Flights Where Rail Alternatives Exist",
-              "snippet": "European policymakers have implemented statutory restrictions on domestic short-haul flights connecting cities with high-speed rail links under 2.5 hours. Explore how airlines are restructuring their feeder networks, forming intermodal partnerships, and auditing corporate travel emissions.",
-              "readTime": "Estimated read: 5 mins",
-              "url": "https://www.railtech.com"
+              "snippet": "Examining France's landmark decree eliminating regional air links under 2.5 hours, public debate on passenger convenience, and the European Union's broader modal shift ambitions.",
+              "readTime": "5 min read",
+              "url": "https://www.eea.europa.eu",
+              "title": "The European Rail Revival: Banning Short-Haul Domestic Flights Where Rail Alternatives Exist",
+              "summary": "Examining France's landmark decree eliminating regional air links under 2.5 hours, public debate on passenger convenience, and the European Union's broader modal shift ambitions.",
+              "content": [
+                "In May 2023, France enacted a pioneering transport decree that prohibited domestic commercial air routes where a direct rail connection of two and a half hours or less is available. The regulation eliminated commercial flights between Paris Orly and regional destinations like Nantes, Lyon, and Bordeaux, marking a major milestone in Europe's climate strategy.",
+                "Proponents of the policy point to stark emissions data. Electric high-speed trains generate up to 90% fewer greenhouse gas emissions per passenger-kilometer than short-haul passenger jets. With city-center to city-center high-speed rail connections, total travel times are often comparable to flying once airport security, baggage drop, and suburban transfers are taken into account.",
+                "However, airline operators and regional business leaders have raised practical concerns. They argue that cutting domestic feeder flights complicates international connections for passengers traveling abroad via hub airports. Furthermore, railway operators must guarantee frequent, punctual service with affordable fares to prevent travelers from switching to personal cars on motorways."
+              ],
+              "takeaways": [
+                "French legislation bans short-haul domestic flights when direct rail alternatives take under 2.5 hours.",
+                "High-speed electric trains reduce transport emissions by up to 90% compared to commercial aircraft.",
+                "Feeder connectivity and ticket affordability remain critical challenges for complete modal shift."
+              ],
+              "vocab": [
+                "Modal Shift",
+                "Short-Haul Route",
+                "High-Speed Rail",
+                "Hub Connectivity",
+                "Feeder Flight"
+              ]
             },
             {
-              "topic": "European Commission Policy",
-              "sourceTag": "EU Mobility Hub",
+              "topic": "Infrastructure & Logistics",
+              "sourceTag": "European Commission • TEN-T Network",
               "heading": "Reshaping the European Transport Network: The High-Speed Rail Action Plan",
-              "snippet": "Examine the European Commission&#39;s strategic blueprint for expanding cross-border high-speed passenger rail, tripling HSR traffic by 2030, and accelerating the decarbonization of European transport corridors.",
-              "readTime": "Estimated read: 4 mins",
-              "url": "https://transport.ec.europa.eu/transport-modes/rail/high-speed-rail-plan_en"
+              "snippet": "How cross-border infrastructure initiatives, harmonized signaling systems, and open-access competition are transforming intercity mobility across the European continent.",
+              "readTime": "4 min read",
+              "url": "https://transport.ec.europa.eu",
+              "title": "Reshaping the European Transport Network: The High-Speed Rail Action Plan",
+              "summary": "How cross-border infrastructure initiatives, harmonized signaling systems, and open-access competition are transforming intercity mobility across the European continent.",
+              "content": [
+                "Crossing European borders by train has historically been frustrating due to fragmented national networks, differing electrical voltages, and conflicting signaling technologies. To overcome these barriers, the European Commission's Trans-European Transport Network (TEN-T) initiative is investing billions of euros to link major metropolitan capitals with unified high-speed rail corridors.",
+                "A central pillar of the plan is the rollout of the European Rail Traffic Management System (ERTMS). This standardized digital signaling framework allows trains to cross borders seamlessly without changing locomotives or onboard control computers, dramatically cutting transit delays between countries such as France, Belgium, Germany, and Switzerland.",
+                "Market deregulation has also revolutionized passenger options. The arrival of open-access private railway operators in Italy, Spain, and France has sparked healthy price competition, lowering average ticket fares by up to 40% on flagship routes like Madrid-Barcelona and Rome-Milan while driving passenger numbers to historic highs."
+              ],
+              "takeaways": [
+                "The TEN-T initiative creates integrated, cross-border high-speed rail corridors across Europe.",
+                "Digital ERTMS signaling eliminates costly locomotive changes and technical border stops.",
+                "Open-access railway competition lowers consumer fares and drives passenger adoption."
+              ],
+              "vocab": [
+                "Cross-Border Corridor",
+                "Harmonized Signaling",
+                "Open-Access Operator",
+                "Digital Interoperability",
+                "Market Deregulation"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -2241,13 +2317,13 @@
               "desc": "Global Sustainable Tourism Council baseline standards for destinations."
             },
             {
-              "url": "https://cda.ve.it",
+              "url": "https://whc.unesco.org",
               "tag": "03 • Ecological Impact",
               "name": "EEA Tourism & Nature",
               "desc": "European Environment Agency briefs on tourism pressures on biodiversity."
             },
             {
-              "url": "https://cda.ve.it",
+              "url": "https://whc.unesco.org",
               "tag": "04 • Municipal Access Portal",
               "name": "Venice Access Fee Official",
               "desc": "Municipal overview of city access regulations and reservation mechanics."
@@ -2268,20 +2344,58 @@
           "pageUrl": "session3/admat1.html",
           "articles": [
             {
-              "topic": "UN Tourism Policy Brief",
-              "sourceTag": "Industry Analysis",
+              "topic": "Urban Sustainability & Heritage",
+              "sourceTag": "UNESCO Sustainable Tourism • World Heritage Brief",
               "heading": "Carrying Capacity Indicators in European Heritage Centers",
-              "snippet": "A comparative framework analyzing visitor ratios, local resident sentiment, and infrastructure strain.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.unwto.org/sustainable-development"
+              "snippet": "How historic destinations like Venice, Dubrovnik, and Amsterdam deploy smart sensors, booking thresholds, and crowd management to protect ancient infrastructure.",
+              "readTime": "5 min read",
+              "url": "https://whc.unesco.org",
+              "title": "Carrying Capacity Indicators in European Heritage Centers",
+              "summary": "How historic destinations like Venice, Dubrovnik, and Amsterdam deploy smart sensors, booking thresholds, and crowd management to protect ancient infrastructure.",
+              "content": [
+                "Over the past decade, Europe's most beloved historic cities have faced an unprecedented crisis of popularity. Destinations such as Venice, Dubrovnik, and Amsterdam frequently welcome millions of international tourists annually, overwhelming historic street plans designed centuries ago for modest resident populations.",
+                "In response, urban planners use the concept of 'carrying capacity'—the maximum number of visitors a site can sustain without causing permanent damage to physical monuments, the local environment, or residents' quality of life. In Venice, sophisticated optical sensors and mobile cell-tower data now map visitor density in real time, alerting authorities when pedestrian flows across historic bridges reach critical safety thresholds.",
+                "Managing carrying capacity requires both technological tracking and regulatory courage. Policies include capping daily tourist admissions, banning massive cruise ships from delicate lagoons, and restricting residential housing conversions into short-term vacation rentals to preserve living local communities."
+              ],
+              "takeaways": [
+                "Carrying capacity measures visitor density against the physical limits of historic sites.",
+                "Optical sensors and mobile network tracking help detect and prevent pedestrian stampedes.",
+                "Protecting resident housing is as vital for heritage preservation as restoring physical monuments."
+              ],
+              "vocab": [
+                "Carrying Capacity",
+                "Pedestrian Congestion",
+                "Crowd Management",
+                "Urban Heritage",
+                "Short-Term Rental"
+              ]
             },
             {
-              "topic": "Journal of Sustainable Tourism",
-              "sourceTag": "Industry Analysis",
-              "heading": "The Economics of Tourist Taxation &amp; Crowd Dispersal",
-              "snippet": "Evaluating whether dynamic pricing diverts crowds or merely generates municipal revenue.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://cda.ve.it"
+              "topic": "Economics & Public Policy",
+              "sourceTag": "OECD Tourism Trends • Economic Analysis",
+              "heading": "The Economics of Tourist Taxation & Crowd Dispersal",
+              "snippet": "Analyzing entry tariffs, hotel surcharges, and regional marketing initiatives aimed at balancing municipal revenue with visitor volume in oversubscribed destinations.",
+              "readTime": "4 min read",
+              "url": "https://www.oecd.org/cfe/tourism",
+              "title": "The Economics of Tourist Taxation & Crowd Dispersal",
+              "summary": "Analyzing entry tariffs, hotel surcharges, and regional marketing initiatives aimed at balancing municipal revenue with visitor volume in oversubscribed destinations.",
+              "content": [
+                "As popular European destinations struggle under the weight of peak-season tourist volumes, municipal leaders are turning to economic tools to regulate visitor numbers. Tourist taxes—ranging from small nightly hotel surcharges to mandatory day-tripper entry fees—have expanded across the continent.",
+                "Economists analyze whether these fees genuinely deter casual tourists or simply generate municipal revenue. While a five-euro daily entrance ticket in Venice does not stop international travelers who spent thousands on airfare, it generates tens of millions of euros each year. This revenue helps fund historic masonry repairs, canal dredging, and municipal waste collection that would otherwise burden local taxpayers.",
+                "The most effective long-term strategy, however, is geographic dispersal. Regional tourism boards are actively marketing secondary cities, scenic countryside hiking paths, and regional heritage sites. By redirecting visitor spending toward less-visited communities, governments can alleviate pressure on historic centers while boosting regional economies."
+              ],
+              "takeaways": [
+                "Tourist entry fees provide vital municipal revenue to maintain infrastructure under heavy visitor stress.",
+                "Modest fees alone rarely reduce tourist numbers without strict booking quotas.",
+                "Dispersing travelers to secondary regional destinations relieves pressure on crowded city centers."
+              ],
+              "vocab": [
+                "Tourist Taxation",
+                "Municipal Surcharge",
+                "Crowd Dispersal",
+                "Secondary Destination",
+                "Peak-Season Levy"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -3131,20 +3245,58 @@
           "pageUrl": "session4/admat1.html",
           "articles": [
             {
-              "topic": "Harvard Business Review",
-              "sourceTag": "Industry Analysis",
+              "topic": "Corporate Governance & Climate",
+              "sourceTag": "Greenhouse Gas Protocol • Corporate Standard",
               "heading": "Auditing Corporate Travel: The Scope 3 Emissions Challenge",
-              "snippet": "How international corporations measure and reduce business travel emissions through clear guidelines.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://hbr.org"
+              "snippet": "How multinational enterprises track business flights, implement internal carbon levies, and adopt video-first collaboration to achieve ambitious corporate climate targets.",
+              "readTime": "5 min read",
+              "url": "https://ghgprotocol.org",
+              "title": "Auditing Corporate Travel: The Scope 3 Emissions Challenge",
+              "summary": "How multinational enterprises track business flights, implement internal carbon levies, and adopt video-first collaboration to achieve ambitious corporate climate targets.",
+              "content": [
+                "Under international environmental accounting standards, corporate emissions are categorized into three distinct tiers: Scope 1 (direct factory and vehicle fuel burn), Scope 2 (purchased electricity and heating), and Scope 3 (indirect value-chain emissions). For professional services firms and multinational corporations, business travel represents up to 70% of their total Scope 3 carbon footprint.",
+                "In response to tightening ESG (Environmental, Social, and Governance) disclosure regulations, leading enterprises are auditing corporate travel policies. Many companies have introduced internal carbon budgets, charging business units a direct internal levy—often 50 to 100 euros per ton of CO2—for every employee flight booked. These funds are then channeled into sustainable aviation fuels (SAF) or clean energy projects.",
+                "Furthermore, corporate travel guidelines increasingly mandate video-first communication for internal team reviews and quarterly check-ins, reserving long-haul flights for critical client negotiations. When air travel is strictly necessary, companies require staff to choose economy class, which produces significantly lower per-passenger emissions than spacious premium cabins."
+              ],
+              "takeaways": [
+                "Business travel represents the largest component of Scope 3 emissions for professional service firms.",
+                "Internal carbon fees incentivize departments to reduce non-essential international flights.",
+                "Choosing economy class and replacing routine meetings with video calls cuts corporate footprints."
+              ],
+              "vocab": [
+                "Scope 3 Emissions",
+                "Carbon Budget",
+                "Internal Carbon Fee",
+                "ESG Disclosure",
+                "Business Travel Audit"
+              ]
             },
             {
-              "topic": "Stanford Social Innovation Review",
-              "sourceTag": "Industry Analysis",
+              "topic": "Eco-Conscious Tourism",
+              "sourceTag": "Global Sustainable Tourism Council (GSTC)",
               "heading": "The Rise of Regenerative Tourism",
-              "snippet": "Shifting the paradigm from &#x27;leaving no trace&#x27; to actively restoring degraded ecosystems and supporting communities.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://ssir.org"
+              "snippet": "Moving beyond zero-impact sustainability toward tourism models that actively restore local ecosystems, empower native communities, and revitalize cultural heritage.",
+              "readTime": "4 min read",
+              "url": "https://www.gstcouncil.org",
+              "title": "The Rise of Regenerative Tourism",
+              "summary": "Moving beyond zero-impact sustainability toward tourism models that actively restore local ecosystems, empower native communities, and revitalize cultural heritage.",
+              "content": [
+                "For decades, the golden rule of green travel was sustainable tourism: 'take only photos, leave only footprints.' Today, an ambitious new movement called regenerative tourism is gaining momentum across the global travel industry, challenging the idea that simply minimizing negative impact is enough.",
+                "Regenerative travel aims to leave a destination in a better condition than travelers found it. Rather than aiming for carbon neutrality, regenerative resorts and tour operators invest guest fees directly into local ecosystem restoration, including coral reef replanting, wetland restoration, and reforestation projects that sequester atmospheric carbon.",
+                "Equally important is social empowerment. Regenerative tourism models partner directly with local and indigenous communities, ensuring that tourism revenues support local schools, healthcare clinics, and traditional crafts rather than flowing to distant multinational hotel chains. Travelers are invited to participate as temporary stewards of the lands they visit."
+              ],
+              "takeaways": [
+                "Regenerative tourism focuses on actively healing and improving natural ecosystems.",
+                "Projects include direct guest participation in reforestation and marine habitat restoration.",
+                "Revenue is reinvested locally to support education, healthcare, and cultural traditions."
+              ],
+              "vocab": [
+                "Regenerative Tourism",
+                "Ecological Restoration",
+                "Community Stewardship",
+                "Biodiversity Conservation",
+                "Carbon Sequestration"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -4029,20 +4181,58 @@
           "pageUrl": "session1/admat2.html",
           "articles": [
             {
-              "topic": "WMO Global Climate Observatory",
-              "sourceTag": "International Report",
-              "heading": "State of the Global Climate: Extreme Events &amp; Frequency",
-              "snippet": "World Meteorological Organization empirical analysis tracking rising global temperatures, severe heatwaves, and unprecedented precipitation extremes.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://public.wmo.int"
+              "topic": "Climate Science & Meteorological Trends",
+              "sourceTag": "World Meteorological Organization (WMO)",
+              "heading": "State of the Global Climate: Extreme Events & Frequency",
+              "snippet": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
+              "readTime": "5 min read",
+              "url": "https://wmo.int",
+              "title": "State of the Global Climate: Extreme Events & Frequency",
+              "summary": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
+              "content": [
+                "Global meteorological monitoring indicates that the frequency and intensity of extreme weather phenomena have reached unprecedented historical benchmarks. The World Meteorological Organization's annual climate assessment confirms that global average surface temperatures consistently exceed pre-industrial baselines, driven by elevated atmospheric greenhouse gas concentrations.",
+                "Across Europe and North America, prolonged summer heatwaves are breaking localized temperature records, placing immense pressure on electricity grids, municipal water supplies, and agricultural harvests. Warmer atmospheric conditions hold more water vapor, leading to sudden, high-intensity convective rainfall events that trigger severe flash flooding in urban areas where soil permeability is limited.",
+                "In aviation and transport logistics, changing meteorological patterns directly affect operations. Higher air temperatures decrease atmospheric air density, reducing aircraft lift during takeoff and requiring takeoff weight restrictions on hot summer afternoons. Adapting infrastructure to these shifting weather extremes is becoming a central priority for civil engineers."
+              ],
+              "takeaways": [
+                "Global temperatures and greenhouse gas levels continue to establish new historical records.",
+                "Warmer air holds higher moisture volumes, creating more frequent and severe urban flash floods.",
+                "Higher summer temperatures reduce air density, requiring operational weight limits for departing flights."
+              ],
+              "vocab": [
+                "Extreme Weather Event",
+                "Pre-Industrial Baseline",
+                "Atmospheric Density",
+                "Flash Flooding",
+                "Climate Adaptation"
+              ]
             },
             {
-              "topic": "UNDRR Risk Reduction Briefing",
-              "sourceTag": "Economic Analysis",
+              "topic": "Environmental Economics & Risk",
+              "sourceTag": "Global Insurance & Economic Resilience Institute",
               "heading": "The Escalating Economic Toll of Extreme Weather Disasters",
-              "snippet": "Assessing financial losses, supply-chain disruptions, and critical infrastructure vulnerabilities caused by climate-driven severe weather shocks.",
-              "readTime": "Estimated read: 6-8 mins",
-              "url": "https://www.undrr.org"
+              "snippet": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
+              "readTime": "5 min read",
+              "url": "https://www.worldbank.org",
+              "title": "The Escalating Economic Toll of Extreme Weather Disasters",
+              "summary": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
+              "content": [
+                "The economic impact of climate-driven disasters extends far beyond immediate physical property damage. According to international reinsurance data, insured losses from storms, floods, and wildfires have exceeded $100 billion annually in recent years, prompting major insurers to raise premiums or withdraw coverage entirely from vulnerable coastal and wildfire-prone regions.",
+                "When critical transport networks—including bridges, rail lines, and international airports—suffer storm damage, supply chains experience severe disruptions. Manufacturing plants face parts shortages, perishable agricultural goods spoil in transit, and international commerce slows, costing regional economies billions in lost productivity.",
+                "Economists stress that every euro invested in climate-resilient infrastructure saves up to four euros in post-disaster reconstruction costs. Reinforcing electrical substations against floodwaters, building subterranean storm water drainage reservoirs, and restoring natural wetlands provide proven, cost-effective economic buffers against future disaster costs."
+              ],
+              "takeaways": [
+                "Annual global insured losses from weather disasters regularly exceed $100 billion.",
+                "Transport disruptions ripple through manufacturing and agricultural supply chains.",
+                "Investing in resilient infrastructure saves four times its cost in future disaster rebuilding."
+              ],
+              "vocab": [
+                "Economic Resilience",
+                "Insured Loss",
+                "Supply Chain Disruption",
+                "Infrastructure Hardening",
+                "Disaster Reconstruction"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -4775,20 +4965,58 @@
           "pageUrl": "session2/admat2.html",
           "articles": [
             {
-              "topic": "C40 Cities Climate Leadership",
-              "sourceTag": "Urban Policy",
+              "topic": "Urban Planning & Green Mobility",
+              "sourceTag": "European Mobility Index • City Transportation Report",
               "heading": "Urban Mobility Transition Index",
-              "snippet": "Comparative scoring of 50 global cities on public transit share, air quality improvements, and active mobility network integration.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.c40.org"
+              "snippet": "Comparing European metropolitan strategies for reducing private car dependence: cycling corridors, integrated multimodal ticketing, and dedicated bus rapid transit.",
+              "readTime": "4 min read",
+              "url": "https://transport.ec.europa.eu",
+              "title": "Urban Mobility Transition Index",
+              "summary": "Comparing European metropolitan strategies for reducing private car dependence: cycling corridors, integrated multimodal ticketing, and dedicated bus rapid transit.",
+              "content": [
+                "European cities are engaged in a race to transition away from car-centric urban design toward sustainable, multimodal transport ecosystems. The Urban Mobility Transition Index assesses metropolitan areas on public transit accessibility, dedicated cycling infrastructure, and progress toward reducing private vehicle traffic.",
+                "Leading cities like Paris, Copenhagen, and Amsterdam demonstrate that bold policy interventions yield dramatic results. By converting highway lanes into protected cycle superhighways, expanding tram networks, and removing thousands of street parking spaces, Paris has reduced car usage inside city limits by nearly 40% over the last decade while tripling daily bicycle trips.",
+                "A seamless passenger experience relies heavily on unified digital ticketing. When commuters can unlock a shared bicycle, ride a suburban commuter train, and take a city bus using a single mobile app with a synchronized fare cap, public transport becomes substantially more attractive and convenient than navigating traffic in a private car."
+              ],
+              "takeaways": [
+                "Leading European cities are converting roadway space from private cars to protected bike lanes and trams.",
+                "Paris has reduced city-center car traffic by 40% while dramatically increasing cycling volume.",
+                "Integrated digital ticketing and synchronized fare caps make multimodal public transport effortless."
+              ],
+              "vocab": [
+                "Multimodal Transit",
+                "Active Mobility",
+                "Protected Cycle Lane",
+                "Unified Ticketing",
+                "Urban Decarbonization"
+              ]
             },
             {
-              "topic": "OECD Urban Studies",
-              "sourceTag": "Economic Analysis",
+              "topic": "Public Health & Environmental Regulation",
+              "sourceTag": "European Environment Agency (EEA)",
               "heading": "The Economics of Low-Emission Zones and Public Health",
-              "snippet": "Empirical assessment of health outcomes, commercial vitality, and emissions reductions following the implementation of urban clean-air zones.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.oecd.org"
+              "snippet": "How Low-Emission Zones (LEZs) reduce fine particulate pollution in urban centers, lower pediatric asthma admissions, and stimulate vehicle fleet modernization.",
+              "readTime": "4 min read",
+              "url": "https://www.eea.europa.eu",
+              "title": "The Economics of Low-Emission Zones and Public Health",
+              "summary": "How Low-Emission Zones (LEZs) reduce fine particulate pollution in urban centers, lower pediatric asthma admissions, and stimulate vehicle fleet modernization.",
+              "content": [
+                "Air pollution from diesel and gasoline vehicles remains a leading environmental cause of premature mortality and chronic respiratory disease in European urban centers. In response, more than three hundred European cities have instituted Low-Emission Zones (LEZs), restricting older, polluting vehicles from central business districts and residential areas.",
+                "Public health data demonstrates immediate benefits following LEZ implementation. In London, the expansion of the Ultra Low Emission Zone (ULEZ) resulted in a 46% reduction in harmful nitrogen dioxide (NO2) concentrations in the city center within two years, leading to measurable drops in hospital emergency admissions for asthma and cardiovascular illnesses.",
+                "While low-emission zones deliver clear public health gains, policymakers must address economic equity concerns. Small business owners and lower-income families who rely on older vans or cars can face substantial replacement costs. Targeted vehicle scrappage subsidies and public transport discounts ensure that cleaner air does not come at the expense of vulnerable communities."
+              ],
+              "takeaways": [
+                "Over 300 European cities have established Low-Emission Zones to curb toxic traffic pollution.",
+                "London's ULEZ reduced nitrogen dioxide concentrations by 46%, cutting emergency hospital visits.",
+                "Scrappage grants and public transit subsidies are essential to ensure low-income drivers are not penalized."
+              ],
+              "vocab": [
+                "Low-Emission Zone (LEZ)",
+                "Nitrogen Dioxide (NO2)",
+                "Particulate Matter",
+                "Public Health Benefit",
+                "Scrappage Scheme"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -5521,20 +5749,58 @@
           "pageUrl": "session3/admat2.html",
           "articles": [
             {
-              "topic": "Oxford Review of Economic Policy",
-              "sourceTag": "Policy Analysis",
+              "topic": "International Diplomacy & Climate Policy",
+              "sourceTag": "UNFCCC Climate Negotiations Review",
               "heading": "The Rhetoric of Climate Policy Negotiations",
-              "snippet": "Analyzing linking words, persuasive framing, and consensus-building strategies in international climate accords and environmental diplomacy.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://academic.oup.com"
+              "snippet": "Analyzing linguistic nuances, diplomatic phrasing, and consensus-building mechanisms across international climate summits from the Paris Agreement to COP conferences.",
+              "readTime": "5 min read",
+              "url": "https://unfccc.int",
+              "title": "The Rhetoric of Climate Policy Negotiations",
+              "summary": "Analyzing linguistic nuances, diplomatic phrasing, and consensus-building mechanisms across international climate summits from the Paris Agreement to COP conferences.",
+              "content": [
+                "At annual United Nations climate summits (COP), diplomats from nearly two hundred nations spend sleepless nights debating the precise wording of international treaties. In the realm of international environmental law, a single word can alter legal commitments, shifting hundreds of billions of dollars in global financial obligations.",
+                "A famous example occurred during the 2015 Paris Agreement negotiations, where delegates intensely debated whether developed nations 'shall' or 'should' provide financial support to developing nations. The modal verb 'shall' denotes a binding, enforceable legal command, whereas 'should' expresses a voluntary recommendation. Subtle linguistic diplomacy allows nations with opposing economic interests to bridge political divides.",
+                "Negotiators also utilize 'constructive ambiguity'—deliberately phrasing contentious clauses in ways that allow multiple parties to claim domestic victory while maintaining collective momentum. Mastering this nuanced vocabulary is essential for professionals working in international civil aviation and environmental diplomacy."
+              ],
+              "takeaways": [
+                "International climate agreements depend on precise modal verb choices like 'shall' versus 'should.'",
+                "Binding legal mandates create enforceable obligations, while advisory terms indicate voluntary targets.",
+                "Constructive ambiguity allows diplomatic consensus between nations with conflicting economic priorities."
+              ],
+              "vocab": [
+                "Diplomatic Phrasing",
+                "Binding Obligation",
+                "Modal Verb Distinction",
+                "Constructive Ambiguity",
+                "Consensus Building"
+              ]
             },
             {
-              "topic": "Centre for European Policy Studies (CEPS)",
-              "sourceTag": "Economic Briefing",
+              "topic": "Fiscal Policy & Energy Transition",
+              "sourceTag": "International Monetary Fund (IMF) • Fiscal Monitor",
               "heading": "Economic Trade-Offs in Transport Carbon Taxation",
-              "snippet": "A balanced policy briefing modeling passenger demand elasticity, modal shift potential, and economic impacts under escalating carbon levies.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.ceps.eu"
+              "snippet": "Evaluating carbon pricing models, jet fuel tax exemptions under the Chicago Convention, and redistributive mechanisms designed to prevent public backlash.",
+              "readTime": "5 min read",
+              "url": "https://www.imf.org",
+              "title": "Economic Trade-Offs in Transport Carbon Taxation",
+              "summary": "Evaluating carbon pricing models, jet fuel tax exemptions under the Chicago Convention, and redistributive mechanisms designed to prevent public backlash.",
+              "content": [
+                "Putting a direct price on carbon is widely considered by economists to be the most efficient mechanism for incentivizing cleaner energy. By taxing carbon emissions from fossil fuels, market prices reflect the true environmental cost of consumption, encouraging consumers and businesses to adopt low-carbon alternatives.",
+                "In transport, however, carbon taxation faces unique legal and political hurdles. International aviation fuel has historically been exempt from national sales taxes under the 1944 Chicago Convention, creating an uneven competitive playing field compared to domestic passenger rail, which pays full national electricity taxes and track-access fees.",
+                "Furthermore, carbon taxes on consumer motor fuels can spark widespread public backlash if perceived as unfair. To maintain public support, progressive fiscal policies implement 'carbon dividend' models, where 100% of tax revenues are redistributed directly to citizens as equal monthly rebates, ensuring lower-income households come out financially ahead."
+              ],
+              "takeaways": [
+                "Carbon pricing incentivizes consumers and businesses to shift toward low-emission alternatives.",
+                "The 1944 Chicago Convention exempts international commercial aviation fuel from domestic taxes.",
+                "Rebating carbon tax revenues directly to citizens protects public support and lower-income families."
+              ],
+              "vocab": [
+                "Carbon Pricing",
+                "Chicago Convention",
+                "Fuel Tax Exemption",
+                "Carbon Dividend",
+                "Fiscal Equity"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -6273,20 +6539,58 @@
           "pageUrl": "session4/admat2.html",
           "articles": [
             {
-              "topic": "European Environment Agency (EEA)",
-              "sourceTag": "Environmental Briefing",
+              "topic": "Urban Ecology & Biodiversity",
+              "sourceTag": "European Urban Biodiversity Network",
               "heading": "Urban Greening and Biodiversity in European Cities",
-              "snippet": "Assessing how tree canopy expansion, rooftop gardens, and urban wetlands enhance ecological resilience and mitigate heat stress across metropolitan regions.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.eea.europa.eu"
+              "snippet": "How green roofs, bioswales, and urban forest corridors cool European heat islands, retain stormwater runoff, and restore native pollinator populations.",
+              "readTime": "4 min read",
+              "url": "https://www.eea.europa.eu",
+              "title": "Urban Greening and Biodiversity in European Cities",
+              "summary": "How green roofs, bioswales, and urban forest corridors cool European heat islands, retain stormwater runoff, and restore native pollinator populations.",
+              "content": [
+                "As concrete and asphalt absorb solar radiation, metropolitan areas experience the 'urban heat island' effect, with city centers staying up to eight degrees Celsius warmer than surrounding rural areas during summer heatwaves. To combat this phenomenon, European municipalities are embracing urban greening initiatives.",
+                "Integrating nature into the urban environment takes many forms. Cities like Basel and Vienna mandate green vegetated roofs on all new flat-roof buildings, providing natural insulation, filtering fine dust, and creating aerial habitats for native bees and birds. At street level, bioswales and permeable rain gardens capture storm runoff, recharging groundwater and reducing flash flooding.",
+                "Urban green corridors also provide psychological benefits for residents. Studies show that daily access to shaded parks, pocket forests, and tree-lined boulevards lowers cortisol stress levels, improves mental well-being, and encourages active pedestrian mobility throughout dense metropolitan neighborhoods."
+              ],
+              "takeaways": [
+                "Urban greening directly combats the heat island effect, lowering city-center temperatures by several degrees.",
+                "Green vegetated roofs and bioswales absorb heavy stormwater and restore pollinator biodiversity.",
+                "Access to shaded urban nature corridors measurably reduces resident stress and promotes physical health."
+              ],
+              "vocab": [
+                "Urban Heat Island",
+                "Green Roof",
+                "Bioswale",
+                "Permeable Pavement",
+                "Ecosystem Services"
+              ]
             },
             {
-              "topic": "Airport World Technical Review",
-              "sourceTag": "Aviation Ecology",
+              "topic": "Airfield Wildlife Hazard Management",
+              "sourceTag": "ICAO Wildlife Hazard Management Digest",
               "heading": "Balancing Airfield Safety Standards with Habitat Conservation",
-              "snippet": "Operational guidelines for airport environmental managers reconciling mandatory wildlife hazard controls with local biodiversity net gain objectives.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://airport-world.com"
+              "snippet": "Examining how airport operators manage vast grassland habitats around runways to prevent hazardous bird strikes while supporting endangered flora and fauna.",
+              "readTime": "5 min read",
+              "url": "https://www.icao.int",
+              "title": "Balancing Airfield Safety Standards with Habitat Conservation",
+              "summary": "Examining how airport operators manage vast grassland habitats around runways to prevent hazardous bird strikes while supporting endangered flora and fauna.",
+              "content": [
+                "Major commercial airports encompass hundreds of hectares of undeveloped open grassland bordering runways and taxiways. While this land is designated primarily as a safety buffer for aircraft overruns, it frequently functions as an unintended wildlife sanctuary, attracting birds, small mammals, and predatory raptors.",
+                "For aerodrome operators, wildlife management is a paramount safety priority. Collisions between aircraft and birds—known as bird strikes—can cause catastrophic engine failure or shatter cockpit windscreens. Under ICAO standards, airports employ specialized wildlife control officers who use acoustic pyrotechnics, trained falcons, and non-lethal dispersal techniques to deter birds from active flight paths.",
+                "Striking a balance between safety and conservation requires scientific precision. Many airports employ 'long-grass policies,' allowing turf between taxiways to grow to 200–300 mm in height. Long grass prevents large flocking birds like gulls and geese from landing, while discouraging small rodents from breeding, effectively reducing bird-strike risks without harming local biodiversity."
+              ],
+              "takeaways": [
+                "Airfield perimeter lands act as open wildlife habitats but require strict bird-strike hazard controls.",
+                "Acoustic deterrents and trained falcons disperse hazardous birds without lethal measures.",
+                "Maintaining long grass between taxiways naturally deters flocking birds from landing near runways."
+              ],
+              "vocab": [
+                "Wildlife Hazard",
+                "Bird Strike",
+                "Non-Lethal Dispersal",
+                "Long-Grass Policy",
+                "Airfield Perimeter"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -7156,20 +7460,58 @@
           "pageUrl": "session1/admat3.html",
           "articles": [
             {
-              "topic": "MIT Technology Review",
-              "sourceTag": "Industry Analysis",
+              "topic": "Artificial Intelligence & Future of Work",
+              "sourceTag": "MIT Technology Review • AI & Workforce",
               "heading": "Generative AI and the Transformation of Modern Workplaces",
-              "snippet": "Analyzing how enterprise deployment of generative AI tools reshapes professional productivity, human-in-the-loop workflows, and ethical benchmarks.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.technologyreview.com"
+              "snippet": "Examining how large language models, automated code generation, and AI assistants augment engineering productivity while redefining essential human skills.",
+              "readTime": "5 min read",
+              "url": "https://www.technologyreview.com",
+              "title": "Generative AI and the Transformation of Modern Workplaces",
+              "summary": "Examining how large language models, automated code generation, and AI assistants augment engineering productivity while redefining essential human skills.",
+              "content": [
+                "The rapid emergence of generative artificial intelligence and large language models (LLMs) is redefining professional workflows across engineering, aviation, and software development. Far from replacing human expertise entirely, modern AI tools act as intelligent co-pilots, drafting technical documentation, automating boilerplate software code, and summarizing dense technical reports in seconds.",
+                "In engineering environments, this shift allows technical specialists to focus on higher-level problem solving, architecture design, and critical safety verification. Rather than spending hours formatting spreadsheets or writing routine scripts, engineers can prompt AI systems for initial drafts, iterating rapidly through design variations.",
+                "However, workplace integration requires a fundamental shift in professional skills. The premium is no longer on memorizing technical syntax, but on prompt formulation, algorithmic literacy, and rigorous verification. Professionals must possess the domain knowledge to spot subtle AI 'hallucinations' and ensure that automated outputs comply with stringent safety and regulatory benchmarks."
+              ],
+              "takeaways": [
+                "Generative AI acts as an engineering co-pilot, automating repetitive drafting and coding tasks.",
+                "Professionals can spend more time on high-level problem solving and safety verification.",
+                "Crucial workplace skills now emphasize prompt engineering, critical verification, and domain literacy."
+              ],
+              "vocab": [
+                "Generative AI",
+                "Algorithmic Literacy",
+                "AI Hallucination",
+                "Human-in-the-Loop",
+                "Workflow Automation"
+              ]
             },
             {
-              "topic": "International Energy Agency (IEA)",
-              "sourceTag": "Environmental Briefing",
+              "topic": "Energy Infrastructure & Tech Climate Impact",
+              "sourceTag": "International Energy Agency (IEA) • Tech Energy Report",
               "heading": "The Compute Carbon Footprint: Data Centers and Energy Demands",
-              "snippet": "Assessing the soaring electrical energy and water cooling demands required to train and deploy modern large-scale artificial intelligence models.",
-              "readTime": "Estimated read: 6-8 mins",
-              "url": "https://www.iea.org"
+              "snippet": "Analyzing surging electrical power demands from AI training clusters, hyperscale data centers, and advanced cooling technologies powering the digital cloud.",
+              "readTime": "4 min read",
+              "url": "https://www.iea.org",
+              "title": "The Compute Carbon Footprint: Data Centers and Energy Demands",
+              "summary": "Analyzing surging electrical power demands from AI training clusters, hyperscale data centers, and advanced cooling technologies powering the digital cloud.",
+              "content": [
+                "While cloud computing and artificial intelligence appear intangible, their physical foundation consists of sprawling hyperscale data centers housing millions of high-performance graphic processing units (GPUs). Training and operating advanced neural networks requires immense compute power, causing global data center electricity consumption to surge dramatically.",
+                "According to the International Energy Agency (IEA), data centers and telecommunications networks currently consume approximately 1.5% of global electricity, a figure projected to double by 2030. In countries with high tech density like Ireland, data centers already consume more electricity than all urban residential homes combined.",
+                "To reconcile compute growth with corporate climate commitments, tech enterprises are investing billions in nuclear energy power purchase agreements, geothermal generation, and direct-to-chip liquid cooling systems. Engineers are also developing smaller, specialized models that deliver comparable performance with a fraction of the electrical footprint."
+              ],
+              "takeaways": [
+                "AI model training and cloud services require massive electrical power for GPU processing and cooling.",
+                "Data centers consume more electricity than residential homes in certain high-tech hubs.",
+                "Tech firms are turning to nuclear, geothermal, and liquid cooling to manage energy demands."
+              ],
+              "vocab": [
+                "Compute Footprint",
+                "Hyperscale Data Center",
+                "Electricity Demand",
+                "Liquid Cooling",
+                "Power Purchase Agreement"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -7921,20 +8263,58 @@
           "pageUrl": "session2/admat3.html",
           "articles": [
             {
-              "topic": "International Council on Clean Transportation (ICCT)",
-              "sourceTag": "Policy Analysis",
+              "topic": "Intermodal Transport & European Mobility",
+              "sourceTag": "European Rail Alliance • Modal Shift Blueprint",
               "heading": "The European Rail Renaissance: Can High-Speed Rail Replace Regional Flights?",
-              "snippet": "Comparative modeling of travel times, carbon savings, and infrastructure investment required to achieve competitive rail alternatives across European corridors.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://theicct.org"
+              "snippet": "Evaluating overnight sleeper trains, open-access rail competition, and cross-border booking integration as Europe seeks to shift travelers away from domestic aviation.",
+              "readTime": "5 min read",
+              "url": "https://transport.ec.europa.eu",
+              "title": "The European Rail Renaissance: Can High-Speed Rail Replace Regional Flights?",
+              "summary": "Evaluating overnight sleeper trains, open-access rail competition, and cross-border booking integration as Europe seeks to shift travelers away from domestic aviation.",
+              "content": [
+                "Across the European continent, a concerted effort is underway to revitalize cross-border rail travel as an attractive, low-carbon alternative to regional aviation. Beyond daytime high-speed corridors, night trains are experiencing a remarkable resurgence, linking cities like Vienna, Paris, Berlin, and Brussels while travelers sleep comfortably in couchette cabins.",
+                "The economics of rail substitution depend heavily on transit time thresholds. Market studies demonstrate that when high-speed rail journeys take under four hours, rail captures over 60% of total passenger market share from airlines. On routes under two and a half hours, such as Brussels to Paris, passenger airlines typically exit the market entirely.",
+                "However, international rail booking remains significantly more fragmented than airline ticketing. Passengers traveling across three European countries must often book separate tickets across conflicting national rail platforms with zero protection for missed connections, highlighting the urgent need for a unified European digital ticketing standard."
+              ],
+              "takeaways": [
+                "Night sleeper trains are re-emerging as practical, low-carbon alternatives to short-haul flights.",
+                "High-speed rail captures over 60% of market share when travel time is under four hours.",
+                "Fragmented cross-border booking platforms remain the primary obstacle to seamless rail travel."
+              ],
+              "vocab": [
+                "Rail Renaissance",
+                "Night Sleeper Train",
+                "Market Substitution",
+                "Couchette Cabin",
+                "Unified Ticketing"
+              ]
             },
             {
-              "topic": "McKinsey Transport &amp; Logistics Review",
-              "sourceTag": "Industry Forecast",
-              "heading": "The Next Decade of Sustainable Mobility &amp; Clean Fuels",
-              "snippet": "Assessing commercial scaling timelines for electric fleets, hydrogen fuel cells, autonomous shuttles, and net-zero passenger transport.",
-              "readTime": "Estimated read: 6-8 mins",
-              "url": "https://www.mckinsey.com"
+              "topic": "Next-Gen Propulsion & Alternative Fuels",
+              "sourceTag": "Clean Transport Observatory • Zero-Emission Fuels",
+              "heading": "The Next Decade of Sustainable Mobility & Clean Fuels",
+              "snippet": "Exploring the race between battery-electric heavy transport, green hydrogen fuel cells, and synthetic e-fuels to decarbonize long-haul logistics and commercial aviation.",
+              "readTime": "5 min read",
+              "url": "https://www.iea.org",
+              "title": "The Next Decade of Sustainable Mobility & Clean Fuels",
+              "summary": "Exploring the race between battery-electric heavy transport, green hydrogen fuel cells, and synthetic e-fuels to decarbonize long-haul logistics and commercial aviation.",
+              "content": [
+                "Decarbonizing light passenger cars through battery-electric drivetrains is well advanced, but eliminating emissions from heavy transport—including long-distance freight trucks, maritime shipping, and commercial aviation—presents immense chemical and thermodynamic challenges.",
+                "For transcontinental aviation, battery weight makes all-electric flight unviable for medium and long-haul airliners. Instead, the aviation sector is focusing on Sustainable Aviation Fuels (SAF) derived from non-food biological waste or synthesized from captured carbon dioxide and green hydrogen (e-kerosene). These drop-in fuels require no changes to existing aircraft engines or airport fueling hydrant systems.",
+                "In ground freight, hydrogen fuel-cell trucks are emerging as viable competitors to heavy battery rigs, offering 15-minute refueling times and long operational range for trans-European trucking corridors. Transitioning to these zero-emission fuels within the next decade requires rapid scaling of renewable green hydrogen production facilities."
+              ],
+              "takeaways": [
+                "Heavy freight and aviation require high-density alternatives like green hydrogen and e-fuels.",
+                "Sustainable Aviation Fuels (SAF) drop directly into existing jet engines without modifications.",
+                "Scaling renewable electricity production is necessary to manufacture green hydrogen at industrial volume."
+              ],
+              "vocab": [
+                "Sustainable Aviation Fuel (SAF)",
+                "Drop-in Fuel",
+                "Green Hydrogen",
+                "Synthetic E-Fuel",
+                "Zero-Emission Transport"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -8686,20 +9066,58 @@
           "pageUrl": "session3/admat3.html",
           "articles": [
             {
-              "topic": "Stanford Center for Human-Centered AI",
-              "sourceTag": "Academic Briefing",
+              "topic": "Cognitive Psychology & AI Governance",
+              "sourceTag": "Stanford Institute for Human-Centered AI (HAI)",
               "heading": "Critical Thinking in the Age of Automated Algorithms",
               "snippet": "Analyzing how human operators can maintain situational awareness, recognize cognitive complacency, and challenge flawed automated outputs.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://hai.stanford.edu"
+              "readTime": "5 min read",
+              "url": "https://hai.stanford.edu",
+              "title": "Critical Thinking in the Age of Automated Algorithms",
+              "summary": "Analyzing how human operators can maintain situational awareness, recognize cognitive complacency, and challenge flawed automated outputs.",
+              "content": [
+                "As automated algorithms and artificial intelligence take over routine data processing in aviation, healthcare, and air traffic control, cognitive psychologists warn of a subtle operational vulnerability: automation complacency. When automated systems perform reliably 99% of the time, human monitors naturally lower their vigilance, assuming the computer is always correct.",
+                "In safety-critical environments, automation complacency can have catastrophic consequences. When an unexpected sensor failure or rare edge case occurs, operators who have become passive observers may take tens of seconds to recognize the error, diagnose the underlying fault, and re-engage manual control—precious seconds that safety margins cannot afford.",
+                "To counter cognitive drift, human-machine interface designers implement 'active verification' workflows. Rather than simply displaying automated recommendations, systems require human operators to manually confirm key assumptions, cross-check independent data feeds, and verbalize their operational reasoning to maintain sharp situational awareness."
+              ],
+              "takeaways": [
+                "Automation complacency occurs when humans unthinkingly trust highly reliable computer systems.",
+                "Passive observers take significantly longer to diagnose rare sensor errors and take manual control.",
+                "Active verification interfaces force operators to cross-check data and maintain situational awareness."
+              ],
+              "vocab": [
+                "Automation Complacency",
+                "Situational Awareness",
+                "Cognitive Drift",
+                "Edge Case",
+                "Human-Machine Interface (HMI)"
+              ]
             },
             {
-              "topic": "Harvard Law Review Digital Governance",
-              "sourceTag": "Legal &amp; Policy Review",
+              "topic": "Digital Ethics & Technology Regulation",
+              "sourceTag": "European Union AI Act • Legal Analysis",
               "heading": "Allocating Legal Liability for Automated Decisions",
-              "snippet": "Exploring legal doctrines and ethical frameworks for attributing fault when autonomous vehicles, AI models, or automated systems cause harm.",
-              "readTime": "Estimated read: 6-8 mins",
-              "url": "https://harvardlawreview.org"
+              "snippet": "Who is responsible when an autonomous system fails? Examining the EU AI Act, strict manufacturer liability, operator accountability, and algorithmic explainability.",
+              "readTime": "5 min read",
+              "url": "https://digital-strategy.ec.europa.eu",
+              "title": "Allocating Legal Liability for Automated Decisions",
+              "summary": "Who is responsible when an autonomous system fails? Examining the EU AI Act, strict manufacturer liability, operator accountability, and algorithmic explainability.",
+              "content": [
+                "When an autonomous self-driving vehicle causes a traffic collision, or an automated air traffic sequencing algorithm issues conflicting taxi instructions, who bears legal liability? As algorithms increasingly make decisions without direct human steering, traditional tort and product liability laws face unprecedented challenges.",
+                "Under the European Union's landmark AI Act, artificial intelligence applications are classified by risk tier. High-risk systems—including autonomous transport infrastructure and safety components in aviation—are subject to strict transparency rules, mandatory human oversight requirements, and pre-deployment algorithmic bias auditing.",
+                "The legal consensus distinguishes between software manufacturer defects and human operator neglect. If an AI system acts as a 'black box' whose reasoning cannot be explained, courts increasingly place strict product liability on the developer. Conversely, if a human operator ignores explicit system warnings, operational liability remains with the human professional."
+              ],
+              "takeaways": [
+                "Autonomous decision-making disrupts traditional concepts of legal fault and product liability.",
+                "The EU AI Act mandates strict human oversight and transparency for high-risk automated systems.",
+                "Developers face liability for unexplained 'black box' failures, while operators answer for ignored alarms."
+              ],
+              "vocab": [
+                "Algorithmic Liability",
+                "EU AI Act",
+                "High-Risk AI System",
+                "Black-Box Algorithm",
+                "Explainability Benchmark"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -9451,20 +9869,58 @@
           "pageUrl": "session4/admat3.html",
           "articles": [
             {
-              "topic": "NIST / European Data Protection Board",
-              "sourceTag": "Scientific Evaluation",
+              "topic": "Border Control & Digital Privacy",
+              "sourceTag": "European Data Protection Board (EDPB)",
               "heading": "Facial Recognition at the Border: Privacy Safeguards and Demographic Fairness",
-              "snippet": "Technical evaluation of automated border e-Gates examining false match rates, demographic performance parity, and strict GDPR privacy compliance.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.nist.gov"
+              "snippet": "Examining automated e-Gates at international airports, GDPR biometric protections, and mitigating algorithmic error rates across diverse traveler demographics.",
+              "readTime": "5 min read",
+              "url": "https://edpb.europa.eu",
+              "title": "Facial Recognition at the Border: Privacy Safeguards and Demographic Fairness",
+              "summary": "Examining automated e-Gates at international airports, GDPR biometric protections, and mitigating algorithmic error rates across diverse traveler demographics.",
+              "content": [
+                "At major international airport terminals worldwide, automated border e-Gates have become standard infrastructure. Travelers scan their electronic passports, look into a camera, and have their facial geometry matched against the digital photograph stored on their passport's RFID microchip in under ten seconds.",
+                "While automated biometric verification significantly expedites border control processing, it raises profound civil liberties and data protection questions. Under Europe's General Data Protection Regulation (GDPR), biometric face templates are categorized as special category data, requiring stringent encryption, strict retention limits, and immediate deletion once traveler verification is complete.",
+                "Furthermore, algorithmic audit studies have identified demographic disparities in facial recognition accuracy. Early neural networks showed higher false rejection rates for travelers with darker skin tones or non-Western facial features. Independent algorithmic certification and the presence of human border officers to resolve discrepancies ensure fair and dignified border processing for all."
+              ],
+              "takeaways": [
+                "Automated e-Gates compare live facial geometry to encrypted biometric passport microchips.",
+                "GDPR treats biometric facial templates as sensitive data requiring strict encryption and instant deletion.",
+                "Auditing algorithms ensures fair recognition accuracy across diverse global traveler demographics."
+              ],
+              "vocab": [
+                "Biometric Verification",
+                "e-Gate System",
+                "Data Protection (GDPR)",
+                "False Rejection Rate",
+                "Demographic Parity"
+              ]
             },
             {
-              "topic": "International Air Transport Association (IATA)",
-              "sourceTag": "Industry Whitepaper",
-              "heading": "The Rise of Digital Passports &amp; Self-Sovereign Identity in Travel",
-              "snippet": "Evaluating the transition from physical passports to encrypted digital credentials, contactless boarding tokens, and passenger consent protocols.",
-              "readTime": "Estimated read: 5-7 mins",
-              "url": "https://www.iata.org"
+              "topic": "Digital Identity & Travel Standards",
+              "sourceTag": "ICAO Digital Travel Credentials (DTC) Working Group",
+              "heading": "The Rise of Digital Passports & Self-Sovereign Identity in Travel",
+              "snippet": "How ICAO's Digital Travel Credential (DTC) standards allow travelers to store cryptographic passports in mobile wallets, creating seamless paperless international journeys.",
+              "readTime": "4 min read",
+              "url": "https://www.icao.int",
+              "title": "The Rise of Digital Passports & Self-Sovereign Identity in Travel",
+              "summary": "How ICAO's Digital Travel Credential (DTC) standards allow travelers to store cryptographic passports in mobile wallets, creating seamless paperless international journeys.",
+              "content": [
+                "The physical paper passport, with its bound pages and stamped visas, has served international travelers for more than a century. Today, the International Civil Aviation Organization (ICAO) is spearheading a digital revolution with the rollout of Digital Travel Credentials (DTC).",
+                "A Digital Travel Credential is a cryptographically secured virtual passport stored directly in an authorized digital wallet on a smartphone. Using public-key cryptography and decentralized self-sovereign identity protocols, travelers can share verified citizenship and visa eligibility with airlines and border agencies days before arriving at the airport.",
+                "By the time the passenger arrives at the terminal, their travel clearance is already pre-approved. They walk through security and boarding gates without retrieving physical booklets or boarding passes. Crucially, the traveler retains full control over their personal data, sharing only the minimum verified claims required for travel without revealing extraneous private records."
+              ],
+              "takeaways": [
+                "ICAO's Digital Travel Credential (DTC) stores verified cryptographic passports in smartphone wallets.",
+                "Pre-flight verification allows travelers to clear border formalities prior to stepping foot in the terminal.",
+                "Self-sovereign identity principles ensure passengers control what personal information they disclose."
+              ],
+              "vocab": [
+                "Digital Travel Credential (DTC)",
+                "Self-Sovereign Identity",
+                "Cryptographic Token",
+                "Paperless Border",
+                "Pre-Arrival Clearance"
+              ]
             }
           ],
           "toeicQuestions": [
@@ -10412,20 +10868,58 @@
             "pageUrl": "session1/admat1.html",
             "articles": [
               {
-                "topic": "Travel &amp; Communication",
-                "sourceTag": "Cultural Insights",
+                "topic": "Travel & Communication",
+                "sourceTag": "Cultural Insights • British Council",
                 "heading": "The Art of the Travel Anecdote: Why Personal Journeys Build Spoken Fluency",
                 "snippet": "Sharing personal travel anecdotes and navigating unexpected transit disruptions provides the ideal foundation for natural narrative tenses, descriptive vocabulary, and conversational confidence in English.",
-                "readTime": "Estimated read: 4 mins",
-                "url": "https://www.bbc.com/travel"
+                "readTime": "4 min read",
+                "url": "https://www.bbc.com/travel",
+                "title": "The Art of the Travel Anecdote: Why Personal Journeys Build Spoken Fluency",
+                "summary": "Sharing personal travel anecdotes and navigating unexpected transit disruptions provides the ideal foundation for natural narrative tenses, descriptive vocabulary, and conversational confidence in English.",
+                "content": [
+                  "Every traveler has experienced the unexpected: a missed connecting train in a foreign city, lost luggage on a rainy evening, or a humorous linguistic misunderstanding in a local café. While these situations feel stressful when they happen, they make the best stories once you return home. In spoken English, travel anecdotes serve as an ideal springboard for natural conversation.",
+                  "Telling an engaging story requires a blend of narrative tenses. Fluent speakers naturally shift between the past simple to outline main events ('I arrived at the station'), the past continuous to set the background scene ('Rain was pouring down and people were running for shelter'), and the past perfect to clarify earlier background actions ('I realized I had left my passport at the hotel desk').",
+                  "Beyond grammar, great storytellers use connecting phrases to maintain suspense. Expressions like 'Out of the blue,' 'To make matters worse,' and 'In the end' signal twists and turns to listeners, inviting reactions like 'You're joking!' or 'What did you do next?' Practicing these patterns builds spontaneous spoken confidence faster than memorizing static word lists."
+                ],
+                "takeaways": [
+                  "Unexpected travel disruptions create the most engaging, relatable conversation starters.",
+                  "Combining past simple, past continuous, and past perfect creates vivid narrative depth.",
+                  "Conversational signposts like 'To make matters worse' keep listeners actively engaged."
+                ],
+                "vocab": [
+                  "Travel Anecdote",
+                  "Out of the Blue",
+                  "To Make Matters Worse",
+                  "Narrative Flow",
+                  "Spontaneous Fluency"
+                ]
               },
               {
-                "topic": "Exam Preparation",
-                "sourceTag": "ETS Global Insights",
+                "topic": "Academic & Career Benchmarks",
+                "sourceTag": "Global Language Standards • ETS",
                 "heading": "Understanding the Global TOEIC Benchmark: Essential Strategies for B2 Learners",
-                "snippet": "Learn how the 990-point scaled scoring system maps to CEFR B2 and C1 competencies, and why time management pacing in Parts 5, 6, and 7 is decisive for overall test success.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://www.etsglobal.org/fr/fr"
+                "snippet": "Demystifying the 785-point TOEIC threshold: practical techniques to conquer listening distractors, manage reading time pressure, and secure certified B2 international mobility.",
+                "readTime": "5 min read",
+                "url": "https://www.ets.org/toeic",
+                "title": "Understanding the Global TOEIC Benchmark: Essential Strategies for B2 Learners",
+                "summary": "Demystifying the 785-point TOEIC threshold: practical techniques to conquer listening distractors, manage reading time pressure, and secure certified B2 international mobility.",
+                "content": [
+                  "For engineering students and aviation professionals worldwide, achieving a certified B2 score on the TOEIC (Test of English for International Communication)—typically 785 points or higher—is an essential graduation requirement and career milestone. The test measures your ability to communicate effectively in international workplace environments, from telephone inquiries to technical meetings.",
+                  "In the Listening section, high scorers rely on active anticipation. Rather than passively waiting for the audio recording to begin, experienced test-takers quickly skim the three printed question stems and answer choices during the introductory pause. This technique allows your brain to focus on specific keywords, dates, or speaker roles, helping you filter out common distractors such as similar-sounding words or negative prefixes.",
+                  "In the Reading section, time management is the decisive factor. Candidates have exactly 75 minutes to complete 100 questions. Spending more than thirty seconds on an incomplete sentence in Part 5 leaves insufficient time for the complex double and triple reading passages in Part 7. Building a steady, disciplined testing rhythm through timed practice is the key to reaching your target score."
+                ],
+                "takeaways": [
+                  "The 785-point TOEIC score verifies independent operational B2 communication skills.",
+                  "Pre-reading question stems in Parts 3 and 4 helps isolate key information and eliminate traps.",
+                  "Strict pacing in the reading section ensures you have enough time to finish multi-text passages."
+                ],
+                "vocab": [
+                  "TOEIC Benchmark",
+                  "Distractor Word",
+                  "Pacing Strategy",
+                  "Target Score",
+                  "Operational Proficiency"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -11339,20 +11833,58 @@
             "pageUrl": "session2/admat1.html",
             "articles": [
               {
-                "topic": "Modal Shift &amp; Rail Policy",
-                "sourceTag": "Industry Press",
+                "topic": "Sustainable Mobility & Policy",
+                "sourceTag": "Transport & Environment • European Rail Study",
                 "heading": "The European Rail Revival: Banning Short-Haul Domestic Flights Where Rail Alternatives Exist",
-                "snippet": "European policymakers have implemented statutory restrictions on domestic short-haul flights connecting cities with high-speed rail links under 2.5 hours. Explore how airlines are restructuring their feeder networks, forming intermodal partnerships, and auditing corporate travel emissions.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://www.railtech.com"
+                "snippet": "Examining France's landmark decree eliminating regional air links under 2.5 hours, public debate on passenger convenience, and the European Union's broader modal shift ambitions.",
+                "readTime": "5 min read",
+                "url": "https://www.eea.europa.eu",
+                "title": "The European Rail Revival: Banning Short-Haul Domestic Flights Where Rail Alternatives Exist",
+                "summary": "Examining France's landmark decree eliminating regional air links under 2.5 hours, public debate on passenger convenience, and the European Union's broader modal shift ambitions.",
+                "content": [
+                  "In May 2023, France enacted a pioneering transport decree that prohibited domestic commercial air routes where a direct rail connection of two and a half hours or less is available. The regulation eliminated commercial flights between Paris Orly and regional destinations like Nantes, Lyon, and Bordeaux, marking a major milestone in Europe's climate strategy.",
+                  "Proponents of the policy point to stark emissions data. Electric high-speed trains generate up to 90% fewer greenhouse gas emissions per passenger-kilometer than short-haul passenger jets. With city-center to city-center high-speed rail connections, total travel times are often comparable to flying once airport security, baggage drop, and suburban transfers are taken into account.",
+                  "However, airline operators and regional business leaders have raised practical concerns. They argue that cutting domestic feeder flights complicates international connections for passengers traveling abroad via hub airports. Furthermore, railway operators must guarantee frequent, punctual service with affordable fares to prevent travelers from switching to personal cars on motorways."
+                ],
+                "takeaways": [
+                  "French legislation bans short-haul domestic flights when direct rail alternatives take under 2.5 hours.",
+                  "High-speed electric trains reduce transport emissions by up to 90% compared to commercial aircraft.",
+                  "Feeder connectivity and ticket affordability remain critical challenges for complete modal shift."
+                ],
+                "vocab": [
+                  "Modal Shift",
+                  "Short-Haul Route",
+                  "High-Speed Rail",
+                  "Hub Connectivity",
+                  "Feeder Flight"
+                ]
               },
               {
-                "topic": "European Commission Policy",
-                "sourceTag": "EU Mobility Hub",
+                "topic": "Infrastructure & Logistics",
+                "sourceTag": "European Commission • TEN-T Network",
                 "heading": "Reshaping the European Transport Network: The High-Speed Rail Action Plan",
-                "snippet": "Examine the European Commission&#39;s strategic blueprint for expanding cross-border high-speed passenger rail, tripling HSR traffic by 2030, and accelerating the decarbonization of European transport corridors.",
-                "readTime": "Estimated read: 4 mins",
-                "url": "https://transport.ec.europa.eu/transport-modes/rail/high-speed-rail-plan_en"
+                "snippet": "How cross-border infrastructure initiatives, harmonized signaling systems, and open-access competition are transforming intercity mobility across the European continent.",
+                "readTime": "4 min read",
+                "url": "https://transport.ec.europa.eu",
+                "title": "Reshaping the European Transport Network: The High-Speed Rail Action Plan",
+                "summary": "How cross-border infrastructure initiatives, harmonized signaling systems, and open-access competition are transforming intercity mobility across the European continent.",
+                "content": [
+                  "Crossing European borders by train has historically been frustrating due to fragmented national networks, differing electrical voltages, and conflicting signaling technologies. To overcome these barriers, the European Commission's Trans-European Transport Network (TEN-T) initiative is investing billions of euros to link major metropolitan capitals with unified high-speed rail corridors.",
+                  "A central pillar of the plan is the rollout of the European Rail Traffic Management System (ERTMS). This standardized digital signaling framework allows trains to cross borders seamlessly without changing locomotives or onboard control computers, dramatically cutting transit delays between countries such as France, Belgium, Germany, and Switzerland.",
+                  "Market deregulation has also revolutionized passenger options. The arrival of open-access private railway operators in Italy, Spain, and France has sparked healthy price competition, lowering average ticket fares by up to 40% on flagship routes like Madrid-Barcelona and Rome-Milan while driving passenger numbers to historic highs."
+                ],
+                "takeaways": [
+                  "The TEN-T initiative creates integrated, cross-border high-speed rail corridors across Europe.",
+                  "Digital ERTMS signaling eliminates costly locomotive changes and technical border stops.",
+                  "Open-access railway competition lowers consumer fares and drives passenger adoption."
+                ],
+                "vocab": [
+                  "Cross-Border Corridor",
+                  "Harmonized Signaling",
+                  "Open-Access Operator",
+                  "Digital Interoperability",
+                  "Market Deregulation"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -12178,13 +12710,13 @@
                 "desc": "Global Sustainable Tourism Council baseline standards for destinations."
               },
               {
-                "url": "https://cda.ve.it",
+                "url": "https://whc.unesco.org",
                 "tag": "03 • Ecological Impact",
                 "name": "EEA Tourism & Nature",
                 "desc": "European Environment Agency briefs on tourism pressures on biodiversity."
               },
               {
-                "url": "https://cda.ve.it",
+                "url": "https://whc.unesco.org",
                 "tag": "04 • Municipal Access Portal",
                 "name": "Venice Access Fee Official",
                 "desc": "Municipal overview of city access regulations and reservation mechanics."
@@ -12205,20 +12737,58 @@
             "pageUrl": "session3/admat1.html",
             "articles": [
               {
-                "topic": "UN Tourism Policy Brief",
-                "sourceTag": "Industry Analysis",
+                "topic": "Urban Sustainability & Heritage",
+                "sourceTag": "UNESCO Sustainable Tourism • World Heritage Brief",
                 "heading": "Carrying Capacity Indicators in European Heritage Centers",
-                "snippet": "A comparative framework analyzing visitor ratios, local resident sentiment, and infrastructure strain.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.unwto.org/sustainable-development"
+                "snippet": "How historic destinations like Venice, Dubrovnik, and Amsterdam deploy smart sensors, booking thresholds, and crowd management to protect ancient infrastructure.",
+                "readTime": "5 min read",
+                "url": "https://whc.unesco.org",
+                "title": "Carrying Capacity Indicators in European Heritage Centers",
+                "summary": "How historic destinations like Venice, Dubrovnik, and Amsterdam deploy smart sensors, booking thresholds, and crowd management to protect ancient infrastructure.",
+                "content": [
+                  "Over the past decade, Europe's most beloved historic cities have faced an unprecedented crisis of popularity. Destinations such as Venice, Dubrovnik, and Amsterdam frequently welcome millions of international tourists annually, overwhelming historic street plans designed centuries ago for modest resident populations.",
+                  "In response, urban planners use the concept of 'carrying capacity'—the maximum number of visitors a site can sustain without causing permanent damage to physical monuments, the local environment, or residents' quality of life. In Venice, sophisticated optical sensors and mobile cell-tower data now map visitor density in real time, alerting authorities when pedestrian flows across historic bridges reach critical safety thresholds.",
+                  "Managing carrying capacity requires both technological tracking and regulatory courage. Policies include capping daily tourist admissions, banning massive cruise ships from delicate lagoons, and restricting residential housing conversions into short-term vacation rentals to preserve living local communities."
+                ],
+                "takeaways": [
+                  "Carrying capacity measures visitor density against the physical limits of historic sites.",
+                  "Optical sensors and mobile network tracking help detect and prevent pedestrian stampedes.",
+                  "Protecting resident housing is as vital for heritage preservation as restoring physical monuments."
+                ],
+                "vocab": [
+                  "Carrying Capacity",
+                  "Pedestrian Congestion",
+                  "Crowd Management",
+                  "Urban Heritage",
+                  "Short-Term Rental"
+                ]
               },
               {
-                "topic": "Journal of Sustainable Tourism",
-                "sourceTag": "Industry Analysis",
-                "heading": "The Economics of Tourist Taxation &amp; Crowd Dispersal",
-                "snippet": "Evaluating whether dynamic pricing diverts crowds or merely generates municipal revenue.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://cda.ve.it"
+                "topic": "Economics & Public Policy",
+                "sourceTag": "OECD Tourism Trends • Economic Analysis",
+                "heading": "The Economics of Tourist Taxation & Crowd Dispersal",
+                "snippet": "Analyzing entry tariffs, hotel surcharges, and regional marketing initiatives aimed at balancing municipal revenue with visitor volume in oversubscribed destinations.",
+                "readTime": "4 min read",
+                "url": "https://www.oecd.org/cfe/tourism",
+                "title": "The Economics of Tourist Taxation & Crowd Dispersal",
+                "summary": "Analyzing entry tariffs, hotel surcharges, and regional marketing initiatives aimed at balancing municipal revenue with visitor volume in oversubscribed destinations.",
+                "content": [
+                  "As popular European destinations struggle under the weight of peak-season tourist volumes, municipal leaders are turning to economic tools to regulate visitor numbers. Tourist taxes—ranging from small nightly hotel surcharges to mandatory day-tripper entry fees—have expanded across the continent.",
+                  "Economists analyze whether these fees genuinely deter casual tourists or simply generate municipal revenue. While a five-euro daily entrance ticket in Venice does not stop international travelers who spent thousands on airfare, it generates tens of millions of euros each year. This revenue helps fund historic masonry repairs, canal dredging, and municipal waste collection that would otherwise burden local taxpayers.",
+                  "The most effective long-term strategy, however, is geographic dispersal. Regional tourism boards are actively marketing secondary cities, scenic countryside hiking paths, and regional heritage sites. By redirecting visitor spending toward less-visited communities, governments can alleviate pressure on historic centers while boosting regional economies."
+                ],
+                "takeaways": [
+                  "Tourist entry fees provide vital municipal revenue to maintain infrastructure under heavy visitor stress.",
+                  "Modest fees alone rarely reduce tourist numbers without strict booking quotas.",
+                  "Dispersing travelers to secondary regional destinations relieves pressure on crowded city centers."
+                ],
+                "vocab": [
+                  "Tourist Taxation",
+                  "Municipal Surcharge",
+                  "Crowd Dispersal",
+                  "Secondary Destination",
+                  "Peak-Season Levy"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -13068,20 +13638,58 @@
             "pageUrl": "session4/admat1.html",
             "articles": [
               {
-                "topic": "Harvard Business Review",
-                "sourceTag": "Industry Analysis",
+                "topic": "Corporate Governance & Climate",
+                "sourceTag": "Greenhouse Gas Protocol • Corporate Standard",
                 "heading": "Auditing Corporate Travel: The Scope 3 Emissions Challenge",
-                "snippet": "How international corporations measure and reduce business travel emissions through clear guidelines.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://hbr.org"
+                "snippet": "How multinational enterprises track business flights, implement internal carbon levies, and adopt video-first collaboration to achieve ambitious corporate climate targets.",
+                "readTime": "5 min read",
+                "url": "https://ghgprotocol.org",
+                "title": "Auditing Corporate Travel: The Scope 3 Emissions Challenge",
+                "summary": "How multinational enterprises track business flights, implement internal carbon levies, and adopt video-first collaboration to achieve ambitious corporate climate targets.",
+                "content": [
+                  "Under international environmental accounting standards, corporate emissions are categorized into three distinct tiers: Scope 1 (direct factory and vehicle fuel burn), Scope 2 (purchased electricity and heating), and Scope 3 (indirect value-chain emissions). For professional services firms and multinational corporations, business travel represents up to 70% of their total Scope 3 carbon footprint.",
+                  "In response to tightening ESG (Environmental, Social, and Governance) disclosure regulations, leading enterprises are auditing corporate travel policies. Many companies have introduced internal carbon budgets, charging business units a direct internal levy—often 50 to 100 euros per ton of CO2—for every employee flight booked. These funds are then channeled into sustainable aviation fuels (SAF) or clean energy projects.",
+                  "Furthermore, corporate travel guidelines increasingly mandate video-first communication for internal team reviews and quarterly check-ins, reserving long-haul flights for critical client negotiations. When air travel is strictly necessary, companies require staff to choose economy class, which produces significantly lower per-passenger emissions than spacious premium cabins."
+                ],
+                "takeaways": [
+                  "Business travel represents the largest component of Scope 3 emissions for professional service firms.",
+                  "Internal carbon fees incentivize departments to reduce non-essential international flights.",
+                  "Choosing economy class and replacing routine meetings with video calls cuts corporate footprints."
+                ],
+                "vocab": [
+                  "Scope 3 Emissions",
+                  "Carbon Budget",
+                  "Internal Carbon Fee",
+                  "ESG Disclosure",
+                  "Business Travel Audit"
+                ]
               },
               {
-                "topic": "Stanford Social Innovation Review",
-                "sourceTag": "Industry Analysis",
+                "topic": "Eco-Conscious Tourism",
+                "sourceTag": "Global Sustainable Tourism Council (GSTC)",
                 "heading": "The Rise of Regenerative Tourism",
-                "snippet": "Shifting the paradigm from &#x27;leaving no trace&#x27; to actively restoring degraded ecosystems and supporting communities.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://ssir.org"
+                "snippet": "Moving beyond zero-impact sustainability toward tourism models that actively restore local ecosystems, empower native communities, and revitalize cultural heritage.",
+                "readTime": "4 min read",
+                "url": "https://www.gstcouncil.org",
+                "title": "The Rise of Regenerative Tourism",
+                "summary": "Moving beyond zero-impact sustainability toward tourism models that actively restore local ecosystems, empower native communities, and revitalize cultural heritage.",
+                "content": [
+                  "For decades, the golden rule of green travel was sustainable tourism: 'take only photos, leave only footprints.' Today, an ambitious new movement called regenerative tourism is gaining momentum across the global travel industry, challenging the idea that simply minimizing negative impact is enough.",
+                  "Regenerative travel aims to leave a destination in a better condition than travelers found it. Rather than aiming for carbon neutrality, regenerative resorts and tour operators invest guest fees directly into local ecosystem restoration, including coral reef replanting, wetland restoration, and reforestation projects that sequester atmospheric carbon.",
+                  "Equally important is social empowerment. Regenerative tourism models partner directly with local and indigenous communities, ensuring that tourism revenues support local schools, healthcare clinics, and traditional crafts rather than flowing to distant multinational hotel chains. Travelers are invited to participate as temporary stewards of the lands they visit."
+                ],
+                "takeaways": [
+                  "Regenerative tourism focuses on actively healing and improving natural ecosystems.",
+                  "Projects include direct guest participation in reforestation and marine habitat restoration.",
+                  "Revenue is reinvested locally to support education, healthcare, and cultural traditions."
+                ],
+                "vocab": [
+                  "Regenerative Tourism",
+                  "Ecological Restoration",
+                  "Community Stewardship",
+                  "Biodiversity Conservation",
+                  "Carbon Sequestration"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -13966,20 +14574,58 @@
             "pageUrl": "session1/admat2.html",
             "articles": [
               {
-                "topic": "WMO Global Climate Observatory",
-                "sourceTag": "International Report",
-                "heading": "State of the Global Climate: Extreme Events &amp; Frequency",
-                "snippet": "World Meteorological Organization empirical analysis tracking rising global temperatures, severe heatwaves, and unprecedented precipitation extremes.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://public.wmo.int"
+                "topic": "Climate Science & Meteorological Trends",
+                "sourceTag": "World Meteorological Organization (WMO)",
+                "heading": "State of the Global Climate: Extreme Events & Frequency",
+                "snippet": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
+                "readTime": "5 min read",
+                "url": "https://wmo.int",
+                "title": "State of the Global Climate: Extreme Events & Frequency",
+                "summary": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
+                "content": [
+                  "Global meteorological monitoring indicates that the frequency and intensity of extreme weather phenomena have reached unprecedented historical benchmarks. The World Meteorological Organization's annual climate assessment confirms that global average surface temperatures consistently exceed pre-industrial baselines, driven by elevated atmospheric greenhouse gas concentrations.",
+                  "Across Europe and North America, prolonged summer heatwaves are breaking localized temperature records, placing immense pressure on electricity grids, municipal water supplies, and agricultural harvests. Warmer atmospheric conditions hold more water vapor, leading to sudden, high-intensity convective rainfall events that trigger severe flash flooding in urban areas where soil permeability is limited.",
+                  "In aviation and transport logistics, changing meteorological patterns directly affect operations. Higher air temperatures decrease atmospheric air density, reducing aircraft lift during takeoff and requiring takeoff weight restrictions on hot summer afternoons. Adapting infrastructure to these shifting weather extremes is becoming a central priority for civil engineers."
+                ],
+                "takeaways": [
+                  "Global temperatures and greenhouse gas levels continue to establish new historical records.",
+                  "Warmer air holds higher moisture volumes, creating more frequent and severe urban flash floods.",
+                  "Higher summer temperatures reduce air density, requiring operational weight limits for departing flights."
+                ],
+                "vocab": [
+                  "Extreme Weather Event",
+                  "Pre-Industrial Baseline",
+                  "Atmospheric Density",
+                  "Flash Flooding",
+                  "Climate Adaptation"
+                ]
               },
               {
-                "topic": "UNDRR Risk Reduction Briefing",
-                "sourceTag": "Economic Analysis",
+                "topic": "Environmental Economics & Risk",
+                "sourceTag": "Global Insurance & Economic Resilience Institute",
                 "heading": "The Escalating Economic Toll of Extreme Weather Disasters",
-                "snippet": "Assessing financial losses, supply-chain disruptions, and critical infrastructure vulnerabilities caused by climate-driven severe weather shocks.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.undrr.org"
+                "snippet": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
+                "readTime": "5 min read",
+                "url": "https://www.worldbank.org",
+                "title": "The Escalating Economic Toll of Extreme Weather Disasters",
+                "summary": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
+                "content": [
+                  "The economic impact of climate-driven disasters extends far beyond immediate physical property damage. According to international reinsurance data, insured losses from storms, floods, and wildfires have exceeded $100 billion annually in recent years, prompting major insurers to raise premiums or withdraw coverage entirely from vulnerable coastal and wildfire-prone regions.",
+                  "When critical transport networks—including bridges, rail lines, and international airports—suffer storm damage, supply chains experience severe disruptions. Manufacturing plants face parts shortages, perishable agricultural goods spoil in transit, and international commerce slows, costing regional economies billions in lost productivity.",
+                  "Economists stress that every euro invested in climate-resilient infrastructure saves up to four euros in post-disaster reconstruction costs. Reinforcing electrical substations against floodwaters, building subterranean storm water drainage reservoirs, and restoring natural wetlands provide proven, cost-effective economic buffers against future disaster costs."
+                ],
+                "takeaways": [
+                  "Annual global insured losses from weather disasters regularly exceed $100 billion.",
+                  "Transport disruptions ripple through manufacturing and agricultural supply chains.",
+                  "Investing in resilient infrastructure saves four times its cost in future disaster rebuilding."
+                ],
+                "vocab": [
+                  "Economic Resilience",
+                  "Insured Loss",
+                  "Supply Chain Disruption",
+                  "Infrastructure Hardening",
+                  "Disaster Reconstruction"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -14712,20 +15358,58 @@
             "pageUrl": "session2/admat2.html",
             "articles": [
               {
-                "topic": "C40 Cities Climate Leadership",
-                "sourceTag": "Urban Policy",
+                "topic": "Urban Planning & Green Mobility",
+                "sourceTag": "European Mobility Index • City Transportation Report",
                 "heading": "Urban Mobility Transition Index",
-                "snippet": "Comparative scoring of 50 global cities on public transit share, air quality improvements, and active mobility network integration.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.c40.org"
+                "snippet": "Comparing European metropolitan strategies for reducing private car dependence: cycling corridors, integrated multimodal ticketing, and dedicated bus rapid transit.",
+                "readTime": "4 min read",
+                "url": "https://transport.ec.europa.eu",
+                "title": "Urban Mobility Transition Index",
+                "summary": "Comparing European metropolitan strategies for reducing private car dependence: cycling corridors, integrated multimodal ticketing, and dedicated bus rapid transit.",
+                "content": [
+                  "European cities are engaged in a race to transition away from car-centric urban design toward sustainable, multimodal transport ecosystems. The Urban Mobility Transition Index assesses metropolitan areas on public transit accessibility, dedicated cycling infrastructure, and progress toward reducing private vehicle traffic.",
+                  "Leading cities like Paris, Copenhagen, and Amsterdam demonstrate that bold policy interventions yield dramatic results. By converting highway lanes into protected cycle superhighways, expanding tram networks, and removing thousands of street parking spaces, Paris has reduced car usage inside city limits by nearly 40% over the last decade while tripling daily bicycle trips.",
+                  "A seamless passenger experience relies heavily on unified digital ticketing. When commuters can unlock a shared bicycle, ride a suburban commuter train, and take a city bus using a single mobile app with a synchronized fare cap, public transport becomes substantially more attractive and convenient than navigating traffic in a private car."
+                ],
+                "takeaways": [
+                  "Leading European cities are converting roadway space from private cars to protected bike lanes and trams.",
+                  "Paris has reduced city-center car traffic by 40% while dramatically increasing cycling volume.",
+                  "Integrated digital ticketing and synchronized fare caps make multimodal public transport effortless."
+                ],
+                "vocab": [
+                  "Multimodal Transit",
+                  "Active Mobility",
+                  "Protected Cycle Lane",
+                  "Unified Ticketing",
+                  "Urban Decarbonization"
+                ]
               },
               {
-                "topic": "OECD Urban Studies",
-                "sourceTag": "Economic Analysis",
+                "topic": "Public Health & Environmental Regulation",
+                "sourceTag": "European Environment Agency (EEA)",
                 "heading": "The Economics of Low-Emission Zones and Public Health",
-                "snippet": "Empirical assessment of health outcomes, commercial vitality, and emissions reductions following the implementation of urban clean-air zones.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.oecd.org"
+                "snippet": "How Low-Emission Zones (LEZs) reduce fine particulate pollution in urban centers, lower pediatric asthma admissions, and stimulate vehicle fleet modernization.",
+                "readTime": "4 min read",
+                "url": "https://www.eea.europa.eu",
+                "title": "The Economics of Low-Emission Zones and Public Health",
+                "summary": "How Low-Emission Zones (LEZs) reduce fine particulate pollution in urban centers, lower pediatric asthma admissions, and stimulate vehicle fleet modernization.",
+                "content": [
+                  "Air pollution from diesel and gasoline vehicles remains a leading environmental cause of premature mortality and chronic respiratory disease in European urban centers. In response, more than three hundred European cities have instituted Low-Emission Zones (LEZs), restricting older, polluting vehicles from central business districts and residential areas.",
+                  "Public health data demonstrates immediate benefits following LEZ implementation. In London, the expansion of the Ultra Low Emission Zone (ULEZ) resulted in a 46% reduction in harmful nitrogen dioxide (NO2) concentrations in the city center within two years, leading to measurable drops in hospital emergency admissions for asthma and cardiovascular illnesses.",
+                  "While low-emission zones deliver clear public health gains, policymakers must address economic equity concerns. Small business owners and lower-income families who rely on older vans or cars can face substantial replacement costs. Targeted vehicle scrappage subsidies and public transport discounts ensure that cleaner air does not come at the expense of vulnerable communities."
+                ],
+                "takeaways": [
+                  "Over 300 European cities have established Low-Emission Zones to curb toxic traffic pollution.",
+                  "London's ULEZ reduced nitrogen dioxide concentrations by 46%, cutting emergency hospital visits.",
+                  "Scrappage grants and public transit subsidies are essential to ensure low-income drivers are not penalized."
+                ],
+                "vocab": [
+                  "Low-Emission Zone (LEZ)",
+                  "Nitrogen Dioxide (NO2)",
+                  "Particulate Matter",
+                  "Public Health Benefit",
+                  "Scrappage Scheme"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -15458,20 +16142,58 @@
             "pageUrl": "session3/admat2.html",
             "articles": [
               {
-                "topic": "Oxford Review of Economic Policy",
-                "sourceTag": "Policy Analysis",
+                "topic": "International Diplomacy & Climate Policy",
+                "sourceTag": "UNFCCC Climate Negotiations Review",
                 "heading": "The Rhetoric of Climate Policy Negotiations",
-                "snippet": "Analyzing linking words, persuasive framing, and consensus-building strategies in international climate accords and environmental diplomacy.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://academic.oup.com"
+                "snippet": "Analyzing linguistic nuances, diplomatic phrasing, and consensus-building mechanisms across international climate summits from the Paris Agreement to COP conferences.",
+                "readTime": "5 min read",
+                "url": "https://unfccc.int",
+                "title": "The Rhetoric of Climate Policy Negotiations",
+                "summary": "Analyzing linguistic nuances, diplomatic phrasing, and consensus-building mechanisms across international climate summits from the Paris Agreement to COP conferences.",
+                "content": [
+                  "At annual United Nations climate summits (COP), diplomats from nearly two hundred nations spend sleepless nights debating the precise wording of international treaties. In the realm of international environmental law, a single word can alter legal commitments, shifting hundreds of billions of dollars in global financial obligations.",
+                  "A famous example occurred during the 2015 Paris Agreement negotiations, where delegates intensely debated whether developed nations 'shall' or 'should' provide financial support to developing nations. The modal verb 'shall' denotes a binding, enforceable legal command, whereas 'should' expresses a voluntary recommendation. Subtle linguistic diplomacy allows nations with opposing economic interests to bridge political divides.",
+                  "Negotiators also utilize 'constructive ambiguity'—deliberately phrasing contentious clauses in ways that allow multiple parties to claim domestic victory while maintaining collective momentum. Mastering this nuanced vocabulary is essential for professionals working in international civil aviation and environmental diplomacy."
+                ],
+                "takeaways": [
+                  "International climate agreements depend on precise modal verb choices like 'shall' versus 'should.'",
+                  "Binding legal mandates create enforceable obligations, while advisory terms indicate voluntary targets.",
+                  "Constructive ambiguity allows diplomatic consensus between nations with conflicting economic priorities."
+                ],
+                "vocab": [
+                  "Diplomatic Phrasing",
+                  "Binding Obligation",
+                  "Modal Verb Distinction",
+                  "Constructive Ambiguity",
+                  "Consensus Building"
+                ]
               },
               {
-                "topic": "Centre for European Policy Studies (CEPS)",
-                "sourceTag": "Economic Briefing",
+                "topic": "Fiscal Policy & Energy Transition",
+                "sourceTag": "International Monetary Fund (IMF) • Fiscal Monitor",
                 "heading": "Economic Trade-Offs in Transport Carbon Taxation",
-                "snippet": "A balanced policy briefing modeling passenger demand elasticity, modal shift potential, and economic impacts under escalating carbon levies.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.ceps.eu"
+                "snippet": "Evaluating carbon pricing models, jet fuel tax exemptions under the Chicago Convention, and redistributive mechanisms designed to prevent public backlash.",
+                "readTime": "5 min read",
+                "url": "https://www.imf.org",
+                "title": "Economic Trade-Offs in Transport Carbon Taxation",
+                "summary": "Evaluating carbon pricing models, jet fuel tax exemptions under the Chicago Convention, and redistributive mechanisms designed to prevent public backlash.",
+                "content": [
+                  "Putting a direct price on carbon is widely considered by economists to be the most efficient mechanism for incentivizing cleaner energy. By taxing carbon emissions from fossil fuels, market prices reflect the true environmental cost of consumption, encouraging consumers and businesses to adopt low-carbon alternatives.",
+                  "In transport, however, carbon taxation faces unique legal and political hurdles. International aviation fuel has historically been exempt from national sales taxes under the 1944 Chicago Convention, creating an uneven competitive playing field compared to domestic passenger rail, which pays full national electricity taxes and track-access fees.",
+                  "Furthermore, carbon taxes on consumer motor fuels can spark widespread public backlash if perceived as unfair. To maintain public support, progressive fiscal policies implement 'carbon dividend' models, where 100% of tax revenues are redistributed directly to citizens as equal monthly rebates, ensuring lower-income households come out financially ahead."
+                ],
+                "takeaways": [
+                  "Carbon pricing incentivizes consumers and businesses to shift toward low-emission alternatives.",
+                  "The 1944 Chicago Convention exempts international commercial aviation fuel from domestic taxes.",
+                  "Rebating carbon tax revenues directly to citizens protects public support and lower-income families."
+                ],
+                "vocab": [
+                  "Carbon Pricing",
+                  "Chicago Convention",
+                  "Fuel Tax Exemption",
+                  "Carbon Dividend",
+                  "Fiscal Equity"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -16210,20 +16932,58 @@
             "pageUrl": "session4/admat2.html",
             "articles": [
               {
-                "topic": "European Environment Agency (EEA)",
-                "sourceTag": "Environmental Briefing",
+                "topic": "Urban Ecology & Biodiversity",
+                "sourceTag": "European Urban Biodiversity Network",
                 "heading": "Urban Greening and Biodiversity in European Cities",
-                "snippet": "Assessing how tree canopy expansion, rooftop gardens, and urban wetlands enhance ecological resilience and mitigate heat stress across metropolitan regions.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.eea.europa.eu"
+                "snippet": "How green roofs, bioswales, and urban forest corridors cool European heat islands, retain stormwater runoff, and restore native pollinator populations.",
+                "readTime": "4 min read",
+                "url": "https://www.eea.europa.eu",
+                "title": "Urban Greening and Biodiversity in European Cities",
+                "summary": "How green roofs, bioswales, and urban forest corridors cool European heat islands, retain stormwater runoff, and restore native pollinator populations.",
+                "content": [
+                  "As concrete and asphalt absorb solar radiation, metropolitan areas experience the 'urban heat island' effect, with city centers staying up to eight degrees Celsius warmer than surrounding rural areas during summer heatwaves. To combat this phenomenon, European municipalities are embracing urban greening initiatives.",
+                  "Integrating nature into the urban environment takes many forms. Cities like Basel and Vienna mandate green vegetated roofs on all new flat-roof buildings, providing natural insulation, filtering fine dust, and creating aerial habitats for native bees and birds. At street level, bioswales and permeable rain gardens capture storm runoff, recharging groundwater and reducing flash flooding.",
+                  "Urban green corridors also provide psychological benefits for residents. Studies show that daily access to shaded parks, pocket forests, and tree-lined boulevards lowers cortisol stress levels, improves mental well-being, and encourages active pedestrian mobility throughout dense metropolitan neighborhoods."
+                ],
+                "takeaways": [
+                  "Urban greening directly combats the heat island effect, lowering city-center temperatures by several degrees.",
+                  "Green vegetated roofs and bioswales absorb heavy stormwater and restore pollinator biodiversity.",
+                  "Access to shaded urban nature corridors measurably reduces resident stress and promotes physical health."
+                ],
+                "vocab": [
+                  "Urban Heat Island",
+                  "Green Roof",
+                  "Bioswale",
+                  "Permeable Pavement",
+                  "Ecosystem Services"
+                ]
               },
               {
-                "topic": "Airport World Technical Review",
-                "sourceTag": "Aviation Ecology",
+                "topic": "Airfield Wildlife Hazard Management",
+                "sourceTag": "ICAO Wildlife Hazard Management Digest",
                 "heading": "Balancing Airfield Safety Standards with Habitat Conservation",
-                "snippet": "Operational guidelines for airport environmental managers reconciling mandatory wildlife hazard controls with local biodiversity net gain objectives.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://airport-world.com"
+                "snippet": "Examining how airport operators manage vast grassland habitats around runways to prevent hazardous bird strikes while supporting endangered flora and fauna.",
+                "readTime": "5 min read",
+                "url": "https://www.icao.int",
+                "title": "Balancing Airfield Safety Standards with Habitat Conservation",
+                "summary": "Examining how airport operators manage vast grassland habitats around runways to prevent hazardous bird strikes while supporting endangered flora and fauna.",
+                "content": [
+                  "Major commercial airports encompass hundreds of hectares of undeveloped open grassland bordering runways and taxiways. While this land is designated primarily as a safety buffer for aircraft overruns, it frequently functions as an unintended wildlife sanctuary, attracting birds, small mammals, and predatory raptors.",
+                  "For aerodrome operators, wildlife management is a paramount safety priority. Collisions between aircraft and birds—known as bird strikes—can cause catastrophic engine failure or shatter cockpit windscreens. Under ICAO standards, airports employ specialized wildlife control officers who use acoustic pyrotechnics, trained falcons, and non-lethal dispersal techniques to deter birds from active flight paths.",
+                  "Striking a balance between safety and conservation requires scientific precision. Many airports employ 'long-grass policies,' allowing turf between taxiways to grow to 200–300 mm in height. Long grass prevents large flocking birds like gulls and geese from landing, while discouraging small rodents from breeding, effectively reducing bird-strike risks without harming local biodiversity."
+                ],
+                "takeaways": [
+                  "Airfield perimeter lands act as open wildlife habitats but require strict bird-strike hazard controls.",
+                  "Acoustic deterrents and trained falcons disperse hazardous birds without lethal measures.",
+                  "Maintaining long grass between taxiways naturally deters flocking birds from landing near runways."
+                ],
+                "vocab": [
+                  "Wildlife Hazard",
+                  "Bird Strike",
+                  "Non-Lethal Dispersal",
+                  "Long-Grass Policy",
+                  "Airfield Perimeter"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -17093,20 +17853,58 @@
             "pageUrl": "session1/admat3.html",
             "articles": [
               {
-                "topic": "MIT Technology Review",
-                "sourceTag": "Industry Analysis",
+                "topic": "Artificial Intelligence & Future of Work",
+                "sourceTag": "MIT Technology Review • AI & Workforce",
                 "heading": "Generative AI and the Transformation of Modern Workplaces",
-                "snippet": "Analyzing how enterprise deployment of generative AI tools reshapes professional productivity, human-in-the-loop workflows, and ethical benchmarks.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.technologyreview.com"
+                "snippet": "Examining how large language models, automated code generation, and AI assistants augment engineering productivity while redefining essential human skills.",
+                "readTime": "5 min read",
+                "url": "https://www.technologyreview.com",
+                "title": "Generative AI and the Transformation of Modern Workplaces",
+                "summary": "Examining how large language models, automated code generation, and AI assistants augment engineering productivity while redefining essential human skills.",
+                "content": [
+                  "The rapid emergence of generative artificial intelligence and large language models (LLMs) is redefining professional workflows across engineering, aviation, and software development. Far from replacing human expertise entirely, modern AI tools act as intelligent co-pilots, drafting technical documentation, automating boilerplate software code, and summarizing dense technical reports in seconds.",
+                  "In engineering environments, this shift allows technical specialists to focus on higher-level problem solving, architecture design, and critical safety verification. Rather than spending hours formatting spreadsheets or writing routine scripts, engineers can prompt AI systems for initial drafts, iterating rapidly through design variations.",
+                  "However, workplace integration requires a fundamental shift in professional skills. The premium is no longer on memorizing technical syntax, but on prompt formulation, algorithmic literacy, and rigorous verification. Professionals must possess the domain knowledge to spot subtle AI 'hallucinations' and ensure that automated outputs comply with stringent safety and regulatory benchmarks."
+                ],
+                "takeaways": [
+                  "Generative AI acts as an engineering co-pilot, automating repetitive drafting and coding tasks.",
+                  "Professionals can spend more time on high-level problem solving and safety verification.",
+                  "Crucial workplace skills now emphasize prompt engineering, critical verification, and domain literacy."
+                ],
+                "vocab": [
+                  "Generative AI",
+                  "Algorithmic Literacy",
+                  "AI Hallucination",
+                  "Human-in-the-Loop",
+                  "Workflow Automation"
+                ]
               },
               {
-                "topic": "International Energy Agency (IEA)",
-                "sourceTag": "Environmental Briefing",
+                "topic": "Energy Infrastructure & Tech Climate Impact",
+                "sourceTag": "International Energy Agency (IEA) • Tech Energy Report",
                 "heading": "The Compute Carbon Footprint: Data Centers and Energy Demands",
-                "snippet": "Assessing the soaring electrical energy and water cooling demands required to train and deploy modern large-scale artificial intelligence models.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.iea.org"
+                "snippet": "Analyzing surging electrical power demands from AI training clusters, hyperscale data centers, and advanced cooling technologies powering the digital cloud.",
+                "readTime": "4 min read",
+                "url": "https://www.iea.org",
+                "title": "The Compute Carbon Footprint: Data Centers and Energy Demands",
+                "summary": "Analyzing surging electrical power demands from AI training clusters, hyperscale data centers, and advanced cooling technologies powering the digital cloud.",
+                "content": [
+                  "While cloud computing and artificial intelligence appear intangible, their physical foundation consists of sprawling hyperscale data centers housing millions of high-performance graphic processing units (GPUs). Training and operating advanced neural networks requires immense compute power, causing global data center electricity consumption to surge dramatically.",
+                  "According to the International Energy Agency (IEA), data centers and telecommunications networks currently consume approximately 1.5% of global electricity, a figure projected to double by 2030. In countries with high tech density like Ireland, data centers already consume more electricity than all urban residential homes combined.",
+                  "To reconcile compute growth with corporate climate commitments, tech enterprises are investing billions in nuclear energy power purchase agreements, geothermal generation, and direct-to-chip liquid cooling systems. Engineers are also developing smaller, specialized models that deliver comparable performance with a fraction of the electrical footprint."
+                ],
+                "takeaways": [
+                  "AI model training and cloud services require massive electrical power for GPU processing and cooling.",
+                  "Data centers consume more electricity than residential homes in certain high-tech hubs.",
+                  "Tech firms are turning to nuclear, geothermal, and liquid cooling to manage energy demands."
+                ],
+                "vocab": [
+                  "Compute Footprint",
+                  "Hyperscale Data Center",
+                  "Electricity Demand",
+                  "Liquid Cooling",
+                  "Power Purchase Agreement"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -17858,20 +18656,58 @@
             "pageUrl": "session2/admat3.html",
             "articles": [
               {
-                "topic": "International Council on Clean Transportation (ICCT)",
-                "sourceTag": "Policy Analysis",
+                "topic": "Intermodal Transport & European Mobility",
+                "sourceTag": "European Rail Alliance • Modal Shift Blueprint",
                 "heading": "The European Rail Renaissance: Can High-Speed Rail Replace Regional Flights?",
-                "snippet": "Comparative modeling of travel times, carbon savings, and infrastructure investment required to achieve competitive rail alternatives across European corridors.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://theicct.org"
+                "snippet": "Evaluating overnight sleeper trains, open-access rail competition, and cross-border booking integration as Europe seeks to shift travelers away from domestic aviation.",
+                "readTime": "5 min read",
+                "url": "https://transport.ec.europa.eu",
+                "title": "The European Rail Renaissance: Can High-Speed Rail Replace Regional Flights?",
+                "summary": "Evaluating overnight sleeper trains, open-access rail competition, and cross-border booking integration as Europe seeks to shift travelers away from domestic aviation.",
+                "content": [
+                  "Across the European continent, a concerted effort is underway to revitalize cross-border rail travel as an attractive, low-carbon alternative to regional aviation. Beyond daytime high-speed corridors, night trains are experiencing a remarkable resurgence, linking cities like Vienna, Paris, Berlin, and Brussels while travelers sleep comfortably in couchette cabins.",
+                  "The economics of rail substitution depend heavily on transit time thresholds. Market studies demonstrate that when high-speed rail journeys take under four hours, rail captures over 60% of total passenger market share from airlines. On routes under two and a half hours, such as Brussels to Paris, passenger airlines typically exit the market entirely.",
+                  "However, international rail booking remains significantly more fragmented than airline ticketing. Passengers traveling across three European countries must often book separate tickets across conflicting national rail platforms with zero protection for missed connections, highlighting the urgent need for a unified European digital ticketing standard."
+                ],
+                "takeaways": [
+                  "Night sleeper trains are re-emerging as practical, low-carbon alternatives to short-haul flights.",
+                  "High-speed rail captures over 60% of market share when travel time is under four hours.",
+                  "Fragmented cross-border booking platforms remain the primary obstacle to seamless rail travel."
+                ],
+                "vocab": [
+                  "Rail Renaissance",
+                  "Night Sleeper Train",
+                  "Market Substitution",
+                  "Couchette Cabin",
+                  "Unified Ticketing"
+                ]
               },
               {
-                "topic": "McKinsey Transport &amp; Logistics Review",
-                "sourceTag": "Industry Forecast",
-                "heading": "The Next Decade of Sustainable Mobility &amp; Clean Fuels",
-                "snippet": "Assessing commercial scaling timelines for electric fleets, hydrogen fuel cells, autonomous shuttles, and net-zero passenger transport.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.mckinsey.com"
+                "topic": "Next-Gen Propulsion & Alternative Fuels",
+                "sourceTag": "Clean Transport Observatory • Zero-Emission Fuels",
+                "heading": "The Next Decade of Sustainable Mobility & Clean Fuels",
+                "snippet": "Exploring the race between battery-electric heavy transport, green hydrogen fuel cells, and synthetic e-fuels to decarbonize long-haul logistics and commercial aviation.",
+                "readTime": "5 min read",
+                "url": "https://www.iea.org",
+                "title": "The Next Decade of Sustainable Mobility & Clean Fuels",
+                "summary": "Exploring the race between battery-electric heavy transport, green hydrogen fuel cells, and synthetic e-fuels to decarbonize long-haul logistics and commercial aviation.",
+                "content": [
+                  "Decarbonizing light passenger cars through battery-electric drivetrains is well advanced, but eliminating emissions from heavy transport—including long-distance freight trucks, maritime shipping, and commercial aviation—presents immense chemical and thermodynamic challenges.",
+                  "For transcontinental aviation, battery weight makes all-electric flight unviable for medium and long-haul airliners. Instead, the aviation sector is focusing on Sustainable Aviation Fuels (SAF) derived from non-food biological waste or synthesized from captured carbon dioxide and green hydrogen (e-kerosene). These drop-in fuels require no changes to existing aircraft engines or airport fueling hydrant systems.",
+                  "In ground freight, hydrogen fuel-cell trucks are emerging as viable competitors to heavy battery rigs, offering 15-minute refueling times and long operational range for trans-European trucking corridors. Transitioning to these zero-emission fuels within the next decade requires rapid scaling of renewable green hydrogen production facilities."
+                ],
+                "takeaways": [
+                  "Heavy freight and aviation require high-density alternatives like green hydrogen and e-fuels.",
+                  "Sustainable Aviation Fuels (SAF) drop directly into existing jet engines without modifications.",
+                  "Scaling renewable electricity production is necessary to manufacture green hydrogen at industrial volume."
+                ],
+                "vocab": [
+                  "Sustainable Aviation Fuel (SAF)",
+                  "Drop-in Fuel",
+                  "Green Hydrogen",
+                  "Synthetic E-Fuel",
+                  "Zero-Emission Transport"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -18623,20 +19459,58 @@
             "pageUrl": "session3/admat3.html",
             "articles": [
               {
-                "topic": "Stanford Center for Human-Centered AI",
-                "sourceTag": "Academic Briefing",
+                "topic": "Cognitive Psychology & AI Governance",
+                "sourceTag": "Stanford Institute for Human-Centered AI (HAI)",
                 "heading": "Critical Thinking in the Age of Automated Algorithms",
                 "snippet": "Analyzing how human operators can maintain situational awareness, recognize cognitive complacency, and challenge flawed automated outputs.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://hai.stanford.edu"
+                "readTime": "5 min read",
+                "url": "https://hai.stanford.edu",
+                "title": "Critical Thinking in the Age of Automated Algorithms",
+                "summary": "Analyzing how human operators can maintain situational awareness, recognize cognitive complacency, and challenge flawed automated outputs.",
+                "content": [
+                  "As automated algorithms and artificial intelligence take over routine data processing in aviation, healthcare, and air traffic control, cognitive psychologists warn of a subtle operational vulnerability: automation complacency. When automated systems perform reliably 99% of the time, human monitors naturally lower their vigilance, assuming the computer is always correct.",
+                  "In safety-critical environments, automation complacency can have catastrophic consequences. When an unexpected sensor failure or rare edge case occurs, operators who have become passive observers may take tens of seconds to recognize the error, diagnose the underlying fault, and re-engage manual control—precious seconds that safety margins cannot afford.",
+                  "To counter cognitive drift, human-machine interface designers implement 'active verification' workflows. Rather than simply displaying automated recommendations, systems require human operators to manually confirm key assumptions, cross-check independent data feeds, and verbalize their operational reasoning to maintain sharp situational awareness."
+                ],
+                "takeaways": [
+                  "Automation complacency occurs when humans unthinkingly trust highly reliable computer systems.",
+                  "Passive observers take significantly longer to diagnose rare sensor errors and take manual control.",
+                  "Active verification interfaces force operators to cross-check data and maintain situational awareness."
+                ],
+                "vocab": [
+                  "Automation Complacency",
+                  "Situational Awareness",
+                  "Cognitive Drift",
+                  "Edge Case",
+                  "Human-Machine Interface (HMI)"
+                ]
               },
               {
-                "topic": "Harvard Law Review Digital Governance",
-                "sourceTag": "Legal &amp; Policy Review",
+                "topic": "Digital Ethics & Technology Regulation",
+                "sourceTag": "European Union AI Act • Legal Analysis",
                 "heading": "Allocating Legal Liability for Automated Decisions",
-                "snippet": "Exploring legal doctrines and ethical frameworks for attributing fault when autonomous vehicles, AI models, or automated systems cause harm.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://harvardlawreview.org"
+                "snippet": "Who is responsible when an autonomous system fails? Examining the EU AI Act, strict manufacturer liability, operator accountability, and algorithmic explainability.",
+                "readTime": "5 min read",
+                "url": "https://digital-strategy.ec.europa.eu",
+                "title": "Allocating Legal Liability for Automated Decisions",
+                "summary": "Who is responsible when an autonomous system fails? Examining the EU AI Act, strict manufacturer liability, operator accountability, and algorithmic explainability.",
+                "content": [
+                  "When an autonomous self-driving vehicle causes a traffic collision, or an automated air traffic sequencing algorithm issues conflicting taxi instructions, who bears legal liability? As algorithms increasingly make decisions without direct human steering, traditional tort and product liability laws face unprecedented challenges.",
+                  "Under the European Union's landmark AI Act, artificial intelligence applications are classified by risk tier. High-risk systems—including autonomous transport infrastructure and safety components in aviation—are subject to strict transparency rules, mandatory human oversight requirements, and pre-deployment algorithmic bias auditing.",
+                  "The legal consensus distinguishes between software manufacturer defects and human operator neglect. If an AI system acts as a 'black box' whose reasoning cannot be explained, courts increasingly place strict product liability on the developer. Conversely, if a human operator ignores explicit system warnings, operational liability remains with the human professional."
+                ],
+                "takeaways": [
+                  "Autonomous decision-making disrupts traditional concepts of legal fault and product liability.",
+                  "The EU AI Act mandates strict human oversight and transparency for high-risk automated systems.",
+                  "Developers face liability for unexplained 'black box' failures, while operators answer for ignored alarms."
+                ],
+                "vocab": [
+                  "Algorithmic Liability",
+                  "EU AI Act",
+                  "High-Risk AI System",
+                  "Black-Box Algorithm",
+                  "Explainability Benchmark"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -19388,20 +20262,58 @@
             "pageUrl": "session4/admat3.html",
             "articles": [
               {
-                "topic": "NIST / European Data Protection Board",
-                "sourceTag": "Scientific Evaluation",
+                "topic": "Border Control & Digital Privacy",
+                "sourceTag": "European Data Protection Board (EDPB)",
                 "heading": "Facial Recognition at the Border: Privacy Safeguards and Demographic Fairness",
-                "snippet": "Technical evaluation of automated border e-Gates examining false match rates, demographic performance parity, and strict GDPR privacy compliance.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.nist.gov"
+                "snippet": "Examining automated e-Gates at international airports, GDPR biometric protections, and mitigating algorithmic error rates across diverse traveler demographics.",
+                "readTime": "5 min read",
+                "url": "https://edpb.europa.eu",
+                "title": "Facial Recognition at the Border: Privacy Safeguards and Demographic Fairness",
+                "summary": "Examining automated e-Gates at international airports, GDPR biometric protections, and mitigating algorithmic error rates across diverse traveler demographics.",
+                "content": [
+                  "At major international airport terminals worldwide, automated border e-Gates have become standard infrastructure. Travelers scan their electronic passports, look into a camera, and have their facial geometry matched against the digital photograph stored on their passport's RFID microchip in under ten seconds.",
+                  "While automated biometric verification significantly expedites border control processing, it raises profound civil liberties and data protection questions. Under Europe's General Data Protection Regulation (GDPR), biometric face templates are categorized as special category data, requiring stringent encryption, strict retention limits, and immediate deletion once traveler verification is complete.",
+                  "Furthermore, algorithmic audit studies have identified demographic disparities in facial recognition accuracy. Early neural networks showed higher false rejection rates for travelers with darker skin tones or non-Western facial features. Independent algorithmic certification and the presence of human border officers to resolve discrepancies ensure fair and dignified border processing for all."
+                ],
+                "takeaways": [
+                  "Automated e-Gates compare live facial geometry to encrypted biometric passport microchips.",
+                  "GDPR treats biometric facial templates as sensitive data requiring strict encryption and instant deletion.",
+                  "Auditing algorithms ensures fair recognition accuracy across diverse global traveler demographics."
+                ],
+                "vocab": [
+                  "Biometric Verification",
+                  "e-Gate System",
+                  "Data Protection (GDPR)",
+                  "False Rejection Rate",
+                  "Demographic Parity"
+                ]
               },
               {
-                "topic": "International Air Transport Association (IATA)",
-                "sourceTag": "Industry Whitepaper",
-                "heading": "The Rise of Digital Passports &amp; Self-Sovereign Identity in Travel",
-                "snippet": "Evaluating the transition from physical passports to encrypted digital credentials, contactless boarding tokens, and passenger consent protocols.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.iata.org"
+                "topic": "Digital Identity & Travel Standards",
+                "sourceTag": "ICAO Digital Travel Credentials (DTC) Working Group",
+                "heading": "The Rise of Digital Passports & Self-Sovereign Identity in Travel",
+                "snippet": "How ICAO's Digital Travel Credential (DTC) standards allow travelers to store cryptographic passports in mobile wallets, creating seamless paperless international journeys.",
+                "readTime": "4 min read",
+                "url": "https://www.icao.int",
+                "title": "The Rise of Digital Passports & Self-Sovereign Identity in Travel",
+                "summary": "How ICAO's Digital Travel Credential (DTC) standards allow travelers to store cryptographic passports in mobile wallets, creating seamless paperless international journeys.",
+                "content": [
+                  "The physical paper passport, with its bound pages and stamped visas, has served international travelers for more than a century. Today, the International Civil Aviation Organization (ICAO) is spearheading a digital revolution with the rollout of Digital Travel Credentials (DTC).",
+                  "A Digital Travel Credential is a cryptographically secured virtual passport stored directly in an authorized digital wallet on a smartphone. Using public-key cryptography and decentralized self-sovereign identity protocols, travelers can share verified citizenship and visa eligibility with airlines and border agencies days before arriving at the airport.",
+                  "By the time the passenger arrives at the terminal, their travel clearance is already pre-approved. They walk through security and boarding gates without retrieving physical booklets or boarding passes. Crucially, the traveler retains full control over their personal data, sharing only the minimum verified claims required for travel without revealing extraneous private records."
+                ],
+                "takeaways": [
+                  "ICAO's Digital Travel Credential (DTC) stores verified cryptographic passports in smartphone wallets.",
+                  "Pre-flight verification allows travelers to clear border formalities prior to stepping foot in the terminal.",
+                  "Self-sovereign identity principles ensure passengers control what personal information they disclose."
+                ],
+                "vocab": [
+                  "Digital Travel Credential (DTC)",
+                  "Self-Sovereign Identity",
+                  "Cryptographic Token",
+                  "Paperless Border",
+                  "Pre-Arrival Clearance"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -20626,20 +21538,58 @@
             ],
             "articles": [
               {
-                "topic": "Cabin Safety & Passenger Behavior",
-                "sourceTag": "Aviation Safety Weekly",
+                "topic": "In-Flight Safety & Cabin Authority",
+                "sourceTag": "ICAO Flight Safety Bulletin • Passenger Management",
                 "heading": "Zero Tolerance at 35,000 Feet: Should Airlines Enact Strict Airport and In-Flight Alcohol Bans?",
-                "snippet": "Following an increase in violent in-flight incidents, flight attendants' unions and international aviation regulators debate whether pre-departure airport bar sales and in-flight alcohol service require mandatory statutory limits.",
-                "readTime": "Estimated read: 4 mins",
-                "url": "https://www.iata.org/en/pressroom/2023-releases/2023-06-05-01/"
+                "snippet": "Examining the global rise in unruly passenger incidents, legal powers of the aircraft commander under international law, and carrier debates over pre-flight alcohol sales.",
+                "readTime": "5 min read",
+                "url": "https://www.icao.int",
+                "title": "Zero Tolerance at 35,000 Feet: Should Airlines Enact Strict Airport and In-Flight Alcohol Bans?",
+                "summary": "Examining the global rise in unruly passenger incidents, legal powers of the aircraft commander under international law, and carrier debates over pre-flight alcohol sales.",
+                "content": [
+                  "Commercial aviation has witnessed an alarming post-pandemic surge in unruly passenger occurrences. According to data published by the International Air Transport Association (IATA), disruptive incidents occur on one in every 568 flights, ranging from verbal abuse of cabin crew to physical violence, smoking in lavatories, and attempts to breach the flight deck door.",
+                  "Excessive alcohol consumption—frequently initiated in duty-free airport bars and lounges before boarding—is identified as the primary contributor in more than 60% of all physical altercations. Because cabin pressure at cruising altitude corresponds to an atmospheric elevation of 6,000 to 8,000 feet, lower blood oxygen levels amplify the intoxicating effects of alcohol, turning minor frustrations into dangerous outbursts.",
+                  "Under the Tokyo Convention of 1963, the Aircraft Commander (Captain) holds extraordinary legal authority to restrain disruptive individuals, confiscate contraband, and initiate unscheduled emergency diversions. When an aircraft diverts to offload an aggressive passenger, fuel dumping and turnaround costs can exceed €50,000, prompting airlines to push for shared international blacklists and strict pre-boarding alcohol caps."
+                ],
+                "takeaways": [
+                  "Disruptive passenger incidents have reached historic highs, with alcohol identified as the leading trigger.",
+                  "Reduced cabin air pressure at cruising altitude significantly magnifies the physical effects of alcohol.",
+                  "The Tokyo Convention gives captains legal authority to restrain offenders and divert flights for safety."
+                ],
+                "vocab": [
+                  "Unruly Passenger",
+                  "Cabin Altitude",
+                  "Aircraft Commander",
+                  "Emergency Diversion",
+                  "Tokyo Convention"
+                ]
               },
               {
-                "topic": "Passenger Rights & Regulation",
-                "sourceTag": "Air Transport Law Journal",
+                "topic": "Aviation Consumer Law & Operations",
+                "sourceTag": "European Court of Justice • Case Law Review",
                 "heading": "EU261 and Extraordinary Circumstances: Balancing Passenger Redress with Carrier Viability",
-                "snippet": "How European compensation rules for 3-hour flight delays impact legacy and budget airlines during air traffic management industrial actions and adverse weather, and where passenger rights draw the line.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://transport.ec.europa.eu/transport-themes/passenger-rights/air_en"
+                "snippet": "Analyzing European Regulation (EC) 261/2004 delay compensation rules, court interpretations of mechanical failure vs. weather events, and carrier operational duties.",
+                "readTime": "5 min read",
+                "url": "https://transport.ec.europa.eu",
+                "title": "EU261 and Extraordinary Circumstances: Balancing Passenger Redress with Carrier Viability",
+                "summary": "Analyzing European Regulation (EC) 261/2004 delay compensation rules, court interpretations of mechanical failure vs. weather events, and carrier operational duties.",
+                "content": [
+                  "European Regulation (EC) No 261/2004 represents one of the world's strongest consumer protection frameworks. It grants airline passengers statutory cash compensation—ranging from €250 for short-haul flights to €600 for long-haul journeys—whenever a flight arrives at its final destination three hours or more behind schedule, or is canceled without fourteen days' notice.",
+                  "Airlines are exempt from paying compensation only if they can prove the delay was caused by 'extraordinary circumstances' that could not have been avoided even if all reasonable measures had been taken. While severe weather conditions, volcanic ash clouds, and wildcat air traffic control strikes clearly qualify as extraordinary, the European Court of Justice (ECJ) has consistently ruled that routine technical defects are part of normal airline operations.",
+                  "Regardless of whether extraordinary circumstances apply, carriers bear an absolute 'duty of care.' Airlines must provide stranded passengers with free refreshments, communication access, and overnight hotel accommodations with round-trip transport until rebooking is completed. Managing this balance between passenger legal rights and airline financial health remains a core operational challenge."
+                ],
+                "takeaways": [
+                  "EU261 mandates fixed compensation of €250 to €600 for arrival delays exceeding three hours.",
+                  "Unexpected mechanical component failures do not count as extraordinary circumstances under EU law.",
+                  "Carriers must provide food, refreshments, and hotel accommodation regardless of the cause of delay."
+                ],
+                "vocab": [
+                  "Statutory Compensation",
+                  "Extraordinary Circumstances",
+                  "Duty of Care",
+                  "Technical Malfunction",
+                  "Passenger Redress"
+                ]
               }
             ],
             "resources": [
@@ -21538,36 +22488,112 @@
             ],
             "articles": [
               {
-                "topic": "Terminal Facilitation",
-                "sourceTag": "ACI World Insights",
+                "topic": "Terminal Operations & Passenger Flow",
+                "sourceTag": "ACI World • Airport Experience Standards",
                 "heading": "Airport Passenger Journey Continuity: Building Trust Across Touchpoints",
-                "snippet": "Airports Council International explores integrated passenger flows from curb to gate, evaluating self-service bag drop, biometric checkpoints, and dwell time optimization in international terminals.",
-                "readTime": "Estimated read: 6 mins",
-                "url": "https://blog.aci.aero/customer-experience/airport-passenger-journey-continuity/"
+                "snippet": "How international hubs harmonize landside arrival, baggage check, security screening, and airside boarding into a smooth, stress-free passenger flow.",
+                "readTime": "4 min read",
+                "url": "https://aci.aero",
+                "title": "Airport Passenger Journey Continuity: Building Trust Across Touchpoints",
+                "summary": "How international hubs harmonize landside arrival, baggage check, security screening, and airside boarding into a smooth, stress-free passenger flow.",
+                "content": [
+                  "Modern international airports are complex multimodal interchange points processing tens of thousands of travelers each day. From the moment a traveler arrives at the terminal curbside until they walk through the boarding gate, their experience is shaped by a sequence of operational touchpoints that must function like clockwork.",
+                  "The greatest stress point in the passenger journey has traditionally been the centralized security screening checkpoint. To reduce congestion and anxiety, airports are deploying automated computed tomography (CT) cabin baggage scanners that generate high-resolution 3D images. These systems allow passengers to leave liquids and laptops inside their bags, doubling checkpoint processing speeds.",
+                  "Biometric single-token identity systems are taking efficiency even further. By linking a passenger's passport and boarding pass to their facial biometric profile at self-service bag drop, travelers can pass through security lanes and boarding gates without repeatedly presenting physical documents, cutting gate dwell times and virtually eliminating boarding errors."
+                ],
+                "takeaways": [
+                  "Streamlining passenger flow through terminal checkpoints reduces traveler stress and departure delays.",
+                  "New 3D baggage scanners allow liquids and electronics to remain in bags, speeding up security lines.",
+                  "Biometric facial recognition enables touchless verification from bag drop directly to the boarding gate."
+                ],
+                "vocab": [
+                  "Passenger Flow",
+                  "Security Checkpoint",
+                  "Biometric Verification",
+                  "Dwell Time",
+                  "Terminal Wayfinding"
+                ]
               },
               {
-                "topic": "Aerodrome Infrastructure",
-                "sourceTag": "SKYbrary Aviation Safety",
+                "topic": "Airside Safety & Aerodrome Design",
+                "sourceTag": "ICAO Annex 14 • Aerodrome Standards Digest",
                 "heading": "Movement Area Safety & Aerodrome Operations (ICAO Annex 14)",
-                "snippet": "A regulatory breakdown contrasting the manoeuvring area (runways and taxiways strictly controlled by ATC Tower/Ground) with the apron, establishing operational boundaries and safety management protocols.",
-                "readTime": "Estimated read: 7 mins",
-                "url": "https://skybrary.aero/articles/movement-area"
+                "snippet": "Examining international standards for maneuvering areas and aprons, friction testing, runway strip dimensions, and ground vehicle separation protocols.",
+                "readTime": "5 min read",
+                "url": "https://www.icao.int",
+                "title": "Movement Area Safety & Aerodrome Operations (ICAO Annex 14)",
+                "summary": "Examining international standards for maneuvering areas and aprons, friction testing, runway strip dimensions, and ground vehicle separation protocols.",
+                "content": [
+                  "The operational surface of any certified aerodrome is formally classified into two major zones under ICAO Annex 14: the maneuvering area (encompassing active runways and taxiways used for aircraft takeoff, landing, and taxiing) and the apron (the designated area for aircraft parking, passenger boarding, fueling, and maintenance). Together, they form the movement area.",
+                  "Safety within the maneuvering area is maintained through strict separation and air traffic control jurisdiction. No person or ground vehicle may enter a taxiway or runway without two-way radio clearance from the ground or tower controller. Pavements are engineered to withstand continuous gross aircraft weights up to 500 tons while maintaining certified surface micro-texture for wet braking.",
+                  "Runway maintenance crews conduct continuous runway friction assessments using specialized friction decelerometer trailers. When winter ice, heavy rain, or aircraft rubber deposits reduce braking coefficient values below certified safety thresholds, aerodrome operations must immediately publish a NOTAM (Notice to Air Missions) to alert flight crews."
+                ],
+                "takeaways": [
+                  "The movement area consists of the maneuvering area (runways/taxiways) and the apron.",
+                  "Every ground vehicle entering the maneuvering area requires continuous radio clearance from ATC.",
+                  "Routine friction testing and rubber removal ensure safe braking performance in wet conditions."
+                ],
+                "vocab": [
+                  "Movement Area",
+                  "Maneuvering Area",
+                  "Pavement Friction",
+                  "Rubber Deposition",
+                  "NOTAM Publication"
+                ]
               },
               {
-                "topic": "Navigation Technology",
-                "sourceTag": "Simple Flying Tech",
+                "topic": "Aerodrome Engineering & Navigation",
+                "sourceTag": "FAA Aeronautical Information Manual (AIM)",
                 "heading": "How Do Airports Number Their Runways? A Technical Guide",
-                "snippet": "An accessible engineering explanation of magnetic compass azimuths, 180-degree reciprocal ends, parallel runway letters, and why shifting magnetic poles force airports to repaint numbers over time.",
-                "readTime": "Estimated read: 5 mins",
-                "url": "https://simpleflying.com/runways-naming/"
+                "snippet": "Understanding magnetic orientation, reciprocal runway designations, compass variation drift, and why airports must periodically repaint runway numbers.",
+                "readTime": "4 min read",
+                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
+                "title": "How Do Airports Number Their Runways? A Technical Guide",
+                "summary": "Understanding magnetic orientation, reciprocal runway designations, compass variation drift, and why airports must periodically repaint runway numbers.",
+                "content": [
+                  "Runway designations are not chosen at random; they represent the precise magnetic direction in which the runway is aligned. A pilot approaching a runway marked '27' is flying on a magnetic compass heading of approximately 270 degrees (due west). The runway number is determined by rounding the magnetic azimuth to the nearest ten degrees and dropping the trailing zero.",
+                  "Because runways can be used in either direction depending on prevailing surface wind conditions, every physical strip carries two reciprocal numbers that always differ by exactly 180 degrees (or 18 in notation). For example, a strip aligned east-west is designated Runway 09 when landing toward the east, and Runway 27 when landing toward the west.",
+                  "Earth's magnetic poles are in constant motion, drifting several kilometers each year. Over decades, this magnetic variation causes an airport's magnetic runway azimuth to shift. When the heading drifts past a five-degree rounding threshold, airport authorities must physically close the runway overnight, repaint massive numerals, and update all aeronautical approach plates worldwide."
+                ],
+                "takeaways": [
+                  "Runway numbers indicate magnetic heading rounded to the nearest ten degrees with the zero dropped.",
+                  "Reciprocal runway ends always differ by 180 degrees (e.g. Runway 09 and Runway 27).",
+                  "Natural magnetic drift forces airports to periodically re-number and repaint their runways."
+                ],
+                "vocab": [
+                  "Magnetic Heading",
+                  "Reciprocal Runway",
+                  "Magnetic Variation",
+                  "Runway Designator",
+                  "Aeronautical Chart"
+                ]
               },
               {
-                "topic": "Surface Safety",
-                "sourceTag": "SKYbrary Safety Table",
+                "topic": "Visual Airfield Aids & Ground Safety",
+                "sourceTag": "Skybrary Aviation Safety Knowledgebase",
                 "heading": "Taxiway Surface Markings, Mandatory Signs & Holding Positions",
-                "snippet": "Visual safety guidelines covering yellow taxiway centerlines, enhanced markings, runway holding positions (two solid and two dashed yellow lines), and illuminated stop bars designed to prevent runway incursions.",
-                "readTime": "Estimated read: 8 mins",
-                "url": "https://skybrary.aero/articles/taxiway-surface-markings-and-signs"
+                "snippet": "Decoding airside visual cues: solid vs. dashed holding lines, red mandatory signs, yellow boundary markings, and stop bars designed to prevent runway incursions.",
+                "readTime": "5 min read",
+                "url": "https://skybrary.aero/articles/runway-holding-positions",
+                "title": "Taxiway Surface Markings, Mandatory Signs & Holding Positions",
+                "summary": "Decoding airside visual cues: solid vs. dashed holding lines, red mandatory signs, yellow boundary markings, and stop bars designed to prevent runway incursions.",
+                "content": [
+                  "Airfield visual ground aids serve as the universal roadway signs of aviation, guiding flight crews and vehicle drivers safely across complex taxiway networks. Because pilots taxiing heavy aircraft have restricted downward cockpit visibility, standardized yellow pavement markings and luminous vertical signs are essential for situational awareness.",
+                  "The most critical visual aid on the aerodrome is the runway holding position marking, positioned at the boundary where a taxiway meets an active runway. It consists of four yellow lines across the taxiway: two solid lines on the taxiway side and two dashed lines on the runway side. An aircraft taxiing toward the runway must never cross the solid lines without explicit ATC clearance.",
+                  "Accompanying these markings are red mandatory instruction signs displaying bold white numbers (e.g., '14-32'). These indicate that entering the pavement ahead puts the aircraft on an active runway where high-speed takeoffs or landings occur. Disregarding a holding position constitutes a runway incursion—one of aviation's most serious safety risks."
+                ],
+                "takeaways": [
+                  "Yellow taxiway markings and signs guide aircraft and ground vehicles across complex airfields.",
+                  "Solid yellow holding lines must never be crossed toward a runway without explicit tower clearance.",
+                  "Disregarding a mandatory runway sign represents a runway incursion hazard with severe safety risks."
+                ],
+                "vocab": [
+                  "Holding Position",
+                  "Runway Incursion",
+                  "Mandatory Sign",
+                  "Taxiway Centerline",
+                  "Situational Awareness"
+                ]
               }
             ],
             "resources": [
@@ -22619,20 +23645,58 @@
             "pageUrl": "session3/admat_aas1.html",
             "articles": [
               {
-                "topic": "IATA Operational Safety Briefing",
-                "sourceTag": "Industry Safety Report",
+                "topic": "Ramp Safety & Turnaround Operations",
+                "sourceTag": "IATA Ground Operations Manual (IGOM)",
                 "heading": "Managing Parallel Servicing Hazards during Fast-Turnaround Operations",
-                "snippet": "An analysis of simultaneous ground servicing workflows, vehicle clearance corridors, and communication protocols between cockpit and apron crews.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.iata.org"
+                "snippet": "Coordinating simultaneous ground support activities: fueling safety buffers, baggage belt positioning, catering hoists, and aircraft engine spool-down clearance.",
+                "readTime": "5 min read",
+                "url": "https://www.iata.org",
+                "title": "Managing Parallel Servicing Hazards during Fast-Turnaround Operations",
+                "summary": "Coordinating simultaneous ground support activities: fueling safety buffers, baggage belt positioning, catering hoists, and aircraft engine spool-down clearance.",
+                "content": [
+                  "When an airliner arrives at its parking stand, ground operations teams have as little as thirty-five minutes to execute an intensive turnaround before the next departure. To achieve this, multiple specialized service providers work simultaneously around the aircraft in a tightly choreographed sequence known as parallel servicing.",
+                  "Within seconds of the aircraft coming to a stop, ground handlers place heavy rubber wheel chocks against the main landing gear and connect the external Ground Power Unit (GPU). Only after the pilot turns off the anti-collision beacon light—confirming engines are shutting down—can baggage loaders, passenger stairs, and high-lift catering trucks approach the fuselage.",
+                  "Parallel servicing carries high operational risks. Fuel hydrant bowsers pumping hundreds of liters of Jet A-1 per minute share the tarmac with moving baggage tugs and catering trucks. Strict safety zones are enforced: ground equipment must remain outside the Equipment Restraint Area (ERA) until the stand is clear, and emergency fuel cutoff valves must remain accessible at all times."
+                ],
+                "takeaways": [
+                  "Turnaround operations require coordinated parallel servicing between fuel, baggage, and catering teams.",
+                  "Ground support equipment must never approach an aircraft until engines spool down and chocks are set.",
+                  "Strict safety buffers and access to emergency fuel shutoffs prevent ramp accidents during tight turns."
+                ],
+                "vocab": [
+                  "Parallel Servicing",
+                  "Wheel Chocks",
+                  "Anti-Collision Beacon",
+                  "Equipment Restraint Area (ERA)",
+                  "Ground Power Unit (GPU)"
+                ]
               },
               {
-                "topic": "Aerodrome Operations Journal",
-                "sourceTag": "Decarbonization & Innovation",
+                "topic": "Airside Decarbonization & Clean Technology",
+                "sourceTag": "Clean Aviation Apron Initiative • Technical Report",
                 "heading": "Electrification of Ground Support Equipment on European Aprons",
-                "snippet": "Examining the transition from diesel-powered tugs and belt loaders to zero-emission battery electric GSE across major hub airports.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.aci.aero"
+                "snippet": "Replacing diesel tractors, baggage belt loaders, and GPUs with lithium-ion electric power: charging grid challenges, battery thermal limits, and emissions reductions.",
+                "readTime": "4 min read",
+                "url": "https://www.easa.europa.eu",
+                "title": "Electrification of Ground Support Equipment on European Aprons",
+                "summary": "Replacing diesel tractors, baggage belt loaders, and GPUs with lithium-ion electric power: charging grid challenges, battery thermal limits, and emissions reductions.",
+                "content": [
+                  "Commercial airports are significant local sources of carbon and nitrogen oxide emissions, generated not only by jet engines during taxiing but also by thousands of diesel-powered ground service vehicles operating on the ramp. To meet net-zero aviation targets, major European hubs are aggressively electrifying their ground support fleets.",
+                  "Traditional diesel pushback tractors, baggage tugs, container loaders, and mobile power generators are being replaced by high-torque electric ground support equipment (e-GSE). Electric vehicles eliminate local tailpipe exhaust, substantially reduce airside noise levels, and provide instant torque needed to push aircraft weighing up to 250 tons out of parking stands.",
+                  "However, widespread electrification poses significant engineering challenges. Airport electrical grids must be reinforced with high-capacity rapid charging stations located near parking stands so vehicles can recharge between flights. Additionally, ground handlers must manage battery thermal health during freezing winter operations to prevent unexpected power drops on the ramp."
+                ],
+                "takeaways": [
+                  "Electric ground vehicles eliminate airside diesel emissions and substantially lower tarmac noise.",
+                  "High-torque electric pushback tugs easily maneuver widebody airliners during departure pushback.",
+                  "Airport power grids require heavy charging infrastructure to keep ground fleets operating continuously."
+                ],
+                "vocab": [
+                  "Electric GSE (e-GSE)",
+                  "Pushback Tractor",
+                  "Rapid Charging Hub",
+                  "Diesel Particulate",
+                  "Net-Zero Transition"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -23434,7 +24498,7 @@
             },
             "resources": [
               {
-                "url": "https://www.ecologie.gouv.fr/concours-dgac",
+                "url": "https://www.enac.fr/en",
                 "tag": "01 • Civil Aviation Authority",
                 "name": "DGAC Careers & TSEEAC Competitions",
                 "desc": "Official French civil aviation authority portal detailing TSEEAC, IEEAC, and ATCO recruitment competitions and corps duties."
@@ -23473,36 +24537,112 @@
             "pageUrl": "session4/admat_aas1.html",
             "articles": [
               {
-                "topic": "FlightGlobal / Aviation Careers",
-                "sourceTag": "Career Insight",
+                "topic": "Aviation Workforce & Operations",
+                "sourceTag": "FlightGlobal Aviation Careers • Operational Overview",
                 "heading": "Beyond the Flight Deck: The Essential Network of Airport Operations",
-                "snippet": "An in-depth look at the landside, airside, and regulatory roles that keep international aviation flowing seamlessly 24/7.",
-                "readTime": "Estimated read: 5-6 mins",
-                "url": "https://www.flightglobal.com"
+                "snippet": "An in-depth look at the interconnected network of ground professionals, flight dispatchers, apron controllers, and maintenance crews who ensure every flight departs safely.",
+                "readTime": "5 min read",
+                "url": "https://www.flightglobal.com",
+                "title": "Beyond the Flight Deck: The Essential Network of Airport Operations",
+                "summary": "An in-depth look at the interconnected network of ground professionals, flight dispatchers, apron controllers, and maintenance crews who ensure every flight departs safely.",
+                "content": [
+                  "While airline pilots and cabin crew are the most visible faces of aviation, the safe dispatch of every commercial flight depends on a vast network of dedicated professionals working behind the scenes. From pre-flight flight planning to final pushback clearance, airport operations function as an interdependent human chain.",
+                  "In flight operations centers, licensed flight dispatchers calculate optimal flight routes, analyze weather forecasts, and compute fuel requirements before jointly signing the operational flight plan with the captain. On the ramp, certified aircraft maintenance technicians conduct meticulous visual walkarounds, inspecting tires, brakes, and engine cowlings for defects.",
+                  "Meanwhile, apron and ground controllers orchestrate the safe separation of aircraft and ground support vehicles across complex taxiways. Clear, standardized English communication across all operational departments is the foundation that prevents misunderstandings, ensures punctuality, and maintains uncompromising safety standards."
+                ],
+                "takeaways": [
+                  "Safe flight operations rely on tight collaboration between pilots, dispatchers, mechanics, and ground teams.",
+                  "Flight dispatchers calculate routes, payload limits, and fuel reserves before releasing flights.",
+                  "Standardized phraseology between ground teams and controllers prevents operational delays and hazards."
+                ],
+                "vocab": [
+                  "Operational Flight Plan",
+                  "Flight Dispatcher",
+                  "Maintenance Technician",
+                  "Ground Coordination",
+                  "Situational Awareness"
+                ]
               },
               {
-                "topic": "DGAC France / ENAC Portal",
-                "sourceTag": "Civil Aviation Careers",
+                "topic": "Civil Aviation Careers & Regulation",
+                "sourceTag": "DGAC France / ENAC Portal • Professional Profiles",
                 "heading": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
-                "snippet": "How France's Civil Aviation Operations Corps supports regional aerodrome operations, civil aviation safety inspections, and air navigation technical support.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.ecologie.gouv.fr/direction-generale-laviation-civile-dgac"
+                "snippet": "Examining the varied career paths of France's Civil Aviation Operations Corps (TSEEAC): aerodrome flight information, safety oversight, and technical airspace management.",
+                "readTime": "5 min read",
+                "url": "https://www.enac.fr/en",
+                "title": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
+                "summary": "Examining the varied career paths of France's Civil Aviation Operations Corps (TSEEAC): aerodrome flight information, safety oversight, and technical airspace management.",
+                "content": [
+                  "In France's civil aviation structure, Techniciens Supérieurs des Études et de l'Exploitation de l'Aviation Civile (TSEEAC) form the operational backbone of civil aviation administration. Trained at ENAC in Toulouse, these versatile professionals work across a diverse range of technical, operational, and regulatory positions throughout the nation.",
+                  "One major career specialization is providing Aerodrome Flight Information Service (AFIS) at regional airports. Stationed in the control tower, AFIS officers provide pilots with traffic advisories, local weather updates, and runway conditions. Unlike full air traffic controllers who issue mandatory clearances, AFIS officers provide essential advisory information, leaving tactical separation decisions to the pilot-in-command.",
+                  "Another critical mission lies in safety oversight within the Civil Aviation Safety Directorate (DSAC). As certified aerodrome safety inspectors, TSEEAC officers conduct rigorous audits of airport infrastructure, verifying that runway friction, wildlife hazard management, obstacle lighting, and emergency rescue services meet strict European Union certification standards."
+                ],
+                "takeaways": [
+                  "TSEEAC professionals perform essential civil aviation roles in operations, oversight, and administration.",
+                  "In regional towers, AFIS officers provide vital traffic advisories and runway weather updates to pilots.",
+                  "As safety inspectors in the DSAC, TSEEAC officers verify airport compliance with European safety rules."
+                ],
+                "vocab": [
+                  "TSEEAC Corps",
+                  "Flight Information (AFIS)",
+                  "Safety Oversight",
+                  "Regulatory Audit",
+                  "Advisory Phraseology"
+                ]
               },
               {
-                "topic": "Eurocontrol ATM Careers",
-                "sourceTag": "Operational Profile",
+                "topic": "Air Traffic Services & Legal Scope",
+                "sourceTag": "Eurocontrol ATM Guidelines • ATS Jurisdictions",
                 "heading": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
-                "snippet": "Comparing tactical separation authority in controlled airspace with flight information and advisory services at regional fields.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.eurocontrol.int"
+                "snippet": "Clarifying the fundamental differences in authority, separation responsibility, and phraseology between Air Traffic Control Officers and Aerodrome Flight Information Service Officers.",
+                "readTime": "5 min read",
+                "url": "https://www.eurocontrol.int",
+                "title": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
+                "summary": "Clarifying the fundamental differences in authority, separation responsibility, and phraseology between Air Traffic Control Officers and Aerodrome Flight Information Service Officers.",
+                "content": [
+                  "Pilots communicating on aviation frequencies must clearly understand the level of air traffic service being provided. Air Traffic Control Officers (ATCOs) and Aerodrome Flight Information Service Officers (AFISOs) both provide critical communication from tower cabs, but their legal authority and operational responsibilities differ fundamentally.",
+                  "An ATCO operates in controlled airspace and holds executive legal authority over aircraft movements. Controllers issue binding clearances for takeoff, landing, heading, and altitude, and they are legally responsible for maintaining minimum separation standards between aircraft. Disregarding an ATCO clearance is a serious aviation violation.",
+                  "In contrast, an AFISO operates at uncontrolled or regional aerodromes. An AFISO provides advisory traffic information, runway surface states, and meteorological conditions, but cannot issue control clearances or separate traffic. The ultimate legal responsibility for avoiding other aircraft rests with the flight crew, who must integrate the advisory information into their visual scan."
+                ],
+                "takeaways": [
+                  "ATCOs issue mandatory clearances and are legally responsible for separating aircraft in controlled airspace.",
+                  "AFISOs provide advisory traffic and weather information, leaving separation decisions to pilots.",
+                  "Clear understanding of phraseology distinctions prevents ambiguity between clearances and advisories."
+                ],
+                "vocab": [
+                  "Air Traffic Controller (ATCO)",
+                  "AFIS Officer (AFISO)",
+                  "Executive Clearance",
+                  "Traffic Advisory",
+                  "Separation Responsibility"
+                ]
               },
               {
-                "topic": "IATA Ground Operations Bulletin",
-                "sourceTag": "Safety & Turnaround",
+                "topic": "Ramp Management & Turnaround Leadership",
+                "sourceTag": "IATA Ground Operations Manual (IGOM)",
                 "heading": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
-                "snippet": "Why ramp coordinators, loadmasters, and flight dispatchers form the vital link between airline schedules and safety compliance.",
-                "readTime": "Estimated read: 5-6 mins",
-                "url": "https://www.iata.org"
+                "snippet": "Profiling the Red Cap / Turnaround Coordinator: managing passenger boarding counts, weight and balance calculations, and final exterior walkarounds before pushback.",
+                "readTime": "5 min read",
+                "url": "https://www.iata.org",
+                "title": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
+                "summary": "Profiling the Red Cap / Turnaround Coordinator: managing passenger boarding counts, weight and balance calculations, and final exterior walkarounds before pushback.",
+                "content": [
+                  "On any busy commercial apron, one individual stands at the center of the operational whirlwind: the Turnaround Coordinator (TCO), colloquially known in the industry as the 'Red Cap.' Wearing high-visibility gear, the coordinator acts as the on-scene project manager for the entire aircraft servicing cycle.",
+                  "The coordinator's duties require multitasking under intense time pressure. They monitor fueling progress, supervise baggage loading to ensure hazardous materials are correctly secured, liaise with cabin crew regarding passenger boarding counts, and coordinate with the pushback tug driver. Every minute of delay costs airlines hundreds of euros in missed departure slots.",
+                  "Before approving departure, the TCO delivers the final weight and balance load sheet to the captain for signature, verifying that the aircraft's center of gravity remains within certified safety limits. Finally, they conduct a rigorous 360-degree walkaround of the fuselage to confirm that all cargo doors, fueling panels, and service hatches are latched before clearing the chocks for pushback."
+                ],
+                "takeaways": [
+                  "The Turnaround Coordinator manages the on-scene servicing schedule for arriving and departing aircraft.",
+                  "The TCO coordinates passenger counts, baggage loading, and weight and balance with the captain.",
+                  "A final 360-degree exterior walkaround ensures all cargo doors and access panels are securely closed."
+                ],
+                "vocab": [
+                  "Turnaround Coordinator (TCO)",
+                  "Weight and Balance",
+                  "Center of Gravity",
+                  "Load Sheet",
+                  "Pushback Clearance"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -24278,20 +25418,58 @@
             ],
             "articles": [
               {
-                "topic": "Aerodynamic Engineering",
-                "sourceTag": "Aviation Today",
+                "topic": "Aerodynamics & Efficiency",
+                "sourceTag": "Aviation Week & Space Technology • Engineering Digest",
                 "heading": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
-                "snippet": "Examine how blended winglets and sharklets manage high-pressure wingtip vortices, reducing induced drag by up to 5% on commercial flights.",
-                "url": "https://www.aviationtoday.com",
-                "readTime": "Estimated read: 4-5 mins"
+                "snippet": "Examining how blended winglets, sharklets, and raked wingtips dissipate powerful wingtip vortices, reducing induced drag by up to 5% on commercial airliners.",
+                "url": "https://aviationweek.com",
+                "readTime": "5 min read",
+                "title": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
+                "summary": "Examining how blended winglets, sharklets, and raked wingtips dissipate powerful wingtip vortices, reducing induced drag by up to 5% on commercial airliners.",
+                "content": [
+                  "When an aircraft wing generates aerodynamic lift, high-pressure air beneath the wing naturally flows around the wingtip toward the lower-pressure area on top. This circular airflow creates powerful swirling tornadoes of turbulent air known as wingtip vortices, which generate a major aerodynamic penalty: induced drag.",
+                  "To mitigate this drag, modern aircraft manufacturers equip wings with specialized upward-curving aerodynamic extensions: blended winglets on Boeing 737s, sharklets on Airbus A320neos, and raked wingtips on the Boeing 787. By acting as a physical barrier, these wingtip devices prevent high-pressure air from curling over the wingtip, diffusing the vortex and smoothing airflow.",
+                  "The operational gains are substantial. Wingtip devices reduce total cruise drag by 4 to 5%, saving hundreds of thousands of liters of jet fuel per aircraft each year. Furthermore, by improving climb performance and reducing takeoff noise footprints, winglets allow airliners to carry heavier payloads out of noise-restricted or high-altitude airports."
+                ],
+                "takeaways": [
+                  "High-to-low pressure airflow around wingtips creates vortices that generate significant induced drag.",
+                  "Winglets and sharklets diffuse wingtip vortices, reducing commercial airliner cruise drag by up to 5%.",
+                  "Lower fuel burn translates directly into extended payload range and reduced carbon emissions."
+                ],
+                "vocab": [
+                  "Induced Drag",
+                  "Wingtip Vortex",
+                  "Blended Winglet",
+                  "Airflow Separation",
+                  "Climb Performance"
+                ]
               },
               {
-                "topic": "Flight Safety Operations",
-                "sourceTag": "Flight Safety Foundation",
+                "topic": "Flight Physics & Flight Safety",
+                "sourceTag": "Flight Safety Foundation • Aerodynamic Principles",
                 "heading": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
-                "snippet": "Review how angle of attack sensors, stick shakers, and fly-by-wire flight envelope protection prevent catastrophic boundary layer separation.",
+                "snippet": "Reviewing the physics of angle of attack, boundary layer separation, stick shaker tactile warnings, and fly-by-wire flight envelope protection systems.",
                 "url": "https://flightsafety.org",
-                "readTime": "Estimated read: 5-6 mins"
+                "readTime": "5 min read",
+                "title": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
+                "summary": "Reviewing the physics of angle of attack, boundary layer separation, stick shaker tactile warnings, and fly-by-wire flight envelope protection systems.",
+                "content": [
+                  "In aviation, the term 'stall' does not refer to an engine shutting down; it describes a critical aerodynamic condition where a wing can no longer produce sufficient lift to support the aircraft's weight. An aerodynamic stall occurs whenever the wing exceeds its critical angle of attack (AoA)—the angle between the wing chord line and the oncoming relative wind.",
+                  "When the angle of attack becomes too steep, smooth airflow can no longer adhere to the curved upper surface of the wing. The boundary layer separates violently, creating turbulent eddies that cause lift to collapse and drag to surge. To warn pilots of an impending stall, modern aircraft use artificial tactile shakers that vibrate the control column while sounding loud cockpit alarms.",
+                  "Advanced commercial jetliners like the Airbus A350 and Boeing 787 incorporate fly-by-wire flight envelope protection. Even if a pilot pulls the sidestick fully back in a panic, the flight control computers automatically limit the pitch command, preventing the wing from exceeding its critical angle of attack regardless of pilot input."
+                ],
+                "takeaways": [
+                  "An aerodynamic stall occurs when the wing exceeds its critical angle of attack, destroying lift.",
+                  "Boundary layer separation causes smooth airflow over the top of the wing to become turbulent.",
+                  "Fly-by-wire flight envelope systems automatically limit pitch commands to prevent stalls."
+                ],
+                "vocab": [
+                  "Aerodynamic Stall",
+                  "Angle of Attack (AoA)",
+                  "Boundary Layer Separation",
+                  "Stick Shaker",
+                  "Flight Envelope Protection"
+                ]
               }
             ],
             "resources": [
@@ -25030,20 +26208,58 @@
             ],
             "articles": [
               {
-                "topic": "Airframe Technology",
-                "sourceTag": "Aerospace Manufacturing",
+                "topic": "Materials Science & Airframe Engineering",
+                "sourceTag": "Aerospace Manufacturing • Advanced Materials",
                 "heading": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
-                "snippet": "How carbon-fiber-reinforced polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion and reduce empty weight.",
-                "url": "https://www.aero-mag.com",
-                "readTime": "Estimated read: 4-5 mins"
+                "snippet": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
+                "url": "https://aerospaceamerica.aiaa.org",
+                "readTime": "5 min read",
+                "title": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
+                "summary": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
+                "content": [
+                  "For more than seventy years, aluminum alloy was the uncontested material of choice for commercial aircraft construction. However, the introduction of next-generation widebody airliners—notably the Boeing 787 Dreamliner and Airbus A350—marked a permanent revolution: more than 50% of their primary airframe weight is made of advanced carbon-fiber composites.",
+                  "Carbon-Fiber-Reinforced Polymer (CFRP) consists of microscopic carbon strands embedded in a hardened polymer resin matrix. Pound for pound, carbon fiber is significantly stronger and lighter than aluminum, enabling aerodynamic wings that flex gracefully in flight without permanent metal fatigue.",
+                  "Crucially, composite materials do not corrode from moisture exposure. This property allows airlines to increase in-flight cabin humidity from 5% to 15% and pressurize the cabin to an equivalent altitude of 6,000 feet instead of the traditional 8,000 feet. Passengers arrive feeling significantly less dehydrated and fatigued after long-haul flights."
+                ],
+                "takeaways": [
+                  "Modern widebody airliners utilize over 50% carbon-fiber-reinforced polymer (CFRP) by weight.",
+                  "Composites offer superior strength-to-weight ratios and are immune to conventional metal fatigue and rust.",
+                  "Corrosion immunity allows higher cabin humidity and lower cabin pressure altitudes for passenger comfort."
+                ],
+                "vocab": [
+                  "Carbon-Fiber Composite (CFRP)",
+                  "Metal Fatigue",
+                  "Structural Weight Reduction",
+                  "Cabin Altitude",
+                  "Corrosion Resistance"
+                ]
               },
               {
-                "topic": "Line Maintenance",
-                "sourceTag": "Aviation Maintenance Magazine",
+                "topic": "Airside Maintenance & Flight Safety",
+                "sourceTag": "Aviation Pros • Line Maintenance Manual",
                 "heading": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
-                "snippet": "A practical guide for ramp engineers and line pilots identifying structural damage on engine cowlings, radomes, and leading edges.",
-                "url": "https://www.av-maint.com",
-                "readTime": "Estimated read: 5-6 mins"
+                "snippet": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
+                "url": "https://www.aviationpros.com",
+                "readTime": "5 min read",
+                "title": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
+                "summary": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
+                "content": [
+                  "Before every commercial flight, either the captain, the first officer, or a licensed aircraft maintenance engineer must conduct a physical pre-flight inspection walkaround. Walking in a clockwise circle beneath the aircraft with a high-intensity flashlight, the inspector checks critical exterior components for damage.",
+                  "The walkaround begins at the nose, verifying that vital pitot tubes and static ports are free of insects, ice, or protective covers that could corrupt cockpit airspeed readings. Inspectors examine the engine inlet cowlings and rotate the titanium fan blades by hand to check for nicks or dents caused by foreign object debris (FOD) or bird strikes.",
+                  "On modern composite airframes, visual inspection requires specialized vigilance. Unlike aluminum, which dents noticeably when struck by a ground servicing vehicle, carbon-fiber skin can spring back into shape after an impact, leaving internal composite layers shattered underneath—a hidden hazard known as bare-surface delamination that requires ultrasonic inspection."
+                ],
+                "takeaways": [
+                  "The pre-flight walkaround verifies exterior integrity, tire tread depth, and flight control surfaces.",
+                  "Pitot probes and static ports must be completely unobstructed to ensure accurate airspeed indications.",
+                  "Composite structures can suffer internal delamination without visible exterior paint scratching."
+                ],
+                "vocab": [
+                  "Pre-Flight Walkaround",
+                  "Pitot-Static Tube",
+                  "Foreign Object Debris (FOD)",
+                  "Composite Delamination",
+                  "Visual Inspection"
+                ]
               }
             ],
             "resources": [
@@ -25054,7 +26270,7 @@
                 "desc": "Comprehensive encyclopedia entries on primary and secondary flight control systems."
               },
               {
-                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/aircraft_airframe_handbook",
+                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
                 "tag": "02 • Airframe Engineering",
                 "name": "FAA AMT Airframe Handbook (FAA-H-8083-31A)",
                 "desc": "Authoritative technical manual on aircraft structures, composite repairs, and hydraulics."
@@ -25724,20 +26940,58 @@
             ],
             "articles": [
               {
-                "topic": "Commercial Fleet Trends",
-                "sourceTag": "FlightGlobal",
+                "topic": "Airline Fleet Strategy & Route Economics",
+                "sourceTag": "FlightGlobal Commercial Aviation Insight",
                 "heading": "The Rise of the Long-Range Narrowbody: How the A321XLR is Reshaping Aviation",
-                "snippet": "Examine how single-aisle airliners are replacing widebodies on long-haul secondary routes across the Atlantic.",
+                "snippet": "Analyzing how long-range single-aisle airliners replace traditional widebodies on secondary transatlantic routes, transforming point-to-point airline economics.",
                 "url": "https://www.flightglobal.com",
-                "readTime": "Estimated read: 4-5 mins"
+                "readTime": "5 min read",
+                "title": "The Rise of the Long-Range Narrowbody: How the A321XLR is Reshaping Aviation",
+                "summary": "Analyzing how long-range single-aisle airliners replace traditional widebodies on secondary transatlantic routes, transforming point-to-point airline economics.",
+                "content": [
+                  "Historically, flying non-stop across oceans required twin-aisle widebody airliners like the Boeing 777 or Airbus A330. These massive 300-seat aircraft required airlines to channel passengers through congested megahubs like London Heathrow or Paris Charles de Gaulle to ensure flights were filled profitably.",
+                  "The introduction of long-range narrowbody aircraft—exemplified by the Airbus A321XLR (Extra Long Range)—is dismantling this hub-and-spoke monopoly. Equipped with an integrated Rear Center Fuel Tank, the single-aisle aircraft can fly up to 4,700 nautical miles (equivalent to eleven hours of non-stop flight) while burning 30% less fuel per seat than previous-generation widebodies.",
+                  "This capability allows airlines to open direct 'long-and-thin' transatlantic routes between secondary cities, such as Edinburgh to Boston or Toulouse to Montreal. Passengers enjoy direct non-stop travel without tedious hub connections, while airlines operate with lower commercial risk by filling fewer total seats per departure."
+                ],
+                "takeaways": [
+                  "The A321XLR enables single-aisle airliners to fly non-stop for up to eleven hours across oceans.",
+                  "Airlines can profitably connect secondary cities without funneling passengers through congested hubs.",
+                  "Lower trip costs reduce financial risk on emerging routes while burning 30% less fuel per passenger."
+                ],
+                "vocab": [
+                  "Narrowbody Aircraft",
+                  "Widebody Aircraft",
+                  "Point-to-Point Route",
+                  "Rear Center Tank",
+                  "Hub-and-Spoke Model"
+                ]
               },
               {
-                "topic": "Aerospace Competition",
-                "sourceTag": "Aviation Week",
+                "topic": "Aerospace Industry & Global Manufacturing",
+                "sourceTag": "Airbus & Boeing Market Forecast Analysis",
                 "heading": "Airbus, Boeing, and the Global Duopoly: Supply Chain Realities and Emerging Rivals",
-                "snippet": "An analysis of global order backlogs, titanium shortages, and COMAC's efforts to scale C919 production in Asia.",
+                "snippet": "Examining historic commercial order backlogs, titanium supply bottlenecks, assembly plant throughput, and China's COMAC C919 entering the global market.",
                 "url": "https://aviationweek.com",
-                "readTime": "Estimated read: 5-6 mins"
+                "readTime": "5 min read",
+                "title": "Airbus, Boeing, and the Global Duopoly: Supply Chain Realities and Emerging Rivals",
+                "summary": "Examining historic commercial order backlogs, titanium supply bottlenecks, assembly plant throughput, and China's COMAC C919 entering the global market.",
+                "content": [
+                  "The global commercial airliner market operates largely as a duopoly between Europe's Airbus and America's Boeing. Together, both giants hold record backlogs exceeding 15,000 commercial jets, representing more than a decade of guaranteed assembly line production to meet global airline fleet renewal demands.",
+                  "However, both manufacturers face intense aerospace supply chain bottlenecks. Shortages of aerospace-grade titanium, electronic avionics components, and precision turbofan engine castings have caused delivery delays, frustrating airline executives eager to retire older, fuel-thirsty aircraft.",
+                  "Meanwhile, China's state-owned aerospace manufacturer, COMAC, has entered commercial service with its single-aisle C919 airliner. While currently reliant on Western engine and avionics suppliers, COMAC aims to capture a major share of China's domestic aviation growth, presenting the first credible long-term challenge to the Airbus-Boeing duopoly."
+                ],
+                "takeaways": [
+                  "Airbus and Boeing hold combined backlogs exceeding 15,000 aircraft, spanning a decade of production.",
+                  "Supply chain bottlenecks for engines, titanium, and microchips continue to delay aircraft deliveries.",
+                  "China's COMAC C919 represents an emerging competitor aiming to challenge the Western aerospace duopoly."
+                ],
+                "vocab": [
+                  "Aerospace Duopoly",
+                  "Order Backlog",
+                  "Supply Chain Bottleneck",
+                  "Assembly Throughput",
+                  "Fleet Renewal"
+                ]
               }
             ],
             "resources": [
@@ -26434,20 +27688,58 @@
             ],
             "articles": [
               {
-                "topic": "Aviation Safety Evolution",
-                "sourceTag": "Flight Safety Foundation",
+                "topic": "Human Factors & Investigation History",
+                "sourceTag": "Flight Safety Foundation • Lessons from the Past",
                 "heading": "From Tragedy to Technology: How Historical Accidents Made Modern Flying the Safest Transit Mode",
-                "snippet": "An examination of how Crew Resource Management (CRM), TCAS collision avoidance, and GPWS terrain warnings originated from accident investigations.",
+                "snippet": "Tracing the birth of modern aviation safety: how investigation insights produced Crew Resource Management (CRM), TCAS collision avoidance, and terrain warning systems.",
                 "url": "https://flightsafety.org",
-                "readTime": "Estimated read: 4-5 mins"
+                "readTime": "5 min read",
+                "title": "From Tragedy to Technology: How Historical Accidents Made Modern Flying the Safest Transit Mode",
+                "summary": "Tracing the birth of modern aviation safety: how investigation insights produced Crew Resource Management (CRM), TCAS collision avoidance, and terrain warning systems.",
+                "content": [
+                  "Commercial aviation did not achieve its remarkable safety record by chance; modern flying is the safest form of mass transit because the aviation industry treats every serious accident as an imperative learning opportunity to prevent future catastrophes.",
+                  "In early commercial aviation, steep cockpit hierarchy and authoritarian captains frequently silenced junior first officers who noticed errors. Following the 1977 Tenerife runway collision, airlines pioneered Crew Resource Management (CRM) training, teaching flight crews collaborative communication, assertiveness, and flattened cockpit hierarchy.",
+                  "Technological revolutions followed investigation findings. Mid-air collisions led to the mandatory installation of the Traffic Alert and Collision Avoidance System (TCAS), which negotiates automated evasive maneuvers directly between aircraft computers. Similarly, the Ground Proximity Warning System (GPWS) eliminated controlled flight into terrain (CFIT), saving countless lives."
+                ],
+                "takeaways": [
+                  "Every modern aviation safety system was developed in direct response to accident investigation findings.",
+                  "Crew Resource Management (CRM) dismantled steep cockpit hierarchy in favor of open communication.",
+                  "Automated safety nets like TCAS and GPWS protect flights from mid-air collisions and terrain impact."
+                ],
+                "vocab": [
+                  "Crew Resource Management (CRM)",
+                  "TCAS Collision Avoidance",
+                  "Ground Proximity (GPWS)",
+                  "Controlled Flight into Terrain (CFIT)",
+                  "Safety Culture"
+                ]
               },
               {
-                "topic": "Accident Investigation",
-                "sourceTag": "BEA France",
+                "topic": "Accident Investigation Methodology",
+                "sourceTag": "BEA France & NTSB Safety Guidelines",
                 "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
-                "snippet": "How aviation accident investigators determine facts without seeking blame or liability, focusing strictly on permanent safety recommendations.",
-                "url": "https://www.bea.aero",
-                "readTime": "Estimated read: 5-6 mins"
+                "snippet": "Examining ICAO Annex 13 non-punitive investigation principles: flight data recorder analysis, metallurgy testing, and issuing binding safety recommendations without assigning blame.",
+                "url": "https://www.bea.aero/en",
+                "readTime": "5 min read",
+                "title": "The Role of Independent Technical Investigation in Preventing Future Accidents",
+                "summary": "Examining ICAO Annex 13 non-punitive investigation principles: flight data recorder analysis, metallurgy testing, and issuing binding safety recommendations without assigning blame.",
+                "content": [
+                  "Following an aircraft accident or serious incident, specialized investigative bodies—such as France's Bureau d'Enquêtes et d'Analyses (BEA) or the United States' National Transportation Safety Board (NTSB)—are deployed immediately to the crash site.",
+                  "Under international rules established in ICAO Annex 13, the sole objective of a technical safety investigation is the prevention of future accidents, strictly separated from judicial investigations aimed at assigning legal blame or liability. Investigators operate with full autonomy, examining Cockpit Voice Recorders (CVR), Flight Data Recorders (FDR), engine computer memory chips, and metallurgical fracture surfaces.",
+                  "The culmination of an investigation is the publication of an exhaustive Final Report containing formal Safety Recommendations addressed to civil aviation regulators and manufacturers. When investigators identify a structural flaw or operational vulnerability, their recommendations result in mandatory Airworthiness Directives (ADs), ensuring systemic fixes are implemented worldwide."
+                ],
+                "takeaways": [
+                  "ICAO Annex 13 investigations focus strictly on finding facts and causes, never assigning blame or liability.",
+                  "Investigators analyze 'black box' flight data, voice recordings, and metallurgical wreckage fractures.",
+                  "Formal safety recommendations lead to mandatory Airworthiness Directives that upgrade global fleets."
+                ],
+                "vocab": [
+                  "Safety Investigation",
+                  "ICAO Annex 13",
+                  "Flight Data Recorder (FDR)",
+                  "Safety Recommendation",
+                  "Airworthiness Directive"
+                ]
               }
             ],
             "resources": [
@@ -26464,13 +27756,13 @@
                 "desc": "US National Transportation Safety Board database with factual dockets and probable cause findings."
               },
               {
-                "url": "https://www.icao.int/safety/air-navigation/Pages/aig.aspx",
+                "url": "https://skybrary.aero/articles/icao-annex-13",
                 "tag": "03 • International Standards",
                 "name": "ICAO Annex 13: Aircraft Accident Investigation",
                 "desc": "Standardized international treaty protocols governing investigator rights and report transparency."
               },
               {
-                "url": "https://aviation-safety.net",
+                "url": "https://skybrary.aero/articles/accident-and-incident-investigation",
                 "tag": "04 • Safety Knowledgebase",
                 "name": "Aviation Safety Network (ASN) Database",
                 "desc": "Global historical flight occurrence archive tracking hull losses, airframe types, and fatalities."
@@ -27086,20 +28378,58 @@
             "pageUrl": "session1/admat_aas2.html",
             "articles": [
               {
-                "topic": "Aerospace Medical Association Journal",
-                "sourceTag": "Clinical Aviation Review",
+                "topic": "In-Flight Medical Emergencies & Operations",
+                "sourceTag": "Aerospace Medical Association • In-Flight Clinical Protocols",
                 "heading": "Medical Diversions in Long-Haul Commercial Operations: Clinical Decision Metrics",
-                "snippet": "Empirical analysis of over 4,000 in-flight medical events evaluating the primary triggers for diversion (suspected myocardial infarction, stroke, persistent seizure) versus conservative cabin management.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.easa.europa.eu"
+                "snippet": "Analyzing captain decision-making during in-flight medical crises: satellite telemedicine telemetry, diversion airfield selection, emergency fuel dumping, and passenger care.",
+                "readTime": "5 min read",
+                "url": "https://www.asma.org",
+                "title": "Medical Diversions in Long-Haul Commercial Operations: Clinical Decision Metrics",
+                "summary": "Analyzing captain decision-making during in-flight medical crises: satellite telemedicine telemetry, diversion airfield selection, emergency fuel dumping, and passenger care.",
+                "content": [
+                  "At cruising altitude over the North Atlantic or central Siberia, an airliner is hours away from the nearest advanced hospital. When a passenger experiences a severe medical emergency—such as acute cardiac arrest, stroke symptoms, or severe respiratory distress—the flight crew faces high-stakes operational decisions.",
+                  "Modern commercial aircraft carry comprehensive emergency medical kits (EMK), defibrillators (AED), and supplemental oxygen. Flight attendants are trained in basic life support and use satellite communication headsets to establish real-time links with ground-based aviation medical advisory doctors (telemedicine services), who guide clinical treatment in the aisle.",
+                  "If the ground medical team advises an immediate emergency diversion, the captain must quickly evaluate nearby airports. The diversion field must offer an adequate runway length for maximum landing weight, appropriate instrument approaches, and nearby trauma hospital facilities. If the aircraft is above its Maximum Landing Weight (MLW), the crew may need to dump fuel or conduct an overweight landing inspection."
+                ],
+                "takeaways": [
+                  "In-flight medical emergencies require immediate satellite telemedicine consultation with ground doctors.",
+                  "The captain evaluates weather, runway length, and hospital proximity before initiating a diversion.",
+                  "Heavy long-haul airliners may need to dump fuel to stay within safe structural landing weight limits."
+                ],
+                "vocab": [
+                  "Medical Diversion",
+                  "Telemedicine Telemetry",
+                  "Emergency Medical Kit (EMK)",
+                  "Maximum Landing Weight (MLW)",
+                  "Fuel Jettison"
+                ]
               },
               {
-                "topic": "International Civil Aviation Organization (ICAO)",
-                "sourceTag": "Human Factors Digest",
+                "topic": "Human Performance & Flight Safety",
+                "sourceTag": "FAA & EASA Flight Time Limitations (FTL) Digest",
                 "heading": "Fatigue and Alertness Management: Mitigating Circadian Lows in Trans-Meridian Flight",
-                "snippet": "Investigation into the Window of Circadian Low (WOCL: 02:00 to 05:59 local physiological time), controlled cockpit rest protocols, and cumulative sleep debt reduction strategies.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.icao.int"
+                "snippet": "Examining Flight Time Limitations, Window of Circadian Low (WOCL) vulnerabilities, augmented flight crew rotations, and controlled flight deck rest protocols.",
+                "readTime": "5 min read",
+                "url": "https://www.easa.europa.eu",
+                "title": "Fatigue and Alertness Management: Mitigating Circadian Lows in Trans-Meridian Flight",
+                "summary": "Examining Flight Time Limitations, Window of Circadian Low (WOCL) vulnerabilities, augmented flight crew rotations, and controlled flight deck rest protocols.",
+                "content": [
+                  "Pilot fatigue is recognized by aviation safety authorities as an insidious threat to flight safety. Long-haul trans-meridian flights crossing multiple time zones severely disrupt human circadian rhythms, impairing cognitive processing, slowing reaction times, and increasing micro-sleep vulnerabilities during critical landing phases.",
+                  "The body's lowest physiological alertness occurs during the Window of Circadian Low (WOCL)—typically between 02:00 and 06:00 according to home time. During this period, accident risk escalates sharply. To counter this, civil aviation authorities enforce strict Flight Time Limitations (FTL) and mandate augmented flight crews (three or four pilots) on ultra-long-haul sectors to allow structured sleep in dedicated crew rest compartments.",
+                  "Airlines also utilize 'controlled rest on the flight deck.' Under strict conditions, one pilot is permitted to take a planned 40-minute nap during low-workload cruise while the other pilot maintains radio communication and monitoring. A mandatory 20-minute waking buffer ensures the resting pilot fully recovers from sleep inertia before top-of-descent checklists begin."
+                ],
+                "takeaways": [
+                  "The Window of Circadian Low (WOCL) between 02:00 and 06:00 is aviation's peak fatigue vulnerability zone.",
+                  "Ultra-long-haul flights carry augmented three- or four-pilot crews to permit structured sleep in rest bunks.",
+                  "Controlled flight deck rest incorporates a mandatory wake-up buffer to eliminate sleep inertia before landing."
+                ],
+                "vocab": [
+                  "Circadian Low (WOCL)",
+                  "Flight Time Limitations (FTL)",
+                  "Augmented Crew",
+                  "Controlled Rest",
+                  "Sleep Inertia"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -27830,20 +29160,58 @@
             "pageUrl": "session2/admat_aas2.html",
             "articles": [
               {
-                "topic": "Flight Safety Foundation",
-                "sourceTag": "Technical Safety Digest",
+                "topic": "Severe Weather Aerodynamics & Warning Systems",
+                "sourceTag": "FAA Aviation Safety Study • Low-Level Windshear",
                 "heading": "Microburst Aerodynamics and Airborne Detection: The Legacy of Delta 191",
-                "snippet": "Retrospective engineering study analyzing how the 1985 DFW microburst spurred the development of Terminal Doppler Weather Radar (TDWR) and mandatory predictive windshear equipment on transport category aircraft.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.easa.europa.eu"
+                "snippet": "Reviewing low-level windshear physics, terminal Doppler weather radar, predictive windshear avionics, and the standardized escape maneuver.",
+                "readTime": "5 min read",
+                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
+                "title": "Microburst Aerodynamics and Airborne Detection: The Legacy of Delta 191",
+                "summary": "Reviewing low-level windshear physics, terminal Doppler weather radar, predictive windshear avionics, and the standardized escape maneuver.",
+                "content": [
+                  "A microburst is a violent, localized column of sinking air produced by convective thunderstorm cells. When this descending downdraft strikes the ground, it mushrooms outward in all directions, creating extreme horizontal wind velocity shifts over short distances—a phenomenon known as low-level windshear.",
+                  "The hazard to landing aircraft is lethal. An aircraft entering a microburst first encounters a powerful headwind, causing airspeed and lift to rise. If the pilot reduces engine thrust to compensate, the aircraft suddenly punches through the core downdraft into a violent tailwind. Deprived of headwind, airspeed collapses, sending the aircraft toward the ground.",
+                  "The tragic 1985 crash of Delta Flight 191 at Dallas/Fort Worth catalyzed a technological revolution. Today, major airports are guarded by Terminal Doppler Weather Radar (TDWR), while modern jetliners carry Predictive Windshear (PWS) weather radars. Pilots practice the mandatory windshear escape maneuver in full-flight simulators: instantly applying maximum engine thrust and pitching up to the stick shaker limit."
+                ],
+                "takeaways": [
+                  "Microbursts produce violent downward downdrafts that spread outward into extreme low-level windshear.",
+                  "A sudden transition from strong headwind to tailwind can cause aircraft airspeed and lift to collapse.",
+                  "Predictive windshear radars and ground Doppler systems provide early warnings to execute go-arounds."
+                ],
+                "vocab": [
+                  "Microburst",
+                  "Low-Level Windshear",
+                  "Terminal Doppler Radar (TDWR)",
+                  "Predictive Windshear (PWS)",
+                  "Windshear Escape Maneuver"
+                ]
               },
               {
-                "topic": "Journal of Aircraft & Propulsion",
-                "sourceTag": "Aerospace Engineering Study",
+                "topic": "Turbine Engineering & Volcanic Hazards",
+                "sourceTag": "Volcanic Ash Advisory Centre (VAAC) • Technical Review",
                 "heading": "Silicate Ingestion and Turbine Glass Formation in Volcanic Ash Clouds",
-                "snippet": "Combustion chamber thermodynamic analysis showing how volcanic ash particles melt at 1,100 degrees Celsius, coating high-pressure turbine nozzles and causing immediate compressor stall.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.icao.int"
+                "snippet": "Understanding how fine silicate particulates melt inside jet engine combustion chambers, coat turbine blades with molten glass, and trigger multi-engine flameouts.",
+                "readTime": "5 min read",
+                "url": "https://skybrary.aero/articles/volcanic-ash",
+                "title": "Silicate Ingestion and Turbine Glass Formation in Volcanic Ash Clouds",
+                "summary": "Understanding how fine silicate particulates melt inside jet engine combustion chambers, coat turbine blades with molten glass, and trigger multi-engine flameouts.",
+                "content": [
+                  "Volcanic ash is not soft timber smoke; it is a dense cloud of pulverized rock, abrasive silica crystals, and glass shards ejected into the upper atmosphere. Because volcanic ash clouds carry no moisture particles, they do not appear on standard airborne weather radars, making them invisible to cockpit instruments at night.",
+                  "When an airliner inadvertently flies into a volcanic ash plume, the consequences for jet engines are catastrophic. While ambient air is freezing at high altitude, modern turbofan combustion chambers operate at temperatures exceeding 1,400 degrees Celsius. The ingested silicate ash instantly melts into liquid molten glass.",
+                  "As this molten glass flows toward the high-pressure turbine nozzle guide vanes, it rapidly cools and solidifies, choking airflow through the engine. The engine suffers violent compressor stalls and dual-engine flameout. Following the 2010 Eyjafjallajökull eruption, global Volcanic Ash Advisory Centres (VAACs) established rigorous ash concentration thresholds to redirect air traffic safely around contaminated airspace."
+                ],
+                "takeaways": [
+                  "Volcanic ash consists of pulverized rock and abrasive silica that is invisible on onboard weather radar.",
+                  "Extreme combustion chamber heat melts ingested ash into molten glass that coats and chokes turbine blades.",
+                  "Global VAAC satellite monitoring tracks ash dispersal to establish mandatory flight exclusion zones."
+                ],
+                "vocab": [
+                  "Volcanic Ash Plume",
+                  "Silicate Ingestion",
+                  "Turbine Blade Glazing",
+                  "Compressor Stall",
+                  "Volcanic Ash Advisory (VAAC)"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -28583,20 +29951,58 @@
             "pageUrl": "session3/admat_aas2.html",
             "articles": [
               {
-                "topic": "International Civil Aviation Review",
-                "sourceTag": "Regulatory Comparative Analysis",
+                "topic": "International Aviation Law & Security",
+                "sourceTag": "ICAO Security Standards • Montreal Convention Review",
                 "heading": "Safety vs. Security: Legal Jurisdictions and Operational Parity under ICAO",
-                "snippet": "In-depth comparative study demonstrating why mixing Safety and Security confuses legal accountability: Safety addresses unintended technical and human hazards (Annex 19), whereas Security defends against intentional malicious criminal acts (Annex 17).",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.icao.int"
+                "snippet": "Distinguishing between aviation safety and aviation security: Annex 17 mandates, Tokyo/Montreal legal conventions, and in-flight security officer (IFSO) jurisdiction.",
+                "readTime": "5 min read",
+                "url": "https://www.icao.int",
+                "title": "Safety vs. Security: Legal Jurisdictions and Operational Parity under ICAO",
+                "summary": "Distinguishing between aviation safety and aviation security: Annex 17 mandates, Tokyo/Montreal legal conventions, and in-flight security officer (IFSO) jurisdiction.",
+                "content": [
+                  "In civil aviation governance, 'safety' and 'security' refer to two distinct operational domains that must work in close coordination. Aviation safety (governed by ICAO Annex 6, 8, and 14) focuses on preventing accidental harm caused by technical failures, weather hazards, or human error. Aviation security (governed by ICAO Annex 17) focuses on protecting civil aviation against intentional acts of unlawful interference.",
+                  "Security threats include aircraft hijacking, bomb threats, sabotage of baggage systems, and cyber-attacks against air traffic communication networks. To deter airborne terrorism, international law establishes clear jurisdictional authority. The Tokyo Convention of 1963 and the updated Montreal Protocol of 2014 give the aircraft commander legal immunity to take reasonable restraint measures against disruptive or dangerous individuals.",
+                  "Additionally, many sovereign nations deploy undercover In-Flight Security Officers (IFSOs), commonly known as sky marshals. IFSOs operate under strict protocols: while they hold specialized training for airborne tactical interventions, the Aircraft Commander remains the ultimate legal authority on board regarding aircraft flight path, diversions, and passenger safety."
+                ],
+                "takeaways": [
+                  "Aviation safety addresses technical and human errors; aviation security protects against intentional crimes.",
+                  "ICAO Annex 17 sets mandatory worldwide security screening standards for passengers, baggage, and cargo.",
+                  "The captain retains ultimate legal command over flight operations even when security officers are on board."
+                ],
+                "vocab": [
+                  "Aviation Security (Annex 17)",
+                  "Unlawful Interference",
+                  "Tokyo Convention",
+                  "Sky Marshal (IFSO)",
+                  "Legal Immunity"
+                ]
               },
               {
-                "topic": "AeroTech Maintenance & Engineering",
-                "sourceTag": "Airworthiness Digest",
+                "topic": "Maintenance & Pre-Flight Standards",
+                "sourceTag": "EASA Part-M & Part-145 Maintenance Handbook",
                 "heading": "The Pre-Flight Walkaround: Anatomy of a Critical Line Inspection",
-                "snippet": "Line maintenance engineers break down the high-risk failure modes identified during exterior walkarounds: pitot probe protective covers left installed, nose gear steering pins unremoved, and unnoticed tailstrike scrapes.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.easa.europa.eu"
+                "snippet": "A detailed technical breakdown of exterior aircraft inspections: checking brake wear pins, tire cord exposure, hydraulic leak limits, and static wick bonding.",
+                "readTime": "5 min read",
+                "url": "https://www.easa.europa.eu",
+                "title": "The Pre-Flight Walkaround: Anatomy of a Critical Line Inspection",
+                "summary": "A detailed technical breakdown of exterior aircraft inspections: checking brake wear pins, tire cord exposure, hydraulic leak limits, and static wick bonding.",
+                "content": [
+                  "The exterior pre-flight walkaround is the final physical defense against undetected mechanical failure before flight. Carried out by pilots or licensed line engineers, the inspection follows a strict procedural circuit around the fuselage, wings, engines, and landing gear.",
+                  "At the main landing gear assembly, inspectors examine brake wear indicator pins. If the indicator pin is flush with the housing, the carbon brake pack is exhausted and must be replaced before takeoff. Inspectors check tire tread depth for foreign object cuts or exposed reinforcement cords, and verify that chrome oleo struts show proper hydraulic extension and zero fluid leakage.",
+                  "Along the trailing edges of the wings and horizontal stabilizers, inspectors count static discharge wicks. These thin carbon rods bleed off static electricity accumulated during flight through rain or clouds, protecting onboard navigational avionics and VHF radios from interference. Any missing or broken static wicks must comply with strict limits in the Minimum Equipment List (MEL)."
+                ],
+                "takeaways": [
+                  "The pre-flight walkaround systematically verifies exterior flight hardware, tires, and hydraulic lines.",
+                  "Brake wear indicator pins confirm carbon brake discs have adequate thickness for high-speed aborts.",
+                  "Static discharge wicks dissipate airborne electrical buildup to protect cockpit navigation instruments."
+                ],
+                "vocab": [
+                  "Brake Wear Pin",
+                  "Oleo Strut",
+                  "Static Discharge Wick",
+                  "Minimum Equipment List (MEL)",
+                  "Tire Tread Depth"
+                ]
               }
             ],
             "toeicQuestions": [
@@ -29271,7 +30677,7 @@
                 "desc": "Official international operational level descriptors for aeronautical English (Pronunciation, Structure, Vocabulary, Fluency, Comprehension, Interaction)."
               },
               {
-                "url": "https://www.aviation-safety.net",
+                "url": "https://skybrary.aero/articles/accident-and-incident-investigation",
                 "tag": "03 • Accident Database",
                 "name": "Aviation Safety Network Official Accident Database",
                 "desc": "Comprehensive global registry of commercial airliner accidents, technical investigation reports, and safety recommendations."
@@ -29298,20 +30704,58 @@
             "pageUrl": "session4/admat_aas2.html",
             "articles": [
               {
-                "topic": "Journal of Aeronautical Communication",
-                "sourceTag": "Professional Flight Communication",
+                "topic": "Aviation Crisis Management & Media Relations",
+                "sourceTag": "IATA Crisis Communications Best Practices",
                 "heading": "Crisis Communication in Commercial Aviation: Press Briefings Under Scrutiny",
-                "snippet": "Analysis of corporate communications following landmark aviation emergencies: how clear technical precision, transparent empathy, and rigorous factual discipline maintain public trust.",
-                "readTime": "Estimated read: 6-8 mins",
-                "url": "https://www.enac.fr"
+                "snippet": "Examining airline and airport crisis management: delivering factual statements, handling social media speculation, and supporting passenger families during emergency events.",
+                "readTime": "5 min read",
+                "url": "https://www.iata.org",
+                "title": "Crisis Communication in Commercial Aviation: Press Briefings Under Scrutiny",
+                "summary": "Examining airline and airport crisis management: delivering factual statements, handling social media speculation, and supporting passenger families during emergency events.",
+                "content": [
+                  "When an aviation incident occurs, the golden hour of crisis communication determines public trust and corporate integrity. In an era of viral social media, mobile video footage often circulates across the internet before airline executive leadership receives full technical confirmation from air traffic control.",
+                  "Aviation crisis teams operate under strict ethical and professional guidelines. The initial press briefing must focus strictly on confirmed, verified facts: the flight number, aircraft type, departure and destination airports, total passenger count, and the establishment of family assistance centers. Spokespersons must rigorously avoid speculating on accident causes before official investigators have retrieved flight recorders.",
+                  "Compassion and family care take absolute precedence over legal defense. Professional airlines deploy trained Family Assistance Teams to provide private briefing rooms, emotional counseling, and logistical support for loved ones away from the media. Maintaining a steady, transparent, and empathetic communication tone is essential during aviation crises."
+                ],
+                "takeaways": [
+                  "Crisis communications teams must release confirmed facts quickly to prevent false online rumors.",
+                  "Spokespersons must strictly avoid speculating about accident causes before official investigation reports.",
+                  "Family assistance centers provide compassionate, private support for loved ones away from press cameras."
+                ],
+                "vocab": [
+                  "Crisis Communication",
+                  "Press Briefing",
+                  "Family Assistance Team",
+                  "Verified Facts",
+                  "Media Speculation"
+                ]
               },
               {
-                "topic": "Air Transport World",
-                "sourceTag": "Global Aviation Review",
+                "topic": "Aviation History & Systemic Safety",
+                "sourceTag": "ICAO Safety Management Systems (SMS) 50-Year Retrospective",
                 "heading": "The Evolution of Modern Commercial Flight Safety: A 50-Year Retrospective",
-                "snippet": "Examining the multi-layered technological and human factors revolution that made commercial air transport the safest mode of long-distance transportation in human history.",
-                "readTime": "Estimated read: 5-7 mins",
-                "url": "https://www.icao.int"
+                "snippet": "Tracing aviation safety's historic transformation: from early fly-fix-fly cycles to modern predictive Safety Management Systems (SMS) and global data sharing.",
+                "readTime": "5 min read",
+                "url": "https://www.icao.int",
+                "title": "The Evolution of Modern Commercial Flight Safety: A 50-Year Retrospective",
+                "summary": "Tracing aviation safety's historic transformation: from early fly-fix-fly cycles to modern predictive Safety Management Systems (SMS) and global data sharing.",
+                "content": [
+                  "Fifty years ago, commercial aviation was significantly more perilous than today. In the early 1970s, fatal airliner hull losses occurred on a monthly basis worldwide. Today, commercial aviation operates billions of passenger journeys annually with accident rates so low that flying is statistically the safest mode of long-distance transit ever developed.",
+                  "This transformation unfolded across three distinct safety eras. The technical era (1900s–1960s) focused on mechanical reliability and engine metallurgy. The human factors era (1970s–1990s) introduced Crew Resource Management (CRM) and human-centered cockpit automation. The modern systemic era (2000s–present) is defined by predictive Safety Management Systems (SMS).",
+                  "Modern safety management relies on proactive data analytics rather than waiting for an accident to occur. Flight Data Monitoring (FDM) systems automatically download parameters from every flight, analyzing millions of data points to identify subtle unstabilized approaches, minor altitude deviations, or terrain clearances. Identifying and mitigating operational hazards before they escalate into accidents is the crowning achievement of modern aviation safety."
+                ],
+                "takeaways": [
+                  "Commercial aviation transitioned from reactive accident investigation to proactive predictive safety systems.",
+                  "Safety eras progressed from mechanical fixes to human factors training, and finally to systemic data analytics.",
+                  "Flight Data Monitoring (FDM) analyzes millions of routine flight parameters to eliminate latent hazards early."
+                ],
+                "vocab": [
+                  "Safety Management System (SMS)",
+                  "Flight Data Monitoring (FDM)",
+                  "Unstabilized Approach",
+                  "Predictive Safety",
+                  "Latent Hazard"
+                ]
               }
             ],
             "toeicQuestions": [
