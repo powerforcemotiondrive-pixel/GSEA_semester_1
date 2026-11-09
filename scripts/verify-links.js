@@ -81,7 +81,7 @@ function checkUrl(urlStr) {
       const mod = u.protocol === 'https:' ? https : http;
       const options = {
         method: 'GET',
-        timeout: 6000,
+        timeout: 12000,
         headers: {
           'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
