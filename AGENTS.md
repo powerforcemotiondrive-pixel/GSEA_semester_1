@@ -172,6 +172,11 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **Plain English Non-Technical Instructions**: All instructions for students and teachers must use clear, accessible, non-technical B2 English (e.g., `"Teacher Tips & Speaking Prompts"` instead of `"Timing Cues"` or pedagogical jargon per Rule 1.I).
 - **Session Block Title Retention**: Per Rule 1.P, the top-level lesson plan title retains its standard university schedule block designation (e.g., `Session X Lesson Plan - [Topic Title] (2 Hours)`), while all internal activity timings are strictly omitted.
 
+### R. 100% Paperless Digital-First Architecture & Zero Printable Materials Invariant (Tri-Project Permanent Invariant)
+- **Zero Physical Printouts**: No lesson plan, student worksheet, role-play activity, teacher facilitation note, or evaluation rubric may ever require, instruct, or rely on printed paper or physical photocopying.
+- **100% Screen-Based Interactive Design**: All student handouts, role cards, barrier games, answer keys, teacher notes, and reflection tools must exist exclusively as responsive, interactive on-screen UI components (tab switchers, revealable answers, interactive barrier cards, and local auto-saving notes).
+- **Zero 'Print to Teach' Dependencies**: Even when source training materials contain sections labeled *"Part 1: Student Handout"* or *"Part 2: Teacher Answer Keys"*, these must always be converted into fully interactive, on-screen browser experiences. Teachers arrive in the classroom with their laptop or tablet, students use their laptops or tablets, and all tasks are executed digitally on screen with zero paper waste.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
