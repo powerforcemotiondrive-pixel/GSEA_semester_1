@@ -107,3 +107,4 @@ if res_syntax.returncode == 0:
 else:
     print("✗ Syntax error in data/course-data.js:", res_syntax.stderr)
     sys.exit(res_syntax.returncode)
+
