@@ -1,24 +1,36 @@
     function renderActivityInstructions(act, theme) {
-      if (!act) return '';
+      if (!act) return "";
       const badges = Array.isArray(act.modeBadges) ? act.modeBadges : [];
       const steps = Array.isArray(act.instructions) ? act.instructions : [];
-      const deliverable = act.deliverable || '';
-      const teacherNotes = act.teacherNotes || '';
+      const deliverable = act.deliverable || "";
+      const teacherNotes = act.teacherNotes || "";
 
       if (badges.length === 0 && steps.length === 0 && !deliverable && !teacherNotes) {
-        return '';
+        return "";
       }
 
       let html = '<div class="rounded-xl border border-slate-200/90 bg-slate-50/70 p-3.5 space-y-3 mb-3 text-left">';
 
       // 1. Activity Mode Pills Bar
       if (badges.length > 0) {
-        html += '<div class="flex flex-wrap items-center gap-1.5">';
-        html += '<span class="text-[10px] font-black uppercase tracking-wider text-slate-400 mr-1">Activity Mode:</span>';
+        let badgePills = "";
         badges.forEach(b => {
-          html += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white text-slate-700 border border-slate-200/80 shadow-2xs">' + b + '</span>';
+          let text = "";
+          if (typeof b === "object" && b !== null) {
+            text = b.label || b.name || b.text || "";
+          } else {
+            text = String(b || "");
+          }
+          if (text && !text.toLowerCase().includes("timing")) {
+            badgePills += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white text-slate-700 border border-slate-200/80 shadow-2xs">' + text + '</span>';
+          }
         });
-        html += '</div>';
+        if (badgePills) {
+          html += '<div class="flex flex-wrap items-center gap-1.5">';
+          html += '<span class="text-[10px] font-black uppercase tracking-wider text-slate-400 mr-1">Activity Mode:</span>';
+          html += badgePills;
+          html += '</div>';
+        }
       }
 
       // 2. Student Action Steps & Deliverable
@@ -32,9 +44,17 @@
         if (steps.length > 0) {
           html += '<ol class="space-y-1.5 text-xs text-slate-700 leading-relaxed pl-1">';
           steps.forEach(st => {
+            let stepHtml = "";
+            if (typeof st === "object" && st !== null) {
+              const prefix = st.step || st.title || "";
+              const detail = st.detail || st.desc || st.text || "";
+              stepHtml = (prefix ? '<strong class="text-slate-900 font-bold">' + prefix + ':</strong> ' : "") + detail;
+            } else {
+              stepHtml = String(st || "");
+            }
             html += '<li class="flex items-start gap-2">';
             html += '<span class="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0 mt-1.5"></span>';
-            html += '<span>' + st + '</span>';
+            html += '<span>' + stepHtml + '</span>';
             html += '</li>';
           });
           html += '</ol>';
@@ -51,7 +71,7 @@
       }
 
       // 3. Collapsible Teacher Tips & Speaking Prompts
-      if (teacherNotes) {
+      if (teacherNotes && (typeof teacherNotes !== "object" || (Array.isArray(teacherNotes) ? teacherNotes.length > 0 : Object.keys(teacherNotes).length > 0))) {
         html += '<details class="group rounded-xl border border-purple-200 bg-purple-50/50 p-2.5 transition-all text-xs">';
         html += '<summary class="flex items-center justify-between font-bold text-purple-950 cursor-pointer select-none">';
         html += '<span class="flex items-center gap-2">';
@@ -60,8 +80,14 @@
         html += '</span>';
         html += '<span class="text-[11px] text-purple-700 font-semibold group-open:rotate-180 transition-transform duration-200">▾</span>';
         html += '</summary>';
-        html += '<div class="mt-2 pt-2 border-t border-purple-200/80 text-purple-900 leading-relaxed pl-6">';
-        html += teacherNotes;
+        html += '<div class="mt-2 pt-2 border-t border-purple-200/80 text-purple-900 leading-relaxed pl-6 space-y-1">';
+        if (Array.isArray(teacherNotes)) {
+          teacherNotes.forEach(tn => {
+            html += '<p class="flex items-start gap-1.5"><span class="text-purple-600 font-bold">&bull;</span><span>' + tn + '</span></p>';
+          });
+        } else {
+          html += teacherNotes;
+        }
         html += '</div>';
         html += '</details>';
       }
