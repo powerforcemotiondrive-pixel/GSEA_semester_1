@@ -283,25 +283,32 @@
                 <span class="text-[11px] text-slate-500">Industry Reports &amp; Case Studies</span>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                ${articles.map(a => `
+                ${articles.map((a, idx) => {
+                  const heading = a.heading || a.title || 'Technical Article';
+                  const snippet = a.snippet || a.summary || a.desc || '';
+                  const topic = a.topic || (a.source ? a.source.split('•')[0].trim() : 'Case Study');
+                  const sourceTag = a.sourceTag || (a.source && a.source.includes('•') ? a.source.split('•')[1].trim() : (a.source ? 'Official Review' : 'Analysis'));
+                  const readTime = a.readTime || 'Estimated read: 4-5 mins';
+                  const url = a.url || a.link || 'https://www.easa.europa.eu';
+                  return `
                   <article class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col justify-between shadow-xs hover:border-slate-300 transition-all">
                     <div>
                       <div class="flex items-center justify-between gap-2 pb-1.5 border-b border-slate-100 text-xs">
-                        <span class="font-bold text-[11px]" style="color: ${theme.primary};">${a.topic || 'Case Study'}</span>
-                        <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">${a.sourceTag || 'Analysis'}</span>
+                        <span class="font-bold text-[11px]" style="color: ${theme.primary};">${topic}</span>
+                        <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">${sourceTag}</span>
                       </div>
-                      <h4 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug mt-2">${a.heading}</h4>
-                      <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-2">${a.snippet}</p>
+                      <h4 class="text-xs sm:text-sm font-bold text-slate-800 leading-snug mt-2">${heading}</h4>
+                      <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-2">${snippet}</p>
                     </div>
                     <div class="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                      <span class="text-[11px] text-slate-400">${a.readTime || 'Estimated read: 4-5 mins'}</span>
-                      <a href="${a.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-white font-bold text-xs px-3 py-1.5 rounded-lg shadow-xs hover:opacity-95 transition-all no-underline" style="background-color: ${theme.primary};">
+                      <span class="text-[11px] text-slate-400">${readTime}</span>
+                      <button type="button" onclick="window.openArticleReader(modalState.sessionNum, ${idx})" class="inline-flex items-center gap-1.5 text-white font-bold text-xs px-3.5 py-1.5 rounded-lg shadow-xs hover:opacity-95 transition-all cursor-pointer" style="background-color: ${theme.primary};">
                         <span>Read Article</span>
-                        <span>→</span>
-                      </a>
+                        <span>&rarr;</span>
+                      </button>
                     </div>
                   </article>
-                `).join('')}
+                `;}).join('')}
               </div>
             </div>
           ` : ''}

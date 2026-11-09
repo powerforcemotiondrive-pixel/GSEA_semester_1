@@ -172,6 +172,13 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **Plain English Non-Technical Instructions**: All instructions for students and teachers must use clear, accessible, non-technical B2 English (e.g., `"Teacher Tips & Speaking Prompts"` instead of `"Timing Cues"` or pedagogical jargon per Rule 1.I).
 - **Session Block Title Retention**: Per Rule 1.P, the top-level lesson plan title retains its standard university schedule block designation (e.g., `Session X Lesson Plan - [Topic Title] (2 Hours)`), while all internal activity timings are strictly omitted.
 
+
+### S. Automated Link Verification & In-Deck Full-Text Article Reader Invariant (Tri-Project Permanent Invariant)
+- **Zero Broken Links Guarantee (`npm run verify:links`)**: Every external link included in `data/course-data.js` (under `materials.articles` or `materials.resources` / `portals`) must be verified via the automated link checking script `scripts/verify-links.js` before release. Broken URLs, 404s, or endpoints triggering crawler blocks must be updated to verified canonical endpoints.
+- **In-Deck Full-Text Article Reader (`window.openArticleReader`)**: To preserve SCORM 1.2 strict offline self-containment (Rule 1.A) and guarantee that students never encounter external 404s, login paywalls, or offline connection errors during class, clicking `Read Article →` on any technical article card opens an in-deck reading modal directly inside the portal. The modal displays the complete B1/B2 article text, operational takeaways, and spoken technical vocabulary in context, while providing a clean secondary link to the official external source.
+- **Polymorphic Property Fallbacks**: All article renderers must safely handle both naming conventions (`heading || title`, `snippet || summary || desc`, `url || link`) to ensure zero `undefined` values appear on screen.
+- **Automated Validation Invariant**: Running `npm run verify:links` is part of the standard pre-flight packaging checklist across all three semesters (`GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`).
+
 ### R. 100% Paperless Digital-First Architecture & Zero Printable Materials Invariant (Tri-Project Permanent Invariant)
 - **Zero Physical Printouts**: No lesson plan, student worksheet, role-play activity, teacher facilitation note, or evaluation rubric may ever require, instruct, or rely on printed paper or physical photocopying.
 - **100% Screen-Based Interactive Design**: All student handouts, role cards, barrier games, answer keys, teacher notes, and reflection tools must exist exclusively as responsive, interactive on-screen UI components (tab switchers, revealable answers, interactive barrier cards, and local auto-saving notes).

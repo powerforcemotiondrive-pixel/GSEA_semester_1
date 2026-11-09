@@ -2204,3 +2204,119 @@
       `;
     }
 
+// In-Deck Full-Text Article Reader Modal (100% Offline & 0% 404s)
+    window.closeArticleReader = function() {
+      const modal = document.getElementById("gsea-article-reader-modal");
+      if (modal) modal.classList.add("hidden");
+      document.body.style.overflow = "";
+    };
+
+    window.openArticleReader = function(sessionNum, articleIndex) {
+      let modal = document.getElementById("gsea-article-reader-modal");
+      if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "gsea-article-reader-modal";
+        modal.className = "fixed inset-0 z-[200] bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto";
+        modal.onclick = function(e) {
+          if (e.target === modal) window.closeArticleReader();
+        };
+        document.body.appendChild(modal);
+      }
+
+      const rootData = window.COURSE_DATA || {};
+      const progKey = window.currentProgram || "aas";
+      const progData = rootData[progKey] || rootData["1"] || rootData.aas || {};
+      const modCourse = progData["1"] || rootData["1"] || {};
+      const sessionData = (modCourse.sessions && modCourse.sessions[sessionNum]) || {};
+      const articles = (sessionData.materials && sessionData.materials.articles) || [];
+      const a = articles[articleIndex] || {};
+
+      const topic = a.topic || "Case Study";
+      const sourceTag = a.sourceTag || "Technical Briefing";
+      const heading = a.heading || a.title || "Aviation Safety Article";
+      const snippet = a.snippet || a.summary || "";
+      const readTime = a.readTime || "5 min read";
+      const url = a.url || "https://www.easa.europa.eu";
+
+      let bodyParagraphsHTML = "";
+      if (Array.isArray(a.content)) {
+        bodyParagraphsHTML = a.content.map(p => `<p class="text-xs sm:text-[13.5px] text-slate-700 leading-relaxed mb-3.5">${p}</p>`).join("");
+      } else if (typeof a.content === "string" && a.content.trim()) {
+        bodyParagraphsHTML = a.content.split("\n\n").map(p => `<p class="text-xs sm:text-[13.5px] text-slate-700 leading-relaxed mb-3.5">${p}</p>`).join("");
+      } else {
+        bodyParagraphsHTML = `<p class="text-xs sm:text-[13.5px] text-slate-700 leading-relaxed mb-3.5">${snippet}</p>`;
+      }
+
+      let takeawaysHTML = "";
+      if (a.takeaways && a.takeaways.length > 0) {
+        takeawaysHTML = `
+          <div class="p-3.5 bg-slate-900 text-white rounded-xl space-y-1.5 my-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">💡 Key Operational Takeaways</span>
+            <ul class="space-y-1 text-xs text-slate-200">
+              ${a.takeaways.map(t => `<li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>${t}</span></li>`).join("")}
+            </ul>
+          </div>
+        `;
+      }
+
+      let vocabHTML = "";
+      if (a.vocab && a.vocab.length > 0) {
+        vocabHTML = `
+          <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl space-y-1.5 my-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-900">Spoken Technical Vocabulary in Context</span>
+            <div class="flex flex-wrap gap-1.5">
+              ${a.vocab.map(v => `<span class="px-2 py-0.5 rounded bg-white border border-emerald-300 text-emerald-950 font-bold text-[11px]">${v}</span>`).join("")}
+            </div>
+          </div>
+        `;
+      }
+
+      modal.innerHTML = `
+        <div class="relative w-full max-w-2xl max-h-[92vh] bg-white border border-slate-300 rounded-2xl shadow-2xl overflow-hidden flex flex-col my-auto" onclick="event.stopPropagation()">
+          
+          <!-- Top Header Bar -->
+          <div class="px-4 py-3 bg-slate-900 border-b border-slate-800 text-white flex items-center justify-between gap-3 shrink-0">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-sky-500 text-white shrink-0">${topic}</span>
+              <span class="text-[11px] font-semibold text-slate-300 truncate">${sourceTag}</span>
+              <span class="text-slate-500 text-xs">&bull;</span>
+              <span class="text-[11px] font-medium text-slate-400 shrink-0">${readTime}</span>
+            </div>
+            <button type="button" onclick="window.closeArticleReader()" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer shrink-0 text-base font-bold" title="Close reader">&times;</button>
+          </div>
+
+          <!-- Scrollable Body Content -->
+          <div class="p-4 sm:p-6 overflow-y-auto space-y-3">
+            <h2 class="text-base sm:text-xl font-black text-slate-900 leading-snug">${heading}</h2>
+            
+            ${snippet ? `
+              <div class="p-3 rounded-xl bg-slate-50 border-l-4 border-sky-600 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
+                ${snippet}
+              </div>
+            ` : ""}
+
+            <div class="pt-2">
+              ${bodyParagraphsHTML}
+            </div>
+
+            ${takeawaysHTML}
+            ${vocabHTML}
+          </div>
+
+          <!-- Bottom Footer Action Bar -->
+          <div class="px-4 py-3 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 shrink-0">
+            <a href="${url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-slate-900 underline transition-colors">
+              <span>View Official Regulatory Source ↗</span>
+            </a>
+            <button type="button" onclick="window.closeArticleReader()" class="px-4 py-1.5 rounded-lg text-xs font-bold text-white bg-slate-900 hover:bg-black transition-all cursor-pointer shadow-xs">
+              Close Reader
+            </button>
+          </div>
+
+        </div>
+      `;
+
+      modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    };
+
