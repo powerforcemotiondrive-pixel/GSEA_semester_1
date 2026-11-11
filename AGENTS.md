@@ -184,6 +184,19 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **100% Screen-Based Interactive Design**: All student handouts, role cards, barrier games, answer keys, teacher notes, and reflection tools must exist exclusively as responsive, interactive on-screen UI components (tab switchers, revealable answers, interactive barrier cards, and local auto-saving notes).
 - **Zero 'Print to Teach' Dependencies**: Even when source training materials contain sections labeled *"Part 1: Student Handout"* or *"Part 2: Teacher Answer Keys"*, these must always be converted into fully interactive, on-screen browser experiences. Teachers arrive in the classroom with their laptop or tablet, students use their laptops or tablets, and all tasks are executed digitally on screen with zero paper waste.
 
+### T. Automated Session Audit & A4 PDF Worksheet Setup Protocol (Audit S... / Audit Semester ...)
+- **Universal Audit Command (`npm run audit -- "..."` or Natural Chat)**: Whenever the user sends an audit command (e.g., `Audit S1 AG M1 Ss 3`, `Audit Semester 1 Mod 1 AG Ss 3`, `Audit S3 AT M1 S5`), the assistant executes `node scripts/audit-session.js` across the target session.
+- **8 Mandatory Quality Checks**:
+  1. *Thematic Relevance & Subject Drift*: Ensures 100% topical coherence between session key terms and classroom exercises.
+  2. *2-Hour Classroom Sufficiency Gauge*: Evaluates the pedagogical structure across 6 core communicative stages (`🟢 Optimal`, `🟡 Light`, or `🔴 Deficient`).
+  3. *1:1 Title Parity & Schema (Rules 1.L & 1.P)*: Verifies exact session title alignment across course data, admin hub, and standalone admin portal.
+  4. *Zero Academic Jargon & Prohibited Lexicon (Rule 1.I)*: Scans for prohibited pedagogical meta-labels and enforces strict prohibition of the term `"faculty"`.
+  5. *Classroom Timings & Teacher Autonomy (Rule 1.Q)*: Detects and removes rigid minute breakdowns and timer emojis.
+  6. *Pairwork Viability & Student B Peer Checklist*: Ensures active listening checklists exist for speaking simulations.
+  7. *Digital Worksheet & Auto-Saving Notes*: Confirms local storage textareas (`window.saveLessonNote`), official PDF download buttons, and zero deprecated browser print buttons.
+  8. *7-Page A4 PDF Lesson Worksheet Status*: Enforces the exact 7-page A4 PDF invariant (`docs/GSEA_S[X]_M[X]_[TRACK]_S[X]_Lesson_Worksheet.pdf`), verified via native macOS PDFKit (`doc.pageCount === 7`), and tracked in `imsmanifest.xml`.
+- **Tri-Project Invariant Synchronization**: The audit engine and command runbook are synchronized permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)

@@ -1675,9 +1675,9 @@
               "🌿 Green Mobility"
             ],
             "instructions": [
-              "Step 1 (Headlines - 3 mins): In pairs, discuss the two Green Mobility news prompts. Ask your partner: \"Which modal shift initiative seems most viable in our region?\"",
-              "Step 2 (Memory Recall - 4 mins): Without looking at previous notes, recall and verbally explain 2 key travel distinctions from Session 1 (e.g. Layover vs Stopover, Direct vs Non-stop).",
-              "Step 3 (Spot-Check - 3 mins): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's class spot-check."
+              "Step 1 (City Headlines): In pairs, discuss the two Green Mobility news prompts. Ask your partner: \"Which modal shift initiative seems most viable in our region?\"",
+              "Step 2 (Memory Recall): Without looking at previous notes, recall and verbally explain 2 key travel distinctions from Session 1 (e.g. Layover vs Stopover, Direct vs Non-stop).",
+              "Step 3 (Spot-Check): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's class spot-check."
             ],
             "deliverable": "Spoken explanation of one Green Mobility headline and one accurate Session 1 vocabulary definition.",
             "teacherNotes": "Cold-call 2 random pairs to summarize modal shift initiatives in European rail. Check pronunciation of 'infrastructure', 'subsidized', and 'intermodality'."
@@ -1768,14 +1768,13 @@
             ],
             "modeBadges": [
               "🎭 Pair Negotiation Pitch",
-              "⏱️ 10 min prep + 15 min pitches",
               "🗣️ High-Speed Rail vs Air",
               "💼 Policy Defense"
             ],
             "instructions": [
               "Step 1 (Corridor Selection - 3 mins): Choose one European corridor: Paris–Barcelona (6h30 rail vs 1h45 air), London–Edinburgh (4h20 rail vs 1h20 air), or Frankfurt–Milan (7h30 rail vs 1h15 air).",
               "Step 2 (Role Allocation & Prep - 7 mins): Partner A represents the High-Speed Rail operator pitching total door-to-door productivity, zero security dwell time, and 90% CO2 reduction. Partner B represents the Regional Airline defending turnaround efficiency, urgent time-value, and route flexibility.",
-              "Step 3 (Spoken Pitch & Compromise - 5 mins): Deliver your 2-minute pitch to each other and negotiate an agreed multi-modal policy compromise."
+              "Step 3 (Spoken Pitch & Compromise): Deliver your 2-minute pitch to each other and negotiate an agreed multi-modal policy compromise."
             ],
             "deliverable": "A 60-second spoken summary of your agreed corridor policy and passenger carbon trade-off.",
             "teacherNotes": "Write key evaluation criteria on the board: Door-to-door transit time, carbon footprint per passenger-km, and productive working time. Enforce strict time limits on pitches."
@@ -1835,8 +1834,8 @@
             ],
             "instructions": [
               "Step 1 (Rule Analysis - 5 mins): Review the 3 core grammar rules: Cause/Effect linkers, Double Comparatives, and Future Predictions with Modals.",
-              "Step 2 (Challenge Practice - 8 mins): Work through the 4 interactive grammar challenge questions individually, selecting the grammatically precise connector.",
-              "Step 3 (Peer Check & Verification - 7 mins): Compare answers with your partner, click 'Check Answer & Explanation', and verify why the other options are incorrect."
+              "Step 2 (Challenge Practice): Work through the 4 interactive grammar challenge questions individually, selecting the grammatically precise connector.",
+              "Step 3 (Peer Check & Verification): Compare answers with your partner, click 'Check Answer & Explanation', and verify why the other options are incorrect."
             ],
             "deliverable": "Spoken delivery of 2 transformed comparative sentences using the double comparative formula ('The more..., the more...').",
             "teacherNotes": "Highlight the sentence pattern in double comparatives ('The faster the train travels, the lower the per-seat energy consumption becomes'). Correct common error of using 'that' instead of 'as' with comparisons."
@@ -1972,9 +1971,9 @@
               "📝 Self-Assessment Log"
             ],
             "instructions": [
-              "Step 1 (Audio Pronunciation Drill - 4 mins): Click each of the 18 key mobility vocabulary words to listen to native pronunciation. Repeat chorally with your partner.",
-              "Step 2 (Taboo Challenge - 4 mins): Play the 45-Second Taboo Challenge: describe the target word to your partner without saying any of the 3 forbidden root terms.",
-              "Step 3 (Digital Notebook - 2 mins): Record 2 new vocabulary collocations in your personal learning log."
+              "Step 1 (Audio Pronunciation Drill): Click each of the 18 key mobility vocabulary words to listen to native pronunciation. Repeat chorally with your partner.",
+              "Step 2 (Taboo Challenge): Play the 45-Second Taboo Challenge: describe the target word to your partner without saying any of the 3 forbidden root terms.",
+              "Step 3 (Digital Notebook): Record 2 new vocabulary collocations in your personal learning log."
             ],
             "deliverable": "Successfully explain 3 taboo terms under time pressure and complete the personal Session 2 learning log.",
             "teacherNotes": "Keep the energy high. Rapidly drill choral pronunciation of difficult terms: 'intermodality', 'conurbation', 'decarbonization'."
@@ -2059,6 +2058,7 @@
       },
       "3": {
         "session": 3,
+        "title": "Overtourism",
         "objectives": {
           "title": "Session 3 Objectives - Overtourism",
           "summary": "By the end of this session, you will be able to discuss mass tourism challenges with confidence, explain city regulations clearly, balance opposing viewpoints using contrast words, and take part in group debates.",
@@ -2574,14 +2574,13 @@
             },
             "modeBadges": [
               "👥 Pair Recall",
-              "⏱️ 5 min pairs + 5 min plenary",
               "🗣️ Spoken Retrieval",
               "🏛️ Tourism Policy"
             ],
             "instructions": [
-              "Step 1 (Headlines - 3 mins): In pairs, discuss the two City Tourism headlines: Venice entrance fee expansion and Amsterdam short-term rental limits. Ask your partner: \"Which measure addresses root causes rather than symptoms?\"",
-              "Step 2 (Memory Recall - 4 mins): Without checking notes, test each other on 2 key concepts from Session 2 (e.g. modal shift, feeder line, decarbonization).",
-              "Step 3 (Spot-Check - 3 mins): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's plenary spot-check."
+              "Step 1 (City Headlines): In pairs, discuss the two City Tourism headlines: Venice entrance fee expansion and Amsterdam short-term rental limits. Ask your partner: \"Which measure addresses root causes rather than symptoms?\"",
+              "Step 2 (Memory Recall): Without checking notes, test each other on 2 key concepts from Session 2 (e.g. modal shift, feeder line, decarbonization).",
+              "Step 3 (Spot-Check): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's plenary spot-check."
             ],
             "deliverable": "Spoken explanation of one City Tourism headline and an accurate Session 2 vocabulary definition.",
             "teacherNotes": "Cold-call 2 random pairs. Ask: 'Why are European cities switching from destination promotion to destination stewardship?' Check pronunciation of 'carrying capacity' and 'inhabitants'."
@@ -2626,14 +2625,13 @@
             "discussionPrompt": "Which city policy has been most successful in balancing economic income with resident well-being?",
             "modeBadges": [
               "👥 Destination Analysis",
-              "⏱️ 10 min analysis + 15 min debate",
               "📊 Carrying Capacity",
               "🏙️ Municipal Measures"
             ],
             "instructions": [
-              "Step 1 (Data Comparison - 4 mins): Examine the 4 destination pressure profiles (Venice, Amsterdam, Dubrovnik, Maya Bay), comparing resident populations against annual visitor volumes.",
-              "Step 2 (Comparing Tourist Pressure - 4 mins): Compare the visitor-to-resident figures across the destinations. Practice using comparative structures (e.g., 'Venice experiences far greater visitor pressure than...') to discuss the impact on local housing and public services.",
-              "Step 3 (Policy Debate - 7 mins): In pairs, evaluate which municipal measure (entry fees, cruise ship bans, short-term rental freezes) is most effective and defend your choice with your partner."
+              "Step 1 (Data Comparison): Examine the 4 destination pressure profiles (Venice, Amsterdam, Dubrovnik, Maya Bay), comparing resident populations against annual visitor volumes.",
+              "Step 2 (Comparing Tourist Pressure): Compare the visitor-to-resident figures across the destinations. Practice using comparative structures (e.g., 'Venice experiences far greater visitor pressure than...') to discuss the impact on local housing and public services.",
+              "Step 3 (Policy Debate): In pairs, evaluate which municipal measure (entry fees, cruise ship bans, short-term rental freezes) is most effective and defend your choice with your partner."
             ],
             "deliverable": "Deliver a 45-second comparative argument evaluating the effectiveness of two municipal anti-overtourism policies.",
             "teacherNotes": "Highlight the distinction between 'overtourism' (perceived crowding & social pressure) and 'carrying capacity' (physical infrastructure limits). Ensure students use formal comparative vocabulary."
@@ -2663,14 +2661,13 @@
             ],
             "modeBadges": [
               "🎭 Municipal Role-Play Pitch",
-              "⏱️ 10 min prep + 15 min pitches",
               "🗣️ Pitching to the Mayor",
               "💼 Objection Defense"
             ],
             "instructions": [
-              "Step 1 (Policy Selection - 3 mins): Select one controversial municipal tourism policy from the grid: Strict Short-Term Rental Caps, Peak-Hour Access Tolls, or Cruise Ship Disembarkation Quotas.",
-              "Step 2 (Role-Play Prep - 7 mins): Partner A acts as the Chief Sustainability Officer pitching the policy to City Council; Partner B acts as the Chamber of Commerce President raising commercial objections.",
-              "Step 3 (Spoken Pitch & Compromise - 5 mins): Deliver your 2-minute pitch and negotiate an amended policy compromise that protects resident quality of life without collapsing local commerce."
+              "Step 1 (Policy Selection): Select one controversial municipal tourism policy from the grid: Strict Short-Term Rental Caps, Peak-Hour Access Tolls, or Cruise Ship Disembarkation Quotas.",
+              "Step 2 (Role-Play Prep): Partner A acts as the Chief Sustainability Officer pitching the policy to City Council; Partner B acts as the Chamber of Commerce President raising commercial objections.",
+              "Step 3 (Spoken Pitch & Compromise): Deliver your 2-minute pitch and negotiate an amended policy compromise that protects resident quality of life without collapsing local commerce."
             ],
             "deliverable": "A 60-second spoken summary of your amended policy compromise presented to the class.",
             "teacherNotes": "Act as the Mayor observing the pitch. Demand concrete answers on: revenue distribution, enforcement costs, and impact on small local shopkeepers. Board key persuasive phrases."
@@ -2724,14 +2721,13 @@
             },
             "modeBadges": [
               "👥 Causatives & Contrast Practice",
-              "⏱️ 8 min rules + 12 min challenge",
               "✍️ Complex Connectors",
-              "🎯 B2 Academic Syntax"
+              "🎯 B2 Sentence Patterns"
             ],
             "instructions": [
-              "Step 1 (Rule Dissection - 5 mins): Review the 3 grammar patterns: Causatives ('have/get something done', 'make/let someone do'), Contrast linkers ('whereas', 'while', 'in spite of'), and Concession clauses ('despite the fact that').",
-              "Step 2 (Challenge Practice - 8 mins): Work through the 4 interactive grammar challenge questions individually without consulting notes.",
-              "Step 3 (Peer Check & Verification - 7 mins): Compare answers with your partner, click 'Check Answer & Explanation', and formulate one original sentence describing municipal tourism restrictions using 'in spite of' + noun phrase."
+              "Step 1 (Rule Review): Review the 3 grammar patterns: Causatives ('have/get something done', 'make/let someone do'), Contrast linkers ('whereas', 'while', 'in spite of'), and Concession clauses ('despite the fact that').",
+              "Step 2 (Challenge Practice): Work through the 4 interactive grammar challenge questions individually without consulting notes.",
+              "Step 3 (Peer Check & Verification): Compare answers with your partner, click 'Check Answer & Explanation', and formulate one original sentence describing municipal tourism restrictions using 'in spite of' + noun phrase."
             ],
             "deliverable": "100% correct score on the practice quiz and verbal delivery of one original causative sentence.",
             "teacherNotes": "Emphasize prepositional vs. clausal contrast linkers: 'in spite of' + noun phrase/gerund vs. 'although' + full clause. Point out common error: '*despite of'."
@@ -2784,14 +2780,13 @@
             "task": "Negotiate a realistic 3-point compromise agreement that addresses water rationing, tourism capacity limits, and infrastructure funding.",
             "modeBadges": [
               "👥 Multi-Stakeholder Round-Table",
-              "⏱️ 12 min group work + 18 min simulation",
               "💧 Resource Scarcity Crisis",
               "🤝 Multi-Party Consensus"
             ],
             "instructions": [
-              "Step 1 (Crisis Briefing - 4 mins): Review the Isla Serena Emergency Summit crisis dossier, reservoir depletion metrics, and the airport runway expansion dispute.",
-              "Step 2 (Role Allocation & Strategy - 8 mins): In groups of 4, assign roles (The Town Mayor, The Hotel Association President, The Organic Farmer, or The Environmental Protection Regulator) and prepare your non-negotiable demands.",
-              "Step 3 (Emergency Summit - 18 mins): Convene the emergency summit. Negotiate an emergency water quota allocation and airport infrastructure policy to reach unanimous consensus."
+              "Step 1 (Crisis Briefing): Review the Isla Serena Emergency Summit crisis dossier, reservoir depletion metrics, and the airport runway expansion dispute.",
+              "Step 2 (Role Allocation & Strategy): In groups of 4, assign roles (The Town Mayor, The Hotel Association President, The Organic Farmer, or The Environmental Protection Regulator) and prepare your non-negotiable demands.",
+              "Step 3 (Emergency Summit): Convene the emergency summit. Negotiate an emergency water quota allocation and airport infrastructure policy to reach unanimous consensus."
             ],
             "deliverable": "Signed 4-point Emergency Water Allocation Accord presenting agreed percentage quotas for each sector.",
             "teacherNotes": "Timekeeper and moderator: cut off circular debates. If groups reach a stalemate, introduce a crisis prompt: 'A heatwave has pushed reservoir levels down to 12%—you have 3 minutes to finalize water cuts!'"
@@ -2868,14 +2863,13 @@
             ],
             "modeBadges": [
               "🎧 Audio Drill & Taboo Challenge",
-              "⏱️ 5 min taboo + 5 min reflection",
               "🗣️ Fluency Under Pressure",
               "📝 Self-Assessment Log"
             ],
             "instructions": [
-              "Step 1 (Audio Pronunciation Drill - 4 mins): Chorally repeat the 18 key overtourism terms using the audio pronunciation buttons.",
-              "Step 2 (Taboo Challenge - 4 mins): Play the 45-Second Taboo Challenge with your partner: describe target terms ('carrying capacity', 'short-term let', 'moratorium') without saying forbidden words.",
-              "Step 3 (Digital Notebook - 2 mins): Record your personal reflection and mark newly mastered vocabulary in the Revision tab."
+              "Step 1 (Audio Pronunciation Drill): Chorally repeat the 18 key overtourism terms using the audio pronunciation buttons.",
+              "Step 2 (Taboo Challenge): Play the 45-Second Taboo Challenge with your partner: describe target terms ('carrying capacity', 'short-term let', 'moratorium') without saying forbidden words.",
+              "Step 3 (Digital Notebook): Record your personal reflection and mark newly mastered vocabulary in the Revision tab."
             ],
             "deliverable": "Successfully define 3 taboo terms under time pressure and complete the personal Session 3 learning log.",
             "teacherNotes": "Keep tempo fast and competitive. Conduct whole-class choral drill on high-risk pronunciation items: 'carrying capacity', 'moratorium', 'inhabitants', 'gentrification'."
@@ -3668,7 +3662,7 @@
               "🎯 Formative Consolidation"
             ],
             "instructions": [
-              "Step 1 (Audio Pronunciation Drill - 4 mins): Click each of the 18 audio buttons. Listen and repeat aloud, focusing on stress patterns: 're-GEN-er-a-tive', 'va-lor-i-ZA-tion', 'bio-di-VER-si-ty'.",
+              "Step 1 (Audio Pronunciation Drill): Click each of the 18 audio buttons. Listen and repeat aloud, focusing on stress patterns: 're-GEN-er-a-tive', 'va-lor-i-ZA-tion', 'bio-di-VER-si-ty'.",
               "Step 2 (FE1 Readiness Audit - 4 mins): Review the 4 items on the Session 5 Formative Evaluation Readiness Checklist with your partner. Confirm your presentation partner, topic choice, and slide structure.",
               "Step 3 (Portfolio Check - 2 mins): Verify that your Vocabulary Log and TOEIC Error Tracker are updated and ready for teacher review next week."
             ],
@@ -4379,12 +4373,11 @@
           "openingSession": {
             "modeBadges": [
               "👥 Pair Recall",
-              "⏱️ 5 min pairs + 5 min plenary",
               "🗣️ Weather Quick Check"
             ],
             "instructions": [
-              "Step 1 (Headlines - 3 mins): In pairs, ask each other: \"What major extreme weather or climate hazard story caught your attention recently?\" Discuss one operational challenge it posed for transport hubs.",
-              "Step 2 (Memory Recall - 4 mins): Take turns testing each other on the 4 foundational meteorological distinctions below without revealing the answers.",
+              "Step 1 (City Headlines): In pairs, ask each other: \"What major extreme weather or climate hazard story caught your attention recently?\" Discuss one operational challenge it posed for transport hubs.",
+              "Step 2 (Memory Recall): Take turns testing each other on the 4 foundational meteorological distinctions below without revealing the answers.",
               "Step 3 (Verify & Calibrate - 3 mins): Click \"Reveal Answer\" to verify technical accuracy. Note down any terms needing consolidation (e.g., density altitude, convective cell)."
             ],
             "deliverable": "Accurately explain one meteorological distinction during the instructor spot-check using precise technical vocabulary.",
@@ -7697,7 +7690,7 @@
             ],
             "instructions": [
               "Step 1 (Headline Scan - 3 mins): Read the three real-world AI news prompts with your partner. Discuss which application has the greatest immediate impact on aviation or engineering.",
-              "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Narrow AI vs. General AI, Supervised Learning vs. Unsupervised Learning, Machine Learning vs. Deep Learning, Predictive Analytics vs. Generative Models).",
+              "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Narrow AI vs. General AI, Supervised Learning vs. Unsupervised Learning, Machine Learning vs. Deep Learning, Predictive Analytics vs. Generative Models).",
               "Step 3 (Class Roundup - 3 mins): Two pairs share their definitions of Supervised Learning and Predictive Analytics with the class."
             ],
             "deliverable": "Clear spoken definition of 1 real-world AI application and 1 machine learning distinction during the teacher check.",
@@ -8500,7 +8493,7 @@
             ],
             "instructions": [
               "Step 1 (Headline Scan - 3 mins): Read the three clean transport news prompts with your partner. Discuss which propulsion technology (hydrogen fuel cells, sustainable aviation fuels, battery-electric) is nearest commercial maturity.",
-              "Step 2 (Memory Recall - 4 mins): Without looking at notes, test each other on the 4 propulsion distinctions below (Cryogenic Liquid Hydrogen vs. High-Pressure Gas, SAF Drop-In Fuel vs. Clean-Sheet Airframe, Gravimetric Energy Density vs. Volumetric Density, High-Speed Rail vs. Short-Haul Turboprop).",
+              "Step 2 (Memory Recall): Without looking at notes, test each other on the 4 propulsion distinctions below (Cryogenic Liquid Hydrogen vs. High-Pressure Gas, SAF Drop-In Fuel vs. Clean-Sheet Airframe, Gravimetric Energy Density vs. Volumetric Density, High-Speed Rail vs. Short-Haul Turboprop).",
               "Step 3 (Class Roundup - 3 mins): One student explains why gravimetric energy density is the biggest limiting factor for battery-electric passenger aircraft."
             ],
             "deliverable": "Clear spoken explanation of 1 clean propulsion concept and 1 energy storage challenge during teacher Q&A.",
@@ -9303,7 +9296,7 @@
             ],
             "instructions": [
               "Step 1 (Headline Scan - 3 mins): Read the three headlines on autonomous AI decisions, algorithmic bias, and facial recognition bans. Discuss which controversy raises the greatest legal liability.",
-              "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Algorithmic Bias vs. Training Data Imbalance, Explainable AI [XAI] vs. Black-Box Neural Networks, Human-in-the-Loop vs. Human-on-the-Loop, Data Minimization vs. Bulk Surveillance).",
+              "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Algorithmic Bias vs. Training Data Imbalance, Explainable AI [XAI] vs. Black-Box Neural Networks, Human-in-the-Loop vs. Human-on-the-Loop, Data Minimization vs. Bulk Surveillance).",
               "Step 3 (Class Roundup - 3 mins): One student explains why 'Explainable AI' is mandatory for automated flight control and air traffic advisory tools."
             ],
             "deliverable": "Clear spoken definition of 1 ethical AI principle and 1 algorithmic risk concept during the teacher check.",
@@ -10106,7 +10099,7 @@
             ],
             "instructions": [
               "Step 1 (Headline Scan - 3 mins): Read the 3 real-world smart airport news prompts with your partner. Discuss which biometric technology has the greatest operational benefit.",
-              "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Facial Recognition vs. Contactless Iris Scanning, Data Sovereignty vs. Centralized Cloud, IATA One ID vs. Legacy Boarding Passes, False Acceptance Rate [FAR] vs. False Rejection Rate [FRR]).",
+              "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Facial Recognition vs. Contactless Iris Scanning, Data Sovereignty vs. Centralized Cloud, IATA One ID vs. Legacy Boarding Passes, False Acceptance Rate [FAR] vs. False Rejection Rate [FRR]).",
               "Step 3 (Class Roundup - 3 mins): One pair shares their definition of Data Sovereignty with the class."
             ],
             "deliverable": "Clear spoken definition of 1 biometric passenger technology and 1 privacy protection concept during the teacher check.",
@@ -10316,7 +10309,7 @@
               "🎯 FE3 Milestone Prep"
             ],
             "instructions": [
-              "Step 1 (Audio Pronunciation Drill - 4 mins): Click through the 18 key technical vocabulary items to hear authentic pronunciation. Practice repeating aloud with your partner.",
+              "Step 1 (Audio Pronunciation Drill): Click through the 18 key technical vocabulary items to hear authentic pronunciation. Practice repeating aloud with your partner.",
               "Step 2 (Rapid Definition Test - 4 mins): Test your partner on 3 random terms from the word cloud (e.g., contactless e-Gate, encryption key, single token travel).",
               "Step 3 (Exit Summary - 2 mins): Write down two target biometric vocabulary terms and one relative clause structure you will use in your FE3 presentation."
             ],
@@ -12068,9 +12061,9 @@
                 "🌿 Green Mobility"
               ],
               "instructions": [
-                "Step 1 (Headlines - 3 mins): In pairs, discuss the two Green Mobility news prompts. Ask your partner: \"Which modal shift initiative seems most viable in our region?\"",
-                "Step 2 (Memory Recall - 4 mins): Without looking at previous notes, recall and verbally explain 2 key travel distinctions from Session 1 (e.g. Layover vs Stopover, Direct vs Non-stop).",
-                "Step 3 (Spot-Check - 3 mins): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's class spot-check."
+                "Step 1 (City Headlines): In pairs, discuss the two Green Mobility news prompts. Ask your partner: \"Which modal shift initiative seems most viable in our region?\"",
+                "Step 2 (Memory Recall): Without looking at previous notes, recall and verbally explain 2 key travel distinctions from Session 1 (e.g. Layover vs Stopover, Direct vs Non-stop).",
+                "Step 3 (Spot-Check): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's class spot-check."
               ],
               "deliverable": "Spoken explanation of one Green Mobility headline and one accurate Session 1 vocabulary definition.",
               "teacherNotes": "Cold-call 2 random pairs to summarize modal shift initiatives in European rail. Check pronunciation of 'infrastructure', 'subsidized', and 'intermodality'."
@@ -12161,14 +12154,13 @@
               ],
               "modeBadges": [
                 "🎭 Pair Negotiation Pitch",
-                "⏱️ 10 min prep + 15 min pitches",
                 "🗣️ High-Speed Rail vs Air",
                 "💼 Policy Defense"
               ],
               "instructions": [
                 "Step 1 (Corridor Selection - 3 mins): Choose one European corridor: Paris–Barcelona (6h30 rail vs 1h45 air), London–Edinburgh (4h20 rail vs 1h20 air), or Frankfurt–Milan (7h30 rail vs 1h15 air).",
                 "Step 2 (Role Allocation & Prep - 7 mins): Partner A represents the High-Speed Rail operator pitching total door-to-door productivity, zero security dwell time, and 90% CO2 reduction. Partner B represents the Regional Airline defending turnaround efficiency, urgent time-value, and route flexibility.",
-                "Step 3 (Spoken Pitch & Compromise - 5 mins): Deliver your 2-minute pitch to each other and negotiate an agreed multi-modal policy compromise."
+                "Step 3 (Spoken Pitch & Compromise): Deliver your 2-minute pitch to each other and negotiate an agreed multi-modal policy compromise."
               ],
               "deliverable": "A 60-second spoken summary of your agreed corridor policy and passenger carbon trade-off.",
               "teacherNotes": "Write key evaluation criteria on the board: Door-to-door transit time, carbon footprint per passenger-km, and productive working time. Enforce strict time limits on pitches."
@@ -12228,8 +12220,8 @@
               ],
               "instructions": [
                 "Step 1 (Rule Analysis - 5 mins): Review the 3 core grammar rules: Cause/Effect linkers, Double Comparatives, and Future Predictions with Modals.",
-                "Step 2 (Challenge Practice - 8 mins): Work through the 4 interactive grammar challenge questions individually, selecting the grammatically precise connector.",
-                "Step 3 (Peer Check & Verification - 7 mins): Compare answers with your partner, click 'Check Answer & Explanation', and verify why the other options are incorrect."
+                "Step 2 (Challenge Practice): Work through the 4 interactive grammar challenge questions individually, selecting the grammatically precise connector.",
+                "Step 3 (Peer Check & Verification): Compare answers with your partner, click 'Check Answer & Explanation', and verify why the other options are incorrect."
               ],
               "deliverable": "Spoken delivery of 2 transformed comparative sentences using the double comparative formula ('The more..., the more...').",
               "teacherNotes": "Highlight the sentence pattern in double comparatives ('The faster the train travels, the lower the per-seat energy consumption becomes'). Correct common error of using 'that' instead of 'as' with comparisons."
@@ -12365,9 +12357,9 @@
                 "📝 Self-Assessment Log"
               ],
               "instructions": [
-                "Step 1 (Audio Pronunciation Drill - 4 mins): Click each of the 18 key mobility vocabulary words to listen to native pronunciation. Repeat chorally with your partner.",
-                "Step 2 (Taboo Challenge - 4 mins): Play the 45-Second Taboo Challenge: describe the target word to your partner without saying any of the 3 forbidden root terms.",
-                "Step 3 (Digital Notebook - 2 mins): Record 2 new vocabulary collocations in your personal learning log."
+                "Step 1 (Audio Pronunciation Drill): Click each of the 18 key mobility vocabulary words to listen to native pronunciation. Repeat chorally with your partner.",
+                "Step 2 (Taboo Challenge): Play the 45-Second Taboo Challenge: describe the target word to your partner without saying any of the 3 forbidden root terms.",
+                "Step 3 (Digital Notebook): Record 2 new vocabulary collocations in your personal learning log."
               ],
               "deliverable": "Successfully explain 3 taboo terms under time pressure and complete the personal Session 2 learning log.",
               "teacherNotes": "Keep the energy high. Rapidly drill choral pronunciation of difficult terms: 'intermodality', 'conurbation', 'decarbonization'."
@@ -12452,6 +12444,7 @@
         },
         "3": {
           "session": 3,
+          "title": "Overtourism",
           "objectives": {
             "title": "Session 3 Objectives - Overtourism",
             "summary": "By the end of this session, you will be able to discuss mass tourism challenges with confidence, explain city regulations clearly, balance opposing viewpoints using contrast words, and take part in group debates.",
@@ -12967,14 +12960,13 @@
               },
               "modeBadges": [
                 "👥 Pair Recall",
-                "⏱️ 5 min pairs + 5 min plenary",
                 "🗣️ Spoken Retrieval",
                 "🏛️ Tourism Policy"
               ],
               "instructions": [
-                "Step 1 (Headlines - 3 mins): In pairs, discuss the two City Tourism headlines: Venice entrance fee expansion and Amsterdam short-term rental limits. Ask your partner: \"Which measure addresses root causes rather than symptoms?\"",
-                "Step 2 (Memory Recall - 4 mins): Without checking notes, test each other on 2 key concepts from Session 2 (e.g. modal shift, feeder line, decarbonization).",
-                "Step 3 (Spot-Check - 3 mins): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's plenary spot-check."
+                "Step 1 (City Headlines): In pairs, discuss the two City Tourism headlines: Venice entrance fee expansion and Amsterdam short-term rental limits. Ask your partner: \"Which measure addresses root causes rather than symptoms?\"",
+                "Step 2 (Memory Recall): Without checking notes, test each other on 2 key concepts from Session 2 (e.g. modal shift, feeder line, decarbonization).",
+                "Step 3 (Spot-Check): Click \"Reveal Answer\" to check your operational distinction. Be ready for the instructor's plenary spot-check."
               ],
               "deliverable": "Spoken explanation of one City Tourism headline and an accurate Session 2 vocabulary definition.",
               "teacherNotes": "Cold-call 2 random pairs. Ask: 'Why are European cities switching from destination promotion to destination stewardship?' Check pronunciation of 'carrying capacity' and 'inhabitants'."
@@ -13019,14 +13011,13 @@
               "discussionPrompt": "Which city policy has been most successful in balancing economic income with resident well-being?",
               "modeBadges": [
                 "👥 Destination Analysis",
-                "⏱️ 10 min analysis + 15 min debate",
                 "📊 Carrying Capacity",
                 "🏙️ Municipal Measures"
               ],
               "instructions": [
-                "Step 1 (Data Comparison - 4 mins): Examine the 4 destination pressure profiles (Venice, Amsterdam, Dubrovnik, Maya Bay), comparing resident populations against annual visitor volumes.",
-                "Step 2 (Comparing Tourist Pressure - 4 mins): Compare the visitor-to-resident figures across the destinations. Practice using comparative structures (e.g., 'Venice experiences far greater visitor pressure than...') to discuss the impact on local housing and public services.",
-                "Step 3 (Policy Debate - 7 mins): In pairs, evaluate which municipal measure (entry fees, cruise ship bans, short-term rental freezes) is most effective and defend your choice with your partner."
+                "Step 1 (Data Comparison): Examine the 4 destination pressure profiles (Venice, Amsterdam, Dubrovnik, Maya Bay), comparing resident populations against annual visitor volumes.",
+                "Step 2 (Comparing Tourist Pressure): Compare the visitor-to-resident figures across the destinations. Practice using comparative structures (e.g., 'Venice experiences far greater visitor pressure than...') to discuss the impact on local housing and public services.",
+                "Step 3 (Policy Debate): In pairs, evaluate which municipal measure (entry fees, cruise ship bans, short-term rental freezes) is most effective and defend your choice with your partner."
               ],
               "deliverable": "Deliver a 45-second comparative argument evaluating the effectiveness of two municipal anti-overtourism policies.",
               "teacherNotes": "Highlight the distinction between 'overtourism' (perceived crowding & social pressure) and 'carrying capacity' (physical infrastructure limits). Ensure students use formal comparative vocabulary."
@@ -13056,14 +13047,13 @@
               ],
               "modeBadges": [
                 "🎭 Municipal Role-Play Pitch",
-                "⏱️ 10 min prep + 15 min pitches",
                 "🗣️ Pitching to the Mayor",
                 "💼 Objection Defense"
               ],
               "instructions": [
-                "Step 1 (Policy Selection - 3 mins): Select one controversial municipal tourism policy from the grid: Strict Short-Term Rental Caps, Peak-Hour Access Tolls, or Cruise Ship Disembarkation Quotas.",
-                "Step 2 (Role-Play Prep - 7 mins): Partner A acts as the Chief Sustainability Officer pitching the policy to City Council; Partner B acts as the Chamber of Commerce President raising commercial objections.",
-                "Step 3 (Spoken Pitch & Compromise - 5 mins): Deliver your 2-minute pitch and negotiate an amended policy compromise that protects resident quality of life without collapsing local commerce."
+                "Step 1 (Policy Selection): Select one controversial municipal tourism policy from the grid: Strict Short-Term Rental Caps, Peak-Hour Access Tolls, or Cruise Ship Disembarkation Quotas.",
+                "Step 2 (Role-Play Prep): Partner A acts as the Chief Sustainability Officer pitching the policy to City Council; Partner B acts as the Chamber of Commerce President raising commercial objections.",
+                "Step 3 (Spoken Pitch & Compromise): Deliver your 2-minute pitch and negotiate an amended policy compromise that protects resident quality of life without collapsing local commerce."
               ],
               "deliverable": "A 60-second spoken summary of your amended policy compromise presented to the class.",
               "teacherNotes": "Act as the Mayor observing the pitch. Demand concrete answers on: revenue distribution, enforcement costs, and impact on small local shopkeepers. Board key persuasive phrases."
@@ -13117,14 +13107,13 @@
               },
               "modeBadges": [
                 "👥 Causatives & Contrast Practice",
-                "⏱️ 8 min rules + 12 min challenge",
                 "✍️ Complex Connectors",
-                "🎯 B2 Academic Syntax"
+                "🎯 B2 Sentence Patterns"
               ],
               "instructions": [
-                "Step 1 (Rule Dissection - 5 mins): Review the 3 grammar patterns: Causatives ('have/get something done', 'make/let someone do'), Contrast linkers ('whereas', 'while', 'in spite of'), and Concession clauses ('despite the fact that').",
-                "Step 2 (Challenge Practice - 8 mins): Work through the 4 interactive grammar challenge questions individually without consulting notes.",
-                "Step 3 (Peer Check & Verification - 7 mins): Compare answers with your partner, click 'Check Answer & Explanation', and formulate one original sentence describing municipal tourism restrictions using 'in spite of' + noun phrase."
+                "Step 1 (Rule Review): Review the 3 grammar patterns: Causatives ('have/get something done', 'make/let someone do'), Contrast linkers ('whereas', 'while', 'in spite of'), and Concession clauses ('despite the fact that').",
+                "Step 2 (Challenge Practice): Work through the 4 interactive grammar challenge questions individually without consulting notes.",
+                "Step 3 (Peer Check & Verification): Compare answers with your partner, click 'Check Answer & Explanation', and formulate one original sentence describing municipal tourism restrictions using 'in spite of' + noun phrase."
               ],
               "deliverable": "100% correct score on the practice quiz and verbal delivery of one original causative sentence.",
               "teacherNotes": "Emphasize prepositional vs. clausal contrast linkers: 'in spite of' + noun phrase/gerund vs. 'although' + full clause. Point out common error: '*despite of'."
@@ -13177,14 +13166,13 @@
               "task": "Negotiate a realistic 3-point compromise agreement that addresses water rationing, tourism capacity limits, and infrastructure funding.",
               "modeBadges": [
                 "👥 Multi-Stakeholder Round-Table",
-                "⏱️ 12 min group work + 18 min simulation",
                 "💧 Resource Scarcity Crisis",
                 "🤝 Multi-Party Consensus"
               ],
               "instructions": [
-                "Step 1 (Crisis Briefing - 4 mins): Review the Isla Serena Emergency Summit crisis dossier, reservoir depletion metrics, and the airport runway expansion dispute.",
-                "Step 2 (Role Allocation & Strategy - 8 mins): In groups of 4, assign roles (The Town Mayor, The Hotel Association President, The Organic Farmer, or The Environmental Protection Regulator) and prepare your non-negotiable demands.",
-                "Step 3 (Emergency Summit - 18 mins): Convene the emergency summit. Negotiate an emergency water quota allocation and airport infrastructure policy to reach unanimous consensus."
+                "Step 1 (Crisis Briefing): Review the Isla Serena Emergency Summit crisis dossier, reservoir depletion metrics, and the airport runway expansion dispute.",
+                "Step 2 (Role Allocation & Strategy): In groups of 4, assign roles (The Town Mayor, The Hotel Association President, The Organic Farmer, or The Environmental Protection Regulator) and prepare your non-negotiable demands.",
+                "Step 3 (Emergency Summit): Convene the emergency summit. Negotiate an emergency water quota allocation and airport infrastructure policy to reach unanimous consensus."
               ],
               "deliverable": "Signed 4-point Emergency Water Allocation Accord presenting agreed percentage quotas for each sector.",
               "teacherNotes": "Timekeeper and moderator: cut off circular debates. If groups reach a stalemate, introduce a crisis prompt: 'A heatwave has pushed reservoir levels down to 12%—you have 3 minutes to finalize water cuts!'"
@@ -13261,14 +13249,13 @@
               ],
               "modeBadges": [
                 "🎧 Audio Drill & Taboo Challenge",
-                "⏱️ 5 min taboo + 5 min reflection",
                 "🗣️ Fluency Under Pressure",
                 "📝 Self-Assessment Log"
               ],
               "instructions": [
-                "Step 1 (Audio Pronunciation Drill - 4 mins): Chorally repeat the 18 key overtourism terms using the audio pronunciation buttons.",
-                "Step 2 (Taboo Challenge - 4 mins): Play the 45-Second Taboo Challenge with your partner: describe target terms ('carrying capacity', 'short-term let', 'moratorium') without saying forbidden words.",
-                "Step 3 (Digital Notebook - 2 mins): Record your personal reflection and mark newly mastered vocabulary in the Revision tab."
+                "Step 1 (Audio Pronunciation Drill): Chorally repeat the 18 key overtourism terms using the audio pronunciation buttons.",
+                "Step 2 (Taboo Challenge): Play the 45-Second Taboo Challenge with your partner: describe target terms ('carrying capacity', 'short-term let', 'moratorium') without saying forbidden words.",
+                "Step 3 (Digital Notebook): Record your personal reflection and mark newly mastered vocabulary in the Revision tab."
               ],
               "deliverable": "Successfully define 3 taboo terms under time pressure and complete the personal Session 3 learning log.",
               "teacherNotes": "Keep tempo fast and competitive. Conduct whole-class choral drill on high-risk pronunciation items: 'carrying capacity', 'moratorium', 'inhabitants', 'gentrification'."
@@ -14061,7 +14048,7 @@
                 "🎯 Formative Consolidation"
               ],
               "instructions": [
-                "Step 1 (Audio Pronunciation Drill - 4 mins): Click each of the 18 audio buttons. Listen and repeat aloud, focusing on stress patterns: 're-GEN-er-a-tive', 'va-lor-i-ZA-tion', 'bio-di-VER-si-ty'.",
+                "Step 1 (Audio Pronunciation Drill): Click each of the 18 audio buttons. Listen and repeat aloud, focusing on stress patterns: 're-GEN-er-a-tive', 'va-lor-i-ZA-tion', 'bio-di-VER-si-ty'.",
                 "Step 2 (FE1 Readiness Audit - 4 mins): Review the 4 items on the Session 5 Formative Evaluation Readiness Checklist with your partner. Confirm your presentation partner, topic choice, and slide structure.",
                 "Step 3 (Portfolio Check - 2 mins): Verify that your Vocabulary Log and TOEIC Error Tracker are updated and ready for teacher review next week."
               ],
@@ -14772,12 +14759,11 @@
             "openingSession": {
               "modeBadges": [
                 "👥 Pair Recall",
-                "⏱️ 5 min pairs + 5 min plenary",
                 "🗣️ Weather Quick Check"
               ],
               "instructions": [
-                "Step 1 (Headlines - 3 mins): In pairs, ask each other: \"What major extreme weather or climate hazard story caught your attention recently?\" Discuss one operational challenge it posed for transport hubs.",
-                "Step 2 (Memory Recall - 4 mins): Take turns testing each other on the 4 foundational meteorological distinctions below without revealing the answers.",
+                "Step 1 (City Headlines): In pairs, ask each other: \"What major extreme weather or climate hazard story caught your attention recently?\" Discuss one operational challenge it posed for transport hubs.",
+                "Step 2 (Memory Recall): Take turns testing each other on the 4 foundational meteorological distinctions below without revealing the answers.",
                 "Step 3 (Verify & Calibrate - 3 mins): Click \"Reveal Answer\" to verify technical accuracy. Note down any terms needing consolidation (e.g., density altitude, convective cell)."
               ],
               "deliverable": "Accurately explain one meteorological distinction during the instructor spot-check using precise technical vocabulary.",
@@ -18090,7 +18076,7 @@
               ],
               "instructions": [
                 "Step 1 (Headline Scan - 3 mins): Read the three real-world AI news prompts with your partner. Discuss which application has the greatest immediate impact on aviation or engineering.",
-                "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Narrow AI vs. General AI, Supervised Learning vs. Unsupervised Learning, Machine Learning vs. Deep Learning, Predictive Analytics vs. Generative Models).",
+                "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Narrow AI vs. General AI, Supervised Learning vs. Unsupervised Learning, Machine Learning vs. Deep Learning, Predictive Analytics vs. Generative Models).",
                 "Step 3 (Class Roundup - 3 mins): Two pairs share their definitions of Supervised Learning and Predictive Analytics with the class."
               ],
               "deliverable": "Clear spoken definition of 1 real-world AI application and 1 machine learning distinction during the teacher check.",
@@ -18893,7 +18879,7 @@
               ],
               "instructions": [
                 "Step 1 (Headline Scan - 3 mins): Read the three clean transport news prompts with your partner. Discuss which propulsion technology (hydrogen fuel cells, sustainable aviation fuels, battery-electric) is nearest commercial maturity.",
-                "Step 2 (Memory Recall - 4 mins): Without looking at notes, test each other on the 4 propulsion distinctions below (Cryogenic Liquid Hydrogen vs. High-Pressure Gas, SAF Drop-In Fuel vs. Clean-Sheet Airframe, Gravimetric Energy Density vs. Volumetric Density, High-Speed Rail vs. Short-Haul Turboprop).",
+                "Step 2 (Memory Recall): Without looking at notes, test each other on the 4 propulsion distinctions below (Cryogenic Liquid Hydrogen vs. High-Pressure Gas, SAF Drop-In Fuel vs. Clean-Sheet Airframe, Gravimetric Energy Density vs. Volumetric Density, High-Speed Rail vs. Short-Haul Turboprop).",
                 "Step 3 (Class Roundup - 3 mins): One student explains why gravimetric energy density is the biggest limiting factor for battery-electric passenger aircraft."
               ],
               "deliverable": "Clear spoken explanation of 1 clean propulsion concept and 1 energy storage challenge during teacher Q&A.",
@@ -19696,7 +19682,7 @@
               ],
               "instructions": [
                 "Step 1 (Headline Scan - 3 mins): Read the three headlines on autonomous AI decisions, algorithmic bias, and facial recognition bans. Discuss which controversy raises the greatest legal liability.",
-                "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Algorithmic Bias vs. Training Data Imbalance, Explainable AI [XAI] vs. Black-Box Neural Networks, Human-in-the-Loop vs. Human-on-the-Loop, Data Minimization vs. Bulk Surveillance).",
+                "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Algorithmic Bias vs. Training Data Imbalance, Explainable AI [XAI] vs. Black-Box Neural Networks, Human-in-the-Loop vs. Human-on-the-Loop, Data Minimization vs. Bulk Surveillance).",
                 "Step 3 (Class Roundup - 3 mins): One student explains why 'Explainable AI' is mandatory for automated flight control and air traffic advisory tools."
               ],
               "deliverable": "Clear spoken definition of 1 ethical AI principle and 1 algorithmic risk concept during the teacher check.",
@@ -20499,7 +20485,7 @@
               ],
               "instructions": [
                 "Step 1 (Headline Scan - 3 mins): Read the 3 real-world smart airport news prompts with your partner. Discuss which biometric technology has the greatest operational benefit.",
-                "Step 2 (Memory Recall - 4 mins): Without looking at notes, take turns defining the 4 key distinction terms below (Facial Recognition vs. Contactless Iris Scanning, Data Sovereignty vs. Centralized Cloud, IATA One ID vs. Legacy Boarding Passes, False Acceptance Rate [FAR] vs. False Rejection Rate [FRR]).",
+                "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Facial Recognition vs. Contactless Iris Scanning, Data Sovereignty vs. Centralized Cloud, IATA One ID vs. Legacy Boarding Passes, False Acceptance Rate [FAR] vs. False Rejection Rate [FRR]).",
                 "Step 3 (Class Roundup - 3 mins): One pair shares their definition of Data Sovereignty with the class."
               ],
               "deliverable": "Clear spoken definition of 1 biometric passenger technology and 1 privacy protection concept during the teacher check.",
@@ -20709,7 +20695,7 @@
                 "🎯 FE3 Milestone Prep"
               ],
               "instructions": [
-                "Step 1 (Audio Pronunciation Drill - 4 mins): Click through the 18 key technical vocabulary items to hear authentic pronunciation. Practice repeating aloud with your partner.",
+                "Step 1 (Audio Pronunciation Drill): Click through the 18 key technical vocabulary items to hear authentic pronunciation. Practice repeating aloud with your partner.",
                 "Step 2 (Rapid Definition Test - 4 mins): Test your partner on 3 random terms from the word cloud (e.g., contactless e-Gate, encryption key, single token travel).",
                 "Step 3 (Exit Summary - 2 mins): Write down two target biometric vocabulary terms and one relative clause structure you will use in your FE3 presentation."
               ],
@@ -21014,7 +21000,7 @@
                 "🎯 Operational Acronyms"
               ],
               "instructions": [
-                "Step 1 (Headlines - 3 mins): In pairs, discuss the headline prompts: \"What airline or air traffic management story made news this week?\"",
+                "Step 1 (City Headlines): In pairs, discuss the headline prompts: \"What airline or air traffic management story made news this week?\"",
                 "Step 2 (Quick Check - 4 mins): Take turns testing each other on the 4 aviation distinctions (e.g. Ground Handler vs. Turnaround Coordinator) without revealing answers.",
                 "Step 3 (Check - 3 mins): Click \"Reveal Answer\" to verify the exact ICAO/operational definitions."
               ],
@@ -22164,7 +22150,7 @@
                 "🎯 Positional Clarity"
               ],
               "instructions": [
-                "Step 1 (Rule Dissection - 5 mins): Study the 4 preposition categories (Position, Movement/Direction, Relative Location, Aerodrome Proximity).",
+                "Step 1 (Rule Review): Study the 4 preposition categories (Position, Movement/Direction, Relative Location, Aerodrome Proximity).",
                 "Step 2 (Interactive Challenge - 8 mins): Complete the 4 airfield spatial scenarios individually, selecting the exact preposition required by ICAO standards.",
                 "Step 3 (Peer Rationale Check - 7 mins): Click 'Verify Rationale' to review the safety justification. Explain why ambiguous prepositions cause runway incursions."
               ],
@@ -22259,7 +22245,6 @@
               },
               "modeBadges": [
                 "📻 Airside Movement Workshop",
-                "⏱️ 12 min group work + 18 min simulation",
                 "🗺️ Taxiway Markings & Signs",
                 "🗣️ Taxi Routing Briefing"
               ],
@@ -22998,14 +22983,13 @@
               },
               "modeBadges": [
                 "👥 Apron News & Spot-Check",
-                "⏱️ 5 min pairs + 5 min plenary",
                 "🗣️ Airside Vocabulary",
                 "✈️ Turnaround Briefing"
               ],
               "instructions": [
                 "Step 1 (News Review - 3 mins): Review the Apron Operations and Ground Safety news headlines with your partner.",
                 "Step 2 (Markings Recall - 4 mins): Take turns quizzing each other on 3 aerodrome markings from Session 2 (Holding Position, Taxiway Centerline, ILS Critical Area).",
-                "Step 3 (Spot-Check - 3 mins): Formulate a precise operational definition for one pair of terms when called upon by the instructor."
+                "Step 3 (Spot-Check): Formulate a precise operational definition for one pair of terms when called upon by the instructor."
               ],
               "deliverable": "Spoken explanation of one ground handling news item and an accurate Session 2 aerodrome markings definition.",
               "teacherNotes": "Cold-call pairs. Probe beyond basic definitions: ask why confusing an enhanced centerline with a standard centerline creates a runway incursion risk."
@@ -25061,7 +25045,6 @@
             "openingSession": {
               "modeBadges": [
                 "👥 Aerodynamic Spot-Check",
-                "⏱️ 5 min pairs + 5 min plenary",
                 "🎯 Flight Physics Quick Check"
               ],
               "instructions": [

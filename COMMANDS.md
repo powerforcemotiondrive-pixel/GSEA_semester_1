@@ -19,6 +19,7 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 | **`Promo Admin: ...`** | **Inline Cohort Reconfiguration**<br>e.g. `Promo Admin: Promotion GSEA26A, Semester 1, Groups 2, A - 10 B - 9, Teachers AG 2 AT 2` | Same as above, but configured entirely inline in the chat prompt without editing markdown files. |
 | **`Media Update`** | **Weekly Media & Film Strip Update**<br>Attach or paste CSV with 5 links + statement. | • Updates Teachers Portal noticeboard & BBC articles<br>• Updates General Culture & Cinema (3 IMDb films)<br>• Rebuilds SCORM + ISO + DMG packages & commits |
 | **`Commit`**<br>*(or `Commit changes`)* | **Single-Step Remote Sync** | Atomically runs `git commit` AND `git push origin main` together, updating GitHub and GitHub Pages live. |
+| **`Audit S1/2/3 AT/AG/AP/AAS M1/2/3 Ss 1/2/3`**<br>*(e.g. `Audit S1 AG M1 Ss 3`, `Audit Semester 1 Mod 1 AG Ss 3`)* | **Automated Session Audit &amp; A4 PDF Worksheet Setup** | • 8-point automated audit of session quality<br>• Thematic relevance &amp; subject drift scan<br>• 2-Hour classroom sufficiency gauge<br>• Zero academic jargon &amp; zero timings scan<br>• Verifies &amp; sets up exact 7-page A4 PDF worksheet |
 
 ---
 
@@ -87,6 +88,26 @@ Type these exact phrases directly in chat with the Antigravity assistant:
    - `portfolio.html` (Student dropdown selector)
    - All 4 packages rebuilt (`SCORM.zip`, `SCORM_MOODLE.zip`, `.iso`, `.dmg`)
    - Auto-committed and pushed to GitHub.
+
+---
+
+### D. Automated Session Audit & A4 PDF Worksheet Setup (`Audit S... / Audit Semester ...`)
+**When to use**: Whenever auditing lesson content, checking 2-hour classroom sufficiency, scanning for prohibited jargon or timestamps, or setting up the official 7-page A4 PDF worksheet.
+
+1. Type in chat (or run in terminal):
+   ```text
+   Audit S1 AG M1 Ss 3
+   ```
+   *(or `Audit Semester 1 Mod 1 AG Ss 3`, `npm run audit -- "Audit S3 AT M1 S5"`)*
+2. **What the audit engine validates**:
+   - **Thematic Relevance & Subject Drift**: Analyzes key terms and exercise tasks to detect topic drift.
+   - **2-Hour Classroom Sufficiency Gauge**: Verifies 6 communicative stages (`🟢 Optimal`, `🟡 Light`, or `🔴 Deficient`).
+   - **1:1 Title Parity**: Validates strict title alignment across course data, admin hub, and standalone admin portal.
+   - **Zero Jargon**: Enforces plain B2 English and flags prohibited pedagogical labels or the word "faculty".
+   - **Zero Timings**: Enforces teacher pacing autonomy by flagging rigid minute breakdowns and timer emojis.
+   - **Active Listening Checklist**: Validates peer checklists for speaking simulations.
+   - **Digital Worksheet & Auto-Saving Notes**: Validates `window.saveLessonNote` textareas and official PDF download button.
+   - **7-Page A4 PDF Worksheet**: Verifies exact 7/7 page count via macOS PDFKit and checks `imsmanifest.xml`.
 
 ---
 

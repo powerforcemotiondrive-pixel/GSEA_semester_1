@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 3 Lesson Worksheet - Overtourism &amp; Tourism Policy</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 1 General English (AG • LV101E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.5pt;
+      line-height: 1.35;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0369a1;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 15pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 800;
+      color: #0369a1;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.5pt;
+      font-weight: 750;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+
+    p {
+      margin-bottom: 4px;
+      color: #334155;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 7px 9px;
+      margin-bottom: 6px;
+      page-break-inside: avoid;
+    }
+
+    .card-tint-sky {
+      background: #f0f9ff;
+      border-color: #bae6fd;
+    }
+
+    .card-tint-amber {
+      background: #fffbeb;
+      border-color: #fde68a;
+    }
+
+    .card-tint-emerald {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+
+    .card-tint-slate {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 6.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 1.5px 5px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-primary {
+      background: #0284c7;
+      color: #ffffff;
+    }
+
+    .badge-amber {
+      background: #d97706;
+      color: #ffffff;
+    }
+
+    .badge-emerald {
+      background: #059669;
+      color: #ffffff;
+    }
+
+    .badge-rose {
+      background: #e11d48;
+      color: #ffffff;
+    }
+
+    /* Tables */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin-top: 3px;
+    }
+
+    .data-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 4px 6px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .data-table td {
+      padding: 3.5px 6px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    .data-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    /* Instruction Box */
+    .instruction-box {
+      background: #f0f9ff;
+      border-left: 3px solid #0284c7;
+      padding: 5px 8px;
+      margin-bottom: 6px;
+      border-radius: 0 4px 4px 0;
+      font-size: 7.5pt;
+    }
+
+    .instruction-box ol {
+      padding-left: 13px;
+      margin-top: 2px;
+    }
+
+    .instruction-box li {
+      margin-bottom: 1.5px;
+      color: #334155;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+      margin-bottom: 6px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 5px;
+      margin-bottom: 6px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 4px;
+      padding: 3.5px 5px;
+      background: #ffffff;
+      border: 1px solid #bae6fd;
+      border-radius: 4px;
+      margin-bottom: 2.5px;
+      font-size: 7.5pt;
+    }
+
+    .checkbox {
+      width: 10px;
+      height: 10px;
+      border: 1.2px solid #0284c7;
+      border-radius: 2px;
+      margin-top: 1.5px;
+      flex-shrink: 0;
+    }
+
+    .writing-line {
+      border-bottom: 1px dashed #cbd5e1;
+      height: 18px;
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 1: COVER, SUMMARY, OBJECTIVES & WORKSHEET INDEX               -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S1 • AG LV101E • SESSION 3</span>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #0284c7, #0f172a); color: white; padding: 10px 14px; border-radius: 6px; margin-bottom: 8px;">
+      <div style="font-size: 7.5pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #bae6fd; margin-bottom: 2px;">
+        General English • Module 1 (Travel, Transport &amp; Leisure)
+      </div>
+      <h1 style="color: white; margin-bottom: 1px;">Session 3: Overtourism &amp; Tourism Policy</h1>
+      <p style="color: #e0f2fe; font-size: 8pt; line-height: 1.3; margin-bottom: 0;">
+        Managing Visitor Numbers, Protecting Local Communities &amp; Municipal Regulations in Spoken English
+      </p>
+    </div>
+
+    <!-- Student Details Bar -->
+    <div class="card card-tint-slate" style="padding: 5px 8px; margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; font-size: 7.5pt;">
+        <div><strong>Student:</strong> ___________________________________</div>
+        <div><strong>Group:</strong> GSEA25_ (A / B)</div>
+        <div><strong>Date:</strong> ___________________</div>
+        <div><strong>Partner:</strong> _____________________</div>
+      </div>
+    </div>
+
+    <!-- Lesson Summary -->
+    <div class="card card-tint-sky" style="border-left: 3px solid #0284c7; padding: 6px 8px; margin-bottom: 6px;">
+      <h3 style="color: #0369a1; font-size: 8.5pt; margin-bottom: 2px;">📌 Lesson Summary &amp; Spoken English Context</h3>
+      <p style="font-size: 7.5pt; line-height: 1.35; margin-bottom: 0;">
+        In this 2-hour communicative session, students examine the international crisis of mass tourism across Europe and global fragile ecosystems. Working in collaborative pairs and stakeholder teams, students evaluate carrying capacity data in Venice, Dubrovnik, and Amsterdam, pitch municipal regulations (daily entrance levies, cruise bans, Airbnb quotas) to the city mayor, master causatives of authority and contrast connectors, and resolve a high-stakes resource shortage in the Isla Serena DDRS simulation.
+      </p>
+    </div>
+
+    <!-- Objectives Grid -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="font-size: 8.5pt; color: #0f172a; margin-bottom: 4px;">🎯 Session Objectives (CEFR B2 Communicative Competencies)</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width: 8%;">#</th>
+            <th style="width: 32%;">Target Competency</th>
+            <th>Operational Learning Outcome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01</strong></td>
+            <td><strong>Core Vocabulary</strong></td>
+            <td>Accurately use 18 mass tourism terms (carrying capacity, visitor dispersal, honey-pot destination, tourist levy) in debate.</td>
+          </tr>
+          <tr>
+            <td><strong>02</strong></td>
+            <td><strong>Fluency &amp; Paraphrasing</strong></td>
+            <td>Describe acute tourism pressures and resident displacement under time pressure without stumbling.</td>
+          </tr>
+          <tr>
+            <td><strong>03</strong></td>
+            <td><strong>Grammar: Causatives</strong></td>
+            <td>Explain municipal authority and enforcement rules using structures like <em>have/make someone do</em> and <em>require to</em>.</td>
+          </tr>
+          <tr>
+            <td><strong>04</strong></td>
+            <td><strong>Grammar: Contrast</strong></td>
+            <td>Balance economic revenue against social and ecological harm using connectors (<em>despite, in spite of, whereas</em>).</td>
+          </tr>
+          <tr>
+            <td><strong>05</strong></td>
+            <td><strong>Spoken Pronunciation</strong></td>
+            <td>Place correct syllable stress on policy words (<em>ca-PA-ci-ty, re-gu-la-TO-ry, de-mar-ke-ting, sa-tu-RA-tion</em>).</td>
+          </tr>
+          <tr>
+            <td><strong>06</strong></td>
+            <td><strong>Stakeholder Negotiation</strong></td>
+            <td>Defend stakeholder interests (Mayor, Hotelier, Farmer, Regulator) in a 4-way round-table negotiation to reach unanimous accord.</td>
+          </tr>
+          <tr>
+            <td><strong>07</strong></td>
+            <td><strong>Business TOEIC Skills</strong></td>
+            <td>Recognize distractor traps involving causative verbs and contrast prepositions in professional reading tests.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Architecture Index -->
+    <div class="card" style="margin-bottom: 0;">
+      <h3 style="font-size: 8.5pt; color: #0f172a; margin-bottom: 3px;">📑 7-Page Lesson Worksheet Architecture</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width: 10%;">Page</th>
+            <th style="width: 25%;">Session Stage</th>
+            <th style="width: 30%;">Communicative Task</th>
+            <th>Deliverable / Verification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Page 1</strong></td>
+            <td>Overview &amp; Index</td>
+            <td>Syllabus alignment &amp; competencies</td>
+            <td>Readiness verification &amp; group assignment</td>
+          </tr>
+          <tr>
+            <td><strong>Page 2</strong></td>
+            <td>Part 1: Warm-Up</td>
+            <td>City tourism headlines &amp; Session 2 recall</td>
+            <td>Spoken definition of modal shift &amp; externalities</td>
+          </tr>
+          <tr>
+            <td><strong>Page 3</strong></td>
+            <td>Part 2: Capacity Matrix</td>
+            <td>Venice, Amsterdam, Dubrovnik, Maya Bay data</td>
+            <td>Comparative evaluation of tourist pressure</td>
+          </tr>
+          <tr>
+            <td><strong>Page 4</strong></td>
+            <td>Part 3: Policy Pitch</td>
+            <td>Council pitch &amp; commercial objection defense</td>
+            <td>Partner B active listening checklist &amp; compromise</td>
+          </tr>
+          <tr>
+            <td><strong>Page 5</strong></td>
+            <td>Part 4: Grammar Clinic</td>
+            <td>Causatives of authority &amp; contrast prepositions</td>
+            <td>Sentence transformation &amp; TOEIC challenge check</td>
+          </tr>
+          <tr>
+            <td><strong>Page 6</strong></td>
+            <td>Part 5: DDRS Simulation</td>
+            <td>Isla Serena emergency water shortage summit</td>
+            <td>Signed 4-point Water Allocation Accord table</td>
+          </tr>
+          <tr>
+            <td><strong>Page 7</strong></td>
+            <td>Part 6: Wrap-Up</td>
+            <td>18-term glossary &amp; Taboo fluency game</td>
+            <td>Personal learning log &amp; pronunciation audit</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 2: PART 1 — TOURISM NEWS & SESSION 2 RETRIEVAL                -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S1 • AG LV101E • SESSION 3</span>
+    </div>
+
+    <h2>Part 1: Tourism Policy News &amp; Session 2 Vocabulary Review</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions &amp; Action Steps:</strong>
+      <ol>
+        <li><strong>Step 1 (City Headlines):</strong> In pairs, discuss the two municipal headlines below. Ask your partner: <em>"Which measure addresses root causes rather than symptoms?"</em></li>
+        <li><strong>Step 2 (Memory Recall):</strong> Without consulting notes, interview your partner on 2 transport economics concepts from Session 2 (modal shift, externalities, decarbonization).</li>
+        <li><strong>Step 3 (Spot-Check):</strong> Check definitions against the verification box below and record your self-assessment score.</li>
+      </ol>
+    </div>
+
+    <!-- Headlines Grid -->
+    <div class="card card-tint-amber" style="margin-bottom: 6px;">
+      <h3 style="color: #92400e; font-size: 8.5pt; margin-bottom: 3px;">📰 City Tourism Headlines in the International Press</h3>
+      <div class="grid-2">
+        <div style="background: white; padding: 6px 8px; border-radius: 4px; border: 1px solid #fde68a;">
+          <strong style="color: #b45309; font-size: 8pt; display: block; margin-bottom: 2px;">Headline A: Venice Expands €5 Day-Tripper Access Ticket</strong>
+          <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 2px;">
+            Venice municipal council voted to double the pilot €5 entry fee to €10 on peak holiday weekends. City officials claim the levy deters short-stay crowds, but resident associations protest that it transforms their living city into a commercial theme park.
+          </p>
+          <span style="font-size: 7pt; font-weight: 700; color: #92400e;">Speaking Prompt: Can an entry ticket genuinely manage city crowding?</span>
+        </div>
+        <div style="background: white; padding: 6px 8px; border-radius: 4px; border: 1px solid #fde68a;">
+          <strong style="color: #b45309; font-size: 8pt; display: block; margin-bottom: 2px;">Headline B: Amsterdam Freezes Central Hotel Construction</strong>
+          <p style="font-size: 7.5pt; color: #78350f; margin-bottom: 2px;">
+            Amsterdam has banned all new hotel development and capped annual river cruise dockings. The city plans to relocate its sea cruise terminal outside the historic centre by 2035 to protect residential neighborhoods from street nuisance and overcrowding.
+          </p>
+          <span style="font-size: 7pt; font-weight: 700; color: #92400e;">Speaking Prompt: Why are European capitals switching from promotion to containment?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lexis Recall Grid -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="font-size: 8.5pt; color: #0f172a; margin-bottom: 4px;">🧠 Session 2 Vocabulary Retrieval Quick Check</h3>
+      <div class="grid-2">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 5px 7px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+            <strong style="color: #0369a1; font-size: 7.5pt;">Concept 01: Modal Shift</strong>
+            <span class="badge badge-primary">Transport Mode</span>
+          </div>
+          <p style="font-size: 7.5pt; color: #334155; margin-bottom: 2px;"><strong>Partner Question:</strong> What operational change does a modal shift represent?</p>
+          <div style="background: white; border: 1px solid #cbd5e1; border-radius: 3px; padding: 3px 5px; font-size: 7pt; color: #475569;">
+            <strong>Verification:</strong> A switch by passengers or freight from carbon-intensive modes (private cars, short-haul flights) to sustainable rail and transit.
+          </div>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 5px 7px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+            <strong style="color: #0369a1; font-size: 7.5pt;">Concept 02: Decarbonization</strong>
+            <span class="badge badge-primary">Emissions Cut</span>
+          </div>
+          <p style="font-size: 7.5pt; color: #334155; margin-bottom: 2px;"><strong>Partner Question:</strong> How does decarbonization differ from carbon offsetting?</p>
+          <div style="background: white; border: 1px solid #cbd5e1; border-radius: 3px; padding: 3px 5px; font-size: 7pt; color: #475569;">
+            <strong>Verification:</strong> Eliminating greenhouse emissions directly at the source through fleet electrification and SAF, rather than paying for external offsets.
+          </div>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 5px 7px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+            <strong style="color: #0369a1; font-size: 7.5pt;">Concept 03: Externalities</strong>
+            <span class="badge badge-primary">Social Costs</span>
+          </div>
+          <p style="font-size: 7.5pt; color: #334155; margin-bottom: 2px;"><strong>Partner Question:</strong> Why aren't externalities reflected in commercial travel prices?</p>
+          <div style="background: white; border: 1px solid #cbd5e1; border-radius: 3px; padding: 3px 5px; font-size: 7pt; color: #475569;">
+            <strong>Verification:</strong> Unintended side-effects (noise, nitrogen emissions, road wear) paid by society and taxpayers rather than private operators.
+          </div>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 5px; padding: 5px 7px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 2px;">
+            <strong style="color: #0369a1; font-size: 7.5pt;">Concept 04: Lifecycle Assessment (LCA)</strong>
+            <span class="badge badge-primary">Methodology</span>
+          </div>
+          <p style="font-size: 7.5pt; color: #334155; margin-bottom: 2px;"><strong>Partner Question:</strong> What scope does a full lifecycle assessment cover?</p>
+          <div style="background: white; border: 1px solid #cbd5e1; border-radius: 3px; padding: 3px 5px; font-size: 7pt; color: #475569;">
+            <strong>Verification:</strong> Cradle-to-grave analysis evaluating environmental impacts from raw material extraction, through manufacturing and operation, to recycling.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Written Notes Box -->
+    <div class="card" style="margin-bottom: 0;">
+      <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">✍️ Student Spoken Synthesis Notes</h3>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 2px;">Record your partner's answer to: "Why is sustainable tourism governance crucial for local communities?"</p>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 3: PART 2 — DESTINATION PRESSURE MATRIX                       -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S1 • AG LV101E • SESSION 3</span>
+    </div>
+
+    <h2>Part 2: Destination Pressure &amp; Carrying Capacity Matrix</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions &amp; Action Steps:</strong>
+      <ol>
+        <li><strong>Step 1 (Data Comparison):</strong> Examine the 4 destination pressure profiles below. Calculate and compare the ratio of annual visitors to local permanent inhabitants.</li>
+        <li><strong>Step 2 (Comparative Analysis):</strong> Use comparative structures (<em>far more intense, significantly higher ratio, whereas, while</em>) to explain social strains on housing, healthcare, and water.</li>
+        <li><strong>Step 3 (Policy Debate):</strong> In pairs, decide which single municipal measure has generated the most durable community protection.</li>
+      </ol>
+    </div>
+
+    <!-- Destinations Grid -->
+    <div class="grid-2" style="margin-bottom: 6px;">
+      <!-- Venice -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+          <h3 style="color: #0369a1; font-size: 8.5pt;">01. Venice, Italy</h3>
+          <span style="font-size: 7pt; font-weight: 700; color: #64748b;">49,000 residents</span>
+        </div>
+        <div style="font-size: 7.5pt; font-weight: 700; color: #e11d48; margin-bottom: 2px;">Annual Volume: 25+ Million Visitors (Ratio ~ 510:1)</div>
+        <p style="font-size: 7.5pt; margin-bottom: 2px;">
+          <strong>Social Impacts:</strong> Severe residential depopulation (down from 175,000 in 1950), loss of neighborhood grocery stores replaced by souvenir stalls, extreme waterbus crowding.
+        </p>
+        <p style="font-size: 7.5pt; margin-bottom: 0; color: #047857;">
+          <strong>Municipal Measures:</strong> Implemented €5 peak-day entrance fee for day-trippers; banned large cruise liners over 25,000 gross tonnes from the historic Giudecca Canal.
+        </p>
+      </div>
+
+      <!-- Dubrovnik -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+          <h3 style="color: #0369a1; font-size: 8.5pt;">02. Dubrovnik, Croatia</h3>
+          <span style="font-size: 7pt; font-weight: 700; color: #64748b;">41,000 residents</span>
+        </div>
+        <div style="font-size: 7.5pt; font-weight: 700; color: #e11d48; margin-bottom: 2px;">Annual Volume: 1.5 Million Visitors (Walled city: &lt;1,000 residents)</div>
+        <p style="font-size: 7.5pt; margin-bottom: 2px;">
+          <strong>Social Impacts:</strong> "Game of Thrones" filming triggered massive crowd bottlenecks at the medieval Pile Gate; local services completely priced out by seasonal tourism rentals.
+        </p>
+        <p style="font-size: 7.5pt; margin-bottom: 0; color: #047857;">
+          <strong>Municipal Measures:</strong> "Respect the City" programme: capped cruise ship arrivals to a maximum of 4,000 disembarking passengers simultaneously; installed AI crowd tracking cameras.
+        </p>
+      </div>
+
+      <!-- Amsterdam -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+          <h3 style="color: #0369a1; font-size: 8.5pt;">03. Amsterdam, Netherlands</h3>
+          <span style="font-size: 7pt; font-weight: 700; color: #64748b;">880,000 residents</span>
+        </div>
+        <div style="font-size: 7.5pt; font-weight: 700; color: #e11d48; margin-bottom: 2px;">Annual Volume: 20 Million Visitors</div>
+        <p style="font-size: 7.5pt; margin-bottom: 2px;">
+          <strong>Social Impacts:</strong> Nuisance nightlife tourism in the central canal ring; proliferation of short-term holiday rentals drove rent prices up 65% in 8 years.
+        </p>
+        <p style="font-size: 7.5pt; margin-bottom: 0; color: #047857;">
+          <strong>Municipal Measures:</strong> "Stay Away" demographic advertising campaigns; 30-night annual cap on short-term rentals; ban on new central souvenir shops and new hotel construction.
+        </p>
+      </div>
+
+      <!-- Maya Bay -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+          <h3 style="color: #0369a1; font-size: 8.5pt;">04. Maya Bay, Thailand</h3>
+          <span style="font-size: 7pt; font-weight: 700; color: #64748b;">Protected National Park</span>
+        </div>
+        <div style="font-size: 7.5pt; font-weight: 700; color: #e11d48; margin-bottom: 2px;">Peak Influx: 5,000 Visitors / Day on a 250m Beach</div>
+        <p style="font-size: 7.5pt; margin-bottom: 2px;">
+          <strong>Social Impacts:</strong> Boat propellers and toxic chemical sunscreens destroyed over 80% of native coral reefs; blacktip reef shark populations abandoned their natural nursery.
+        </p>
+        <p style="font-size: 7.5pt; margin-bottom: 0; color: #047857;">
+          <strong>Municipal Measures:</strong> Complete 3.5-year closure for ecological regeneration; reopened with a strict 375-visitor hourly cap, mandatory boardwalks, and a boat ban inside the bay.
+        </p>
+      </div>
+    </div>
+
+    <!-- Spoken Comparative Analysis Framework -->
+    <div class="card card-tint-sky" style="margin-bottom: 6px;">
+      <h3 style="color: #0369a1; font-size: 8pt; margin-bottom: 2px;">🗣️ Spoken Comparative Framework &amp; Sentence Connectors</h3>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div>
+          <strong style="color: #0f172a; display: block; margin-bottom: 1px;">Expressing Contrast &amp; Severity:</strong>
+          <ul style="padding-left: 12px; color: #334155;">
+            <li><em>"While Amsterdam struggles with nightlife nuisance, Venice faces..."</em></li>
+            <li><em>"Maya Bay's crisis is purely ecological, whereas Dubrovnik's is..."</em></li>
+            <li><em>"The visitor-to-inhabitant ratio in Venice is dramatically higher than..."</em></li>
+          </ul>
+        </div>
+        <div>
+          <strong style="color: #0f172a; display: block; margin-bottom: 1px;">Evaluating Policy Effectiveness:</strong>
+          <ul style="padding-left: 12px; color: #334155;">
+            <li><em>"An entry fee merely monetizes crowding rather than preventing it."</em></li>
+            <li><em>"A complete seasonal closure proved far more effective because..."</em></li>
+            <li><em>"Without hard legal caps on accommodation, day levies cannot..."</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Pair Comparison Notes -->
+    <div class="card" style="margin-bottom: 0;">
+      <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">✍️ Pair Discussion Deliverable: 45-Second Comparative Statement</h3>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 2px;">Draft your comparative analysis evaluating the effectiveness of two municipal policies:</p>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 4: PART 3 — MUNICIPAL POLICY PITCH & PEER EVALUATION          -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S1 • AG LV101E • SESSION 3</span>
+    </div>
+
+    <h2>Part 3: Pitching New Tourism Policies to the Mayor</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions &amp; Action Steps:</strong>
+      <ol>
+        <li><strong>Step 1 (Policy Selection):</strong> Select one municipal policy proposal from the grid below (Rental Quotas, Peak-Season Entry Levies, or Cruise Docking Bans).</li>
+        <li><strong>Step 2 (Role-Play Simulation):</strong> Partner A acts as the Chief Sustainability Officer delivering a 2-minute pitch to City Council. Partner B acts as the Chamber of Commerce President voicing business objections.</li>
+        <li><strong>Step 3 (Peer Feedback):</strong> Partner B completes the active listening evaluation checklist below. Together, negotiate an amended compromise policy.</li>
+      </ol>
+    </div>
+
+    <!-- Policies Grid -->
+    <div class="grid-3" style="margin-bottom: 6px;">
+      <!-- Policy A -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <span class="badge badge-primary" style="margin-bottom: 2px;">Policy Option A</span>
+        <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">Short-Term Rental Quota (Airbnb Cap)</h3>
+        <p style="font-size: 7pt; color: #334155; margin-bottom: 3px;">
+          Limit residential holiday rentals to a maximum of 30 nights per calendar year per primary residence. Require verified digital municipal licenses to protect housing affordability for nurses, students, and teachers.
+        </p>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 3px; padding: 3px 5px; font-size: 7pt; color: #9f1239;">
+          <strong>Chamber of Commerce Objection:</strong> Infringes on private property ownership and deprives local property owners of supplemental income during inflation.
+        </div>
+      </div>
+
+      <!-- Policy B -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <span class="badge badge-primary" style="margin-bottom: 2px;">Policy Option B</span>
+        <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">€10 Daily Peak-Season Entry Levy</h3>
+        <p style="font-size: 7pt; color: #334155; margin-bottom: 3px;">
+          Levy a €10 daily access charge on all non-resident day-trippers entering the historic perimeter during weekends and bank holidays, collected via regional train tickets and parking terminals.
+        </p>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 3px; padding: 3px 5px; font-size: 7pt; color: #9f1239;">
+          <strong>Chamber of Commerce Objection:</strong> Retailers and restaurateurs fear day-trippers will divert their weekend spending to rival un-tolled neighboring regional towns.
+        </div>
+      </div>
+
+      <!-- Policy C -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <span class="badge badge-primary" style="margin-bottom: 2px;">Policy Option C</span>
+        <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">Mega-Cruise Ship Port Moratorium</h3>
+        <p style="font-size: 7pt; color: #334155; margin-bottom: 3px;">
+          Prohibit passenger vessels exceeding 50,000 gross tonnes from berthing within 10 km of the historic harbour to eliminate heavy bunker fuel emissions and sudden 5,000-passenger crowd surges.
+        </p>
+        <div style="background: #fff1f2; border: 1px solid #fecdd3; border-radius: 3px; padding: 3px 5px; font-size: 7pt; color: #9f1239;">
+          <strong>Chamber of Commerce Objection:</strong> Port authority and provisioning logistics operators lose millions in maritime docking tariffs and vessel refuelling contracts.
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner B Peer Feedback Checklist -->
+    <div class="card card-tint-sky" style="margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #0369a1; font-size: 8pt;">👥 Partner B: Active Listening &amp; Peer Evaluation Checklist</h3>
+        <span style="font-size: 7pt; color: #0284c7; font-weight: 700;">Check criteria met during Partner A's 2-minute pitch</span>
+      </div>
+      <div class="grid-2">
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <div><strong>Clear Municipal Rationale:</strong> Provided at least 2 concrete justifications (protecting housing, reducing street congestion, protecting heritage).</div>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <div><strong>Precise Policy Lexis:</strong> Accurately used at least 3 target terms (<em>carrying capacity, tourist levy, resident displacement, moratorium</em>).</div>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <div><strong>Constructive Rebuttal:</strong> Addressed business objections directly without dismissing commercial concerns or becoming aggressive.</div>
+        </div>
+        <div class="checklist-item">
+          <div class="checkbox"></div>
+          <div><strong>Communicative Delivery:</strong> Maintained audible volume, natural pacing, clear syllable stress, and engaging eye contact.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Pitch & Compromise Notes -->
+    <div class="card" style="margin-bottom: 0;">
+      <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">✍️ Final Policy Compromise Accord (Agreed between Sustainability Office &amp; Chamber)</h3>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 2px;">Summarize the amended terms that protect residents while preserving reasonable local commerce:</p>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 5: PART 4 — GRAMMAR FOCUS: CAUSATIVES & CONTRAST             -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S1 • AG LV101E • SESSION 3</span>
+    </div>
+
+    <h2>Part 4: Grammar Focus — Causatives of Authority &amp; Contrast Connectors</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions &amp; Action Steps:</strong>
+      <ol>
+        <li><strong>Step 1 (Rule Review):</strong> Study the 3 core grammar formulas below for expressing municipal rules and balancing competing viewpoints.</li>
+        <li><strong>Step 2 (Diagnostic Quiz):</strong> Complete the 4 TOEIC-style test questions individually without consulting notes.</li>
+        <li><strong>Step 3 (Oral Transformation):</strong> With your partner, create 2 original sentences applying <em>in spite of</em> and <em>make + bare infinitive</em> to your city policy pitch.</li>
+      </ol>
+    </div>
+
+    <!-- Grammar Rules Grid -->
+    <div class="grid-3" style="margin-bottom: 6px;">
+      <!-- Rule 1: Causatives -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <span class="badge badge-primary" style="margin-bottom: 2px;">Structure 1</span>
+        <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 1px;">Causatives of Authority</h3>
+        <p style="font-size: 7pt; font-family: ui-monospace, Menlo, monospace; color: #0369a1; background: #f0f9ff; padding: 2px 4px; border-radius: 3px; margin-bottom: 3px;">
+          Make + obj + bare V1<br>Require + obj + to-V1<br>Have + obj + done
+        </p>
+        <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+          <strong>Example:</strong> The city council <em>made tour companies limit</em> walking groups to 20 people.<br>
+          <strong>Example:</strong> Officials <em>required hotels to install</em> low-flow water taps.
+        </p>
+      </div>
+
+      <!-- Rule 2: Despite / In Spite Of -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <span class="badge badge-primary" style="margin-bottom: 2px;">Structure 2</span>
+        <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 1px;">Contrast Prepositions</h3>
+        <p style="font-size: 7pt; font-family: ui-monospace, Menlo, monospace; color: #0369a1; background: #f0f9ff; padding: 2px 4px; border-radius: 3px; margin-bottom: 3px;">
+          Despite + noun / gerund<br>In spite of + noun / gerund<br>❌ Never: *despite of
+        </p>
+        <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+          <strong>Example:</strong> <em>Despite higher tourist taxes</em>, hotel occupancy reached 94%.<br>
+          <strong>Example:</strong> <em>In spite of banning</em> cruise ships, retail sales remained steady.
+        </p>
+      </div>
+
+      <!-- Rule 3: Whereas / While -->
+      <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+        <span class="badge badge-primary" style="margin-bottom: 2px;">Structure 3</span>
+        <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 1px;">Concession Clauses</h3>
+        <p style="font-size: 7pt; font-family: ui-monospace, Menlo, monospace; color: #0369a1; background: #f0f9ff; padding: 2px 4px; border-radius: 3px; margin-bottom: 3px;">
+          Clause 1, whereas + Clause 2<br>While + Clause 1, Clause 2
+        </p>
+        <p style="font-size: 7.5pt; color: #334155; margin-bottom: 0;">
+          <strong>Example:</strong> Hoteliers celebrated peak summer revenue, <em>whereas local residents struggled</em> with nighttime noise.<br>
+          <strong>Example:</strong> <em>While day-trippers spend little</em>, they consume public services.
+        </p>
+      </div>
+    </div>
+
+    <!-- Diagnostic Practice Quiz -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="font-size: 8.5pt; color: #0f172a; margin-bottom: 3px;">📝 Interactive Grammar Challenge (TOEIC Parts 5 &amp; 6 Traps)</h3>
+      <div class="grid-2">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px 6px;">
+          <p style="font-size: 7.5pt; font-weight: 700; color: #0f172a; margin-bottom: 2px;">
+            1. __________ the daily visitor cap, historic canal bridges remained congested during the holiday.
+          </p>
+          <div style="font-size: 7pt; color: #475569; margin-bottom: 2px;">
+            (A) In spite of &nbsp;&nbsp; (B) Although &nbsp;&nbsp; (C) Because of &nbsp;&nbsp; (D) Whereas
+          </div>
+          <div style="font-size: 7pt; color: #059669; font-weight: 700;">
+            ✓ Key: (A) — Followed by noun phrase ("the daily visitor cap"). (B) requires subject + verb.
+          </div>
+        </div>
+
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px 6px;">
+          <p style="font-size: 7.5pt; font-weight: 700; color: #0f172a; margin-bottom: 2px;">
+            2. The municipal council __________ apartment owners register holiday rentals on an official database.
+          </p>
+          <div style="font-size: 7pt; color: #475569; margin-bottom: 2px;">
+            (A) made &nbsp;&nbsp; (B) required &nbsp;&nbsp; (C) let &nbsp;&nbsp; (D) had
+          </div>
+          <div style="font-size: 7pt; color: #059669; font-weight: 700;">
+            ✓ Key: (B) — Follows pattern "require + object + to-infinitive". "Make" takes bare infinitive.
+          </div>
+        </div>
+
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px 6px;">
+          <p style="font-size: 7.5pt; font-weight: 700; color: #0f172a; margin-bottom: 2px;">
+            3. Overnight guests support cultural museums, __________ day-trippers rarely purchase museum tickets.
+          </p>
+          <div style="font-size: 7pt; color: #475569; margin-bottom: 2px;">
+            (A) despite &nbsp;&nbsp; (B) in spite &nbsp;&nbsp; (C) whereas &nbsp;&nbsp; (D) because
+          </div>
+          <div style="font-size: 7pt; color: #059669; font-weight: 700;">
+            ✓ Key: (C) — "Whereas" links two complete contrasting clauses with balanced syntax.
+          </div>
+        </div>
+
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 4px 6px;">
+          <p style="font-size: 7.5pt; font-weight: 700; color: #0f172a; margin-bottom: 2px;">
+            4. Port authorities __________ cruise operators reschedule arrivals to avoid simultaneous docking surges.
+          </p>
+          <div style="font-size: 7pt; color: #475569; margin-bottom: 2px;">
+            (A) caused &nbsp;&nbsp; (B) forced to &nbsp;&nbsp; (C) made &nbsp;&nbsp; (D) allowed
+          </div>
+          <div style="font-size: 7pt; color: #059669; font-weight: 700;">
+            ✓ Key: (C) — "Made + operators + reschedule" uses causative of authority without "to".
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sentence Production Space -->
+    <div class="card" style="margin-bottom: 0;">
+      <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">✍️ Original Sentence Production (Write 2 Policy Sentences)</h3>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 2px;">Sentence 1 (Use <em>in spite of + noun/gerund</em>):</p>
+      <div class="writing-line"></div>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 2px;">Sentence 2 (Use <em>have/make someone do something</em>):</p>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 6: PART 5 — DDRS SIMULATION: ISLA SERENA WATER CRISIS        -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S1 • AG LV101E • SESSION 3</span>
+    </div>
+
+    <h2>Part 5: DDRS Simulation — The Isla Serena Emergency Water Summit</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions &amp; Action Steps:</strong>
+      <ol>
+        <li><strong>Step 1 (Crisis Briefing):</strong> Review the emergency dossier below. A 14-month drought has reduced island aquifers to an alarming 18% capacity while luxury resorts consume 800 L / guest / day.</li>
+        <li><strong>Step 2 (Role Allocation):</strong> In teams of 4, assign roles (Mayor, Hotelier, Farmer, Environmental Regulator). Prepare your non-negotiable mandates.</li>
+        <li><strong>Step 3 (Emergency Summit):</strong> Negotiate the Emergency Water Allocation Accord table below. Reach unanimous consensus across all 3 policy domains.</li>
+      </ol>
+    </div>
+
+    <!-- Crisis Dossier Card -->
+    <div class="card card-tint-amber" style="margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px;">
+        <h3 style="color: #92400e; font-size: 8.5pt;">🚨 Emergency Crisis Dossier: Isla Serena Summer Drought</h3>
+        <span class="badge badge-amber">Aquifer Shortage: 18% Capacity</span>
+      </div>
+      <p style="font-size: 7.5pt; color: #78350f; line-height: 1.35; margin-bottom: 4px;">
+        <strong>Situation:</strong> Isla Serena (Mediterranean island; permanent population: 24,000) experiences an August influx of 120,000 tourists. A 14-month drought has collapsed municipal reservoirs. Luxury coastal hotel resorts consume 800 liters of water per guest per day for private pools and tropical gardens, while local resident households face water cuts capped at 90 liters per person per day. Simultaneously, airport operators have proposed expanding the runway by 600 meters onto agricultural citrus groves to welcome wide-body long-haul jets.
+      </p>
+      <div class="grid-4" style="margin-bottom: 0;">
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 3px 5px; text-align: center;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #92400e; display: block;">Aquifer Level</span>
+          <strong style="font-size: 9pt; color: #dc2626;">18% (Critical)</strong>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 3px 5px; text-align: center;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #92400e; display: block;">Resort Consumption</span>
+          <strong style="font-size: 9pt; color: #dc2626;">800 L / guest / day</strong>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 3px 5px; text-align: center;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #92400e; display: block;">Resident Quota</span>
+          <strong style="font-size: 9pt; color: #0284c7;">90 L / resident / day</strong>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 3px 5px; text-align: center;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #92400e; display: block;">Runway Proposal</span>
+          <strong style="font-size: 9pt; color: #b45309;">+600m on Farmland</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stakeholder Roles Grid -->
+    <div class="grid-2" style="margin-bottom: 6px;">
+      <div class="card" style="border-left: 3px solid #0284c7; margin-bottom: 0;">
+        <strong style="color: #0369a1; font-size: 7.5pt; display: block; margin-bottom: 1px;">Role A: The Town Mayor (Chair)</strong>
+        <p style="font-size: 7pt; color: #334155; margin-bottom: 0;">
+          Must preserve municipal tax revenue and seasonal employment, but cannot allow residential taps to run dry. Needs a politically defensible compromise before August municipal elections.
+        </p>
+      </div>
+      <div class="card" style="border-left: 3px solid #d97706; margin-bottom: 0;">
+        <strong style="color: #b45309; font-size: 7.5pt; display: block; margin-bottom: 1px;">Role B: The Hotel Association President</strong>
+        <p style="font-size: 7pt; color: #334155; margin-bottom: 0;">
+          Represents 45 luxury hotels employing 1,500 local staff. Insists high-paying guests demand daily pools and lawns. Strongly supports runway expansion to attract direct premium flights.
+        </p>
+      </div>
+      <div class="card" style="border-left: 3px solid #059669; margin-bottom: 0;">
+        <strong style="color: #047857; font-size: 7.5pt; display: block; margin-bottom: 1px;">Role C: The Organic Citrus Farmer</strong>
+        <p style="font-size: 7pt; color: #334155; margin-bottom: 0;">
+          Produces olive oil and citrus. Demands agricultural water quotas to prevent tree death. Completely opposes runway expansion because it concretes fertile heritage agricultural land.
+        </p>
+      </div>
+      <div class="card" style="border-left: 3px solid #e11d48; margin-bottom: 0;">
+        <strong style="color: #be123c; font-size: 7.5pt; display: block; margin-bottom: 1px;">Role D: Environmental Protection Regulator</strong>
+        <p style="font-size: 7pt; color: #334155; margin-bottom: 0;">
+          Warns that further aquifer pumping risks irreversible saltwater intrusion that will poison the island's groundwater for decades. Demands hard tourism caps and an immediate runway veto.
+        </p>
+      </div>
+    </div>
+
+    <!-- Activity 5 Decision Table: Binding Accord -->
+    <div class="card" style="margin-bottom: 0;">
+      <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">🤝 Emergency Water Allocation Accord (Binding Consensus Table)</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width: 25%;">Policy Domain</th>
+            <th style="width: 28%;">Initial Conflicting Position</th>
+            <th>Agreed Compromise Measure</th>
+            <th style="width: 14%; text-align: center;">Consensus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Hotel Pools &amp; Landscaping</strong></td>
+            <td>100% immediate shutdown demanded vs. unlimited luxury guest consumption.</td>
+            <td>Resorts convert pools to treated seawater; 40% mandatory reduction in irrigation.</td>
+            <td style="text-align: center;"><span class="badge badge-emerald">Agreed</span></td>
+          </tr>
+          <tr>
+            <td><strong>Household Water Quota</strong></td>
+            <td>Rationing capped at 90 L/day vs. basic resident human rights standard.</td>
+            <td>Guaranteed baseline of 120 L/day; mobile desalination barge contracted.</td>
+            <td style="text-align: center;"><span class="badge badge-emerald">Agreed</span></td>
+          </tr>
+          <tr>
+            <td><strong>Airport Runway Expansion</strong></td>
+            <td>Build +600m extension onto citrus groves vs. complete aviation ban.</td>
+            <td>Runway extension cancelled; airport capped at existing traffic with €15 eco-levy.</td>
+            <td style="text-align: center;"><span class="badge badge-emerald">Agreed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- PAGE 7: PART 6 — VOCABULARY GLOSSARY & TABOO FLUENCY GAME          -->
+  <!-- =================================================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Département LH/LAN</span>
+      <span class="ref">GSEA S1 • AG LV101E • SESSION 3</span>
+    </div>
+
+    <h2>Part 6: Vocabulary Wrap-Up, 18 Key Terms &amp; Taboo Fluency Challenge</h2>
+
+    <div class="instruction-box">
+      <strong>Student Instructions &amp; Action Steps:</strong>
+      <ol>
+        <li><strong>Step 1 (Choral Audio Drill):</strong> Review the 18 key overtourism terms below, checking syllable stress and operational definitions.</li>
+        <li><strong>Step 2 (45-Second Taboo Challenge):</strong> Play the fast-paced speaking game in pairs. Describe your target term without uttering any of the 4 forbidden words!</li>
+        <li><strong>Step 3 (Session Learning Log):</strong> Complete your personal reflection log and obtain your partner's signature.</li>
+      </ol>
+    </div>
+
+    <!-- 18 Terms Reference Table -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 3px;">📚 Master Glossary: 18 Key Overtourism Terms</h3>
+      <table class="data-table" style="font-size: 7pt;">
+        <thead>
+          <tr>
+            <th style="width: 20%;">Term &amp; Pronunciation</th>
+            <th style="width: 30%;">Operational Definition</th>
+            <th style="width: 20%;">Term &amp; Pronunciation</th>
+            <th>Operational Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Overtourism</strong> /ˌoʊ.vəˈtʊə.rɪ.zəm/</td>
+            <td>Excessive visitor volume causing social and ecological degradation.</td>
+            <td><strong>Visitor Dispersal</strong> /dɪˈspɜː.səl/</td>
+            <td>Directing tourist crowds away from crowded centres to regional towns.</td>
+          </tr>
+          <tr>
+            <td><strong>Carrying Capacity</strong> /kəˈpæs.ə.ti/</td>
+            <td>Maximum visitors a site sustains without damaging local culture or nature.</td>
+            <td><strong>Honey-Pot Destination</strong> /ˈhʌn.i pɒt/</td>
+            <td>Hyper-popular iconic site drawing disproportionate visitor densities.</td>
+          </tr>
+          <tr>
+            <td><strong>De-Marketing</strong> /diːˈmɑː.kɪ.tɪŋ/</td>
+            <td>Advertising strategies designed to discourage tourist arrivals.</td>
+            <td><strong>Infrastructure Strain</strong> /ˈɪn.frəˌstrʌk.tʃər/</td>
+            <td>Overloading sewage, water, waste disposal, and transport capacity.</td>
+          </tr>
+          <tr>
+            <td><strong>Tourist Levy</strong> /ˈtʊə.rɪst ˈlev.i/</td>
+            <td>Municipal tax charged per visitor night to fund public services.</td>
+            <td><strong>Surge Pricing</strong> /sɜːdʒ ˈpraɪ.sɪŋ/</td>
+            <td>Dynamic pricing raising fees during peak hours to moderate flow.</td>
+          </tr>
+          <tr>
+            <td><strong>Resident Backlash</strong> /ˈbæk.læʃ/</td>
+            <td>Local protests against housing displacement and noise nuisance.</td>
+            <td><strong>Seasonal Quota</strong> /ˈsiː.zən.əl ˈkwoʊ.tə/</td>
+            <td>Enforceable legal limit on tourist entries during peak summer months.</td>
+          </tr>
+          <tr>
+            <td><strong>Short-Term Rental</strong> /ˌʃɔːt tɜːm ˈren.təl/</td>
+            <td>Furnished residential flats leased to tourists rather than locals.</td>
+            <td><strong>Heritage Conservation</strong> /ˈher.ɪ.tɪdʒ/</td>
+            <td>Preserving historical architecture, monuments, and indigenous ways of life.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 45-Second Taboo Challenge Cards -->
+    <div class="card card-tint-amber" style="margin-bottom: 6px;">
+      <h3 style="color: #92400e; font-size: 8pt; margin-bottom: 3px;">🎮 45-Second Taboo Fluency Challenge Cards</h3>
+      <div class="grid-3">
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #b45309; display: block;">TARGET CARD 01</span>
+          <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 2px;">Tourist Levy</strong>
+          <div style="font-size: 6.5pt; color: #dc2626;"><strong>Forbidden:</strong> Tax, Money, Pay, City</div>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #b45309; display: block;">TARGET CARD 02</span>
+          <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 2px;">Carrying Capacity</strong>
+          <div style="font-size: 6.5pt; color: #dc2626;"><strong>Forbidden:</strong> Limit, Maximum, Crowd, Number</div>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #b45309; display: block;">TARGET CARD 03</span>
+          <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 2px;">De-Marketing</strong>
+          <div style="font-size: 6.5pt; color: #dc2626;"><strong>Forbidden:</strong> Discourage, Advertising, Stop, Campaign</div>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #b45309; display: block;">TARGET CARD 04</span>
+          <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 2px;">Resident Backlash</strong>
+          <div style="font-size: 6.5pt; color: #dc2626;"><strong>Forbidden:</strong> Anger, Protest, Local, People</div>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #b45309; display: block;">TARGET CARD 05</span>
+          <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 2px;">Seasonal Quota</strong>
+          <div style="font-size: 6.5pt; color: #dc2626;"><strong>Forbidden:</strong> Summer, Limit, Number, Month</div>
+        </div>
+        <div style="background: white; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px;">
+          <span style="font-size: 6.5pt; font-weight: 700; color: #b45309; display: block;">TARGET CARD 06</span>
+          <strong style="font-size: 8pt; color: #0f172a; display: block; margin-bottom: 2px;">Honey-Pot Site</strong>
+          <div style="font-size: 6.5pt; color: #dc2626;"><strong>Forbidden:</strong> Popular, Famous, Landmark, Crowd</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Learning Log & Self-Assessment -->
+    <div class="card" style="margin-bottom: 0;">
+      <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 2px;">📝 Session 3 Personal Learning Log &amp; Self-Assessment</h3>
+      <div style="display: flex; justify-content: space-between; font-size: 7.5pt; margin-bottom: 2px;">
+        <span><strong>1. Top 3 vocabulary items mastered today:</strong> ________________________________________________________________</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 7.5pt; margin-bottom: 2px;">
+        <span><strong>2. Pronunciation focus (syllable stress / vowel):</strong> _______________________________________________________________</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 7.5pt; margin-bottom: 4px;">
+        <span><strong>3. Grammar distinction to practice:</strong> ________________________________________________________________________</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 7.5pt; border-top: 1px dashed #cbd5e1; padding-top: 3px;">
+        <div><strong>Student Signature:</strong> __________________________</div>
+        <div><strong>Peer Evaluator Signature:</strong> __________________________</div>
+        <div><strong>Teacher Verification:</strong> [ &nbsp; ] Pass</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
