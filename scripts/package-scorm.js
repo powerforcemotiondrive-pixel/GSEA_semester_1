@@ -77,6 +77,7 @@ const includeList = [
   'output.css',
   'data',
   'images',
+  'docs',
   'admin.html',
   'immersion.html',
   'portfolio.html',

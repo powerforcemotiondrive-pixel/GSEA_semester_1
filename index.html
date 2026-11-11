@@ -4947,38 +4947,54 @@
             <div>
               <div class="flex items-center gap-2">
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
-                <span class="text-xs font-bold text-slate-700">AT Module 1 • Session 3</span>
+                <span class="text-xs font-bold text-slate-700">Technical English (AT) • Module 1 • Session 3</span>
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Ground Operations &amp; Turnaround Management</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S1_M1_AT_S3_Lesson_Worksheet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 border border-blue-700 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
               <img src="${hero.image || 'images/turnaround_apron.jpg'}" alt="${hero.title || 'Apron Turnaround'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m1card3.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Apron Servicing Envelope</span>
-                <h2 class="text-base sm:text-xl font-black text-white mt-0.5">${hero.title || 'Ground Operations &amp; Turnaround Management'}</h2>
-                <p class="text-xs text-white/90 mt-1 max-w-2xl">${hero.subtitle || 'Coordinating critical ground handling operations in a 35 to 45-minute servicing window.'}</p>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Apron Servicing Envelope • Critical Path</span>
+                <h2 class="text-base sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Ground Operations &amp; Turnaround Management'}</h2>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 max-w-2xl">${hero.subtitle || 'Coordinating critical ground handling operations in a 35 to 45-minute servicing window.'}</p>
+              </div>
+            </div>
+            <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Target Level:</span>
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B1–B2</span>
+                <span class="text-slate-400">&bull;</span>
+                <span class="font-bold text-slate-800">Operational Focus:</span>
+                <span class="text-slate-600">Apron GSE, Critical Path Coordination &amp; TSEEAC Handover Briefings</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">Total Duration:</span>
+                <span class="font-bold text-slate-900">120 Minutes</span>
               </div>
             </div>
           </div>
 
-          <!-- Activity 1: Aviation News & Previous Session Vocabulary Spot-Check -->
+          <!-- Part 1: Aviation News & Previous Session Vocabulary Spot-Check -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">01</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${opening.title || 'Activity 1: Aviation News &amp; Previous Session Vocabulary Spot-Check'}</h3>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
+                <div>
+                  <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${opening.title || 'Aviation News &amp; Previous Session Vocabulary Spot-Check'}</h3>
+                  <span class="text-[11px] text-slate-500">Opening Warm-Up &amp; Spoken Recall</span>
+                </div>
               </div>
-              <span class="text-[11px] font-semibold text-slate-500">Warm-Up &amp; Catch-Up</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${opening.summary || ''}</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${opening.summary || 'Every class begins with a professional opening: analyzing current aviation headlines and spot-checking vocabulary from our previous session.'}</p>
 
             ${renderActivityInstructions(opening, theme)}
 
@@ -5019,18 +5035,26 @@
                 `).join('')}
               </div>
             </div>
+
+            <!-- Auto-Saving Notes -->
+            <div class="notes-textarea-container pt-2">
+              <label for="notes-at-s3_warmup" class="block text-xs font-bold text-slate-700 mb-1">Your Warm-up &amp; News Observations:</label>
+              <textarea id="notes-at-s3_warmup" oninput="window.saveLessonNote('at-s3_warmup', this.value)" placeholder="Note relevant aviation headlines, aerodrome marking rules, and key vocabulary recalled..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 2: The Turnaround Clock -->
+          <!-- Part 2: The Turnaround Clock & Apron Sequencing -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">02</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${clock.title || 'Activity 2: The Turnaround Clock'}</h3>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
+                <div>
+                  <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${clock.title || 'The Turnaround Clock'}</h3>
+                  <span class="text-[11px] text-slate-500">Critical Path Pacing &amp; Sequencing Tenses</span>
+                </div>
               </div>
-              <span class="text-[11px] font-semibold text-slate-500">Pacing &amp; Tenses</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${clock.summary || ''}</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${clock.summary || 'The turnaround is the critical period between an aircraft parking at the gate (chocks-on) and departing for its next flight (chocks-off).'}</p>
 
             ${renderActivityInstructions(clock, theme)}
 
@@ -5071,14 +5095,23 @@
                 </div>
               </div>
             </div>
+
+            <!-- Auto-Saving Notes -->
+            <div class="notes-textarea-container pt-2">
+              <label for="notes-at-s3_timeline" class="block text-xs font-bold text-slate-700 mb-1">Your Turnaround Timeline &amp; Sequencing Notes:</label>
+              <textarea id="notes-at-s3_timeline" oninput="window.saveLessonNote('at-s3_timeline', this.value)" placeholder="Practice Past Simple vs. Present Perfect sentences (e.g., 'Flight BA342 landed at 14:15, but handlers have not closed the hold yet')..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 3: The 10 Airside Vehicles (GSE) Master Index & Defining Game -->
+          <!-- Part 3: The 10 Airside Vehicles (GSE) Master Index & Defining Game -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-2 border-b border-slate-100 gap-2">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">03</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">Activity 3: Airside Vehicles (GSE) Master Index &amp; Defining Game</h3>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
+                <div>
+                  <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">Airside Vehicles (GSE) Master Index &amp; Defining Game</h3>
+                  <span class="text-[11px] text-slate-500">Defining Language &amp; Operational Functional Clues</span>
+                </div>
               </div>
               <div class="no-print flex items-center gap-1.5">
                 <button type="button" onclick="window.toggleAllVehicles(true)" class="text-[11px] font-bold px-2 py-1 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all cursor-pointer">Show All Answers</button>
@@ -5150,18 +5183,26 @@
                 </div>
               `).join('')}
             </div>
+
+            <!-- Auto-Saving Notes -->
+            <div class="notes-textarea-container pt-2">
+              <label for="notes-at-s3_vehicles" class="block text-xs font-bold text-slate-700 mb-1">Your GSE Defining Practice Notes:</label>
+              <textarea id="notes-at-s3_vehicles" oninput="window.saveLessonNote('at-s3_vehicles', this.value)" placeholder="Draft your defining sentences for high-frequency equipment (pushback tug, belt loader, GPU, refueler bowser)..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 4: Apron Safety & Cause-Effect Linkers -->
+          <!-- Part 4: Apron Safety & Cause-Effect Linkers -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">04</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${delays.title || 'Activity 4: Apron Safety &amp; Cause-Effect Linkers'}</h3>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
+                <div>
+                  <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${delays.title || 'Apron Safety &amp; Cause-Effect Linkers'}</h3>
+                  <span class="text-[11px] text-slate-500">Formal Grammar Clinic &amp; Incident Case Studies</span>
+                </div>
               </div>
-              <span class="text-[11px] font-semibold text-slate-500">Formal Grammar</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${delays.summary || ''}</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${delays.summary || 'Every minute on the ramp is strictly accounted for. When an unexpected incident occurs, operational staff must communicate the root cause and immediate consequence clearly.'}</p>
 
             ${renderActivityInstructions(delays, theme)}
 
@@ -5206,39 +5247,85 @@
                 </div>
               `).join('')}
             </div>
+
+            <!-- Auto-Saving Notes -->
+            <div class="notes-textarea-container pt-2">
+              <label for="notes-at-s3_linkers" class="block text-xs font-bold text-slate-700 mb-1">Your Cause-and-Effect Incident Reports:</label>
+              <textarea id="notes-at-s3_linkers" oninput="window.saveLessonNote('at-s3_linkers', this.value)" placeholder="Draft your spoken incident sentences using 'due to', 'owing to', 'consequently', and 'resulted in'..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 5: Operations Simulation & Shift Handover Briefing -->
+          <!-- Part 5: Critical Path Turnaround Decision Matrix (Triage Table) -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">05</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${simulation.title || 'Activity 5: Operations Simulation &amp; Shift Handover'}</h3>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
+                <div>
+                  <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">Turnaround Critical Path Decision Matrix</h3>
+                  <span class="text-[11px] text-slate-500">Concurrent Delay Triage &amp; Recovery Sequencing</span>
+                </div>
               </div>
-              <span class="text-[11px] font-semibold text-slate-500">Collaborative Role-Play &amp; Briefing</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">When multiple operational issues occur simultaneously on stand, operations officers and ramp coordinators must prioritize critical-path items to protect the departure slot (CTOT) while maintaining strict airside safety protocols.</p>
+
+            <!-- Triage Decision Table -->
+            <div class="overflow-x-auto border border-slate-200 rounded-xl shadow-2xs">
+              <table class="w-full text-left text-xs">
+                <thead class="bg-slate-100/80 text-slate-800 font-bold border-b border-slate-200">
+                  <tr>
+                    <th class="p-3">Ramp Hazard / Delay</th>
+                    <th class="p-3">Safety Regulation (EASA ADR / OPS)</th>
+                    <th class="p-3">Operational Trade-off</th>
+                    <th class="p-3">Recommended Triage Action</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                  <tr>
+                    <td class="p-3 font-bold text-rose-900 bg-rose-50/30">Refueling Hold (Delayed Bowser)</td>
+                    <td class="p-3">Passengers may not embark or disembark during fueling unless rescue and firefighting (RFFS) are on alert with unobstructed exit paths.</td>
+                    <td class="p-3">Hold boarding vs. coordinate RFFS supervision on stand.</td>
+                    <td class="p-3 font-semibold text-slate-900">Request mobile fire crew standby; proceed with concurrent boarding via airstairs.</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 font-bold text-amber-900 bg-amber-50/30">Aft Belt Loader Jam</td>
+                    <td class="p-3">Cargo doors cannot remain unlatched without certified ground crew attending the hold.</td>
+                    <td class="p-3">Wait for remote tug vs. reassign forward belt loader.</td>
+                    <td class="p-3 font-semibold text-slate-900">Finish forward cargo immediately; swing forward loader to aft door to clear backlog.</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 font-bold text-blue-900 bg-blue-50/30">GPU Power Breaker Trip</td>
+                    <td class="p-3">Aircraft air-conditioning and cabin avionics drop offline; APU start permitted only with fire guard.</td>
+                    <td class="p-3">APU fuel burn vs. passenger discomfort in hot cabin.</td>
+                    <td class="p-3 font-semibold text-slate-900">Authorize flight crew to start APU immediately while gate technician inspects yellow cable.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Auto-Saving Decision Notes -->
+            <div class="notes-textarea-container pt-2">
+              <label for="notes-at-s3_decision" class="block text-xs font-bold text-slate-700 mb-1">Your Decision Matrix &amp; Pacing Rationale:</label>
+              <textarea id="notes-at-s3_decision" oninput="window.saveLessonNote('at-s3_decision', this.value)" placeholder="Explain how you prioritized the 3 ramp bottlenecks and which recovery sequence you agreed upon with your partner..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
+          </div>
+
+          <!-- Part 6: Operations Simulation & Shift Handover Briefing -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
+                <div>
+                  <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${simulation.title || 'Operations Simulation &amp; Shift Handover'}</h3>
+                  <span class="text-[11px] text-slate-500">Collaborative Role-Play &amp; Spoken Shift Handover</span>
+                </div>
+              </div>
             </div>
 
             ${renderActivityInstructions(simulation, theme)}
             
             <div class="p-3.5 bg-slate-50 rounded-lg border border-slate-200 text-xs text-slate-700 leading-relaxed">
               <span class="font-bold text-slate-900 block mb-1">Operational Situation Report:</span>
-              ${simulation.context || ''}
-            </div>
-
-            <!-- Bottlenecks Grid -->
-            <div class="space-y-2">
-              <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">3 Simultaneous Ramp Bottlenecks:</span>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                ${(simulation.bottlenecks || []).map(b => `
-                  <div class="p-3 rounded-lg bg-rose-50/50 border border-rose-200 text-xs">
-                    <div class="flex items-center gap-1.5 font-bold text-rose-900 mb-1">
-                      <span class="w-4 h-4 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center text-[10px]">${b.id}</span>
-                      <span>${b.title}</span>
-                    </div>
-                    <p class="text-rose-950 text-[11px] leading-relaxed">${b.desc}</p>
-                  </div>
-                `).join('')}
-              </div>
+              ${simulation.context || 'Flight BA342 (Airbus A320) is scheduled for a tight 40-minute turnaround. The aircraft arrived on stand at 14:15. Target off-blocks time is 14:55. Three simultaneous operational complications have just occurred on the ramp.'}
             </div>
 
             <!-- Role Cards -->
@@ -5251,11 +5338,7 @@
               `).join('')}
             </div>
 
-            <div class="p-3 bg-amber-50 rounded-lg border border-amber-200 text-xs text-amber-950 leading-relaxed">
-              <span class="font-bold text-amber-900">Task: </span>${simulation.recoveryInstructions}
-            </div>
-
-            <!-- Authentic Spoken Handover Briefing Sub-Section -->
+            <!-- Authentic Spoken Handover Briefing Framework -->
             <div class="pt-3 border-t border-slate-100 space-y-3">
               <div class="flex items-center justify-between">
                 <span class="text-xs font-bold uppercase tracking-wider text-slate-800">The 60-Second Shift Handover Briefing Framework:</span>
@@ -5281,22 +5364,59 @@
                   </button>
                 </div>
                 <p id="model-handover-text" class="text-xs sm:text-sm text-slate-200 leading-relaxed italic border-l-2 border-amber-400 pl-3">
-                  ${briefing.spokenModel || ''}
+                  ${briefing.spokenModel || 'Stand Charlie-4 is currently servicing Flight BA342 to London Heathrow. Passenger deboarding concluded on schedule at 14:25; however, cargo loading and refueling have been disrupted. Due to an electrical trip on the GPU and an overheated conveyor on the aft belt loader, handlers were forced to request replacement equipment. Consequently, the turnaround is running 15 minutes behind schedule. The replacement loader has just arrived on stand, and fueling is underway. We have coordinated with air traffic services for a revised departure slot at 15:15. Please monitor the final pushback clearance.'}
                 </p>
               </div>
+
+              <!-- Student B / Peer Observer Active Listening Checklist -->
+              <div class="p-4 rounded-xl bg-slate-50 border border-indigo-200 space-y-2.5">
+                <div class="flex items-center justify-between border-b border-indigo-100 pb-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="text-white text-[10px] font-black px-2 py-0.5 rounded bg-indigo-600 shadow-2xs">PEER CHECKLIST</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-indigo-950">Student B / Peer Observer Evaluation:</span>
+                  </div>
+                  <span class="text-[11px] text-slate-500">Active Listening Focus</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
+                  <label class="flex items-start gap-2 p-2 rounded bg-white border border-slate-200 cursor-pointer">
+                    <input type="checkbox" class="mt-0.5 rounded text-indigo-600 focus:ring-indigo-500">
+                    <span><strong>1. Identification:</strong> Stand number, airline, flight number, and aircraft type stated immediately.</span>
+                  </label>
+                  <label class="flex items-start gap-2 p-2 rounded bg-white border border-slate-200 cursor-pointer">
+                    <input type="checkbox" class="mt-0.5 rounded text-indigo-600 focus:ring-indigo-500">
+                    <span><strong>2. Status Report:</strong> Clear distinction between completed vs. pending tasks.</span>
+                  </label>
+                  <label class="flex items-start gap-2 p-2 rounded bg-white border border-slate-200 cursor-pointer">
+                    <input type="checkbox" class="mt-0.5 rounded text-indigo-600 focus:ring-indigo-500">
+                    <span><strong>3. Root Cause Linkers:</strong> Accurate use of <em>due to</em>, <em>owing to</em>, or <em>consequently</em>.</span>
+                  </label>
+                  <label class="flex items-start gap-2 p-2 rounded bg-white border border-slate-200 cursor-pointer">
+                    <input type="checkbox" class="mt-0.5 rounded text-indigo-600 focus:ring-indigo-500">
+                    <span><strong>4. Delivery &amp; ETD:</strong> Revised departure time agreed; calm, professional delivery without hesitations.</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Auto-Saving Notes for Simulation -->
+            <div class="notes-textarea-container pt-2">
+              <label for="notes-at-s3_handover" class="block text-xs font-bold text-slate-700 mb-1">Your 60-Second Handover Briefing Script &amp; Peer Feedback:</label>
+              <textarea id="notes-at-s3_handover" oninput="window.saveLessonNote('at-s3_handover', this.value)" placeholder="Write your spoken shift handover briefing following the 4 steps (Identification, Status, Root Cause, Action & Revised ETD)..." class="w-full h-24 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
             </div>
           </div>
 
-          <!-- Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up -->
+          <!-- Part 7: Vocabulary Review, Pronunciation & Class Wrap-Up -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">06</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${closing.title || 'Activity 6: Vocabulary Review &amp; Class Wrap-Up'}</h3>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 7</span>
+                <div>
+                  <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${closing.title || 'Vocabulary Review &amp; Class Wrap-Up'}</h3>
+                  <span class="text-[11px] text-slate-500">Spoken Consolidation &amp; Personal Study Log</span>
+                </div>
               </div>
-              <span class="text-[11px] font-semibold text-slate-500">10-Min Consolidation</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${closing.summary || ''}</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${closing.summary || 'This final consolidation review reinforces today\'s high-yield vocabulary, syllable stress, and personal learning objectives.'}</p>
 
             ${renderActivityInstructions(closing, theme)}
 
@@ -5315,9 +5435,31 @@
                 </div>
               `).join('')}
             </div>
+
+            <!-- Auto-Saving Reflection Notes -->
+            <div class="notes-textarea-container pt-2 space-y-2">
+              <label for="notes-at-s3_reflection" class="block text-xs font-bold text-slate-700">Personal Session Reflection &amp; Vocabulary Targets:</label>
+              <textarea id="notes-at-s3_reflection" oninput="window.saveLessonNote('at-s3_reflection', this.value)" placeholder="Write down 3 new turnaround terms mastered today, key pronunciation distinctions, and cause-effect patterns to revise..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+              <div class="flex justify-end">
+                <button type="button" onclick="window.clearLessonNotes(['at-s3_warmup', 'at-s3_timeline', 'at-s3_vehicles', 'at-s3_linkers', 'at-s3_decision', 'at-s3_handover', 'at-s3_reflection'])" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 border border-slate-300 transition-all cursor-pointer">
+                  <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                  <span>Clear Session Notes</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       `;
+
+      // Restore auto-saved notes
+      setTimeout(() => {
+        ['at-s3_warmup', 'at-s3_timeline', 'at-s3_vehicles', 'at-s3_linkers', 'at-s3_decision', 'at-s3_handover', 'at-s3_reflection'].forEach(id => {
+          const el = document.getElementById('notes-' + id);
+          if (el && window.loadLessonNote) {
+            el.value = window.loadLessonNote(id) || '';
+          }
+        });
+      }, 50);
     }
 
     function renderLessonContentTabSession4(sessionData, theme) {

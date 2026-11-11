@@ -22871,6 +22871,7 @@
         },
         "3": {
           "session": 3,
+          "title": "Ground Operations & Turnaround",
           "objectives": {
             "title": "Session 3 Objectives - Ground Operations & Turnaround",
             "summary": "By the end of this session, you will be able to discuss aviation current events, clearly describe airside vehicles and their functions, sequence turnaround operations using precise time linkers, explain ramp delays using formal cause-and-effect structures, collaborate in operational problem-solving as an aerodrome operations officer or AFISO, deliver a concise 60-second shift handover briefing, and consolidate key vocabulary.",
@@ -22987,15 +22988,15 @@
                 "✈️ Turnaround Briefing"
               ],
               "instructions": [
-                "Step 1 (News Review - 3 mins): Review the Apron Operations and Ground Safety news headlines with your partner.",
-                "Step 2 (Markings Recall - 4 mins): Take turns quizzing each other on 3 aerodrome markings from Session 2 (Holding Position, Taxiway Centerline, ILS Critical Area).",
+                "Step 1 (News Review): Review the Apron Operations and Ground Safety news headlines with your partner.",
+                "Step 2 (Markings Recall): Take turns quizzing each other on 3 aerodrome markings from Session 2 (Holding Position, Taxiway Centerline, ILS Critical Area).",
                 "Step 3 (Spot-Check): Formulate a precise operational definition for one pair of terms when called upon by the instructor."
               ],
               "deliverable": "Spoken explanation of one ground handling news item and an accurate Session 2 aerodrome markings definition.",
               "teacherNotes": "Cold-call pairs. Probe beyond basic definitions: ask why confusing an enhanced centerline with a standard centerline creates a runway incursion risk."
             },
             "turnaroundClock": {
-              "title": "Activity 2: The Turnaround Clock",
+              "title": "Activity 2: The Turnaround Clock & Critical Path Matrix",
               "summary": "The turnaround is the critical period between an aircraft parking at the gate (chocks-on) and departing for its next flight (chocks-off). Modern regional and short-haul turnarounds typically target a 35 to 45-minute servicing window where multiple teams work simultaneously.",
               "milestones": [
                 {
@@ -23030,7 +23031,7 @@
               ],
               "grammarBox": {
                 "title": "Grammar Focus: Past Simple vs. Present Perfect on the Ramp",
-                "rule": "Use Past Simple for completed actions with a finished time marker (e.g. at 14:10, 10 minutes ago). Use Present Perfect for actions connected to the present, completed recently, or still pending (using already, yet, just).",
+                "rule": "Use Past Simple for completed actions with a finished time marker (e.g. at 14:10, earlier in the shift). Use Present Perfect for actions connected to the present, completed recently, or still pending (using already, yet, just).",
                 "examples": [
                   {
                     "type": "Past Simple",
@@ -23043,15 +23044,14 @@
                 ]
               },
               "modeBadges": [
-                "⏱️ Critical Path Timeline",
-                "⏱️ 5 min analysis + 10 min pairs",
+                "📊 Turnaround Timeline",
                 "✈️ 35-Min Servicing Window",
                 "🗣️ Sequencing Tenses"
               ],
               "instructions": [
-                "Step 1 (Timeline Analysis - 4 mins): Analyze the Turnaround Clock milestones from T-35 (chocks on, engine shutdown) to T+0 (pushback clearance).",
-                "Step 2 (Concurrent Paths - 6 mins): Identify critical path operations that run concurrently: passenger deplaning, baggage offloading, refueling, catering, and cleaning.",
-                "Step 3 (Sequencing Practice - 5 mins): Practice spoken sequencing tenses: describe what must be completed *before* refueling commences and *while* boarding is underway."
+                "Step 1 (Timeline Analysis): Analyze the Turnaround Clock milestones from T-35 (chocks on, engine shutdown) to T+0 (pushback clearance).",
+                "Step 2 (Concurrent Paths): Identify critical path operations that run concurrently: passenger deplaning, baggage offloading, refueling, catering, and cleaning.",
+                "Step 3 (Sequencing Practice): Practice spoken sequencing tenses: describe what must be completed *before* refueling commences and *while* boarding is underway."
               ],
               "deliverable": "Deliver a 45-second spoken briefing describing 3 concurrent ramp operations using sequencing linkers ('simultaneously', 'prior to', 'upon completion of').",
               "teacherNotes": "Emphasize critical path theory: if catering arrives 5 minutes late, why does it cascade into a 20-minute slot loss? Review passive forms ('chocks are inserted', 'fueling is suspended')."
@@ -23239,7 +23239,7 @@
               }
             ],
             "safetyDelays": {
-              "title": "Activity 4: Apron Safety & Cause-Effect Linkers",
+              "title": "Activity 4: Apron Safety Grammar Clinic & Cause-Effect Linkers",
               "summary": "Every minute on the ramp is strictly accounted for. When an unexpected incident occurs, TSEEAC aerodrome operations officers, AFISOs, and ramp coordinators must communicate the root cause and immediate consequence clearly using formal linkers.",
               "linkers": [
                 {
@@ -23290,17 +23290,21 @@
               ],
               "modeBadges": [
                 "🚨 Apron Safety & Incident Analysis",
-                "⏱️ 10 min analysis + 15 min pairs",
+                "🗣️ Spoken Cause-Effect Practice",
                 "✍️ Cause-Effect Linkers",
                 "📋 Root Cause Analysis"
               ],
               "instructions": [
-                "Step 1 (Grammar Review - 5 mins): Review the 4 Cause-Effect grammatical patterns: 'due to / owing to' + noun phrase, 'as a result of', and 'consequently / therefore'.",
-                "Step 2 (Scenario Dissection - 8 mins): Work through the 4 Ramp Incident Case Scenarios (hydraulic fluid spill, FOD on taxiway, wing icing, unauthorized contractor vehicle).",
-                "Step 3 (Spoken Transformation - 7 mins): Deliver the required spoken task for each scenario, transforming the root cause into a professional operational incident report."
+                "Step 1 (Grammar Review): Review the 4 Cause-Effect grammatical patterns: 'due to / owing to' + noun phrase, 'as a result of', and 'consequently / therefore'.",
+                "Step 2 (Scenario Dissection): Work through the 4 Ramp Incident Case Scenarios (hydraulic fluid spill, FOD on taxiway, wing icing, unauthorized contractor vehicle).",
+                "Step 3 (Spoken Transformation): Deliver the required spoken task for each scenario, transforming the root cause into a professional operational incident report."
               ],
               "deliverable": "Spoken delivery of 2 formal incident reports using advanced cause-effect linkers without grammatical slips.",
               "teacherNotes": "Highlight the difference between prepositional linkers ('due to heavy snow') and conjunctive adverbs ('consequently, the apron was closed'). Point out common error: '*due to because'."
+            },
+            "decisionMatrix": {
+              "title": "Turnaround Critical Path Decision Matrix & Triage Table",
+              "summary": "When multiple operational issues occur simultaneously on stand, operations officers and ramp coordinators must prioritize critical-path items to protect the departure slot (CTOT) while maintaining strict airside safety protocols."
             },
             "simulation": {
               "title": "Activity 5: TSEEAC Operations Simulation & Shift Handover Briefing",
@@ -23335,14 +23339,13 @@
               "recoveryInstructions": "Work together in pairs to agree on a prioritized 3-step action plan using modal verbs of necessity and obligation (must, should, have to, need to). Prepare to defend your sequence to the class.",
               "modeBadges": [
                 "📻 TSEEAC Shift Handover Simulation",
-                "⏱️ 12 min prep + 18 min briefings",
                 "🗣️ 60-Second Handover Standard",
                 "🤝 Ramp Crisis Management"
               ],
               "instructions": [
-                "Step 1 (Situation Report - 4 mins): Examine the Operational Situation Report: 3 simultaneous ramp bottlenecks (fuel spill Stand 14, conveyor belt failure Stand 16, lost transfer baggage).",
-                "Step 2 (Role Allocation & Briefing Prep - 8 mins): Partner A acts as Outgoing Ramp Coordinator delivering the 4-part Shift Handover Briefing; Partner B acts as Incoming Ramp Coordinator preparing tactical follow-up questions.",
-                "Step 3 (Simulation & Model Check - 6 mins): Conduct the spoken handover simulation. Review the 60-Second Shift Handover Briefing model or click the audio icon to listen to the speech pronunciation."
+                "Step 1 (Situation Report): Examine the Operational Situation Report: 3 simultaneous ramp bottlenecks (fuel spill Stand 14, conveyor belt failure Stand 16, lost transfer baggage).",
+                "Step 2 (Role Allocation & Briefing Prep): Partner A acts as Outgoing Ramp Coordinator delivering the 4-part Shift Handover Briefing; Partner B acts as Incoming Ramp Coordinator preparing tactical follow-up questions.",
+                "Step 3 (Simulation & Model Check): Conduct the spoken handover simulation. Review the 60-Second Shift Handover Briefing model or click the audio icon to listen to the speech pronunciation."
               ],
               "deliverable": "Flawless delivery of a 60-second spoken shift handover briefing following the 4-part operational standard.",
               "teacherNotes": "Time each student briefing with a stopwatch. Cut them off at exactly 60 seconds to simulate real-world operational pressure. Evaluate for conciseness, calm delivery, and zero filler words."
@@ -23376,7 +23379,7 @@
             },
             "closingReview": {
               "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
-              "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress, and review personal learning objectives.",
+              "summary": "This final consolidation review reinforces today's high-yield vocabulary, syllable stress, and personal learning objectives.",
               "reviewPrompts": [
                 {
                   "title": "1. Rapid-Fire Definition Match",
@@ -23393,14 +23396,14 @@
               ],
               "modeBadges": [
                 "👥 Rapid Vocabulary Drill",
-                "⏱️ 5 min quiz + 5 min reflection",
+                "🎯 Vocabulary Retention",
                 "🗣️ Phonetic Precision",
                 "📝 Self-Assessment Log"
               ],
               "instructions": [
-                "Step 1 (Consolidation - 4 mins): Complete the 3-step vocabulary review: Self-Check Quiz, Flashcard Mode, and Pronunciation Drill.",
-                "Step 2 (Peer Quiz - 3 mins): Test your partner on 4 high-risk operational terms: 'chocks', 'conveyor', 'pushback', 'turnaround'.",
-                "Step 3 (Digital Log - 3 mins): Record your 2 personal areas of strength and 1 target for improvement in the digital notebook."
+                "Step 1 (Consolidation): Complete the 3-step vocabulary review: Self-Check Quiz, Flashcard Mode, and Pronunciation Drill.",
+                "Step 2 (Peer Quiz): Test your partner on 4 high-risk operational terms: 'chocks', 'conveyor', 'pushback', 'turnaround'.",
+                "Step 3 (Digital Log): Record your 2 personal areas of strength and 1 target for improvement in the digital notebook."
               ],
               "deliverable": "Spoken definition of 3 random turnaround terms and completion of the session reflection.",
               "teacherNotes": "Conduct a rapid whole-class choral drill on high-risk pronunciation items: 'chocks', 'hydraulic', 'conveyance', 'turnaround', 'simultaneous'."
@@ -23408,14 +23411,14 @@
             "vehiclesInstruction": {
               "modeBadges": [
                 "👥 GSE Defining Game",
-                "⏱️ 10 min clues + 15 min model sentences",
+                "🎯 Mystery GSE Challenge",
                 "🗣️ Defining Relative Clauses",
                 "🚜 Ground Support Equipment"
               ],
               "instructions": [
-                "Step 1 (Clue Reading - 5 mins): Student A views the vehicle clues and describes its operational role using defining language without stating the vehicle's name.",
-                "Step 2 (Identification & Model - 5 mins): Student B listens, identifies the vehicle, and formulates a complete spoken definition ('This vehicle is designed to...').",
-                "Step 3 (Verify & Audio - 5 mins): Click 'Reveal Vehicle' to check pronunciation, verify the model sentence, and listen to the audio drill. Then swap roles."
+                "Step 1 (Clue Reading): Student A views the vehicle clues and describes its operational role using defining language without stating the vehicle's name.",
+                "Step 2 (Identification & Model): Student B listens, identifies the vehicle, and formulates a complete spoken definition ('This vehicle is designed to...').",
+                "Step 3 (Verify & Audio): Click 'Reveal Vehicle' to check pronunciation, verify the model sentence, and listen to the audio drill. Then swap roles."
               ],
               "deliverable": "Accurately define 4 airside GSE vehicles using relative clauses ('which is used to', 'designed for', 'responsible for').",
               "teacherNotes": "Circulate and listen for correct relative pronouns ('which/that' for equipment, 'who' for personnel). Correct mispronunciation of 'chocks', 'conveyor', and 'hi-lift'."

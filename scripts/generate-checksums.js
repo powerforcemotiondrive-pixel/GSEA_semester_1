@@ -42,12 +42,15 @@ function generateChecksums() {
     'output.css'
   ];
 
-  // Add data/ and images/
+  // Add data/, images/, and docs/
   if (fs.existsSync(path.join(rootDir, 'data'))) {
     scanFiles(path.join(rootDir, 'data'), 'data').forEach(f => targetFiles.push(f));
   }
   if (fs.existsSync(path.join(rootDir, 'images'))) {
     scanFiles(path.join(rootDir, 'images'), 'images').forEach(f => targetFiles.push(f));
+  }
+  if (fs.existsSync(path.join(rootDir, 'docs'))) {
+    scanFiles(path.join(rootDir, 'docs'), 'docs').forEach(f => targetFiles.push(f));
   }
 
   const lines = [

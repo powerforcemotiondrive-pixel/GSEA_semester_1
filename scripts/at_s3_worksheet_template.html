@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 3 Lesson Worksheet - Ground Operations &amp; Turnaround Management</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 1 Technical English (AT • LV121E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.2pt;
+      line-height: 1.32;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 4px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0369a1;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 14pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 10pt;
+      font-weight: 800;
+      color: #0369a1;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    /* Badges & Pills */
+    .badge {
+      display: inline-block;
+      font-size: 6.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 1.5px 5px;
+      border-radius: 3px;
+    }
+
+    .badge-primary { background: #0284c7; color: #ffffff; }
+    .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-emerald { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+    .badge-rose { background: #ffe4e6; color: #9f1239; border: 1px solid #fecdd3; }
+    .badge-slate { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+
+    /* Metadata strip */
+    .meta-strip {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 4px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+      font-size: 7.5pt;
+    }
+
+    /* Card Panels */
+    .panel {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+      background: #ffffff;
+    }
+
+    .panel-sky { background: #f0f9ff; border-color: #bae6fd; }
+    .panel-amber { background: #fffbeb; border-color: #fde68a; }
+    .panel-slate { background: #f8fafc; border-color: #e2e8f0; }
+    .panel-rose { background: #fff1f2; border-color: #fecdd3; }
+
+    /* Grids */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+    }
+
+    .grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 4px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin-top: 4px;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 4px 6px;
+      border: 1px solid #cbd5e1;
+    }
+
+    td {
+      padding: 3.5px 6px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    /* Notes lines */
+    .notes-box {
+      border: 1px dashed #94a3b8;
+      border-radius: 5px;
+      padding: 5px 7px;
+      background: #fdfdfd;
+      margin-top: 5px;
+    }
+
+    .notes-box .notes-label {
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 3px;
+    }
+
+    .writing-line {
+      height: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    /* Checkboxes */
+    .checkbox-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      font-size: 7.5pt;
+      margin-bottom: 3px;
+    }
+
+    .box-square {
+      width: 9px;
+      height: 9px;
+      border: 1px solid #64748b;
+      border-radius: 2px;
+      margin-top: 1.5px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 1: SESSION OVERVIEW, CORE FRAMEWORK & PART 1 WARM-UP                 -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Technical English Portal</span>
+      <span class="ref">REF: ENAC-GSEA-S1-M1-AT-S3</span>
+    </div>
+
+    <h1>Ground Operations &amp; Turnaround Management</h1>
+    <p style="font-size: 8.5pt; color: #475569; margin-bottom: 6px;">
+      Apron Servicing Envelope, Ground Support Equipment (GSE) &amp; Communicative Shift Handover
+    </p>
+
+    <div class="meta-strip">
+      <div><strong>Target Level:</strong> CEFR B1–B2 • TSEEAC Airside Focus</div>
+      <div><strong>Course:</strong> GSEA Semester 1 (AT • LV121E)</div>
+      <div><strong>Duration:</strong> 120 Minutes (Full Block)</div>
+    </div>
+
+    <!-- Section 1: Objectives -->
+    <div class="panel panel-sky" style="margin-bottom: 7px;">
+      <h2><span class="badge badge-primary">01</span> Session Learning Objectives</h2>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Aviation News:</strong> Discuss current commercial apron, airline, and aerodrome headlines fluently.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>GSE Functions:</strong> Define 10 essential airside vehicles using relative clauses without technical jargon.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Turnaround Pacing:</strong> Sequence parallel servicing tasks (fueling, catering, loading) using sequencing tenses.</span></div>
+        </div>
+        <div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Cause-Effect Grammar:</strong> Articulate ramp delays using <em>due to</em>, <em>owing to</em>, <em>consequently</em>, and <em>resulted in</em>.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Triage Table:</strong> Prioritize simultaneous ramp bottlenecks to protect the departure slot (CTOT).</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Shift Handover:</strong> Deliver a concise, professional 60-second verbal shift briefing following the 4-part operational standard.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Part 1 Warm-up -->
+    <div class="panel" style="margin-bottom: 7px;">
+      <h2><span class="badge badge-primary">Part 1</span> Aviation News &amp; Current Events Prompts</h2>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 5px;">Work in pairs. Select one headline prompt and discuss operational ramifications for 3 minutes:</p>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div class="panel panel-slate" style="margin-bottom: 0;">
+          <strong>Headline A: Apron Safety &amp; Ground Damage</strong>
+          <p style="font-size: 7pt; color: #475569; margin-top: 2px;">IATA reports that ground service vehicle collisions with aircraft fuselage skin cause over $5B in annual repairs and unscheduled groundings.</p>
+          <p style="font-size: 7pt; color: #0369a1; font-weight: 700; margin-top: 3px;">Prompt: How do automated proximity sensors on GSE reduce ramp collisions?</p>
+        </div>
+        <div class="panel panel-slate" style="margin-bottom: 0;">
+          <strong>Headline B: Electrification of Ramp Equipment</strong>
+          <p style="font-size: 7pt; color: #475569; margin-top: 2px;">Major European hubs mandate 100% zero-emission electric GSE (tugs, belt loaders, hi-lifts) on parking stands by 2028.</p>
+          <p style="font-size: 7pt; color: #0369a1; font-weight: 700; margin-top: 3px;">Prompt: What charging infrastructure bottlenecks occur during peak wave arrivals?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Session 2 Spot-Check -->
+    <div class="panel" style="margin-bottom: 6px;">
+      <h2><span class="badge badge-primary">Recall</span> Session 2 Airfield Markings Vocabulary Spot-Check</h2>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>1. What distinguishes 'airside' from 'landside'?</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;">Airside encompasses secure aircraft maneuvering corridors (runways, taxiways, aprons); landside covers public terminal zones before security checkpoints.</p>
+        </div>
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>2. What is the operational purpose of taxiway centerline lights?</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;">Green centerline lights provide continuous visual guidance to flight crews taxying between runways and stands, ensuring wingtip obstacle clearance.</p>
+        </div>
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>3. How are runway magnetic headings designated?</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;">Runways are numbered by magnetic azimuth rounded to the nearest 10 degrees (e.g. 09 = 090° East; opposite end is 27 = 270° West).</p>
+        </div>
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>4. What PPE is mandatory on active aprons?</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;">High-visibility vests, hearing protection (ear defenders), safety boots, and official security ID badges (ASIC) displayed at all times.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes -->
+    <div class="notes-box">
+      <div class="notes-label">Your Part 1 News &amp; Spot-Check Vocabulary Notes</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 2: PART 2 THE TURNAROUND CLOCK & APRON NARRATIVE                     -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 2 • THE TURNAROUND CLOCK</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 2</span> The 35–45 Minute Turnaround Critical Path</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      The turnaround (chocks-on to chocks-off) requires strict coordination of ground teams working in parallel. Every task is tied to the critical path.
+    </p>
+
+    <!-- Timeline Milestones Table -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 15%;">Milestone</th>
+          <th style="width: 25%;">Operational Phase</th>
+          <th style="width: 40%;">Core Servicing Actions</th>
+          <th style="width: 20%;">Key Equipment Used</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong style="color: #0284c7;">T+00 to T+05</strong></td>
+          <td><strong>Arrival &amp; Chocks-On</strong></td>
+          <td>Engines spool down; beacons off; wheel chocks positioned; passenger airstairs or jet bridge docked; deboarding commences.</td>
+          <td>Wheel chocks, passenger boarding bridge / airstairs.</td>
+        </tr>
+        <tr>
+          <td><strong style="color: #0284c7;">T+05 to T+20</strong></td>
+          <td><strong>Parallel Servicing</strong></td>
+          <td>Belt loaders docked at cargo doors; catering hi-lifts replenish galleys; GPU connects 400Hz electricity; potable water &amp; lavatory trucks service ports.</td>
+          <td>Belt loaders, GPU, hi-lift trucks, water/lavatory carts.</td>
+        </tr>
+        <tr>
+          <td><strong style="color: #0284c7;">T+15 to T+30</strong></td>
+          <td><strong>Aircraft Refueling</strong></td>
+          <td>Fuel bowser connects high-pressure hoses to underwing valves; cabin crew and fire standby protocols enforced during passenger transit.</td>
+          <td>Aviation refueler (bowser), hydrant dispenser, grounding cable.</td>
+        </tr>
+        <tr>
+          <td><strong style="color: #0284c7;">T+25 to T+35</strong></td>
+          <td><strong>Boarding &amp; Loading</strong></td>
+          <td>Outbound passengers embark; outbound hold baggage and postal freight secured; final loadsheet and weight/balance manifest signed.</td>
+          <td>Passenger bridge, baggage trailers, tug, belt loader.</td>
+        </tr>
+        <tr>
+          <td><strong style="color: #0284c7;">T+35 to T+45</strong></td>
+          <td><strong>Stand Clearance &amp; Pushback</strong></td>
+          <td>Doors armed and cross-checked; jet bridge retracted; towbar connected to nose gear via bypass pin; chocks removed; pushback approved.</td>
+          <td>Pushback tug, towbar / towbarless cradle, marshaller wands.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Grammar Clinic -->
+    <div class="panel panel-sky" style="margin-top: 8px; margin-bottom: 6px;">
+      <h3>Grammar Clinic: Past Simple vs. Present Perfect on the Ramp</h3>
+      <p style="font-size: 7.5pt; color: #0369a1; margin-bottom: 4px;">
+        <strong>Rule:</strong> Use <strong>Past Simple</strong> for completed actions anchored to a finished timestamp (<em>at 14:15</em>, <em>earlier in the shift</em>). Use <strong>Present Perfect</strong> for actions connected to current operational readiness (<em>already</em>, <em>not yet</em>, <em>just</em>).
+      </p>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div style="background: #ffffff; padding: 4px 6px; border-radius: 4px; border: 1px solid #bae6fd;">
+          <strong>Past Simple (Finished Event):</strong>
+          <p style="font-style: italic; color: #1e293b; margin-top: 2px;">"Flight BA342 <strong>landed</strong> at 14:15, and the marshals <strong>inserted</strong> the chocks five minutes later."</p>
+        </div>
+        <div style="background: #ffffff; padding: 4px 6px; border-radius: 4px; border: 1px solid #bae6fd;">
+          <strong>Present Perfect (Operational State):</strong>
+          <p style="font-style: italic; color: #1e293b; margin-top: 2px;">"The catering crew <strong>have already replenished</strong> the galleys, but the baggage handlers <strong>have not latched</strong> the aft cargo hold yet."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discussion Prompts -->
+    <div class="panel panel-amber" style="margin-bottom: 6px;">
+      <h3>Turnaround Coordination Discussion Prompts (Spoken Pairwork)</h3>
+      <ul style="font-size: 7.5pt; padding-left: 14px; color: #78350f;">
+        <li>Why must baggage unloading and cabin catering occur concurrently rather than sequentially?</li>
+        <li>What safety communication must be exchanged between the refueler driver and the flight crew before boarding starts?</li>
+      </ul>
+    </div>
+
+    <!-- Notes Box -->
+    <div class="notes-box">
+      <div class="notes-label">Your Turnaround Timeline &amp; Sequencing Notes (Draft Past Simple &amp; Present Perfect Sentences)</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 3: PART 3 AIRSIDE VEHICLES (GSE) MASTER INDEX & DEFINING GAME         -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 3 • GSE MASTER INDEX</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 3</span> Ground Support Equipment (GSE) Master Index &amp; Defining Practice</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Define equipment by operational function using relative clauses (<em>which / that</em>) and purpose structures (<em>designed to + base verb</em>, <em>used for + -ing</em>).
+    </p>
+
+    <!-- 10 GSE Cards Grid -->
+    <div class="grid-2" style="font-size: 7.5pt;">
+      <!-- Vehicle 1 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>01. Pushback Tug (Tractor)</strong>
+          <span class="badge badge-amber">Motive Power</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /ˈpʊʃ.bæk tʌɡ/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Heavy low-profile vehicle that pushes aircraft backward away from the gate into the taxi lane when main engines cannot provide reverse thrust.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"This vehicle is designed to push heavy aircraft backwards safely using a towbar or cradle."</p>
+      </div>
+
+      <!-- Vehicle 2 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>02. Ground Power Unit (GPU)</strong>
+          <span class="badge badge-primary">Electrical Systems</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /ɡraʊnd ˈpaʊ.ər ˈjuː.nɪt/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Mobile diesel generator or cable boom supplying 115V / 400Hz alternating current to cockpit instruments and cabin systems while engines are shut down.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"It is an external power source which supplies electricity to cabin lights and avionics on stand."</p>
+      </div>
+
+      <!-- Vehicle 3 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>03. Belt Loader</strong>
+          <span class="badge badge-emerald">Baggage &amp; Cargo</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /bɛlt ˈloʊ.dər/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Motorized inclined conveyor ramp used to load and unload loose passenger luggage and postal sacks into lower narrow-body cargo holds.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"It is equipped with a conveyor belt that allows handlers to transfer baggage into the hold."</p>
+      </div>
+
+      <!-- Vehicle 4 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>04. Aviation Refueler Truck (Bowser)</strong>
+          <span class="badge badge-rose">Fueling Operations</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /ˌeɪ.viˈeɪ.ʃən rɪˈfjuː.ə.lər trʌk/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Heavy tanker or hydrant dispenser that pumps thousands of liters of Jet A-1 kerosene into underwing fuel tanks under high pressure.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"It is a specialized tanker which pumps aviation fuel while adhering to grounding safety rules."</p>
+      </div>
+
+      <!-- Vehicle 5 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>05. Passenger Boarding Stairs (Airstairs)</strong>
+          <span class="badge badge-slate">Passenger Access</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /ˈpæs.ən.dʒər ˈbɔːr.dɪŋ steərz/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Adjustable mobile staircase wheeled to aircraft doors to enable passenger embarkation and disembarkation on remote apron parking stands.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"This mobile staircase allows passengers to disembark safely when no jet bridge is available."</p>
+      </div>
+
+      <!-- Vehicle 6 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>06. Catering Hi-Lift Truck</strong>
+          <span class="badge badge-amber">Cabin Servicing</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /ˈkeɪ.tər.ɪŋ ˈhaɪ.lɪft trʌk/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Insulated van body fitted with a hydraulic scissor-lift mechanism that elevates meal carts, beverage drawers, and supplies directly to cabin door sills.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"It is fitted with a scissor lift so that crew can transfer galley meal trolleys safely."</p>
+      </div>
+
+      <!-- Vehicle 7 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>07. Potable Water Truck</strong>
+          <span class="badge badge-primary">Sanitary Utilities</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /ˈpoʊ.tə.bəl ˈwɔː.tər trʌk/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Sanitary stainless-steel tanker vehicle that replenishes aircraft storage tanks with purified drinking water for galley taps and lavatory washbasins.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"It connects to the underside water panel in order to refill fresh drinking water."</p>
+      </div>
+
+      <!-- Vehicle 8 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>08. Lavatory Service Truck</strong>
+          <span class="badge badge-slate">Waste Servicing</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /ˈlæv.ə.tɔːr.i ˈsɜːr.vɪs trʌk/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Utility vehicle equipped with suction hoses and chemical disinfectant tanks that drains, vacuums, and flushes aircraft waste holding tanks.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"This vehicle is responsible for emptying and disinfecting aircraft toilet tanks on stand."</p>
+      </div>
+
+      <!-- Vehicle 9 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>09. De-icing / Anti-icing Rig</strong>
+          <span class="badge badge-rose">Winter Operations</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /diːˈaɪ.sɪŋ rɪɡ/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> Heavy rig with a cherry-picker basket from which operators spray heated glycol fluid under pressure to remove snow, frost, and ice from aerofoils.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"The operator in the basket sprays heated glycol to prevent aerodynamic lift failure."</p>
+      </div>
+
+      <!-- Vehicle 10 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>10. Follow-Me Car</strong>
+          <span class="badge badge-amber">Guidance &amp; Safety</span>
+        </div>
+        <div style="font-size: 7pt; color: #64748b;">Phonetic: /ˈfɑː.loʊ miː kɑːr/</div>
+        <p style="font-size: 7.5pt; margin-top: 2px;"><strong>Function:</strong> High-visibility checkered car with illuminated roof beacons that guides landing aircraft across complex taxiways to assigned stands in low visibility.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #0284c7; margin-top: 2px;">"This safety vehicle leads arriving flights across taxiway intersections to their gate."</p>
+      </div>
+    </div>
+
+    <!-- Notes Box -->
+    <div class="notes-box">
+      <div class="notes-label">Your GSE Defining Practice Notes (Write 2 Definitions Using 'Which' and 'Designed to')</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 4: PART 4 APRON SAFETY & CAUSE-EFFECT LINKERS                        -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 4 • CAUSE-EFFECT LINKERS</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4</span> Apron Safety Grammar Clinic &amp; Incident Case Studies</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Articulate root causes, operational consequences, and knock-on apron delays using formal B2 connectors.
+    </p>
+
+    <!-- Connectors Table -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 25%;">Grammar Function</th>
+          <th style="width: 35%;">Sentence Pattern</th>
+          <th style="width: 40%;">Authentic Ramp Operational Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Cause (Prepositional)</strong></td>
+          <td><code>due to / owing to / because of + [noun phrase]</code></td>
+          <td><em>"<strong>Owing to a sudden hydraulic hose rupture</strong> on the tug, pushback was suspended."</em></td>
+        </tr>
+        <tr>
+          <td><strong>Consequence (Adverbial)</strong></td>
+          <td><code>Consequently, ... / As a result, ... / Therefore, ...</code></td>
+          <td><em>"The refueler arrived 15 minutes late; <strong>consequently</strong>, the aircraft lost its departure slot."</em></td>
+        </tr>
+        <tr>
+          <td><strong>Cause &rarr; Effect (Verbal)</strong></td>
+          <td><code>[Subject] + resulted in [gerund] / led to [noun]</code></td>
+          <td><em>"Severe ice on the slats <strong>resulted in</strong> an unscheduled de-icing procedure."</em></td>
+        </tr>
+        <tr>
+          <td><strong>Operational Condition</strong></td>
+          <td><code>If + Present Simple, [Subject] + will / must + Base Verb</code></td>
+          <td><em>"<strong>If the catering hi-lift does not clear the safety circle</strong>, the towbar cannot be hooked up."</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 4 Ramp Scenarios -->
+    <h3 style="margin-top: 8px; margin-bottom: 4px;">4 Ramp Incident Case Scenarios (Paired Analysis &amp; Verbal Delivery)</h3>
+    <div class="grid-2" style="font-size: 7.5pt;">
+      <!-- Scenario 1 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <strong style="color: #0369a1;">Scenario 1: Hydraulic Fluid Spillage on Stand 12</strong>
+        <p style="font-size: 7pt; color: #991b1b; margin-top: 2px;"><strong>Root Cause:</strong> High-pressure hose burst on pushback tractor during nose-gear connection.</p>
+        <p style="font-size: 7pt; color: #92400e; margin-top: 2px;"><strong>Consequence:</strong> 25-minute movement freeze while safety crews deployed absorbent granules.</p>
+        <p style="font-size: 7pt; font-weight: 700; color: #0f172a; margin-top: 3px;">Spoken Task: Explain using 'due to' and 'resulted in'.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #475569; margin-top: 2px;">Model: "Due to a burst hydraulic hose on the tug, stand operations were halted, which resulted in a 25-minute departure delay."</p>
+      </div>
+
+      <!-- Scenario 2 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <strong style="color: #0369a1;">Scenario 2: FOD Detected on Taxiway Mike</strong>
+        <p style="font-size: 7pt; color: #991b1b; margin-top: 2px;"><strong>Root Cause:</strong> Metal cargo container latch dropped from baggage trailer onto taxiway centerline.</p>
+        <p style="font-size: 7pt; color: #92400e; margin-top: 2px;"><strong>Consequence:</strong> Arriving flights held on outer taxi lane until safety jeep cleared the debris.</p>
+        <p style="font-size: 7pt; font-weight: 700; color: #0f172a; margin-top: 3px;">Spoken Task: Explain using 'owing to' and 'consequently'.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #475569; margin-top: 2px;">Model: "Owing to foreign object debris on Taxiway Mike, arrivals were held; consequently, two flights missed their scheduled gates."</p>
+      </div>
+
+      <!-- Scenario 3 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <strong style="color: #0369a1;">Scenario 3: Severe Wing Ice Contamination</strong>
+        <p style="font-size: 7pt; color: #991b1b; margin-top: 2px;"><strong>Root Cause:</strong> Sub-zero fog produced 3mm of clear ice along aircraft leading-edge slats.</p>
+        <p style="font-size: 7pt; color: #92400e; margin-top: 2px;"><strong>Consequence:</strong> Captain refused takeoff without remote de-icing, requiring revised slot allocation.</p>
+        <p style="font-size: 7pt; font-weight: 700; color: #0f172a; margin-top: 3px;">Spoken Task: Explain using 'because of' and 'led to'.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #475569; margin-top: 2px;">Model: "Because of clear ice accumulation on the wings, the captain requested de-icing, which led to a 15-minute slot recalculation."</p>
+      </div>
+
+      <!-- Scenario 4 -->
+      <div class="panel" style="margin-bottom: 4px;">
+        <strong style="color: #0369a1;">Scenario 4: Unauthorized Van in Reversing Zone</strong>
+        <p style="font-size: 7pt; color: #991b1b; margin-top: 2px;"><strong>Root Cause:</strong> Maintenance van parked inside the red no-parking clearance box behind tailplane.</p>
+        <p style="font-size: 7pt; color: #92400e; margin-top: 2px;"><strong>Consequence:</strong> Catering truck could not reverse away safely; stand clearance blocked.</p>
+        <p style="font-size: 7pt; font-weight: 700; color: #0f172a; margin-top: 3px;">Spoken Task: Explain using 'as a result of' and 'therefore'.</p>
+        <p style="font-size: 7pt; font-style: italic; color: #475569; margin-top: 2px;">Model: "As a result of an unauthorized van parked in the reversing corridor, the hi-lift was blocked; therefore, pushback was held."</p>
+      </div>
+    </div>
+
+    <!-- Notes Box -->
+    <div class="notes-box">
+      <div class="notes-label">Your Spoken Incident Reports (Draft 2 Formal Statements with Cause &amp; Effect Linkers)</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 5: PART 5 TURNAROUND CRITICAL PATH DECISION MATRIX                   -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 5 • DECISION MATRIX</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 5</span> Apron Turnaround Critical Path Decision Matrix</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      <strong>Operational Crisis Scenario:</strong> Flight BA342 (Airbus A320) is on Stand Charlie-4. Chocks-on was at 14:15. Target off-blocks (CTOT) is 14:55. It is now 14:32 (T+17). Three simultaneous complications occur. Triage the bottlenecks below:
+    </p>
+
+    <!-- Triage Table -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Ramp Bottleneck</th>
+          <th style="width: 30%;">Safety Regulation (EASA ADR / OPS)</th>
+          <th style="width: 25%;">Operational Trade-off</th>
+          <th style="width: 25%;">Recommended Action Sequence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong style="color: #991b1b;">A. Refueling Safety Hold</strong></td>
+          <td>Fuel bowser arrived 12 mins late. EASA safety rules forbid fuel pumping while passengers are boarding unless RFFS fire watch is on stand with exit paths clear.</td>
+          <td>Hold passenger boarding (causes cabin delay) vs. coordinate mobile fire watch standby.</td>
+          <td><strong>Step 1:</strong> Call aerodrome fire watch to stand immediately; proceed with concurrent fueling and boarding via front stairs.</td>
+        </tr>
+        <tr>
+          <td><strong style="color: #92400e;">B. Aft Belt Loader Jam</strong></td>
+          <td>Conveyor motor overheated with 50 transit bags inside. Hold door cannot close. Backup loader is at remote hangar (12 min transit).</td>
+          <td>Wait for remote unit vs. swing forward belt loader to aft door once forward hold finishes.</td>
+          <td><strong>Step 2:</strong> Expedite forward cargo completion (2 mins); swing forward loader to aft hold to clear transit baggage.</td>
+        </tr>
+        <tr>
+          <td><strong style="color: #0369a1;">C. GPU Circuit Breaker Trip</strong></td>
+          <td>Mobile GPU breaker tripped. Cabin lost air-conditioning and avionics power. Cabin temperature rising rapidly in warm sun.</td>
+          <td>Start aircraft APU (burns airline fuel and creates noise/exhaust) vs. wait for electrician.</td>
+          <td><strong>Step 3:</strong> Authorize immediate APU start from cockpit while ground technician replaces yellow connector cable.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Pacing & Slot Trade-off Analysis -->
+    <div class="panel panel-sky" style="margin-top: 8px; margin-bottom: 6px;">
+      <h3>Slot Adherence &amp; CTOT Recovery Protocol</h3>
+      <div class="grid-3" style="font-size: 7.5pt;">
+        <div>
+          <strong>Initial Target Off-Blocks:</strong>
+          <p style="color: #0369a1; font-weight: 800; font-size: 9pt;">14:55 UTC</p>
+          <span style="font-size: 7pt; color: #64748b;">Original 40-minute turnaround.</span>
+        </div>
+        <div>
+          <strong>Cumulative Delays:</strong>
+          <p style="color: #dc2626; font-weight: 800; font-size: 9pt;">+18 Minutes</p>
+          <span style="font-size: 7pt; color: #64748b;">Refueling + belt loader jam.</span>
+        </div>
+        <div>
+          <strong>Revised Target Off-Blocks:</strong>
+          <p style="color: #16a34a; font-weight: 800; font-size: 9pt;">15:13 UTC</p>
+          <span style="font-size: 7pt; color: #64748b;">Slot update agreed with ATC.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Negotiation Prompts -->
+    <div class="panel panel-amber" style="margin-bottom: 6px;">
+      <h3>Collaborative Decision Questions for Pairs</h3>
+      <ul style="font-size: 7.5pt; padding-left: 14px; color: #78350f;">
+        <li>Why does starting the APU during ground fueling require confirmation that fire watch is in place?</li>
+        <li>How does notifying Air Traffic Services early for a 15-minute slot revision prevent the aircraft from being pushed to the back of the departure queue?</li>
+      </ul>
+    </div>
+
+    <!-- Notes Box -->
+    <div class="notes-box">
+      <div class="notes-label">Your Critical Path Triage Rationale (Explain Your Sequence to the Aerodrome Duty Manager)</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 6: PART 6 OPERATIONS SIMULATION & 60-SECOND SHIFT HANDOVER           -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 6 • SHIFT HANDOVER BRIEFING</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 6</span> Operations Simulation &amp; 60-Second Shift Handover</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Deliver a structured, professional verbal shift handover under realistic operational pressure. Cut off strictly at 60 seconds.
+    </p>
+
+    <!-- Role Cards -->
+    <div class="grid-2" style="font-size: 7.5pt; margin-bottom: 6px;">
+      <div class="panel panel-slate">
+        <strong style="color: #0369a1;">Student A: Outgoing Ramp Coordinator</strong>
+        <p style="font-size: 7pt; color: #475569; margin-top: 2px;">You are handing over Stand Charlie-4 at shift change. You have stabilized the three bottlenecks, coordinated the fire watch, and rescheduled pushback for 15:15.</p>
+        <p style="font-size: 7pt; font-weight: 700; color: #0f172a; margin-top: 3px;">Mission: Deliver a 60-second verbal briefing following the 4-part framework.</p>
+      </div>
+      <div class="panel panel-slate">
+        <strong style="color: #0369a1;">Student B: Incoming TSEEAC Aerodrome Operations Officer / AFISO</strong>
+        <p style="font-size: 7pt; color: #475569; margin-top: 2px;">You are taking over responsibility for the apron sector. You must listen actively, evaluate the handover against the peer checklist, and ask 2 tactical clarifying questions.</p>
+        <p style="font-size: 7pt; font-weight: 700; color: #0f172a; margin-top: 3px;">Mission: Verify revised CTOT slot, RFFS standby status, and fuel hose disconnect.</p>
+      </div>
+    </div>
+
+    <!-- 4-Part Handover Framework -->
+    <div class="panel panel-sky" style="margin-bottom: 6px;">
+      <h3>The 4-Part Operational Shift Handover Standard</h3>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div>
+          <strong>1. Stand &amp; Flight Identification:</strong>
+          <p style="font-style: italic; color: #0369a1; font-size: 7pt;">"Stand Charlie-4 is currently handling Flight BA342, an Airbus A320 inbound from London."</p>
+          <strong style="display: block; margin-top: 3px;">2. Operational Status (Completed vs. Pending):</strong>
+          <p style="font-style: italic; color: #0369a1; font-size: 7pt;">"Deboarding concluded at 14:26; however, cargo unloading and refueling have encountered delays."</p>
+        </div>
+        <div>
+          <strong>3. Root Cause of Delays (Formal Connectors):</strong>
+          <p style="font-style: italic; color: #0369a1; font-size: 7pt;">"Due to an electrical trip on the GPU and a late refueler, the turnaround is 15 minutes behind schedule."</p>
+          <strong style="display: block; margin-top: 3px;">4. Mitigation &amp; Revised Departure Target:</strong>
+          <p style="font-style: italic; color: #0369a1; font-size: 7pt;">"A backup loader is now on stand, and fueling is underway. Revised off-blocks is 15:15 with ATC."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Model Handover Script -->
+    <div class="panel panel-slate" style="background: #0f172a; color: #f8fafc; border-color: #334155; margin-bottom: 6px;">
+      <div style="font-size: 7pt; font-weight: 800; color: #f59e0b; text-transform: uppercase;">Authentic Spoken Model Briefing (Duration: ~48 Seconds)</div>
+      <p style="font-size: 7.5pt; font-style: italic; line-height: 1.35; margin-top: 3px; color: #e2e8f0;">
+        "Stand Charlie-4 is currently servicing Flight BA342 to London Heathrow. Passenger deboarding concluded on schedule at 14:25; however, cargo loading and refueling have been disrupted. Due to an electrical trip on the GPU and an overheated conveyor on the aft belt loader, handlers were forced to request replacement equipment. Consequently, the turnaround is running 15 minutes behind schedule. The replacement loader has just arrived on stand, and fueling is underway under fire watch supervision. We have coordinated with air traffic services for a revised departure slot at 15:15. Please monitor final pushback clearance and verify that the fuel hose is decoupled before the tug connects."
+      </p>
+    </div>
+
+    <!-- Student B Peer Observer Checklist -->
+    <div class="panel panel-amber" style="margin-bottom: 5px;">
+      <h3>Student B / Peer Observer Active Listening Checklist</h3>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>1. Identification:</strong> Stand, airline, flight number, and aircraft type stated in opening sentence.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>2. Status Distinction:</strong> Clear contrast between completed milestones and pending tasks.</span></div>
+        </div>
+        <div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>3. Cause-Effect Connectors:</strong> Flawless use of <em>due to</em>, <em>owing to</em>, or <em>consequently</em>.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>4. Conciseness:</strong> Briefing completed within 60 seconds with calm delivery and zero filler sounds.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes Box -->
+    <div class="notes-box">
+      <div class="notes-label">Your 60-Second Handover Briefing Script &amp; Peer Feedback</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 7: PART 7 VOCABULARY CONSOLIDATION, PHONETICS & STUDY LOG            -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 7 • VOCABULARY CONSOLIDATION</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 7</span> Spoken Vocabulary Consolidation, Phonetics &amp; Study Log</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Mastery of 18 high-frequency B2 ground operations terms, word stress patterns, and TOEIC airside competencies.
+    </p>
+
+    <!-- Vocabulary Summary Grid (18 Terms) -->
+    <div class="grid-3" style="font-size: 7pt; margin-bottom: 7px;">
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>01. Turnaround Time (TAT)</strong>
+        <p style="color: #64748b;">Total duration between aircraft chocks-on and chocks-off.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>02. Ground Support Equipment</strong>
+        <p style="color: #64748b;">Specialized airside servicing vehicles and mobile units.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>03. Chocks (Wheel Chocks)</strong>
+        <p style="color: #64748b;">Heavy rubber wedges placed against landing gear tires.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>04. Pushback Tug / Tractor</strong>
+        <p style="color: #64748b;">Heavy tractor moving aircraft backwards away from gates.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>05. Ground Power Unit (GPU)</strong>
+        <p style="color: #64748b;">Mobile generator supplying 400Hz electricity on stand.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>06. Belt Loader</strong>
+        <p style="color: #64748b;">Motorized conveyor used to load baggage into lower hold.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>07. Aviation Refueler (Bowser)</strong>
+        <p style="color: #64748b;">Tanker truck pumping Jet A-1 kerosene into wing tanks.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>08. Catering Hi-Lift Truck</strong>
+        <p style="color: #64748b;">Scissor-lift van replenishing galley meals and carts.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>09. Potable Water Truck</strong>
+        <p style="color: #64748b;">Sanitary vehicle replenishing fresh drinking water tanks.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>10. Lavatory Service Truck</strong>
+        <p style="color: #64748b;">Vehicle draining and chemical-flushing toilet waste tanks.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>11. De-icing / Anti-icing Rig</strong>
+        <p style="color: #64748b;">Rig spraying heated glycol to clear ice from wing aerofoils.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>12. Follow-Me Car</strong>
+        <p style="color: #64748b;">Checkered vehicle guiding planes across taxiways to gates.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>13. Critical Path</strong>
+        <p style="color: #64748b;">The sequence of dependent tasks determining total TAT.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>14. Foreign Object Debris (FOD)</strong>
+        <p style="color: #64748b;">Loose items on runways/aprons posing ingestion hazards.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>15. Jet Bridge (Airbridge)</strong>
+        <p style="color: #64748b;">Enclosed movable bridge connecting gate to aircraft door.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>16. Loadsheet &amp; Manifest</strong>
+        <p style="color: #64748b;">Legal document detailing payload, weight, and center of gravity.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>17. Shift Handover Briefing</strong>
+        <p style="color: #64748b;">Structured 4-part verbal transfer of operational status.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>18. Slot Allocation (CTOT)</strong>
+        <p style="color: #64748b;">Calculated Take-Off Time issued by air traffic network flow.</p>
+      </div>
+    </div>
+
+    <!-- Phonetics & Syllable Stress Traps -->
+    <div class="panel panel-sky" style="margin-bottom: 6px;">
+      <h3>High-Frequency Pronunciation &amp; Syllable Stress Traps</h3>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div>
+          <div>❌ /tʃoʊks/ &rarr; ✅ <strong>CHOCKS</strong> (/tʃɒks/) — Short open vowel.</div>
+          <div style="margin-top: 2px;">❌ /haɪˈdrɔːlɪk/ stress error &rarr; ✅ <strong>hy-DRAU-lic</strong> (/haɪˈdrɔː.lɪk/) — Stress second syllable.</div>
+        </div>
+        <div>
+          <div>❌ /kənˈseɪ.kwənt.li/ &rarr; ✅ <strong>CON-se-quent-ly</strong> (/ˈkɒn.sɪ.kwənt.li/) — Stress first syllable.</div>
+          <div style="margin-top: 2px;">❌ /tɜːrn-ə-raʊnd/ &rarr; ✅ <strong>TURN-a-round</strong> (/ˈtɜːrn.ə.raʊnd/) — Stress primary syllable.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Self-Assessment & Continuous Learning -->
+    <div class="panel panel-slate" style="margin-bottom: 5px;">
+      <h3>Student Continuous Learning Reflection &amp; Action Plan</h3>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div>
+          <strong>My Spoken Confidence Today:</strong>
+          <div style="display: flex; gap: 8px; margin-top: 3px;">
+            <label><input type="radio" name="conf"> 1 (Hesitant)</label>
+            <label><input type="radio" name="conf"> 2 (Basic)</label>
+            <label><input type="radio" name="conf"> 3 (Solid)</label>
+            <label><input type="radio" name="conf"> 4 (Fluent)</label>
+            <label><input type="radio" name="conf"> 5 (Mastery)</label>
+          </div>
+        </div>
+        <div>
+          <strong>Target for Next Session (Session 4 Jobs in Aviation):</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;">Review organizational roles across ATS, airlines, handling agents, and TSEEAC corps.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes Box -->
+    <div class="notes-box">
+      <div class="notes-label">Your Final Session Reflection &amp; Portfolio Targets</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+</body>
+</html>
