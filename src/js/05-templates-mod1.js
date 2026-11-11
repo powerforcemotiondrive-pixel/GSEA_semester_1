@@ -2685,9 +2685,10 @@
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Overtourism &amp; Tourism Policy</h3>
             </div>
-            <a href="docs/GSEA_S1_M1_AG_S3_Lesson_Worksheet.pdf" download="GSEA_S1_M1_AG_S3_Lesson_Worksheet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 border border-blue-700 shadow-xs transition-all cursor-pointer shrink-0">
+            <a href="docs/GSEA_S1_M1_AG_S3_Lesson_Worksheet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 border border-blue-700 shadow-xs transition-all cursor-pointer shrink-0">
               <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
               <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
 
