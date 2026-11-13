@@ -2500,6 +2500,39 @@
       document.body.style.overflow = "hidden";
     };
 
+    // --- Calendar Date Sync: Automatically detects current active session from official calendar ---
+    function getActiveNoticeboardSession(isAg) {
+      const now = new Date();
+      
+      const sessionSchedule = [
+        { week: 44, start: new Date('2026-10-26T00:00:00'), cardIdx: 1, agTitle: "Session 1 — Introduction & Travel Anecdotes", atTitle: "Session 1 — Introduction & Aviation Survey" },
+        { week: 45, start: new Date('2026-11-02T00:00:00'), cardIdx: 2, agTitle: "Session 2 — Evolution of Transport", atTitle: "Session 2 — Passenger Journey & Airfield Movement" },
+        { week: 46, start: new Date('2026-11-09T00:00:00'), cardIdx: 3, agTitle: "Session 3 — Managing Mass Tourism", atTitle: "Session 3 — Airport Security & Safety Walkaround" },
+        { week: 47, start: new Date('2026-11-16T00:00:00'), cardIdx: 4, agTitle: "Session 4 — Sustainable & Eco-Tourism", atTitle: "Session 4 — Jobs in Aviation" },
+        { week: 48, start: new Date('2026-11-23T00:00:00'), cardIdx: 5, agTitle: "FE1 — Formative Evaluation Oral Tutorials", atTitle: "FE1 — Formative Evaluation Oral Tutorials" }
+      ];
+
+      let current = sessionSchedule[2]; // Fallback to Week 46 (Session 3)
+      for (let i = 0; i < sessionSchedule.length; i++) {
+        const item = sessionSchedule[i];
+        const next = sessionSchedule[i + 1];
+        if (now >= item.start && (!next || now < next.start)) {
+          current = item;
+          break;
+        }
+      }
+      if (now < sessionSchedule[0].start) {
+        current = sessionSchedule[0];
+      }
+
+      return {
+        cardIdx: current.cardIdx,
+        weekNum: current.week,
+        sessionName: isAg ? current.agTitle : current.atTitle,
+        isFe: current.cardIdx === 5
+      };
+    }
+
     // --- Student Noticeboard Engine (Card 00) ---
     function renderNoticeboardContent(theme) {
       const noticeboardEl = document.getElementById('deck-noticeboard-view');
@@ -2507,9 +2540,10 @@
 
       const isAg = (currentProgram === 'ag');
 
-      // Current active session index (Card 3 = Session 3 Ground Operations for AT, Session 3 Overtourism for AG)
-      const activeSessionIdx = 3; 
-      const activeSessionName = isAg ? "Session 3 — Managing Mass Tourism" : "Session 3 — Airport Security & Safety Walkaround";
+      // Calendar Date Sync: Automatically determines active session and week
+      const activeInfo = getActiveNoticeboardSession(isAg);
+      const activeSessionIdx = activeInfo.cardIdx;
+      const activeSessionName = activeInfo.sessionName;
 
       // Dynamic track-specific banner image, badge, and subtitle
       const heroImage = isAg ? "images/ag_m1card4.jpg" : "images/aas_m1card4.jpg";
@@ -2549,7 +2583,7 @@
             <!-- Button 1: Jump to Active Lesson (Clean Light Card with Accent Border) -->
             <button type="button" onclick="renderCard(${activeSessionIdx})" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl ${isAg ? 'bg-gradient-to-br from-white via-white to-amber-50/50 border-amber-300/80 hover:border-amber-400' : 'bg-gradient-to-br from-white via-white to-sky-50/50 border-sky-300/80 hover:border-sky-400'} text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border min-h-[52px]">
               <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider ${isAg ? 'bg-amber-100 text-amber-800 border-amber-200' : 'bg-sky-100 text-sky-800 border-sky-200'} border px-2 py-0.5 rounded">Active Class</span>
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider ${isAg ? 'bg-amber-100 text-amber-800 border-amber-200' : 'bg-sky-100 text-sky-800 border-sky-200'} border px-2 py-0.5 rounded">Active Class • Week ${activeInfo.weekNum}</span>
                 <span class="text-base group-hover:translate-x-1 transition-transform ${isAg ? 'text-amber-600' : 'text-sky-600'}">➔</span>
               </div>
               <div class="mt-2">
@@ -2716,7 +2750,7 @@
               <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Course Coordinator</div>
               <div class="font-bold text-slate-900 text-sm">Phil PARRIS</div>
               <div class="text-slate-600 font-mono text-[11px]">philip.parris@enac.fr</div>
-              <div class="text-slate-500 text-[10.5px] pt-0.5">Office: C215 LH/LAN</div>
+              <div class="text-slate-500 text-[10.5px] pt-0.5">Office: LH/LAN</div>
             </div>
 
             <!-- Box 2: General English Teachers -->
