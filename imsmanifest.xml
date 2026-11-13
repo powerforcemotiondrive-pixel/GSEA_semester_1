@@ -145,10 +145,17 @@
       <file href="images/enac_logo_white.png"/>
       <file href="images/urban_car_sprawl.jpg"/>
       <file href="images/urban_superblock.jpg"/>
+      <file href="images/job_afiso.jpg"/>
+      <file href="images/job_atco.jpg"/>
+      <file href="images/job_marshaller.jpg"/>
+      <file href="images/job_pilot.jpg"/>
+      <file href="images/job_psa.jpg"/>
+      <file href="images/job_trc.jpg"/>
       
       <!-- Student Worksheets & PDF Documents -->
       <file href="docs/GSEA_S1_M1_AG_S3_Lesson_Worksheet.pdf"/>
       <file href="docs/GSEA_S1_M1_AT_S3_Lesson_Worksheet.pdf"/>
+      <file href="docs/GSEA_S1_M1_AT_S4_Lesson_Worksheet.pdf"/>
     </resource>
   </resources>
 </manifest>

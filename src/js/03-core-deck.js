@@ -1952,6 +1952,19 @@
     window.openFilmDetailsModal = openFilmDetailsModal;
     window.closeFilmDetailsModal = closeFilmDetailsModal;
 
+    window.saveLessonNote = function(key, val) {
+      try {
+        localStorage.setItem('gsea_note_' + key, val);
+      } catch (e) {}
+    };
+    window.getLessonNote = function(key) {
+      try {
+        return localStorage.getItem('gsea_note_' + key) || '';
+      } catch (e) {
+        return '';
+      }
+    };
+
     window.syncPortfolioDrawerHeader = function(trackKey) {
       const activeTrack = trackKey || 'ag';
       const isAg = (activeTrack === 'ag');
@@ -2206,6 +2219,18 @@
       } else if (modalState.tab === 'ddrs') {
         renderDdrsTab(theme);
       }
+
+      // Auto-restore saved lesson notes
+      setTimeout(() => {
+        try {
+          const textareas = bodyEl.querySelectorAll('textarea[id^="notes-"]');
+          textareas.forEach(ta => {
+            const key = ta.id.replace('notes-', '');
+            const saved = window.getLessonNote ? window.getLessonNote(key) : localStorage.getItem('gsea_note_' + key);
+            if (saved && !ta.value) ta.value = saved;
+          });
+        } catch (e) {}
+      }, 20);
     }
 
     function renderLessonPlanObjectivesTab(sessionData, theme) {

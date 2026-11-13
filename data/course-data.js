@@ -23935,382 +23935,770 @@
             ]
           },
           "lessonPlan": {
-            "title": "Session 4 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour communicative session featuring an aviation news opening, Session 3 turnaround spot-checking, the aviation roles overview, functional responsibility and authority grammar drills, 'Day in the Life' role handoffs, a winter weather operational dilemma debate, and a 10-minute vocabulary consolidation review.",
+            "title": "Session 4 Lesson Plan - Jobs in Aviation (2 Hours)",
+            "summary": "A 2-hour communicative session featuring an aviation news opening, Session 3 turnaround spot-checking, the aviation roles and jurisdiction matrix, visual role profiling dossiers, the 'Who Am I?' rapid-fire mystery quiz, functional responsibility and authority grammar drills, 'Day in the Life' role handoffs with peer evaluation, a winter crisis decision table, and vocabulary wrap-up.",
             "items": [
               {
-                "title": "Part 1: Aviation News, Current Events & Session 3 Spot-Check",
-                "description": "Opening warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader).",
-                "part": "Part 1"
+                "part": "Part 1",
+                "title": "Part 1: Aviation News & Session 3 Spot-Check",
+                "description": "Opening warm-up: discuss recent international aviation headlines followed by rapid spot-checking of Session 3 turnaround and GSE vocabulary (GPU, ASU, Pushback Tug, Chocks, FOD, Belt Loader)."
               },
               {
-                "title": "Part 2: Aviation Roles Across the Industry",
-                "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities.",
-                "part": "Part 2"
+                "part": "Part 2",
+                "title": "Part 2: Aviation Operational Roles & Jurisdictions Reference Matrix",
+                "description": "Explore the five operational domains (Landside, Airside/Ramp, Flight Crew, ATCOs, and TSEEAC). Clarify the core distinction between ATCO tactical separation authority and TSEEAC AFISO/auditing responsibilities."
               },
               {
-                "title": "Part 3: Functional Grammar Focus: Responsibilities, Duties & Jurisdiction",
-                "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts.",
-                "part": "Part 3"
+                "part": "Part 3",
+                "title": "Part 3: 'What Do These People Do?' Visual Profiling & 'Who Am I?' Quiz Game",
+                "description": "Analyze 6 authentic operational photographs and play the multi-round mystery job quiz with progressive clues, buzzer points, and spoken taboo challenges."
               },
               {
-                "title": "Part 4: Role-Play Simulation: 'A Day in the Life' Operational Handoffs",
-                "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between Turnaround Coordinator <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Duty Manager <-> Ramp Supervisor.",
-                "part": "Part 4"
+                "part": "Part 4",
+                "title": "Part 4: Functional Language Clinic: Responsibilities, Duties & Authority",
+                "description": "Examine high-yield B2 structures: 'responsible for + -ing', 'tasked with + -ing', 'in charge of', 'have authority over / to', 'ensure that', and 'report to vs. liaise with'. Practice with interactive scenario prompts."
               },
               {
-                "title": "Part 5: Aviation Career Forum & Operational Dilemma Debate",
-                "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Argue priorities, negotiate trade-offs, and establish a consensus sequence.",
-                "part": "Part 5"
+                "part": "Part 5",
+                "title": "Part 5: Role-Play Simulation: 'A Day in the Life' Handoffs & Peer Audit",
+                "description": "Collaborative paired and triad role-play: simulate professional handoffs and resolve bottlenecks between TRC <-> First Officer, AFISO <-> Inbound Pilot, and Terminal Manager <-> Ramp Supervisor with a Student B Active Listening Checklist."
               },
               {
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
-                "description": "Final consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update.",
-                "part": "Part 6"
+                "part": "Part 6",
+                "title": "Part 6: Winter Weather Diversion Crisis Decision Table & Action Protocol",
+                "description": "Interactive multi-stakeholder debate: resolve an emergency aerodrome diversion scenario during freezing fog and ramp congestion. Complete the 4-point triage table and log consensus compromise."
+              },
+              {
+                "part": "Part 7",
+                "title": "Part 7: Vocabulary Review, Syllable Stress & Class Wrap-Up",
+                "description": "Final consolidation: rapid recall of the 18 aviation profession terms, word stress and phonological drills, personal reflection, and continuous learning log update."
               }
             ]
           },
           "lessonContent": {
             "hero": {
-              "image": "images/aas_m1card4.jpg",
               "title": "Jobs in Aviation: Roles, Responsibilities & Operational Interfaces",
-              "subtitle": "Landside, Airside, Flight Crew, Air Traffic Services & Civil Aviation Corps (TSEEAC)"
+              "subtitle": "Landside, Airside, Flight Crew, Air Traffic Services & Civil Aviation Corps (TSEEAC).",
+              "image": "images/aas_m1card4.jpg"
             },
             "openingSession": {
               "title": "Activity 1: Aviation News & Session 3 Spot-Check",
-              "summary": "Every session begins with a 10-minute professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
+              "summary": "Every session begins with a professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
               "modeBadges": [
                 "👥 Pairs / Plenary",
-                "⏱️ 10 mins",
                 "🗣️ Operational Recall Drill",
                 "🎯 Technical Vocabulary & Fluency"
               ],
               "instructions": [
-                "Step 1 (Aviation News Exchange - 4 mins): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
-                "Step 2 (Session 3 GSE Spot-Check - 4 mins): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
-                "Step 3 (Class Operational Recap - 2 mins): Plenary review of one GSE definition. Highlight why GPU usage reduces ramp emissions and APU wear."
+                "Step 1 (Aviation News Exchange): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
+                "Step 2 (Session 3 GSE Spot-Check): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
+                "Step 3 (Class Operational Recap): Plenary review of one GSE definition. Highlight why GPU usage reduces ramp emissions and APU wear."
               ],
-              "deliverable": "Spoken explanation of 1 aviation operational news item and an accurate technical explanation of GPU or turnaround time.",
-              "teacherNotes": "Cold-call pairs. Probe beyond superficial definitions: ask what happens to an aircraft's departure slot if the GPU fails during pushback disconnect.",
               "newsPrompts": [
-                "What aviation, airline, or ATM news stories caught your attention in the headlines this week?",
-                "How are airports and air navigation service providers managing staffing, recruitment, or new operational procedures this season?"
+                "Headline A (Digital Remote Towers): European regional hubs deploy remote digital towers, changing the workspace for AFISOs and ATCOs. How do digital camera arrays enhance visual monitoring compared to direct visual cabs?",
+                "Headline B (Ramp Turnaround Automation): Ground handling subcontractors invest in autonomous baggage belt loaders and robotic pushback tugs to combat peak season ramp shortages. What human safety supervision remains indispensable?"
               ],
               "spotCheck": {
-                "title": "Session 3 Vocabulary Spot-Check (Ground Operations & GSE)",
                 "questions": [
                   {
                     "id": 1,
-                    "q": "What is the primary function of a Ground Power Unit (GPU) during an aircraft turnaround?",
-                    "answer": "A GPU supplies 400Hz AC electrical power to the aircraft while parked at the gate stand, allowing the flight crew to shut down the main engines and auxiliary power unit (APU) to save fuel and reduce ramp emissions."
+                    "q": "What is the primary difference between chocks-on and chocks-off?",
+                    "answer": "Chocks-on marks the official arrival time when wheels are secured. Chocks-off marks off-blocks departure when ground servicing is finished and pushback commences."
                   },
                   {
                     "id": 2,
-                    "q": "How does a Marshaller guide an arriving aircraft to its parking stand when automated docking is unavailable?",
-                    "answer": "A marshaller uses illuminated wands or visual hand signals to direct the flight deck along the painted yellow lead-in line to the precise nosewheel stop mark."
+                    "q": "Why must ground handlers wait for engine anti-collision beacons to stop flashing before approaching?",
+                    "answer": "Flashing red anti-collision beacons indicate engines are running or imminent start-up, creating severe intake ingestion hazards and lethal exhaust blast danger."
                   },
                   {
                     "id": 3,
-                    "q": "What is turnaround time (TAT) and why is minimizing it critical for airlines?",
-                    "answer": "Turnaround time is the elapsed period from chocks-on at arrival to chocks-off at departure. Minimizing TAT maximizes aircraft daily utilization and prevents knock-on departure slot delays."
+                    "q": "Which two airside vehicles operate directly at the fuselage service doors during a turnaround?",
+                    "answer": "Catering hi-lift truck (servicing galleys) and passenger boarding stairs or ambulift (servicing main cabin doors)."
                   },
                   {
                     "id": 4,
-                    "q": "What is Foreign Object Debris (FOD) and how do ramp teams prevent it?",
-                    "answer": "FOD is any loose item, tool, fragment, or trash on the apron or taxiway that could be ingested by a jet engine or damage tires; ground crews conduct continuous visual scans and regular FOD sweeps."
+                    "q": "Which connectors express cause vs. consequence in ramp safety reports?",
+                    "answer": "Cause: 'due to', 'owing to', 'because of'. Consequence: 'consequently', 'as a result', 'resulted in'."
                   }
                 ]
               }
             },
             "jobTaxonomy": {
-              "title": "Activity 2: Aviation Roles Across the Industry",
+              "title": "Activity 2: Aviation Operational Roles & Jurisdictions Reference Matrix",
               "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
               "modeBadges": [
-                "👥 Small Groups (3-4)",
-                "⏱️ 20 mins",
-                "🧭 Roles & Jurisdiction Analysis",
+                "👥 Small Groups / Pairs",
+                "🧭 Roles & Jurisdiction Matrix",
                 "🎯 Operational Domain Mastery"
               ],
               "instructions": [
-                "Step 1 (Domain Exploration - 8 mins): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Identify the primary physical jurisdiction and core duty for each.",
-                "Step 2 (Crucial Distinction Audit - 6 mins): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
-                "Step 3 (Role Matching Drill - 6 mins): In pairs, randomly name a professional role (e.g. TRC, AFISO, Marshaller, Tower ATCO). Your partner must state the domain, primary duty, and whom they report to."
+                "Step 1 (Matrix Exploration): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Analyze the physical jurisdiction, daily equipment, and core duty for each.",
+                "Step 2 (Crucial Distinction Audit): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
+                "Step 3 (Role Matching Drill): In pairs, randomly name a professional role (e.g. TRC, AFISO, Marshaller, Tower ATCO). Your partner must state the domain, primary duty, and whom they report to."
               ],
-              "deliverable": "Accurate categorization of all 5 domains and a clear spoken explanation distinguishing ATCO separation authority from TSEEAC AFISO flight information.",
-              "teacherNotes": "Emphasize the ENAC/DGAC institutional distinction: TSEEAC is a civil aviation body, AFISOs provide information/alerting, whereas ATCOs hold licensing to issue binding separation clearances.",
               "domains": [
                 {
                   "id": "landside",
-                  "name": "1. Landside Operations",
-                  "color": "sky",
-                  "roles": [
-                    "Passenger Service Agent (PSA)",
-                    "Security Screening Officer",
-                    "Terminal Duty Manager",
-                    "Border Control Officer"
-                  ],
-                  "description": "Manages passenger processing, documentation verification, terminal safety, and accessibility before the airside security boundary.",
-                  "keyJurisdiction": "Public terminal zones, check-in concourses, baggage drop systems, and departure lounge coordination.",
-                  "sampleDuty": "Passenger Service Agents verify travel documents, handle gate boarding announcements, and manage baggage reconciliation."
+                  "name": "1. Landside Operations & Passenger Services",
+                  "keyJurisdiction": "Public Terminal Concourse, Check-In Halls & Landside Perimeter",
+                  "description": "Managing the passenger flow, baggage drop-off, accessibility assistance (PRM), security screening, and border control before the security checkpoint barrier.",
+                  "keyRoles": [
+                    {
+                      "title": "Passenger Service Agent (PSA)",
+                      "duty": "Check-in processing, boarding gate management, flight document verification."
+                    },
+                    {
+                      "title": "Aviation Security Screener",
+                      "duty": "X-ray screening of cabin and hold baggage, explosive trace detection, passenger metal detection."
+                    },
+                    {
+                      "title": "Terminal Duty Manager",
+                      "duty": "Overall landside operational coordination, crowd control, queue management, terminal facility oversight."
+                    }
+                  ]
                 },
                 {
                   "id": "airside",
-                  "name": "2. Airside & Ramp Operations",
-                  "color": "amber",
-                  "roles": [
-                    "Turnaround Coordinator (TRC)",
-                    "Ramp Agent / Baggage Handler",
-                    "Marshaller",
-                    "Pushback Tug Driver",
-                    "De-icing Rig Operator",
-                    "Refueller / Hydrant Dispenser"
-                  ],
-                  "description": "Coordinates all parallel ground servicing operations around the aircraft within the designated safety servicing envelope.",
-                  "keyJurisdiction": "Apron stands, equipment staging lanes, airside service roads, and aircraft servicing envelopes.",
-                  "sampleDuty": "The Turnaround Coordinator oversees parallel servicing tasks, monitors fuel and baggage loading, and enforces on-time departure."
+                  "name": "2. Airside Ground Operations & Ramp Servicing",
+                  "keyJurisdiction": "Apron, Aircraft Parking Stands & Airside Service Roads",
+                  "description": "Executing turnaround operations in the servicing envelope around the parked aircraft. Strict coordination is required to protect the departure slot (CTOT).",
+                  "keyRoles": [
+                    {
+                      "title": "Turnaround Coordinator (TRC / Red Cap)",
+                      "duty": "Directing simultaneous ramp operations (fueling, catering, cleaning, baggage loading) and signing off the final loadsheet."
+                    },
+                    {
+                      "title": "Aircraft Marshaller / Ramp Lead",
+                      "duty": "Guiding incoming aircraft onto parking stand centerline via visual daylight wands, ensuring chocks are inserted."
+                    },
+                    {
+                      "title": "Ramp Agent / Baggage Handler",
+                      "duty": "Operating belt loaders, towing baggage carts, loading and securing cargo holds and unit load devices (ULDs)."
+                    },
+                    {
+                      "title": "Aviation Refueler",
+                      "duty": "Connecting fuel hydrants/bowsers to aircraft wing tanks, monitoring fuel quantity and grounding cables."
+                    }
+                  ]
                 },
                 {
                   "id": "flightcrew",
-                  "name": "3. Aircraft Flight Crew",
-                  "color": "indigo",
-                  "roles": [
-                    "Captain (Pilot-in-Command)",
-                    "First Officer (Co-Pilot)",
-                    "Purser / Senior Cabin Manager",
-                    "Cabin Crew / Flight Attendant"
-                  ],
-                  "description": "Responsible for the safe navigation, operation, passenger welfare, and emergency readiness of the aircraft from off-blocks to on-blocks.",
-                  "keyJurisdiction": "Cockpit flight deck, passenger cabin, aircraft technical logbook, and emergency systems.",
-                  "sampleDuty": "The First Officer performs external walkaround inspections, cross-checks FMC route programming, and monitors radio communications."
+                  "name": "3. Flight Crew & Airline Operations",
+                  "keyJurisdiction": "Aircraft Cockpit, Cabin, and Airline Operations Control Center (OCC)",
+                  "description": "Safe navigation and operation of the aircraft. Ultimate command authority rests with the Captain (Pilot-in-Command).",
+                  "keyRoles": [
+                    {
+                      "title": "Captain (Pilot-in-Command / PIC)",
+                      "duty": "Final authority and responsibility for aircraft operation, flight safety, and emergency command decisions."
+                    },
+                    {
+                      "title": "First Officer (Co-Pilot)",
+                      "duty": "Assisting the Captain, programming the Flight Management Computer (FMC), conducting external walkaround inspections."
+                    },
+                    {
+                      "title": "Flight Dispatcher (OCC)",
+                      "duty": "Filing flight plans, calculating fuel requirements, monitoring en-route weather and NOTAMs, issuing operational releases."
+                    }
+                  ]
                 },
                 {
                   "id": "atco",
                   "name": "4. Air Traffic Control Officers (ATCOs)",
-                  "color": "rose",
-                  "roles": [
-                    "Aerodrome / Tower ATCO",
-                    "Approach Radar Controller (APP)",
-                    "Area / En-Route Controller (ACC)"
-                  ],
-                  "description": "Licensed air traffic controllers possessing executive legal authority to issue binding clearances and ensure safe tactical separation between aircraft in flight and on active movement areas.",
-                  "keyJurisdiction": "Active runways, taxiways, controlled airspace sectors, and terminal maneuvering areas (TMA).",
-                  "sampleDuty": "Tower ATCOs issue mandatory takeoff and landing clearances, manage runway sequencing, and maintain aircraft separation."
+                  "keyJurisdiction": "Active Runways, Taxiways, and Controlled Airspace (Classes A to E)",
+                  "description": "Air Traffic Controllers possess exclusive legal authority to issue mandatory tactical instructions and clearances to pilots and ground vehicles to maintain separation.",
+                  "keyRoles": [
+                    {
+                      "title": "Tower Controller (TWR)",
+                      "duty": "Issuing takeoff and landing clearances, managing aircraft on the active runway and in aerodrome traffic circuits."
+                    },
+                    {
+                      "title": "Ground Controller (GND)",
+                      "duty": "Managing taxiing aircraft and ground service vehicles on airfield taxiways and aprons."
+                    },
+                    {
+                      "title": "Approach Radar Controller (APP)",
+                      "duty": "Sequencing inbound and outbound aircraft between terminal area airspace and local aerodrome."
+                    }
+                  ]
                 },
                 {
                   "id": "tseeac",
-                  "name": "5. Civil Aviation Operations Corps (TSEEAC)",
-                  "color": "emerald",
-                  "roles": [
-                    "Aerodrome Flight Information Service Officer (AFISO)",
-                    "Aerodrome Operations Coordinator",
-                    "DGAC Aviation Safety Inspector",
-                    "Air Navigation Technical Support Officer"
-                  ],
-                  "description": "Civil aviation civil servants who perform critical operations, flight information, safety oversight, and aerodrome management. IMPORTANT: TSEEAC personnel are NOT air traffic controllers and do NOT have separation authority; AFISOs provide advisory flight information and alerting service at non-controlled aerodromes.",
-                  "keyJurisdiction": "AFIS aerodromes, civil aviation regional directorates (DSAC), airport safety coordination, and technical surveillance.",
-                  "sampleDuty": "An AFISO provides weather reports, runway conditions, and traffic advisories to pilots, while DGAC safety inspectors conduct regulatory compliance audits."
+                  "name": "5. Civil Aviation Technical Corps: TSEEAC",
+                  "keyJurisdiction": "Non-Controlled Regional Aerodromes, DGAC Safety Oversight Directorates, Environmental Offices",
+                  "description": "TSEEAC professionals provide critical institutional, operational, and regulatory services. Crucially, they do NOT provide air traffic control separation; instead, they ensure flight information, aerodrome certification, and compliance oversight.",
+                  "keyRoles": [
+                    {
+                      "title": "AFISO (Aerodrome Flight Information Service Officer)",
+                      "duty": "Providing traffic information, weather advisories (METAR), and aerodrome conditions to pilots at non-controlled airfields without separation instructions."
+                    },
+                    {
+                      "title": "DGAC Aviation Safety Oversight Inspector",
+                      "duty": "Auditing airlines, maintenance organizations (Part-145), and aerodromes for regulatory compliance."
+                    },
+                    {
+                      "title": "Aerodrome Operations Coordinator",
+                      "duty": "Ensuring runway friction testing, wildlife hazard management, obstacle limitation surface compliance, and emergency preparedness."
+                    }
+                  ]
                 }
               ]
             },
             "grammarClinic": {
-              "title": "Activity 3: Language Focus: Roles, Responsibilities & Authority",
-              "summary": "Professional aviation communication demands absolute precision when describing who does what, who reports to whom, and who holds regulatory authority.",
+              "title": "Activity 4: Functional Language Clinic: Responsibilities, Duties & Authority",
+              "summary": "Mastering professional formulas to express responsibilities and authority clearly and naturally. Avoid French false friends ('responsable de', 'chargé de').",
               "modeBadges": [
-                "👤 Individual -> 👥 Pairs",
-                "⏱️ 20 mins",
-                "✍️ Operational Syntax Drill",
-                "🎯 Collocation & Precision"
+                "👥 Pairs / Interactive Practice",
+                "📝 Sentence Structure Clinic",
+                "🎯 Preposition Mastery"
               ],
               "instructions": [
-                "Step 1 (Formula Mastery - 5 mins): Review the 6 authority and responsibility structures above. Note preposition rules: 'responsible FOR + -ing', 'tasked WITH + -ing', 'authority OVER / TO + verb'.",
-                "Step 2 (Role Duty Construction - 10 mins): With a partner, write 3 operational sentences describing different aviation roles using: (1) 'be tasked with', (2) 'have authority to', and (3) 'liaise with vs. report to'.",
-                "Step 3 (Roles & Responsibilities Challenge - 5 mins): Complete the 4 interactive grammar challenge questions individually, check your answers, and discuss the preposition rules."
+                "Step 1 (Formula Mastery): Study the four core structures: 'be responsible for + -ing', 'be tasked with + -ing', 'have authority to + base verb', and 'liaise with vs. report to'.",
+                "Step 2 (Role Duty Construction): In pairs, draft defining sentences for 3 aviation professions using the target preposition formulas.",
+                "Step 3 (Roles & Responsibilities Challenge): Test each other on the 6 scenario prompts below by identifying the incorrect structure and providing the correct B2 spoken operational sentence."
               ],
-              "deliverable": "4 verified practice question answers + 3 original spoken or written role-duty descriptions demonstrating correct prepositional collocations.",
-              "teacherNotes": "Stamp out 'responsible OF' immediately (French interference). Highlight the difference between hierarchical reporting ('reports to the TRC') and lateral coordination ('liaises with fueling').",
-              "formulas": [
+              "rules": [
                 {
-                  "structure": "be responsible for + -ing / noun",
-                  "usage": "Core ongoing duty or accountability",
-                  "example": "The Turnaround Coordinator is responsible for ensuring all servicing vehicles clear the stand before pushback."
+                  "formula": "be responsible for + -ing / noun",
+                  "explanation": "Use for primary professional obligations and continuous duties.",
+                  "example": "The Turnaround Coordinator is responsible for coordinating all ramp servicing activities.",
+                  "pitfall": "❌ Avoid: 'is responsible of' (French calque)."
                 },
                 {
-                  "structure": "be tasked with + -ing / noun",
-                  "usage": "Official assignment, directive, or designated role",
-                  "example": "The AFIS officer is tasked with providing traffic information and weather advisories to inbound aircraft."
+                  "formula": "be tasked with + -ing / noun",
+                  "explanation": "Use when an organization or manager formally assigns a specific mission or project.",
+                  "example": "The TSEEAC officer is tasked with inspecting aerodrome visual aids and lighting.",
+                  "pitfall": "❌ Avoid: 'is charged to' or 'is charged of'."
                 },
                 {
-                  "structure": "be in charge of + noun / -ing",
-                  "usage": "Supervisory oversight of a team, facility, or zone",
-                  "example": "The Terminal Duty Manager is in charge of passenger concourse flow and emergency crowd management."
+                  "formula": "have authority to + base verb / over + noun",
+                  "explanation": "Use to express legal jurisdiction, official clearance powers, or regulatory enforcement.",
+                  "example": "Tower ATCOs have authority to issue mandatory takeoff and landing clearances.",
+                  "pitfall": "❌ Avoid: 'have the authority of doing'."
                 },
                 {
-                  "structure": "have authority over / to + verb",
-                  "usage": "Legal jurisdiction or executive command power",
-                  "example": "Tower ATCOs have authority over active runways and issue binding takeoff and landing clearances."
-                },
-                {
-                  "structure": "ensure that + clause",
-                  "usage": "Verification, quality control, and safety compliance",
-                  "example": "Safety inspectors ensure that airline maintenance procedures comply with DGAC regulations."
-                },
-                {
-                  "structure": "report to vs. liaise with",
-                  "usage": "Hierarchy vs. horizontal peer collaboration",
-                  "example": "The Ramp Agent reports to the Turnaround Coordinator and liaises with fueling technicians."
+                  "formula": "liaise with [peers/external bodies] vs. report to [hierarchical superior]",
+                  "explanation": "'Liaise with' implies peer-to-peer collaboration; 'report to' indicates direct hierarchy.",
+                  "example": "The First Officer reports to the Captain, but liaises with the Turnaround Coordinator.",
+                  "pitfall": "❌ Avoid: 'reports with the captain'."
                 }
               ],
               "roleClinic": [
                 {
                   "id": 1,
-                  "prompt": "The First Officer is tasked with (conducting / to conduct / conduct) the pre-flight external walkaround inspection.",
-                  "answer": "conducting",
-                  "explanation": "'Be tasked with' is followed by the preposition 'with', which requires a gerund (-ing)."
+                  "role": "Tower ATCO",
+                  "prompt": "Does the Tower ATCO have authority over ground vehicles on the active runway?",
+                  "wrong": "The controller is responsible of giving orders and has the authority of stopping trucks.",
+                  "correct": "The Tower ATCO has full authority over all vehicles on active runways and is tasked with maintaining separation."
                 },
                 {
                   "id": 2,
-                  "prompt": "Unlike ATCOs, AFISOs do not have authority (to separate / separating / for separate) aircraft tactically.",
-                  "answer": "to separate",
-                  "explanation": "'Have authority to' is followed by the base infinitive ('to separate')."
+                  "role": "AFISO (TSEEAC)",
+                  "prompt": "Can an AFISO instruct a pilot to go around or change runways?",
+                  "wrong": "The AFISO has the authority to command pilots to change runway.",
+                  "correct": "The AFISO is responsible for providing wind and traffic information, but does not have authority to order a go-around; the pilot makes the command decision."
                 },
                 {
                   "id": 3,
-                  "prompt": "The Ramp Agent is responsible (for / of / to) securing the wheel chocks once the aircraft comes to a stop.",
-                  "answer": "for",
-                  "explanation": "'Responsible for' is the correct prepositional collocation (avoid the French false friend 'responsible of')."
+                  "role": "Turnaround Coordinator",
+                  "prompt": "Whom does the Turnaround Coordinator liaise with during boarding?",
+                  "wrong": "The TRC reports with the passenger agent and is charged to check boarding passes.",
+                  "correct": "The TRC liaises with the Passenger Service Agent and is tasked with verifying the final passenger headcount."
                 },
                 {
                   "id": 4,
-                  "prompt": "The Turnaround Coordinator must ensure (that / what / which) the cargo hold doors are locked before pushback.",
-                  "answer": "that",
-                  "explanation": "'Ensure' takes a content clause starting with 'that' ('ensure that + subject + verb')."
+                  "role": "Flight Dispatcher",
+                  "prompt": "What is the dispatcher's responsibility regarding fuel calculation?",
+                  "wrong": "The dispatcher is responsible to calculate the fuel and reports with air traffic control.",
+                  "correct": "The flight dispatcher is responsible for calculating required fuel reserves and liaises with the Captain to agree on the operational flight plan."
+                },
+                {
+                  "id": 5,
+                  "role": "DGAC Safety Inspector",
+                  "prompt": "What authority does a DGAC inspector have during a ramp check?",
+                  "wrong": "The inspector is charged of auditing and have authority to stop all airplanes without reasons.",
+                  "correct": "The DGAC inspector has authority to inspect aircraft documents and is tasked with verifying regulatory compliance."
+                },
+                {
+                  "id": 6,
+                  "role": "Aircraft Marshaller",
+                  "prompt": "What is the marshaller tasked with when an aircraft enters the stand?",
+                  "wrong": "The marshaller is responsible of walking in front and is charged to park the plane.",
+                  "correct": "The marshaller is tasked with guiding the aircraft along the lead-in line and is in charge of signaling the exact stop position."
                 }
               ]
             },
             "handoffSimulation": {
-              "title": "Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff",
-              "summary": "Effective inter-departmental handoffs prevent bottlenecks and eliminate miscommunication. Work in pairs or triads to conduct professional operational handovers.",
+              "title": "Activity 5: Role-Play Simulation: 'A Day in the Life' Handoffs & Peer Audit",
+              "summary": "Simulating professional operational interfaces under pressure. Practice delivering clear handoffs, asking tactical clarifying questions, and resolving cross-domain bottlenecks.",
               "modeBadges": [
-                "👥 Pairs / Triads",
-                "⏱️ 25 mins",
-                "🎭 Operational Interface Simulation",
-                "🎯 Radio & Handoff Fluency"
+                "👥 Triads (Role A, Role B, Observer C)",
+                "🎭 Operational Handoff Simulation",
+                "📋 Peer Observation & Feedback"
               ],
               "instructions": [
-                "Step 1 (Scenario Assignment - 5 mins): Choose Pair 1 (TRC <-> Flight Deck), Pair 2 (AFISO <-> Inbound VFR), or Pair 3 (Terminal Manager <-> Ramp Supervisor). Read your specific role context.",
-                "Step 2 (Simulation Rehearsal - 12 mins): Conduct the operational handoff in character. You must incorporate at least two of the mandatory target phrases (e.g., 'tasked with', 'liaised with', 'ensure that').",
-                "Step 3 (Role Reversal & Feedback - 8 mins): Swap roles and repeat the dialogue under modified conditions (e.g. 5 minutes until slot loss or sudden weather degradation)."
+                "Step 1 (Scenario Assignment): Choose Scenario 1 (TRC <-> First Officer) or Scenario 2 (AFISO <-> Inbound Pilot). Assign roles: Student A (Lead), Student B (Interface Partner), Student C (Peer Observer).",
+                "Step 2 (Simulation Rehearsal): Conduct an operational briefing resolving the bottleneck using today's functional vocabulary.",
+                "Step 3 (Peer Feedback & Role Reversal): Student C evaluates using the Active Listening Checklist. Switch roles and rehearse Scenario 3: Terminal Duty Manager and Ramp Supervisor."
               ],
-              "deliverable": "A 2-minute fluent operational handoff dialogue successfully resolving an operational conflict using mandatory responsibility formulas.",
-              "teacherNotes": "Listen for realistic aviation tone: professional, concise, assertive, but collaborative. Ensure students actually use the target phrases rather than informal conversational English.",
               "scenarios": [
                 {
-                  "id": "pair1",
-                  "title": "Pair 1: Turnaround Coordinator (TRC) <-> First Officer (Flight Deck)",
-                  "context": "Flight AF418 is scheduled off-blocks in 8 minutes. Cargo loading is complete, but the refueller was held up by a minor hose leak. The First Officer needs the final fuel uplift and signed load sheet.",
-                  "roleA": "Turnaround Coordinator: Confirm fuel uplift of 5,800 kg, present the final trim sheet for Captain's signature, and report stand clearance status.",
-                  "roleB": "First Officer: Cross-check the fuel quantity against FMC calculations, verify the center of gravity (CG) limits on the trim sheet, and request pushback readiness.",
-                  "targetPhrases": [
-                    "\"I am responsible for confirming that all ground equipment has detached...\"",
-                    "\"Could you ensure that the load sheet reflects the actual fuel on board?\"",
-                    "\"We liaised with the fueling technician, and all safety valves are verified.\""
+                  "id": 1,
+                  "title": "Scenario 1: Turnaround Coordinator <-> Airline First Officer",
+                  "context": "Stand Charlie-4. The scheduled departure is approaching. Fueling is complete, but 14 hold-checked bags are delayed in baggage sorting. The First Officer needs the final loadsheet to calculate takeoff trim.",
+                  "roles": {
+                    "roleA": "Turnaround Coordinator: Explain the baggage delay, provide an updated revised timeline, and negotiate whether to close the hold now or wait.",
+                    "roleB": "First Officer: Express slot constraint concern regarding the scheduled departure slot. Check whether baggage reconciliation can proceed in parallel with FMC initialization."
+                  }
+                },
+                {
+                  "id": 2,
+                  "title": "Scenario 2: AFISO (TSEEAC) <-> Inbound Commercial Turboprop Captain",
+                  "context": "Regional aerodrome during deteriorating autumn weather. Cloud base 400ft, visibility dropping to 1800m. A runway maintenance sweeper is clearing rubber deposits.",
+                  "roles": {
+                    "roleA": "AFISO: Broadcast the latest SPECI weather, report sweeper location on taxiway Echo, and remind the pilot that no separation is provided.",
+                    "roleB": "Inbound Captain: Acknowledge weather advisory, request sweeper vacation confirmation, and declare intentions for an instrument approach."
+                  }
+                },
+                {
+                  "id": 3,
+                  "title": "Scenario 3: Terminal Duty Manager <-> Ramp Supervisor",
+                  "context": "Terminal Gate B12. Severe outbound flight delay due to a cabin air-conditioning defect. 180 passengers are waiting at the gate; catering is blocked outside the aircraft.",
+                  "roles": {
+                    "roleA": "Terminal Duty Manager: Request an updated estimate from maintenance, arrange water distribution vouchers for passengers, and prevent terminal concourse crowding.",
+                    "roleB": "Ramp Supervisor: Liaise with airline engineering team, explain the technical component replacement progress, and confirm revised boarding time."
+                  }
+                }
+              ],
+              "peerObserverChecklist": [
+                "1. Operational Accuracy: Did the speaker correctly distinguish between ATCO separation vs. AFISO advisory information?",
+                "2. Preposition Discipline: Were 'tasked with', 'responsible for', 'authority to', and 'liaise with' used accurately?",
+                "3. Conflict De-escalation & Clarity: Was the briefing delivered calmly, concisely, and without unnecessary filler?",
+                "4. Closed-Loop Confirmation: Did the speaker verify understanding through readbacks or confirming questions?"
+              ]
+            },
+            "careerForumDebate": {
+              "title": "Activity 6: Winter Weather Diversion Crisis Decision Table & Action Protocol",
+              "summary": "Aerodrome operations during severe weather demand swift cross-domain coordination. Analyze the multi-agency triage matrix, prioritize three simultaneous crises on Stand Charlie-4, and negotiate an agreed action plan.",
+              "modeBadges": [
+                "👥 Small Groups (4-5 Students)",
+                "❄️ Winter Crisis Triage Table",
+                "🎯 Consensus Negotiation"
+              ],
+              "instructions": [
+                "Step 1 (Crisis Briefing & Stance): Stand Charlie-4 at 16:45. Sudden freezing rain triggers aerodrome-wide ground delays. Flight ENAC-101 has 180 passengers onboard with an in-flight medical emergency divert inbound. Review the 3 complications in the table below.",
+                "Step 2 (Stakeholder Round-Robin): Each student adopts a role (AFISO / TSEEAC, Tower ATCO, Turnaround Coordinator, Airline Dispatcher). State your department's top priority using conditional language ('Provided that...', 'On condition that...').",
+                "Step 3 (Consensus Negotiation & Rating): Fill in the negotiated consensus action plan in your notes. Grade the team compromise on safety, passenger welfare, and punctuality."
+              ],
+              "triageTable": [
+                {
+                  "complication": "1. Stand Contamination & Sleet",
+                  "agencies": "TRC, Marshaller, Runway Sweeper, AFISO / TSEEAC",
+                  "safetyRegulation": "Braking action below medium-poor requires SNOWTAM update and reduced towing speeds.",
+                  "actionProtocol": "Halt pushback on taxiway Kilo; deploy chemical de-icer to stand surface before tractor connects."
+                },
+                {
+                  "complication": "2. Inbound Medical Emergency Divert",
+                  "agencies": "Tower ATCO, OCC Dispatcher, Aerodrome Emergency Medical Lead",
+                  "safetyRegulation": "Medical divert has absolute air traffic priority over scheduled departures.",
+                  "actionProtocol": "Reassign Stand Charlie-5 to divert; clear emergency corridor for airport ambulance."
+                },
+                {
+                  "complication": "3. De-icing Rig Shortage & Expiring Slots",
+                  "agencies": "De-icing Rig Operator, TRC, First Officer, CFMU Slot Lead",
+                  "safetyRegulation": "Holdover time begins at start of final anti-icing step. Takeoff must occur inside window.",
+                  "actionProtocol": "Perform remote pad de-icing near runway threshold to prevent holdover expiration during taxi."
+                }
+              ]
+            },
+            "closingReview": {
+              "title": "Activity 7: Vocabulary Review, Syllable Stress & Class Wrap-Up",
+              "summary": "Consolidate the session's key vocabulary, word stress patterns, and self-assessment benchmarks.",
+              "modeBadges": [
+                "👥 Pairs / Plenary",
+                "🗣️ Phonology & Word Stress",
+                "📊 Continuous Assessment Log"
+              ],
+              "instructions": [
+                "Step 1 (Pronunciation Practice): Drill word stress on the 6 target terms below, emphasizing secondary and primary syllable stress.",
+                "Step 2 (Rapid-Fire Partner Quiz): Student A names a definition from Part 7; Student B provides the term within 5 seconds.",
+                "Step 3 (Self-Assessment & Portfolio): Complete your digital worksheet reflection and log your vocabulary targets for Formative Evaluation 1."
+              ],
+              "pronunciationWords": [
+                {
+                  "word": "au-THOR-i-ty",
+                  "stress": "Stress on 2nd syllable",
+                  "phonetic": "/ɔːˈθɒr.ə.ti/"
+                },
+                {
+                  "word": "re-SPON-si-ble",
+                  "stress": "Stress on 2nd syllable",
+                  "phonetic": "/rɪˈspɒn.sə.bəl/"
+                },
+                {
+                  "word": "co-OR-di-na-tor",
+                  "stress": "Primary stress on 2nd syllable",
+                  "phonetic": "/kəʊˈɔː.dɪ.neɪ.tər/"
+                },
+                {
+                  "word": "ju-ris-DIC-tion",
+                  "stress": "Primary stress on 3rd syllable",
+                  "phonetic": "/ˌdʒʊər.ɪsˈdɪk.ʃən/"
+                },
+                {
+                  "word": "tech-NI-cian",
+                  "stress": "Stress on 2nd syllable",
+                  "phonetic": "/tekˈnɪʃ.ən/"
+                },
+                {
+                  "word": "con-TIN-gen-cy",
+                  "stress": "Stress on 2nd syllable",
+                  "phonetic": "/kənˈtɪn.dʒən.si/"
+                }
+              ]
+            },
+            "rolesMatrix": {
+              "title": "Activity 2: Aviation Operational Roles & Jurisdictions Reference Matrix",
+              "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
+              "modeBadges": [
+                "👥 Small Groups / Pairs",
+                "🧭 Roles & Jurisdiction Matrix",
+                "🎯 Operational Domain Mastery"
+              ],
+              "instructions": [
+                "Step 1 (Matrix Exploration): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Analyze the physical jurisdiction, daily equipment, and core duty for each.",
+                "Step 2 (Crucial Distinction Audit): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
+                "Step 3 (Role Matching Drill): In pairs, randomly name a professional role (e.g. TRC, AFISO, Marshaller, Tower ATCO). Your partner must state the domain, primary duty, and whom they report to."
+              ],
+              "domains": [
+                {
+                  "id": "landside",
+                  "name": "1. Landside Operations & Passenger Services",
+                  "keyJurisdiction": "Public Terminal Concourse, Check-In Halls & Landside Perimeter",
+                  "description": "Managing the passenger flow, baggage drop-off, accessibility assistance (PRM), security screening, and border control before the security checkpoint barrier.",
+                  "keyRoles": [
+                    {
+                      "title": "Passenger Service Agent (PSA)",
+                      "duty": "Check-in processing, boarding gate management, flight document verification."
+                    },
+                    {
+                      "title": "Aviation Security Screener",
+                      "duty": "X-ray screening of cabin and hold baggage, explosive trace detection, passenger metal detection."
+                    },
+                    {
+                      "title": "Terminal Duty Manager",
+                      "duty": "Overall landside operational coordination, crowd control, queue management, terminal facility oversight."
+                    }
                   ]
                 },
                 {
-                  "id": "pair2",
-                  "title": "Pair 2: AFISO (TSEEAC) <-> Inbound VFR Aircraft",
-                  "context": "A Cessna 172 is inbound to a non-controlled regional airfield. The AFISO is on duty in the aerodrome flight information station. Low winter sun and flocking birds have been observed near Runway 26 threshold.",
-                  "roleA": "AFISO (TSEEAC): Provide aerodrome flight information: runway in use 26, surface wind 240/12kt, QNH 1018, cautionary bird advisory, and report on opposing glider traffic.",
-                  "roleB": "VFR Pilot: Acknowledge information, report position over visual reporting point (Sierra), and state intentions for standard overhead join.",
-                  "targetPhrases": [
-                    "\"Information only: Runway 26 in use, wind 240 degrees at 12 knots...\"",
-                    "\"Be advised, a flock of lapwings has been reported near the threshold...\"",
-                    "\"As an AFISO, I am tasked with providing traffic and safety advisories.\""
+                  "id": "airside",
+                  "name": "2. Airside Ground Operations & Ramp Servicing",
+                  "keyJurisdiction": "Apron, Aircraft Parking Stands & Airside Service Roads",
+                  "description": "Executing turnaround operations in the servicing envelope around the parked aircraft. Strict coordination is required to protect the departure slot (CTOT).",
+                  "keyRoles": [
+                    {
+                      "title": "Turnaround Coordinator (TRC / Red Cap)",
+                      "duty": "Directing simultaneous ramp operations (fueling, catering, cleaning, baggage loading) and signing off the final loadsheet."
+                    },
+                    {
+                      "title": "Aircraft Marshaller / Ramp Lead",
+                      "duty": "Guiding incoming aircraft onto parking stand centerline via visual daylight wands, ensuring chocks are inserted."
+                    },
+                    {
+                      "title": "Ramp Agent / Baggage Handler",
+                      "duty": "Operating belt loaders, towing baggage carts, loading and securing cargo holds and unit load devices (ULDs)."
+                    },
+                    {
+                      "title": "Aviation Refueler",
+                      "duty": "Connecting fuel hydrants/bowsers to aircraft wing tanks, monitoring fuel quantity and grounding cables."
+                    }
                   ]
                 },
                 {
-                  "id": "pair3",
-                  "title": "Pair 3: Terminal Duty Manager <-> Ramp Operations Supervisor",
-                  "context": "A group of 14 delayed transit passengers from a connecting transatlantic flight has just cleared security. The departure flight has a strict 10-minute CTOT slot.",
-                  "roleA": "Terminal Duty Manager: Request a 5-minute gate hold to allow the transit passengers to board, arguing customer service and connection costs.",
-                  "roleB": "Ramp Operations Supervisor: Defend the slot departure, explaining the financial and network penalties of missing the Eurocontrol CTOT slot.",
-                  "targetPhrases": [
-                    "\"We are in charge of passenger processing and must avoid misconnecting passengers...\"",
-                    "\"If we miss this slot, ATC will hold the flight for at least 45 minutes...\"",
-                    "\"Can we ensure that baggage is prioritized while passengers board through the gate?\""
+                  "id": "flightcrew",
+                  "name": "3. Flight Crew & Airline Operations",
+                  "keyJurisdiction": "Aircraft Cockpit, Cabin, and Airline Operations Control Center (OCC)",
+                  "description": "Safe navigation and operation of the aircraft. Ultimate command authority rests with the Captain (Pilot-in-Command).",
+                  "keyRoles": [
+                    {
+                      "title": "Captain (Pilot-in-Command / PIC)",
+                      "duty": "Final authority and responsibility for aircraft operation, flight safety, and emergency command decisions."
+                    },
+                    {
+                      "title": "First Officer (Co-Pilot)",
+                      "duty": "Assisting the Captain, programming the Flight Management Computer (FMC), conducting external walkaround inspections."
+                    },
+                    {
+                      "title": "Flight Dispatcher (OCC)",
+                      "duty": "Filing flight plans, calculating fuel requirements, monitoring en-route weather and NOTAMs, issuing operational releases."
+                    }
+                  ]
+                },
+                {
+                  "id": "atco",
+                  "name": "4. Air Traffic Control Officers (ATCOs)",
+                  "keyJurisdiction": "Active Runways, Taxiways, and Controlled Airspace (Classes A to E)",
+                  "description": "Air Traffic Controllers possess exclusive legal authority to issue mandatory tactical instructions and clearances to pilots and ground vehicles to maintain separation.",
+                  "keyRoles": [
+                    {
+                      "title": "Tower Controller (TWR)",
+                      "duty": "Issuing takeoff and landing clearances, managing aircraft on the active runway and in aerodrome traffic circuits."
+                    },
+                    {
+                      "title": "Ground Controller (GND)",
+                      "duty": "Managing taxiing aircraft and ground service vehicles on airfield taxiways and aprons."
+                    },
+                    {
+                      "title": "Approach Radar Controller (APP)",
+                      "duty": "Sequencing inbound and outbound aircraft between terminal area airspace and local aerodrome."
+                    }
+                  ]
+                },
+                {
+                  "id": "tseeac",
+                  "name": "5. Civil Aviation Technical Corps: TSEEAC",
+                  "keyJurisdiction": "Non-Controlled Regional Aerodromes, DGAC Safety Oversight Directorates, Environmental Offices",
+                  "description": "TSEEAC professionals provide critical institutional, operational, and regulatory services. Crucially, they do NOT provide air traffic control separation; instead, they ensure flight information, aerodrome certification, and compliance oversight.",
+                  "keyRoles": [
+                    {
+                      "title": "AFISO (Aerodrome Flight Information Service Officer)",
+                      "duty": "Providing traffic information, weather advisories (METAR), and aerodrome conditions to pilots at non-controlled airfields without separation instructions."
+                    },
+                    {
+                      "title": "DGAC Aviation Safety Oversight Inspector",
+                      "duty": "Auditing airlines, maintenance organizations (Part-145), and aerodromes for regulatory compliance."
+                    },
+                    {
+                      "title": "Aerodrome Operations Coordinator",
+                      "duty": "Ensuring runway friction testing, wildlife hazard management, obstacle limitation surface compliance, and emergency preparedness."
+                    }
                   ]
                 }
               ]
             },
-            "careerForumDebate": {
-              "title": "Activity 5: Aviation Career Forum & Operational Dilemma Debate",
-              "summary": "A fast-moving winter weather front brings freezing fog, reducing Runway Visual Range (RVR) to 350m at a regional aerodrome. Stand capacity is at 95%, de-icing rigs are working at maximum throughput, and two inbound diversions are requesting priority due to fuel minimums. Each team represents an aviation profession, defends operational priorities, and negotiates a consensus action plan.",
+            "jobVisualProfiles": [
+              {
+                "id": "atco",
+                "name": "Tower Air Traffic Control Officer (ATCO)",
+                "domain": "Air Traffic Services",
+                "image": "images/job_atco.jpg",
+                "workplace": "Aerodrome Control Tower Cab",
+                "tools": "Radar screens, flight progress strips, radio transceiver, airfield lighting panel",
+                "responsibility": "Tactical runway clearances, visual monitoring of aerodrome traffic, maintaining mandatory separation between arriving and departing aircraft.",
+                "formula": "The Tower ATCO is tasked with maintaining separation and has authority to clear aircraft for takeoff or landing."
+              },
+              {
+                "id": "trc",
+                "name": "Turnaround Coordinator (TRC / Red Cap)",
+                "domain": "Airside Ground Operations",
+                "image": "images/job_trc.jpg",
+                "workplace": "Apron & Aircraft Stand Charlie-4",
+                "tools": "Turnaround checklist tablet, radio headset, high-visibility vest, loadsheet",
+                "responsibility": "Orchestrating simultaneous servicing operations (fuel, baggage, catering, cleaning) to protect the Target Off-Blocks Time (TOBT) and departure slot.",
+                "formula": "The TRC is responsible for supervising ramp operations and liaises directly with the First Officer on weight and balance."
+              },
+              {
+                "id": "pilot",
+                "name": "Airline First Officer (Co-Pilot)",
+                "domain": "Flight Crew Operations",
+                "image": "images/job_pilot.jpg",
+                "workplace": "Aircraft Cockpit / Flight Deck",
+                "tools": "Electronic Flight Bag (EFB), Flight Management Computer (FMC), headset, walkaround torch",
+                "responsibility": "Pre-flight flight deck preparation, FMC programming, cross-checking departure performance figures, and conducting the exterior walkaround inspection.",
+                "formula": "The First Officer is tasked with verifying fuel quantities and reports directly to the Captain."
+              },
+              {
+                "id": "afiso",
+                "name": "Aerodrome Flight Information Service Officer (AFISO / TSEEAC)",
+                "domain": "Civil Aviation Corps (TSEEAC)",
+                "image": "images/job_afiso.jpg",
+                "workplace": "Regional Aerodrome Flight Information Office",
+                "tools": "VHF air-ground radio, meteorological display (anemometer, barometer), flight progress board",
+                "responsibility": "Broadcasting essential aerodrome traffic information, runway surface state (SNOWTAM), and current weather observations without issuing separation instructions.",
+                "formula": "The AFISO is responsible for providing safety information and alerts, but does not have authority to issue mandatory separation clearances."
+              },
+              {
+                "id": "marshaller",
+                "name": "Aircraft Marshaller / Ramp Lead",
+                "domain": "Airside Ground Operations",
+                "image": "images/job_marshaller.jpg",
+                "workplace": "Apron Stand Lead-in Line",
+                "tools": "Daylight illuminated wands, ear defenders, high-visibility jacket",
+                "responsibility": "Guiding approaching aircraft along stand centerline into exact parking position, signaling the nosewheel stop mark, and ensuring chocks are positioned.",
+                "formula": "The marshaller is tasked with guiding the flight crew to the stand and signaling when the servicing envelope is safe."
+              },
+              {
+                "id": "psa",
+                "name": "Passenger Service Agent (PSA)",
+                "domain": "Landside Terminal Operations",
+                "image": "images/job_psa.jpg",
+                "workplace": "Terminal Departure Gate & Check-in Desks",
+                "tools": "Boarding pass optical scanner, boarding gate microphone, passport reader",
+                "responsibility": "Managing passenger boarding priority, verifying identity credentials, assisting reduced-mobility passengers, and enforcing hand-luggage limits.",
+                "formula": "The PSA is tasked with boarding verification and liaises with the TRC regarding final passenger headcounts."
+              }
+            ],
+            "whoAmIQuiz": [
+              {
+                "id": 1,
+                "role": "Tower Air Traffic Controller (ATCO)",
+                "domain": "Air Traffic Services",
+                "clues": [
+                  "Clue 1 (Workspace): I work high above the airfield inside an elevated glass cab with a 360-degree panoramic view.",
+                  "Clue 2 (Equipment): My console features digital radar monitors, flight progress strips, wind gauges, and airfield lighting controls.",
+                  "Clue 3 (Authority): I have the sole legal authority to issue takeoff and landing clearances to flights on active runways.",
+                  "Clue 4 (Liaison): I coordinate closely with Ground Control to ensure taxiing aircraft cross active runways safely."
+                ],
+                "tabooWords": [
+                  "Tower",
+                  "Clearance",
+                  "Runway"
+                ]
+              },
+              {
+                "id": 2,
+                "role": "Turnaround Coordinator (TRC / Red Cap)",
+                "domain": "Airside Ground Operations",
+                "clues": [
+                  "Clue 1 (Workspace): I spend my entire day on the concrete apron in the immediate servicing zone around parked aircraft.",
+                  "Clue 2 (Equipment): I wear a fluorescent red cap or vest and carry an electronic tablet displaying the live turnaround countdown timeline.",
+                  "Clue 3 (Authority): I supervise baggage loaders, refuelers, and caterers to make sure all ground tasks finish before our departure slot.",
+                  "Clue 4 (Liaison): I hand the final calculated loadsheet to the First Officer and confirm all hold doors are latched."
+                ],
+                "tabooWords": [
+                  "Ramp",
+                  "Turnaround",
+                  "Baggage"
+                ]
+              },
+              {
+                "id": 3,
+                "role": "AFISO (Aerodrome Flight Information Service Officer - TSEEAC)",
+                "domain": "Civil Aviation Corps (TSEEAC)",
+                "clues": [
+                  "Clue 1 (Workspace): I work at non-controlled regional aerodromes, providing service to commercial, business, and general aviation pilots.",
+                  "Clue 2 (Equipment): I use VHF radio, barometric altimeters, anemometers, and flight notification logs.",
+                  "Clue 3 (Authority): I broadcast weather, wind, and traffic observations, but I cannot issue separation clearances—pilots maintain their own separation.",
+                  "Clue 4 (Liaison): I transmit aerodrome emergency alerts to rescue services if an overdue aircraft fails to report."
+                ],
+                "tabooWords": [
+                  "Information",
+                  "Advise",
+                  "Non-controlled"
+                ]
+              },
+              {
+                "id": 4,
+                "role": "Aircraft Marshaller / Ramp Lead",
+                "domain": "Airside Ground Operations",
+                "clues": [
+                  "Clue 1 (Workspace): I stand on the concrete apron directly in front of the parking stand lead-in line.",
+                  "Clue 2 (Equipment): I hold two bright orange or yellow illuminated daylight wands and wear heavy ear protection.",
+                  "Clue 3 (Authority): Pilots rely on my hand signals to steer the aircraft nosewheel to the exact stop mark.",
+                  "Clue 4 (Liaison): I signal the ground handlers to chock the wheels as soon as the engines shut down."
+                ],
+                "tabooWords": [
+                  "Wands",
+                  "Signal",
+                  "Park"
+                ]
+              },
+              {
+                "id": 5,
+                "role": "Airline First Officer (Co-Pilot)",
+                "domain": "Flight Crew",
+                "clues": [
+                  "Clue 1 (Workspace): My primary workstation is the right-hand seat of a pressurized glass cockpit.",
+                  "Clue 2 (Equipment): I program the Flight Management Computer (FMC) and cross-check electronic flight bags and navigation charts.",
+                  "Clue 3 (Authority): I share operational duties with the Captain and am qualified to fly the aircraft in all phases.",
+                  "Clue 4 (Liaison): I conduct external pre-flight walkarounds and request clearances from ATCOs over the radio."
+                ],
+                "tabooWords": [
+                  "Fly",
+                  "Cockpit",
+                  "Pilot"
+                ]
+              },
+              {
+                "id": 6,
+                "role": "Passenger Service Agent (PSA)",
+                "domain": "Landside Terminal Operations",
+                "clues": [
+                  "Clue 1 (Workspace): I work inside the modern airport terminal at check-in desks and departure boarding gates.",
+                  "Clue 2 (Equipment): I use barcode scanners, passport readers, gate public address microphones, and computerized boarding systems.",
+                  "Clue 3 (Authority): I have the authority to verify travel documentation and deny boarding if passengers lack valid credentials.",
+                  "Clue 4 (Liaison): I liaise with gate security, cabin crew pursers, and the Turnaround Coordinator regarding passenger counts."
+                ],
+                "tabooWords": [
+                  "Ticket",
+                  "Boarding",
+                  "Gate"
+                ]
+              },
+              {
+                "id": 7,
+                "role": "DGAC Aviation Safety Inspector (TSEEAC)",
+                "domain": "Civil Aviation Corps (TSEEAC)",
+                "clues": [
+                  "Clue 1 (Workspace): I work between civil aviation regional directorates (DSAC), airport administration, and maintenance hangars.",
+                  "Clue 2 (Equipment): I carry regulatory audit protocols, obstacle limitation charts, and airfield inspection measuring tools.",
+                  "Clue 3 (Authority): I am authorized by the state civil aviation authority to conduct audits and suspend non-compliant operational permits.",
+                  "Clue 4 (Liaison): I liaise with airport operators, airline maintenance quality managers, and aerodrome managers."
+                ],
+                "tabooWords": [
+                  "Audit",
+                  "Inspect",
+                  "Rules"
+                ]
+              },
+              {
+                "id": 8,
+                "role": "Ramp Agent / Baggage Handler",
+                "domain": "Airside Ground Operations",
+                "clues": [
+                  "Clue 1 (Workspace): I work on the apron, in lower aircraft cargo holds, and inside the subterranean baggage sorting facility.",
+                  "Clue 2 (Equipment): I drive diesel or electric baggage tugs, position belt loaders, and load unit load devices (ULDs).",
+                  "Clue 3 (Authority): I am responsible for handling cargo carefully and securing cargo door latches properly.",
+                  "Clue 4 (Liaison): I receive instructions from the Turnaround Coordinator and coordinate with baggage reconciliation teams."
+                ],
+                "tabooWords": [
+                  "Luggage",
+                  "Bags",
+                  "Suitcase"
+                ]
+              }
+            ],
+            "decisionTable": {
+              "title": "Activity 6: Winter Weather Diversion Crisis Decision Table & Action Protocol",
+              "summary": "Aerodrome operations during severe weather demand swift cross-domain coordination. Analyze the multi-agency triage matrix, prioritize three simultaneous crises on Stand Charlie-4, and negotiate an agreed action plan.",
               "modeBadges": [
-                "👥 4-Way Multi-Stakeholder Forum",
-                "⏱️ 35 mins",
-                "⚡ Crisis Management Negotiation",
-                "🎯 Consensus Building"
+                "👥 Small Groups (4-5 Students)",
+                "❄️ Winter Crisis Triage Table",
+                "🎯 Consensus Negotiation"
               ],
               "instructions": [
-                "Step 1 (Crisis Briefing & Stance - 8 mins): Read the Winter Storm & Diversion Gridlock scenario. Assign one stakeholder role per team member (ATCO, AFISO/Ops, TRC/Ground, Captain). Review your non-negotiable priority.",
-                "Step 2 (Stakeholder Round-Robin - 12 mins): Each stakeholder presents their operational dilemma and proposed sequence of events. State what your role can and cannot concede.",
-                "Step 3 (Consensus Negotiation & Rating - 15 mins): Negotiate a sequential 3-step action plan using conditional language ('Provided that...', 'On condition that...'). Vote on the 3 consensus challenges in the agreement tracker."
+                "Step 1 (Crisis Briefing & Stance): Stand Charlie-4 at 16:45. Sudden freezing rain triggers aerodrome-wide ground delays. Flight ENAC-101 has 180 passengers onboard with an in-flight medical emergency divert inbound. Review the 3 complications in the table below.",
+                "Step 2 (Stakeholder Round-Robin): Each student adopts a role (AFISO / TSEEAC, Tower ATCO, Turnaround Coordinator, Airline Dispatcher). State your department's top priority using conditional language ('Provided that...', 'On condition that...').",
+                "Step 3 (Consensus Negotiation & Rating): Fill in the negotiated consensus action plan in your notes. Grade the team compromise on safety, passenger welfare, and punctuality."
               ],
-              "deliverable": "A negotiated 3-step crisis operational resolution signed off by all 4 stakeholders, balancing fuel safety, stand capacity, de-icing holdover times, and slot preservation.",
-              "teacherNotes": "Maintain high tension! Remind them that if no decision is made within 20 minutes, the Captain's crew times out, the diversion exhausts fuel reserves, and runway friction degrades further. Demand conditional structures.",
-              "scenario": "Regional Aerodrome 'Echo-Delta' is experiencing severe winter weather with RVR 350m and freezing drizzle. Only 2 parking stands remain open. Two diverted commercial jets are in the holding pattern, one declaring 'Minimum Fuel'. On the ground, an outbound flight on Stand 2 has passengers boarded, but its holdover time has expired, requiring a second de-icing cycle.",
-              "stakeholders": [
+              "triageTable": [
                 {
-                  "name": "Tower & Approach ATCOs",
-                  "priority": "Runway safety, separation in holding stacks, and emergency prioritization for the minimum-fuel diversion.",
-                  "stance": "Has sole authority over runway access; demands clear runway sequencing and will not clear departures until emergency fuel traffic lands."
+                  "complication": "1. Stand Contamination & Sleet",
+                  "agencies": "TRC, Marshaller, Runway Sweeper, AFISO / TSEEAC",
+                  "safetyRegulation": "Braking action below medium-poor requires SNOWTAM update and reduced towing speeds.",
+                  "actionProtocol": "Halt pushback on taxiway Kilo; deploy chemical de-icer to stand surface before tractor connects."
                 },
                 {
-                  "name": "AFISO / Aerodrome Operations Coordinator (TSEEAC)",
-                  "priority": "Airfield friction coefficient measurement, snow and de-icing coordinator, apron safety compliance, and stand allocation.",
-                  "stance": "Liaises between airport authority and services; ensures de-icing pad does not gridlock and coordinates snow clearing plows on taxiways."
+                  "complication": "2. Inbound Medical Emergency Divert",
+                  "agencies": "Tower ATCO, OCC Dispatcher, Aerodrome Emergency Medical Lead",
+                  "safetyRegulation": "Medical divert has absolute air traffic priority over scheduled departures.",
+                  "actionProtocol": "Reassign Stand Charlie-5 to divert; clear emergency corridor for airport ambulance."
                 },
                 {
-                  "name": "Turnaround Coordinator & Ground Handling Lead",
-                  "priority": "Ramp safety, ground equipment availability, de-icing fluid inventory, and baggage handling for diverted passengers.",
-                  "stance": "Warns that ramp handlers are nearing maximum duty limits and de-icing fluid is at critical reserves; insists on clearing Stand 2 first."
-                },
-                {
-                  "name": "Airline Captain (Outbound Flight on Stand 2)",
-                  "priority": "Passenger welfare, flight duty period (FDP) limits, and slot adherence.",
-                  "stance": "Argues that if the aircraft is not de-iced and dispatched within 20 minutes, the crew will exceed legal duty hours and the flight must be cancelled."
-                }
-              ],
-              "consensusChallenge": "In mixed teams of 4, negotiate a step-by-step priority sequence using conditional structures ('Provided that...', 'As long as...', 'On condition that...') to resolve the standoff safely and efficiently."
-            },
-            "closingReview": {
-              "title": "Activity 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
-              "summary": "The final 10 minutes consolidate today's high-yield vocabulary, reinforce syllable stress on professional job titles, and update your personal continuous assessment log.",
-              "modeBadges": [
-                "👤 Individual & 👥 Pairs",
-                "⏱️ 10 mins",
-                "⚡ Syllable Stress & Self-Audit",
-                "🎯 Formative Synthesis"
-              ],
-              "instructions": [
-                "Step 1 (Pronunciation Practice - 4 mins): Practice pronouncing the 6 multisyllabic professional titles aloud with correct syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st).",
-                "Step 2 (Rapid-Fire Partner Quiz - 4 mins): Test your partner on 3 random terms from today's session (e.g. PSA vs. TRC, AFISO jurisdiction, Foreign Object Debris prevention).",
-                "Step 3 (Self-Assessment & Portfolio - 2 mins): Rate your confidence (1 to 5) in explaining your future aviation profession. Record target terms in your semester study log."
-              ],
-              "deliverable": "Accurate pronunciation of 4 key multisyllabic aviation terms + complete self-assessment entry in study portfolio.",
-              "teacherNotes": "Focus on primary stress in technical nouns vs. verbs. Remind students that Session 5 is Formative Evaluation 1: ensure portfolios, vocabulary logs, and presentations are fully prepped.",
-              "reviewPrompts": [
-                {
-                  "title": "1. Syllable Stress & Pronunciation Practice",
-                  "desc": "Drill accurate syllable stress: au-THOR-i-ty (2nd), re-SPON-si-ble (2nd), tech-NI-cian (2nd), co-OR-di-na-tor (2nd), o-ver-SIGHT (1st), sur-VEIL-lance (2nd)."
-                },
-                {
-                  "title": "2. Rapid-Fire Retrieval Quiz",
-                  "desc": "In pairs, quiz each other on 3 random terms from today's 18 vocabulary bank without checking notes (e.g. AFISO vs. ATCO, Turnaround Coordinator, Flight Dispatcher)."
-                },
-                {
-                  "title": "3. Self-Assessment & Continuous Learning",
-                  "desc": "Rate your ability (1 to 5) to explain the responsibilities of your future aviation profession. Update your study portfolio with target expressions."
+                  "complication": "3. De-icing Rig Shortage & Expiring Slots",
+                  "agencies": "De-icing Rig Operator, TRC, First Officer, CFMU Slot Lead",
+                  "safetyRegulation": "Holdover time begins at start of final anti-icing step. Takeoff must occur inside window.",
+                  "actionProtocol": "Perform remote pad de-icing near runway threshold to prevent holdover expiration during taxi."
                 }
               ]
             }
@@ -24835,7 +25223,8 @@
                 "In summary, our group concludes that..."
               ]
             }
-          }
+          },
+          "title": "Jobs in Aviation"
         }
       }
     },

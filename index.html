@@ -3465,6 +3465,19 @@
     window.openFilmDetailsModal = openFilmDetailsModal;
     window.closeFilmDetailsModal = closeFilmDetailsModal;
 
+    window.saveLessonNote = function(key, val) {
+      try {
+        localStorage.setItem('gsea_note_' + key, val);
+      } catch (e) {}
+    };
+    window.getLessonNote = function(key) {
+      try {
+        return localStorage.getItem('gsea_note_' + key) || '';
+      } catch (e) {
+        return '';
+      }
+    };
+
     window.syncPortfolioDrawerHeader = function(trackKey) {
       const activeTrack = trackKey || 'ag';
       const isAg = (activeTrack === 'ag');
@@ -3719,6 +3732,18 @@
       } else if (modalState.tab === 'ddrs') {
         renderDdrsTab(theme);
       }
+
+      // Auto-restore saved lesson notes
+      setTimeout(() => {
+        try {
+          const textareas = bodyEl.querySelectorAll('textarea[id^="notes-"]');
+          textareas.forEach(ta => {
+            const key = ta.id.replace('notes-', '');
+            const saved = window.getLessonNote ? window.getLessonNote(key) : localStorage.getItem('gsea_note_' + key);
+            if (saved && !ta.value) ta.value = saved;
+          });
+        } catch (e) {}
+      }, 20);
     }
 
     function renderLessonPlanObjectivesTab(sessionData, theme) {
@@ -6085,6 +6110,8 @@
       const hero = content.hero || {};
       const opening = content.openingSession || {};
       const taxonomy = content.jobTaxonomy || {};
+      const profiles = content.jobVisualProfiles || [];
+      const quiz = content.whoAmIQuiz || [];
       const clinic = content.grammarClinic || {};
       const handoffs = content.handoffSimulation || {};
       const debate = content.careerForumDebate || {};
@@ -6092,7 +6119,7 @@
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
-          <!-- Printable Action Bar -->
+          <!-- Official PDF Action Bar (Zero Print-to-Teach / 100% Digital Download) -->
           <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
             <div>
               <div class="flex items-center gap-2">
@@ -6101,10 +6128,10 @@
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Jobs in Aviation: Roles, Responsibilities &amp; Operational Interfaces</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S1_M1_AT_S4_Lesson_Worksheet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-sky-700 hover:bg-sky-800 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Download Official 7-Page PDF Worksheet</span>
+            </a>
           </div>
 
           <!-- Hero Banner & Context -->
@@ -6172,14 +6199,20 @@
                 `).join('')}
               </div>
             </div>
+
+            <!-- Auto-Saving Notes Textarea -->
+            <div class="pt-2 border-t border-slate-100 space-y-1.5">
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">📝 My Session 3 Catch-Up Notes</span>
+              <textarea id="notes-at-s4_warmup" oninput="window.saveLessonNote('at-s4_warmup', this.value)" placeholder="Note key takeaways, GPU functions, and turnaround terms recalled..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 2: Aviation Job Taxonomy & The Operational Spectrum -->
+          <!-- Activity 2: Aviation Operational Roles & Jurisdictions Reference Matrix -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">02</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${taxonomy.title || 'Activity 2: Aviation Roles Across the Industry'}</h3>
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${taxonomy.title || 'Activity 2: Aviation Operational Roles &amp; Jurisdictions Reference Matrix'}</h3>
               </div>
               <span class="text-[11px] font-semibold text-slate-500">5 Primary Domains</span>
             </div>
@@ -6208,8 +6241,13 @@
                         <span class="text-[10.5px] font-bold px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-800 shadow-2xs">${r}</span>
                       `).join('')}
                     </div>
-                    <div class="p-2.5 rounded-lg bg-white/80 border border-slate-200 text-[11px] text-slate-600">
-                      <strong class="text-slate-800">Sample Operational Responsibility:</strong> ${dom.sampleDuty || ''}
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] pt-1">
+                      <div class="p-2.5 rounded-lg bg-white/80 border border-slate-200 text-slate-600">
+                        <strong class="text-slate-800 block mb-0.5">Sample Operational Duty:</strong> ${dom.sampleDuty || ''}
+                      </div>
+                      <div class="p-2.5 rounded-lg bg-white/80 border border-slate-200 text-slate-600">
+                        <strong class="text-slate-800 block mb-0.5">Required Licences / Certifications:</strong> ${dom.certifications || 'Airport security badges, operational permits'}
+                      </div>
                     </div>
                   </div>
                 `;
@@ -6217,12 +6255,153 @@
             </div>
           </div>
 
-          <!-- Activity 3: Functional Grammar & Authority Clinic -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
+          <!-- Activity 3: "What Do These People Do?" Visual Profiling & "Who Am I?" Quiz Game -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-5">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">03</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${clinic.title || 'Activity 3: Language Focus: Roles, Responsibilities &amp; Authority'}</h3>
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">Activity 3: Visual Role Profiling &amp; "Who Am I?" Quiz Game</h3>
+              </div>
+              <span class="text-[11px] font-semibold text-slate-500">6 Roles &amp; Team Game</span>
+            </div>
+            
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Explore 6 authentic aviation professions in action. Click each photograph to expand the complete operational role dossier, formula, and jurisdiction. Then challenge your partner or compete in the <strong>"Who Am I?" Progressive Clue Quiz Game</strong>!
+            </p>
+
+            <!-- PART A: 6-Role Visual Profiles Grid -->
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-900 uppercase tracking-wider">📸 Part A: Visual Operational Profiles (Click to Expand Dossier)</span>
+                <span class="text-[11px] text-slate-500">6 Authentic Field Roles</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                ${profiles.map(p => `
+                  <div class="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-2xs hover:shadow-xs transition-all flex flex-col justify-between">
+                    <div>
+                      <div class="relative h-44 overflow-hidden group">
+                        <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 select-none" onerror="this.src='images/aas_m1card4.jpg'" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
+                          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded text-white shadow-xs ${p.badgeColor === 'rose' ? 'bg-rose-700' : p.badgeColor === 'emerald' ? 'bg-emerald-700' : p.badgeColor === 'amber' ? 'bg-amber-600' : p.badgeColor === 'indigo' ? 'bg-indigo-700' : 'bg-sky-700'}">
+                            ${p.badge}
+                          </span>
+                        </div>
+                      </div>
+                      <div class="p-3.5 space-y-2">
+                        <div>
+                          <span class="text-[10px] font-mono font-bold uppercase text-slate-500 tracking-wider">${p.domain}</span>
+                          <h4 class="text-xs sm:text-sm font-black text-slate-900 leading-snug mt-0.5">${p.title}</h4>
+                        </div>
+                        <p class="text-[11px] text-slate-700 italic bg-slate-50 p-2 rounded-lg border border-slate-200 font-medium">
+                          "${p.formula}"
+                        </p>
+                        <!-- Collapsible Dossier -->
+                        <div id="s4-dossier-${p.id}" class="hidden space-y-2 pt-2 border-t border-slate-100 text-[11px]">
+                          <div class="p-2 rounded bg-amber-50/70 border border-amber-200 text-amber-950">
+                            <strong>Legal Authority:</strong> ${p.authority}
+                          </div>
+                          <div class="p-2 rounded bg-sky-50/70 border border-sky-200 text-sky-950">
+                            <strong>Interfaces:</strong> ${p.interfaces}
+                          </div>
+                          <div class="space-y-1">
+                            <strong class="text-slate-800 block">Key Daily Duties:</strong>
+                            <ul class="space-y-1 list-disc pl-4 text-slate-600">
+                              ${(p.keyDuties || []).map(d => `<li>${d}</li>`).join('')}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3.5 pt-0">
+                      <button type="button" id="s4-dossier-btn-${p.id}" onclick="window.toggleS4ProfileDossier('${p.id}')" class="w-full py-1.5 px-3 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition-all border border-slate-200 cursor-pointer flex items-center justify-center gap-1.5">
+                        <span>View Role Dossier</span> &rarr;
+                      </button>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- PART B: "Who Am I?" Progressive Clue Quiz Game -->
+            <div class="space-y-3 pt-3 border-t border-slate-100">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                <span class="text-xs font-bold text-slate-900 uppercase tracking-wider">🎮 Part B: "Who Am I?" Progressive Clue Quiz &amp; Taboo Challenge</span>
+                <span class="text-[11px] text-slate-500 font-medium">Clue 1 = 4pts &bull; Clue 2 = 3pts &bull; Clue 3 = 2pts &bull; Clue 4 = 1pt</span>
+              </div>
+
+              <!-- Taboo Challenge Instructions -->
+              <div class="p-3.5 rounded-xl bg-gradient-to-r from-amber-50 via-white to-amber-50 border border-amber-200/90 text-xs text-amber-950 space-y-1">
+                <div class="flex items-center gap-1.5 font-bold text-amber-900 uppercase tracking-wider text-[11px]">
+                  <span>⚡ Spoken Taboo Pair Challenge</span>
+                </div>
+                <p>
+                  Work in pairs or two teams (Team Alpha vs Team Bravo). Choose a card. Describe the job to your partner using target responsibility formulas (<em>"This person is tasked with..."</em>, <em>"They have authority to..."</em>) <strong>WITHOUT saying the 3 forbidden Taboo words</strong>!
+                </p>
+              </div>
+
+              <!-- Quiz Cards Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                ${quiz.map(q => `
+                  <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-3 flex flex-col justify-between">
+                    <div class="space-y-2.5">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[10.5px] font-extrabold uppercase px-2 py-0.5 rounded bg-slate-200 text-slate-700">Mystery Role #0${q.id}</span>
+                        <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">${q.domain}</span>
+                      </div>
+                      
+                      <!-- Progressive Clues List -->
+                      <div class="space-y-1.5 text-xs">
+                        ${q.clues.map((c, cIdx) => `
+                          <div id="s4-quiz-c-${q.id}-${cIdx + 1}" class="${cIdx === 0 ? '' : 'hidden'} p-2 rounded-lg bg-white border border-slate-200 text-slate-800 transition-all">
+                            ${c}
+                          </div>
+                        `).join('')}
+                      </div>
+
+                      <!-- Next Clue Button -->
+                      <div class="flex items-center gap-2">
+                        <button type="button" id="s4-quiz-nextclue-${q.id}" onclick="window.toggleS4QuizNextClue(${q.id})" class="text-[11px] font-bold text-sky-700 hover:text-sky-900 flex items-center gap-1 cursor-pointer">
+                          <span>Reveal Next Clue</span> &rarr;
+                        </button>
+                      </div>
+
+                      <!-- Taboo Forbidden Words Box -->
+                      <div class="p-2.5 rounded-lg bg-rose-50 border border-rose-200 text-[11px] text-rose-950 flex items-center justify-between">
+                        <span class="font-bold uppercase tracking-wider text-[10px] text-rose-800">🚫 Forbidden Taboo Words:</span>
+                        <div class="flex items-center gap-1 font-mono font-bold">
+                          ${(q.tabooWords || []).map(tw => `<span class="px-1.5 py-0.5 rounded bg-white border border-rose-300 text-rose-700">${tw}</span>`).join('')}
+                        </div>
+                      </div>
+
+                      <!-- Answer Reveal Box -->
+                      <div id="s4-quiz-ans-${q.id}" class="hidden p-2.5 rounded-lg bg-emerald-50 border border-emerald-300 text-xs font-bold text-emerald-950 animate-in fade-in">
+                        ✅ Answer: ${q.role}
+                      </div>
+                    </div>
+
+                    <div class="pt-2 border-t border-slate-200 flex items-center justify-between">
+                      <button type="button" id="s4-quiz-btn-${q.id}" onclick="window.toggleS4QuizAnswer(${q.id})" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 cursor-pointer flex items-center gap-1">
+                        <span>Reveal Mystery Job</span> &rarr;
+                      </button>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Auto-Saving Game Log Textarea -->
+            <div class="pt-2 border-t border-slate-100 space-y-1.5">
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">📝 My Quiz Scores &amp; Taboo Spoken Sentences</span>
+              <textarea id="notes-at-s4_quiz" oninput="window.saveLessonNote('at-s4_quiz', this.value)" placeholder="Record your team scores and practice writing 2 role descriptions without using the forbidden words..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
+          </div>
+
+          <!-- Activity 4: Functional Language Clinic: Responsibilities, Duties & Authority -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">04</span>
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${clinic.title || 'Activity 4: Functional Language Clinic: Responsibilities, Duties &amp; Authority'}</h3>
               </div>
               <span class="text-[11px] font-semibold text-slate-500">Target Language</span>
             </div>
@@ -6252,7 +6431,7 @@
             <!-- Role Clinic Challenge -->
             <div class="space-y-2 pt-2 border-t border-slate-100">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">🎯 Roles & Responsibilities Quick Practice</span>
+                <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">🎯 Roles &amp; Responsibilities Quick Practice</span>
                 <span class="text-[11px] text-slate-500">Select the correct preposition or verb form</span>
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -6272,14 +6451,20 @@
                 `).join('')}
               </div>
             </div>
+
+            <!-- Auto-Saving Notes Textarea -->
+            <div class="pt-2 border-t border-slate-100 space-y-1.5">
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">📝 My Functional Sentence Constructions</span>
+              <textarea id="notes-at-s4_grammar" oninput="window.saveLessonNote('at-s4_grammar', this.value)" placeholder="Draft 3 operational sentences using 'be tasked with', 'have authority to', and 'liaise with vs. report to'..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 4: Pairwork & Triad Simulation — 'A Day in the Life' Role Handoff -->
+          <!-- Activity 5: Pairwork Simulation: 'A Day in the Life' Operational Handoffs -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">04</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${handoffs.title || 'Activity 4: Pairwork &amp; Triad Simulation — Role Handoffs'}</h3>
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">05</span>
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${handoffs.title || 'Activity 5: Pairwork Simulation: Role Handoffs'}</h3>
               </div>
               <span class="text-[11px] font-semibold text-slate-500">Pair &amp; Triad Speaking</span>
             </div>
@@ -6314,14 +6499,42 @@
                 </div>
               `).join('')}
             </div>
+
+            <!-- Student B / Peer Observer Active Listening Checklist -->
+            <div class="p-4 rounded-xl bg-gradient-to-r from-sky-50 via-white to-sky-50 border border-sky-200 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-sky-950 uppercase tracking-wider">👥 Student B / Peer Observer Active Listening Checklist</span>
+                <span class="text-[10.5px] font-mono text-sky-700 font-bold">Interactive Peer Rubric</span>
+              </div>
+              <p class="text-xs text-sky-900">
+                While Partner A and Partner B perform the simulation, the observer audits the dialogue using the 4 criteria below:
+              </p>
+              <div class="space-y-2">
+                ${(handoffs.peerObserverChecklist || []).map(chk => `
+                  <div class="p-2.5 rounded-lg border border-sky-200/80 bg-white flex items-start gap-2.5">
+                    <input type="checkbox" id="s4-peerchk-${chk.id}" class="mt-0.5 rounded text-sky-600 focus:ring-sky-500 h-4 w-4 border-slate-300 cursor-pointer" />
+                    <div>
+                      <span class="text-xs font-bold text-slate-900 block">${chk.criterion}</span>
+                      <p class="text-[11px] text-slate-600 leading-snug mt-0.5">${chk.check}</p>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Auto-Saving Notes Textarea -->
+            <div class="pt-2 border-t border-slate-100 space-y-1.5">
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">📝 My Handoff Script &amp; Peer Feedback</span>
+              <textarea id="notes-at-s4_handoff" oninput="window.saveLessonNote('at-s4_handoff', this.value)" placeholder="Write your spoken handoff notes, observer feedback, and resolution summary here..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 5: Aviation Career Forum & Operational Dilemma Debate -->
+          <!-- Activity 6: Winter Weather Diversion Crisis Decision Table & Action Protocol -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">05</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${debate.title || 'Activity 5: Aviation Career Forum &amp; Operational Dilemma Debate'}</h3>
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">06</span>
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${debate.title || 'Activity 6: Winter Weather Crisis Decision Table &amp; Action Protocol'}</h3>
               </div>
               <span class="text-[11px] font-semibold text-slate-500">Multi-Stakeholder Forum</span>
             </div>
@@ -6348,9 +6561,9 @@
               `).join('')}
             </div>
 
-            <!-- Consensus Challenge & Agreement Tracker -->
+            <!-- Decision Table & Agreement Tracker -->
             <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-2.5">
-              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">🤝 Consensus Summary Table</span>
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">🤝 Decision Table &amp; Consensus Protocol</span>
               <p class="text-xs text-slate-600">${debate.consensusChallenge || 'Rate agreement across priorities and negotiate a formal sequence of actions.'}</p>
               
               <div class="space-y-2 pt-1">
@@ -6372,16 +6585,22 @@
                 `).join('')}
               </div>
             </div>
+
+            <!-- Auto-Saving Notes Textarea -->
+            <div class="pt-2 border-t border-slate-100 space-y-1.5">
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">📝 Negotiated 3-Step Crisis Resolution Plan</span>
+              <textarea id="notes-at-s4_decision" oninput="window.saveLessonNote('at-s4_decision', this.value)" placeholder="Write your group's negotiated 3-step action plan using conditional language ('Provided that...', 'On condition that...')..." class="w-full h-24 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 6: Vocabulary Review, Pronunciation & Wrap-Up -->
+          <!-- Activity 7: Vocabulary Review, Pronunciation & Wrap-Up -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
             <div class="flex items-center justify-between pb-2 border-b border-slate-100">
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">06</span>
-                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${closing.title || 'Activity 6: Vocabulary Review, Pronunciation &amp; Class Wrap-Up'}</h3>
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">07</span>
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-800">${closing.title || 'Activity 7: Vocabulary Review, Syllable Stress &amp; Class Wrap-Up'}</h3>
               </div>
-              <span class="text-[11px] font-semibold text-slate-500">consolidation</span>
+              <span class="text-[11px] font-semibold text-slate-500">Consolidation</span>
             </div>
             <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${closing.summary || ''}</p>
 
@@ -6395,9 +6614,26 @@
                 </div>
               `).join('')}
             </div>
+
+            <!-- Auto-Saving Continuous Learning Textarea -->
+            <div class="pt-2 border-t border-slate-100 space-y-1.5">
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">📝 My Study Log &amp; Target Vocabulary</span>
+              <textarea id="notes-at-s4_vocab" oninput="window.saveLessonNote('at-s4_vocab', this.value)" placeholder="Record 3 target aviation profession terms, pronunciation traps, and personal continuous assessment reflections..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
           </div>
         </div>
       `;
+
+      // Restore saved notes if present
+      setTimeout(() => {
+        ['warmup', 'quiz', 'grammar', 'handoff', 'decision', 'vocab'].forEach(key => {
+          const el = document.getElementById(`notes-at-s4_${key}`);
+          if (el && typeof window.getLessonNote === 'function') {
+            const saved = window.getLessonNote(`at-s4_${key}`);
+            if (saved) el.value = saved;
+          }
+        });
+      }, 50);
     }
 
     window.toggleS4SpotCheckAnswer = function(id) {
@@ -6428,9 +6664,58 @@
       }
     };
 
+    window.toggleS4ProfileDossier = function(id) {
+      const el = document.getElementById(`s4-dossier-${id}`);
+      const btn = document.getElementById(`s4-dossier-btn-${id}`);
+      if (!el || !btn) return;
+      const isHidden = el.classList.contains('hidden');
+      if (isHidden) {
+        el.classList.remove('hidden');
+        btn.innerHTML = '<span>Hide Role Dossier</span> &larr;';
+      } else {
+        el.classList.add('hidden');
+        btn.innerHTML = '<span>View Role Dossier</span> &rarr;';
+      }
+    };
+
+    window.toggleS4QuizNextClue = function(quizId) {
+      for (let c = 2; c <= 4; c++) {
+        const clueEl = document.getElementById(`s4-quiz-c-${quizId}-${c}`);
+        if (clueEl && clueEl.classList.contains('hidden')) {
+          clueEl.classList.remove('hidden');
+          if (c === 4) {
+            const btn = document.getElementById(`s4-quiz-nextclue-${quizId}`);
+            if (btn) btn.classList.add('hidden');
+          }
+          break;
+        }
+      }
+    };
+
+    window.toggleS4QuizAnswer = function(quizId) {
+      const el = document.getElementById(`s4-quiz-ans-${quizId}`);
+      const btn = document.getElementById(`s4-quiz-btn-${quizId}`);
+      if (!el || !btn) return;
+      const isHidden = el.classList.contains('hidden');
+      if (isHidden) {
+        el.classList.remove('hidden');
+        // also reveal all clues
+        for (let c = 2; c <= 4; c++) {
+          const clueEl = document.getElementById(`s4-quiz-c-${quizId}-${c}`);
+          if (clueEl) clueEl.classList.remove('hidden');
+        }
+        const nextBtn = document.getElementById(`s4-quiz-nextclue-${quizId}`);
+        if (nextBtn) nextBtn.classList.add('hidden');
+        btn.innerHTML = '<span>Hide Answer</span> &larr;';
+      } else {
+        el.classList.add('hidden');
+        btn.innerHTML = '<span>Reveal Mystery Job</span> &rarr;';
+      }
+    };
+
     window.setS4JobDebateAgreement = function(topicId, score) {
       for (let s = 1; s <= 5; s++) {
-        const btn = document.getElementById(`s4-debate-${topicId}-btn-${s}`);
+        const btn = document.getElementById(`s4-debate-${topicId}-btn-${score}`);
         if (!btn) continue;
         if (s === score) {
           btn.classList.add('bg-amber-600', 'text-white', 'border-amber-600');

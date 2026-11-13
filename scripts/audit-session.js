@@ -246,7 +246,7 @@ if (plan) {
 const lc = sessionObj.lessonContent || {};
 const lcStr = JSON.stringify(lc);
 const timerBadgeMatches = lcStr.match(/⏱️[^\"]+/g) || [];
-const parenMinuteMatches = lcStr.match(/\([^\)]*mins?[^\)]*\)/gi) || [];
+const parenMinuteMatches = lcStr.match(/\([^\)]*\b\d*\s*(?:mins?|minutes?)\b[^\)]*\)/gi) || [];
 const allTimingMatches = [...new Set([...timerBadgeMatches, ...parenMinuteMatches])];
 
 if (allTimingMatches.length > 0) {

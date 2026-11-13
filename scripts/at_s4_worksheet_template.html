@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 4 Lesson Worksheet - Jobs in Aviation: Roles, Responsibilities &amp; Operational Interfaces</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 1 Technical English (AT • LV121E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.2pt;
+      line-height: 1.32;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 4px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0369a1;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Titles */
+    h1 {
+      font-size: 14pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 10pt;
+      font-weight: 800;
+      color: #0369a1;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    /* Badges & Pills */
+    .badge {
+      display: inline-block;
+      font-size: 6.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 1.5px 5px;
+      border-radius: 3px;
+    }
+
+    .badge-primary { background: #0284c7; color: #ffffff; }
+    .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-emerald { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+    .badge-rose { background: #ffe4e6; color: #9f1239; border: 1px solid #fecdd3; }
+    .badge-slate { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+
+    /* Metadata strip */
+    .meta-strip {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 4px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+      font-size: 7.5pt;
+    }
+
+    /* Card Panels */
+    .panel {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+      background: #ffffff;
+    }
+
+    .panel-sky { background: #f0f9ff; border-color: #bae6fd; }
+    .panel-amber { background: #fffbeb; border-color: #fde68a; }
+    .panel-slate { background: #f8fafc; border-color: #e2e8f0; }
+    .panel-rose { background: #fff1f2; border-color: #fecdd3; }
+    .panel-emerald { background: #f0fdf4; border-color: #bbf7d0; }
+
+    /* Grids */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+    }
+
+    /* Job Card Styling for Page 3 */
+    .job-card {
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+    .job-card img {
+      width: 100%;
+      height: 82px;
+      object-fit: cover;
+      display: block;
+    }
+    .job-card-body {
+      padding: 5px 6px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin-top: 4px;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 800;
+      text-align: left;
+      padding: 4px 6px;
+      border: 1px solid #cbd5e1;
+    }
+
+    td {
+      padding: 3.5px 6px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    /* Notes lines */
+    .notes-box {
+      border: 1px dashed #94a3b8;
+      border-radius: 5px;
+      padding: 5px 7px;
+      background: #fdfdfd;
+      margin-top: 5px;
+    }
+
+    .notes-box .notes-label {
+      font-size: 7pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 3px;
+    }
+
+    .writing-line {
+      height: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    /* Checkboxes */
+    .checkbox-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      font-size: 7.5pt;
+      margin-bottom: 3px;
+    }
+
+    .box-square {
+      width: 9px;
+      height: 9px;
+      border: 1px solid #64748b;
+      border-radius: 2px;
+      margin-top: 1.5px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 1: SESSION OVERVIEW, CORE FRAMEWORK & PART 1 WARM-UP                 -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Technical English Portal</span>
+      <span class="ref">REF: ENAC-GSEA-S1-M1-AT-S4</span>
+    </div>
+
+    <h1>Jobs in Aviation: Roles, Responsibilities &amp; Operational Interfaces</h1>
+    <p style="font-size: 8.5pt; color: #475569; margin-bottom: 6px;">
+      Landside, Airside, Flight Crew, Air Traffic Services &amp; Civil Aviation Corps (TSEEAC)
+    </p>
+
+    <div class="meta-strip">
+      <div><strong>Target Level:</strong> CEFR B1–B2 • TSEEAC Airside Focus</div>
+      <div><strong>Course:</strong> GSEA Semester 1 (AT • LV121E)</div>
+      <div><strong>Duration:</strong> 120 Minutes (Full Block)</div>
+    </div>
+
+    <!-- Section 1: Objectives -->
+    <div class="panel panel-sky" style="margin-bottom: 7px;">
+      <h2><span class="badge badge-primary">01</span> Session Learning Objectives</h2>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Aviation News:</strong> Discuss current airline operations, staffing, and aerodrome headlines fluently.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Role Taxonomy:</strong> Classify aviation personnel across 5 core domains without confusing jurisdictions.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Visual Profiling:</strong> Describe the immediate responsibilities of 6 key professionals using authentic photos.</span></div>
+        </div>
+        <div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Functional Language:</strong> Master spoken structures (<em>tasked with</em>, <em>responsible for</em>, <em>authority to</em>, <em>liaise with</em>).</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Spoken Clue Quiz:</strong> Explain mystery aviation roles under taboo constraints to build spontaneous fluency.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>Crisis Negotiation:</strong> Negotiate a winter weather diversion recovery matrix and conduct peer observation.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Part 1 Warm-up -->
+    <div class="panel" style="margin-bottom: 7px;">
+      <h2><span class="badge badge-primary">Part 1</span> Aviation News &amp; Current Events Prompts</h2>
+      <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 5px;">Work in pairs. Select one headline prompt and discuss operational ramifications for 3 minutes:</p>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div class="panel panel-slate" style="margin-bottom: 0;">
+          <strong>Headline A: Remote Tower Centers &amp; Digital ATM</strong>
+          <p style="font-size: 7pt; color: #475569; margin-top: 2px;">European regional airports increasingly transition to centralized remote digital tower hubs, altering the traditional physical workspace of AFISOs and ATCOs.</p>
+          <p style="font-size: 7pt; color: #0369a1; font-weight: 700; margin-top: 3px;">Prompt: How do high-definition optical cameras and infrared tracking assist situational awareness?</p>
+        </div>
+        <div class="panel panel-slate" style="margin-bottom: 0;">
+          <strong>Headline B: Ramp Staffing &amp; Turnaround Automation</strong>
+          <p style="font-size: 7pt; color: #475569; margin-top: 2px;">Major European airlines partner with ground handlers to deploy semi-autonomous baggage belt loaders and robotic pushback tugs to combat peak-season ramp shortages.</p>
+          <p style="font-size: 7pt; color: #0369a1; font-weight: 700; margin-top: 3px;">Prompt: What safety responsibilities remain strictly with human Turnaround Coordinators?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Session 3 Spot-Check -->
+    <div class="panel" style="margin-bottom: 6px;">
+      <h2><span class="badge badge-primary">Recall</span> Session 3 Ground Operations &amp; GSE Vocabulary Spot-Check</h2>
+      <div class="grid-2" style="font-size: 7.5pt;">
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>Q1: What is the primary difference between chocks-on and chocks-off?</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;"><em>Chocks-on marks the official arrival when wheels are secured. Chocks-off marks off-blocks departure when all ground servicing is complete and pushback begins.</em></p>
+        </div>
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>Q2: Why must handlers never approach an engine while anti-collision lights flash?</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;"><em>Flashing red beacons indicate engines are running or imminent start-up, creating severe ingestion hazards and lethal jet-blast danger.</em></p>
+        </div>
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>Q3: Name two airside vehicles that operate directly at the fuselage service doors.</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;"><em>Catering hi-lift truck (servicing galleys) and ambulift / passenger boarding stairs (servicing main cabin doors).</em></p>
+        </div>
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>Q4: Which conjunctions express cause vs. consequence in ramp safety reports?</strong>
+          <p style="font-size: 7pt; color: #64748b; margin-top: 2px;"><em>Cause: 'due to', 'owing to', 'because of'. Consequence: 'consequently', 'as a result', 'resulted in'.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes box -->
+    <div class="notes-box">
+      <div class="notes-label">Your Warm-up &amp; Session 3 Catch-Up Notes:</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 2: AVIATION ROLES & JURISDICTIONS REFERENCE MATRIX                   -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 2 • ROLES &amp; JURISDICTIONS MATRIX</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 2</span> Aviation Operational Roles &amp; Jurisdictions Reference Matrix</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Aviation operations require seamless inter-agency handoffs across five distinct operational domains. Clear jurisdictional boundaries prevent safety gaps, misunderstandings, and runway incursions.
+    </p>
+
+    <!-- 5 Domains Summary Cards -->
+    <div class="grid-2" style="font-size: 7.5pt; margin-bottom: 6px;">
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <strong style="color: #0369a1;">1. Landside Operations &amp; Terminal Services</strong>
+        <p style="font-size: 7pt; color: #475569; margin-top: 1px;">Passenger Service Agents (PSA), Security Screeners, Customs &amp; Border Control, Terminal Duty Managers. Mandate: Passenger flows, document verification, baggage drop, and terminal security before the airside boundary.</p>
+      </div>
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <strong style="color: #0369a1;">2. Airside &amp; Ramp Ground Operations</strong>
+        <p style="font-size: 7pt; color: #475569; margin-top: 1px;">Turnaround Coordinators (TRC / Red Cap), Ramp Agents, Baggage Handlers, Aircraft Marshallers, Refuelers, De-icing Crew. Mandate: Physical aircraft turnaround on parking stands, GSE movement, loading balance, and pushback.</p>
+      </div>
+    </div>
+
+    <div class="grid-3" style="font-size: 7.5pt; margin-bottom: 6px;">
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <strong style="color: #0369a1;">3. Flight Crew &amp; Airline Ops</strong>
+        <p style="font-size: 7pt; color: #475569; margin-top: 1px;">Captain (PIC), First Officer, Cabin Crew, Flight Dispatchers (OCC). Mandate: Safe navigation, FMC setup, final walkaround, weight &amp; balance release, and operational control.</p>
+      </div>
+      <div class="panel panel-rose" style="margin-bottom: 0;">
+        <strong style="color: #be123c;">4. Air Traffic Control (ATS)</strong>
+        <p style="font-size: 7pt; color: #881337; margin-top: 1px;">Tower Controller (TWR), Ground Controller (GND), Approach (APP), En-Route (ACC). Mandate: Legal authority to issue tactical separation instructions and clearances on manoeuvring areas and controlled airspace.</p>
+      </div>
+      <div class="panel panel-emerald" style="margin-bottom: 0;">
+        <strong style="color: #15803d;">5. TSEEAC Civil Aviation Corps</strong>
+        <p style="font-size: 7pt; color: #14532d; margin-top: 1px;">AFISO, DGAC Safety Oversight Inspectors, Aerodrome Certification, Environmental Officers. Mandate: Essential advisory information at non-controlled aerodromes, regulatory audits, non-separation flight information.</p>
+      </div>
+    </div>
+
+    <!-- Jurisdictions & Interface Matrix Table -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 18%;">Operational Domain</th>
+          <th style="width: 20%;">Key Job Roles</th>
+          <th style="width: 27%;">Legal Jurisdiction &amp; Scope</th>
+          <th style="width: 20%;">Critical Handover Interface</th>
+          <th style="width: 15%;">Core Spoken Verbs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Landside / Terminal</strong></td>
+          <td>Passenger Service Agent, Security Screener</td>
+          <td>Public concourse to boarding gate. Enforces baggage weights, identity checks, and security access.</td>
+          <td>Passes final passenger manifest and special assistance counts to TRC.</td>
+          <td><em>screen, verify, check in, announce, board</em></td>
+        </tr>
+        <tr>
+          <td><strong>Apron &amp; Ramp Ops</strong></td>
+          <td>Turnaround Coordinator (TRC), Ramp Agent, Marshaller</td>
+          <td>Aircraft stand servicing envelope. Coordinates parallel GSE, cargo hold loading, and refueler.</td>
+          <td>Hands signed loadsheet to First Officer; signals "all clear" to pushback tractor.</td>
+          <td><em>coordinate, supervise, load, marshal, push back</em></td>
+        </tr>
+        <tr>
+          <td><strong>Flight Crew &amp; OCC</strong></td>
+          <td>Captain, First Officer, Airline Flight Dispatcher</td>
+          <td>Flight deck and operational dispatch. Ultimate command authority for flight safety and route release.</td>
+          <td>Requests departure clearance from ATC; confirms aircraft status with TRC.</td>
+          <td><em>calculate, program, inspect, cross-check, pilot</em></td>
+        </tr>
+        <tr>
+          <td><strong>Air Traffic Control</strong></td>
+          <td>Tower ATCO, Ground Controller, Approach Radar</td>
+          <td>Active runways, taxiways, and controlled airspace (Classes A–E). Separation authority.</td>
+          <td>Transfers taxiing flights to TWR; issues takeoff and landing clearances.</td>
+          <td><em>clear, instruct, separate, monitor, vector</em></td>
+        </tr>
+        <tr>
+          <td><strong>Civil Aviation Corps (TSEEAC)</strong></td>
+          <td>AFISO, DGAC Safety Inspector, Aerodrome Officer</td>
+          <td>Regional aerodromes (non-controlled), regulatory oversight, airfield safety compliance.</td>
+          <td>Broadcasts runway surface conditions, wind, and traffic information to inbound pilots.</td>
+          <td><em>broadcast, advise, audit, monitor, certify</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Notes box -->
+    <div class="notes-box">
+      <div class="notes-label">Notes on Jurisdictional Boundaries &amp; TSEEAC Non-Separation Mandate:</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 3: "WHAT DO THESE PEOPLE DO?" 6-ROLE VISUAL PROFILING                -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 3 • 6-ROLE VISUAL PROFILING</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 3</span> "What Do These People Do?" 6-Role Visual Profiling</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Examine the 6 authentic documentary photographs of aviation professionals on duty. In pairs, observe their operational environment, specialized equipment, and immediate duties. Practice describing their responsibilities aloud using B2 structures.
+    </p>
+
+    <!-- 6 Job Cards Grid (3 cols x 2 rows) -->
+    <div class="grid-3" style="font-size: 7.2pt; margin-bottom: 6px;">
+      <!-- Role 1 -->
+      <div class="job-card">
+        <img src="../images/job_atco.jpg" alt="Tower ATCO">
+        <div class="job-card-body">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong style="color: #0f172a; font-size: 7.5pt;">01. Tower ATCO</strong>
+            <span class="badge badge-rose">Separation</span>
+          </div>
+          <div><strong>Workspace:</strong> Control Tower Cab (360° visual view)</div>
+          <div><strong>Core Mandate:</strong> Issues tactical runway clearances and maintains legal separation between departing and arriving aircraft.</div>
+          <div style="font-style: italic; color: #0369a1; border-top: 1px solid #f1f5f9; padding-top: 2px;">
+            "They have authority to issue takeoff clearances and monitor active runway occupancy."
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="job-card">
+        <img src="../images/job_trc.jpg" alt="Turnaround Coordinator">
+        <div class="job-card-body">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong style="color: #0f172a; font-size: 7.5pt;">02. Turnaround Coord. (TRC)</strong>
+            <span class="badge badge-primary">Apron Lead</span>
+          </div>
+          <div><strong>Workspace:</strong> Apron / Aircraft Stand Charlie-4</div>
+          <div><strong>Core Mandate:</strong> Orchestrates simultaneous ground handling teams (fueling, catering, baggage) to protect departure slot (CTOT).</div>
+          <div style="font-style: italic; color: #0369a1; border-top: 1px solid #f1f5f9; padding-top: 2px;">
+            "The TRC is tasked with coordinating ramp operations and liaising with the First Officer."
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="job-card">
+        <img src="../images/job_pilot.jpg" alt="Airline First Officer">
+        <div class="job-card-body">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong style="color: #0f172a; font-size: 7.5pt;">03. Airline First Officer</strong>
+            <span class="badge badge-amber">Flight Deck</span>
+          </div>
+          <div><strong>Workspace:</strong> Glass Cockpit / Aircraft Flight Deck</div>
+          <div><strong>Core Mandate:</strong> Programs the Flight Management Computer (FMC), cross-checks performance data, and conducts walkaround checks.</div>
+          <div style="font-style: italic; color: #0369a1; border-top: 1px solid #f1f5f9; padding-top: 2px;">
+            "The First Officer is responsible for programming the route and verifying weight and balance."
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 4 -->
+      <div class="job-card">
+        <img src="../images/job_afiso.jpg" alt="AFISO TSEEAC">
+        <div class="job-card-body">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong style="color: #0f172a; font-size: 7.5pt;">04. AFISO (TSEEAC Corps)</strong>
+            <span class="badge badge-emerald">Advisory</span>
+          </div>
+          <div><strong>Workspace:</strong> Regional Aerodrome Operations Office</div>
+          <div><strong>Core Mandate:</strong> Broadcasts essential traffic information, weather updates (METAR/SPECI), and runway surface state without separation instructions.</div>
+          <div style="font-style: italic; color: #0369a1; border-top: 1px solid #f1f5f9; padding-top: 2px;">
+            "AFISOs provide essential safety information, whereas ATCOs issue mandatory clearances."
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 5 -->
+      <div class="job-card">
+        <img src="../images/job_marshaller.jpg" alt="Aircraft Marshaller">
+        <div class="job-card-body">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong style="color: #0f172a; font-size: 7.5pt;">05. Aircraft Marshaller</strong>
+            <span class="badge badge-slate">Ground Lead</span>
+          </div>
+          <div><strong>Workspace:</strong> Apron Stand Lead-in Centerline</div>
+          <div><strong>Core Mandate:</strong> Uses illuminated visual wands to guide aircraft precisely along stand lead-in lines to the designated nosewheel stop mark.</div>
+          <div style="font-style: italic; color: #0369a1; border-top: 1px solid #f1f5f9; padding-top: 2px;">
+            "They are responsible for guiding aircraft safely into parking stands and signaling chocks."
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 6 -->
+      <div class="job-card">
+        <img src="../images/job_psa.jpg" alt="Passenger Service Agent">
+        <div class="job-card-body">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong style="color: #0f172a; font-size: 7.5pt;">06. Passenger Service Agent</strong>
+            <span class="badge badge-slate">Terminal</span>
+          </div>
+          <div><strong>Workspace:</strong> Terminal Departure Gate Concourse</div>
+          <div><strong>Core Mandate:</strong> Verifies passenger boarding passes and travel documents, assists reduced-mobility passengers, and enforces cabin baggage limits.</div>
+          <div style="font-style: italic; color: #0369a1; border-top: 1px solid #f1f5f9; padding-top: 2px;">
+            "They are tasked with checking boarding passes and liaising with the ramp coordinator."
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes box -->
+    <div class="notes-box">
+      <div class="notes-label">Speaking Practice Notes &amp; Role Descriptions Draft:</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 4: FUNCTIONAL LANGUAGE & PREPOSITION CLINIC                         -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 4 • PREPOSITION CLINIC</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 4</span> Aviation Functional Language: Responsibilities, Authority &amp; Prepositions</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Professional aviation communication requires precise prepositions and modal structures. Avoid French false friends (<em>chargé de</em>, <em>responsable de</em>) and grammatical calques.
+    </p>
+
+    <!-- 3 Core Preposition Rules -->
+    <div class="grid-3" style="font-size: 7.5pt; margin-bottom: 6px;">
+      <div class="panel panel-sky" style="margin-bottom: 0;">
+        <strong style="color: #0369a1;">Rule 1: Duties &amp; Tasks</strong>
+        <p style="font-size: 7pt; color: #0f172a; margin-top: 2px;"><strong>be tasked with + -ing</strong><br><strong>be responsible for + -ing</strong></p>
+        <p style="font-size: 7pt; color: #64748b; margin-top: 2px;">❌ <em>responsible of</em><br>✅ <em>The TRC is tasked with coordinating the turnaround.</em></p>
+      </div>
+      <div class="panel panel-amber" style="margin-bottom: 0;">
+        <strong style="color: #b45309;">Rule 2: Legal Authority</strong>
+        <p style="font-size: 7pt; color: #0f172a; margin-top: 2px;"><strong>have authority to + base verb</strong><br><strong>be authorized to + base verb</strong></p>
+        <p style="font-size: 7pt; color: #64748b; margin-top: 2px;">❌ <em>have authority of</em><br>✅ <em>ATCOs have authority to issue clearance instructions.</em></p>
+      </div>
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <strong style="color: #334155;">Rule 3: Lines of Communication</strong>
+        <p style="font-size: 7pt; color: #0f172a; margin-top: 2px;"><strong>liaise with [peer / partner]</strong><br><strong>report to [hierarchical superior]</strong></p>
+        <p style="font-size: 7pt; color: #64748b; margin-top: 2px;">❌ <em>report with</em><br>✅ <em>The First Officer reports to the Captain and liaises with the TRC.</em></p>
+      </div>
+    </div>
+
+    <!-- Role Clinic Table -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 22%;">Job Role</th>
+          <th style="width: 38%;">Common Spoken Pitfall (French Calque)</th>
+          <th style="width: 40%;">Standard Operational Pattern (B2 Spoken English)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>ATCO vs. AFISO</strong></td>
+          <td>❌ <em>The AFISO is responsible of giving orders to separate airplanes.</em></td>
+          <td>✅ <em>The AFISO is <strong>responsible for providing</strong> advisory traffic information, whereas ATCOs are <strong>tasked with maintaining</strong> separation.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Flight Dispatcher</strong></td>
+          <td>❌ <em>The dispatcher has the authority of cancel the flight without pilot.</em></td>
+          <td>✅ <em>The flight dispatcher <strong>has authority to amend</strong> or delay the flight release in coordination with the captain.</em></td>
+        </tr>
+        <tr>
+          <td><strong>First Officer</strong></td>
+          <td>❌ <em>The co-pilot reports with the captain and is in charge to load cargo.</em></td>
+          <td>✅ <em>The First Officer <strong>reports directly to</strong> the Captain and <strong>is in charge of cross-checking</strong> the fuel balance.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Marshaller</strong></td>
+          <td>❌ <em>The marshaller is charged to guide the plane into the gate.</em></td>
+          <td>✅ <em>The aircraft marshaller <strong>is tasked with guiding</strong> the aircraft along the lead-in line to the stop mark.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Security Screener</strong></td>
+          <td>❌ <em>Security officers have the authority of confiscate any baggage.</em></td>
+          <td>✅ <em>Screeners <strong>have authority to inspect</strong> luggage and confiscate non-compliant hazardous materials.</em></td>
+        </tr>
+        <tr>
+          <td><strong>DGAC Safety Inspector (TSEEAC)</strong></td>
+          <td>❌ <em>The inspector is responsible about auditing airlines and pilots.</em></td>
+          <td>✅ <em>The TSEEAC inspector is <strong>tasked with conducting</strong> regulatory audits and verifying aerodrome certification.</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Spoken Challenge Practice -->
+    <div class="panel panel-slate" style="margin-top: 6px; margin-bottom: 6px;">
+      <h3 style="font-size: 8pt; color: #0f172a; margin-bottom: 4px;">Spoken Delivery Practice (Say Aloud in Pairs):</h3>
+      <div class="grid-2" style="font-size: 7.2pt;">
+        <div>1. "Who has legal authority ________ (halt / pushback) if a fuel spill is detected on stand?"</div>
+        <div>2. "The turnaround coordinator must liaise ________ (with / to) the OCC when baggage loading stalls."</div>
+        <div>3. "AFISOs are not authorized ________ (to issue / for issuing) mandatory heading vectors."</div>
+        <div>4. "Our TSEEAC team is tasked ________ (with / for) aerodrome lighting and obstacle limitation audits."</div>
+      </div>
+    </div>
+
+    <!-- Notes box -->
+    <div class="notes-box">
+      <div class="notes-label">My Target Preposition Sentences &amp; Pronunciation Notes:</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 5: "WHO AM I?" PROGRESSIVE CLUE QUIZ & TABOO CHALLENGE               -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 5 • CLUE QUIZ &amp; TABOO CHALLENGE</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 5</span> "Who Am I?" Progressive Clue Quiz &amp; Spoken Taboo Challenge</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Build spontaneous communicative fluency by describing aviation jobs under strict constraints. Practice without relying on forbidden vocabulary.
+    </p>
+
+    <!-- Game Rules Panel -->
+    <div class="panel panel-sky" style="margin-bottom: 6px; font-size: 7.5pt;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <strong style="color: #0369a1;">Two-Stage Fluency Game Rules:</strong>
+        <span class="badge badge-primary">Speaking Exercise</span>
+      </div>
+      <div class="grid-2" style="margin-top: 3px;">
+        <div><strong>Stage 1 (Progressive Clues):</strong> Student A reads Clue 1 (Worth 3 pts). If Student B guesses correctly, award 3 pts. If not, read Clue 2 (2 pts), then Clue 3 (1 pt).</div>
+        <div><strong>Stage 2 (Taboo Challenge):</strong> Student A describes the mystery role for 45 seconds WITHOUT using any of the 3 Taboo Forbidden Words! Partner shouts "BUZZ!" if used.</div>
+      </div>
+    </div>
+
+    <!-- 6 Clue Cards Grid -->
+    <div class="grid-3" style="font-size: 7.2pt; margin-bottom: 6px;">
+      <!-- Card 1 -->
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>Card 1: Mystery Job A</strong>
+          <span class="badge badge-rose">TABOO: radar, radio, air</span>
+        </div>
+        <div>• <strong>Clue 1 (3 pts):</strong> I work high above the airfield with an unobstructed 360-degree glass view.</div>
+        <div>• <strong>Clue 2 (2 pts):</strong> I decide exactly when flights can line up, take off, or land on active runways.</div>
+        <div>• <strong>Clue 3 (1 pt):</strong> I maintain visual contact with taxiing aircraft and issue runway crossing orders.</div>
+        <div style="margin-top: 3px; font-weight: 700; color: #0369a1;">Answer: Tower ATCO (Aerodrome Controller)</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>Card 2: Mystery Job B</strong>
+          <span class="badge badge-primary">TABOO: plane, baggage, late</span>
+        </div>
+        <div>• <strong>Clue 1 (3 pts):</strong> I wear a high-visibility fluorescent vest and carry a timing clipboard on stand.</div>
+        <div>• <strong>Clue 2 (2 pts):</strong> I oversee fuel trucks, cargo loaders, and cabin cleaners working in parallel.</div>
+        <div>• <strong>Clue 3 (1 pt):</strong> My primary goal is completing ground servicing before the scheduled slot expires.</div>
+        <div style="margin-top: 3px; font-weight: 700; color: #0369a1;">Answer: Turnaround Coordinator (TRC / Red Cap)</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>Card 3: Mystery Job C</strong>
+          <span class="badge badge-emerald">TABOO: tower, separate, order</span>
+        </div>
+        <div>• <strong>Clue 1 (3 pts):</strong> I work at regional aerodromes providing traffic and weather advisories to pilots.</div>
+        <div>• <strong>Clue 2 (2 pts):</strong> I broadcast runway surface state, wind direction, and local altimeter settings.</div>
+        <div>• <strong>Clue 3 (1 pt):</strong> I do not give mandatory instructions; pilots remain responsible for separation.</div>
+        <div style="margin-top: 3px; font-weight: 700; color: #0369a1;">Answer: AFISO (TSEEAC Civil Aviation Corps)</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>Card 4: Mystery Job D</strong>
+          <span class="badge badge-amber">TABOO: sticks, park, walk</span>
+        </div>
+        <div>• <strong>Clue 1 (3 pts):</strong> I stand at the head-of-stand line wearing ear defenders and holding bright wands.</div>
+        <div>• <strong>Clue 2 (2 pts):</strong> Flight crews watch my visual hand signals to align their nosewheel on centerline.</div>
+        <div>• <strong>Clue 3 (1 pt):</strong> I cross my wands above my head to command an immediate emergency halt.</div>
+        <div style="margin-top: 3px; font-weight: 700; color: #0369a1;">Answer: Aircraft Marshaller (Ramp Lead)</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>Card 5: Mystery Job E</strong>
+          <span class="badge badge-slate">TABOO: route, weather, captain</span>
+        </div>
+        <div>• <strong>Clue 1 (3 pts):</strong> I work inside the airline operations center hundreds of miles from the flight.</div>
+        <div>• <strong>Clue 2 (2 pts):</strong> I calculate fuel burn, check alternate diversion airfields, and file navigation plans.</div>
+        <div>• <strong>Clue 3 (1 pt):</strong> Both the pilot-in-command and I must co-sign the operational dispatch release.</div>
+        <div style="margin-top: 3px; font-weight: 700; color: #0369a1;">Answer: OCC Flight Dispatcher</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="panel panel-slate" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; margin-bottom: 3px;">
+          <strong>Card 6: Mystery Job F</strong>
+          <span class="badge badge-sky">TABOO: ice, cold, wing</span>
+        </div>
+        <div>• <strong>Clue 1 (3 pts):</strong> I operate an elevated cherry-picker basket during severe sub-zero winter spells.</div>
+        <div>• <strong>Clue 2 (2 pts):</strong> I spray heated glycol fluid across control surfaces to eliminate frost and snow.</div>
+        <div>• <strong>Clue 3 (1 pt):</strong> I calculate holdover time so flight crews know their takeoff window before refreezing.</div>
+        <div style="margin-top: 3px; font-weight: 700; color: #0369a1;">Answer: De-icing Rig Operator / Specialist</div>
+      </div>
+    </div>
+
+    <!-- Scoreboard and Notes -->
+    <div class="panel panel-amber" style="margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; font-size: 7.5pt;">
+        <div><strong>Game Scoreboard:</strong> Student A: ____ pts / Student B: ____ pts</div>
+        <div><strong>Taboo Penalties (Buzzes):</strong> Student A: ____ / Student B: ____</div>
+      </div>
+    </div>
+
+    <div class="notes-box">
+      <div class="notes-label">Your Taboo Challenge Role Descriptions Draft:</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 6: OPERATIONAL CRISIS MATRIX & PEER OBSERVATION                      -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 6 • CRISIS MATRIX &amp; PEER OBSERVATION</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 6</span> Operational Crisis Decision Table &amp; Peer Observation</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      <strong>Crisis Scenario:</strong> Stand Charlie-4 at 16:45. Rapidly deteriorating winter conditions with freezing rain. Flight ENAC-101 has 180 passengers onboard, while an inbound diversion reports a passenger medical emergency. Three competing bottlenecks threaten aerodrome gridlock. Coordinate multi-agency resolution:
+    </p>
+
+    <!-- Winter Crisis Decision Table -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 22%;">Complication on Stand</th>
+          <th style="width: 25%;">Interfacing Agencies</th>
+          <th style="width: 28%;">Safety &amp; Operational Regulation</th>
+          <th style="width: 25%;">Negotiated Recovery Sequence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Freezing Sleet &amp; Ramp Slippery</strong></td>
+          <td>TRC, Marshaller, Runway Sweeper, AFISO / TSEEAC</td>
+          <td>Braking action below medium-poor requires SNOWTAM update and reduced towing speeds.</td>
+          <td>Halt pushback on taxiway Kilo; deploy chemical de-icer to stand surface before tractor connects.</td>
+        </tr>
+        <tr>
+          <td><strong>Inbound Medical Emergency Divert</strong></td>
+          <td>Tower ATCO, OCC Dispatcher, Aerodrome Emergency Medical Lead</td>
+          <td>Medical divert has absolute air traffic priority over scheduled departures.</td>
+          <td>Reassign Stand Charlie-5 to divert; clear emergency corridor for airport ambulance.</td>
+        </tr>
+        <tr>
+          <td><strong>De-icing Rig Shortage &amp; Slot Risk</strong></td>
+          <td>De-icing Rig Operator, TRC, First Officer, CFMU Slot Lead</td>
+          <td>Holdover time begins at start of final anti-icing step. Takeoff must occur inside window.</td>
+          <td>Perform remote pad de-icing near runway threshold to prevent holdover expiration during taxi.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Student B Peer Observer Checklist -->
+    <div class="panel panel-slate" style="margin-top: 6px; margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <strong style="color: #0369a1;">Student B Peer Observer Rubric:</strong>
+        <span class="badge badge-primary">Peer Assessment</span>
+      </div>
+      <div class="grid-2" style="font-size: 7.2pt;">
+        <div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>1. Operational Accuracy:</strong> Speaker correctly distinguished between ATCO separation vs. AFISO advisory information.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>2. Preposition Discipline:</strong> Accurately used <em>tasked with</em>, <em>responsible for</em>, <em>authority to</em>, and <em>liaise with</em>.</span></div>
+        </div>
+        <div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>3. Conciseness &amp; Clarity:</strong> Handover delivered calmly without hesitations, false friends, or filler words.</span></div>
+          <div class="checkbox-item"><div class="box-square"></div><span><strong>4. Closed-Loop Readback:</strong> Confirmed understanding through clear questions or closed-loop confirmation.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes box -->
+    <div class="notes-box">
+      <div class="notes-label">Your Final Negotiated Multi-Agency Consensus Plan:</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- PAGE 7: VOCABULARY MASTER INDEX, PHONETICS & STUDY LOG                    -->
+  <!-- ========================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical English (AT • LV121E)</span>
+      <span class="ref">PART 7 • VOCABULARY MASTER INDEX</span>
+    </div>
+
+    <h2><span class="badge badge-primary">Part 7</span> Spoken Vocabulary Master Index, Syllable Stress &amp; Self-Audit Log</h2>
+    <p style="font-size: 8pt; color: #475569; margin-bottom: 6px;">
+      Mastery of 18 high-frequency B2 aviation profession terms, word stress patterns, and continuous assessment benchmarks.
+    </p>
+
+    <!-- 18 Terms Grid (3 columns x 6 rows) -->
+    <div class="grid-3" style="font-size: 7pt; margin-bottom: 6px;">
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>01. Jurisdiction</strong> (/ˌdʒʊər.ɪsˈdɪk.ʃən/)
+        <p style="color: #64748b;">Legal geographic scope of operational authority.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>02. Separation</strong> (/ˌsep.əˈreɪ.ʃən/)
+        <p style="color: #64748b;">Mandatory minimum distance between aircraft.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>03. Turnaround</strong> (/ˈtɜːn.ə.raʊnd/)
+        <p style="color: #64748b;">Ground servicing cycle between chocks-on and off.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>04. Marshaller</strong> (/ˈmɑː.ʃəl.ər/)
+        <p style="color: #64748b;">Ground lead guiding aircraft using wand signals.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>05. Dispatcher</strong> (/dɪˈspætʃ.ər/)
+        <p style="color: #64748b;">OCC flight officer planning routes and fuel load.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>06. First Officer</strong> (/ˌfɜːst ˈɒf.ɪ.sər/)
+        <p style="color: #64748b;">Co-pilot sharing flight management and walkaround.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>07. Clearances</strong> (/ˈklɪə.rəns.ɪz/)
+        <p style="color: #64748b;">Formal spoken authorizations issued by ATC.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>08. Holdover Time</strong> (/ˈhəʊldˌəʊ.vər taɪm/)
+        <p style="color: #64748b;">Effective anti-icing fluid protection window.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>09. Contingency</strong> (/kənˈtɪn.dʒən.si/)
+        <p style="color: #64748b;">Backup action plan prepared for emergency events.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>10. Standoff</strong> (/ˈstænd.ɒf/)
+        <p style="color: #64748b;">Remote aircraft stand requiring bus transfers.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>11. Oversight</strong> (/ˈəʊ.və.saɪt/)
+        <p style="color: #64748b;">Regulatory compliance supervision by DGAC/EASA.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>12. Non-separation</strong> (/nɒn ˌsep.əˈreɪ.ʃən/)
+        <p style="color: #64748b;">Advisory service without tactical separation orders.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>13. Subcontractor</strong> (/ˌsʌb.kənˈtræk.tər/)
+        <p style="color: #64748b;">Third-party handling or fueling company.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>14. Liaison</strong> (/liˈeɪ.zɒn/)
+        <p style="color: #64748b;">Operational communication link between agencies.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>15. Walkaround</strong> (/ˈwɔːk.ə.raʊnd/)
+        <p style="color: #64748b;">Pre-flight physical inspection of aircraft exterior.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>16. Discretion</strong> (/dɪˈskreʃ.ən/)
+        <p style="color: #64748b;">Professional judgment during non-standard events.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>17. Bottleneck</strong> (/ˈbɒt.əl.nek/ )
+        <p style="color: #64748b;">Ramp operational stage causing downstream delays.</p>
+      </div>
+      <div style="border: 1px solid #e2e8f0; padding: 3px 5px; border-radius: 4px;">
+        <strong>18. Pushback</strong> (/ˈpʊʃ.bæk/)
+        <p style="color: #64748b;">Tractor operation pushing aircraft into taxi lane.</p>
+      </div>
+    </div>
+
+    <!-- Pronunciation Spotlight -->
+    <div class="panel panel-slate" style="margin-bottom: 6px; font-size: 7.2pt;">
+      <strong style="color: #0369a1;">Word Stress &amp; Pronunciation Traps Spotlight:</strong>
+      <div class="grid-3" style="margin-top: 2px;">
+        <div>• <strong>ju-ris-DIC-tion:</strong> Primary stress on 3rd syllable.</div>
+        <div>• <strong>au-THOR-i-ty:</strong> Primary stress on 2nd syllable (not 1st).</div>
+        <div>• <strong>con-TIN-gen-cy:</strong> Primary stress on 2nd syllable.</div>
+      </div>
+    </div>
+
+    <!-- Self-Audit Checklist -->
+    <div class="panel panel-sky" style="margin-bottom: 6px; font-size: 7.5pt;">
+      <strong style="color: #0369a1;">Continuous Assessment Self-Audit:</strong>
+      <div style="margin-top: 3px;">
+        <div class="checkbox-item"><div class="box-square"></div><span>I can articulate the exact legal differences between ATCO and AFISO/TSEEAC mandates fluently.</span></div>
+        <div class="checkbox-item"><div class="box-square"></div><span>I accurately use <em>tasked with</em>, <em>responsible for</em>, <em>authority to</em>, and <em>liaise with</em> in spoken sentences.</span></div>
+        <div class="checkbox-item"><div class="box-square"></div><span>I can negotiate a multi-agency recovery plan during an apron crisis and deliver a 60-second briefing.</span></div>
+      </div>
+    </div>
+
+    <!-- Notes box -->
+    <div class="notes-box">
+      <div class="notes-label">Personal Action Targets &amp; Continuous Assessment Plan:</div>
+      <div class="writing-line"></div>
+      <div class="writing-line"></div>
+    </div>
+  </div>
+
+</body>
+</html>
