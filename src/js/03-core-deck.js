@@ -2515,28 +2515,27 @@
         : '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-sky-100 text-sky-900 border border-sky-300/80 shadow-2xs">✈️ Technical English (LV121E) • Wednesdays 13:15–15:15</span>';
 
       noticeboardEl.innerHTML = `
-        <!-- 1. Arrival Banner & Callsign Header (Clean White Card with Subtle 70% Apron / Stand Photo Watermark) -->
-        <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs">
-          <!-- Subtle apron backdrop at 70% opacity with smooth gradient fade to white -->
-          <div class="absolute right-0 top-0 bottom-0 w-1/2 sm:w-7/12 pointer-events-none select-none overflow-hidden">
-            <img src="images/turnaround_apron.jpg" alt="" class="w-full h-full object-cover object-right opacity-70 mix-blend-multiply" style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 35%, black 100%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 35%, black 100%);" />
-          </div>
+        <!-- 1. Arrival Banner (Approach 2: Full-Width 100% Opacity Apron Photo with Frosted Glass Card) -->
+        <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 min-h-[220px] sm:min-h-[250px] flex items-center p-3 sm:p-6 shadow-sm">
+          <!-- Full-width 100% opacity apron photograph stretching all the way across -->
+          <img src="images/turnaround_apron.jpg" alt="Airliner on apron stand" class="absolute inset-0 w-full h-full object-cover object-right sm:object-center select-none pointer-events-none" />
 
-          <div class="relative z-10 max-w-xl space-y-3">
-            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-[11px] font-bold tracking-wide uppercase text-slate-700">
+          <!-- Floating frosted glass content capsule -->
+          <div class="relative z-10 w-full max-w-xl bg-white/90 sm:bg-white/88 backdrop-blur-md border border-white/70 rounded-xl p-4 sm:p-5 shadow-md space-y-2.5">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-900/10 border border-slate-900/15 text-[11px] font-bold tracking-wide uppercase text-slate-800">
               <span>🛫 Semester 1 Learning Portal</span>
             </div>
 
             <div class="space-y-1">
-              <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 leading-tight">
+              <h2 class="text-xl sm:text-2xl font-black tracking-tight text-slate-950 leading-tight">
                 Student Noticeboard
               </h2>
-              <p class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
+              <p class="text-xs sm:text-sm text-slate-700 font-normal leading-relaxed">
                 Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and course announcements.
               </p>
             </div>
 
-            <div class="pt-1">
+            <div class="pt-0.5">
               ${trackBadge}
             </div>
           </div>
