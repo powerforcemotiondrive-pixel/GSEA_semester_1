@@ -2716,7 +2716,7 @@
               <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Course Coordinator</div>
               <div class="font-bold text-slate-900 text-sm">Phil PARRIS</div>
               <div class="text-slate-600 font-mono text-[11px]">philip.parris@enac.fr</div>
-              <div class="text-slate-500 text-[10.5px] pt-0.5">Office: LH/LAN</div>
+              <div class="text-slate-500 text-[10.5px] pt-0.5">Office: C215 LH/LAN</div>
             </div>
 
             <!-- Box 2: General English Teachers -->
