@@ -10,7 +10,7 @@
                 Promotion: GSEA26A • 19 Students
               </span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border" style="color: ${theme.accent}; background-color: ${theme.highlight || '#fff7ed'}; border-color: ${theme.accent}30;">
-                Official Rosters &amp; Faculty Assignments
+                Official Rosters &amp; Teacher Assignments
               </span>
             </div>
             <h3 class="text-base sm:text-lg font-bold text-slate-800">
@@ -21,12 +21,12 @@
             </p>
           </div>
 
-          <!-- Teaching Faculty & Timetable Card -->
+          <!-- Teaching Team & Timetable Card -->
           <div class="space-y-3">
             <div class="flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${theme.accent};"></span>
               <h4 class="text-xs sm:text-sm font-bold text-slate-800 uppercase tracking-wide">
-                Teaching Faculty &amp; Weekly Schedules
+                Teaching Team &amp; Weekly Schedules
               </h4>
             </div>
 
@@ -209,7 +209,7 @@
         code: "LV101E",
         name: "General English (AG)",
         dayTime: "Fridays 08h00 – 10h00",
-        faculty: "Geri MIDDLETON (Group A) & Penny WRIGHT (Group B)",
+        teachers: "Geri MIDDLETON (Group A) & Penny WRIGHT (Group B)",
         modules: [
           {
             num: 1,
@@ -257,7 +257,7 @@
         code: "LV121E",
         name: "Technical English (AT)",
         dayTime: "Wednesdays 13h15 – 15h15",
-        faculty: "Tracy NEILL (Group A) & Ally HEWETT (Group B)",
+        teachers: "Tracy NEILL (Group A) & Ally HEWETT (Group B)",
         modules: [
           {
             num: 1,
@@ -358,7 +358,7 @@
 
           <!-- Timeline Grid -->
           <div class="space-y-4">
-            <!-- Active Track Schedule & Faculty Banner -->
+            <!-- Active Track Schedule & Teaching Team Banner -->
             <div class="bg-slate-800 text-white p-3.5 sm:p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs border border-slate-700/60">
               <div class="flex items-center gap-3">
                 <span class="px-2.5 py-1 rounded font-mono font-black text-xs ${activeCalKey === 'ag' ? 'bg-slate-700 text-amber-300 border border-amber-300/30' : 'bg-orange-700 text-amber-200 border border-amber-300/30'}">
@@ -369,7 +369,7 @@
                     ${calSched.name} — Weekly Schedule &amp; Milestones
                   </h3>
                   <p class="text-xs text-slate-300 mt-0.5">
-                    ${calSched.dayTime} • Faculty: ${calSched.faculty}
+                    ${calSched.dayTime} • Teachers: ${calSched.teachers}
                   </p>
                 </div>
               </div>
@@ -1698,7 +1698,7 @@
             <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold text-orange-300 bg-orange-500/20 border border-orange-400/30">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="lang-en">Faculty &amp; Colleague Executive Brief • Phil PARRIS (LH/LAN)</span>
+                <span class="lang-en">Teaching Team &amp; Colleague Executive Brief • Phil PARRIS (LH/LAN)</span>
                 <span class="lang-fr">Synthèse Pédagogique &amp; Présentation Collègues • Phil PARRIS (LH/LAN)</span>
               </span>
               <div class="flex items-center gap-2">
@@ -1856,7 +1856,7 @@
                     <span class="lang-en">AI Co-Design (Gemini) &amp; Multi-Semester Scaling:</span>
                     <span class="lang-fr">Appui de l'IA (Gemini) &amp; Déploiement Multi-Semestres :</span>
                   </strong>
-                  <span class="lang-en">Fully leveraged AI coding agents (Gemini) to build the initial codebase and test relentlessly until rock-solid. Informed by Toulouse-Blagnac TSEEAC airport interviews and faculty pacing. These exact standards establish the blueprint for <strong>Semesters 2, 3, and 4</strong> updated progressively throughout 2026/2027.</span>
+                  <span class="lang-en">Fully leveraged AI coding agents (Gemini) to build the initial codebase and test relentlessly until rock-solid. Informed by Toulouse-Blagnac TSEEAC airport interviews and teaching pacing. These exact standards establish the blueprint for <strong>Semesters 2, 3, and 4</strong> updated progressively throughout 2026/2027.</span>
                   <span class="lang-fr">Développement itératif avec l'appui d'outils d'IA avancés (Gemini) pour bâtir l'architecture et tester rigoureusement chaque brique. Contenus ancrés dans les retours terrain des TSEEAC de Toulouse-Blagnac. Ce même socle technique et pédagogique servira de référence pour les <strong>Semestres 2, 3 et 4</strong> tout au long de l'année 2026/2027.</span>
                 </div>
               </div>
@@ -1935,7 +1935,7 @@
             <div class="flex items-center gap-2.5">
               <svg class="w-5 h-5 text-orange-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               <span>
-                <span class="lang-en">Looking for the complete faculty presentation deck with detailed slide points and print view?</span>
+                <span class="lang-en">Looking for the complete teaching presentation deck with detailed slide points and print view?</span>
                 <span class="lang-fr">Vous souhaitez consulter le diaporama complet pour les collègues avec les points détaillés et le mode document ?</span>
               </span>
             </div>
@@ -2877,7 +2877,7 @@
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
           <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
-          <span class="leading-relaxed">High intelligibility, persuasive intonation, and spontaneous responses to faculty challenges.</span>
+          <span class="leading-relaxed">High intelligibility, persuasive intonation, and spontaneous responses to teacher challenges.</span>
         </div>
       </div>
     </div>
@@ -2976,7 +2976,7 @@
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
-          <span class="lang-en">Final individual/paired oral interview with jury, comprehensive portfolio assessment, faculty deliberation, and progression sign-off.</span>
+          <span class="lang-en">Final individual/paired oral interview with jury, comprehensive portfolio assessment, teaching team deliberation, and progression sign-off.</span>
           <span class="lang-fr">Entretien oral terminal devant jury, évaluation finale du portfolio, délibération de l'équipe enseignante et validation de passage.</span>
         </span>
       </div>
@@ -3911,7 +3911,7 @@
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
-          <span class="lang-en">Final technical oral interview with jury, comprehensive portfolio check, faculty deliberation, and progression sign-off.</span>
+          <span class="lang-en">Final technical oral interview with jury, comprehensive portfolio check, teaching team deliberation, and progression sign-off.</span>
           <span class="lang-fr">Entretien oral terminal devant jury, contrôle global du portfolio, délibération de l'équipe enseignante et validation de passage.</span>
         </span>
       </div>

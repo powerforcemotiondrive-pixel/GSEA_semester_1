@@ -123,34 +123,49 @@
 
       const desc = (isAas ? aasDescriptions[modNumber] : agDescriptions[modNumber]) || (isAas ? aasDescriptions[1] : agDescriptions[1]);
 
+      const noticeboardPage = {
+        tag: "Promotion GSEA26A • Flight Deck",
+        title: "Flight Deck Noticeboard",
+        description: "Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and course announcements.",
+        isNoticeboard: true,
+        sessionNum: 0,
+        imageUrl: "images/semester_objectives.jpg"
+      };
+
       const pages = [
+        noticeboardPage,
         {
           tag: `Module ${modNumber} • Session 1`,
           title: titles.s1,
           description: desc.s1,
+          sessionNum: 1,
           imageUrl: images.card1
         },
         {
           tag: `Module ${modNumber} • Session 2`,
           title: titles.s2,
           description: desc.s2,
+          sessionNum: 2,
           imageUrl: images.card2
         },
         {
           tag: `Module ${modNumber} • Session 3`,
           title: titles.s3,
           description: desc.s3,
+          sessionNum: 3,
           imageUrl: images.card3
         },
         {
           tag: `Module ${modNumber} • Session 4`,
           title: titles.s4,
           description: desc.s4,
+          sessionNum: 4,
           imageUrl: images.card4
         },
         {
           tag: `Module ${modNumber} • Session 5`,
           title: "Session 5 - Formative Evaluation",
+          sessionNum: 5,
           description: isAas 
             ? (modNumber === 1
                 ? `Welcome to Session 5! In this Formative Evaluation, you and your partner will present a detailed technical airport profile.<br><br><em>Subject overview:</em> Formative Evaluation 1 — Airports: Technical infrastructure, operational constraints, aerodrome hot spots, and incident/accident analysis.<br><br>All work in this session contributes directly toward your Formative Evaluation.`
@@ -177,6 +192,7 @@
                     ? "<strong>Definition:</strong> DDRS (Sustainable Development & Social Responsibility) in emerging technology balances technological acceleration with algorithmic fairness, environmental lifecycle impacts, and human dignity.<br><br><strong>Key areas covered:</strong> Compute carbon footprints, explainable AI (XAI), data privacy sovereignty, and social inclusion under the EU AI Act.<br><br><strong>Why we discuss DDRS in English:</strong> Articulating tech ethics, regulatory compliance, and responsible innovation in international English prepares aerospace professionals to lead global technology governance."
                     : "<strong>Definition:</strong> DDRS (Sustainable Development & Social Responsibility) is the framework linking environmental protection, social fairness, and ethical decision-making in modern organizations.<br><br><strong>Key areas covered:</strong> Reducing carbon footprints, community wellbeing and inclusion, and responsible innovation.<br><br><strong>Why we discuss DDRS in English:</strong> Discussing DDRS topics builds the vocabulary, critical thinking, and communication skills you need to talk about global environmental and social challenges in professional English."),
           imageUrl: images.ddrs,
+          sessionNum: 6,
           isMuted: isAas
         },
         {
@@ -184,6 +200,7 @@
           title: "Course Admin",
           description: "Welcome to the GSEA26A Course Administration Hub. Access your official class groups (Group A & Group B), teacher assignments, weekly schedules, and dynamic 30-minute Formative Evaluation tutorial rotas.<br><br><em>Subject overview:</em> Weekly classes run Wednesdays (13h15–15h15) for Aeronautical English (LV121E) and Fridays (08h00–10h00) for General English (LV101E).<br><br>Consult your designated FE timeslots ahead of Week 48 (FE1), Week 3 (FE2), and Week 8 (FE3). Arrive 5 minutes before your slot with your presentation supports and updated learning portfolio ready.",
           isAdmin: true,
+          sessionNum: 7,
           adminUrl: "admin.html",
           imageUrl: images.admin
         },
@@ -192,6 +209,7 @@
           title: "Student Guide & Objectives",
           description: "Essential student guidance on how to succeed in English this semester, formative evaluation preparation, portfolio requirements, and the official ENAC course syllabus (English & French).",
           isObjectives: true,
+          sessionNum: 8,
           imageUrl: "images/semester_objectives.jpg"
         }
       ];
@@ -202,6 +220,7 @@
           title: "English Immersion (End of S2)",
           description: "At the end of Semester 2, GSEA students participate in an intensive 4-week English immersion program in an English-speaking destination: Cork, Dublin, Manchester, Leeds, Liverpool, or Shoreham.<br><br><em>Academic & cultural goals:</em> Enhance daily conversational fluency and complete intensive TOEIC preparation for Semester 3. Students attend morning and afternoon language school sessions, cultural excursions, and aviation-specific visits (airport, aerospace company, or museum, subject to availability).<br><br><em>Accommodation:</em> Homestay with vetted local host families (strictly 1 ENAC student per host family) for 100% linguistic immersion.",
           isImmersion: true,
+          sessionNum: 9,
           immersionUrl: "immersion.html",
           imageUrl: "images/immersion_card.jpg"
         });

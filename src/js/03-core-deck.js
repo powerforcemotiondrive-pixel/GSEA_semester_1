@@ -61,6 +61,18 @@
           return;
         }
 
+        const filmModalEl = document.getElementById('gsea-film-modal');
+        if (e.key === 'Escape' && filmModalEl && !filmModalEl.classList.contains('hidden')) {
+          closeFilmDetailsModal();
+          return;
+        }
+
+        const articleModalEl = document.getElementById('gsea-article-reader-modal');
+        if (e.key === 'Escape' && articleModalEl && !articleModalEl.classList.contains('hidden')) {
+          window.closeArticleReader();
+          return;
+        }
+
         // 2. FORM INPUT GUARD: Never intercept arrow keys while typing in form fields
         const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
         if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select' || document.activeElement?.isContentEditable) {
@@ -175,7 +187,7 @@
       function getInitialSelection() {
         let prog = 'ag';
         let mod = 0;
-        let card = 0;
+        let card = 0; // Default to Noticeboard (card 0)
         try {
           const hash = (window.location.hash + ' ' + window.location.search).toLowerCase();
           if (hash.includes('at') || hash.includes('aas') || hash.includes('aero')) {
@@ -191,16 +203,23 @@
             mod = 2;
           }
 
-          // Check if card index is directly in hash (e.g. #ag-module1-card3 or #card-3)
-          const cardMatch = hash.match(/card-?(\d+)/);
-          if (cardMatch) {
-            card = Math.max(0, parseInt(cardMatch[1], 10) - 1);
+          // Noticeboard explicit hash check
+          if (hash.includes('home') || hash.includes('noticeboard') || hash.includes('card-0') || hash.includes('card0')) {
+            card = 0;
           } else {
-            // Restore card memory from sessionStorage
-            const savedMod = sessionStorage.getItem(`gsea_${prog}_last_mod`) || sessionStorage.getItem('gsea_last_mod');
-            const savedCard = sessionStorage.getItem(`gsea_${prog}_last_card`) || sessionStorage.getItem('gsea_last_card');
-            if (savedMod !== null && parseInt(savedMod, 10) === mod && savedCard !== null) {
-              card = parseInt(savedCard, 10);
+            // Check if card index is directly in hash (e.g. #ag-module1-card3 or #card-3)
+            const cardMatch = hash.match(/card-?(\d+)/);
+            if (cardMatch) {
+              const num = parseInt(cardMatch[1], 10);
+              // Card 1 -> index 1, Card 2 -> index 2, Card 0 -> index 0
+              card = num;
+            } else {
+              // Restore card memory from sessionStorage
+              const savedMod = sessionStorage.getItem(`gsea_${prog}_last_mod`) || sessionStorage.getItem('gsea_last_mod');
+              const savedCard = sessionStorage.getItem(`gsea_${prog}_last_card`) || sessionStorage.getItem('gsea_last_card');
+              if (savedMod !== null && parseInt(savedMod, 10) === mod && savedCard !== null) {
+                card = parseInt(savedCard, 10);
+              }
             }
           }
         } catch (e) {}
@@ -459,7 +478,13 @@
         sessionStorage.setItem('gsea_last_mod', String(modIdx));
         sessionStorage.setItem('gsea_last_card', String(cardIdx));
         if (window.history && typeof window.history.replaceState === 'function') {
-          window.history.replaceState(null, '', `#${currentProgram}-module${modIdx + 1}-card${cardIdx + 1}`);
+          const targetPage = modulesData[modIdx] && modulesData[modIdx].pages && modulesData[modIdx].pages[cardIdx];
+          if (targetPage && targetPage.isNoticeboard) {
+            window.history.replaceState(null, '', `#${currentProgram}-module${modIdx + 1}-noticeboard`);
+          } else {
+            const sNum = (targetPage && targetPage.sessionNum !== undefined) ? targetPage.sessionNum : (cardIdx + 1);
+            window.history.replaceState(null, '', `#${currentProgram}-module${modIdx + 1}-card${sNum}`);
+          }
         }
       } catch (err) {
         // Silently swallow SecurityError if embedded in a restricted or cross-origin Moodle iframe
@@ -605,7 +630,20 @@
       const mod = modulesData[currentModuleIndex];
 
       mod.pages.forEach((page, idx) => {
-        if (idx === 5) {
+        // Divider before Core Lessons (right after Noticeboard)
+        if (page.sessionNum === 1) {
+          const divider = document.createElement('div');
+          divider.className = "pt-2 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
+          divider.innerHTML = `
+            <span class="h-px bg-slate-200/90 flex-1"></span>
+            <span>Core Lessons</span>
+            <span class="h-px bg-slate-200/90 flex-1"></span>
+          `;
+          menuEl.appendChild(divider);
+        }
+
+        // Divider before Admin & Guides (right after Session 5 FE)
+        if (page.sessionNum === 6) {
           const divider = document.createElement('div');
           divider.className = "pt-2.5 pb-1 px-1 flex items-center gap-1.5 text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400 select-none";
           divider.innerHTML = `
@@ -620,13 +658,15 @@
         item.type = 'button';
         item.setAttribute('data-card-idx', idx);
 
+        const badgeNum = page.isNoticeboard ? '00' : (page.sessionNum < 10 ? `0${page.sessionNum}` : `${page.sessionNum}`);
+
         if (page.isMuted) {
           item.setAttribute('aria-label', `${page.title} (Muted)`);
           item.setAttribute('disabled', 'true');
           item.className = "flight-strip-card w-full text-left px-2.5 py-2 rounded-lg text-xs font-medium flex items-center justify-between border border-slate-200/60 bg-slate-100/60 text-slate-400 cursor-not-allowed opacity-60 select-none";
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
-              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-400 border border-slate-300/50">0${idx + 1}</span>
+              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-200 text-slate-400 border border-slate-300/50">${badgeNum}</span>
               <span class="flight-strip-title truncate text-xs text-slate-400 font-medium pointer-events-none">${page.title}</span>
             </div>
             <span class="text-[9px] font-mono uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-slate-200 text-slate-500 border border-slate-300/60 shrink-0">Muted</span>
@@ -635,9 +675,14 @@
           item.setAttribute('aria-label', `Navigate to ${page.title}`);
           const rightHtml = `<svg class="flight-strip-chevron w-3.5 h-3.5 shrink-0 opacity-40 transition-all pointer-events-none" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>`;
 
+          const leftIcon = page.isNoticeboard
+            ? `<svg width="12" height="12" class="w-3 h-3 text-amber-500 shrink-0 mr-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>`
+            : '';
+
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
-              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-all">0${idx + 1}</span>
+              <span class="flight-strip-badge font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-all">${badgeNum}</span>
+              ${leftIcon}
               <span class="flight-strip-title truncate text-xs transition-all pointer-events-none">${page.title}</span>
             </div>
             ${rightHtml}
@@ -666,7 +711,7 @@
 
         if (isActive) {
           item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border cursor-pointer shadow-2xs";
-          if (idx <= 4) {
+          if (page && (page.isNoticeboard || page.sessionNum <= 5)) {
             item.style.backgroundColor = '#ffffff';
             item.style.borderColor = '#cbd5e1';
           } else {
@@ -681,7 +726,7 @@
           if (badge) {
             badge.style.backgroundColor = '#ffffff';
             badge.style.color = mod.accent;
-            badge.style.border = idx <= 4 ? '1px solid #cbd5e1' : '1px solid #94a3b8';
+            badge.style.border = (page && (page.isNoticeboard || page.sessionNum <= 5)) ? '1px solid #cbd5e1' : '1px solid #94a3b8';
             badge.style.fontWeight = '800';
           }
           if (chevron) {
@@ -691,8 +736,8 @@
           }
         } else {
           item.style.borderLeft = '';
-          if (idx <= 4) {
-            // Sessions 01 to 05: Core Teaching & FE Units (Clean White / Slate Border)
+          if (page && (page.isNoticeboard || page.sessionNum <= 5)) {
+            // Noticeboard & Sessions 01 to 05: Core Units (Clean White / Slate Border)
             item.className = "flight-strip-card group w-full text-left px-2.5 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-between border border-slate-200/90 bg-white hover:bg-slate-50 hover:border-slate-300 text-slate-800 hover:text-slate-900 hover:shadow-2xs hover:translate-x-[3px] cursor-pointer";
             item.style.backgroundColor = '#ffffff';
             item.style.borderColor = '#e2e8f0';
@@ -857,117 +902,139 @@
       currentIndex = idx;
       const page = pages[currentIndex];
 
-      // Subtle opacity crossfade transition (Option 1)
+      const noticeboardView = document.getElementById('deck-noticeboard-view');
       const cardView = document.getElementById('deck-card-view');
-      if (cardView) {
-        cardView.classList.remove('deck-card-fade');
-        void cardView.offsetWidth; // Force reflow to re-trigger CSS keyframe
-        cardView.classList.add('deck-card-fade');
-      }
 
-      // Update card tag pill (Option A Balanced Horizontal Grid)
-      const tagPill = document.getElementById('card-tag-pill');
-      if (tagPill) {
-        let tagText = page.tag || (page.isAdmin ? "Administration" : (currentIndex === 4 ? "Formative Evaluation" : (currentIndex === 5 ? "DDRS Sustainability" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session 0${currentIndex + 1}`)))));
-        tagPill.textContent = tagText;
-        const pillAccent = mod.accent || mod.primary;
-        const pillText = mod.accentDark || mod.primary;
-        tagPill.style.color = pillText;
-        tagPill.style.borderColor = `${pillAccent}33`;
-        tagPill.style.backgroundColor = `${pillAccent}12`;
-      }
-
-      // Update card title
-      const cardHeading = document.getElementById('card-heading');
-      cardHeading.textContent = page.title;
-      cardHeading.style.color = mod.primary;
-
-      // Update card description & twin callout tiles (Option A Balanced Horizontal Grid)
-      const descContent = formatCardDescription(page.description, page, currentIndex);
-      const descEl = document.getElementById('card-desc');
-      const calloutsEl = document.getElementById('card-callouts');
-      const imageContainer = document.getElementById('image-container');
-      const imgEl = document.getElementById('card-image');
-
-      if (descEl) descEl.innerHTML = descContent.leadHtml;
-      if (calloutsEl) {
-        calloutsEl.innerHTML = descContent.calloutsHtml;
-        const hasCallouts = descContent.calloutsHtml && descContent.calloutsHtml.trim() !== "";
-        if (!hasCallouts) {
-          calloutsEl.classList.add('hidden');
-        } else {
-          calloutsEl.classList.remove('hidden');
+      if (page.isNoticeboard) {
+        if (cardView) cardView.classList.add('hidden');
+        if (noticeboardView) {
+          noticeboardView.classList.remove('hidden');
+          noticeboardView.classList.remove('deck-card-fade');
+          void noticeboardView.offsetWidth;
+          noticeboardView.classList.add('deck-card-fade');
+          renderNoticeboardContent(mod);
         }
-      }
-
-      const hasImage = page.imageUrl && page.imageUrl.trim() !== "";
-      if (hasImage) {
-        imgEl.src = page.imageUrl;
-        imageContainer.classList.remove('hidden');
       } else {
-        imgEl.src = "";
-        imageContainer.classList.add('hidden');
-      }
+        if (noticeboardView) noticeboardView.classList.add('hidden');
+        if (cardView) {
+          cardView.classList.remove('hidden');
+          cardView.classList.remove('deck-card-fade');
+          void cardView.offsetWidth;
+          cardView.classList.add('deck-card-fade');
+        }
 
-      const actionContainer = document.getElementById('action-links-container');
-      actionContainer.innerHTML = '';
+        // Update card tag pill (Option A Balanced Horizontal Grid)
+        const tagPill = document.getElementById('card-tag-pill');
+        if (tagPill) {
+          let tagText = page.tag || (page.isAdmin ? "Administration" : (page.sessionNum === 5 ? "Formative Evaluation" : (page.sessionNum === 6 ? "DDRS Sustainability" : (page.isObjectives ? "Curriculum" : (page.isImmersion ? "Immersion" : `Session 0${page.sessionNum}`)))));
+          tagPill.textContent = tagText;
+          const pillAccent = mod.accent || mod.primary;
+          const pillText = mod.accentDark || mod.primary;
+          tagPill.style.color = pillText;
+          tagPill.style.borderColor = `${pillAccent}33`;
+          tagPill.style.backgroundColor = `${pillAccent}12`;
+        }
 
-      const createThemedCTA = (label, tabKey, fallbackHref) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
-        const ctaBg = mod.accent || mod.primary;
-        const ctaHover = mod.accentDark || mod.primaryDark;
-        btn.style.backgroundColor = ctaBg;
-        btn.onmouseenter = () => btn.style.backgroundColor = ctaHover;
-        btn.onmouseleave = () => btn.style.backgroundColor = ctaBg;
-        btn.innerHTML = `<span>${label}</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
-        btn.addEventListener('click', () => {
-          openModalDrawer(tabKey, mod.id, currentIndex + 1, fallbackHref);
-        });
-        return btn;
-      };
+        // Update card title
+        const cardHeading = document.getElementById('card-heading');
+        cardHeading.textContent = page.title;
+        cardHeading.style.color = mod.primary;
 
-      if (page.isImmersion) {
-        actionContainer.appendChild(createThemedCTA("Open Immersion Guide", "immersion_overview", "immersion.html"));
-      } else if (page.isObjectives || page.title === "Semester Objectives" || page.title === "Student Guide & Objectives") {
-        actionContainer.appendChild(createThemedCTA("Open Student Guide", "student_guide", ""));
-      } else if (page.isAdmin || currentIndex === 6) {
-        actionContainer.appendChild(createThemedCTA("Open Resources", "admin_groups", "admin.html"));
-      } else if (currentIndex === 5) {
-        actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", ""));
-      } else if (currentIndex === 4) {
-        actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
-      } else {
-        // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
-        actionContainer.appendChild(createThemedCTA("Open Resources", "objectives", ""));
+        // Update card description & twin callout tiles (Option A Balanced Horizontal Grid)
+        const descContent = formatCardDescription(page.description, page, currentIndex);
+        const descEl = document.getElementById('card-desc');
+        const calloutsEl = document.getElementById('card-callouts');
+        const imageContainer = document.getElementById('image-container');
+        const imgEl = document.getElementById('card-image');
 
-        // Secondary CTA: Session Overview & Speaking Task Pop-Up (matching module theme color)
-        const overviewBtn = document.createElement('button');
-        overviewBtn.type = 'button';
-        overviewBtn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
-        const ctaBg = mod.accent || mod.primary;
-        const ctaHover = mod.accentDark || mod.primaryDark;
-        overviewBtn.style.backgroundColor = ctaBg;
-        overviewBtn.onmouseenter = () => overviewBtn.style.backgroundColor = ctaHover;
-        overviewBtn.onmouseleave = () => overviewBtn.style.backgroundColor = ctaBg;
-        overviewBtn.innerHTML = `<span>Overview &amp; Speaking Task</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
-        overviewBtn.title = "Open Session Overview, 10 Useful Words & Group Speaking Task";
-        overviewBtn.addEventListener('click', () => {
-          openSessionOverviewModal(mod.id, currentIndex + 1);
-        });
-        actionContainer.appendChild(overviewBtn);
+        if (descEl) descEl.innerHTML = descContent.leadHtml;
+        if (calloutsEl) {
+          calloutsEl.innerHTML = descContent.calloutsHtml;
+          const hasCallouts = descContent.calloutsHtml && descContent.calloutsHtml.trim() !== "";
+          if (!hasCallouts) {
+            calloutsEl.classList.add('hidden');
+          } else {
+            calloutsEl.classList.remove('hidden');
+          }
+        }
+
+        const hasImage = page.imageUrl && page.imageUrl.trim() !== "";
+        if (hasImage) {
+          imgEl.src = page.imageUrl;
+          imageContainer.classList.remove('hidden');
+        } else {
+          imgEl.src = "";
+          imageContainer.classList.add('hidden');
+        }
+
+        const actionContainer = document.getElementById('action-links-container');
+        actionContainer.innerHTML = '';
+
+        const sNumber = (page.sessionNum !== undefined) ? page.sessionNum : (currentIndex + 1);
+
+        const createThemedCTA = (label, tabKey, fallbackHref) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
+          const ctaBg = mod.accent || mod.primary;
+          const ctaHover = mod.accentDark || mod.primaryDark;
+          btn.style.backgroundColor = ctaBg;
+          btn.onmouseenter = () => btn.style.backgroundColor = ctaHover;
+          btn.onmouseleave = () => btn.style.backgroundColor = ctaBg;
+          btn.innerHTML = `<span>${label}</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
+          btn.addEventListener('click', () => {
+            openModalDrawer(tabKey, mod.id, sNumber, fallbackHref);
+          });
+          return btn;
+        };
+
+        if (page.isImmersion) {
+          actionContainer.appendChild(createThemedCTA("Open Immersion Guide", "immersion_overview", "immersion.html"));
+        } else if (page.isObjectives || page.title === "Semester Objectives" || page.title === "Student Guide & Objectives") {
+          actionContainer.appendChild(createThemedCTA("Open Student Guide", "student_guide", ""));
+        } else if (page.isAdmin || page.sessionNum === 7) {
+          actionContainer.appendChild(createThemedCTA("Open Resources", "admin_groups", "admin.html"));
+        } else if (page.sessionNum === 6) {
+          actionContainer.appendChild(createThemedCTA("Open Resources", "ddrs", ""));
+        } else if (page.sessionNum === 5) {
+          actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
+        } else {
+          // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
+          actionContainer.appendChild(createThemedCTA("Open Resources", "objectives", ""));
+
+          // Secondary CTA: Session Overview & Speaking Task Pop-Up (matching module theme color)
+          const overviewBtn = document.createElement('button');
+          overviewBtn.type = 'button';
+          overviewBtn.className = "inline-flex items-center gap-2 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs font-bold tracking-wide shadow-xs transition-all duration-150 cursor-pointer select-none border border-black/10 hover:shadow-md hover:-translate-y-[1px] active:translate-y-0";
+          const ctaBg = mod.accent || mod.primary;
+          const ctaHover = mod.accentDark || mod.primaryDark;
+          overviewBtn.style.backgroundColor = ctaBg;
+          overviewBtn.onmouseenter = () => overviewBtn.style.backgroundColor = ctaHover;
+          overviewBtn.onmouseleave = () => overviewBtn.style.backgroundColor = ctaBg;
+          overviewBtn.innerHTML = `<span>Overview &amp; Speaking Task</span> <span class="font-bold text-sm leading-none" aria-hidden="true">⇥</span>`;
+          overviewBtn.title = "Open Session Overview, 10 Useful Words & Group Speaking Task";
+          overviewBtn.addEventListener('click', () => {
+            openSessionOverviewModal(mod.id, sNumber);
+          });
+          actionContainer.appendChild(overviewBtn);
+        }
       }
 
       const accessiblePages = pages.filter(p => !p.isMuted);
       const isNextDisabled = (currentIndex === pages.length - 1) || (pages[currentIndex + 1] && pages[currentIndex + 1].isMuted);
 
-      document.getElementById('counter-badge').textContent = `${currentIndex + 1} of ${accessiblePages.length}`;
+      if (page.isNoticeboard) {
+        document.getElementById('counter-badge').textContent = `Noticeboard`;
+        document.getElementById('footer-status').textContent = `Active: Flight Deck Noticeboard • GSEA 26A`;
+      } else {
+        document.getElementById('counter-badge').textContent = `${page.sessionNum} of ${accessiblePages.length - 1}`;
+        document.getElementById('footer-status').textContent = `Active: ${mod.name} - ${page.title}`;
+      }
+
       const deckTitleEl = document.getElementById('deck-title');
       if (deckTitleEl) {
         deckTitleEl.textContent = page.title;
       }
-      document.getElementById('footer-status').textContent = `Active: ${mod.name} - ${page.title}`;
 
       document.getElementById('prev-btn').disabled = (currentIndex === 0);
       document.getElementById('next-btn').disabled = isNextDisabled;
@@ -980,10 +1047,19 @@
         sessionStorage.setItem('gsea_last_mod', String(currentModuleIndex));
         sessionStorage.setItem('gsea_last_card', String(currentIndex));
         if (window.history && typeof window.history.replaceState === 'function') {
-          window.history.replaceState(null, '', `#${currentProgram}-module${currentModuleIndex + 1}-card${currentIndex + 1}`);
+          if (page.isNoticeboard) {
+            window.history.replaceState(null, '', `#${currentProgram}-module${currentModuleIndex + 1}-noticeboard`);
+          } else {
+            window.history.replaceState(null, '', `#${currentProgram}-module${currentModuleIndex + 1}-card${page.sessionNum}`);
+          }
         }
       } catch (e) {}
-      ScormAPI.setProgress(`${currentProgram}-mod${currentModuleIndex + 1}-card${currentIndex}`, true);
+
+      if (page.isNoticeboard) {
+        ScormAPI.setProgress(`${currentProgram}-mod${currentModuleIndex + 1}-noticeboard`, true);
+      } else {
+        ScormAPI.setProgress(`${currentProgram}-mod${currentModuleIndex + 1}-card${page.sessionNum}`, true);
+      }
     }
 
     function stepDeck(direction) {
@@ -2322,4 +2398,461 @@
       modal.classList.remove("hidden");
       document.body.style.overflow = "hidden";
     };
+
+    window.openCustomArticleReader = function(a) {
+      let modal = document.getElementById("gsea-article-reader-modal");
+      if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "gsea-article-reader-modal";
+        modal.className = "fixed inset-0 z-[200] bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto";
+        modal.onclick = function(e) {
+          if (e.target === modal) window.closeArticleReader();
+        };
+        document.body.appendChild(modal);
+      }
+
+      const topic = a.topic || "Case Study";
+      const sourceTag = a.sourceTag || "Technical Briefing";
+      const heading = a.heading || a.title || "Aviation Safety Article";
+      const snippet = a.snippet || a.summary || "";
+      const readTime = a.readTime || "4 min read";
+      const url = a.url || "https://www.bbc.com";
+
+      const hasContent = Boolean((Array.isArray(a.content) && a.content.length > 0) || (typeof a.content === "string" && a.content.trim().length > 0));
+
+      let bodyParagraphsHTML = "";
+      if (Array.isArray(a.content)) {
+        bodyParagraphsHTML = a.content.map(p => `<p class="text-xs sm:text-[13.5px] text-slate-700 leading-relaxed mb-3.5">${p}</p>`).join("");
+      } else if (typeof a.content === "string" && a.content.trim()) {
+        bodyParagraphsHTML = a.content.split("\n\n").map(p => `<p class="text-xs sm:text-[13.5px] text-slate-700 leading-relaxed mb-3.5">${p}</p>`).join("");
+      } else {
+        bodyParagraphsHTML = `<p class="text-xs sm:text-[13.5px] text-slate-700 leading-relaxed mb-3.5">${snippet}</p>`;
+      }
+
+      let takeawaysHTML = "";
+      if (a.takeaways && a.takeaways.length > 0) {
+        takeawaysHTML = `
+          <div class="p-3.5 bg-slate-900 text-white rounded-xl space-y-1.5 my-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">💡 Key Operational Takeaways</span>
+            <ul class="space-y-1 text-xs text-slate-200">
+              ${a.takeaways.map(t => `<li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>${t}</span></li>`).join("")}
+            </ul>
+          </div>
+        `;
+      }
+
+      let vocabHTML = "";
+      if (a.vocab && a.vocab.length > 0) {
+        vocabHTML = `
+          <div class="p-3.5 bg-emerald-50 border border-emerald-200 rounded-xl space-y-2 my-4">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-900">Spoken Technical Vocabulary in Context</span>
+            <div class="space-y-2">
+              ${a.vocab.map(v => typeof v === 'object' ? `
+                <div class="p-2 rounded-lg bg-white border border-emerald-200/80 text-xs">
+                  <div class="flex items-center gap-2">
+                    <span class="font-bold text-emerald-950">${v.word}</span>
+                    <span class="font-mono text-[10.5px] text-slate-500">${v.ipa || ''}</span>
+                  </div>
+                  <p class="text-[11.5px] text-slate-600 mt-0.5">${v.def || ''}</p>
+                </div>
+              ` : `<span class="px-2 py-0.5 rounded bg-white border border-emerald-300 text-emerald-950 font-bold text-[11px] inline-block mr-1">${v}</span>`).join("")}
+            </div>
+          </div>
+        `;
+      }
+
+      modal.innerHTML = `
+        <div class="relative w-full max-w-2xl max-h-[92vh] bg-white border border-slate-300 rounded-2xl shadow-2xl overflow-hidden flex flex-col my-auto" onclick="event.stopPropagation()">
+          <div class="px-4 py-3 bg-slate-900 border-b border-slate-800 text-white flex items-center justify-between gap-3 shrink-0">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-sky-500 text-white shrink-0">${topic}</span>
+              <span class="text-[11px] font-semibold text-slate-300 truncate">${sourceTag}</span>
+              <span class="text-slate-500 text-xs">&bull;</span>
+              <span class="text-[11px] font-medium text-slate-400 shrink-0">${readTime}</span>
+            </div>
+            <button type="button" onclick="window.closeArticleReader()" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer shrink-0 text-base font-bold" title="Close reader">&times;</button>
+          </div>
+          <div class="p-4 sm:p-6 overflow-y-auto space-y-3">
+            <h2 class="text-base sm:text-xl font-black text-slate-900 leading-snug">${heading}</h2>
+            ${(snippet && hasContent) ? `
+              <div class="p-3 rounded-xl bg-slate-50 border-l-4 border-sky-600 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
+                ${snippet}
+              </div>
+            ` : ""}
+            <div class="pt-2">
+              ${bodyParagraphsHTML}
+            </div>
+            ${takeawaysHTML}
+            ${vocabHTML}
+          </div>
+          <div class="px-4 py-3 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 shrink-0">
+            <a href="${url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-900 underline transition-colors">
+              <span>View Source on BBC ↗</span>
+            </a>
+            <button type="button" onclick="window.closeArticleReader()" class="px-4 py-1.5 rounded-lg text-xs font-bold text-white bg-slate-900 hover:bg-black transition-all cursor-pointer shadow-xs">
+              Close Reader
+            </button>
+          </div>
+        </div>
+      `;
+
+      modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    };
+
+    // --- Student Flight Deck Noticeboard Engine (Card 00) ---
+    function renderNoticeboardContent(theme) {
+      const noticeboardEl = document.getElementById('deck-noticeboard-view');
+      if (!noticeboardEl) return;
+
+      const isAg = (currentProgram === 'ag');
+      const accentColor = theme.accent || (isAg ? '#ea580c' : '#0284c7');
+      const accentDark = theme.accentDark || (isAg ? '#c2410c' : '#0369a1');
+
+      // Current active session index (Card 3 = Session 3 Ground Operations for AT, Session 3 Overtourism for AG)
+      const activeSessionIdx = 3; 
+      const activeSessionName = isAg ? "Session 3 — Managing Mass Tourism" : "Session 3 — Airport Security & Safety Walkaround";
+      const trackBadge = isAg 
+        ? '<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-900 border border-amber-300/80 shadow-2xs">🗣️ General English (LV101E) • Fridays 08:00–10:00</span>'
+        : '<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-sky-100 text-sky-900 border border-sky-300/80 shadow-2xs">✈️ Technical English (LV121E) • Wednesdays 13:15–15:15</span>';
+
+      noticeboardEl.innerHTML = `
+        <!-- 1. Arrival Banner & Callsign Header -->
+        <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white p-4 sm:p-6 shadow-sm">
+          <div class="relative z-10 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-xs border border-white/15 text-[10.5px] font-mono font-bold tracking-wider uppercase text-amber-300">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                <span>ENAC • GSEA Semester 1 • English Learning Portal</span>
+              </div>
+              <span class="text-[10px] sm:text-xs font-mono font-bold px-2.5 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Promotion GSEA26A</span>
+            </div>
+
+            <div class="space-y-1.5">
+              <h2 class="text-xl sm:text-3xl font-black tracking-tight text-white leading-tight">
+                Flight Deck Noticeboard
+              </h2>
+              <p class="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed max-w-2xl">
+                Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and course announcements.
+              </p>
+            </div>
+
+            <!-- Dual-track indicators -->
+            <div class="flex flex-wrap items-center gap-2 pt-1">
+              ${trackBadge}
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-white/10 text-slate-200 border border-white/15">
+                📍 Rooms: Orly • Blagnac • Roissy • Le Bourget
+              </span>
+            </div>
+          </div>
+
+          <!-- Decorative flight graphic overlay -->
+          <div class="absolute -right-8 -bottom-10 opacity-10 pointer-events-none select-none">
+            <svg width="220" height="220" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+          </div>
+        </div>
+
+        <!-- 2. Mobile-First Quick Launchers Bar (Minimum 44px tap target height) -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between px-1">
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🚀 Quick Launchers</span>
+            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">1-Click Fast Navigation</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
+            <!-- Button 1: Jump to Active Lesson (Primary Hero Button) -->
+            <button type="button" onclick="renderCard(${activeSessionIdx})" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl text-white shadow-xs hover:shadow-md transition-all duration-150 cursor-pointer text-left border border-black/10 min-h-[52px]" style="background-color: ${accentColor};" onmouseenter="this.style.backgroundColor='${accentDark}'" onmouseleave="this.style.backgroundColor='${accentColor}'">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-black/25 px-2 py-0.5 rounded text-white/95">Active Class</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform">➔</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-xs sm:text-sm font-black leading-snug">▶ Jump to Today's Lesson</div>
+                <div class="text-[11px] text-white/80 truncate font-medium mt-0.5">${activeSessionName}</div>
+              </div>
+            </button>
+
+            <!-- Button 2: Student Learning Portfolio -->
+            <button type="button" onclick="openPortfolioDrawer()" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white shadow-xs hover:shadow-md transition-all duration-150 cursor-pointer text-left border border-slate-700 min-h-[52px]">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2 py-0.5 rounded">Personal Learning</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform">➔</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-xs sm:text-sm font-black leading-snug">📝 Student Portfolio</div>
+                <div class="text-[11px] text-slate-300 font-medium mt-0.5">Log 3 new words after each class</div>
+              </div>
+            </button>
+
+            <!-- Button 3: Timetable & Rosters -->
+            <button type="button" onclick="renderCard(7)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-slate-200">Course Admin</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform text-slate-500">➔</span>
+              </div>
+              <div class="mt-2">
+                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📅 Timetable &amp; Groups</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Groups A &amp; B, rooms &amp; FE rotas</div>
+              </div>
+            </button>
+          </div>
+
+          <!-- Quick Jump Strip to all individual sessions -->
+          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-wrap items-center justify-between gap-2 text-xs">
+            <span class="text-[10.5px] font-mono font-bold uppercase tracking-wider text-slate-500">Jump directly to:</span>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <button type="button" onclick="renderCard(1)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S1</button>
+              <button type="button" onclick="renderCard(2)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S2</button>
+              <button type="button" onclick="renderCard(3)" class="px-2.5 py-1 rounded-md text-white font-bold border border-transparent shadow-2xs text-[11px] cursor-pointer transition-all" style="background-color: ${accentColor};">S3 (Active)</button>
+              <button type="button" onclick="renderCard(4)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S4</button>
+              <button type="button" onclick="renderCard(5)" class="px-2.5 py-1 rounded-md bg-amber-50 hover:bg-amber-100 text-amber-900 font-bold border border-amber-200 shadow-2xs text-[11px] cursor-pointer transition-all">FE1</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Weekly Announcements & Course Focus -->
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between px-1">
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📢 This Week's Course Announcements</span>
+            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Module 1 Milestones</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Announcement 1: Wednesday AT -->
+            <div class="p-4 rounded-xl border border-sky-200/90 bg-sky-50/50 shadow-2xs space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-200/80 text-sky-900">✈️ Wednesday • AT</span>
+                <span class="text-[10.5px] font-mono text-sky-700 font-medium">13:15 – 15:15</span>
+              </div>
+              <h3 class="text-xs sm:text-sm font-bold text-sky-950">
+                Session 3 — Airport Security &amp; Safety Walkaround
+              </h3>
+              <p class="text-[11.5px] sm:text-xs text-sky-900 leading-relaxed font-normal">
+                We compare airport security controls (landside vs airside, baggage screening) with technical safety checks (pre-flight walkaround, gear pins, and maintenance checks).
+              </p>
+            </div>
+
+            <!-- Announcement 2: Friday AG -->
+            <div class="p-4 rounded-xl border border-amber-200/90 bg-amber-50/50 shadow-2xs space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-200/80 text-amber-900">🗣️ Friday • AG</span>
+                <span class="text-[10.5px] font-mono text-amber-700 font-medium">08:00 – 10:00</span>
+              </div>
+              <h3 class="text-xs sm:text-sm font-bold text-amber-950">
+                Session 3 — Managing Mass Tourism &amp; Fragile Sites
+              </h3>
+              <p class="text-[11.5px] sm:text-xs text-amber-900 leading-relaxed font-normal">
+                We examine visitor caps, local culture preservation, and sustainable mobility alternatives. Practice expressing polite disagreement and building persuasive arguments.
+              </p>
+            </div>
+
+            <!-- Announcement 3: Portfolio Reminder -->
+            <div class="p-4 rounded-xl border border-emerald-200/90 bg-emerald-50/50 shadow-2xs space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-200/80 text-emerald-900">💡 Habit</span>
+                <span class="text-[10.5px] font-mono text-emerald-700 font-medium">Continuous Practice</span>
+              </div>
+              <h3 class="text-xs sm:text-sm font-bold text-emerald-950">
+                Update Your Spoken Portfolio
+              </h3>
+              <p class="text-[11.5px] sm:text-xs text-emerald-900 leading-relaxed font-normal">
+                Add at least 3 new spoken words and 1 reflection sentence to your portfolio after each session. Regular updates build confidence for your oral evaluations.
+              </p>
+            </div>
+
+            <!-- Announcement 4: Formative Evaluation 1 (FE1) -->
+            <div class="p-4 rounded-xl border border-purple-200/90 bg-purple-50/50 shadow-2xs space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-purple-200/80 text-purple-900">🎯 Upcoming Evaluation</span>
+                <span class="text-[10.5px] font-mono text-purple-700 font-medium">Week 48</span>
+              </div>
+              <h3 class="text-xs sm:text-sm font-bold text-purple-950">
+                Formative Evaluation 1 (FE1) Countdown
+              </h3>
+              <p class="text-[11.5px] sm:text-xs text-purple-900 leading-relaxed font-normal">
+                Check your designated 30-minute pair evaluation slot in the Timetable tab. Arrive 5 minutes before your time with your visual presentation ready.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Weekly English Dispatch (Reading & Listening Practice) -->
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between px-1">
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📰 Weekly English Dispatch</span>
+            <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Authentic Spoken Practice</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Dispatch Card 1: Aeronautical English (AT) -->
+            <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-800 border border-sky-200">✈️ Technical English (AT)</span>
+                  <span class="text-[10px] font-mono text-slate-400 font-semibold">BBC News • 4 min read</span>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                  "How Major International Hubs Manage Severe Winter Operations"
+                </h4>
+                <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
+                  A short, accessible B1/B2 article explaining how airports coordinate de-icing fluids, runway friction testing, and slot management during severe winter storms.
+                </p>
+              </div>
+              <button type="button" onclick="openWinterOpsNoticeboardArticle()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
+                <span>Read Technical Article</span>
+                <span class="font-bold text-sm leading-none">⇥</span>
+              </button>
+            </div>
+
+            <!-- Dispatch Card 2: General Culture & Film (AG) -->
+            <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
+              <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200">🗣️ General Culture &amp; Film (AG)</span>
+                  <span class="text-[10px] font-mono text-slate-400 font-semibold">Cinema Pick • Comedy-Drama</span>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+                  "The Terminal" (2004, Steven Spielberg)
+                </h4>
+                <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
+                  Starring Tom Hanks as Viktor Navorski, who becomes stranded inside New York JFK airport. Excellent for conversational travel English, airport signage, and natural spoken dialogue.
+                </p>
+              </div>
+              <button type="button" onclick="openFilmDetailsModal()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
+                <span>Explore Film Notes</span>
+                <span class="font-bold text-sm leading-none">⇥</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Course Administration & Teaching Team Strip -->
+        <div class="p-4 rounded-xl border border-slate-200/80 bg-slate-50/70 shadow-2xs space-y-2.5 text-xs text-slate-700">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-2">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">✉️ Teaching Team &amp; Course Administration</span>
+            </div>
+            <span class="text-[10.5px] font-mono text-slate-500">ENAC Département LH/LAN</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11.5px] sm:text-xs">
+            <div>
+              <span class="font-semibold text-slate-900">Course Coordinator:</span> Phil PARRIS
+              <span class="font-mono text-slate-500 text-[10.5px]">(philip.parris@enac.fr)</span>
+            </div>
+            <div>
+              <span class="font-semibold text-slate-900">Teaching Team:</span> Geri MIDDLETON • Penny WRIGHT • Ally HEWETT
+            </div>
+          </div>
+
+          <p class="text-[11px] text-slate-500 leading-relaxed pt-0.5">
+            Have a question about your group, room allocation, or oral evaluation? Speak to your teacher at the end of class or send an email to the coordinator.
+          </p>
+        </div>
+      `;
+    }
+
+    function openWinterOpsNoticeboardArticle() {
+      const article = {
+        title: "How Major International Hubs Manage Severe Winter Operations",
+        sourceTag: "BBC News • Aviation Operations",
+        topic: "Aviation Safety",
+        readTime: "4 min read",
+        url: "https://www.bbc.com/news/topics/c340q430292t",
+        snippet: "A clear overview of how international hub airports prepare for sub-zero temperatures, freezing fog, and heavy snowfall.",
+        content: [
+          "Every winter, major international airports in Europe and North America face extreme weather that threatens to bring schedules to a standstill. Managing severe winter conditions requires rapid coordination between air traffic control, ground handlers, and airline flight dispatchers.",
+          "The first line of defense is runway clearance. Airports operate specialized convoys of snow plows, rotary sweepers, and chemical spreaders that can clear a 3,000-meter runway in under 15 minutes. High-tech friction testers continuously measure tire grip to ensure landing aircraft can stop safely without runway excursions.",
+          "Simultaneously, aircraft de-icing is essential for flight safety. Before departure, aircraft taxi to dedicated de-icing pads where robotic or truck-mounted booms spray hot glycol fluid to melt ice on the wings and control surfaces. An anti-icing layer is then applied to prevent new ice from forming during taxiing.",
+          "Ground delays are often unavoidable during severe weather because aircraft separation on approach must be increased to preserve safety margins. However, proactive communication and accurate slot management ensure passenger safety remains the absolute priority."
+        ],
+        takeaways: [
+          "Runway friction testing and swift snow clearing are essential to keep runways operational.",
+          "Aircraft de-icing uses hot glycol fluid to remove snow and ice before departure.",
+          "Safety always takes priority over on-time performance during adverse weather."
+        ],
+        vocab: [
+          { word: "de-icing fluid", ipa: "/diːˈaɪ.sɪŋ ˈfluː.ɪd/", def: "A heated chemical mixture (usually glycol) sprayed onto aircraft surfaces to melt ice and snow." },
+          { word: "friction tester", ipa: "/ˈfrɪk.ʃən ˈtes.tər/", def: "A specialized ground vehicle that measures tire grip on slippery or snow-covered runways." },
+          { word: "snow plow", ipa: "/snəʊ plaʊ/", def: "A heavy vehicle equipped with a wide blade used to clear snow from runways and taxiways." },
+          { word: "slot delay", ipa: "/slɒt dɪˈleɪ/", def: "A scheduled departure or arrival time postponed due to airport congestion or bad weather." }
+        ]
+      };
+      window.openCustomArticleReader(article);
+    }
+
+    function openFilmDetailsModal() {
+      let modal = document.getElementById("gsea-film-modal");
+      if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "gsea-film-modal";
+        modal.className = "fixed inset-0 z-[200] bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto";
+        modal.onclick = function(e) {
+          if (e.target === modal) closeFilmDetailsModal();
+        };
+        document.body.appendChild(modal);
+      }
+
+      modal.innerHTML = `
+        <div class="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 animate-in fade-in zoom-in-95 duration-200" onclick="event.stopPropagation()">
+          <div class="p-4 sm:p-6 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
+            <div class="flex items-center gap-2">
+              <span class="text-xl">🎬</span>
+              <div>
+                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-400">General Culture &amp; Cinema Pick (AG)</span>
+                <h3 class="text-base sm:text-lg font-black text-white">The Terminal (2004)</h3>
+              </div>
+            </div>
+            <button type="button" onclick="closeFilmDetailsModal()" class="w-7 h-7 rounded-lg bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white flex items-center justify-center font-bold text-sm cursor-pointer transition-all" title="Close">&times;</button>
+          </div>
+
+          <div class="p-4 sm:p-6 space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed max-h-[70vh] overflow-y-auto">
+            <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-200">
+              <div><span class="font-bold text-slate-900">Director:</span> Steven Spielberg</div>
+              <div><span class="font-bold text-slate-900">Genre:</span> Comedy / Drama</div>
+              <div><span class="font-bold text-slate-900">Cast:</span> Tom Hanks, Catherine Zeta-Jones</div>
+              <div><span class="font-bold text-slate-900">Location:</span> New York JFK Airport</div>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Story Synopsis:</h4>
+              <p class="text-slate-600">
+                Viktor Navorski arrives at New York JFK from Eastern Europe. While he was in flight, a sudden military revolution broke out in his homeland, leaving his government unrecognized and his passport invalid. Unable to step onto US soil or return home, Viktor is stranded inside the international transit lounge.
+              </p>
+            </div>
+
+            <div class="p-3.5 bg-amber-50/70 border border-amber-200 rounded-xl space-y-1.5">
+              <span class="text-[10.5px] font-bold uppercase tracking-wider text-amber-900">🗣️ Why This Film Builds Spoken Fluency:</span>
+              <p class="text-xs text-amber-950 leading-relaxed">
+                As Viktor gradually learns English to survive in the terminal, the film showcases authentic airport dialogues, everyday transactional language (ordering food, asking for directions, airport jobs), and humorous cross-cultural communication.
+              </p>
+            </div>
+
+            <div class="p-3.5 bg-slate-900 text-white rounded-xl space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">💬 Discussion Questions for Class:</span>
+              <ul class="space-y-1.5 text-xs text-slate-300">
+                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>If you were trapped in an international airport terminal for a week, how would you manage food and sleep?</span></li>
+                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>What airport workers does Viktor befriend, and what are their responsibilities?</span></li>
+                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>How does Viktor's English improve as the story progresses?</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-3.5 sm:p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between">
+            <a href="https://www.imdb.com/title/tt0362227/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors">
+              <span>View on IMDb ↗</span>
+            </a>
+            <button type="button" onclick="closeFilmDetailsModal()" class="px-4 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs cursor-pointer transition-all">Close</button>
+          </div>
+        </div>
+      `;
+      modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeFilmDetailsModal() {
+      const modal = document.getElementById("gsea-film-modal");
+      if (modal) modal.classList.add("hidden");
+      document.body.style.overflow = "";
+    }
 
