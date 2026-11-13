@@ -2887,7 +2887,8 @@
         headerEl.style.backgroundColor = modTheme.primaryDark || '#1f2937';
       }
 
-      const sessionTitle = (modTheme.pages && modTheme.pages[sessionNum - 1] && modTheme.pages[sessionNum - 1].title) ||
+      const targetPage = modTheme.pages && (modTheme.pages.find(p => p.sessionNum === sessionNum) || modTheme.pages[sessionNum]);
+      const sessionTitle = (targetPage && targetPage.title) ||
                            (sessionData.objectives && sessionData.objectives.title) ||
                            `Session ${sessionNum}`;
       if (titleEl) {
@@ -3411,7 +3412,10 @@
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
         const activeMod = modulesData[modalState.modNum - 1];
-        titleEl.textContent = (activeMod && activeMod.pages && activeMod.pages[modalState.sessionNum - 1] && activeMod.pages[modalState.sessionNum - 1].title) || `Session ${modalState.sessionNum}`;
+        const targetPage = activeMod && activeMod.pages && (activeMod.pages.find(p => p.sessionNum === modalState.sessionNum) || activeMod.pages[modalState.sessionNum]);
+        titleEl.textContent = (targetPage && targetPage.title) ||
+                              (activeSessionData.objectives && activeSessionData.objectives.title) ||
+                              `Session ${modalState.sessionNum}`;
       }
 
       modalEl.classList.remove('hidden');
