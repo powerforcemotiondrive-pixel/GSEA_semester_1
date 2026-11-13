@@ -707,9 +707,8 @@
         <!-- Drawer Header -->
         <header id="modal-header" class="textured-surface bg-[#374151] text-white px-4 py-3.5 sm:px-6 sm:py-4 flex flex-col gap-3 border-b border-[#1f2937] shrink-0">
           <div class="flex items-center justify-between gap-2.5 sm:gap-3">
-            <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 min-w-0">
+            <div class="flex items-center gap-2 min-w-0">
               <span id="modal-tag" class="bg-white/20 text-white text-[10.5px] sm:text-xs font-extrabold px-2.5 py-0.5 sm:py-1 rounded-md tracking-wide w-fit shrink-0">Module 1 • Session 1</span>
-              <h2 id="modal-title" class="text-sm sm:text-base font-bold text-white truncate">Session Details</h2>
             </div>
             
             <div class="flex items-center space-x-2 shrink-0">
@@ -3206,7 +3205,6 @@
       const drawerEl = document.getElementById('deck-modal-drawer');
       const headerEl = document.getElementById('modal-header');
       const tagEl = document.getElementById('modal-tag');
-      const titleEl = document.getElementById('modal-title');
       const ddrsTabBtn = document.getElementById('modal-tab-ddrs');
 
       const theme = modulesData[modalState.modNum - 1];
@@ -3269,7 +3267,6 @@
 
         const isAas = (modalState.program === 'aas' || currentProgram === 'aas');
         tagEl.textContent = isAas ? "LV121E • Technical English" : "LV101E • General English";
-        titleEl.textContent = "Student Guide & Objectives";
       } else if (isImmersionSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -3291,7 +3288,6 @@
         if (immersionCitiesTab) immersionCitiesTab.classList.remove('hidden');
 
         tagEl.textContent = "General English • S2 Milestone";
-        titleEl.textContent = "English Immersion & Destination Guides (End of S2)";
       } else if (isAdminSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -3313,7 +3309,6 @@
         if (adminSyllabusTab) adminSyllabusTab.classList.remove('hidden');
 
         tagEl.textContent = "GSEA26A • Course Admin";
-        titleEl.textContent = "Course Admin — Class Groups, Teachers, Weekly Calendar & FE Rotas";
       } else if (isFeSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -3337,7 +3332,6 @@
         }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session 5`;
-        titleEl.textContent = "Session 5 - Formative Evaluation";
       } else if (isDdrsSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -3358,7 +3352,6 @@
         if (feCriteriaTab) feCriteriaTab.classList.add('hidden');
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Focus`;
-        titleEl.textContent = "DDRS Regulatory Framework";
       } else {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -3411,11 +3404,6 @@
         }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
-        const activeMod = modulesData[modalState.modNum - 1];
-        const targetPage = activeMod && activeMod.pages && (activeMod.pages.find(p => p.sessionNum === modalState.sessionNum) || activeMod.pages[modalState.sessionNum]);
-        titleEl.textContent = (targetPage && targetPage.title) ||
-                              (activeSessionData.objectives && activeSessionData.objectives.title) ||
-                              `Session ${modalState.sessionNum}`;
       }
 
       modalEl.classList.remove('hidden');

@@ -1693,7 +1693,6 @@
       const drawerEl = document.getElementById('deck-modal-drawer');
       const headerEl = document.getElementById('modal-header');
       const tagEl = document.getElementById('modal-tag');
-      const titleEl = document.getElementById('modal-title');
       const ddrsTabBtn = document.getElementById('modal-tab-ddrs');
 
       const theme = modulesData[modalState.modNum - 1];
@@ -1756,7 +1755,6 @@
 
         const isAas = (modalState.program === 'aas' || currentProgram === 'aas');
         tagEl.textContent = isAas ? "LV121E • Technical English" : "LV101E • General English";
-        titleEl.textContent = "Student Guide & Objectives";
       } else if (isImmersionSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -1778,7 +1776,6 @@
         if (immersionCitiesTab) immersionCitiesTab.classList.remove('hidden');
 
         tagEl.textContent = "General English • S2 Milestone";
-        titleEl.textContent = "English Immersion & Destination Guides (End of S2)";
       } else if (isAdminSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -1800,7 +1797,6 @@
         if (adminSyllabusTab) adminSyllabusTab.classList.remove('hidden');
 
         tagEl.textContent = "GSEA26A • Course Admin";
-        titleEl.textContent = "Course Admin — Class Groups, Teachers, Weekly Calendar & FE Rotas";
       } else if (isFeSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -1824,7 +1820,6 @@
         }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session 5`;
-        titleEl.textContent = "Session 5 - Formative Evaluation";
       } else if (isDdrsSession) {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -1845,7 +1840,6 @@
         if (feCriteriaTab) feCriteriaTab.classList.add('hidden');
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Focus`;
-        titleEl.textContent = "DDRS Regulatory Framework";
       } else {
         if (studentGuideTab) studentGuideTab.classList.add('hidden');
         if (semObjEnTab) semObjEnTab.classList.add('hidden');
@@ -1898,11 +1892,6 @@
         }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
-        const activeMod = modulesData[modalState.modNum - 1];
-        const targetPage = activeMod && activeMod.pages && (activeMod.pages.find(p => p.sessionNum === modalState.sessionNum) || activeMod.pages[modalState.sessionNum]);
-        titleEl.textContent = (targetPage && targetPage.title) ||
-                              (activeSessionData.objectives && activeSessionData.objectives.title) ||
-                              `Session ${modalState.sessionNum}`;
       }
 
       modalEl.classList.remove('hidden');
