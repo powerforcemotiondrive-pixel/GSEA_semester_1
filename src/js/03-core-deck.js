@@ -2515,11 +2515,11 @@
         : '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-sky-100 text-sky-900 border border-sky-300/80 shadow-2xs">✈️ Technical English (LV121E) • Wednesdays 13:15–15:15</span>';
 
       noticeboardEl.innerHTML = `
-        <!-- 1. Arrival Banner & Callsign Header (Option 1: Clean White Card with Subtle 60% Aircraft Watermark) -->
+        <!-- 1. Arrival Banner & Callsign Header (Clean White Card with Subtle 70% Apron / Stand Photo Watermark) -->
         <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs">
-          <!-- Subtle aircraft backdrop at 60% opacity with smooth gradient fade to white -->
-          <div class="absolute right-0 top-0 bottom-0 w-5/12 sm:w-1/2 pointer-events-none select-none overflow-hidden">
-            <img src="images/aas_m2card3.jpg" alt="" class="w-full h-full object-cover object-center opacity-60 mix-blend-multiply" style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 30%, black 100%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 30%, black 100%);" />
+          <!-- Subtle apron backdrop at 70% opacity with smooth gradient fade to white -->
+          <div class="absolute right-0 top-0 bottom-0 w-1/2 sm:w-7/12 pointer-events-none select-none overflow-hidden">
+            <img src="images/turnaround_apron.jpg" alt="" class="w-full h-full object-cover object-right opacity-70 mix-blend-multiply" style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 35%, black 100%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 35%, black 100%);" />
           </div>
 
           <div class="relative z-10 max-w-xl space-y-3">
@@ -2549,15 +2549,15 @@
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">1-Click Fast Navigation</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
-            <!-- Button 1: Jump to Active Lesson (Deep Navy Hero Button) -->
-            <button type="button" onclick="renderCard(${activeSessionIdx})" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white shadow-xs hover:shadow-md transition-all duration-150 cursor-pointer text-left border border-slate-800 min-h-[52px]">
+            <!-- Button 1: Jump to Active Lesson (Clean Light Card with Accent Border) -->
+            <button type="button" onclick="renderCard(${activeSessionIdx})" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl ${isAg ? 'bg-gradient-to-br from-white via-white to-amber-50/50 border-amber-300/80 hover:border-amber-400' : 'bg-gradient-to-br from-white via-white to-sky-50/50 border-sky-300/80 hover:border-sky-400'} text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border min-h-[52px]">
               <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-300/30 px-2 py-0.5 rounded">Active Class</span>
-                <span class="text-base group-hover:translate-x-1 transition-transform">➔</span>
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider ${isAg ? 'bg-amber-100 text-amber-800 border-amber-200' : 'bg-sky-100 text-sky-800 border-sky-200'} border px-2 py-0.5 rounded">Active Class</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform ${isAg ? 'text-amber-600' : 'text-sky-600'}">➔</span>
               </div>
               <div class="mt-2">
-                <div class="text-xs sm:text-sm font-black leading-snug">▶ Jump to Today's Lesson</div>
-                <div class="text-[11px] text-slate-300 truncate font-medium mt-0.5">${activeSessionName}</div>
+                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">▶ Jump to Today's Lesson</div>
+                <div class="text-[11px] text-slate-600 truncate font-medium mt-0.5">${activeSessionName}</div>
               </div>
             </button>
 
@@ -2581,21 +2581,9 @@
               </div>
               <div class="mt-2">
                 <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📅 Timetable &amp; Groups</div>
-                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Groups A &amp; B, rooms &amp; FE rotas</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Groups A &amp; B &amp; FE rotas</div>
               </div>
             </button>
-          </div>
-
-          <!-- Quick Jump Strip to all individual sessions -->
-          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-wrap items-center justify-between gap-2 text-xs">
-            <span class="text-[10.5px] font-mono font-bold uppercase tracking-wider text-slate-500">Jump directly to:</span>
-            <div class="flex flex-wrap items-center gap-1.5">
-              <button type="button" onclick="renderCard(1)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S1</button>
-              <button type="button" onclick="renderCard(2)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S2</button>
-              <button type="button" onclick="renderCard(3)" class="px-2.5 py-1 rounded-md bg-slate-900 text-white font-bold border border-slate-900 shadow-2xs text-[11px] cursor-pointer transition-all">S3 (Active)</button>
-              <button type="button" onclick="renderCard(4)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S4</button>
-              <button type="button" onclick="renderCard(5)" class="px-2.5 py-1 rounded-md bg-purple-50 hover:bg-purple-100 text-purple-900 font-bold border border-purple-200 shadow-2xs text-[11px] cursor-pointer transition-all">FE1</button>
-            </div>
           </div>
         </div>
 
@@ -2755,13 +2743,13 @@
             </div>
           </div>
 
-          <!-- Classrooms & Contact Note -->
+          <!-- Contact Note -->
           <div class="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-100 text-[11px] text-slate-500">
             <div>
-              <span class="font-semibold text-slate-700">Classrooms:</span> Orly • Blagnac • Roissy • Le Bourget
+              Have a question about your group or oral evaluation? Speak to your teacher at the end of class or contact the coordinator.
             </div>
-            <div>
-              Have a question? Speak to your teacher at the end of class or email the coordinator.
+            <div class="font-mono text-[10.5px] text-slate-400">
+              ENAC Département LH/LAN
             </div>
           </div>
         </div>
