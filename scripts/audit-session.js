@@ -453,7 +453,7 @@ if (fs.existsSync(distDir)) {
   }
 }
 
-// Check Template Link Syntax (Must target=_blank and NOT contain download attribute)
+// Check Template Link Syntax (Must target=_blank, NOT contain download attribute, and strictly adhere to canonical design system button style)
 let templateLinkFound = false;
 const templateFilesToCheck = getTemplateFileNames(target.semester, target.track, target.moduleNum);
 templateFilesToCheck.forEach(fileRel => {
@@ -462,16 +462,30 @@ templateFilesToCheck.forEach(fileRel => {
     const text = fs.readFileSync(fullPath, 'utf8');
     if (text.includes(expectedPdfName)) {
       templateLinkFound = true;
-      const regex = new RegExp(`<a[^>]*href=["'][^"']*${expectedPdfName}["'][^>]*>`, 'i');
-      const match = text.match(regex);
-      if (match) {
-        if (!match[0].includes('target="_blank"')) {
+      const fullAnchorRegex = new RegExp(`<a[^>]*href=["'][^"']*${expectedPdfName}["'][\\s\\S]*?<\\/a>`, 'i');
+      const fullAnchorMatch = text.match(fullAnchorRegex);
+      if (fullAnchorMatch) {
+        const anchorHtml = fullAnchorMatch[0];
+        if (!anchorHtml.includes('target="_blank"')) {
           findings.pdfStatus.pass = false;
           findings.pdfStatus.details.push(`PDF link in ${fileRel} is missing target="_blank" (must open in new tab).`);
         }
-        if (match[0].includes('download')) {
+        if (anchorHtml.includes('download')) {
           findings.pdfStatus.pass = false;
           findings.pdfStatus.details.push(`PDF link in ${fileRel} contains 'download' attribute which blocks browser tab preview.`);
+        }
+        // Canonical Design System Button Styling Assertions
+        if (!anchorHtml.includes('bg-blue-600') || !anchorHtml.includes('border-blue-700')) {
+          findings.pdfStatus.pass = false;
+          findings.pdfStatus.details.push(`PDF action bar button in ${fileRel} deviates from design system color ('bg-blue-600 hover:bg-blue-700 border border-blue-700').`);
+        }
+        if (!anchorHtml.includes('<span>Lesson Worksheet (PDF)</span>')) {
+          findings.pdfStatus.pass = false;
+          findings.pdfStatus.details.push(`PDF action bar button in ${fileRel} deviates from canonical label 'Lesson Worksheet (PDF)'.`);
+        }
+        if (!anchorHtml.includes('&rarr;')) {
+          findings.pdfStatus.pass = false;
+          findings.pdfStatus.details.push(`PDF action bar button in ${fileRel} is missing the trailing arrow icon (<span aria-hidden="true">&rarr;</span>).`);
         }
       }
     }

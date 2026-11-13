@@ -193,7 +193,12 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   4. *Zero Academic Jargon & Prohibited Lexicon (Rule 1.I)*: Scans for prohibited pedagogical meta-labels and enforces strict prohibition of the term `"faculty"`.
   5. *Classroom Timings & Teacher Autonomy (Rule 1.Q)*: Detects and removes rigid minute breakdowns and timer emojis.
   6. *Pairwork Viability & Student B Peer Checklist*: Ensures active listening checklists exist for speaking simulations.
-  7. *Digital Worksheet & Auto-Saving Notes*: Confirms local storage textareas (`window.saveLessonNote`), official PDF download buttons, and zero deprecated browser print buttons.
+  7. *Digital Worksheet & Action Bar Button Invariant*: Confirms local storage textareas (`window.saveLessonNote`), and strictly enforces the canonical action bar PDF button styling:
+     - Class: `inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 border border-blue-700 shadow-xs transition-all cursor-pointer shrink-0`
+     - Label: `<span>Lesson Worksheet (PDF)</span>`
+     - Trailing arrow: `<span aria-hidden="true">&rarr;</span>`
+     - Link targets: `target="_blank" rel="noopener noreferrer"` (without `download` attribute).
+     - Strict Invariant: Any deviation in color, label text, or missing trailing arrow fails the audit automatically.
   8. *7-Page A4 PDF Lesson Worksheet Status*: Enforces the exact 7-page A4 PDF invariant (`docs/GSEA_S[X]_M[X]_[TRACK]_S[X]_Lesson_Worksheet.pdf`), verified via native macOS PDFKit (`doc.pageCount === 7`), and tracked in `imsmanifest.xml`.
 - **Tri-Project Invariant Synchronization**: The audit engine and command runbook are synchronized permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
 
