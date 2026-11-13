@@ -2595,7 +2595,7 @@
       const activeSessionName = activeInfo.sessionName;
 
       // Dynamic track-specific banner image, badge, and subtitle
-      const heroImage = isAg ? "images/ag_m1card4.jpg" : "images/aas_m1card4.jpg";
+      const heroImage = isAg ? "images/ag_m1card4.jpg" : "images/aas_m2card4.jpg";
       const heroBadge = isAg 
         ? "🗣️ GENERAL ENGLISH (LV101E) • SEMESTER 1 NOTICEBOARD" 
         : "✈️ TECHNICAL ENGLISH (LV121E) • SEMESTER 1 NOTICEBOARD";
