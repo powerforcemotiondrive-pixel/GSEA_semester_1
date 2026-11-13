@@ -2513,7 +2513,7 @@
           actionContainer.appendChild(createThemedCTA("Open Resources", "fe_guidelines", ""));
         } else {
           // Sessions 1 to 4: In-deck modal workspace hub (single themed CTA to open resources drawer)
-          actionContainer.appendChild(createThemedCTA("Open Resources", "objectives", ""));
+          actionContainer.appendChild(createThemedCTA("Open Resources", "content", ""));
 
           // Secondary CTA: Session Overview & Speaking Task Pop-Up (matching module theme color)
           const overviewBtn = document.createElement('button');
@@ -3404,7 +3404,7 @@
           if (tabContent) tabContent.classList.add('hidden');
           if (tabObjectives) tabObjectives.classList.remove('hidden');
           if (tabPlan) tabPlan.classList.remove('hidden');
-          if (modalState.tab === 'plan_obj') {
+          if (modalState.tab === 'plan_obj' || modalState.tab === 'content') {
             modalState.tab = 'objectives';
           }
         }
@@ -3457,6 +3457,12 @@
       }
     }
     window.toggleDeckFullScreen = toggleDeckFullScreen;
+    window.renderCard = renderCard;
+    window.openModalDrawer = openModalDrawer;
+    window.closeModalDrawer = closeModalDrawer;
+    window.switchModalTab = switchModalTab;
+    window.openFilmDetailsModal = openFilmDetailsModal;
+    window.closeFilmDetailsModal = closeFilmDetailsModal;
 
     window.syncPortfolioDrawerHeader = function(trackKey) {
       const activeTrack = trackKey || 'ag';
@@ -4105,27 +4111,27 @@
               </div>
             </button>
 
-            <!-- Button 2: Student Learning Portfolio (Crisp White Card with Emerald Accent) -->
-            <button type="button" onclick="openPortfolioDrawer()" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
+            <!-- Button 2: Weekly Calendar (Crisp White Card with Sky Accent) -->
+            <button type="button" onclick="openModalDrawer('admin_calendar', 1, 7)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
               <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Personal Learning</span>
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-sky-50 text-sky-800 px-2 py-0.5 rounded border border-sky-200">Course Schedule</span>
                 <span class="text-base group-hover:translate-x-1 transition-transform text-slate-400">➔</span>
               </div>
               <div class="mt-2">
-                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📝 Student Portfolio</div>
-                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Log 3 new words after each class</div>
+                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📅 Weekly Calendar</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Session dates, rooms &amp; FE rotas</div>
               </div>
             </button>
 
-            <!-- Button 3: Timetable & Rosters (Crisp White Card with Sky Accent) -->
-            <button type="button" onclick="renderCard(7)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
+            <!-- Button 3: Portfolio Summary (Crisp White Card with Emerald Accent) -->
+            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
               <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-sky-50 text-sky-800 px-2 py-0.5 rounded border border-sky-200">Course Admin</span>
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Cohort Insights</span>
                 <span class="text-base group-hover:translate-x-1 transition-transform text-slate-400">➔</span>
               </div>
               <div class="mt-2">
-                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📅 Timetable &amp; Groups</div>
-                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Groups A &amp; B &amp; FE rotas</div>
+                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📊 Portfolio Summary</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Top buzzwords, grammar traps &amp; reflections</div>
               </div>
             </button>
           </div>
