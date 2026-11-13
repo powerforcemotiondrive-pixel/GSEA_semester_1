@@ -197,6 +197,11 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   8. *7-Page A4 PDF Lesson Worksheet Status*: Enforces the exact 7-page A4 PDF invariant (`docs/GSEA_S[X]_M[X]_[TRACK]_S[X]_Lesson_Worksheet.pdf`), verified via native macOS PDFKit (`doc.pageCount === 7`), and tracked in `imsmanifest.xml`.
 - **Tri-Project Invariant Synchronization**: The audit engine and command runbook are synchronized permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
 
+### U. GSEA / TSEEAC Professional Identity & Non-Engineer Invariant (Tri-Project Invariant)
+- **Strict Prohibition of the Term 'Engineer' for GSEA / TSEEAC**: GSEA students are preparing for careers as civil aviation technical officers (*Technicien Supérieur des Études et de l'Exploitation de l'Aviation Civile* • TSEEAC), aerodrome inspectors, safety officers, and operational specialists. Never refer to GSEA / TSEEAC students, graduates, cohorts, or role-play participants as "engineers" (which is the separate IENAC track).
+- **Approved Professional Designations**: Always use accurate civil aviation operational terminology: `"civil aviation specialists"`, `"technical officers"`, `"aerodrome operations officers"`, `"aviation safety specialists"`, `"safety investigators"`, `"aviation professionals"`, or `"students"`.
+- **Engineering Works vs. People**: Technical airfield infrastructure (e.g., civil engineering works, concrete repairs, drainage culverts, runway resurfacing) may describe physical works or external contractors, but all aerodrome personnel, inspectors, and students must strictly use the approved non-engineer designations.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
