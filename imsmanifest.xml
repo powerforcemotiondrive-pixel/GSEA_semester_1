@@ -107,6 +107,10 @@
       <file href="images/ag_m1card2.jpg"/>
       <file href="images/ag_m1card3.jpg"/>
       <file href="images/ag_m1card4.jpg"/>
+      <file href="images/ag_eco_galapagos.jpg"/>
+      <file href="images/ag_eco_costa_rica.jpg"/>
+      <file href="images/ag_eco_bhutan.jpg"/>
+      <file href="images/ag_eco_norway.jpg"/>
       <file href="images/ddrs_ag_mod1.jpg"/>
       <file href="images/fe_progress_check.jpg"/>
       <file href="images/course_admin.jpg"/>
@@ -154,6 +158,7 @@
       
       <!-- Student Worksheets & PDF Documents -->
       <file href="docs/GSEA_S1_M1_AG_S3_Lesson_Worksheet.pdf"/>
+      <file href="docs/GSEA_S1_M1_AG_S4_Lesson_Worksheet.pdf"/>
       <file href="docs/GSEA_S1_M1_AT_S3_Lesson_Worksheet.pdf"/>
       <file href="docs/GSEA_S1_M1_AT_S4_Lesson_Worksheet.pdf"/>
     </resource>

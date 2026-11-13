@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 4 Lesson Worksheet - Ecotourism &amp; Sustainable Destination Design</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 1 General English (AG • LV101E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.3pt;
+      line-height: 1.32;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Running Header */
+    .doc-header {
+      border-bottom: 2px solid #059669;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #047857;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Running Footer */
+    .doc-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 4px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 7pt;
+      color: #94a3b8;
+    }
+
+    /* Typography & Utility */
+    h1 {
+      font-size: 14pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.3px;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 10pt;
+      font-weight: 800;
+      color: #065f46;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.8pt;
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 3px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 6.8pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    .badge-green { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
+    .badge-blue { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+    .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-slate { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+    }
+
+    .card-highlight {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 5px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+    }
+
+    .card-warning {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 5px;
+      padding: 6px 8px;
+      margin-bottom: 6px;
+    }
+
+    /* Grid & Tables */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.8pt;
+      margin-bottom: 6px;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 800;
+      text-align: left;
+      padding: 4px 6px;
+      border: 1px solid #cbd5e1;
+      text-transform: uppercase;
+      font-size: 7pt;
+      letter-spacing: 0.4px;
+    }
+
+    td {
+      padding: 4px 6px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    /* Case Study Visual Cards */
+    .case-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 6px;
+    }
+
+    .case-card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .case-card-body {
+      padding: 6px 8px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Fill-in writing lines */
+    .write-box {
+      border: 1px dashed #cbd5e1;
+      background: #fafafa;
+      border-radius: 4px;
+      padding: 6px;
+      min-height: 48px;
+      margin-top: 3px;
+      margin-bottom: 6px;
+      font-size: 7.5pt;
+      color: #94a3b8;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =======================================================================
+       PAGE 1: SESSION OVERVIEW, OBJECTIVES, NEWS & RECALL SPOT-CHECK
+       ======================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 1 General English (AG • LV101E)</span>
+      <span class="ref">REF: ENAC-GSEA1-AG-M1-S4 • 7-PAGE WORKSHEET</span>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 8px;">
+      <div>
+        <span class="badge badge-green" style="margin-bottom:3px;">Module 1 • Session 4</span>
+        <h1>Ecotourism &amp; Sustainable Destination Design</h1>
+        <p style="font-size:8.3pt; color:#475569; font-weight:600;">Authentic Conservation, Low-Impact Engineering, Mixed Conditionals &amp; Spoken Exposés</p>
+      </div>
+      <div style="text-align:right;">
+        <span class="badge badge-blue">CEFR B2+ Spoken Fluency</span><br>
+        <span style="font-size:7pt; color:#64748b; font-weight:700;">2-Hour University Seminar</span>
+      </div>
+    </div>
+
+    <!-- Objectives Matrix -->
+    <div class="card-highlight" style="margin-bottom: 8px;">
+      <h2>🎯 Operational Session Objectives</h2>
+      <div class="grid-2" style="font-size:7.8pt;">
+        <div>
+          <p><strong>1. Forensic Greenwashing Auditing:</strong> Distinguish authentic ecotourism from misleading PR claims across energy, revenue retention, and land tenure.</p>
+          <p><strong>2. Past Choices &amp; Present Outcomes:</strong> Formulate mixed conditionals (<em>If + had + V3, would + V1</em>) to evaluate past conservation decisions.</p>
+          <p><strong>3. Setting Rules &amp; Targets:</strong> Deploy formal connectors of purpose (<em>so as to, in order that</em>) and condition (<em>provided that</em>) accurately.</p>
+        </div>
+        <div>
+          <p><strong>4. Small-Group Research Sprint:</strong> Analyze a fragile global destination case study (Galápagos, Costa Rica, Bhutan, Norway) in working pairs or triads.</p>
+          <p><strong>5. 5-Minute Spoken Exposé:</strong> Deliver a collaborative briefing without reading notes, defending project authenticity against board questions.</p>
+          <p><strong>6. Active Peer Observation:</strong> Score peer presentations on authenticity, spoken fluency, and grammar using a structured evaluation grid.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity 1: News Prompts -->
+    <div class="card" style="margin-bottom: 8px;">
+      <h2>01 • Activity 1: Eco-Tourism News &amp; Decarbonization Discussion</h2>
+      <p style="font-size:8pt; color:#475569; margin-bottom:4px;"><strong>Communicative Warm-Up:</strong> Discuss the two industry prompts below with a partner. Connect current environmental headlines to clean transport and community ownership.</p>
+      <div class="grid-2" style="font-size:7.8pt;">
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:4px; padding:6px;">
+          <strong style="color:#0369a1;">📰 Prompt 1: Certification vs. Greenwashing</strong>
+          <p style="margin-top:2px;">What concrete evidence proves an eco-lodge is genuinely sustainable rather than merely decorating bedrooms with bamboo furniture and towel re-use signs?</p>
+        </div>
+        <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:4px; padding:6px;">
+          <strong style="color:#0369a1;">📰 Prompt 2: Local Community Retention</strong>
+          <p style="margin-top:2px;">In many international resorts, over 80% of visitor expenditure leaks out to foreign hotel conglomerates. How can destinations ensure direct local revenue retention?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity 1: Session 3 Spot-Check -->
+    <div class="card">
+      <h2>⚡ Rapid Recall: Session 3 Overtourism Vocabulary Diagnostic</h2>
+      <p style="font-size:8pt; color:#475569; margin-bottom:5px;">Test your memory with your partner. Provide a precise spoken B2 definition before checking the benchmark answers.</p>
+      <table style="margin-bottom:4px;">
+        <thead>
+          <tr>
+            <th style="width:28%;">Session 3 Core Concept</th>
+            <th>Operational Spoken Benchmark Definition</th>
+            <th style="width:14%; text-align:center;">Self-Check</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Carrying Capacity</strong></td>
+            <td>The maximum visitor threshold an ecosystem or urban centre can absorb without permanent environmental degradation or severe decline in local resident quality of life.</td>
+            <td style="text-align:center;"><span class="badge badge-green">Recalled</span></td>
+          </tr>
+          <tr>
+            <td><strong>2. De-Marketing</strong></td>
+            <td>Strategic communication and targeted pricing designed to discourage visitor volumes or redirect tourist flows away from fragile hotspots to quieter alternative regions.</td>
+            <td style="text-align:center;"><span class="badge badge-green">Recalled</span></td>
+          </tr>
+          <tr>
+            <td><strong>3. Resident Backlash</strong></td>
+            <td>Civil protests, political strikes, and grassroots resistance from local citizens when uncontrolled tourism causes rising rents, overcrowding, noise, and loss of neighbourhood identity.</td>
+            <td style="text-align:center;"><span class="badge badge-green">Recalled</span></td>
+          </tr>
+          <tr>
+            <td><strong>4. Tourist Levy / Surcharge</strong></td>
+            <td>A dedicated municipal surcharge added to hotel invoices or city entry gates, ring-fenced exclusively to fund public services, waste management, and conservation projects.</td>
+            <td style="text-align:center;"><span class="badge badge-green">Recalled</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="doc-footer">
+      <span>ENAC • Civil Aviation English Learning Platform</span>
+      <span>Session 4 Worksheet • Page 1 of 7</span>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       PAGE 2: ACTIVITY 2: GENUINE ECO-TOURISM VS. GREENWASHING MATRIX
+       ======================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 1 General English (AG • LV101E)</span>
+      <span class="ref">REF: ENAC-GSEA1-AG-M1-S4 • PAGE 2</span>
+    </div>
+
+    <h2>02 • Activity 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix</h2>
+    <p style="font-size:8pt; color:#475569; margin-bottom:6px;"><strong>Forensic Audit Task:</strong> Examine the 3 international tourism projects below. Use the forensic audit criteria to separate verified environmental stewardship from superficial marketing buzzwords.</p>
+
+    <!-- Comparative Table -->
+    <table>
+      <thead>
+        <tr>
+          <th style="width:22%;">Project Dossier</th>
+          <th style="width:28%;">Marketing Claims vs. Reality</th>
+          <th style="width:18%;">Energy &amp; Infrastructure</th>
+          <th style="width:16%;">Revenue Retention</th>
+          <th style="width:16%;">Audit Verdict</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Project A: Monteverde Cloud Forest</strong><br>
+            <span style="font-size:7pt; color:#059669; font-weight:700;">Costa Rica (Private Reserve)</span>
+          </td>
+          <td>Protects 500 hectares of primary cloud forest. 90% of operational staff hired from neighbouring farming cooperatives. Strict trail quotas enforced daily.</td>
+          <td>100% off-grid solar and micro-hydro generation. Elevated boardwalks eliminate trail erosion.</td>
+          <td><strong>78% of visitor expenditure</strong> retained directly within the local municipal district.</td>
+          <td><span class="badge badge-green">Verified Ecotourism</span><br><span style="font-size:6.8pt; color:#065f46;">High community co-ownership &amp; GSTC certified.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Project B: 'Eco-Luxury' Lagoon Resort</strong><br>
+            <span style="font-size:7pt; color:#dc2626; font-weight:700;">Southeast Asia (Private Atoll)</span>
+          </td>
+          <td>Promotes bamboo decor, paper drinking straws, and towel re-use cards. Claims to be '100% nature-friendly' on luxury travel blogs.</td>
+          <td>Constructed over cleared mangrove wetlands. Powered by 24/7 hidden diesel generator farms.</td>
+          <td><strong>Only 12% retained</strong>; profits wired to offshore holding company; foreign managers.</td>
+          <td><span class="badge badge-amber" style="background:#fee2e2; color:#991b1b; border:1px solid #fca5a5;">Severe Greenwashing</span><br><span style="font-size:6.8pt; color:#991b1b;">High ecological destruction &amp; massive leakage.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Project C: Maasai Conservancies</strong><br>
+            <span style="font-size:7pt; color:#0284c7; font-weight:700;">Kenya (Community Trust)</span>
+          </td>
+          <td>Land leased directly from indigenous Maasai landholders. Maximum cap of 16 guests per camp to prevent wildlife harassment during safaris.</td>
+          <td>Solar microgrid power, low-impact canvas structures, zero permanent concrete foundations.</td>
+          <td><strong>65% of net revenues</strong> fund local community health bursaries and anti-poaching teams.</td>
+          <td><span class="badge badge-green">Community-Based (CBT)</span><br><span style="font-size:6.8pt; color:#065f46;">True indigenous stewardship &amp; conservation co-benefits.</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Forensic Checklist & Analysis Grid -->
+    <div class="grid-2" style="margin-top:6px;">
+      <div class="card-warning">
+        <h3 style="color:#92400e;">🔍 The 3-Point Greenwashing Detection Checklist</h3>
+        <ul style="padding-left:14px; font-size:7.5pt; color:#78350f; line-height:1.4;">
+          <li><strong>1. Independent Third-Party Certification:</strong> Look for recognized audits (GSTC, Green Key, EU Ecolabel) rather than self-awarded marketing stickers or generic leaves.</li>
+          <li><strong>2. Economic Leakage Ratio:</strong> Calculate the percentage of revenue remaining in the host community. A project retaining under 25% is an extractive commercial venture.</li>
+          <li><strong>3. Energy &amp; Waste Transparency:</strong> Verify actual baseload energy. Does the lodge rely on genuine solar/hydro microgrids or concealed diesel power plants?</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>📝 Group Forensic Verdict &amp; Evidence Notes</h3>
+        <p style="font-size:7.5pt; color:#64748b;">Record your group's arguments why Project B fails the ecotourism standard:</p>
+        <div class="write-box" style="height:62px;">
+          Evidence of deception in Project B: 1. Mangrove clearing destroys coastal buffer... 2. Hidden diesel power contradicts zero-emission claim... 3. 88% economic leakage proves local exploitation...
+        </div>
+      </div>
+    </div>
+
+    <!-- Pair Discussion Prompts -->
+    <div class="card-highlight" style="margin-top:4px;">
+      <h3 style="color:#065f46;">💬 Speaking Reflection: Economic Leakage in Aviation &amp; Tourism</h3>
+      <p style="font-size:7.8pt; color:#1e293b;">With your partner, formulate two arguments: Why does high local revenue retention (e.g. Costa Rica's 78%) create far stronger environmental protection than punitive government fines alone?</p>
+    </div>
+
+    <div class="doc-footer">
+      <span>ENAC • Civil Aviation English Learning Platform</span>
+      <span>Session 4 Worksheet • Page 2 of 7</span>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       PAGE 3: ACTIVITY 3: MIXED CONDITIONALS & PURPOSE CLAUSES CLINIC
+       ======================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 1 General English (AG • LV101E)</span>
+      <span class="ref">REF: ENAC-GSEA1-AG-M1-S4 • PAGE 3</span>
+    </div>
+
+    <h2>03 • Activity 3: Language Clinic: Mixed Conditionals &amp; Purpose Clauses</h2>
+    <p style="font-size:8pt; color:#475569; margin-bottom:6px;"><strong>Communicative Grammar Mastery:</strong> Use mixed conditionals to link past conservation decisions with present environmental outcomes, and use formal connectors to define mandatory project targets.</p>
+
+    <!-- Grammar Matrix -->
+    <div class="grid-3" style="margin-bottom:8px;">
+      <div class="card">
+        <span class="badge badge-green" style="margin-bottom:3px;">1. Mixed Conditional</span>
+        <h3 style="font-size:8.2pt;">Past Action &rarr; Present Result</h3>
+        <p style="font-family:ui-monospace, monospace; font-size:7pt; color:#0369a1; background:#f1f5f9; padding:2px 4px; border-radius:3px; margin:3px 0;">
+          If + Past Perfect (had + V3),<br>would + base verb (V1)
+        </p>
+        <p style="font-size:7.5pt; color:#334155; margin-top:3px;">
+          <em>"If the government <strong>had protected</strong> the coral reef ten years ago, the local diving economy <strong>would be</strong> thriving today."</em>
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-blue" style="margin-bottom:3px;">2. Connectors of Purpose</span>
+        <h3 style="font-size:8.2pt;">Expressing Goals &amp; Targets</h3>
+        <p style="font-family:ui-monospace, monospace; font-size:7pt; color:#0369a1; background:#f1f5f9; padding:2px 4px; border-radius:3px; margin:3px 0;">
+          so as to / in order to + V1<br>in order that + Subject + modal
+        </p>
+        <p style="font-size:7.5pt; color:#334155; margin-top:3px;">
+          <em>"The reserve installed solar rainwater pumps <strong>so as to minimize</strong> strain on the municipal aquifer."</em>
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="badge badge-amber" style="margin-bottom:3px;">3. Connectors of Condition</span>
+        <h3 style="font-size:8.2pt;">Mandatory Constraints</h3>
+        <p style="font-family:ui-monospace, monospace; font-size:7pt; color:#0369a1; background:#f1f5f9; padding:2px 4px; border-radius:3px; margin:3px 0;">
+          provided that / on condition that<br>+ present tense clause
+        </p>
+        <p style="font-size:7.5pt; color:#334155; margin-top:3px;">
+          <em>"Tourists may explore the fragile canyon <strong>provided that they remain</strong> on marked wooden walkways."</em>
+        </p>
+      </div>
+    </div>
+
+    <!-- Common Pitfall Spotlight -->
+    <div class="card-warning" style="margin-bottom:8px;">
+      <h3 style="color:#92400e; font-size:8pt;">⚠️ Common Spoken English Pitfall: The 'Double Would-Have' Trap</h3>
+      <p style="font-size:7.6pt; color:#78350f;">
+        <strong>❌ Wrong:</strong> <em>"If the authorities would have banned cruise ships, the lagoon would be clean."</em><br>
+        <strong>❌ Wrong:</strong> <em>"If the authorities had banned cruise ships, the lagoon would have been clean today."</em> (Incorrect result tense for present state).<br>
+        <strong>✅ Right:</strong> <em>"If the authorities <strong>had banned</strong> cruise ships five years ago, the lagoon <strong>would be</strong> clean today."</em> (Past cause &rarr; Present outcome).
+      </p>
+    </div>
+
+    <!-- Practice Transformation Drills -->
+    <div class="card">
+      <h3>✍️ Sentence Construction &amp; Transformation Exercises</h3>
+      <p style="font-size:7.8pt; color:#64748b; margin-bottom:5px;">Transform the prompt ideas into sophisticated B2 environmental statements:</p>
+
+      <div style="font-size:7.6pt; margin-bottom:6px;">
+        <strong>1. Past Decision:</strong> The regional council did not invest in electric shuttle buses in 2018. <strong>Present Outcome:</strong> The national park highway is heavily congested with diesel exhaust today.<br>
+        <div class="write-box" style="min-height:28px;">
+          If the regional council had invested in electric shuttle buses in 2018, the national park highway would not be congested with diesel exhaust today.
+        </div>
+      </div>
+
+      <div style="font-size:7.6pt; margin-bottom:6px;">
+        <strong>2. Past Decision:</strong> Island authorities did not enforce strict visitor quotas five years ago. <strong>Present Outcome:</strong> Ancient stone monuments are permanently eroded today.<br>
+        <div class="write-box" style="min-height:28px;">
+          If island authorities had enforced strict visitor quotas five years ago, the ancient stone monuments would not be so severely eroded today.
+        </div>
+      </div>
+
+      <div style="font-size:7.6pt; margin-bottom:6px;">
+        <strong>3. Purpose Linker:</strong> The airport authority designed an artificial wetland. (Goal: filter aviation glycol runoff naturally).<br>
+        <div class="write-box" style="min-height:28px;">
+          The airport authority designed an artificial wetland so as to filter aviation glycol runoff naturally without chemical treatments.
+        </div>
+      </div>
+
+      <div style="font-size:7.6pt;">
+        <strong>4. Inverted Conditional Spotlight:</strong> Rewrite using <em>"Had the reserve..."</em>: <em>"If the reserve had secured solar microgrids earlier..."</em><br>
+        <div class="write-box" style="min-height:28px;">
+          Had the reserve secured solar microgrids earlier, it would not depend on expensive diesel imports today.
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>ENAC • Civil Aviation English Learning Platform</span>
+      <span>Session 4 Worksheet • Page 3 of 7</span>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       PAGE 4: ACTIVITY 4: SMALL-GROUP RESEARCH SPRINT CASE STUDIES
+       ======================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 1 General English (AG • LV101E)</span>
+      <span class="ref">REF: ENAC-GSEA1-AG-M1-S4 • PAGE 4</span>
+    </div>
+
+    <h2>04 • Activity 4: Small-Group Research Sprint: Global Destination Case Studies</h2>
+    <p style="font-size:8pt; color:#475569; margin-bottom:6px;"><strong>Collaborative Task:</strong> In pairs or triads, select one destination case study below. Analyze the ecosystem profile, examine the low-impact solution, and extract the community metrics for your upcoming 5-minute exposé.</p>
+
+    <!-- Case Studies 2x2 Grid -->
+    <div class="grid-2">
+      <!-- Case 1: Galapagos -->
+      <div class="case-card">
+        <img src="../images/ag_eco_galapagos.jpg" alt="Galapagos Islands">
+        <div class="case-card-body">
+          <div>
+            <span class="badge badge-green" style="font-size:6.5pt;">Marine Biosecurity &amp; Quotas</span>
+            <h3 style="font-size:8.5pt; margin-top:2px;">1. Galápagos Marine Sanctuary (Ecuador)</h3>
+            <p style="font-size:7.2pt; color:#475569; margin-bottom:3px;"><strong>Ecosystem:</strong> Volcanic archipelago with 97% endemic species, delicate marine food webs, and zero natural predators.</p>
+            <p style="font-size:7.2pt; color:#991b1b; margin-bottom:3px;"><strong>Threat:</strong> Invasive alien species, mega-yacht anchoring damage, and historical overfishing of marine life.</p>
+            <p style="font-size:7.2pt; color:#065f46; margin-bottom:3px;"><strong>Solution:</strong> Strict cap of 100 passengers per vessel, hybrid electric auxiliary drives, and mandatory certified naturalist guides.</p>
+          </div>
+          <div style="font-size:7.2pt; color:#1e293b; background:#f1f5f9; padding:3px 5px; border-radius:3px; margin-top:3px;">
+            <strong>Community Benefit:</strong> $200 entry tax funds 300+ local rangers and municipal desalination.
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 2: Costa Rica -->
+      <div class="case-card">
+        <img src="../images/ag_eco_costa_rica.jpg" alt="Monteverde Costa Rica">
+        <div class="case-card-body">
+          <div>
+            <span class="badge badge-green" style="font-size:6.5pt;">Cloud Forest Canopy &amp; Rewilding</span>
+            <h3 style="font-size:8.5pt; margin-top:2px;">2. Monteverde Cloud Forest (Costa Rica)</h3>
+            <p style="font-size:7.2pt; color:#475569; margin-bottom:3px;"><strong>Ecosystem:</strong> High-altitude tropical cloud forest harboring 50% of national biodiversity, resplendent quetzals, and jaguars.</p>
+            <p style="font-size:7.2pt; color:#991b1b; margin-bottom:3px;"><strong>Threat:</strong> Past deforestation for cattle ranching and climate-induced cloud ceiling elevation.</p>
+            <p style="font-size:7.2pt; color:#065f46; margin-bottom:3px;"><strong>Solution:</strong> Suspension canopy walkways preventing soil erosion, 100% off-grid solar/hydro, and biological rewilding.</p>
+          </div>
+          <div style="font-size:7.2pt; color:#1e293b; background:#f1f5f9; padding:3px 5px; border-radius:3px; margin-top:3px;">
+            <strong>Community Benefit:</strong> 78% revenue retention; 90% of staff recruited from agrarian families.
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 3: Bhutan -->
+      <div class="case-card">
+        <img src="../images/ag_eco_bhutan.jpg" alt="Kingdom of Bhutan">
+        <div class="case-card-body">
+          <div>
+            <span class="badge badge-blue" style="font-size:6.5pt;">High-Value, Low-Volume Policy</span>
+            <h3 style="font-size:8.5pt; margin-top:2px;">3. The Kingdom of Bhutan (Himalayas)</h3>
+            <p style="font-size:7.2pt; color:#475569; margin-bottom:3px;"><strong>Ecosystem:</strong> Pristine Himalayan valleys, high-altitude alpine meadows, and sacred Buddhist monasteries.</p>
+            <p style="font-size:7.2pt; color:#991b1b; margin-bottom:3px;"><strong>Threat:</strong> Risk of backpacker overcrowding, plastic accumulation on mountain passes, and cultural dilution.</p>
+            <p style="font-size:7.2pt; color:#065f46; margin-bottom:3px;"><strong>Solution:</strong> Mandatory $100/day Sustainable Development Fee (SDF) and constitutional carbon-negative protection.</p>
+          </div>
+          <div style="font-size:7.2pt; color:#1e293b; background:#f1f5f9; padding:3px 5px; border-radius:3px; margin-top:3px;">
+            <strong>Community Benefit:</strong> Tax directly finances 100% free healthcare, education, and rural electric transport.
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 4: Norway -->
+      <div class="case-card">
+        <img src="../images/ag_eco_norway.jpg" alt="Tromso Norwegian Fjords">
+        <div class="case-card-body">
+          <div>
+            <span class="badge badge-blue" style="font-size:6.5pt;">Silent Electric Arctic Marine</span>
+            <h3 style="font-size:8.5pt; margin-top:2px;">4. Tromsø &amp; Arctic Fjords (Norway)</h3>
+            <p style="font-size:7.2pt; color:#475569; margin-bottom:3px;"><strong>Ecosystem:</strong> Glacial fjords, winter humpback/orca feeding grounds beneath northern lights, Arctic marine tundra.</p>
+            <p style="font-size:7.2pt; color:#991b1b; margin-bottom:3px;"><strong>Threat:</strong> Underwater engine noise disrupting cetacean echolocation, heavy fuel oil emissions, and cruise congestion.</p>
+            <p style="font-size:7.2pt; color:#065f46; margin-bottom:3px;"><strong>Solution:</strong> Silent hybrid-electric catamarans powered by fjord hydro, zero-emission mode within 1000m of cetaceans.</p>
+          </div>
+          <div style="font-size:7.2pt; color:#1e293b; background:#f1f5f9; padding:3px 5px; border-radius:3px; margin-top:3px;">
+            <strong>Community Benefit:</strong> Local marine biologist crews from Tromsø University; co-funds plastic cleanups.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sprint Checklist -->
+    <div class="card-warning" style="margin-top:2px;">
+      <h3 style="color:#92400e; font-size:7.8pt;">📋 Team Sprint Task: 4 Briefing Requirements for Your Exposé</h3>
+      <div class="grid-2" style="font-size:7.2pt; color:#78350f;">
+        <p><strong>1. Ecosystem Profile:</strong> What specific flora, fauna, or landscape is vulnerable to tourist disruption?</p>
+        <p><strong>2. Engineering / Zoning Mechanism:</strong> What technical or regulatory solution prevents degradation?</p>
+        <p><strong>3. Local Prosperity Metric:</strong> How much revenue remains local, and what public services does it fund?</p>
+        <p><strong>4. Spoken Grammar Challenge:</strong> Deliver at least 1 mixed conditional and 1 connector without reading.</p>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>ENAC • Civil Aviation English Learning Platform</span>
+      <span>Session 4 Worksheet • Page 4 of 7</span>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       PAGE 5: ACTIVITY 5: 5-MINUTE SPOKEN EXPOSES & PEER EVALUATION GRID
+       ======================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 1 General English (AG • LV101E)</span>
+      <span class="ref">REF: ENAC-GSEA1-AG-M1-S4 • PAGE 5</span>
+    </div>
+
+    <h2>05 • Activity 5: 5-Minute Spoken Exposés &amp; Peer Evaluation Grid</h2>
+    <p style="font-size:8pt; color:#475569; margin-bottom:6px;"><strong>Delivery &amp; Active Listening:</strong> Deliver your collaborative 5-minute spoken exposé to the class or exchange partners without reading word-for-word. While other teams present, complete the Peer Observer Checklist.</p>
+
+    <!-- Role Division Framework -->
+    <div class="card-highlight" style="margin-bottom:6px;">
+      <h3 style="color:#065f46;">🎤 Exposé Delivery Framework: 3 Balanced Speaking Roles</h3>
+      <div class="grid-3" style="font-size:7.5pt;">
+        <div style="background:#ffffff; border:1px solid #a7f3d0; border-radius:4px; padding:5px;">
+          <strong style="color:#065f46;">Speaker 1: Context &amp; Challenge</strong>
+          <p style="margin-top:2px;">Introduce the destination, describe ecosystem vulnerabilities, and detail the past commercial threats that forced intervention.</p>
+        </div>
+        <div style="background:#ffffff; border:1px solid #a7f3d0; border-radius:4px; padding:5px;">
+          <strong style="color:#065f46;">Speaker 2: Low-Impact Solution</strong>
+          <p style="margin-top:2px;">Explain the engineering, renewable microgrid, or regulatory zoning model and explain how local residents capture tangible revenue.</p>
+        </div>
+        <div style="background:#ffffff; border:1px solid #a7f3d0; border-radius:4px; padding:5px;">
+          <strong style="color:#065f46;">Speaker 3: Reflection &amp; Q&amp;A</strong>
+          <p style="margin-top:2px;">Deliver the mixed conditional reflection (<em>If authorities had not...</em>), address greenwashing risks, and lead responses to board questions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Board Challenge Questions -->
+    <div class="card" style="margin-bottom:6px;">
+      <h3>⚡ Tough Questions from the Sustainability Investment Board</h3>
+      <div class="grid-2" style="font-size:7.5pt; color:#334155;">
+        <p>• <em>"How do you prove that your destination does not rely on hidden diesel backup generators during peak tourist season?"</em></p>
+        <p>• <em>"If visitor demand triples over the next decade, what carrying-capacity trigger will strictly halt further admissions?"</em></p>
+        <p>• <em>"How does your project ensure local community members hold skilled management roles rather than low-wage service jobs?"</em></p>
+        <p>• <em>"Could the premium price of your sustainable eco-destination result in social elitism, excluding ordinary travelers?"</em></p>
+      </div>
+    </div>
+
+    <!-- Student B / Peer Observer Evaluation Grid -->
+    <div class="card-warning" style="margin-bottom:6px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+        <h3 style="color:#92400e; font-size:8.2pt;">📊 Student B / Peer Observer Active-Listening Rubric</h3>
+        <span class="badge badge-amber">Score /10 per Criterion</span>
+      </div>
+      <table style="font-size:7.4pt; margin-bottom:0;">
+        <thead>
+          <tr>
+            <th style="width:20%;">Presenting Team</th>
+            <th style="width:26%;">1. Environmental Authenticity</th>
+            <th style="width:26%;">2. Spoken Fluency (No Reading)</th>
+            <th style="width:28%;">3. Grammar: Mixed Conditional</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Team: ______________</strong><br><span style="font-size:6.8pt; color:#64748b;">Case: Galápagos / Costa Rica</span></td>
+            <td>GSTC criteria verified? Evidence of real community ownership vs. greenwashing?</td>
+            <td>Spoke naturally from keywords? Maintained eye contact? Shared speaking time?</td>
+            <td>Clear <em>If + had + V3, would + V1</em> delivered? Accurate purpose connectors used?</td>
+          </tr>
+          <tr>
+            <td><strong>Team: ______________</strong><br><span style="font-size:6.8pt; color:#64748b;">Case: Bhutan / Norway</span></td>
+            <td>GSTC criteria verified? Evidence of real community ownership vs. greenwashing?</td>
+            <td>Spoke naturally from keywords? Maintained eye contact? Shared speaking time?</td>
+            <td>Clear <em>If + had + V3, would + V1</em> delivered? Accurate purpose connectors used?</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Student Notes Container -->
+    <div class="card">
+      <h3>📝 Your Team's Spoken Outline &amp; Keyword Bullet Notes</h3>
+      <div class="write-box" style="height:55px;">
+        1. Context & Threat: ... | 2. Low-impact infrastructure: ... | 3. Community retention percentage: ... | 4. Spoken Conditional: "If our destination had not restricted..."
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>ENAC • Civil Aviation English Learning Platform</span>
+      <span>Session 4 Worksheet • Page 5 of 7</span>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       PAGE 6: TOEIC READING PRACTICE (PARTS 5 & 6)
+       ======================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 1 General English (AG • LV101E)</span>
+      <span class="ref">REF: ENAC-GSEA1-AG-M1-S4 • PAGE 6</span>
+    </div>
+
+    <h2>06 • TOEIC Reading Practice: Parts 5 &amp; 6 (Environmental Business Context)</h2>
+    <p style="font-size:8pt; color:#475569; margin-bottom:6px;"><strong>Target Exam Competency:</strong> Master conditional clauses, connectors of condition and purpose, and professional environmental vocabulary frequently tested in international aviation and business TOEIC examinations.</p>
+
+    <!-- Questions 1-6 -->
+    <div style="font-size:7.8pt;">
+      <div class="card" style="margin-bottom:5px;">
+        <p><strong>1. Part 5: Incomplete Sentences</strong><br>
+        If the regional tourism board ________ strict visitor caps five years ago, the alpine hiking trails would not be suffering from severe soil erosion today.</p>
+        <div class="grid-2" style="font-size:7.5pt; margin-top:3px;">
+          <div>(A) implemented<br>(B) had implemented</div>
+          <div>(C) would implement<br>(D) has implemented</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:5px;">
+        <p><strong>2. Part 5: Connectors of Condition</strong><br>
+        International travelers are permitted to enter the private nature sanctuary ________ that they remain accompanied by a licensed local naturalist guide at all times.</p>
+        <div class="grid-2" style="font-size:7.5pt; margin-top:3px;">
+          <div>(A) provided<br>(B) despite</div>
+          <div>(C) in order<br>(D) whereas</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:5px;">
+        <p><strong>3. Part 5: Prepositional Structures</strong><br>
+        All passengers must complete the mandatory biosecurity declaration ________ boarding the high-speed catamaran to the protected marine reserve.</p>
+        <div class="grid-2" style="font-size:7.5pt; margin-top:3px;">
+          <div>(A) prior to<br>(B) during</div>
+          <div>(C) whereas<br>(D) because</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:5px;">
+        <p><strong>4. Part 5: Purpose Clauses</strong><br>
+        The airport operator installed high-efficiency rainwater harvesting cisterns so ________ to reduce consumption from the stressed municipal municipal reservoir.</p>
+        <div class="grid-2" style="font-size:7.5pt; margin-top:3px;">
+          <div>(A) as<br>(B) that</div>
+          <div>(C) for<br>(D) much</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:5px;">
+        <p><strong>5. Part 6: Text Completion (Executive Briefing Extract)</strong><br>
+        <em>"To prevent accusations of greenwashing, the airline entered into an agreement with a verified certifier. ________ the audit concluded that all carbon offset claims were supported by physical agro-forestry data, consumer trust rose by 24%."</em></p>
+        <div class="grid-2" style="font-size:7.5pt; margin-top:3px;">
+          <div>(A) Once<br>(B) While</div>
+          <div>(C) Despite<br>(D) Unless</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:5px;">
+        <p><strong>6. Part 5: Vocabulary in Business Context</strong><br>
+        The municipal administration decided to ________ electric bus services to ensure that sustainable public transit remained affordable for rural residents.</p>
+        <div class="grid-2" style="font-size:7.5pt; margin-top:3px;">
+          <div>(A) subsidize<br>(B) forfeit</div>
+          <div>(C) deplete<br>(D) contradict</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Answer Key & Exam Strategy Analysis -->
+    <div class="card-highlight" style="margin-top:4px;">
+      <h3 style="color:#065f46; font-size:8pt;">🎯 Answer Key &amp; Pedagogical Strategy Analysis</h3>
+      <div class="grid-2" style="font-size:7.2pt; color:#1e293b;">
+        <div>
+          <p><strong>1. (B) had implemented:</strong> Mixed conditional. The if-clause refers to past non-action (had + V3), leading to the present result (would not be suffering today).</p>
+          <p><strong>2. (A) provided:</strong> 'Provided that' is a formal connector of condition meaning 'only on the condition that', followed by a subject and finite verb clause.</p>
+          <p><strong>3. (A) prior to:</strong> 'Prior to' is a high-frequency formal compound preposition meaning 'before', taking the gerund 'boarding'.</p>
+        </div>
+        <div>
+          <p><strong>4. (A) as:</strong> 'So as to + infinitive' expresses purpose. 'So that' requires a full clause with a subject and modal verb (so that it could reduce).</p>
+          <p><strong>5. (A) Once:</strong> Temporal conjunction indicating that consumer trust increased immediately after the third-party audit reached a positive conclusion.</p>
+          <p><strong>6. (A) subsidize:</strong> 'Subsidize' means to financially support an operation to keep user prices lower; distractor 'deplete' means to exhaust completely.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>ENAC • Civil Aviation English Learning Platform</span>
+      <span>Session 4 Worksheet • Page 6 of 7</span>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       PAGE 7: VOCABULARY GLOSSARY & FE1 READINESS SIGN-OFF
+       ======================================================================= -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GSEA Semester 1 General English (AG • LV101E)</span>
+      <span class="ref">REF: ENAC-GSEA1-AG-M1-S4 • PAGE 7</span>
+    </div>
+
+    <h2>07 • Spoken Vocabulary Glossary &amp; FE1 Readiness Sign-Off</h2>
+    <p style="font-size:8pt; color:#475569; margin-bottom:6px;"><strong>Core Lexical Reference:</strong> 18 high-frequency professional sustainability terms with IPA phonetic stress indicators, clear operational definitions, and sample spoken contexts.</p>
+
+    <!-- 18 Glossary Terms in 2 Columns -->
+    <div class="grid-2" style="font-size:7.2pt; margin-bottom:8px;">
+      <div>
+        <p><strong>01. Ecotourism</strong> <span style="color:#0284c7; font-family:monospace;">/ˈiː.koʊˌtʊə.rɪ.zəm/</span><br>
+        Responsible travel to natural areas conserving ecology and sustaining local welfare.<br>
+        <em>"Genuine ecotourism prioritizes ecosystem health over hotel expansion."</em></p>
+
+        <p><strong>02. Greenwashing</strong> <span style="color:#0284c7; font-family:monospace;">/ˈɡriːnˌwɒʃ.ɪŋ/</span><br>
+        Misleading marketing that deceptively presents products or operations as eco-friendly.<br>
+        <em>"Replacing plastic straws with paper does not hide diesel emissions."</em></p>
+
+        <p><strong>03. Biodiversity Corridor</strong> <span style="color:#0284c7; font-family:monospace;">/ˌbaɪ.oʊ.daɪˈvɜː.sɪ.ti ˈkɒr.ɪ.dɔːr/</span><br>
+        Protected natural belt connecting fragmented habitats to allow safe wildlife migration.<br>
+        <em>"The lodge reforested five hectares to establish a continuous corridor."</em></p>
+
+        <p><strong>04. Community-Based Tourism (CBT)</strong> <span style="color:#0284c7; font-family:monospace;">/kəˈmjuː.nə.ti beɪst/</span><br>
+        Tourism owned, managed, and economically captured by local resident populations.<br>
+        <em>"Under the CBT model, safari lodge leases directly fund rural schools."</em></p>
+
+        <p><strong>05. Carbon Offset</strong> <span style="color:#0284c7; font-family:monospace;">/ˈkɑː.bən ˌɒf.set/</span><br>
+        Compensating for emissions through certified investments in renewable power or forestry.<br>
+        <em>"Airlines must prioritize fleet decarbonization rather than simple offsets."</em></p>
+
+        <p><strong>06. Rewilding</strong> <span style="color:#0284c7; font-family:monospace;">/riːˈwaɪl.dɪŋ/</span><br>
+        Restoring ecosystems to a natural state by reintroducing native species and apex predators.<br>
+        <em>"Rewilding projects allow natural river wetlands to absorb seasonal floods."</em></p>
+
+        <p><strong>07. Conservation Levy</strong> <span style="color:#0284c7; font-family:monospace;">/ˌkɒn.səˈveɪ.ʃən ˈlev.i/</span><br>
+        A dedicated tax added to visitor entry, ring-fenced exclusively for park ranger patrols.<br>
+        <em>"Every international visitor pays a $100 conservation levy upon arrival."</em></p>
+
+        <p><strong>08. Ecolabel Certification</strong> <span style="color:#0284c7; font-family:monospace;">/ˈiː.koʊˌleɪ.bəl ˌsɜː.tɪ.fɪˈkeɪ.ʃən/</span><br>
+        Formal third-party verification that an enterprise adheres to rigorous environmental audits.<br>
+        <em>"Independent certification guarantees the eco-lodge uses 100% solar power."</em></p>
+
+        <p><strong>09. Low-Impact Architecture</strong> <span style="color:#0284c7; font-family:monospace;">/loʊ ˈɪm.pækt ˈɑː.kɪ.tek.tʃər/</span><br>
+        Building design using local timber, stone, and passive ventilation without soil harm.<br>
+        <em>"Elevated stilt chalets avoid disturbing vulnerable coastal mangrove roots."</em></p>
+      </div>
+
+      <div>
+        <p><strong>10. Renewable Energy Microgrid</strong> <span style="color:#0284c7; font-family:monospace;">/rɪˈnjuː.ə.bəl ˈmaɪ.kroʊ.ɡrɪd/</span><br>
+        Self-sufficient decentralized energy network integrating solar, wind, and battery storage.<br>
+        <em>"The island operates entirely on a solar-battery microgrid without diesel."</em></p>
+
+        <p><strong>11. Waste Valorization</strong> <span style="color:#0284c7; font-family:monospace;">/weɪst ˌvæl.ər.aɪˈzeɪ.ʃən/</span><br>
+        Transforming waste by-products into high-value clean energy, compost, or building tiles.<br>
+        <em>"Kitchen organic waste undergoes anaerobic digestion to generate biogas."</em></p>
+
+        <p><strong>12. Indigenous Stewardship</strong> <span style="color:#0284c7; font-family:monospace;">/ɪnˈdɪdʒ.ɪ.nəs ˈstjuː.əd.ʃɪp/</span><br>
+        Recognizing and deferring to traditional native land tenure, governance, and ecology.<br>
+        <em>"Indigenous rangers utilize ancestral ecological knowledge to protect marine life."</em></p>
+
+        <p><strong>13. Environmental Impact Assessment (EIA)</strong> <span style="color:#0284c7; font-family:monospace;">/ɪnˌvaɪ.rənˈmen.təl ˈɪm.pækt/</span><br>
+        A formal scientific study evaluating potential ecological damage before construction permits.<br>
+        <em>"The EIA demonstrated that a runway extension would disrupt wetland hydrology."</em></p>
+
+        <p><strong>14. Sustainable Sourcing</strong> <span style="color:#0284c7; font-family:monospace;">/səˈsteɪ.nə.bəl ˈsɔː.sɪŋ/</span><br>
+        Procuring food, materials, and supplies exclusively from local certified ethical producers.<br>
+        <em>"The resort sources 100% of seasonal vegetables from neighbouring family farms."</em></p>
+
+        <p><strong>15. Carrying Capacity Limit</strong> <span style="color:#0284c7; font-family:monospace;">/ˈkær.i.ɪŋ kəˈpæs.ə.ti ˈlɪm.ɪt/</span><br>
+        The absolute maximum visitor ceiling a geographic site can sustain without degradation.<br>
+        <em>"Authorities lowered the daily carrying capacity limit to protect granite trails."</em></p>
+
+        <p><strong>16. Permaculture</strong> <span style="color:#0284c7; font-family:monospace;">/ˈpɜː.məˌkʌl.tʃər/</span><br>
+        Agricultural and land-use systems modelled on natural ecosystem resilience and diversity.<br>
+        <em>"Permaculture gardens supply fresh organic herbs while regenerating topsoil."</em></p>
+
+        <p><strong>17. Dark Sky Reserve</strong> <span style="color:#0284c7; font-family:monospace;">/dɑːk skaɪ rɪˈzɜːv/</span><br>
+        Protected area with strict lighting ordinances to eliminate urban light pollution.<br>
+        <em>"Dark sky reserves attract astro-tourists while preserving nocturnal wildlife."</em></p>
+
+        <p><strong>18. Regenerative Tourism</strong> <span style="color:#0284c7; font-family:monospace;">/rɪˈdʒen.ər.ə.tɪv ˈtʊə.rɪ.zəm/</span><br>
+        Travel that actively leaves a destination in a healthier ecological state than before.<br>
+        <em>"Regenerative tourism invites visitors to participate in coral reef replanting."</em></p>
+      </div>
+    </div>
+
+    <!-- FE1 Readiness Sign-off Checklist -->
+    <div class="card-highlight">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
+        <h3 style="color:#065f46; font-size:8.2pt;">✅ Session 5 Formative Evaluation (FE1) Readiness Sign-Off</h3>
+        <span class="badge badge-green">Teacher Verification Gate</span>
+      </div>
+      <p style="font-size:7.4pt; color:#1e293b; margin-bottom:4px;">
+        Confirm all 4 preparation checkpoints with your presentation partner before next week's evaluated oral tutorials:
+      </p>
+      <div class="grid-2" style="font-size:7.2pt; color:#1e293b;">
+        <p>☑️ <strong>1. Partner &amp; Topic Confirmed:</strong> Confirmed partner and chosen Option A (Eco-Friendly Itinerary) or Option B (City Tourism Comparison).</p>
+        <p>☑️ <strong>2. Slides Prepared:</strong> 4 to 6 clean visual slides without dense paragraphs of text (strict no-reading rule enforced!).</p>
+        <p>☑️ <strong>3. Study Logs Complete:</strong> Vocabulary Study Log and TOEIC Error Tracker updated and ready for teacher inspection.</p>
+        <p>☑️ <strong>4. Spoken Self-Critique:</strong> 2 personal spoken strengths and 2 concrete targets for Semester 2 ready to articulate.</p>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>ENAC • Civil Aviation English Learning Platform</span>
+      <span>Session 4 Worksheet • Page 7 of 7</span>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
           s1: "Session 1 - Introduction & Travel Anecdotes",
           s2: "Session 2 - Evolution of Transport",
           s3: "Session 3 - Overtourism",
-          s4: "Session 4 - Sustainable and Eco-tourism"
+          s4: "Session 4 - Ecotourism & Sustainable Destination Design"
         },
         2: {
           s1: "Session 1 - Extreme Weather & Atmospheric Hazards",

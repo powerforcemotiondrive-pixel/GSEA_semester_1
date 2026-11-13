@@ -2,18 +2,18 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-13T17:16:46.240Z
+# Generated: 2026-11-13T18:12:42.755Z
 # ============================================================================
 
-5ab2667719e3045f5b815eaca37db2f38e4c6551b8bcabb9f1662f807685ca97  imsmanifest.xml
+6cbb64b97fc9674eb007d71465391ecb085005d23cb4167543c5d173b070b2b9  imsmanifest.xml
 f082869ed2b914ec5b3044ba485b53e0c66b635dfcaa2a4c9068828165ad0e95  COPYRIGHT.md
-a6d48f84a8fd216239b0ff4abedbf6354b185a62df386a17a9f375b58d75d6a7  index.html
-25672b8cafbc53fb13202343168c8bae0e17fc14766ceb4852fcd16844c09623  admin.html
+42223f73c6f0a05c8414791e224a534f33c17ea0bd0b7382ef2c52725c5cf0ca  index.html
+a9f72e7627fb486d38313830729317b520e6ec63b2787aa9d44be0a0d37f4d9b  admin.html
 438013b62da4a37d3227a380723251ae389ee216022e88641b7374183afcfa01  presentation.html
 9b942f25da36225224e622900519317a99e933076c0331a6ead9637d0c6c9ea6  portfolio.html
 93414830a71d1cb256196bf3bfde0a845a3a563520b07112247290d75c75b9aa  immersion.html
-06eb3e89df6dc5af9bdcb7c79cc1ab4727a70a1afb5a2f0e0a926cb844d08f1f  output.css
-f424a400dc9190daf429a2d0f593e0718954a03f4a3d8faf2a5a40d4fec97b3f  data/course-data.js
+d21a4a57cc7d23954d3868e39f7cce444aefe7097a556f238dac6b1fa320384f  output.css
+1a6aeda171c9651f0fa6af9e7fb3a9bef17b1974253a8dcd7f9eb1db77948c7f  data/course-data.js
 43c855624484d396ab8b1be7d3c7dbe1e4528471b6e37c2a142003b73dab953d  data/portfolio-latest.csv
 a918ecc2bf408b655405e2d3a7916428fabb15da9810c447bf1c03952c79a3fc  data/portfolio-summary-s1.json
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
@@ -28,6 +28,10 @@ be6cfd5ea480d8a4fa99a89239e600740f51ea2d2805437325d4a4eba808d6c4  images/aas_m2c
 4c1fc557694197b0009b9c33b7d767c1ed569658b04972cc5dd965e118f4a3ee  images/aas_m3card2.jpg
 3f2a0030ae7aa96e3ba6bd26aa75e9c661575d4b15949958a0b4dfee4240f2e6  images/aas_m3card3.jpg
 fe31053248645ccbe92d35a3385b096a6aa8a106b4e3f5efa6467a04a60d9c59  images/aas_m3card4.jpg
+ad27885bebc6b74301887b872d8a2a62f3eb17555046c2169baab0fffbcbbae3  images/ag_eco_bhutan.jpg
+c6e4412f3ddde2ae3ea043bf7c3787149fda3a9b2db7df6d6cc6bba057664c7e  images/ag_eco_costa_rica.jpg
+6a51b17807322fec97ec591aa0430238f85a9dbbf3ceceec2972bc24189719af  images/ag_eco_galapagos.jpg
+a5295ad00ed36f50bfa7a9a8ef1cd9d58454694a994d3e5a7c13c6fa69655c88  images/ag_eco_norway.jpg
 2bdbab68c17b31406e1c3fc61d18bc6e52da5e2c2d087eba5c391d63133f261c  images/ag_m1card1.jpg
 58da603176a658d98df32440a2b2981d4c4bfae17942aa92329b69644f8a23cd  images/ag_m1card2.jpg
 2ee03fdbaa27ee5e5d224dbb389d419ab66f4d6519a5fdffa214e5a8c8d5f734  images/ag_m1card3.jpg
@@ -63,5 +67,6 @@ e2ce5d503b5f3ffdd1eef6c0c381af868719da65200db47d3f59e0328b21eadf  images/job_psa
 1ec89f655af441402ffc433b9a039b6fae20cfe70e9e2b1457661d21cb4bc931  images/urban_car_sprawl.jpg
 1426722da0e7abff0c4cb21acc664505d53cd1b4da0c714f815ddeb6e55848cf  images/urban_superblock.jpg
 c618fe246e85887aca5775cb9589cfbe4db27d865ef4d1f9456aaf82f3c8cd9b  docs/GSEA_S1_M1_AG_S3_Lesson_Worksheet.pdf
+bbaa9e0d7d0f05d587b986ba9bd89a9e424eadad4935b0db2eb087903c98ecce  docs/GSEA_S1_M1_AG_S4_Lesson_Worksheet.pdf
 c4e2c8cf54a33812821eae3c7a772cee07ade1cf2527610e1736630b30200dc2  docs/GSEA_S1_M1_AT_S3_Lesson_Worksheet.pdf
 23fad09924fe6c811f24e1b55ffd2cb8eb4aa1a56b10e4e55aa30429626ea8e4  docs/GSEA_S1_M1_AT_S4_Lesson_Worksheet.pdf

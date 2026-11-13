@@ -2956,83 +2956,83 @@
         "session": 4,
         "objectives": {
           "title": "Session 4 Objectives - Ecotourism & Sustainable Destination Design",
-          "summary": "By the end of this session, you will be able to distinguish authentic ecotourism from greenwashing, structure mixed conditional sentences, apply formal connectors of purpose and condition, and pitch a sustainable destination design.",
+          "summary": "By the end of this session, you will be able to distinguish authentic ecotourism from greenwashing using verified environmental criteria, structure mixed conditional sentences and connectors of purpose/condition, conduct a collaborative research sprint on a global fragile destination case study in pairs or triads, and deliver a persuasive 5-minute spoken exposé to classmates.",
           "items": [
             {
               "num": 1,
-              "title": "Use Key Ecotourism Terms (Vocabulary)",
-              "description": "Accurately define and use essential sustainability concepts (carbon offset, biodiversity corridor, community-based tourism, greenwashing, rewilding) in spoken pitches and written notes."
+              "title": "Evaluate Genuine Ecotourism vs. Greenwashing (Vocabulary & Forensic Analysis)",
+              "description": "Accurately deploy and defend core sustainability concepts (carbon offset, biodiversity corridor, community-based tourism, greenwashing, carrying capacity limit, regenerative tourism) against misleading marketing claims."
             },
             {
               "num": 2,
-              "title": "Describe Ecotourism Projects (Fluency & Paraphrasing)",
-              "description": "Explain environmental initiatives clearly under time pressure using synonyms, examples, and descriptions when you cannot recall an exact word."
+              "title": "Talk About Past Choices & Present Outcomes (Mixed Conditionals)",
+              "description": "Formulate mixed conditional structures (\"If the regional government had protected the marine reserve ten years ago, the local diving industry would be thriving today\") to evaluate past conservation decisions."
             },
             {
               "num": 3,
-              "title": "Talk About Past Choices & Present Results (Mixed Conditionals)",
-              "description": "Use mixed conditional sentences (\"If the reserve had invested in solar pumps earlier, it would not depend on diesel today\") to evaluate past environmental choices."
+              "title": "Express Goals and Mandatory Conditions (Connectors of Purpose & Condition)",
+              "description": "Use formal linkers such as so as to, in order that, and provided that to specify destination zoning regulations, environmental targets, and carrying capacity rules."
             },
             {
               "num": 4,
-              "title": "Express Goals and Conditions (Grammar: so that, provided that)",
-              "description": "Use formal connecting words like provided that, so as to, and in order that to set project rules and environmental targets."
+              "title": "Conduct a Collaborative Case Study Research Sprint (Pairs or Triads)",
+              "description": "Analyze a fragile global destination dossier (Galapagos, Monteverde Costa Rica, Bhutan, or Norwegian Fjords) in small teams, extracting ecological vulnerabilities, sustainable engineering solutions, and local community revenue metrics."
             },
             {
               "num": 5,
-              "title": "Pronounce Long Environmental Words Clearly (Pronunciation)",
-              "description": "Place word stress on the correct syllable and pronounce vowel sounds clearly in key sustainability words (bio-di-VER-si-ty, cer-ti-fi-CA-tion, al-TER-na-tive, eco-SYS-tem)."
+              "title": "Deliver a 5-Minute Spoken Exposé & Defend Project Authenticity (Fluency & Interaction)",
+              "description": "Present a collaborative 5-minute spoken briefing to classmates without reading verbatim from notes, answering spontaneous questions from the Green Investor Board."
             },
             {
               "num": 6,
-              "title": "Pitch and Defend an Ecotourism Initiative in Pairs or Triads (Fluency & Interaction)",
-              "description": "Research live data, design a viable micro-project, and present a structured pitch balancing commercial viability with conservation needs."
+              "title": "Conduct Active Peer Evaluation (Peer Observer Checklist)",
+              "description": "Evaluate peer presentations using a structured 3-part active listening rubric assessing authenticity, spoken delivery fluency, and accurate use of target grammar."
             },
             {
               "num": 7,
-              "title": "Spot Common Grammar Traps in Business Contexts (TOEIC Practice)",
-              "description": "Identify common test traps and wrong answer choices (specifically conditional sentences and connecting words) in TOEIC Parts 5 & 6 to improve exam accuracy."
+              "title": "Spot Conditional & Connector Traps in Business Contexts (TOEIC Practice)",
+              "description": "Identify common test traps and wrong answer choices in conditional clauses and formal prepositions (e.g., prior to + gerund, provided that + clause) in TOEIC Parts 5 & 6."
             }
           ]
         },
         "lessonPlan": {
-          "title": "Session 4 Lesson Plan (2 Hours)",
-          "summary": "A 2-hour interactive session comparing genuine ecotourism with greenwashing, practicing mixed conditionals and connectors, solving TOEIC reading questions, and designing a sustainable eco-resort.",
+          "title": "Session 4 Lesson Plan - Ecotourism & Sustainable Destination Design (2 Hours)",
+          "summary": "A 2-hour communicative workshop featuring eco-tourism news, a greenwashing forensic matrix, mixed conditionals grammar clinic, a small-group global case study research sprint, 5-minute team exposés with peer evaluation, and FE1 readiness sign-off.",
           "items": [
             {
-              "title": "Part 1: Eco-Tourism News & Session 3 Review",
-              "description": "Discussing genuine green travel innovations and checking memory of Session 3 words (carrying capacity, de-marketing, resident backlash, tourist levy).",
+              "title": "Part 1: Eco-Tourism News & Session 3 Spot-Check",
+              "description": "Opening communicative warm-up: analyzing current eco-travel developments and conducting a rapid-fire retrieval check on Session 3 overtourism terms.",
               "part": "Part 1"
             },
             {
-              "title": "Part 2: Genuine Eco-Tourism vs. Greenwashing",
-              "description": "Forensic evidence audit of 3 real-world projects (Costa Rica cloud forest, Kenya Maasai conservancies, Norway electric fjord cruise) against greenwashing checklists.",
+              "title": "Part 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix",
+              "description": "Forensic evidence audit of real-world tourism projects across third-party certification, revenue retention, energy sources, and local land rights.",
               "part": "Part 2"
             },
             {
-              "title": "Part 3: Grammar Focus — Mixed Conditionals & Purpose Clauses",
-              "description": "Contrasting past conservation actions with present outcomes (If + had + V3, would + V1) and using formal connecting words (so as to, in order that, provided that).",
+              "title": "Part 3: Language Focus: Mixed Conditionals & Purpose Clauses Clinic",
+              "description": "Contrasting past conservation actions with present environmental outcomes (If + had + V3, would + V1) and deploying formal connectors (so as to, in order that, provided that).",
               "part": "Part 3"
             },
             {
-              "title": "Part 4: Workshop — The €2,500,000 Eco-Resort Blueprint",
-              "description": "Designing a low-impact, 100% renewable resort in a fragile ecosystem (fjord, wetland, alpine valley) balancing visitor capacity and local community jobs.",
+              "title": "Part 4: Small-Group Research Sprint: Global Sustainable Destination Case Studies",
+              "description": "Working in pairs or triads to analyze an assigned fragile destination case study (Galapagos, Costa Rica, Bhutan, Norwegian Fjords) with documentary visuals and data dossiers.",
               "part": "Part 4"
             },
             {
-              "title": "Part 5: The Green Investor Forum — Pitches & Defense",
-              "description": "competitive pitches to the Sustainability Investment Board answering tough stakeholder questions on visitor limits and greenwashing.",
+              "title": "Part 5: 5-Minute Spoken Exposés & Investor/Stakeholder Defense",
+              "description": "Delivering collaborative 5-minute spoken briefings to classmates without reading notes, answering board challenges, and completing the Peer Observer Evaluation Grid.",
               "part": "Part 5"
             },
             {
-              "title": "Part 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check",
-              "description": "Final consolidation of the 18 terms with audio pronunciation, partner verification, visual aids check, and self-critique readiness for Session 5.",
+              "title": "Part 6: Vocabulary Wrap-Up & FE1 Readiness Check",
+              "description": "Consolidation drill of 18 spoken sustainability terms with audio pronunciation, partner verification, and final presentation slide sign-off for Session 5 Formative Evaluation.",
               "part": "Part 6"
             }
           ]
         },
         "revision": {
-          "title": "Session 4: Sustainable and Eco-tourism",
+          "title": "Session 4: Ecotourism & Sustainable Destination Design",
           "summary": "Review the 18 key terms for Sustainable and Eco-tourism to build your fluency in discussions, professional reading, and TOEIC practice.",
           "terms": [
             {
@@ -3424,35 +3424,35 @@
         "lessonContent": {
           "overview": {
             "image": "images/ag_m1card4.jpg",
-            "title": "Sustainable & Eco-Tourism",
-            "subtitle": "Responsible Travel, Genuine Green Projects & Community Benefits",
-            "badge": "Session Overview • Eco-Tourism & Green Certification"
+            "title": "Ecotourism & Sustainable Destination Design",
+            "subtitle": "Responsible Travel, Fragile Ecosystems, Genuine Green Projects & Community Benefits",
+            "badge": "Session Overview • Ecotourism & Sustainable Destination Design"
           },
           "hero": {
             "image": "images/ag_m1card4.jpg",
-            "title": "Sustainable & Eco-Tourism",
-            "subtitle": "Responsible Travel, Genuine Green Projects & Community Benefits",
-            "badge": "Session Overview • Eco-Tourism & Green Certification"
+            "title": "Ecotourism & Sustainable Destination Design",
+            "subtitle": "Responsible Travel, Fragile Ecosystems, Genuine Green Projects & Community Benefits",
+            "badge": "Session Overview • Ecotourism & Sustainable Destination Design"
           },
           "openingSession": {
-            "title": "Activity 1: Eco-Tourism News & Session 3 Review",
+            "title": "Activity 1: Eco-Tourism News & Session 3 Spot-Check",
             "summary": "Opening warm-up: discuss genuine green travel innovations and check your memory of Session 3 overtourism terms.",
             "modeBadges": [
               "👥 Pairs / Plenary",
-              "⏱️ 10 mins",
               "🗣️ Spoken Retrieval Drill",
-              "🎯 Vocabulary & Fluency"
+              "🎯 Vocabulary & Fluency",
+              "⚡ Rapid Recall"
             ],
             "instructions": [
-              "Step 1 (Headline Exchange - 4 mins): In pairs, discuss the two eco-tourism prompts above. Highlight one recent green travel story or greenwashing controversy you have encountered.",
-              "Step 2 (Memory Retrieval - 4 mins): Test your partner on the 4 Session 3 overtourism terms (Carrying Capacity, De-Marketing, Resident Backlash, Tourist Levy) before clicking 'Reveal Answer'.",
-              "Step 3 (Plenary Check - 2 mins): Share one partner definition with the class. Ensure precise phrasing for 'carrying capacity' and 'resident backlash'."
+              "Step 1 (Headline Exchange): In pairs, discuss the two eco-tourism news prompts below. Highlight one recent green travel story, clean transport initiative, or greenwashing controversy you have encountered.",
+              "Step 2 (Memory Retrieval): Test your partner on the 4 Session 3 overtourism terms (Carrying Capacity, De-Marketing, Resident Backlash, Tourist Levy) before clicking 'Reveal Answer'.",
+              "Step 3 (Plenary Check): Share one partner definition with the class. Ensure precise phrasing for 'carrying capacity' (physical/ecological threshold) and 'resident backlash'."
             ],
             "deliverable": "Spoken summary of 1 eco-tourism news item and an accurate definition of a Session 3 overtourism term.",
-            "teacherNotes": "Keep pace brisk. Cold-call 2 pairs for definitions. Challenge students to distinguish between 'carrying capacity' (physical/ecological threshold) and simple congestion.",
+            "teacherNotes": "Teacher Tips & Speaking Prompts: Keep pace brisk. Cold-call 2 pairs for definitions. Challenge students to distinguish between 'carrying capacity' (physical/ecological threshold) and simple overcrowding. Encourage students to connect news items to decarbonization and regional transport links.",
             "newsPrompts": [
-              "What distinguishes a genuine eco-lodge from a hotel that simply uses 'green' marketing buzzwords?",
-              "How can local communities retain more economic revenue from international nature tourism?"
+              "What distinguishes a genuine eco-lodge from a hotel chain that simply uses 'green' marketing buzzwords?",
+              "How can local communities retain more economic revenue from international nature tourism rather than suffering economic leakage?"
             ],
             "diagnostic": {
               "title": "Session 3 Vocabulary Quick Check: Overtourism Terms",
@@ -3466,7 +3466,7 @@
                 {
                   "id": 2,
                   "q": "What is 'De-Marketing'?",
-                  "answer": "Strategic communication designed to discourage visitor numbers or redirect tourist flows away from fragile, overcrowded hotspots to quieter, alternative regions."
+                  "answer": "Strategic communication and pricing designed to discourage visitor numbers or redirect tourist flows away from fragile, overcrowded hotspots to quieter, alternative regions."
                 },
                 {
                   "id": 3,
@@ -3476,27 +3476,27 @@
                 {
                   "id": 4,
                   "q": "What is a 'Tourist Levy'?",
-                  "answer": "A municipal surcharge or tax added to hotel bills or collected upon city entry, specifically dedicated to financing public services, waste management, and conservation."
+                  "answer": "A municipal surcharge or tax added to hotel bills or collected upon destination entry, specifically dedicated to financing public services, waste management, and environmental conservation."
                 }
               ]
             }
           },
-          "forensicAudit": {
-            "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing",
-            "summary": "Conduct a forensic evidence audit of 3 real-world tourism projects. Separate verified environmental stewardship from superficial marketing buzzwords.",
+          "forensicAuditMatrix": {
+            "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix",
+            "summary": "Conduct a forensic evidence audit of 3 real-world tourism projects. Separate verified environmental stewardship from superficial marketing buzzwords using a structured criteria matrix.",
             "modeBadges": [
               "👥 Small Groups (3-4)",
-              "⏱️ 25 mins",
               "🔍 Forensic Case Audit",
-              "🎯 Evidence Evaluation"
+              "🎯 Evidence Evaluation Matrix",
+              "📊 Data Verification"
             ],
             "instructions": [
-              "Step 1 (Evidence Extraction - 8 mins): Read Projects A, B, and C with your group. Highlight specific data points: renewable energy source, revenue retention percentage, and land ownership model.",
-              "Step 2 (Audit Checklist - 10 mins): Apply the 3-point Greenwashing Checklist to each project. Identify two deceptive marketing red flags in Project B and evaluate community revenue in Projects A and C.",
-              "Step 3 (Cross-Group Verdict - 7 mins): Appoint a spokesperson to deliver your group's verdict. Argue why bamboo decor or towel re-use cards fail to qualify as genuine sustainability."
+              "Step 1 (Evidence Extraction): Read Projects A, B, and C with your group. Highlight specific data points: renewable energy source, revenue retention percentage, and land ownership model.",
+              "Step 2 (Audit Checklist): Apply the 3-point Greenwashing Checklist to each project. Identify two deceptive marketing red flags in Project B and evaluate community revenue in Projects A and C.",
+              "Step 3 (Cross-Group Verdict): Appoint a spokesperson to deliver your group's verdict. Argue why bamboo decor or towel re-use cards fail to qualify as genuine sustainability."
             ],
-            "deliverable": "A comparative audit table or spoken verdict detailing 2 verified sustainability criteria vs. 2 greenwashing indicators across the 3 projects.",
-            "teacherNotes": "Focus students on economic leakage: why does 12% vs. 78% local revenue retention make or break an eco-tourism project? Push for precise terms like 'economic leakage', 'greenwashing', and 'third-party certification'.",
+            "deliverable": "A comparative audit table detailing 2 verified sustainability criteria vs. 2 greenwashing indicators across the 3 projects.",
+            "teacherNotes": "Teacher Tips & Speaking Prompts: Focus students on economic leakage: why does 12% vs. 78% local revenue retention make or break an eco-tourism project? Push for precise terms like 'economic leakage', 'greenwashing', and 'third-party certification'.",
             "projects": [
               {
                 "id": 1,
@@ -3531,17 +3531,17 @@
             "summary": "Connect past actions with present consequences using mixed conditionals, and express goals and conditions with formal connectors.",
             "modeBadges": [
               "👤 Individual -> 👥 Pairs",
-              "⏱️ 20 mins",
               "✍️ Grammar & Syntax Practice",
-              "🎯 B2 Grammar Mastery"
+              "🎯 B2 Grammar Mastery",
+              "💬 Sentence Clinic"
             ],
             "instructions": [
-              "Step 1 (Formula Analysis - 5 mins): Study the three grammatical formulas above. Note the past-to-present timeline shift in Mixed Conditionals ('had + V3' -> 'would + base verb').",
-              "Step 2 (Sentence Construction - 10 mins): With your partner, construct 3 original sentences about tourism management: one mixed conditional ('If the island had banned mega-resorts...'), one connector of purpose ('in order that...'), and one conditional ('provided that...').",
-              "Step 3 (Challenge Validation - 5 mins): Complete the two practice challenge questions individually, then click 'Check Answer' to verify your grammatical reasoning."
+              "Step 1 (Formula Analysis): Study the three grammatical formulas below. Note the past-to-present timeline shift in Mixed Conditionals ('had + V3' -> 'would + base verb').",
+              "Step 2 (Sentence Construction): With your partner, construct 3 original sentences about tourism management: one mixed conditional ('If the island had banned mega-resorts...'), one connector of purpose ('in order that...'), and one conditional ('provided that...').",
+              "Step 3 (Challenge Validation): Complete the practice challenge questions individually, then click 'Check Answer' to verify your grammatical reasoning."
             ],
             "deliverable": "3 accurately formulated written or spoken sentences demonstrating mixed conditionals and purpose clauses applied to sustainable destination management.",
-            "teacherNotes": "Common error alert: students often use 'would have' in the result clause of mixed conditionals instead of 'would + V1'. Remind them: if the consequence is TRUE TODAY, use 'would + base verb'.",
+            "teacherNotes": "Teacher Tips & Speaking Prompts: Common spoken pitfall: students often slip into 'would have' in the result clause of mixed conditionals instead of 'would + V1'. Remind them: if the consequence is TRUE TODAY, use 'would + base verb'. Challenge stronger students to use inverted conditionals ('Had the reserve invested...').",
             "rules": [
               {
                 "title": "1. Mixed Conditional (Past Action -> Present Result)",
@@ -3587,87 +3587,130 @@
               ]
             }
           },
-          "workshop": {
-            "title": "Activity 4: Workshop: The €2,500,000 Eco-Resort Blueprint",
-            "summary": "In teams of 3 to 4, design a low-impact, 100% sustainable tourism project with a €2,500,000 green endowment. Balance visitor capacity, clean energy, and local employment.",
+          "researchSimulation": {
+            "title": "Activity 4: Small-Group Research Sprint & Simulation: Global Destination Case Studies",
+            "summary": "In pairs or triads, select one fragile destination case study. Analyze its ecological threats, examine its low-impact engineering solutions, and extract local community economic metrics for your upcoming 5-minute exposé.",
             "modeBadges": [
-              "👥 Teams (3-4)",
-              "⏱️ 30 mins",
-              "📐 Collaborative Design Sprint",
-              "🎯 Project Planning & Budgeting"
+              "👥 Pairs / Working Trios",
+              "🔍 Case Study Research Sprint",
+              "📐 Data Synthesis & Planning",
+              "🌿 Fragile Ecosystem Analysis"
             ],
             "instructions": [
-              "Step 1 (Location Selection - 5 mins): Choose your project ecosystem (Location A: Fjord, Location B: Wetland, or Location C: Alpine Valley). Review its ecological vulnerabilities.",
-              "Step 2 (Blueprint Formulation - 15 mins): Allocate your €2,500,000 endowment across the 4 checklist domains: architecture (materials), clean energy/water, carrying capacity limits, and local community benefit.",
-              "Step 3 (Pitch Preparation - 10 mins): Formulate a 2-minute project pitch slide or speaking outline. Designate speaking roles for the upcoming Green Investor Forum."
+              "Step 1 (Case Selection & Role Division): In pairs or triads, choose one of the four real-world destination dossiers below (Galápagos, Costa Rica, Bhutan, or Norwegian Fjords). Assign speaking roles across your team (Context & Challenge, Sustainable Solution, Community Impact & Grammar Reflection).",
+              "Step 2 (Dossier Data Extraction): Examine the case data, photographic evidence, and carrying-capacity numbers. Extract 3 key operational facts, the primary ecological threat, and the local community benefit model.",
+              "Step 3 (Target Language Integration): Formulate at least 1 mixed conditional sentence evaluating a past management choice and 1 purpose connector outlining future sustainability rules.",
+              "Step 4 (Exposé Briefing Notes): Draft a clear 4-bullet speaking outline in your digital notes box without writing full spoken paragraphs."
             ],
-            "deliverable": "A complete 4-part Eco-Resort Blueprint specifying site choice, budget allocation, carrying capacity limit, and community revenue sharing model.",
-            "teacherNotes": "Circulate and challenge budget allocations. Ensure teams do not spend 80% on luxury amenities with only token amounts for renewable power or community employment.",
-            "ecosystems": [
+            "deliverable": "A completed case study analysis sheet and structured speaking outline ready for the 5-minute team presentation.",
+            "teacherNotes": "Teacher Tips & Speaking Prompts: Circulate among pairs and trios. Ensure every student has an assigned speaking section. Encourage students to look up additional live facts if online, or focus deeply on the data provided in the dossier. Enforce the non-reading rule: notes should contain bullet points and figures only.",
+            "caseStudies": [
               {
-                "id": "A",
-                "name": "Location A: Temperate Fjord (Western Norway)",
-                "features": "Steep granite cliffs, waterfalls, cold marine waters. Accessible only by water or narrow mountain passes.",
-                "requirements": "Electric boat shuttle, geothermal heating, zero-discharge wastewater filtration."
+                "id": "galapagos",
+                "name": "Case Study 1: The Galápagos Marine Sanctuary (Ecuador)",
+                "image": "images/ag_eco_galapagos.jpg",
+                "tag": "Marine Sanctuary & Island Biosecurity",
+                "ecosystem": "Volcanic archipelago with 97% endemic species, highly fragile marine food webs, and zero natural predators.",
+                "threat": "Invasive species transport, unauthorized mega-yacht anchoring, and past overfishing of sea cucumbers and sharks.",
+                "solution": "Strict quota of 100 passengers max per expedition vessel, 100% hybrid/electric auxiliary propulsion within marine reserves, and mandatory certified Galápagos naturalist guides.",
+                "communityBenefit": "Entry fee ($200/tourist) directly funds 300+ local rangers, island biosecurity screening, and municipal water purification on Santa Cruz Island.",
+                "sampleConditional": "If Ecuadorian authorities had not enacted strict visitor quotas in 1998, the island wildlife would not remain so remarkably tame today."
               },
               {
-                "id": "B",
-                "name": "Location B: Mediterranean Coastal Wetland (Southern Europe)",
-                "features": "Migratory bird sanctuary, salt marshes, dunes. Highly vulnerable to freshwater depletion and summer heat waves.",
-                "requirements": "Raised wooden boardwalks, solar desalinization, organic olive/vegetable permaculture garden."
+                "id": "costarica",
+                "name": "Case Study 2: Monteverde & Corcovado Rainforest (Costa Rica)",
+                "image": "images/ag_eco_costa_rica.jpg",
+                "tag": "Tropical Cloud Forest & Rewilding",
+                "ecosystem": "High-altitude tropical cloud forest harboring 50% of Costa Rica's biodiversity, including resplendent quetzals and jaguars.",
+                "threat": "Agricultural deforestation, cattle ranching soil erosion, and climate-induced cloud ceiling rise threatening moisture balance.",
+                "solution": "Canopy suspension walkways to eliminate trail soil erosion, 100% off-grid solar and micro-hydro power for lodges, and strict biological corridor rewilding contracts.",
+                "communityBenefit": "78% local revenue retention; over 90% of lodge staff and licensed naturalist guides are recruited from adjacent rural agrarian families.",
+                "sampleConditional": "If local dairy farmers had not pioneered private conservation trusts thirty years ago, the cloud forest corridor would be completely fragmented today."
               },
               {
-                "id": "C",
-                "name": "Location C: Alpine Valley (French/Swiss Alps)",
-                "features": "High-altitude meadow, melting glaciers, traditional wooden chalets. Threatened by ski-resort commercialization.",
-                "requirements": "Ski-free winter snowshoeing, biomass pellet heating, regional high-speed rail transfer partnerships."
+                "id": "bhutan",
+                "name": "Case Study 3: The Kingdom of Bhutan (Eastern Himalayas)",
+                "image": "images/ag_eco_bhutan.jpg",
+                "tag": "High-Value, Low-Volume Himalayan Tourism",
+                "ecosystem": "Pristine Himalayan valleys, high-altitude alpine meadows, and ancient Buddhist cultural monasteries.",
+                "threat": "Risk of commercial backpacker overcrowding, plastic waste accumulation along sacred mountain passes, and cultural dilution.",
+                "solution": "National 'High-Value, Low-Volume' policy backed by a mandatory $100/day Sustainable Development Fee (SDF) per international tourist and carbon-negative constitutional protection.",
+                "communityBenefit": "SDF tax revenues provide 100% free healthcare and secondary education for all Bhutanese citizens, while financing rural electric bus grids.",
+                "sampleConditional": "If Bhutan had opened its borders to unrestricted mass charter tourism, its carbon-negative status would not exist today."
+              },
+              {
+                "id": "norway",
+                "name": "Case Study 4: Tromsø & The Arctic Fjords (Norway)",
+                "image": "images/ag_eco_norway.jpg",
+                "tag": "Arctic Marine & Zero-Emission Propulsion",
+                "ecosystem": "Deep glacial fjords, Arctic marine habitats, humpback whale and orca winter feeding grounds beneath the Aurora Borealis.",
+                "threat": "Underwater engine noise disrupting cetacean echolocation, heavy fuel oil (HFO) emissions, and winter harbor congestion.",
+                "solution": "Silent hybrid-electric catamarans running on clean fjord hydroelectricity, zero-emission underwater propulsion within 1000m of marine mammals, and strict acoustic radar monitoring.",
+                "communityBenefit": "All crews and marine biologists are hired locally from the University of Tromsø; expedition fees co-fund regional coastal plastic cleanup programs.",
+                "sampleConditional": "If regional authorities had not mandated shore-to-ship electric power, Arctic port emissions would be significantly higher today."
               }
             ],
             "blueprintChecklist": [
-              "1. Architectural Concept: Low-impact local timber or stone construction with minimal earth disturbance.",
-              "2. Energy & Water: 100% on-site renewable power (solar/hydro/geothermal) and circular greywater recycling.",
-              "3. Carrying Capacity: Set strict daily visitor limits and maximum seasonal overnight occupancy.",
-              "4. Community Revenue: Guarantee at least 70% of staff are hired locally and 10% of profits fund local conservation."
+              "1. Context & Vulnerability: Explain what makes your chosen destination ecologically unique and fragile.",
+              "2. Low-Impact Innovation: Describe the specific engineering or zoning mechanism that safeguards the environment.",
+              "3. Community Prosperity: Detail how local residents capture tangible economic benefits rather than suffering leakage.",
+              "4. Grammar Challenge: Deliver at least 1 mixed conditional and 1 purpose connector fluently without reading."
             ]
           },
-          "investorForum": {
-            "title": "Activity 5: The Green Investor Forum: Pitches & Defense",
-            "summary": "Deliver a concise 2-minute pitch to the Sustainability Investment Board. Defend your project against tough questions regarding profitability, greenwashing, and visitor limits.",
+          "investorConsensusForum": {
+            "title": "Activity 5: 5-Minute Spoken Exposés & Investor Consensus Defense",
+            "summary": "Deliver a collaborative 5-minute spoken exposé on your team's destination case study. Defend your project against challenging questions from the Sustainability Investment Board, and complete the Peer Observer Evaluation Grid for other teams.",
             "modeBadges": [
-              "🎤 Team Pitch -> 👥 Plenary Defense",
-              "⏱️ 25 mins",
-              "🗣️ Pitch & Stakeholder Cross-Exam",
-              "🎯 Persuasive Fluency"
+              "🎤 Collaborative Spoken Exposé",
+              "👥 Plenary Defense & Q&A",
+              "📊 Peer Observer Evaluation Grid",
+              "🎯 Spoken Fluency & Non-Reading Delivery"
             ],
             "instructions": [
-              "Step 1 (Pitch Delivery - 2 mins per team): Present your €2,500,000 eco-resort blueprint to the Sustainability Investment Board without reading word-for-word from notes.",
-              "Step 2 (Board Q&A - 3 mins per team): Defend your project against one challenging board question regarding greenwashing, local wages, or wildlife disturbance.",
-              "Step 3 (Investment Ballot - 5 mins): After all teams pitch, vote (anonymously or by show of hands) for the most credible, commercially viable, and ecologically genuine project (teams cannot vote for themselves)."
+              "Step 1 (Collaborative Delivery): Deliver your team's 5-minute spoken exposé to the class or exchange partner group. Distribute speaking time equitably across all team members.",
+              "Step 2 (The Non-Reading Standard): Speak from concise keywords, statistics, and visual prompts. Avoid reading full scripted paragraphs.",
+              "Step 3 (Investor Board Defense): Field one spontaneous challenge question from the teacher or peer investment board regarding greenwashing risks or local wage equity.",
+              "Step 4 (Active Peer Evaluation): While other teams present, complete the 3-point Peer Observer Checklist scoring authenticity, delivery fluency, and grammar accuracy."
             ],
-            "deliverable": "A 2-minute persuasive spoken pitch followed by successful impromptu defense against board scrutiny.",
-            "teacherNotes": "Act as the lead board trustee. Ask provocative questions: 'How will you stop wealthy eco-tourists from demanding 24/7 air conditioning in a remote fjord?' Keep timing strict: 2 min pitch + 3 min Q&A.",
+            "deliverable": "A collaborative 5-minute spoken exposé delivered without reading notes, successful defense in Q&A, and a completed peer feedback scorecard.",
+            "teacherNotes": "Teacher Tips & Speaking Prompts: Maintain an encouraging, professional seminar atmosphere. Act as Board Chairperson. Challenge teams on practical dilemmas: 'How do you prevent high tourist fees from making nature an exclusive playground for the super-rich?' Enforce equal speaking time among partners.",
             "boardQuestions": [
-              "\"How will you guarantee that wealthy guests do not consume excessive water and electricity?\"",
-              "\"What evidence proves your resort will not disrupt the local wildlife breeding season?\"",
-              "\"How does your project ensure local community members are not simply low-wage service workers?\""
+              "\"How do you prove that your destination's renewable energy system does not rely on hidden diesel backup generators?\"",
+              "\"If visitor numbers double over the next five years, what specific carrying-capacity trigger will halt further bookings?\"",
+              "\"How does your project ensure local community members hold skilled management roles rather than low-wage service jobs?\"",
+              "\"Could the high cost of your sustainable destination result in social elitism, excluding ordinary travelers?\""
+            ],
+            "peerChecklist": [
+              {
+                "criterion": "Authenticity & Environmental Rigor",
+                "question": "Did the team prove genuine ecological protection and community ownership, or did you detect greenwashing risks?"
+              },
+              {
+                "criterion": "Spoken Fluency & Professional Delivery",
+                "question": "Did all speakers speak naturally from keywords without reading continuous sentences from slides or written notes?"
+              },
+              {
+                "criterion": "Target Grammar & Signposting",
+                "question": "Did the team successfully deploy a mixed conditional and a connector of purpose or condition (so as to, provided that)?"
+              }
             ]
           },
           "closingReview": {
-            "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check",
-            "summary": "Final preparation for Session 5 Formative Evaluation: audio pronunciation drill of 18 terms and partner readiness review.",
+            "title": "Activity 6: Vocabulary Wrap-Up & FE1 Readiness Check",
+            "summary": "Final consolidation for Session 5 Formative Evaluation: audio pronunciation drill of 18 essential terms and peer sign-off on your presentation readiness.",
             "modeBadges": [
               "👤 Individual & 👥 Pairs",
-              "⏱️ 10 mins",
-              "⚡ Phonetic Drill & Exam Audit",
-              "🎯 Formative Consolidation"
+              "⚡ Phonetic Audio Drill",
+              "🎯 FE1 Readiness Sign-Off",
+              "📋 Formative Verification"
             ],
             "instructions": [
               "Step 1 (Audio Pronunciation Drill): Click each of the 18 audio buttons. Listen and repeat aloud, focusing on stress patterns: 're-GEN-er-a-tive', 'va-lor-i-ZA-tion', 'bio-di-VER-si-ty'.",
-              "Step 2 (FE1 Readiness Audit - 4 mins): Review the 4 items on the Session 5 Formative Evaluation Readiness Checklist with your partner. Confirm your presentation partner, topic choice, and slide structure.",
-              "Step 3 (Portfolio Check - 2 mins): Verify that your Vocabulary Log and TOEIC Error Tracker are updated and ready for teacher review next week."
+              "Step 2 (FE1 Readiness Audit): Review the 4 items on the Session 5 Formative Evaluation Readiness Checklist with your presentation partner. Confirm your topic choice and slide structure.",
+              "Step 3 (Digital Notes & Vocabulary Log): Verify that your digital session notes and personal vocabulary study log are complete and ready for teacher review."
             ],
-            "deliverable": "Complete peer sign-off on the 4-point FE1 checklist + spoken accuracy on 3 multi-syllable eco-tourism terms.",
-            "teacherNotes": "Crucial checkpoint: ensure every student has a confirmed FE1 partner and selected topic (Option A or Option B). Emphasize the 'no reading from slides' rule.",
+            "deliverable": "Peer sign-off on the 4-point FE1 checklist and accurate pronunciation of 3 multi-syllable sustainability terms.",
+            "teacherNotes": "Teacher Tips & Speaking Prompts: Crucial checkpoint: ensure every student has a confirmed FE1 partner and selected topic (Option A: Eco-Friendly Holiday Itinerary OR Option B: Comparing Two Cities' Tourism Policies). Reiterate the non-reading rule for next week's evaluated presentation.",
             "vocabWords": [
               "Eco-Tourism",
               "Greenwashing",
@@ -3691,8 +3734,8 @@
             "feChecklist": [
               "✅ Presentation partner confirmed and topic selected (Option A: Eco-Friendly Holiday Itinerary OR Option B: Comparing Two Cities' Tourism Policies).",
               "✅ 4 to 6 clean visual slides prepared without dense paragraphs of text (no reading aloud from notes!).",
-              "✅ Personal Vocabulary Study Log and TOEIC Error Log ready to show your teacher.",
-              "✅ Self-Critique ready: 2 personal English strengths and 2 concrete action targets for Semester 2."
+              "✅ Personal Vocabulary Study Log and TOEIC Error Log updated and ready to show your teacher.",
+              "✅ Self-Critique ready: 2 personal English speaking strengths and 2 concrete action targets for Semester 2."
             ]
           }
         },
@@ -3771,7 +3814,8 @@
               "Ultimately, our group recommends that..."
             ]
           }
-        }
+        },
+        "title": "Ecotourism & Sustainable Destination Design"
       }
     }
   },
@@ -13342,83 +13386,83 @@
           "session": 4,
           "objectives": {
             "title": "Session 4 Objectives - Ecotourism & Sustainable Destination Design",
-            "summary": "By the end of this session, you will be able to distinguish authentic ecotourism from greenwashing, structure mixed conditional sentences, apply formal connectors of purpose and condition, and pitch a sustainable destination design.",
+            "summary": "By the end of this session, you will be able to distinguish authentic ecotourism from greenwashing using verified environmental criteria, structure mixed conditional sentences and connectors of purpose/condition, conduct a collaborative research sprint on a global fragile destination case study in pairs or triads, and deliver a persuasive 5-minute spoken exposé to classmates.",
             "items": [
               {
                 "num": 1,
-                "title": "Use Key Ecotourism Terms (Vocabulary)",
-                "description": "Accurately define and use essential sustainability concepts (carbon offset, biodiversity corridor, community-based tourism, greenwashing, rewilding) in spoken pitches and written notes."
+                "title": "Evaluate Genuine Ecotourism vs. Greenwashing (Vocabulary & Forensic Analysis)",
+                "description": "Accurately deploy and defend core sustainability concepts (carbon offset, biodiversity corridor, community-based tourism, greenwashing, carrying capacity limit, regenerative tourism) against misleading marketing claims."
               },
               {
                 "num": 2,
-                "title": "Describe Ecotourism Projects (Fluency & Paraphrasing)",
-                "description": "Explain environmental initiatives clearly under time pressure using synonyms, examples, and descriptions when you cannot recall an exact word."
+                "title": "Talk About Past Choices & Present Outcomes (Mixed Conditionals)",
+                "description": "Formulate mixed conditional structures (\"If the regional government had protected the marine reserve ten years ago, the local diving industry would be thriving today\") to evaluate past conservation decisions."
               },
               {
                 "num": 3,
-                "title": "Talk About Past Choices & Present Results (Mixed Conditionals)",
-                "description": "Use mixed conditional sentences (\"If the reserve had invested in solar pumps earlier, it would not depend on diesel today\") to evaluate past environmental choices."
+                "title": "Express Goals and Mandatory Conditions (Connectors of Purpose & Condition)",
+                "description": "Use formal linkers such as so as to, in order that, and provided that to specify destination zoning regulations, environmental targets, and carrying capacity rules."
               },
               {
                 "num": 4,
-                "title": "Express Goals and Conditions (Grammar: so that, provided that)",
-                "description": "Use formal connecting words like provided that, so as to, and in order that to set project rules and environmental targets."
+                "title": "Conduct a Collaborative Case Study Research Sprint (Pairs or Triads)",
+                "description": "Analyze a fragile global destination dossier (Galapagos, Monteverde Costa Rica, Bhutan, or Norwegian Fjords) in small teams, extracting ecological vulnerabilities, sustainable engineering solutions, and local community revenue metrics."
               },
               {
                 "num": 5,
-                "title": "Pronounce Long Environmental Words Clearly (Pronunciation)",
-                "description": "Place word stress on the correct syllable and pronounce vowel sounds clearly in key sustainability words (bio-di-VER-si-ty, cer-ti-fi-CA-tion, al-TER-na-tive, eco-SYS-tem)."
+                "title": "Deliver a 5-Minute Spoken Exposé & Defend Project Authenticity (Fluency & Interaction)",
+                "description": "Present a collaborative 5-minute spoken briefing to classmates without reading verbatim from notes, answering spontaneous questions from the Green Investor Board."
               },
               {
                 "num": 6,
-                "title": "Pitch and Defend an Ecotourism Initiative in Pairs or Triads (Fluency & Interaction)",
-                "description": "Research live data, design a viable micro-project, and present a structured pitch balancing commercial viability with conservation needs."
+                "title": "Conduct Active Peer Evaluation (Peer Observer Checklist)",
+                "description": "Evaluate peer presentations using a structured 3-part active listening rubric assessing authenticity, spoken delivery fluency, and accurate use of target grammar."
               },
               {
                 "num": 7,
-                "title": "Spot Common Grammar Traps in Business Contexts (TOEIC Practice)",
-                "description": "Identify common test traps and wrong answer choices (specifically conditional sentences and connecting words) in TOEIC Parts 5 & 6 to improve exam accuracy."
+                "title": "Spot Conditional & Connector Traps in Business Contexts (TOEIC Practice)",
+                "description": "Identify common test traps and wrong answer choices in conditional clauses and formal prepositions (e.g., prior to + gerund, provided that + clause) in TOEIC Parts 5 & 6."
               }
             ]
           },
           "lessonPlan": {
-            "title": "Session 4 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour interactive session comparing genuine ecotourism with greenwashing, practicing mixed conditionals and connectors, solving TOEIC reading questions, and designing a sustainable eco-resort.",
+            "title": "Session 4 Lesson Plan - Ecotourism & Sustainable Destination Design (2 Hours)",
+            "summary": "A 2-hour communicative workshop featuring eco-tourism news, a greenwashing forensic matrix, mixed conditionals grammar clinic, a small-group global case study research sprint, 5-minute team exposés with peer evaluation, and FE1 readiness sign-off.",
             "items": [
               {
-                "title": "Part 1: Eco-Tourism News & Session 3 Review",
-                "description": "Discussing genuine green travel innovations and checking memory of Session 3 words (carrying capacity, de-marketing, resident backlash, tourist levy).",
+                "title": "Part 1: Eco-Tourism News & Session 3 Spot-Check",
+                "description": "Opening communicative warm-up: analyzing current eco-travel developments and conducting a rapid-fire retrieval check on Session 3 overtourism terms.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Genuine Eco-Tourism vs. Greenwashing",
-                "description": "Forensic evidence audit of 3 real-world projects (Costa Rica cloud forest, Kenya Maasai conservancies, Norway electric fjord cruise) against greenwashing checklists.",
+                "title": "Part 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix",
+                "description": "Forensic evidence audit of real-world tourism projects across third-party certification, revenue retention, energy sources, and local land rights.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Grammar Focus — Mixed Conditionals & Purpose Clauses",
-                "description": "Contrasting past conservation actions with present outcomes (If + had + V3, would + V1) and using formal connecting words (so as to, in order that, provided that).",
+                "title": "Part 3: Language Focus: Mixed Conditionals & Purpose Clauses Clinic",
+                "description": "Contrasting past conservation actions with present environmental outcomes (If + had + V3, would + V1) and deploying formal connectors (so as to, in order that, provided that).",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Workshop — The €2,500,000 Eco-Resort Blueprint",
-                "description": "Designing a low-impact, 100% renewable resort in a fragile ecosystem (fjord, wetland, alpine valley) balancing visitor capacity and local community jobs.",
+                "title": "Part 4: Small-Group Research Sprint: Global Sustainable Destination Case Studies",
+                "description": "Working in pairs or triads to analyze an assigned fragile destination case study (Galapagos, Costa Rica, Bhutan, Norwegian Fjords) with documentary visuals and data dossiers.",
                 "part": "Part 4"
               },
               {
-                "title": "Part 5: The Green Investor Forum — Pitches & Defense",
-                "description": "competitive pitches to the Sustainability Investment Board answering tough stakeholder questions on visitor limits and greenwashing.",
+                "title": "Part 5: 5-Minute Spoken Exposés & Investor/Stakeholder Defense",
+                "description": "Delivering collaborative 5-minute spoken briefings to classmates without reading notes, answering board challenges, and completing the Peer Observer Evaluation Grid.",
                 "part": "Part 5"
               },
               {
-                "title": "Part 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check",
-                "description": "Final consolidation of the 18 terms with audio pronunciation, partner verification, visual aids check, and self-critique readiness for Session 5.",
+                "title": "Part 6: Vocabulary Wrap-Up & FE1 Readiness Check",
+                "description": "Consolidation drill of 18 spoken sustainability terms with audio pronunciation, partner verification, and final presentation slide sign-off for Session 5 Formative Evaluation.",
                 "part": "Part 6"
               }
             ]
           },
           "revision": {
-            "title": "Session 4: Sustainable and Eco-tourism",
+            "title": "Session 4: Ecotourism & Sustainable Destination Design",
             "summary": "Review the 18 key terms for Sustainable and Eco-tourism to build your fluency in discussions, professional reading, and TOEIC practice.",
             "terms": [
               {
@@ -13810,35 +13854,35 @@
           "lessonContent": {
             "overview": {
               "image": "images/ag_m1card4.jpg",
-              "title": "Sustainable & Eco-Tourism",
-              "subtitle": "Responsible Travel, Genuine Green Projects & Community Benefits",
-              "badge": "Session Overview • Eco-Tourism & Green Certification"
+              "title": "Ecotourism & Sustainable Destination Design",
+              "subtitle": "Responsible Travel, Fragile Ecosystems, Genuine Green Projects & Community Benefits",
+              "badge": "Session Overview • Ecotourism & Sustainable Destination Design"
             },
             "hero": {
               "image": "images/ag_m1card4.jpg",
-              "title": "Sustainable & Eco-Tourism",
-              "subtitle": "Responsible Travel, Genuine Green Projects & Community Benefits",
-              "badge": "Session Overview • Eco-Tourism & Green Certification"
+              "title": "Ecotourism & Sustainable Destination Design",
+              "subtitle": "Responsible Travel, Fragile Ecosystems, Genuine Green Projects & Community Benefits",
+              "badge": "Session Overview • Ecotourism & Sustainable Destination Design"
             },
             "openingSession": {
-              "title": "Activity 1: Eco-Tourism News & Session 3 Review",
+              "title": "Activity 1: Eco-Tourism News & Session 3 Spot-Check",
               "summary": "Opening warm-up: discuss genuine green travel innovations and check your memory of Session 3 overtourism terms.",
               "modeBadges": [
                 "👥 Pairs / Plenary",
-                "⏱️ 10 mins",
                 "🗣️ Spoken Retrieval Drill",
-                "🎯 Vocabulary & Fluency"
+                "🎯 Vocabulary & Fluency",
+                "⚡ Rapid Recall"
               ],
               "instructions": [
-                "Step 1 (Headline Exchange - 4 mins): In pairs, discuss the two eco-tourism prompts above. Highlight one recent green travel story or greenwashing controversy you have encountered.",
-                "Step 2 (Memory Retrieval - 4 mins): Test your partner on the 4 Session 3 overtourism terms (Carrying Capacity, De-Marketing, Resident Backlash, Tourist Levy) before clicking 'Reveal Answer'.",
-                "Step 3 (Plenary Check - 2 mins): Share one partner definition with the class. Ensure precise phrasing for 'carrying capacity' and 'resident backlash'."
+                "Step 1 (Headline Exchange): In pairs, discuss the two eco-tourism news prompts below. Highlight one recent green travel story, clean transport initiative, or greenwashing controversy you have encountered.",
+                "Step 2 (Memory Retrieval): Test your partner on the 4 Session 3 overtourism terms (Carrying Capacity, De-Marketing, Resident Backlash, Tourist Levy) before clicking 'Reveal Answer'.",
+                "Step 3 (Plenary Check): Share one partner definition with the class. Ensure precise phrasing for 'carrying capacity' (physical/ecological threshold) and 'resident backlash'."
               ],
               "deliverable": "Spoken summary of 1 eco-tourism news item and an accurate definition of a Session 3 overtourism term.",
-              "teacherNotes": "Keep pace brisk. Cold-call 2 pairs for definitions. Challenge students to distinguish between 'carrying capacity' (physical/ecological threshold) and simple congestion.",
+              "teacherNotes": "Teacher Tips & Speaking Prompts: Keep pace brisk. Cold-call 2 pairs for definitions. Challenge students to distinguish between 'carrying capacity' (physical/ecological threshold) and simple overcrowding. Encourage students to connect news items to decarbonization and regional transport links.",
               "newsPrompts": [
-                "What distinguishes a genuine eco-lodge from a hotel that simply uses 'green' marketing buzzwords?",
-                "How can local communities retain more economic revenue from international nature tourism?"
+                "What distinguishes a genuine eco-lodge from a hotel chain that simply uses 'green' marketing buzzwords?",
+                "How can local communities retain more economic revenue from international nature tourism rather than suffering economic leakage?"
               ],
               "diagnostic": {
                 "title": "Session 3 Vocabulary Quick Check: Overtourism Terms",
@@ -13852,7 +13896,7 @@
                   {
                     "id": 2,
                     "q": "What is 'De-Marketing'?",
-                    "answer": "Strategic communication designed to discourage visitor numbers or redirect tourist flows away from fragile, overcrowded hotspots to quieter, alternative regions."
+                    "answer": "Strategic communication and pricing designed to discourage visitor numbers or redirect tourist flows away from fragile, overcrowded hotspots to quieter, alternative regions."
                   },
                   {
                     "id": 3,
@@ -13862,27 +13906,27 @@
                   {
                     "id": 4,
                     "q": "What is a 'Tourist Levy'?",
-                    "answer": "A municipal surcharge or tax added to hotel bills or collected upon city entry, specifically dedicated to financing public services, waste management, and conservation."
+                    "answer": "A municipal surcharge or tax added to hotel bills or collected upon destination entry, specifically dedicated to financing public services, waste management, and environmental conservation."
                   }
                 ]
               }
             },
-            "forensicAudit": {
-              "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing",
-              "summary": "Conduct a forensic evidence audit of 3 real-world tourism projects. Separate verified environmental stewardship from superficial marketing buzzwords.",
+            "forensicAuditMatrix": {
+              "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix",
+              "summary": "Conduct a forensic evidence audit of 3 real-world tourism projects. Separate verified environmental stewardship from superficial marketing buzzwords using a structured criteria matrix.",
               "modeBadges": [
                 "👥 Small Groups (3-4)",
-                "⏱️ 25 mins",
                 "🔍 Forensic Case Audit",
-                "🎯 Evidence Evaluation"
+                "🎯 Evidence Evaluation Matrix",
+                "📊 Data Verification"
               ],
               "instructions": [
-                "Step 1 (Evidence Extraction - 8 mins): Read Projects A, B, and C with your group. Highlight specific data points: renewable energy source, revenue retention percentage, and land ownership model.",
-                "Step 2 (Audit Checklist - 10 mins): Apply the 3-point Greenwashing Checklist to each project. Identify two deceptive marketing red flags in Project B and evaluate community revenue in Projects A and C.",
-                "Step 3 (Cross-Group Verdict - 7 mins): Appoint a spokesperson to deliver your group's verdict. Argue why bamboo decor or towel re-use cards fail to qualify as genuine sustainability."
+                "Step 1 (Evidence Extraction): Read Projects A, B, and C with your group. Highlight specific data points: renewable energy source, revenue retention percentage, and land ownership model.",
+                "Step 2 (Audit Checklist): Apply the 3-point Greenwashing Checklist to each project. Identify two deceptive marketing red flags in Project B and evaluate community revenue in Projects A and C.",
+                "Step 3 (Cross-Group Verdict): Appoint a spokesperson to deliver your group's verdict. Argue why bamboo decor or towel re-use cards fail to qualify as genuine sustainability."
               ],
-              "deliverable": "A comparative audit table or spoken verdict detailing 2 verified sustainability criteria vs. 2 greenwashing indicators across the 3 projects.",
-              "teacherNotes": "Focus students on economic leakage: why does 12% vs. 78% local revenue retention make or break an eco-tourism project? Push for precise terms like 'economic leakage', 'greenwashing', and 'third-party certification'.",
+              "deliverable": "A comparative audit table detailing 2 verified sustainability criteria vs. 2 greenwashing indicators across the 3 projects.",
+              "teacherNotes": "Teacher Tips & Speaking Prompts: Focus students on economic leakage: why does 12% vs. 78% local revenue retention make or break an eco-tourism project? Push for precise terms like 'economic leakage', 'greenwashing', and 'third-party certification'.",
               "projects": [
                 {
                   "id": 1,
@@ -13917,17 +13961,17 @@
               "summary": "Connect past actions with present consequences using mixed conditionals, and express goals and conditions with formal connectors.",
               "modeBadges": [
                 "👤 Individual -> 👥 Pairs",
-                "⏱️ 20 mins",
                 "✍️ Grammar & Syntax Practice",
-                "🎯 B2 Grammar Mastery"
+                "🎯 B2 Grammar Mastery",
+                "💬 Sentence Clinic"
               ],
               "instructions": [
-                "Step 1 (Formula Analysis - 5 mins): Study the three grammatical formulas above. Note the past-to-present timeline shift in Mixed Conditionals ('had + V3' -> 'would + base verb').",
-                "Step 2 (Sentence Construction - 10 mins): With your partner, construct 3 original sentences about tourism management: one mixed conditional ('If the island had banned mega-resorts...'), one connector of purpose ('in order that...'), and one conditional ('provided that...').",
-                "Step 3 (Challenge Validation - 5 mins): Complete the two practice challenge questions individually, then click 'Check Answer' to verify your grammatical reasoning."
+                "Step 1 (Formula Analysis): Study the three grammatical formulas below. Note the past-to-present timeline shift in Mixed Conditionals ('had + V3' -> 'would + base verb').",
+                "Step 2 (Sentence Construction): With your partner, construct 3 original sentences about tourism management: one mixed conditional ('If the island had banned mega-resorts...'), one connector of purpose ('in order that...'), and one conditional ('provided that...').",
+                "Step 3 (Challenge Validation): Complete the practice challenge questions individually, then click 'Check Answer' to verify your grammatical reasoning."
               ],
               "deliverable": "3 accurately formulated written or spoken sentences demonstrating mixed conditionals and purpose clauses applied to sustainable destination management.",
-              "teacherNotes": "Common error alert: students often use 'would have' in the result clause of mixed conditionals instead of 'would + V1'. Remind them: if the consequence is TRUE TODAY, use 'would + base verb'.",
+              "teacherNotes": "Teacher Tips & Speaking Prompts: Common spoken pitfall: students often slip into 'would have' in the result clause of mixed conditionals instead of 'would + V1'. Remind them: if the consequence is TRUE TODAY, use 'would + base verb'. Challenge stronger students to use inverted conditionals ('Had the reserve invested...').",
               "rules": [
                 {
                   "title": "1. Mixed Conditional (Past Action -> Present Result)",
@@ -13973,87 +14017,130 @@
                 ]
               }
             },
-            "workshop": {
-              "title": "Activity 4: Workshop: The €2,500,000 Eco-Resort Blueprint",
-              "summary": "In teams of 3 to 4, design a low-impact, 100% sustainable tourism project with a €2,500,000 green endowment. Balance visitor capacity, clean energy, and local employment.",
+            "researchSimulation": {
+              "title": "Activity 4: Small-Group Research Sprint & Simulation: Global Destination Case Studies",
+              "summary": "In pairs or triads, select one fragile destination case study. Analyze its ecological threats, examine its low-impact engineering solutions, and extract local community economic metrics for your upcoming 5-minute exposé.",
               "modeBadges": [
-                "👥 Teams (3-4)",
-                "⏱️ 30 mins",
-                "📐 Collaborative Design Sprint",
-                "🎯 Project Planning & Budgeting"
+                "👥 Pairs / Working Trios",
+                "🔍 Case Study Research Sprint",
+                "📐 Data Synthesis & Planning",
+                "🌿 Fragile Ecosystem Analysis"
               ],
               "instructions": [
-                "Step 1 (Location Selection - 5 mins): Choose your project ecosystem (Location A: Fjord, Location B: Wetland, or Location C: Alpine Valley). Review its ecological vulnerabilities.",
-                "Step 2 (Blueprint Formulation - 15 mins): Allocate your €2,500,000 endowment across the 4 checklist domains: architecture (materials), clean energy/water, carrying capacity limits, and local community benefit.",
-                "Step 3 (Pitch Preparation - 10 mins): Formulate a 2-minute project pitch slide or speaking outline. Designate speaking roles for the upcoming Green Investor Forum."
+                "Step 1 (Case Selection & Role Division): In pairs or triads, choose one of the four real-world destination dossiers below (Galápagos, Costa Rica, Bhutan, or Norwegian Fjords). Assign speaking roles across your team (Context & Challenge, Sustainable Solution, Community Impact & Grammar Reflection).",
+                "Step 2 (Dossier Data Extraction): Examine the case data, photographic evidence, and carrying-capacity numbers. Extract 3 key operational facts, the primary ecological threat, and the local community benefit model.",
+                "Step 3 (Target Language Integration): Formulate at least 1 mixed conditional sentence evaluating a past management choice and 1 purpose connector outlining future sustainability rules.",
+                "Step 4 (Exposé Briefing Notes): Draft a clear 4-bullet speaking outline in your digital notes box without writing full spoken paragraphs."
               ],
-              "deliverable": "A complete 4-part Eco-Resort Blueprint specifying site choice, budget allocation, carrying capacity limit, and community revenue sharing model.",
-              "teacherNotes": "Circulate and challenge budget allocations. Ensure teams do not spend 80% on luxury amenities with only token amounts for renewable power or community employment.",
-              "ecosystems": [
+              "deliverable": "A completed case study analysis sheet and structured speaking outline ready for the 5-minute team presentation.",
+              "teacherNotes": "Teacher Tips & Speaking Prompts: Circulate among pairs and trios. Ensure every student has an assigned speaking section. Encourage students to look up additional live facts if online, or focus deeply on the data provided in the dossier. Enforce the non-reading rule: notes should contain bullet points and figures only.",
+              "caseStudies": [
                 {
-                  "id": "A",
-                  "name": "Location A: Temperate Fjord (Western Norway)",
-                  "features": "Steep granite cliffs, waterfalls, cold marine waters. Accessible only by water or narrow mountain passes.",
-                  "requirements": "Electric boat shuttle, geothermal heating, zero-discharge wastewater filtration."
+                  "id": "galapagos",
+                  "name": "Case Study 1: The Galápagos Marine Sanctuary (Ecuador)",
+                  "image": "images/ag_eco_galapagos.jpg",
+                  "tag": "Marine Sanctuary & Island Biosecurity",
+                  "ecosystem": "Volcanic archipelago with 97% endemic species, highly fragile marine food webs, and zero natural predators.",
+                  "threat": "Invasive species transport, unauthorized mega-yacht anchoring, and past overfishing of sea cucumbers and sharks.",
+                  "solution": "Strict quota of 100 passengers max per expedition vessel, 100% hybrid/electric auxiliary propulsion within marine reserves, and mandatory certified Galápagos naturalist guides.",
+                  "communityBenefit": "Entry fee ($200/tourist) directly funds 300+ local rangers, island biosecurity screening, and municipal water purification on Santa Cruz Island.",
+                  "sampleConditional": "If Ecuadorian authorities had not enacted strict visitor quotas in 1998, the island wildlife would not remain so remarkably tame today."
                 },
                 {
-                  "id": "B",
-                  "name": "Location B: Mediterranean Coastal Wetland (Southern Europe)",
-                  "features": "Migratory bird sanctuary, salt marshes, dunes. Highly vulnerable to freshwater depletion and summer heat waves.",
-                  "requirements": "Raised wooden boardwalks, solar desalinization, organic olive/vegetable permaculture garden."
+                  "id": "costarica",
+                  "name": "Case Study 2: Monteverde & Corcovado Rainforest (Costa Rica)",
+                  "image": "images/ag_eco_costa_rica.jpg",
+                  "tag": "Tropical Cloud Forest & Rewilding",
+                  "ecosystem": "High-altitude tropical cloud forest harboring 50% of Costa Rica's biodiversity, including resplendent quetzals and jaguars.",
+                  "threat": "Agricultural deforestation, cattle ranching soil erosion, and climate-induced cloud ceiling rise threatening moisture balance.",
+                  "solution": "Canopy suspension walkways to eliminate trail soil erosion, 100% off-grid solar and micro-hydro power for lodges, and strict biological corridor rewilding contracts.",
+                  "communityBenefit": "78% local revenue retention; over 90% of lodge staff and licensed naturalist guides are recruited from adjacent rural agrarian families.",
+                  "sampleConditional": "If local dairy farmers had not pioneered private conservation trusts thirty years ago, the cloud forest corridor would be completely fragmented today."
                 },
                 {
-                  "id": "C",
-                  "name": "Location C: Alpine Valley (French/Swiss Alps)",
-                  "features": "High-altitude meadow, melting glaciers, traditional wooden chalets. Threatened by ski-resort commercialization.",
-                  "requirements": "Ski-free winter snowshoeing, biomass pellet heating, regional high-speed rail transfer partnerships."
+                  "id": "bhutan",
+                  "name": "Case Study 3: The Kingdom of Bhutan (Eastern Himalayas)",
+                  "image": "images/ag_eco_bhutan.jpg",
+                  "tag": "High-Value, Low-Volume Himalayan Tourism",
+                  "ecosystem": "Pristine Himalayan valleys, high-altitude alpine meadows, and ancient Buddhist cultural monasteries.",
+                  "threat": "Risk of commercial backpacker overcrowding, plastic waste accumulation along sacred mountain passes, and cultural dilution.",
+                  "solution": "National 'High-Value, Low-Volume' policy backed by a mandatory $100/day Sustainable Development Fee (SDF) per international tourist and carbon-negative constitutional protection.",
+                  "communityBenefit": "SDF tax revenues provide 100% free healthcare and secondary education for all Bhutanese citizens, while financing rural electric bus grids.",
+                  "sampleConditional": "If Bhutan had opened its borders to unrestricted mass charter tourism, its carbon-negative status would not exist today."
+                },
+                {
+                  "id": "norway",
+                  "name": "Case Study 4: Tromsø & The Arctic Fjords (Norway)",
+                  "image": "images/ag_eco_norway.jpg",
+                  "tag": "Arctic Marine & Zero-Emission Propulsion",
+                  "ecosystem": "Deep glacial fjords, Arctic marine habitats, humpback whale and orca winter feeding grounds beneath the Aurora Borealis.",
+                  "threat": "Underwater engine noise disrupting cetacean echolocation, heavy fuel oil (HFO) emissions, and winter harbor congestion.",
+                  "solution": "Silent hybrid-electric catamarans running on clean fjord hydroelectricity, zero-emission underwater propulsion within 1000m of marine mammals, and strict acoustic radar monitoring.",
+                  "communityBenefit": "All crews and marine biologists are hired locally from the University of Tromsø; expedition fees co-fund regional coastal plastic cleanup programs.",
+                  "sampleConditional": "If regional authorities had not mandated shore-to-ship electric power, Arctic port emissions would be significantly higher today."
                 }
               ],
               "blueprintChecklist": [
-                "1. Architectural Concept: Low-impact local timber or stone construction with minimal earth disturbance.",
-                "2. Energy & Water: 100% on-site renewable power (solar/hydro/geothermal) and circular greywater recycling.",
-                "3. Carrying Capacity: Set strict daily visitor limits and maximum seasonal overnight occupancy.",
-                "4. Community Revenue: Guarantee at least 70% of staff are hired locally and 10% of profits fund local conservation."
+                "1. Context & Vulnerability: Explain what makes your chosen destination ecologically unique and fragile.",
+                "2. Low-Impact Innovation: Describe the specific engineering or zoning mechanism that safeguards the environment.",
+                "3. Community Prosperity: Detail how local residents capture tangible economic benefits rather than suffering leakage.",
+                "4. Grammar Challenge: Deliver at least 1 mixed conditional and 1 purpose connector fluently without reading."
               ]
             },
-            "investorForum": {
-              "title": "Activity 5: The Green Investor Forum: Pitches & Defense",
-              "summary": "Deliver a concise 2-minute pitch to the Sustainability Investment Board. Defend your project against tough questions regarding profitability, greenwashing, and visitor limits.",
+            "investorConsensusForum": {
+              "title": "Activity 5: 5-Minute Spoken Exposés & Investor Consensus Defense",
+              "summary": "Deliver a collaborative 5-minute spoken exposé on your team's destination case study. Defend your project against challenging questions from the Sustainability Investment Board, and complete the Peer Observer Evaluation Grid for other teams.",
               "modeBadges": [
-                "🎤 Team Pitch -> 👥 Plenary Defense",
-                "⏱️ 25 mins",
-                "🗣️ Pitch & Stakeholder Cross-Exam",
-                "🎯 Persuasive Fluency"
+                "🎤 Collaborative Spoken Exposé",
+                "👥 Plenary Defense & Q&A",
+                "📊 Peer Observer Evaluation Grid",
+                "🎯 Spoken Fluency & Non-Reading Delivery"
               ],
               "instructions": [
-                "Step 1 (Pitch Delivery - 2 mins per team): Present your €2,500,000 eco-resort blueprint to the Sustainability Investment Board without reading word-for-word from notes.",
-                "Step 2 (Board Q&A - 3 mins per team): Defend your project against one challenging board question regarding greenwashing, local wages, or wildlife disturbance.",
-                "Step 3 (Investment Ballot - 5 mins): After all teams pitch, vote (anonymously or by show of hands) for the most credible, commercially viable, and ecologically genuine project (teams cannot vote for themselves)."
+                "Step 1 (Collaborative Delivery): Deliver your team's 5-minute spoken exposé to the class or exchange partner group. Distribute speaking time equitably across all team members.",
+                "Step 2 (The Non-Reading Standard): Speak from concise keywords, statistics, and visual prompts. Avoid reading full scripted paragraphs.",
+                "Step 3 (Investor Board Defense): Field one spontaneous challenge question from the teacher or peer investment board regarding greenwashing risks or local wage equity.",
+                "Step 4 (Active Peer Evaluation): While other teams present, complete the 3-point Peer Observer Checklist scoring authenticity, delivery fluency, and grammar accuracy."
               ],
-              "deliverable": "A 2-minute persuasive spoken pitch followed by successful impromptu defense against board scrutiny.",
-              "teacherNotes": "Act as the lead board trustee. Ask provocative questions: 'How will you stop wealthy eco-tourists from demanding 24/7 air conditioning in a remote fjord?' Keep timing strict: 2 min pitch + 3 min Q&A.",
+              "deliverable": "A collaborative 5-minute spoken exposé delivered without reading notes, successful defense in Q&A, and a completed peer feedback scorecard.",
+              "teacherNotes": "Teacher Tips & Speaking Prompts: Maintain an encouraging, professional seminar atmosphere. Act as Board Chairperson. Challenge teams on practical dilemmas: 'How do you prevent high tourist fees from making nature an exclusive playground for the super-rich?' Enforce equal speaking time among partners.",
               "boardQuestions": [
-                "\"How will you guarantee that wealthy guests do not consume excessive water and electricity?\"",
-                "\"What evidence proves your resort will not disrupt the local wildlife breeding season?\"",
-                "\"How does your project ensure local community members are not simply low-wage service workers?\""
+                "\"How do you prove that your destination's renewable energy system does not rely on hidden diesel backup generators?\"",
+                "\"If visitor numbers double over the next five years, what specific carrying-capacity trigger will halt further bookings?\"",
+                "\"How does your project ensure local community members hold skilled management roles rather than low-wage service jobs?\"",
+                "\"Could the high cost of your sustainable destination result in social elitism, excluding ordinary travelers?\""
+              ],
+              "peerChecklist": [
+                {
+                  "criterion": "Authenticity & Environmental Rigor",
+                  "question": "Did the team prove genuine ecological protection and community ownership, or did you detect greenwashing risks?"
+                },
+                {
+                  "criterion": "Spoken Fluency & Professional Delivery",
+                  "question": "Did all speakers speak naturally from keywords without reading continuous sentences from slides or written notes?"
+                },
+                {
+                  "criterion": "Target Grammar & Signposting",
+                  "question": "Did the team successfully deploy a mixed conditional and a connector of purpose or condition (so as to, provided that)?"
+                }
               ]
             },
             "closingReview": {
-              "title": "Activity 6: 10-Minute Vocabulary Wrap-Up & FE1 Readiness Check",
-              "summary": "Final preparation for Session 5 Formative Evaluation: audio pronunciation drill of 18 terms and partner readiness review.",
+              "title": "Activity 6: Vocabulary Wrap-Up & FE1 Readiness Check",
+              "summary": "Final consolidation for Session 5 Formative Evaluation: audio pronunciation drill of 18 essential terms and peer sign-off on your presentation readiness.",
               "modeBadges": [
                 "👤 Individual & 👥 Pairs",
-                "⏱️ 10 mins",
-                "⚡ Phonetic Drill & Exam Audit",
-                "🎯 Formative Consolidation"
+                "⚡ Phonetic Audio Drill",
+                "🎯 FE1 Readiness Sign-Off",
+                "📋 Formative Verification"
               ],
               "instructions": [
                 "Step 1 (Audio Pronunciation Drill): Click each of the 18 audio buttons. Listen and repeat aloud, focusing on stress patterns: 're-GEN-er-a-tive', 'va-lor-i-ZA-tion', 'bio-di-VER-si-ty'.",
-                "Step 2 (FE1 Readiness Audit - 4 mins): Review the 4 items on the Session 5 Formative Evaluation Readiness Checklist with your partner. Confirm your presentation partner, topic choice, and slide structure.",
-                "Step 3 (Portfolio Check - 2 mins): Verify that your Vocabulary Log and TOEIC Error Tracker are updated and ready for teacher review next week."
+                "Step 2 (FE1 Readiness Audit): Review the 4 items on the Session 5 Formative Evaluation Readiness Checklist with your presentation partner. Confirm your topic choice and slide structure.",
+                "Step 3 (Digital Notes & Vocabulary Log): Verify that your digital session notes and personal vocabulary study log are complete and ready for teacher review."
               ],
-              "deliverable": "Complete peer sign-off on the 4-point FE1 checklist + spoken accuracy on 3 multi-syllable eco-tourism terms.",
-              "teacherNotes": "Crucial checkpoint: ensure every student has a confirmed FE1 partner and selected topic (Option A or Option B). Emphasize the 'no reading from slides' rule.",
+              "deliverable": "Peer sign-off on the 4-point FE1 checklist and accurate pronunciation of 3 multi-syllable sustainability terms.",
+              "teacherNotes": "Teacher Tips & Speaking Prompts: Crucial checkpoint: ensure every student has a confirmed FE1 partner and selected topic (Option A: Eco-Friendly Holiday Itinerary OR Option B: Comparing Two Cities' Tourism Policies). Reiterate the non-reading rule for next week's evaluated presentation.",
               "vocabWords": [
                 "Eco-Tourism",
                 "Greenwashing",
@@ -14077,8 +14164,8 @@
               "feChecklist": [
                 "✅ Presentation partner confirmed and topic selected (Option A: Eco-Friendly Holiday Itinerary OR Option B: Comparing Two Cities' Tourism Policies).",
                 "✅ 4 to 6 clean visual slides prepared without dense paragraphs of text (no reading aloud from notes!).",
-                "✅ Personal Vocabulary Study Log and TOEIC Error Log ready to show your teacher.",
-                "✅ Self-Critique ready: 2 personal English strengths and 2 concrete action targets for Semester 2."
+                "✅ Personal Vocabulary Study Log and TOEIC Error Log updated and ready to show your teacher.",
+                "✅ Self-Critique ready: 2 personal English speaking strengths and 2 concrete action targets for Semester 2."
               ]
             }
           },
@@ -14157,7 +14244,8 @@
                 "Ultimately, our group recommends that..."
               ]
             }
-          }
+          },
+          "title": "Ecotourism & Sustainable Destination Design"
         }
       }
     },

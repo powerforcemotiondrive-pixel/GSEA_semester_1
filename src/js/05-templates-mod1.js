@@ -3550,50 +3550,51 @@
       const content = sessionData.lessonContent || {};
       const ov = content.overview || content.hero || {};
       const opening = content.openingSession || {};
-      const forensic = content.forensicAudit || {};
+      const forensic = content.forensicAuditMatrix || content.forensicAudit || {};
       const grammar = content.grammarClinic || {};
-      const workshop = content.workshop || {};
-      const investor = content.investorForum || {};
+      const workshop = content.researchSimulation || content.workshop || {};
+      const investor = content.investorConsensusForum || content.investorForum || {};
       const closing = content.closingReview || {};
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
-          <!-- Printable Action Bar -->
+          <!-- Official PDF Action Bar (Zero Print-to-Teach / 100% Digital Download) -->
           <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
             <div>
               <div class="flex items-center gap-2">
                 <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">General English (AG) • Module 1 • Session 4</span>
               </div>
-              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Sustainable &amp; Eco-Tourism</h3>
+              <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Ecotourism &amp; Sustainable Destination Design</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S1_M1_AG_S4_Lesson_Worksheet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 border border-blue-700 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <!-- Session Overview Banner -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative">
-              <img src="${ov.image || 'images/ag_m1card4.jpg'}" alt="${ov.title || 'Sustainable Tourism'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m1card4.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">${ov.badge || 'Session Overview • Eco-Tourism & Green Certification'}</span>
-                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${ov.title || 'Sustainable & Eco-Tourism'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${ov.subtitle || 'Responsible Travel, Genuine Green Projects & Community Benefits'}</p>
+              <img src="${ov.image || 'images/ag_m1card4.jpg'}" alt="${ov.title || 'Ecotourism & Sustainable Destination Design'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/ag_m1card4.jpg'">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">${ov.badge || 'Session Overview • Ecotourism & Sustainable Destination Design'}</span>
+                <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${ov.title || 'Ecotourism & Sustainable Destination Design'}</h3>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${ov.subtitle || 'Responsible Travel, Fragile Ecosystems, Genuine Green Projects & Community Benefits'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-orange-100 text-orange-900 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded">CEFR B2</span>
                 <span class="text-slate-400">&bull;</span>
                 <span class="font-bold text-slate-800">Context:</span>
-                <span class="text-slate-600">Greenwashing Detection &amp; Eco-Resort Blueprint</span>
+                <span class="text-slate-600">Case Study Research Sprint &amp; 5-Minute Exposé</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-800">Academic Block:</span>
+                <span class="font-bold text-slate-900">2-Hour University Seminar</span>
               </div>
             </div>
           </div>
@@ -3604,7 +3605,7 @@
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Eco-Tourism News & Session 3 Review'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Eco-Tourism News & Session 3 Spot-Check'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
                 </div>
               </div>
@@ -3617,7 +3618,7 @@
             <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
               <div class="flex items-center gap-2">
                 <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Eco-Tourism &amp; Certification Headlines</h5>
+                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Eco-Tourism &amp; Decarbonization Headlines</h5>
               </div>
               <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
                 ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
@@ -3654,13 +3655,13 @@
             </div>
           </div>
 
-          <!-- Activity 2: Genuine Eco-Tourism vs. Greenwashing -->
+          <!-- Activity 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${forensic.title || 'Activity 2: Genuine Eco-Tourism vs. Greenwashing'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${forensic.title || 'Activity 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix'}</h4>
                   <p class="text-[11px] text-slate-500">${forensic.summary || ''}</p>
                 </div>
               </div>
@@ -3753,78 +3754,136 @@
             ` : ''}
           </div>
 
-          <!-- Activity 4: Workshop: The €2,500,000 Eco-Resort Blueprint -->
+          <!-- Activity 4: Small-Group Research Sprint: Global Sustainable Destination Case Studies -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${workshop.title || 'Activity 4: Workshop: The €2,500,000 Eco-Resort Blueprint'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${workshop.title || 'Activity 4: Small-Group Research Sprint: Global Sustainable Destination Case Studies'}</h4>
                   <p class="text-[11px] text-slate-500">${workshop.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Design Workshop</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Research Sprint (Pairs / Triads)</span>
             </div>
 
             ${renderActivityInstructions(workshop, theme)}
 
-            <!-- Ecosystem Locations Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-              ${(workshop.ecosystems || []).map(eco => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
+            <!-- Case Studies Grid with High-Resolution Photos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${(workshop.caseStudies || []).map(cs => `
+                <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs flex flex-col justify-between">
                   <div>
-                    <h5 class="text-xs font-bold text-slate-900 pb-1 border-b border-slate-200">${eco.name}</h5>
-                    <p class="text-[11px] text-slate-600 mt-2 leading-relaxed"><strong>Features:</strong> ${eco.features}</p>
+                    <div class="relative h-44 sm:h-52 overflow-hidden bg-slate-900">
+                      <img src="${cs.image}" alt="${cs.name}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='images/ag_m1card4.jpg'">
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex items-end p-3.5">
+                        <div>
+                          <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-500 text-white shadow-xs">${cs.tag}</span>
+                          <h5 class="text-sm sm:text-base font-bold text-white mt-1 leading-snug">${cs.name}</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 space-y-2.5 text-xs">
+                      <div>
+                        <span class="font-bold text-slate-800">Ecosystem &amp; Fragility:</span>
+                        <p class="text-slate-600 mt-0.5 leading-relaxed">${cs.ecosystem}</p>
+                      </div>
+                      <div class="p-2.5 rounded-lg bg-red-50 border border-red-100">
+                        <span class="font-bold text-red-950">Ecological Threat:</span>
+                        <p class="text-red-900 mt-0.5 leading-relaxed">${cs.threat}</p>
+                      </div>
+                      <div class="p-2.5 rounded-lg bg-emerald-50 border border-emerald-100">
+                        <span class="font-bold text-emerald-950">Low-Impact Solution:</span>
+                        <p class="text-emerald-900 mt-0.5 leading-relaxed">${cs.solution}</p>
+                      </div>
+                      <div class="p-2.5 rounded-lg bg-sky-50 border border-sky-100">
+                        <span class="font-bold text-sky-950">Local Community Prosperity:</span>
+                        <p class="text-sky-900 mt-0.5 leading-relaxed">${cs.communityBenefit}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="p-2.5 bg-white border border-slate-200 rounded text-[11px] text-slate-700">
-                    <strong class="block text-slate-800">Key Priorities:</strong> ${eco.requirements}
+                  <div class="p-3 bg-slate-50 border-t border-slate-200 text-[11px] text-slate-700 italic">
+                    <strong class="not-italic text-slate-900">Spoken Grammar Model:</strong> "${cs.sampleConditional}"
                   </div>
                 </div>
               `).join('')}
             </div>
 
             <div class="p-3.5 bg-amber-50/60 border border-amber-200 rounded-xl text-xs text-amber-950 space-y-1.5">
-              <strong class="block font-bold">Blueprint Planning Checklist:</strong>
+              <strong class="block font-bold">4-Point Case Study Research Checklist:</strong>
               <ul class="space-y-1 list-disc pl-4 text-[11px]">
                 ${(workshop.blueprintChecklist || []).map(bc => `<li>${bc}</li>`).join('')}
               </ul>
             </div>
           </div>
 
-          <!-- Activity 5: The Green Investor Forum -->
+          <!-- Activity 5: 5-Minute Spoken Exposés & Investor/Stakeholder Defense -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${investor.title || 'Activity 5: The Green Investor Forum: Pitches & Defense'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${investor.title || 'Activity 5: 5-Minute Spoken Exposés & Investor/Stakeholder Defense'}</h4>
                   <p class="text-[11px] text-slate-500">${investor.summary || ''}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Investor Pitches</span>
+              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Spoken Exposé</span>
             </div>
 
             ${renderActivityInstructions(investor, theme)}
 
+            <!-- Investor Board Challenge Questions -->
             <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-              <h5 class="text-xs sm:text-sm font-bold text-slate-900">Challenging Questions from the Sustainability Investment Board</h5>
-              <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">Provocative Questions from the Sustainability Investment Board</h5>
+                <span class="text-[11px] text-slate-500">Impromptu Defense</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
                 ${(investor.boardQuestions || []).map(bq => `
-                  <div class="p-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-800 font-medium italic">
+                  <div class="p-3 bg-white border border-slate-200 rounded-lg text-xs text-slate-800 font-medium italic shadow-2xs">
                     ${bq}
                   </div>
                 `).join('')}
               </div>
             </div>
+
+            <!-- Student B / Peer Observer Active-Listening Evaluation Grid -->
+            <div class="p-4 bg-indigo-50/60 border border-indigo-200 rounded-xl space-y-3">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h5 class="text-xs sm:text-sm font-bold text-indigo-950">Student B / Peer Observer Assessment Checklist</h5>
+                  <p class="text-[11px] text-indigo-800/80 mt-0.5">Evaluate other teams during their 5-minute exposé using these 3 criteria:</p>
+                </div>
+                <span class="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-indigo-600 text-white">Peer Evaluation</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+                ${(investor.peerChecklist || []).map((crit, idx) => `
+                  <div class="p-3 bg-white border border-indigo-200 rounded-lg space-y-1 shadow-2xs">
+                    <span class="text-[10px] font-black uppercase tracking-wider text-indigo-600">Criterion 0${idx + 1}</span>
+                    <h6 class="text-xs font-bold text-slate-900">${crit.criterion}</h6>
+                    <p class="text-[11px] text-slate-600 leading-relaxed">${crit.question}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Interactive Auto-Saving Digital Notes Container -->
+            <div class="notes-textarea-container p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+              <div class="flex items-center justify-between">
+                <label for="ag-s4-notes" class="text-xs font-bold text-slate-800">📝 Your Case Study Briefing Notes &amp; Spoken Bullets (Auto-Saving)</label>
+                <span class="text-[11px] text-slate-500" id="ag-s4-notes-status">Saved locally in browser</span>
+              </div>
+              <textarea id="ag-s4-notes" rows="4" placeholder="Draft your 4-point exposé notes here: 1. Ecosystem context... 2. Solution... 3. Community impact... 4. Mixed conditional..." oninput="window.saveLessonNote && window.saveLessonNote('ag-s4-notes', this.value)" class="w-full p-3 rounded-lg border border-slate-300 bg-white text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
           </div>
 
-          <!-- Activity 6: vocabulary wrap-up & FE1 Readiness Check -->
+          <!-- Activity 6: Vocabulary Wrap-Up & FE1 Readiness Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: vocabulary wrap-up & FE1 Readiness Check'}</h4>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Wrap-Up & FE1 Readiness Check'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || ''}</p>
                 </div>
               </div>
@@ -3836,7 +3895,7 @@
             <!-- Vocabulary Rapid Audio Drill -->
             <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
               <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-900">${(closing.vocabWords && closing.vocabWords.length) || 30} Key Terms Audio Pronunciation Drill</h5>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-900">${(closing.vocabWords && closing.vocabWords.length) || 18} Key Terms Audio Pronunciation Drill</h5>
                 <span class="text-[11px] text-slate-500">Click any word to listen to its pronunciation</span>
               </div>
               <div class="flex flex-wrap gap-2">
@@ -3857,7 +3916,7 @@
               </div>
               <div class="space-y-2 text-xs text-emerald-900">
                 ${(closing.feChecklist || []).map(item => `
-                  <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
+                  <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2 shadow-2xs">
                     <span>${item}</span>
                   </div>
                 `).join('')}

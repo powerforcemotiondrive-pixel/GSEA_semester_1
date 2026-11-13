@@ -2534,7 +2534,7 @@
         { modIdx: 0, week: 44, start: new Date('2026-10-26T00:00:00'), cardIdx: 1, agTitle: "Session 1 — Introduction & Travel Anecdotes", atTitle: "Session 1 — Introduction & Aviation Survey" },
         { modIdx: 0, week: 45, start: new Date('2026-11-02T00:00:00'), cardIdx: 2, agTitle: "Session 2 — Evolution of Transport", atTitle: "Session 2 — Passenger Journey & Airfield Movement" },
         { modIdx: 0, week: 46, start: new Date('2026-11-09T00:00:00'), cardIdx: 3, agTitle: "Session 3 — Overtourism", atTitle: "Session 3 — Airport Security & Safety Walkaround" },
-        { modIdx: 0, week: 47, start: new Date('2026-11-16T00:00:00'), cardIdx: 4, agTitle: "Session 4 — Sustainable and Eco-tourism", atTitle: "Session 4 — Jobs in Aviation" },
+        { modIdx: 0, week: 47, start: new Date('2026-11-16T00:00:00'), cardIdx: 4, agTitle: "Session 4 — Ecotourism & Sustainable Destination Design", atTitle: "Session 4 — Jobs in Aviation" },
         { modIdx: 0, week: 48, start: new Date('2026-11-23T00:00:00'), cardIdx: 5, agTitle: "FE1 — Formative Evaluation Oral Tutorials", atTitle: "FE1 — Formative Evaluation Oral Tutorials" },
 
         // Module 2 (Weeks 49 – Week 3)
