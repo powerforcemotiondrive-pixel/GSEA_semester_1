@@ -520,7 +520,7 @@
 
         <!-- Navigation Controls -->
         <div class="flex items-center space-x-2">
-          <button id="deck-home-btn" type="button" onclick="renderCard(0)" class="flex items-center space-x-1.5 bg-[#1f2937] hover:bg-[#111827] active:bg-[#0f172a] text-slate-100 px-2.5 sm:px-3 py-1.5 rounded-lg font-semibold text-xs transition-all border border-[#111827] shadow-xs hover:shadow-sm hover:-translate-y-[1px] active:translate-y-0 cursor-pointer mr-0.5" title="Return to Flight Deck Noticeboard">
+          <button id="deck-home-btn" type="button" onclick="renderCard(0)" class="flex items-center space-x-1.5 bg-[#1f2937] hover:bg-[#111827] active:bg-[#0f172a] text-slate-100 px-2.5 sm:px-3 py-1.5 rounded-lg font-semibold text-xs transition-all border border-[#111827] shadow-xs hover:shadow-sm hover:-translate-y-[1px] active:translate-y-0 cursor-pointer mr-0.5" title="Return to Student Noticeboard">
             <svg width="14" height="14" class="w-3.5 h-3.5 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
             <span class="mobile-hide">Noticeboard</span>
           </button>
@@ -605,7 +605,7 @@
 
         <!-- Main Content Panel Area -->
         <div class="flex-1 bg-white p-4 sm:p-6 flex flex-col justify-between overflow-y-auto content-panel">
-          <!-- Flight Deck Noticeboard View (Card 00) -->
+          <!-- Student Noticeboard View (Card 00) -->
           <div id="deck-noticeboard-view" class="space-y-4 sm:space-y-5 deck-card-fade hidden">
             <!-- Populated dynamically via renderNoticeboardContent -->
           </div>
@@ -1248,8 +1248,8 @@
       const desc = (isAas ? aasDescriptions[modNumber] : agDescriptions[modNumber]) || (isAas ? aasDescriptions[1] : agDescriptions[1]);
 
       const noticeboardPage = {
-        tag: "Promotion GSEA26A • Flight Deck",
-        title: "Flight Deck Noticeboard",
+        tag: "Semester 1 • Noticeboard",
+        title: "Student Noticeboard",
         description: "Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and course announcements.",
         isNoticeboard: true,
         sessionNum: 0,
@@ -2542,7 +2542,7 @@
 
       if (page.isNoticeboard) {
         document.getElementById('counter-badge').textContent = `Noticeboard`;
-        document.getElementById('footer-status').textContent = `Active: Flight Deck Noticeboard • GSEA 26A`;
+        document.getElementById('footer-status').textContent = `Active: Student Noticeboard • GSEA 26A`;
       } else {
         document.getElementById('counter-badge').textContent = `${page.sessionNum} of ${accessiblePages.length - 1}`;
         document.getElementById('footer-status').textContent = `Active: ${mod.name} - ${page.title}`;
@@ -4017,94 +4017,84 @@
       document.body.style.overflow = "hidden";
     };
 
-    // --- Student Flight Deck Noticeboard Engine (Card 00) ---
+    // --- Student Noticeboard Engine (Card 00) ---
     function renderNoticeboardContent(theme) {
       const noticeboardEl = document.getElementById('deck-noticeboard-view');
       if (!noticeboardEl) return;
 
       const isAg = (currentProgram === 'ag');
-      const accentColor = theme.accent || (isAg ? '#ea580c' : '#0284c7');
-      const accentDark = theme.accentDark || (isAg ? '#c2410c' : '#0369a1');
 
       // Current active session index (Card 3 = Session 3 Ground Operations for AT, Session 3 Overtourism for AG)
       const activeSessionIdx = 3; 
       const activeSessionName = isAg ? "Session 3 — Managing Mass Tourism" : "Session 3 — Airport Security & Safety Walkaround";
       const trackBadge = isAg 
-        ? '<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-900 border border-amber-300/80 shadow-2xs">🗣️ General English (LV101E) • Fridays 08:00–10:00</span>'
-        : '<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-sky-100 text-sky-900 border border-sky-300/80 shadow-2xs">✈️ Technical English (LV121E) • Wednesdays 13:15–15:15</span>';
+        ? '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-900 border border-amber-300/80 shadow-2xs">🗣️ General English (LV101E) • Fridays 08:00–10:00</span>'
+        : '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-sky-100 text-sky-900 border border-sky-300/80 shadow-2xs">✈️ Technical English (LV121E) • Wednesdays 13:15–15:15</span>';
 
       noticeboardEl.innerHTML = `
-        <!-- 1. Arrival Banner & Callsign Header -->
-        <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white p-4 sm:p-6 shadow-sm">
-          <div class="relative z-10 space-y-3">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-xs border border-white/15 text-[10.5px] font-mono font-bold tracking-wider uppercase text-amber-300">
-                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-                <span>ENAC • GSEA Semester 1 • English Learning Portal</span>
-              </div>
-              <span class="text-[10px] sm:text-xs font-mono font-bold px-2.5 py-0.5 rounded bg-black/40 border border-white/10 text-slate-300">Promotion GSEA26A</span>
+        <!-- 1. Arrival Banner & Callsign Header (Option 1: Clean White Card with Subtle 60% Aircraft Watermark) -->
+        <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs">
+          <!-- Subtle aircraft backdrop at 60% opacity with smooth gradient fade to white -->
+          <div class="absolute right-0 top-0 bottom-0 w-5/12 sm:w-1/2 pointer-events-none select-none overflow-hidden">
+            <img src="images/aas_m2card3.jpg" alt="" class="w-full h-full object-cover object-center opacity-60 mix-blend-multiply" style="-webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 30%, black 100%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 30%, black 100%);" />
+          </div>
+
+          <div class="relative z-10 max-w-xl space-y-3">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-[11px] font-bold tracking-wide uppercase text-slate-700">
+              <span>🛫 Semester 1 Learning Portal</span>
             </div>
 
-            <div class="space-y-1.5">
-              <h2 class="text-xl sm:text-3xl font-black tracking-tight text-white leading-tight">
-                Flight Deck Noticeboard
+            <div class="space-y-1">
+              <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 leading-tight">
+                Student Noticeboard
               </h2>
-              <p class="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed max-w-2xl">
+              <p class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
                 Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and course announcements.
               </p>
             </div>
 
-            <!-- Dual-track indicators -->
-            <div class="flex flex-wrap items-center gap-2 pt-1">
+            <div class="pt-1">
               ${trackBadge}
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-white/10 text-slate-200 border border-white/15">
-                📍 Rooms: Orly • Blagnac • Roissy • Le Bourget
-              </span>
             </div>
-          </div>
-
-          <!-- Decorative flight graphic overlay -->
-          <div class="absolute -right-8 -bottom-10 opacity-10 pointer-events-none select-none">
-            <svg width="220" height="220" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
           </div>
         </div>
 
-        <!-- 2. Mobile-First Quick Launchers Bar (Minimum 44px tap target height) -->
+        <!-- 2. Mobile-First Quick Launchers Bar -->
         <div class="space-y-2">
           <div class="flex items-center justify-between px-1">
             <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">🚀 Quick Launchers</span>
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">1-Click Fast Navigation</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
-            <!-- Button 1: Jump to Active Lesson (Primary Hero Button) -->
-            <button type="button" onclick="renderCard(${activeSessionIdx})" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl text-white shadow-xs hover:shadow-md transition-all duration-150 cursor-pointer text-left border border-black/10 min-h-[52px]" style="background-color: ${accentColor};" onmouseenter="this.style.backgroundColor='${accentDark}'" onmouseleave="this.style.backgroundColor='${accentColor}'">
+            <!-- Button 1: Jump to Active Lesson (Deep Navy Hero Button) -->
+            <button type="button" onclick="renderCard(${activeSessionIdx})" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white shadow-xs hover:shadow-md transition-all duration-150 cursor-pointer text-left border border-slate-800 min-h-[52px]">
               <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-black/25 px-2 py-0.5 rounded text-white/95">Active Class</span>
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-300/30 px-2 py-0.5 rounded">Active Class</span>
                 <span class="text-base group-hover:translate-x-1 transition-transform">➔</span>
               </div>
               <div class="mt-2">
                 <div class="text-xs sm:text-sm font-black leading-snug">▶ Jump to Today's Lesson</div>
-                <div class="text-[11px] text-white/80 truncate font-medium mt-0.5">${activeSessionName}</div>
+                <div class="text-[11px] text-slate-300 truncate font-medium mt-0.5">${activeSessionName}</div>
               </div>
             </button>
 
-            <!-- Button 2: Student Learning Portfolio -->
-            <button type="button" onclick="openPortfolioDrawer()" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white shadow-xs hover:shadow-md transition-all duration-150 cursor-pointer text-left border border-slate-700 min-h-[52px]">
+            <!-- Button 2: Student Learning Portfolio (Crisp White Card with Emerald Accent) -->
+            <button type="button" onclick="openPortfolioDrawer()" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
               <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2 py-0.5 rounded">Personal Learning</span>
-                <span class="text-base group-hover:translate-x-1 transition-transform">➔</span>
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Personal Learning</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform text-slate-400">➔</span>
               </div>
               <div class="mt-2">
-                <div class="text-xs sm:text-sm font-black leading-snug">📝 Student Portfolio</div>
-                <div class="text-[11px] text-slate-300 font-medium mt-0.5">Log 3 new words after each class</div>
+                <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📝 Student Portfolio</div>
+                <div class="text-[11px] text-slate-500 font-medium mt-0.5">Log 3 new words after each class</div>
               </div>
             </button>
 
-            <!-- Button 3: Timetable & Rosters -->
+            <!-- Button 3: Timetable & Rosters (Crisp White Card with Sky Accent) -->
             <button type="button" onclick="renderCard(7)" class="group flex flex-col justify-between p-3.5 sm:p-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 shadow-2xs hover:shadow-xs transition-all duration-150 cursor-pointer text-left border border-slate-200/90 min-h-[52px]">
               <div class="flex items-center justify-between">
-                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-slate-200">Course Admin</span>
-                <span class="text-base group-hover:translate-x-1 transition-transform text-slate-500">➔</span>
+                <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider bg-sky-50 text-sky-800 px-2 py-0.5 rounded border border-sky-200">Course Admin</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform text-slate-400">➔</span>
               </div>
               <div class="mt-2">
                 <div class="text-xs sm:text-sm font-black leading-snug text-slate-900">📅 Timetable &amp; Groups</div>
@@ -4119,9 +4109,9 @@
             <div class="flex flex-wrap items-center gap-1.5">
               <button type="button" onclick="renderCard(1)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S1</button>
               <button type="button" onclick="renderCard(2)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S2</button>
-              <button type="button" onclick="renderCard(3)" class="px-2.5 py-1 rounded-md text-white font-bold border border-transparent shadow-2xs text-[11px] cursor-pointer transition-all" style="background-color: ${accentColor};">S3 (Active)</button>
+              <button type="button" onclick="renderCard(3)" class="px-2.5 py-1 rounded-md bg-slate-900 text-white font-bold border border-slate-900 shadow-2xs text-[11px] cursor-pointer transition-all">S3 (Active)</button>
               <button type="button" onclick="renderCard(4)" class="px-2.5 py-1 rounded-md bg-white hover:bg-slate-100 text-slate-700 font-bold border border-slate-200 shadow-2xs text-[11px] cursor-pointer transition-all">S4</button>
-              <button type="button" onclick="renderCard(5)" class="px-2.5 py-1 rounded-md bg-amber-50 hover:bg-amber-100 text-amber-900 font-bold border border-amber-200 shadow-2xs text-[11px] cursor-pointer transition-all">FE1</button>
+              <button type="button" onclick="renderCard(5)" class="px-2.5 py-1 rounded-md bg-purple-50 hover:bg-purple-100 text-purple-900 font-bold border border-purple-200 shadow-2xs text-[11px] cursor-pointer transition-all">FE1</button>
             </div>
           </div>
         </div>
@@ -4192,15 +4182,15 @@
           </div>
         </div>
 
-        <!-- 4. Weekly English Dispatch (Reading & Listening Practice) -->
+        <!-- 4. Weekly Study & Culture (Reading & Listening Practice) -->
         <div class="space-y-2.5">
           <div class="flex items-center justify-between px-1">
-            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📰 Weekly English Dispatch</span>
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">📰 Weekly Study &amp; Culture</span>
             <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Authentic Spoken Practice</span>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <!-- Dispatch Card 1: Aeronautical English (AT) -->
+            <!-- Card 1: Aeronautical English (AT) -->
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
@@ -4220,7 +4210,7 @@
               </button>
             </div>
 
-            <!-- Dispatch Card 2: General Culture & Film (AG) -->
+            <!-- Card 2: General Culture & Film (AG) -->
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
@@ -4242,9 +4232,9 @@
           </div>
         </div>
 
-        <!-- 5. Course Administration & Teaching Team Strip -->
-        <div class="p-4 rounded-xl border border-slate-200/80 bg-slate-50/70 shadow-2xs space-y-2.5 text-xs text-slate-700">
-          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-2">
+        <!-- 5. Course Administration & Teaching Team Directory -->
+        <div class="p-4 sm:p-5 rounded-xl border border-slate-200/80 bg-white shadow-2xs space-y-3 text-xs text-slate-700">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-2.5">
             <div class="flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">✉️ Teaching Team &amp; Course Administration</span>
@@ -4252,19 +4242,45 @@
             <span class="text-[10.5px] font-mono text-slate-500">ENAC Département LH/LAN</span>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11.5px] sm:text-xs">
-            <div>
-              <span class="font-semibold text-slate-900">Course Coordinator:</span> Phil PARRIS
-              <span class="font-mono text-slate-500 text-[10.5px]">(philip.parris@enac.fr)</span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-[11.5px] sm:text-xs">
+            <!-- Box 1: Course Coordinator -->
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Course Coordinator</div>
+              <div class="font-bold text-slate-900 text-sm">Phil PARRIS</div>
+              <div class="text-slate-600 font-mono text-[11px]">philip.parris@enac.fr</div>
+              <div class="text-slate-500 text-[10.5px] pt-0.5">Office: LH/LAN</div>
             </div>
-            <div>
-              <span class="font-semibold text-slate-900">Teaching Team:</span> Geri MIDDLETON • Penny WRIGHT • Ally HEWETT
+
+            <!-- Box 2: General English Teachers -->
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">🗣️ General English (LV101E)</div>
+              <div class="text-slate-900 font-semibold text-xs pt-0.5">
+                <div><span class="font-mono text-slate-500 text-[10.5px]">Group A:</span> Geri MIDDLETON</div>
+                <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Group B:</span> Penny WRIGHT</div>
+              </div>
+              <div class="text-slate-500 text-[10.5px] pt-1">Fridays 08:00 – 10:00</div>
+            </div>
+
+            <!-- Box 3: Technical English Teachers -->
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">✈️ Technical English (LV121E)</div>
+              <div class="text-slate-900 font-semibold text-xs pt-0.5">
+                <div><span class="font-mono text-slate-500 text-[10.5px]">Group A:</span> Tracy NEILL</div>
+                <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Group B:</span> Ally HEWETT</div>
+              </div>
+              <div class="text-slate-500 text-[10.5px] pt-1">Wednesdays 13:15 – 15:15</div>
             </div>
           </div>
 
-          <p class="text-[11px] text-slate-500 leading-relaxed pt-0.5">
-            Have a question about your group, room allocation, or oral evaluation? Speak to your teacher at the end of class or send an email to the coordinator.
-          </p>
+          <!-- Classrooms & Contact Note -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-100 text-[11px] text-slate-500">
+            <div>
+              <span class="font-semibold text-slate-700">Classrooms:</span> Orly • Blagnac • Roissy • Le Bourget
+            </div>
+            <div>
+              Have a question? Speak to your teacher at the end of class or email the coordinator.
+            </div>
+          </div>
         </div>
       `;
     }

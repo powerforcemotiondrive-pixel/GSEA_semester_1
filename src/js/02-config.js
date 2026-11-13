@@ -124,8 +124,8 @@
       const desc = (isAas ? aasDescriptions[modNumber] : agDescriptions[modNumber]) || (isAas ? aasDescriptions[1] : agDescriptions[1]);
 
       const noticeboardPage = {
-        tag: "Promotion GSEA26A • Flight Deck",
-        title: "Flight Deck Noticeboard",
+        tag: "Semester 1 • Noticeboard",
+        title: "Student Noticeboard",
         description: "Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and course announcements.",
         isNoticeboard: true,
         sessionNum: 0,
