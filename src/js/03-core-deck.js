@@ -2510,33 +2510,31 @@
       // Current active session index (Card 3 = Session 3 Ground Operations for AT, Session 3 Overtourism for AG)
       const activeSessionIdx = 3; 
       const activeSessionName = isAg ? "Session 3 — Managing Mass Tourism" : "Session 3 — Airport Security & Safety Walkaround";
-      const trackBadge = isAg 
-        ? '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-900 border border-amber-300/80 shadow-2xs">🗣️ General English (LV101E) • Fridays 08:00–10:00</span>'
-        : '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-sky-100 text-sky-900 border border-sky-300/80 shadow-2xs">✈️ Technical English (LV121E) • Wednesdays 13:15–15:15</span>';
+
+      // Dynamic track-specific banner image, badge, and subtitle
+      const heroImage = isAg ? "images/ag_m1card4.jpg" : "images/aas_m1card4.jpg";
+      const heroBadge = isAg 
+        ? "🗣️ GENERAL ENGLISH (LV101E) • SEMESTER 1 NOTICEBOARD" 
+        : "✈️ TECHNICAL ENGLISH (LV121E) • SEMESTER 1 NOTICEBOARD";
+      const heroSubtitle = isAg
+        ? "Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and general culture announcements."
+        : "Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and technical course announcements.";
 
       noticeboardEl.innerHTML = `
-        <!-- 1. Arrival Banner (Approach 2: Full-Width 100% Opacity Apron Photo with Frosted Glass Card) -->
-        <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 min-h-[220px] sm:min-h-[250px] flex items-center p-3 sm:p-6 shadow-sm">
-          <!-- Full-width 100% opacity apron photograph stretching all the way across -->
-          <img src="images/turnaround_apron.jpg" alt="Airliner on apron stand" class="absolute inset-0 w-full h-full object-cover object-right sm:object-center select-none pointer-events-none" />
-
-          <!-- Floating frosted glass content capsule -->
-          <div class="relative z-10 w-full max-w-xl bg-white/90 sm:bg-white/88 backdrop-blur-md border border-white/70 rounded-xl p-4 sm:p-5 shadow-md space-y-2.5">
-            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-900/10 border border-slate-900/15 text-[11px] font-bold tracking-wide uppercase text-slate-800">
-              <span>🛫 Semester 1 Learning Portal</span>
-            </div>
-
-            <div class="space-y-1">
-              <h2 class="text-xl sm:text-2xl font-black tracking-tight text-slate-950 leading-tight">
+        <!-- 1. Arrival Banner (Dynamic Cinematic Track Hero Banner) -->
+        <div class="relative overflow-hidden rounded-2xl border border-slate-200/90 bg-slate-900 shadow-sm">
+          <div class="relative w-full h-48 sm:h-60 md:h-64">
+            <img src="${heroImage}" alt="Semester 1 Noticeboard" class="w-full h-full object-cover object-center select-none" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-6 space-y-1 sm:space-y-1.5">
+              <span class="text-[10.5px] sm:text-[11px] font-mono font-bold text-amber-300 uppercase tracking-wider">
+                ${heroBadge}
+              </span>
+              <h2 class="text-xl sm:text-2xl md:text-3xl font-black text-white leading-tight tracking-tight">
                 Student Noticeboard
               </h2>
-              <p class="text-xs sm:text-sm text-slate-700 font-normal leading-relaxed">
-                Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and course announcements.
+              <p class="text-xs sm:text-sm text-slate-200 font-normal leading-relaxed max-w-2xl">
+                ${heroSubtitle}
               </p>
-            </div>
-
-            <div class="pt-0.5">
-              ${trackBadge}
             </div>
           </div>
         </div>
