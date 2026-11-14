@@ -129,7 +129,11 @@ function getTemplateFileNames(sem, track, mod) {
     if (mod === 2) return ['06-templates-mod2.js'];
     if (mod === 3) return ['07-templates-mod3.js'];
   }
-  if (mod === 1) return ['05-templates-mod1.js'];
+  if (mod === 1) {
+    return track === 'ag' 
+      ? ['05b-templates-ag1.js', '05-templates-mod1.js'] 
+      : ['05a-templates-at1.js', '05-templates-mod1.js'];
+  }
   if (track === 'ag') {
     if (mod === 2) return ['06-templates-ag2.js'];
     if (mod === 3) return ['07-templates-ag3.js'];
@@ -137,7 +141,7 @@ function getTemplateFileNames(sem, track, mod) {
     if (mod === 2) return ['08-templates-aas2.js'];
     if (mod === 3) return ['08b-templates-aas3.js', '08-templates-aas3.js'];
   }
-  return ['05-templates-mod1.js'];
+  return ['05a-templates-at1.js', '05b-templates-ag1.js', '05-templates-mod1.js'];
 }
 
 let templateContent = '';

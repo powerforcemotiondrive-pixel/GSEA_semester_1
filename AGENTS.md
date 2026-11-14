@@ -28,10 +28,12 @@ Course administration (student lists, teacher assignments, weekly schedules, and
     - `src/js/02-config.js`: Course & program configuration
     - `src/js/03-core-deck.js`: Navigation, deck state, themes, and audio controllers
     - `src/js/04-templates-dispatcher.js`: Lesson content & activity instruction dispatcher
-    - `src/js/05-templates-mod1.js`: Module 1 lesson content (AAS & AG)
+    - `src/js/05a-templates-at1.js`: Module 1 Aeronautical/Technical English lesson content (AT Sessions 1–4)
+    - `src/js/05b-templates-ag1.js`: Module 1 General English lesson content (AG Sessions 1–4)
     - `src/js/06-templates-ag2.js`: Module 2 General English lesson content
     - `src/js/07-templates-ag3.js`: Module 3 General English lesson content
     - `src/js/08-templates-aas2.js`: Module 2 Aeronautical English lesson content
+    - `src/js/08b-templates-aas3.js`: Module 3 Aeronautical English lesson content
     - `src/js/09-templates-materials-ddrs.js`: Vocabulary revision, study materials, TOEIC, and DDRS tabs
     - `src/js/10-fe-guidelines.js`: Formative evaluation guidelines, rubrics, and criteria
     - `src/js/11-admin-hub.js`: Promotion rosters, timetables, rota schedules, and immersion hub
