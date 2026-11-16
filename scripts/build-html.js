@@ -7,6 +7,45 @@ const rootDir = path.resolve(__dirname, '..');
 const templatePath = path.join(rootDir, 'src', 'template.html');
 const jsDir = path.join(rootDir, 'src', 'js');
 const outputPath = path.join(rootDir, 'index.html');
+const adminPath = path.join(rootDir, 'admin.html');
+
+/**
+ * Pre-flight automated HTML attribute syntax validator:
+ * Validates that every HTML tag attribute opened with =" has a matching closing " before >.
+ * Strips dynamic ${...} interpolations to expose tag structure inside template literals.
+ */
+function validateHtmlAttributes(filePath) {
+  if (!fs.existsSync(filePath)) return true;
+  const content = fs.readFileSync(filePath, 'utf8');
+  const lines = content.split('\n');
+  const errors = [];
+
+  for (let idx = 0; idx < lines.length; idx++) {
+    const line = lines[idx];
+    // Strip template expressions ${...} to isolate HTML tag structure
+    const stripped = line.replace(/\$\{[^}]+\}/g, 'EXPR');
+    // Match any tag where an attribute quote is opened with =" but unclosed before >
+    const matches = stripped.match(/<[a-zA-Z0-9\-]+[^>]*\b[a-zA-Z0-9\-]+="[^"<>]*>/g);
+    if (matches) {
+      matches.forEach(tag => {
+        errors.push({ line: idx + 1, snippet: tag.trim() });
+      });
+    }
+  }
+
+  if (errors.length > 0) {
+    const relPath = path.relative(rootDir, filePath);
+    console.error(`\n❌ FATAL HTML SYNTAX ERROR detected in [${relPath}]:`);
+    errors.forEach(err => {
+      console.error(`   Line ${err.line}: Unclosed attribute quote before '>'`);
+      console.error(`   Snippet: ${err.snippet}`);
+    });
+    console.error(`🛑 BUILD ABORTED: index.html was NOT updated to protect production stability.`);
+    console.error(`   Please fix the unclosed HTML attribute quote in ${relPath} and retry.\n`);
+    return false;
+  }
+  return true;
+}
 
 function buildHtml() {
   console.log('🏗️  Compiling index.html from src/ modules...');
@@ -50,6 +89,16 @@ function buildHtml() {
       console.error(`   Please fix the syntax error in src/js/${file} and retry.\n`);
       process.exit(1);
     }
+
+    // HTML attribute syntax validation inside JS modules
+    if (!validateHtmlAttributes(filePath)) {
+      process.exit(1);
+    }
+  }
+
+  // Pre-flight automated HTML validation on template and admin portal
+  if (!validateHtmlAttributes(templatePath) || !validateHtmlAttributes(adminPath)) {
+    process.exit(1);
   }
 
   let combinedJs = '';
