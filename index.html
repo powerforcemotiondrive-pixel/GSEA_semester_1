@@ -4392,16 +4392,16 @@
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
                   <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-800 border border-sky-200">✈️ Technical English (AT)</span>
-                  <span class="text-[10px] font-mono text-slate-400 font-semibold">BBC News • 4 min read</span>
+                  <span class="text-[10px] font-mono text-slate-400 font-semibold">BBC News • 3 min read</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                  "How Major International Hubs Manage Severe Winter Operations"
+                  "Man with Venomous Snakes and Lizards Stopped at German Airport"
                 </h4>
                 <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
-                  A short, accessible B1/B2 article explaining how airports coordinate de-icing fluids, runway friction testing, and slot management during severe winter storms.
+                  Customs officers at Cologne Bonn Airport intercept a passenger attempting to smuggle dozens of venomous vipers and protected reptiles concealed inside checked luggage.
                 </p>
               </div>
-              <button type="button" onclick="openWinterOpsNoticeboardArticle()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
+              <button type="button" onclick="openCustomsNoticeboardArticle()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
                 <span>Read Technical Article</span>
                 <span class="font-bold text-sm leading-none">⇥</span>
               </button>
@@ -4412,13 +4412,13 @@
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
                   <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200">🗣️ General Culture &amp; Film (AG)</span>
-                  <span class="text-[10px] font-mono text-slate-400 font-semibold">Cinema Pick • Comedy-Drama</span>
+                  <span class="text-[10px] font-mono text-slate-400 font-semibold">Cinema Pick • Documentary</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                  "The Terminal" (2004, Steven Spielberg)
+                  "Tin Castle" (2026, Alexander Murphy)
                 </h4>
                 <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
-                  Starring Tom Hanks as Viktor Navorski, who becomes stranded inside New York JFK airport. Excellent for conversational travel English, airport signage, and natural spoken dialogue.
+                  An intimate documentary following an Irish family living along a rural roadside trailer, exploring heritage, identity, community resilience, and modern social pressures.
                 </p>
               </div>
               <button type="button" onclick="openFilmDetailsModal()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
@@ -4482,34 +4482,36 @@
       `;
     }
 
-    function openWinterOpsNoticeboardArticle() {
+    function openCustomsNoticeboardArticle() {
       const article = {
-        title: "How Major International Hubs Manage Severe Winter Operations",
-        sourceTag: "BBC News • Aviation Operations",
-        topic: "Aviation Safety",
-        readTime: "4 min read",
-        url: "https://www.bbc.com/news/topics/c340q430292t",
-        snippet: "A clear overview of how international hub airports prepare for sub-zero temperatures, freezing fog, and heavy snowfall.",
+        title: "Man with Venomous Snakes and Lizards Stopped at German Airport",
+        sourceTag: "BBC News • Airport Security & Customs",
+        topic: "Aviation Security & Border Control",
+        readTime: "3 min read",
+        url: "https://www.bbc.com/news/articles/cke8r2lpm992o",
+        snippet: "Customs officers at Cologne Bonn Airport intercept a passenger attempting to smuggle dozens of venomous vipers and protected reptiles concealed inside checked baggage.",
         content: [
-          "Every winter, major international airports in Europe and North America face extreme weather that threatens to bring schedules to a standstill. Managing severe winter conditions requires rapid coordination between air traffic control, ground handlers, and airline flight dispatchers.",
-          "The first line of defense is runway clearance. Airports operate specialized convoys of snow plows, rotary sweepers, and chemical spreaders that can clear a 3,000-meter runway in under 15 minutes. High-tech friction testers continuously measure tire grip to ensure landing aircraft can stop safely without runway excursions.",
-          "Simultaneously, aircraft de-icing is essential for flight safety. Before departure, aircraft taxi to dedicated de-icing pads where robotic or truck-mounted booms spray hot glycol fluid to melt ice on the wings and control surfaces. An anti-icing layer is then applied to prevent new ice from forming during taxiing.",
-          "Ground delays are often unavoidable during severe weather because aircraft separation on approach must be increased to preserve safety margins. However, proactive communication and accurate slot management ensure passenger safety remains the absolute priority."
+          "German customs officials at Cologne Bonn Airport (CGN) have intercepted a passenger arriving on an international flight who was found carrying dozens of live, venomous reptiles concealed inside his checked luggage.",
+          "According to federal customs authorities, the passenger—a Mexican firefighter—arrived via a connecting flight and aroused suspicion during routine passenger profiling after appearing visibly nervous while approaching the exit gates of the international arrivals hall.",
+          "Customs officers escorted the traveler to an inspection station and passed his baggage through an X-ray scanner, revealing suspicious organic silhouettes. A physical manual search of the bags uncovered cloth bags, plastic containers, and socks containing venomous vipers, pit vipers, and endangered spiny-tailed iguanas.",
+          "Handling biological contraband and live venomous species presents extreme operational risks for airport customs staff and baggage handlers. The seized animals were immediately placed under quarantine with regional veterinary specialists. The passenger now faces criminal proceedings under the Federal Nature Conservation Act and international CITES wildlife protection regulations.",
+          "For aviation students, this case study underscores how airport security operates in tandem with customs interdiction. Beyond mechanical threats and dangerous goods, baggage CT screening and trained behavioral observation play a pivotal role in maintaining safe, lawful international border operations."
         ],
         takeaways: [
-          "Runway friction testing and swift snow clearing are essential to keep runways operational.",
-          "Aircraft de-icing uses hot glycol fluid to remove snow and ice before departure.",
-          "Safety always takes priority over on-time performance during adverse weather."
+          "Baggage X-ray and CT screening systems detect suspicious organic anomalies inside checked luggage before bags reach the baggage reclaim belt.",
+          "Customs interdiction protects biosecurity and wildlife conservation (CITES), while preventing biological hazards from endangering ramp and baggage handlers.",
+          "Behavioral observation and passenger profiling at border exit gates complement automated technological checkpoint screening."
         ],
         vocab: [
-          { word: "de-icing fluid", ipa: "/diːˈaɪ.sɪŋ ˈfluː.ɪd/", def: "A heated chemical mixture (usually glycol) sprayed onto aircraft surfaces to melt ice and snow." },
-          { word: "friction tester", ipa: "/ˈfrɪk.ʃən ˈtes.tər/", def: "A specialized ground vehicle that measures tire grip on slippery or snow-covered runways." },
-          { word: "snow plow", ipa: "/snəʊ plaʊ/", def: "A heavy vehicle equipped with a wide blade used to clear snow from runways and taxiways." },
-          { word: "slot delay", ipa: "/slɒt dɪˈleɪ/", def: "A scheduled departure or arrival time postponed due to airport congestion or bad weather." }
+          { word: "customs interdiction", ipa: "/ˈkʌs.təmz ˌɪn.təˈdɪk.ʃən/", def: "Stopping, inspecting, and confiscating illegal goods or prohibited biological specimens at international borders." },
+          { word: "contraband", ipa: "/ˈkɒn.trə.bænd/", def: "Goods, species, or substances that have been illegally imported, exported, or transported across borders without declaration." },
+          { word: "baggage screening", ipa: "/ˈbæɡ.ɪdʒ ˈskriː.nɪŋ/", def: "Automated radiographic (X-ray/CT) inspection of hold luggage to detect dangerous goods, weapons, or contraband." },
+          { word: "CITES convention", ipa: "/ˈsaɪ.tiːz kənˈven.ʃən/", def: "The international treaty regulating cross-border transport and trade of endangered flora and fauna." }
         ]
       };
       window.openCustomArticleReader(article);
     }
+    window.openWinterOpsNoticeboardArticle = openCustomsNoticeboardArticle;
 
     function openFilmDetailsModal() {
       let modal = document.getElementById("gsea-film-modal");
@@ -4530,7 +4532,7 @@
               <span class="text-xl">🎬</span>
               <div>
                 <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-400">General Culture &amp; Cinema Pick (AG)</span>
-                <h3 class="text-base sm:text-lg font-black text-white">The Terminal (2004)</h3>
+                <h3 class="text-base sm:text-lg font-black text-white">Tin Castle (2026)</h3>
               </div>
             </div>
             <button type="button" onclick="closeFilmDetailsModal()" class="w-7 h-7 rounded-lg bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white flex items-center justify-center font-bold text-sm cursor-pointer transition-all" title="Close">&times;</button>
@@ -4538,38 +4540,38 @@
 
           <div class="p-4 sm:p-6 space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed max-h-[70vh] overflow-y-auto">
             <div class="grid grid-cols-2 gap-2 text-xs bg-slate-50 p-3 rounded-xl border border-slate-200">
-              <div><span class="font-bold text-slate-900">Director:</span> Steven Spielberg</div>
-              <div><span class="font-bold text-slate-900">Genre:</span> Comedy / Drama</div>
-              <div><span class="font-bold text-slate-900">Cast:</span> Tom Hanks, Catherine Zeta-Jones</div>
-              <div><span class="font-bold text-slate-900">Location:</span> New York JFK Airport</div>
+              <div><span class="font-bold text-slate-900">Director:</span> Alexander Murphy</div>
+              <div><span class="font-bold text-slate-900">Genre:</span> Documentary / Society</div>
+              <div><span class="font-bold text-slate-900">Focus:</span> The O'Reilly Family</div>
+              <div><span class="font-bold text-slate-900">Country:</span> Ireland</div>
             </div>
 
             <div>
               <h4 class="font-bold text-slate-900 mb-1">Story Synopsis:</h4>
               <p class="text-slate-600">
-                Viktor Navorski arrives at New York JFK from Eastern Europe. While he was in flight, a sudden military revolution broke out in his homeland, leaving his government unrecognized and his passport invalid. Unable to step onto US soil or return home, Viktor is stranded inside the international transit lounge.
+                <em>Tin Castle</em> offers an intimate, compassionate portrait of Pa', Lisa, and their ten children as they live in a rundown trailer along a forgotten rural road. The documentary explores their fight to preserve their traditional way of life and distinct cultural heritage against the persistent threat of eviction and modern institutional pressures.
               </p>
             </div>
 
             <div class="p-3.5 bg-amber-50/70 border border-amber-200 rounded-xl space-y-1.5">
               <span class="text-[10.5px] font-bold uppercase tracking-wider text-amber-900">🗣️ Why This Film Builds Spoken Fluency:</span>
               <p class="text-xs text-amber-950 leading-relaxed">
-                As Viktor gradually learns English to survive in the terminal, the film showcases authentic airport dialogues, everyday transactional language (ordering food, asking for directions, airport jobs), and humorous cross-cultural communication.
+                Featuring authentic regional accents, unscripted natural conversation, and real-life storytelling, the documentary challenges learners to understand colloquial rhythms, emotional nuance, and socioeconomic themes beyond mainstream media tropes.
               </p>
             </div>
 
             <div class="p-3.5 bg-slate-900 text-white rounded-xl space-y-2">
               <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">💬 Discussion Questions for Class:</span>
               <ul class="space-y-1.5 text-xs text-slate-300">
-                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>If you were trapped in an international airport terminal for a week, how would you manage food and sleep?</span></li>
-                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>What airport workers does Viktor befriend, and what are their responsibilities?</span></li>
-                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>How does Viktor's English improve as the story progresses?</span></li>
+                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>How does the documentary portray the balance between preserving nomadic heritage and adapting to modern society?</span></li>
+                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>What language and storytelling expressions stood out in the family's daily interactions?</span></li>
+                <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>How do social perceptions of roadside communities influence policy, education, and housing decisions?</span></li>
               </ul>
             </div>
           </div>
 
           <div class="p-3.5 sm:p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between">
-            <a href="https://www.imdb.com/title/tt0362227/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors">
+            <a href="https://www.imdb.com/title/tt42053546/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-900 transition-colors">
               <span>View on IMDb ↗</span>
             </a>
             <button type="button" onclick="closeFilmDetailsModal()" class="px-4 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs cursor-pointer transition-all">Close</button>
