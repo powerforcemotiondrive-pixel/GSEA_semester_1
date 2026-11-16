@@ -239,6 +239,48 @@ const summaryData = {
       category: "Airline Regulations",
       frequency: "50% of cohort",
       definition: "When an airline sells more tickets than available seats in anticipation of no-shows, risking involuntary denied boarding and statutory compensation obligations."
+    },
+    {
+      term: "Ground Support Equipment (GSE)",
+      track: "at",
+      category: "Ramp Operations",
+      frequency: "65% of cohort",
+      definition: "Specialized ground vehicle fleet servicing aircraft at the stand: pushback tugs, belt loaders, catering hi-lift trucks, lavatory service units, potable water trucks, and refueler bowsers."
+    },
+    {
+      term: "Turnaround Time (TAT) & Chocks On/Off",
+      track: "at",
+      category: "Ground Operations",
+      frequency: "60% of cohort",
+      definition: "Turnaround Time (TAT) = total duration an aircraft remains at the gate between arrival (chocks on) and departure (chocks off) for unloading, servicing, refueling, and boarding."
+    },
+    {
+      term: "De-icing Rig & Glycol Fluid",
+      track: "at",
+      category: "Cold Weather Operations",
+      frequency: "50% of cohort",
+      definition: "Specialized mobile boom rig spraying heated glycol fluid to remove snow/frost and prevent critical aerofoil icing before departure."
+    },
+    {
+      term: "Overtourism & Carrying Capacity",
+      track: "ag",
+      category: "Destination Management",
+      frequency: "65% of cohort",
+      definition: "When visitor numbers exceed an ecosystem's or historic site's physical, ecological, or social carrying capacity, causing environmental damage and resident backlash."
+    },
+    {
+      term: "Visitor Dispersal & Tourist Levies",
+      track: "ag",
+      category: "Policy & Sustainability",
+      frequency: "55% of cohort",
+      definition: "Strategic destination management: de-marketing over-visited hotspots, redirecting visitor flows to lesser-known regions, and charging targeted day-tripper entry taxes (e.g. Venice)."
+    },
+    {
+      term: "Modal Shift & Decarbonization",
+      track: "ag",
+      category: "Environmental Economics",
+      frequency: "50% of cohort",
+      definition: "Encouraging passengers to switch from carbon-intensive short-haul flights to electrified high-speed rail networks, decoupling economic tourism growth from environmental impact."
     }
   ],
   grammarTrapsCaught: [
@@ -277,49 +319,89 @@ const summaryData = {
       track: "ag",
       rule: "When reporting past dialogue, tenses shift back (present -> past, past -> past perfect; will -> would), and time adverbs shift ('today' -> 'that day', 'yesterday' -> 'the day before', 'tomorrow' -> 'the following day').",
       correctExample: "✅ \"He said he was running on empty that day and would take the train the following morning.\""
+    },
+    {
+      title: "⚙️ Causative Verbs: Make vs. Have vs. Get vs. Require",
+      track: "ag",
+      rule: "When causing or assigning an action: 'make + person + bare infinitive' (compulsory requirement), 'have + person + bare infinitive' (standard task assignment), 'get + person + TO infinitive' (persuasion), and 'require + person + TO infinitive' (official policy).",
+      correctExample: "✅ \"The port authority made cruise lines cap passenger numbers, and got local operators to stagger their excursions.\""
+    },
+    {
+      title: "⏱️ Past Simple vs. Present Perfect in Operational Reports",
+      track: "at",
+      rule: "Use Past Simple for completed past events at a specific time ('the flight landed at 14:15'); use Present Perfect when the completed event has a direct operational result on current apron status ('the aircraft has landed, so the pushback tug can connect').",
+      correctExample: "✅ \"The refueler has finished servicing the aircraft, so the ground crew can remove the chocks.\""
     }
   ],
   cohortReflections: {
     strengths: [
-      "Rapid grasp of the crucial operational distinction between Safety (unintentional hazards) and Security (intentional threats).",
-      "Fast adoption of modern aerodrome and terminal infrastructure terminology (Concourse, Jet Bridge, Apron, Stands, GPU, Dwell Time).",
-      "Active use of travel collocations, idioms, and reported speech backshifting in communicative peer simulations."
+      "Cumulative Operational Vocabulary: Fast command of aerodrome zones, ground support equipment (GSE), and turnaround sequencing (TAT, chocks on/off).",
+      "Policy & Scenario Debating: Confident presentation of sustainable tourism solutions, visitor caps, and passenger rights in structured pair discussions.",
+      "Grammatical Precision: Rapid adoption of reported speech backshifting and causative sentence structures."
     ],
     growthAreas: [
-      "Spatial Preposition Accuracy: Mastering 'at' (nodes), 'in' (spaces), and 'on' (pavement surfaces) during real-time spoken descriptions.",
-      "Spoken Fluency & Hesitation: Reducing pauses and sentence-building delays when searching for specialized English nouns.",
-      "Pronunciation Phonetics: Drilling vowel sounds and word stress in tricky multi-syllable terms ('itinerary', 'alternate', 'throughout')."
+      "Spoken Fluency Under Time Pressure: Reducing hesitation and sentence-building delays during fast-paced pair simulations and debates.",
+      "Spatial Preposition Automaticity: Consolidating 'at' (nodes), 'in' (enclosed spaces), and 'on' (apron/taxiways/runways) without hesitation.",
+      "Phonetics & Word Stress: Drilling multi-syllable terms ('itinerary', 'alternate', 'carrying capacity', 'de-icing') to eliminate French false-stress patterns."
     ],
-    feAdvice: "Students strongly emphasize that knowing aerodrome zones (airside, landside, concourse, apron, holding points) and using precise prepositions ('on the apron', 'at the gate', 'in the concourse') gives immediate authority and fluency during the 30-minute Formative Evaluation."
+    feAdvice: "Students unanimously report that knowing exact technical equipment (pushback tug, belt loader, GPU) and spatial zones (airside, concourse, apron, stands), paired with linking expressions for polite disagreement ('while I see your point, we must consider...'), gives immediate fluency and authority during the 30-minute Formative Evaluation."
   },
   verbatimQuotes: [
     {
       track: "at",
-      session: "Mod 1 • Session 2",
-      topic: "Safety vs. Security & Prepositions",
-      quote: "We talked mostly about security and safety and I was surprised to discover the difference with the French words since 'Sécurité' doesn't mean 'Security' but 'Safety'. Today we also talked about prepositions: 'in' when it's in an enclosed space, 'at' when it's a specific location, and 'on' when it's on a surface.",
-      takeaway: "Mastering the Safety/Security distinction and spatial prepositions prevents operational ambiguity."
+      session: "Mod 1 • Session 1",
+      topic: "Infrastructure & Presentation Readiness",
+      quote: "Knowing the different geographical parts of an airport, as well as the jobs, will be very important in the airport presentation. The oral presentation won't be possible without being able to name the different parts.",
+      takeaway: "Mastering aerodrome spatial vocabulary is non-negotiable for FE1."
+    },
+    {
+      track: "ag",
+      session: "Mod 1 • Session 1",
+      topic: "Spoken Fluency & Hesitation",
+      quote: "My main problem is fluency because I am always looking for a word when talking to someone. I also need some time to build my sentences, so I think that I have to talk as much as possible to improve on these points.",
+      takeaway: "Regular communicative pairwork reduces hesitation and builds sentence speed."
     },
     {
       track: "at",
       session: "Mod 1 • Session 2",
-      topic: "Aerodrome Zones & Presentation Readiness",
-      quote: "During our airport presentation, this vocabulary will help me explain where I am at any point: from the concourse to the gates, the apron with the different runways and taxiways... all while using the correct preposition. I'm sure that learning all this vocab will go a long way concerning our fluency.",
-      takeaway: "Mental mapping of the airport infrastructure drives fluent spoken delivery."
+      topic: "Safety vs. Security & Spatial Prepositions",
+      quote: "We talked mostly about security and safety and I was surprised to discover the difference with the French words since 'Sécurité' doesn't mean 'Security' but 'Safety'. Today we also talked about prepositions: 'in' when it's in an enclosed space, 'at' when it's a specific location, and 'on' when it's on a surface.",
+      takeaway: "Mastering the Safety/Security distinction and spatial prepositions prevents operational ambiguity."
     },
     {
       track: "ag",
-      session: "Mod 1 • Session 1",
-      topic: "Tense Learning & Active Quizzing",
-      quote: "Testing myself with the TOEIC questions in here as well as on GlobalExam is a funnier way to incorporate the information in my brain than the old way of learning by heart with a copybook. Discussion skills worked in pairs surely are unavoidable to make a great formative evaluation.",
-      takeaway: "Interactive daily quizzing and peer dialogue outperform rote memorization."
+      session: "Mod 1 • Session 2",
+      topic: "Customer Scenarios & Reported Speech",
+      quote: "Communicative skills, arguments and vocabulary explored in this session will all help me to improve my AG formative evaluation by giving me tools to speak about stressful passenger situations and structure my thoughts with accurate reported speech.",
+      takeaway: "Practicing passenger mediation scenarios prepares directly for FE1 interactive roleplays."
+    },
+    {
+      track: "at",
+      session: "Mod 1 • Session 3",
+      topic: "Turnaround Operations & Ground Support Equipment",
+      quote: "Learning technical vocabulary like pushback tugs, belt loaders, and glycol de-icing rigs, and recreating turnaround incident scenarios puts us in a realistic operational situation and allows us to memorize terms much more easily than traditional lists.",
+      takeaway: "Ground support equipment and turnaround sequencing turn abstract terms into fluent spoken descriptions."
+    },
+    {
+      track: "at",
+      session: "Mod 1 • Session 3",
+      topic: "Tense Selection in Technical Incident Reporting",
+      quote: "In this lesson we focused on the difference between past simple and present perfect: past simple when an action happened at a specific completed time, and present perfect when the event has a direct operational result on the present moment ('the plane has landed, so passengers can disembark').",
+      takeaway: "Precise tense distinction ensures clear cause-and-effect incident reporting."
     },
     {
       track: "ag",
-      session: "Mod 1 • Session 1",
-      topic: "Spoken Fluency & Word Retrieval",
-      quote: "My main problem is fluency because I am always looking for a word when talking to someone. I also need some time to build my sentences, so I think that I have to talk as much as possible to improve on these points.",
-      takeaway: "Regular communicative pairwork reduces hesitation and builds sentence speed."
+      session: "Mod 1 • Session 3",
+      topic: "Debating Overtourism & Fragile Sites",
+      quote: "Today's session was a good training for the formative evaluation due to the debates we held on overtourism, tourist taxes, and visitor dispersal. It was a great occasion to use well-built sentences, defend a position, and practice polite disagreement.",
+      takeaway: "Policy debates build fluency, active listening, and persuasive speaking under time pressure."
+    },
+    {
+      track: "ag",
+      session: "Mod 1 • Session 3",
+      topic: "Paraphrasing Under Time Pressure",
+      quote: "The overtourism and crisis-management activities were particularly useful because they required us to consider different perspectives and suggest realistic solutions. I want to improve my paraphrasing speed under time pressure so I don't pause when searching for expressions.",
+      takeaway: "Fast paraphrasing and structured linking expressions prevent mid-sentence hesitation."
     }
   ]
 };
