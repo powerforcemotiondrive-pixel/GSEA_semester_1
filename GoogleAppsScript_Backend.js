@@ -149,7 +149,11 @@ function verifyStudentPin(ss, studentName, studentPin) {
 
     if (sName.toLowerCase() === student.toLowerCase()) {
       found = true;
-      if (sPin === pin) {
+      // If PIN is left blank initially, auto-record student's chosen 4-digit PIN on first access
+      if (!sPin) {
+        studentsSheet.getRange(i + 1, 2).setValue("'" + pin);
+        authorized = true;
+      } else if (sPin === pin) {
         authorized = true;
       }
       break;
