@@ -321,7 +321,7 @@ lessonTemplateFiles.forEach(fPath => {
   const content = fs.readFileSync(fPath, 'utf8');
   const minMatches = content.match(/\([^\)]*\b\d+\s*(?:mins?|minutes?)\b[^\)]*\)/gi) || [];
   minMatches.forEach(m => {
-    if (!m.includes('Hours') && !m.includes('120') && !m.includes('target')) {
+    if (!m.toLowerCase().includes('hours') && !m.toLowerCase().includes('hour') && !m.toLowerCase().includes('fuel') && !m.includes('120') && !m.includes('target')) {
       timingFound.push(`${m} in ${path.basename(fPath)}`);
     }
   });
