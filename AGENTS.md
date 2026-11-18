@@ -222,6 +222,22 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **100% Operational Interactive Components**: Every on-screen interactive control—tab switchers (`window.switchExhibitTab`, `window.switchDossierTab`, `window.switchCapTab`), answer reveals (`window.toggleDiagnosticAnswer`, `window.toggle*Answer`), audio pronunciation helpers (`window.speakWord`), notes clearers (`window.clearLessonNotes`), and PDF print handlers (`window.printLessonContent`)—must be fully implemented with matching DOM element IDs and CSS selectors.
 - **Strict Tab Switcher ID & Class Parity**: All tab switcher pane containers must possess their corresponding discriminator class (`.exhibit-pane`, `.dossier-pane`, `.cap-pane`) and exact matching IDs (`exhibit-pane-[id]`, `dossier-pane-[id]`, `cap-pane-[id]`). Automated audits verify that every interactive button has a live, matching target in the rendered DOM.
 
+### X. Global Code Bug Hunter (`Bug Check 1 / 2 / 3` — Tri-Project Invariant)
+- **Automated Bug Engine (`scripts/bug-check.js`)**: Executes an automated 8-point deep static and simulated runtime audit across the target semester (or all 3 semesters):
+  1. *JS Syntax & AST Validation*: Verifies that 100% of `.js` files in `src/js/`, `data/`, and `scripts/` parse with zero syntax errors.
+  2. *Zero Undefined DOM Scan*: Scans rendered HTML outside script tags to guarantee zero literal `undefined`, `NaN`, `[object Object]`, or unreplaced `${...}` tags.
+  3. *Onclick & DOM ID Integrity*: Validates all inline `onclick` handler signatures and checks `document.getElementById` targets.
+  4. *SCORM Manifest & Asset Integrity*: Confirms that every asset declared in `imsmanifest.xml` physically exists on disk, and verifies critical master photography assets (`enac_logo_white.png`, `fe_progress_check.jpg`, `semester_objectives.jpg`).
+  5. *SCORM 1.2 Suspend_Data Bounds*: Tests simulated maximum student progress state against the strict 4,096-character SCORM 1.2 boundary.
+  6. *Dual-Admin & Title Parity*: Enforces character-for-character parity between `src/js/11-admin-hub.js` and `admin.html`.
+  7. *Jargon, Timings & Privacy Invariants*: Scans for forbidden academic jargon (`Rule 1.I`), the term `"faculty"`, rigid classroom minute breakdowns (`Rule 1.Q`), and guarantees student PII remains strictly git-ignored (`Rule 1.H`).
+  8. *LocalStorage Auto-Save Handlers*: Validates student note auto-saving bindings (`saveLessonNote`, `getLessonNote`, `clearLessonNotes`).
+- **Trigger Shorthands**:
+  - `Bug Check 1` (or `npm run bug1`): Scans `GSEA_semester_1`.
+  - `Bug Check 2` (or `npm run bug2`): Scans `GSEA_semester_2`.
+  - `Bug Check 3` (or `npm run bug3`): Scans `GSEA_semester_3`.
+  - `Bug Check` (or `npm run bug:check`): Scans the active repository.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)

@@ -20,6 +20,7 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 | **`Media Update`** | **Weekly Media & Film Strip Update**<br>Attach or paste CSV with 5 links + statement. | • Updates Teachers Portal noticeboard & BBC articles<br>• Updates General Culture & Cinema (3 IMDb films)<br>• Rebuilds SCORM + ISO + DMG packages & commits |
 | **`Commit`**<br>*(or `Commit changes`)* | **Single-Step Remote Sync** | Atomically runs `git commit` AND `git push origin main` together, updating GitHub and GitHub Pages live. |
 | **`Audit S1/2/3 AT/AG/AP/AAS M1/2/3 Ss 1/2/3`**<br>*(e.g. `Audit S1 AG M1 Ss 3`, `Audit Semester 1 Mod 1 AG Ss 3`)* | **Automated Session Audit &amp; A4 PDF Worksheet Setup** | • 8-point automated audit of session quality<br>• Thematic relevance &amp; subject drift scan<br>• 2-Hour classroom sufficiency gauge<br>• Zero academic jargon &amp; zero timings scan<br>• Verifies &amp; sets up exact 7-page A4 PDF worksheet |
+| **`Bug Check 1`** / **`Bug Check 2`** / **`Bug Check 3`**<br>*(or `Bug Check`)* | **Global Code Bug & Invariant Hunter** | • Comprehensive 8-point automated code audit<br>• AST syntax validation of all JS source files<br>• Zero undefined, NaN, or unreplaced tags in DOM<br>• Validates all inline onclick handlers &amp; element IDs<br>• Verifies SCORM assets on disk vs imsmanifest.xml<br>• Tests SCORM 1.2 4,096-char suspend_data boundary<br>• Dual-admin character parity &amp; title parity check<br>• Prohibited academic jargon &amp; faculty scan (Rule 1.I)<br>• Classroom timings (Rule 1.Q) &amp; student privacy (Rule 1.H)<br>• Verifies localStorage auto-saving notes handlers |
 
 ---
 
@@ -124,6 +125,7 @@ If you prefer running commands directly in the terminal:
 | `npm run package:esoleau` | Bundles clean human-editable source tree for INPI *date certaine* timestamping on [inpi.fr](https://www.inpi.fr). |
 | `npm run promo:update` | Programmatic cohort updater parsing `PROMO_SETUP.private.md`. |
 | `npm run backup1` / `2` / `3` | Triggers the dated project backup script. |
+| `npm run bug:check` (or `npm run bug1` / `bug2` / `bug3`) | Runs the 8-point global bug check across JS syntax, DOM renders, onclicks, SCORM bounds, assets, and invariants. |
 
 ---
 

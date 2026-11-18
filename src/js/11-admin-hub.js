@@ -3704,7 +3704,7 @@
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
           <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
-          <span class="leading-relaxed">Contrastive discourse markers (whereas safety encompasses mechanical reliability, security addresses criminal intent), passive modal constructions.</span>
+          <span class="leading-relaxed">Connecting words for contrast (whereas safety encompasses mechanical reliability, security addresses criminal intent), passive modal constructions.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
           <span class="font-bold block text-[10px] uppercase text-amber-800 mb-0.5">🎙️ Pronunciation &amp; Standards</span>
