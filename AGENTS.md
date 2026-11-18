@@ -206,7 +206,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ### U. GSEA / TSEEAC Professional Identity & Non-Engineer Invariant (Tri-Project Invariant)
 - **Strict Prohibition of the Term 'Engineer' for GSEA / TSEEAC**: GSEA students are preparing for careers as civil aviation technical officers (*Technicien Supérieur des Études et de l'Exploitation de l'Aviation Civile* • TSEEAC), aerodrome inspectors, safety officers, and operational specialists. Never refer to GSEA / TSEEAC students, graduates, cohorts, or role-play participants as "engineers" (which is the separate IENAC track).
-- **Approved Professional Designations**: Always use accurate civil aviation operational terminology: `"civil aviation specialists"`, `"technical officers"`, `"aerodrome operations officers"`, `"aviation safety specialists"`, `"safety investigators"`, `"aviation professionals"`, or `"students"`.
+- **Approved Professional Designations**: Always use accurate civil aviation operational terminology: `"as future GSEA graduates / TSEEAC professionals"`, `"civil aviation specialists"`, `"technical officers"`, `"aerodrome operations officers"`, `"aviation safety specialists"`, `"safety investigators"`, `"aviation professionals"`, or `"students"`. Never use `"as future graduates in aerodrome engineering"`, `"engineers"`, or `"future engineering career"`.
 - **Engineering Works vs. People**: Technical airfield infrastructure (e.g., civil engineering works, concrete repairs, drainage culverts, runway resurfacing) may describe physical works or external contractors, but all aerodrome personnel, inspectors, and students must strictly use the approved non-engineer designations.
 
 ---
