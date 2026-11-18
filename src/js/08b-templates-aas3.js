@@ -78,8 +78,8 @@
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/aas_m3card1.jpg'}" alt="${hero.title || 'Aviation Health & Human Factors'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m3card1.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/aas_m3card1.jpg'}" alt="${hero.title || 'Aviation Health & Human Factors'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/aas_m3card1.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-red-300 uppercase tracking-wider">Aeronautical Physiology &amp; Operational Safety</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Health, Medical Emergencies &amp; Human Factors'}</h3>
@@ -451,8 +451,8 @@
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/aas_m3card2.jpg'}" alt="${hero.title || 'Meteorology & Severe Weather'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m3card2.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/aas_m3card2.jpg'}" alt="${hero.title || 'Meteorology & Severe Weather'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/aas_m3card2.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-sky-300 uppercase tracking-wider">Atmospheric Dynamics &amp; Flight Hazards</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Meteorology &amp; Severe Weather Impacts'}</h3>
@@ -779,8 +779,8 @@
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/aas_m3card3.jpg'}" alt="${hero.title || 'Safety vs Security'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m3card3.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/aas_m3card3.jpg'}" alt="${hero.title || 'Safety vs Security'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/aas_m3card3.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-emerald-300 uppercase tracking-wider">Annex 19 Safety Management &bull; Annex 17 Security</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Aviation Safety vs. Security'}</h3>
@@ -1091,8 +1091,8 @@
 
           <!-- Hero Banner & Context -->
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
-            <div class="relative">
-              <img src="${hero.image || 'images/aas_m3card4.jpg'}" alt="${hero.title || 'Aviation Grand Prix'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.src='images/aas_m3card4.jpg'">
+            <div class="relative bg-slate-900">
+              <img src="${hero.image || 'images/aas_m3card4.jpg'}" alt="${hero.title || 'Aviation Grand Prix'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/aas_m3card4.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
                 <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Semester 1 Grand Prix Tournament &bull; 3-Team Battle</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Global Semester Review &amp; 3-Team Grand Prix'}</h3>
