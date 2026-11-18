@@ -67,6 +67,12 @@
           return;
         }
 
+        const s1OverviewEl = document.getElementById('s1-overview-guide-modal');
+        if (e.key === 'Escape' && s1OverviewEl && !s1OverviewEl.classList.contains('hidden')) {
+          if (window.closeSemester1OverviewModal) window.closeSemester1OverviewModal();
+          return;
+        }
+
         const articleModalEl = document.getElementById('gsea-article-reader-modal');
         if (e.key === 'Escape' && articleModalEl && !articleModalEl.classList.contains('hidden')) {
           window.closeArticleReader();
@@ -2756,6 +2762,68 @@
           </div>
         </div>
 
+        <!-- 1b. Semester 1 Overview & Student Success Strategy -->
+        <div class="rounded-2xl border ${isAg ? 'border-amber-200/90 bg-gradient-to-br from-amber-50/80 via-white to-orange-50/40' : 'border-sky-200/90 bg-gradient-to-br from-sky-50/80 via-white to-indigo-50/40'} p-4 sm:p-5 shadow-2xs space-y-3.5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b ${isAg ? 'border-amber-100' : 'border-sky-100'}">
+            <div class="flex items-start sm:items-center gap-3">
+              <div class="w-9 h-9 rounded-xl ${isAg ? 'bg-amber-600' : 'bg-sky-600'} text-white flex items-center justify-center text-lg shadow-xs font-bold shrink-0">
+                ${isAg ? '🗣️' : '✈️'}
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider ${isAg ? 'text-amber-800 bg-amber-100/80 border-amber-200' : 'text-sky-800 bg-sky-100/80 border-sky-200'} border px-2 py-0.5 rounded">Course Roadmap</span>
+                  <span class="text-[11px] font-mono text-slate-400 hidden sm:inline">${isAg ? 'LV101E General English' : 'LV121E Technical English'}</span>
+                </div>
+                <h3 class="text-sm sm:text-base font-extrabold text-slate-900 leading-tight mt-0.5">
+                  ${isAg ? 'Semester 1 General English: What to Expect &amp; How to Succeed' : 'Semester 1 Technical English: What to Expect &amp; How to Succeed'}
+                </h3>
+              </div>
+            </div>
+            <button type="button" onclick="window.openSemester1OverviewModal()" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl ${isAg ? 'bg-amber-600 hover:bg-amber-700 active:bg-amber-800' : 'bg-sky-600 hover:bg-sky-700 active:bg-sky-800'} text-white text-xs font-bold shadow-xs hover:shadow transition-all cursor-pointer self-start sm:self-auto shrink-0">
+              <span>📖 Open Full Guide &amp; Tips</span>
+              <span class="text-xs">➔</span>
+            </button>
+          </div>
+
+          <p class="text-xs sm:text-[13px] text-slate-700 leading-relaxed font-normal">
+            ${isAg 
+              ? 'Semester 1 develops your spoken fluency, cultural perspective, and conversational confidence. You will explore global travel impacts, climate resilience, and emerging AI technologies while preparing for your Module Formative Evaluations and TOEIC certification.'
+              : 'Semester 1 introduces the core operational language of civil aviation. You will master aerodrome infrastructure, passenger and baggage flows, ramp turnaround logistics, aircraft structures, flight principles, and safety vs. security distinctions.'
+            }
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-0.5 text-[11px]">
+            <div class="p-2.5 rounded-xl bg-white/90 border ${isAg ? 'border-amber-100' : 'border-sky-100'} shadow-2xs flex items-start gap-2">
+              <span class="text-base leading-none">${isAg ? '🗣️' : '🛫'}</span>
+              <div>
+                <div class="font-bold text-slate-900 leading-tight">${isAg ? 'Spoken Fluency' : 'Aerodrome Ops'}</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">${isAg ? 'Conversation &amp; debate' : 'Airside flows &amp; ramp'}</div>
+              </div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-white/90 border ${isAg ? 'border-amber-100' : 'border-sky-100'} shadow-2xs flex items-start gap-2">
+              <span class="text-base leading-none">${isAg ? '🌍' : '✈️'}</span>
+              <div>
+                <div class="font-bold text-slate-900 leading-tight">${isAg ? 'Global Issues' : 'Aircraft Systems'}</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">${isAg ? 'Travel, climate &amp; AI' : 'Anatomy &amp; flight forces'}</div>
+              </div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-white/90 border ${isAg ? 'border-amber-100' : 'border-sky-100'} shadow-2xs flex items-start gap-2">
+              <span class="text-base leading-none">🎧</span>
+              <div>
+                <div class="font-bold text-slate-900 leading-tight">Weekly Self-Study</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">Live Traffic (1h/wk eCampus)</div>
+              </div>
+            </div>
+            <div class="p-2.5 rounded-xl bg-white/90 border ${isAg ? 'border-amber-100' : 'border-sky-100'} shadow-2xs flex items-start gap-2">
+              <span class="text-base leading-none">🎯</span>
+              <div>
+                <div class="font-bold text-slate-900 leading-tight">Formative Evals</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">Session 5 FEs &amp; TOEIC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- 2. Mobile-First Quick Launchers Bar -->
         <div class="space-y-2">
           <div class="flex items-center justify-between px-1">
@@ -3075,4 +3143,289 @@
       if (modal) modal.classList.add("hidden");
       document.body.style.overflow = "";
     }
+
+    // --- Semester 1 Overview & Student Success Strategy Modal Controller ---
+    window.openSemester1OverviewModal = function() {
+      let modal = document.getElementById('s1-overview-guide-modal');
+      if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 's1-overview-guide-modal';
+        modal.className = 'fixed inset-0 z-[190] bg-slate-950/80 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto hidden';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('aria-labelledby', 's1-modal-title');
+        modal.onclick = function(e) {
+          if (e.target === modal) window.closeSemester1OverviewModal();
+        };
+
+        modal.innerHTML = `
+          <div class="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh] my-auto">
+            <!-- Header -->
+            <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white p-4 sm:p-6 border-b border-sky-900/60 flex items-start justify-between gap-4 shrink-0">
+              <div>
+                <div class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-bold tracking-wider uppercase text-amber-300 bg-slate-900/90 border border-slate-700 px-2.5 py-0.5 rounded-full">
+                  <span>🗣️ GENERAL (LV101E) &amp; ✈️ TECHNICAL (LV121E) • SEMESTER 1</span>
+                </div>
+                <h2 id="s1-modal-title" class="text-lg sm:text-2xl font-black text-white mt-1.5 leading-tight">
+                  Semester 1 Overview &amp; Student Success Guide
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-300 font-normal mt-1 leading-relaxed max-w-2xl">
+                  What to expect, dual-track competencies, weekly self-study requirements, and strategies for success.
+                </p>
+              </div>
+              <button type="button" onclick="window.closeSemester1OverviewModal()" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-white/20 active:bg-white/30 text-white flex items-center justify-center transition-colors cursor-pointer shrink-0 text-base sm:text-lg font-bold" aria-label="Close modal">
+                ✕
+              </button>
+            </div>
+
+            <!-- Scrollable Body -->
+            <div class="p-4 sm:p-6 overflow-y-auto space-y-6 text-slate-800 text-xs sm:text-sm leading-relaxed">
+              
+              <!-- Section 1: What Will You Do This Semester? (The Dual-Track Approach) -->
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🎯</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    1. What Will You Do This Semester? The Dual-Track Approach
+                  </h3>
+                </div>
+                <p class="text-slate-600 leading-relaxed">
+                  In Semester 1, your English learning is structured across two complementary courses: <strong class="text-slate-900">General English (LV101E)</strong> on Fridays and <strong class="text-slate-900">Technical English (LV121E)</strong> on Wednesdays. Together, they build both your everyday conversational fluency and your command of aviation operational terminology:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+                  <!-- Track 1: General English -->
+                  <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200/80 space-y-2">
+                    <div class="flex items-center gap-2 text-amber-900 font-bold text-xs sm:text-sm">
+                      <span class="p-1 rounded bg-amber-200/70 text-amber-800 text-xs">🗣️</span>
+                      <span>A. General English (LV101E — Fridays 08:00–10:00)</span>
+                    </div>
+                    <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
+                      Focusing on conversational fluency, cultural perspective, and structured debate:
+                    </p>
+                    <ul class="text-[11.5px] sm:text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                      <li><strong class="text-slate-800">Module 1 (Travel &amp; Leisure):</strong> Personal travel anecdotes, transport evolution, mass tourism challenges, and sustainable ecotourism design.</li>
+                      <li><strong class="text-slate-800">Module 2 (Weather &amp; Environment):</strong> Severe atmospheric hazards, 15-minute cities, sponge city designs, and building persuasive environmental arguments.</li>
+                      <li><strong class="text-slate-800">Module 3 (New Technology &amp; AI):</strong> Everyday workplace AI, future mobility (hydrogen, eVTOL), ethical technology debate, and biometric passenger screening.</li>
+                      <li><strong class="text-slate-800">Spoken Fluency:</strong> Moving beyond grammar drills into spontaneous conversation, active listening, and structured polite disagreement.</li>
+                    </ul>
+                  </div>
+
+                  <!-- Track 2: Technical English -->
+                  <div class="p-4 rounded-xl bg-sky-50/60 border border-sky-200/80 space-y-2">
+                    <div class="flex items-center gap-2 text-sky-900 font-bold text-xs sm:text-sm">
+                      <span class="p-1 rounded bg-sky-200/70 text-sky-800 text-xs">✈️</span>
+                      <span>B. Technical English (LV121E — Wednesdays 13:15–15:15)</span>
+                    </div>
+                    <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
+                      Introducing the core operational language of civil aviation:
+                    </p>
+                    <ul class="text-[11.5px] sm:text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                      <li><strong class="text-slate-800">Module 1 (Aerodromes &amp; Operations):</strong> Landside/airside layout, passenger flows, ramp turnaround optimization, Ground Support Equipment (GSE), and runway magnetic designators.</li>
+                      <li><strong class="text-slate-800">Module 2 (Aircraft &amp; Aerodynamics):</strong> Four forces of flight, aircraft control axes, fuselage and wing structures (slats, flaps, empennage), fleet economics, and landmark accident case studies.</li>
+                      <li><strong class="text-slate-800">Module 3 (Health, Safety &amp; Security):</strong> In-flight medical emergencies, human factors (fatigue, circadian disruption), aviation meteorology (windshear, icing), and the critical difference between Safety and Security.</li>
+                      <li><strong class="text-slate-800">Operational Precision:</strong> Describing spatial relationships, pre-flight defect walkarounds, and operational handoff procedures.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 2: Why Are You Doing These Lessons? (Future Career Value) -->
+              <div class="space-y-3 pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🚀</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    2. Why Are You Doing These Lessons? Your Future Career Advantage
+                  </h3>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+                  <p class="text-slate-700 leading-relaxed">
+                    As first-semester ENAC GSEA students entering the civil aviation ecosystem, English is not just an academic subject—it is the universal operating language of civil aviation.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs pt-1">
+                    <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
+                      <div class="font-bold text-slate-900">🌍 Global Civil Aviation Ecosystem</div>
+                      <p class="text-[11.5px] text-slate-500 leading-relaxed">You will coordinate with multinational airlines, foreign civil aviation authorities (DGAC, EASA, ICAO), aircraft manufacturers, and airport ground handlers.</p>
+                    </div>
+                    <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
+                      <div class="font-bold text-slate-900">⚡ Zero Ambiguity in Safety</div>
+                      <p class="text-[11.5px] text-slate-500 leading-relaxed">Safety depends on precision. A misunderstanding of an operational directive, NOTAM, or safety bulletin can lead to costly delays or ground incidents.</p>
+                    </div>
+                    <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
+                      <div class="font-bold text-slate-900">💼 Executive Career Mobility</div>
+                      <p class="text-[11.5px] text-slate-500 leading-relaxed">Fluency in both general debate and technical aviation English is the biggest catalyst for international internships, European projects, and executive career progression.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 3: Weekly Self-Study: Live Traffic on eCampus (1 Hour per Week) -->
+              <div class="space-y-3 pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🎧</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    3. Weekly Self-Study: "Live Traffic" on eCampus (1 Hour / Week)
+                  </h3>
+                </div>
+                <div class="p-4 rounded-xl bg-gradient-to-r from-amber-50/60 via-white to-sky-50/50 border border-amber-200/80 space-y-3">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                      <span class="font-bold text-xs sm:text-sm text-amber-900">📻 Mandatory Weekly Self-Study Programme</span>
+                      <span class="text-[10px] font-mono font-extrabold uppercase bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded">1 Hour / Week</span>
+                    </div>
+                    <span class="text-[11px] font-mono text-slate-500">Available on ENAC eCampus</span>
+                  </div>
+                  <p class="text-slate-700 leading-relaxed">
+                    In addition to your two weekly classroom sessions, you have an official self-study course on <strong class="text-slate-900">ENAC eCampus</strong> called <strong class="text-slate-900">"Live Traffic"</strong>. This programme provides authentic listening practice and technical comprehension.
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                    <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
+                      <div class="font-bold text-amber-900">🎧 What does Live Traffic include?</div>
+                      <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                        Real-world air traffic tower and ground communications, cockpit voice recordings, pilot debriefings, and authentic technical audio from international airfields.
+                      </p>
+                    </div>
+                    <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
+                      <div class="font-bold text-sky-900">🎯 How does it prepare you for evaluations?</div>
+                      <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                        Regular spaced listening practice trains your ear to understand varied international accents and high speech rates, building the listening endurance needed for your Formative Evaluations and the international TOEIC exam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 4: 4 Practical Tips on How to Succeed -->
+              <div class="space-y-3 pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">💡</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    4. Four Golden Rules to Succeed in Semester 1
+                  </h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
+                    <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
+                      <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-800 text-xs flex items-center justify-center font-black shrink-0">1</span>
+                      <span>Build Speaking Confidence Early</span>
+                    </div>
+                    <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
+                      Treat every 2-hour class as an active laboratory. Speak out loud during pairwork and group activities—making mistakes is a natural and necessary part of becoming fluent.
+                    </p>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
+                    <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
+                      <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-800 text-xs flex items-center justify-center font-black shrink-0">2</span>
+                      <span>Master 3 to 5 New Terms Every Week</span>
+                    </div>
+                    <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
+                      Don't just memorize definitions. Pick 3 to 5 new technical or general terms each week from your digital worksheets and immediately put them into spoken sentences with your partner.
+                    </p>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
+                    <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
+                      <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-800 text-xs flex items-center justify-center font-black shrink-0">3</span>
+                      <span>Update Your Spoken Portfolio Weekly</span>
+                    </div>
+                    <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
+                      Spend 5 minutes after each session logging your key takeaways, useful expressions, and self-reflections. Consistent weekly entries eliminate stress before evaluations.
+                    </p>
+                  </div>
+
+                  <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
+                    <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
+                      <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-800 text-xs flex items-center justify-center font-black shrink-0">4</span>
+                      <span>Schedule Your 1-Hour Live Traffic Slot</span>
+                    </div>
+                    <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
+                      Treat your weekly 1-hour eCampus Live Traffic self-study as a fixed appointment in your schedule. Regular weekly practice is far more effective than cramming before exams.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 5: Key Assessment Milestones -->
+              <div class="space-y-3 pt-2 border-t border-slate-100">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">📅</span>
+                  <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                    5. Key Assessment Milestones: The Three Formative Evaluations (FE1, FE2, FE3)
+                  </h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs pt-1">
+                  <!-- FE1 -->
+                  <div class="p-3.5 rounded-xl bg-purple-50/70 border border-purple-200/80 space-y-1.5">
+                    <div class="flex items-center justify-between">
+                      <span class="font-bold text-purple-950">Module 1 • Session 5</span>
+                      <span class="text-[10px] font-mono font-bold bg-purple-200 text-purple-900 px-1.5 py-0.5 rounded">FE1</span>
+                    </div>
+                    <div class="text-[11.5px] text-slate-600 space-y-1 leading-relaxed">
+                      <div><strong class="text-slate-800">AG:</strong> Design an eco-friendly holiday itinerary or compare two cities with different tourism policies.</div>
+                      <div><strong class="text-slate-800">AT:</strong> Present a technical airport profile (infrastructure, operational constraints, and safety analysis).</div>
+                    </div>
+                  </div>
+
+                  <!-- FE2 -->
+                  <div class="p-3.5 rounded-xl bg-purple-50/70 border border-purple-200/80 space-y-1.5">
+                    <div class="flex items-center justify-between">
+                      <span class="font-bold text-purple-950">Module 2 • Session 5</span>
+                      <span class="text-[10px] font-mono font-bold bg-purple-200 text-purple-900 px-1.5 py-0.5 rounded">FE2</span>
+                    </div>
+                    <div class="text-[11.5px] text-slate-600 space-y-1 leading-relaxed">
+                      <div><strong class="text-slate-800">AG:</strong> Present a climate resilience masterplan for an airport or city.</div>
+                      <div><strong class="text-slate-800">AT:</strong> Present a technical profile of an aircraft or airline (specifications, operational metrics, and safety records).</div>
+                    </div>
+                  </div>
+
+                  <!-- FE3 -->
+                  <div class="p-3.5 rounded-xl bg-purple-50/70 border border-purple-200/80 space-y-1.5">
+                    <div class="flex items-center justify-between">
+                      <span class="font-bold text-purple-950">Module 3 • Session 5</span>
+                      <span class="text-[10px] font-mono font-bold bg-purple-200 text-purple-900 px-1.5 py-0.5 rounded">FE3</span>
+                    </div>
+                    <div class="text-[11.5px] text-slate-600 space-y-1 leading-relaxed">
+                      <div><strong class="text-slate-800">AG:</strong> Present an in-depth technical analysis and critical evaluation of an emerging technology.</div>
+                      <div><strong class="text-slate-800">AT:</strong> Technical oral interview, grand prix aviation review quiz, and airport operations assessment.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="p-4 sm:p-5 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shrink-0">
+              <div class="text-[11px] sm:text-xs text-slate-500">
+                <span>Have questions about the semester? Ask your teacher during class or consult the </span>
+                <button type="button" onclick="window.closeSemester1OverviewModal(); openModalDrawer('admin_calendar', 1, 7);" class="text-sky-600 hover:text-sky-800 font-bold underline cursor-pointer">Weekly Calendar</button>.
+              </div>
+              <button type="button" onclick="window.closeSemester1OverviewModal()" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-bold text-xs transition-colors cursor-pointer shadow-xs text-center">
+                Got it • Close Guide
+              </button>
+            </div>
+          </div>
+        `;
+        document.body.appendChild(modal);
+      }
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeSemester1OverviewModal = function() {
+      const modal = document.getElementById('s1-overview-guide-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+      }
+      const resModal = document.getElementById('deck-resource-modal');
+      const isResOpen = resModal && !resModal.classList.contains('hidden');
+      const filmModal = document.getElementById('gsea-film-modal');
+      const isFilmOpen = filmModal && !filmModal.classList.contains('hidden');
+      const artModal = document.getElementById('gsea-article-reader-modal');
+      const isArtOpen = artModal && !artModal.classList.contains('hidden');
+      if (!isResOpen && !isFilmOpen && !isArtOpen) {
+        document.body.style.overflow = '';
+      }
+    };
 
