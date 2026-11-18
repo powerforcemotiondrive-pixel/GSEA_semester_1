@@ -238,6 +238,18 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   - `Bug Check 3` (or `npm run bug3`): Scans `GSEA_semester_3`.
   - `Bug Check` (or `npm run bug:check`): Scans the active repository.
 
+### Y. Comprehensive Pedagogical & Classroom Reality Audit Protocol (`P Audit ...` — Tri-Project Invariant)
+- **Universal Pedagogical Audit Trigger (`P Audit ...`)**: Whenever the user sends an instruction matching `P Audit [Semester X] [Module Y] [Track] [Session Z]` (or shorthand variants like `P Audit S3 M1 Session 5`, `P Audit Semester 1 M1 AG Session 2`, `P Audit Session X`), the assistant executes an in-depth **7-Point Pedagogical & Classroom Reality Audit** focused on communicative language acquisition and cognitive load:
+  1. *Core Language Target (The Takeaway English)*: Isolates the primary grammatical pattern, communicative functional phrase, or conversational structure taught. Verifies that the language target is high-yield, transferable, and clearly practiced.
+  2. *Cognitive Load & Technical Density Check*: Evaluates the volume of engineering specifications, acronyms, and regulatory text. Flags any technical clutter (e.g., equipment calibration thresholds, complex technical formulas, or multi-page documents) that overwhelms students and hinders English acquisition.
+  3. *The 70/30 Communicative Balance*: Ensures that at least 70% of classroom time is dedicated to active student spoken output (pair work, simulations, debates), and no more than 30% to passive reading or teacher presentation.
+  4. *Real B1/B2 Spoken Accessibility*: Evaluates whether an average B1/B2 learner can express the ideas spontaneously in their own words using target sentence stems, rather than passively reciting dense pre-scripted model paragraphs.
+  5. *Information Gap & Peerwork Viability*: Confirms that speaking activities establish genuine information gaps between partners and include active-listening peer evaluation checklists (e.g., Student B rubric).
+  6. *Classroom Flow & 5-Stage Progression*: Verifies a clean communicative pedagogical arc: Warm-Up/Diagnostic → Contextual Hook → Language Clinic Drills → Simulation/Roleplay → Spoken Debrief & Peer Coaching.
+  7. *Actionable Simplification & De-Cluttering Recommendations*: Provides concrete proposals to strip non-essential engineering trivia and replace it with accessible, human-scale operational scenarios that boost student speaking confidence.
+- **Pre-Implementation Approval Gate (Rule 1.D)**: Concludes with the mandatory prompt asking whether to implement the proposed pedagogical simplifications (`Proceed`, `PX`, or `ignore/adjust`).
+- **Tri-Project Consistency**: This protocol is permanently synchronized across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)

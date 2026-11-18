@@ -20,6 +20,7 @@ Type these exact phrases directly in chat with the Antigravity assistant:
 | **`Media Update`** | **Weekly Media & Film Strip Update**<br>Attach or paste CSV with 5 links + statement. | • Updates Teachers Portal noticeboard & BBC articles<br>• Updates General Culture & Cinema (3 IMDb films)<br>• Rebuilds SCORM + ISO + DMG packages & commits |
 | **`Commit`**<br>*(or `Commit changes`)* | **Single-Step Remote Sync** | Atomically runs `git commit` AND `git push origin main` together, updating GitHub and GitHub Pages live. |
 | **`Audit S1/2/3 AT/AG/AP/AAS M1/2/3 Ss 1/2/3`**<br>*(e.g. `Audit S1 AG M1 Ss 3`, `Audit Semester 1 Mod 1 AG Ss 3`)* | **Automated Session Audit &amp; A4 PDF Worksheet Setup** | • 8-point automated audit of session quality<br>• Thematic relevance &amp; subject drift scan<br>• 2-Hour classroom sufficiency gauge<br>• Zero academic jargon &amp; zero timings scan<br>• Verifies &amp; sets up exact 7-page A4 PDF worksheet |
+| **`P Audit Semester 3 M1 AT Session 5`**<br>*(or `P Audit S1 M2 AG Session 3` / `P Audit Session X`)* | **Pedagogical & Classroom Reality Audit** | • Evaluates core English language learning target<br>• Flags technical cognitive overload & engineering clutter<br>• Enforces 70/30 active speaking vs. passive reading ratio<br>• Verifies authentic B1/B2 spoken accessibility & spontaneity<br>• Generates concrete de-cluttering & simplification proposals |
 | **`Bug Check 1`** / **`Bug Check 2`** / **`Bug Check 3`**<br>*(or `Bug Check`)* | **Global Code Bug & Invariant Hunter** | • Comprehensive 8-point automated code audit<br>• AST syntax validation of all JS source files<br>• Zero undefined, NaN, or unreplaced tags in DOM<br>• Validates all inline onclick handlers &amp; element IDs<br>• Verifies SCORM assets on disk vs imsmanifest.xml<br>• Tests SCORM 1.2 4,096-char suspend_data boundary<br>• Dual-admin character parity &amp; title parity check<br>• Prohibited academic jargon &amp; faculty scan (Rule 1.I)<br>• Classroom timings (Rule 1.Q) &amp; student privacy (Rule 1.H)<br>• Verifies localStorage auto-saving notes handlers |
 
 ---
@@ -109,6 +110,23 @@ Type these exact phrases directly in chat with the Antigravity assistant:
    - **Active Listening Checklist**: Validates peer checklists for speaking simulations.
    - **Digital Worksheet & Auto-Saving Notes**: Validates `window.saveLessonNote` textareas and official PDF download button.
    - **7-Page A4 PDF Worksheet**: Verifies exact 7/7 page count via macOS PDFKit and checks `imsmanifest.xml`.
+
+---
+
+### E. Pedagogical & Classroom Reality Audit (`P Audit ...`)
+**When to use**: Before teaching a session or during course reviews to check whether the lesson actually works in the classroom—ensuring it is not too technical, doesn't overwhelm students with engineering trivia, has a clear language focus, and maximizes student speaking time.
+
+1. In chat, send:
+   ```text
+   P Audit Semester 3 M1 AT Session 5
+   ```
+   *(or `P Audit S1 M1 AG Session 2`, `P Audit S2 M2 AAS Session 4`)*
+2. **What the assistant evaluates**:
+   - **Target Language Point**: Identifies the core English grammar/functional phrase takeaway.
+   - **Cognitive Load Rating**: `🟢 Balanced` • `🟡 Heavy` • `🔴 Overloaded (Too Technical)`.
+   - **70/30 Speaking Rule**: Checks whether students spend 70% of the session actively speaking.
+   - **B1/B2 Accessibility**: Tests whether students can speak spontaneously without reading scripts.
+   - **Simplification Recommendations**: Proposes line-by-line cuts to technical jargon to make the lesson friendlier, communicative, and engaging.
 
 ---
 
