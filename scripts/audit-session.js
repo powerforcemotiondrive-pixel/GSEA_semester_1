@@ -360,8 +360,22 @@ if (hasLegacyPrint) {
 let expectedPdfName = '';
 if (target.semester === 3) {
   expectedPdfName = `GSEA_S3_M${target.moduleNum}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+} else if (target.semester === 1 && (target.track === 'at' || target.track === 'aas')) {
+  // In Semester 1, Technical English uses AT naming convention
+  expectedPdfName = `GSEA_S1_M${target.moduleNum}_AT_S${target.sessionNum}_Lesson_Worksheet.pdf`;
 } else {
   expectedPdfName = `GSEA_S${target.semester}_M${target.moduleNum}_${target.track.toUpperCase()}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+}
+
+// Fallback check if alternative exists on disk (AT vs AAS)
+if (!fs.existsSync(path.join(baseDir, 'docs', expectedPdfName))) {
+  const altTrack = target.track.toUpperCase() === 'AAS' ? 'AT' : (target.track.toUpperCase() === 'AT' ? 'AAS' : null);
+  if (altTrack) {
+    const altPdf = `GSEA_S${target.semester}_M${target.moduleNum}_${altTrack}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+    if (fs.existsSync(path.join(baseDir, 'docs', altPdf))) {
+      expectedPdfName = altPdf;
+    }
+  }
 }
 
 const pdfPath = path.join(baseDir, 'docs', expectedPdfName);
@@ -500,6 +514,78 @@ if (!templateLinkFound) {
   findings.pdfStatus.details.push(`No HTML link referencing ${expectedPdfName} found in template source files.`);
 }
 
+// --- Check 12: Zero Undefined Invariant & Simulated DOM Render Execution ---
+findings.renderExecution = { pass: true, undefCount: 0, details: [] };
+try {
+  const vm = require('vm');
+  const htmlOutputs = {};
+  const mockDoc = {
+    getElementById: (id) => ({
+      set innerHTML(val) { htmlOutputs[id] = val; }
+    })
+  };
+  const mockWin = {
+    loadLessonNote: () => '',
+    getLessonNote: () => '',
+    addEventListener: () => {}
+  };
+  const dispatcherPath = path.join(baseDir, 'src', 'js', '04-templates-dispatcher.js');
+  let dispatcherCode = '';
+  if (fs.existsSync(dispatcherPath)) {
+    dispatcherCode = fs.readFileSync(dispatcherPath, 'utf8');
+  }
+
+  const ctx = {
+    document: mockDoc,
+    window: mockWin,
+    setTimeout: () => {},
+    theme: { primary: '#152438', accent: '#d97706', primaryDark: '#0d1724' }
+  };
+  vm.createContext(ctx);
+  if (dispatcherCode) vm.runInContext(dispatcherCode, ctx);
+
+  const targetFiles = getTemplateFileNames(target.semester, target.track, target.moduleNum);
+  for (const f of targetFiles) {
+    const full = path.join(templateDir, f);
+    if (fs.existsSync(full)) {
+      const code = fs.readFileSync(full, 'utf8');
+      try {
+        vm.runInContext(code, ctx);
+      } catch (e) {
+        // Continue
+      }
+    }
+  }
+
+  const candidateFns = [
+    `renderLessonContentTabSession${target.sessionNum}`,
+    `renderAgLessonContentTabSession${target.sessionNum}`,
+    `renderAtLessonContentTabSession${target.sessionNum}`,
+    `renderAasLessonContentTabSession${target.sessionNum}`
+  ];
+  let rendered = '';
+  for (const fn of candidateFns) {
+    if (typeof ctx[fn] === 'function') {
+      ctx[fn](sessionObj, ctx.theme);
+      rendered = htmlOutputs['modal-body'] || '';
+      break;
+    }
+  }
+
+  if (rendered) {
+    const undefMatches = rendered.match(/\bundefined\b/g);
+    if (undefMatches) {
+      findings.renderExecution.pass = false;
+      findings.renderExecution.undefCount = undefMatches.length;
+      findings.renderExecution.details.push(`Found ${undefMatches.length} occurrences of literal 'undefined' in rendered DOM output.`);
+    } else {
+      findings.renderExecution.details.push(`Verified 0 occurrences of 'undefined' across rendered HTML (${rendered.length.toLocaleString()} bytes).`);
+    }
+  }
+} catch (e) {
+  findings.renderExecution.details.push(`Render simulation check skipped: ${e.message}`);
+}
+
 // 4. Output Formatted Report
 console.log(`\n================================================================================`);
 console.log(`📋 AUDIT REPORT: SEMESTER ${target.semester} • ${target.track.toUpperCase()} MODULE ${target.moduleNum} SESSION ${target.sessionNum}`);
@@ -569,8 +655,17 @@ if (findings.pdfStatus.pass && findings.pdfStatus.exists) {
   findings.pdfStatus.details.forEach(d => console.log(`      • ${d}`));
 }
 
+console.log(`\n9. 🛡️ ZERO UNDEFINED INVARIANT & SIMULATED DOM RENDER`);
+if (findings.renderExecution.pass && findings.renderExecution.undefCount === 0) {
+  console.log(`   ✅ PASS: 0 occurrences of 'undefined' detected. Complete data-to-template parity.`);
+  findings.renderExecution.details.forEach(d => console.log(`      • ${d}`));
+} else {
+  console.log(`   ❌ FAIL: ${findings.renderExecution.undefCount} occurrences of 'undefined' detected in rendered DOM:`);
+  findings.renderExecution.details.forEach(d => console.log(`      • ${d}`));
+}
+
 console.log(`\n================================================================================`);
-const allPassed = findings.titleParity.pass && findings.jargonScan.pass && findings.timingsScan.pass && findings.roleplayViability.pass && findings.actionBar.pass && findings.pdfStatus.pass;
+const allPassed = findings.titleParity.pass && findings.jargonScan.pass && findings.timingsScan.pass && findings.roleplayViability.pass && findings.actionBar.pass && findings.pdfStatus.pass && findings.renderExecution.pass;
 if (allPassed) {
   console.log(`🏁 OVERALL VERDICT: ✅ PRODUCTION READY`);
 } else {

@@ -1607,18 +1607,21 @@
                       <span class="text-[11px] text-slate-500 font-medium">Jurisdiction: ${dom.keyJurisdiction || ''}</span>
                     </div>
                     <p class="text-xs text-slate-700 leading-relaxed">${dom.description}</p>
-                    <div class="flex flex-wrap gap-1.5 pt-1">
-                      ${(dom.roles || []).map(r => `
-                        <span class="text-[10.5px] font-bold px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-800 shadow-2xs">${r}</span>
-                      `).join('')}
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] pt-1">
-                      <div class="p-2.5 rounded-lg bg-white/80 border border-slate-200 text-slate-600">
-                        <strong class="text-slate-800 block mb-0.5">Sample Operational Duty:</strong> ${dom.sampleDuty || ''}
+                    <div class="space-y-2 pt-1">
+                      <strong class="text-slate-800 text-xs block font-bold">Key Professional Roles &amp; Operational Duties:</strong>
+                      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                        ${(dom.keyRoles || (dom.roles || []).map(r => ({ title: r, duty: '' }))).map(r => `
+                          <div class="p-2.5 rounded-lg bg-white/90 border border-slate-200 text-[11px] shadow-2xs space-y-1">
+                            <span class="font-bold text-slate-900 block">${r.title || r}</span>
+                            ${r.duty ? `<p class="text-slate-600 leading-snug">${r.duty}</p>` : ''}
+                          </div>
+                        `).join('')}
                       </div>
-                      <div class="p-2.5 rounded-lg bg-white/80 border border-slate-200 text-slate-600">
-                        <strong class="text-slate-800 block mb-0.5">Required Licences / Certifications:</strong> ${dom.certifications || 'Airport security badges, operational permits'}
-                      </div>
+                      ${dom.certifications ? `
+                        <div class="p-2 rounded-lg bg-white/70 border border-slate-200 text-[10.5px] text-slate-600">
+                          <strong class="text-slate-700">Licences &amp; Certifications:</strong> ${dom.certifications}
+                        </div>
+                      ` : ''}
                     </div>
                   </div>
                 `;
@@ -1647,39 +1650,61 @@
                 <span class="text-[11px] text-slate-500">6 Authentic Field Roles</span>
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
-                ${profiles.map(p => `
+                ${profiles.map(p => {
+                  const roleTitle = p.name || p.title || 'Aviation Professional';
+                  const roleDomain = p.domain || '';
+                  const roleBadge = p.badge || p.domain || 'Operational Role';
+                  const badgeColorClass = p.badgeColor === 'rose' ? 'bg-rose-700' : p.badgeColor === 'emerald' ? 'bg-emerald-700' : p.badgeColor === 'amber' ? 'bg-amber-600' : p.badgeColor === 'indigo' ? 'bg-indigo-700' : (roleDomain.includes('Corps') ? 'bg-emerald-700' : roleDomain.includes('Traffic') ? 'bg-rose-700' : roleDomain.includes('Crew') ? 'bg-indigo-700' : 'bg-sky-700');
+                  const workplace = p.workplace || '';
+                  const tools = p.tools || '';
+                  const responsibility = p.responsibility || p.authority || '';
+                  const keyDuties = p.keyDuties || [];
+                  return `
                   <div class="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-2xs hover:shadow-xs transition-all flex flex-col justify-between">
                     <div>
                       <div class="relative h-44 overflow-hidden group">
-                        <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 select-none" onerror="this.src='images/aas_m1card4.jpg'" />
+                        <img src="${p.image}" alt="${roleTitle}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 select-none" onerror="this.src='images/aas_m1card4.jpg'" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
-                          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded text-white shadow-xs ${p.badgeColor === 'rose' ? 'bg-rose-700' : p.badgeColor === 'emerald' ? 'bg-emerald-700' : p.badgeColor === 'amber' ? 'bg-amber-600' : p.badgeColor === 'indigo' ? 'bg-indigo-700' : 'bg-sky-700'}">
-                            ${p.badge}
+                          <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded text-white shadow-xs ${badgeColorClass}">
+                            ${roleBadge}
                           </span>
                         </div>
                       </div>
                       <div class="p-3.5 space-y-2">
                         <div>
-                          <span class="text-[10px] font-mono font-bold uppercase text-slate-500 tracking-wider">${p.domain}</span>
-                          <h4 class="text-xs sm:text-sm font-black text-slate-900 leading-snug mt-0.5">${p.title}</h4>
+                          <span class="text-[10px] font-mono font-bold uppercase text-slate-500 tracking-wider">${roleDomain}</span>
+                          <h4 class="text-xs sm:text-sm font-black text-slate-900 leading-snug mt-0.5">${roleTitle}</h4>
                         </div>
-                        <p class="text-[11px] text-slate-700 italic bg-slate-50 p-2 rounded-lg border border-slate-200 font-medium">
-                          "${p.formula}"
-                        </p>
+                        ${p.formula ? `
+                          <p class="text-[11px] text-slate-700 italic bg-slate-50 p-2 rounded-lg border border-slate-200 font-medium">
+                            "${p.formula}"
+                          </p>
+                        ` : ''}
                         <!-- Collapsible Dossier -->
                         <div id="s4-dossier-${p.id}" class="hidden space-y-2 pt-2 border-t border-slate-100 text-[11px]">
-                          <div class="p-2 rounded bg-amber-50/70 border border-amber-200 text-amber-950">
-                            <strong>Legal Authority:</strong> ${p.authority}
-                          </div>
-                          <div class="p-2 rounded bg-sky-50/70 border border-sky-200 text-sky-950">
-                            <strong>Interfaces:</strong> ${p.interfaces}
-                          </div>
-                          <div class="space-y-1">
-                            <strong class="text-slate-800 block">Key Daily Duties:</strong>
-                            <ul class="space-y-1 list-disc pl-4 text-slate-600">
-                              ${(p.keyDuties || []).map(d => `<li>${d}</li>`).join('')}
-                            </ul>
-                          </div>
+                          ${workplace ? `
+                            <div class="p-2 rounded bg-slate-100 border border-slate-200 text-slate-900">
+                              <strong>Primary Workplace:</strong> ${workplace}
+                            </div>
+                          ` : ''}
+                          ${tools ? `
+                            <div class="p-2 rounded bg-sky-50/70 border border-sky-200 text-sky-950">
+                              <strong>Tools &amp; Equipment:</strong> ${tools}
+                            </div>
+                          ` : ''}
+                          ${responsibility ? `
+                            <div class="p-2 rounded bg-amber-50/70 border border-amber-200 text-amber-950">
+                              <strong>Operational Responsibility:</strong> ${responsibility}
+                            </div>
+                          ` : ''}
+                          ${keyDuties.length > 0 ? `
+                            <div class="space-y-1">
+                              <strong class="text-slate-800 block">Key Daily Duties:</strong>
+                              <ul class="space-y-1 list-disc pl-4 text-slate-600">
+                                ${keyDuties.map(d => `<li>${d}</li>`).join('')}
+                              </ul>
+                            </div>
+                          ` : ''}
                         </div>
                       </div>
                     </div>
@@ -1689,7 +1714,8 @@
                       </button>
                     </div>
                   </div>
-                `).join('')}
+                `;
+                }).join('')}
               </div>
             </div>
 
@@ -1788,13 +1814,16 @@
               </p>
             </div>
 
-            <!-- Formulas Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
-              ${(clinic.formulas || []).map(f => `
-                <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 space-y-1.5">
-                  <span class="font-mono text-xs font-bold text-amber-700 block">${f.structure}</span>
-                  <p class="text-[10.5px] font-semibold text-slate-600">${f.usage}</p>
-                  <p class="text-[11px] text-slate-800 italic bg-white p-2 rounded border border-slate-100">"${f.example}"</p>
+            <!-- Formulas & Rules Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              ${(clinic.rules || clinic.formulas || []).map(r => `
+                <div class="p-3.5 rounded-lg border border-slate-200 bg-slate-50/70 space-y-1.5 flex flex-col justify-between">
+                  <div>
+                    <span class="font-mono text-xs font-bold text-amber-800 block">${r.formula || r.structure}</span>
+                    <p class="text-[11px] font-medium text-slate-700 mt-1">${r.explanation || r.usage}</p>
+                    <p class="text-[11px] text-slate-800 italic bg-white p-2 rounded border border-slate-200 mt-1.5 font-medium">"${r.example}"</p>
+                  </div>
+                  ${r.pitfall ? `<div class="text-[10.5px] font-semibold text-rose-700 bg-rose-50/80 p-1.5 rounded border border-rose-200">${r.pitfall}</div>` : ''}
                 </div>
               `).join('')}
             </div>
@@ -1803,16 +1832,29 @@
             <div class="space-y-2 pt-2 border-t border-slate-100">
               <div class="flex items-center justify-between">
                 <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">🎯 Roles &amp; Responsibilities Quick Practice</span>
-                <span class="text-[11px] text-slate-500">Select the correct preposition or verb form</span>
+                <span class="text-[11px] text-slate-500">6 Authentic Operational Scenarios</span>
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 ${(clinic.roleClinic || []).map(item => `
-                  <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 flex flex-col justify-between gap-2">
-                    <p class="text-xs font-medium text-slate-800">${item.prompt}</p>
+                  <div class="p-3.5 rounded-lg border border-slate-200 bg-slate-50/70 flex flex-col justify-between gap-2.5">
+                    <div class="space-y-1">
+                      <span class="text-[10px] font-mono font-bold uppercase text-slate-500">${item.role || ('Scenario ' + item.id)}</span>
+                      <p class="text-xs font-semibold text-slate-800 leading-snug">${item.prompt}</p>
+                    </div>
                     <div>
-                      <div id="s4-roleclinic-ans-${item.id}" class="hidden mt-2 p-2 rounded bg-emerald-50 border border-emerald-200 text-[11px] text-emerald-900 font-medium">
-                        <strong>Answer:</strong> ${item.answer}<br>
-                        <span class="text-slate-600">${item.explanation}</span>
+                      <div id="s4-roleclinic-ans-${item.id}" class="hidden mt-2 p-2.5 rounded-lg bg-emerald-50 border border-emerald-300 text-xs text-emerald-950 space-y-1.5 animate-in fade-in">
+                        <div class="font-bold text-emerald-900">
+                          ✅ Target Operational Phrasing:
+                        </div>
+                        <p class="italic text-[11.5px] text-emerald-900 bg-white/80 p-1.5 rounded border border-emerald-200 font-medium">
+                          "${item.correct || item.answer || ''}"
+                        </p>
+                        ${item.wrong ? `
+                          <div class="text-[10.5px] text-rose-800 pt-1 border-t border-emerald-200/60 font-semibold">
+                            <span class="font-bold">❌ Common Spoken Trap:</span> "${item.wrong}"
+                          </div>
+                        ` : ''}
+                        ${item.explanation ? `<p class="text-[10.5px] text-slate-600">${item.explanation}</p>` : ''}
                       </div>
                       <button type="button" id="s4-roleclinic-btn-${item.id}" onclick="window.toggleS4RoleClinicAnswer(${item.id})" class="mt-2 text-[11px] font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1 cursor-pointer">
                         <span>Check Answer</span> &rarr;
@@ -1844,31 +1886,41 @@
             ${renderActivityInstructions(handoffs, theme)}
 
             <div class="space-y-4">
-              ${(handoffs.scenarios || []).map(sc => `
+              ${(handoffs.scenarios || []).map(sc => {
+                const roleA = (sc.roles && sc.roles.roleA) || sc.roleA || '';
+                const roleB = (sc.roles && sc.roles.roleB) || sc.roleB || '';
+                const targetPhrases = sc.targetPhrases || [
+                  "I am currently tasked with verifying...",
+                  "We liaise with the gate agent to...",
+                  "Do you have authority to release...",
+                  "We must ensure that all hold doors are secure before..."
+                ];
+                return `
                 <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/60 space-y-3">
                   <div class="flex items-center justify-between">
                     <h4 class="text-xs sm:text-sm font-bold text-slate-900">${sc.title}</h4>
                     <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300">Live Simulation</span>
                   </div>
-                  <p class="text-xs text-slate-600 bg-white p-2.5 rounded-lg border border-slate-200"><strong>Context:</strong> ${sc.context}</p>
+                  <p class="text-xs text-slate-700 bg-white p-2.5 rounded-lg border border-slate-200 leading-relaxed"><strong>Context:</strong> ${sc.context}</p>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                     <div class="p-3 rounded-lg bg-sky-50/70 border border-sky-200 text-sky-950">
                       <strong class="text-sky-900 block mb-1">Role A Task:</strong>
-                      ${sc.roleA}
+                      <p class="leading-relaxed">${roleA}</p>
                     </div>
                     <div class="p-3 rounded-lg bg-indigo-50/70 border border-indigo-200 text-indigo-950">
                       <strong class="text-indigo-900 block mb-1">Role B Task:</strong>
-                      ${sc.roleB}
+                      <p class="leading-relaxed">${roleB}</p>
                     </div>
                   </div>
                   <div class="p-2.5 rounded-lg bg-white border border-slate-200 text-[11px] text-slate-600 space-y-1">
                     <strong class="text-slate-800">Target Phrases to Deploy:</strong>
                     <ul class="space-y-0.5 list-disc pl-4 text-slate-700">
-                      ${(sc.targetPhrases || []).map(tp => `<li>${tp}</li>`).join('')}
+                      ${targetPhrases.map(tp => `<li>${tp}</li>`).join('')}
                     </ul>
                   </div>
                 </div>
-              `).join('')}
+              `;
+              }).join('')}
             </div>
 
             <!-- Student B / Peer Observer Active Listening Checklist -->
@@ -1881,15 +1933,34 @@
                 While Partner A and Partner B perform the simulation, the observer audits the dialogue using the 4 criteria below:
               </p>
               <div class="space-y-2">
-                ${(handoffs.peerObserverChecklist || []).map(chk => `
+                ${(handoffs.peerObserverChecklist || []).map((chk, idx) => {
+                  const isString = typeof chk === 'string';
+                  let title = '';
+                  let desc = '';
+                  if (isString) {
+                    const colonIdx = chk.indexOf(':');
+                    if (colonIdx !== -1) {
+                      title = chk.slice(0, colonIdx).trim();
+                      desc = chk.slice(colonIdx + 1).trim();
+                    } else {
+                      title = `Criterion ${idx + 1}`;
+                      desc = chk;
+                    }
+                  } else {
+                    title = chk.criterion || `Criterion ${idx + 1}`;
+                    desc = chk.check || chk.desc || '';
+                  }
+                  const checkId = (chk && chk.id) || (idx + 1);
+                  return `
                   <div class="p-2.5 rounded-lg border border-sky-200/80 bg-white flex items-start gap-2.5">
-                    <input type="checkbox" id="s4-peerchk-${chk.id}" class="mt-0.5 rounded text-sky-600 focus:ring-sky-500 h-4 w-4 border-slate-300 cursor-pointer" />
+                    <input type="checkbox" id="s4-peerchk-${checkId}" class="mt-0.5 rounded text-sky-600 focus:ring-sky-500 h-4 w-4 border-slate-300 cursor-pointer" />
                     <div>
-                      <span class="text-xs font-bold text-slate-900 block">${chk.criterion}</span>
-                      <p class="text-[11px] text-slate-600 leading-snug mt-0.5">${chk.check}</p>
+                      <label for="s4-peerchk-${checkId}" class="text-xs font-bold text-slate-900 block cursor-pointer">${title}</label>
+                      <p class="text-[11px] text-slate-600 leading-snug mt-0.5">${desc}</p>
                     </div>
                   </div>
-                `).join('')}
+                `;
+                }).join('')}
               </div>
             </div>
 
@@ -1919,17 +1990,29 @@
               <p class="text-xs text-amber-950 leading-relaxed">${debate.scenario || ''}</p>
             </div>
 
-            <!-- Stakeholders Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              ${(debate.stakeholders || []).map(st => `
-                <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/60 space-y-1.5">
-                  <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold text-slate-900">${st.name}</span>
+            <!-- Multi-Agency Triage Table -->
+            <div class="space-y-3">
+              <span class="text-xs font-bold text-slate-900 uppercase tracking-wider block">📋 Multi-Agency Crisis Triage Table</span>
+              <div class="space-y-3">
+                ${(debate.triageTable || []).map(row => `
+                  <div class="p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 pb-2 border-b border-slate-200/80">
+                      <h4 class="text-xs sm:text-sm font-bold text-slate-900">${row.complication}</h4>
+                      <span class="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-slate-200 text-slate-700">Agencies: ${row.agencies}</span>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-[11px]">
+                      <div class="p-2.5 rounded-lg bg-amber-50/80 border border-amber-200 text-amber-950">
+                        <strong class="text-amber-900 block mb-0.5">⚠️ Safety Regulation / Constraint:</strong>
+                        ${row.safetyRegulation}
+                      </div>
+                      <div class="p-2.5 rounded-lg bg-sky-50/80 border border-sky-200 text-sky-950">
+                        <strong class="text-sky-900 block mb-0.5">✅ Action Protocol / Operational Priority:</strong>
+                        ${row.actionProtocol}
+                      </div>
+                    </div>
                   </div>
-                  <p class="text-[11px] text-slate-700"><strong>Priority:</strong> ${st.priority}</p>
-                  <p class="text-[11px] text-slate-600 bg-white p-2 rounded border border-slate-200"><strong>Stance:</strong> ${st.stance}</p>
-                </div>
-              `).join('')}
+                `).join('')}
+              </div>
             </div>
 
             <!-- Decision Table & Agreement Tracker -->
@@ -1977,13 +2060,20 @@
 
             ${renderActivityInstructions(closing, theme)}
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              ${(closing.reviewPrompts || []).map(rp => `
-                <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 space-y-1">
-                  <span class="text-xs font-bold text-slate-800 block">${rp.title}</span>
-                  <p class="text-[11px] text-slate-600 leading-relaxed">${rp.desc}</p>
-                </div>
-              `).join('')}
+            <!-- Word Stress & Phonology Grid -->
+            <div class="space-y-2">
+              <span class="text-xs font-bold text-slate-900 uppercase tracking-wider block">🗣️ Target Vocabulary Word Stress &amp; Phonetics</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                ${(closing.pronunciationWords || []).map(pw => `
+                  <div class="p-3 rounded-lg border border-slate-200 bg-slate-50/70 space-y-1">
+                    <div class="flex items-center justify-between">
+                      <span class="font-mono text-xs font-bold text-sky-800">${pw.word}</span>
+                      <span class="text-[10px] font-mono text-slate-500">${pw.phonetic || ''}</span>
+                    </div>
+                    <p class="text-[11px] font-medium text-slate-600">${pw.stress || ''}</p>
+                  </div>
+                `).join('')}
+              </div>
             </div>
 
             <!-- Auto-Saving Continuous Learning Textarea -->
@@ -2086,7 +2176,7 @@
 
     window.setS4JobDebateAgreement = function(topicId, score) {
       for (let s = 1; s <= 5; s++) {
-        const btn = document.getElementById(`s4-debate-${topicId}-btn-${score}`);
+        const btn = document.getElementById(`s4-debate-${topicId}-btn-${s}`);
         if (!btn) continue;
         if (s === score) {
           btn.classList.add('bg-amber-600', 'text-white', 'border-amber-600');

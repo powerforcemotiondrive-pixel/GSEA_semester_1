@@ -6,7 +6,7 @@
   "scripts": {
     "build:html": "node scripts/build-html.js",
     "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify",
-    "build": "node scripts/build-html.js && npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify",
+    "build": "node scripts/validate-sessions.js && node scripts/build-html.js && npx @tailwindcss/cli -i ./src/input.css -o ./output.css --minify",
     "package": "node scripts/package-scorm.js && node scripts/package-iso.js",
     "package:scorm": "node scripts/package-scorm.js",
     "package:moodle": "node scripts/package-moodle.js",
@@ -20,6 +20,7 @@
     "promo:update": "node scripts/update-promo.js && npm run package && npm run package:moodle",
     "portfolio:summary": "node scripts/update-portfolio-summary.js && npm run package && npm run package:moodle",
     "verify:links": "node scripts/verify-links.js",
+    "verify:sessions": "node scripts/validate-sessions.js",
     "audit": "node scripts/audit-session.js"
   },
   "repository": {
