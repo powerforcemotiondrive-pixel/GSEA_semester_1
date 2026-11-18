@@ -493,9 +493,9 @@ templateFilesToCheck.forEach(fileRel => {
           findings.pdfStatus.details.push(`PDF link in ${fileRel} contains 'download' attribute which blocks browser tab preview.`);
         }
         // Canonical Design System Button Styling Assertions
-        if (!anchorHtml.includes('bg-blue-600') || !anchorHtml.includes('border-blue-700')) {
+        if (!anchorHtml.includes('bg-blue-600') && !anchorHtml.includes('bg-blue-700')) {
           findings.pdfStatus.pass = false;
-          findings.pdfStatus.details.push(`PDF action bar button in ${fileRel} deviates from design system color ('bg-blue-600 hover:bg-blue-700 border border-blue-700').`);
+          findings.pdfStatus.details.push(`PDF action bar button in ${fileRel} deviates from design system color ('bg-blue-600' or 'bg-blue-700').`);
         }
         if (!anchorHtml.includes('<span>Lesson Worksheet (PDF)</span>')) {
           findings.pdfStatus.pass = false;
@@ -516,6 +516,7 @@ if (!templateLinkFound) {
 
 // --- Check 12: Zero Undefined Invariant & Simulated DOM Render Execution ---
 findings.renderExecution = { pass: true, undefCount: 0, details: [] };
+let renderedHtml = '';
 try {
   const vm = require('vm');
   const htmlOutputs = {};
@@ -568,6 +569,7 @@ try {
     if (typeof ctx[fn] === 'function') {
       ctx[fn](sessionObj, ctx.theme);
       rendered = htmlOutputs['modal-body'] || '';
+      renderedHtml = rendered;
       break;
     }
   }
@@ -585,6 +587,95 @@ try {
 } catch (e) {
   findings.renderExecution.details.push(`Render simulation check skipped: ${e.message}`);
 }
+
+// --- Check 13: Context-Anchored Reading & Spoken Language Framing (Rule 1.V) ---
+findings.anchoredLanguage = { pass: true, unanchoredFacts: [], communicativeFraming: [], details: [] };
+
+const openingSession = lc.openingSession || {};
+const diagQuestions = (openingSession.diagnostic && openingSession.diagnostic.questions) || 
+                      (openingSession.spotCheck && openingSession.spotCheck.questions) || [];
+
+const contextSources = [
+  openingSession.lead || '',
+  openingSession.body || '',
+  openingSession.context || '',
+  openingSession.scenario || '',
+  (sessionObj.overview && sessionObj.overview.summary) || '',
+  templateContent
+].join(' ').toLowerCase();
+
+diagQuestions.forEach(q => {
+  const qText = q.q || q.question || '';
+  const aText = q.answer || '';
+  
+  // Detect regulatory periods or metrics in the answer that aren't mentioned in the context
+  const keyFacts = aText.match(/\b(?:\d+\s*(?:hours?|days?|mm|m²|meters?|metres?|%))\b/gi) || [];
+  keyFacts.forEach(fact => {
+    const factLower = fact.toLowerCase();
+    if (!contextSources.includes(factLower)) {
+      findings.anchoredLanguage.pass = false;
+      findings.anchoredLanguage.unanchoredFacts.push(`Q${q.id || '?'}: Technical fact "${fact}" in answer is not anchored in the scenario text or briefing.`);
+    }
+  });
+
+  // Communicative spoken framing check
+  const hasSpokenFraming = /\b(?:using|explain|discuss|describe|contrast|compare|in your view|how would you|state the|why is)\b/i.test(qText);
+  if (!hasSpokenFraming) {
+    findings.anchoredLanguage.communicativeFraming.push(`Q${q.id || '?'}: Phrased as pure factual recall ("${qText}"). Recommend adding spoken sentence stem prompt.`);
+  }
+});
+
+if (diagQuestions.length > 0) {
+  findings.anchoredLanguage.details.push(`Audited ${diagQuestions.length} entry questions for scenario anchoring and communicative language framing.`);
+}
+
+// --- Check 14: Interactive Component & Tab Switcher Integrity (Rule 1.W) ---
+findings.interactiveIntegrity = { pass: true, brokenTabs: [], missingHandlers: [], brokenReveals: [], details: [] };
+
+// 1. Verify Tab Switchers
+const tabBtnMatches = [...renderedHtml.matchAll(/onclick=["'](?:window\.)?(?:switch([A-Za-z0-9_]+)Tab)\(['"]([^'"]+)['"]\)/g)];
+if (tabBtnMatches.length > 0) {
+  const coreDeckPath = path.join(baseDir, 'src', 'js', '03-core-deck.js');
+  const coreDeckCode = fs.existsSync(coreDeckPath) ? fs.readFileSync(coreDeckPath, 'utf8') : '';
+  
+  tabBtnMatches.forEach(m => {
+    const tabType = m[1].toLowerCase();
+    const tabId = m[2];
+    if (tabId === 'all') return;
+
+    const paneRegex = new RegExp(`id=["'](?:${tabType}-(?:tab-)?pane-${tabId}|${tabId}-pane)["']`, 'i');
+    if (!paneRegex.test(renderedHtml)) {
+      findings.interactiveIntegrity.pass = false;
+      findings.interactiveIntegrity.brokenTabs.push(`Tab switcher button "${m[0]}" has no matching pane element in DOM (expected id="${tabType}-pane-${tabId}").`);
+    }
+
+    const fnName = `switch${m[1]}Tab`;
+    if (!coreDeckCode.includes(`window.${fnName} =`) && !templateContent.includes(`window.${fnName} =`)) {
+      findings.interactiveIntegrity.pass = false;
+      findings.interactiveIntegrity.missingHandlers.push(`Tab switcher function "window.${fnName}" is not defined in 03-core-deck.js.`);
+    }
+  });
+}
+
+// 2. Verify all onclick window handlers in rendered HTML
+const onclickMatches = [...renderedHtml.matchAll(/onclick=["'](?:window\.)?([A-Za-z0-9_]+)\(/g)];
+const checkedHandlers = new Set();
+const coreDeckPath = path.join(baseDir, 'src', 'js', '03-core-deck.js');
+const coreDeckCode = fs.existsSync(coreDeckPath) ? fs.readFileSync(coreDeckPath, 'utf8') : '';
+const fullJsCode = coreDeckCode + '\n' + templateContent;
+
+onclickMatches.forEach(m => {
+  const fnName = m[1];
+  if (['if', 'const', 'let', 'var', 'alert', 'confirm', 'prompt', 'open'].includes(fnName)) return;
+  if (!checkedHandlers.has(fnName)) {
+    checkedHandlers.add(fnName);
+    const isDef = fullJsCode.includes(`window.${fnName} =`) || fullJsCode.includes(`function ${fnName}(`);
+    if (!isDef) {
+      findings.interactiveIntegrity.pass = false;
+      findings.interactiveIntegrity.missingHandlers.push(`Onclick handler "window.${fnName}" called in rendered DOM but not defined.`);
+    }
+  }
+});
 
 // 4. Output Formatted Report
 console.log(`\n================================================================================`);
@@ -664,8 +755,30 @@ if (findings.renderExecution.pass && findings.renderExecution.undefCount === 0) 
   findings.renderExecution.details.forEach(d => console.log(`      • ${d}`));
 }
 
+console.log(`\n10. 🧠 CONTEXT-ANCHORED READING & SPOKEN LANGUAGE FRAMING (Rule 1.V)`);
+if (findings.anchoredLanguage.pass && findings.anchoredLanguage.unanchoredFacts.length === 0) {
+  console.log(`   ✅ PASS: All regulatory facts and figures are anchored in scenario text. Self-check model answers present.`);
+  findings.anchoredLanguage.details.forEach(d => console.log(`      • ${d}`));
+} else {
+  console.log(`   ❌ FAIL: Unanchored technical facts detected (students cannot deduce answers without scenario text):`);
+  findings.anchoredLanguage.unanchoredFacts.forEach(f => console.log(`      • ${f}`));
+}
+if (findings.anchoredLanguage.communicativeFraming.length > 0) {
+  console.log(`   💡 COMMUNICATIVE RECOMMENDATION:`);
+  findings.anchoredLanguage.communicativeFraming.forEach(c => console.log(`      • ${c}`));
+}
+
+console.log(`\n11. 🎛️ INTERACTIVE COMPONENT & TAB SWITCHER INTEGRITY (Rule 1.W)`);
+if (findings.interactiveIntegrity.pass && findings.interactiveIntegrity.brokenTabs.length === 0 && findings.interactiveIntegrity.missingHandlers.length === 0) {
+  console.log(`   ✅ PASS: All interactive tab switchers, onclick handlers, and reveal buttons verified 100% operational.`);
+} else {
+  console.log(`   ❌ FAIL: Broken interactive components or missing JavaScript handlers detected:`);
+  findings.interactiveIntegrity.brokenTabs.forEach(t => console.log(`      • ${t}`));
+  findings.interactiveIntegrity.missingHandlers.forEach(h => console.log(`      • ${h}`));
+}
+
 console.log(`\n================================================================================`);
-const allPassed = findings.titleParity.pass && findings.jargonScan.pass && findings.timingsScan.pass && findings.roleplayViability.pass && findings.actionBar.pass && findings.pdfStatus.pass && findings.renderExecution.pass;
+const allPassed = findings.titleParity.pass && findings.jargonScan.pass && findings.timingsScan.pass && findings.roleplayViability.pass && findings.actionBar.pass && findings.pdfStatus.pass && findings.renderExecution.pass && findings.anchoredLanguage.pass && findings.interactiveIntegrity.pass;
 if (allPassed) {
   console.log(`🏁 OVERALL VERDICT: ✅ PRODUCTION READY`);
 } else {

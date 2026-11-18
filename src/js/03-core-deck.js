@@ -1964,6 +1964,26 @@
       }
     };
 
+    window.clearLessonNotes = function(target) {
+      if (!confirm('Clear your saved notes?')) return;
+      if (Array.isArray(target)) {
+        target.forEach(fieldId => {
+          const el = document.getElementById(`notes-${fieldId}`);
+          if (el) el.value = '';
+          try { localStorage.removeItem(`gsea_note_${fieldId}`); } catch (e) {}
+        });
+        return;
+      }
+      const sessionNum = target;
+      ['roleplay', 'safety', 'warmup', 'reflection', 'activity', 'roles', 'flipped_hook', 'flipped_activity', 'flipped_roles'].forEach(noteKey => {
+        if (window.saveLessonNote) window.saveLessonNote(`${noteKey}-s${sessionNum}`, '');
+        const textarea = document.getElementById(`notes-${noteKey}-s${sessionNum}`);
+        if (textarea) textarea.value = '';
+        const printEl = document.getElementById(`print-notes-${noteKey}-s${sessionNum}`);
+        if (printEl) printEl.textContent = `[No ${noteKey} notes recorded]`;
+      });
+    };
+
     window.syncPortfolioDrawerHeader = function(trackKey) {
       const activeTrack = trackKey || 'ag';
       const isAg = (activeTrack === 'ag');

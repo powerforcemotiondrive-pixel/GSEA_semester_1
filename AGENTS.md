@@ -209,6 +209,15 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **Approved Professional Designations**: Always use accurate civil aviation operational terminology: `"as future GSEA graduates / TSEEAC professionals"`, `"civil aviation specialists"`, `"technical officers"`, `"aerodrome operations officers"`, `"aviation safety specialists"`, `"safety investigators"`, `"aviation professionals"`, or `"students"`. Never use `"as future graduates in aerodrome engineering"`, `"engineers"`, or `"future engineering career"`.
 - **Engineering Works vs. People**: Technical airfield infrastructure (e.g., civil engineering works, concrete repairs, drainage culverts, runway resurfacing) may describe physical works or external contractors, but all aerodrome personnel, inspectors, and students must strictly use the approved non-engineer designations.
 
+### V. Context-Anchored Reading & Spoken Language Framing Invariant (Tri-Project Invariant)
+- **Zero Unanchored Technical Trivia**: All diagnostic questions, spot-checks, and reading tasks must draw 100% of their factual answers directly from the accompanying scenario briefing, text extract, or context box. Never ask students or English teachers to recall unanchored legal deadlines (e.g. EU 376/2014 72-hour MOR deadline), mechanical failure thresholds (e.g. 3 mm water depth, shear pin engineering limits), or theoretical models that are not explicitly provided in the reading text.
+- **Communicative Spoken Language Formulation Framing**: Questions must not be framed as dry, isolated factual recall quizzes. Every question prompt must provide communicative speaking prompts and target sentence stems (e.g., using modal verbs *"Using 'must be submitted within...'..."*, causal linkers *"Explain using 'in order to protect...'..."*, or comparative markers *"Contrast using 'whereas...'..."*).
+- **Self-Check Model Answers Welcomed**: Model answers (`✓ Model Answer: ...`) visible on worksheets or revealable on-screen are encouraged as positive self-assessment and self-check benchmarks and must not be flagged as errors.
+
+### W. Interactive Component & DOM Switcher Integrity Invariant (Tri-Project Invariant)
+- **100% Operational Interactive Components**: Every on-screen interactive control—tab switchers (`window.switchExhibitTab`, `window.switchDossierTab`, `window.switchCapTab`), answer reveals (`window.toggleDiagnosticAnswer`, `window.toggle*Answer`), audio pronunciation helpers (`window.speakWord`), notes clearers (`window.clearLessonNotes`), and PDF print handlers (`window.printLessonContent`)—must be fully implemented with matching DOM element IDs and CSS selectors.
+- **Strict Tab Switcher ID & Class Parity**: All tab switcher pane containers must possess their corresponding discriminator class (`.exhibit-pane`, `.dossier-pane`, `.cap-pane`) and exact matching IDs (`exhibit-pane-[id]`, `dossier-pane-[id]`, `cap-pane-[id]`). Automated audits verify that every interactive button has a live, matching target in the rendered DOM.
+
 ---
 
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
