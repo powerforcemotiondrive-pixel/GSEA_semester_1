@@ -246,12 +246,71 @@ if (plan) {
   }
 }
 
-// --- Check 4: Classroom Timings in Lesson Content (Rule 1.Q) ---
+// --- Early PDF Resolution & Native Text Extraction (Rule 1.T) ---
+let expectedPdfName = '';
+if (target.semester === 3) {
+  expectedPdfName = `GSEA_S3_M${target.moduleNum}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+} else if (target.semester === 1 && (target.track === 'at' || target.track === 'aas')) {
+  expectedPdfName = `GSEA_S1_M${target.moduleNum}_AT_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+} else {
+  expectedPdfName = `GSEA_S${target.semester}_M${target.moduleNum}_${target.track.toUpperCase()}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+}
+
+// Fallback check if alternative exists on disk (AT vs AAS)
+if (!fs.existsSync(path.join(baseDir, 'docs', expectedPdfName))) {
+  const altTrack = target.track.toUpperCase() === 'AAS' ? 'AT' : (target.track.toUpperCase() === 'AT' ? 'AAS' : null);
+  if (altTrack) {
+    const altPdf = `GSEA_S${target.semester}_M${target.moduleNum}_${altTrack}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
+    if (fs.existsSync(path.join(baseDir, 'docs', altPdf))) {
+      expectedPdfName = altPdf;
+    }
+  }
+}
+
+const pdfPath = path.join(baseDir, 'docs', expectedPdfName);
+findings.pdfStatus.expectedPdfName = expectedPdfName;
+findings.pdfStatus.exists = fs.existsSync(pdfPath);
+let pdfExtractedText = '';
+
+if (findings.pdfStatus.exists) {
+  try {
+    const oCmd = `osascript -l JavaScript -e '
+      ObjC.import("PDFKit");
+      const url = $.NSURL.fileURLWithPath("${pdfPath}");
+      const doc = $.PDFDocument.alloc.initWithURL(url);
+      const count = doc ? doc.pageCount : 0;
+      const str = doc ? doc.string.js : "";
+      JSON.stringify({ pageCount: count, text: str });
+    '`;
+    const res = JSON.parse(execSync(oCmd, { maxBuffer: 25 * 1024 * 1024 }).toString().trim());
+    const pageCount = parseInt(res.pageCount, 10);
+    findings.pdfStatus.pageCount = pageCount;
+    pdfExtractedText = res.text || '';
+    if (pageCount !== 7) {
+      findings.pdfStatus.pass = false;
+      findings.pdfStatus.details.push(`PDF page count is ${res.pageCount} pages (invariant requires EXACTLY 7 pages).`);
+    } else {
+      findings.pdfStatus.details.push(`Verified exactly 7/7 pages via macOS PDFKit.`);
+      findings.pdfStatus.details.push(`Extracted full text from 7-page student worksheet (${pdfExtractedText.length.toLocaleString()} characters) for unified pedagogical audit.`);
+    }
+  } catch (e) {
+    findings.pdfStatus.details.push(`Could not verify page count via PDFKit: ${e.message}`);
+  }
+} else {
+  findings.pdfStatus.pass = false;
+  findings.pdfStatus.details.push(`PDF file does not exist on disk: docs/${expectedPdfName}`);
+}
+
+// --- Check 4: Classroom Timings in Lesson Content, Plan & PDF (Rule 1.Q) ---
 const lc = sessionObj.lessonContent || {};
 const lcStr = JSON.stringify(lc);
-const timerBadgeMatches = lcStr.match(/⏱️[^\"]+/g) || [];
-const parenMinuteMatches = lcStr.match(/\([^\)]*\b\d*\s*(?:mins?|minutes?)\b[^\)]*\)/gi) || [];
-const allTimingMatches = [...new Set([...timerBadgeMatches, ...parenMinuteMatches])];
+const planStr = JSON.stringify(sessionObj.lessonPlan || {});
+const combinedTimingText = lcStr + '\n' + planStr + '\n' + pdfExtractedText;
+
+const timerBadgeMatches = combinedTimingText.match(/⏱️[^\"]+/g) || [];
+const parenMinuteMatches = combinedTimingText.match(/\([^\)]*\b\d+\s*(?:mins?|minutes?)\b[^\)]*\)/gi) || [];
+const targetMinuteMatches = combinedTimingText.match(/\b(?:target|time):\s*\d+\s*(?:mins?|minutes?)\b/gi) || [];
+const allTimingMatches = [...new Set([...timerBadgeMatches, ...parenMinuteMatches, ...targetMinuteMatches])];
 
 if (allTimingMatches.length > 0) {
   findings.timingsScan.pass = false;
@@ -265,7 +324,7 @@ const forbiddenTerms = [
   'concessive signpost', 'opinion signpost', 'academic syntax', 'faculty'
 ];
 
-const fullSessionText = (JSON.stringify(sessionObj) + '\n' + templateContent).toLowerCase();
+const fullSessionText = (JSON.stringify(sessionObj) + '\n' + templateContent + '\n' + pdfExtractedText).toLowerCase();
 forbiddenTerms.forEach(term => {
   if (fullSessionText.includes(term.toLowerCase())) {
     // Exclude physical construction scaffolding
@@ -299,7 +358,11 @@ if (driftWarnings.length > 0) {
   findings.thematicRelevance.details = driftWarnings;
 }
 
-// --- Check 7: 2-Hour Content Sufficiency & Pacing Gauge ---
+// --- Check 7: 2-Hour Content Sufficiency & Pacing Gauge (Holistic Scope) ---
+const planItems = (sessionObj.lessonPlan && Array.isArray(sessionObj.lessonPlan.items)) ? sessionObj.lessonPlan.items : [];
+const planText = JSON.stringify(sessionObj.lessonPlan || {}).toLowerCase();
+const pdfLower = pdfExtractedText.toLowerCase();
+
 let hasWarmup = false;
 let hasCoreInput = false;
 let hasLanguageFocus = false;
@@ -307,26 +370,47 @@ let hasSimulation = false;
 let hasDecisionTable = false;
 let hasConsolidation = false;
 
+// 1. Scan in-deck digital lessonContent
 for (const k of Object.keys(lc)) {
   const keyLower = k.toLowerCase();
   const act = lc[k];
   const titleLower = (act.title || '').toLowerCase();
 
   if (keyLower.includes('opening') || titleLower.includes('warm-up') || titleLower.includes('news')) hasWarmup = true;
-  if (keyLower.includes('matrix') || keyLower.includes('dossier') || keyLower.includes('extract') || keyLower.includes('pressure')) hasCoreInput = true;
-  if (keyLower.includes('grammar') || keyLower.includes('clinic') || titleLower.includes('grammar') || titleLower.includes('rules')) hasLanguageFocus = true;
-  if (keyLower.includes('simulation') || keyLower.includes('roleplay') || keyLower.includes('pitch') || titleLower.includes('role-play') || titleLower.includes('pitch') || titleLower.includes('summit')) hasSimulation = true;
+  if (keyLower.includes('matrix') || keyLower.includes('dossier') || keyLower.includes('extract') || keyLower.includes('pressure') || keyLower.includes('reading')) hasCoreInput = true;
+  if (keyLower.includes('grammar') || keyLower.includes('clinic') || titleLower.includes('grammar') || titleLower.includes('rules') || titleLower.includes('connecting')) hasLanguageFocus = true;
+  if (keyLower.includes('simulation') || keyLower.includes('roleplay') || keyLower.includes('pitch') || titleLower.includes('role-play') || titleLower.includes('pitch') || titleLower.includes('summit') || titleLower.includes('briefing')) hasSimulation = true;
   if (keyLower.includes('safetycheck') || titleLower.includes('safety check') || titleLower.includes('decision table') || titleLower.includes('consensus')) hasDecisionTable = true;
-  if (keyLower.includes('closing') || keyLower.includes('taboo') || titleLower.includes('wrap-up') || titleLower.includes('taboo')) hasConsolidation = true;
+  if (keyLower.includes('closing') || keyLower.includes('taboo') || titleLower.includes('wrap-up') || titleLower.includes('taboo') || titleLower.includes('quiz')) hasConsolidation = true;
 }
+
+// 2. Scan structured lessonPlan stages in overview
+planItems.forEach(item => {
+  const t = (item.title || '').toLowerCase();
+  const d = (item.description || '').toLowerCase();
+  if (t.includes('warm-up') || t.includes('opening') || d.includes('warm-up')) hasWarmup = true;
+  if (t.includes('reading') || t.includes('dossier') || t.includes('exemption') || d.includes('reading') || d.includes('scanning')) hasCoreInput = true;
+  if (t.includes('connecting words') || t.includes('grammar') || t.includes('language') || d.includes('connecting words') || d.includes('language clinic')) hasLanguageFocus = true;
+  if (t.includes('briefing') || t.includes('simulation') || t.includes('roleplay') || d.includes('briefing') || d.includes('simulation')) hasSimulation = true;
+  if (t.includes('safety check') || t.includes('consensus') || d.includes('safety check') || d.includes('decision')) hasDecisionTable = true;
+  if (t.includes('closing') || t.includes('wrap-up') || t.includes('review') || d.includes('wrap-up') || d.includes('review')) hasConsolidation = true;
+});
+
+// 3. Scan full 7-page PDF student handout
+if (pdfLower.includes('warm-up') || pdfLower.includes('opening discussion') || pdfLower.includes('background & objectives') || pdfLower.includes('entry spot-check')) hasWarmup = true;
+if (pdfLower.includes('case study') || pdfLower.includes('technical document') || pdfLower.includes('exemption') || pdfLower.includes('reading text') || pdfLower.includes('exhibit')) hasCoreInput = true;
+if (pdfLower.includes('connecting words') || pdfLower.includes('grammar in context') || pdfLower.includes('language clinic') || pdfLower.includes('useful phrases')) hasLanguageFocus = true;
+if (pdfLower.includes('spoken simulation') || pdfLower.includes('role-play') || pdfLower.includes('briefing') || pdfLower.includes('role a') || pdfLower.includes('role b')) hasSimulation = true;
+if (pdfLower.includes('safety check') || pdfLower.includes('decision table') || pdfLower.includes('peer checklist') || pdfLower.includes('peer observer')) hasDecisionTable = true;
+if (pdfLower.includes('self-assessment') || pdfLower.includes('formative evaluation') || pdfLower.includes('independent study') || pdfLower.includes('reflection')) hasConsolidation = true;
 
 const phasesCount = [hasWarmup, hasCoreInput, hasLanguageFocus, hasSimulation, hasDecisionTable, hasConsolidation].filter(Boolean).length;
 if (phasesCount >= 5) {
   findings.sufficiencyGauge.score = '🟢 Optimal (Balanced for 2-Hour University Block)';
-  findings.sufficiencyGauge.details.push(`All core communicative phases present (${phasesCount}/6 stages). Teacher has ample depth without rushing or filler.`);
+  findings.sufficiencyGauge.details.push(`All core communicative phases present (${phasesCount}/6 stages across overview, deck, and 7-page PDF). Teacher has ample depth without rushing or filler.`);
 } else if (phasesCount >= 3) {
   findings.sufficiencyGauge.score = '🟡 Light / Thin (Risk of finishing early < 90 mins)';
-  findings.sufficiencyGauge.details.push(`Only ${phasesCount}/6 core communicative phases detected. Needs additional simulation or decision table.`);
+  findings.sufficiencyGauge.details.push(`Only ${phasesCount}/6 core communicative phases detected across overview, deck, and PDF. Needs additional simulation or decision table.`);
 } else {
   findings.sufficiencyGauge.score = '🔴 Deficient / Fragmented (< 60 mins substance)';
   findings.sufficiencyGauge.details.push(`Insufficient content for a 2-hour university block (${phasesCount}/6 phases).`);
@@ -335,7 +419,7 @@ if (phasesCount >= 5) {
 // --- Check 8: Roleplay Viability & Peer Checklist ---
 const fullTemplate = templateContent.toLowerCase();
 if (hasSimulation) {
-  const hasPeerChecklist = fullTemplate.includes('peer checklist') || fullTemplate.includes('partner b') || fullTemplate.includes('peer evaluation') || fullTemplate.includes('peer observer');
+  const hasPeerChecklist = fullTemplate.includes('peer checklist') || fullTemplate.includes('partner b') || fullTemplate.includes('peer evaluation') || fullTemplate.includes('peer observer') || pdfLower.includes('peer checklist') || pdfLower.includes('peer observer');
   if (!hasPeerChecklist) {
     findings.roleplayViability.pass = false;
     findings.roleplayViability.details.push(`Speaking simulation lacks a Student B / Peer Observer active listening checklist.`);
@@ -356,56 +440,7 @@ if (hasLegacyPrint) {
   findings.actionBar.details.push(`Uses deprecated browser print button ('window.printLessonContent()') instead of official PDF link button.`);
 }
 
-// --- Check 11: 7-Page A4 PDF Worksheet Status ---
-let expectedPdfName = '';
-if (target.semester === 3) {
-  expectedPdfName = `GSEA_S3_M${target.moduleNum}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
-} else if (target.semester === 1 && (target.track === 'at' || target.track === 'aas')) {
-  // In Semester 1, Technical English uses AT naming convention
-  expectedPdfName = `GSEA_S1_M${target.moduleNum}_AT_S${target.sessionNum}_Lesson_Worksheet.pdf`;
-} else {
-  expectedPdfName = `GSEA_S${target.semester}_M${target.moduleNum}_${target.track.toUpperCase()}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
-}
-
-// Fallback check if alternative exists on disk (AT vs AAS)
-if (!fs.existsSync(path.join(baseDir, 'docs', expectedPdfName))) {
-  const altTrack = target.track.toUpperCase() === 'AAS' ? 'AT' : (target.track.toUpperCase() === 'AT' ? 'AAS' : null);
-  if (altTrack) {
-    const altPdf = `GSEA_S${target.semester}_M${target.moduleNum}_${altTrack}_S${target.sessionNum}_Lesson_Worksheet.pdf`;
-    if (fs.existsSync(path.join(baseDir, 'docs', altPdf))) {
-      expectedPdfName = altPdf;
-    }
-  }
-}
-
-const pdfPath = path.join(baseDir, 'docs', expectedPdfName);
-findings.pdfStatus.expectedPdfName = expectedPdfName;
-findings.pdfStatus.exists = fs.existsSync(pdfPath);
-
-if (!findings.pdfStatus.exists) {
-  findings.pdfStatus.pass = false;
-  findings.pdfStatus.details.push(`PDF file does not exist on disk: docs/${expectedPdfName}`);
-} else {
-  try {
-    const oCmd = `osascript -l JavaScript -e '
-      ObjC.import("PDFKit");
-      const url = $.NSURL.fileURLWithPath("${pdfPath}");
-      const doc = $.PDFDocument.alloc.initWithURL(url);
-      doc ? doc.pageCount : 0;
-    '`;
-    const pageCount = parseInt(execSync(oCmd).toString().trim(), 10);
-    findings.pdfStatus.pageCount = pageCount;
-    if (pageCount !== 7) {
-      findings.pdfStatus.pass = false;
-      findings.pdfStatus.details.push(`PDF page count is ${pageCount} pages (invariant requires EXACTLY 7 pages).`);
-    } else {
-      findings.pdfStatus.details.push(`Verified exactly 7/7 pages via macOS PDFKit.`);
-    }
-  } catch (e) {
-    findings.pdfStatus.details.push(`Could not verify page count via PDFKit: ${e.message}`);
-  }
-}
-
+// --- Check 11: 7-Page A4 PDF Worksheet Verification ---
 // Check Manifest
 if (fs.existsSync(manifestPath)) {
   const mText = fs.readFileSync(manifestPath, 'utf8');

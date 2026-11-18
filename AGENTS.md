@@ -57,7 +57,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 ### D. Mandatory Pre-Implementation Response & Approval Gate
 - **No Direct Changes Without Prior Response**: ALL questions, requests, or suggested modifications from the user require a thorough review, report, and recommendation from the AI assistant **BEFORE** implementing any changes.
 - **Proceed / Ignore Prompt**: Every proposal or review must conclude with an explicit prompt asking the user whether to **proceed or ignore/adjust** (e.g. *"Please let me know if you would like me to proceed with these changes, or ignore/adjust."*).
-- **Explicit Confirmation Required**: The assistant must wait for explicit approval (such as *"Proceed"*, *"Approved"*, or further instructions) before modifying any codebase files.
+- **Explicit Confirmation Required**: The assistant must wait for explicit approval (such as *"Proceed"*, *"Approved"*, the author shorthand code **`PX`**, or further instructions) before modifying any codebase files.
 
 ### E. Automated Project Backups (`backup1`, `backup2` & `backup3`)
 - **`backup1` Trigger**: Whenever the user sends `backup1`, the assistant immediately runs `npm run backup1` (or `node scripts/backup.js semester1`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_1/` and confirms the file path and archive size.
@@ -188,20 +188,24 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ### T. Automated Session Audit & A4 PDF Worksheet Setup Protocol (Audit S... / Audit Semester ...)
 - **Universal Audit Command (`npm run audit -- "..."` or Natural Chat)**: Whenever the user sends an audit command (e.g., `Audit S1 AG M1 Ss 3`, `Audit Semester 1 Mod 1 AG Ss 3`, `Audit S3 AT M1 S5`), the assistant executes `node scripts/audit-session.js` across the target session.
-- **8 Mandatory Quality Checks**:
+- **Unified 3-Surface Audit Scope**: The audit engine evaluates the full pedagogical footprint of each session across all three instructional surfaces:
+  1. *Overview & Structured Lesson Plan*: Analyzes `sessionObj.lessonPlan` (summary, 4-stage progression `Part 1`–`Part 4`, learning outcomes, teacher facilitation tips).
+  2. *In-Deck Digital Worksheet*: Analyzes `sessionObj.lessonContent` (entry questions, interactive dossiers/exhibits, communicative drills, decision tables, active-listening checklists, consolidation quizzes).
+  3. *Full 7-Page A4 PDF Lesson Document*: Extracts and scans the full text of `docs/GSEA_S[X]_M[X]_[TRACK]_S[X]_Lesson_Worksheet.pdf` via native macOS `PDFKit` (`doc.string.js`) covering vocabulary tables, reading texts, role-play cards, peer observer checklists, grammar clinic drills, and spoken self-assessment.
+- **Mandatory Quality Checks**:
   1. *Thematic Relevance & Subject Drift*: Ensures 100% topical coherence between session key terms and classroom exercises.
-  2. *2-Hour Classroom Sufficiency Gauge*: Evaluates the pedagogical structure across 6 core communicative stages (`🟢 Optimal`, `🟡 Light`, or `🔴 Deficient`).
+  2. *2-Hour Classroom Sufficiency Gauge (Holistic Scope)*: Evaluates the pedagogical structure across 6 core communicative stages (`🟢 Optimal`, `🟡 Light`, or `🔴 Deficient`), pooling substance across the overview lesson plan, digital deck activities, and the 7-page PDF student handout.
   3. *1:1 Title Parity & Schema (Rules 1.L & 1.P)*: Verifies exact session title alignment across course data, admin hub, and standalone admin portal.
-  4. *Zero Academic Jargon & Prohibited Lexicon (Rule 1.I)*: Scans for prohibited pedagogical meta-labels and enforces strict prohibition of the term `"faculty"`.
-  5. *Classroom Timings & Teacher Autonomy (Rule 1.Q)*: Detects and removes rigid minute breakdowns and timer emojis.
-  6. *Pairwork Viability & Student B Peer Checklist*: Ensures active listening checklists exist for speaking simulations.
+  4. *Zero Academic Jargon & Prohibited Lexicon (Rule 1.I)*: Scans unified corpus (deck, overview lesson plan, and 7-page PDF) for prohibited pedagogical meta-labels and enforces strict prohibition of the term `"faculty"`.
+  5. *Classroom Timings & Teacher Autonomy (Rule 1.Q)*: Detects and removes rigid minute breakdowns and timer emojis across the unified corpus (deck, overview lesson plan, and 7-page PDF).
+  6. *Pairwork Viability & Student B Peer Checklist*: Ensures active listening checklists exist for speaking simulations across both deck and PDF.
   7. *Digital Worksheet & Action Bar Button Invariant*: Confirms local storage textareas (`window.saveLessonNote`), and strictly enforces the canonical action bar PDF button styling:
      - Class: `inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 border border-blue-700 shadow-xs transition-all cursor-pointer shrink-0`
      - Label: `<span>Lesson Worksheet (PDF)</span>`
      - Trailing arrow: `<span aria-hidden="true">&rarr;</span>`
      - Link targets: `target="_blank" rel="noopener noreferrer"` (without `download` attribute).
      - Strict Invariant: Any deviation in color, label text, or missing trailing arrow fails the audit automatically.
-  8. *7-Page A4 PDF Lesson Worksheet Status*: Enforces the exact 7-page A4 PDF invariant (`docs/GSEA_S[X]_M[X]_[TRACK]_S[X]_Lesson_Worksheet.pdf`), verified via native macOS PDFKit (`doc.pageCount === 7`), and tracked in `imsmanifest.xml`.
+  8. *7-Page A4 PDF Lesson Worksheet Status*: Enforces the exact 7-page A4 PDF invariant (`docs/GSEA_S[X]_M[X]_[TRACK]_S[X]_Lesson_Worksheet.pdf`), verified via native macOS PDFKit (`doc.pageCount === 7`), extracts full page text for content analysis, and verifies tracking in `imsmanifest.xml`.
 - **Tri-Project Invariant Synchronization**: The audit engine and command runbook are synchronized permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
 
 ### U. GSEA / TSEEAC Professional Identity & Non-Engineer Invariant (Tri-Project Invariant)
