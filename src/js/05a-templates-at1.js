@@ -52,6 +52,8 @@
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(sessionData, theme)}
+
           <!-- Activity 1: Aviation News & Entry Diagnostic -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
@@ -553,6 +555,8 @@
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(sessionData, theme)}
+
           <!-- Activity 1: Aviation News & Session 1 Catch-Up Spot-Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
@@ -993,6 +997,8 @@
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Part 1: Aviation News & Previous Session Vocabulary Spot-Check -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">
@@ -1516,6 +1522,8 @@
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Activity 1: Aviation News & Session 3 Spot-Check -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4">

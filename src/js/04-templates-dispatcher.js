@@ -1,3 +1,121 @@
+
+    /**
+     * Renders the unified Session Briefing, Platform Guide, and Pedagogical Roadmap
+     * across all Semester 1 sessions (AT & AG Modules 1-3).
+     * Complies with Rule 1.I (Zero jargon, no faculty) and Rule 1.Q (Zero timings, teacher pacing autonomy).
+     */
+    function renderSessionBriefingBanner(sessionData, theme) {
+      if (!sessionData) return "";
+      const ov = sessionData.overview || {};
+      const intro = ov.intro || (typeof ov === "string" ? ov : "") || (sessionData.lessonContent?.hero?.subtitle || "");
+      const objs = (sessionData.objectives?.items || []).slice(0, 4);
+      const parts = sessionData.lessonPlan?.items || [];
+      const heroTitle = sessionData.lessonContent?.hero?.title || sessionData.title || sessionData.session || "Session Overview";
+      const primaryColor = (theme && theme.primary) || "#1d4ed8";
+
+      return `
+          <!-- Session Platform Guide & Pedagogical Roadmap -->
+          <div class="space-y-3">
+            <!-- 1. Compact Platform Usage Bar -->
+            <div class="bg-slate-900 text-white rounded-xl p-3 sm:p-3.5 shadow-xs border border-slate-800">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="text-xs">💡</span>
+                  <span class="text-[10.5px] font-black uppercase tracking-wider text-amber-300">How to Use This Platform:</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 text-[11px] text-slate-300 w-full md:w-auto">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-blue-400 font-bold">💻 In-Class:</span>
+                    <span>Live digital worksheet &amp; pair speaking</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-indigo-400 font-bold">📄 Offline / Paper:</span>
+                    <span>Downloadable 7-page PDF (top right)</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-amber-400 font-bold">📚 Self-Study:</span>
+                    <span>Vocabulary &amp; Additional Materials tabs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Session Context & Pedagogical Roadmap Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-3.5">
+              <!-- Left: Operational Context & Spoken Goals -->
+              <div class="lg:col-span-7 bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3.5">
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs">📌</span>
+                    <span class="text-[10.5px] font-black uppercase tracking-wider text-slate-500">Session Briefing • Operational Context</span>
+                  </div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${heroTitle}</h4>
+                  ${intro ? `<p class="text-xs sm:text-[12.5px] text-slate-600 leading-relaxed">${intro}</p>` : ""}
+                </div>
+
+                ${objs.length > 0 ? `
+                  <div class="pt-2.5 border-t border-slate-100 space-y-1.5">
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs">🎯</span>
+                      <span class="text-[10px] font-black uppercase tracking-wider text-slate-700">Core Spoken Objectives (B2 Standards)</span>
+                    </div>
+                    <ul class="space-y-1 text-xs text-slate-700">
+                      ${objs.map(obj => `
+                        <li class="flex items-start gap-1.5">
+                          <span class="text-blue-600 font-bold mt-0.5">•</span>
+                          <span><strong class="text-slate-900">${obj.title || ("Objective " + obj.num)}:</strong> ${obj.description || ""}</span>
+                        </li>
+                      `).join("")}
+                    </ul>
+                  </div>
+                ` : ""}
+              </div>
+
+              <!-- Right: How This Session Works & Progression -->
+              <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3">
+                <div class="space-y-2">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs">🧭</span>
+                    <span class="text-[10.5px] font-black uppercase tracking-wider text-slate-500">How This Session Works</span>
+                  </div>
+                  <div class="p-2.5 bg-blue-50/70 border border-blue-200/70 rounded-lg text-xs text-blue-950 space-y-1">
+                    <div class="flex items-center gap-1.5 font-bold text-blue-900">
+                      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                      <span>Spoken Focus &amp; Teacher Pacing</span>
+                    </div>
+                    <p class="text-[11px] text-blue-900 leading-relaxed">
+                      Active conversation and spoken confidence come first. Classroom teachers adapt pacing, discussion depth, and may omit sections to match student flow.
+                    </p>
+                  </div>
+                </div>
+
+                ${parts.length > 0 ? `
+                  <div class="space-y-1.5">
+                    <div class="flex items-center justify-between">
+                      <span class="text-[9.5px] font-black uppercase tracking-wider text-slate-500">Stage Progression</span>
+                      <span class="text-[9.5px] font-semibold text-slate-400">${parts.length} Stages</span>
+                    </div>
+                    <div class="space-y-1 max-h-48 overflow-y-auto pr-1">
+                      ${parts.map((p, idx) => {
+                        const partLabel = p.part || ("Part " + (idx + 1));
+                        const cleanTitle = (p.title || "").replace(/^Part\s*\d+[A-Z]?\s*:\s*/i, "");
+                        return `
+                          <div class="flex items-center justify-between text-[10.5px] p-1.5 bg-white border border-slate-200/80 rounded-md shadow-2xs">
+                            <div class="flex items-center gap-1.5 min-w-0">
+                              <span class="text-[9px] font-black px-1.5 py-0.5 rounded text-white shrink-0" style="background-color: ${primaryColor};">${partLabel}</span>
+                              <span class="font-bold text-slate-800 truncate">${cleanTitle || p.title}</span>
+                            </div>
+                          </div>
+                        `;
+                      }).join("")}
+                    </div>
+                  </div>
+                ` : ""}
+              </div>
+            </div>
+          </div>`;
+    }
+
     function renderActivityInstructions(act, theme) {
       if (!act) return "";
       const badges = Array.isArray(act.modeBadges) ? act.modeBadges : [];

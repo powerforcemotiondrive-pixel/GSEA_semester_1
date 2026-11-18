@@ -112,6 +112,8 @@
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(sessionData, theme)}
+
           <!-- Activity 1: Personal Travel Anecdotes -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
@@ -504,6 +506,8 @@
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(sessionData, theme)}
+
           <!-- Activity 1: Green Transport News & Vocabulary Review -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
@@ -860,6 +864,8 @@
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Activity 1: Tourism Policy News & Lexis Spot-Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
@@ -1339,6 +1345,8 @@
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Activity 1: Eco-Tourism News & Lexis Spot-Check -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">

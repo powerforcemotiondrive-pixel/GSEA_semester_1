@@ -51,6 +51,8 @@
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(sessionData, theme)}
+
           <!-- Activity 1: Extreme Weather News & Meteorological Diagnostic -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
@@ -341,6 +343,8 @@
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Activity 1: Sustainable Urbanism News & Diagnostic Warm-Up -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
@@ -633,6 +637,8 @@
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(sessionData, theme)}
+
           <!-- Activity 1: Environmental Policy News & Argument Diagnostic -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
@@ -923,6 +929,8 @@
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Activity 1: Aerodrome Ecology News & Diagnostic Warm-Up -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
