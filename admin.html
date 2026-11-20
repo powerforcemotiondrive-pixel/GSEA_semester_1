@@ -95,6 +95,10 @@
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
         <span>Course Syllabus</span>
       </button>
+      <button onclick="switchAdminTab('feedback')" id="tab-btn-feedback" class="px-3.5 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer flex items-center gap-1.5 shrink-0">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        <span>Student Feedback</span>
+      </button>
     </div>
 
     <!-- Main Content Container -->
@@ -2638,6 +2642,138 @@
     </div>
       </section>
 
+      <!-- Section 6: Student Feedback -->
+      <section id="section-feedback" class="hidden space-y-6">
+        <!-- Top Overview Card -->
+        <div class="bg-gradient-to-r from-slate-50 to-emerald-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white bg-emerald-800">
+              <span class="w-2 h-2 rounded-full bg-emerald-300 animate-pulse"></span>
+              Student Voice • Continuous Evaluation
+            </span>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border border-emerald-200 bg-emerald-50 text-emerald-800">
+              GSEA Semester 1 • Modules 1, 2 &amp; 3
+            </span>
+          </div>
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+            <span>💬</span> Student Module &amp; Platform Feedback
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl leading-relaxed">
+            Your feedback directly shapes our classroom dynamics, balance of peer talk-time, and the digital tools on eCampus. Please share both what worked well and what felt frustrating or unhelpful. All submissions can be completely anonymous or named with your student ID.
+          </p>
+          
+          <!-- Module Selection Notice & Action Bar -->
+          <div class="mt-4 pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <span class="font-bold text-slate-800">Select your current module:</span>
+              <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-900 font-bold border border-blue-200">Module 1 (S1–S4 &amp; FE1)</span>
+              <span class="px-2 py-0.5 rounded bg-purple-100 text-purple-900 font-bold border border-purple-200">Module 2 (S5–S8 &amp; FE2)</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-900 font-bold border border-emerald-200">Module 3 (S9–S12 &amp; FE3)</span>
+            </div>
+            <div id="feedback-standalone-actions">
+              <!-- Dynamically populated or direct link -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Offline / SCORM Notice -->
+        <div class="p-3 rounded-lg bg-amber-50/80 border border-amber-200 flex items-start gap-2.5 text-xs text-amber-900">
+          <span class="text-base shrink-0">💡</span>
+          <div>
+            <strong class="font-bold">Offline / SCORM Environment Notice:</strong> Submitting online feedback requires an active internet connection. If you are accessing this portal offline in an LMS or disk image, please load this form when connected to Wi-Fi.
+          </div>
+        </div>
+
+        <!-- Feedback Container -->
+        <div id="feedback-standalone-container" class="space-y-6">
+          <!-- Setup Banner -->
+          <div class="p-4 rounded-xl bg-blue-50 border border-blue-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-blue-900">
+            <div class="space-y-0.5">
+              <div class="font-extrabold text-sm text-blue-950 flex items-center gap-1.5">
+                <span>⚙️</span> Google Forms Embed Container Ready
+              </div>
+              <p class="text-blue-800">
+                To embed your live Google Form directly in this window, paste your form embed link into <code class="px-1.5 py-0.5 rounded bg-blue-100 text-blue-950 font-mono font-bold">window.__GSEA_FEEDBACK_FORM_URL</code> in <code class="px-1.5 py-0.5 rounded bg-blue-100 text-blue-950 font-mono font-bold">src/js/02-config.js</code>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Questionnaire Overview Card -->
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs space-y-5">
+            <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
+              <h3 class="text-sm font-extrabold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+                <span>📋</span> Feedback Questionnaire Structure (12 Questions)
+              </h3>
+              <span class="text-xs font-mono font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-700">~4–5 mins</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Part 1 -->
+              <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-blue-600 text-white">PART 1</span>
+                  <h4 class="text-xs font-bold text-slate-900">Context &amp; Identity</h4>
+                </div>
+                <ul class="text-xs text-slate-600 space-y-1.5">
+                  <li><strong>Q1. Module Selection:</strong> Dropdown (Module 1, 2, or 3)</li>
+                  <li><strong>Q2. Student Name / ID:</strong> Anonymous option + Cohort list</li>
+                </ul>
+              </div>
+
+              <!-- Part 2 -->
+              <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-600 text-white">PART 2</span>
+                  <h4 class="text-xs font-bold text-slate-900">Spoken Progress &amp; Classroom Reality</h4>
+                </div>
+                <ul class="text-xs text-slate-600 space-y-1.5">
+                  <li><strong>Q3. Perceived English Progress:</strong> Scale 1–5 (Stagnant &rarr; Substantial)</li>
+                  <li><strong>Q4. Spoken Talk-Time (70/30 Rule):</strong> Scale 1–5 (Passive &rarr; Active peer speaking)</li>
+                  <li><strong>Q5. Technical Difficulty &amp; Load:</strong> Scale 1–5 (Basic &bull; B2 Just Right &bull; Overwhelming)</li>
+                </ul>
+              </div>
+
+              <!-- Part 3 -->
+              <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-600 text-white">PART 3</span>
+                  <h4 class="text-xs font-bold text-slate-900">Balanced Critique (Positive &amp; Constructive)</h4>
+                </div>
+                <ul class="text-xs text-slate-600 space-y-1.5">
+                  <li><strong>Q6. What Worked Best? (Positive):</strong> Engaging activities, simulations, topics</li>
+                  <li><strong>Q7. What Needs Improvement? (Negative):</strong> Boring, confusing, or unhelpful elements</li>
+                </ul>
+              </div>
+
+              <!-- Part 4 -->
+              <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2">
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-purple-600 text-white">PART 4</span>
+                  <h4 class="text-xs font-bold text-slate-900">Portfolio Entry Audit &amp; Suggestions</h4>
+                </div>
+                <ul class="text-xs text-slate-600 space-y-1.5">
+                  <li><strong>Q8. Entry Utility Grid:</strong> Key Vocab, Content Review, Traps, TOEIC Log &times; (Very Useful / Somewhat / Busywork)</li>
+                  <li><strong>Q9. Portfolio Suggestions:</strong> How to make entries less repetitive and more practical</li>
+                </ul>
+              </div>
+
+              <!-- Part 5 -->
+              <div class="p-4 rounded-lg bg-slate-50 border border-slate-200 space-y-2 md:col-span-2">
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-rose-600 text-white">PART 5</span>
+                  <h4 class="text-xs font-bold text-slate-900">Course Materials &amp; eCampus Platform Experience</h4>
+                </div>
+                <ul class="text-xs text-slate-600 space-y-1.5 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                  <li><strong>Q10. Materials Quality:</strong> Scale 1–5 (Worksheets, articles, flashcards, audio)</li>
+                  <li><strong>Q11. eCampus Experience:</strong> Scale 1–5 (Speed, navigation, mobile usability)</li>
+                  <li><strong>Q12. Open Message:</strong> Suggestions for Phil or assigned teacher</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <!-- Footer -->
@@ -3176,14 +3312,16 @@
       calendar: document.getElementById('section-calendar'),
       rota: document.getElementById('section-rota'),
       presentation: document.getElementById('section-presentation'),
-      syllabus: document.getElementById('section-syllabus')
+      syllabus: document.getElementById('section-syllabus'),
+      feedback: document.getElementById('section-feedback')
     };
     const btns = {
       groups: document.getElementById('tab-btn-groups'),
       calendar: document.getElementById('tab-btn-calendar'),
       rota: document.getElementById('tab-btn-rota'),
       presentation: document.getElementById('tab-btn-presentation'),
-      syllabus: document.getElementById('tab-btn-syllabus')
+      syllabus: document.getElementById('tab-btn-syllabus'),
+      feedback: document.getElementById('tab-btn-feedback')
     };
 
     Object.keys(sections).forEach(key => {
@@ -3207,6 +3345,29 @@
       renderStandaloneCalendar();
     } else if (tabKey === 'rota') {
       renderStandaloneRota();
+    } else if (tabKey === 'feedback') {
+      renderStandaloneFeedback();
+    }
+  }
+
+  function renderStandaloneFeedback() {
+    const container = document.getElementById('feedback-standalone-container');
+    const actions = document.getElementById('feedback-standalone-actions');
+    const formUrl = (typeof window !== 'undefined' && window.__GSEA_FEEDBACK_FORM_URL) ? window.__GSEA_FEEDBACK_FORM_URL.trim() : '';
+    if (formUrl && container) {
+      container.innerHTML = `
+        <div class="w-full bg-white rounded-xl shadow-xs border border-slate-200 overflow-hidden relative" style="min-height: 850px;">
+          <iframe src="${formUrl}" class="w-full h-[850px] border-0" frameborder="0" marginheight="0" marginwidth="0">Loading Student Feedback Questionnaire…</iframe>
+        </div>
+      `;
+      if (actions) {
+        actions.innerHTML = `
+          <a href="${formUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-700 hover:bg-emerald-800 text-white shadow-xs transition-all cursor-pointer">
+            <span>Open in Full Window</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        `;
+      }
     }
   }
 
@@ -3239,7 +3400,7 @@
     renderStandaloneCalendar();
     renderStandaloneRota();
     const hash = window.location.hash.replace('#', '');
-    if (hash === 'calendar' || hash === 'rota' || hash === 'groups' || hash === 'presentation' || hash === 'syllabus') {
+    if (hash === 'calendar' || hash === 'rota' || hash === 'groups' || hash === 'presentation' || hash === 'syllabus' || hash === 'feedback') {
       switchAdminTab(hash);
     }
   });

@@ -1,3 +1,6 @@
+    // Google Forms Student Feedback Embed URL (replace with live embed link once generated)
+    window.__GSEA_FEEDBACK_FORM_URL = window.__GSEA_FEEDBACK_FORM_URL || "";
+
     const createModulePages = (modNumber, programKey = 'ag') => {
       const isAas = programKey === 'aas';
 
