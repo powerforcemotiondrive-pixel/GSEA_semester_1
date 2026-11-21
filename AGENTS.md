@@ -252,6 +252,23 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ---
 
+### Z. "Cockpit Clarity" Visual Design & Icon Discipline Invariant (Tri-Project Permanent Invariant)
+- **Aviation Cockpit Philosophy ("Quiet by Default, Urgent by Exception")**: The learning and teaching portals are professional aviation courseware interfaces. They must avoid visual fatigue, competing pastel palettes, and decorative clutter.
+- **The 60–30–10 Palette Discipline**:
+  - **60% Neutral Canvas**: Clean white (`bg-white`) and deep cockpit slate/navy (`bg-[#0f172a]` / `bg-[#1e293b]`).
+  - **30% Structure**: Neutral slate grays for borders (`border-slate-200`), text hierarchy (`text-slate-900` / `text-slate-600`), and secondary cards (`bg-slate-50/80 border-slate-200/80`).
+  - **10% Brand Accent**: **Aviation Amber / Gold** (`amber-400` / `amber-500`) serves as the single authoritative brand highlight (active tabs, category badges, key operational signposts, and focus indicators).
+  - **Functional Semantic Exceptions**: Muted Rose/Red is strictly reserved for genuine emergency incidents or critical errors (e.g., active runway evacuations); Emerald is strictly reserved for live system connectivity/pass indicators. Never introduce arbitrary decorative pastels (random teals, purples, or loud background fills).
+- **Icon & Emoji Discipline (Zero Decorative Emojis in Headings)**:
+  - Do NOT clutter section titles, card headings, or buttons with decorative multi-color emojis (e.g., never use `📌`, `🎬`, `📁`, `💬`, `🔴`, `⚠️` in titles).
+  - Use clean, authoritative typography (e.g., font-mono uppercase eyebrows: `CLASSROOM SPEAKING WARM-UPS`, `CASE 01 • ACTIVE RUNWAY EVACUATION`).
+  - Where icons are functional (external link `↗`, video indicators, search), use subtle monochrome SVG icons matching the text color, never toy-like multi-color emojis.
+- **Harmonized Card Archetypes (No Loud Pastel Fills)**:
+  - Important notices, teaching notes, and discussion prompt boxes must NOT use full bright pastel fills (e.g., avoid full-bleed `bg-amber-50/90 border-amber-200`).
+  - Standardize callouts to crisp white/slate cards with an understated **3px or 4px solid amber left-rail accent border** (`bg-white border border-slate-200 border-l-4 border-l-amber-400 shadow-2xs`).
+
+---
+
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
 
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*
