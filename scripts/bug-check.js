@@ -69,7 +69,9 @@ const results = {
   invariants: { pass: true, details: [] },
   localStorageNotes: { pass: true, details: [] },
   curriculumSchema: { pass: true, details: [] },
-  tabRenderSimulation: { pass: true, details: [] }
+  tabRenderSimulation: { pass: true, details: [] },
+  briefingBanners: { pass: true, details: [] },
+  imageSanity: { pass: true, details: [] }
 };
 
 // -----------------------------------------------------------------------------
@@ -566,6 +568,98 @@ try {
 }
 
 // -----------------------------------------------------------------------------
+// CHECK 11: Universal Session Briefing Banner Audit (Rule 1.AC)
+// -----------------------------------------------------------------------------
+const templateSrcDir = path.join(repoDir, "src/js");
+if (fs.existsSync(templateSrcDir)) {
+  const templateFiles = fs.readdirSync(templateSrcDir).filter(f => 
+    f.startsWith("05") || f.startsWith("06") || f.startsWith("07") || f.startsWith("08")
+  );
+
+  let auditedFns = 0;
+  const missingBanner = [];
+
+  templateFiles.forEach(file => {
+    const fullPath = path.join(templateSrcDir, file);
+    const code = fs.readFileSync(fullPath, "utf8");
+    const lines = code.split("\n");
+
+    const fnStarts = [];
+    lines.forEach((l, idx) => {
+      const m = l.match(/function\s+([a-zA-Z0-9_]+LessonContentTabSession\d+)\s*\(/);
+      if (m) {
+        fnStarts.push({ name: m[1], line: idx + 1 });
+      }
+    });
+
+    fnStarts.forEach((fn, i) => {
+      auditedFns++;
+      const endLine = fnStarts[i + 1] ? fnStarts[i + 1].line : lines.length;
+      const fnBody = lines.slice(fn.line, endLine).join("\n");
+      if (!fnBody.includes("renderSessionBriefingBanner")) {
+        missingBanner.push(`${file} -> ${fn.name} (Line ${fn.line})`);
+      }
+    });
+  });
+
+  if (missingBanner.length > 0) {
+    results.briefingBanners.pass = false;
+    results.briefingBanners.details.push(`Found ${missingBanner.length} session template(s) missing renderSessionBriefingBanner:`);
+    missingBanner.forEach(m => results.briefingBanners.details.push(`   - ${m}`));
+  } else {
+    results.briefingBanners.details.push(`Audited all ${auditedFns} lesson content template functions: 100% include universal briefing & roadmap banner.`);
+  }
+} else {
+  results.briefingBanners.pass = false;
+  results.briefingBanners.details.push("src/js directory not found.");
+}
+
+// -----------------------------------------------------------------------------
+// CHECK 12: Image Asset Sanity & Format Verification (Rule 1.AB)
+// -----------------------------------------------------------------------------
+const imagesDir = path.join(repoDir, "images");
+if (fs.existsSync(imagesDir)) {
+  const imgFiles = fs.readdirSync(imagesDir).filter(f => /\.(jpe?g|png)$/i.test(f));
+  let checkedImages = 0;
+  const corruptedImages = [];
+
+  imgFiles.forEach(f => {
+    checkedImages++;
+    const p = path.join(imagesDir, f);
+    const stat = fs.statSync(p);
+    
+    // Check minimum size (guards against ~3KB HTML error pages saved as jpg)
+    if (stat.size < 10000) {
+      corruptedImages.push(`${f}: File too small (${stat.size} bytes) - possible HTML error response`);
+      return;
+    }
+
+    // Verify magic bytes
+    const buf = Buffer.alloc(8);
+    const fd = fs.openSync(p, "r");
+    fs.readSync(fd, buf, 0, 8, 0);
+    fs.closeSync(fd);
+
+    const isJpeg = buf[0] === 0xFF && buf[1] === 0xD8 && buf[2] === 0xFF;
+    const isPng = buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4E && buf[3] === 0x47;
+
+    if (!isJpeg && !isPng) {
+      corruptedImages.push(`${f}: Invalid image magic bytes (not valid JPEG or PNG)`);
+    }
+  });
+
+  if (corruptedImages.length > 0) {
+    results.imageSanity.pass = false;
+    results.imageSanity.details.push(...corruptedImages);
+  } else {
+    results.imageSanity.details.push(`Verified ${checkedImages} visual assets: 100% valid binary images (magic bytes & size bounds verified).`);
+  }
+} else {
+  results.imageSanity.pass = false;
+  results.imageSanity.details.push("images directory not found.");
+}
+
+// -----------------------------------------------------------------------------
 // FORMAT REPORT OUTPUT
 // -----------------------------------------------------------------------------
 const checks = [
@@ -578,7 +672,9 @@ const checks = [
   { key: 'invariants', name: '7. 🚫 JARGON, TIMINGS & PRIVACY (1.I/1.Q)' },
   { key: 'localStorageNotes', name: '8. 📝 LOCALSTORAGE AUTO-SAVE HANDLERS' },
   { key: 'curriculumSchema', name: '9. 📚 CURRICULUM SCHEMA (VIDEOS, TOEIC, VOCAB)' },
-  { key: 'tabRenderSimulation', name: '10. 🧪 FULL MODAL TAB & SESSION SIMULATION' }
+  { key: 'tabRenderSimulation', name: '10. 🧪 FULL MODAL TAB & SESSION SIMULATION' },
+  { key: 'briefingBanners', name: '11. 🧭 UNIVERSAL SESSION BRIEFING BANNERS' },
+  { key: 'imageSanity', name: '12. 🖼️ IMAGE ASSET SANITY & MAGIC BYTES' }
 ];
 
 let allPassed = true;
