@@ -1725,6 +1725,7 @@
       const adminRotaTab = document.getElementById('modal-tab-admin-rota');
       const adminPresentationTab = document.getElementById('modal-tab-admin-presentation');
       const adminSyllabusTab = document.getElementById('modal-tab-admin-syllabus');
+      const adminRefonteTab = document.getElementById('modal-tab-admin-refonte');
       const adminFeedbackTab = document.getElementById('modal-tab-admin-feedback');
       const immersionOverviewTab = document.getElementById('modal-tab-immersion-overview');
       const immersionCitiesTab = document.getElementById('modal-tab-immersion-cities');
@@ -1745,6 +1746,8 @@
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
         if (adminSyllabusTab) adminSyllabusTab.classList.add('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
         if (adminFeedbackTab) adminFeedbackTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
@@ -1778,6 +1781,8 @@
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
         if (adminSyllabusTab) adminSyllabusTab.classList.add('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
         if (adminFeedbackTab) adminFeedbackTab.classList.add('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
 
@@ -1804,7 +1809,9 @@
         if (adminRotaTab) adminRotaTab.classList.remove('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.remove('hidden');
         if (adminSyllabusTab) adminSyllabusTab.classList.remove('hidden');
-        if (adminFeedbackTab) adminFeedbackTab.classList.remove('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.remove('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
+        if (adminFeedbackTab) adminFeedbackTab.classList.add('hidden');
 
         tagEl.textContent = "GSEA26A • Course Admin";
       } else if (isFeSession) {
@@ -1819,6 +1826,8 @@
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
         if (adminSyllabusTab) adminSyllabusTab.classList.add('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
         if (adminFeedbackTab) adminFeedbackTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         standardTabs.forEach(t => t.classList.add('hidden'));
@@ -1864,6 +1873,8 @@
         if (adminRotaTab) adminRotaTab.classList.add('hidden');
         if (adminPresentationTab) adminPresentationTab.classList.add('hidden');
         if (adminSyllabusTab) adminSyllabusTab.classList.add('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
+        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
         if (adminFeedbackTab) adminFeedbackTab.classList.add('hidden');
         if (ddrsTabBtn) ddrsTabBtn.classList.add('hidden');
         if (feGuidelinesTab) feGuidelinesTab.classList.add('hidden');
@@ -2174,8 +2185,8 @@
         renderAdminPresentationTab(theme);
       } else if (modalState.tab === 'admin_syllabus') {
         renderAdminSyllabusTab(theme);
-      } else if (modalState.tab === 'admin_feedback') {
-        renderAdminFeedbackTab(theme);
+      } else if (modalState.tab === 'admin_refonte' || modalState.tab === 'admin_feedback') {
+        renderAdminRefonteTab(theme);
       } else if (modalState.tab === 'fe_guidelines') {
         renderFeGuidelinesTab(modalState.modNum, theme);
       } else if (modalState.tab === 'fe_objectives') {
