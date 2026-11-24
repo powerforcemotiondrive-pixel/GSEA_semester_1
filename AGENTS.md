@@ -282,6 +282,20 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ---
 
+### AB. Live Runtime End-to-End Simulation & Dynamic Structural Diversity Invariant (Quad-Project Permanent Invariant)
+- **Dynamic Structural & Pedagogical Diversity**: Curriculum sessions across Module 2 (and across the entire program) are **NOT** constrained to rigid, identical cookie-cutter templates. Sessions can and should vary dynamically in structure, activity progression, and pedagogical format to maximize classroom engagement and communicative impact (e.g. interactive gap-fills, technical error hunters, taboo word games, mastery quizzes, barrier games, video labs, audio listening clinics, diagnostic case studies, speaking roleplays).
+- **True Application Modal Simulation (`scripts/test-session-e2e.js`)**:
+  - Verification cannot rely solely on static string regexes or isolated manual function calls with mocked datasets.
+  - Verification must execute through the true application runtime pipeline: initializing `COURSE_DATA`, setting `currentProgram`, triggering `openModalDrawer()`, resolving `getActiveModalCourseData()`, executing track aliasing (`at` ↔ `aas`), and rendering through the central dispatcher (`04-templates-dispatcher.js`).
+- **Interactive Control Execution & Zero-Broken-Node Contract**:
+  - Any interactive element rendered into the DOM (e.g. `<select>` dropdowns, radio option pills, answer reveal buttons, master toggles like `window.toggleAllErrorCorrections`, quiz scoring engines, audio buttons) must have matching registered window handlers, valid DOM IDs, and fully functioning state logic.
+  - Inline handlers (`onclick`, `onchange`) must exist on `window` at the time of rendering; calling them with simulated user input must update DOM nodes, scores, and class lists without throwing runtime exceptions.
+- **Continuous Integration Pre-Release Gate**:
+  - Running `node scripts/test-session-e2e.js` guarantees 100% operational components and zero runtime exceptions before packaging and releasing any overhauled session.
+
+
+---
+
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
 
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*

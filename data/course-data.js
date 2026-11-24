@@ -42581,5 +42581,6 @@
   }
 };
 
+  courseData.at = courseData.aas;
   return courseData;
 });

@@ -12432,14 +12432,36 @@
                   <div class="space-y-1.5 pt-1">
                     <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wide font-mono block">Core Technical Concepts:</span>
                     <div class="flex flex-wrap gap-1.5">
-                      ${(videoLab.keyTerms || []).map(t => `<span class="px-2 py-0.5 rounded text-[10.5px] font-mono bg-white border border-slate-200 text-slate-800 shadow-2xs">${t}</span>`).join('')}
+                      ${(videoLab.keyTerms || [
+                        "Primary vs. Secondary Controls",
+                        "Fly-By-Wire Actuation",
+                        "Triple Hydraulic Redundancy",
+                        "Differential Aileron Deflection",
+                        "Boundary Layer Re-energization"
+                      ]).map(t => `<span class="px-2 py-0.5 rounded text-[10.5px] font-mono bg-white border border-slate-200 text-slate-800 shadow-2xs font-bold">${t}</span>`).join('')}
                     </div>
                   </div>
 
                   <!-- Guided Viewing Questions -->
                   <div class="space-y-2.5 pt-2 border-t border-slate-200">
                     <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wide font-mono block">Guided Spoken Discussion:</span>
-                    ${(videoLab.questions || []).map(vq => `
+                    ${(videoLab.questions || [
+                      {
+                        id: 1,
+                        q: "Why do commercial aircraft use both inboard and outboard ailerons?",
+                        answer: "Outboard ailerons provide high roll authority at low speeds (takeoff/landing), but are locked out at high cruise speeds to prevent wing twisting (aeroelastic torsion); high-speed roll is handled by inboard ailerons and roll spoilers."
+                      },
+                      {
+                        id: 2,
+                        q: "How do leading-edge slats prevent aerodynamic stall at high angles of attack?",
+                        answer: "Slats open a slot allowing high-pressure air from beneath the wing to flow over the upper surface, re-energizing the boundary layer and keeping airflow attached at much higher angles of attack."
+                      },
+                      {
+                        id: 3,
+                        q: "What happens if an aircraft suffers a complete loss of hydraulic power?",
+                        answer: "Modern airliners have triple redundant hydraulic circuits (e.g. Green, Blue, Yellow on Airbus). If all fail, a Ram Air Turbine (RAT) deploys automatically into the airstream to generate emergency hydraulic pressure for flight controls."
+                      }
+                    ]).map(vq => `
                       <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1.5 text-xs shadow-2xs">
                         <p class="font-bold text-slate-800">${vq.id}. ${vq.q}</p>
                         <div id="video-ans-${vq.id}" class="hidden p-2 bg-amber-50/80 border border-amber-200/80 rounded text-[11px] text-amber-950 leading-relaxed mt-1">
@@ -12776,77 +12798,233 @@
             </div>
           </div>
 
-          <!-- Part 4: Technical Gap-Fill Clinic -->
+          <!-- Part 4: Fully Interactive Technical Gap-Fill Clinic -->
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
                 <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${gapFillClinic.title || 'Activity 4: Technical Gap-Fill Clinic: Flight Controls &amp; Pre-Flight Checks'}</h4>
-                  <p class="text-[11px] text-slate-500">${gapFillClinic.summary || 'Two contextualized technical readings examining flight control surfaces and pre-flight inspection procedures.'}</p>
+                  <p class="text-[11px] text-slate-500">${gapFillClinic.summary || 'Interactive technical readings: select the accurate aerodynamic and structural terms from the dropdown menus.'}</p>
                 </div>
               </div>
-              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Gap-Fill Clinic</span>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Interactive Gap-Fill Clinic</span>
             </div>
 
             ${renderActivityInstructions(gapFillClinic, theme)}
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-              <!-- Text A -->
-              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 flex flex-col justify-between shadow-2xs">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <h5 class="text-xs font-bold text-slate-900 font-mono">${(gapFillClinic.textA && gapFillClinic.textA.title) || 'Text A: Flight Controls'}</h5>
-                    <span class="text-[10px] font-mono text-slate-500 font-bold">Aerodynamic Controls</span>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <!-- Text A: Flight Controls -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3.5 flex flex-col justify-between shadow-2xs">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900 font-mono">Text A: Primary vs. Secondary Flight Controls</h5>
+                    <span id="gap-a-score" class="text-[11px] font-mono font-black text-indigo-600">Pending</span>
                   </div>
-                  <!-- Word Bank -->
+                  <!-- Word Bank Pills -->
                   <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1">
-                    <span class="text-[9.5px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Word Bank:</span>
+                    <span class="text-[9.5px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Available Word Bank:</span>
                     <div class="flex flex-wrap gap-1.5">
-                      ${((gapFillClinic.textA && gapFillClinic.textA.wordBank) || []).map(w => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 border border-slate-300 text-slate-800 font-bold">${w}</span>`).join('')}
+                      ${["differentially", "camber", "longitudinal", "attitude", "spoilers", "rudder", "ailerons"].map(w => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 border border-slate-300 text-slate-800 font-bold">${w}</span>`).join('')}
                     </div>
                   </div>
-                  <p class="text-xs text-slate-700 leading-relaxed">
-                    ${(gapFillClinic.textA && gapFillClinic.textA.passage) || ''}
-                  </p>
-                </div>
-                <div>
-                  <div id="gapfill-a-ans" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-[11px] text-emerald-900 leading-relaxed shadow-2xs mb-2 space-y-0.5 font-mono">
-                    <span class="font-bold block text-[10px] uppercase text-emerald-950 font-sans">Verified Answers (Text A):</span>
-                    <div>[1] attitude &bull; [2] ailerons &bull; [3] differentially &bull; [4] longitudinal &bull; [5] rudder &bull; [6] camber &bull; [7] spoilers</div>
+                  <div class="text-xs text-slate-800 leading-relaxed space-y-2">
+                    <p>
+                      Modern commercial transport aircraft rely on two primary categories of aerodynamic surfaces to maneuver safely throughout the flight envelope. Primary flight controls manage the aircraft's 
+                      <select id="gap-a-1" class="gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 1. Select term ]</option>
+                        <option value="attitude">attitude</option>
+                        <option value="ailerons">ailerons</option>
+                        <option value="differentially">differentially</option>
+                        <option value="longitudinal">longitudinal</option>
+                        <option value="rudder">rudder</option>
+                        <option value="camber">camber</option>
+                        <option value="spoilers">spoilers</option>
+                      </select>
+                      about its three axes. To control roll about the longitudinal axis, 
+                      <select id="gap-a-2" class="gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 2. Select term ]</option>
+                        <option value="attitude">attitude</option>
+                        <option value="ailerons">ailerons</option>
+                        <option value="differentially">differentially</option>
+                        <option value="longitudinal">longitudinal</option>
+                        <option value="rudder">rudder</option>
+                        <option value="camber">camber</option>
+                        <option value="spoilers">spoilers</option>
+                      </select>
+                      deflect 
+                      <select id="gap-a-3" class="gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 3. Select term ]</option>
+                        <option value="attitude">attitude</option>
+                        <option value="ailerons">ailerons</option>
+                        <option value="differentially">differentially</option>
+                        <option value="longitudinal">longitudinal</option>
+                        <option value="rudder">rudder</option>
+                        <option value="camber">camber</option>
+                        <option value="spoilers">spoilers</option>
+                      </select>
+                      on the outboard trailing edges of the wings. Pitch control about the lateral axis is governed by the elevators mounted to the horizontal stabilizer, ensuring 
+                      <select id="gap-a-4" class="gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 4. Select term ]</option>
+                        <option value="attitude">attitude</option>
+                        <option value="ailerons">ailerons</option>
+                        <option value="differentially">differentially</option>
+                        <option value="longitudinal">longitudinal</option>
+                        <option value="rudder">rudder</option>
+                        <option value="camber">camber</option>
+                        <option value="spoilers">spoilers</option>
+                      </select>
+                      stability. Directional yaw control about the normal axis is commanded by the 
+                      <select id="gap-a-5" class="gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 5. Select term ]</option>
+                        <option value="attitude">attitude</option>
+                        <option value="ailerons">ailerons</option>
+                        <option value="differentially">differentially</option>
+                        <option value="longitudinal">longitudinal</option>
+                        <option value="rudder">rudder</option>
+                        <option value="camber">camber</option>
+                        <option value="spoilers">spoilers</option>
+                      </select>,
+                      hinged to the vertical fin. Conversely, secondary flight controls such as leading-edge slats and trailing-edge flaps alter wing 
+                      <select id="gap-a-6" class="gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 6. Select term ]</option>
+                        <option value="attitude">attitude</option>
+                        <option value="ailerons">ailerons</option>
+                        <option value="differentially">differentially</option>
+                        <option value="longitudinal">longitudinal</option>
+                        <option value="rudder">rudder</option>
+                        <option value="camber">camber</option>
+                        <option value="spoilers">spoilers</option>
+                      </select>
+                      to generate the high lift required for low-speed takeoff and landing operations, while upper-wing 
+                      <select id="gap-a-7" class="gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 7. Select term ]</option>
+                        <option value="attitude">attitude</option>
+                        <option value="ailerons">ailerons</option>
+                        <option value="differentially">differentially</option>
+                        <option value="longitudinal">longitudinal</option>
+                        <option value="rudder">rudder</option>
+                        <option value="camber">camber</option>
+                        <option value="spoilers">spoilers</option>
+                      </select>
+                      deploy to dump lift and decelerate during rollout.
+                    </p>
                   </div>
-                  <button type="button" onclick="document.getElementById('gapfill-a-ans').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
-                    <span>Toggle Answers (Text A)</span> &rarr;
-                  </button>
+                </div>
+                <!-- Controls Text A -->
+                <div class="space-y-2 pt-2 border-t border-slate-200">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <button type="button" onclick="window.checkGapFillAas2TextA()" class="no-print px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 shadow-xs transition-all cursor-pointer">
+                      Check Answers (Text A)
+                    </button>
+                    <button type="button" onclick="window.resetGapFillAas2TextA()" class="no-print px-2.5 py-1.5 rounded-lg text-xs font-bold text-slate-600 bg-white border border-slate-300 hover:bg-slate-100 cursor-pointer">
+                      Reset
+                    </button>
+                    <button type="button" onclick="document.getElementById('gapfill-a-ans').classList.toggle('hidden')" class="no-print text-[11px] font-bold text-slate-500 hover:text-slate-800 underline cursor-pointer ml-auto">
+                      Reveal Model Answers &rarr;
+                    </button>
+                  </div>
+                  <div id="gapfill-a-ans" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-[11px] text-emerald-950 font-mono space-y-0.5">
+                    <strong>Model Answers:</strong> [1] attitude &bull; [2] ailerons &bull; [3] differentially &bull; [4] longitudinal &bull; [5] rudder &bull; [6] camber &bull; [7] spoilers
+                  </div>
                 </div>
               </div>
 
-              <!-- Text B -->
-              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 flex flex-col justify-between shadow-2xs">
-                <div class="space-y-2.5">
-                  <div class="flex items-center justify-between">
-                    <h5 class="text-xs font-bold text-slate-900 font-mono">${(gapFillClinic.textB && gapFillClinic.textB.title) || 'Text B: Exterior Walkaround'}</h5>
-                    <span class="text-[10px] font-mono text-slate-500 font-bold">Ramp Walkaround</span>
+              <!-- Text B: Exterior Walkaround -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3.5 flex flex-col justify-between shadow-2xs">
+                <div class="space-y-3">
+                  <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900 font-mono">Text B: Pre-Flight Exterior Walkaround</h5>
+                    <span id="gap-b-score" class="text-[11px] font-mono font-black text-indigo-600">Pending</span>
                   </div>
-                  <!-- Word Bank -->
+                  <!-- Word Bank Pills -->
                   <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1">
-                    <span class="text-[9.5px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Word Bank:</span>
+                    <span class="text-[9.5px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Available Word Bank:</span>
                     <div class="flex flex-wrap gap-1.5">
-                      ${((gapFillClinic.textB && gapFillClinic.textB.wordBank) || []).map(w => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 border border-slate-300 text-slate-800 font-bold">${w}</span>`).join('')}
+                      ${["delamination", "pitot-static", "static wicks", "hydraulic", "radome", "oleo-pneumatic"].map(w => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 border border-slate-300 text-slate-800 font-bold">${w}</span>`).join('')}
                     </div>
                   </div>
-                  <p class="text-xs text-slate-700 leading-relaxed">
-                    ${(gapFillClinic.textB && gapFillClinic.textB.passage) || ''}
-                  </p>
-                </div>
-                <div>
-                  <div id="gapfill-b-ans" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-[11px] text-emerald-900 leading-relaxed shadow-2xs mb-2 space-y-0.5 font-mono">
-                    <span class="font-bold block text-[10px] uppercase text-emerald-950 font-sans">Verified Answers (Text B):</span>
-                    <div>[1] radome &bull; [2] pitot-static &bull; [3] oleo-pneumatic &bull; [4] hydraulic &bull; [5] static wicks &bull; [6] delamination</div>
+                  <div class="text-xs text-slate-800 leading-relaxed space-y-2">
+                    <p>
+                      Before every departure, the flight crew or licensed maintenance engineer must perform a rigorous 360-degree exterior walkaround. The inspection commences at the nose, verifying that the composite 
+                      <select id="gap-b-1" class="gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 1. Select term ]</option>
+                        <option value="delamination">delamination</option>
+                        <option value="pitot-static">pitot-static</option>
+                        <option value="static wicks">static wicks</option>
+                        <option value="hydraulic">hydraulic</option>
+                        <option value="radome">radome</option>
+                        <option value="oleo-pneumatic">oleo-pneumatic</option>
+                      </select>
+                      is free of bird strikes or hail damage and that all 
+                      <select id="gap-b-2" class="gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 2. Select term ]</option>
+                        <option value="delamination">delamination</option>
+                        <option value="pitot-static">pitot-static</option>
+                        <option value="static wicks">static wicks</option>
+                        <option value="hydraulic">hydraulic</option>
+                        <option value="radome">radome</option>
+                        <option value="oleo-pneumatic">oleo-pneumatic</option>
+                      </select>
+                      probes are clear of insect nests, ice, or protective covers. Moving aft along the fuselage, the engineer inspects the nose gear assembly, ensuring the 
+                      <select id="gap-b-3" class="gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 3. Select term ]</option>
+                        <option value="delamination">delamination</option>
+                        <option value="pitot-static">pitot-static</option>
+                        <option value="static wicks">static wicks</option>
+                        <option value="hydraulic">hydraulic</option>
+                        <option value="radome">radome</option>
+                        <option value="oleo-pneumatic">oleo-pneumatic</option>
+                      </select>
+                      strut extension is within limits and shows no signs of 
+                      <select id="gap-b-4" class="gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 4. Select term ]</option>
+                        <option value="delamination">delamination</option>
+                        <option value="pitot-static">pitot-static</option>
+                        <option value="static wicks">static wicks</option>
+                        <option value="hydraulic">hydraulic</option>
+                        <option value="radome">radome</option>
+                        <option value="oleo-pneumatic">oleo-pneumatic</option>
+                      </select>
+                      fluid leakage. Along the wings, trailing-edge control surfaces must be checked for free movement, and flexible 
+                      <select id="gap-b-5" class="gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 5. Select term ]</option>
+                        <option value="delamination">delamination</option>
+                        <option value="pitot-static">pitot-static</option>
+                        <option value="static wicks">static wicks</option>
+                        <option value="hydraulic">hydraulic</option>
+                        <option value="radome">radome</option>
+                        <option value="oleo-pneumatic">oleo-pneumatic</option>
+                      </select>
+                      on the trailing edges and wingtips must be intact to dissipate electrical charges. Finally, composite panels must be visually scanned for impact cracks or composite 
+                      <select id="gap-b-6" class="gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer">
+                        <option value="">[ 6. Select term ]</option>
+                        <option value="delamination">delamination</option>
+                        <option value="pitot-static">pitot-static</option>
+                        <option value="static wicks">static wicks</option>
+                        <option value="hydraulic">hydraulic</option>
+                        <option value="radome">radome</option>
+                        <option value="oleo-pneumatic">oleo-pneumatic</option>
+                      </select>.
+                    </p>
                   </div>
-                  <button type="button" onclick="document.getElementById('gapfill-b-ans').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
-                    <span>Toggle Answers (Text B)</span> &rarr;
-                  </button>
+                </div>
+                <!-- Controls Text B -->
+                <div class="space-y-2 pt-2 border-t border-slate-200">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <button type="button" onclick="window.checkGapFillAas2TextB()" class="no-print px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 shadow-xs transition-all cursor-pointer">
+                      Check Answers (Text B)
+                    </button>
+                    <button type="button" onclick="window.resetGapFillAas2TextB()" class="no-print px-2.5 py-1.5 rounded-lg text-xs font-bold text-slate-600 bg-white border border-slate-300 hover:bg-slate-100 cursor-pointer">
+                      Reset
+                    </button>
+                    <button type="button" onclick="document.getElementById('gapfill-b-ans').classList.toggle('hidden')" class="no-print text-[11px] font-bold text-slate-500 hover:text-slate-800 underline cursor-pointer ml-auto">
+                      Reveal Model Answers &rarr;
+                    </button>
+                  </div>
+                  <div id="gapfill-b-ans" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-[11px] text-emerald-950 font-mono space-y-0.5">
+                    <strong>Model Answers:</strong> [1] radome &bull; [2] pitot-static &bull; [3] oleo-pneumatic &bull; [4] hydraulic &bull; [5] static wicks &bull; [6] delamination
+                  </div>
                 </div>
               </div>
             </div>
@@ -12867,17 +13045,17 @@
 
             ${renderActivityInstructions(errorHunter, theme)}
 
-            <div class="p-3 bg-amber-50/80 border border-amber-200/80 rounded-xl text-xs text-amber-950 leading-relaxed flex items-center justify-between gap-2">
+            <div class="p-3 bg-amber-50/80 border border-amber-200/80 rounded-xl text-xs text-amber-950 leading-relaxed flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div class="flex items-center gap-2">
                 <span class="text-base">🎯</span>
                 <span><strong>Partner Protocol:</strong> Student A reads the statement aloud. Student B listens, challenges the technical inaccuracy, explains why it is false, and formulates the correct statement. Then swap!</span>
               </div>
-              <button type="button" onclick="window.toggleAllErrorCorrections()" class="no-print shrink-0 px-2.5 py-1 bg-white border border-amber-300 rounded text-[11px] font-bold text-amber-900 hover:bg-amber-100 cursor-pointer">
+              <button type="button" onclick="window.toggleAllErrorCorrections()" class="no-print shrink-0 px-3 py-1.5 bg-white border border-amber-300 hover:bg-amber-100 rounded-lg text-xs font-bold text-amber-900 shadow-2xs cursor-pointer">
                 Toggle All Corrections
               </button>
             </div>
 
-            <!-- Error Cards Grid -->
+            <!-- Error Cards Grid (8 Cards) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
               ${(errorHunter.statements || []).map(st => `
                 <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 flex flex-col justify-between shadow-2xs">
@@ -12932,7 +13110,7 @@
                   <span class="text-base">🎴</span>
                   <h5 class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wide font-mono">Aircraft Anatomy Taboo (12 Technical Terms)</h5>
                 </div>
-                <span class="text-[11px] text-slate-500">Describe the mystery term without using any of the 3 forbidden words!</span>
+                <span class="text-[11px] text-slate-500">Describe the mystery term without pronouncing any of the 3 forbidden words!</span>
               </div>
               <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
                 ${tabooCards.map(tc => `
@@ -13024,6 +13202,187 @@
         </div>
       `;
     }
+
+
+    // ==========================================
+    // Interactive Gap-Fill Clinic Controllers (Part 4)
+    // ==========================================
+    window.checkGapFillAas2TextA = function() {
+      const answers = {
+        "gap-a-1": "attitude",
+        "gap-a-2": "ailerons",
+        "gap-a-3": "differentially",
+        "gap-a-4": "longitudinal",
+        "gap-a-5": "rudder",
+        "gap-a-6": "camber",
+        "gap-a-7": "spoilers"
+      };
+      let correctCount = 0;
+      for (const [id, expected] of Object.entries(answers)) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const val = (el.value || '').trim().toLowerCase();
+        if (val === expected) {
+          correctCount++;
+          el.className = 'gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-emerald-50 border-2 border-emerald-500 text-emerald-950 transition-all';
+        } else {
+          el.className = 'gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-rose-50 border-2 border-rose-400 text-rose-950 transition-all';
+        }
+      }
+      const scoreEl = document.getElementById('gap-a-score');
+      if (scoreEl) {
+        scoreEl.textContent = correctCount + ' / 7 (' + Math.round((correctCount / 7) * 100) + '%)';
+        scoreEl.className = 'text-[11px] font-mono font-black ' + (correctCount === 7 ? 'text-emerald-600' : 'text-amber-600');
+      }
+    };
+
+    window.resetGapFillAas2TextA = function() {
+      document.querySelectorAll('.gap-select-a').forEach(el => {
+        el.value = '';
+        el.className = 'gap-select-a px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer';
+      });
+      const scoreEl = document.getElementById('gap-a-score');
+      if (scoreEl) {
+        scoreEl.textContent = 'Pending';
+        scoreEl.className = 'text-[11px] font-mono font-black text-indigo-600';
+      }
+      const ansBox = document.getElementById('gapfill-a-ans');
+      if (ansBox) ansBox.classList.add('hidden');
+    };
+
+    window.checkGapFillAas2TextB = function() {
+      const answers = {
+        "gap-b-1": "radome",
+        "gap-b-2": "pitot-static",
+        "gap-b-3": "oleo-pneumatic",
+        "gap-b-4": "hydraulic",
+        "gap-b-5": "static wicks",
+        "gap-b-6": "delamination"
+      };
+      let correctCount = 0;
+      for (const [id, expected] of Object.entries(answers)) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const val = (el.value || '').trim().toLowerCase();
+        if (val === expected) {
+          correctCount++;
+          el.className = 'gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-emerald-50 border-2 border-emerald-500 text-emerald-950 transition-all';
+        } else {
+          el.className = 'gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-rose-50 border-2 border-rose-400 text-rose-950 transition-all';
+        }
+      }
+      const scoreEl = document.getElementById('gap-b-score');
+      if (scoreEl) {
+        scoreEl.textContent = correctCount + ' / 6 (' + Math.round((correctCount / 6) * 100) + '%)';
+        scoreEl.className = 'text-[11px] font-mono font-black ' + (correctCount === 6 ? 'text-emerald-600' : 'text-amber-600');
+      }
+    };
+
+    window.resetGapFillAas2TextB = function() {
+      document.querySelectorAll('.gap-select-b').forEach(el => {
+        el.value = '';
+        el.className = 'gap-select-b px-2 py-1 rounded text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 transition-all cursor-pointer';
+      });
+      const scoreEl = document.getElementById('gap-b-score');
+      if (scoreEl) {
+        scoreEl.textContent = 'Pending';
+        scoreEl.className = 'text-[11px] font-mono font-black text-indigo-600';
+      }
+      const ansBox = document.getElementById('gapfill-b-ans');
+      if (ansBox) ansBox.classList.add('hidden');
+    };
+
+    // ==========================================
+    // Technical Error Hunter Controller (Part 5)
+    // ==========================================
+    window.toggleAllErrorCorrections = function() {
+      const cards = document.querySelectorAll('[id^="error-card-ans-"]');
+      if (!cards.length) return;
+      const anyHidden = Array.from(cards).some(c => c.classList.contains('hidden'));
+      cards.forEach(c => {
+        if (anyHidden) {
+          c.classList.remove('hidden');
+        } else {
+          c.classList.add('hidden');
+        }
+      });
+    };
+
+    // ==========================================
+    // 15-Question Technical Mastery Quiz Controller (Part 6)
+    // ==========================================
+    window.masteryQuizState = {
+      score: 0,
+      answered: {}
+    };
+
+    window.handleMasteryQuizSelect = function(qId, selectedIdx, correctIdx) {
+      if (!window.masteryQuizState) window.masteryQuizState = { score: 0, answered: {} };
+      if (window.masteryQuizState.answered[qId]) return;
+      window.masteryQuizState.answered[qId] = true;
+
+      const isCorrect = (selectedIdx === correctIdx);
+      if (isCorrect) {
+        window.masteryQuizState.score++;
+      }
+
+      // Update status tag
+      const statusEl = document.getElementById('quiz-status-' + qId);
+      if (statusEl) {
+        statusEl.textContent = isCorrect ? '✅ Correct' : '❌ Incorrect';
+        statusEl.className = 'text-[11px] font-bold font-mono ' + (isCorrect ? 'text-emerald-600' : 'text-rose-600');
+      }
+
+      // Highlight options
+      const buttons = document.querySelectorAll('.quiz-option-btn-' + qId);
+      buttons.forEach((btn, idx) => {
+        btn.disabled = true;
+        btn.classList.remove('hover:bg-slate-100', 'cursor-pointer');
+        btn.classList.add('cursor-default');
+        if (idx === correctIdx) {
+          btn.className = 'w-full text-left p-2.5 rounded-lg border-2 border-emerald-500 bg-emerald-50 text-xs font-bold text-emerald-950 flex items-start gap-2';
+        } else if (idx === selectedIdx && !isCorrect) {
+          btn.className = 'w-full text-left p-2.5 rounded-lg border-2 border-rose-400 bg-rose-50 text-xs text-rose-950 flex items-start gap-2';
+        } else {
+          btn.className = 'w-full text-left p-2.5 rounded-lg border border-slate-200 bg-slate-50 text-xs text-slate-400 opacity-60 flex items-start gap-2';
+        }
+      });
+
+      // Show explanation
+      const expEl = document.getElementById('quiz-exp-' + qId);
+      if (expEl) {
+        expEl.classList.remove('hidden');
+        expEl.className = 'p-2.5 rounded-lg text-xs leading-relaxed border space-y-1 ' + 
+          (isCorrect ? 'bg-emerald-50/70 border-emerald-200 text-emerald-950' : 'bg-rose-50/70 border-rose-200 text-rose-950');
+      }
+
+      // Update total score display
+      const scoreEl = document.getElementById('mastery-score-display');
+      if (scoreEl) {
+        scoreEl.textContent = window.masteryQuizState.score + ' / 15';
+      }
+    };
+
+    window.resetMasteryQuiz = function() {
+      window.masteryQuizState = { score: 0, answered: {} };
+      const scoreEl = document.getElementById('mastery-score-display');
+      if (scoreEl) scoreEl.textContent = '0 / 15';
+
+      document.querySelectorAll('[id^="quiz-status-"]').forEach(el => {
+        el.textContent = 'Pending';
+        el.className = 'text-[11px] font-bold text-slate-400 font-mono';
+      });
+
+      document.querySelectorAll('[id^="quiz-exp-"]').forEach(el => {
+        el.classList.add('hidden');
+      });
+
+      document.querySelectorAll('[class*="quiz-option-btn-"]').forEach(btn => {
+        btn.disabled = false;
+        btn.className = 'quiz-option-btn-' + (btn.id.split('-')[2] || '1') + ' w-full text-left p-2.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-100 text-xs text-slate-800 transition-all flex items-start gap-2 cursor-pointer';
+      });
+    };
+
 
     function renderAas2LessonContentTabSession3(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
