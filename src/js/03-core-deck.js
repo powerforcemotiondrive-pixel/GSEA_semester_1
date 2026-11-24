@@ -906,7 +906,7 @@
         if (milestoneText) {
           const badgeText = cardIdx === 4 ? 'FE Target' : (cardIdx === 6 || (page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
           calloutsHtml += `
-            <div class="p-3.5 bg-amber-50/60 border border-amber-200/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">${badgeText}</span>
               <p class="text-xs sm:text-sm text-amber-950 leading-relaxed font-normal">
                 ${milestoneText}
@@ -1341,7 +1341,7 @@
           </div>
 
           <!-- Section 3: TOEIC Speaking & Listening Impact -->
-          <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-100 shadow-2xs">
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 border-l-4 border-l-amber-400 shadow-2xs">
             <div class="flex items-center gap-2 mb-1.5 text-amber-950 font-bold text-xs uppercase tracking-wider">
               <svg class="w-3.5 h-3.5 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
               <span>TOEIC Benchmark &amp; Exam Strategy</span>
@@ -2416,7 +2416,7 @@
       if (a.takeaways && a.takeaways.length > 0) {
         takeawaysHTML = `
           <div class="p-3.5 bg-slate-900 text-white rounded-xl space-y-1.5 my-4">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">💡 Key Operational Takeaways</span>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">KEY OPERATIONAL TAKEAWAYS</span>
             <ul class="space-y-1 text-xs text-slate-200">
               ${a.takeaways.map(t => `<li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>${t}</span></li>`).join("")}
             </ul>
@@ -2519,7 +2519,7 @@
       if (a.takeaways && a.takeaways.length > 0) {
         takeawaysHTML = `
           <div class="p-3.5 bg-slate-900 text-white rounded-xl space-y-1.5 my-4">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">💡 Key Operational Takeaways</span>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">KEY OPERATIONAL TAKEAWAYS</span>
             <ul class="space-y-1 text-xs text-slate-200">
               ${a.takeaways.map(t => `<li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>${t}</span></li>`).join("")}
             </ul>
@@ -2955,7 +2955,7 @@
             </div>
 
             <!-- Announcement 2: Friday AG -->
-            <div class="p-4 rounded-xl border border-amber-200/90 bg-amber-50/50 shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-200/80 text-amber-900">🗣️ Friday • AG</span>
                 <span class="text-[10.5px] font-mono text-amber-700 font-medium">08:00 – 10:00</span>
@@ -2969,7 +2969,7 @@
             </div>
 
             <!-- Announcement 3: Portfolio Reminder -->
-            <div class="p-4 rounded-xl border border-emerald-200/90 bg-emerald-50/50 shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-200/80 text-emerald-900">💡 Habit</span>
                 <span class="text-[10.5px] font-mono text-emerald-700 font-medium">Continuous Practice</span>
@@ -2983,7 +2983,7 @@
             </div>
 
             <!-- Announcement 4: Formative Evaluation (FE) Countdown or Active State -->
-            <div class="p-4 rounded-xl border border-purple-200/90 bg-purple-50/50 shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-purple-200/80 text-purple-900">🎯 ${activeInfo.isFe ? "This Week's Evaluation" : "Upcoming Evaluation"}</span>
                 <span class="text-[10.5px] font-mono text-purple-700 font-medium">Week ${activeInfo.feWeek}</span>

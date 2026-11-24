@@ -7,7 +7,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -171,7 +171,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 4</span>
-                  <span class="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">Case Analysis</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Case Analysis</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Notable Incidents, Accidents &amp; Safety Lessons</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -256,7 +256,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Executive Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide text-white" style="background-color: ${theme.primary};">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -401,7 +401,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 3</span>
-                  <span class="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">History</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">History</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Historical Moments &amp; Milestones</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -816,7 +816,7 @@
                 <div>
                   <div class="flex items-center justify-between mb-2">
                     <span class="px-2.5 py-0.5 rounded-full text-white text-[11px] font-bold tracking-wide" style="background-color: ${theme.primary};">OPTION A</span>
-                    <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">Aviation Emerging Tech</span>
+                    <span class="text-[11px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Aviation Emerging Tech</span>
                   </div>
                   <h5 class="text-sm sm:text-base font-bold text-slate-800">
                     Emerging Aviation Technology
@@ -867,7 +867,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 1</span>
-                  <span class="text-[10px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">Architecture</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Architecture</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Technical Architecture &amp; Operating Mechanism</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -906,7 +906,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 4</span>
-                  <span class="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">Roadmap</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Roadmap</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Scalability, Deployment Roadmap &amp; Future Outlook</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -1361,7 +1361,7 @@
               <div class="border border-slate-200 rounded-xl p-4 bg-white shadow-xs">
                 <div class="flex items-center justify-between mb-2">
                   <span class="px-2.5 py-0.5 rounded-full text-white text-[10px] font-bold tracking-wide" style="background-color: ${theme.primary};">DIMENSION 4</span>
-                  <span class="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">Contingencies</span>
+                  <span class="text-[10px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-mono">Contingencies</span>
                 </div>
                 <h5 class="text-sm font-bold text-slate-800">Operational Contingencies &amp; Stakeholder Defense</h5>
                 <ul class="text-xs text-slate-600 space-y-1 mt-2 list-disc pl-4">
@@ -1633,7 +1633,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 1 Objectives (AAS Track)</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -1711,7 +1711,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Target Competencies • B2 CEFR Level</span>
             <h3 class="text-base sm:text-lg font-bold text-slate-800 mt-1">Formative Evaluation 2 Objectives (Aircraft / Airlines)</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
@@ -2015,7 +2015,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
@@ -2108,7 +2108,7 @@
         bodyEl.innerHTML = `
         <div class="space-y-6">
           <!-- Overview Card -->
-          <div class="bg-gradient-to-r from-slate-50 to-amber-50/40 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs">
+          <div class="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-4 sm:p-5 shadow-xs">
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
               <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Official Rubric • Technical English (AT)</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md text-white font-mono shadow-xs" style="background-color: ${theme.primary};">
