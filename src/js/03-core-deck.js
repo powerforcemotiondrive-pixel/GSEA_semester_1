@@ -2141,8 +2141,8 @@
     function getActiveModalCourseData() {
       const progKey = modalState.program || currentProgram || 'ag';
       const rootData = window.COURSE_DATA || {};
-      const progData = rootData[progKey] || rootData.ag || rootData;
-      return progData[modalState.modNum] || rootData[modalState.modNum] || {};
+      const progData = (progKey === 'at' || progKey === 'aas') ? (rootData.at || rootData.aas) : (rootData[progKey] || rootData.ag || rootData);
+      return (progData && progData[modalState.modNum]) || rootData[modalState.modNum] || {};
     }
 
     function renderModalBody() {

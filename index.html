@@ -3657,8 +3657,8 @@
     function getActiveModalCourseData() {
       const progKey = modalState.program || currentProgram || 'ag';
       const rootData = window.COURSE_DATA || {};
-      const progData = rootData[progKey] || rootData.ag || rootData;
-      return progData[modalState.modNum] || rootData[modalState.modNum] || {};
+      const progData = (progKey === 'at' || progKey === 'aas') ? (rootData.at || rootData.aas) : (rootData[progKey] || rootData.ag || rootData);
+      return (progData && progData[modalState.modNum]) || rootData[modalState.modNum] || {};
     }
 
     function renderModalBody() {
@@ -12396,15 +12396,15 @@
                   <span class="text-[10.5px] text-slate-500 font-mono">Triple Hydraulic Redundancy</span>
                 </div>
                 <h4 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
-                  ${videoLab.videoTitle || 'Commercial Aircraft Anatomy &amp; How Flight Controls Work'}
+                  ${videoLab.videoTitle || 'How a Jet Airliner Works: Airframe, Flight Controls &amp; Systems'}
                 </h4>
                 <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-300 shadow-md">
-                  <iframe class="w-full h-full" src="${videoLab.videoUrl || 'https://www.youtube-nocookie.com/embed/fD3K8nW_z9o'}" title="Commercial Aircraft Anatomy &amp; How Flight Controls Work" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="w-full h-full" src="${videoLab.videoUrl || 'https://www.youtube-nocookie.com/embed/X004qj_gAhQ'}" title="How a Jet Airliner Works: Airframe, Flight Controls &amp; Systems" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="flex items-center justify-between pt-1 text-[11px]">
-                  <span class="text-[10px] text-slate-400 font-mono">${videoLab.channel || 'Aviation Explained • Airframe Engineering &amp; Flight Mechanics'}</span>
+                  <span class="text-[10px] text-slate-400 font-mono">${videoLab.channel || 'Animagraffs • 3D Aircraft Systems &amp; Engineering'}</span>
                   <a 
-                    href="${videoLab.youtubeUrl || 'https://www.youtube.com/watch?v=fD3K8nW_z9o'}" 
+                    href="${videoLab.youtubeUrl || 'https://www.youtube.com/watch?v=X004qj_gAhQ'}" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     class="text-xs font-bold text-slate-800 hover:text-amber-600 inline-flex items-center gap-1 underline transition-colors cursor-pointer"
