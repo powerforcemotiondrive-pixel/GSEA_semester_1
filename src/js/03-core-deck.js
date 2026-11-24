@@ -2820,10 +2820,7 @@
         <!-- 1b. Semester 1 Overview & Student Success Strategy -->
         <div class="rounded-2xl border ${isAg ? 'border-amber-200/90 bg-gradient-to-br from-amber-50/80 via-white to-orange-50/40' : 'border-sky-200/90 bg-gradient-to-br from-sky-50/80 via-white to-indigo-50/40'} p-4 sm:p-5 shadow-2xs space-y-3.5">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b ${isAg ? 'border-amber-100' : 'border-sky-100'}">
-            <div class="flex items-start sm:items-center gap-3">
-              <div class="w-9 h-9 rounded-xl ${isAg ? 'bg-amber-600' : 'bg-sky-600'} text-white flex items-center justify-center text-lg shadow-xs font-bold shrink-0">
-                ${isAg ? '🗣️' : '✈️'}
-              </div>
+            <div class="flex items-start sm:items-center">
               <div>
                 <div class="flex items-center gap-2">
                   <span class="text-[10px] font-mono font-extrabold uppercase tracking-wider ${isAg ? 'text-amber-800 bg-amber-100/80 border-amber-200' : 'text-sky-800 bg-sky-100/80 border-sky-200'} border px-2 py-0.5 rounded">Course Roadmap</span>
