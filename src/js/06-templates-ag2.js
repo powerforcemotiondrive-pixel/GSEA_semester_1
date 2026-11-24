@@ -57,6 +57,8 @@
             </div>
           </div>
 
+          ${renderSessionBriefingBanner(sessionData, theme)}
+
           <!-- Part 1: Warm-up & Personal Weather Stories -->
           <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex items-center justify-between border-b border-slate-200 pb-3">
@@ -421,6 +423,8 @@
               </div>
             </div>
           </div>
+
+          ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Part 1: Livable City Ranking & Diagnostic Warm-up -->
           <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
