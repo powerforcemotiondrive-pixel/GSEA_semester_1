@@ -2836,10 +2836,10 @@
               </div>
             </div>
             <div class="p-2.5 rounded-xl bg-white/90 border ${isAg ? 'border-amber-100' : 'border-sky-100'} shadow-2xs flex items-start gap-2">
-              <span class="text-base leading-none">🎧</span>
+              <span class="text-base leading-none">📝</span>
               <div>
                 <div class="font-bold text-slate-900 leading-tight">Weekly Self-Study</div>
-                <div class="text-[10.5px] text-slate-500 mt-0.5">Live Traffic (1h/wk eCampus)</div>
+                <div class="text-[10.5px] text-slate-500 mt-0.5">Portfolio Completion &amp; FE Prep</div>
               </div>
             </div>
             <div class="p-2.5 rounded-xl bg-white/90 border ${isAg ? 'border-amber-100' : 'border-sky-100'} shadow-2xs flex items-start gap-2">
@@ -3295,36 +3295,36 @@
                 </div>
               </div>
 
-              <!-- Section 3: Weekly Self-Study: Live Traffic on eCampus (1 Hour per Week) -->
+              <!-- Section 3: Weekly Self-Study: Learning Portfolio Completion & FE Prep -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🎧</span>
+                  <span class="text-base">📝</span>
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
-                    3. Weekly Self-Study: "Live Traffic" on eCampus (1 Hour / Week)
+                    3. Weekly Self-Study: Learning Portfolio Completion &amp; FE Prep
                   </h3>
                 </div>
                 <div class="p-4 rounded-xl bg-gradient-to-r from-amber-50/60 via-white to-sky-50/50 border border-amber-200/80 space-y-3">
                   <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <div class="flex items-center gap-2">
-                      <span class="font-bold text-xs sm:text-sm text-amber-900">📻 Mandatory Weekly Self-Study Programme</span>
-                      <span class="text-[10px] font-mono font-extrabold uppercase bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded">1 Hour / Week</span>
+                      <span class="font-bold text-xs sm:text-sm text-amber-900">Autonomous Study &amp; Continuous Reflection</span>
+                      <span class="text-[10px] font-mono font-extrabold uppercase bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded">Weekly Routine</span>
                     </div>
-                    <span class="text-[11px] font-mono text-slate-500">Available on ENAC eCampus</span>
+                    <span class="text-[11px] font-mono text-slate-500">Autonomous Practice</span>
                   </div>
                   <p class="text-slate-700 leading-relaxed">
-                    In addition to your two weekly classroom sessions, you have an official self-study course on <strong class="text-slate-900">ENAC eCampus</strong> called <strong class="text-slate-900">"Live Traffic"</strong>. This programme provides authentic listening practice and technical comprehension.
+                    In addition to your two weekly classroom sessions, your independent self-study focuses on <strong class="text-slate-900">Portfolio completion</strong> and <strong class="text-slate-900">Formative Evaluation (FE) preparation</strong>. Regular weekly reflection consolidates the communication strategies and technical vocabulary practiced in class.
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                     <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
-                      <div class="font-bold text-amber-900">🎧 What does Live Traffic include?</div>
+                      <div class="font-bold text-amber-900">📝 Learning Portfolio Updates</div>
                       <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                        Real-world air traffic tower and ground communications, cockpit voice recordings, pilot debriefings, and authentic technical audio from international airfields.
+                        Log key speaking takeaways, newly acquired technical terms, and personal reflection notes in your digital Learning Portfolio after each session to track your communicative growth.
                       </p>
                     </div>
                     <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
-                      <div class="font-bold text-sky-900">🎯 How does it prepare you for evaluations?</div>
+                      <div class="font-bold text-sky-900">🎯 Formative Evaluation (FE) Readiness</div>
                       <p class="text-[11.5px] text-slate-600 leading-relaxed">
-                        Regular spaced listening practice trains your ear to understand varied international accents and high speech rates, building the listening endurance needed for your Formative Evaluations and the international TOEIC exam.
+                        Review session worksheets and roleplay prompts with peer study partners. Practicing spoken fluency and operational phraseology ensures you arrive confident and well-prepared for all three Formative Evaluations.
                       </p>
                     </div>
                   </div>
@@ -3373,10 +3373,10 @@
                   <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs space-y-1.5">
                     <div class="flex items-center gap-2 font-bold text-xs sm:text-sm text-slate-900">
                       <span class="w-6 h-6 rounded-full bg-sky-100 text-sky-800 text-xs flex items-center justify-center font-black shrink-0">4</span>
-                      <span>Schedule Your 1-Hour Live Traffic Slot</span>
+                      <span>Dedicated Portfolio &amp; FE Self-Study</span>
                     </div>
                     <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed">
-                      Treat your weekly 1-hour eCampus Live Traffic self-study as a fixed appointment in your schedule. Regular weekly practice is far more effective than cramming before exams.
+                      Treat your weekly portfolio reflections and FE preparation as a regular appointment in your schedule. Continuous weekly consolidation is far more effective than cramming before oral evaluations.
                     </p>
                   </div>
                 </div>
