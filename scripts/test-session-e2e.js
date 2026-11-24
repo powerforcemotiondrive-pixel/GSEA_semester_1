@@ -148,10 +148,10 @@ const html = modalBody.innerHTML;
 console.log("  ✓ Rendered HTML length:", html.length.toLocaleString(), "chars");
 
 // Assert video
-if (!html.includes('X004qj_gAhQ')) {
-  throw new Error("FAIL: Working video embed (Animagraffs X004qj_gAhQ) not found in rendered HTML!");
+if (!html.includes('L24Wf0VlTE0')) {
+  throw new Error("FAIL: Working video embed (Animagraffs L24Wf0VlTE0) not found in rendered HTML!");
 }
-console.log("  ✓ Video Player: Verified working Animagraffs 3D animation (X004qj_gAhQ)");
+console.log("  ✓ Video Player: Verified working Animagraffs 3D animation (L24Wf0VlTE0)");
 
 // Assert Video Debrief panel has content
 if (!html.includes('Differential Aileron Deflection') || !html.includes('Why do commercial aircraft use both inboard and outboard ailerons?')) {
