@@ -1,0 +1,113 @@
+================================================================================
+ENAC GSEA ENGLISH — SEMESTER 1 MODULE 1 FEEDBACK SURVEY
+Target Audience: Promotion GSEA26A
+Level: CEFR B1 / B2 Friendly (Zero Academic or Pedagogical Jargon)
+Purpose: Qualitative & Quantitative Review of Student Progress & Opinions
+Format: Ready for Google Forms / Microsoft Forms
+================================================================================
+
+SECTION 1: SPOKEN ENGLISH & CONFIDENCE (QUANTITATIVE)
+--------------------------------------------------------------------------------
+
+Q1. [Scale 1 to 5]
+How confident do you feel speaking English in class today compared to the start of the semester?
+  1 = Much less confident
+  2 = A little less confident
+  3 = The same as before
+  4 = More confident
+  5 = Much more confident
+
+Q2. [Scale 1 to 5]
+In class, I have enough opportunities to speak English with my classmates.
+  1 = Strongly disagree
+  2 = Disagree
+  3 = Neutral
+  4 = Agree
+  5 = Strongly agree
+
+
+SECTION 2: MODULE 1 TOPICS & LEARNING (QUANTITATIVE)
+--------------------------------------------------------------------------------
+
+Q3. [Scale 1 to 5]
+General English (AG — Travel, Tourism & Culture): How useful and interesting were the topics in Module 1?
+  1 = Not useful or interesting
+  2 = Slightly useful
+  3 = Moderately useful
+  4 = Very useful
+  5 = Extremely useful
+
+Q4. [Scale 1 to 5]
+Technical English (AT — Airframe, Aerodynamics & Propulsion): How well did you understand the technical vocabulary and concepts in Module 1?
+  1 = I found it very difficult
+  2 = I struggled with many words
+  3 = I understood about half
+  4 = I understood most of it
+  5 = I understood almost everything
+
+Q5. [Multiple Choice - Single Answer]
+Which classroom activity helped you improve your spoken English the most?
+  ( ) Paired discussions and debates with a partner
+  ( ) Small group decision tasks and roleplays
+  ( ) Vocabulary games (taboo cards, flashcard challenges)
+  ( ) Technical descriptions and diagram explanations
+  ( ) Pronunciation drills and audio listening practice
+
+
+SECTION 3: WORKLOAD & INDEPENDENT STUDY (QUANTITATIVE)
+--------------------------------------------------------------------------------
+
+Q6. [Multiple Choice - Single Answer]
+The pace and difficulty of the lessons in Module 1 was:
+  ( ) Too fast / too difficult
+  ( ) A little difficult, but manageable
+  ( ) Just right
+  ( ) A little too easy
+  ( ) Too slow / not challenging enough
+
+Q7. [Multiple Choice - Single Answer]
+Outside of class, how much time per week do you spend revising vocabulary or listening to English?
+  ( ) Less than 30 minutes per week
+  ( ) 30 to 60 minutes per week
+  ( ) 1 to 2 hours per week
+  ( ) More than 2 hours per week
+
+Q8. [Scale 1 to 5]
+The digital portal and digital worksheets on eCampus are easy to use and helpful for revision.
+  1 = Strongly disagree
+  2 = Disagree
+  3 = Neutral
+  4 = Agree
+  5 = Strongly agree
+
+
+SECTION 4: FORMATIVE EVALUATION & TEACHER FEEDBACK (QUANTITATIVE)
+--------------------------------------------------------------------------------
+
+Q9. [Scale 1 to 5]
+The teacher feedback I receive during speaking activities is clear and helps me improve.
+  1 = Strongly disagree
+  2 = Disagree
+  3 = Neutral
+  4 = Agree
+  5 = Strongly agree
+
+Q10. [Scale 1 to 5]
+How prepared do you feel for the upcoming speaking evaluation (FE1)?
+  1 = Not prepared at all
+  2 = A bit nervous / unprepared
+  3 = Moderately prepared
+  4 = Well prepared
+  5 = Completely confident and ready
+
+
+SECTION 5: YOUR VOICE & SUGGESTIONS (QUALITATIVE - OPEN TEXT)
+--------------------------------------------------------------------------------
+
+Q11. [Long Answer Text]
+What was the most useful or enjoyable thing you learned or practiced in Module 1?
+Help text: For example: a specific topic, a speaking activity, or new vocabulary words you remember...
+
+Q12. [Long Answer Text]
+What is one thing your teachers could change or add to help you speak even better in Module 2?
+Help text: For example: more time to prepare before speaking, more grammar tips, different group pairings, more listening...

@@ -834,41 +834,47 @@ function generateRefonteJS() {
         }
       });
 
-      // Keyboard navigation (Arrow keys, Space, Home, End, PageUp, PageDown, F)
-      document.addEventListener('keydown', function(e) {
-        const wrapper = document.getElementById('refonte-deck-wrapper');
-        if (!wrapper) return;
-        
-        // Guard against typing in form inputs
-        if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+      // Keyboard navigation (Only registered if 03-core-deck.js is NOT managing it)
+      if (!window.__refonteKeydownRegistered) {
+        window.__refonteKeydownRegistered = true;
+        document.addEventListener('keydown', function(e) {
+          // If 03-core-deck.js is present (index.html), it handles keyboard navigation exclusively
+          if (window.__GSEA_CORE_DECK_LOADED) return;
 
-        // Active if in fullscreen or visible on page/drawer
-        const isFs = Boolean(document.fullscreenElement || document.webkitFullscreenElement);
-        const isVisible = isFs || (wrapper.offsetParent !== null || wrapper.offsetWidth > 0 || wrapper.offsetHeight > 0);
-        if (!isVisible) return;
+          const wrapper = document.getElementById('refonte-deck-wrapper');
+          if (!wrapper) return;
+          
+          // Guard against typing in form inputs
+          if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
 
-        if (e.key === 'f' || e.key === 'F') {
-          e.preventDefault();
-          window.toggleRefonteFullscreen();
-          return;
-        }
+          // Active if in fullscreen or visible on page/drawer
+          const isFs = Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+          const isVisible = isFs || (wrapper.offsetParent !== null || wrapper.offsetWidth > 0 || wrapper.offsetHeight > 0);
+          if (!isVisible) return;
 
-        if (__refonteViewMode !== 'slides') return;
+          if (e.key === 'f' || e.key === 'F') {
+            e.preventDefault();
+            window.toggleRefonteFullscreen();
+            return;
+          }
 
-        if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
-          e.preventDefault();
-          window.nextRefonteSlide();
-        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
-          e.preventDefault();
-          window.prevRefonteSlide();
-        } else if (e.key === 'Home') {
-          e.preventDefault();
-          window.goToRefonteSlide(0);
-        } else if (e.key === 'End') {
-          e.preventDefault();
-          window.goToRefonteSlide(__refonteTotalSlides - 1);
-        }
-      });
+          if (__refonteViewMode !== 'slides') return;
+
+          if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+            e.preventDefault();
+            window.nextRefonteSlide();
+          } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+            e.preventDefault();
+            window.prevRefonteSlide();
+          } else if (e.key === 'Home') {
+            e.preventDefault();
+            window.goToRefonteSlide(0);
+          } else if (e.key === 'End') {
+            e.preventDefault();
+            window.goToRefonteSlide(__refonteTotalSlides - 1);
+          }
+        });
+      }
     }
   `;
 }

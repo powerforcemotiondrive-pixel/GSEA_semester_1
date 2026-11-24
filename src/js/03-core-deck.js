@@ -1,4 +1,5 @@
     function initDeck() {
+      window.__GSEA_CORE_DECK_LOADED = true;
       ScormAPI.init();
       window.addEventListener('beforeunload', () => ScormAPI.finish());
       window.addEventListener('pagehide', () => ScormAPI.finish());
@@ -100,26 +101,31 @@
         if (isRefonteActive && refonteDeckEl) {
           if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
             e.preventDefault();
+            e.stopImmediatePropagation();
             if (window.nextRefonteSlide) window.nextRefonteSlide();
             return;
           }
           if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
             e.preventDefault();
+            e.stopImmediatePropagation();
             if (window.prevRefonteSlide) window.prevRefonteSlide();
             return;
           }
           if (e.key === 'Home') {
             e.preventDefault();
+            e.stopImmediatePropagation();
             if (window.goToRefonteSlide) window.goToRefonteSlide(0);
             return;
           }
           if (e.key === 'End') {
             e.preventDefault();
+            e.stopImmediatePropagation();
             if (window.goToRefonteSlide) window.goToRefonteSlide(5);
             return;
           }
           if (e.key === 'f' || e.key === 'F') {
             e.preventDefault();
+            e.stopImmediatePropagation();
             if (window.toggleRefonteFullscreen) window.toggleRefonteFullscreen();
             return;
           }
