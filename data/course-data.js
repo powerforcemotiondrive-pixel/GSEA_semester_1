@@ -1,7 +1,6 @@
 // GSEA Semester 1 - Complete Course Data Architecture
 // In-Deck SCORM 1.2 Learning Platform
 // Author: Phil PARRIS (LH/LAN)
-// Updated with full communicative curriculum for AG Module 2 Sessions 1 & 2 & AT/AAS Module 2
 
 const COURSE_DATA = {
   "1": {
@@ -4251,84 +4250,278 @@ const COURSE_DATA = {
           }
         },
         "materials": {
-          "title": "Additional Study Materials & Multimedia Resources",
-          "summary": "Curated video analysis, current affairs case studies, and grammar guidelines exploring climate hazards and disaster resilience.",
           "videos": [
             {
-              "title": "Extreme Weather Explained: Why Are Heatwaves & Floods Intensifying?",
-              "channel": "World Meteorological Organization",
-              "videoId": "3j3_iPskk4c",
-              "watchUrl": "https://www.youtube.com/watch?v=3j3_iPskk4c",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/3j3_iPskk4c",
-              "duration": "06:15",
-              "caption": "Scientific analysis of atmospheric moisture retention and jet stream stalling during extreme summer heatwaves."
+              "title": "Video 1: The Four Forces of Flight Simply Explained",
+              "watchUrl": "https://www.youtube.com/watch?v=5ltjFEei3AI",
+              "tag": "Flight Physics",
+              "videoId": "5ltjFEei3AI",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/5ltjFEei3AI",
+              "caption": "Focus: Watch how lift, weight, thrust, and drag achieve aerodynamic equilibrium in steady flight."
             },
             {
-              "title": "How Cities Are Adapting to Rising Flash Flood Risks",
-              "channel": "Civil Engineering Briefings",
-              "videoId": "m1n_iQxP6eA",
-              "watchUrl": "https://www.youtube.com/watch?v=m1n_iQxP6eA",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/m1n_iQxP6eA",
-              "duration": "08:42",
-              "caption": "Overview of flood-retention basins, storm barrier infrastructure, and permeable drainage across European metropolitan areas."
+              "title": "Video 2: Primary Flight Controls: Ground Lesson",
+              "watchUrl": "https://www.youtube.com/watch?v=LZFehDh7LxI",
+              "tag": "Flight Controls",
+              "videoId": "LZFehDh7LxI",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/LZFehDh7LxI",
+              "caption": "Focus: Master the 3 axes of rotation (pitch, roll, yaw) and how elevators, ailerons, and rudder manipulate airflow."
             },
             {
-              "title": "Aviation & Extreme Weather: Wind Shear, Microbursts & Heat",
-              "channel": "Flight Safety International",
-              "videoId": "K9sT7mUqGZc",
-              "watchUrl": "https://www.youtube.com/watch?v=K9sT7mUqGZc",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/K9sT7mUqGZc",
-              "duration": "07:30",
-              "caption": "Operational impact of extreme density altitude and convective storms on takeoff performance and airport operations."
+              "title": "Video 3: What Causes an Airplane to Stall?",
+              "watchUrl": "https://www.youtube.com/watch?v=hIv-BLf6PoE",
+              "tag": "Flight Safety",
+              "videoId": "hIv-BLf6PoE",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/hIv-BLf6PoE",
+              "caption": "Focus: Examine critical angle of attack (AOA), airflow detachment from the upper camber, stick-shakers, and recovery technique."
             }
           ],
           "articles": [
             {
-              "topic": "Climate Resilience",
-              "sourceTag": "European Environment Agency",
-              "readTime": "Estimated read: 4 mins",
-              "heading": "Managing Extreme Summer Temperatures: Urban Heat Action Plans Across Europe",
-              "snippet": "Municipal health authorities across Southern and Western Europe are implementing real-time heat warning systems, shaded public corridors, and emergency water-misting stations to safeguard vulnerable citizens during prolonged 40°C+ heatwaves.",
-              "url": "https://www.eea.europa.eu"
+              "topic": "Aerodynamics & Efficiency",
+              "sourceTag": "Aviation Week & Space Technology • Engineering Digest",
+              "heading": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
+              "snippet": "Examining how blended winglets, sharklets, and raked wingtips dissipate powerful wingtip vortices, reducing induced drag by up to 5% on commercial airliners.",
+              "url": "https://aviationweek.com",
+              "readTime": "5 min read",
+              "title": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
+              "summary": "Examining how blended winglets, sharklets, and raked wingtips dissipate powerful wingtip vortices, reducing induced drag by up to 5% on commercial airliners.",
+              "content": [
+                "When an aircraft wing generates aerodynamic lift, high-pressure air beneath the wing naturally flows around the wingtip toward the lower-pressure area on top. This circular airflow creates powerful swirling tornadoes of turbulent air known as wingtip vortices, which generate a major aerodynamic penalty: induced drag.",
+                "To mitigate this drag, modern aircraft manufacturers equip wings with specialized upward-curving aerodynamic extensions: blended winglets on Boeing 737s, sharklets on Airbus A320neos, and raked wingtips on the Boeing 787. By acting as a physical barrier, these wingtip devices prevent high-pressure air from curling over the wingtip, diffusing the vortex and smoothing airflow.",
+                "The operational gains are substantial. Wingtip devices reduce total cruise drag by 4 to 5%, saving hundreds of thousands of liters of jet fuel per aircraft each year. Furthermore, by improving climb performance and reducing takeoff noise footprints, winglets allow airliners to carry heavier payloads out of noise-restricted or high-altitude airports."
+              ],
+              "takeaways": [
+                "High-to-low pressure airflow around wingtips creates vortices that generate significant induced drag.",
+                "Winglets and sharklets diffuse wingtip vortices, reducing commercial airliner cruise drag by up to 5%.",
+                "Lower fuel burn translates directly into extended payload range and reduced carbon emissions."
+              ],
+              "vocab": [
+                "Induced Drag",
+                "Wingtip Vortex",
+                "Blended Winglet",
+                "Airflow Separation",
+                "Climb Performance"
+              ]
             },
             {
-              "topic": "Infrastructure Protection",
-              "sourceTag": "Reuters Climate Wire",
-              "readTime": "Estimated read: 5 mins",
-              "heading": "Rethinking Storm Drainage: €50M Adaptation Funds Deployed for Flash Flood Mitigation",
-              "snippet": "Engineers and regional planners are retrofitting highway drainage networks and airport runoffs with automated floodgates and bioretention basins to withstand sudden 100mm convective rainstorms.",
-              "url": "https://www.reuters.com"
+              "topic": "Flight Physics & Flight Safety",
+              "sourceTag": "Flight Safety Foundation • Aerodynamic Principles",
+              "heading": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
+              "snippet": "Reviewing the physics of angle of attack, boundary layer separation, stick shaker tactile warnings, and fly-by-wire flight envelope protection systems.",
+              "url": "https://flightsafety.org",
+              "readTime": "5 min read",
+              "title": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
+              "summary": "Reviewing the physics of angle of attack, boundary layer separation, stick shaker tactile warnings, and fly-by-wire flight envelope protection systems.",
+              "content": [
+                "In aviation, the term 'stall' does not refer to an engine shutting down; it describes a critical aerodynamic condition where a wing can no longer produce sufficient lift to support the aircraft's weight. An aerodynamic stall occurs whenever the wing exceeds its critical angle of attack (AoA)—the angle between the wing chord line and the oncoming relative wind.",
+                "When the angle of attack becomes too steep, smooth airflow can no longer adhere to the curved upper surface of the wing. The boundary layer separates violently, creating turbulent eddies that cause lift to collapse and drag to surge. To warn pilots of an impending stall, modern aircraft use artificial tactile shakers that vibrate the control column while sounding loud cockpit alarms.",
+                "Advanced commercial jetliners like the Airbus A350 and Boeing 787 incorporate fly-by-wire flight envelope protection. Even if a pilot pulls the sidestick fully back in a panic, the flight control computers automatically limit the pitch command, preventing the wing from exceeding its critical angle of attack regardless of pilot input."
+              ],
+              "takeaways": [
+                "An aerodynamic stall occurs when the wing exceeds its critical angle of attack, destroying lift.",
+                "Boundary layer separation causes smooth airflow over the top of the wing to become turbulent.",
+                "Fly-by-wire flight envelope systems automatically limit pitch commands to prevent stalls."
+              ],
+              "vocab": [
+                "Aerodynamic Stall",
+                "Angle of Attack (AoA)",
+                "Boundary Layer Separation",
+                "Stick Shaker",
+                "Flight Envelope Protection"
+              ]
+            }
+          ],
+          "resources": [
+            {
+              "url": "https://www.grc.nasa.gov/www/k-12/airplane/index.html",
+              "tag": "01 • Flight Physics",
+              "name": "NASA Glenn Beginner's Guide to Aeronautics",
+              "desc": "Official educational guides on Bernoulli's principle, lift equations, and airfoil camber."
+            },
+            {
+              "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+              "tag": "02 • Flight Manual",
+              "name": "FAA Pilot's Handbook of Aeronautical Knowledge",
+              "desc": "Chapter 5: Aerodynamics of flight, aircraft stability, and stall/spin recovery procedures."
+            },
+            {
+              "url": "https://ocw.mit.edu",
+              "tag": "03 • Academic Courses",
+              "name": "MIT OpenCourseWare Flight Dynamics",
+              "desc": "Open aerospace engineering lecture notes on boundary layer control and drag polar curves."
+            },
+            {
+              "url": "https://aircraft.airbus.com/en/services/maintain/fast-technical-magazine",
+              "tag": "04 • Airbus Engineering",
+              "name": "Airbus FAST Magazine: Aerodynamic Optimization",
+              "desc": "In-depth technical articles on sharklet wingtip designs and laminar flow aerodynamics."
+            },
+            {
+              "url": "https://www.boeing.com/commercial/aeromagazine",
+              "tag": "05 • Boeing Technology",
+              "name": "Boeing AERO Magazine: Fuel & Drag Reduction",
+              "desc": "Engineering case studies on surface finishes, drag cleanup, and flight control optimization."
+            },
+            {
+              "url": "https://www.skybrary.aero/articles/aerodynamic-stall",
+              "tag": "06 • Safety Portal",
+              "name": "Skybrary: Aerodynamic Stall & Angle of Attack",
+              "desc": "Operational aviation safety portal on stall warning margins, stick-shakers, and recovery."
             }
           ],
           "grammar": {
-            "title": "Language Clinic: Conditionals for Cause, Effect & Urgency",
-            "points": [
-              {
-                "rule": "First Conditional (Real Present / Future Possibility)",
-                "structure": "If + present simple, will / can / must + verb",
-                "example": "If temperatures continue to rise, summer runway operations will require weight reductions.",
-                "note": "Used for real, probable future operational outcomes."
-              },
-              {
-                "rule": "Second Conditional (Hypothetical Proposals & Policy Debates)",
-                "structure": "If + past simple, would / could / might + verb",
-                "example": "If we invested €50M in sponge city drainage, flash flood damage would decrease significantly.",
-                "note": "Ideal for discussing proposed solutions, recommendations, and policy options."
-              }
+            "title": "Cause-and-Effect Structures & Conditional Relationships in Flight Physics",
+            "badge": "Flight Physics",
+            "patternTitle": "Aero Cause & Effect Formula",
+            "formula": "Due to / As a result of + Noun Phrase, [Consequence] || If + Present, [Result]",
+            "rulesTitle": "Core Communicative Guidelines",
+            "rules": [
+              "<strong style=\"color: #1e293b;\">1. Cause & Prepositional Linkers (Due to / Owing to / Because of):</strong> Introduces aerodynamic forces triggering an outcome (<em>'Due to increased camber, airflow accelerates over the upper surface'</em>).",
+              "<strong style=\"color: #1e293b;\">2. Result Linkers (Consequently / As a result / Leading to):</strong> Links physical actions to reactions (<em>'Air pressure decreases above the wing, consequently generating lift'</em>).",
+              "<strong style=\"color: #1e293b;\">3. Zero Conditional (Scientific Invariants):</strong> Expresses universal physical laws (<em>'If the angle of attack exceeds 15 degrees, the airflow separates and the wing stalls'</em>).",
+              "<strong style=\"color: #1e293b;\">4. First Conditional (Operational Contingencies):</strong> Expresses flight deck actions (<em>'If airspeed drops below Vref during approach, the flight crew will advance the throttles immediately'</em>)."
+            ],
+            "trap": "⚠️ TOEIC Part 5 Cause Linker Alert: 'Due to' and 'because of' MUST be followed by a noun or noun phrase. 'Because' and 'since' are conjunctions followed by a subject + verb clause.",
+            "examplesTitle": "Authentic Operational Examples",
+            "examples": [
+              "Due to boundary layer separation at high angles of attack, the aircraft experiences severe aerodynamic buffeting.",
+              "If the pilot increases pitch attitude without adding thrust, airspeed will decay rapidly."
             ]
           },
-          "resources": [
+          "toeicQuestions": [
             {
-              "title": "IPCC Climate Assessment Summary",
-              "desc": "Key summary for engineers and infrastructure policymakers.",
-              "link": "https://www.ipcc.ch"
+              "stem": "Because the aircraft was climbing rapidly, the pilots had to increase engine thrust in order to maintain ________ over the wings.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "lifting"
+                },
+                {
+                  "letter": "B",
+                  "text": "lift"
+                },
+                {
+                  "letter": "C",
+                  "text": "lifted"
+                },
+                {
+                  "letter": "D",
+                  "text": "lifter"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "lift",
+              "analysis": "The transitive verb 'maintain' requires a direct object noun phrase. 'Lift' functions as the aerodynamic noun representing the upward aerodynamic force opposing aircraft weight.",
+              "strategy": "After transitive verbs like 'maintain', 'generate', 'produce', or 'increase', look for the primary technical noun rather than participle or agentive forms.",
+              "id": 1
             },
             {
-              "title": "European Storm Forecast & Warning Center",
-              "desc": "Interactive convective storm alerts and meteorological tracking.",
-              "link": "https://www.estofex.org"
+              "stem": "When turbulent air forces the angle of attack beyond its critical limit, a sudden loss of lift ________.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "occurred"
+                },
+                {
+                  "letter": "B",
+                  "text": "occurring"
+                },
+                {
+                  "letter": "C",
+                  "text": "occurs"
+                },
+                {
+                  "letter": "D",
+                  "text": "to occur"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "occurs",
+              "analysis": "This sentence states a factual law of aerodynamics (zero conditional). In factual cause-and-effect statements governed by 'when + present simple', the main clause takes the present simple ('occurs').",
+              "strategy": "Conditionals expressing scientific facts or aerodynamic principles take present simple in both clauses (When + V1 -> V1).",
+              "id": 2
+            },
+            {
+              "stem": "The rudder, which controls movement around the vertical axis, is hinged ________ the trailing edge of the vertical stabilizer.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "to"
+                },
+                {
+                  "letter": "B",
+                  "text": "at"
+                },
+                {
+                  "letter": "C",
+                  "text": "with"
+                },
+                {
+                  "letter": "D",
+                  "text": "by"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "to",
+              "analysis": "The participle/adjective 'hinged' pairs idiomatically with the preposition 'to' when describing physical attachment to another structure ('hinged to the vertical stabilizer').",
+              "strategy": "Watch for fixed mechanical and anatomical collocations: hinged to, mounted on/along, attached to, connected with.",
+              "id": 3
+            },
+            {
+              "stem": "________ the flight crew recognizes the onset of a stall early, recovery can be accomplished with minimal loss of altitude.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "In spite of"
+                },
+                {
+                  "letter": "B",
+                  "text": "Provided that"
+                },
+                {
+                  "letter": "C",
+                  "text": "Due to"
+                },
+                {
+                  "letter": "D",
+                  "text": "Whereas"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "Provided that",
+              "analysis": "'Provided that' is a conditional conjunction equivalent to 'on the condition that' or 'only if', introducing a full finite clause ('the flight crew recognizes...'). 'In spite of' and 'Due to' require noun phrases, while 'Whereas' indicates a contrast.",
+              "strategy": "Check whether the blank is followed by a full clause (subject + verb) or a noun phrase. 'Provided that' must be followed by a complete clause.",
+              "id": 4
+            },
+            {
+              "stem": "Airlines install lightweight composite winglets primarily to reduce induced drag, ________ overall fuel efficiency.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "improve"
+                },
+                {
+                  "letter": "B",
+                  "text": "improved"
+                },
+                {
+                  "letter": "C",
+                  "text": "improves"
+                },
+                {
+                  "letter": "D",
+                  "text": "improving"
+                }
+              ],
+              "correctLetter": "D",
+              "correctText": "improving",
+              "analysis": "The present participle clause 'improving overall fuel efficiency' expresses an attendant result or consequence of the primary action ('to reduce induced drag').",
+              "strategy": "A comma following a complete main clause often introduces an -ing participle clause indicating result or simultaneous action.",
+              "id": 5
             }
-          ]
+          ],
+          "pageUrl": "session1/admat_aas2.html"
         },
         "lessonContent": {
           "overview": {
@@ -4994,84 +5187,278 @@ const COURSE_DATA = {
           }
         },
         "materials": {
-          "title": "Additional Study Materials & Multimedia Resources",
-          "summary": "Curated video insights, urban case studies, and persuasive language frameworks for sustainable mobility and low-carbon transport.",
           "videos": [
             {
-              "title": "The 15-Minute City Concept: Urban Utopia or Practical Solution?",
-              "channel": "Urban Planning Explained",
-              "videoId": "m9L0f5mS4eY",
-              "watchUrl": "https://www.youtube.com/watch?v=m9L0f5mS4eY",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/m9L0f5mS4eY",
-              "duration": "09:12",
-              "caption": "How European capitals like Paris and Barcelona are redesigning neighborhoods to eliminate daily motorized car commutes."
+              "title": "Video 1: Airbus A320 Preflight: Technical Exterior Walkaround",
+              "watchUrl": "https://www.youtube.com/watch?v=Tdf_Ac7_gwA",
+              "tag": "Pre-Flight",
+              "videoId": "Tdf_Ac7_gwA",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/Tdf_Ac7_gwA",
+              "caption": "Focus: Step-by-step exterior pre-departure walkaround checking pitot-static probes, gear assemblies, tires, and control surfaces."
             },
             {
-              "title": "How Barcelona Superblocks Reclaimed Streets for Citizens",
-              "channel": "Streetfilm Documentaries",
-              "videoId": "ZORzsubQA_8",
-              "watchUrl": "https://www.youtube.com/watch?v=ZORzsubQA_8",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/ZORzsubQA_8",
-              "duration": "08:24",
-              "caption": "Transforming 9-block intersections into green pedestrian plazas with reduced air and noise pollution."
+              "title": "Video 2: How Airplane Flaps and Slats Work",
+              "watchUrl": "https://www.youtube.com/watch?v=fUPNN3N-oDI",
+              "tag": "Airframe Systems",
+              "videoId": "fUPNN3N-oDI",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/fUPNN3N-oDI",
+              "caption": "Focus: Understand trailing-edge flaps and leading-edge slats, hydraulic actuator tracks, camber change, and stall speed reduction."
             },
             {
-              "title": "Intermodal Transport Hubs: Connecting Air, Rail & Micro-Mobility",
-              "channel": "Global Transit Innovation",
-              "videoId": "W6bT8nS7Z3A",
-              "watchUrl": "https://www.youtube.com/watch?v=W6bT8nS7Z3A",
-              "embedUrl": "https://www.youtube-nocookie.com/embed/W6bT8nS7Z3A",
-              "duration": "06:45",
-              "caption": "Airport surface access strategies: replacing short-haul domestic flights with high-speed rail connections."
+              "title": "Video 3: Turbofan Architecture: CFM56 Jet Engines",
+              "watchUrl": "https://www.youtube.com/watch?v=S2HymZd3GEE",
+              "tag": "Propulsion",
+              "videoId": "S2HymZd3GEE",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/S2HymZd3GEE",
+              "caption": "Focus: Inspect the compressor stages, combustion chamber, turbine blades, bypass ratio, and thrust generation in modern turbofans."
             }
           ],
           "articles": [
             {
-              "topic": "Urban Transition",
-              "sourceTag": "C40 Cities Network",
-              "readTime": "Estimated read: 4 mins",
-              "heading": "Low-Emission Zones Slash Toxic Nitrogen Dioxide Levels by 40% Across 30 European Metropolises",
-              "snippet": "Comprehensive emissions monitoring reveals that prioritizing electric buses, bike superhighways, and pedestrian zones has directly reduced respiratory illnesses and road congestion.",
-              "url": "https://www.c40.org"
+              "topic": "Materials Science & Airframe Engineering",
+              "sourceTag": "Aerospace Manufacturing • Advanced Materials",
+              "heading": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
+              "snippet": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
+              "url": "https://aerospaceamerica.aiaa.org",
+              "readTime": "5 min read",
+              "title": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
+              "summary": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
+              "content": [
+                "For more than seventy years, aluminum alloy was the uncontested material of choice for commercial aircraft construction. However, the introduction of next-generation widebody airliners—notably the Boeing 787 Dreamliner and Airbus A350—marked a permanent revolution: more than 50% of their primary airframe weight is made of advanced carbon-fiber composites.",
+                "Carbon-Fiber-Reinforced Polymer (CFRP) consists of microscopic carbon strands embedded in a hardened polymer resin matrix. Pound for pound, carbon fiber is significantly stronger and lighter than aluminum, enabling aerodynamic wings that flex gracefully in flight without permanent metal fatigue.",
+                "Crucially, composite materials do not corrode from moisture exposure. This property allows airlines to increase in-flight cabin humidity from 5% to 15% and pressurize the cabin to an equivalent altitude of 6,000 feet instead of the traditional 8,000 feet. Passengers arrive feeling significantly less dehydrated and fatigued after long-haul flights."
+              ],
+              "takeaways": [
+                "Modern widebody airliners utilize over 50% carbon-fiber-reinforced polymer (CFRP) by weight.",
+                "Composites offer superior strength-to-weight ratios and are immune to conventional metal fatigue and rust.",
+                "Corrosion immunity allows higher cabin humidity and lower cabin pressure altitudes for passenger comfort."
+              ],
+              "vocab": [
+                "Carbon-Fiber Composite (CFRP)",
+                "Metal Fatigue",
+                "Structural Weight Reduction",
+                "Cabin Altitude",
+                "Corrosion Resistance"
+              ]
             },
             {
-              "topic": "Mobility Innovation",
-              "sourceTag": "Clean Transport Digest",
-              "readTime": "Estimated read: 5 mins",
-              "heading": "Active Mobility Superhighways: How Protected Cycle Lanes Transformed Commuting Habits",
-              "snippet": "Municipal case study analyzing how investing in continuous, well-lit active travel corridors convinced over 250,000 suburban commuters to leave their cars at home.",
-              "url": "https://www.transportenvironment.org"
+              "topic": "Airside Maintenance & Flight Safety",
+              "sourceTag": "Aviation Pros • Line Maintenance Manual",
+              "heading": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
+              "snippet": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
+              "url": "https://www.aviationpros.com",
+              "readTime": "5 min read",
+              "title": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
+              "summary": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
+              "content": [
+                "Before every commercial flight, either the captain, the first officer, or a licensed aircraft maintenance engineer must conduct a physical pre-flight inspection walkaround. Walking in a clockwise circle beneath the aircraft with a high-intensity flashlight, the inspector checks critical exterior components for damage.",
+                "The walkaround begins at the nose, verifying that vital pitot tubes and static ports are free of insects, ice, or protective covers that could corrupt cockpit airspeed readings. Inspectors examine the engine inlet cowlings and rotate the titanium fan blades by hand to check for nicks or dents caused by foreign object debris (FOD) or bird strikes.",
+                "On modern composite airframes, visual inspection requires specialized vigilance. Unlike aluminum, which dents noticeably when struck by a ground servicing vehicle, carbon-fiber skin can spring back into shape after an impact, leaving internal composite layers shattered underneath—a hidden hazard known as bare-surface delamination that requires ultrasonic inspection."
+              ],
+              "takeaways": [
+                "The pre-flight walkaround verifies exterior integrity, tire tread depth, and flight control surfaces.",
+                "Pitot probes and static ports must be completely unobstructed to ensure accurate airspeed indications.",
+                "Composite structures can suffer internal delamination without visible exterior paint scratching."
+              ],
+              "vocab": [
+                "Pre-Flight Walkaround",
+                "Pitot-Static Tube",
+                "Foreign Object Debris (FOD)",
+                "Composite Delamination",
+                "Visual Inspection"
+              ]
+            }
+          ],
+          "resources": [
+            {
+              "url": "https://www.skybrary.aero/articles/flight-control-surfaces",
+              "tag": "01 • Flight Controls",
+              "name": "Skybrary: Aircraft Flight Control Surfaces",
+              "desc": "Comprehensive encyclopedia entries on primary and secondary flight control systems."
+            },
+            {
+              "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
+              "tag": "02 • Airframe Engineering",
+              "name": "FAA AMT Airframe Handbook (FAA-H-8083-31A)",
+              "desc": "Authoritative technical manual on aircraft structures, composite repairs, and hydraulics."
+            },
+            {
+              "url": "https://aircraft.airbus.com/en/aircraft",
+              "tag": "03 • Airbus Specifications",
+              "name": "Airbus Aircraft Family Technical Data",
+              "desc": "Official payload, dimensions, and structural specifications for the A220, A320, and A350 families."
+            },
+            {
+              "url": "https://www.boeing.com/commercial",
+              "tag": "04 • Boeing Engineering",
+              "name": "Boeing Commercial Airplanes Technical Highlights",
+              "desc": "Detailed structural diagrams and systems overview of the 737 MAX and 787 Dreamliner."
+            },
+            {
+              "url": "https://www.easa.europa.eu",
+              "tag": "05 • Maintenance Standards",
+              "name": "EASA Part-66 Aircraft Maintenance Standards",
+              "desc": "European airworthiness regulations and syllabus requirements for airframe certifications."
+            },
+            {
+              "url": "https://www.rolls-royce.com/products-and-services/civil-aerospace.aspx",
+              "tag": "06 • Engine Architecture",
+              "name": "Rolls-Royce Trent Engine Cutaway & Architecture",
+              "desc": "Interactive visualization and explanatory guides on high-bypass turbofan components."
             }
           ],
           "grammar": {
-            "title": "Language Clinic: Making Constructive Proposals & Recommendations",
-            "points": [
-              {
-                "rule": "Constructive Suggestions with 'Consider' / 'What if'",
-                "structure": "Why don't we consider + -ing / What if we were to + verb",
-                "example": "Why don't we consider pedestrianizing the central avenue during peak morning hours?",
-                "note": "Polite, collaborative framing suitable for workplace negotiations."
-              },
-              {
-                "rule": "Strong Diplomatic Recommendations",
-                "structure": "It would be far more effective to + verb / We strongly recommend that...",
-                "example": "It would be far more effective to expand the tram network before introducing congestion charges.",
-                "note": "Emphasizes practical logic without sounding overly aggressive."
-              }
+            "title": "Spatial Prepositions & Passive Voice for Pre-Flight Defect Reporting",
+            "badge": "Line Operations",
+            "patternTitle": "Aircraft Inspection Formula",
+            "formula": "Subject + is/are/was/were + Past Participle (+ Prepositional Location)",
+            "rulesTitle": "Core Communicative Guidelines",
+            "rules": [
+              "<strong style=\"color: #1e293b;\">1. Spatial Prepositions for Airframe Anatomy:</strong> Locates external parts precisely (<em>'Leading-edge slats are mounted along the forward wing skin; trailing-edge flaps are situated adjacent to the engine pylon'</em>).",
+              "<strong style=\"color: #1e293b;\">2. Present Passive for Structural Functions:</strong> Explains standard operational mechanisms (<em>'Hydraulic actuators are powered by redundant engine-driven pumps'</em>).",
+              "<strong style=\"color: #1e293b;\">3. Past Passive for Walkaround Defect Reports:</strong> Documents pre-departure technical anomalies (<em>'A hydraulic leak was observed near the main gear brake lines'</em>).",
+              "<strong style=\"color: #1e293b;\">4. Modal Passive for Maintenance Clearance:</strong> Mandates safety release actions (<em>'All inspection panels must be securely fastened before the aircraft is cleared for pushback'</em>)."
+            ],
+            "trap": "⚠️ TOEIC Part 5 Passive Voice Alert: Be sure to check subject-verb agreement with collective or plural aviation nouns (e.g., 'The landing gear IS inspected' vs. 'The main gear assemblies ARE inspected').",
+            "examplesTitle": "Authentic Operational Examples",
+            "examples": [
+              "During the exterior walkaround, minor surface abrasions were detected on the composite radome.",
+              "The pitot-static probes are electrically heated to prevent ice formation during climb."
             ]
           },
-          "resources": [
+          "toeicQuestions": [
             {
-              "title": "European Commission Clean Urban Transport",
-              "desc": "Policy directives and funding frameworks for green city mobility.",
-              "link": "https://transport.ec.europa.eu"
+              "stem": "The line maintenance engineer conducted a thorough exterior walkaround to ensure that no hydraulic fluid was ________ from the landing gear.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "leaking"
+                },
+                {
+                  "letter": "B",
+                  "text": "leaked"
+                },
+                {
+                  "letter": "C",
+                  "text": "leaks"
+                },
+                {
+                  "letter": "D",
+                  "text": "leak"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "leaking",
+              "analysis": "The auxiliary verb 'was' combined with the active continuous context requires the present participle '-ing' form ('was leaking') to indicate an ongoing fluid drip.",
+              "strategy": "Be careful with active vs. passive after 'was/were': fluid leaks (active continuous = was leaking), fluid is drained (passive = was drained).",
+              "id": 1
             },
             {
-              "title": "Barcelona Superblock Case Study",
-              "desc": "Detailed architectural and environmental impact report.",
-              "link": "https://ajuntament.barcelona.cat"
+              "stem": "Slats are high-lift aerodynamic devices mounted ________ the leading edge of the wing to prevent boundary layer separation.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "through"
+                },
+                {
+                  "letter": "B",
+                  "text": "along"
+                },
+                {
+                  "letter": "C",
+                  "text": "between"
+                },
+                {
+                  "letter": "D",
+                  "text": "into"
+                }
+              ],
+              "correctLetter": "B",
+              "correctText": "along",
+              "analysis": "The preposition 'along' denotes continuous linear extension from the root to the tip of the wing's leading edge.",
+              "strategy": "Prepositions of location: use 'along' for items running parallel to a linear edge or boundary (along the leading edge, along the taxiway).",
+              "id": 2
+            },
+            {
+              "stem": "According to the Minimum Equipment List, the aircraft is permitted to dispatch ________ the weather radar is certified as fully operational.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "in case of"
+                },
+                {
+                  "letter": "B",
+                  "text": "despite"
+                },
+                {
+                  "letter": "C",
+                  "text": "provided that"
+                },
+                {
+                  "letter": "D",
+                  "text": "although"
+                }
+              ],
+              "correctLetter": "C",
+              "correctText": "provided that",
+              "analysis": "'Provided that' introduces the essential airworthiness condition required for flight release under MEL restrictions.",
+              "strategy": "MEL (Minimum Equipment List) regulatory sentences frequently test conditional conjunctions like 'provided that' or 'on condition that'.",
+              "id": 3
+            },
+            {
+              "stem": "The radome is constructed from radio-frequency transparent composite materials in order to shield the antenna without ________ radar signals.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "block"
+                },
+                {
+                  "letter": "B",
+                  "text": "blocked"
+                },
+                {
+                  "letter": "C",
+                  "text": "blockage"
+                },
+                {
+                  "letter": "D",
+                  "text": "blocking"
+                }
+              ],
+              "correctLetter": "D",
+              "correctText": "blocking",
+              "analysis": "The preposition 'without' requires a gerund (-ing form) when taking an action and an object ('without blocking radar signals').",
+              "strategy": "All prepositions (without, by, for, in, after, before) require a gerund (-ing) when immediately followed by a verb form.",
+              "id": 4
+            },
+            {
+              "stem": "Flight deck instruments provide real-time information regarding airspeed, altitude, and heading directly ________ the Primary Flight Display.",
+              "options": [
+                {
+                  "letter": "A",
+                  "text": "on"
+                },
+                {
+                  "letter": "B",
+                  "text": "at"
+                },
+                {
+                  "letter": "C",
+                  "text": "of"
+                },
+                {
+                  "letter": "D",
+                  "text": "by"
+                }
+              ],
+              "correctLetter": "A",
+              "correctText": "on",
+              "analysis": "Electronic and visual information is displayed 'on' a screen, monitor, or avionics display ('on the Primary Flight Display').",
+              "strategy": "Fixed tech preposition: information appears 'on' screens, displays, radars, monitors, and instruments.",
+              "id": 5
             }
-          ]
+          ],
+          "pageUrl": "session2/admat_aas2.html"
         },
         "lessonContent": {
           "overview": {
@@ -14546,82 +14933,296 @@ const COURSE_DATA = {
             }
           },
           "materials": {
-            "title": "Additional Study Materials & Multimedia Resources",
-            "summary": "Curated video analysis, current affairs case studies, and grammar guidelines exploring climate hazards and disaster resilience.",
             "videos": [
               {
-                "title": "Extreme Weather Explained: Why Are Heatwaves & Floods Intensifying?",
-                "channel": "World Meteorological Organization",
-                "videoId": "3j3_iPskk4c",
-                "watchUrl": "https://www.youtube.com/watch?v=3j3_iPskk4c",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/3j3_iPskk4c",
-                "duration": "06:15",
-                "caption": "Scientific analysis of atmospheric moisture retention and jet stream stalling during extreme summer heatwaves."
+                "title": "Video 1: Extreme Weather & Climate Change Explained",
+                "watchUrl": "https://www.youtube.com/watch?v=wecbVJ4FOHY",
+                "tag": "Meteorology",
+                "videoId": "wecbVJ4FOHY",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/wecbVJ4FOHY",
+                "caption": "Focus: Explores the meteorological science behind intensifying global heatwaves, supercell storms, and shifting atmospheric circulation patterns."
               },
               {
-                "title": "How Cities Are Adapting to Rising Flash Flood Risks",
-                "channel": "Civil Engineering Briefings",
-                "videoId": "m1n_iQxP6eA",
-                "watchUrl": "https://www.youtube.com/watch?v=m1n_iQxP6eA",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/m1n_iQxP6eA",
-                "duration": "08:42",
-                "caption": "Overview of flood-retention basins, storm barrier infrastructure, and permeable drainage across European metropolitan areas."
+                "title": "Video 2: Flash Floods & Sea-Level Rise: Engineering City Defenses",
+                "watchUrl": "https://www.youtube.com/watch?v=jdGjgmyFP9M",
+                "tag": "Resilience",
+                "videoId": "jdGjgmyFP9M",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/jdGjgmyFP9M",
+                "caption": "Focus: How coastal communities and urban planners construct storm surge barriers, sea walls, and drainage infrastructure against extreme deluge."
               },
               {
-                "title": "Aviation & Extreme Weather: Wind Shear, Microbursts & Heat",
-                "channel": "Flight Safety International",
-                "videoId": "K9sT7mUqGZc",
-                "watchUrl": "https://www.youtube.com/watch?v=K9sT7mUqGZc",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/K9sT7mUqGZc",
-                "duration": "07:30",
-                "caption": "Operational impact of extreme density altitude and convective storms on takeoff performance and airport operations."
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Climate Resilience",
-                "sourceTag": "European Environment Agency",
-                "readTime": "Estimated read: 4 mins",
-                "heading": "Managing Extreme Summer Temperatures: Urban Heat Action Plans Across Europe",
-                "snippet": "Municipal health authorities across Southern and Western Europe are implementing real-time heat warning systems, shaded public corridors, and emergency water-misting stations to safeguard vulnerable citizens during prolonged 40°C+ heatwaves.",
-                "url": "https://www.eea.europa.eu"
-              },
-              {
-                "topic": "Infrastructure Protection",
-                "sourceTag": "Reuters Climate Wire",
-                "readTime": "Estimated read: 5 mins",
-                "heading": "Rethinking Storm Drainage: €50M Adaptation Funds Deployed for Flash Flood Mitigation",
-                "snippet": "Engineers and regional planners are retrofitting highway drainage networks and airport runoffs with automated floodgates and bioretention basins to withstand sudden 100mm convective rainstorms.",
-                "url": "https://www.reuters.com"
+                "title": "Video 3: B2 English: Reporting Severe Weather & Emergency Advisories",
+                "watchUrl": "https://www.youtube.com/watch?v=pEO9-iPZQWA",
+                "tag": "Language Practice",
+                "videoId": "pEO9-iPZQWA",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/pEO9-iPZQWA",
+                "caption": "Focus: Essential vocabulary, word forms, and phrasing used by international broadcasters to communicate emergency storm warnings and flood alerts."
               }
             ],
             "grammar": {
-              "title": "Language Clinic: Conditionals for Cause, Effect & Urgency",
-              "points": [
+              "title": "Word Endings & Sentence Positions",
+              "badge": "B1–B2 Grammar Focus",
+              "patternTitle": "Common Endings & Word Types",
+              "formula": "Noun (-tion, -ment) • Adj (-able, -ive) • Adv (-ly) • Verb (-ate, -ify)",
+              "rulesTitle": "Core Rules",
+              "rules": [
+                "<strong style=\"color: #1e293b;\">1. Nouns (-tion, -ment, -ance, -ity):</strong> Names of things, people, or concepts. They come after <em>a</em>, <em>an</em>, <em>the</em> or adjectives (<span style=\"font-weight: 700; color: #49739a;\">prediction</span>, <span style=\"font-weight: 700; color: #49739a;\">severity</span>).",
+                "<strong style=\"color: #1e293b;\">2. Adjectives (-able, -ive, -al, -ous):</strong> Words that describe nouns. They come before nouns or after verbs like <em>be</em>, <em>remain</em>, <em>seem</em> (<span style=\"font-weight: 700; color: #49739a;\">predictable</span>, <span style=\"font-weight: 700; color: #49739a;\">severe</span>).",
+                "<strong style=\"color: #1e293b;\">3. Adverbs (-ly):</strong> Words that describe how or how much an action happens. They describe verbs, adjectives, or full sentences (<span style=\"font-weight: 600; color: #334155;\">significantly</span>, <span style=\"font-weight: 600; color: #334155;\">rapidly</span>).",
+                "<strong style=\"color: #1e293b;\">4. Verbs (-ate, -ify, -ize):</strong> Action words. They follow the subject (<span style=\"font-weight: 600; color: #334155;\">predict</span>, <span style=\"font-weight: 600; color: #334155;\">signify</span>)."
+              ],
+              "trap": "<strong>⚠️ TOEIC Trap Alert:</strong> If a sentence already has a complete verb (e.g., <em>dropped</em>), and the blank explains how it happened, you need an <strong>adverb ending in -ly</strong> (<em>dropped significantly</em>)!",
+              "examplesTitle": "Meteorology & Operations Examples",
+              "examples": [
+                "<em>\"Meteorologists must monitor barometric pressure <strong>continuously</strong> to ensure flight safety.\"</em>",
+                "<em>\"The sudden drop in altitude caused by wind shear was <strong>extremely</strong> dangerous.\"</em>"
+              ]
+            },
+            "toeic": {
+              "stem": "The frequency of Mediterranean heatwave events was ________ higher this decade than during any previously recorded ten-year span.",
+              "options": [
                 {
-                  "rule": "First Conditional (Real Present / Future Possibility)",
-                  "structure": "If + present simple, will / can / must + verb",
-                  "example": "If temperatures continue to rise, summer runway operations will require weight reductions.",
-                  "note": "Used for real, probable future operational outcomes."
+                  "letter": "A",
+                  "text": "significant"
                 },
                 {
-                  "rule": "Second Conditional (Hypothetical Proposals & Policy Debates)",
-                  "structure": "If + past simple, would / could / might + verb",
-                  "example": "If we invested €50M in sponge city drainage, flash flood damage would decrease significantly.",
-                  "note": "Ideal for discussing proposed solutions, recommendations, and policy options."
+                  "letter": "B",
+                  "text": "significantly"
+                },
+                {
+                  "letter": "C",
+                  "text": "significance"
+                },
+                {
+                  "letter": "D",
+                  "text": "significate"
                 }
-              ]
+              ],
+              "correctLetter": "B",
+              "correctText": "significantly",
+              "analysis": "The comparative adjective \"higher\" must be modified by an adverb of degree (\"significantly higher\").",
+              "strategy": "Comparative adjectives (higher, faster, cheaper) are modified by adverbs (significantly, substantially, slightly), not adjectives."
             },
             "resources": [
               {
-                "title": "IPCC Climate Assessment Summary",
-                "desc": "Key summary for engineers and infrastructure policymakers.",
-                "link": "https://www.ipcc.ch"
+                "url": "https://public.wmo.int",
+                "tag": "01 • Global Weather Authority",
+                "name": "World Meteorological Organization",
+                "desc": "Global authority on atmospheric science, severe storm warnings, and climate metrics."
               },
               {
-                "title": "European Storm Forecast & Warning Center",
-                "desc": "Interactive convective storm alerts and meteorological tracking.",
-                "link": "https://www.estofex.org"
+                "url": "https://climate.copernicus.eu",
+                "tag": "02 • Satellite Earth Observation",
+                "name": "Copernicus Climate Change Service",
+                "desc": "European satellite data tracking global surface temperatures, wildfires, and extreme storms."
+              },
+              {
+                "url": "https://www.undrr.org",
+                "tag": "03 • Emergency Preparedness",
+                "name": "UN Disaster Risk Reduction (UNDRR)",
+                "desc": "Global frameworks, early warning initiatives, and community resilience guidelines."
+              },
+              {
+                "url": "https://www.eea.europa.eu",
+                "tag": "04 • European Climate Portal",
+                "name": "European Environment Agency Hazards",
+                "desc": "Interactive mapping of European heatwaves, drought risks, and flood vulnerability."
+              },
+              {
+                "url": "https://ourworldindata.org/natural-disasters",
+                "tag": "05 • Empirical Datasets",
+                "name": "Our World in Data: Natural Disasters",
+                "desc": "Long-term statistical datasets and interactive charts tracking extreme weather trends."
+              },
+              {
+                "url": "https://www.etsglobal.org/fr/fr",
+                "tag": "06 • TOEIC Listening & Reading",
+                "name": "ETS Global TOEIC Preparation",
+                "desc": "Weather advisory and emergency briefing listening practice for technical professionals."
+              }
+            ],
+            "pageUrl": "session1/admat2.html",
+            "articles": [
+              {
+                "topic": "Climate Science & Meteorological Trends",
+                "sourceTag": "World Meteorological Organization (WMO)",
+                "heading": "State of the Global Climate: Extreme Events & Frequency",
+                "snippet": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
+                "readTime": "5 min read",
+                "url": "https://wmo.int",
+                "title": "State of the Global Climate: Extreme Events & Frequency",
+                "summary": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
+                "content": [
+                  "Global meteorological monitoring indicates that the frequency and intensity of extreme weather phenomena have reached unprecedented historical benchmarks. The World Meteorological Organization's annual climate assessment confirms that global average surface temperatures consistently exceed pre-industrial baselines, driven by elevated atmospheric greenhouse gas concentrations.",
+                  "Across Europe and North America, prolonged summer heatwaves are breaking localized temperature records, placing immense pressure on electricity grids, municipal water supplies, and agricultural harvests. Warmer atmospheric conditions hold more water vapor, leading to sudden, high-intensity convective rainfall events that trigger severe flash flooding in urban areas where soil permeability is limited.",
+                  "In aviation and transport logistics, changing meteorological patterns directly affect operations. Higher air temperatures decrease atmospheric air density, reducing aircraft lift during takeoff and requiring takeoff weight restrictions on hot summer afternoons. Adapting infrastructure to these shifting weather extremes is becoming a central priority for civil engineers."
+                ],
+                "takeaways": [
+                  "Global temperatures and greenhouse gas levels continue to establish new historical records.",
+                  "Warmer air holds higher moisture volumes, creating more frequent and severe urban flash floods.",
+                  "Higher summer temperatures reduce air density, requiring operational weight limits for departing flights."
+                ],
+                "vocab": [
+                  "Extreme Weather Event",
+                  "Pre-Industrial Baseline",
+                  "Atmospheric Density",
+                  "Flash Flooding",
+                  "Climate Adaptation"
+                ]
+              },
+              {
+                "topic": "Environmental Economics & Risk",
+                "sourceTag": "Global Insurance & Economic Resilience Institute",
+                "heading": "The Escalating Economic Toll of Extreme Weather Disasters",
+                "snippet": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
+                "readTime": "5 min read",
+                "url": "https://www.worldbank.org",
+                "title": "The Escalating Economic Toll of Extreme Weather Disasters",
+                "summary": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
+                "content": [
+                  "The economic impact of climate-driven disasters extends far beyond immediate physical property damage. According to international reinsurance data, insured losses from storms, floods, and wildfires have exceeded $100 billion annually in recent years, prompting major insurers to raise premiums or withdraw coverage entirely from vulnerable coastal and wildfire-prone regions.",
+                  "When critical transport networks—including bridges, rail lines, and international airports—suffer storm damage, supply chains experience severe disruptions. Manufacturing plants face parts shortages, perishable agricultural goods spoil in transit, and international commerce slows, costing regional economies billions in lost productivity.",
+                  "Economists stress that every euro invested in climate-resilient infrastructure saves up to four euros in post-disaster reconstruction costs. Reinforcing electrical substations against floodwaters, building subterranean storm water drainage reservoirs, and restoring natural wetlands provide proven, cost-effective economic buffers against future disaster costs."
+                ],
+                "takeaways": [
+                  "Annual global insured losses from weather disasters regularly exceed $100 billion.",
+                  "Transport disruptions ripple through manufacturing and agricultural supply chains.",
+                  "Investing in resilient infrastructure saves four times its cost in future disaster rebuilding."
+                ],
+                "vocab": [
+                  "Economic Resilience",
+                  "Insured Loss",
+                  "Supply Chain Disruption",
+                  "Infrastructure Hardening",
+                  "Disaster Reconstruction"
+                ]
+              }
+            ],
+            "toeicQuestions": [
+              {
+                "stem": "The frequency of Mediterranean heatwave events was ________ higher this decade than during any previously recorded ten-year span.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "significant"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "significantly"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "significance"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "significate"
+                  }
+                ],
+                "correctLetter": "B",
+                "correctText": "significantly",
+                "analysis": "The comparative adjective \"higher\" must be modified by an adverb of degree (\"significantly higher\").",
+                "strategy": "Comparative adjectives (higher, faster, cheaper) are modified by adverbs (significantly, substantially, slightly), not adjectives."
+              },
+              {
+                "stem": "Last July recorded the ________ monthly surface temperatures ever documented by the World Meteorological Organization.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "hot"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "hotter"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "hottest"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "most hot"
+                  }
+                ],
+                "correctLetter": "C",
+                "correctText": "hottest",
+                "analysis": "The definite article \"the\" combined with \"ever documented\" calls for the superlative form of a one-syllable adjective (\"hottest\").",
+                "strategy": "Formulas with \"the\" + [adjective] + \"ever\" require the superlative (-est or most + adj)."
+              },
+              {
+                "stem": "Last winter severe ice storms caused ________ more flight cancellations than the five-year seasonal average.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "far"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "very"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "too"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "so"
+                  }
+                ],
+                "correctLetter": "A",
+                "correctText": "far",
+                "analysis": "\"Far\" acts as an intensifying adverb before comparative structures (\"far more\"). \"Very\" cannot directly modify a comparative adjective or \"more\".",
+                "strategy": "Never use \"very\" before comparatives (very taller / very more). Use \"much\", \"far\", \"way\", or \"significantly\"."
+              },
+              {
+                "stem": "Runway heating systems installed in northern airports are twice as ________ as conventional chemical de-icing trucks.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "efficiently"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "efficient"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "more efficient"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "efficiency"
+                  }
+                ],
+                "correctLetter": "B",
+                "correctText": "efficient",
+                "analysis": "In the equative construction \"as [adjective] as\", the base adjective form is required because the linking verb \"are\" takes an adjective complement.",
+                "strategy": "Pattern: as + [BASE ADJECTIVE] + as. Do not put comparatives (-er, more) between \"as... as\"."
+              },
+              {
+                "stem": "Airport climate vulnerability assessments must be conducted ________ in regions exposed to flash flooding.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "frequent"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "frequently"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "frequency"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "more frequent"
+                  }
+                ],
+                "correctLetter": "B",
+                "correctText": "frequently",
+                "analysis": "An adverb (\"frequently\") is required to modify the passive verb phrase \"must be conducted\".",
+                "strategy": "Identify the word modified: if modifying how an action is done (conducted), select the -ly adverb."
               }
             ]
           },
@@ -15289,82 +15890,295 @@ const COURSE_DATA = {
             }
           },
           "materials": {
-            "title": "Additional Study Materials & Multimedia Resources",
-            "summary": "Curated video insights, urban case studies, and persuasive language frameworks for sustainable mobility and low-carbon transport.",
             "videos": [
               {
-                "title": "The 15-Minute City Concept: Urban Utopia or Practical Solution?",
-                "channel": "Urban Planning Explained",
-                "videoId": "m9L0f5mS4eY",
-                "watchUrl": "https://www.youtube.com/watch?v=m9L0f5mS4eY",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/m9L0f5mS4eY",
-                "duration": "09:12",
-                "caption": "How European capitals like Paris and Barcelona are redesigning neighborhoods to eliminate daily motorized car commutes."
+                "title": "Video 1: The 15-Minute City Explained",
+                "watchUrl": "https://www.youtube.com/watch?v=5dVcn8NjbwY",
+                "tag": "Urban Design",
+                "videoId": "5dVcn8NjbwY",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/5dVcn8NjbwY",
+                "caption": "Focus: Urbanist Carlos Moreno details how cities can be reorganized so daily services are reachable within a 15-minute walk or cycle."
               },
               {
-                "title": "How Barcelona Superblocks Reclaimed Streets for Citizens",
-                "channel": "Streetfilm Documentaries",
-                "videoId": "ZORzsubQA_8",
-                "watchUrl": "https://www.youtube.com/watch?v=ZORzsubQA_8",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/ZORzsubQA_8",
-                "duration": "08:24",
-                "caption": "Transforming 9-block intersections into green pedestrian plazas with reduced air and noise pollution."
+                "title": "Video 2: How Cities Redesign Streets for People",
+                "watchUrl": "https://www.youtube.com/watch?v=RYuGWOjm26E",
+                "tag": "Active Mobility",
+                "videoId": "RYuGWOjm26E",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/RYuGWOjm26E",
+                "caption": "Focus: Urban case studies demonstrating pedestrianization, protected cycling corridors, and the transformation of car-centric roadways."
               },
               {
-                "title": "Intermodal Transport Hubs: Connecting Air, Rail & Micro-Mobility",
-                "channel": "Global Transit Innovation",
-                "videoId": "W6bT8nS7Z3A",
-                "watchUrl": "https://www.youtube.com/watch?v=W6bT8nS7Z3A",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/W6bT8nS7Z3A",
-                "duration": "06:45",
-                "caption": "Airport surface access strategies: replacing short-haul domestic flights with high-speed rail connections."
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Urban Transition",
-                "sourceTag": "C40 Cities Network",
-                "readTime": "Estimated read: 4 mins",
-                "heading": "Low-Emission Zones Slash Toxic Nitrogen Dioxide Levels by 40% Across 30 European Metropolises",
-                "snippet": "Comprehensive emissions monitoring reveals that prioritizing electric buses, bike superhighways, and pedestrian zones has directly reduced respiratory illnesses and road congestion.",
-                "url": "https://www.c40.org"
-              },
-              {
-                "topic": "Mobility Innovation",
-                "sourceTag": "Clean Transport Digest",
-                "readTime": "Estimated read: 5 mins",
-                "heading": "Active Mobility Superhighways: How Protected Cycle Lanes Transformed Commuting Habits",
-                "snippet": "Municipal case study analyzing how investing in continuous, well-lit active travel corridors convinced over 250,000 suburban commuters to leave their cars at home.",
-                "url": "https://www.transportenvironment.org"
+                "title": "Video 3: Decarbonizing Urban Freight & Public Transit",
+                "watchUrl": "https://www.youtube.com/watch?v=9a4JSBX7_n0",
+                "tag": "Clean Logistics",
+                "videoId": "9a4JSBX7_n0",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/9a4JSBX7_n0",
+                "caption": "Focus: Examining electric bus rapid transit, cargo-bike micro-hubs, and zero-emission delivery zones in European metropolitan centers."
               }
             ],
             "grammar": {
-              "title": "Language Clinic: Making Constructive Proposals & Recommendations",
-              "points": [
+              "title": "Matching Subjects & Verbs",
+              "badge": "B1–B2 Grammar Focus",
+              "patternTitle": "Basic Rule",
+              "formula": "Main Subject [Singular] + (words in between) + Verb with -s [Singular]",
+              "rulesTitle": "Core Rules",
+              "rules": [
+                "<strong style=\"color: #1e293b;\">1. Words in Between (The \"of / in / with\" trap):</strong> In <em>\"The integration of light-rail corridors\"</em>, the real subject is <span style=\"font-weight: 700; color: #49739a;\">integration</span> (singular), not <em>corridors</em> (plural). The verb must be singular (<em>reduces</em>).",
+                "<strong style=\"color: #1e293b;\">2. Companies &amp; Organizations:</strong> Words like <em>the committee</em>, <em>the transit board</em>, or <em>the municipality</em> count as one single unit and take a singular verb.",
+                "<strong style=\"color: #1e293b;\">3. Words like Each / Every / One of:</strong> Phrases like <em>Each of the hubs</em> or <em>One of the passengers</em> always take a <span style=\"font-weight: 600; color: #334155;\">singular verb</span>."
+              ],
+              "trap": "<strong>⚠️ TOEIC Trap Alert:</strong> The test often puts plural nouns right in front of the blank (e.g., <em>\"...corridors into hubs [ _____ ]\"</em>) to fool you. Ignore the words inside <em>\"of...\"</em> or <em>\"in...\"</em> and match the verb to the very first main noun!",
+              "examplesTitle": "Urban Mobility Examples",
+              "examples": [
+                "<em>\"The expansion of electric tramways into suburban districts <strong>has improved</strong> regional air quality.\"</em>",
+                "<em>\"Each of the city's shared mobility hubs <strong>provides</strong> free solar battery recharging.\"</em>"
+              ]
+            },
+            "toeic": {
+              "stem": "European metropolitan areas ________ invest heavily in protected cycling infrastructure report substantial reductions in transport emissions.",
+              "options": [
                 {
-                  "rule": "Constructive Suggestions with 'Consider' / 'What if'",
-                  "structure": "Why don't we consider + -ing / What if we were to + verb",
-                  "example": "Why don't we consider pedestrianizing the central avenue during peak morning hours?",
-                  "note": "Polite, collaborative framing suitable for workplace negotiations."
+                  "letter": "A",
+                  "text": "that"
                 },
                 {
-                  "rule": "Strong Diplomatic Recommendations",
-                  "structure": "It would be far more effective to + verb / We strongly recommend that...",
-                  "example": "It would be far more effective to expand the tram network before introducing congestion charges.",
-                  "note": "Emphasizes practical logic without sounding overly aggressive."
+                  "letter": "B",
+                  "text": "whom"
+                },
+                {
+                  "letter": "C",
+                  "text": "where"
+                },
+                {
+                  "letter": "D",
+                  "text": "what"
                 }
-              ]
+              ],
+              "correctLetter": "A",
+              "correctText": "that",
+              "analysis": "\"Areas\" is a non-human antecedent acting as the subject of the defining relative clause, requiring \"that\" (or \"which\").",
+              "strategy": "Use \"that\" or \"which\" for things and entities; \"who/whom\" for people; \"where\" for locations acting as adverbs (where + S + V)."
             },
             "resources": [
               {
-                "title": "European Commission Clean Urban Transport",
-                "desc": "Policy directives and funding frameworks for green city mobility.",
-                "link": "https://transport.ec.europa.eu"
+                "url": "https://www.c40.org",
+                "tag": "01 • Urban Climate Leadership",
+                "name": "C40 Cities Network",
+                "desc": "Mayors leading the urban fight against climate change through progressive mobility and clean air zones."
               },
               {
-                "title": "Barcelona Superblock Case Study",
-                "desc": "Detailed architectural and environmental impact report.",
-                "link": "https://ajuntament.barcelona.cat"
+                "url": "https://www.uitp.org",
+                "tag": "02 • Public Transit Federation",
+                "name": "UITP Urban Transit Association",
+                "desc": "International Association of Public Transport global reports and transit benchmarks."
+              },
+              {
+                "url": "https://www.itdp.org",
+                "tag": "03 • Sustainable Transport Institute",
+                "name": "ITDP Sustainable Transport",
+                "desc": "Institute for Transportation and Development Policy BRT and cycling standards."
+              },
+              {
+                "url": "https://transport.ec.europa.eu",
+                "tag": "04 • EU Mobility Framework",
+                "name": "European Commission Urban Mobility",
+                "desc": "EU framework for Sustainable Urban Mobility Plans (SUMP) and city decarbonization."
+              },
+              {
+                "url": "https://ourworldindata.org/urbanization",
+                "tag": "05 • Urbanization Statistics",
+                "name": "Our World in Data: Urbanization",
+                "desc": "Global statistical datasets on metropolitan density, transit usage, and urban sprawl."
+              },
+              {
+                "url": "https://www.etsglobal.org/fr/fr",
+                "tag": "06 • TOEIC Business Context",
+                "name": "ETS Global TOEIC Preparation",
+                "desc": "Vocabulary exercises for municipal tenders, urban planning proposals, and contracts."
+              }
+            ],
+            "pageUrl": "session2/admat2.html",
+            "articles": [
+              {
+                "topic": "Urban Planning & Green Mobility",
+                "sourceTag": "European Mobility Index • City Transportation Report",
+                "heading": "Urban Mobility Transition Index",
+                "snippet": "Comparing European metropolitan strategies for reducing private car dependence: cycling corridors, integrated multimodal ticketing, and dedicated bus rapid transit.",
+                "readTime": "4 min read",
+                "url": "https://transport.ec.europa.eu",
+                "title": "Urban Mobility Transition Index",
+                "summary": "Comparing European metropolitan strategies for reducing private car dependence: cycling corridors, integrated multimodal ticketing, and dedicated bus rapid transit.",
+                "content": [
+                  "European cities are engaged in a race to transition away from car-centric urban design toward sustainable, multimodal transport ecosystems. The Urban Mobility Transition Index assesses metropolitan areas on public transit accessibility, dedicated cycling infrastructure, and progress toward reducing private vehicle traffic.",
+                  "Leading cities like Paris, Copenhagen, and Amsterdam demonstrate that bold policy interventions yield dramatic results. By converting highway lanes into protected cycle superhighways, expanding tram networks, and removing thousands of street parking spaces, Paris has reduced car usage inside city limits by nearly 40% over the last decade while tripling daily bicycle trips.",
+                  "A seamless passenger experience relies heavily on unified digital ticketing. When commuters can unlock a shared bicycle, ride a suburban commuter train, and take a city bus using a single mobile app with a synchronized fare cap, public transport becomes substantially more attractive and convenient than navigating traffic in a private car."
+                ],
+                "takeaways": [
+                  "Leading European cities are converting roadway space from private cars to protected bike lanes and trams.",
+                  "Paris has reduced city-center car traffic by 40% while dramatically increasing cycling volume.",
+                  "Integrated digital ticketing and synchronized fare caps make multimodal public transport effortless."
+                ],
+                "vocab": [
+                  "Multimodal Transit",
+                  "Active Mobility",
+                  "Protected Cycle Lane",
+                  "Unified Ticketing",
+                  "Urban Decarbonization"
+                ]
+              },
+              {
+                "topic": "Public Health & Environmental Regulation",
+                "sourceTag": "European Environment Agency (EEA)",
+                "heading": "The Economics of Low-Emission Zones and Public Health",
+                "snippet": "How Low-Emission Zones (LEZs) reduce fine particulate pollution in urban centers, lower pediatric asthma admissions, and stimulate vehicle fleet modernization.",
+                "readTime": "4 min read",
+                "url": "https://www.eea.europa.eu",
+                "title": "The Economics of Low-Emission Zones and Public Health",
+                "summary": "How Low-Emission Zones (LEZs) reduce fine particulate pollution in urban centers, lower pediatric asthma admissions, and stimulate vehicle fleet modernization.",
+                "content": [
+                  "Air pollution from diesel and gasoline vehicles remains a leading environmental cause of premature mortality and chronic respiratory disease in European urban centers. In response, more than three hundred European cities have instituted Low-Emission Zones (LEZs), restricting older, polluting vehicles from central business districts and residential areas.",
+                  "Public health data demonstrates immediate benefits following LEZ implementation. In London, the expansion of the Ultra Low Emission Zone (ULEZ) resulted in a 46% reduction in harmful nitrogen dioxide (NO2) concentrations in the city center within two years, leading to measurable drops in hospital emergency admissions for asthma and cardiovascular illnesses.",
+                  "While low-emission zones deliver clear public health gains, policymakers must address economic equity concerns. Small business owners and lower-income families who rely on older vans or cars can face substantial replacement costs. Targeted vehicle scrappage subsidies and public transport discounts ensure that cleaner air does not come at the expense of vulnerable communities."
+                ],
+                "takeaways": [
+                  "Over 300 European cities have established Low-Emission Zones to curb toxic traffic pollution.",
+                  "London's ULEZ reduced nitrogen dioxide concentrations by 46%, cutting emergency hospital visits.",
+                  "Scrappage grants and public transit subsidies are essential to ensure low-income drivers are not penalized."
+                ],
+                "vocab": [
+                  "Low-Emission Zone (LEZ)",
+                  "Nitrogen Dioxide (NO2)",
+                  "Particulate Matter",
+                  "Public Health Benefit",
+                  "Scrappage Scheme"
+                ]
+              }
+            ],
+            "toeicQuestions": [
+              {
+                "stem": "European metropolitan areas ________ invest heavily in protected cycling infrastructure report substantial reductions in transport emissions.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "that"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "whom"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "where"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "what"
+                  }
+                ],
+                "correctLetter": "A",
+                "correctText": "that",
+                "analysis": "\"Areas\" is a non-human antecedent acting as the subject of the defining relative clause, requiring \"that\" (or \"which\").",
+                "strategy": "Use \"that\" or \"which\" for things and entities; \"who/whom\" for people; \"where\" for locations acting as adverbs (where + S + V)."
+              },
+              {
+                "stem": "The Ultra Low Emission Zone, ________ was launched in central London in 2019, has dramatically reduced harmful nitrogen dioxide concentrations.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "that"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "which"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "who"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "where"
+                  }
+                ],
+                "correctLetter": "B",
+                "correctText": "which",
+                "analysis": "In non-defining relative clauses set off by commas, always use \"which\" for things, never \"that\".",
+                "strategy": "Golden TOEIC Rule: Never use \"that\" directly after a comma in relative clauses. Choose \"which\"."
+              },
+              {
+                "stem": "Urban transport planners are studying Zurich, ________ integrated public transport network achieves exceptional punctuality rates.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "whose"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "who"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "which"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "where"
+                  }
+                ],
+                "correctLetter": "A",
+                "correctText": "whose",
+                "analysis": "The possessive relative pronoun \"whose\" shows that the transit network belongs to Zurich (\"Zurich integrated public transport network\").",
+                "strategy": "\"Whose\" + noun indicates possession for both people and entities/cities."
+              },
+              {
+                "stem": "The maintenance depot ________ battery-electric buses recharge overnight is supplied entirely by renewable solar energy.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "which"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "where"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "whose"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "when"
+                  }
+                ],
+                "correctLetter": "B",
+                "correctText": "where",
+                "analysis": "\"Where\" is the relative adverb of place modifying \"maintenance depot\", followed by a complete clause (\"buses recharge overnight\").",
+                "strategy": "When the location is followed by subject + verb doing an action in that location, use \"where\"."
+              },
+              {
+                "stem": "Municipal sustainability regulations mandate solar panels on all commercial facilities ________ total surface area exceeds six hundred square meters.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "whose"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "which"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "where"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "that"
+                  }
+                ],
+                "correctLetter": "A",
+                "correctText": "whose",
+                "analysis": "\"Whose\" connects \"commercial facilities\" with their \"total surface area\" in a possessive relationship.",
+                "strategy": "Test for \"whose\": Can you say \"[antecedent] [noun]\"? (facilities surface area = whose surface area)."
               }
             ]
           },
@@ -36721,7 +37535,7 @@ const COURSE_DATA = {
                 "heading": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
                 "snippet": "Examining how blended winglets, sharklets, and raked wingtips dissipate powerful wingtip vortices, reducing induced drag by up to 5% on commercial airliners.",
                 "url": "https://aviationweek.com",
-                "topicFocus": "Aerodynamics & Flight Efficiency",
+                "readTime": "5 min read",
                 "title": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
                 "summary": "Examining how blended winglets, sharklets, and raked wingtips dissipate powerful wingtip vortices, reducing induced drag by up to 5% on commercial airliners.",
                 "content": [
@@ -36748,7 +37562,7 @@ const COURSE_DATA = {
                 "heading": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
                 "snippet": "Reviewing the physics of angle of attack, boundary layer separation, stick shaker tactile warnings, and fly-by-wire flight envelope protection systems.",
                 "url": "https://flightsafety.org",
-                "topicFocus": "Aerodynamics & Flight Efficiency",
+                "readTime": "5 min read",
                 "title": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
                 "summary": "Reviewing the physics of angle of attack, boundary layer separation, stick shaker tactile warnings, and fly-by-wire flight envelope protection systems.",
                 "content": [
@@ -37980,84 +38794,278 @@ const COURSE_DATA = {
             }
           },
           "materials": {
-            "title": "Additional Study Materials & Technical References",
-            "summary": "Curated video labs, airframe structural diagrams, and technical grammar clinics for aircraft systems and component maintenance.",
             "videos": [
               {
-                "title": "Commercial Aircraft Anatomy: Structural Layout & Load Distribution",
-                "channel": "AeroTechnical Training",
-                "videoId": "7w_uPsk3180",
-                "watchUrl": "https://www.youtube.com/watch?v=7w_uPsk3180",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/7w_uPsk3180",
-                "duration": "08:15",
-                "caption": "Walkthrough of airframe frames, stringers, skin panels, and wing box carry-through structures."
+                "title": "Video 1: Airbus A320 Preflight: Technical Exterior Walkaround",
+                "watchUrl": "https://www.youtube.com/watch?v=Tdf_Ac7_gwA",
+                "tag": "Pre-Flight",
+                "videoId": "Tdf_Ac7_gwA",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/Tdf_Ac7_gwA",
+                "caption": "Focus: Step-by-step exterior pre-departure walkaround checking pitot-static probes, gear assemblies, tires, and control surfaces."
               },
               {
-                "title": "Flight Control Systems: Primary vs Secondary Surfaces",
-                "channel": "Aviation Maintenance Hub",
-                "videoId": "8qNk9mPsk7w",
-                "watchUrl": "https://www.youtube.com/watch?v=8qNk9mPsk7w",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/8qNk9mPsk7w",
-                "duration": "07:40",
-                "caption": "Hydraulic and fly-by-wire actuation of ailerons, elevators, rudders, spoilers, and high-lift flaps."
+                "title": "Video 2: How Airplane Flaps and Slats Work",
+                "watchUrl": "https://www.youtube.com/watch?v=fUPNN3N-oDI",
+                "tag": "Airframe Systems",
+                "videoId": "fUPNN3N-oDI",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/fUPNN3N-oDI",
+                "caption": "Focus: Understand trailing-edge flaps and leading-edge slats, hydraulic actuator tracks, camber change, and stall speed reduction."
               },
               {
-                "title": "Modern Aircraft Undercarriage & Retraction Systems",
-                "channel": "Aeronautical Engineering Review",
-                "videoId": "5zKp1mUsk8A",
-                "watchUrl": "https://www.youtube.com/watch?v=5zKp1mUsk8A",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/5zKp1mUsk8A",
-                "duration": "06:50",
-                "caption": "Detailed inspection of oleo-pneumatic struts, shimmy dampers, multi-disc carbon brakes, and anti-skid valves."
+                "title": "Video 3: Turbofan Architecture: CFM56 Jet Engines",
+                "watchUrl": "https://www.youtube.com/watch?v=S2HymZd3GEE",
+                "tag": "Propulsion",
+                "videoId": "S2HymZd3GEE",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/S2HymZd3GEE",
+                "caption": "Focus: Inspect the compressor stages, combustion chamber, turbine blades, bypass ratio, and thrust generation in modern turbofans."
               }
             ],
             "articles": [
               {
-                "topic": "Structural Materials",
-                "sourceTag": "EASA Safety Review",
-                "readTime": "Estimated read: 4 mins",
-                "heading": "Composite Airframes in Commercial Service: Inspection Criteria and Damage Tolerance",
-                "snippet": "A technical overview of carbon-fiber reinforced polymer (CFRP) usage in fuselage barrels and wing structures, reviewing non-destructive testing (NDT) techniques for impact delamination.",
-                "url": "https://www.easa.europa.eu"
+                "topic": "Materials Science & Airframe Engineering",
+                "sourceTag": "Aerospace Manufacturing • Advanced Materials",
+                "heading": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
+                "snippet": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
+                "url": "https://aerospaceamerica.aiaa.org",
+                "readTime": "5 min read",
+                "title": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
+                "summary": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
+                "content": [
+                  "For more than seventy years, aluminum alloy was the uncontested material of choice for commercial aircraft construction. However, the introduction of next-generation widebody airliners—notably the Boeing 787 Dreamliner and Airbus A350—marked a permanent revolution: more than 50% of their primary airframe weight is made of advanced carbon-fiber composites.",
+                  "Carbon-Fiber-Reinforced Polymer (CFRP) consists of microscopic carbon strands embedded in a hardened polymer resin matrix. Pound for pound, carbon fiber is significantly stronger and lighter than aluminum, enabling aerodynamic wings that flex gracefully in flight without permanent metal fatigue.",
+                  "Crucially, composite materials do not corrode from moisture exposure. This property allows airlines to increase in-flight cabin humidity from 5% to 15% and pressurize the cabin to an equivalent altitude of 6,000 feet instead of the traditional 8,000 feet. Passengers arrive feeling significantly less dehydrated and fatigued after long-haul flights."
+                ],
+                "takeaways": [
+                  "Modern widebody airliners utilize over 50% carbon-fiber-reinforced polymer (CFRP) by weight.",
+                  "Composites offer superior strength-to-weight ratios and are immune to conventional metal fatigue and rust.",
+                  "Corrosion immunity allows higher cabin humidity and lower cabin pressure altitudes for passenger comfort."
+                ],
+                "vocab": [
+                  "Carbon-Fiber Composite (CFRP)",
+                  "Metal Fatigue",
+                  "Structural Weight Reduction",
+                  "Cabin Altitude",
+                  "Corrosion Resistance"
+                ]
               },
               {
-                "topic": "Systems Engineering",
-                "sourceTag": "Flight International Archive",
-                "readTime": "Estimated read: 5 mins",
-                "heading": "Next-Generation Fly-By-Wire Architecture: Distributed Electro-Hydrostatic Actuation",
-                "snippet": "How replacing central hydraulic loops with localized electro-hydrostatic actuators (EHAs) optimizes flight control reliability and reduces empty airframe weight.",
-                "url": "https://www.flightglobal.com"
+                "topic": "Airside Maintenance & Flight Safety",
+                "sourceTag": "Aviation Pros • Line Maintenance Manual",
+                "heading": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
+                "snippet": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
+                "url": "https://www.aviationpros.com",
+                "readTime": "5 min read",
+                "title": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
+                "summary": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
+                "content": [
+                  "Before every commercial flight, either the captain, the first officer, or a licensed aircraft maintenance engineer must conduct a physical pre-flight inspection walkaround. Walking in a clockwise circle beneath the aircraft with a high-intensity flashlight, the inspector checks critical exterior components for damage.",
+                  "The walkaround begins at the nose, verifying that vital pitot tubes and static ports are free of insects, ice, or protective covers that could corrupt cockpit airspeed readings. Inspectors examine the engine inlet cowlings and rotate the titanium fan blades by hand to check for nicks or dents caused by foreign object debris (FOD) or bird strikes.",
+                  "On modern composite airframes, visual inspection requires specialized vigilance. Unlike aluminum, which dents noticeably when struck by a ground servicing vehicle, carbon-fiber skin can spring back into shape after an impact, leaving internal composite layers shattered underneath—a hidden hazard known as bare-surface delamination that requires ultrasonic inspection."
+                ],
+                "takeaways": [
+                  "The pre-flight walkaround verifies exterior integrity, tire tread depth, and flight control surfaces.",
+                  "Pitot probes and static ports must be completely unobstructed to ensure accurate airspeed indications.",
+                  "Composite structures can suffer internal delamination without visible exterior paint scratching."
+                ],
+                "vocab": [
+                  "Pre-Flight Walkaround",
+                  "Pitot-Static Tube",
+                  "Foreign Object Debris (FOD)",
+                  "Composite Delamination",
+                  "Visual Inspection"
+                ]
+              }
+            ],
+            "resources": [
+              {
+                "url": "https://www.skybrary.aero/articles/flight-control-surfaces",
+                "tag": "01 • Flight Controls",
+                "name": "Skybrary: Aircraft Flight Control Surfaces",
+                "desc": "Comprehensive encyclopedia entries on primary and secondary flight control systems."
+              },
+              {
+                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
+                "tag": "02 • Airframe Engineering",
+                "name": "FAA AMT Airframe Handbook (FAA-H-8083-31A)",
+                "desc": "Authoritative technical manual on aircraft structures, composite repairs, and hydraulics."
+              },
+              {
+                "url": "https://aircraft.airbus.com/en/aircraft",
+                "tag": "03 • Airbus Specifications",
+                "name": "Airbus Aircraft Family Technical Data",
+                "desc": "Official payload, dimensions, and structural specifications for the A220, A320, and A350 families."
+              },
+              {
+                "url": "https://www.boeing.com/commercial",
+                "tag": "04 • Boeing Engineering",
+                "name": "Boeing Commercial Airplanes Technical Highlights",
+                "desc": "Detailed structural diagrams and systems overview of the 737 MAX and 787 Dreamliner."
+              },
+              {
+                "url": "https://www.easa.europa.eu",
+                "tag": "05 • Maintenance Standards",
+                "name": "EASA Part-66 Aircraft Maintenance Standards",
+                "desc": "European airworthiness regulations and syllabus requirements for airframe certifications."
+              },
+              {
+                "url": "https://www.rolls-royce.com/products-and-services/civil-aerospace.aspx",
+                "tag": "06 • Engine Architecture",
+                "name": "Rolls-Royce Trent Engine Cutaway & Architecture",
+                "desc": "Interactive visualization and explanatory guides on high-bypass turbofan components."
               }
             ],
             "grammar": {
-              "title": "Technical Grammar: Spatial Prepositions & Functional Passives",
-              "points": [
-                {
-                  "rule": "Precise Spatial Prepositions in Engineering Descriptions",
-                  "structure": "Located [forward of / aft of / outboard of / adjacent to / flush with]",
-                  "example": "The weather radar transceiver is housed inside the radome forward of the pressure bulkhead.",
-                  "note": "Crucial for precise component positioning in maintenance manuals."
-                },
-                {
-                  "rule": "Functional Passive Voice for System Descriptions",
-                  "structure": "Subject + is / are + past participle (+ by / through)",
-                  "example": "The high-lift trailing edge flaps are actuated hydraulically through dual mechanical ballscrews.",
-                  "note": "Focuses on the component and its action rather than the operator."
-                }
+              "title": "Spatial Prepositions & Passive Voice for Pre-Flight Defect Reporting",
+              "badge": "Line Operations",
+              "patternTitle": "Aircraft Inspection Formula",
+              "formula": "Subject + is/are/was/were + Past Participle (+ Prepositional Location)",
+              "rulesTitle": "Core Communicative Guidelines",
+              "rules": [
+                "<strong style=\"color: #1e293b;\">1. Spatial Prepositions for Airframe Anatomy:</strong> Locates external parts precisely (<em>'Leading-edge slats are mounted along the forward wing skin; trailing-edge flaps are situated adjacent to the engine pylon'</em>).",
+                "<strong style=\"color: #1e293b;\">2. Present Passive for Structural Functions:</strong> Explains standard operational mechanisms (<em>'Hydraulic actuators are powered by redundant engine-driven pumps'</em>).",
+                "<strong style=\"color: #1e293b;\">3. Past Passive for Walkaround Defect Reports:</strong> Documents pre-departure technical anomalies (<em>'A hydraulic leak was observed near the main gear brake lines'</em>).",
+                "<strong style=\"color: #1e293b;\">4. Modal Passive for Maintenance Clearance:</strong> Mandates safety release actions (<em>'All inspection panels must be securely fastened before the aircraft is cleared for pushback'</em>)."
+              ],
+              "trap": "⚠️ TOEIC Part 5 Passive Voice Alert: Be sure to check subject-verb agreement with collective or plural aviation nouns (e.g., 'The landing gear IS inspected' vs. 'The main gear assemblies ARE inspected').",
+              "examplesTitle": "Authentic Operational Examples",
+              "examples": [
+                "During the exterior walkaround, minor surface abrasions were detected on the composite radome.",
+                "The pitot-static probes are electrically heated to prevent ice formation during climb."
               ]
             },
-            "resources": [
+            "toeicQuestions": [
               {
-                "title": "FAA Pilot's Handbook of Aeronautical Knowledge (Ch. 3 Aircraft Structure)",
-                "desc": "Standard FAA text on airframe components and systems.",
-                "link": "https://www.faa.gov"
+                "stem": "The line maintenance engineer conducted a thorough exterior walkaround to ensure that no hydraulic fluid was ________ from the landing gear.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "leaking"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "leaked"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "leaks"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "leak"
+                  }
+                ],
+                "correctLetter": "A",
+                "correctText": "leaking",
+                "analysis": "The auxiliary verb 'was' combined with the active continuous context requires the present participle '-ing' form ('was leaking') to indicate an ongoing fluid drip.",
+                "strategy": "Be careful with active vs. passive after 'was/were': fluid leaks (active continuous = was leaking), fluid is drained (passive = was drained).",
+                "id": 1
               },
               {
-                "title": "EASA Part-66 Module 11 Study Guide",
-                "desc": "Aeroplanes Aerodynamics, Structures and Systems reference.",
-                "link": "https://www.easa.europa.eu"
+                "stem": "Slats are high-lift aerodynamic devices mounted ________ the leading edge of the wing to prevent boundary layer separation.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "through"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "along"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "between"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "into"
+                  }
+                ],
+                "correctLetter": "B",
+                "correctText": "along",
+                "analysis": "The preposition 'along' denotes continuous linear extension from the root to the tip of the wing's leading edge.",
+                "strategy": "Prepositions of location: use 'along' for items running parallel to a linear edge or boundary (along the leading edge, along the taxiway).",
+                "id": 2
+              },
+              {
+                "stem": "According to the Minimum Equipment List, the aircraft is permitted to dispatch ________ the weather radar is certified as fully operational.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "in case of"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "despite"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "provided that"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "although"
+                  }
+                ],
+                "correctLetter": "C",
+                "correctText": "provided that",
+                "analysis": "'Provided that' introduces the essential airworthiness condition required for flight release under MEL restrictions.",
+                "strategy": "MEL (Minimum Equipment List) regulatory sentences frequently test conditional conjunctions like 'provided that' or 'on condition that'.",
+                "id": 3
+              },
+              {
+                "stem": "The radome is constructed from radio-frequency transparent composite materials in order to shield the antenna without ________ radar signals.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "block"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "blocked"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "blockage"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "blocking"
+                  }
+                ],
+                "correctLetter": "D",
+                "correctText": "blocking",
+                "analysis": "The preposition 'without' requires a gerund (-ing form) when taking an action and an object ('without blocking radar signals').",
+                "strategy": "All prepositions (without, by, for, in, after, before) require a gerund (-ing) when immediately followed by a verb form.",
+                "id": 4
+              },
+              {
+                "stem": "Flight deck instruments provide real-time information regarding airspeed, altitude, and heading directly ________ the Primary Flight Display.",
+                "options": [
+                  {
+                    "letter": "A",
+                    "text": "on"
+                  },
+                  {
+                    "letter": "B",
+                    "text": "at"
+                  },
+                  {
+                    "letter": "C",
+                    "text": "of"
+                  },
+                  {
+                    "letter": "D",
+                    "text": "by"
+                  }
+                ],
+                "correctLetter": "A",
+                "correctText": "on",
+                "analysis": "Electronic and visual information is displayed 'on' a screen, monitor, or avionics display ('on the Primary Flight Display').",
+                "strategy": "Fixed tech preposition: information appears 'on' screens, displays, radars, monitors, and instruments.",
+                "id": 5
               }
-            ]
+            ],
+            "pageUrl": "session2/admat_aas2.html"
           }
         },
         "3": {

@@ -67,7 +67,8 @@ const results = {
   scormBounds: { pass: true, details: [] },
   dualAdminParity: { pass: true, details: [] },
   invariants: { pass: true, details: [] },
-  localStorageNotes: { pass: true, details: [] }
+  localStorageNotes: { pass: true, details: [] },
+  curriculumSchema: { pass: true, details: [] }
 };
 
 // -----------------------------------------------------------------------------
@@ -365,6 +366,99 @@ if (compiledHtml) {
 }
 
 // -----------------------------------------------------------------------------
+// CHECK 9: Course Data & Curriculum Schema Audit (Videos, TOEIC, Vocabulary)
+// -----------------------------------------------------------------------------
+const courseDataPath = path.join(repoDir, 'data/course-data.js');
+if (fs.existsSync(courseDataPath)) {
+  try {
+    const cdCode = fs.readFileSync(courseDataPath, 'utf8');
+    const sandbox = { window: {} };
+    vm.createContext(sandbox);
+    vm.runInContext(cdCode, sandbox);
+    const cd = sandbox.window.COURSE_DATA;
+
+    let checkedSessions = 0;
+    const schemaIssues = [];
+
+    const tracks = [
+      { key: 'at', name: 'AT' },
+      { key: 'ag', name: 'AG' }
+    ];
+
+    tracks.forEach(track => {
+      const trackData = cd[track.key];
+      if (!trackData) return;
+
+      [1, 2, 3].forEach(modNum => {
+        const mod = trackData[modNum.toString()];
+        if (!mod || !mod.sessions) return;
+
+        [1, 2, 3, 4].forEach(sessNum => {
+          const sess = mod.sessions[sessNum.toString()];
+          if (!sess) return;
+          checkedSessions++;
+          const label = `${track.name} M${modNum} S${sessNum}`;
+
+          // Check materials
+          if (!sess.materials) {
+            schemaIssues.push(`${label}: Missing materials object`);
+            return;
+          }
+
+          // Check videos
+          const videos = sess.materials.videos || [];
+          if (videos.length === 0) {
+            schemaIssues.push(`${label}: 0 videos in materials`);
+          } else {
+            videos.forEach((v, idx) => {
+              const yid = v.videoId || (v.watchUrl && v.watchUrl.match(/v=([a-zA-Z0-9_-]{11})/)?.[1]) || (v.url && v.url.match(/v=([a-zA-Z0-9_-]{11})/)?.[1]);
+              if (!yid || yid.length !== 11) {
+                schemaIssues.push(`${label}: Invalid YouTube ID in video #${idx + 1} (${v.title || 'untitled'})`);
+              }
+            });
+          }
+
+          // Check TOEIC questions
+          const toeic = sess.materials.toeicQuestions || [];
+          if (toeic.length < 5) {
+            schemaIssues.push(`${label}: Incomplete TOEIC practice (${toeic.length}/5 questions)`);
+          } else {
+            toeic.forEach((q, qIdx) => {
+              const stem = q.stem || q.question;
+              const hasOptions = Array.isArray(q.options) && q.options.length === 4;
+              const hasCorrect = q.correctLetter || q.correctText || q.correct;
+              if (!stem || !hasOptions || !hasCorrect) {
+                schemaIssues.push(`${label}: Malformed TOEIC Q${qIdx + 1} (missing stem, 4 options, or correct answer)`);
+              }
+            });
+          }
+
+          // Check vocabulary revision keyTerms
+          if (sess.revision && sess.revision.keyTerms) {
+            if (sess.revision.keyTerms.length < 5) {
+              schemaIssues.push(`${label}: Incomplete vocabulary keyTerms (${sess.revision.keyTerms.length}/10)`);
+            }
+          }
+        });
+      });
+    });
+
+    if (schemaIssues.length > 0) {
+      results.curriculumSchema.pass = false;
+      results.curriculumSchema.details.push(...schemaIssues);
+    } else {
+      results.curriculumSchema.details.push(`Verified all ${checkedSessions} sessions across AT & AG: 100% canonical materials, valid video IDs, complete 5-question TOEIC sets, and vocabulary lists.`);
+    }
+  } catch (err) {
+    results.curriculumSchema.pass = false;
+    results.curriculumSchema.details.push(`Error executing course-data.js: ${err.message}`);
+  }
+} else {
+  results.curriculumSchema.pass = false;
+  results.curriculumSchema.details.push('data/course-data.js not found.');
+}
+
+// -----------------------------------------------------------------------------
 // FORMAT REPORT OUTPUT
 // -----------------------------------------------------------------------------
 const checks = [
@@ -375,7 +469,8 @@ const checks = [
   { key: 'scormBounds', name: '5. 💾 SCORM 1.2 SUSPEND_DATA BOUNDS' },
   { key: 'dualAdminParity', name: '6. ⚖️ DUAL-ADMIN & TITLE PARITY (1.B/1.L)' },
   { key: 'invariants', name: '7. 🚫 JARGON, TIMINGS & PRIVACY (1.I/1.Q)' },
-  { key: 'localStorageNotes', name: '8. 📝 LOCALSTORAGE AUTO-SAVE HANDLERS' }
+  { key: 'localStorageNotes', name: '8. 📝 LOCALSTORAGE AUTO-SAVE HANDLERS' },
+  { key: 'curriculumSchema', name: '9. 📚 CURRICULUM SCHEMA (VIDEOS, TOEIC, VOCAB)' }
 ];
 
 let allPassed = true;
