@@ -2924,15 +2924,15 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
             <!-- Announcement 1: Wednesday AT -->
-            <div class="p-4 rounded-xl border border-sky-200/90 bg-sky-50/50 shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-sky-500 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-200/80 text-sky-900">WEDNESDAY &bull; AT</span>
-                <span class="text-[10.5px] font-mono text-sky-700 font-medium">13:15 – 15:15</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">WEDNESDAY &bull; AT</span>
+                <span class="text-[10.5px] font-mono text-slate-500 font-medium">13:15 – 15:15</span>
               </div>
-              <h3 class="text-xs sm:text-sm font-bold text-sky-950">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900">
                 ${activeInfo.atTitle}
               </h3>
-              <p class="text-[11.5px] sm:text-xs text-sky-900 leading-relaxed font-normal">
+              <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                 ${activeInfo.atDesc}
               </p>
             </div>
@@ -2940,41 +2940,41 @@
             <!-- Announcement 2: Friday AG -->
             <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-200/80 text-amber-900">FRIDAY &bull; AG</span>
-                <span class="text-[10.5px] font-mono text-amber-700 font-medium">08:00 – 10:00</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">FRIDAY &bull; AG</span>
+                <span class="text-[10.5px] font-mono text-slate-500 font-medium">08:00 – 10:00</span>
               </div>
-              <h3 class="text-xs sm:text-sm font-bold text-amber-950">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900">
                 ${activeInfo.agTitle}
               </h3>
-              <p class="text-[11.5px] sm:text-xs text-amber-900 leading-relaxed font-normal">
+              <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                 ${activeInfo.agDesc}
               </p>
             </div>
 
             <!-- Announcement 3: Portfolio Reminder -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-emerald-500 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-200/80 text-emerald-900">HABIT</span>
-                <span class="text-[10.5px] font-mono text-emerald-700 font-medium">Continuous Practice</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">CONTINUOUS HABIT</span>
+                <span class="text-[10.5px] font-mono text-slate-500 font-medium">Self-Study</span>
               </div>
-              <h3 class="text-xs sm:text-sm font-bold text-emerald-950">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900">
                 Update Your Portfolio
               </h3>
-              <p class="text-[11.5px] sm:text-xs text-emerald-900 leading-relaxed font-normal">
+              <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                 Add at least 3 new spoken words and 1 reflection sentence to your portfolio after each session. Regular updates build confidence for your oral evaluations.
               </p>
             </div>
 
             <!-- Announcement 4: Formative Evaluation (FE) Countdown or Active State -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-indigo-500 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-purple-200/80 text-purple-900">${activeInfo.isFe ? "This Week's Evaluation" : "Upcoming Evaluation"}</span>
-                <span class="text-[10.5px] font-mono text-purple-700 font-medium">Week ${activeInfo.feWeek}</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">${activeInfo.isFe ? "ACTIVE EVALUATION" : "UPCOMING EVALUATION"}</span>
+                <span class="text-[10.5px] font-mono text-slate-500 font-medium">Week ${activeInfo.feWeek}</span>
               </div>
-              <h3 class="text-xs sm:text-sm font-bold text-purple-950">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900">
                 ${activeInfo.isFe ? `Formative Evaluation ${activeInfo.feNum} (FE${activeInfo.feNum}) in Progress` : `Formative Evaluation ${activeInfo.feNum} (FE${activeInfo.feNum}) Countdown`}
               </h3>
-              <p class="text-[11.5px] sm:text-xs text-purple-900 leading-relaxed font-normal">
+              <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
                 ${activeInfo.isFe ? "Oral evaluation sessions are active this week. Consult your designated 30-minute timeslot in the Weekly Calendar tab and arrive 5 minutes early." : `Check your designated 30-minute pair evaluation slot in the Weekly Calendar tab. Formative Evaluation ${activeInfo.feNum} takes place in Week ${activeInfo.feWeek}.`}
               </p>
             </div>
@@ -2993,7 +2993,7 @@
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-sky-100 text-sky-800 border border-sky-200">Technical English (AT)</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">TECHNICAL ENGLISH (AT)</span>
                   <span class="text-[10px] font-mono text-slate-400 font-semibold">BBC News • 3 min read</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
@@ -3003,9 +3003,9 @@
                   Customs officers at Cologne Bonn Airport intercept a passenger attempting to smuggle dozens of venomous vipers and protected reptiles concealed inside checked luggage.
                 </p>
               </div>
-              <button type="button" onclick="openCustomsNoticeboardArticle()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
+              <button type="button" onclick="openCustomsNoticeboardArticle()" class="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer font-mono uppercase tracking-wider text-[11px]">
                 <span>Read Technical Article</span>
-                <span class="font-bold text-sm leading-none">⇥</span>
+                <span>&rarr;</span>
               </button>
             </div>
 
@@ -3013,7 +3013,7 @@
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 border border-amber-200">🗣️ General Culture &amp; Film (AG)</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">GENERAL CULTURE &amp; FILM (AG)</span>
                   <span class="text-[10px] font-mono text-slate-400 font-semibold">Cinema Pick • Documentary</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
@@ -3023,9 +3023,9 @@
                   An intimate documentary following an Irish family living along a rural roadside trailer, exploring heritage, identity, community resilience, and modern social pressures.
                 </p>
               </div>
-              <button type="button" onclick="openFilmDetailsModal()" class="w-full inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer">
+              <button type="button" onclick="openFilmDetailsModal()" class="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer font-mono uppercase tracking-wider text-[11px]">
                 <span>Explore Film Notes</span>
-                <span class="font-bold text-sm leading-none">⇥</span>
+                <span>&rarr;</span>
               </button>
             </div>
           </div>
