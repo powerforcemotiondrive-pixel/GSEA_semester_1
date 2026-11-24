@@ -834,30 +834,39 @@ function generateRefonteJS() {
         }
       });
 
-      // Keyboard navigation
+      // Keyboard navigation (Arrow keys, Space, Home, End, PageUp, PageDown, F)
       document.addEventListener('keydown', function(e) {
         const wrapper = document.getElementById('refonte-deck-wrapper');
         if (!wrapper) return;
         
-        // Only trigger if deck is visible
-        if (wrapper.offsetParent === null) return;
+        // Guard against typing in form inputs
+        if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
 
-        if (e.key === 'ArrowRight' || e.key === ' ') {
-          if (__refonteViewMode === 'slides') {
-            e.preventDefault();
-            window.nextRefonteSlide();
-          }
-        } else if (e.key === 'ArrowLeft') {
-          if (__refonteViewMode === 'slides') {
-            e.preventDefault();
-            window.prevRefonteSlide();
-          }
-        } else if (e.key === 'f' || e.key === 'F') {
-          // If not typing in input
-          if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
-            e.preventDefault();
-            window.toggleRefonteFullscreen();
-          }
+        // Active if in fullscreen or visible on page/drawer
+        const isFs = Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+        const isVisible = isFs || (wrapper.offsetParent !== null || wrapper.offsetWidth > 0 || wrapper.offsetHeight > 0);
+        if (!isVisible) return;
+
+        if (e.key === 'f' || e.key === 'F') {
+          e.preventDefault();
+          window.toggleRefonteFullscreen();
+          return;
+        }
+
+        if (__refonteViewMode !== 'slides') return;
+
+        if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+          e.preventDefault();
+          window.nextRefonteSlide();
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+          e.preventDefault();
+          window.prevRefonteSlide();
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          window.goToRefonteSlide(0);
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          window.goToRefonteSlide(__refonteTotalSlides - 1);
         }
       });
     }

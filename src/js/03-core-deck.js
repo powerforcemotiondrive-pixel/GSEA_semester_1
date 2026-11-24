@@ -93,6 +93,38 @@
           return;
         }
 
+        // 3b. GSEA 2027 REFONTE PRESENTATION NAVIGATION (Arrow keys, Space, Home, End, F)
+        const isFullscreen = Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+        const refonteDeckEl = document.getElementById('refonte-deck-wrapper');
+        const isRefonteActive = (isModalOpen && modalState.tab === 'refonte') || isFullscreen;
+        if (isRefonteActive && refonteDeckEl) {
+          if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+            e.preventDefault();
+            if (window.nextRefonteSlide) window.nextRefonteSlide();
+            return;
+          }
+          if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+            e.preventDefault();
+            if (window.prevRefonteSlide) window.prevRefonteSlide();
+            return;
+          }
+          if (e.key === 'Home') {
+            e.preventDefault();
+            if (window.goToRefonteSlide) window.goToRefonteSlide(0);
+            return;
+          }
+          if (e.key === 'End') {
+            e.preventDefault();
+            if (window.goToRefonteSlide) window.goToRefonteSlide(5);
+            return;
+          }
+          if (e.key === 'f' || e.key === 'F') {
+            e.preventDefault();
+            if (window.toggleRefonteFullscreen) window.toggleRefonteFullscreen();
+            return;
+          }
+        }
+
         // 4. ARROW KEYS: Left / Right Navigation (Drawer Tabs, Flashcards, or Deck Cards)
         if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
           // If drawer is open:
