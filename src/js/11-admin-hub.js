@@ -3980,7 +3980,7 @@
       if (!bodyEl) return;
 
       bodyEl.innerHTML = `
-        ${"\n    <div id=\"refonte-deck-wrapper\" class=\"w-full max-w-[1350px] mx-auto space-y-5\">\n      <!-- Light, Professional Presentation Header -->\n      <div class=\"bg-white border border-slate-200 rounded-2xl p-4 sm:p-6 shadow-xs flex flex-wrap items-center justify-between gap-4\">\n        <div class=\"flex items-center gap-3.5\">\n          <div class=\"w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-xs shrink-0\">\n            <svg class=\"w-6 h-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z\"></path></svg>\n          </div>\n          <div>\n            <div class=\"flex items-center gap-2\">\n              <span class=\"text-[10.5px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200\">Department Presentation</span>\n              <span class=\"text-xs font-bold text-slate-500\">• LH / LAN</span>\n            </div>\n            <h1 class=\"text-lg sm:text-2xl font-black text-slate-900 tracking-tight mt-0.5\">GSEA 2027 Refonte</h1>\n            <p class=\"text-xs text-slate-600 mt-0.5 font-medium\">Presented by <strong class=\"text-slate-800\">Phil PARRIS</strong> • Département LH / LAN • École Nationale de l'Aviation Civile</p>\n          </div>\n        </div>\n\n        <!-- Top Right: ENAC Logo & View Controls -->\n        <div class=\"flex items-center gap-3 flex-wrap\">\n          <!-- View Mode Toggle: Slide Show vs Continuous Document -->\n          <div class=\"bg-slate-100 p-1 rounded-xl border border-slate-200 flex items-center gap-1 text-xs font-bold\">\n            <button id=\"refonte-btn-mode-slides\" onclick=\"window.switchRefonteView('slides')\" class=\"px-3 py-1.5 rounded-lg transition-all cursor-pointer bg-white text-blue-700 shadow-xs flex items-center gap-1.5 font-bold\">\n              <svg class=\"w-3.5 h-3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z\"></path><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path></svg>\n              <span>Slide Show</span>\n            </button>\n            <button id=\"refonte-btn-mode-doc\" onclick=\"window.switchRefonteView('doc')\" class=\"px-3 py-1.5 rounded-lg transition-all cursor-pointer text-slate-600 hover:text-slate-900 flex items-center gap-1.5 font-bold\">\n              <svg class=\"w-3.5 h-3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z\"></path></svg>\n              <span>Document</span>\n            </button>\n          </div>\n\n          <!-- ENAC Logo Top Right -->\n          <div class=\"bg-slate-900 px-3.5 py-1.5 rounded-xl flex items-center shadow-xs border border-slate-800 shrink-0\">\n            <img src=\"images/enac_logo_white.png\" alt=\"ENAC\" class=\"h-5.5 w-auto object-contain\">\n          </div>\n        </div>\n      </div>\n\n      <!-- SLIDE NAVIGATION CONTROLS (Slide Show Mode) -->\n      <div id=\"refonte-nav-bar\" class=\"bg-white border border-slate-200 rounded-xl px-4 py-2.5 shadow-xs flex items-center justify-between gap-3 text-xs\">\n        <div class=\"flex items-center gap-2\">\n          <button id=\"refonte-btn-prev\" onclick=\"window.prevRefonteSlide()\" class=\"px-3 py-1.5 rounded-lg font-bold border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 transition-all cursor-pointer flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed\">\n            <span>&larr;</span> <span>Previous</span>\n          </button>\n          <button id=\"refonte-btn-next\" onclick=\"window.nextRefonteSlide()\" class=\"px-3 py-1.5 rounded-lg font-bold border border-blue-600 bg-blue-600 text-white hover:bg-blue-700 shadow-xs transition-all cursor-pointer flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed\">\n            <span>Next</span> <span>&rarr;</span>\n          </button>\n        </div>\n\n        <!-- Jump Dots & Slide Counter -->\n        <div class=\"flex items-center gap-3\">\n          <div class=\"flex items-center gap-1.5\" id=\"refonte-dots-container\">\n            <!-- 6 Dots dynamically rendered -->\n          </div>\n          <span id=\"refonte-slide-counter\" class=\"font-bold text-slate-600 font-mono text-[11px] bg-slate-100 px-2 py-0.5 rounded\">\n            Slide 1 of 6\n          </span>\n        </div>\n\n        <!-- Quick Topic Indicator -->\n        <div class=\"hidden sm:flex items-center gap-1.5 text-slate-500 font-medium\">\n          <span id=\"refonte-slide-topic\" class=\"font-bold text-slate-800\">Refonte Timeline</span>\n        </div>\n      </div>\n\n      <!-- ======================================================== -->\n      <!-- SLIDES CONTAINER (Slide Show Mode: 1 visible at a time) -->\n      <!-- ======================================================== -->\n      <div id=\"refonte-slides-wrapper\" class=\"space-y-6\">\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 1: Refonte Timeline -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-0\" class=\"refonte-slide bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-6\">\n          <div class=\"border-b border-slate-200 pb-4 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200\">SLIDE 1 • ROLLOUT TIMELINE</span>\n              <h2 class=\"text-lg sm:text-2xl font-black text-slate-900 mt-1\">Refonte Timeline: Phased Cohort Deployment</h2>\n              <p class=\"text-xs sm:text-sm text-slate-600 mt-0.5\">Progressive curriculum rollout across active promotions: GSEA26A and GSEA25A</p>\n            </div>\n            <span class=\"px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200 flex items-center gap-1.5\">\n              <span class=\"w-2 h-2 rounded-full bg-emerald-500 animate-pulse\"></span>\n              2 Cohorts in Parallel\n            </span>\n          </div>\n\n          <!-- 4-Card Timeline Grid -->\n          <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4\">\n            <!-- Semester 1 Card -->\n            <div class=\"p-4 rounded-xl border border-emerald-200 bg-emerald-50/40 space-y-2.5 flex flex-col justify-between\">\n              <div>\n                <div class=\"flex items-center justify-between\">\n                  <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-emerald-700 text-white\">LIVE • V1.0</span>\n                  <span class=\"text-xs font-bold text-slate-500\">Autumn 2026</span>\n                </div>\n                <h3 class=\"text-sm font-black text-slate-900 mt-2\">Semester 1</h3>\n                <p class=\"text-xs font-bold text-emerald-900\">Promotion GSEA26A</p>\n                <div class=\"text-xs text-slate-700 space-y-1 mt-2\">\n                  <p>&bull; <strong>Status:</strong> Now running in Version 1 with GSEA26A.</p>\n                  <p>&bull; <strong>Milestone:</strong> Module 1 complete (Travel &amp; Transport).</p>\n                  <p>&bull; <strong>Current Phase:</strong> Module 2 active (Climate Crisis &amp; Sustainable Cities).</p>\n                </div>\n              </div>\n              <div class=\"pt-2 border-t border-emerald-200/80 text-[11px] font-semibold text-emerald-800\">\n                89 Official Hours (Induction + AG + AT)\n              </div>\n            </div>\n\n            <!-- Semester 2 Card -->\n            <div class=\"p-4 rounded-xl border border-blue-200 bg-blue-50/40 space-y-2.5 flex flex-col justify-between\">\n              <div>\n                <div class=\"flex items-center justify-between\">\n                  <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-blue-700 text-white\">SPRING 2027</span>\n                  <span class=\"text-xs font-bold text-slate-500\">Scheduled</span>\n                </div>\n                <h3 class=\"text-sm font-black text-slate-900 mt-2\">Semester 2</h3>\n                <p class=\"text-xs font-bold text-blue-900\">Promotion GSEA26A</p>\n                <div class=\"text-xs text-slate-700 space-y-1 mt-2\">\n                  <p>&bull; <strong>Status:</strong> Will be implemented with GSEA26A in 2027.</p>\n                  <p>&bull; <strong>Key Change:</strong> Major reduction of 32 classroom hours.</p>\n                  <p>&bull; <strong>Tracks:</strong> General English (AG 16h) + Air Traffic English (AAS 16h: AFIS &amp; Ground).</p>\n                  <p>&bull; <strong>Immersion:</strong> 4-week dedicated English immersion period.</p>\n                </div>\n              </div>\n              <div class=\"pt-2 border-t border-blue-200/80 text-[11px] font-semibold text-blue-800\">\n                32 Hours Total + 4 Weeks Immersion\n              </div>\n            </div>\n\n            <!-- Semester 3 Card -->\n            <div class=\"p-4 rounded-xl border border-purple-200 bg-purple-50/40 space-y-2.5 flex flex-col justify-between\">\n              <div>\n                <div class=\"flex items-center justify-between\">\n                  <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-purple-700 text-white\">LIVE</span>\n                  <span class=\"text-xs font-bold text-slate-500\">2026–2027</span>\n                </div>\n                <h3 class=\"text-sm font-black text-slate-900 mt-2\">Semester 3</h3>\n                <p class=\"text-xs font-bold text-purple-900\">Promotion GSEA25A</p>\n                <div class=\"text-xs text-slate-700 space-y-1 mt-2\">\n                  <p>&bull; <strong>Status:</strong> Now running with GSEA25A.</p>\n                  <p>&bull; <strong>Key Change:</strong> Reduction of 30 hours (zero General English).</p>\n                  <p>&bull; <strong>Tracks:</strong> Technical English (AT 30h) only.</p>\n                  <p>&bull; <strong>Focus:</strong> EASA regulatory documents &amp; MTF exam preparation.</p>\n                </div>\n              </div>\n              <div class=\"pt-2 border-t border-purple-200/80 text-[11px] font-semibold text-purple-800\">\n                30 Hours AT + End S3 MTF Test\n              </div>\n            </div>\n\n            <!-- Semester 4 Card -->\n            <div class=\"p-4 rounded-xl border border-amber-200 bg-amber-50/40 space-y-2.5 flex flex-col justify-between\">\n              <div>\n                <div class=\"flex items-center justify-between\">\n                  <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-amber-700 text-white\">2027</span>\n                  <span class=\"text-xs font-bold text-slate-500\">In Development</span>\n                </div>\n                <h3 class=\"text-sm font-black text-slate-900 mt-2\">Semester 4</h3>\n                <p class=\"text-xs font-bold text-amber-900\">Promotion GSEA25A</p>\n                <div class=\"text-xs text-slate-700 space-y-1 mt-2\">\n                  <p>&bull; <strong>Status:</strong> Will be implemented with GSEA25A in 2027.</p>\n                  <p>&bull; <strong>Key Change:</strong> Reduction of 30 hours (zero General English).</p>\n                  <p>&bull; <strong>Tracks:</strong> Professional English (AP 30h) + Pecha Kucha PFE (6h).</p>\n                  <p>&bull; <strong>Graduation:</strong> Final internship defense &amp; exit validation.</p>\n                </div>\n              </div>\n              <div class=\"pt-2 border-t border-amber-200/80 text-[11px] font-semibold text-amber-800\">\n                36 Hours Total (30h AP + 6h PFE)\n              </div>\n            </div>\n          </div>\n\n          <!-- Bottom Summary Box -->\n          <div class=\"p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-700\">\n            <div>\n              <strong class=\"font-bold text-slate-900\">Strategic Curriculum Impact:</strong> Overall reduction of <strong>~92 classroom hours</strong> across the 2-year cycle, replacing passive lecture hours with high-density spoken workshops, continuous formative assessment, and self-directed digital study.\n            </div>\n            <span class=\"font-mono font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded border border-blue-200 shrink-0\">\n              Total Streamlining: −92 Hours\n            </span>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 2: The New Structure — Semester 1 -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-1\" class=\"refonte-slide bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-6 hidden\">\n          <div class=\"border-b border-slate-200 pb-4 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200\">SLIDE 2 • THE NEW STRUCTURE</span>\n              <h2 class=\"text-lg sm:text-2xl font-black text-slate-900 mt-1\">Semester 1 Architecture: Induction, AG &amp; AT</h2>\n              <p class=\"text-xs sm:text-sm text-slate-600 mt-0.5\">Foundational semester: 89 Total Hours (21h Induction + 34h General English + 34h Technical English)</p>\n            </div>\n            <span class=\"px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-800 border border-blue-200\">\n              S1 = AG + AT (LV101E &amp; LV121E)\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-3 gap-4\">\n            <!-- LV130 Induction -->\n            <div class=\"p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-3\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-800 text-white\">LV130</span>\n                <span class=\"text-xs font-bold text-slate-500\">21 Hours</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Induction Course</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">Comprehensive integration course establishing baseline oral confidence and cohort rapport:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1.5 list-disc list-inside\">\n                <li><strong>Cohort Introductions:</strong> Icebreaker communication activities &amp; team-building.</li>\n                <li><strong>Interactive Lectures:</strong> Applied grammar, English phonetics, vocabulary acquisition, and fluency.</li>\n                <li><strong>Diagnostic 1-on-1 Interviews:</strong> Spoken level testing to identify individual strengths and set personalized targets.</li>\n              </ul>\n            </div>\n\n            <!-- LV101 General English -->\n            <div class=\"p-4 rounded-xl border border-blue-200 bg-blue-50/40 space-y-3\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-blue-700 text-white\">LV101</span>\n                <span class=\"text-xs font-bold text-slate-500\">34 Hours</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">General English (AG)</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">Communicative fluency and global societal issues across 3 modules:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1.5 list-disc list-inside\">\n                <li><strong>Module Architecture:</strong> 4 &times; 2-hour interactive workshops per module focusing on spoken peer activities, vocabulary, and grammar.</li>\n                <li><strong>Module Topics:</strong> 1. Travel, Transport &amp; Leisure; 2. Climate Crisis &amp; Sustainable Cities; 3. Global Aviation Dilemmas.</li>\n                <li><strong>Formative Evaluation (FE):</strong> Small-group/paired spoken assessments at the end of each module with explicit A/B/C/D rubrics.</li>\n              </ul>\n            </div>\n\n            <!-- LV121 Technical English -->\n            <div class=\"p-4 rounded-xl border border-purple-200 bg-purple-50/40 space-y-3\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-purple-700 text-white\">LV121</span>\n                <span class=\"text-xs font-bold text-slate-500\">34 Hours</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Technical English (AT)</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">Operational civil aviation fundamentals and technical communications:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1.5 list-disc list-inside\">\n                <li><strong>3 Thematic Modules:</strong> 1. Aerodrome &amp; Airport Infrastructure; 2. Aircraft Anatomy, Systems &amp; Maintenance; 3. Incident Briefings &amp; Radiotelephony.</li>\n                <li><strong>Lesson Content:</strong> Technical diagram analysis, incident debriefings, and operational phraseology simulations.</li>\n                <li><strong>FE Spoken Tutorials:</strong> Paired technical briefings with peer observation checklists.</li>\n              </ul>\n            </div>\n          </div>\n\n          <!-- DD&RS Integration Banner -->\n          <div class=\"p-4 rounded-xl bg-emerald-50/70 border border-emerald-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-emerald-950\">\n            <div>\n              <strong class=\"font-bold text-emerald-900\">Integral DD&amp;RS Alignment:</strong> Fully compliant with the French Higher Education Sustainable Development &amp; Societal Responsibility framework (Label DD&amp;RS, Axes 1–5). Topics actively explore eco-mobility, renewable energy, airport bioswales, and carbon mitigation.\n            </div>\n            <span class=\"px-2.5 py-1 rounded bg-emerald-600 text-white font-bold text-[10.5px] shrink-0\">\n              DD&amp;RS Axes 1 to 5\n            </span>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 3: The New Structure — Semester 2 -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-2\" class=\"refonte-slide bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-6 hidden\">\n          <div class=\"border-b border-slate-200 pb-4 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200\">SLIDE 3 • THE NEW STRUCTURE</span>\n              <h2 class=\"text-lg sm:text-2xl font-black text-slate-900 mt-1\">Semester 2: Streamlining, Air Traffic &amp; Immersion</h2>\n              <p class=\"text-xs sm:text-sm text-slate-600 mt-0.5\">Curriculum Reduction of 32 Hours: 16h General English + 16h Aviation Safety + 4-Week Immersion</p>\n            </div>\n            <span class=\"px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200\">\n              S2 = AG + AAS (Reduction of 32h)\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-3 gap-4\">\n            <!-- LVXXX AG 16h -->\n            <div class=\"p-4 rounded-xl border border-blue-200 bg-blue-50/40 space-y-3\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-blue-700 text-white\">LVXXX</span>\n                <span class=\"text-xs font-bold text-slate-500\">16 Hours (−18h)</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">General English (AG)</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">Streamlined single-module format centered on global affairs and active debate:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1.5 list-disc list-inside\">\n                <li><strong>1 Thematic Module:</strong> Current international events, media critique, and global debate preparation.</li>\n                <li><strong>Autonomous Listening:</strong> Guided self-study listening comprehension program on eCampus.</li>\n                <li><strong>Formative Evaluation:</strong> Session 8 paired communicative speaking challenge.</li>\n              </ul>\n            </div>\n\n            <!-- LVXXX AAS 16h -->\n            <div class=\"p-4 rounded-xl border border-purple-200 bg-purple-50/40 space-y-3\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-purple-700 text-white\">LVXXX</span>\n                <span class=\"text-xs font-bold text-slate-500\">16 Hours (−14h)</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Aviation Safety &amp; Air Traffic (AAS)</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">Introduction to operational Language Testing (LT) &amp; air traffic procedures:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1.5 list-disc list-inside\">\n                <li><strong>2 Modules:</strong> 1. AFIS (Aerodrome Flight Information Service); 2. Ground Operations (ATIS broadcasts, Apron control).</li>\n                <li><strong>Self-Study:</strong> Preparatory Language Training (PLT) modules on eCampus.</li>\n                <li><strong>Formative Evaluation:</strong> Session 8 simulated operational Language Testing (LT) assessment.</li>\n              </ul>\n            </div>\n\n            <!-- 4-Week Immersion & TOEIC -->\n            <div class=\"p-4 rounded-xl border border-amber-200 bg-amber-50/40 space-y-3\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-amber-700 text-white\">MILESTONE</span>\n                <span class=\"text-xs font-bold text-slate-500\">4 Weeks</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Immersion &amp; TOEIC Benchmark</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">Real-world linguistic immersion followed by official certification:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1.5 list-disc list-inside\">\n                <li><strong>4-Week Immersion Course:</strong> Intensive linguistic immersion abroad or dedicated residential program.</li>\n                <li><strong>Official TOEIC Test:</strong> Administered in Week 1 of Semester 3 (or end of immersion).</li>\n                <li><strong>Target:</strong> Mandatory CEFR B2 level (785+ points) required for graduation. Retakes organized in students' own autonomous time.</li>\n              </ul>\n            </div>\n          </div>\n\n          <!-- Bottom Notice -->\n          <div class=\"p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 space-y-1\">\n            <p><strong>Pedagogical Rationale:</strong> The 32-hour classroom reduction creates dedicated space for the 4-week immersion course while transitioning students from general communicative fluency to operational air traffic phraseology.</p>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 4: The New Structure — Semesters 3 & 4 -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-3\" class=\"refonte-slide bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-6 hidden\">\n          <div class=\"border-b border-slate-200 pb-4 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200\">SLIDE 4 • THE NEW STRUCTURE</span>\n              <h2 class=\"text-lg sm:text-2xl font-black text-slate-900 mt-1\">Semesters 3 &amp; 4: Specialization &amp; Certification</h2>\n              <p class=\"text-xs sm:text-sm text-slate-600 mt-0.5\">Year 2 Policy: General English Discontinued • 100% Technical (AT) &amp; Professional (AP) Specialization</p>\n            </div>\n            <span class=\"px-3 py-1 rounded-full text-xs font-bold bg-purple-50 text-purple-800 border border-purple-200\">\n              S3: AT Only • S4: AP Only\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n            <!-- Semester 3: LV125E Technical English -->\n            <div class=\"p-5 rounded-xl border border-purple-200 bg-purple-50/40 space-y-3\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-purple-700 text-white\">SEMESTER 3 • LV125E</span>\n                <span class=\"text-xs font-bold text-slate-500\">30 Hours (−30h)</span>\n              </div>\n              <h3 class=\"text-base font-black text-slate-900\">Technical English (AT)</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed font-semibold text-purple-950\">Terminology Rule: Always designated as Technical English (AT), never \"Aeronautical\".</p>\n              <ul class=\"text-xs text-slate-700 space-y-2 list-disc list-inside pt-1\">\n                <li><strong>Module 1: EASA Regulatory Documents (15h):</strong> Direct analysis of authentic EASA airworthiness directives and safety bulletins. Flipped lessons and FE group presentations in Session 7. LT self-study.</li>\n                <li><strong>Module 2: MTF Examination Preparation (15h):</strong> Rigorous preparation for the civil aviation MTF exam. Authentic audio tests, diagnostic feedback, and LT self-study.</li>\n                <li><strong>End of Semester 3 MTF Test:</strong> Mandatory language proficiency exam for all students; remains obligatory for official ENAC graduation.</li>\n              </ul>\n            </div>\n\n            <!-- Semester 4: Professional English & PFE -->\n            <div class=\"p-5 rounded-xl border border-amber-200 bg-amber-50/40 space-y-3\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-amber-700 text-white\">SEMESTER 4 • LVXXX</span>\n                <span class=\"text-xs font-bold text-slate-500\">36 Hours (−30h)</span>\n              </div>\n              <h3 class=\"text-base font-black text-slate-900\">Professional English (AP) &amp; Pecha Kucha</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed font-semibold text-amber-950\">Final engineering career readiness and internship defense:</p>\n              <ul class=\"text-xs text-slate-700 space-y-2 list-disc list-inside pt-1\">\n                <li><strong>LVXXX: Professional English (30h):</strong> Workplace meetings, international collaboration, safety investigations, and technical report drafting (program in final development).</li>\n                <li><strong>LVXXX: Pecha Kucha PFE Defense (6h):</strong> Structured oral defense coaching for the 20-slide &times; 20-second <em>Pecha Kucha</em> presentation of their Final Year Internship Project (PFE).</li>\n                <li><strong>Exit Validation:</strong> Professional autonomy, cross-examination defense, and graduation clearance.</li>\n              </ul>\n            </div>\n          </div>\n\n          <!-- Quad-Semester Matrix Summary Table -->\n          <div class=\"overflow-x-auto\">\n            <table class=\"w-full text-xs text-left border border-slate-200 rounded-lg overflow-hidden\">\n              <thead class=\"bg-slate-100 text-slate-800 uppercase font-bold text-[10.5px]\">\n                <tr>\n                  <th class=\"p-2.5 border-b border-slate-200\">Semester</th>\n                  <th class=\"p-2.5 border-b border-slate-200\">Track Composition</th>\n                  <th class=\"p-2.5 border-b border-slate-200\">Total Timetable Hours</th>\n                  <th class=\"p-2.5 border-b border-slate-200\">Key Pedagogical Milestone</th>\n                </tr>\n              </thead>\n              <tbody class=\"divide-y divide-slate-200 text-slate-700\">\n                <tr>\n                  <td class=\"p-2.5 font-black text-slate-900\">Semester 1</td>\n                  <td class=\"p-2.5 font-bold text-blue-700\">AG (LV101E) + AT (LV121E)</td>\n                  <td class=\"p-2.5\">89 Hours (21h Induction + 68h Core)</td>\n                  <td class=\"p-2.5\">Diagnostic Interview + 3 Formative Evaluations</td>\n                </tr>\n                <tr>\n                  <td class=\"p-2.5 font-black text-slate-900\">Semester 2</td>\n                  <td class=\"p-2.5 font-bold text-amber-700\">AG (LV102E) + AAS (LV122E)</td>\n                  <td class=\"p-2.5\">32 Hours (−32h reduction)</td>\n                  <td class=\"p-2.5\">4-Week Immersion Course + AFIS/Ground LT</td>\n                </tr>\n                <tr>\n                  <td class=\"p-2.5 font-black text-slate-900\">Semester 3</td>\n                  <td class=\"p-2.5 font-bold text-purple-700\">AT (LV125E only — zero AG)</td>\n                  <td class=\"p-2.5\">30 Hours (−30h reduction)</td>\n                  <td class=\"p-2.5\">EASA Regulatory Documents + Official MTF Exam</td>\n                </tr>\n                <tr>\n                  <td class=\"p-2.5 font-black text-slate-900\">Semester 4</td>\n                  <td class=\"p-2.5 font-bold text-emerald-700\">AP (LVXXX only — zero AG)</td>\n                  <td class=\"p-2.5\">36 Hours (−30h reduction)</td>\n                  <td class=\"p-2.5\">Pecha Kucha Oral Defense for Internship (PFE)</td>\n                </tr>\n              </tbody>\n            </table>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 5: eCampus Delivery & Offline Architecture -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-4\" class=\"refonte-slide bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-6 hidden\">\n          <div class=\"border-b border-slate-200 pb-4 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200\">SLIDE 5 • DIGITAL INFRASTRUCTURE</span>\n              <h2 class=\"text-lg sm:text-2xl font-black text-slate-900 mt-1\">eCampus Delivery &amp; Offline Architecture</h2>\n              <p class=\"text-xs sm:text-sm text-slate-600 mt-0.5\">Eco-conceived web standards with zero cloud dependencies and 100% offline disaster recovery</p>\n            </div>\n            <span class=\"px-3 py-1 rounded-full text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200\">\n              HTML5 + Vanilla JS (100% Offline)\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-3 gap-4\">\n            <!-- eCampus Hubs & Forums -->\n            <div class=\"p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5\">\n              <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-blue-700 text-white\">CENTRALIZED PORTALS</span>\n              <h3 class=\"text-sm font-black text-slate-900\">Semester Hubs &amp; Forums</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">\n                All learning materials, worksheets, weekly schedules, and rubrics are hosted directly within unified semester hub portals.\n              </p>\n              <div class=\"text-xs text-slate-700 space-y-1.5 pt-1\">\n                <p>&bull; Retains standard institutional eCampus forums for all official announcements and teacher-student messaging.</p>\n                <p>&bull; Clear weekly roadmap eliminates student confusion across multiple disconnected links.</p>\n              </div>\n            </div>\n\n            <!-- Zero Cloud / Privacy -->\n            <div class=\"p-4 rounded-xl border border-teal-200 bg-teal-50/40 space-y-2.5\">\n              <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-teal-700 text-white\">OPEN WEB STANDARDS</span>\n              <h3 class=\"text-sm font-black text-slate-900\">Zero Cloud Dependencies</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">\n                Constructed strictly with modern HTML5, compiled CSS, and vanilla JavaScript:\n              </p>\n              <div class=\"text-xs text-slate-700 space-y-1.5 pt-1\">\n                <p>&bull; <strong>No External CDNs:</strong> Zero external script calls or font downloads.</p>\n                <p>&bull; <strong>Zero Tracking:</strong> Complete student privacy; no analytics or cookies.</p>\n                <p>&bull; <strong>Ultra-Light Footprint:</strong> Entire semester package compiles under 40 MB, drastically reducing digital carbon footprints.</p>\n              </div>\n            </div>\n\n            <!-- Offline Disaster Recovery -->\n            <div class=\"p-4 rounded-xl border border-amber-200 bg-amber-50/40 space-y-2.5\">\n              <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-amber-700 text-white\">DISASTER RECOVERY</span>\n              <h3 class=\"text-sm font-black text-slate-900\">100% Offline Resilience</h3>\n              <p class=\"text-xs text-slate-600 leading-relaxed\">\n                Immune to campus Wi-Fi interruptions, LMS outages, or server downtime:\n              </p>\n              <div class=\"text-xs text-slate-700 space-y-1.5 pt-1\">\n                <p>&bull; <strong>USB Key Plug-and-Play:</strong> The complete interactive portal runs locally from any USB drive.</p>\n                <p>&bull; <strong>Network Drive Storage:</strong> Can be stored directly on ENAC's internal <code class=\"px-1.5 py-0.2 bg-amber-100 rounded text-amber-950 font-bold\">T://</code> drive for instant teacher classroom launch during Wi-Fi failures.</p>\n              </div>\n            </div>\n          </div>\n\n          <!-- Technical Specs Strip -->\n          <div class=\"p-4 rounded-xl bg-slate-50 border border-slate-200 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs\">\n            <div>\n              <span class=\"block text-base font-black text-blue-700\">SCORM 1.2</span>\n              <span class=\"text-[10.5px] text-slate-500 font-medium\">Standard LMS Compatible</span>\n            </div>\n            <div>\n              <span class=\"block text-base font-black text-emerald-700\">Universal ISO</span>\n              <span class=\"text-[10.5px] text-slate-500 font-medium\">Windows &amp; PC Read-Only</span>\n            </div>\n            <div>\n              <span class=\"block text-base font-black text-purple-700\">Native DMG</span>\n              <span class=\"text-[10.5px] text-slate-500 font-medium\">Mac 1-Click Auto-Open</span>\n            </div>\n            <div>\n              <span class=\"block text-base font-black text-amber-700\">&lt; 40 MB</span>\n              <span class=\"text-[10.5px] text-slate-500 font-medium\">Complete Self-Contained Size</span>\n            </div>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 6: Pedagogical Philosophy & Environmental Impact -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-5\" class=\"refonte-slide bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-6 hidden\">\n          <div class=\"border-b border-slate-200 pb-4 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-900 border border-blue-200\">SLIDE 6 • PEDAGOGY &amp; SUSTAINABILITY</span>\n              <h2 class=\"text-lg sm:text-2xl font-black text-slate-900 mt-1\">Pedagogical Philosophy &amp; Environmental Impact</h2>\n              <p class=\"text-xs sm:text-sm text-slate-600 mt-0.5\">L'Approche par Compétences: Building Operational Confidence, Eliminating Exam Stress &amp; Saving Paper</p>\n            </div>\n            <span class=\"px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200\">\n              Zero-Print • Competency-Based\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-2 gap-5\">\n            <!-- Pedagogical Approach -->\n            <div class=\"p-5 rounded-xl border border-blue-200 bg-blue-50/30 space-y-3\">\n              <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-blue-700 text-white\">PEDAGOGICAL ARCHITECTURE</span>\n              <h3 class=\"text-base font-black text-slate-900\">L'Approche par Compétences (Competency-Driven)</h3>\n              <div class=\"text-xs text-slate-700 space-y-2 leading-relaxed\">\n                <p>&bull; <strong>Grounded in TSEEAC Feedback:</strong> Designed directly around operational feedback from civil aviation technicians who need spontaneous speaking confidence rather than theoretical grammar memorization.</p>\n                <p>&bull; <strong>Continuous Assessment (No Exams):</strong> Traditional high-stakes end-of-semester written exams are replaced with continuous formative evaluation (FE) in small groups or pairs.</p>\n                <p>&bull; <strong>Building Confidence:</strong> Low-anxiety environment encouraging active peer interaction, immediate constructive teacher feedback, and personal learning reflection.</p>\n                <p>&bull; <strong>Proactive Certification Success:</strong> Integrated preparation for the <strong>TOEIC</strong> (mandatory CEFR B2 benchmark) and the <strong>MTF</strong> (mandatory civil aviation graduation exam).</p>\n              </div>\n            </div>\n\n            <!-- Environmental Benefits -->\n            <div class=\"p-5 rounded-xl border border-emerald-200 bg-emerald-50/30 space-y-3\">\n              <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-emerald-700 text-white\">ENVIRONMENTAL &amp; ECO-DESIGN</span>\n              <h3 class=\"text-base font-black text-slate-900\">Environmental Benefits of our Structure</h3>\n              <div class=\"text-xs text-slate-700 space-y-2 leading-relaxed\">\n                <p>&bull; <strong>Strict No-Print Approach:</strong> Digital worksheets, auto-saving textareas, and on-screen rubrics completely eliminate physical photocopies (~2,000 pages of paper saved per promotion).</p>\n                <p>&bull; <strong>Printable PDFs Only on Demand:</strong> Clean 7-page A4 PDF worksheets are generated on demand via native PDF engines for students who genuinely require physical copies.</p>\n                <p>&bull; <strong>Ultra-Low Energy Computing:</strong> Client-side rendering requires no active server infrastructure or compute cycles, minimizing server-farm energy consumption.</p>\n                <p>&bull; <strong>Full DD&amp;RS Integration:</strong> Every module is linked to official French Higher Education ecological transition benchmarks.</p>\n              </div>\n            </div>\n          </div>\n\n          <!-- Concluding Callout -->\n          <div class=\"p-4 rounded-xl bg-slate-900 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs\">\n            <div>\n              <span class=\"font-bold text-amber-300 block mb-0.5\">Modern, Sustainable, Communicative English Education:</span>\n              A validated pedagogical platform empowering future ENAC technicians to communicate fluently, safely, and responsibly.\n            </div>\n            <div class=\"text-slate-300 font-mono text-[11px] shrink-0\">\n              ENAC LH / LAN • Phil PARRIS\n            </div>\n          </div>\n        </div>\n\n      </div>\n\n      <!-- ======================================================== -->\n      <!-- CONTINUOUS DOCUMENT VIEW (Hidden in Slide Mode) -->\n      <!-- ======================================================== -->\n      <div id=\"refonte-doc-wrapper\" class=\"space-y-6 hidden\">\n        <!-- Rendered dynamically by JavaScript -->\n      </div>\n    </div>\n  "}
+        ${"\n    <div id=\"refonte-deck-wrapper\" class=\"w-full max-w-[1350px] mx-auto space-y-4\">\n      <!-- Executive Presentation Header -->\n      <div class=\"bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-wrap items-center justify-between gap-3\">\n        <div class=\"flex items-center gap-3\">\n          <div class=\"w-10 h-10 rounded-lg bg-slate-900 flex items-center justify-center text-white shadow-xs shrink-0\">\n            <svg class=\"w-5 h-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z\"></path></svg>\n          </div>\n          <div>\n            <div class=\"flex items-center gap-2\">\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200\">Department Presentation</span>\n              <span class=\"text-xs font-bold text-slate-500\">• LH / LAN</span>\n            </div>\n            <h1 class=\"text-base sm:text-xl font-black text-slate-900 tracking-tight mt-0.5\">GSEA 2027 Refonte</h1>\n            <p class=\"text-xs text-slate-600 mt-0.5 font-medium\">Presented by <strong class=\"text-slate-800\">Phil PARRIS</strong> • Département LH / LAN • École Nationale de l'Aviation Civile</p>\n          </div>\n        </div>\n\n        <!-- Top Right: View Controls, Fullscreen & ENAC Logo -->\n        <div class=\"flex items-center gap-2.5 flex-wrap\">\n          <!-- View Mode Toggle: Slide Show vs Continuous Document -->\n          <div class=\"bg-slate-100 p-0.5 rounded-lg border border-slate-200 flex items-center gap-1 text-xs font-bold\">\n            <button id=\"refonte-btn-mode-slides\" onclick=\"window.switchRefonteView('slides')\" class=\"px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-xs flex items-center gap-1.5 font-bold\">\n              <svg class=\"w-3.5 h-3.5 text-blue-600\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z\"></path><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21 12a9 9 0 11-18 0 9 9 0 0118 0z\"></path></svg>\n              <span>Slide Show</span>\n            </button>\n            <button id=\"refonte-btn-mode-doc\" onclick=\"window.switchRefonteView('doc')\" class=\"px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900 flex items-center gap-1.5 font-bold\">\n              <svg class=\"w-3.5 h-3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z\"></path></svg>\n              <span>Document</span>\n            </button>\n          </div>\n\n          <!-- Native Fullscreen Toggle Button -->\n          <button id=\"refonte-btn-fullscreen\" onclick=\"window.toggleRefonteFullscreen()\" class=\"px-3 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 transition-all cursor-pointer flex items-center gap-1.5 font-bold text-xs shadow-xs\" title=\"Toggle Fullscreen (F)\">\n            <svg id=\"refonte-fs-icon-enter\" class=\"w-3.5 h-3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M4 8V4m0 0h4M4 4l5 5m11-5h-4m4 0v4m0-4l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4\"/></svg>\n            <svg id=\"refonte-fs-icon-exit\" class=\"w-3.5 h-3.5 hidden\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9 9L4 4m0 0v4m0-4h4m6 6l5 5m0 0v-4m0 4h-4M9 15l-5 5m0 0v-4m0 4h4m11-9l-5-5m5 5v-4m0 4h-4\"/></svg>\n            <span id=\"refonte-fullscreen-label\">Fullscreen</span>\n          </button>\n\n          <!-- ENAC Logo Top Right -->\n          <div class=\"bg-slate-900 px-3 py-1.5 rounded-lg flex items-center shadow-xs border border-slate-800 shrink-0\">\n            <img src=\"images/enac_logo_white.png\" alt=\"ENAC\" class=\"h-5 w-auto object-contain\">\n          </div>\n        </div>\n      </div>\n\n      <!-- SLIDE NAVIGATION CONTROLS (Slide Show Mode) -->\n      <div id=\"refonte-nav-bar\" class=\"bg-white border border-slate-200 rounded-xl px-4 py-2 shadow-xs flex items-center justify-between gap-3 text-xs\">\n        <div class=\"flex items-center gap-2\">\n          <button id=\"refonte-btn-prev\" onclick=\"window.prevRefonteSlide()\" class=\"px-3 py-1 rounded-lg font-bold border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 transition-all cursor-pointer flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed\">\n            <span>&larr;</span> <span>Previous</span>\n          </button>\n          <button id=\"refonte-btn-next\" onclick=\"window.nextRefonteSlide()\" class=\"px-3 py-1 rounded-lg font-bold border border-slate-800 bg-slate-900 text-white hover:bg-slate-800 shadow-xs transition-all cursor-pointer flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed\">\n            <span>Next</span> <span>&rarr;</span>\n          </button>\n        </div>\n\n        <!-- Jump Dots & Slide Counter -->\n        <div class=\"flex items-center gap-3\">\n          <div class=\"flex items-center gap-1.5\" id=\"refonte-dots-container\">\n            <!-- 6 Dots dynamically rendered -->\n          </div>\n          <span id=\"refonte-slide-counter\" class=\"font-bold text-slate-700 font-mono text-[11px] bg-slate-100 px-2.5 py-0.5 rounded border border-slate-200\">\n            Slide 1 of 6\n          </span>\n        </div>\n\n        <!-- Quick Topic Indicator & Inline Fullscreen -->\n        <div class=\"flex items-center gap-3\">\n          <span id=\"refonte-slide-topic\" class=\"hidden sm:inline font-bold text-slate-800 text-xs\">Refonte Timeline</span>\n          <button onclick=\"window.toggleRefonteFullscreen()\" class=\"px-2 py-0.5 rounded text-[11px] font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors cursor-pointer\" title=\"Toggle Fullscreen (Shortcut: F)\">\n            ⛶\n          </button>\n        </div>\n      </div>\n\n      <!-- ======================================================== -->\n      <!-- SLIDES CONTAINER (Slide Show Mode: 1 visible at a time) -->\n      <!-- ======================================================== -->\n      <div id=\"refonte-slides-wrapper\" class=\"space-y-4\">\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 1: Refonte Timeline -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-0\" class=\"refonte-slide bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4\">\n          <div class=\"border-b border-slate-100 pb-3 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200\">SLIDE 1 • ROLLOUT TIMELINE</span>\n              <h2 class=\"text-base sm:text-xl font-black text-slate-900 mt-1\">Refonte Timeline: Phased Cohort Deployment</h2>\n              <p class=\"text-xs text-slate-500 mt-0.5\">Progressive curriculum rollout across active promotions: GSEA26A and GSEA25A</p>\n            </div>\n            <span class=\"px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-800 border border-slate-200 flex items-center gap-1.5\">\n              <span class=\"w-2 h-2 rounded-full bg-emerald-500 animate-pulse\"></span>\n              2 Cohorts in Parallel\n            </span>\n          </div>\n\n          <!-- 4-Card Timeline Grid (Tightened Slate Theme) -->\n          <div class=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3\">\n            <!-- Semester 1 Card -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2 flex flex-col justify-between\">\n              <div>\n                <div class=\"flex items-center justify-between\">\n                  <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">LIVE • V1.0</span>\n                  <span class=\"text-[11px] font-semibold text-slate-500\">Autumn 2026</span>\n                </div>\n                <h3 class=\"text-sm font-black text-slate-900 mt-1.5\">Semester 1</h3>\n                <p class=\"text-xs font-bold text-slate-700\">Promotion GSEA26A</p>\n                <div class=\"text-xs text-slate-600 space-y-1 mt-1.5 leading-snug\">\n                  <p>&bull; <strong>Status:</strong> Now running in Version 1 with GSEA26A.</p>\n                  <p>&bull; <strong>Milestone:</strong> Module 1 complete (Travel &amp; Transport).</p>\n                  <p>&bull; <strong>Current Phase:</strong> Module 2 active (Climate &amp; Sustainable Cities).</p>\n                </div>\n              </div>\n              <div class=\"pt-2 border-t border-slate-200 text-[11px] font-mono font-bold text-slate-800\">\n                89 Hours (Induction + AG + AT)\n              </div>\n            </div>\n\n            <!-- Semester 2 Card -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2 flex flex-col justify-between\">\n              <div>\n                <div class=\"flex items-center justify-between\">\n                  <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-800 text-white\">SPRING 2027</span>\n                  <span class=\"text-[11px] font-semibold text-slate-500\">Scheduled</span>\n                </div>\n                <h3 class=\"text-sm font-black text-slate-900 mt-1.5\">Semester 2</h3>\n                <p class=\"text-xs font-bold text-slate-700\">Promotion GSEA26A</p>\n                <div class=\"text-xs text-slate-600 space-y-1 mt-1.5 leading-snug\">\n                  <p>&bull; <strong>Status:</strong> Will be implemented with GSEA26A in 2027.</p>\n                  <p>&bull; <strong>Key Change:</strong> Reduction of 32 classroom hours.</p>\n                  <p>&bull; <strong>Tracks:</strong> AG (16h) + AAS (16h: AFIS &amp; Ground).</p>\n                  <p>&bull; <strong>Immersion:</strong> 4-week dedicated English immersion.</p>\n                </div>\n              </div>\n              <div class=\"pt-2 border-t border-slate-200 text-[11px] font-mono font-bold text-slate-800\">\n                32 Hours Total + 4 Weeks Immersion\n              </div>\n            </div>\n\n            <!-- Semester 3 Card -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2 flex flex-col justify-between\">\n              <div>\n                <div class=\"flex items-center justify-between\">\n                  <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">LIVE</span>\n                  <span class=\"text-[11px] font-semibold text-slate-500\">2026–2027</span>\n                </div>\n                <h3 class=\"text-sm font-black text-slate-900 mt-1.5\">Semester 3</h3>\n                <p class=\"text-xs font-bold text-slate-700\">Promotion GSEA25A</p>\n                <div class=\"text-xs text-slate-600 space-y-1 mt-1.5 leading-snug\">\n                  <p>&bull; <strong>Status:</strong> Now running with GSEA25A.</p>\n                  <p>&bull; <strong>Key Change:</strong> Reduction of 30 hours (zero General English).</p>\n                  <p>&bull; <strong>Track:</strong> Technical English (AT 30h) only.</p>\n                  <p>&bull; <strong>Focus:</strong> EASA regulatory documents &amp; MTF prep.</p>\n                </div>\n              </div>\n              <div class=\"pt-2 border-t border-slate-200 text-[11px] font-mono font-bold text-slate-800\">\n                30 Hours AT + End S3 MTF Test\n              </div>\n            </div>\n\n            <!-- Semester 4 Card -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2 flex flex-col justify-between\">\n              <div>\n                <div class=\"flex items-center justify-between\">\n                  <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-700 text-white\">2027</span>\n                  <span class=\"text-[11px] font-semibold text-slate-500\">In Design</span>\n                </div>\n                <h3 class=\"text-sm font-black text-slate-900 mt-1.5\">Semester 4</h3>\n                <p class=\"text-xs font-bold text-slate-700\">Promotion GSEA25A</p>\n                <div class=\"text-xs text-slate-600 space-y-1 mt-1.5 leading-snug\">\n                  <p>&bull; <strong>Status:</strong> Will be implemented with GSEA25A in 2027.</p>\n                  <p>&bull; <strong>Key Change:</strong> Reduction of 30 hours (zero General English).</p>\n                  <p>&bull; <strong>Tracks:</strong> Professional English (AP 30h) + Pecha Kucha (6h).</p>\n                  <p>&bull; <strong>Graduation:</strong> Final internship defense &amp; exit validation.</p>\n                </div>\n              </div>\n              <div class=\"pt-2 border-t border-slate-200 text-[11px] font-mono font-bold text-slate-800\">\n                36 Hours Total (30h AP + 6h PFE)\n              </div>\n            </div>\n          </div>\n\n          <!-- Bottom Summary Box -->\n          <div class=\"p-3 rounded-lg bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 text-xs text-slate-700\">\n            <div>\n              <strong class=\"font-bold text-slate-900\">Strategic Curriculum Impact:</strong> Overall reduction of <strong>~92 classroom hours</strong> across the 2-year cycle, replacing passive lecture hours with high-density spoken workshops, continuous formative assessment, and self-directed digital study.\n            </div>\n            <span class=\"font-mono font-bold text-slate-900 bg-white px-2 py-0.5 rounded border border-slate-200 shrink-0\">\n              Total Streamlining: −92 Hours\n            </span>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 2: The New Structure — Semester 1 -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-1\" class=\"refonte-slide bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4 hidden\">\n          <div class=\"border-b border-slate-100 pb-3 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200\">SLIDE 2 • THE NEW STRUCTURE</span>\n              <h2 class=\"text-base sm:text-xl font-black text-slate-900 mt-1\">Semester 1 Architecture: Induction, AG &amp; AT</h2>\n              <p class=\"text-xs text-slate-500 mt-0.5\">Foundational semester: 89 Total Hours (21h Induction + 34h General English + 34h Technical English)</p>\n            </div>\n            <span class=\"px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-800 border border-slate-200 font-mono\">\n              S1 = AG + AT (LV101E &amp; LV121E)\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-3 gap-3\">\n            <!-- LV130 Induction -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">LV130</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">21 Hours</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Induction Course</h3>\n              <p class=\"text-xs text-slate-600 leading-snug\">Integration course establishing oral confidence and cohort rapport:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1 list-disc list-inside leading-snug\">\n                <li><strong>Cohort Introductions:</strong> Icebreaker spoken activities &amp; team-building.</li>\n                <li><strong>Core Lectures:</strong> Applied grammar, phonetics, vocabulary, and fluency.</li>\n                <li><strong>Diagnostic Interviews:</strong> 1-on-1 level testing to set personalized targets.</li>\n              </ul>\n            </div>\n\n            <!-- LV101 General English -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">LV101</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">34 Hours</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">General English (AG)</h3>\n              <p class=\"text-xs text-slate-600 leading-snug\">Communicative fluency and global societal issues across 3 modules:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1 list-disc list-inside leading-snug\">\n                <li><strong>Module Structure:</strong> 4 &times; 2-hour workshops focusing on spoken peer interaction.</li>\n                <li><strong>Topics:</strong> 1. Travel &amp; Transport; 2. Climate &amp; Cities; 3. Aviation Dilemmas.</li>\n                <li><strong>Formative Evaluation:</strong> Paired/small-group spoken tests with clear rubrics.</li>\n              </ul>\n            </div>\n\n            <!-- LV121 Technical English -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">LV121</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">34 Hours</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Technical English (AT)</h3>\n              <p class=\"text-xs text-slate-600 leading-snug\">Operational aviation fundamentals and technical communication:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1 list-disc list-inside leading-snug\">\n                <li><strong>3 Modules:</strong> 1. Aerodrome Ops; 2. Aircraft Anatomy; 3. Incident Briefings.</li>\n                <li><strong>Lesson Content:</strong> Technical diagrams, debriefs, and phraseology practice.</li>\n                <li><strong>FE Spoken Tutorials:</strong> Paired technical briefings with peer observations.</li>\n              </ul>\n            </div>\n          </div>\n\n          <!-- DD&RS Integration Banner -->\n          <div class=\"p-3 rounded-lg bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 text-xs text-slate-700\">\n            <div>\n              <strong class=\"font-bold text-slate-900\">Integral DD&amp;RS Alignment:</strong> Fully compliant with French Higher Education Sustainable Development &amp; Societal Responsibility benchmarks (Label DD&amp;RS, Axes 1–5). Topics actively integrate eco-mobility, renewable infrastructure, and carbon mitigation.\n            </div>\n            <span class=\"px-2 py-0.5 rounded bg-slate-200 text-slate-800 font-bold text-[10.5px] font-mono shrink-0\">\n              DD&amp;RS Axes 1 to 5\n            </span>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 3: The New Structure — Semester 2 -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-2\" class=\"refonte-slide bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4 hidden\">\n          <div class=\"border-b border-slate-100 pb-3 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200\">SLIDE 3 • THE NEW STRUCTURE</span>\n              <h2 class=\"text-base sm:text-xl font-black text-slate-900 mt-1\">Semester 2: Streamlining, Air Traffic &amp; Immersion</h2>\n              <p class=\"text-xs text-slate-500 mt-0.5\">Curriculum Reduction of 32 Hours: 16h General English + 16h Aviation Safety + 4-Week Immersion</p>\n            </div>\n            <span class=\"px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-800 border border-slate-200 font-mono\">\n              S2 = AG + AAS (−32h)\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-3 gap-3\">\n            <!-- LVXXX AG 16h -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">LVXXX</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">16 Hours (−18h)</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">General English (AG)</h3>\n              <p class=\"text-xs text-slate-600 leading-snug\">Streamlined format centered on global affairs and active debate:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1 list-disc list-inside leading-snug\">\n                <li><strong>1 Thematic Module:</strong> Current international events and global debate preparation.</li>\n                <li><strong>Autonomous Listening:</strong> Guided self-study listening program on eCampus.</li>\n                <li><strong>Formative Evaluation:</strong> Session 8 paired communicative speaking challenge.</li>\n              </ul>\n            </div>\n\n            <!-- LVXXX AAS 16h -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">LVXXX</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">16 Hours (−14h)</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Aviation Safety &amp; Air Traffic (AAS)</h3>\n              <p class=\"text-xs text-slate-600 leading-snug\">Introduction to Language Testing (LT) &amp; air traffic procedures:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1 list-disc list-inside leading-snug\">\n                <li><strong>2 Modules:</strong> 1. AFIS; 2. Ground Operations (ATIS, Apron control).</li>\n                <li><strong>Self-Study:</strong> Preparatory Language Training (PLT) modules on eCampus.</li>\n                <li><strong>Formative Evaluation:</strong> Session 8 simulated Language Testing assessment.</li>\n              </ul>\n            </div>\n\n            <!-- 4-Week Immersion & TOEIC -->\n            <div class=\"p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">MILESTONE</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">4 Weeks</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Immersion &amp; TOEIC Benchmark</h3>\n              <p class=\"text-xs text-slate-600 leading-snug\">Intensive homestay immersion in English-speaking destinations:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1 list-disc list-inside leading-snug\">\n                <li><strong>4-Week Homestay:</strong> 1 ENAC student per host family across certified partner cities.</li>\n                <li><strong>TOEIC Benchmark:</strong> Minimum B2 level (785 pts) required for graduation.</li>\n                <li><strong>Official Exam Window:</strong> Administered Week 1 of Semester 3 (or end of immersion). Retakes before graduation.</li>\n              </ul>\n            </div>\n          </div>\n\n          <div class=\"p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-between text-xs text-slate-700\">\n            <div>\n              <strong class=\"font-bold text-slate-900\">Pacing &amp; Efficiency:</strong> Reducing Semester 2 classroom contact by 32 hours prevents cognitive overload before students depart for the intensive 4-week immersion stay.\n            </div>\n            <span class=\"font-mono font-bold text-slate-900 bg-white px-2 py-0.5 rounded border border-slate-200 shrink-0\">\n              Net Reduction: −32 Hours\n            </span>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 4: The New Structure — Semesters 3 & 4 -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-3\" class=\"refonte-slide bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4 hidden\">\n          <div class=\"border-b border-slate-100 pb-3 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200\">SLIDE 4 • THE NEW STRUCTURE</span>\n              <h2 class=\"text-base sm:text-xl font-black text-slate-900 mt-1\">Semesters 3 &amp; 4: Specialized Technical &amp; Professional Mastery</h2>\n              <p class=\"text-xs text-slate-500 mt-0.5\">Complete Elimination of General English: Pure Technical &amp; Professional Focus (−60h Total Reduction)</p>\n            </div>\n            <span class=\"px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-800 border border-slate-200 font-mono\">\n              S3 = AT (30h) • S4 = AP (36h)\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-2 gap-3.5\">\n            <!-- Semester 3 -->\n            <div class=\"p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">SEMESTER 3 • LVXXX</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">30 Hours (−30h Reduction)</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Technical English (AT) — No General English</h3>\n              <p class=\"text-xs text-slate-600 leading-snug\">Rigorous preparation for operational document navigation and civil aviation qualification:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1.5 list-disc list-inside leading-snug\">\n                <li><strong>Module 1 • EASA Documents:</strong> Deep reading and exploitation of official European regulatory texts, CS specifications, and safety directives. Flipped peer lessons in Session 7.</li>\n                <li><strong>Module 2 • MTF Qualification Prep:</strong> Intensive exam strategy, practice drills, and mock tests for the French civil aviation qualification test.</li>\n                <li><strong>Language Testing Self-Study:</strong> Continuous self-directed listening and vocabulary on eCampus.</li>\n                <li><strong>End-of-Semester MTF Test:</strong> Mandatory qualification exam for all GSEA students; remains obligatory for diploma validation.</li>\n              </ul>\n            </div>\n\n            <!-- Semester 4 -->\n            <div class=\"p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">SEMESTER 4 • LVXXX</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">36 Hours (−30h Reduction)</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Professional English (AP) &amp; Pecha Kucha PFE</h3>\n              <p class=\"text-xs text-slate-600 leading-snug\">Final stage polishing workplace presentation skills and career-launch communications:</p>\n              <ul class=\"text-xs text-slate-700 space-y-1.5 list-disc list-inside leading-snug\">\n                <li><strong>Professional English Course (30 Hours):</strong> International workplace correspondence, cross-cultural technical leadership, and engineering negotiations. Program currently in final design.</li>\n                <li><strong>Pecha Kucha PFE Defense (6 Hours):</strong> 20 slides &times; 20 seconds fast-paced spoken defense format for the graduation end-of-studies project.</li>\n                <li><strong>Exit Qualification:</strong> Final verification of B2/C1 operational fluency before civil aviation workplace entry.</li>\n              </ul>\n            </div>\n          </div>\n\n          <!-- Track Evolution Summary -->\n          <div class=\"p-3 rounded-lg bg-slate-50 border border-slate-200 grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs\">\n            <div class=\"p-2 rounded bg-white border border-slate-200\">\n              <span class=\"text-[10px] font-bold text-slate-400 block font-mono\">SEMESTER 1</span>\n              <span class=\"font-black text-slate-800\">AG + AT</span>\n            </div>\n            <div class=\"p-2 rounded bg-white border border-slate-200\">\n              <span class=\"text-[10px] font-bold text-slate-400 block font-mono\">SEMESTER 2</span>\n              <span class=\"font-black text-slate-800\">AG + AAS</span>\n            </div>\n            <div class=\"p-2 rounded bg-white border border-slate-200\">\n              <span class=\"text-[10px] font-bold text-slate-400 block font-mono\">SEMESTER 3</span>\n              <span class=\"font-black text-slate-800\">AT Only</span>\n            </div>\n            <div class=\"p-2 rounded bg-white border border-slate-200\">\n              <span class=\"text-[10px] font-bold text-slate-400 block font-mono\">SEMESTER 4</span>\n              <span class=\"font-black text-slate-800\">AP + PFE</span>\n            </div>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 5: eCampus & Technical Architecture -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-4\" class=\"refonte-slide bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4 hidden\">\n          <div class=\"border-b border-slate-100 pb-3 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200\">SLIDE 5 • INFRASTRUCTURE &amp; RESILIENCE</span>\n              <h2 class=\"text-base sm:text-xl font-black text-slate-900 mt-1\">Digital Architecture: SCORM Hubs, eCampus &amp; Offline Portability</h2>\n              <p class=\"text-xs text-slate-500 mt-0.5\">Modern, eco-designed web platform running completely self-contained both online and offline</p>\n            </div>\n            <span class=\"px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-800 border border-slate-200 font-mono\">\n              100% Offline • Zero CDN\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-2 gap-3.5\">\n            <!-- eCampus Integration -->\n            <div class=\"p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">LMS INTEGRATION</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">Standard SCORM 1.2</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Seamless eCampus Alignment</h3>\n              <div class=\"text-xs text-slate-700 space-y-1.5 leading-snug\">\n                <p>&bull; <strong>Centralized Access:</strong> All learning modules, interactive worksheets, and multimedia dossiers are accessible directly through eCampus semester hubs.</p>\n                <p>&bull; <strong>Standard Communication Channels:</strong> Teachers and students continue using established eCampus discussion forums for weekly notices, Q&amp;A, and assignment submissions.</p>\n                <p>&bull; <strong>Lightweight Footprint:</strong> Zero database queries or dynamic server workloads; content loads instantly in any modern browser.</p>\n              </div>\n            </div>\n\n            <!-- Zero-Dependency Architecture -->\n            <div class=\"p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">OFFLINE RESILIENCE</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">Zero Server Dependencies</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Pure HTML + Vanilla JavaScript Design</h3>\n              <div class=\"text-xs text-slate-700 space-y-1.5 leading-snug\">\n                <p>&bull; <strong>Runs 100% Offline:</strong> Built with pure HTML5, Tailwind CSS, and vanilla JS. Requires zero external CDNs, API calls, or cloud servers.</p>\n                <p>&bull; <strong>Network Failure Resilience:</strong> The entire package can be stored on a simple USB key or in the ENAC internal network drive (<code class=\"bg-slate-200 px-1 py-0.5 rounded font-mono text-[10px]\">T://</code>). If campus Wi-Fi drops, teaching continues uninterrupted.</p>\n                <p>&bull; <strong>Client-Side State Storage:</strong> Student notes, vocabulary mastery states, and quiz scores persist in browser localStorage without server sync.</p>\n              </div>\n            </div>\n          </div>\n\n          <!-- Eco-Design Callout -->\n          <div class=\"p-3.5 rounded-lg bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 text-xs text-slate-700\">\n            <div>\n              <strong class=\"font-bold text-slate-900\">Eco-Designed Digital Education:</strong> Eliminates continuous streaming data loads, third-party trackers, and dynamic database hits, resulting in an exceptionally low digital carbon footprint that fully embodies ENAC's environmental transition goals.\n            </div>\n            <span class=\"px-2 py-0.5 rounded bg-white text-slate-800 font-bold border border-slate-200 font-mono text-[10.5px] shrink-0\">\n              Low-Energy IT Architecture\n            </span>\n          </div>\n        </div>\n\n        <!-- -------------------------------------------------------- -->\n        <!-- SLIDE 6: Pedagogy & Sustainability -->\n        <!-- -------------------------------------------------------- -->\n        <div id=\"refonte-slide-5\" class=\"refonte-slide bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs space-y-4 hidden\">\n          <div class=\"border-b border-slate-100 pb-3 flex flex-wrap items-center justify-between gap-2\">\n            <div>\n              <span class=\"text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200\">SLIDE 6 • PEDAGOGY &amp; SUSTAINABILITY</span>\n              <h2 class=\"text-base sm:text-xl font-black text-slate-900 mt-1\">Pedagogical Philosophy &amp; Environmental Impact</h2>\n              <p class=\"text-xs text-slate-500 mt-0.5\">L'Approche par Compétences: Building Operational Confidence, Eliminating Exam Stress &amp; Saving Paper</p>\n            </div>\n            <span class=\"px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-800 border border-slate-200 font-mono\">\n              Zero-Print • Competency-Based\n            </span>\n          </div>\n\n          <div class=\"grid grid-cols-1 md:grid-cols-2 gap-3.5\">\n            <!-- Pedagogical Approach -->\n            <div class=\"p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">PEDAGOGICAL ARCHITECTURE</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">L'Approche par Compétences</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Continuous Confidence-Building</h3>\n              <div class=\"text-xs text-slate-700 space-y-1.5 leading-snug\">\n                <p>&bull; <strong>Grounded in TSEEAC Feedback:</strong> Designed directly around operational feedback from civil aviation technicians who need spontaneous speaking confidence rather than theoretical grammar memorization.</p>\n                <p>&bull; <strong>Continuous Assessment (No Exams):</strong> Traditional high-stakes end-of-semester written exams are replaced with continuous formative evaluation (FE) in small groups or pairs.</p>\n                <p>&bull; <strong>Building Confidence:</strong> Low-anxiety environment encouraging active peer interaction, immediate constructive teacher feedback, and personal learning reflection.</p>\n                <p>&bull; <strong>Proactive Certification Success:</strong> Integrated preparation for the <strong>TOEIC</strong> (mandatory CEFR B2 benchmark) and the <strong>MTF</strong> (mandatory civil aviation graduation exam).</p>\n              </div>\n            </div>\n\n            <!-- Environmental Benefits -->\n            <div class=\"p-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2.5\">\n              <div class=\"flex items-center justify-between\">\n                <span class=\"px-2 py-0.5 rounded text-[10px] font-black bg-slate-900 text-white\">ENVIRONMENTAL IMPACT</span>\n                <span class=\"text-xs font-mono font-bold text-slate-600\">Zero-Print Practice</span>\n              </div>\n              <h3 class=\"text-sm font-black text-slate-900\">Environmental Benefits of our Structure</h3>\n              <div class=\"text-xs text-slate-700 space-y-1.5 leading-snug\">\n                <p>&bull; <strong>Strict No-Print Approach:</strong> Digital worksheets, auto-saving textareas, and on-screen rubrics completely eliminate physical photocopies (~2,000 pages of paper saved per promotion).</p>\n                <p>&bull; <strong>Printable PDFs Only on Demand:</strong> Clean 7-page A4 PDF worksheets are generated on demand via native PDF engines for students who genuinely require physical copies.</p>\n                <p>&bull; <strong>Ultra-Low Energy Computing:</strong> Client-side rendering requires no active server infrastructure or compute cycles, minimizing server-farm energy consumption.</p>\n                <p>&bull; <strong>Full DD&amp;RS Integration:</strong> Every module is linked to official French Higher Education ecological transition benchmarks.</p>\n              </div>\n            </div>\n          </div>\n\n          <!-- Concluding Callout -->\n          <div class=\"p-3.5 rounded-lg bg-slate-900 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 text-xs\">\n            <div>\n              <span class=\"font-bold text-amber-300 block mb-0.5\">Modern, Sustainable, Communicative English Education:</span>\n              A validated pedagogical platform empowering future ENAC technicians to communicate fluently, safely, and responsibly.\n            </div>\n            <div class=\"text-slate-300 font-mono text-[11px] shrink-0\">\n              ENAC LH / LAN • Phil PARRIS\n            </div>\n          </div>\n        </div>\n\n      </div>\n\n      <!-- ======================================================== -->\n      <!-- CONTINUOUS DOCUMENT VIEW (Hidden in Slide Mode) -->\n      <!-- ======================================================== -->\n      <div id=\"refonte-doc-wrapper\" class=\"space-y-4 hidden\">\n        <!-- Rendered dynamically by JavaScript -->\n      </div>\n    </div>\n  "}
       `;
 
       if (window.initRefonteDeck) {
@@ -3995,11 +3995,11 @@
 
     const __refonteSlideTopics = [
       "Refonte Timeline",
-      "The New Structure: Semester 1",
-      "The New Structure: Semester 2",
-      "The New Structure: Semesters 3 & 4",
-      "eCampus Delivery & Offline Architecture",
-      "Pedagogical Philosophy & Environmental Impact"
+      "Semester 1 Architecture",
+      "Semester 2 Streamlining",
+      "Semesters 3 & 4 Specialization",
+      "Digital Architecture & eCampus",
+      "Pedagogy & Sustainability"
     ];
 
     window.initRefonteDeck = function() {
@@ -4008,6 +4008,7 @@
       renderRefonteDots();
       window.updateRefonteSlideDisplay();
       populateRefonteDocView();
+      setupRefonteFullscreenListener();
     };
 
     function renderRefonteDots() {
@@ -4015,7 +4016,7 @@
       if (!container) return;
       let html = '';
       for (let i = 0; i < __refonteTotalSlides; i++) {
-        html += '<button onclick="window.goToRefonteSlide(' + i + ')" class="w-2.5 h-2.5 rounded-full transition-all cursor-pointer ' + (i === __refonteSlide ? 'bg-blue-600 scale-125' : 'bg-slate-300 hover:bg-slate-400') + '" title="Slide ' + (i + 1) + ': ' + __refonteSlideTopics[i] + '"></button>';
+        html += '<button onclick="window.goToRefonteSlide(' + i + ')" class="w-2.5 h-2.5 rounded-full transition-all cursor-pointer ' + (i === __refonteSlide ? 'bg-slate-900 scale-125' : 'bg-slate-300 hover:bg-slate-400') + '" title="Slide ' + (i + 1) + ': ' + __refonteSlideTopics[i] + '"></button>';
       }
       container.innerHTML = html;
     }
@@ -4032,14 +4033,12 @@
         }
       }
 
-      // Update counter & topic
       const counterEl = document.getElementById('refonte-slide-counter');
       if (counterEl) counterEl.textContent = 'Slide ' + (__refonteSlide + 1) + ' of ' + __refonteTotalSlides;
 
       const topicEl = document.getElementById('refonte-slide-topic');
       if (topicEl) topicEl.textContent = __refonteSlideTopics[__refonteSlide] || '';
 
-      // Update prev/next button states
       const prevBtn = document.getElementById('refonte-btn-prev');
       if (prevBtn) prevBtn.disabled = (__refonteSlide === 0);
 
@@ -4083,20 +4082,20 @@
         if (navBar) navBar.classList.add('hidden');
         if (docWrapper) docWrapper.classList.remove('hidden');
         if (btnDoc) {
-          btnDoc.className = "px-3 py-1.5 rounded-lg transition-all cursor-pointer bg-white text-blue-700 shadow-xs flex items-center gap-1.5 font-bold";
+          btnDoc.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-xs flex items-center gap-1.5 font-bold";
         }
         if (btnSlides) {
-          btnSlides.className = "px-3 py-1.5 rounded-lg transition-all cursor-pointer text-slate-600 hover:text-slate-900 flex items-center gap-1.5 font-bold";
+          btnSlides.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900 flex items-center gap-1.5 font-bold";
         }
       } else {
         if (slidesWrapper) slidesWrapper.classList.remove('hidden');
         if (navBar) navBar.classList.remove('hidden');
         if (docWrapper) docWrapper.classList.add('hidden');
         if (btnSlides) {
-          btnSlides.className = "px-3 py-1.5 rounded-lg transition-all cursor-pointer bg-white text-blue-700 shadow-xs flex items-center gap-1.5 font-bold";
+          btnSlides.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-xs flex items-center gap-1.5 font-bold";
         }
         if (btnDoc) {
-          btnDoc.className = "px-3 py-1.5 rounded-lg transition-all cursor-pointer text-slate-600 hover:text-slate-900 flex items-center gap-1.5 font-bold";
+          btnDoc.className = "px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900 flex items-center gap-1.5 font-bold";
         }
         window.updateRefonteSlideDisplay();
       }
@@ -4105,545 +4104,91 @@
     function populateRefonteDocView() {
       const docWrapper = document.getElementById('refonte-doc-wrapper');
       if (!docWrapper) return;
-      let html = '';
+      docWrapper.innerHTML = '';
       for (let i = 0; i < __refonteTotalSlides; i++) {
         const slide = document.getElementById('refonte-slide-' + i);
         if (slide) {
-          html += '<div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-6">' + slide.innerHTML + '</div>';
+          const clone = slide.cloneNode(true);
+          clone.id = 'refonte-doc-slide-' + i;
+          clone.classList.remove('hidden');
+          docWrapper.appendChild(clone);
         }
       }
-      docWrapper.innerHTML = html;
     }
 
-    // Global Keyboard Handler for Arrow Left / Right
+    // --- Native Fullscreen Controller ---
+    window.toggleRefonteFullscreen = function() {
+      const wrapper = document.getElementById('refonte-deck-wrapper');
+      if (!wrapper) return;
+      if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        if (wrapper.requestFullscreen) {
+          wrapper.requestFullscreen();
+        } else if (wrapper.webkitRequestFullscreen) {
+          wrapper.webkitRequestFullscreen();
+        } else if (wrapper.msRequestFullscreen) {
+          wrapper.msRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+    };
+
+    function setupRefonteFullscreenListener() {
+      const updateFsUI = () => {
+        const isFs = Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+        const label = document.getElementById('refonte-fullscreen-label');
+        const iconEnter = document.getElementById('refonte-fs-icon-enter');
+        const iconExit = document.getElementById('refonte-fs-icon-exit');
+        const wrapper = document.getElementById('refonte-deck-wrapper');
+        
+        if (label) label.textContent = isFs ? 'Exit' : 'Fullscreen';
+        if (iconEnter) iconEnter.classList.toggle('hidden', isFs);
+        if (iconExit) iconExit.classList.toggle('hidden', !isFs);
+        if (wrapper) {
+          if (isFs) {
+            wrapper.classList.add('bg-slate-100', 'p-6', 'overflow-y-auto', 'max-w-none', 'w-full', 'min-h-screen');
+          } else {
+            wrapper.classList.remove('bg-slate-100', 'p-6', 'overflow-y-auto', 'max-w-none', 'min-h-screen');
+          }
+        }
+      };
+
+      document.removeEventListener('fullscreenchange', updateFsUI);
+      document.addEventListener('fullscreenchange', updateFsUI);
+      document.removeEventListener('webkitfullscreenchange', updateFsUI);
+      document.addEventListener('webkitfullscreenchange', updateFsUI);
+    }
+
+    // Keyboard Shortcuts (Arrow keys, Space, F, Esc)
     document.addEventListener('keydown', function(e) {
       const wrapper = document.getElementById('refonte-deck-wrapper');
-      if (!wrapper || wrapper.offsetParent === null) return;
-      if (__refonteViewMode !== 'slides') return;
+      if (!wrapper) return;
+      // If typing in input, ignore
+      if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
 
+      if (e.key === 'f' || e.key === 'F') {
+        window.toggleRefonteFullscreen();
+        return;
+      }
+      if (__refonteViewMode !== 'slides') return;
       if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        e.preventDefault();
         window.nextRefonteSlide();
       } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        e.preventDefault();
         window.prevRefonteSlide();
       } else if (e.key === 'Home') {
+        e.preventDefault();
         window.goToRefonteSlide(0);
       } else if (e.key === 'End') {
+        e.preventDefault();
         window.goToRefonteSlide(__refonteTotalSlides - 1);
       }
     });
   
 
-    /* --- PORTFOLIO_SUMMARY_DATA_START --- */
-const PORTFOLIO_SUMMARY_DATA = {
-  "lastUpdated": "20 Nov 2026",
-  "totalSubmissions": 105,
-  "trackBreakdown": {
-    "at": 55,
-    "ag": 50
-  },
-  "metrics": {
-    "avgFeConfidence": "5.8",
-    "avgToeicConfidence": "8.2",
-    "targetFeLevel": "CEFR B2",
-    "feWindow": "Week 48 (FE1)"
-  },
-  "topBuzzwords": [
-    {
-      "term": "Safety vs. Security",
-      "track": "at",
-      "category": "Aviation Protection",
-      "frequency": "90% of cohort",
-      "definition": "French 'Sécurité' splits in English: Safety = protection from unintentional hazards and system failures; Security = protection against intentional threats, unlawful acts, and terrorism."
-    },
-    {
-      "term": "Airside vs. Landside",
-      "track": "at",
-      "category": "Aerodrome Zones",
-      "frequency": "85% of cohort",
-      "definition": "Landside = public areas before security (check-in, arrivals hall). Airside = strictly secured operations areas beyond security (gates, apron, taxiways, runways)."
-    },
-    {
-      "term": "Concourse vs. Bottleneck",
-      "track": "at",
-      "category": "Terminal Navigation",
-      "frequency": "75% of cohort",
-      "definition": "Concourse = large, open public hall where passengers circulate and relax. Bottleneck = narrow transit corridor or checkpoint causing localized movement congestion."
-    },
-    {
-      "term": "Dwell Time & Smart Terminals",
-      "track": "at",
-      "category": "Passenger Flow",
-      "frequency": "70% of cohort",
-      "definition": "Dwell time = elapsed time passengers spend in the terminal between security screening and boarding. Reduced via automated bag drop, e-gates, CT scanners, and facial recognition."
-    },
-    {
-      "term": "Apron / Ramp & Stands",
-      "track": "at",
-      "category": "Movement Area",
-      "frequency": "75% of cohort",
-      "definition": "The designated paved area where aircraft park at designated stands to board/deboard, refuel, load baggage, and undergo ground servicing (called 'Ramp' in the US, 'Apron' in the UK)."
-    },
-    {
-      "term": "Travel Collocations & Booking",
-      "track": "ag",
-      "category": "Travel Operations",
-      "frequency": "70% of cohort",
-      "definition": "Essential communicative collocations: to book a flight, to board a plane, to check in, to clear customs, and to travel with carry-on luggage."
-    },
-    {
-      "term": "GPU vs. APU",
-      "track": "at",
-      "category": "Electrical Power Systems",
-      "frequency": "55% of cohort",
-      "definition": "GPU (Ground Power Unit) = mobile ground generator supplying electricity at the gate. APU (Auxiliary Power Unit) = small gas turbine in the aircraft tail used when engines and GPU are off."
-    },
-    {
-      "term": "Travel Idioms (Scenic Route, Hit the Road)",
-      "track": "ag",
-      "category": "Spoken Idioms",
-      "frequency": "65% of cohort",
-      "definition": "Conversational storytelling idioms: to hit the road (depart), to take the scenic route (longer picturesque path), and to be in the driver's seat (in control)."
-    },
-    {
-      "term": "TRC & AODB",
-      "track": "at",
-      "category": "Ground Operations",
-      "frequency": "45% of cohort",
-      "definition": "TRC = Turnaround Coordinator supervising ramp tasks between flight arrival and departure. AODB = Airport Operational Database managing flight schedules, gate changes, and allocated stands."
-    },
-    {
-      "term": "Unruly / Disruptive Passenger",
-      "track": "ag",
-      "category": "Cabin Safety & Rights",
-      "frequency": "60% of cohort",
-      "definition": "A traveler who refuses to follow crew instructions or behaves disruptively, risking flight diversions, police arrest, and heavy airline costs."
-    },
-    {
-      "term": "Low-Cost Carrier (LCC) & Ancillary Revenue",
-      "track": "at",
-      "category": "Airline Economics",
-      "frequency": "40% of cohort",
-      "definition": "LCC = budget airline offering cheap baseline tickets. Ancillary Revenue = extra income from non-ticket sales (carry-on bags, seat selection, on-board meals)."
-    },
-    {
-      "term": "Get Off to a Flying Start & Word of Mouth",
-      "track": "ag",
-      "category": "High-Impact Idioms",
-      "frequency": "65% of cohort",
-      "definition": "Get off to a flying start = beginning a semester or project with immediate success and momentum. Word of mouth = organic communication from person to person."
-    },
-    {
-      "term": "Direct vs. Non-Stop Flight",
-      "track": "ag",
-      "category": "Travel Operations",
-      "frequency": "45% of cohort",
-      "definition": "Direct flight = keeps the same single flight number but may include intermediate tech stops. Non-stop flight = flies between origin and destination with zero stops."
-    },
-    {
-      "term": "Overbooked Flight & Denied Boarding",
-      "track": "ag",
-      "category": "Airline Regulations",
-      "frequency": "50% of cohort",
-      "definition": "When an airline sells more tickets than available seats in anticipation of no-shows, risking involuntary denied boarding and statutory compensation obligations."
-    },
-    {
-      "term": "Ground Support Equipment (GSE)",
-      "track": "at",
-      "category": "Ramp Operations",
-      "frequency": "65% of cohort",
-      "definition": "Specialized ground vehicle fleet servicing aircraft at the stand: pushback tugs, belt loaders, catering hi-lift trucks, lavatory service units, potable water trucks, and refueler bowsers."
-    },
-    {
-      "term": "Turnaround Time (TAT) & Chocks On/Off",
-      "track": "at",
-      "category": "Ground Operations",
-      "frequency": "60% of cohort",
-      "definition": "Turnaround Time (TAT) = total duration an aircraft remains at the gate between arrival (chocks on) and departure (chocks off) for unloading, servicing, refueling, and boarding."
-    },
-    {
-      "term": "De-icing Rig & Glycol Fluid",
-      "track": "at",
-      "category": "Cold Weather Operations",
-      "frequency": "50% of cohort",
-      "definition": "Specialized mobile boom rig spraying heated glycol fluid to remove snow/frost and prevent critical aerofoil icing before departure."
-    },
-    {
-      "term": "Overtourism & Carrying Capacity",
-      "track": "ag",
-      "category": "Destination Management",
-      "frequency": "65% of cohort",
-      "definition": "When visitor numbers exceed an ecosystem's or historic site's physical, ecological, or social carrying capacity, causing environmental damage and resident backlash."
-    },
-    {
-      "term": "Visitor Dispersal & Tourist Levies",
-      "track": "ag",
-      "category": "Policy & Sustainability",
-      "frequency": "55% of cohort",
-      "definition": "Strategic destination management: de-marketing over-visited hotspots, redirecting visitor flows to lesser-known regions, and charging targeted day-tripper entry taxes (e.g. Venice)."
-    },
-    {
-      "term": "Modal Shift & Decarbonization",
-      "track": "ag",
-      "category": "Environmental Economics",
-      "frequency": "50% of cohort",
-      "definition": "Encouraging passengers to switch from carbon-intensive short-haul flights to electrified high-speed rail networks, decoupling economic tourism growth from environmental impact."
-    }
-  ],
-  "grammarTrapsCaught": [
-    {
-      "title": "🛡️ Safety vs. Security in English",
-      "track": "at",
-      "rule": "French 'Sécurité' splits into two distinct operational English terms. Never confuse them: 'Safety' prevents unintentional accidents and hazards; 'Security' protects against intentional human threats and attacks.",
-      "correctExample": "✅ \"Aviation safety deals with bird strikes and de-icing; aviation security handles passenger screening, CT scanners, and hijackings.\""
-    },
-    {
-      "title": "❌ 'Luggages' and 'Trainings' do NOT exist!",
-      "track": "ag",
-      "rule": "Both 'luggage' and 'training' are uncountable nouns in English. Never add an 's'. Use 'pieces of luggage' or 'training courses'.",
-      "correctExample": "✅ \"We checked three pieces of luggage and completed our training course on ramp safety.\""
-    },
-    {
-      "title": "📍 Spatial Prepositions: At vs. In vs. On vs. Through",
-      "track": "all",
-      "rule": "Use 'at' for specific nodes and facilities (at the gate, at the checkpoint), 'in' for enclosed spaces (in the concourse, in the cabin), 'on' for pavement surfaces (on the apron, on Runway 14L), and 'through/along' for movement.",
-      "correctExample": "✅ \"Passengers wait in the concourse, board at gate 12, walk along the jet bridge, while the aircraft holds on taxiway Bravo.\""
-    },
-    {
-      "title": "🗣️ Pronunciation Trap: Alternate (Verb vs. Noun)",
-      "track": "at",
-      "rule": "Word stress changes with grammatical function: the verb 'to alternate' is stressed /ˈɔːl.tər.neɪt/, but the noun/adjective 'an alternate airport' is pronounced /ɔːlˈtɜː.nət/.",
-      "correctExample": "✅ \"If weather drops below minimums at Toulouse, the captain will divert to an alternate airport.\""
-    },
-    {
-      "title": "🗣️ Pronunciation Trap: Itinerary",
-      "track": "ag",
-      "rule": "Multiple students flagged pronunciation difficulty with 'itinerary'. Stress is on the second syllable: /aɪˈtɪn.ər.ər.i/ (eye-TIN-er-uh-ree).",
-      "correctExample": "✅ \"Could you please confirm our flight itinerary before we head to the boarding gate?\""
-    },
-    {
-      "title": "⏱️ Reported Speech Backshift & Time References",
-      "track": "ag",
-      "rule": "When reporting past dialogue, tenses shift back (present -> past, past -> past perfect; will -> would), and time adverbs shift ('today' -> 'that day', 'yesterday' -> 'the day before', 'tomorrow' -> 'the following day').",
-      "correctExample": "✅ \"He said he was running on empty that day and would take the train the following morning.\""
-    },
-    {
-      "title": "⚙️ Causative Verbs: Make vs. Have vs. Get vs. Require",
-      "track": "ag",
-      "rule": "When causing or assigning an action: 'make + person + bare infinitive' (compulsory requirement), 'have + person + bare infinitive' (standard task assignment), 'get + person + TO infinitive' (persuasion), and 'require + person + TO infinitive' (official policy).",
-      "correctExample": "✅ \"The port authority made cruise lines cap passenger numbers, and got local operators to stagger their excursions.\""
-    },
-    {
-      "title": "⏱️ Past Simple vs. Present Perfect in Operational Reports",
-      "track": "at",
-      "rule": "Use Past Simple for completed past events at a specific time ('the flight landed at 14:15'); use Present Perfect when the completed event has a direct operational result on current apron status ('the aircraft has landed, so the pushback tug can connect').",
-      "correctExample": "✅ \"The refueler has finished servicing the aircraft, so the ground crew can remove the chocks.\""
-    }
-  ],
-  "cohortReflections": {
-    "strengths": [
-      "Cumulative Operational Vocabulary: Fast command of aerodrome zones, ground support equipment (GSE), and turnaround sequencing (TAT, chocks on/off).",
-      "Policy & Scenario Debating: Confident presentation of sustainable tourism solutions, visitor caps, and passenger rights in structured pair discussions.",
-      "Grammatical Precision: Rapid adoption of reported speech backshifting and causative sentence structures."
-    ],
-    "growthAreas": [
-      "Spoken Fluency Under Time Pressure: Reducing hesitation and sentence-building delays during fast-paced pair simulations and debates.",
-      "Spatial Preposition Automaticity: Consolidating 'at' (nodes), 'in' (enclosed spaces), and 'on' (apron/taxiways/runways) without hesitation.",
-      "Phonetics & Word Stress: Drilling multi-syllable terms ('itinerary', 'alternate', 'carrying capacity', 'de-icing') to eliminate French false-stress patterns."
-    ],
-    "feAdvice": "Students unanimously report that knowing exact technical equipment (pushback tug, belt loader, GPU) and spatial zones (airside, concourse, apron, stands), paired with linking expressions for polite disagreement ('while I see your point, we must consider...'), gives immediate fluency and authority during the 30-minute Formative Evaluation."
-  },
-  "verbatimQuotes": [
-    {
-      "track": "at",
-      "session": "Mod 1 • Session 1",
-      "topic": "Infrastructure & Presentation Readiness",
-      "quote": "Knowing the different geographical parts of an airport, as well as the jobs, will be very important in the airport presentation. The oral presentation won't be possible without being able to name the different parts.",
-      "takeaway": "Mastering aerodrome spatial vocabulary is non-negotiable for FE1."
-    },
-    {
-      "track": "ag",
-      "session": "Mod 1 • Session 1",
-      "topic": "Spoken Fluency & Hesitation",
-      "quote": "My main problem is fluency because I am always looking for a word when talking to someone. I also need some time to build my sentences, so I think that I have to talk as much as possible to improve on these points.",
-      "takeaway": "Regular communicative pairwork reduces hesitation and builds sentence speed."
-    },
-    {
-      "track": "at",
-      "session": "Mod 1 • Session 2",
-      "topic": "Safety vs. Security & Spatial Prepositions",
-      "quote": "We talked mostly about security and safety and I was surprised to discover the difference with the French words since 'Sécurité' doesn't mean 'Security' but 'Safety'. Today we also talked about prepositions: 'in' when it's in an enclosed space, 'at' when it's a specific location, and 'on' when it's on a surface.",
-      "takeaway": "Mastering the Safety/Security distinction and spatial prepositions prevents operational ambiguity."
-    },
-    {
-      "track": "ag",
-      "session": "Mod 1 • Session 2",
-      "topic": "Customer Scenarios & Reported Speech",
-      "quote": "Communicative skills, arguments and vocabulary explored in this session will all help me to improve my AG formative evaluation by giving me tools to speak about stressful passenger situations and structure my thoughts with accurate reported speech.",
-      "takeaway": "Practicing passenger mediation scenarios prepares directly for FE1 interactive roleplays."
-    },
-    {
-      "track": "at",
-      "session": "Mod 1 • Session 3",
-      "topic": "Turnaround Operations & Ground Support Equipment",
-      "quote": "Learning technical vocabulary like pushback tugs, belt loaders, and glycol de-icing rigs, and recreating turnaround incident scenarios puts us in a realistic operational situation and allows us to memorize terms much more easily than traditional lists.",
-      "takeaway": "Ground support equipment and turnaround sequencing turn abstract terms into fluent spoken descriptions."
-    },
-    {
-      "track": "at",
-      "session": "Mod 1 • Session 3",
-      "topic": "Tense Selection in Technical Incident Reporting",
-      "quote": "In this lesson we focused on the difference between past simple and present perfect: past simple when an action happened at a specific completed time, and present perfect when the event has a direct operational result on the present moment ('the plane has landed, so passengers can disembark').",
-      "takeaway": "Precise tense distinction ensures clear cause-and-effect incident reporting."
-    },
-    {
-      "track": "ag",
-      "session": "Mod 1 • Session 3",
-      "topic": "Debating Overtourism & Fragile Sites",
-      "quote": "Today's session was a good training for the formative evaluation due to the debates we held on overtourism, tourist taxes, and visitor dispersal. It was a great occasion to use well-built sentences, defend a position, and practice polite disagreement.",
-      "takeaway": "Policy debates build fluency, active listening, and persuasive speaking under time pressure."
-    },
-    {
-      "track": "ag",
-      "session": "Mod 1 • Session 3",
-      "topic": "Paraphrasing Under Time Pressure",
-      "quote": "The overtourism and crisis-management activities were particularly useful because they required us to consider different perspectives and suggest realistic solutions. I want to improve my paraphrasing speed under time pressure so I don't pause when searching for expressions.",
-      "takeaway": "Fast paraphrasing and structured linking expressions prevent mid-sentence hesitation."
-    }
-  ]
-};
-/* --- PORTFOLIO_SUMMARY_DATA_END --- */
-
-    let currentPortfolioTrackFilter = 'all';
-
-    window.setPortfolioTrackFilter = function(filter) {
-      currentPortfolioTrackFilter = filter;
-      const theme = (typeof modulesData !== 'undefined' && modulesData[0]) || { primary: '#0f172a', accent: '#3b82f6' };
-      renderPortfolioSummaryTab(theme);
-    };
-
-    function renderPortfolioSummaryTab(theme) {
-      const bodyEl = document.getElementById('modal-body');
-      if (!bodyEl) return;
-      const data = (typeof PORTFOLIO_SUMMARY_DATA !== 'undefined' && PORTFOLIO_SUMMARY_DATA) ? PORTFOLIO_SUMMARY_DATA : null;
-
-      if (!data) {
-        bodyEl.innerHTML = `
-          <div class="p-8 text-center text-slate-500 bg-white rounded-2xl border border-slate-200">
-            <span class="text-3xl block mb-2">📊</span>
-            <h4 class="font-bold text-slate-800 text-sm">Portfolio Summary Pending</h4>
-            <p class="text-xs text-slate-500 mt-1">Student submissions are being collected. The cohort summary will appear here shortly.</p>
-          </div>
-        `;
-        return;
-      }
-
-      const activeFilter = currentPortfolioTrackFilter || 'all';
-
-      // Anti-bloat curated filtering by track
-      const filteredBuzzwords = (data.topBuzzwords || []).filter(b => {
-        if (activeFilter === 'all') return true;
-        return (b.track || '').toLowerCase() === activeFilter.toLowerCase();
-      });
-
-      const filteredTraps = (data.grammarTrapsCaught || []).filter(gt => {
-        if (activeFilter === 'all') return true;
-        return (gt.track || '').toLowerCase() === activeFilter.toLowerCase();
-      });
-
-      const filteredQuotes = (data.verbatimQuotes || []).filter(q => {
-        if (activeFilter === 'all') return true;
-        return (q.track || '').toLowerCase() === activeFilter.toLowerCase();
-      });
-
-      bodyEl.innerHTML = `
-        <div class="space-y-5">
-          <!-- Top Header Banner -->
-          <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div class="flex items-center gap-3.5">
-              <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl" style="background-color: ${theme.primary};">
-                <span>📊</span>
-              </div>
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">COHORT PULSE</span>
-                  <h3 class="text-base sm:text-lg font-extrabold text-slate-900">What Everyone is Talking About</h3>
-                </div>
-                <p class="text-xs text-slate-500 mt-0.5">High-yield study highlights synthesized from your digital Learning Portfolios • Last updated: ${data.lastUpdated}</p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-2 shrink-0 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl">
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span class="text-xs font-bold text-slate-700">Curated Peer Highlights</span>
-            </div>
-          </div>
-
-          <!-- Track Filter Segmented Control Bar (Zero mobile clutter, single 36px bar) -->
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-2.5 p-2 bg-slate-100 rounded-xl border border-slate-200">
-            <div class="flex items-center gap-2 self-start sm:self-auto px-1">
-              <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Viewing:</span>
-              <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border ${activeFilter === 'at' ? 'bg-emerald-50 text-emerald-800 border-emerald-300' : (activeFilter === 'ag' ? 'bg-indigo-50 text-indigo-800 border-indigo-300' : 'bg-white text-slate-800 border-slate-300')}">
-                ${activeFilter === 'all' ? '🌐 All Tracks Combined' : (activeFilter === 'at' ? '✈️ LV121E Technical English (AT)' : '🗣️ LV101E General English (AG)')}
-              </span>
-            </div>
-            <div class="w-full sm:w-auto grid grid-cols-3 gap-1 bg-slate-200/90 p-1 rounded-lg text-xs font-bold">
-              <button onclick="window.setPortfolioTrackFilter('all')" class="py-1.5 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'all' ? 'bg-white text-slate-900 shadow-xs font-black' : 'text-slate-600 hover:text-slate-900 hover:bg-white/40'}">
-                🌐 All Tracks
-              </button>
-              <button onclick="window.setPortfolioTrackFilter('at')" class="py-1.5 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'at' ? 'bg-emerald-600 text-white shadow-xs font-black' : 'text-slate-600 hover:text-emerald-800 hover:bg-white/40'}">
-                ✈️ AT Technical
-              </button>
-              <button onclick="window.setPortfolioTrackFilter('ag')" class="py-1.5 px-3 rounded-md transition-all cursor-pointer text-center ${activeFilter === 'ag' ? 'bg-indigo-600 text-white shadow-xs font-black' : 'text-slate-600 hover:text-indigo-800 hover:bg-white/40'}">
-                🗣️ AG General
-              </button>
-            </div>
-          </div>
-
-          <!-- Section 1: Top Emerging Keywords & Concepts -->
-          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded-md bg-blue-600 text-white flex items-center justify-center font-bold text-xs">1</span>
-                <h4 class="font-bold text-slate-900 text-sm">Top Emerging Keywords &amp; Technical Distinctions (${filteredBuzzwords.length})</h4>
-              </div>
-              <span class="text-[10px] font-mono uppercase bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-bold">Curated Summary</span>
-            </div>
-
-            ${filteredBuzzwords.length === 0 ? `
-              <p class="text-xs text-slate-500 py-4 text-center">No keywords logged for this specific filter yet.</p>
-            ` : `
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                ${filteredBuzzwords.map(b => `
-                  <div class="p-3.5 rounded-xl bg-slate-50/70 border border-slate-200 space-y-2 flex flex-col justify-between hover:bg-slate-50 transition-all">
-                    <div>
-                      <div class="flex items-center justify-between gap-2 border-b border-slate-200/60 pb-1.5">
-                        <div class="flex items-center gap-1.5 flex-wrap">
-                          <span class="font-bold text-xs text-slate-900">${b.term}</span>
-                          ${b.track === 'at'
-                            ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 shrink-0">✈️ AT</span>'
-                            : '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-indigo-100 text-indigo-800 border border-indigo-200 shrink-0">🗣️ AG</span>'}
-                        </div>
-                        <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white text-indigo-700 border border-indigo-200 shrink-0">${b.frequency}</span>
-                      </div>
-                      <span class="text-[10px] uppercase font-bold text-slate-400 block mt-1">${b.category}</span>
-                      <p class="text-[11.5px] text-slate-700 leading-relaxed mt-1">${b.definition}</p>
-                    </div>
-                  </div>
-                `).join('')}
-              </div>
-            `}
-          </div>
-
-          <!-- Section 2: Golden Rules & Common Grammar Traps -->
-          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded-md bg-rose-600 text-white flex items-center justify-center font-bold text-xs">2</span>
-                <h4 class="font-bold text-slate-900 text-sm">Golden Language Rules &amp; Pitfalls Caught by the Cohort (${filteredTraps.length})</h4>
-              </div>
-              <span class="text-[10px] font-mono uppercase bg-rose-50 text-rose-700 px-2 py-0.5 rounded font-bold">Self-Correction</span>
-            </div>
-
-            ${filteredTraps.length === 0 ? `
-              <p class="text-xs text-slate-500 py-4 text-center">No grammar traps logged for this specific filter yet.</p>
-            ` : `
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                ${filteredTraps.map(gt => `
-                  <div class="p-3.5 rounded-xl bg-rose-50/40 border border-rose-200 space-y-2 flex flex-col justify-between">
-                    <div>
-                      <div class="flex items-center justify-between gap-2 mb-1">
-                        <h5 class="text-xs font-bold text-rose-950">${gt.title}</h5>
-                        ${gt.track === 'at'
-                          ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 shrink-0">✈️ AT</span>'
-                          : '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-indigo-100 text-indigo-800 border border-indigo-200 shrink-0">🗣️ AG</span>'}
-                      </div>
-                      <p class="text-[11px] text-slate-700 mt-1 leading-relaxed">${gt.rule}</p>
-                    </div>
-                    <div class="p-2.5 rounded-lg bg-white border border-rose-200/80 text-[11px] text-slate-800 whitespace-pre-line leading-relaxed">
-                      ${gt.correctExample}
-                    </div>
-                  </div>
-                `).join('')}
-              </div>
-            `}
-          </div>
-
-          <!-- Section 3: Honest Peer Reflections (You Are Not Alone!) -->
-          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded-md bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">3</span>
-                <h4 class="font-bold text-slate-900 text-sm">Honest Reflections &amp; How to Ace Formative Evaluation 1</h4>
-              </div>
-              <span class="text-[10px] font-mono uppercase bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded font-bold">Peer Voice</span>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
-                <h5 class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <span>🗣️</span>
-                  <span>Common Speaking Challenges (You Are Not Alone!)</span>
-                </h5>
-                <ul class="space-y-1.5 pl-4 list-disc text-slate-600 text-[11.5px] leading-relaxed">
-                  ${(data.cohortReflections.growthAreas || []).map(ga => `<li>${ga}</li>`).join('')}
-                </ul>
-              </div>
-
-              <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200 space-y-2">
-                <h5 class="font-bold text-amber-950 flex items-center gap-1.5">
-                  <span>🎯</span>
-                  <span>Direct Link to the FE1 Oral Presentation</span>
-                </h5>
-                <p class="text-[11.5px] text-amber-900 leading-relaxed">
-                  ${data.cohortReflections.feAdvice}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section 4: Authentic Cohort Voices (Verbatim Student Reflections) -->
-          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
-            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded-md bg-purple-600 text-white flex items-center justify-center font-bold text-xs">4</span>
-                <h4 class="font-bold text-slate-900 text-sm">Authentic Cohort Voices — What Your Peers Are Really Saying (${filteredQuotes.length})</h4>
-              </div>
-              <span class="text-[10px] font-mono uppercase bg-purple-50 text-purple-700 px-2 py-0.5 rounded font-bold">Verbatim Feedback</span>
-            </div>
-
-            ${filteredQuotes.length === 0 ? `
-              <p class="text-xs text-slate-500 py-4 text-center">No student quotes logged for this specific filter yet.</p>
-            ` : `
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                ${filteredQuotes.map(q => `
-                  <div class="p-4 rounded-xl bg-purple-50/40 border border-purple-200/80 space-y-2.5 flex flex-col justify-between hover:bg-purple-50/70 transition-all shadow-2xs">
-                    <div class="space-y-2">
-                      <div class="flex items-center justify-between gap-2 border-b border-purple-200/60 pb-1.5">
-                        <div class="flex items-center gap-1.5 flex-wrap">
-                          <span class="text-[10.5px] font-bold text-purple-950 uppercase tracking-wide">${q.topic || 'Reflection'}</span>
-                          ${q.track === 'at'
-                            ? '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 shrink-0">✈️ AT</span>'
-                            : '<span class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-indigo-100 text-indigo-800 border border-indigo-200 shrink-0">🗣️ AG</span>'}
-                        </div>
-                        <span class="text-[10px] font-mono text-slate-400 font-bold">${q.session || 'Module 1'}</span>
-                      </div>
-                      <p class="text-[12px] italic text-slate-800 leading-relaxed pt-0.5">
-                        "${q.quote}"
-                      </p>
-                    </div>
-                    <div class="flex items-center justify-between pt-1 border-t border-purple-100 text-[10px] text-slate-500 font-medium">
-                      <span class="text-purple-900 font-semibold truncate pr-2">💡 ${q.takeaway || 'Key Takeaway'}</span>
-                      <span class="font-mono text-purple-700 font-bold shrink-0">Anonymous Peer Log</span>
-                    </div>
-                  </div>
-                `).join('')}
-              </div>
-            `}
-          </div>
-        </div>
-      `;
-    }
-
-
-
-
+    window.renderAdminRefonteTab = renderAdminRefonteTab;
