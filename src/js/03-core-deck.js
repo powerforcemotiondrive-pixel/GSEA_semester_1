@@ -1770,7 +1770,7 @@
       const tabContent = document.getElementById('modal-tab-content');
       const standardTabs = document.querySelectorAll('.modal-tab-standard');
 
-      if (tabContent) tabContent.classList.remove('hidden');
+      if (tabContent) tabContent.classList.add('hidden');
 
       if (isObjectivesSession) {
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
