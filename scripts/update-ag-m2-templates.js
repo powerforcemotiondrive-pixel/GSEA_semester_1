@@ -1,38 +1,23 @@
-/**
- * Update script for src/js/06-templates-ag2.js
- * Updates renderAg2LessonContentTabSession1 and renderAg2LessonContentTabSession2
- * with canonical PDF links, auto-saving textareas, zero timings, and varied activities.
- */
-
 const fs = require('fs');
 const path = require('path');
 
-const templatePath = path.join(__dirname, '..', 'src', 'js', '06-templates-ag2.js');
-let fileContent = fs.readFileSync(templatePath, 'utf8');
+const filePath = path.join(__dirname, '..', 'src', 'js', '06-templates-ag2.js');
+let source = fs.readFileSync(filePath, 'utf8');
 
-const fn1Start = fileContent.indexOf("function renderAg2LessonContentTabSession1");
-const fn2Start = fileContent.indexOf("function renderAg2LessonContentTabSession2");
-const fn3Start = fileContent.indexOf("function renderAg2LessonContentTabSession3");
-
-if (fn1Start === -1 || fn2Start === -1 || fn3Start === -1) {
-  console.error("Could not find function markers in 06-templates-ag2.js");
-  process.exit(1);
-}
-
-// Function 1 Implementation
-const fn1Code = `function renderAg2LessonContentTabSession1(sessionData, theme) {
+const s1Code = `    function renderAg2LessonContentTabSession1(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
       const ov = content.overview || content.hero || {};
       const opening = content.openingSession || {};
-      const videoLab = content.videoLab || {};
+      const visual = content.visualDebate || {};
       const grammar = content.grammarClinic || {};
-      const research = content.researchPitch || {};
+      const task = content.decisionTask || {};
       const taboo = content.vocabGame || {};
-      const debate = content.debate || {};
+      const debate = content.townHallDebate || {};
 
       const savedNote = (typeof window !== 'undefined' && window.loadLessonNote) ? window.loadLessonNote('s1_m2_ag_s1_notes') : '';
+      const savedVerdict = (typeof window !== 'undefined' && window.loadLessonNote) ? window.loadLessonNote('ag_s1_debate_verdict') : '';
 
       bodyEl.innerHTML = \`
         <div class="space-y-6 printable-lesson-container">
@@ -56,369 +41,348 @@ const fn1Code = `function renderAg2LessonContentTabSession1(sessionData, theme) 
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative bg-slate-900">
               <img src="\${ov.image || 'images/ag_m2card1.jpg'}" alt="\${ov.title || 'Extreme Weather'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/ag_m2card1.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">\${ov.badge || 'Session Overview • Extreme Weather & Atmospheric Hazards'}</span>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">\${ov.badge || 'Session 01 • Communicative General English'}</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">\${ov.title || 'Extreme Weather & Atmospheric Hazards'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">\${ov.subtitle || 'Convective Microbursts, Runaway Surface Heating & Aerodrome Severe Weather Protocols'}</p>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">\${ov.subtitle || 'Climate Change, Extreme Weather & Community Resilience'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded">CEFR B2</span>
-                <span class="text-slate-400">&bull;</span>
-                <span class="font-bold text-slate-800">Context:</span>
-                <span class="text-slate-600">Aviation Meteorology & Aerodrome Operations</span>
+                <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-bold">\${ov.targetLevel || 'CEFR B1/B2'}</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-800">Key Themes:</span>
+                <span class="text-slate-700">Climate Resilience • Spoken Fluency • Photo Debate • Taboo</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">DD&RS Alignment:</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold">Axe 2 &amp; Axe 5</span>
               </div>
             </div>
           </div>
 
-          \${typeof renderSessionBriefingBanner === 'function' ? renderSessionBriefingBanner(sessionData, theme) : ''}
-
-          <!-- Personal Notes Auto-Save Card -->
-          <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
-                <h4 class="text-xs sm:text-sm font-bold text-slate-800">Session 1 Personal Study & Speaking Notes</h4>
+          <!-- Part 1: Warm-up & Personal Weather Stories -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 1</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${opening.title || 'Warm-up & Personal Storytelling'}</h4>
               </div>
-              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider">Auto-Saved Locally</span>
+              <span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Pair Interaction</span>
             </div>
-            <textarea id="lesson-note-s1-m2-ag-s1" oninput="window.saveLessonNote && window.saveLessonNote('s1_m2_ag_s1_notes', this.value)" placeholder="Type your personal observations, severe weather vocabulary reflections, and speaking notes here..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-amber-400 focus:outline-none transition-all leading-relaxed">\${savedNote}</textarea>
-          </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${opening.headline || 'Think about the most extreme weather event you have personally experienced or witnessed in the news. Share your story with a partner.'}</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+              <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg space-y-2">
+                <h5 class="text-xs font-bold text-amber-900 flex items-center gap-1.5">
+                  <span>💬</span> Key Discussion Prompts
+                </h5>
+                <ul class="text-xs text-amber-950 space-y-1.5 list-disc list-inside">
+                  \${(opening.prompts || [
+                    "What happened and how did people react?",
+                    "Did public transport, flights, or electricity get cut off?",
+                    "Do you think extreme weather events are becoming more frequent?"
+                  ]).map(p => \`<li>\${p}</li>\`).join('')}
+                </ul>
+              </div>
 
-          <!-- Part 1: Extreme Weather News & Meteorological Diagnostic -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 1</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${opening.title || 'Part 1: Extreme Weather News & Meteorological Diagnostic'}</h4>
-                  <p class="text-[11px] text-slate-500">\${opening.summary || ''}</p>
+              <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-lg space-y-2">
+                <h5 class="text-xs font-bold text-blue-900 flex items-center gap-1.5">
+                  <span>🗣️</span> Sentence Starters for Storytelling
+                </h5>
+                <div class="space-y-1 text-xs text-blue-950">
+                  \${(opening.sentenceStarters || [
+                    "A few years ago, I remember experiencing...",
+                    "What struck me most was how quickly...",
+                    "The local community was completely unprepared for..."
+                  ]).map(s => \`<div class="italic">" \${s} "</div>\`).join('')}
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 font-mono">Opening Diagnostic</span>
             </div>
+          </div>
 
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(opening, theme) : ''}
-
-            <!-- News Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Severe Climate Headlines & Global Meteorological Bulletins</h5>
+          <!-- Part 2: 4-Photo Visual Description & Debate Lab -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 2</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${visual.title || '4-Photo Visual Description & Debate Lab'}</h4>
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
-                \${(opening.newsPrompts || []).map(p => \`<li>\${p}</li>\`).join('')}
-              </ul>
+              <span class="text-[11px] font-semibold text-amber-600 font-bold uppercase tracking-wide">Photo Comparison</span>
             </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${visual.subtitle || 'Work in pairs. Study the four contrasting scenes below. Describe what you see, identify the underlying environmental drivers, and debate the questions with your partner.'}</p>
 
-            <!-- Diagnostic Questions Grid with Sentence Stems (Rule 1.V) -->
-            <div class="space-y-3 pt-1">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">\${(opening.diagnostic && opening.diagnostic.title) || 'Meteorological Concepts Diagnostic Check'}</h5>
-                <span class="text-[11px] text-slate-500">\${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
-              </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                \${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => \`
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
+            <!-- 2x2 Photo Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+              \${(visual.photos || []).map((photo, pIdx) => \`
+                <div class="flex flex-col bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs hover:border-slate-300 transition-all">
+                  <div class="relative bg-slate-900 h-44 overflow-hidden group">
+                    <img src="\${(photo.file || photo.src || "images/ag_m2card1.jpg")}" alt="\${photo.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='images/ag_m2card1.jpg'">
+                    <div class="absolute top-2.5 left-2.5 bg-black/70 backdrop-blur-xs text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs">
+                      PHOTO \${photo.id || (pIdx + 1)}
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[9.5px] px-1.5 py-0.5 rounded">
+                      \${photo.location || ''}
+                    </div>
+                  </div>
+                  <div class="p-3.5 space-y-2.5 flex-1 flex flex-col justify-between">
                     <div>
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 font-mono">Distinction 0\${q.id}</span>
-                        <span class="w-2 h-2 rounded-full" style="background-color: \${theme.primary};"></span>
-                      </div>
-                      <p class="text-xs font-bold text-slate-900 mt-1">\${q.q}</p>
-                      \${q.prompt ? \`
-                        <div class="mt-2 p-2 bg-blue-50/80 border border-blue-200 rounded-lg text-[11px] text-blue-900 font-medium">
-                          <span class="font-bold text-blue-700">Sentence Stem:</span> "\${q.prompt}"
-                        </div>
-                      \` : ''}
+                      <h5 class="text-xs sm:text-sm font-bold text-slate-900">\${photo.title}</h5>
+                      <p class="text-xs text-slate-600 mt-1 leading-relaxed">\${(photo.scene || photo.caption || "")}</p>
                     </div>
-                    <div class="space-y-2 pt-1">
-                      <div id="ag2-spotcheck-ans-1-\${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs">
-                        \${q.answer}
+                    <div class="pt-2 border-t border-slate-200/80 space-y-1.5 text-[11.5px]">
+                      <div class="font-bold text-slate-700 flex items-center gap-1">
+                        <span>🔍</span> Guided Discussion Question:
                       </div>
-                      <button type="button" onclick="document.getElementById('ag2-spotcheck-ans-1-\${q.id}').classList.toggle('hidden'); this.textContent = document.getElementById('ag2-spotcheck-ans-1-\${q.id}').classList.contains('hidden') ? 'Reveal Model Answer' : 'Hide Answer';" class="w-full py-1.5 px-3 rounded-lg text-[11px] font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-300 shadow-2xs transition-all cursor-pointer">
-                        Reveal Model Answer
-                      </button>
+                      <p class="text-blue-900 font-medium italic bg-blue-50/80 p-2 rounded border border-blue-200/60 leading-snug">
+                        \${photo.debateQ || photo.question || 'How should cities adapt to prevent this catastrophe?'}
+                      </p>
                     </div>
                   </div>
-                \`).join('')}
+                </div>
+              \`).join('')}
+            </div>
+
+            <!-- Useful Language for Photo Comparison -->
+            <div class="p-3.5 bg-slate-100/80 border border-slate-200 rounded-lg space-y-2 text-xs">
+              <span class="font-bold text-slate-800 flex items-center gap-1.5">
+                <span>📐</span> Useful Phrases for Contrasting &amp; Comparing Photos:
+              </span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
+                \${(visual.sentenceFrames || [
+                  "Whereas Photo 1 highlights extreme drought, Photo 2 shows the opposite catastrophe of flash flooding.",
+                  "Both Photo 2 and Photo 3 demonstrate how vulnerable urban infrastructure is to sudden climate shocks.",
+                  "In stark contrast to the first three photos, Photo 4 offers a hopeful look at technological adaptation.",
+                  "What strikes me most about these images is the rapid acceleration of unpredictable weather."
+                ]).map(f => \`<div class="p-1.5 bg-white rounded border border-slate-200 italic">" \${f} "</div>\`).join('')}
+              </div>
+            </div>
+
+            <!-- Debate Prompt -->
+            <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs space-y-1">
+              <span class="font-bold text-amber-900">⚡ Paired Debate Question:</span>
+              <p class="text-amber-950 font-medium leading-relaxed">\${visual.debatePrompt || 'Which of these threats poses the greatest risk to modern society: sudden flash floods, prolonged heatwaves, or uncontrolled wildfires? Defend your position with two solid arguments.'}</p>
+            </div>
+          </div>
+
+          <!-- Part 3: Spoken Language Clinic -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 3</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${grammar.title || 'Spoken Language Clinic: Expressing Stances & Polite Disagreement'}</h4>
+              </div>
+              <span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Communicative Clinic</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${grammar.subtitle || 'Expressing opinions with precision and tact is essential for collaborative problem-solving and professional debate.'}</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+              <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+                <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                  <span class="text-blue-600 font-bold">1.</span> Stating Strong Viewpoints
+                </h5>
+                <ul class="text-xs text-slate-700 space-y-1.5">
+                  \${(grammar.strongViewpoints || [
+                    "I am convinced that climate adaptation must take priority over...",
+                    "From an operational standpoint, it is clear that...",
+                    "There is no denying that emergency funding is inadequate."
+                  ]).map(v => \`<li class="p-1.5 bg-white rounded border border-slate-200 italic">" \${v} "</li>\`).join('')}
+                </ul>
+              </div>
+
+              <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+                <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                  <span class="text-amber-600 font-bold">2.</span> Polite Disagreement
+                </h5>
+                <ul class="text-xs text-slate-700 space-y-1.5">
+                  \${(grammar.politeDisagreement || [
+                    "I see your point, but we also have to consider...",
+                    "I am not entirely convinced that technology alone can...",
+                    "While that may be true in theory, in practice it would..."
+                  ]).map(d => \`<li class="p-1.5 bg-white rounded border border-slate-200 italic">" \${d} "</li>\`).join('')}
+                </ul>
+              </div>
+
+              <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+                <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                  <span class="text-emerald-600 font-bold">3.</span> Balancing &amp; Conceding
+                </h5>
+                <ul class="text-xs text-slate-700 space-y-1.5">
+                  \${(grammar.balancingPoints || [
+                    "On the one hand..., but on the other hand...",
+                    "Despite the high initial investment, the long-term benefits...",
+                    "Even if we cut emissions today, we still need to adapt to..."
+                  ]).map(b => \`<li class="p-1.5 bg-white rounded border border-slate-200 italic">" \${b} "</li>\`).join('')}
+                </ul>
               </div>
             </div>
           </div>
 
-          <!-- Part 2: Interactive Video Lab (Convective Microburst Dynamics) -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 2</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${videoLab.title || 'Part 2: Interactive Video Lab — Convective Storms & Microburst Physics'}</h4>
-                  <p class="text-[11px] text-slate-500">\${videoLab.summary || ''}</p>
-                </div>
+          <!-- Part 4: Small-Group Decision Task: The €50M Climate Action Plan -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 4</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${task.title || 'Small-Group Decision Task: The €50M Climate Action Plan'}</h4>
               </div>
-              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Video Noticeboard</span>
+              <span class="text-[11px] font-semibold text-emerald-600 font-bold uppercase tracking-wide">Group Negotiation</span>
             </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${task.scenario || 'Your group forms the Regional Climate Resilience Taskforce. You have been awarded a fixed municipal budget of €50M. You must evaluate 5 competing investment projects and choose the best allocation.'}</p>
 
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(videoLab, theme) : ''}
-
-            <!-- 2-Column Noticeboard Layout -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
-              <!-- Left Column: Video Player -->
-              <div class="lg:col-span-7 flex flex-col space-y-2.5">
-                <div class="flex items-center justify-between gap-2">
-                  <span class="inline-flex items-center gap-1 text-[9.5px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 border border-slate-800 font-mono">
-                    CONVECTIVE PHYSICS • ATMOSPHERIC WINDSHEAR
-                  </span>
-                  <span class="text-[10.5px] text-slate-500 font-mono">Low-Altitude Hazard</span>
-                </div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
-                  \${videoLab.videoTitle || 'Severe Convective Storms: Downburst Dynamics & Airport Windshear'}
-                </h4>
-                <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-300 shadow-md">
-                  <iframe class="w-full h-full" src="\${videoLab.videoUrl || 'https://www.youtube.com/embed/6_mH15N7fE8'}" title="Severe Convective Storms & Microbursts" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="flex items-center justify-between pt-1 text-[11px]">
-                  <span class="text-[10px] text-slate-400 font-mono">\${videoLab.channel || 'Meteorology & Atmospheric Dynamics Lab'}</span>
-                  <a href="\${videoLab.youtubeUrl || 'https://www.youtube.com/watch?v=6_mH15N7fE8'}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-800 hover:text-amber-600 inline-flex items-center gap-1 underline transition-colors cursor-pointer">
-                    <span>Watch on YouTube</span>
-                    <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Right Column: Operational Synopsis & Debrief -->
-              <div class="lg:col-span-5 p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3.5">
-                <div class="border-b border-slate-200 pb-2">
-                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider">Operational Synopsis</span>
-                  <h5 class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">Downburst Velocity & Vortex Ring Propagation</h5>
-                  <p class="text-[11px] text-slate-600 leading-relaxed mt-1">
-                    Convective downdrafts accelerate through evaporative cooling. When this descending air column slams into the runway surface, it curls into expanding vortex rings producing severe low-altitude windshear.
-                  </p>
-                </div>
-
-                <div>
-                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider block mb-1.5">Core Technical Concepts:</span>
-                  <div class="flex flex-wrap gap-1.5">
-                    \${(videoLab.concepts || []).map(c => \`
-                      <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-[10.5px] font-medium text-slate-700 shadow-2xs font-mono">\${c}</span>
-                    \`).join('')}
-                  </div>
-                </div>
-
-                <div class="pt-2 border-t border-slate-200 space-y-2">
-                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider block">Guided Spoken Discussion:</span>
-                  \${(videoLab.guidedQuestions || []).map((gq, idx) => \`
-                    <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1.5 text-xs shadow-2xs">
-                      <p class="font-bold text-slate-900">\${gq.q}</p>
-                      <button type="button" onclick="document.getElementById('ag-s1-gq-\${idx}').classList.toggle('hidden');" class="text-[10.5px] font-bold text-blue-600 hover:underline inline-block cursor-pointer">
-                        Toggle Technical Explanation &rarr;
-                      </button>
-                      <div id="ag-s1-gq-\${idx}" class="hidden p-2 bg-slate-50 rounded border border-slate-200 text-[11px] text-slate-700 leading-relaxed">
-                        \${gq.answer}
-                      </div>
-                    </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
+                <thead class="bg-slate-100 text-slate-800 uppercase font-bold text-[10.5px]">
+                  <tr>
+                    <th class="p-2.5 border-b border-slate-200">Option</th>
+                    <th class="p-2.5 border-b border-slate-200">Project Name</th>
+                    <th class="p-2.5 border-b border-slate-200">Cost</th>
+                    <th class="p-2.5 border-b border-slate-200">Primary Impact</th>
+                    <th class="p-2.5 border-b border-slate-200">Key Trade-off</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-slate-700">
+                  \${(task.options || [
+                    { opt: "A", name: "Urban Bioswales & Sponge City Corridors", cost: "€20M", impact: "Absorbs 85% of flash flood runoff in city center", trade: "Requires removing 600 parking bays" },
+                    { opt: "B", name: "Regional AI Early Warning Radar Network", cost: "€15M", impact: "Gives early storm detection alerts for severe downbursts", trade: "Does not stop physical damage to property" },
+                    { opt: "C", name: "Cool Roofs & Shaded Pedestrian Canopies", cost: "€10M", impact: "Lowers urban heat island effect by 3.5°C", trade: "Limited direct benefit to rural outskirts" },
+                    { opt: "D", name: "Aerial Drone Fire-Detection Fleet", cost: "€25M", impact: "Discovers forest fires within 90 seconds of ignition", trade: "High ongoing maintenance & battery renewal cost" },
+                    { opt: "E", name: "Subsidized Home Heat Pumps & Insulation", cost: "€30M", impact: "Cuts household winter energy demand by 40%", trade: "Exceeds 50% of the entire regional budget" }
+                  ]).map(row => \`
+                    <tr class="hover:bg-slate-50 transition-colors">
+                      <td class="p-2.5 font-black text-slate-900">\${row.opt}</td>
+                      <td class="p-2.5 font-bold text-slate-800">\${row.name}</td>
+                      <td class="p-2.5 font-black text-blue-700">\${row.cost}</td>
+                      <td class="p-2.5 text-slate-600">\${row.impact}</td>
+                      <td class="p-2.5 text-amber-800 font-medium">\${row.trade}</td>
+                    </tr>
                   \`).join('')}
-                </div>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Peer Checklist & Active Listening Rubric -->
+            <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs font-bold text-amber-950 flex items-center gap-1.5">
+                  <span>📋</span> Peer Checklist &amp; Active Listening Rubric (Partner B Observer)
+                </h5>
+                <span class="text-[10px] font-bold text-amber-800 uppercase">Peer Evaluation</span>
               </div>
+              <p class="text-[11px] text-amber-900 leading-relaxed">
+                As Student A pitches their €50M budget allocation, Partner B assesses the proposal against the 3 criteria: Strategic Justification, Spoken Fluency, and Q&amp;A Defense.
+              </p>
+            </div>
+
+            <!-- Group Notes Textarea -->
+            <div class="space-y-1.5 pt-2">
+              <label class="text-xs font-bold text-slate-700">Group Decision Notes &amp; Justification (€50M Allocation):</label>
+              <textarea id="ag-s1-notes" oninput="window.saveLessonNote && window.saveLessonNote('s1_m2_ag_s1_notes', this.value)" placeholder="Record your group's selected combination, total cost, and why you eliminated the other options..." class="w-full h-24 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-blue-500 focus:outline-none transition-all leading-relaxed">\${savedNote}</textarea>
             </div>
           </div>
 
-          <!-- Part 3: Language Clinic (Causal Linkers & Conditionals) -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 3</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${grammar.title || 'Part 3: Language Clinic — Formal Causal Linkers & Conditional Risk Formulas'}</h4>
-                  <p class="text-[11px] text-slate-500">\${grammar.summary || ''}</p>
-                </div>
+          <!-- Part 5: Interactive Spoken Game: Climate Buzzword Taboo -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 5</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${taboo.title || 'Interactive Spoken Game: Climate Buzzword Taboo'}</h4>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 font-mono">Language Clinic</span>
+              <span class="text-[11px] font-semibold text-purple-600 font-bold uppercase tracking-wide">Lexical Agility</span>
             </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${taboo.subtitle || 'Work in pairs. Describe the secret word to your partner WITHOUT saying the forbidden words. You have 45 seconds per card. Use circumlocution and synonyms!'}</p>
 
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(grammar, theme) : ''}
-
-            <!-- Grammar Rules Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              \${(grammar.patterns || []).map(p => \`
-                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-                  <h5 class="text-xs font-bold text-slate-900 font-mono">\${p.rule}</h5>
-                  <div class="p-2 bg-white border border-slate-200 rounded-md font-mono text-[10.5px] text-blue-800">
-                    \${p.formula}
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 pt-1">
+              \${(taboo.cards || [
+                { word: "Flash Flood", ipa: "/flæʃ flʌd/", forbidden: ["water", "rain", "river"] },
+                { word: "Heat Island", ipa: "/hiːt ˈaɪlənd/", forbidden: ["hot", "city", "concrete"] },
+                { word: "Drought", ipa: "/draʊt/", forbidden: ["dry", "rain", "water"] },
+                { word: "Wildfire", ipa: "/ˈwaɪldfaɪər/", forbidden: ["forest", "burn", "tree"] },
+                { word: "Resilience", ipa: "/rɪˈzɪliəns/", forbidden: ["strong", "bounce", "survive"] },
+                { word: "Microburst", ipa: "/ˈmaɪkrəʊbɜːst/", forbidden: ["wind", "storm", "aircraft"] }
+              ]).map(c => \`
+                <div class="p-3 bg-purple-50/60 border border-purple-200 rounded-xl space-y-2 text-center shadow-2xs hover:border-purple-300 transition-all">
+                  <div>
+                    <h5 class="text-xs sm:text-sm font-black text-purple-950 uppercase tracking-wide">\${c.word}</h5>
+                    <span class="text-[10px] text-purple-700 font-mono">\${c.ipa}</span>
                   </div>
-                  <ul class="space-y-1 text-[11px] text-slate-600 pl-4 list-disc">
-                    \${p.examples.map(ex => \`<li>\${ex}</li>\`).join('')}
+                  <div class="p-2 bg-white rounded-lg border border-purple-200/80 text-[11px] space-y-1">
+                    <span class="text-[9.5px] font-bold uppercase text-red-600 tracking-wider">Forbidden Words</span>
+                    <div class="flex flex-wrap items-center justify-center gap-1 font-bold text-slate-700">
+                      \${c.forbidden.map(f => \`<span class="px-1.5 py-0.5 rounded bg-red-50 text-red-700 border border-red-200 text-[10px]">❌ \${f}</span>\`).join('')}
+                    </div>
+                  </div>
+                </div>
+              \`).join('')}
+            </div>
+          </div>
+
+          <!-- Part 6: Town Hall Public Debate -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 6</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${debate.title || 'Town Hall Public Debate: Who Pays for Climate Adaptation?'}</h4>
+              </div>
+              <span class="text-[11px] font-semibold text-rose-600 font-bold uppercase tracking-wide">Plenary Debate</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${debate.scenario || 'The coastal and river communities of the region have suffered catastrophic flooding. The city council proposes a 5% environmental tax on all aviation, fuel, and corporate commerce to fund sea walls and flood barriers. Debate the policy across 3 assigned stakeholder groups.'}</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 pt-1">
+              \${(debate.roles || [
+                {
+                  title: "Role A: Coastal & Riverbank Residents",
+                  stance: "Demands immediate public funding: Homeowners pay taxes and deserve immediate municipal flood barriers and sea walls.",
+                  points: ["Homes are losing 50% of their value due to flood risks.", "Insurance companies are refusing to cover weather catastrophes.", "Human life and community heritage must take precedence over commercial profit."]
+                },
+                {
+                  title: "Role B: Regional Chamber of Commerce & Airlines",
+                  stance: "Opposes targeted business taxes: Extra taxes on aviation and local business will hurt economic growth and tourism.",
+                  points: ["Aviation already pays carbon offset taxes under EU ETS.", "Extra local levies will force airlines to cancel routes and reduce jobs.", "The council should reallocate existing administrative budgets instead."]
+                },
+                {
+                  title: "Role C: Environmental Youth Action Coalition",
+                  stance: "Calls for polluter-pays principle & strict climate action: Demands heavy taxes on high-emission sectors.",
+                  points: ["Fossil fuel companies and frequent flyers must pay for the damage they cause.", "Building higher walls is a temporary fix; we must reduce emissions at the source.", "Tax revenues must be ring-fenced strictly for green infrastructure."]
+                }
+              ]).map(role => \`
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
+                  <div class="space-y-1.5">
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">\${role.title}</h5>
+                    <p class="text-xs font-medium text-blue-900 bg-blue-50 p-2 rounded border border-blue-200/60 leading-snug">\${role.stance}</p>
+                  </div>
+                  <ul class="text-[11px] text-slate-600 space-y-1 list-disc list-inside pt-1">
+                    \${(role.points || role.keyPoints || []).map(pt => \`<li>\${pt}</li>\`).join('')}
                   </ul>
                 </div>
               \`).join('')}
             </div>
 
-            <!-- Interactive Drills -->
-            <div class="space-y-2.5 pt-2">
-              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Spoken Transformation Drills:</h5>
-              \${(grammar.drills || []).map(drill => \`
-                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                  <p class="text-xs font-semibold text-slate-800"><span class="font-mono text-slate-500 font-bold">[\${drill.id}]</span> \${drill.prompt}</p>
-                  <div id="ag2-s1-drill-\${drill.id}" class="hidden p-2 bg-emerald-50 border border-emerald-200 rounded text-xs text-emerald-900 font-medium">
-                    \${drill.answer}
-                  </div>
-                  <button type="button" onclick="document.getElementById('ag2-s1-drill-\${drill.id}').classList.toggle('hidden');" class="text-[11px] font-bold text-blue-600 hover:underline cursor-pointer">
-                    Check Phrasing &rarr;
-                  </button>
-                </div>
-              \`).join('')}
-            </div>
-          </div>
-
-          <!-- Part 4: 3-Person Case Research & Pitch -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 4</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${research.title || 'Part 4: 3-Person Incident Dossier Research & Mitigation Pitch'}</h4>
-                  <p class="text-[11px] text-slate-500">\${research.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 font-mono">Case Research</span>
-            </div>
-
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(research, theme) : ''}
-
-            <!-- 3 Real-World Case Dossiers -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-              \${(research.dossiers || []).map(d => \`
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
-                  <div class="space-y-1.5">
-                    <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-900 font-mono font-bold text-[10px]">\${d.id}</span>
-                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">\${d.title}</h5>
-                    <p class="text-[11px] text-slate-600 leading-relaxed"><strong class="text-slate-800">Context:</strong> \${d.context}</p>
-                    <div class="p-2 bg-white border border-slate-200 rounded text-[10.5px] text-slate-700 font-mono leading-relaxed">
-                      \${d.data}
-                    </div>
-                  </div>
-                  <div class="p-2 bg-amber-50 border border-amber-200 rounded text-[10.5px] text-amber-900 font-medium">
-                    <strong>Challenge:</strong> \${d.challenge}
-                  </div>
-                </div>
-              \`).join('')}
-            </div>
-
-            <!-- Peer Observer Active Listening Checklist (Student B) -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <h5 class="text-xs font-bold text-slate-900 font-mono uppercase tracking-wider">\${research.rubric?.title || 'Peer Observer Active Listening Rubric (Student B)'}</h5>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                \${(research.rubric?.criteria || []).map(c => \`
-                  <div class="p-2.5 bg-white border border-slate-200 rounded-lg">
-                    <span class="font-bold text-slate-800 block">\${c.name}</span>
-                    <span class="text-[11px] text-slate-600">\${c.target}</span>
-                  </div>
-                \`).join('')}
-              </div>
-            </div>
-
-            <!-- Pitch Notes Area -->
-            <div class="space-y-1.5">
-              <label class="text-xs font-bold text-slate-700">Small Group 90-Second Briefing Outline & Action Plan:</label>
-              <textarea id="ag-s1-pitch-notes" oninput="window.saveLessonNote && window.saveLessonNote('ag_s1_pitch_notes', this.value)" placeholder="Draft your 3-point briefing: 1. Root meteorological cause... 2. Cascading operational impact... 3. Immediate mitigation mandate..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-blue-500 focus:outline-none transition-all leading-relaxed"></textarea>
-            </div>
-          </div>
-
-          <!-- Part 5: Vocabulary Game: Extreme Weather Taboo -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 5</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${taboo.title || 'Part 5: Interactive Vocabulary Game — Extreme Weather Taboo'}</h4>
-                  <p class="text-[11px] text-slate-500">\${taboo.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-amber-600 uppercase tracking-wider shrink-0 font-mono">Fluency Game</span>
-            </div>
-
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(taboo, theme) : ''}
-
-            <!-- 12 Taboo Cards Grid with IPA -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              \${(taboo.cards || []).map((card, idx) => \`
-                <div class="p-3 bg-slate-50 border-2 border-slate-200 hover:border-amber-400 rounded-xl transition-all shadow-2xs space-y-2 text-center">
-                  <div class="border-b border-slate-200 pb-1.5">
-                    <span class="text-[9px] font-mono text-slate-400 uppercase tracking-wider block">Target Word #\${idx + 1}</span>
-                    <h5 class="text-xs sm:text-sm font-black text-slate-900 leading-tight mt-0.5">\${card.word}</h5>
-                    <span class="text-[10px] text-blue-700 font-mono block mt-0.5">\${card.ipa}</span>
-                  </div>
-                  <div class="space-y-1">
-                    <span class="text-[9px] font-bold uppercase tracking-wider text-rose-600 block">Forbidden Words:</span>
-                    \${card.forbidden.map(f => \`
-                      <span class="inline-block px-1.5 py-0.5 bg-rose-50 text-rose-800 border border-rose-200 rounded text-[10px] font-bold mx-0.5">\${f}</span>
-                    \`).join('')}
-                  </div>
-                </div>
-              \`).join('')}
-            </div>
-          </div>
-
-          <!-- Part 6: Aerodrome Crisis Shutdown Debate -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 6</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${debate.title || 'Part 6: Aerodrome Crisis Shutdown Debate'}</h4>
-                  <p class="text-[11px] text-slate-500">\${debate.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 font-mono">Formal Debate</span>
-            </div>
-
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(debate, theme) : ''}
-
-            <!-- 3 Debate Roles Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-              \${(debate.roles || []).map(r => \`
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
-                  <h5 class="text-xs sm:text-sm font-bold text-slate-900 border-b border-slate-200 pb-1.5 font-mono">\${r.title}</h5>
-                  <p class="text-xs text-slate-700 leading-relaxed font-medium">\${r.stance}</p>
-                  <div class="space-y-1 pt-1">
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 font-mono">Mandatory Stance Points:</span>
-                    <ul class="space-y-1 pl-4 list-disc text-[11px] text-slate-600 leading-relaxed">
-                      \${r.keyPoints.map(kp => \`<li>\${kp}</li>\`).join('')}
-                    </ul>
-                  </div>
-                </div>
-              \`).join('')}
-            </div>
-
+            <!-- Consensus Verdict -->
             <div class="space-y-1.5 pt-2">
-              <label class="text-xs font-bold text-slate-700">Consensus Resolution & Multi-Stakeholder Verdict:</label>
-              <textarea id="ag-s1-debate-verdict" oninput="window.saveLessonNote && window.saveLessonNote('ag_s1_debate_verdict', this.value)" placeholder="Record your committee's negotiated compromise: runway operating thresholds, ramp safety hold rules, and diversion limits..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-blue-500 focus:outline-none transition-all leading-relaxed"></textarea>
+              <label class="text-xs font-bold text-slate-700">Town Hall Negotiated Consensus Compromise:</label>
+              <textarea id="ag-s1-debate-verdict" oninput="window.saveLessonNote && window.saveLessonNote('ag_s1_debate_verdict', this.value)" placeholder="Record your committee's negotiated compromise: who pays, how much, and what accountability measures are put in place..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-blue-500 focus:outline-none transition-all leading-relaxed">\${savedVerdict}</textarea>
             </div>
           </div>
         </div>
       \`;
     }`;
 
-// Function 2 Implementation
-const fn2Code = `function renderAg2LessonContentTabSession2(sessionData, theme) {
+const s2Code = `    function renderAg2LessonContentTabSession2(sessionData, theme) {
       const bodyEl = document.getElementById('modal-body');
       if (!bodyEl) return;
       const content = sessionData.lessonContent || {};
       const ov = content.overview || content.hero || {};
       const opening = content.openingSession || {};
-      const videoLab = content.videoLab || {};
+      const visual = content.visualDebate || {};
       const grammar = content.grammarClinic || {};
       const game = content.vocabGame || {};
-      const sprint = content.designSprint || {};
-      const policy = content.policyDebate || {};
+      const sprint = content.redesignChallenge || content.designSprint || {};
+      const debate = content.publicDebate || content.policyDebate || {};
 
       const savedNote = (typeof window !== 'undefined' && window.loadLessonNote) ? window.loadLessonNote('s1_m2_ag_s2_notes') : '';
+      const savedVerdict = (typeof window !== 'undefined' && window.loadLessonNote) ? window.loadLessonNote('ag_s2_debate_verdict') : '';
 
       bodyEl.innerHTML = \`
         <div class="space-y-6 printable-lesson-container">
@@ -442,395 +406,340 @@ const fn2Code = `function renderAg2LessonContentTabSession2(sessionData, theme) 
           <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div class="relative bg-slate-900">
               <img src="\${ov.image || 'images/ag_m2card2.jpg'}" alt="\${ov.title || 'Sustainable Cities'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/ag_m2card2.jpg'">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">\${ov.badge || 'Session Overview • Sustainable Cities & Urban Design'}</span>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5">
+                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">\${ov.badge || 'Session 02 • Communicative General English'}</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">\${ov.title || 'Sustainable Cities & Low-Emission Mobility'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">\${ov.subtitle || 'Sponge Cities, Multimodal Transit Integration & 15-Minute Urban Districts'}</p>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">\${ov.subtitle || 'Urban Living, Green Neighborhoods, The 15-Minute City & Car-Free Center Debate'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded">CEFR B2</span>
-                <span class="text-slate-400">&bull;</span>
-                <span class="font-bold text-slate-800">Context:</span>
-                <span class="text-slate-600">Urban Civil Engineering & Sustainable Transportation</span>
+                <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-bold">\${ov.targetLevel || 'CEFR B1/B2'}</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-800">Key Themes:</span>
+                <span class="text-slate-700">15-Minute City • Sustainable Mobility • Double Comparatives • Policy Debate</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800">DD&RS Alignment:</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold">Axe 2 &amp; Axe 3</span>
               </div>
             </div>
           </div>
 
-          \${typeof renderSessionBriefingBanner === 'function' ? renderSessionBriefingBanner(sessionData, theme) : ''}
-
-          <!-- Personal Notes Auto-Save Card -->
-          <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
-                <h4 class="text-xs sm:text-sm font-bold text-slate-800">Session 2 Personal Study & Speaking Notes</h4>
+          <!-- Part 1: Livable City Ranking & Diagnostic Warm-up -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 1</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${opening.title || 'Livable City Ranking & Diagnostic Warm-up'}</h4>
               </div>
-              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider">Auto-Saved Locally</span>
+              <span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Pair Discussion</span>
             </div>
-            <textarea id="lesson-note-s1-m2-ag-s2" oninput="window.saveLessonNote && window.saveLessonNote('s1_m2_ag_s2_notes', this.value)" placeholder="Type your personal observations, urban mobility collocations, and debate speaking notes here..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-amber-400 focus:outline-none transition-all leading-relaxed">\${savedNote}</textarea>
-          </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${opening.prompt || 'Rank the following 5 factors of a truly livable city from 1 (most vital) to 5 (least vital). Compare your ranking with your partner and justify your top choice.'}</p>
 
-          <!-- Part 1: Urban Innovation News & Oral Diagnostic -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 1</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${opening.title || 'Part 1: Urban Innovation News Scan & Oral Diagnostic'}</h4>
-                  <p class="text-[11px] text-slate-500">\${opening.summary || ''}</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2.5 pt-1">
+              \${(opening.features || [
+                { num: "A", title: "Dedicated Bike Lanes", desc: "Safe, segregated cycle paths across the entire metropolitan area." },
+                { num: "B", title: "Accessible Green Parks", desc: "Public gardens & urban forests within a 5-minute walk of every home." },
+                { num: "C", title: "Affordable Rapid Transit", desc: "Clean, frequent electric trams & metros running 24/7." },
+                { num: "D", title: "Car-Free Shopping Streets", desc: "Pedestrianized high streets with outdoor dining & fresh air." },
+                { num: "E", title: "Sponge City Drainage", desc: "Permeable pavements that prevent destructive urban flooding." }
+              ]).map(f => \`
+                <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg space-y-1 text-center">
+                  <span class="text-[10px] font-black px-1.5 py-0.5 rounded bg-blue-100 text-blue-800">Option \${f.num}</span>
+                  <h5 class="text-xs font-bold text-slate-800 mt-1">\${f.title}</h5>
+                  <p class="text-[10.5px] text-slate-600 leading-tight">\${f.desc}</p>
                 </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 font-mono">Opening Diagnostic</span>
+              \`).join('')}
             </div>
 
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(opening, theme) : ''}
-
-            <!-- News Prompts -->
-            <div class="p-4 bg-emerald-50/70 border border-emerald-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-emerald-900">Sustainable Mobility & Urban Engineering Bulletins</h5>
+            <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-lg text-xs space-y-1">
+              <span class="font-bold text-blue-900">🗣️ Justifying Your Ranking:</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-blue-950 italic">
+                <div>"For me, having reliable public transit is far more essential than..."</div>
+                <div>"I put car-free streets at the top because it immediately cuts noise and air pollution."</div>
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-emerald-900/90 leading-relaxed">
-                \${(opening.newsPrompts || []).map(p => \`<li>\${p}</li>\`).join('')}
-              </ul>
             </div>
+          </div>
 
-            <!-- Diagnostic Questions Grid with Sentence Stems (Rule 1.V) -->
-            <div class="space-y-3 pt-1">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">\${(opening.diagnostic && opening.diagnostic.title) || 'Urban Sustainability Concepts Diagnostic Check'}</h5>
-                <span class="text-[11px] text-slate-500">\${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
+          <!-- Part 2: 4-Photo Visual Contrast & Debate Lab -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 2</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${visual.title || '4-Photo Visual Contrast & Debate Lab'}</h4>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                \${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => \`
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
+              <span class="text-[11px] font-semibold text-amber-600 font-bold uppercase tracking-wide">Visual Contrast</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${visual.subtitle || 'Examine two contrasting visions of mobility and urban life: car-centric congestion vs. human-scale livability.'}</p>
+
+            <!-- 2x2 Photo Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+              \${(visual.photos || []).map((photo, pIdx) => \`
+                <div class="flex flex-col bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-xs hover:border-slate-300 transition-all">
+                  <div class="relative bg-slate-900 h-44 overflow-hidden group">
+                    <img src="\${(photo.file || photo.src || "images/ag_m2card1.jpg")}" alt="\${photo.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='images/ag_m2card2.jpg'">
+                    <div class="absolute top-2.5 left-2.5 bg-black/70 backdrop-blur-xs text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs">
+                      PHOTO \${photo.id || String.fromCharCode(65 + pIdx)}
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[9.5px] px-1.5 py-0.5 rounded">
+                      \${photo.location || ''}
+                    </div>
+                  </div>
+                  <div class="p-3.5 space-y-2.5 flex-1 flex flex-col justify-between">
                     <div>
-                      <div class="flex items-center justify-between gap-2">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 font-mono">Concept 0\${q.id}</span>
-                        <span class="w-2 h-2 rounded-full" style="background-color: \${theme.primary};"></span>
-                      </div>
-                      <p class="text-xs font-bold text-slate-900 mt-1">\${q.q}</p>
-                      \${q.prompt ? \`
-                        <div class="mt-2 p-2 bg-emerald-50/80 border border-emerald-200 rounded-lg text-[11px] text-emerald-900 font-medium">
-                          <span class="font-bold text-emerald-700">Sentence Stem:</span> "\${q.prompt}"
-                        </div>
-                      \` : ''}
+                      <h5 class="text-xs sm:text-sm font-bold text-slate-900">\${photo.title}</h5>
+                      <p class="text-xs text-slate-600 mt-1 leading-relaxed">\${(photo.scene || photo.caption || "")}</p>
                     </div>
-                    <div class="space-y-2 pt-1">
-                      <div id="ag2-spotcheck-ans-2-\${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs">
-                        \${q.answer}
+                    <div class="pt-2 border-t border-slate-200/80 space-y-1.5 text-[11.5px]">
+                      <div class="font-bold text-slate-700 flex items-center gap-1">
+                        <span>🔍</span> Guided Discussion Question:
                       </div>
-                      <button type="button" onclick="document.getElementById('ag2-spotcheck-ans-2-\${q.id}').classList.toggle('hidden'); this.textContent = document.getElementById('ag2-spotcheck-ans-2-\${q.id}').classList.contains('hidden') ? 'Reveal Model Answer' : 'Hide Answer';" class="w-full py-1.5 px-3 rounded-lg text-[11px] font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-300 shadow-2xs transition-all cursor-pointer">
-                        Reveal Model Answer
-                      </button>
+                      <p class="text-blue-900 font-medium italic bg-blue-50/80 p-2 rounded border border-blue-200/60 leading-snug">
+                        \${photo.debateQ || photo.question || 'What are the main social benefits of reclaiming street space for humans?'}
+                      </p>
                     </div>
                   </div>
-                \`).join('')}
+                </div>
+              \`).join('')}
+            </div>
+
+            <!-- Useful Contrast Stems -->
+            <div class="p-3.5 bg-slate-100/80 border border-slate-200 rounded-lg space-y-2 text-xs">
+              <span class="font-bold text-slate-800 flex items-center gap-1.5">
+                <span>📐</span> Sentence Stems for Contrasting Urban Environments:
+              </span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
+                \${(visual.sentenceFrames || [
+                  "Photo A represents 20th-century car dependency, whereas Photo B shows how street space can be reclaimed.",
+                  "The more space we dedicate to motorways, the more traffic congestion we generate.",
+                  "Photo C illustrates high-speed rail as an intermodal alternative to short-haul domestic flights.",
+                  "Photo D embodies the 15-minute city philosophy: daily necessities accessible on foot or by bike."
+                ]).map(f => \`<div class="p-1.5 bg-white rounded border border-slate-200 italic">" \${f} "</div>\`).join('')}
+              </div>
+            </div>
+
+            <!-- Debate Prompt -->
+            <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs space-y-1">
+              <span class="font-bold text-amber-900">⚡ Paired Debate Question:</span>
+              <p class="text-amber-950 font-medium leading-relaxed">\${visual.debatePrompt || 'Is the 15-minute city an idealistic dream only feasible for wealthy metropolitan centers, or can it be applied to suburbs and mid-sized towns?'}</p>
+            </div>
+          </div>
+
+          <!-- Part 3: Spoken Language Clinic -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 3</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${grammar.title || 'Spoken Language Clinic: Proposing Solutions & Double Comparatives'}</h4>
+              </div>
+              <span class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide">Language Clinic</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${grammar.subtitle || 'Use double comparatives (The more... the less...) and formal contrast connectors to express cause-and-effect relationships in urban planning.'}</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+                <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                  <span class="text-blue-600 font-bold">1.</span> Double Comparative Formulas:
+                </h5>
+                <p class="text-[11px] text-slate-600">Express proportional changes where one factor directly drives another:</p>
+                <div class="space-y-1.5 text-xs text-slate-800">
+                  <div class="p-2 bg-white rounded border border-slate-200 italic">"The <span class="text-blue-700 font-bold">denser</span> the transit network, the <span class="text-emerald-700 font-bold">fewer</span> cars enter the center."</div>
+                  <div class="p-2 bg-white rounded border border-slate-200 italic">"The <span class="text-blue-700 font-bold">more</span> cycle lanes we build, the <span class="text-emerald-700 font-bold">safer</span> commuters feel."</div>
+                  <div class="p-2 bg-white rounded border border-slate-200 italic">"The <span class="text-blue-700 font-bold">cheaper</span> the train tickets, the <span class="text-emerald-700 font-bold">more likely</span> passengers choose rail over air."</div>
+                </div>
+              </div>
+
+              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+                <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                  <span class="text-amber-600 font-bold">2.</span> Formal Contrast Connectors:
+                </h5>
+                <p class="text-[11px] text-slate-600">Balance competing priorities using whereas, nevertheless, and despite:</p>
+                <div class="space-y-1.5 text-xs text-slate-800">
+                  <div class="p-2 bg-white rounded border border-slate-200 italic"><span class="text-amber-800 font-bold">Whereas</span> cars consume 70% of street space, they transport under 30% of travelers.</div>
+                  <div class="p-2 bg-white rounded border border-slate-200 italic"><span class="text-amber-800 font-bold">Despite</span> initial merchant resistance, pedestrian zones consistently boosted retail sales.</div>
+                  <div class="p-2 bg-white rounded border border-slate-200 italic">Trams involve high upfront costs; <span class="text-amber-800 font-bold">nevertheless</span>, their lifetime emissions are unmatched.</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Part 2: Interactive Video Lab (Sponge Cities & Flood Absorption) -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 2</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${videoLab.title || 'Part 2: Interactive Video Lab — Sponge Cities & Urban Flood Resilience'}</h4>
-                  <p class="text-[11px] text-slate-500">\${videoLab.summary || ''}</p>
-                </div>
+          <!-- Part 4: Vocabulary Game: Collocation Matcher & Mobility Pyramid -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 4</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${game.title || 'Interactive Vocabulary Game: Collocation Matcher & Mobility Pyramid'}</h4>
               </div>
-              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Video Noticeboard</span>
+              <span class="text-[11px] font-semibold text-emerald-600 font-bold uppercase tracking-wide">Lexical Mastery</span>
             </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${game.subtitle || 'Pair challenge: match compound urban mobility collocations and analyze the Sustainable Mobility Hierarchy.'}</p>
 
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(videoLab, theme) : ''}
-
-            <!-- 2-Column Noticeboard Layout -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
-              <!-- Left Column: Video Player -->
-              <div class="lg:col-span-7 flex flex-col space-y-2.5">
-                <div class="flex items-center justify-between gap-2">
-                  <span class="inline-flex items-center gap-1 text-[9.5px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-emerald-300 border border-slate-800 font-mono">
-                    NATURE-BASED INFRASTRUCTURE • HYDROLOGY
-                  </span>
-                  <span class="text-[10.5px] text-slate-500 font-mono">Civil Engineering</span>
-                </div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
-                  \${videoLab.videoTitle || 'How Sponge Cities Absorb Rainwater & Prevent Flooding'}
-                </h4>
-                <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-300 shadow-md">
-                  <iframe class="w-full h-full" src="\${videoLab.videoUrl || 'https://www.youtube.com/embed/8mL25lC61Pc'}" title="How Sponge Cities Absorb Rainwater" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="flex items-center justify-between pt-1 text-[11px]">
-                  <span class="text-[10px] text-slate-400 font-mono">\${videoLab.channel || 'Civil Engineering & Urban Planning Review'}</span>
-                  <a href="\${videoLab.youtubeUrl || 'https://www.youtube.com/watch?v=8mL25lC61Pc'}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-800 hover:text-emerald-600 inline-flex items-center gap-1 underline transition-colors cursor-pointer">
-                    <span>Watch on YouTube</span>
-                    <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Right Column: Operational Synopsis & Debrief -->
-              <div class="lg:col-span-5 p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3.5">
-                <div class="border-b border-slate-200 pb-2">
-                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider">Operational Synopsis</span>
-                  <h5 class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">Hydrological Infiltration & Peak Delay</h5>
-                  <p class="text-[11px] text-slate-600 leading-relaxed mt-1">
-                    Sponge cities deploy bioretention basins, permeable concrete, and vegetated swales to absorb stormwater locally, attenuating flood crests and recharging groundwater reserves.
-                  </p>
-                </div>
-
-                <div>
-                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider block mb-1.5">Core Technical Concepts:</span>
-                  <div class="flex flex-wrap gap-1.5">
-                    \${(videoLab.concepts || []).map(c => \`
-                      <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-[10.5px] font-medium text-slate-700 shadow-2xs font-mono">\${c}</span>
-                    \`).join('')}
-                  </div>
-                </div>
-
-                <div class="pt-2 border-t border-slate-200 space-y-2">
-                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider block">Guided Spoken Discussion:</span>
-                  \${(videoLab.guidedQuestions || []).map((gq, idx) => \`
-                    <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1.5 text-xs shadow-2xs">
-                      <p class="font-bold text-slate-900">\${gq.q}</p>
-                      <button type="button" onclick="document.getElementById('ag-s2-gq-\${idx}').classList.toggle('hidden');" class="text-[10.5px] font-bold text-emerald-600 hover:underline inline-block cursor-pointer">
-                        Toggle Technical Explanation &rarr;
-                      </button>
-                      <div id="ag-s2-gq-\${idx}" class="hidden p-2 bg-slate-50 rounded border border-slate-200 text-[11px] text-slate-700 leading-relaxed">
-                        \${gq.answer}
-                      </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+              <!-- Collocation Cards -->
+              <div class="space-y-2">
+                <h5 class="text-xs font-bold text-slate-800">10 Essential Urban Mobility Collocations:</h5>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                  \${(game.collocations || [
+                    { a: "Low-Emission", b: "Zone (LEZ)" },
+                    { a: "Sponge City", b: "Architecture" },
+                    { a: "Urban Heat", b: "Island Effect" },
+                    { a: "15-Minute", b: "Neighborhood" },
+                    { a: "Permeable", b: "Pavement" },
+                    { a: "Active", b: "Mobility" },
+                    { a: "Intermodal", b: "Transit Hub" },
+                    { a: "Park-and-Ride", b: "Facility" },
+                    { a: "Traffic", b: "Calming Scheme" },
+                    { a: "High-Speed", b: "Rail Corridor" }
+                  ]).map(pair => \`
+                    <div class="p-2 bg-emerald-50/70 border border-emerald-200 rounded-lg flex items-center justify-between">
+                      <span class="font-bold text-emerald-950">\${pair.prefix || pair.a || ""}</span>
+                      <span class="text-emerald-700 font-medium">\${pair.suffix || pair.b || ""}</span>
                     </div>
                   \`).join('')}
                 </div>
               </div>
+
+              <!-- Sustainable Mobility Pyramid -->
+              <div class="space-y-2">
+                <h5 class="text-xs font-bold text-slate-800">The Sustainable Mobility Hierarchy:</h5>
+                <div class="space-y-1.5 text-xs text-white">
+                  <div class="p-2 rounded-lg bg-emerald-700 font-bold text-center shadow-xs">
+                    1. Active Travel (Walking, Wheelchairs, Cycling) • 0 Emissions
+                  </div>
+                  <div class="p-2 rounded-lg bg-emerald-600 font-bold text-center shadow-xs">
+                    2. Mass Public Transit (Electric Trams, Metros, Trains) • High Capacity
+                  </div>
+                  <div class="p-2 rounded-lg bg-amber-600 font-bold text-center shadow-xs">
+                    3. Shared Micro-Mobility & Electric Buses • Flexible
+                  </div>
+                  <div class="p-2 rounded-lg bg-orange-600 font-bold text-center shadow-xs">
+                    4. Shared Electric Vehicles & Carpooling • Lower Impact
+                  </div>
+                  <div class="p-2 rounded-lg bg-red-700 font-bold text-center shadow-xs">
+                    5. Single-Occupancy Private Fossil Cars • Highest Impact
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Part 3: Language Clinic (Double Comparatives & Concessive Contrast) -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 3</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${grammar.title || 'Part 3: Language Clinic — Double Comparatives & Concessive Contrast'}</h4>
-                  <p class="text-[11px] text-slate-500">\${grammar.summary || ''}</p>
-                </div>
+          <!-- Part 5: Pair Urban Redesign Challenge -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 5</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${sprint.title || 'Pair Urban Redesign Challenge: The 15-Minute Airport District'}</h4>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 font-mono">Language Clinic</span>
+              <span class="text-[11px] font-semibold text-blue-600 font-bold uppercase tracking-wide">Design Sprint</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">\${sprint.scenario || 'You and your partner are transport planners assigned to redesign an 8-lane highway corridor connecting the central airport terminal to the neighboring residential suburbs.'}</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+              <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-lg space-y-1">
+                <span class="text-[10px] font-bold text-blue-800 uppercase tracking-wide">Intervention 1</span>
+                <h5 class="text-xs font-bold text-blue-950">Lane Reallocation</h5>
+                <p class="text-[11px] text-blue-900">Convert 4 car lanes into a segregated electric BRT (Bus Rapid Transit) and wide bi-directional cycle path.</p>
+              </div>
+
+              <div class="p-3 bg-emerald-50/70 border border-emerald-200 rounded-lg space-y-1">
+                <span class="text-[10px] font-bold text-emerald-800 uppercase tracking-wide">Intervention 2</span>
+                <h5 class="text-xs font-bold text-emerald-950">Green Buffer &amp; Bioswales</h5>
+                <p class="text-[11px] text-emerald-900">Plant a 10-meter urban forest canopy with permeable rain gardens to filter stormwater runoff and block highway noise.</p>
+              </div>
+
+              <div class="p-3 bg-purple-50/70 border border-purple-200 rounded-lg space-y-1">
+                <span class="text-[10px] font-bold text-purple-800 uppercase tracking-wide">Intervention 3</span>
+                <h5 class="text-xs font-bold text-purple-950">Multimodal Mobility Hub</h5>
+                <p class="text-[11px] text-purple-900">Build a park-and-ride facility on the suburb border with 500 cargo e-bikes and express airport shuttles.</p>
+              </div>
             </div>
 
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(grammar, theme) : ''}
+            <!-- Peer Checklist & Active Listening Rubric -->
+            <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg space-y-2">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs font-bold text-amber-950 flex items-center gap-1.5">
+                  <span>📋</span> Peer Checklist &amp; Active Listening Rubric (Partner B Observer)
+                </h5>
+                <span class="text-[10px] font-bold text-amber-800 uppercase">Peer Evaluation</span>
+              </div>
+              <p class="text-[11px] text-amber-900 leading-relaxed">
+                As Partner A presents their 90-second corridor redesign, Partner B acts as peer observer evaluating modal balance, use of double comparatives, and persuasive delivery.
+              </p>
+            </div>
 
-            <!-- Grammar Rules Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-              \${(grammar.patterns || []).map(p => \`
-                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-                  <h5 class="text-xs font-bold text-slate-900 font-mono">\${p.rule}</h5>
-                  <div class="p-2 bg-white border border-slate-200 rounded-md font-mono text-[10.5px] text-emerald-800">
-                    \${p.formula}
+            <!-- Notes Textarea -->
+            <div class="space-y-1.5 pt-2">
+              <label class="text-xs font-bold text-slate-700">Pair Pitch Notes (Prepare your 90-second proposal):</label>
+              <textarea id="ag-s2-notes" oninput="window.saveLessonNote && window.saveLessonNote('s1_m2_ag_s2_notes', this.value)" placeholder="Outline your 3 key interventions, anticipated emission reductions, and how you handle commuter complaints..." class="w-full h-24 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-blue-500 focus:outline-none transition-all leading-relaxed">\${savedNote}</textarea>
+            </div>
+          </div>
+
+          <!-- Part 6: Public Policy Debate -->
+          <div class="p-4 sm:p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2.5">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md" style="background-color: \${theme.primary};">PART 6</span>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">\${debate.title || 'High-Stakes Public Debate: The Car-Free City Center'}</h4>
+              </div>
+              <span class="text-[11px] font-semibold text-rose-600 font-bold uppercase tracking-wide">Public Debate</span>
+            </div>
+            <div class="p-3 bg-rose-50 border border-rose-200 rounded-lg text-xs space-y-1">
+              <span class="font-bold text-rose-900">⚡ Debate Motion:</span>
+              <p class="text-rose-950 font-bold leading-relaxed">\${debate.motion || '"This city should permanently ban private fossil-fueled vehicles from the entire central district within 18 months, reallocating all street parking to parks and bike paths."'}</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 pt-1">
+              \${(debate.roles || [
+                {
+                  title: "Role A: Suburban Commuters & Delivery Association",
+                  stance: "Strongly opposes a blanket ban: Suburban families rely on cars because public transit takes twice as long, and delivery drivers need road access.",
+                  points: ["Suburban housing is affordable, but suburban transit is too slow.", "Elderly residents cannot easily cycle in bad weather.", "Delivery businesses will face heavy delays and fines."]
+                },
+                {
+                  title: "Role B: Local Retailers & Restaurants",
+                  stance: "Demands flexible compromise: Welcomes cleaner air but fears losing customers from outer suburbs who prefer driving.",
+                  points: ["Car-free streets boost cafe foot traffic, but retail shops need vehicle access.", "We demand free perimeter park-and-ride shuttles.", "We need 30-minute commercial loading bays for deliveries."]
+                },
+                {
+                  title: "Role C: Clean Air & Youth Climate Action Coalition",
+                  stance: "Strongly supports the total ban: Car pollution causes asthma and greenhouse emissions. Streets must belong to people.",
+                  points: ["70% of inner-city space is currently wasted on cars.", "European cities proved businesses thrive after pedestrianization.", "Trams, e-buses, and cargo bikes easily handle city deliveries."]
+                }
+              ]).map(role => \`
+                <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between">
+                  <div class="space-y-1.5">
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-900">\${role.title}</h5>
+                    <p class="text-xs font-medium text-blue-900 bg-blue-50 p-2 rounded border border-blue-200/60 leading-snug">\${role.stance}</p>
                   </div>
-                  <ul class="space-y-1 text-[11px] text-slate-600 pl-4 list-disc">
-                    \${p.examples.map(ex => \`<li>\${ex}</li>\`).join('')}
+                  <ul class="text-[11px] text-slate-600 space-y-1 list-disc list-inside pt-1">
+                    \${(role.points || role.keyPoints || []).map(pt => \`<li>\${pt}</li>\`).join('')}
                   </ul>
                 </div>
               \`).join('')}
             </div>
 
-            <!-- Interactive Drills -->
-            <div class="space-y-2.5 pt-2">
-              <h5 class="text-xs sm:text-sm font-bold text-slate-800">Spoken Transformation Drills:</h5>
-              \${(grammar.drills || []).map(drill => \`
-                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
-                  <p class="text-xs font-semibold text-slate-800"><span class="font-mono text-slate-500 font-bold">[\${drill.id}]</span> \${drill.prompt}</p>
-                  <div id="ag2-s2-drill-\${drill.id}" class="hidden p-2 bg-emerald-50 border border-emerald-200 rounded text-xs text-emerald-900 font-medium">
-                    \${drill.answer}
-                  </div>
-                  <button type="button" onclick="document.getElementById('ag2-s2-drill-\${drill.id}').classList.toggle('hidden');" class="text-[11px] font-bold text-emerald-600 hover:underline cursor-pointer">
-                    Check Phrasing &rarr;
-                  </button>
-                </div>
-              \`).join('')}
-            </div>
-          </div>
-
-          <!-- Part 4: Vocabulary Game: Collocation Matcher & Mobility Pyramid -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 4</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${game.title || 'Part 4: Vocabulary Game — Collocation Matcher & Mobility Pyramid'}</h4>
-                  <p class="text-[11px] text-slate-500">\${game.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider shrink-0 font-mono">Interactive Game</span>
-            </div>
-
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(game, theme) : ''}
-
-            <!-- 10 Compound Collocations Grid -->
-            <div class="space-y-2">
-              <h5 class="text-xs font-bold text-slate-800 font-mono uppercase tracking-wider">Step 1: Match 10 Compound Mobility Collocations</h5>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                \${(game.collocations || []).map(c => \`
-                  <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg flex items-center justify-between gap-2">
-                    <div>
-                      <span class="font-bold text-emerald-800">\${c.prefix}</span>
-                      <span class="text-slate-400">+</span>
-                      <span class="font-mono text-slate-900 font-medium">\${c.suffix}</span>
-                    </div>
-                    <span class="text-[10px] text-slate-500 italic shrink-0">\${c.def}</span>
-                  </div>
-                \`).join('')}
-              </div>
-            </div>
-
-            <!-- The Mobility Pyramid -->
-            <div class="space-y-2 pt-2 border-t border-slate-200">
-              <h5 class="text-xs font-bold text-slate-800 font-mono uppercase tracking-wider">Step 2: The Urban Sustainable Mobility Pyramid</h5>
-              <div class="space-y-1.5">
-                \${(game.pyramid?.tiers || []).map(t => \`
-                  <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-                    <span class="font-bold font-mono text-slate-800 text-[11px]">\${t.level}: \${t.mode}</span>
-                    <span class="text-[11px] text-slate-600">\${t.role}</span>
-                  </div>
-                \`).join('')}
-              </div>
-            </div>
-          </div>
-
-          <!-- Part 5: Pair Urban Design Sprint -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 5</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${sprint.title || 'Part 5: Pair Urban Design Sprint — The 15-Minute Airport District'}</h4>
-                  <p class="text-[11px] text-slate-500">\${sprint.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 font-mono">Design Sprint</span>
-            </div>
-
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(sprint, theme) : ''}
-
-            <!-- Design Brief Box -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-              <div class="space-y-1">
-                <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider">Site Location</span>
-                <h5 class="text-xs sm:text-sm font-bold text-slate-900">\${sprint.brief?.location}</h5>
-                <p class="text-[11px] text-slate-600"><strong class="text-slate-800">Current Status:</strong> \${sprint.brief?.currentStatus}</p>
-                <p class="text-[11px] text-emerald-800 font-medium"><strong class="text-emerald-900">Project KPIs:</strong> \${sprint.brief?.targetKPIs}</p>
-              </div>
-
-              <div class="pt-2 border-t border-slate-200 space-y-1">
-                <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider">Required Interventions:</span>
-                <ul class="space-y-1 pl-4 list-disc text-[11px] text-slate-700">
-                  \${(sprint.deliverables || []).map(d => \`<li>\${d}</li>\`).join('')}
-                </ul>
-              </div>
-            </div>
-
-            <!-- Peer Observer Checklist (Student B) -->
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-              <h5 class="text-xs font-bold text-slate-900 font-mono uppercase tracking-wider">\${sprint.rubric?.title || 'Peer Observer Active Listening Rubric (Student B)'}</h5>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                \${(sprint.rubric?.criteria || []).map(c => \`
-                  <div class="p-2.5 bg-white border border-slate-200 rounded-lg">
-                    <span class="font-bold text-slate-800 block">\${c.name}</span>
-                    <span class="text-[11px] text-slate-600">\${c.target}</span>
-                  </div>
-                \`).join('')}
-              </div>
-            </div>
-
-            <!-- Pitch Notes Area -->
-            <div class="space-y-1.5">
-              <label class="text-xs font-bold text-slate-700">Pair 2-Minute Pitch Outline & Design Concept:</label>
-              <textarea id="ag-s2-pitch-notes" oninput="window.saveLessonNote && window.saveLessonNote('ag_s2_pitch_notes', this.value)" placeholder="Draft your 3 corridor interventions: 1. Mass transit link... 2. Active mobility path... 3. Sponge drainage retrofit..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-emerald-500 focus:outline-none transition-all leading-relaxed"></textarea>
-            </div>
-          </div>
-
-          <!-- Part 6: Multi-Stakeholder Policy Debate & Technical Mastery Quiz -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs font-mono" style="background-color: \${theme.primary};">Part 6</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">\${policy.title || 'Part 6: Multi-Stakeholder Policy Debate & Technical Mastery Quiz'}</h4>
-                  <p class="text-[11px] text-slate-500">\${policy.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0 font-mono">Debate &amp; Quiz</span>
-            </div>
-
-            \${typeof renderActivityInstructions === 'function' ? renderActivityInstructions(policy, theme) : ''}
-
-            <!-- 3 Debate Stances -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-              \${(policy.roles || []).map(r => \`
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
-                  <h5 class="text-xs sm:text-sm font-bold text-slate-900 border-b border-slate-200 pb-1.5 font-mono">\${r.title}</h5>
-                  <p class="text-xs text-slate-700 leading-relaxed font-medium">\${r.stance}</p>
-                  <div class="space-y-1 pt-1">
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 font-mono">Key Policy Arguments:</span>
-                    <ul class="space-y-1 pl-4 list-disc text-[11px] text-slate-600 leading-relaxed">
-                      \${r.keyPoints.map(kp => \`<li>\${kp}</li>\`).join('')}
-                    </ul>
-                  </div>
-                </div>
-              \`).join('')}
-            </div>
-
-            <!-- 10-Question Technical Mastery Quiz -->
-            <div class="pt-4 border-t border-slate-200 space-y-3">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-black text-slate-900 uppercase tracking-wider font-mono">10-Question Technical Mastery Quiz</h5>
-                <span class="text-[11px] text-slate-500 font-mono">Instant Self-Score</span>
-              </div>
-              <div class="space-y-3">
-                \${(policy.quiz || []).map(q => \`
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-                    <p class="text-xs font-bold text-slate-900"><span class="font-mono text-slate-500">Q\${q.id}.</span> \${q.q}</p>
-                    <div class="space-y-1.5 pl-2">
-                      \${q.options.map((opt, oIdx) => \`
-                        <label class="flex items-center gap-2 text-xs text-slate-700 cursor-pointer hover:text-slate-900">
-                          <input type="radio" name="ag-m2-s2-quiz-\${q.id}" value="\${oIdx}" onchange="
-                            const feedback = document.getElementById('ag-m2-s2-fb-\${q.id}');
-                            feedback.classList.remove('hidden');
-                            if (\${oIdx} === \${q.answer}) {
-                              feedback.className = 'p-2 bg-emerald-50 border border-emerald-200 rounded text-xs text-emerald-900 font-medium';
-                              feedback.innerHTML = '&#10004; Correct!';
-                            } else {
-                              feedback.className = 'p-2 bg-rose-50 border border-rose-200 rounded text-xs text-rose-900 font-medium';
-                              feedback.innerHTML = '&#10008; Incorrect. Correct answer: ' + '\${q.options[q.answer].replace(/'/g, "\\\\\\'")}';
-                            }
-                          " class="text-emerald-600 focus:ring-emerald-500">
-                          <span>\${opt}</span>
-                        </label>
-                      \`).join('')}
-                    </div>
-                    <div id="ag-m2-s2-fb-\${q.id}" class="hidden"></div>
-                  </div>
-                \`).join('')}
-              </div>
+            <!-- Consensus Resolution -->
+            <div class="space-y-1.5 pt-2">
+              <label class="text-xs font-bold text-slate-700">Negotiated Policy Resolution:</label>
+              <textarea id="ag-s2-debate-verdict" oninput="window.saveLessonNote && window.saveLessonNote('ag_s2_debate_verdict', this.value)" placeholder="Draft the final compromise policy: perimeter parking, exempted vehicles, transit discounts, and phase-in timeline..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-blue-500 focus:outline-none transition-all leading-relaxed">\${savedVerdict}</textarea>
             </div>
           </div>
         </div>
       \`;
     }`;
 
-// Replace function 1 and 2 in fileContent
-const newContent = fileContent.slice(0, fn1Start) + fn1Code + '\n\n    ' + fn2Code + '\n\n    ' + fileContent.slice(fn3Start);
+// Replace lines 1 to 807
+const s3Index = source.indexOf('function renderAg2LessonContentTabSession3');
+if (s3Index === -1) {
+  console.error("Could not find renderAg2LessonContentTabSession3!");
+  process.exit(1);
+}
 
-fs.writeFileSync(templatePath, newContent, 'utf8');
-console.log("✅ Successfully replaced renderAg2LessonContentTabSession1 & renderAg2LessonContentTabSession2 in 06-templates-ag2.js!");
+const restOfFile = source.substring(s3Index);
+const newSource = s1Code + '\n\n' + s2Code + '\n\n    ' + restOfFile;
+
+fs.writeFileSync(filePath, newSource, 'utf8');
+console.log("✅ Successfully updated src/js/06-templates-ag2.js for S1 and S2!");

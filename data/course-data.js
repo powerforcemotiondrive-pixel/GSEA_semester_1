@@ -3954,481 +3954,478 @@
         "title": "Extreme Weather & Atmospheric Hazards",
         "objectives": {
           "title": "Session 1 Objectives - Extreme Weather & Atmospheric Hazards",
-          "summary": "Master high-stakes meteorological communication, downburst physics analysis, causal linkers, and crisis briefing skills for severe weather disruption.",
+          "summary": "Develop spoken communicative fluency, photo comparison skills, opinion framing, and debate strategies discussing extreme weather and climate change.",
           "items": [
             {
               "num": "01",
-              "title": "Severe Weather Meteorological Diagnostics",
-              "desc": "Explain convective storm hazards using precise B2 aviation sentence stems (supercells, atmospheric rivers, flash floods, heat domes)."
+              "title": "Photo Description: The Four Faces of Climate Crisis",
+              "desc": "Describe and compare 4 contrasting scenes of severe climate disruption using observational B1/B2 language."
             },
             {
               "num": "02",
-              "title": "Microburst & Windshear Physical Dynamics",
-              "desc": "Analyze convective downburst physics, virga, vortex rings, and low-altitude windshear mitigation systems."
+              "title": "Extreme Weather & Societal Impact Discussion",
+              "desc": "Discuss how heatwaves, flash floods, and wildfires disrupt daily routines, city living, and transport networks."
             },
             {
               "num": "03",
-              "title": "Grammar Clinic: Causal Linkers & Conditionals",
-              "desc": "Deploy formal causal verbs (stems from, culminates in, triggers) and 2nd/3rd conditional risk assessment formulas."
+              "title": "Spoken Language Clinic: Expressing Stances & Nuanced Opinions",
+              "desc": "Deploy conversational signposts for expressing strong personal viewpoints and polite, constructive disagreement."
             },
             {
               "num": "04",
-              "title": "Incident Dossier Research & Mitigation Pitch",
-              "desc": "Conduct small group research on a real weather emergency dossier and deliver a 90-second operational mitigation briefing with peer rubric."
+              "title": "Small-Group Decision Task: The €50M Climate Action Plan",
+              "desc": "Negotiate a municipal climate adaptation fund with your peers, debating trade-offs and agreeing on top priorities."
             },
             {
               "num": "05",
-              "title": "Spoken Vocabulary Game: Extreme Weather Taboo",
-              "desc": "Build rapid oral circumlocution and phonological fluency using 12 technical taboo cards with IPA stress guides."
+              "title": "Interactive Spoken Game: Climate Buzzword Taboo",
+              "desc": "Build rapid oral circumlocution and conversational agility using 12 B1/B2 climate buzzwords with forbidden terms."
             },
             {
               "num": "06",
-              "title": "Aerodrome Crisis Shutdown Debate",
-              "desc": "Debate runway closure criteria and diversion thresholds across Ramp Operations, Flight Dispatch, and Safety Inspection viewpoints."
+              "title": "Town Hall Public Debate: Who Pays for Climate Adaptation?",
+              "desc": "Defend assigned community stakeholder positions on who should fund infrastructure repairs and disaster preparedness."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 1 Lesson Plan - Extreme Weather & Atmospheric Hazards (2 Hours)",
-          "summary": "A 2-hour university seminar combining opening news diagnostic, microburst video noticeboard, causal grammar clinic, small group dossier research & pitch, Taboo fluency game, and aerodrome shutdown debate.",
+          "summary": "A 2-hour communicative workshop combining personal weather storytelling, a 4-photo visual debate lab, opinion language clinic, €50M adaptation budget negotiation, Taboo speaking game, and a town hall public debate.",
           "items": [
             {
               "part": "Part 1",
-              "title": "Meteorological News Scan & Spoken Diagnostic",
-              "description": "Pairwise diagnostic questions with framed sentence stems comparing supercells, atmospheric rivers, flash floods, and adaptation vs mitigation."
+              "title": "Conversational Warm-Up: Personal Weather Stories & Community Impact",
+              "description": "Pairwise diagnostic questions with framed sentence stems sharing personal memories of severe weather and discussing how storms disrupt daily life."
             },
             {
               "part": "Part 2",
-              "title": "Interactive Video Lab: Convective Storms & Microburst Physics",
-              "description": "Video breakdown of convective downburst dynamics, virga, and low-altitude windshear, supported by 3 guided oral discussion prompts and debrief card."
+              "title": "4-Photo Visual Description & Debate Lab: The Four Faces of Climate Crisis",
+              "description": "Case study reading and photo comparison of 4 real-world climate impacts: Heatwave & Drought, Urban Flash Flood, Wildfire Smoke, and Renewable Adaptation."
             },
             {
               "part": "Part 3",
-              "title": "Language Clinic: Formal Causal Linkers & Conditional Risk Formulas",
-              "description": "Structured drills deploying causal verbs (stems from, triggers, culminates in) and 2nd/3rd conditional formulas for risk assessment."
+              "title": "Language Clinic: Expressing Opinions & Polite Disagreement",
+              "description": "Targeted spoken language drills deploying conversational markers (From my perspective, I see your point, but..., That may be true, yet...)."
             },
             {
               "part": "Part 4",
-              "title": "3-Person Incident Dossier Research & Spoken Mitigation Pitch",
-              "description": "Groups choose 1 real weather case (Dubai flood, Phoenix extreme heat, or DFW microburst), analyze operational data, and deliver a 90-second pitch with peer observer rubric."
+              "title": "Small-Group Decision Task: The €50M Climate Action Plan",
+              "description": "Groups debate a decision table with 6 municipal adaptation projects, negotiating budget trade-offs to reach consensus on their top 3 investments."
             },
             {
               "part": "Part 5",
-              "title": "Interactive Vocabulary Game: Extreme Weather Taboo",
-              "description": "Oral communication game using 12 Taboo cards with forbidden buzzwords and IPA phonetic pronunciation guides to develop circumlocution."
+              "title": "Interactive Spoken Game: Climate Buzzword Taboo",
+              "description": "Fast-paced pair game with 12 accessible B1/B2 cards (heatwave, flash flood, drought, carbon footprint) to build circumlocution."
             },
             {
               "part": "Part 6",
-              "title": "Aerodrome Crisis Shutdown Debate & Multi-Stakeholder Consensus",
-              "description": "Multi-stakeholder simulation debating runway closure criteria between Ramp Ops, Flight Dispatch, and Safety Inspection."
+              "title": "Town Hall Public Debate: Who Should Pay for Climate Damage?",
+              "description": "Multi-stakeholder consensus debate between Local Residents, Municipal Council, and Industry Executives on funding disaster adaptation, concluding with peer review."
             }
           ]
         },
         "revision": {
-          "title": "Session 1: Extreme Weather & Atmospheric Hazards",
-          "summary": "Review the 18 key technical terms for severe weather, downburst hazards, and aerodrome climate resilience.",
+          "title": "Session 1: Extreme Weather & Climate Crisis",
+          "summary": "Review the 18 essential B1/B2 terms for climate change, severe weather, and community adaptation.",
           "terms": [
             {
               "num": "01",
-              "term": "Microburst",
-              "ipa": "/ˈmaɪ.krəʊ.bɜːst/",
-              "def": "Intense localized column of sinking air within a thunderstorm producing damaging outflow winds."
+              "term": "Global Warming",
+              "ipa": "/ˈɡləʊ.bəl ˈwɔː.mɪŋ/",
+              "def": "Long-term heating of Earth's climate system driven by human fossil fuel burning."
             },
             {
               "num": "02",
-              "term": "Supercell",
-              "ipa": "/ˈsuː.pə.sel/",
-              "def": "Severe thunderstorm characterized by a deep, persistently rotating updraft (mesocyclone)."
+              "term": "Greenhouse Effect",
+              "ipa": "/ˈɡriːn.haʊs ɪˌfekt/",
+              "def": "The trapping of the sun's warmth in the atmosphere by carbon dioxide and methane gases."
             },
             {
               "num": "03",
-              "term": "Atmospheric River",
-              "ipa": "/ˌæt.məsˈfer.ɪk ˈrɪv.ər/",
-              "def": "Long, narrow band of concentrated moisture in the atmosphere that transports water vapor outside the tropics."
+              "term": "Carbon Footprint",
+              "ipa": "/ˌkɑː.bən ˈfʊt.prɪnt/",
+              "def": "The total amount of greenhouse gases generated by our personal choices and activities."
             },
             {
               "num": "04",
-              "term": "Heat Dome",
-              "ipa": "/ˈhiːt ˌdəʊm/",
-              "def": "Persistent high-pressure ridge trapping hot ocean air over a region like a pot with a lid."
+              "term": "Heatwave",
+              "ipa": "/ˈhiːt.weɪv/",
+              "def": "A prolonged period of abnormally hot weather affecting human health, crops, and infrastructure."
             },
             {
               "num": "05",
-              "term": "Density Altitude",
-              "ipa": "/ˈden.sə.ti ˈæl.tɪ.tʃuːd/",
-              "def": "Pressure altitude corrected for non-standard temperature; reduces aircraft aerodynamic lift and engine thrust in hot weather."
+              "term": "Flash Flood",
+              "ipa": "/ˈflæʃ ˌflʌd/",
+              "def": "A sudden, violent flood that happens in less than six hours after torrential rainfall."
             },
             {
               "num": "06",
-              "term": "Flash Flood",
-              "ipa": "/ˈflæʃ ˌflʌd/",
-              "def": "Rapid flooding of low-lying areas in less than six hours, caused by intense torrential rain."
+              "term": "Drought",
+              "ipa": "/draʊt/",
+              "def": "A prolonged period of abnormally low rainfall leading to severe water shortages and crop loss."
             },
             {
               "num": "07",
-              "term": "Convective Cell",
-              "ipa": "/kənˈvek.tɪv ˌsel/",
-              "def": "Thermal circulatory system in which buoyant warm air rises and cool air sinks, forming storm clouds."
+              "term": "Sea-Level Rise",
+              "ipa": "/ˈsiː ˌlev.əl ˌraɪz/",
+              "def": "The increase in global ocean levels caused by melting glaciers and warm water expansion."
             },
             {
               "num": "08",
-              "term": "Windshear",
-              "ipa": "/ˈwɪnd.ʃɪər/",
-              "def": "Sudden, dramatic change in wind speed or direction over a short horizontal or vertical distance."
+              "term": "Climate Adaptation",
+              "ipa": "/ˈklaɪ.mət ˌæd.æpˈteɪ.ʃən/",
+              "def": "Changing our buildings, cities, and habits to protect communities from extreme weather."
             },
             {
               "num": "09",
-              "term": "Virga",
-              "ipa": "/ˈvɜː.ɡə/",
-              "def": "Precipitation falling from a cloud that evaporates or sublimates before reaching the ground, often generating dry microbursts."
+              "term": "Climate Mitigation",
+              "ipa": "/ˈklaɪ.mət ˌmɪt.ɪˈɡeɪ.ʃən/",
+              "def": "Actions taken to reduce or stop the emission of greenhouse gases into the atmosphere."
             },
             {
               "num": "10",
-              "term": "Runway Inundation",
-              "ipa": "/ˈrʌn.weɪ ˌɪn.ʌnˈdeɪ.ʃən/",
-              "def": "Submersion of runway surfaces by storm surge or runoff, exceeding aircraft operating limits."
+              "term": "Renewable Energy",
+              "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
+              "def": "Clean energy collected from natural resources that replenish themselves (solar, wind, hydro)."
             },
             {
               "num": "11",
-              "term": "Hail Swath",
-              "ipa": "/ˈheɪl ˌswɒθ/",
-              "def": "A linear geographic corridor impacted by damaging hail stones falling from a severe thunderstorm."
+              "term": "Fossil Fuels",
+              "ipa": "/ˈfɒs.əl ˌfjuː.əlz/",
+              "def": "Non-renewable carbon sources like coal, oil, and gas formed over millions of years."
             },
             {
               "num": "12",
-              "term": "Squall Line",
-              "ipa": "/ˈskwɔːl ˌlaɪn/",
-              "def": "A narrow line of active thunderstorms with severe surface wind gusts and sudden pressure jumps."
+              "term": "Wildfire",
+              "ipa": "/ˈwaɪld.faɪər/",
+              "def": "A large, destructive fire that spreads quickly over woodland, brush, or rural communities."
             },
             {
               "num": "13",
-              "term": "Inversion Layer",
-              "ipa": "/ɪnˈvɜː.ʃən ˌleɪ.ər/",
-              "def": "An atmospheric layer where temperature increases with altitude, trapping pollutants and moisture below."
+              "term": "Climate Anxiety",
+              "ipa": "/ˈklaɪ.mət æŋˌzaɪ.ə.ti/",
+              "def": "Chronic worry and stress about the future of the planet and environmental breakdown."
             },
             {
               "num": "14",
-              "term": "Clear-Air Turbulence (CAT)",
-              "ipa": "/ˌklɪər ˈeə ˈtɜː.bjə.ləns/",
-              "def": "Sudden severe turbulence occurring in cloudless skies, typically associated with jet stream wind gradients."
+              "term": "Extreme Weather",
+              "ipa": "/ɪkˈstriːm ˈweð.ər/",
+              "def": "Severe, unexpected meteorological events like superstorms, blizzards, and heatwaves."
             },
             {
               "num": "15",
-              "term": "Cold Front",
-              "ipa": "/ˈkəʊld ˌfrʌnt/",
-              "def": "The leading edge of a cooler mass of air replacing a warmer mass, often triggering convective instability."
+              "term": "Disaster Preparedness",
+              "ipa": "/dɪˈzɑː.stər prɪˈpeə.rɪd.nəs/",
+              "def": "Community planning, emergency supplies, and evacuation systems to respond to crises."
             },
             {
               "num": "16",
-              "term": "Holdover Time (HOT)",
-              "ipa": "/ˈhəʊld.əʊ.vər ˌtaɪm/",
-              "def": "The estimated time de-icing fluid prevents ice and snow accumulation on treated aircraft surfaces."
+              "term": "Cooling Shelter",
+              "ipa": "/ˈkuː.lɪŋ ˌʃel.tər/",
+              "def": "An air-conditioned public facility opened during severe heatwaves to protect vulnerable citizens."
             },
             {
               "num": "17",
-              "term": "Climate Mitigation",
-              "ipa": "/ˈklaɪ.mət ˌmɪt.ɪˈɡeɪ.ʃən/",
-              "def": "Structural actions taken to reduce or prevent the emission of greenhouse gases into the atmosphere."
+              "term": "Sustainable Living",
+              "ipa": "/səˈsteɪ.nə.bəl ˈlɪv.ɪŋ/",
+              "def": "A lifestyle that attempts to reduce an individual's use of natural resources and waste."
             },
             {
               "num": "18",
-              "term": "Climate Adaptation",
-              "ipa": "/ˈklaɪ.mət ˌæd.æpˈteɪ.ʃən/",
-              "def": "Adjustments in ecological, social, or economic infrastructure to cope with unavoidable extreme weather."
+              "term": "Eco-Friendly",
+              "ipa": "/ˌiː.kəʊˈfrend.li/",
+              "def": "Products, policies, and practices that do not cause harm to the natural environment."
             }
           ]
         },
         "overview": {
           "title": "Extreme Weather & Atmospheric Hazards",
-          "subtitle": "Convective Microbursts, Runaway Surface Heating & Aerodrome Severe Weather Protocols",
-          "badge": "Session Overview • Extreme Weather & Atmospheric Hazards",
+          "subtitle": "Global Warming, Severe Weather Impacts on Communities & The Climate Adaptation Debate",
+          "badge": "Session Overview • Weather & Environment",
           "image": "images/ag_m2card1.jpg"
         },
         "materials": {
-          "title": "Session 1 Study Materials: Extreme Weather",
-          "summary": "Technical vocabulary dossiers, causal connectors, and severe weather emergency SOPs."
+          "title": "Session 1 Study Materials: Weather & Environment",
+          "summary": "Visual debate panels, opinion phrasing guides, and municipal climate adaptation dossiers."
         },
         "lessonContent": {
           "overview": {
             "title": "Extreme Weather & Atmospheric Hazards",
-            "subtitle": "Convective Microbursts, Runaway Surface Heating & Aerodrome Severe Weather Protocols",
-            "badge": "Session Overview • Extreme Weather & Atmospheric Hazards",
+            "subtitle": "Global Warming, Severe Weather Impacts on Communities & The Climate Adaptation Debate",
+            "badge": "Session Overview • Weather & Environment",
             "image": "images/ag_m2card1.jpg"
           },
           "hero": {
             "title": "Extreme Weather & Atmospheric Hazards",
-            "subtitle": "Convective Microbursts, Runaway Surface Heating & Aerodrome Severe Weather Protocols",
+            "subtitle": "Global Warming, Severe Weather Impacts on Communities & The Climate Adaptation Debate",
             "image": "images/ag_m2card1.jpg"
           },
           "openingSession": {
-            "title": "Activity 1: Extreme Weather News & Meteorological Diagnostic",
-            "summary": "Pairwise diagnostic warm-up comparing severe atmospheric hazards with structured spoken sentence frames.",
-            "instructions": "In pairs, review the weekly severe climate news headlines. Then take turns asking and answering the four diagnostic questions below, using the provided sentence frames to structure your spoken explanations.",
+            "title": "Part 1: Conversational Warm-Up — Personal Weather Stories & Community Impact",
+            "summary": "Sharing personal memories of severe weather and discussing how storms disrupt our daily lives.",
+            "instructions": "In pairs, ask and answer the opening discussion questions below. Use the framed sentence stems to describe your personal memories and explain how weather disrupts everyday society.",
             "newsPrompts": [
-              "Record-shattering 48°C surface heat in the Persian Gulf grounds regional regional turboprop operations due to density altitude performance limits.",
-              "An intense atmospheric river dumps three months of rainfall over Central Europe in 36 hours, overwhelming airport drainage retention ponds.",
-              "Severe squall line triggers low-level windshear alerts and multiple go-arounds along the Mediterranean coastal approach corridor."
+              "Record-breaking European summer heatwave triggers municipal cooling centers and halts daytime railway operations.",
+              "Unprecedented autumn flash flooding submerges city metro stations and washes away cars in residential streets.",
+              "Wildfire smoke plumes travel over 1,000 kilometers, prompting widespread air quality health alerts in major cities."
             ],
             "diagnostic": {
-              "title": "Meteorological Concepts Diagnostic Check",
-              "instructions": "Use the sentence stem to formulate your spoken answer before revealing the model explanation.",
+              "title": "Opening Spoken Discussion Prompts",
+              "instructions": "Work in pairs. Take turns answering with the suggested sentence stems before reading the model response.",
               "questions": [
                 {
                   "id": 1,
-                  "q": "What is the critical distinction between a Supercell Thunderstorm and an ordinary Convective Cell?",
-                  "prompt": "A standard convective cell is driven by..., whereas a supercell is uniquely characterized by...",
-                  "answer": "A standard convective single-cell thunderstorm goes through a simple 30-to-60-minute lifecycle of updraft, precipitation, and downdraft dissipation. In contrast, a supercell possesses a deeply rotating, persistent updraft called a mesocyclone, enabling it to maintain immense structural stability, generate giant hail, damaging microbursts, and long-lived tornadoes."
+                  "q": "Describe an extreme weather event you have personally experienced: what happened and how did you feel?",
+                  "prompt": "The most intense weather event I have ever lived through was..., which made me feel...",
+                  "answer": "Personal stories often describe intense summer heatwaves where indoor temperatures reached 38°C, or sudden torrential storms where streets turned into rivers in minutes. Common reactions include feeling helpless, anxious about safety, and surprised by how quickly normal public transport and power networks collapse."
                 },
                 {
                   "id": 2,
-                  "q": "How does an Atmospheric River differ from the high-altitude Jet Stream?",
-                  "prompt": "The jet stream is a high-altitude band of..., while an atmospheric river consists of...",
-                  "answer": "The jet stream is a high-altitude, fast-flowing ribbon of air (typically around 30,000 to 40,000 feet) driven by global thermal contrasts. An atmospheric river, by contrast, is a lower-tropospheric corridor of concentrated water vapor—often dubbed a 'river in the sky'—that transports vast volumes of moisture from tropical oceans to landmasses, causing extreme precipitation."
+                  "q": "Discuss how severe weather disrupts our daily routines, universities, and public transport.",
+                  "prompt": "When extreme weather hits our region, the most disruptive consequence is..., because...",
+                  "answer": "Severe storms cause power outages, railway track distortion from extreme heat, cancelled train services, flooded underground stations, and flight delays. For university students, it means cancelled classes, difficult commutes, and relying on remote online communication."
                 },
                 {
                   "id": 3,
-                  "q": "What is the operational difference between Flash Flooding and Riverine Flooding?",
-                  "prompt": "Riverine flooding occurs over..., whereas flash flooding is triggered within...",
-                  "answer": "Riverine flooding is a gradual hydrological event occurring over days or weeks when rivers exceed channel bank capacity. Flash flooding happens within less than six hours of torrential convective rainfall, producing sudden, high-velocity surface runoff that overwhelms civil storm sewer systems and floods airport aprons and taxiways with little warning."
+                  "q": "Explain the real difference between daily weather and long-term climate change.",
+                  "prompt": "Daily weather refers to short-term conditions like..., whereas climate change represents...",
+                  "answer": "Daily weather is what is happening outside your window right now (rain, sunshine, wind, temperature over a few hours or days). Climate change is the statistical trend of those conditions measured over 30 years or more, showing that extreme heat, droughts, and intense storms are becoming far more frequent and dangerous."
                 },
                 {
                   "id": 4,
-                  "q": "In climate engineering, what is the difference between Climate Mitigation and Climate Adaptation?",
-                  "prompt": "Mitigation focuses primarily on..., whereas adaptation involves...",
-                  "answer": "Climate mitigation focuses on tackling the root causes by reducing or capturing greenhouse gas emissions (e.g. electrifying airport ground support equipment, adopting Sustainable Aviation Fuels). Climate adaptation focuses on reinforcing physical systems to survive extreme impacts (e.g. elevating substation electrical switchgear, widening runway retention canals, applying thermal-reflective runway coatings)."
+                  "q": "In your view, who is most vulnerable in our communities when an extreme heatwave or flood strikes?",
+                  "prompt": "During severe climate emergencies, the people at greatest risk are..., because they lack...",
+                  "answer": "The elderly, young children, unhoused people, and low-income families living in poorly insulated apartments are the most vulnerable. They often lack access to air conditioning, cannot afford high energy bills, and have limited mobility to evacuate when floodwaters rise."
                 }
               ]
             }
           },
-          "videoLab": {
-            "title": "Activity 2: Interactive Video Lab — Convective Storms & Microburst Physics",
-            "summary": "Video analysis of convective storm dynamics, virga, vortex rings, and low-altitude windshear mitigation.",
-            "instructions": "Watch the video breakdown of convective microburst dynamics. Study the multi-column noticeboard below, then discuss the three operational questions with your partner.",
-            "videoTitle": "Severe Convective Storms: Downburst Dynamics & Airport Windshear",
-            "videoUrl": "https://www.youtube.com/embed/6_mH15N7fE8",
-            "youtubeUrl": "https://www.youtube.com/watch?v=6_mH15N7fE8",
-            "channel": "Meteorology & Atmospheric Dynamics Lab",
-            "concepts": [
-              "Convective Downdraft Acceleration",
-              "Virga & Evaporative Cooling",
-              "Outflow Boundary & Vortex Ring",
-              "Terminal Doppler Weather Radar (TDWR)",
-              "Low-Level Windshear Alert System (LLWAS)"
-            ],
-            "guidedQuestions": [
+          "visualDebate": {
+            "title": "Part 2: 4-Photo Visual Description & Debate Lab — The Four Faces of Climate Crisis",
+            "summary": "Observing, comparing, and debating 4 real-world photographs of climate disruption and solutions.",
+            "instructions": "Examine the four photographs below. In pairs, take turns describing what you observe in each picture using the sentence stems. Then choose two contrasting images and debate the prompt question.",
+            "photos": [
               {
-                "q": "1. Why does evaporative cooling inside a storm cloud dramatically accelerate a downburst?",
-                "answer": "As falling precipitation encounters dry air beneath the cloud base, it rapidly evaporates (forming virga). This evaporation absorbs latent heat from the surrounding air, making the air pocket much colder, denser, and heavier than the ambient environment, causing it to plunge downward like a lead weight at speeds exceeding 50 knots."
+                "id": 1,
+                "title": "Photo 1: Extreme Heat & Drought",
+                "file": "images/weather_heatwave_drought.jpg",
+                "scene": "Parched, cracked agricultural soil and dried lake bed under an intense, blazing sun.",
+                "prompt": "What strikes me about Photo 1 is the severe lack of moisture, which demonstrates how prolonged drought destroys...",
+                "debateQ": "When regional water reserves drop below 20%, who should have priority access: local farmers, residents for domestic use, or industrial factories?"
               },
               {
-                "q": "2. How does an aircraft encounter with a microburst fool flight crew if they rely only on airspeed indicators?",
-                "answer": "As an aircraft enters the outflow ring, it first encounters a strong headwind, which temporarily increases airspeed and lift, tempting the pilot to reduce engine power. Seconds later, the aircraft crosses the center core downdraft into a massive tailwind, causing an abrupt loss of airspeed, catastrophic lift deficit, and rapid altitude loss close to the ground."
+                "id": 2,
+                "title": "Photo 2: Urban Flash Flooding",
+                "file": "images/weather_urban_flash_flood.jpg",
+                "scene": "Submerged city intersection, cars floating in muddy brown water, pedestrians wading through knee-deep runoff.",
+                "prompt": "In Photo 2, the image highlights the vulnerability of concrete city centers where drainage systems cannot cope with...",
+                "debateQ": "When an urban neighborhood floods, who bears primary responsibility: the city council who designed the sewers, or property developers building on floodplains?"
               },
               {
-                "q": "3. What infrastructure enhancements allow modern aerodromes to detect microbursts before aircraft penetrate them?",
-                "answer": "Modern aerodromes employ Terminal Doppler Weather Radar (TDWR) placed several miles off-axis, combined with a perimeter network of anemometers known as LLWAS (Low-Level Windshear Alert System) that detect divergence in surface wind vectors in real time, transmitting immediate automated windshear alerts to ATC."
+                "id": 3,
+                "title": "Photo 3: Wildfire Smoke & Sky",
+                "file": "images/weather_wildfire_smoke.jpg",
+                "scene": "Apocalyptic orange haze filling the sky over a residential neighborhood as forest fires burn in the background.",
+                "prompt": "Looking at Photo 3, the dense smoke and glowing orange horizon show that climate disasters respect no borders and cause...",
+                "debateQ": "Should emergency authorities have the legal power to force residents to evacuate, or should citizens have the right to stay and defend their property?"
+              },
+              {
+                "id": 4,
+                "title": "Photo 4: Renewable Transition & Hope",
+                "file": "images/weather_renewable_transition.jpg",
+                "scene": "Expansive solar panel fields and modern wind turbines coexisting with green pastures.",
+                "prompt": "In sharp contrast to the other pictures, Photo 4 offers an inspiring vision of clean energy where technology helps us...",
+                "debateQ": "Are individual lifestyle changes (shorter showers, recycling) truly meaningful, or are massive government climate taxes the only real solution?"
               }
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Clinic — Formal Causal Linkers & Conditional Risk Formulas",
-            "summary": "Mastering formal verbs of causation and 2nd/3rd conditional formulas for technical risk assessment.",
-            "instructions": "Review the causal verbs and conditional patterns below. Complete the active sentence transformations with your partner, then verify your phrasing using the self-check reveals.",
+            "title": "Part 3: Spoken Language Clinic — Expressing Opinions on Severe Weather Hazards",
+            "summary": "Conversational signposts for stating strong personal viewpoints and politely challenging counter-arguments.",
+            "instructions": "Review the useful phrases for expressing opinions below. Practice transforming the statements with your partner to make your speaking sound natural, diplomatic, and persuasive.",
             "patterns": [
               {
-                "rule": "Formal Causal Verbs",
-                "formula": "Subject + [stems from / triggers / culminates in / brings about / accounts for] + Noun Phrase",
+                "rule": "Stating Your Viewpoint Confidently",
+                "formula": "From my perspective / I strongly believe that / As far as I'm concerned, + [Opinion]",
                 "examples": [
-                  "Severe apron inundation stemmed from an unprecedented convective deluge.",
-                  "Runway thermal expansion triggered a suspension of heavy jet departures."
+                  "From my perspective, protecting green spaces is far more urgent than building new highways.",
+                  "I strongly believe that cities must invest heavily in shaded pedestrian walkways."
                 ]
               },
               {
-                "rule": "Second Conditional for Hypothetical Risk Scenarios",
-                "formula": "If + Past Simple, + would/could + bare infinitive",
+                "rule": "Polite & Constructive Disagreement",
+                "formula": "I see your point, but... / That may be true, yet... / I'm not entirely convinced that...",
                 "examples": [
-                  "If the aerodrome operated an on-site water retention reservoir, surface flooding would not halt flight operations.",
-                  "If surface temperatures reached 50°C, widebody aircraft could not meet required climb gradients."
+                  "I see your point about convenience, but private cars cause 70% of urban air pollution.",
+                  "That may be true, yet we cannot ignore the economic cost of doing nothing."
                 ]
               },
               {
-                "rule": "Third Conditional for Past Incident Root-Cause Analysis",
-                "formula": "If + had + past participle, + would/could have + past participle",
+                "rule": "Weighing Two Sides of a Climate Dilemma",
+                "formula": "On the one hand, [Fact A]; on the other hand, [Fact B]...",
                 "examples": [
-                  "If the weather radar had detected the low-level windshear earlier, the flight crew would have initiated an immediate go-around.",
-                  "If drainage culverts had been dredged before the storm, the taxiway network would not have been submerged."
+                  "On the one hand, air conditioning saves lives during heatwaves; on the other hand, it consumes enormous electrical power."
                 ]
               }
             ],
             "drills": [
               {
                 "id": 1,
-                "prompt": "Combine using 'culminate in': 'Sustained torrential downpours saturated the topsoil. As a result, a massive retaining wall collapsed onto Taxiway Bravo.'",
-                "answer": "Sustained torrential downpours saturated the topsoil, culminating in the collapse of a massive retaining wall onto Taxiway Bravo."
+                "prompt": "Disagree politely with this opinion: 'People should just stay inside with air conditioning during heatwaves; there is no need to change our cities.'",
+                "answer": "I see your point about immediate personal relief, but air conditioning consumes huge amounts of power and makes street-level heat even worse for pedestrians."
               },
               {
                 "id": 2,
-                "prompt": "Transform into a Third Conditional sentence: 'The airport lacked an automated LLWAS sensor grid, so controllers failed to warn the crew of the oncoming microburst.'",
-                "answer": "If the airport had possessed an automated LLWAS sensor grid, air traffic controllers would have warned the flight crew of the oncoming microburst."
+                "prompt": "Frame a strong personal opinion using 'From my perspective': 'Individual recycling cannot stop global warming.'",
+                "answer": "From my perspective, while individual recycling is positive, real climate progress requires bold government legislation and corporate accountability."
               },
               {
                 "id": 3,
-                "prompt": "Combine using 'stems from': 'Extreme density altitude reduces aircraft performance during takeoff. This phenomenon originates from high ambient air temperatures.'",
-                "answer": "Degraded aircraft takeoff performance during high summer temperatures stems from extreme density altitude."
+                "prompt": "Weigh both sides using 'On the one hand... on the other hand': 'Banning domestic short flights.'",
+                "answer": "On the one hand, banning short flights significantly cuts carbon emissions; on the other hand, we must ensure high-speed train tickets remain affordable for all travelers."
               }
             ]
           },
-          "researchPitch": {
-            "title": "Activity 4: 3-Person Incident Dossier Research & Mitigation Pitch",
-            "summary": "Collaborative incident investigation, data analysis, and a 90-second operational mitigation briefing with peer rubric.",
-            "instructions": "Work in teams of 3. Choose ONE of the real-world operational weather dossiers below. Review the technical data, identify the cascading operational failures, and formulate a 3-point resilience plan. Nominate Student A to deliver a 90-second spoken briefing while Student B evaluates using the Peer Observer Checklist.",
-            "dossiers": [
+          "decisionTask": {
+            "title": "Part 4: Small-Group Decision Task — The €50M Municipal Climate Action Plan",
+            "summary": "Negotiating budget priorities: select the top 3 projects to protect your town from extreme weather.",
+            "instructions": "Work in groups of 3 or 4. Your municipal council has been awarded a €50 Million Climate Resilience Fund. Review the 6 competing proposals below. You only have enough budget to fund THREE projects. Debate the benefits of each, negotiate trade-offs, and reach a unanimous group consensus.",
+            "budget": "Total Available Fund: €50,000,000",
+            "projects": [
               {
-                "id": "DXB",
-                "title": "Dossier 1: Dubai International (DXB) Historic Apron Inundation",
-                "context": "Record cloudburst dumps 254 mm of rain in 24 hours (nearly two years of typical rainfall).",
-                "data": "Runway water depth: 15–25 cm; Ground radar disabled by lightning; 1,200 flights cancelled; Fuel hydrant systems submerged; Baggage transfer tunnels flooded.",
-                "challenge": "Develop an apron flood evacuation and rapid drainage restoration plan within 48 hours."
+                "id": "A",
+                "name": "Project A: Urban Tree Canopy & Green Corridors",
+                "cost": "€15M",
+                "benefit": "Plants 50,000 mature trees along streets to lower summer temperatures by 3°C and create shaded walkways."
               },
               {
-                "id": "PHX",
-                "title": "Dossier 2: Phoenix Sky Harbor (PHX) Extreme Heat Grounding",
-                "context": "Surface air temperature surges to 49°C (120°F), exceeding maximum certified operating tables for regional jets.",
-                "data": "Air density drops by 14%; Required takeoff runway length increases by 22%; Max takeoff weight penalty: -3,500 kg per flight; 43 regional flights grounded.",
-                "challenge": "Establish daytime temperature operating thresholds, night flight shift schedules, and passenger compensation policies."
+                "id": "B",
+                "name": "Project B: Riverbank Flood Barrier & Storm Retention Ponds",
+                "cost": "€25M",
+                "benefit": "Constructs defensive earth barriers and overflow wetlands to protect 10,000 homes from flash flooding."
               },
               {
-                "id": "DFW",
-                "title": "Dossier 3: Dallas/Fort Worth (DFW) Low-Altitude Microburst Encounter",
-                "context": "A decaying thunderstorm cell produces a localized 60-knot downdraft along the final approach corridor.",
-                "data": "Aircraft on 3-mile final experiences +25 kt indicated airspeed surge followed by immediate 45 kt tailwind sheer; Sink rate exceeds 2,400 ft/min.",
-                "challenge": "Draft revised ATC go-around mandates and automated windshear sensor alerting protocols."
+                "id": "C",
+                "name": "Project C: Public Building Solar Roofs & Battery Storage",
+                "cost": "€20M",
+                "benefit": "Equips all schools, hospitals, and community halls with solar panels to guarantee power during blackouts."
+              },
+              {
+                "id": "D",
+                "name": "Project D: Network of 12 Municipal Cooling Shelters",
+                "cost": "€10M",
+                "benefit": "Opens air-conditioned community centers offering free clean water, medical checks, and rest for vulnerable citizens."
+              },
+              {
+                "id": "E",
+                "name": "Project E: Subsidized Home Insulation Grants for Low-Income Families",
+                "cost": "€15M",
+                "benefit": "Provides direct grants to insulate 4,000 older homes against extreme winter cold and summer heat."
+              },
+              {
+                "id": "F",
+                "name": "Project F: Early Warning SMS Siren Network & Citizen Training",
+                "cost": "€5M",
+                "benefit": "Installs high-tech weather sirens, automated smartphone warnings, and community disaster response drills."
               }
             ],
             "rubric": {
               "title": "Peer Observer Active Listening Rubric (Student B)",
               "criteria": [
                 {
-                  "name": "Technical Precision",
-                  "target": "Uses precise weather vocabulary (density altitude, virga, microburst, retention capacity)."
+                  "name": "useful phrases for expressing opinions",
+                  "target": "Uses target phrasing (From my perspective, I see your point, but...)."
                 },
                 {
-                  "name": "Causal Linking",
-                  "target": "Employs target causal verbs (stems from, triggers, culminates in) smoothly."
+                  "name": "Justification & Examples",
+                  "target": "Provides clear, logical reasons why one project is more urgent than another."
                 },
                 {
-                  "name": "Operational Structure",
-                  "target": "Presents clear problem diagnosis, impact analysis, and 3-point action plan."
+                  "name": "Collaborative Compromise",
+                  "target": "Listens respectfully to partners and works toward a shared agreement."
                 },
                 {
                   "name": "Spoken Delivery",
-                  "target": "Speaks with confident pace, clear stress, and minimal hesitation within 90 seconds."
+                  "target": "Speaks with confident pace, clear stress, and active engagement."
                 }
               ]
             }
           },
           "vocabGame": {
-            "title": "Activity 5: Interactive Spoken Vocabulary Game — Extreme Weather Taboo",
-            "summary": "Fast-paced spoken fluency and circumlocution game with 12 technical cards, forbidden buzzwords, and IPA guides.",
-            "instructions": "Form pairs or small groups. Player 1 describes the target buzzword without saying the word itself or any of the 3 forbidden Taboo words. Player 2 must guess the word within 45 seconds. Pay close attention to the IPA phonetic stress marks!",
+            "title": "Part 5: Interactive Spoken Game — Extreme Weather Buzzword Taboo",
+            "summary": "Fast-paced pair fluency game: explain the environmental term without saying the forbidden words!",
+            "instructions": "Work in pairs. Player 1 describes the target buzzword without using the word itself or any of the 3 forbidden words. Player 2 must guess within 45 seconds. Keep score and switch roles after each card!",
             "cards": [
               {
-                "word": "Microburst",
-                "ipa": "/ˈmaɪ.krəʊ.bɜːst/",
-                "forbidden": [
-                  "Wind",
-                  "Downdraft",
-                  "Rain"
-                ]
-              },
-              {
-                "word": "Heat Dome",
-                "ipa": "/ˈhiːt ˌdəʊm/",
+                "word": "Heatwave",
+                "ipa": "/ˈhiːt.weɪv/",
                 "forbidden": [
                   "Hot",
-                  "High Pressure",
-                  "Summer"
+                  "Summer",
+                  "Temperature"
                 ]
               },
               {
-                "word": "Atmospheric River",
-                "ipa": "/ˌæt.məsˈfer.ɪk ˈrɪv.ər/",
-                "forbidden": [
-                  "Moisture",
-                  "Ocean",
-                  "Rain"
-                ]
-              },
-              {
-                "word": "Supercell",
-                "ipa": "/ˈsuː.pə.sel/",
-                "forbidden": [
-                  "Tornado",
-                  "Cloud",
-                  "Storm"
-                ]
-              },
-              {
-                "word": "Density Altitude",
-                "ipa": "/ˈden.sə.ti ˈæl.tɪ.tʃuːd/",
-                "forbidden": [
-                  "Temperature",
-                  "Thin Air",
-                  "Takeoff"
-                ]
-              },
-              {
-                "word": "Runway Inundation",
-                "ipa": "/ˈrʌn.weɪ ˌɪn.ʌnˈdeɪ.ʃən/",
+                "word": "Flash Flood",
+                "ipa": "/ˈflæʃ ˌflʌd/",
                 "forbidden": [
                   "Water",
-                  "Flood",
-                  "Closed"
+                  "Rain",
+                  "River"
                 ]
               },
               {
-                "word": "Hail Swath",
-                "ipa": "/ˈheɪl ˌswɒθ/",
+                "word": "Drought",
+                "ipa": "/draʊt/",
                 "forbidden": [
+                  "Dry",
+                  "Rain",
+                  "Water"
+                ]
+              },
+              {
+                "word": "Carbon Footprint",
+                "ipa": "/ˌkɑː.bən ˈfʊt.prɪnt/",
+                "forbidden": [
+                  "CO2",
+                  "Pollution",
+                  "Personal"
+                ]
+              },
+              {
+                "word": "Global Warming",
+                "ipa": "/ˈɡləʊ.bəl ˈwɔː.mɪŋ/",
+                "forbidden": [
+                  "Earth",
+                  "Hot",
+                  "Climate"
+                ]
+              },
+              {
+                "word": "Wildfire",
+                "ipa": "/ˈwaɪld.faɪər/",
+                "forbidden": [
+                  "Forest",
+                  "Burn",
+                  "Smoke"
+                ]
+              },
+              {
+                "word": "Renewable Energy",
+                "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
+                "forbidden": [
+                  "Solar",
+                  "Wind",
+                  "Green"
+                ]
+              },
+              {
+                "word": "Sea-Level Rise",
+                "ipa": "/ˈsiː ˌlev.əl ˌraɪz/",
+                "forbidden": [
+                  "Ocean",
                   "Ice",
-                  "Damage",
-                  "Falling"
-                ]
-              },
-              {
-                "word": "Squall Line",
-                "ipa": "/ˈskwɔːl ˌlaɪn/",
-                "forbidden": [
-                  "Front",
-                  "Gusts",
-                  "Thunderstorm"
-                ]
-              },
-              {
-                "word": "Virga",
-                "ipa": "/ˈvɜː.ɡə/",
-                "forbidden": [
-                  "Precipitation",
-                  "Evaporate",
-                  "Ground"
-                ]
-              },
-              {
-                "word": "Windshear",
-                "ipa": "/ˈwɪnd.ʃɪər/",
-                "forbidden": [
-                  "Speed",
-                  "Direction",
-                  "Change"
-                ]
-              },
-              {
-                "word": "Holdover Time",
-                "ipa": "/ˈhəʊld.əʊ.vər ˌtaɪm/",
-                "forbidden": [
-                  "De-icing",
-                  "Wings",
-                  "Snow"
+                  "Melting"
                 ]
               },
               {
@@ -4436,39 +4433,69 @@
                 "ipa": "/ˈklaɪ.mət ˌæd.æpˈteɪ.ʃən/",
                 "forbidden": [
                   "Change",
-                  "Future",
-                  "Infrastructure"
+                  "Protect",
+                  "Future"
+                ]
+              },
+              {
+                "word": "Fossil Fuels",
+                "ipa": "/ˈfɒs.əl ˌfjuː.əlz/",
+                "forbidden": [
+                  "Oil",
+                  "Coal",
+                  "Gas"
+                ]
+              },
+              {
+                "word": "Eco-Friendly",
+                "ipa": "/ˌiː.kəʊˈfrend.li/",
+                "forbidden": [
+                  "Green",
+                  "Nature",
+                  "Good"
+                ]
+              },
+              {
+                "word": "Cooling Shelter",
+                "ipa": "/ˈkuː.lɪŋ ˌʃel.tər/",
+                "forbidden": [
+                  "Air conditioning",
+                  "Building",
+                  "Refuge"
                 ]
               }
             ]
           },
-          "debate": {
-            "title": "Activity 6: Aerodrome Crisis Shutdown Debate & Multi-Stakeholder Consensus",
-            "summary": "High-stakes operational roleplay debating airport closure criteria during an approaching convective supercell.",
-            "instructions": "A massive supercell cluster with embedded severe microbursts and hail is 25 NM from the aerodrome. Assume one of the three stakeholder roles below. Debate whether to suspend all runway operations immediately or keep one runway active for low-fuel diversions.",
+          "townHallDebate": {
+            "title": "Part 6: Town Hall Public Debate — Who Should Pay for Climate Adaptation?",
+            "summary": "High-stakes community debate: funding disaster defenses between citizens, city hall, and heavy industry.",
+            "instructions": "Your town has suffered repeated floods and heatwaves. A public town hall meeting is held to decide how to raise €100 Million for long-term climate defenses. Choose one of the three stakeholder roles below, prepare your arguments, and debate the funding model.",
             "roles": [
               {
-                "title": "Role A: Ramp Operations Director",
-                "stance": "Demands immediate full shutdown of all ramps and runways to protect ground personnel from lightning strikes and prevent aircraft hail damage.",
+                "title": "Role A: Local Residents & Tenant Association",
+                "stance": "Demands that heavy polluters pay: Ordinary working citizens already pay high local taxes and energy bills. Climate funding must come from taxes on fossil fuel companies, airlines, and large commercial developers.",
                 "keyPoints": [
-                  "Lightning within 5 NM requires immediate suspension of apron refueling.",
-                  "High surface winds create catastrophic baggage container blowaway hazards."
+                  "Residents are already suffering property damage and rising home insurance premiums.",
+                  "Large corporations made billions in profits while emitting greenhouse gases.",
+                  "Higher local residential taxes would push vulnerable families into poverty."
                 ]
               },
               {
-                "title": "Role B: Lead Flight Dispatcher",
-                "stance": "Advocates keeping one runway open under ILS CAT II/III to accept three incoming international flights with critical fuel reserves before initiating diversion.",
+                "title": "Role B: Chamber of Commerce & Industry Representative",
+                "stance": "Warns against punishing local business: Heavy corporate taxes will force companies and employers to relocate to other regions, destroying local jobs and economic prosperity.",
                 "keyPoints": [
-                  "Diversion to alternate aerodromes will trigger regional airspace gridlock.",
-                  "Holding aircraft have only 25 minutes of contingency fuel remaining."
+                  "Businesses provide employment, taxes, and vital community services.",
+                  "Green adaptation requires public-private partnerships, not hostile punishment.",
+                  "A modest, shared municipal sales tax spread across all citizens is fairer and more stable."
                 ]
               },
               {
-                "title": "Role C: Civil Aviation Safety Inspector",
-                "stance": "Enforces strict regulatory safety margins: if LLWAS detects windshear exceeding 15 knots, airport closure is mandatory by air law.",
+                "title": "Role C: City Mayor & Municipal Finance Director",
+                "stance": "Proposes a shared compromise: Both citizens and businesses must contribute, supported by national government subsidies and green municipal bonds.",
                 "keyPoints": [
-                  "Regulatory liability rests on the aerodrome authority if an accident occurs in known windshear.",
-                  "Flight crew autonomy must be supported by conservative ATC guidance."
+                  "Extreme weather is an existential threat to our entire region's survival.",
+                  "Delaying action while arguing over blame will cost five times more when the next flood hits.",
+                  "We propose a three-part model: 40% corporate climate fee, 30% national grant, and 30% green municipal bond."
                 ]
               }
             ]
@@ -4480,599 +4507,495 @@
         "title": "Sustainable Cities & Low-Emission Mobility",
         "objectives": {
           "title": "Session 2 Objectives - Sustainable Cities & Low-Emission Mobility",
-          "summary": "Analyze low-emission urban mobility systems, sponge city architecture, multimodal airport transit hubs, double comparatives, and sustainable transport policy.",
+          "summary": "Develop spoken communicative fluency, photo comparison skills, proposal structuring, and debate techniques on sustainable urban living and mobility.",
           "items": [
             {
               "num": "01",
-              "title": "Sustainable Urban Design & Microclimate Concepts",
-              "desc": "Explain the Urban Heat Island effect, sponge city principles, and 15-minute urban planning using clear B2 sentence stems."
+              "title": "Photo Comparison: Two Visions of the Future City",
+              "desc": "Contrast car-dominated urban sprawl with green pedestrian superblocks using rich descriptive B1/B2 English."
             },
             {
               "num": "02",
-              "title": "Sponge City Engineering & Flood Absorption Lab",
-              "desc": "Analyze bioretention basins, permeable surfaces, and urban aquifer recharge via interactive video noticeboard analysis."
+              "title": "Livable Cities & The 15-Minute Neighborhood",
+              "desc": "Discuss how clean public transit, bike lanes, and green parks improve health, air quality, and social connection."
             },
             {
               "num": "03",
-              "title": "Grammar Clinic: Double Comparatives & Contrast Connectors",
-              "desc": "Master double comparative structures (The more... the less...) and formal contrast connectors (whereas, nevertheless, despite)."
+              "title": "Spoken Language Clinic: Making Persuasive Proposals",
+              "desc": "Deploy polite suggestion patterns (Why don't we consider..., What if we were to ban..., It would be far more effective to...)."
             },
             {
               "num": "04",
-              "title": "Vocabulary Game: Collocation Matcher & Mobility Pyramid",
-              "desc": "Build active lexical accuracy by matching 10 compound mobility terms and ranking transport modes in the sustainability pyramid."
+              "title": "Interactive Vocabulary Game: Green City Collocation Matcher",
+              "desc": "Master 10 high-frequency compound phrases for urban lifestyle, clean transport, and eco-friendly infrastructure."
             },
             {
               "num": "05",
-              "title": "Pair Urban Design Sprint: The 15-Minute Airport District",
-              "desc": "Design 3 low-emission transport interventions for an airport suburban corridor and deliver a 2-minute pitch with peer rubric."
+              "title": "Pair Urban Redesign Pitch: Reclaim Your Street or Campus",
+              "desc": "Redesign a car-dominated street or university zone into a green pedestrian haven and pitch it to the class."
             },
             {
               "num": "06",
-              "title": "Multi-Stakeholder Policy Debate & Technical Mastery Quiz",
-              "desc": "Debate banning domestic flights under 2.5 hours where high-speed rail exists, followed by a 10-question technical self-scoring quiz."
+              "title": "High-Stakes Public Debate: The Car-Free City Center",
+              "desc": "Debate a total ban on private passenger cars in metropolitan city cores across Commuters, Shop Owners, and Environmentalists."
             }
           ]
         },
         "lessonPlan": {
           "title": "Session 2 Lesson Plan - Sustainable Cities & Low-Emission Mobility (2 Hours)",
-          "summary": "A 2-hour university seminar combining urban innovation news scan, sponge city video lab, double comparative grammar clinic, collocation matcher game, pair design sprint, and a short-haul flight ban debate with technical mastery quiz.",
+          "summary": "A 2-hour communicative seminar combining a livable city ranking warm-up, 4-photo urban contrast debate panel, proposal language clinic, green collocation game, pair street redesign pitch, and a car-free city center debate.",
           "items": [
             {
               "part": "Part 1",
-              "title": "Urban Innovation News Scan & Oral Diagnostic",
-              "description": "Pairwise diagnostic warm-up comparing Urban Heat Islands, Sponge Cities, 15-Minute planning, and permeable pavements with sentence frames."
+              "title": "Conversational Warm-Up: The Livable City Ranking",
+              "description": "Pairwise diagnostic questions with framed sentence stems ranking the key factors that make a city healthy and enjoyable to live in."
             },
             {
               "part": "Part 2",
-              "title": "Technical Reading & Video Lab: Sponge Cities & Urban Flood Resilience",
-              "description": "Case study reading and video exploration of sponge city engineering, bioretention, and permeable aquifers with 3 guided paired discussion questions and debrief card."
+              "title": "4-Photo Visual Contrast & Debate Lab: Two Visions of the Future City",
+              "description": "Case study reading and photo comparison of 4 urban models: The Car-Choked Highway, The Reclaimed Superblock, High-Speed Rail vs Air, and The 15-Minute Street."
             },
             {
               "part": "Part 3",
-              "title": "Language Clinic: Double Comparatives & Contrast Connectors",
-              "description": "Targeted language clinic on proportional changes (The denser the network, the lower the emissions) and formal connecting words for contrast."
+              "title": "Language Clinic: Proposing Solutions & Making Recommendations",
+              "description": "Targeted spoken language drills practicing constructive suggestions and polite alternatives (Why don't we consider..., What if we were to...)."
             },
             {
               "part": "Part 4",
-              "title": "Interactive Vocabulary Game: Collocation Matcher & Mobility Pyramid",
-              "description": "Pair matching game linking 10 compound mobility collocations and ranking transit modes in the urban sustainability hierarchy."
+              "title": "Interactive Vocabulary Game: Green City Collocation Matcher",
+              "description": "Pair matching game linking 10 compound phrases (pedestrian zone, public transport, congestion charge, cycling lane) and ranking transit modes."
             },
             {
               "part": "Part 5",
-              "title": "Pair Urban Design Sprint: The 15-Minute Airport District",
-              "description": "Pairs re-engineer a congested suburban airport access corridor into an active multimodal district with a 3-point design decision table and deliver a 2-minute pitch with peer rubric."
+              "title": "Pair Urban Redesign Challenge: Reclaim Your Street or Campus",
+              "description": "Pairs formulate a 3-point plan to transform a car-dominated road into an active green corridor and deliver a 2-minute pitch with peer rubric."
             },
             {
               "part": "Part 6",
-              "title": "Multi-Stakeholder Policy Debate & Technical Mastery Quiz",
-              "description": "Stakeholder consensus debate on banning short-haul domestic flights under 2.5h rail alternative, concluding with an interactive 10-question mastery quiz and final review."
+              "title": "High-Stakes Public Debate: The Car-Free City Center",
+              "description": "Multi-stakeholder consensus debate on banning private cars from metropolitan centers between Commuters, Shop Owners, and Climate Activists, concluding with final review."
             }
           ]
         },
         "revision": {
-          "title": "Session 2: Sustainable Cities & Low-Emission Mobility",
-          "summary": "Review the 18 key terms for urban sustainability, multimodal transit integration, and low-carbon civil mobility.",
+          "title": "Session 2: Sustainable Cities & Low-Emission Living",
+          "summary": "Review the 18 essential B1/B2 terms for urban sustainability, active mobility, and green city planning.",
           "terms": [
             {
               "num": "01",
-              "term": "Sponge City",
-              "ipa": "/ˈspʌndʒ ˌsɪt.i/",
-              "def": "An urban planning model that uses nature-based infrastructure to absorb, store, and purify rainwater."
+              "term": "Car-Free Zone",
+              "ipa": "/ˌkɑː ˈfriː ˌzəʊn/",
+              "def": "A city district where private motor vehicles are prohibited to give priority to pedestrians and cyclists."
             },
             {
               "num": "02",
-              "term": "Urban Heat Island (UHI)",
-              "ipa": "/ˌɜː.bən ˈhiːt ˌaɪ.lənd/",
-              "def": "A metropolitan area significantly warmer than surrounding rural areas due to human activities, concrete, and asphalt."
+              "term": "Pedestrian Street",
+              "ipa": "/pəˈdes.tri.ən ˌstriːt/",
+              "def": "A street reserved exclusively for people walking, shopping, and outdoor dining without motor traffic."
             },
             {
               "num": "03",
-              "term": "15-Minute City",
-              "ipa": "/ˌfɪf.tiːn ˈmɪn.ɪt ˌsɪt.i/",
-              "def": "An urban planning concept where all daily resident necessities are accessible within a 15-minute walk or cycle."
+              "term": "Cycling Lane",
+              "ipa": "/ˈsaɪ.klɪŋ ˌleɪn/",
+              "def": "A dedicated, marked division of a road reserved exclusively for bicycles and light personal transport."
             },
             {
               "num": "04",
-              "term": "Permeable Pavement",
-              "ipa": "/ˈpɜː.mi.ə.bəl ˈpeɪv.mənt/",
-              "def": "Porous surfacing material allowing stormwater to seep through into underlying soils rather than generating surface runoff."
+              "term": "Public Transport",
+              "ipa": "/ˌpʌb.lɪk ˈtræn.spɔːt/",
+              "def": "Shared passenger transportation systems like metros, electric buses, trams, and suburban trains."
             },
             {
               "num": "05",
-              "term": "Bioretention Basin",
-              "ipa": "/ˌbaɪ.əʊ.rɪˈten.ʃən ˌbeɪ.sən/",
-              "def": "A landscaped depression designed to slow, filter, and infiltrate stormwater runoff using vegetation and engineered soil."
+              "term": "15-Minute City",
+              "ipa": "/ˌfɪf.tiːn ˈmɪn.ɪt ˌsɪt.i/",
+              "def": "An urban planning model where all daily resident needs are reachable in a 15-minute walk or bike ride."
             },
             {
               "num": "06",
-              "term": "Intermodal Connectivity",
-              "ipa": "/ˌɪn.təˈməʊ.dəl kəˌnekˈtɪv.ə.ti/",
-              "def": "Seamless physical and digital integration between different transportation modes (air, high-speed rail, metro, bus)."
+              "term": "Superblock",
+              "ipa": "/ˈsuː.pə.blɒk/",
+              "def": "A neighborhood cluster where inner streets are closed to through-traffic and turned into green public squares."
             },
             {
               "num": "07",
-              "term": "Transit-Oriented Development (TOD)",
-              "ipa": "/ˈtræn.zɪt ˌɔː.ri.en.tɪd dɪˈvel.əp.mənt/",
-              "def": "High-density, mixed-use commercial and residential urban development concentrated around mass transit stations."
+              "term": "Urban Sprawl",
+              "ipa": "/ˌɜː.bən ˈsprɔːl/",
+              "def": "The uncontrolled outward spread of low-density suburbs heavily dependent on private cars."
             },
             {
               "num": "08",
-              "term": "Active Mobility Corridor",
-              "ipa": "/ˈæk.tɪv məʊˈbɪl.ə.ti ˌkɒr.ɪ.dɔːr/",
-              "def": "Dedicated, grade-separated pathways reserved exclusively for human-powered transport (walking, cycling, rollerblading)."
+              "term": "Congestion Charge",
+              "ipa": "/kənˈdʒes.tʃən ˌtʃɑːdʒ/",
+              "def": "A daily fee charged to drivers entering city centers during peak hours to curb traffic and air pollution."
             },
             {
               "num": "09",
-              "term": "Congestion Pricing",
-              "ipa": "/kənˈdʒes.tʃən ˌpraɪ.sɪŋ/",
-              "def": "A regulatory fee charged to drivers entering city centers during peak hours to curb traffic congestion and emissions."
+              "term": "Green Space",
+              "ipa": "/ˈɡriːn ˌspeɪs/",
+              "def": "Open land covered with grass, trees, and plants in an urban area like public parks and gardens."
             },
             {
               "num": "10",
-              "term": "Low-Emission Zone (LEZ)",
-              "ipa": "/ˌləʊ ɪˈmɪʃ.ən ˌzəʊn/",
-              "def": "A designated geographic zone where polluting vehicles are banned or penalized to improve local air quality."
+              "term": "Air Quality",
+              "ipa": "/ˈeə ˌkwɒl.ə.ti/",
+              "def": "The degree to which outdoor air is clean and free from harmful vehicle exhaust and pollutants."
             },
             {
               "num": "11",
-              "term": "Decarbonization Trajectory",
-              "ipa": "/diːˌkɑː.bən.aɪˈzeɪ.ʃən trəˈdʒek.tər.i/",
-              "def": "The scheduled path and timeline toward achieving net-zero greenhouse gas emissions across an industry or city."
+              "term": "Low-Emission Zone",
+              "ipa": "/ˌləʊ ɪˈmɪʃ.ən ˌzəʊn/",
+              "def": "A designated municipal perimeter where high-polluting vehicles are restricted, banned, or fined."
             },
             {
               "num": "12",
-              "term": "Multi-Modal Hub",
-              "ipa": "/ˌmʌl.tiˈməʊ.dəl ˌhʌb/",
-              "def": "A central passenger interchange allowing frictionless transfers between air travel, rail networks, and urban micro-mobility."
+              "term": "Micro-Mobility",
+              "ipa": "/ˈmaɪ.krəʊ məʊˌbɪl.ə.ti/",
+              "def": "Small, lightweight personal electric vehicles like e-bikes and e-scooters for short trips."
             },
             {
               "num": "13",
-              "term": "Aquifer Recharge",
-              "ipa": "/ˈæk.wɪ.fər ˌriːˈtʃɑːdʒ/",
-              "def": "The hydrological process where surface water percolates downward to replenish underground groundwater reservoirs."
+              "term": "High-Speed Rail",
+              "ipa": "/ˌhaɪ ˈspiːd ˈreɪl/",
+              "def": "Fast electric passenger trains operating at speeds over 250 km/h connecting major city centers."
             },
             {
               "num": "14",
-              "term": "Peak Runoff Attenuation",
-              "ipa": "/ˈpiːk ˌrʌn.ɒf əˌten.juˈeɪ.ʃən/",
-              "def": "The intentional buffering and delay of stormwater release into municipal sewers to prevent flood crests."
+              "term": "Energy-Efficient Housing",
+              "ipa": "/ˌen.ə.dʒi ɪˈfɪʃ.ənt/",
+              "def": "Buildings with thick insulation and heat pumps that consume very little energy for heating and cooling."
             },
             {
               "num": "15",
-              "term": "Bioswale",
-              "ipa": "/ˈbaɪ.əʊ.sweɪl/",
-              "def": "Vegetated channels designed to concentrate and convey stormwater runoff while removing silt and pollutants."
+              "term": "Waste Management",
+              "ipa": "/ˈweɪst ˌmæn.ɪdʒ.mənt/",
+              "def": "Organized collection, sorting, recycling, and composting of household and commercial rubbish."
             },
             {
               "num": "16",
-              "term": "Last-Mile Micro-Mobility",
-              "ipa": "/ˌlɑːst ˈmaɪl ˈmaɪ.krəʊ məʊˈbɪl.ə.ti/",
-              "def": "Small, lightweight zero-emission vehicles (e-bikes, e-scooters) used for the final leg of a passenger's journey."
+              "term": "Carbon Neutral",
+              "ipa": "/ˌkɑː.bən ˈnjuː.trəl/",
+              "def": "Balancing the amount of carbon released into the atmosphere with an equivalent amount removed."
             },
             {
               "num": "17",
-              "term": "District Cooling Network",
-              "ipa": "/ˈdɪs.trɪkt ˈkuː.lɪŋ ˌnet.wɜːk/",
-              "def": "A centralized system producing chilled water distributed via insulated underground pipes to cool urban buildings efficiently."
+              "term": "Sustainable Commute",
+              "ipa": "/səˈsteɪ.nə.bəl kəˈmjuːt/",
+              "def": "Traveling to work or study using walking, cycling, or shared electric public transit."
             },
             {
               "num": "18",
               "term": "Modal Split",
               "ipa": "/ˈməʊ.dəl ˌsplɪt/",
-              "def": "The percentage of travelers using a particular type of transportation compared to the total passenger volume."
+              "def": "The percentage share of trips made by different transport modes (walking, cycling, public transit, cars)."
             }
           ]
         },
         "overview": {
           "title": "Sustainable Cities & Low-Emission Mobility",
-          "subtitle": "Sponge Cities, Multimodal Transit Integration & 15-Minute Urban Districts",
+          "subtitle": "Urban Living, Green Neighborhoods, The 15-Minute City & The Car-Free Center Debate",
           "badge": "Session Overview • Sustainable Cities & Urban Design",
           "image": "images/ag_m2card2.jpg"
         },
         "materials": {
           "title": "Session 2 Study Materials: Sustainable Cities",
-          "summary": "Technical urban mobility dossiers, comparative structures, and transit decarbonization briefs."
+          "summary": "Visual urban contrast panels, proposal phrasing guides, and street transformation briefs."
         },
         "lessonContent": {
           "overview": {
             "title": "Sustainable Cities & Low-Emission Mobility",
-            "subtitle": "Sponge Cities, Multimodal Transit Integration & 15-Minute Urban Districts",
+            "subtitle": "Urban Living, Green Neighborhoods, The 15-Minute City & The Car-Free Center Debate",
             "badge": "Session Overview • Sustainable Cities & Urban Design",
             "image": "images/ag_m2card2.jpg"
           },
           "hero": {
             "title": "Sustainable Cities & Low-Emission Mobility",
-            "subtitle": "Sponge Cities, Multimodal Transit Integration & 15-Minute Urban Districts",
+            "subtitle": "Urban Living, Green Neighborhoods, The 15-Minute City & The Car-Free Center Debate",
             "image": "images/ag_m2card2.jpg"
           },
           "openingSession": {
-            "title": "Activity 1: Urban Innovation News Scan & Oral Diagnostic",
-            "summary": "Pairwise diagnostic warm-up comparing sustainable urban design concepts with structured spoken sentence frames.",
-            "instructions": "In pairs, examine the sustainable urban headlines below. Take turns asking and answering the four diagnostic questions, using the provided sentence frames to structure your spoken answers.",
+            "title": "Part 1: Conversational Warm-Up — The Livable City Ranking",
+            "summary": "What makes a city healthy, exciting, and enjoyable to live in? Ranking priorities in pairs.",
+            "instructions": "In pairs, review the factors that contribute to urban quality of life. Use the framed sentence stems to express your preferences and discuss how your home town or university city compares.",
             "newsPrompts": [
-              "Major European capital expands its Low-Emission Zone to encompass all suburban highway corridors, banning pre-2015 diesel vehicles.",
-              "Airport authority unveils direct High-Speed Rail terminal link, aiming to replace 65% of domestic connecting flights under 350 km.",
-              "Metropolitan flood agency certifies first fully permeable airport service roadway, reducing peak stormwater runoff by 40%."
+              "Major European capital expands its car-free zone, converting 20 kilometers of highway into shaded urban parks.",
+              "National rail operator launches €19 monthly student pass covering all electric trains, trams, and suburban buses.",
+              "Survey reveals 78% of urban residents feel happier and safer in neighborhoods with wide sidewalks and dedicated bike lanes."
             ],
             "diagnostic": {
-              "title": "Urban Sustainability Concepts Diagnostic Check",
-              "instructions": "Use the sentence stem to formulate your spoken answer before revealing the model explanation.",
+              "title": "Opening Spoken Discussion Prompts",
+              "instructions": "Work in pairs. Take turns answering with the suggested sentence stems before reading the model response.",
               "questions": [
                 {
                   "id": 1,
-                  "q": "What is the Urban Heat Island (UHI) effect, and what primary factors amplify it?",
-                  "prompt": "The Urban Heat Island effect is caused by..., which results in...",
-                  "answer": "The Urban Heat Island (UHI) effect occurs when metropolitan areas experience significantly higher ambient temperatures than surrounding rural zones. It is amplified by dark impermeable surfaces (asphalt and concrete) that absorb solar radiation, lack of vegetated canopy cooling (evapotranspiration), and waste heat emitted by motor traffic, air conditioning units, and industrial facilities."
+                  "q": "In your view, what makes a city truly great to live in? Which factors matter most to you personally?",
+                  "prompt": "For me, the single most important factor for a livable city is..., because...",
+                  "answer": "Key factors include clean air, affordable 24/7 public transit, safe bike lanes, quiet pedestrian streets, abundant parks, vibrant cultural nightlife, and affordable housing. For students, cheap and reliable public transit and safe cycling are often the top priorities."
                 },
                 {
                   "id": 2,
-                  "q": "What core principles define a 'Sponge City'?",
-                  "prompt": "Rather than channeling rainwater into storm sewers, a sponge city...",
-                  "answer": "A sponge city abandons conventional 'fast-drainage' gray infrastructure in favor of nature-based solutions. It utilizes permeable pavements, bioswales, rain gardens, wetland parks, and underground retention basins to absorb, purify, and slowly release or reuse stormwater on-site, naturally attenuating peak flood waves and recharging groundwater aquifers."
+                  "q": "Discuss how heavy car traffic affects the mental well-being and health of city residents.",
+                  "prompt": "Living in a city dominated by heavy car traffic creates serious problems like..., which leads to...",
+                  "answer": "Traffic causes chronic noise pollution, toxic exhaust fumes that trigger asthma and respiratory illness, dangerous roads for children and cyclists, and stressful daily commutes where people waste hours trapped in gridlock instead of exercising or spending time with family."
                 },
                 {
                   "id": 3,
-                  "q": "What is the concept behind Carlos Moreno's '15-Minute City'?",
-                  "prompt": "The core premise of the 15-minute city is that residents can reach...",
-                  "answer": "The 15-minute city is an urban planning paradigm proposing that every city resident should be able to fulfill six essential urban functions—living, working, supplying, caring, learning, and enjoying—within a 15-minute walk or bike ride from their front door, thereby eliminating automobile dependency, reducing transport emissions, and revitalizing local neighborhood squares."
+                  "q": "Explain Carlos Moreno's '15-Minute City' concept, and discuss why it has become so popular.",
+                  "prompt": "The core idea of the 15-minute city is that every resident can reach..., which eliminates...",
+                  "answer": "It proposes that every citizen should be able to access work, food, healthcare, education, culture, and leisure within a 15-minute walk or bike ride from their front door. It eliminates the need for daily car ownership, revitalizes local neighborhood squares, and drastically cuts urban emissions."
                 },
                 {
                   "id": 4,
-                  "q": "What is the difference between Permeable Paving and Conventional Asphalt?",
-                  "prompt": "Conventional asphalt forms an impermeable barrier that..., whereas permeable paving features...",
-                  "answer": "Conventional asphalt forms a sealed, non-porous crust that forces 100% of rainfall to become high-velocity surface runoff carrying motor oil and sediment into sewer systems. Permeable paving, by contrast, is engineered with open interconnected voids and an underlying gravel matrix that allows water to percolate directly into the subsoil, eliminating standing puddles and recharging the water table."
+                  "q": "In your view, what is the biggest obstacle stopping people from giving up their private cars for public transit?",
+                  "prompt": "The main reason many commuters hesitate to abandon their cars is..., especially when...",
+                  "answer": "In outer suburbs and rural regions, public transit is often infrequent, unreliable, or non-existent. People also value the door-to-door convenience of private cars for carrying heavy shopping, transporting young children, or working night shifts when buses do not run."
                 }
               ]
             }
           },
-          "videoLab": {
-            "title": "Activity 2: Interactive Video Lab — Sponge Cities & Urban Flood Resilience",
-            "summary": "Video analysis of nature-based storm water absorption, bioretention, and urban drainage engineering.",
-            "instructions": "Watch the video case study on Sponge City architecture. Study the technical noticeboard, then discuss the three operational questions with your partner.",
-            "videoTitle": "How Sponge Cities Absorb Rainwater & Prevent Flooding",
-            "videoUrl": "https://www.youtube.com/embed/8mL25lC61Pc",
-            "youtubeUrl": "https://www.youtube.com/watch?v=8mL25lC61Pc",
-            "channel": "Civil Engineering & Urban Planning Review",
-            "concepts": [
-              "Bioretention & Bioswales",
-              "Permeable Pavement Hydraulics",
-              "Subsurface Aquifer Recharge",
-              "Peak Runoff Attenuation",
-              "Nature-Based Green-Gray Hybrid Infrastructure"
-            ],
-            "guidedQuestions": [
+          "visualDebate": {
+            "title": "Part 2: 4-Photo Visual Contrast & Debate Lab — Two Visions of the Future City",
+            "summary": "Comparing two contrasting urban models and debating transport priorities using 4 real photographs.",
+            "instructions": "Examine the four urban photographs below. In pairs, take turns describing what you see using the sentence stems. Then compare the contrasting lifestyles and debate the prompt questions.",
+            "photos": [
               {
-                "q": "1. How does green infrastructure reduce urban temperatures compared to concrete?",
-                "answer": "Vegetated roofs, urban tree canopies, and wetlands cool cities through evapotranspiration—the biological process by which plants absorb water through roots and evaporate it through leaf stomata, consuming solar energy as latent heat rather than converting it into sensible thermal air temperature."
+                "id": 1,
+                "title": "Photo A: The Car-Choked Highway",
+                "file": "images/urban_car_sprawl.jpg",
+                "scene": "An 8-lane expressway locked in gridlock, sea of metal roofs, exhaust smog, no trees or pedestrians.",
+                "prompt": "Photo A illustrates the reality of car-dependent urban sprawl where vast amounts of public space are swallowed by...",
+                "debateQ": "Commuters lose an average of 90 minutes every day trapped in traffic jams. Why are so many people still reluctant to switch to trains or buses?"
               },
               {
-                "q": "2. Why is peak runoff attenuation more effective than building wider concrete drainage pipes?",
-                "answer": "Wider concrete pipes merely accelerate storm water downstream, dumping massive surges into rivers and causing catastrophic bottleneck floods in lower-lying districts. Attenuation delays release through retention ponds and permeable soils, shaving off the dangerous flood peak and allowing municipal sewers to discharge manageable flows steadily."
+                "id": 2,
+                "title": "Photo B: The Reclaimed Superblock",
+                "file": "images/urban_superblock.jpg",
+                "scene": "Car-free neighborhood square with shade trees, children playing, outdoor cafes, and wide cycle tracks.",
+                "prompt": "In sharp contrast to Photo A, Photo B shows a human-scale neighborhood that prioritizes community life by...",
+                "debateQ": "If a city completely closes neighborhood streets to private cars, what realistic solutions must be provided for elderly residents, delivery vans, and tradespeople?"
               },
               {
-                "q": "3. What challenges exist when retrofitting existing airport aprons and access roads with permeable materials?",
-                "answer": "Heavy commercial jet wheel loadings (often exceeding 70 tons per main gear strut) can crush standard porous pavers. Retrofits require heavy-duty engineered permeable concrete, geotextile sub-base filtration layers, and frequent vacuum-sweeping maintenance to prevent fine jet soot and rubber deposits from clogging the drainage pores."
+                "id": 3,
+                "title": "Photo C: High-Speed Rail vs. Aviation",
+                "file": "images/transport_high_speed_rail.jpg",
+                "scene": "Modern high-speed electric passenger train boarding passengers smoothly in a downtown glass terminal.",
+                "prompt": "Photo C represents clean intercity connectivity where electric rail links city center to city center, avoiding...",
+                "debateQ": "Should national governments ban domestic commercial flights when a direct train journey under 2.5 hours exists?"
+              },
+              {
+                "id": 4,
+                "title": "Photo D: The 15-Minute Micro-Mobility Street",
+                "file": "images/urban_15min_neighborhood.jpg",
+                "scene": "A tree-lined boulevard with cargo e-bikes, pedestrians, outdoor bakeries, and solar streetlights.",
+                "prompt": "Looking at Photo D, we see a practical example of the 15-minute city where daily errands can be done easily on foot or by...",
+                "debateQ": "Is the 15-minute city an elitist concept that only wealthy metropolitan centers can afford, or can outer suburbs be redesigned the same way?"
               }
             ]
           },
           "grammarClinic": {
-            "title": "Activity 3: Language Clinic — Double Comparatives & Concessive Contrast",
-            "summary": "Mastering proportional change structures and formal contrast markers for environmental policy discourse.",
-            "instructions": "Review the double comparative formulas and concessive contrast markers below. Complete the interactive sentence transformations and check your results.",
+            "title": "Part 3: Spoken Language Clinic — Proposing Solutions & Making Recommendations",
+            "summary": "Targeted language clinic on making persuasive proposals and suggesting constructive alternatives.",
+            "instructions": "Review the proposal formulas below. Practice transforming the suggestions with your partner to sound polite, professional, and convincing in public meetings.",
             "patterns": [
               {
-                "rule": "Double Comparatives (Proportional Change)",
-                "formula": "The + comparative adjective/adverb + subject + verb, the + comparative + subject + verb",
+                "rule": "Making Constructive Proposals",
+                "formula": "Why don't we consider + [Verb-ing] / What if we were to + [Verb] / It would be far more effective to + [Verb]",
                 "examples": [
-                  "The denser the mass transit grid, the lower the per-capita urban transport emissions.",
-                  "The more permeable the pavement surface, the less severe the flash flood crest."
+                  "Why don't we consider converting the two central lanes into a dedicated busway?",
+                  "What if we were to introduce free public transit on high-pollution days?",
+                  "It would be far more effective to build protected bike lanes rather than paint white lines on roads."
                 ]
               },
               {
-                "rule": "Concessive Contrast Signposts",
-                "formula": "Clause A + [whereas / while / nevertheless / despite + noun phrase] + Clause B",
+                "rule": "Proportional Change (Double Comparatives)",
+                "formula": "The + comparative..., the + comparative...",
                 "examples": [
-                  "High-speed rail requires heavy initial capital investment; nevertheless, it slashes operational corridor emissions by 85%.",
-                  "Whereas regional air travel offers rapid transit across water barriers, rail remains unmatched for high-density overland links."
+                  "The safer the bike lanes, the more people choose to cycle.",
+                  "The cheaper and cleaner the public transit, the fewer cars enter the city."
                 ]
               }
             ],
             "drills": [
               {
                 "id": 1,
-                "prompt": "Combine into a Double Comparative: 'As cities become more walkable, private car usage declines rapidly.'",
-                "answer": "The more walkable a city becomes, the more rapidly private car usage declines."
+                "prompt": "Propose a solution for traffic jams around university campuses using 'What if we were to...':",
+                "answer": "What if we were to offer subsidized electric bike leases and free campus shuttle buses to all students and staff?"
               },
               {
                 "id": 2,
-                "prompt": "Combine using 'whereas': 'Electric buses generate zero tailpipe emissions in city streets. Diesel buses emit fine particulates and nitrogen oxides.'",
-                "answer": "Electric buses generate zero tailpipe emissions in city streets, whereas diesel buses emit fine particulates and nitrogen oxides."
+                "prompt": "Combine into a Double Comparative: 'When cities plant more trees, ambient summer temperatures become much cooler.'",
+                "answer": "The more trees a city plants, the cooler the ambient summer temperatures become."
               },
               {
                 "id": 3,
-                "prompt": "Combine using 'despite': 'The airport authority faced intense budgetary pressure. They installed a 50,000 m³ retention reservoir.'",
-                "answer": "Despite intense budgetary pressure, the airport authority installed a 50,000 m³ retention reservoir."
+                "prompt": "Suggest an alternative to private car parking using 'It would be far more effective to...':",
+                "answer": "It would be far more effective to transform parking lots into green public parks and multi-modal transit hubs."
               }
             ]
           },
           "vocabGame": {
-            "title": "Activity 4: Interactive Vocabulary Game — Collocation Matcher & Mobility Pyramid",
-            "summary": "Pair matching game linking 10 compound mobility collocations and ranking transit modes in the urban sustainability hierarchy.",
-            "instructions": "Step 1: Match the 10 transport prefixes on the left with their correct technical suffixes on the right. Step 2: In pairs, place the five transportation modes in their correct tier on the Mobility Pyramid (from most sustainable at the base to least sustainable at the apex).",
+            "title": "Part 4: Interactive Spoken Game — Green City Collocation Matcher",
+            "summary": "Pair matching game: link 10 high-frequency compound phrases and rank transit modes in the urban hierarchy.",
+            "instructions": "Step 1: Match the urban prefix on the left with its correct lifestyle suffix on the right. Step 2: In pairs, rank the four transport tiers in the Sustainable Mobility Pyramid from most sustainable at the base to most restricted at the top.",
             "collocations": [
               {
                 "id": 1,
-                "prefix": "Intermodal",
-                "suffix": "connectivity",
-                "full": "Intermodal connectivity",
-                "def": "Smooth transfer between different transport systems"
+                "prefix": "Pedestrian",
+                "suffix": "zone",
+                "full": "Pedestrian zone",
+                "def": "A car-free street reserved for people walking"
               },
               {
                 "id": 2,
-                "prefix": "Transit-oriented",
-                "suffix": "development",
-                "full": "Transit-oriented development",
-                "def": "Urban growth focused around transit stations"
+                "prefix": "Cycling",
+                "suffix": "lane",
+                "full": "Cycling lane",
+                "def": "Dedicated marked road division for bicycles"
               },
               {
                 "id": 3,
-                "prefix": "Active mobility",
-                "suffix": "corridor",
-                "full": "Active mobility corridor",
-                "def": "Dedicated pedestrian and cycling paths"
+                "prefix": "Public",
+                "suffix": "transport",
+                "full": "Public transport",
+                "def": "Shared buses, trams, metros, and trains"
               },
               {
                 "id": 4,
-                "prefix": "Last-mile",
-                "suffix": "micro-mobility",
-                "full": "Last-mile micro-mobility",
-                "def": "Lightweight zero-emission transport for short links"
+                "prefix": "Congestion",
+                "suffix": "charge",
+                "full": "Congestion charge",
+                "def": "Fee charged to vehicles entering city centers"
               },
               {
                 "id": 5,
-                "prefix": "Congestion",
-                "suffix": "pricing cordon",
-                "full": "Congestion pricing cordon",
-                "def": "Zone with entry charges during peak hours"
+                "prefix": "Low-emission",
+                "suffix": "zone",
+                "full": "Low-emission zone",
+                "def": "Area where polluting cars are restricted"
               },
               {
                 "id": 6,
-                "prefix": "Decarbonization",
-                "suffix": "trajectory",
-                "full": "Decarbonization trajectory",
-                "def": "Strategic path to net-zero carbon output"
+                "prefix": "High-speed",
+                "suffix": "rail",
+                "full": "High-speed rail",
+                "def": "Fast electric trains connecting cities"
               },
               {
                 "id": 7,
-                "prefix": "Subsurface",
-                "suffix": "aquifer recharge",
-                "full": "Subsurface aquifer recharge",
-                "def": "Replenishing groundwater through soil filtration"
+                "prefix": "Micro-",
+                "suffix": "mobility",
+                "full": "Micro-mobility",
+                "def": "Lightweight e-bikes and e-scooters"
               },
               {
                 "id": 8,
-                "prefix": "Peak runoff",
-                "suffix": "attenuation",
-                "full": "Peak runoff attenuation",
-                "def": "Delaying rainwater surges into sewer systems"
+                "prefix": "Carbon",
+                "suffix": "neutral",
+                "full": "Carbon neutral",
+                "def": "Net-zero greenhouse gas emissions"
               },
               {
                 "id": 9,
-                "prefix": "Urban heat",
-                "suffix": "mitigation",
-                "full": "Urban heat mitigation",
-                "def": "Using trees and cool roofs to lower city temps"
+                "prefix": "Urban",
+                "suffix": "sprawl",
+                "full": "Urban sprawl",
+                "def": "Uncontrolled outward spread of car suburbs"
               },
               {
                 "id": 10,
-                "prefix": "Pedestrian",
-                "suffix": "priority zone",
-                "full": "Pedestrian priority zone",
-                "def": "Street sections where walkers have right-of-way"
+                "prefix": "Green",
+                "suffix": "space",
+                "full": "Green space",
+                "def": "Parks, gardens, and vegetated public plazas"
               }
             ],
             "pyramid": {
               "tiers": [
                 {
                   "level": "Apex (Tier 4)",
-                  "mode": "Private Single-Occupancy Fossil Vehicles",
-                  "role": "Highest energy consumption & emissions per passenger-km; restrict via pricing"
+                  "mode": "Private Fossil Vehicles (Single Occupancy)",
+                  "role": "Highest pollution and space consumption; restrict via fees and low-emission zones"
                 },
                 {
                   "level": "Upper (Tier 3)",
-                  "mode": "Shared Electric Mobility & Taxis",
-                  "role": "Flexible on-demand transit for non-standard routes & night shifts"
+                  "mode": "Shared Electric Vehicles, Taxis & Carpools",
+                  "role": "Flexible transit for night shifts, elderly travel, and luggage delivery"
                 },
                 {
                   "level": "Middle (Tier 2)",
-                  "mode": "Mass High-Capacity Rail & Electric Bus Rapid Transit (BRT)",
-                  "role": "High-volume arterial passenger corridors with zero corridor emissions"
+                  "mode": "Mass Electric Transit (Metro, Trams, Electric Buses)",
+                  "role": "High-capacity transport moving thousands of people hourly with zero local emissions"
                 },
                 {
                   "level": "Base (Tier 1)",
-                  "mode": "Active Mobility: Walking, Cycling, Wheelchairs",
-                  "role": "100% zero emissions, minimal space footprint, highest public health dividend"
+                  "mode": "Active Mobility (Walking, Cycling, Wheelchairs)",
+                  "role": "100% zero carbon, highest health benefit, takes up minimal public street space"
                 }
               ]
             }
           },
-          "designSprint": {
-            "title": "Activity 5: Pair Urban Design Sprint — 'The 15-Minute Airport District'",
-            "summary": "Collaborative spatial engineering: transform a congested 5km airport access highway into an active multimodal district, with a 2-minute pitch and peer rubric.",
-            "instructions": "Work in pairs. You are urban transport planners commissioned by the metropolitan transport council. Review the brief below for the 'Corridor 21' airport artery. Formulate three concrete infrastructure interventions to transition the corridor from 85% car reliance to 70% public/active transit. Prepare a 2-minute pitch.",
-            "brief": {
-              "location": "Corridor 21: 5.2 km suburban access highway connecting Airport Terminal 1 to the Central Metro terminus.",
-              "currentStatus": "4-lane asphalt highway; 45,000 vehicles daily; 82% single-occupancy cars; 38-minute average commute baseline; Zero dedicated bike paths; High surface runoff causing localized road flooding.",
-              "targetKPIs": "1. Reduce peak motor vehicle trips by 35% within 3 years. 2. Introduce 100% segregated active mobility. 3. Transform 40% of impermeable road verges into bioretention bioswales."
-            },
+          "redesignChallenge": {
+            "title": "Part 5: Pair Urban Redesign Challenge — Reclaim Your Street or Campus",
+            "summary": "Collaborative spatial challenge: choose a car-dominated street or university zone and pitch 3 green interventions.",
+            "instructions": "Work in pairs. You are urban design consultants commissioned by the city council. Choose a congested street in your hometown or a car-dominated zone on your campus. Formulate THREE concrete, practical changes to make it green, pedestrian-friendly, and enjoyable. Prepare a 2-minute pitch to present to the class.",
             "deliverables": [
-              "Intervention 1: High-capacity mass transit integration (e.g. Dedicated Bus Rapid Transit lane or Light Rail spur).",
-              "Intervention 2: Active mobility infrastructure (e.g. Continuous shaded cycleway with e-bike charging docks).",
-              "Intervention 3: Green-gray sponge engineering (e.g. Permeable service lanes and roadside stormwater bioswales)."
+              "Change 1: Street Space Allocation (e.g. Removing 50 parking spaces to build a protected two-way bike track).",
+              "Change 2: Nature & Climate Comfort (e.g. Planting 30 shade trees, installing water fountains, and creating outdoor seating).",
+              "Change 3: Public Transport & Micro-Mobility (e.g. Adding an electric bus stop and an e-bike sharing station)."
             ],
             "rubric": {
               "title": "Peer Observer Active Listening Rubric (Student B)",
               "criteria": [
                 {
-                  "name": "Vocabulary Integration",
-                  "target": "Uses target terms (modal split, TOD, permeable paving, last-mile micro-mobility)."
+                  "name": "Vocabulary Use",
+                  "target": "Integrates target words (pedestrian zone, green space, cycling lane, modal split)."
                 },
                 {
-                  "name": "Grammar Accuracy",
-                  "target": "Employs at least one double comparative and one concessive marker correctly."
+                  "name": "Proposal Phrasing",
+                  "target": "Uses target suggestion formulas (Why don't we consider..., What if we were to...)."
                 },
                 {
-                  "name": "Feasibility & Scope",
-                  "target": "Presents realistic infrastructure solutions aligned with the 3 project KPIs."
+                  "name": "Practical Feasibility",
+                  "target": "Offers realistic, logical solutions that solve real community needs."
                 },
                 {
                   "name": "Pitch Fluency",
-                  "target": "Maintains engaging professional delivery within the 2-minute limit."
+                  "target": "Delivers an engaging, confident presentation within the 2-minute time limit."
                 }
               ]
             }
           },
-          "policyDebate": {
-            "title": "Activity 6: Multi-Stakeholder Policy Debate & Technical Mastery Quiz",
-            "summary": "Formal policy debate on banning short-haul domestic flights under 2.5h rail alternative, concluding with an interactive 10-question mastery quiz.",
-            "instructions": "Debate the following motion: 'This assembly resolves that all domestic commercial passenger flights where a direct high-speed rail journey under 2.5 hours exists shall be prohibited.' Review your assigned stakeholder position, then debate for 15 minutes before completing the 10-question mastery quiz.",
+          "publicDebate": {
+            "title": "Part 6: High-Stakes Public Debate — The Car-Free City Center",
+            "summary": "Public consultation debate on banning private cars from the metropolitan core within 18 months.",
+            "instructions": "Your city council is debating the following proposal: 'All private passenger motor vehicles shall be banned from the city center from 07:00 to 20:00 every day, with road space repurposed for cyclists, pedestrians, and public transit.' Assume your assigned role below and debate the policy.",
             "roles": [
               {
-                "title": "Role A: Regional Airport Managing Director",
-                "stance": "Opposes the ban: Argues that domestic feeder flights are vital for long-haul international hub connectivity, regional employment, and carrier financial viability.",
+                "title": "Role A: Suburban Commuters & Delivery Drivers Association",
+                "stance": "Strongly opposes a blanket ban: Argues that suburban families cannot afford housing in the city center and rely on cars to commute, while delivery drivers need road access to supply businesses.",
                 "keyPoints": [
-                  "Feeder passengers transfer directly to intercontinental flights without taking city luggage.",
-                  "Banning flights harms regional economic competitiveness and airport slot valuation."
+                  "Suburban public transit takes twice as long and stops running early in the evening.",
+                  "Elderly residents and families with young children cannot easily cycle in winter.",
+                  "Delivery vans and tradespeople will face massive delays and parking fines."
                 ]
               },
               {
-                "title": "Role B: High-Speed Rail Authority Spokesperson",
-                "stance": "Supports the ban: Asserts that high-speed trains emit 95% less CO₂ per passenger-km than short jets and offer city-center-to-city-center door-to-door parity.",
+                "title": "Role B: Local Independent Retailers & Restaurant Owners",
+                "stance": "Demands flexible compromise: Agrees with cleaner streets but fears that banning cars will stop affluent suburban customers from visiting shops and restaurants.",
                 "keyPoints": [
-                  "Trains arrive in central stations, eliminating 45-minute airport security and luggage wait times.",
-                  "Rail capacity can be scaled up rapidly with modern double-deck rolling stock."
+                  "Customers who buy heavy goods or dine late at night prefer driving.",
+                  "We propose free 30-minute delivery bays and large park-and-ride shuttle garages on the perimeter.",
+                  "Pedestrian streets boost restaurant foot traffic, but retail shops need vehicle access."
                 ]
               },
               {
-                "title": "Role C: Regional Climate Action NGO Leader",
-                "stance": "Demands an even stricter ban (up to 4.5 hours of rail journey time) combined with mandatory carbon pricing on business aviation.",
+                "title": "Role C: Clean Air & Youth Climate Action Coalition",
+                "stance": "Strongly supports the total ban: Points out that car exhaust causes asthma in children and greenhouse gas emissions. Cities must belong to people, not vehicles.",
                 "keyPoints": [
-                  "Short-haul flights spend up to 40% of their total fuel in the energy-intensive climb phase.",
-                  "Only bold regulatory mandates compel modal shifts in passenger travel behavior."
+                  "70% of inner-city space is currently wasted on moving or parked metal vehicles.",
+                  "Cities like Barcelona, Amsterdam, and Paris proved that businesses thrive when streets become pedestrianized.",
+                  "Electric buses, trams, and cargo e-bikes can easily handle all deliveries and personal mobility."
                 ]
-              }
-            ],
-            "quiz": [
-              {
-                "id": 1,
-                "q": "What is the primary physical cause of the Urban Heat Island effect?",
-                "options": [
-                  "High concentration of industrial chimneys",
-                  "Solar absorption by dark impermeable surfaces and lack of vegetation",
-                  "Increased carbon dioxide density at ground level",
-                  "Excessive domestic heating during summer months"
-                ],
-                "answer": 1
-              },
-              {
-                "id": 2,
-                "q": "How does a Sponge City handle heavy stormwater compared to conventional civil drainage?",
-                "options": [
-                  "By pumping runoff into deep underground caverns",
-                  "By evaporating water with thermal street heating",
-                  "By using bioretention and permeable surfaces to absorb and filter water locally",
-                  "By piping water directly into the nearest river as rapidly as possible"
-                ],
-                "answer": 2
-              },
-              {
-                "id": 3,
-                "q": "What is the core target of the '15-Minute City' urban planning concept?",
-                "options": [
-                  "Limiting all car journeys to 15 minutes",
-                  "Ensuring residents access daily necessities within a 15-minute walk or cycle",
-                  "Building train stations every 15 minutes along a corridor",
-                  "Providing free public transit for the first 15 minutes of every trip"
-                ],
-                "answer": 1
-              },
-              {
-                "id": 4,
-                "q": "Which grammatical sentence demonstrates a correct Double Comparative?",
-                "options": [
-                  "The more denser transit networks are, the lowest per-capita emissions become.",
-                  "The denser the transit network, the lower the per-capita emissions.",
-                  "As transit networks are denser, so the emissions become lower.",
-                  "More dense transit networks make lesser per-capita emissions."
-                ],
-                "answer": 1
-              },
-              {
-                "id": 5,
-                "q": "What does 'Transit-Oriented Development' (TOD) specifically emphasize?",
-                "options": [
-                  "Building high-density mixed-use neighborhoods around mass transit nodes",
-                  "Constructing multi-lane expressways across metropolitan perimeters",
-                  "Subsidizing private electric vehicle purchases in suburban developments",
-                  "Expanding park-and-ride parking garages at highway exits"
-                ],
-                "answer": 0
-              },
-              {
-                "id": 6,
-                "q": "What is the operational function of 'Peak Runoff Attenuation'?",
-                "options": [
-                  "Maximizing the peak velocity of water discharge into municipal sewers",
-                  "Delaying and buffering stormwater flow to prevent drainage system overload",
-                  "Measuring the chemical acidity of rainwater runoff from airport runways",
-                  "Allowing floodwaters to submerge runways temporarily without alerting ATC"
-                ],
-                "answer": 1
-              },
-              {
-                "id": 7,
-                "q": "Which mode occupies Tier 1 (the foundational base) of the Sustainable Mobility Pyramid?",
-                "options": [
-                  "High-speed electric passenger trains",
-                  "Electric autonomous taxis",
-                  "Active mobility: walking, cycling, and wheeled mobility",
-                  "Shared electric micro-buses"
-                ],
-                "answer": 2
-              },
-              {
-                "id": 8,
-                "q": "What does 'Intermodal Connectivity' mean in airport infrastructure?",
-                "options": [
-                  "Connecting two airport runways with high-speed taxiways",
-                  "Seamless integration between air, rail, metro, and local bus transit",
-                  "Allowing both commercial passenger and freight flights on one apron",
-                  "Providing simultaneous internet connectivity across all passenger terminals"
-                ],
-                "answer": 1
-              },
-              {
-                "id": 9,
-                "q": "What is the main environmental benefit of replacing short-haul flights with High-Speed Rail?",
-                "options": [
-                  "Rail eliminates all ticket fares for inter-city travel",
-                  "Trains use 100% solar power at all hours of the day",
-                  "Trains reduce per-passenger corridor carbon emissions by up to 85–95%",
-                  "High-speed rail requires no track maintenance over 30 years"
-                ],
-                "answer": 2
-              },
-              {
-                "id": 10,
-                "q": "Choose the correct concessive connector: '____ high construction costs, the city built a network of stormwater bioswales.'",
-                "options": [
-                  "Whereas",
-                  "Nevertheless",
-                  "Despite",
-                  "While"
-                ],
-                "answer": 2
               }
             ]
           }
@@ -13946,481 +13869,478 @@
           "title": "Extreme Weather & Atmospheric Hazards",
           "objectives": {
             "title": "Session 1 Objectives - Extreme Weather & Atmospheric Hazards",
-            "summary": "Master high-stakes meteorological communication, downburst physics analysis, causal linkers, and crisis briefing skills for severe weather disruption.",
+            "summary": "Develop spoken communicative fluency, photo comparison skills, opinion framing, and debate strategies discussing extreme weather and climate change.",
             "items": [
               {
                 "num": "01",
-                "title": "Severe Weather Meteorological Diagnostics",
-                "desc": "Explain convective storm hazards using precise B2 aviation sentence stems (supercells, atmospheric rivers, flash floods, heat domes)."
+                "title": "Photo Description: The Four Faces of Climate Crisis",
+                "desc": "Describe and compare 4 contrasting scenes of severe climate disruption using observational B1/B2 language."
               },
               {
                 "num": "02",
-                "title": "Microburst & Windshear Physical Dynamics",
-                "desc": "Analyze convective downburst physics, virga, vortex rings, and low-altitude windshear mitigation systems."
+                "title": "Extreme Weather & Societal Impact Discussion",
+                "desc": "Discuss how heatwaves, flash floods, and wildfires disrupt daily routines, city living, and transport networks."
               },
               {
                 "num": "03",
-                "title": "Grammar Clinic: Causal Linkers & Conditionals",
-                "desc": "Deploy formal causal verbs (stems from, culminates in, triggers) and 2nd/3rd conditional risk assessment formulas."
+                "title": "Spoken Language Clinic: Expressing Stances & Nuanced Opinions",
+                "desc": "Deploy conversational signposts for expressing strong personal viewpoints and polite, constructive disagreement."
               },
               {
                 "num": "04",
-                "title": "Incident Dossier Research & Mitigation Pitch",
-                "desc": "Conduct small group research on a real weather emergency dossier and deliver a 90-second operational mitigation briefing with peer rubric."
+                "title": "Small-Group Decision Task: The €50M Climate Action Plan",
+                "desc": "Negotiate a municipal climate adaptation fund with your peers, debating trade-offs and agreeing on top priorities."
               },
               {
                 "num": "05",
-                "title": "Spoken Vocabulary Game: Extreme Weather Taboo",
-                "desc": "Build rapid oral circumlocution and phonological fluency using 12 technical taboo cards with IPA stress guides."
+                "title": "Interactive Spoken Game: Climate Buzzword Taboo",
+                "desc": "Build rapid oral circumlocution and conversational agility using 12 B1/B2 climate buzzwords with forbidden terms."
               },
               {
                 "num": "06",
-                "title": "Aerodrome Crisis Shutdown Debate",
-                "desc": "Debate runway closure criteria and diversion thresholds across Ramp Operations, Flight Dispatch, and Safety Inspection viewpoints."
+                "title": "Town Hall Public Debate: Who Pays for Climate Adaptation?",
+                "desc": "Defend assigned community stakeholder positions on who should fund infrastructure repairs and disaster preparedness."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 1 Lesson Plan - Extreme Weather & Atmospheric Hazards (2 Hours)",
-            "summary": "A 2-hour university seminar combining opening news diagnostic, microburst video noticeboard, causal grammar clinic, small group dossier research & pitch, Taboo fluency game, and aerodrome shutdown debate.",
+            "summary": "A 2-hour communicative workshop combining personal weather storytelling, a 4-photo visual debate lab, opinion language clinic, €50M adaptation budget negotiation, Taboo speaking game, and a town hall public debate.",
             "items": [
               {
                 "part": "Part 1",
-                "title": "Meteorological News Scan & Spoken Diagnostic",
-                "description": "Pairwise diagnostic questions with framed sentence stems comparing supercells, atmospheric rivers, flash floods, and adaptation vs mitigation."
+                "title": "Conversational Warm-Up: Personal Weather Stories & Community Impact",
+                "description": "Pairwise diagnostic questions with framed sentence stems sharing personal memories of severe weather and discussing how storms disrupt daily life."
               },
               {
                 "part": "Part 2",
-                "title": "Interactive Video Lab: Convective Storms & Microburst Physics",
-                "description": "Video breakdown of convective downburst dynamics, virga, and low-altitude windshear, supported by 3 guided oral discussion prompts and debrief card."
+                "title": "4-Photo Visual Description & Debate Lab: The Four Faces of Climate Crisis",
+                "description": "Case study reading and photo comparison of 4 real-world climate impacts: Heatwave & Drought, Urban Flash Flood, Wildfire Smoke, and Renewable Adaptation."
               },
               {
                 "part": "Part 3",
-                "title": "Language Clinic: Formal Causal Linkers & Conditional Risk Formulas",
-                "description": "Structured drills deploying causal verbs (stems from, triggers, culminates in) and 2nd/3rd conditional formulas for risk assessment."
+                "title": "Language Clinic: Expressing Opinions & Polite Disagreement",
+                "description": "Targeted spoken language drills deploying conversational markers (From my perspective, I see your point, but..., That may be true, yet...)."
               },
               {
                 "part": "Part 4",
-                "title": "3-Person Incident Dossier Research & Spoken Mitigation Pitch",
-                "description": "Groups choose 1 real weather case (Dubai flood, Phoenix extreme heat, or DFW microburst), analyze operational data, and deliver a 90-second pitch with peer observer rubric."
+                "title": "Small-Group Decision Task: The €50M Climate Action Plan",
+                "description": "Groups debate a decision table with 6 municipal adaptation projects, negotiating budget trade-offs to reach consensus on their top 3 investments."
               },
               {
                 "part": "Part 5",
-                "title": "Interactive Vocabulary Game: Extreme Weather Taboo",
-                "description": "Oral communication game using 12 Taboo cards with forbidden buzzwords and IPA phonetic pronunciation guides to develop circumlocution."
+                "title": "Interactive Spoken Game: Climate Buzzword Taboo",
+                "description": "Fast-paced pair game with 12 accessible B1/B2 cards (heatwave, flash flood, drought, carbon footprint) to build circumlocution."
               },
               {
                 "part": "Part 6",
-                "title": "Aerodrome Crisis Shutdown Debate & Multi-Stakeholder Consensus",
-                "description": "Multi-stakeholder simulation debating runway closure criteria between Ramp Ops, Flight Dispatch, and Safety Inspection."
+                "title": "Town Hall Public Debate: Who Should Pay for Climate Damage?",
+                "description": "Multi-stakeholder consensus debate between Local Residents, Municipal Council, and Industry Executives on funding disaster adaptation, concluding with peer review."
               }
             ]
           },
           "revision": {
-            "title": "Session 1: Extreme Weather & Atmospheric Hazards",
-            "summary": "Review the 18 key technical terms for severe weather, downburst hazards, and aerodrome climate resilience.",
+            "title": "Session 1: Extreme Weather & Climate Crisis",
+            "summary": "Review the 18 essential B1/B2 terms for climate change, severe weather, and community adaptation.",
             "terms": [
               {
                 "num": "01",
-                "term": "Microburst",
-                "ipa": "/ˈmaɪ.krəʊ.bɜːst/",
-                "def": "Intense localized column of sinking air within a thunderstorm producing damaging outflow winds."
+                "term": "Global Warming",
+                "ipa": "/ˈɡləʊ.bəl ˈwɔː.mɪŋ/",
+                "def": "Long-term heating of Earth's climate system driven by human fossil fuel burning."
               },
               {
                 "num": "02",
-                "term": "Supercell",
-                "ipa": "/ˈsuː.pə.sel/",
-                "def": "Severe thunderstorm characterized by a deep, persistently rotating updraft (mesocyclone)."
+                "term": "Greenhouse Effect",
+                "ipa": "/ˈɡriːn.haʊs ɪˌfekt/",
+                "def": "The trapping of the sun's warmth in the atmosphere by carbon dioxide and methane gases."
               },
               {
                 "num": "03",
-                "term": "Atmospheric River",
-                "ipa": "/ˌæt.məsˈfer.ɪk ˈrɪv.ər/",
-                "def": "Long, narrow band of concentrated moisture in the atmosphere that transports water vapor outside the tropics."
+                "term": "Carbon Footprint",
+                "ipa": "/ˌkɑː.bən ˈfʊt.prɪnt/",
+                "def": "The total amount of greenhouse gases generated by our personal choices and activities."
               },
               {
                 "num": "04",
-                "term": "Heat Dome",
-                "ipa": "/ˈhiːt ˌdəʊm/",
-                "def": "Persistent high-pressure ridge trapping hot ocean air over a region like a pot with a lid."
+                "term": "Heatwave",
+                "ipa": "/ˈhiːt.weɪv/",
+                "def": "A prolonged period of abnormally hot weather affecting human health, crops, and infrastructure."
               },
               {
                 "num": "05",
-                "term": "Density Altitude",
-                "ipa": "/ˈden.sə.ti ˈæl.tɪ.tʃuːd/",
-                "def": "Pressure altitude corrected for non-standard temperature; reduces aircraft aerodynamic lift and engine thrust in hot weather."
+                "term": "Flash Flood",
+                "ipa": "/ˈflæʃ ˌflʌd/",
+                "def": "A sudden, violent flood that happens in less than six hours after torrential rainfall."
               },
               {
                 "num": "06",
-                "term": "Flash Flood",
-                "ipa": "/ˈflæʃ ˌflʌd/",
-                "def": "Rapid flooding of low-lying areas in less than six hours, caused by intense torrential rain."
+                "term": "Drought",
+                "ipa": "/draʊt/",
+                "def": "A prolonged period of abnormally low rainfall leading to severe water shortages and crop loss."
               },
               {
                 "num": "07",
-                "term": "Convective Cell",
-                "ipa": "/kənˈvek.tɪv ˌsel/",
-                "def": "Thermal circulatory system in which buoyant warm air rises and cool air sinks, forming storm clouds."
+                "term": "Sea-Level Rise",
+                "ipa": "/ˈsiː ˌlev.əl ˌraɪz/",
+                "def": "The increase in global ocean levels caused by melting glaciers and warm water expansion."
               },
               {
                 "num": "08",
-                "term": "Windshear",
-                "ipa": "/ˈwɪnd.ʃɪər/",
-                "def": "Sudden, dramatic change in wind speed or direction over a short horizontal or vertical distance."
+                "term": "Climate Adaptation",
+                "ipa": "/ˈklaɪ.mət ˌæd.æpˈteɪ.ʃən/",
+                "def": "Changing our buildings, cities, and habits to protect communities from extreme weather."
               },
               {
                 "num": "09",
-                "term": "Virga",
-                "ipa": "/ˈvɜː.ɡə/",
-                "def": "Precipitation falling from a cloud that evaporates or sublimates before reaching the ground, often generating dry microbursts."
+                "term": "Climate Mitigation",
+                "ipa": "/ˈklaɪ.mət ˌmɪt.ɪˈɡeɪ.ʃən/",
+                "def": "Actions taken to reduce or stop the emission of greenhouse gases into the atmosphere."
               },
               {
                 "num": "10",
-                "term": "Runway Inundation",
-                "ipa": "/ˈrʌn.weɪ ˌɪn.ʌnˈdeɪ.ʃən/",
-                "def": "Submersion of runway surfaces by storm surge or runoff, exceeding aircraft operating limits."
+                "term": "Renewable Energy",
+                "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
+                "def": "Clean energy collected from natural resources that replenish themselves (solar, wind, hydro)."
               },
               {
                 "num": "11",
-                "term": "Hail Swath",
-                "ipa": "/ˈheɪl ˌswɒθ/",
-                "def": "A linear geographic corridor impacted by damaging hail stones falling from a severe thunderstorm."
+                "term": "Fossil Fuels",
+                "ipa": "/ˈfɒs.əl ˌfjuː.əlz/",
+                "def": "Non-renewable carbon sources like coal, oil, and gas formed over millions of years."
               },
               {
                 "num": "12",
-                "term": "Squall Line",
-                "ipa": "/ˈskwɔːl ˌlaɪn/",
-                "def": "A narrow line of active thunderstorms with severe surface wind gusts and sudden pressure jumps."
+                "term": "Wildfire",
+                "ipa": "/ˈwaɪld.faɪər/",
+                "def": "A large, destructive fire that spreads quickly over woodland, brush, or rural communities."
               },
               {
                 "num": "13",
-                "term": "Inversion Layer",
-                "ipa": "/ɪnˈvɜː.ʃən ˌleɪ.ər/",
-                "def": "An atmospheric layer where temperature increases with altitude, trapping pollutants and moisture below."
+                "term": "Climate Anxiety",
+                "ipa": "/ˈklaɪ.mət æŋˌzaɪ.ə.ti/",
+                "def": "Chronic worry and stress about the future of the planet and environmental breakdown."
               },
               {
                 "num": "14",
-                "term": "Clear-Air Turbulence (CAT)",
-                "ipa": "/ˌklɪər ˈeə ˈtɜː.bjə.ləns/",
-                "def": "Sudden severe turbulence occurring in cloudless skies, typically associated with jet stream wind gradients."
+                "term": "Extreme Weather",
+                "ipa": "/ɪkˈstriːm ˈweð.ər/",
+                "def": "Severe, unexpected meteorological events like superstorms, blizzards, and heatwaves."
               },
               {
                 "num": "15",
-                "term": "Cold Front",
-                "ipa": "/ˈkəʊld ˌfrʌnt/",
-                "def": "The leading edge of a cooler mass of air replacing a warmer mass, often triggering convective instability."
+                "term": "Disaster Preparedness",
+                "ipa": "/dɪˈzɑː.stər prɪˈpeə.rɪd.nəs/",
+                "def": "Community planning, emergency supplies, and evacuation systems to respond to crises."
               },
               {
                 "num": "16",
-                "term": "Holdover Time (HOT)",
-                "ipa": "/ˈhəʊld.əʊ.vər ˌtaɪm/",
-                "def": "The estimated time de-icing fluid prevents ice and snow accumulation on treated aircraft surfaces."
+                "term": "Cooling Shelter",
+                "ipa": "/ˈkuː.lɪŋ ˌʃel.tər/",
+                "def": "An air-conditioned public facility opened during severe heatwaves to protect vulnerable citizens."
               },
               {
                 "num": "17",
-                "term": "Climate Mitigation",
-                "ipa": "/ˈklaɪ.mət ˌmɪt.ɪˈɡeɪ.ʃən/",
-                "def": "Structural actions taken to reduce or prevent the emission of greenhouse gases into the atmosphere."
+                "term": "Sustainable Living",
+                "ipa": "/səˈsteɪ.nə.bəl ˈlɪv.ɪŋ/",
+                "def": "A lifestyle that attempts to reduce an individual's use of natural resources and waste."
               },
               {
                 "num": "18",
-                "term": "Climate Adaptation",
-                "ipa": "/ˈklaɪ.mət ˌæd.æpˈteɪ.ʃən/",
-                "def": "Adjustments in ecological, social, or economic infrastructure to cope with unavoidable extreme weather."
+                "term": "Eco-Friendly",
+                "ipa": "/ˌiː.kəʊˈfrend.li/",
+                "def": "Products, policies, and practices that do not cause harm to the natural environment."
               }
             ]
           },
           "overview": {
             "title": "Extreme Weather & Atmospheric Hazards",
-            "subtitle": "Convective Microbursts, Runaway Surface Heating & Aerodrome Severe Weather Protocols",
-            "badge": "Session Overview • Extreme Weather & Atmospheric Hazards",
+            "subtitle": "Global Warming, Severe Weather Impacts on Communities & The Climate Adaptation Debate",
+            "badge": "Session Overview • Weather & Environment",
             "image": "images/ag_m2card1.jpg"
           },
           "materials": {
-            "title": "Session 1 Study Materials: Extreme Weather",
-            "summary": "Technical vocabulary dossiers, causal connectors, and severe weather emergency SOPs."
+            "title": "Session 1 Study Materials: Weather & Environment",
+            "summary": "Visual debate panels, opinion phrasing guides, and municipal climate adaptation dossiers."
           },
           "lessonContent": {
             "overview": {
               "title": "Extreme Weather & Atmospheric Hazards",
-              "subtitle": "Convective Microbursts, Runaway Surface Heating & Aerodrome Severe Weather Protocols",
-              "badge": "Session Overview • Extreme Weather & Atmospheric Hazards",
+              "subtitle": "Global Warming, Severe Weather Impacts on Communities & The Climate Adaptation Debate",
+              "badge": "Session Overview • Weather & Environment",
               "image": "images/ag_m2card1.jpg"
             },
             "hero": {
               "title": "Extreme Weather & Atmospheric Hazards",
-              "subtitle": "Convective Microbursts, Runaway Surface Heating & Aerodrome Severe Weather Protocols",
+              "subtitle": "Global Warming, Severe Weather Impacts on Communities & The Climate Adaptation Debate",
               "image": "images/ag_m2card1.jpg"
             },
             "openingSession": {
-              "title": "Activity 1: Extreme Weather News & Meteorological Diagnostic",
-              "summary": "Pairwise diagnostic warm-up comparing severe atmospheric hazards with structured spoken sentence frames.",
-              "instructions": "In pairs, review the weekly severe climate news headlines. Then take turns asking and answering the four diagnostic questions below, using the provided sentence frames to structure your spoken explanations.",
+              "title": "Part 1: Conversational Warm-Up — Personal Weather Stories & Community Impact",
+              "summary": "Sharing personal memories of severe weather and discussing how storms disrupt our daily lives.",
+              "instructions": "In pairs, ask and answer the opening discussion questions below. Use the framed sentence stems to describe your personal memories and explain how weather disrupts everyday society.",
               "newsPrompts": [
-                "Record-shattering 48°C surface heat in the Persian Gulf grounds regional regional turboprop operations due to density altitude performance limits.",
-                "An intense atmospheric river dumps three months of rainfall over Central Europe in 36 hours, overwhelming airport drainage retention ponds.",
-                "Severe squall line triggers low-level windshear alerts and multiple go-arounds along the Mediterranean coastal approach corridor."
+                "Record-breaking European summer heatwave triggers municipal cooling centers and halts daytime railway operations.",
+                "Unprecedented autumn flash flooding submerges city metro stations and washes away cars in residential streets.",
+                "Wildfire smoke plumes travel over 1,000 kilometers, prompting widespread air quality health alerts in major cities."
               ],
               "diagnostic": {
-                "title": "Meteorological Concepts Diagnostic Check",
-                "instructions": "Use the sentence stem to formulate your spoken answer before revealing the model explanation.",
+                "title": "Opening Spoken Discussion Prompts",
+                "instructions": "Work in pairs. Take turns answering with the suggested sentence stems before reading the model response.",
                 "questions": [
                   {
                     "id": 1,
-                    "q": "What is the critical distinction between a Supercell Thunderstorm and an ordinary Convective Cell?",
-                    "prompt": "A standard convective cell is driven by..., whereas a supercell is uniquely characterized by...",
-                    "answer": "A standard convective single-cell thunderstorm goes through a simple 30-to-60-minute lifecycle of updraft, precipitation, and downdraft dissipation. In contrast, a supercell possesses a deeply rotating, persistent updraft called a mesocyclone, enabling it to maintain immense structural stability, generate giant hail, damaging microbursts, and long-lived tornadoes."
+                    "q": "Describe an extreme weather event you have personally experienced: what happened and how did you feel?",
+                    "prompt": "The most intense weather event I have ever lived through was..., which made me feel...",
+                    "answer": "Personal stories often describe intense summer heatwaves where indoor temperatures reached 38°C, or sudden torrential storms where streets turned into rivers in minutes. Common reactions include feeling helpless, anxious about safety, and surprised by how quickly normal public transport and power networks collapse."
                   },
                   {
                     "id": 2,
-                    "q": "How does an Atmospheric River differ from the high-altitude Jet Stream?",
-                    "prompt": "The jet stream is a high-altitude band of..., while an atmospheric river consists of...",
-                    "answer": "The jet stream is a high-altitude, fast-flowing ribbon of air (typically around 30,000 to 40,000 feet) driven by global thermal contrasts. An atmospheric river, by contrast, is a lower-tropospheric corridor of concentrated water vapor—often dubbed a 'river in the sky'—that transports vast volumes of moisture from tropical oceans to landmasses, causing extreme precipitation."
+                    "q": "Discuss how severe weather disrupts our daily routines, universities, and public transport.",
+                    "prompt": "When extreme weather hits our region, the most disruptive consequence is..., because...",
+                    "answer": "Severe storms cause power outages, railway track distortion from extreme heat, cancelled train services, flooded underground stations, and flight delays. For university students, it means cancelled classes, difficult commutes, and relying on remote online communication."
                   },
                   {
                     "id": 3,
-                    "q": "What is the operational difference between Flash Flooding and Riverine Flooding?",
-                    "prompt": "Riverine flooding occurs over..., whereas flash flooding is triggered within...",
-                    "answer": "Riverine flooding is a gradual hydrological event occurring over days or weeks when rivers exceed channel bank capacity. Flash flooding happens within less than six hours of torrential convective rainfall, producing sudden, high-velocity surface runoff that overwhelms civil storm sewer systems and floods airport aprons and taxiways with little warning."
+                    "q": "Explain the real difference between daily weather and long-term climate change.",
+                    "prompt": "Daily weather refers to short-term conditions like..., whereas climate change represents...",
+                    "answer": "Daily weather is what is happening outside your window right now (rain, sunshine, wind, temperature over a few hours or days). Climate change is the statistical trend of those conditions measured over 30 years or more, showing that extreme heat, droughts, and intense storms are becoming far more frequent and dangerous."
                   },
                   {
                     "id": 4,
-                    "q": "In climate engineering, what is the difference between Climate Mitigation and Climate Adaptation?",
-                    "prompt": "Mitigation focuses primarily on..., whereas adaptation involves...",
-                    "answer": "Climate mitigation focuses on tackling the root causes by reducing or capturing greenhouse gas emissions (e.g. electrifying airport ground support equipment, adopting Sustainable Aviation Fuels). Climate adaptation focuses on reinforcing physical systems to survive extreme impacts (e.g. elevating substation electrical switchgear, widening runway retention canals, applying thermal-reflective runway coatings)."
+                    "q": "In your view, who is most vulnerable in our communities when an extreme heatwave or flood strikes?",
+                    "prompt": "During severe climate emergencies, the people at greatest risk are..., because they lack...",
+                    "answer": "The elderly, young children, unhoused people, and low-income families living in poorly insulated apartments are the most vulnerable. They often lack access to air conditioning, cannot afford high energy bills, and have limited mobility to evacuate when floodwaters rise."
                   }
                 ]
               }
             },
-            "videoLab": {
-              "title": "Activity 2: Interactive Video Lab — Convective Storms & Microburst Physics",
-              "summary": "Video analysis of convective storm dynamics, virga, vortex rings, and low-altitude windshear mitigation.",
-              "instructions": "Watch the video breakdown of convective microburst dynamics. Study the multi-column noticeboard below, then discuss the three operational questions with your partner.",
-              "videoTitle": "Severe Convective Storms: Downburst Dynamics & Airport Windshear",
-              "videoUrl": "https://www.youtube.com/embed/6_mH15N7fE8",
-              "youtubeUrl": "https://www.youtube.com/watch?v=6_mH15N7fE8",
-              "channel": "Meteorology & Atmospheric Dynamics Lab",
-              "concepts": [
-                "Convective Downdraft Acceleration",
-                "Virga & Evaporative Cooling",
-                "Outflow Boundary & Vortex Ring",
-                "Terminal Doppler Weather Radar (TDWR)",
-                "Low-Level Windshear Alert System (LLWAS)"
-              ],
-              "guidedQuestions": [
+            "visualDebate": {
+              "title": "Part 2: 4-Photo Visual Description & Debate Lab — The Four Faces of Climate Crisis",
+              "summary": "Observing, comparing, and debating 4 real-world photographs of climate disruption and solutions.",
+              "instructions": "Examine the four photographs below. In pairs, take turns describing what you observe in each picture using the sentence stems. Then choose two contrasting images and debate the prompt question.",
+              "photos": [
                 {
-                  "q": "1. Why does evaporative cooling inside a storm cloud dramatically accelerate a downburst?",
-                  "answer": "As falling precipitation encounters dry air beneath the cloud base, it rapidly evaporates (forming virga). This evaporation absorbs latent heat from the surrounding air, making the air pocket much colder, denser, and heavier than the ambient environment, causing it to plunge downward like a lead weight at speeds exceeding 50 knots."
+                  "id": 1,
+                  "title": "Photo 1: Extreme Heat & Drought",
+                  "file": "images/weather_heatwave_drought.jpg",
+                  "scene": "Parched, cracked agricultural soil and dried lake bed under an intense, blazing sun.",
+                  "prompt": "What strikes me about Photo 1 is the severe lack of moisture, which demonstrates how prolonged drought destroys...",
+                  "debateQ": "When regional water reserves drop below 20%, who should have priority access: local farmers, residents for domestic use, or industrial factories?"
                 },
                 {
-                  "q": "2. How does an aircraft encounter with a microburst fool flight crew if they rely only on airspeed indicators?",
-                  "answer": "As an aircraft enters the outflow ring, it first encounters a strong headwind, which temporarily increases airspeed and lift, tempting the pilot to reduce engine power. Seconds later, the aircraft crosses the center core downdraft into a massive tailwind, causing an abrupt loss of airspeed, catastrophic lift deficit, and rapid altitude loss close to the ground."
+                  "id": 2,
+                  "title": "Photo 2: Urban Flash Flooding",
+                  "file": "images/weather_urban_flash_flood.jpg",
+                  "scene": "Submerged city intersection, cars floating in muddy brown water, pedestrians wading through knee-deep runoff.",
+                  "prompt": "In Photo 2, the image highlights the vulnerability of concrete city centers where drainage systems cannot cope with...",
+                  "debateQ": "When an urban neighborhood floods, who bears primary responsibility: the city council who designed the sewers, or property developers building on floodplains?"
                 },
                 {
-                  "q": "3. What infrastructure enhancements allow modern aerodromes to detect microbursts before aircraft penetrate them?",
-                  "answer": "Modern aerodromes employ Terminal Doppler Weather Radar (TDWR) placed several miles off-axis, combined with a perimeter network of anemometers known as LLWAS (Low-Level Windshear Alert System) that detect divergence in surface wind vectors in real time, transmitting immediate automated windshear alerts to ATC."
+                  "id": 3,
+                  "title": "Photo 3: Wildfire Smoke & Sky",
+                  "file": "images/weather_wildfire_smoke.jpg",
+                  "scene": "Apocalyptic orange haze filling the sky over a residential neighborhood as forest fires burn in the background.",
+                  "prompt": "Looking at Photo 3, the dense smoke and glowing orange horizon show that climate disasters respect no borders and cause...",
+                  "debateQ": "Should emergency authorities have the legal power to force residents to evacuate, or should citizens have the right to stay and defend their property?"
+                },
+                {
+                  "id": 4,
+                  "title": "Photo 4: Renewable Transition & Hope",
+                  "file": "images/weather_renewable_transition.jpg",
+                  "scene": "Expansive solar panel fields and modern wind turbines coexisting with green pastures.",
+                  "prompt": "In sharp contrast to the other pictures, Photo 4 offers an inspiring vision of clean energy where technology helps us...",
+                  "debateQ": "Are individual lifestyle changes (shorter showers, recycling) truly meaningful, or are massive government climate taxes the only real solution?"
                 }
               ]
             },
             "grammarClinic": {
-              "title": "Activity 3: Language Clinic — Formal Causal Linkers & Conditional Risk Formulas",
-              "summary": "Mastering formal verbs of causation and 2nd/3rd conditional formulas for technical risk assessment.",
-              "instructions": "Review the causal verbs and conditional patterns below. Complete the active sentence transformations with your partner, then verify your phrasing using the self-check reveals.",
+              "title": "Part 3: Spoken Language Clinic — Expressing Opinions on Severe Weather Hazards",
+              "summary": "Conversational signposts for stating strong personal viewpoints and politely challenging counter-arguments.",
+              "instructions": "Review the useful phrases for expressing opinions below. Practice transforming the statements with your partner to make your speaking sound natural, diplomatic, and persuasive.",
               "patterns": [
                 {
-                  "rule": "Formal Causal Verbs",
-                  "formula": "Subject + [stems from / triggers / culminates in / brings about / accounts for] + Noun Phrase",
+                  "rule": "Stating Your Viewpoint Confidently",
+                  "formula": "From my perspective / I strongly believe that / As far as I'm concerned, + [Opinion]",
                   "examples": [
-                    "Severe apron inundation stemmed from an unprecedented convective deluge.",
-                    "Runway thermal expansion triggered a suspension of heavy jet departures."
+                    "From my perspective, protecting green spaces is far more urgent than building new highways.",
+                    "I strongly believe that cities must invest heavily in shaded pedestrian walkways."
                   ]
                 },
                 {
-                  "rule": "Second Conditional for Hypothetical Risk Scenarios",
-                  "formula": "If + Past Simple, + would/could + bare infinitive",
+                  "rule": "Polite & Constructive Disagreement",
+                  "formula": "I see your point, but... / That may be true, yet... / I'm not entirely convinced that...",
                   "examples": [
-                    "If the aerodrome operated an on-site water retention reservoir, surface flooding would not halt flight operations.",
-                    "If surface temperatures reached 50°C, widebody aircraft could not meet required climb gradients."
+                    "I see your point about convenience, but private cars cause 70% of urban air pollution.",
+                    "That may be true, yet we cannot ignore the economic cost of doing nothing."
                   ]
                 },
                 {
-                  "rule": "Third Conditional for Past Incident Root-Cause Analysis",
-                  "formula": "If + had + past participle, + would/could have + past participle",
+                  "rule": "Weighing Two Sides of a Climate Dilemma",
+                  "formula": "On the one hand, [Fact A]; on the other hand, [Fact B]...",
                   "examples": [
-                    "If the weather radar had detected the low-level windshear earlier, the flight crew would have initiated an immediate go-around.",
-                    "If drainage culverts had been dredged before the storm, the taxiway network would not have been submerged."
+                    "On the one hand, air conditioning saves lives during heatwaves; on the other hand, it consumes enormous electrical power."
                   ]
                 }
               ],
               "drills": [
                 {
                   "id": 1,
-                  "prompt": "Combine using 'culminate in': 'Sustained torrential downpours saturated the topsoil. As a result, a massive retaining wall collapsed onto Taxiway Bravo.'",
-                  "answer": "Sustained torrential downpours saturated the topsoil, culminating in the collapse of a massive retaining wall onto Taxiway Bravo."
+                  "prompt": "Disagree politely with this opinion: 'People should just stay inside with air conditioning during heatwaves; there is no need to change our cities.'",
+                  "answer": "I see your point about immediate personal relief, but air conditioning consumes huge amounts of power and makes street-level heat even worse for pedestrians."
                 },
                 {
                   "id": 2,
-                  "prompt": "Transform into a Third Conditional sentence: 'The airport lacked an automated LLWAS sensor grid, so controllers failed to warn the crew of the oncoming microburst.'",
-                  "answer": "If the airport had possessed an automated LLWAS sensor grid, air traffic controllers would have warned the flight crew of the oncoming microburst."
+                  "prompt": "Frame a strong personal opinion using 'From my perspective': 'Individual recycling cannot stop global warming.'",
+                  "answer": "From my perspective, while individual recycling is positive, real climate progress requires bold government legislation and corporate accountability."
                 },
                 {
                   "id": 3,
-                  "prompt": "Combine using 'stems from': 'Extreme density altitude reduces aircraft performance during takeoff. This phenomenon originates from high ambient air temperatures.'",
-                  "answer": "Degraded aircraft takeoff performance during high summer temperatures stems from extreme density altitude."
+                  "prompt": "Weigh both sides using 'On the one hand... on the other hand': 'Banning domestic short flights.'",
+                  "answer": "On the one hand, banning short flights significantly cuts carbon emissions; on the other hand, we must ensure high-speed train tickets remain affordable for all travelers."
                 }
               ]
             },
-            "researchPitch": {
-              "title": "Activity 4: 3-Person Incident Dossier Research & Mitigation Pitch",
-              "summary": "Collaborative incident investigation, data analysis, and a 90-second operational mitigation briefing with peer rubric.",
-              "instructions": "Work in teams of 3. Choose ONE of the real-world operational weather dossiers below. Review the technical data, identify the cascading operational failures, and formulate a 3-point resilience plan. Nominate Student A to deliver a 90-second spoken briefing while Student B evaluates using the Peer Observer Checklist.",
-              "dossiers": [
+            "decisionTask": {
+              "title": "Part 4: Small-Group Decision Task — The €50M Municipal Climate Action Plan",
+              "summary": "Negotiating budget priorities: select the top 3 projects to protect your town from extreme weather.",
+              "instructions": "Work in groups of 3 or 4. Your municipal council has been awarded a €50 Million Climate Resilience Fund. Review the 6 competing proposals below. You only have enough budget to fund THREE projects. Debate the benefits of each, negotiate trade-offs, and reach a unanimous group consensus.",
+              "budget": "Total Available Fund: €50,000,000",
+              "projects": [
                 {
-                  "id": "DXB",
-                  "title": "Dossier 1: Dubai International (DXB) Historic Apron Inundation",
-                  "context": "Record cloudburst dumps 254 mm of rain in 24 hours (nearly two years of typical rainfall).",
-                  "data": "Runway water depth: 15–25 cm; Ground radar disabled by lightning; 1,200 flights cancelled; Fuel hydrant systems submerged; Baggage transfer tunnels flooded.",
-                  "challenge": "Develop an apron flood evacuation and rapid drainage restoration plan within 48 hours."
+                  "id": "A",
+                  "name": "Project A: Urban Tree Canopy & Green Corridors",
+                  "cost": "€15M",
+                  "benefit": "Plants 50,000 mature trees along streets to lower summer temperatures by 3°C and create shaded walkways."
                 },
                 {
-                  "id": "PHX",
-                  "title": "Dossier 2: Phoenix Sky Harbor (PHX) Extreme Heat Grounding",
-                  "context": "Surface air temperature surges to 49°C (120°F), exceeding maximum certified operating tables for regional jets.",
-                  "data": "Air density drops by 14%; Required takeoff runway length increases by 22%; Max takeoff weight penalty: -3,500 kg per flight; 43 regional flights grounded.",
-                  "challenge": "Establish daytime temperature operating thresholds, night flight shift schedules, and passenger compensation policies."
+                  "id": "B",
+                  "name": "Project B: Riverbank Flood Barrier & Storm Retention Ponds",
+                  "cost": "€25M",
+                  "benefit": "Constructs defensive earth barriers and overflow wetlands to protect 10,000 homes from flash flooding."
                 },
                 {
-                  "id": "DFW",
-                  "title": "Dossier 3: Dallas/Fort Worth (DFW) Low-Altitude Microburst Encounter",
-                  "context": "A decaying thunderstorm cell produces a localized 60-knot downdraft along the final approach corridor.",
-                  "data": "Aircraft on 3-mile final experiences +25 kt indicated airspeed surge followed by immediate 45 kt tailwind sheer; Sink rate exceeds 2,400 ft/min.",
-                  "challenge": "Draft revised ATC go-around mandates and automated windshear sensor alerting protocols."
+                  "id": "C",
+                  "name": "Project C: Public Building Solar Roofs & Battery Storage",
+                  "cost": "€20M",
+                  "benefit": "Equips all schools, hospitals, and community halls with solar panels to guarantee power during blackouts."
+                },
+                {
+                  "id": "D",
+                  "name": "Project D: Network of 12 Municipal Cooling Shelters",
+                  "cost": "€10M",
+                  "benefit": "Opens air-conditioned community centers offering free clean water, medical checks, and rest for vulnerable citizens."
+                },
+                {
+                  "id": "E",
+                  "name": "Project E: Subsidized Home Insulation Grants for Low-Income Families",
+                  "cost": "€15M",
+                  "benefit": "Provides direct grants to insulate 4,000 older homes against extreme winter cold and summer heat."
+                },
+                {
+                  "id": "F",
+                  "name": "Project F: Early Warning SMS Siren Network & Citizen Training",
+                  "cost": "€5M",
+                  "benefit": "Installs high-tech weather sirens, automated smartphone warnings, and community disaster response drills."
                 }
               ],
               "rubric": {
                 "title": "Peer Observer Active Listening Rubric (Student B)",
                 "criteria": [
                   {
-                    "name": "Technical Precision",
-                    "target": "Uses precise weather vocabulary (density altitude, virga, microburst, retention capacity)."
+                    "name": "useful phrases for expressing opinions",
+                    "target": "Uses target phrasing (From my perspective, I see your point, but...)."
                   },
                   {
-                    "name": "Causal Linking",
-                    "target": "Employs target causal verbs (stems from, triggers, culminates in) smoothly."
+                    "name": "Justification & Examples",
+                    "target": "Provides clear, logical reasons why one project is more urgent than another."
                   },
                   {
-                    "name": "Operational Structure",
-                    "target": "Presents clear problem diagnosis, impact analysis, and 3-point action plan."
+                    "name": "Collaborative Compromise",
+                    "target": "Listens respectfully to partners and works toward a shared agreement."
                   },
                   {
                     "name": "Spoken Delivery",
-                    "target": "Speaks with confident pace, clear stress, and minimal hesitation within 90 seconds."
+                    "target": "Speaks with confident pace, clear stress, and active engagement."
                   }
                 ]
               }
             },
             "vocabGame": {
-              "title": "Activity 5: Interactive Spoken Vocabulary Game — Extreme Weather Taboo",
-              "summary": "Fast-paced spoken fluency and circumlocution game with 12 technical cards, forbidden buzzwords, and IPA guides.",
-              "instructions": "Form pairs or small groups. Player 1 describes the target buzzword without saying the word itself or any of the 3 forbidden Taboo words. Player 2 must guess the word within 45 seconds. Pay close attention to the IPA phonetic stress marks!",
+              "title": "Part 5: Interactive Spoken Game — Extreme Weather Buzzword Taboo",
+              "summary": "Fast-paced pair fluency game: explain the environmental term without saying the forbidden words!",
+              "instructions": "Work in pairs. Player 1 describes the target buzzword without using the word itself or any of the 3 forbidden words. Player 2 must guess within 45 seconds. Keep score and switch roles after each card!",
               "cards": [
                 {
-                  "word": "Microburst",
-                  "ipa": "/ˈmaɪ.krəʊ.bɜːst/",
-                  "forbidden": [
-                    "Wind",
-                    "Downdraft",
-                    "Rain"
-                  ]
-                },
-                {
-                  "word": "Heat Dome",
-                  "ipa": "/ˈhiːt ˌdəʊm/",
+                  "word": "Heatwave",
+                  "ipa": "/ˈhiːt.weɪv/",
                   "forbidden": [
                     "Hot",
-                    "High Pressure",
-                    "Summer"
+                    "Summer",
+                    "Temperature"
                   ]
                 },
                 {
-                  "word": "Atmospheric River",
-                  "ipa": "/ˌæt.məsˈfer.ɪk ˈrɪv.ər/",
-                  "forbidden": [
-                    "Moisture",
-                    "Ocean",
-                    "Rain"
-                  ]
-                },
-                {
-                  "word": "Supercell",
-                  "ipa": "/ˈsuː.pə.sel/",
-                  "forbidden": [
-                    "Tornado",
-                    "Cloud",
-                    "Storm"
-                  ]
-                },
-                {
-                  "word": "Density Altitude",
-                  "ipa": "/ˈden.sə.ti ˈæl.tɪ.tʃuːd/",
-                  "forbidden": [
-                    "Temperature",
-                    "Thin Air",
-                    "Takeoff"
-                  ]
-                },
-                {
-                  "word": "Runway Inundation",
-                  "ipa": "/ˈrʌn.weɪ ˌɪn.ʌnˈdeɪ.ʃən/",
+                  "word": "Flash Flood",
+                  "ipa": "/ˈflæʃ ˌflʌd/",
                   "forbidden": [
                     "Water",
-                    "Flood",
-                    "Closed"
+                    "Rain",
+                    "River"
                   ]
                 },
                 {
-                  "word": "Hail Swath",
-                  "ipa": "/ˈheɪl ˌswɒθ/",
+                  "word": "Drought",
+                  "ipa": "/draʊt/",
                   "forbidden": [
+                    "Dry",
+                    "Rain",
+                    "Water"
+                  ]
+                },
+                {
+                  "word": "Carbon Footprint",
+                  "ipa": "/ˌkɑː.bən ˈfʊt.prɪnt/",
+                  "forbidden": [
+                    "CO2",
+                    "Pollution",
+                    "Personal"
+                  ]
+                },
+                {
+                  "word": "Global Warming",
+                  "ipa": "/ˈɡləʊ.bəl ˈwɔː.mɪŋ/",
+                  "forbidden": [
+                    "Earth",
+                    "Hot",
+                    "Climate"
+                  ]
+                },
+                {
+                  "word": "Wildfire",
+                  "ipa": "/ˈwaɪld.faɪər/",
+                  "forbidden": [
+                    "Forest",
+                    "Burn",
+                    "Smoke"
+                  ]
+                },
+                {
+                  "word": "Renewable Energy",
+                  "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
+                  "forbidden": [
+                    "Solar",
+                    "Wind",
+                    "Green"
+                  ]
+                },
+                {
+                  "word": "Sea-Level Rise",
+                  "ipa": "/ˈsiː ˌlev.əl ˌraɪz/",
+                  "forbidden": [
+                    "Ocean",
                     "Ice",
-                    "Damage",
-                    "Falling"
-                  ]
-                },
-                {
-                  "word": "Squall Line",
-                  "ipa": "/ˈskwɔːl ˌlaɪn/",
-                  "forbidden": [
-                    "Front",
-                    "Gusts",
-                    "Thunderstorm"
-                  ]
-                },
-                {
-                  "word": "Virga",
-                  "ipa": "/ˈvɜː.ɡə/",
-                  "forbidden": [
-                    "Precipitation",
-                    "Evaporate",
-                    "Ground"
-                  ]
-                },
-                {
-                  "word": "Windshear",
-                  "ipa": "/ˈwɪnd.ʃɪər/",
-                  "forbidden": [
-                    "Speed",
-                    "Direction",
-                    "Change"
-                  ]
-                },
-                {
-                  "word": "Holdover Time",
-                  "ipa": "/ˈhəʊld.əʊ.vər ˌtaɪm/",
-                  "forbidden": [
-                    "De-icing",
-                    "Wings",
-                    "Snow"
+                    "Melting"
                   ]
                 },
                 {
@@ -14428,39 +14348,69 @@
                   "ipa": "/ˈklaɪ.mət ˌæd.æpˈteɪ.ʃən/",
                   "forbidden": [
                     "Change",
-                    "Future",
-                    "Infrastructure"
+                    "Protect",
+                    "Future"
+                  ]
+                },
+                {
+                  "word": "Fossil Fuels",
+                  "ipa": "/ˈfɒs.əl ˌfjuː.əlz/",
+                  "forbidden": [
+                    "Oil",
+                    "Coal",
+                    "Gas"
+                  ]
+                },
+                {
+                  "word": "Eco-Friendly",
+                  "ipa": "/ˌiː.kəʊˈfrend.li/",
+                  "forbidden": [
+                    "Green",
+                    "Nature",
+                    "Good"
+                  ]
+                },
+                {
+                  "word": "Cooling Shelter",
+                  "ipa": "/ˈkuː.lɪŋ ˌʃel.tər/",
+                  "forbidden": [
+                    "Air conditioning",
+                    "Building",
+                    "Refuge"
                   ]
                 }
               ]
             },
-            "debate": {
-              "title": "Activity 6: Aerodrome Crisis Shutdown Debate & Multi-Stakeholder Consensus",
-              "summary": "High-stakes operational roleplay debating airport closure criteria during an approaching convective supercell.",
-              "instructions": "A massive supercell cluster with embedded severe microbursts and hail is 25 NM from the aerodrome. Assume one of the three stakeholder roles below. Debate whether to suspend all runway operations immediately or keep one runway active for low-fuel diversions.",
+            "townHallDebate": {
+              "title": "Part 6: Town Hall Public Debate — Who Should Pay for Climate Adaptation?",
+              "summary": "High-stakes community debate: funding disaster defenses between citizens, city hall, and heavy industry.",
+              "instructions": "Your town has suffered repeated floods and heatwaves. A public town hall meeting is held to decide how to raise €100 Million for long-term climate defenses. Choose one of the three stakeholder roles below, prepare your arguments, and debate the funding model.",
               "roles": [
                 {
-                  "title": "Role A: Ramp Operations Director",
-                  "stance": "Demands immediate full shutdown of all ramps and runways to protect ground personnel from lightning strikes and prevent aircraft hail damage.",
+                  "title": "Role A: Local Residents & Tenant Association",
+                  "stance": "Demands that heavy polluters pay: Ordinary working citizens already pay high local taxes and energy bills. Climate funding must come from taxes on fossil fuel companies, airlines, and large commercial developers.",
                   "keyPoints": [
-                    "Lightning within 5 NM requires immediate suspension of apron refueling.",
-                    "High surface winds create catastrophic baggage container blowaway hazards."
+                    "Residents are already suffering property damage and rising home insurance premiums.",
+                    "Large corporations made billions in profits while emitting greenhouse gases.",
+                    "Higher local residential taxes would push vulnerable families into poverty."
                   ]
                 },
                 {
-                  "title": "Role B: Lead Flight Dispatcher",
-                  "stance": "Advocates keeping one runway open under ILS CAT II/III to accept three incoming international flights with critical fuel reserves before initiating diversion.",
+                  "title": "Role B: Chamber of Commerce & Industry Representative",
+                  "stance": "Warns against punishing local business: Heavy corporate taxes will force companies and employers to relocate to other regions, destroying local jobs and economic prosperity.",
                   "keyPoints": [
-                    "Diversion to alternate aerodromes will trigger regional airspace gridlock.",
-                    "Holding aircraft have only 25 minutes of contingency fuel remaining."
+                    "Businesses provide employment, taxes, and vital community services.",
+                    "Green adaptation requires public-private partnerships, not hostile punishment.",
+                    "A modest, shared municipal sales tax spread across all citizens is fairer and more stable."
                   ]
                 },
                 {
-                  "title": "Role C: Civil Aviation Safety Inspector",
-                  "stance": "Enforces strict regulatory safety margins: if LLWAS detects windshear exceeding 15 knots, airport closure is mandatory by air law.",
+                  "title": "Role C: City Mayor & Municipal Finance Director",
+                  "stance": "Proposes a shared compromise: Both citizens and businesses must contribute, supported by national government subsidies and green municipal bonds.",
                   "keyPoints": [
-                    "Regulatory liability rests on the aerodrome authority if an accident occurs in known windshear.",
-                    "Flight crew autonomy must be supported by conservative ATC guidance."
+                    "Extreme weather is an existential threat to our entire region's survival.",
+                    "Delaying action while arguing over blame will cost five times more when the next flood hits.",
+                    "We propose a three-part model: 40% corporate climate fee, 30% national grant, and 30% green municipal bond."
                   ]
                 }
               ]
@@ -14472,599 +14422,495 @@
           "title": "Sustainable Cities & Low-Emission Mobility",
           "objectives": {
             "title": "Session 2 Objectives - Sustainable Cities & Low-Emission Mobility",
-            "summary": "Analyze low-emission urban mobility systems, sponge city architecture, multimodal airport transit hubs, double comparatives, and sustainable transport policy.",
+            "summary": "Develop spoken communicative fluency, photo comparison skills, proposal structuring, and debate techniques on sustainable urban living and mobility.",
             "items": [
               {
                 "num": "01",
-                "title": "Sustainable Urban Design & Microclimate Concepts",
-                "desc": "Explain the Urban Heat Island effect, sponge city principles, and 15-minute urban planning using clear B2 sentence stems."
+                "title": "Photo Comparison: Two Visions of the Future City",
+                "desc": "Contrast car-dominated urban sprawl with green pedestrian superblocks using rich descriptive B1/B2 English."
               },
               {
                 "num": "02",
-                "title": "Sponge City Engineering & Flood Absorption Lab",
-                "desc": "Analyze bioretention basins, permeable surfaces, and urban aquifer recharge via interactive video noticeboard analysis."
+                "title": "Livable Cities & The 15-Minute Neighborhood",
+                "desc": "Discuss how clean public transit, bike lanes, and green parks improve health, air quality, and social connection."
               },
               {
                 "num": "03",
-                "title": "Grammar Clinic: Double Comparatives & Contrast Connectors",
-                "desc": "Master double comparative structures (The more... the less...) and formal contrast connectors (whereas, nevertheless, despite)."
+                "title": "Spoken Language Clinic: Making Persuasive Proposals",
+                "desc": "Deploy polite suggestion patterns (Why don't we consider..., What if we were to ban..., It would be far more effective to...)."
               },
               {
                 "num": "04",
-                "title": "Vocabulary Game: Collocation Matcher & Mobility Pyramid",
-                "desc": "Build active lexical accuracy by matching 10 compound mobility terms and ranking transport modes in the sustainability pyramid."
+                "title": "Interactive Vocabulary Game: Green City Collocation Matcher",
+                "desc": "Master 10 high-frequency compound phrases for urban lifestyle, clean transport, and eco-friendly infrastructure."
               },
               {
                 "num": "05",
-                "title": "Pair Urban Design Sprint: The 15-Minute Airport District",
-                "desc": "Design 3 low-emission transport interventions for an airport suburban corridor and deliver a 2-minute pitch with peer rubric."
+                "title": "Pair Urban Redesign Pitch: Reclaim Your Street or Campus",
+                "desc": "Redesign a car-dominated street or university zone into a green pedestrian haven and pitch it to the class."
               },
               {
                 "num": "06",
-                "title": "Multi-Stakeholder Policy Debate & Technical Mastery Quiz",
-                "desc": "Debate banning domestic flights under 2.5 hours where high-speed rail exists, followed by a 10-question technical self-scoring quiz."
+                "title": "High-Stakes Public Debate: The Car-Free City Center",
+                "desc": "Debate a total ban on private passenger cars in metropolitan city cores across Commuters, Shop Owners, and Environmentalists."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan - Sustainable Cities & Low-Emission Mobility (2 Hours)",
-            "summary": "A 2-hour university seminar combining urban innovation news scan, sponge city video lab, double comparative grammar clinic, collocation matcher game, pair design sprint, and a short-haul flight ban debate with technical mastery quiz.",
+            "summary": "A 2-hour communicative seminar combining a livable city ranking warm-up, 4-photo urban contrast debate panel, proposal language clinic, green collocation game, pair street redesign pitch, and a car-free city center debate.",
             "items": [
               {
                 "part": "Part 1",
-                "title": "Urban Innovation News Scan & Oral Diagnostic",
-                "description": "Pairwise diagnostic warm-up comparing Urban Heat Islands, Sponge Cities, 15-Minute planning, and permeable pavements with sentence frames."
+                "title": "Conversational Warm-Up: The Livable City Ranking",
+                "description": "Pairwise diagnostic questions with framed sentence stems ranking the key factors that make a city healthy and enjoyable to live in."
               },
               {
                 "part": "Part 2",
-                "title": "Technical Reading & Video Lab: Sponge Cities & Urban Flood Resilience",
-                "description": "Case study reading and video exploration of sponge city engineering, bioretention, and permeable aquifers with 3 guided paired discussion questions and debrief card."
+                "title": "4-Photo Visual Contrast & Debate Lab: Two Visions of the Future City",
+                "description": "Case study reading and photo comparison of 4 urban models: The Car-Choked Highway, The Reclaimed Superblock, High-Speed Rail vs Air, and The 15-Minute Street."
               },
               {
                 "part": "Part 3",
-                "title": "Language Clinic: Double Comparatives & Contrast Connectors",
-                "description": "Targeted language clinic on proportional changes (The denser the network, the lower the emissions) and formal connecting words for contrast."
+                "title": "Language Clinic: Proposing Solutions & Making Recommendations",
+                "description": "Targeted spoken language drills practicing constructive suggestions and polite alternatives (Why don't we consider..., What if we were to...)."
               },
               {
                 "part": "Part 4",
-                "title": "Interactive Vocabulary Game: Collocation Matcher & Mobility Pyramid",
-                "description": "Pair matching game linking 10 compound mobility collocations and ranking transit modes in the urban sustainability hierarchy."
+                "title": "Interactive Vocabulary Game: Green City Collocation Matcher",
+                "description": "Pair matching game linking 10 compound phrases (pedestrian zone, public transport, congestion charge, cycling lane) and ranking transit modes."
               },
               {
                 "part": "Part 5",
-                "title": "Pair Urban Design Sprint: The 15-Minute Airport District",
-                "description": "Pairs re-engineer a congested suburban airport access corridor into an active multimodal district with a 3-point design decision table and deliver a 2-minute pitch with peer rubric."
+                "title": "Pair Urban Redesign Challenge: Reclaim Your Street or Campus",
+                "description": "Pairs formulate a 3-point plan to transform a car-dominated road into an active green corridor and deliver a 2-minute pitch with peer rubric."
               },
               {
                 "part": "Part 6",
-                "title": "Multi-Stakeholder Policy Debate & Technical Mastery Quiz",
-                "description": "Stakeholder consensus debate on banning short-haul domestic flights under 2.5h rail alternative, concluding with an interactive 10-question mastery quiz and final review."
+                "title": "High-Stakes Public Debate: The Car-Free City Center",
+                "description": "Multi-stakeholder consensus debate on banning private cars from metropolitan centers between Commuters, Shop Owners, and Climate Activists, concluding with final review."
               }
             ]
           },
           "revision": {
-            "title": "Session 2: Sustainable Cities & Low-Emission Mobility",
-            "summary": "Review the 18 key terms for urban sustainability, multimodal transit integration, and low-carbon civil mobility.",
+            "title": "Session 2: Sustainable Cities & Low-Emission Living",
+            "summary": "Review the 18 essential B1/B2 terms for urban sustainability, active mobility, and green city planning.",
             "terms": [
               {
                 "num": "01",
-                "term": "Sponge City",
-                "ipa": "/ˈspʌndʒ ˌsɪt.i/",
-                "def": "An urban planning model that uses nature-based infrastructure to absorb, store, and purify rainwater."
+                "term": "Car-Free Zone",
+                "ipa": "/ˌkɑː ˈfriː ˌzəʊn/",
+                "def": "A city district where private motor vehicles are prohibited to give priority to pedestrians and cyclists."
               },
               {
                 "num": "02",
-                "term": "Urban Heat Island (UHI)",
-                "ipa": "/ˌɜː.bən ˈhiːt ˌaɪ.lənd/",
-                "def": "A metropolitan area significantly warmer than surrounding rural areas due to human activities, concrete, and asphalt."
+                "term": "Pedestrian Street",
+                "ipa": "/pəˈdes.tri.ən ˌstriːt/",
+                "def": "A street reserved exclusively for people walking, shopping, and outdoor dining without motor traffic."
               },
               {
                 "num": "03",
-                "term": "15-Minute City",
-                "ipa": "/ˌfɪf.tiːn ˈmɪn.ɪt ˌsɪt.i/",
-                "def": "An urban planning concept where all daily resident necessities are accessible within a 15-minute walk or cycle."
+                "term": "Cycling Lane",
+                "ipa": "/ˈsaɪ.klɪŋ ˌleɪn/",
+                "def": "A dedicated, marked division of a road reserved exclusively for bicycles and light personal transport."
               },
               {
                 "num": "04",
-                "term": "Permeable Pavement",
-                "ipa": "/ˈpɜː.mi.ə.bəl ˈpeɪv.mənt/",
-                "def": "Porous surfacing material allowing stormwater to seep through into underlying soils rather than generating surface runoff."
+                "term": "Public Transport",
+                "ipa": "/ˌpʌb.lɪk ˈtræn.spɔːt/",
+                "def": "Shared passenger transportation systems like metros, electric buses, trams, and suburban trains."
               },
               {
                 "num": "05",
-                "term": "Bioretention Basin",
-                "ipa": "/ˌbaɪ.əʊ.rɪˈten.ʃən ˌbeɪ.sən/",
-                "def": "A landscaped depression designed to slow, filter, and infiltrate stormwater runoff using vegetation and engineered soil."
+                "term": "15-Minute City",
+                "ipa": "/ˌfɪf.tiːn ˈmɪn.ɪt ˌsɪt.i/",
+                "def": "An urban planning model where all daily resident needs are reachable in a 15-minute walk or bike ride."
               },
               {
                 "num": "06",
-                "term": "Intermodal Connectivity",
-                "ipa": "/ˌɪn.təˈməʊ.dəl kəˌnekˈtɪv.ə.ti/",
-                "def": "Seamless physical and digital integration between different transportation modes (air, high-speed rail, metro, bus)."
+                "term": "Superblock",
+                "ipa": "/ˈsuː.pə.blɒk/",
+                "def": "A neighborhood cluster where inner streets are closed to through-traffic and turned into green public squares."
               },
               {
                 "num": "07",
-                "term": "Transit-Oriented Development (TOD)",
-                "ipa": "/ˈtræn.zɪt ˌɔː.ri.en.tɪd dɪˈvel.əp.mənt/",
-                "def": "High-density, mixed-use commercial and residential urban development concentrated around mass transit stations."
+                "term": "Urban Sprawl",
+                "ipa": "/ˌɜː.bən ˈsprɔːl/",
+                "def": "The uncontrolled outward spread of low-density suburbs heavily dependent on private cars."
               },
               {
                 "num": "08",
-                "term": "Active Mobility Corridor",
-                "ipa": "/ˈæk.tɪv məʊˈbɪl.ə.ti ˌkɒr.ɪ.dɔːr/",
-                "def": "Dedicated, grade-separated pathways reserved exclusively for human-powered transport (walking, cycling, rollerblading)."
+                "term": "Congestion Charge",
+                "ipa": "/kənˈdʒes.tʃən ˌtʃɑːdʒ/",
+                "def": "A daily fee charged to drivers entering city centers during peak hours to curb traffic and air pollution."
               },
               {
                 "num": "09",
-                "term": "Congestion Pricing",
-                "ipa": "/kənˈdʒes.tʃən ˌpraɪ.sɪŋ/",
-                "def": "A regulatory fee charged to drivers entering city centers during peak hours to curb traffic congestion and emissions."
+                "term": "Green Space",
+                "ipa": "/ˈɡriːn ˌspeɪs/",
+                "def": "Open land covered with grass, trees, and plants in an urban area like public parks and gardens."
               },
               {
                 "num": "10",
-                "term": "Low-Emission Zone (LEZ)",
-                "ipa": "/ˌləʊ ɪˈmɪʃ.ən ˌzəʊn/",
-                "def": "A designated geographic zone where polluting vehicles are banned or penalized to improve local air quality."
+                "term": "Air Quality",
+                "ipa": "/ˈeə ˌkwɒl.ə.ti/",
+                "def": "The degree to which outdoor air is clean and free from harmful vehicle exhaust and pollutants."
               },
               {
                 "num": "11",
-                "term": "Decarbonization Trajectory",
-                "ipa": "/diːˌkɑː.bən.aɪˈzeɪ.ʃən trəˈdʒek.tər.i/",
-                "def": "The scheduled path and timeline toward achieving net-zero greenhouse gas emissions across an industry or city."
+                "term": "Low-Emission Zone",
+                "ipa": "/ˌləʊ ɪˈmɪʃ.ən ˌzəʊn/",
+                "def": "A designated municipal perimeter where high-polluting vehicles are restricted, banned, or fined."
               },
               {
                 "num": "12",
-                "term": "Multi-Modal Hub",
-                "ipa": "/ˌmʌl.tiˈməʊ.dəl ˌhʌb/",
-                "def": "A central passenger interchange allowing frictionless transfers between air travel, rail networks, and urban micro-mobility."
+                "term": "Micro-Mobility",
+                "ipa": "/ˈmaɪ.krəʊ məʊˌbɪl.ə.ti/",
+                "def": "Small, lightweight personal electric vehicles like e-bikes and e-scooters for short trips."
               },
               {
                 "num": "13",
-                "term": "Aquifer Recharge",
-                "ipa": "/ˈæk.wɪ.fər ˌriːˈtʃɑːdʒ/",
-                "def": "The hydrological process where surface water percolates downward to replenish underground groundwater reservoirs."
+                "term": "High-Speed Rail",
+                "ipa": "/ˌhaɪ ˈspiːd ˈreɪl/",
+                "def": "Fast electric passenger trains operating at speeds over 250 km/h connecting major city centers."
               },
               {
                 "num": "14",
-                "term": "Peak Runoff Attenuation",
-                "ipa": "/ˈpiːk ˌrʌn.ɒf əˌten.juˈeɪ.ʃən/",
-                "def": "The intentional buffering and delay of stormwater release into municipal sewers to prevent flood crests."
+                "term": "Energy-Efficient Housing",
+                "ipa": "/ˌen.ə.dʒi ɪˈfɪʃ.ənt/",
+                "def": "Buildings with thick insulation and heat pumps that consume very little energy for heating and cooling."
               },
               {
                 "num": "15",
-                "term": "Bioswale",
-                "ipa": "/ˈbaɪ.əʊ.sweɪl/",
-                "def": "Vegetated channels designed to concentrate and convey stormwater runoff while removing silt and pollutants."
+                "term": "Waste Management",
+                "ipa": "/ˈweɪst ˌmæn.ɪdʒ.mənt/",
+                "def": "Organized collection, sorting, recycling, and composting of household and commercial rubbish."
               },
               {
                 "num": "16",
-                "term": "Last-Mile Micro-Mobility",
-                "ipa": "/ˌlɑːst ˈmaɪl ˈmaɪ.krəʊ məʊˈbɪl.ə.ti/",
-                "def": "Small, lightweight zero-emission vehicles (e-bikes, e-scooters) used for the final leg of a passenger's journey."
+                "term": "Carbon Neutral",
+                "ipa": "/ˌkɑː.bən ˈnjuː.trəl/",
+                "def": "Balancing the amount of carbon released into the atmosphere with an equivalent amount removed."
               },
               {
                 "num": "17",
-                "term": "District Cooling Network",
-                "ipa": "/ˈdɪs.trɪkt ˈkuː.lɪŋ ˌnet.wɜːk/",
-                "def": "A centralized system producing chilled water distributed via insulated underground pipes to cool urban buildings efficiently."
+                "term": "Sustainable Commute",
+                "ipa": "/səˈsteɪ.nə.bəl kəˈmjuːt/",
+                "def": "Traveling to work or study using walking, cycling, or shared electric public transit."
               },
               {
                 "num": "18",
                 "term": "Modal Split",
                 "ipa": "/ˈməʊ.dəl ˌsplɪt/",
-                "def": "The percentage of travelers using a particular type of transportation compared to the total passenger volume."
+                "def": "The percentage share of trips made by different transport modes (walking, cycling, public transit, cars)."
               }
             ]
           },
           "overview": {
             "title": "Sustainable Cities & Low-Emission Mobility",
-            "subtitle": "Sponge Cities, Multimodal Transit Integration & 15-Minute Urban Districts",
+            "subtitle": "Urban Living, Green Neighborhoods, The 15-Minute City & The Car-Free Center Debate",
             "badge": "Session Overview • Sustainable Cities & Urban Design",
             "image": "images/ag_m2card2.jpg"
           },
           "materials": {
             "title": "Session 2 Study Materials: Sustainable Cities",
-            "summary": "Technical urban mobility dossiers, comparative structures, and transit decarbonization briefs."
+            "summary": "Visual urban contrast panels, proposal phrasing guides, and street transformation briefs."
           },
           "lessonContent": {
             "overview": {
               "title": "Sustainable Cities & Low-Emission Mobility",
-              "subtitle": "Sponge Cities, Multimodal Transit Integration & 15-Minute Urban Districts",
+              "subtitle": "Urban Living, Green Neighborhoods, The 15-Minute City & The Car-Free Center Debate",
               "badge": "Session Overview • Sustainable Cities & Urban Design",
               "image": "images/ag_m2card2.jpg"
             },
             "hero": {
               "title": "Sustainable Cities & Low-Emission Mobility",
-              "subtitle": "Sponge Cities, Multimodal Transit Integration & 15-Minute Urban Districts",
+              "subtitle": "Urban Living, Green Neighborhoods, The 15-Minute City & The Car-Free Center Debate",
               "image": "images/ag_m2card2.jpg"
             },
             "openingSession": {
-              "title": "Activity 1: Urban Innovation News Scan & Oral Diagnostic",
-              "summary": "Pairwise diagnostic warm-up comparing sustainable urban design concepts with structured spoken sentence frames.",
-              "instructions": "In pairs, examine the sustainable urban headlines below. Take turns asking and answering the four diagnostic questions, using the provided sentence frames to structure your spoken answers.",
+              "title": "Part 1: Conversational Warm-Up — The Livable City Ranking",
+              "summary": "What makes a city healthy, exciting, and enjoyable to live in? Ranking priorities in pairs.",
+              "instructions": "In pairs, review the factors that contribute to urban quality of life. Use the framed sentence stems to express your preferences and discuss how your home town or university city compares.",
               "newsPrompts": [
-                "Major European capital expands its Low-Emission Zone to encompass all suburban highway corridors, banning pre-2015 diesel vehicles.",
-                "Airport authority unveils direct High-Speed Rail terminal link, aiming to replace 65% of domestic connecting flights under 350 km.",
-                "Metropolitan flood agency certifies first fully permeable airport service roadway, reducing peak stormwater runoff by 40%."
+                "Major European capital expands its car-free zone, converting 20 kilometers of highway into shaded urban parks.",
+                "National rail operator launches €19 monthly student pass covering all electric trains, trams, and suburban buses.",
+                "Survey reveals 78% of urban residents feel happier and safer in neighborhoods with wide sidewalks and dedicated bike lanes."
               ],
               "diagnostic": {
-                "title": "Urban Sustainability Concepts Diagnostic Check",
-                "instructions": "Use the sentence stem to formulate your spoken answer before revealing the model explanation.",
+                "title": "Opening Spoken Discussion Prompts",
+                "instructions": "Work in pairs. Take turns answering with the suggested sentence stems before reading the model response.",
                 "questions": [
                   {
                     "id": 1,
-                    "q": "What is the Urban Heat Island (UHI) effect, and what primary factors amplify it?",
-                    "prompt": "The Urban Heat Island effect is caused by..., which results in...",
-                    "answer": "The Urban Heat Island (UHI) effect occurs when metropolitan areas experience significantly higher ambient temperatures than surrounding rural zones. It is amplified by dark impermeable surfaces (asphalt and concrete) that absorb solar radiation, lack of vegetated canopy cooling (evapotranspiration), and waste heat emitted by motor traffic, air conditioning units, and industrial facilities."
+                    "q": "In your view, what makes a city truly great to live in? Which factors matter most to you personally?",
+                    "prompt": "For me, the single most important factor for a livable city is..., because...",
+                    "answer": "Key factors include clean air, affordable 24/7 public transit, safe bike lanes, quiet pedestrian streets, abundant parks, vibrant cultural nightlife, and affordable housing. For students, cheap and reliable public transit and safe cycling are often the top priorities."
                   },
                   {
                     "id": 2,
-                    "q": "What core principles define a 'Sponge City'?",
-                    "prompt": "Rather than channeling rainwater into storm sewers, a sponge city...",
-                    "answer": "A sponge city abandons conventional 'fast-drainage' gray infrastructure in favor of nature-based solutions. It utilizes permeable pavements, bioswales, rain gardens, wetland parks, and underground retention basins to absorb, purify, and slowly release or reuse stormwater on-site, naturally attenuating peak flood waves and recharging groundwater aquifers."
+                    "q": "Discuss how heavy car traffic affects the mental well-being and health of city residents.",
+                    "prompt": "Living in a city dominated by heavy car traffic creates serious problems like..., which leads to...",
+                    "answer": "Traffic causes chronic noise pollution, toxic exhaust fumes that trigger asthma and respiratory illness, dangerous roads for children and cyclists, and stressful daily commutes where people waste hours trapped in gridlock instead of exercising or spending time with family."
                   },
                   {
                     "id": 3,
-                    "q": "What is the concept behind Carlos Moreno's '15-Minute City'?",
-                    "prompt": "The core premise of the 15-minute city is that residents can reach...",
-                    "answer": "The 15-minute city is an urban planning paradigm proposing that every city resident should be able to fulfill six essential urban functions—living, working, supplying, caring, learning, and enjoying—within a 15-minute walk or bike ride from their front door, thereby eliminating automobile dependency, reducing transport emissions, and revitalizing local neighborhood squares."
+                    "q": "Explain Carlos Moreno's '15-Minute City' concept, and discuss why it has become so popular.",
+                    "prompt": "The core idea of the 15-minute city is that every resident can reach..., which eliminates...",
+                    "answer": "It proposes that every citizen should be able to access work, food, healthcare, education, culture, and leisure within a 15-minute walk or bike ride from their front door. It eliminates the need for daily car ownership, revitalizes local neighborhood squares, and drastically cuts urban emissions."
                   },
                   {
                     "id": 4,
-                    "q": "What is the difference between Permeable Paving and Conventional Asphalt?",
-                    "prompt": "Conventional asphalt forms an impermeable barrier that..., whereas permeable paving features...",
-                    "answer": "Conventional asphalt forms a sealed, non-porous crust that forces 100% of rainfall to become high-velocity surface runoff carrying motor oil and sediment into sewer systems. Permeable paving, by contrast, is engineered with open interconnected voids and an underlying gravel matrix that allows water to percolate directly into the subsoil, eliminating standing puddles and recharging the water table."
+                    "q": "In your view, what is the biggest obstacle stopping people from giving up their private cars for public transit?",
+                    "prompt": "The main reason many commuters hesitate to abandon their cars is..., especially when...",
+                    "answer": "In outer suburbs and rural regions, public transit is often infrequent, unreliable, or non-existent. People also value the door-to-door convenience of private cars for carrying heavy shopping, transporting young children, or working night shifts when buses do not run."
                   }
                 ]
               }
             },
-            "videoLab": {
-              "title": "Activity 2: Interactive Video Lab — Sponge Cities & Urban Flood Resilience",
-              "summary": "Video analysis of nature-based storm water absorption, bioretention, and urban drainage engineering.",
-              "instructions": "Watch the video case study on Sponge City architecture. Study the technical noticeboard, then discuss the three operational questions with your partner.",
-              "videoTitle": "How Sponge Cities Absorb Rainwater & Prevent Flooding",
-              "videoUrl": "https://www.youtube.com/embed/8mL25lC61Pc",
-              "youtubeUrl": "https://www.youtube.com/watch?v=8mL25lC61Pc",
-              "channel": "Civil Engineering & Urban Planning Review",
-              "concepts": [
-                "Bioretention & Bioswales",
-                "Permeable Pavement Hydraulics",
-                "Subsurface Aquifer Recharge",
-                "Peak Runoff Attenuation",
-                "Nature-Based Green-Gray Hybrid Infrastructure"
-              ],
-              "guidedQuestions": [
+            "visualDebate": {
+              "title": "Part 2: 4-Photo Visual Contrast & Debate Lab — Two Visions of the Future City",
+              "summary": "Comparing two contrasting urban models and debating transport priorities using 4 real photographs.",
+              "instructions": "Examine the four urban photographs below. In pairs, take turns describing what you see using the sentence stems. Then compare the contrasting lifestyles and debate the prompt questions.",
+              "photos": [
                 {
-                  "q": "1. How does green infrastructure reduce urban temperatures compared to concrete?",
-                  "answer": "Vegetated roofs, urban tree canopies, and wetlands cool cities through evapotranspiration—the biological process by which plants absorb water through roots and evaporate it through leaf stomata, consuming solar energy as latent heat rather than converting it into sensible thermal air temperature."
+                  "id": 1,
+                  "title": "Photo A: The Car-Choked Highway",
+                  "file": "images/urban_car_sprawl.jpg",
+                  "scene": "An 8-lane expressway locked in gridlock, sea of metal roofs, exhaust smog, no trees or pedestrians.",
+                  "prompt": "Photo A illustrates the reality of car-dependent urban sprawl where vast amounts of public space are swallowed by...",
+                  "debateQ": "Commuters lose an average of 90 minutes every day trapped in traffic jams. Why are so many people still reluctant to switch to trains or buses?"
                 },
                 {
-                  "q": "2. Why is peak runoff attenuation more effective than building wider concrete drainage pipes?",
-                  "answer": "Wider concrete pipes merely accelerate storm water downstream, dumping massive surges into rivers and causing catastrophic bottleneck floods in lower-lying districts. Attenuation delays release through retention ponds and permeable soils, shaving off the dangerous flood peak and allowing municipal sewers to discharge manageable flows steadily."
+                  "id": 2,
+                  "title": "Photo B: The Reclaimed Superblock",
+                  "file": "images/urban_superblock.jpg",
+                  "scene": "Car-free neighborhood square with shade trees, children playing, outdoor cafes, and wide cycle tracks.",
+                  "prompt": "In sharp contrast to Photo A, Photo B shows a human-scale neighborhood that prioritizes community life by...",
+                  "debateQ": "If a city completely closes neighborhood streets to private cars, what realistic solutions must be provided for elderly residents, delivery vans, and tradespeople?"
                 },
                 {
-                  "q": "3. What challenges exist when retrofitting existing airport aprons and access roads with permeable materials?",
-                  "answer": "Heavy commercial jet wheel loadings (often exceeding 70 tons per main gear strut) can crush standard porous pavers. Retrofits require heavy-duty engineered permeable concrete, geotextile sub-base filtration layers, and frequent vacuum-sweeping maintenance to prevent fine jet soot and rubber deposits from clogging the drainage pores."
+                  "id": 3,
+                  "title": "Photo C: High-Speed Rail vs. Aviation",
+                  "file": "images/transport_high_speed_rail.jpg",
+                  "scene": "Modern high-speed electric passenger train boarding passengers smoothly in a downtown glass terminal.",
+                  "prompt": "Photo C represents clean intercity connectivity where electric rail links city center to city center, avoiding...",
+                  "debateQ": "Should national governments ban domestic commercial flights when a direct train journey under 2.5 hours exists?"
+                },
+                {
+                  "id": 4,
+                  "title": "Photo D: The 15-Minute Micro-Mobility Street",
+                  "file": "images/urban_15min_neighborhood.jpg",
+                  "scene": "A tree-lined boulevard with cargo e-bikes, pedestrians, outdoor bakeries, and solar streetlights.",
+                  "prompt": "Looking at Photo D, we see a practical example of the 15-minute city where daily errands can be done easily on foot or by...",
+                  "debateQ": "Is the 15-minute city an elitist concept that only wealthy metropolitan centers can afford, or can outer suburbs be redesigned the same way?"
                 }
               ]
             },
             "grammarClinic": {
-              "title": "Activity 3: Language Clinic — Double Comparatives & Concessive Contrast",
-              "summary": "Mastering proportional change structures and formal contrast markers for environmental policy discourse.",
-              "instructions": "Review the double comparative formulas and concessive contrast markers below. Complete the interactive sentence transformations and check your results.",
+              "title": "Part 3: Spoken Language Clinic — Proposing Solutions & Making Recommendations",
+              "summary": "Targeted language clinic on making persuasive proposals and suggesting constructive alternatives.",
+              "instructions": "Review the proposal formulas below. Practice transforming the suggestions with your partner to sound polite, professional, and convincing in public meetings.",
               "patterns": [
                 {
-                  "rule": "Double Comparatives (Proportional Change)",
-                  "formula": "The + comparative adjective/adverb + subject + verb, the + comparative + subject + verb",
+                  "rule": "Making Constructive Proposals",
+                  "formula": "Why don't we consider + [Verb-ing] / What if we were to + [Verb] / It would be far more effective to + [Verb]",
                   "examples": [
-                    "The denser the mass transit grid, the lower the per-capita urban transport emissions.",
-                    "The more permeable the pavement surface, the less severe the flash flood crest."
+                    "Why don't we consider converting the two central lanes into a dedicated busway?",
+                    "What if we were to introduce free public transit on high-pollution days?",
+                    "It would be far more effective to build protected bike lanes rather than paint white lines on roads."
                   ]
                 },
                 {
-                  "rule": "Concessive Contrast Signposts",
-                  "formula": "Clause A + [whereas / while / nevertheless / despite + noun phrase] + Clause B",
+                  "rule": "Proportional Change (Double Comparatives)",
+                  "formula": "The + comparative..., the + comparative...",
                   "examples": [
-                    "High-speed rail requires heavy initial capital investment; nevertheless, it slashes operational corridor emissions by 85%.",
-                    "Whereas regional air travel offers rapid transit across water barriers, rail remains unmatched for high-density overland links."
+                    "The safer the bike lanes, the more people choose to cycle.",
+                    "The cheaper and cleaner the public transit, the fewer cars enter the city."
                   ]
                 }
               ],
               "drills": [
                 {
                   "id": 1,
-                  "prompt": "Combine into a Double Comparative: 'As cities become more walkable, private car usage declines rapidly.'",
-                  "answer": "The more walkable a city becomes, the more rapidly private car usage declines."
+                  "prompt": "Propose a solution for traffic jams around university campuses using 'What if we were to...':",
+                  "answer": "What if we were to offer subsidized electric bike leases and free campus shuttle buses to all students and staff?"
                 },
                 {
                   "id": 2,
-                  "prompt": "Combine using 'whereas': 'Electric buses generate zero tailpipe emissions in city streets. Diesel buses emit fine particulates and nitrogen oxides.'",
-                  "answer": "Electric buses generate zero tailpipe emissions in city streets, whereas diesel buses emit fine particulates and nitrogen oxides."
+                  "prompt": "Combine into a Double Comparative: 'When cities plant more trees, ambient summer temperatures become much cooler.'",
+                  "answer": "The more trees a city plants, the cooler the ambient summer temperatures become."
                 },
                 {
                   "id": 3,
-                  "prompt": "Combine using 'despite': 'The airport authority faced intense budgetary pressure. They installed a 50,000 m³ retention reservoir.'",
-                  "answer": "Despite intense budgetary pressure, the airport authority installed a 50,000 m³ retention reservoir."
+                  "prompt": "Suggest an alternative to private car parking using 'It would be far more effective to...':",
+                  "answer": "It would be far more effective to transform parking lots into green public parks and multi-modal transit hubs."
                 }
               ]
             },
             "vocabGame": {
-              "title": "Activity 4: Interactive Vocabulary Game — Collocation Matcher & Mobility Pyramid",
-              "summary": "Pair matching game linking 10 compound mobility collocations and ranking transit modes in the urban sustainability hierarchy.",
-              "instructions": "Step 1: Match the 10 transport prefixes on the left with their correct technical suffixes on the right. Step 2: In pairs, place the five transportation modes in their correct tier on the Mobility Pyramid (from most sustainable at the base to least sustainable at the apex).",
+              "title": "Part 4: Interactive Spoken Game — Green City Collocation Matcher",
+              "summary": "Pair matching game: link 10 high-frequency compound phrases and rank transit modes in the urban hierarchy.",
+              "instructions": "Step 1: Match the urban prefix on the left with its correct lifestyle suffix on the right. Step 2: In pairs, rank the four transport tiers in the Sustainable Mobility Pyramid from most sustainable at the base to most restricted at the top.",
               "collocations": [
                 {
                   "id": 1,
-                  "prefix": "Intermodal",
-                  "suffix": "connectivity",
-                  "full": "Intermodal connectivity",
-                  "def": "Smooth transfer between different transport systems"
+                  "prefix": "Pedestrian",
+                  "suffix": "zone",
+                  "full": "Pedestrian zone",
+                  "def": "A car-free street reserved for people walking"
                 },
                 {
                   "id": 2,
-                  "prefix": "Transit-oriented",
-                  "suffix": "development",
-                  "full": "Transit-oriented development",
-                  "def": "Urban growth focused around transit stations"
+                  "prefix": "Cycling",
+                  "suffix": "lane",
+                  "full": "Cycling lane",
+                  "def": "Dedicated marked road division for bicycles"
                 },
                 {
                   "id": 3,
-                  "prefix": "Active mobility",
-                  "suffix": "corridor",
-                  "full": "Active mobility corridor",
-                  "def": "Dedicated pedestrian and cycling paths"
+                  "prefix": "Public",
+                  "suffix": "transport",
+                  "full": "Public transport",
+                  "def": "Shared buses, trams, metros, and trains"
                 },
                 {
                   "id": 4,
-                  "prefix": "Last-mile",
-                  "suffix": "micro-mobility",
-                  "full": "Last-mile micro-mobility",
-                  "def": "Lightweight zero-emission transport for short links"
+                  "prefix": "Congestion",
+                  "suffix": "charge",
+                  "full": "Congestion charge",
+                  "def": "Fee charged to vehicles entering city centers"
                 },
                 {
                   "id": 5,
-                  "prefix": "Congestion",
-                  "suffix": "pricing cordon",
-                  "full": "Congestion pricing cordon",
-                  "def": "Zone with entry charges during peak hours"
+                  "prefix": "Low-emission",
+                  "suffix": "zone",
+                  "full": "Low-emission zone",
+                  "def": "Area where polluting cars are restricted"
                 },
                 {
                   "id": 6,
-                  "prefix": "Decarbonization",
-                  "suffix": "trajectory",
-                  "full": "Decarbonization trajectory",
-                  "def": "Strategic path to net-zero carbon output"
+                  "prefix": "High-speed",
+                  "suffix": "rail",
+                  "full": "High-speed rail",
+                  "def": "Fast electric trains connecting cities"
                 },
                 {
                   "id": 7,
-                  "prefix": "Subsurface",
-                  "suffix": "aquifer recharge",
-                  "full": "Subsurface aquifer recharge",
-                  "def": "Replenishing groundwater through soil filtration"
+                  "prefix": "Micro-",
+                  "suffix": "mobility",
+                  "full": "Micro-mobility",
+                  "def": "Lightweight e-bikes and e-scooters"
                 },
                 {
                   "id": 8,
-                  "prefix": "Peak runoff",
-                  "suffix": "attenuation",
-                  "full": "Peak runoff attenuation",
-                  "def": "Delaying rainwater surges into sewer systems"
+                  "prefix": "Carbon",
+                  "suffix": "neutral",
+                  "full": "Carbon neutral",
+                  "def": "Net-zero greenhouse gas emissions"
                 },
                 {
                   "id": 9,
-                  "prefix": "Urban heat",
-                  "suffix": "mitigation",
-                  "full": "Urban heat mitigation",
-                  "def": "Using trees and cool roofs to lower city temps"
+                  "prefix": "Urban",
+                  "suffix": "sprawl",
+                  "full": "Urban sprawl",
+                  "def": "Uncontrolled outward spread of car suburbs"
                 },
                 {
                   "id": 10,
-                  "prefix": "Pedestrian",
-                  "suffix": "priority zone",
-                  "full": "Pedestrian priority zone",
-                  "def": "Street sections where walkers have right-of-way"
+                  "prefix": "Green",
+                  "suffix": "space",
+                  "full": "Green space",
+                  "def": "Parks, gardens, and vegetated public plazas"
                 }
               ],
               "pyramid": {
                 "tiers": [
                   {
                     "level": "Apex (Tier 4)",
-                    "mode": "Private Single-Occupancy Fossil Vehicles",
-                    "role": "Highest energy consumption & emissions per passenger-km; restrict via pricing"
+                    "mode": "Private Fossil Vehicles (Single Occupancy)",
+                    "role": "Highest pollution and space consumption; restrict via fees and low-emission zones"
                   },
                   {
                     "level": "Upper (Tier 3)",
-                    "mode": "Shared Electric Mobility & Taxis",
-                    "role": "Flexible on-demand transit for non-standard routes & night shifts"
+                    "mode": "Shared Electric Vehicles, Taxis & Carpools",
+                    "role": "Flexible transit for night shifts, elderly travel, and luggage delivery"
                   },
                   {
                     "level": "Middle (Tier 2)",
-                    "mode": "Mass High-Capacity Rail & Electric Bus Rapid Transit (BRT)",
-                    "role": "High-volume arterial passenger corridors with zero corridor emissions"
+                    "mode": "Mass Electric Transit (Metro, Trams, Electric Buses)",
+                    "role": "High-capacity transport moving thousands of people hourly with zero local emissions"
                   },
                   {
                     "level": "Base (Tier 1)",
-                    "mode": "Active Mobility: Walking, Cycling, Wheelchairs",
-                    "role": "100% zero emissions, minimal space footprint, highest public health dividend"
+                    "mode": "Active Mobility (Walking, Cycling, Wheelchairs)",
+                    "role": "100% zero carbon, highest health benefit, takes up minimal public street space"
                   }
                 ]
               }
             },
-            "designSprint": {
-              "title": "Activity 5: Pair Urban Design Sprint — 'The 15-Minute Airport District'",
-              "summary": "Collaborative spatial engineering: transform a congested 5km airport access highway into an active multimodal district, with a 2-minute pitch and peer rubric.",
-              "instructions": "Work in pairs. You are urban transport planners commissioned by the metropolitan transport council. Review the brief below for the 'Corridor 21' airport artery. Formulate three concrete infrastructure interventions to transition the corridor from 85% car reliance to 70% public/active transit. Prepare a 2-minute pitch.",
-              "brief": {
-                "location": "Corridor 21: 5.2 km suburban access highway connecting Airport Terminal 1 to the Central Metro terminus.",
-                "currentStatus": "4-lane asphalt highway; 45,000 vehicles daily; 82% single-occupancy cars; 38-minute average commute baseline; Zero dedicated bike paths; High surface runoff causing localized road flooding.",
-                "targetKPIs": "1. Reduce peak motor vehicle trips by 35% within 3 years. 2. Introduce 100% segregated active mobility. 3. Transform 40% of impermeable road verges into bioretention bioswales."
-              },
+            "redesignChallenge": {
+              "title": "Part 5: Pair Urban Redesign Challenge — Reclaim Your Street or Campus",
+              "summary": "Collaborative spatial challenge: choose a car-dominated street or university zone and pitch 3 green interventions.",
+              "instructions": "Work in pairs. You are urban design consultants commissioned by the city council. Choose a congested street in your hometown or a car-dominated zone on your campus. Formulate THREE concrete, practical changes to make it green, pedestrian-friendly, and enjoyable. Prepare a 2-minute pitch to present to the class.",
               "deliverables": [
-                "Intervention 1: High-capacity mass transit integration (e.g. Dedicated Bus Rapid Transit lane or Light Rail spur).",
-                "Intervention 2: Active mobility infrastructure (e.g. Continuous shaded cycleway with e-bike charging docks).",
-                "Intervention 3: Green-gray sponge engineering (e.g. Permeable service lanes and roadside stormwater bioswales)."
+                "Change 1: Street Space Allocation (e.g. Removing 50 parking spaces to build a protected two-way bike track).",
+                "Change 2: Nature & Climate Comfort (e.g. Planting 30 shade trees, installing water fountains, and creating outdoor seating).",
+                "Change 3: Public Transport & Micro-Mobility (e.g. Adding an electric bus stop and an e-bike sharing station)."
               ],
               "rubric": {
                 "title": "Peer Observer Active Listening Rubric (Student B)",
                 "criteria": [
                   {
-                    "name": "Vocabulary Integration",
-                    "target": "Uses target terms (modal split, TOD, permeable paving, last-mile micro-mobility)."
+                    "name": "Vocabulary Use",
+                    "target": "Integrates target words (pedestrian zone, green space, cycling lane, modal split)."
                   },
                   {
-                    "name": "Grammar Accuracy",
-                    "target": "Employs at least one double comparative and one concessive marker correctly."
+                    "name": "Proposal Phrasing",
+                    "target": "Uses target suggestion formulas (Why don't we consider..., What if we were to...)."
                   },
                   {
-                    "name": "Feasibility & Scope",
-                    "target": "Presents realistic infrastructure solutions aligned with the 3 project KPIs."
+                    "name": "Practical Feasibility",
+                    "target": "Offers realistic, logical solutions that solve real community needs."
                   },
                   {
                     "name": "Pitch Fluency",
-                    "target": "Maintains engaging professional delivery within the 2-minute limit."
+                    "target": "Delivers an engaging, confident presentation within the 2-minute time limit."
                   }
                 ]
               }
             },
-            "policyDebate": {
-              "title": "Activity 6: Multi-Stakeholder Policy Debate & Technical Mastery Quiz",
-              "summary": "Formal policy debate on banning short-haul domestic flights under 2.5h rail alternative, concluding with an interactive 10-question mastery quiz.",
-              "instructions": "Debate the following motion: 'This assembly resolves that all domestic commercial passenger flights where a direct high-speed rail journey under 2.5 hours exists shall be prohibited.' Review your assigned stakeholder position, then debate for 15 minutes before completing the 10-question mastery quiz.",
+            "publicDebate": {
+              "title": "Part 6: High-Stakes Public Debate — The Car-Free City Center",
+              "summary": "Public consultation debate on banning private cars from the metropolitan core within 18 months.",
+              "instructions": "Your city council is debating the following proposal: 'All private passenger motor vehicles shall be banned from the city center from 07:00 to 20:00 every day, with road space repurposed for cyclists, pedestrians, and public transit.' Assume your assigned role below and debate the policy.",
               "roles": [
                 {
-                  "title": "Role A: Regional Airport Managing Director",
-                  "stance": "Opposes the ban: Argues that domestic feeder flights are vital for long-haul international hub connectivity, regional employment, and carrier financial viability.",
+                  "title": "Role A: Suburban Commuters & Delivery Drivers Association",
+                  "stance": "Strongly opposes a blanket ban: Argues that suburban families cannot afford housing in the city center and rely on cars to commute, while delivery drivers need road access to supply businesses.",
                   "keyPoints": [
-                    "Feeder passengers transfer directly to intercontinental flights without taking city luggage.",
-                    "Banning flights harms regional economic competitiveness and airport slot valuation."
+                    "Suburban public transit takes twice as long and stops running early in the evening.",
+                    "Elderly residents and families with young children cannot easily cycle in winter.",
+                    "Delivery vans and tradespeople will face massive delays and parking fines."
                   ]
                 },
                 {
-                  "title": "Role B: High-Speed Rail Authority Spokesperson",
-                  "stance": "Supports the ban: Asserts that high-speed trains emit 95% less CO₂ per passenger-km than short jets and offer city-center-to-city-center door-to-door parity.",
+                  "title": "Role B: Local Independent Retailers & Restaurant Owners",
+                  "stance": "Demands flexible compromise: Agrees with cleaner streets but fears that banning cars will stop affluent suburban customers from visiting shops and restaurants.",
                   "keyPoints": [
-                    "Trains arrive in central stations, eliminating 45-minute airport security and luggage wait times.",
-                    "Rail capacity can be scaled up rapidly with modern double-deck rolling stock."
+                    "Customers who buy heavy goods or dine late at night prefer driving.",
+                    "We propose free 30-minute delivery bays and large park-and-ride shuttle garages on the perimeter.",
+                    "Pedestrian streets boost restaurant foot traffic, but retail shops need vehicle access."
                   ]
                 },
                 {
-                  "title": "Role C: Regional Climate Action NGO Leader",
-                  "stance": "Demands an even stricter ban (up to 4.5 hours of rail journey time) combined with mandatory carbon pricing on business aviation.",
+                  "title": "Role C: Clean Air & Youth Climate Action Coalition",
+                  "stance": "Strongly supports the total ban: Points out that car exhaust causes asthma in children and greenhouse gas emissions. Cities must belong to people, not vehicles.",
                   "keyPoints": [
-                    "Short-haul flights spend up to 40% of their total fuel in the energy-intensive climb phase.",
-                    "Only bold regulatory mandates compel modal shifts in passenger travel behavior."
+                    "70% of inner-city space is currently wasted on moving or parked metal vehicles.",
+                    "Cities like Barcelona, Amsterdam, and Paris proved that businesses thrive when streets become pedestrianized.",
+                    "Electric buses, trams, and cargo e-bikes can easily handle all deliveries and personal mobility."
                   ]
-                }
-              ],
-              "quiz": [
-                {
-                  "id": 1,
-                  "q": "What is the primary physical cause of the Urban Heat Island effect?",
-                  "options": [
-                    "High concentration of industrial chimneys",
-                    "Solar absorption by dark impermeable surfaces and lack of vegetation",
-                    "Increased carbon dioxide density at ground level",
-                    "Excessive domestic heating during summer months"
-                  ],
-                  "answer": 1
-                },
-                {
-                  "id": 2,
-                  "q": "How does a Sponge City handle heavy stormwater compared to conventional civil drainage?",
-                  "options": [
-                    "By pumping runoff into deep underground caverns",
-                    "By evaporating water with thermal street heating",
-                    "By using bioretention and permeable surfaces to absorb and filter water locally",
-                    "By piping water directly into the nearest river as rapidly as possible"
-                  ],
-                  "answer": 2
-                },
-                {
-                  "id": 3,
-                  "q": "What is the core target of the '15-Minute City' urban planning concept?",
-                  "options": [
-                    "Limiting all car journeys to 15 minutes",
-                    "Ensuring residents access daily necessities within a 15-minute walk or cycle",
-                    "Building train stations every 15 minutes along a corridor",
-                    "Providing free public transit for the first 15 minutes of every trip"
-                  ],
-                  "answer": 1
-                },
-                {
-                  "id": 4,
-                  "q": "Which grammatical sentence demonstrates a correct Double Comparative?",
-                  "options": [
-                    "The more denser transit networks are, the lowest per-capita emissions become.",
-                    "The denser the transit network, the lower the per-capita emissions.",
-                    "As transit networks are denser, so the emissions become lower.",
-                    "More dense transit networks make lesser per-capita emissions."
-                  ],
-                  "answer": 1
-                },
-                {
-                  "id": 5,
-                  "q": "What does 'Transit-Oriented Development' (TOD) specifically emphasize?",
-                  "options": [
-                    "Building high-density mixed-use neighborhoods around mass transit nodes",
-                    "Constructing multi-lane expressways across metropolitan perimeters",
-                    "Subsidizing private electric vehicle purchases in suburban developments",
-                    "Expanding park-and-ride parking garages at highway exits"
-                  ],
-                  "answer": 0
-                },
-                {
-                  "id": 6,
-                  "q": "What is the operational function of 'Peak Runoff Attenuation'?",
-                  "options": [
-                    "Maximizing the peak velocity of water discharge into municipal sewers",
-                    "Delaying and buffering stormwater flow to prevent drainage system overload",
-                    "Measuring the chemical acidity of rainwater runoff from airport runways",
-                    "Allowing floodwaters to submerge runways temporarily without alerting ATC"
-                  ],
-                  "answer": 1
-                },
-                {
-                  "id": 7,
-                  "q": "Which mode occupies Tier 1 (the foundational base) of the Sustainable Mobility Pyramid?",
-                  "options": [
-                    "High-speed electric passenger trains",
-                    "Electric autonomous taxis",
-                    "Active mobility: walking, cycling, and wheeled mobility",
-                    "Shared electric micro-buses"
-                  ],
-                  "answer": 2
-                },
-                {
-                  "id": 8,
-                  "q": "What does 'Intermodal Connectivity' mean in airport infrastructure?",
-                  "options": [
-                    "Connecting two airport runways with high-speed taxiways",
-                    "Seamless integration between air, rail, metro, and local bus transit",
-                    "Allowing both commercial passenger and freight flights on one apron",
-                    "Providing simultaneous internet connectivity across all passenger terminals"
-                  ],
-                  "answer": 1
-                },
-                {
-                  "id": 9,
-                  "q": "What is the main environmental benefit of replacing short-haul flights with High-Speed Rail?",
-                  "options": [
-                    "Rail eliminates all ticket fares for inter-city travel",
-                    "Trains use 100% solar power at all hours of the day",
-                    "Trains reduce per-passenger corridor carbon emissions by up to 85–95%",
-                    "High-speed rail requires no track maintenance over 30 years"
-                  ],
-                  "answer": 2
-                },
-                {
-                  "id": 10,
-                  "q": "Choose the correct concessive connector: '____ high construction costs, the city built a network of stormwater bioswales.'",
-                  "options": [
-                    "Whereas",
-                    "Nevertheless",
-                    "Despite",
-                    "While"
-                  ],
-                  "answer": 2
                 }
               ]
             }
