@@ -13,98 +13,110 @@
       const stall = content.stallScenario || {};
       const closing = content.closingReview || {};
 
+      const savedNote = (typeof window.getLessonNote === 'function') ? (window.getLessonNote('s1_m2_at_s1_notes') || '') : '';
+
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
-          <!-- Printable Action Bar -->
-          <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+          <!-- Canonical Action Bar (Rule 1.T) -->
+          <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-2xs">
             <div>
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
+                <span class="text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded shadow-2xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">AT Module 2 • Session 1</span>
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Aerodynamics &amp; Flight Principles</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S1_M2_AT_S1_Lesson_Worksheet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 border border-blue-700 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <!-- Hero Banner & Context -->
-          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
             <div class="relative bg-slate-900">
               <img src="${hero.image || 'images/aas_m2card1.jpg'}" alt="${hero.title || 'Aerodynamics & Flight Principles'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/aas_m2card1.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Flight Physics &amp; Aerodynamic Controls</span>
+                <span class="text-[11px] font-mono font-bold text-amber-300 uppercase tracking-wider">FLIGHT PHYSICS &amp; AERODYNAMIC CONTROLS</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Aerodynamics &amp; Flight Principles'}</h3>
-                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'The Four Forces of Flight, The Three Axes &amp; Aerodynamic Control'}</p>
+                <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'The Four Forces of Flight, The Three Axes &amp; Aerodynamic Control Surfaces'}</p>
               </div>
             </div>
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="bg-slate-200 text-slate-800 font-bold px-2 py-0.5 rounded font-mono text-[10px]">CEFR B2</span>
                 <span class="text-slate-400">&bull;</span>
                 <span class="font-bold text-slate-800">Role Context:</span>
                 <span class="text-slate-600">Flight Crew / Flight Test Engineer &amp; ATCO</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-900 font-mono">120 Minutes</span>
               </div>
             </div>
           </div>
 
           ${renderSessionBriefingBanner(sessionData, theme)}
 
-          <!-- Activity 1: Aviation News & Entry Diagnostic -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Personal Notes Auto-Save Card -->
+          <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wide font-mono">Personal Lesson Notes &amp; Spoken Reflections</span>
+              <span class="text-[10px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Auto-Saved Locally</span>
+            </div>
+            <textarea id="lesson-note-s1-m2-at-s1" oninput="window.saveLessonNote && window.saveLessonNote('s1_m2_at_s1_notes', this.value)" placeholder="Type your personal observations, newly mastered aerodynamic terms, and speaking self-reflection here..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-amber-400 focus:outline-none transition-all leading-relaxed">${savedNote}</textarea>
+          </div>
+
+          <!-- Part 1: Aviation News & Entry Diagnostic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Principles Warm-Up'}</h4>
-                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                  <p class="text-[11px] text-slate-500">${opening.summary || 'Opening warm-up examining current aerospace headlines and testing foundational aerodynamic concepts.'}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
             </div>
 
             ${renderActivityInstructions(opening, theme)}
 
             <!-- Aviation News Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aviation Headlines &amp; Aerodynamic Innovations</h5>
+            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-2 shadow-2xs">
+              <div class="text-[11px] font-bold text-slate-900 uppercase tracking-wider font-mono">
+                Weekly Aviation Headlines &amp; Aerodynamic Innovations
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
+              <ul class="space-y-1.5 pl-5 list-disc text-xs text-slate-700 leading-relaxed">
                 ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
               </ul>
             </div>
 
-            <!-- Diagnostic Questions Grid -->
+            <!-- Diagnostic Questions Grid with Communicative Sentence Stems (Rule 1.V) -->
             <div class="space-y-3 pt-1">
               <div class="flex items-center justify-between">
-                <h5 class="text-xs sm:text-sm font-bold text-slate-800">${(opening.diagnostic && opening.diagnostic.title) || 'Aerodynamics Quick Check: Foundational Principles'}</h5>
-                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || ''}</span>
+                <h5 class="text-xs sm:text-sm font-bold text-slate-800 font-mono uppercase tracking-wide">${(opening.diagnostic && opening.diagnostic.title) || 'Aerodynamics Vocabulary Quick Check'}</h5>
+                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || 'Discuss each question in pairs before revealing the operational distinction:'}</span>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
-                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between">
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between shadow-2xs">
                     <div>
                       <div class="flex items-center justify-between gap-2">
-                        <span class="text-[10px] font-black uppercase tracking-wider text-slate-500">Question 0${q.id}</span>
+                        <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Diagnostic Question 0${q.id}</span>
                         <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
                       </div>
-                      <p class="text-xs font-bold text-slate-800 mt-1">${q.q}</p>
+                      <p class="text-xs font-bold text-slate-800 mt-1 leading-snug">${q.q}</p>
                     </div>
                     <div>
-                      <div id="diagnostic-ans-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-xs mb-2">
-                        <span class="font-bold text-slate-900">Operational Explanation:</span> ${q.answer}
+                      <div id="diagnostic-ans-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 border-l-3 border-l-amber-400 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-2xs mb-2">
+                        <span class="font-bold text-slate-900 block font-mono text-[10px] uppercase">Operational Explanation:</span>
+                        ${q.answer}
                       </div>
-                      <button type="button" id="diagnostic-btn-${q.id}" onclick="window.toggleDiagnosticAnswer(${q.id})" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
-                        <span>Reveal Answer</span> &rarr;
+                      <button type="button" id="diagnostic-btn-${q.id}" onclick="window.toggleDiagnosticAnswer ? window.toggleDiagnosticAnswer(${q.id}) : document.getElementById('diagnostic-ans-${q.id}').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                        <span>Reveal Operational Distinction</span> &rarr;
                       </button>
                     </div>
                   </div>
@@ -113,193 +125,346 @@
             </div>
           </div>
 
-          <!-- Activity 2: The Four Forces in Equilibrium -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Part 2: Video Analysis: The Physics of Flight -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${forcesPrinciples.title || 'Activity 2: The Four Forces in Equilibrium &amp; Maneuvers'}</h4>
-                  <p class="text-[11px] text-slate-500">${forcesPrinciples.summary || 'Analyze the four forces acting on an aircraft and explain how pilots create unbalance to climb, descend, turn, and accelerate.'}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 2: Video Lab: The Four Forces of Flight in Action</h4>
+                  <p class="text-[11px] text-slate-500">Video-guided listening analysis exploring aerodynamic equilibrium, vector opposition, and pressure differentials.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Aerodynamic Equilibrium</span>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Video Analysis</span>
             </div>
 
-            ${renderActivityInstructions(forcesPrinciples, theme)}
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${forces.map(f => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="font-bold text-sm text-slate-900">${f.name}</span>
-                      <span class="text-[10px] font-bold px-2 py-0.5 rounded text-white font-mono" style="background-color: ${theme.accent};">${f.badge}</span>
-                    </div>
-                    <p class="text-xs text-slate-600 mt-2 leading-relaxed">${f.description}</p>
-                    <div class="mt-2.5 p-2 bg-white rounded border border-slate-200 text-[11px] text-slate-700">
-                      <strong>Operational Application:</strong> ${f.operationalNote}
-                    </div>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 3: Language Focus: Cause & Effect in Flight Physics -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 3: Language Focus: Cause & Effect in Flight Physics'}</h4>
-                  <p class="text-[11px] text-slate-500">${grammar.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Conditionals &amp; Connectors</span>
-            </div>
-
-            ${renderActivityInstructions(grammar, theme)}
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${(grammar.structures || []).map(s => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-                  <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 pb-1 border-b border-slate-200">${s.pattern}</h5>
-                  <ul class="text-xs text-slate-600 space-y-1.5 pl-4 list-disc pt-1">
-                    ${s.examples.map(ex => `<li class="italic font-medium text-slate-700">&ldquo;${ex}&rdquo;</li>`).join('')}
-                  </ul>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Transformation Drills -->
-            <div class="space-y-2.5 pt-2">
-              <h5 class="text-xs font-bold text-slate-800 uppercase tracking-wide">Interactive Sentence Transformation Drills</h5>
-              <div class="space-y-2">
-                ${(grammar.drills || []).map(d => `
-                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between gap-2">
-                    <p class="text-xs font-bold text-slate-800">${d.id}. ${d.prompt}</p>
-                    <div id="drill-ans-${d.id}" class="hidden p-2 bg-white border border-emerald-300 rounded text-[11px] text-emerald-950 font-medium">
-                      &check; <strong>Model Response:</strong> ${d.answer}
-                    </div>
-                    <button type="button" onclick="document.getElementById('drill-ans-${d.id}').classList.toggle('hidden')" class="no-print text-left text-[11px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer">
-                      <span>Toggle Model Answer &rarr;</span>
-                    </button>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          </div>
-
-          <!-- Activity 4: The 3 Axes & Control Surfaces Game -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${axesGame.title || 'Activity 4: The 3 Axes &amp; Control Surfaces Game / Role-Play'}</h4>
-                  <p class="text-[11px] text-slate-500">${axesGame.summary || 'Interactive kinesthetic \'Human Flight Simulator\' game and pilot-to-flight-test-engineer debrief role-play.'}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Kinesthetic Simulation</span>
-            </div>
-
-            ${renderActivityInstructions(axesGame, theme)}
-
-            <!-- Axes Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-              ${axes.map(a => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 flex flex-col justify-between shadow-2xs">
-                  <div>
-                    <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                      <span class="font-bold text-xs sm:text-sm text-slate-900">${a.axis}</span>
-                    </div>
-                    <p class="text-[11px] text-slate-600 mt-2"><strong>Direction:</strong> ${a.direction}</p>
-                    <p class="text-[11px] text-slate-600"><strong>Movement:</strong> ${a.movement}</p>
-                    <p class="text-[11px] text-slate-800 font-bold mt-1"><strong>Primary Surface:</strong> ${a.controlSurface}</p>
-                    <p class="text-[11px] text-slate-500"><strong>Cockpit Input:</strong> ${a.cockpitInput}</p>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-
-            <!-- Roleplay Prompt -->
-            <div class="p-4 bg-indigo-50/70 border border-indigo-200 rounded-xl space-y-2">
-              <h5 class="text-xs font-bold text-indigo-900 uppercase tracking-wider">Pilot &amp; Flight Test Engineer Spoken Debrief:</h5>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-indigo-950">
-                ${roleplayCards.map(c => `
-                  <div class="p-2.5 bg-white rounded-lg border border-indigo-200 space-y-1">
-                    <strong class="text-indigo-900 block">${c.role}:</strong>
-                    <p class="text-slate-700 leading-relaxed">${c.prompt}</p>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          </div>
-
-          <!-- Activity 5: Operational Scenario: Stall Recovery -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${stall.title || 'Activity 5: Operational Scenario: Stall Recovery & High-Altitude Turbulence'}</h4>
-                  <p class="text-[11px] text-slate-500">${stall.summary || ''}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Case Study</span>
-            </div>
-
-            ${renderActivityInstructions(stall, theme)}
-
-            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2 text-xs text-slate-700 leading-relaxed">
-              <strong class="text-slate-900 block text-xs uppercase tracking-wide">Flight Scenario Briefing:</strong>
-              <p>${stall.scenarioText || ''}</p>
-            </div>
-
+            <!-- Video Player (16:9 Frame styled like Teachers Hub Overview) -->
             <div class="space-y-2">
-              <h5 class="text-xs font-bold text-slate-800 uppercase tracking-wide">Crew Analysis Tasks (Work in Pairs):</h5>
-              <ol class="list-decimal pl-5 space-y-1.5 text-xs text-slate-600">
-                ${(stall.tasks || []).map(t => `<li class="leading-relaxed">${t}</li>`).join('')}
-              </ol>
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-slate-800 uppercase tracking-wide font-mono">Documentary Video: The Four Forces of Flight Simply Explained</span>
+                <span class="text-[10px] font-mono text-slate-500">Acoustic Analysis &bull; FAA / Aeronautics</span>
+              </div>
+              <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-300 shadow-md">
+                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/5ltjFEei3AI" title="The Four Forces of Flight Simply Explained" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="flex items-center justify-between pt-1 text-[11px]">
+                <span class="text-[10px] text-slate-500 font-mono">Focus: Watch how lift, weight, thrust, and drag achieve equilibrium in steady flight.</span>
+                <a href="https://www.youtube.com/watch?v=5ltjFEei3AI" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-bold text-[11px] inline-flex items-center gap-1">
+                  <span>Watch on YouTube</span> ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Listening Checkpoints -->
+            <div class="space-y-3 pt-2">
+              <h5 class="text-xs font-bold text-slate-800 font-mono uppercase tracking-wide">Video Listening Checkpoints (Work in Pairs):</h5>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Checkpoint 01</span>
+                  <div class="text-xs font-bold text-slate-900">Static Pressure Differential</div>
+                  <p class="text-[11.5px] text-slate-600 leading-snug">How does air acceleration over the curved upper surface create net upward force?</p>
+                  <div id="video-cp-1" class="hidden text-[11px] text-slate-700 bg-slate-50 p-2 rounded border border-slate-200 mt-1">
+                    <strong>Acoustic Key:</strong> Faster air over the upper camber creates lower static pressure, producing upward suction.
+                  </div>
+                  <button type="button" onclick="document.getElementById('video-cp-1').classList.toggle('hidden')" class="no-print text-[10.5px] font-bold text-amber-600 hover:text-amber-800 cursor-pointer pt-1">
+                    Toggle Explanation &rarr;
+                  </button>
+                </div>
+
+                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Checkpoint 02</span>
+                  <div class="text-xs font-bold text-slate-900">Cruise Equilibrium</div>
+                  <p class="text-[11.5px] text-slate-600 leading-snug">In straight-and-level unaccelerated flight, which forces are equal and opposite?</p>
+                  <div id="video-cp-2" class="hidden text-[11px] text-slate-700 bg-slate-50 p-2 rounded border border-slate-200 mt-1">
+                    <strong>Acoustic Key:</strong> Lift exactly equals Weight, and Thrust exactly equals Drag.
+                  </div>
+                  <button type="button" onclick="document.getElementById('video-cp-2').classList.toggle('hidden')" class="no-print text-[10.5px] font-bold text-amber-600 hover:text-amber-800 cursor-pointer pt-1">
+                    Toggle Explanation &rarr;
+                  </button>
+                </div>
+
+                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Checkpoint 03</span>
+                  <div class="text-xs font-bold text-slate-900">Speed-Drag Inversion</div>
+                  <p class="text-[11.5px] text-slate-600 leading-snug">What happens to induced drag as airspeed drops toward minimum flying speed?</p>
+                  <div id="video-cp-3" class="hidden text-[11px] text-slate-700 bg-slate-50 p-2 rounded border border-slate-200 mt-1">
+                    <strong>Acoustic Key:</strong> Induced drag increases rapidly at low speeds because high AoA is needed to maintain lift.
+                  </div>
+                  <button type="button" onclick="document.getElementById('video-cp-3').classList.toggle('hidden')" class="no-print text-[10.5px] font-bold text-amber-600 hover:text-amber-800 cursor-pointer pt-1">
+                    Toggle Explanation &rarr;
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Activity 6: Wrap-up -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Part 3: Technical Reading & Gap-Fill Clinic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review & Class Wrap-Up'}</h4>
-                  <p class="text-[11px] text-slate-500">${closing.summary || 'Consolidate the 18 key aerodynamic terms, verify pronunciation stress, and prepare for Session 2 Aircraft Anatomy.'}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 3: Airfoil Geometry &amp; Technical Gap-Fill Clinic</h4>
+                  <p class="text-[11px] text-slate-500">Interactive gap-fill texts with revealable answers covering Bernoulli's principle, camber, chord line, and drag dynamics.</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Closing Consolidation</span>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Reading &amp; Syntax</span>
             </div>
 
-            ${renderActivityInstructions(closing, theme)}
+            <!-- Gap-Fill 1 -->
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 shadow-2xs">
+              <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-2">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 font-mono">Gap-Fill Text 1: The Aerodynamic Mechanism of Lift</h5>
+                <span class="text-[10px] font-mono text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200">Word Bank: [ camber • chord line • relative wind • lower static pressure • boundary layer • angle of attack • downwash ]</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                An aircraft wing is shaped as an aerodynamic airfoil with an asymmetrical curve known as the <strong class="text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">camber</strong>. The straight reference line connecting the leading edge to the trailing edge is designated the <strong class="text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">chord line</strong>. As the aircraft moves forward, oncoming airflow approaches the wing as the <strong class="text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">relative wind</strong>. Due to the upper curve, air accelerates over the top surface, generating a zone of <strong class="text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">lower static pressure</strong>. Simultaneously, the trailing edge deflects air downward as <strong class="text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">downwash</strong>. In smooth flight, air adheres tightly in a microscopic <strong class="text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">boundary layer</strong>. Exceeding the critical <strong class="text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">angle of attack</strong> destroys this layer and causes an aerodynamic stall.
+              </p>
+            </div>
 
-            ${(closing.checkpoints && closing.checkpoints.length) ? `
-              <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-3">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Aerodynamics Mastery Checkpoints</h5>
-                  <span class="text-[11px] font-bold text-emerald-800">Verification</span>
+            <!-- Gap-Fill 2 -->
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 shadow-2xs">
+              <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-2">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 font-mono">Gap-Fill Text 2: Flight Equilibrium &amp; In-Flight Maneuvers</h5>
+                <span class="text-[10px] font-mono text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200">Word Bank: [ equilibrium • differential deflection • roll • rudder • coordinated turn • elevator ]</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                In unaccelerated straight-and-level flight, the four forces achieve perfect <strong class="text-blue-800 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">equilibrium</strong>. To initiate a bank, the pilot deflects the sidestick, causing <strong class="text-blue-800 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">differential deflection</strong> of the ailerons, producing <strong class="text-blue-800 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">roll</strong> around the longitudinal axis. The pilot must apply coordinated pressure to the <strong class="text-blue-800 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">rudder</strong> to counteract adverse yaw and ensure a smooth <strong class="text-blue-800 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">coordinated turn</strong>. Backpressure on the control column commands the <strong class="text-blue-800 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">elevator</strong> to increase pitch, compensating for the loss of vertical lift during the bank.
+              </p>
+            </div>
+
+            <!-- Cause-and-Effect Grammar Table -->
+            <div class="space-y-2 pt-1">
+              <h5 class="text-xs font-bold text-slate-800 font-mono uppercase tracking-wide">Cause &amp; Effect Linguistic Formulas in Flight Physics</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1 shadow-2xs">
+                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Formula 1: Zero Conditional (Scientific Invariant)</span>
+                  <div class="text-xs font-bold text-slate-900">If / When + Present Simple &rarr; Present Simple</div>
+                  <p class="text-[11.5px] text-slate-600 italic">"If angle of attack exceeds 16 degrees, the boundary layer separates."</p>
                 </div>
-                <div class="space-y-2 text-xs text-emerald-900">
-                  ${closing.checkpoints.map(cp => `
-                    <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
-                      <span class="text-emerald-600 font-bold">&check;</span>
-                      <span>${cp}</span>
-                    </div>
-                  `).join('')}
+                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1 shadow-2xs">
+                  <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Formula 2: First Conditional (Operational Cause &amp; Effect)</span>
+                  <div class="text-xs font-bold text-slate-900">Unless / If + Present Simple &rarr; Will / Must + Verb</div>
+                  <p class="text-[11.5px] text-slate-600 italic">"Unless the pilot pushes the nose forward, the aircraft will stall."</p>
                 </div>
               </div>
-            ` : ''}
+            </div>
+          </div>
 
+          <!-- Part 4: Kinesthetic Blackboard Lab: 3-Person "Draw, Label & Pitch" Challenge -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 4</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 4: The Blackboard Vector Lab (Group of 3 Challenge)</h4>
+                  <p class="text-[11px] text-slate-500">Collaborative board activity: 3-student teams draw an aircraft, label force vectors and 3 axes, and deliver a 60-second spoken flight control pitch.</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Board Lab &bull; Speaking</span>
+            </div>
+
+            <!-- Group of 3 Roles Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                <span class="text-[10px] font-mono font-bold text-amber-700 uppercase">STUDENT 1 (Board)</span>
+                <div class="text-xs font-bold text-slate-900">The Airframe &amp; Forces Draftsperson</div>
+                <p class="text-[11.5px] text-slate-600 leading-snug">Draws a clean aircraft profile and wing cross-section on the board. Correctly places the 4 force vectors (Lift &uarr;, Weight &darr;, Thrust &rarr;, Drag &larr;) and identifies CG vs. CP.</p>
+              </div>
+
+              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                <span class="text-[10px] font-mono font-bold text-amber-700 uppercase">STUDENT 2 (Board)</span>
+                <div class="text-xs font-bold text-slate-900">The Axes &amp; Controls Specialist</div>
+                <p class="text-[11.5px] text-slate-600 leading-snug">Draws the 3 orthogonal axes (Longitudinal, Lateral, Vertical) through the CG and labels primary control surfaces: Ailerons (Roll), Elevators (Pitch), and Rudder (Yaw).</p>
+              </div>
+
+              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                <span class="text-[10px] font-mono font-bold text-amber-700 uppercase">STUDENT 3 (Floor)</span>
+                <div class="text-xs font-bold text-slate-900">The Flight Test Presenter (60s Pitch)</div>
+                <p class="text-[11.5px] text-slate-600 leading-snug">Delivers a 60-second spoken briefing to the class explaining how the aircraft responds when thrust exceeds drag, and how a coordinated bank is initiated.</p>
+              </div>
+            </div>
+
+            <!-- Student B / Peer Observer Active-Listening Checklist (Rule 1.T) -->
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 shadow-2xs">
+              <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 font-mono">Student B / Peer Observer Active-Listening Scoring Rubric</h5>
+                <span class="text-[10px] font-mono text-slate-500">Peer Evaluation Standard</span>
+              </div>
+              <p class="text-xs text-slate-600">Seated students evaluate the board team against these 4 operational benchmarks:</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                <div class="p-2.5 bg-white border border-slate-200 rounded-lg flex items-start gap-2">
+                  <span class="text-amber-600 font-bold">&bull;</span>
+                  <div><strong>1. Vector Precision:</strong> Weight is correctly anchored at CG, and Lift originates from CP.</div>
+                </div>
+                <div class="p-2.5 bg-white border border-slate-200 rounded-lg flex items-start gap-2">
+                  <span class="text-amber-600 font-bold">&bull;</span>
+                  <div><strong>2. Control Mapping:</strong> Correct association between Ailerons/Roll, Elevator/Pitch, and Rudder/Yaw.</div>
+                </div>
+                <div class="p-2.5 bg-white border border-slate-200 rounded-lg flex items-start gap-2">
+                  <span class="text-amber-600 font-bold">&bull;</span>
+                  <div><strong>3. Spoken Fluency:</strong> Presenter delivers the 60-second briefing without relying on written notes.</div>
+                </div>
+                <div class="p-2.5 bg-white border border-slate-200 rounded-lg flex items-start gap-2">
+                  <span class="text-amber-600 font-bold">&bull;</span>
+                  <div><strong>4. Target Linkers:</strong> Accurate deployment of cause-and-effect connectors (<em>results in, leads to, whereas</em>).</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 5: The Lift Masterclass & Stall Recovery Simulation -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 5</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 5: The Lift Masterclass &amp; Stall Recovery Simulation</h4>
+                  <p class="text-[11px] text-slate-500">Spoken presentation masterclass explaining lift generation in plain B2 English followed by crew communication during an aerodynamic stall warning.</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Masterclass &bull; Case Study</span>
+            </div>
+
+            <!-- The Lift Masterclass Box -->
+            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-2 shadow-2xs">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 font-mono">The Lift Masterclass: How Wings Actually Work (Spoken Briefing)</h5>
+                <span class="text-[10px] font-mono text-slate-500">Bernoulli &amp; Newton Combined</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                Work in pairs to deliver a 90-second spoken explanation of lift for a trainee controller using target stems:
+                <em>"Due to the curved upper camber, airflow must accelerate, creating lower static pressure... Simultaneously, the trailing edge directs downwash downward, causing an equal and opposite upward reaction..."</em>
+              </p>
+              <div id="lift-script-ans" class="hidden p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs text-slate-700 italic leading-relaxed">
+                "Generating aerodynamic lift requires two complementary physical mechanisms. First, an airplane wing has a curved upper camber. When relative wind approaches the leading edge, air flowing over the curved top must accelerate compared to the flatter lower surface. According to Bernoulli’s principle, faster-moving air creates lower static pressure. This pressure difference creates a net upward suction force. Second, as the wing travels forward with a positive angle of attack, the lower surface deflects oncoming air downward. In accordance with Newton’s third law of motion, for every action there is an equal and opposite reaction: deflecting thousands of tons of air downward results in an equal upward force on the aircraft. Together, pressure differentials and downwash produce the total lift needed to overcome the aircraft's weight."
+              </div>
+              <button type="button" onclick="document.getElementById('lift-script-ans').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-600 hover:text-amber-800 cursor-pointer pt-1">
+                <span>Reveal Model Spoken Masterclass Script</span> &rarr;
+              </button>
+            </div>
+
+            <!-- Operational Stall Scenario -->
+            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 shadow-2xs">
+              <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 font-mono">Flight Deck Scenario: High-Altitude Stall Recovery &amp; Tactical Crew Callouts</h5>
+                <span class="text-[10px] font-mono text-rose-700 font-bold bg-rose-50 px-2 py-0.5 rounded border border-rose-200">Incident Analysis</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                A twin-engine transport at FL370 encounters severe clear-air turbulence and a sudden 30-knot headwind loss. Autothrottles advance to maximum continuous thrust, but airspeed decays from Mach 0.78 to Mach 0.71. The autopilot trims nose-up to maintain altitude until heavy aerodynamic buffeting begins and the primary stick shaker activates.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
+                <div class="p-3 bg-white border border-slate-200 rounded-lg space-y-1">
+                  <strong class="text-slate-900 block font-mono text-[11px]">First Officer (Pilot Flying):</strong>
+                  <p class="text-slate-600 leading-relaxed">Disconnect autopilot. Push sidestick forward below horizon to reduce angle of attack. Call out: <em>"STALL! DISCONNECTING AUTOPILOT! PUSHING NOSE DOWN!"</em></p>
+                </div>
+                <div class="p-3 bg-white border border-slate-200 rounded-lg space-y-1">
+                  <strong class="text-slate-900 block font-mono text-[11px]">Captain (Pilot Monitoring):</strong>
+                  <p class="text-slate-600 leading-relaxed">Verify pitch attitude decreases. Verify wings level using rudder pedals. Advance thrust smoothly once buffet stops. Call out: <em>"PITCH NOSE DOWN CONFIRMED. AIRSPEED INCREASING."</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 6: Aerodynamics Taboo & 10-Question Mastery Challenge -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 6</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">Activity 6: Aerodynamics Taboo &amp; 10-Question Final Mastery Challenge</h4>
+                  <p class="text-[11px] text-slate-500">End-of-class communicative game (explaining terms without taboo words) and interactive 10-question multiple-choice mastery challenge.</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Games &bull; Quiz</span>
+            </div>
+
+            <!-- Taboo Game Cards -->
+            <div class="space-y-2">
+              <h5 class="text-xs font-bold text-slate-800 font-mono uppercase tracking-wide">Aerodynamics Taboo Cards (Describe Without Using the Forbidden Words!):</h5>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 text-center text-xs">
+                <div class="p-3 bg-white border border-slate-200 rounded-xl space-y-1 shadow-2xs">
+                  <div class="text-[10px] font-mono text-slate-400 uppercase">Card 1</div>
+                  <div class="font-black text-slate-900">STALL</div>
+                  <div class="text-[9px] text-rose-600 font-bold uppercase">Forbidden:</div>
+                  <div class="text-[10px] text-slate-500">Drop • Speed • Crash</div>
+                </div>
+
+                <div class="p-3 bg-white border border-slate-200 rounded-xl space-y-1 shadow-2xs">
+                  <div class="text-[10px] font-mono text-slate-400 uppercase">Card 2</div>
+                  <div class="font-black text-slate-900">ANGLE OF ATTACK</div>
+                  <div class="text-[9px] text-rose-600 font-bold uppercase">Forbidden:</div>
+                  <div class="text-[10px] text-slate-500">Pitch • Angle • Chord</div>
+                </div>
+
+                <div class="p-3 bg-white border border-slate-200 rounded-xl space-y-1 shadow-2xs">
+                  <div class="text-[10px] font-mono text-slate-400 uppercase">Card 3</div>
+                  <div class="font-black text-slate-900">RUDDER</div>
+                  <div class="text-[9px] text-rose-600 font-bold uppercase">Forbidden:</div>
+                  <div class="text-[10px] text-slate-500">Tail • Turn • Yaw</div>
+                </div>
+
+                <div class="p-3 bg-white border border-slate-200 rounded-xl space-y-1 shadow-2xs">
+                  <div class="text-[10px] font-mono text-slate-400 uppercase">Card 4</div>
+                  <div class="font-black text-slate-900">INDUCED DRAG</div>
+                  <div class="text-[9px] text-rose-600 font-bold uppercase">Forbidden:</div>
+                  <div class="text-[10px] text-slate-500">Lift • Wingtip • Slow</div>
+                </div>
+
+                <div class="p-3 bg-white border border-slate-200 rounded-xl space-y-1 shadow-2xs">
+                  <div class="text-[10px] font-mono text-slate-400 uppercase">Card 5</div>
+                  <div class="font-black text-slate-900">CAMBER</div>
+                  <div class="text-[9px] text-rose-600 font-bold uppercase">Forbidden:</div>
+                  <div class="text-[10px] text-slate-500">Curve • Shape • Airfoil</div>
+                </div>
+
+                <div class="p-3 bg-white border border-slate-200 rounded-xl space-y-1 shadow-2xs">
+                  <div class="text-[10px] font-mono text-slate-400 uppercase">Card 6</div>
+                  <div class="font-black text-slate-900">AILERONS</div>
+                  <div class="text-[9px] text-rose-600 font-bold uppercase">Forbidden:</div>
+                  <div class="text-[10px] text-slate-500">Roll • Bank • Edge</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10-Question Mastery Quiz Grid -->
+            <div class="space-y-2.5 pt-2">
+              <h5 class="text-xs font-bold text-slate-800 font-mono uppercase tracking-wide">10-Question Aerodynamics Mastery Challenge:</h5>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5 text-xs">
+                ${[
+                  { id: 1, q: "In unaccelerated steady-state level cruise, what is the vector relationship?", a: "Lift equals Weight, and Thrust equals Drag." },
+                  { id: 2, q: "Angle of Attack is mathematically measured between which two lines?", a: "The wing's chord line and the oncoming relative airflow." },
+                  { id: 3, q: "As aircraft forward airspeed accelerates, what happens to induced drag?", a: "Induced drag decreases sharply, while parasitic drag surges." },
+                  { id: 4, q: "Which control surface controls pitch around the lateral axis?", a: "The elevators mounted on the horizontal stabilizer." },
+                  { id: 5, q: "How do upward-curving winglets improve aircraft fuel efficiency?", a: "By diffusing high-pressure wingtip vortices, reducing induced drag by up to 5%." },
+                  { id: 6, q: "Roll motion around the longitudinal axis is primarily produced by:", a: "Differential deflection of the trailing-edge ailerons." },
+                  { id: 7, q: "An aerodynamic stall is triggered whenever an airfoil exceeds its:", a: "Critical angle of attack, causing boundary layer separation." },
+                  { id: 8, q: "What primary cockpit input counteracts adverse yaw during a turn?", a: "Coordinated rudder pedal deflection in the direction of bank." },
+                  { id: 9, q: "What is the primary operational effect of deploying flight spoilers in air?", a: "Dumps aerodynamic lift and increases drag for controlled descents." },
+                  { id: 10, q: "What is the mandatory first pilot action upon stick-shaker stall activation?", a: "Apply forward sidestick pressure to reduce angle of attack below critical limit." }
+                ].map(item => `
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5 flex flex-col justify-between shadow-2xs">
+                    <div>
+                      <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Question ${item.id < 10 ? '0' + item.id : item.id}</span>
+                      <p class="font-bold text-slate-900 mt-0.5 leading-snug">${item.q}</p>
+                    </div>
+                    <div>
+                      <div id="quiz-ans-${item.id}" class="hidden p-2 bg-white border border-slate-200 border-l-3 border-l-emerald-500 rounded text-[11px] text-slate-700 mt-1">
+                        &check; <strong>Operational Answer:</strong> ${item.a}
+                      </div>
+                      <button type="button" onclick="document.getElementById('quiz-ans-${item.id}').classList.toggle('hidden')" class="no-print text-[10.5px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer pt-0.5">
+                        Toggle Answer &rarr;
+                      </button>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Quick Link to Revision Flashcards -->
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700">
               <span class="text-[11px] text-slate-600">Review all 18 aerodynamic vocabulary terms and practice pronunciation flashcards.</span>
-              <button onclick="switchModalTab('revision')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white shadow-xs hover:opacity-90 transition-all cursor-pointer shrink-0" style="background-color: ${theme.primary};">
+              <button onclick="switchModalTab('revision')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white shadow-2xs hover:opacity-90 transition-all cursor-pointer shrink-0" style="background-color: ${theme.primary};">
                 <span>View Vocabulary Flashcards</span> &rarr;
               </button>
             </div>

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 1 Lesson Worksheet - Aerodynamics &amp; Flight Principles</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 1 Technical English (AT • LV121E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.2pt;
+      line-height: 1.32;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    .doc-header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 4px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0369a1;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    h1 {
+      font-size: 14pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 10pt;
+      font-weight: 800;
+      color: #0369a1;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 6.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 1.5px 5px;
+      border-radius: 3px;
+    }
+
+    .badge-primary { background: #0284c7; color: #ffffff; }
+    .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-slate { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-family: ui-monospace, monospace; }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 7px 9px;
+      background: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .card-left-amber {
+      border-left: 3.5px solid #f59e0b;
+      background: #ffffff;
+    }
+
+    .card-left-blue {
+      border-left: 3.5px solid #0284c7;
+      background: #ffffff;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.6pt;
+      margin: 4px 0 6px 0;
+    }
+
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 3.5px 5px;
+      text-align: left;
+    }
+
+    th {
+      background: #f8fafc;
+      font-weight: 800;
+      color: #334155;
+    }
+
+    .term-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #e2e8f0;
+      padding: 2.5px 0;
+      font-size: 7.5pt;
+    }
+
+    .term-name { font-weight: 800; color: #0f172a; }
+    .term-ipa { font-family: ui-monospace, monospace; color: #64748b; font-size: 7pt; }
+    .term-def { color: #475569; font-size: 7.2pt; }
+
+    .gap-line {
+      border-bottom: 1.2px solid #0284c7;
+      display: inline-block;
+      min-width: 65px;
+      padding: 0 4px;
+      font-weight: 700;
+      color: #0369a1;
+      text-align: center;
+    }
+
+    .stem {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #0284c7;
+      padding: 4px 7px;
+      border-radius: 4px;
+      font-size: 7.5pt;
+      color: #334155;
+      margin: 3px 0;
+    }
+
+    .checklist-box {
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 5px 7px;
+      background: #f8fafc;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- PAGE 1: BRIEFING, OBJECTIVES & VOCAB CLINIC -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • DÉPARTEMENT LANGUES • SECTION ANGLAIS TECHNIQUE (AT)</span>
+      <span class="ref">GSEA S1 • AT M2 S1 • LV121E</span>
+    </div>
+
+    <div style="margin-bottom: 7px;">
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 2px;">
+        <span class="badge badge-primary">FLIGHT DECK BRIEFING</span>
+        <span class="badge badge-slate">SESSION 01 • 120 MINS</span>
+        <span class="badge badge-amber">B2 COMMUNICATIVE WORKSHOP</span>
+      </div>
+      <h1>Aerodynamics &amp; Flight Principles</h1>
+      <p style="font-size: 8pt; color: #64748b; margin-top: 1px;">
+        Mastering the four forces of flight, the three axes of rotation, aerodynamic control surfaces, and cause-and-effect spoken formulations.
+      </p>
+    </div>
+
+    <div class="card card-left-blue" style="margin-bottom: 8px;">
+      <h3>Session Learning Outcomes (Target Competencies)</h3>
+      <div class="grid-2" style="font-size: 7.5pt; color: #334155;">
+        <div>
+          <strong>1. Vector Equilibrium:</strong> Explain how lift, weight, thrust, and drag interact in steady-state flight and maneuvers.
+        </div>
+        <div>
+          <strong>2. Axes &amp; Primary Controls:</strong> Detail rotational movements (pitch, roll, yaw) and their controlling airframe surfaces.
+        </div>
+        <div>
+          <strong>3. Causal Conditionals:</strong> Formulate zero and first conditionals (<em>if, when, as, unless</em>) to explain aerodynamic changes.
+        </div>
+        <div>
+          <strong>4. Collaborative Flight Briefing:</strong> Sketch, label, and orally pitch aircraft flight vectors in teams of three.
+        </div>
+      </div>
+    </div>
+
+    <h2>Core Aerodynamic Vocabulary (18 Key Operational Terms)</h2>
+    <div class="grid-2" style="gap: 8px; margin-bottom: 8px;">
+      <div>
+        <div class="term-row"><span class="term-name">01. Lift</span> <span class="term-ipa">/lɪft/</span></div>
+        <div class="term-def">Upward aerodynamic force perpendicular to the relative wind.</div>
+
+        <div class="term-row"><span class="term-name">02. Weight (Gravity)</span> <span class="term-ipa">/weɪt/</span></div>
+        <div class="term-def">Downward gravitational force acting through the center of gravity (CG).</div>
+
+        <div class="term-row"><span class="term-name">03. Thrust</span> <span class="term-ipa">/θrʌst/</span></div>
+        <div class="term-def">Forward propulsive force produced by engines overcoming drag.</div>
+
+        <div class="term-row"><span class="term-name">04. Drag</span> <span class="term-ipa">/dræɡ/</span></div>
+        <div class="term-def">Rearward retarding force opposing aircraft motion through air.</div>
+
+        <div class="term-row"><span class="term-name">05. Induced Drag</span> <span class="term-ipa">/ɪnˈdjuːst dræɡ/</span></div>
+        <div class="term-def">Drag generated as an unavoidable byproduct of lift generation.</div>
+
+        <div class="term-row"><span class="term-name">06. Parasitic Drag</span> <span class="term-ipa">/ˌpærəˈsɪt.ɪk dræɡ/</span></div>
+        <div class="term-def">Skin friction, form, and interference drag increasing with airspeed.</div>
+
+        <div class="term-row"><span class="term-name">07. Camber</span> <span class="term-ipa">/ˈkæm.bər/</span></div>
+        <div class="term-def">The asymmetry between the upper and lower curves of an airfoil.</div>
+
+        <div class="term-row"><span class="term-name">08. Chord Line</span> <span class="term-ipa">/kɔːd laɪn/</span></div>
+        <div class="term-def">Imaginary straight reference line connecting leading edge to trailing edge.</div>
+
+        <div class="term-row"><span class="term-name">09. Angle of Attack (AoA)</span> <span class="term-ipa">/ˈæŋ.ɡəl əv əˈtæk/</span></div>
+        <div class="term-def">Angle between the chord line and the oncoming relative airflow.</div>
+      </div>
+
+      <div>
+        <div class="term-row"><span class="term-name">10. Pitch Attitude</span> <span class="term-ipa">/pɪtʃ ˈæt.ɪ.tʃuːd/</span></div>
+        <div class="term-def">Angle of aircraft longitudinal axis relative to the natural horizon.</div>
+
+        <div class="term-row"><span class="term-name">11. Critical Angle of Attack</span> <span class="term-ipa">/ˈkrɪt.ɪ.kəl əv əˈtæk/</span></div>
+        <div class="term-def">AoA where airflow detaches from upper surface, resulting in a stall.</div>
+
+        <div class="term-row"><span class="term-name">12. Boundary Layer</span> <span class="term-ipa">/ˈbaʊn.dər.i ˈleɪ.ər/</span></div>
+        <div class="term-def">Thin layer of air directly adjacent to the airfoil surface.</div>
+
+        <div class="term-row"><span class="term-name">13. Aileron</span> <span class="term-ipa">/ˈeɪ.lə.rɒn/</span></div>
+        <div class="term-def">Hinged surface on outer trailing edge controlling roll (longitudinal).</div>
+
+        <div class="term-row"><span class="term-name">14. Elevator</span> <span class="term-ipa">/ˈel.ɪ.veɪ.tər/</span></div>
+        <div class="term-def">Horizontal tail control surface controlling pitch (lateral axis).</div>
+
+        <div class="term-row"><span class="term-name">15. Rudder</span> <span class="term-ipa">/ˈrʌd.ər/</span></div>
+        <div class="term-def">Vertical tail control surface controlling yaw (vertical axis).</div>
+
+        <div class="term-row"><span class="term-name">16. Center of Gravity (CG)</span> <span class="term-ipa">/ˈsen.tər əv ˈɡræv.ɪ.ti/</span></div>
+        <div class="term-def">Average location of the weight of the aircraft.</div>
+
+        <div class="term-row"><span class="term-name">17. Center of Pressure (CP)</span> <span class="term-ipa">/ˈsen.tər əv ˈpreʃ.ər/</span></div>
+        <div class="term-def">Point along chord line where total aerodynamic lift is concentrated.</div>
+
+        <div class="term-row"><span class="term-name">18. Stall</span> <span class="term-ipa">/stɔːl/</span></div>
+        <div class="term-def">Sudden reduction in lift caused by airflow separation above critical AoA.</div>
+      </div>
+    </div>
+
+    <h2>Part 1: Diagnostic Warm-Up Questions (Sentence-Framed Prompts)</h2>
+    <div class="grid-2" style="font-size: 7.4pt;">
+      <div class="card card-left-amber">
+        <strong>Q1: Pitch Attitude vs. Angle of Attack (AoA)</strong><br>
+        <span class="stem">Prompt: "Pitch attitude is measured relative to..., whereas Angle of Attack is the angle between..."</span>
+      </div>
+      <div class="card card-left-amber">
+        <strong>Q2: Induced Drag vs. Parasitic Drag</strong><br>
+        <span class="stem">Prompt: "As airspeed increases, parasitic drag increases because..., while induced drag decreases because..."</span>
+      </div>
+      <div class="card card-left-amber">
+        <strong>Q3: Directional Axis &amp; Primary Flight Control</strong><br>
+        <span class="stem">Prompt: "Yaw is controlled by the..., which rotates the aircraft around its..."</span>
+      </div>
+      <div class="card card-left-amber">
+        <strong>Q4: Airflow at the Critical Angle of Attack</strong><br>
+        <span class="stem">Prompt: "When an airfoil exceeds its critical AoA, the boundary layer..., resulting in..."</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 2: AIRFOIL GEOMETRY, VIDEO & GAP-FILL 1 -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • TECHNICAL ENGLISH (AT) • MODULE 2 SESSION 1</span>
+      <span class="ref">PAGE 2 OF 7</span>
+    </div>
+
+    <h2>Part 2: Video Analysis: The Physics of Flight &amp; The Four Forces</h2>
+    <p style="font-size: 7.8pt; color: #475569; margin-bottom: 6px;">
+      Watch the video extract (<em>"The Four Forces of Flight Simply Explained"</em>) and answer the paired listening checkpoints below.
+    </p>
+
+    <div class="card card-left-blue" style="margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <span style="font-weight: 800; font-size: 8pt; color: #0f172a;">Video Listening Checkpoints &amp; Acoustic Verification</span>
+        <span class="badge badge-slate">AUTHENTIC AUDIO ANALYSIS</span>
+      </div>
+      <div class="grid-3" style="font-size: 7.3pt; gap: 6px;">
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>Checkpoint 1: Static Pressure</strong>
+          <p style="color: #64748b; margin-top: 2px;">How does air speed over the upper camber create a pressure differential?</p>
+          <div style="margin-top: 4px; border-top: 1px dashed #cbd5e1; padding-top: 2px; font-style: italic;">Answer: Upper air accelerates &rarr; lower static pressure.</div>
+        </div>
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>Checkpoint 2: Steady Cruise</strong>
+          <p style="color: #64748b; margin-top: 2px;">In straight-and-level unaccelerated flight, which forces are equal?</p>
+          <div style="margin-top: 4px; border-top: 1px dashed #cbd5e1; padding-top: 2px; font-style: italic;">Answer: Lift = Weight; Thrust = Drag.</div>
+        </div>
+        <div style="border: 1px solid #e2e8f0; padding: 4px 6px; border-radius: 4px;">
+          <strong>Checkpoint 3: Drag Curve</strong>
+          <p style="color: #64748b; margin-top: 2px;">What happens to total drag as aircraft speed slows toward stall?</p>
+          <div style="margin-top: 4px; border-top: 1px dashed #cbd5e1; padding-top: 2px; font-style: italic;">Answer: Induced drag spikes dramatically.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Part 3: Airfoil Anatomy &amp; Technical Gap-Fill Workshop</h2>
+    <div class="card" style="margin-bottom: 6px; padding: 6px 8px; background: #f8fafc;">
+      <div style="font-weight: 800; font-size: 8pt; color: #0369a1; margin-bottom: 3px;">
+        Word Bank 1 (Airfoil Geometry &amp; Lift Generation):
+      </div>
+      <div style="font-family: ui-monospace, monospace; font-size: 7.2pt; color: #334155;">
+        [ camber • chord line • relative wind • lower static pressure • boundary layer • angle of attack • downwash ]
+      </div>
+    </div>
+
+    <div class="card card-left-amber" style="margin-bottom: 8px;">
+      <h3 style="color: #92400e;">Technical Gap-Fill Text 1: The Aerodynamic Mechanism of Lift</h3>
+      <p style="font-size: 7.6pt; line-height: 1.42; color: #334155;">
+        An aircraft wing is shaped as an aerodynamic airfoil with an asymmetrical curve known as the <span class="gap-line">camber</span>. The straight reference line connecting the leading edge to the trailing edge is designated the <span class="gap-line">chord line</span>. As the aircraft moves forward, air molecules approach the wing as the <span class="gap-line">relative wind</span>. 
+        <br><br>
+        Due to the curvature of the upper surface, airflow accelerates over the top of the wing, resulting in a region of <span class="gap-line">lower static pressure</span> in accordance with Bernoulli’s principle. Simultaneously, the trailing edge directs airflow downward, producing a powerful <span class="gap-line">downwash</span> that satisfies Newton's third law of action and reaction.
+        <br><br>
+        The angular difference between the chord line and oncoming airflow represents the <span class="gap-line">angle of attack</span>. In smooth flight, air adheres tightly in a microscopic <span class="gap-line">boundary layer</span>. If this angle increases beyond the critical threshold, this smooth layer separates, inducing an aerodynamic stall.
+      </p>
+    </div>
+
+    <h2>The Four Forces in Dynamic Balance (Equilibrium vs. Unbalance)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Force Vector</th>
+          <th>Opposing Vector</th>
+          <th>Physical Point of Action</th>
+          <th>Cockpit Maneuver Consequence (Unbalanced Condition)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>LIFT (&uarr;)</strong></td>
+          <td>Weight (Gravity &darr;)</td>
+          <td>Center of Pressure (CP)</td>
+          <td>When Lift &gt; Weight, the aircraft enters an aerodynamic climb or vertical acceleration.</td>
+        </tr>
+        <tr>
+          <td><strong>WEIGHT (&darr;)</strong></td>
+          <td>Lift (&uarr;)</td>
+          <td>Center of Gravity (CG)</td>
+          <td>When Weight &gt; Lift, the aircraft descends; in steep turns, effective weight increases due to G-load.</td>
+        </tr>
+        <tr>
+          <td><strong>THRUST (&rarr;)</strong></td>
+          <td>Drag (&larr;)</td>
+          <td>Engine Thrust Centerline</td>
+          <td>When Thrust &gt; Drag, forward airspeed accelerates; excess thrust powers climb gradient.</td>
+        </tr>
+        <tr>
+          <td><strong>DRAG (&larr;)</strong></td>
+          <td>Thrust (&rarr;)</td>
+          <td>Total Wetted Area / Airframe</td>
+          <td>When Drag &gt; Thrust, forward airspeed decelerates until a lower equilibrium speed is reached.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 3: THE THREE AXES & GAP-FILL 2 -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • TECHNICAL ENGLISH (AT) • MODULE 2 SESSION 1</span>
+      <span class="ref">PAGE 3 OF 7</span>
+    </div>
+
+    <h2>The Three Aircraft Axes of Rotation &amp; Primary Flight Controls</h2>
+    <p style="font-size: 7.8pt; color: #475569; margin-bottom: 6px;">
+      All rotational movements occur around the aircraft's Center of Gravity (CG). Each axis is controlled by a dedicated primary aerodynamic control surface.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Rotational Axis</th>
+          <th>Direction of Axis</th>
+          <th>Angular Motion</th>
+          <th>Primary Control Surface</th>
+          <th>Cockpit Control Input</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Longitudinal Axis</strong></td>
+          <td>Nose to Tail</td>
+          <td><strong>ROLL</strong> (Banking)</td>
+          <td><strong>Ailerons</strong> (differential deflection)</td>
+          <td>Turning the control wheel / sidestick left or right</td>
+        </tr>
+        <tr>
+          <td><strong>Lateral Axis</strong></td>
+          <td>Wingtip to Wingtip</td>
+          <td><strong>PITCH</strong> (Nose Up / Down)</td>
+          <td><strong>Elevators</strong> (horizontal tail)</td>
+          <td>Pushing forward or pulling aft on the control column / sidestick</td>
+        </tr>
+        <tr>
+          <td><strong>Vertical (Normal) Axis</strong></td>
+          <td>Top to Bottom through CG</td>
+          <td><strong>YAW</strong> (Nose Left / Right)</td>
+          <td><strong>Rudder</strong> (vertical stabilizer fin)</td>
+          <td>Depressing the left or right rudder foot pedal</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="card" style="margin-bottom: 6px; padding: 6px 8px; background: #f8fafc;">
+      <div style="font-weight: 800; font-size: 8pt; color: #0369a1; margin-bottom: 3px;">
+        Word Bank 2 (Equilibrium &amp; Maneuvers):
+      </div>
+      <div style="font-family: ui-monospace, monospace; font-size: 7.2pt; color: #334155;">
+        [ equilibrium • accelerates • vertical tail • differential deflection • coordinated turn • elevator • rudder • roll ]
+      </div>
+    </div>
+
+    <div class="card card-left-amber" style="margin-bottom: 8px;">
+      <h3 style="color: #92400e;">Technical Gap-Fill Text 2: Aerodynamic Control &amp; In-Flight Maneuvers</h3>
+      <p style="font-size: 7.6pt; line-height: 1.42; color: #334155;">
+        When an aircraft cruises at a constant altitude and forward speed, the four forces achieve perfect aerodynamic <span class="gap-line">equilibrium</span>. To initiate a maneuver, the flight crew manipulates primary control surfaces to produce an intentional aerodynamic unbalance.
+        <br><br>
+        To execute a bank, the pilot deflects the sidestick, causing <span class="gap-line">differential deflection</span> of the ailerons: the trailing edge on one wing moves upward, reducing lift, while the opposing aileron moves downward. This aerodynamic disparity produces <span class="gap-line">roll</span> around the longitudinal axis.
+        <br><br>
+        Simultaneously, the pilot must depress the rudder pedal to deflect the <span class="gap-line">rudder</span> hinged to the <span class="gap-line">vertical tail</span>. This input counteracts adverse yaw and maintains a <span class="gap-line">coordinated turn</span>. Finally, backpressure on the control column commands the <span class="gap-line">elevator</span> to raise the nose, increasing total lift to counteract the loss of vertical lift during the bank.
+      </p>
+    </div>
+
+    <h2>Secondary Flight Controls &amp; High-Lift Devices</h2>
+    <div class="grid-3" style="font-size: 7.4pt;">
+      <div class="card card-left-blue">
+        <strong>Trailing Edge Flaps:</strong>
+        <p style="color: #475569; margin-top: 2px;">Extend aft and downward to increase wing camber and surface area, increasing lift coefficient ($C_L$) and drag for low-speed takeoff and landing.</p>
+      </div>
+      <div class="card card-left-blue">
+        <strong>Leading Edge Slats:</strong>
+        <p style="color: #475569; margin-top: 2px;">Deploy forward to energize the boundary layer through high-energy airflow slots, delaying boundary layer separation to higher angles of attack.</p>
+      </div>
+      <div class="card card-left-blue">
+        <strong>Flight Spoilers &amp; Speedbrakes:</strong>
+        <p style="color: #475569; margin-top: 2px;">Hinged upper-wing panels that deploy symmetrically to dump aerodynamic lift and increase drag for rapid descent or runway braking deceleration.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 4: SPOKEN GRAMMAR CLINIC: CONDITIONALS -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • TECHNICAL ENGLISH (AT) • MODULE 2 SESSION 1</span>
+      <span class="ref">PAGE 4 OF 7</span>
+    </div>
+
+    <h2>Part 4: Language Focus: Conditionals &amp; Cause-and-Effect in Flight Physics</h2>
+    <p style="font-size: 7.8pt; color: #475569; margin-bottom: 6px;">
+      Technical English relies on precise conditional formulas to explain aerodynamic invariants and operational consequences. Avoid vague phrasing.
+    </p>
+
+    <div class="grid-2" style="gap: 6px; margin-bottom: 8px;">
+      <div class="card card-left-blue">
+        <h3>Zero Conditional: Scientific &amp; Aerodynamic Invariants</h3>
+        <p style="font-size: 7.4pt; color: #475569; margin-bottom: 3px;">
+          Formula: <strong>If / When + Present Simple, ... Present Simple</strong>
+        </p>
+        <div style="font-size: 7.3pt; color: #0369a1; background: #f8fafc; padding: 4px; border-radius: 4px; border: 1px solid #e2e8f0;">
+          &bull; <em>"If angle of attack exceeds 16 degrees, the boundary layer separates."</em><br>
+          &bull; <em>"When airspeed doubles, parasitic drag quadruples."</em>
+        </div>
+      </div>
+
+      <div class="card card-left-amber">
+        <h3>First Conditional: Operational Causes &amp; Consequences</h3>
+        <p style="font-size: 7.4pt; color: #475569; margin-bottom: 3px;">
+          Formula: <strong>If / Unless + Present Simple, ... Will / Can / Must + Verb</strong>
+        </p>
+        <div style="font-size: 7.3pt; color: #92400e; background: #fffbeb; padding: 4px; border-radius: 4px; border: 1px solid #fde68a;">
+          &bull; <em>"Unless the pilot pushes the nose forward, the aircraft will stall."</em><br>
+          &bull; <em>"If we deploy speedbrakes, the aircraft will decelerate rapidly."</em>
+        </div>
+      </div>
+    </div>
+
+    <h2>Cause &amp; Effect Connecting Words in Technical Explanations</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Connector Pattern</th>
+          <th>Grammatical Structure</th>
+          <th>Aviation Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>results in / leads to</strong></td>
+          <td>Verb + Noun Phrase / Gerund</td>
+          <td><em>"Increasing wing camber results in higher aerodynamic lift and additional drag."</em></td>
+        </tr>
+        <tr>
+          <td><strong>is caused by / is due to</strong></td>
+          <td>Passive + Noun Phrase</td>
+          <td><em>"Wingtip vortices are caused by the pressure differential between wing surfaces."</em></td>
+        </tr>
+        <tr>
+          <td><strong>in order to / so as to</strong></td>
+          <td>Conjunction + Infinitive</td>
+          <td><em>"Slats deploy automatically in order to delay airflow detachment."</em></td>
+        </tr>
+        <tr>
+          <td><strong>whereas / in contrast to</strong></td>
+          <td>Comparative Conjunction</td>
+          <td><em>"Parasitic drag surges at high speed, whereas induced drag dominates at low speed."</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Interactive Sentence Transformation Drills (Pairwork Practice)</h2>
+    <div style="font-size: 7.5pt; color: #334155;">
+      <div class="card" style="margin-bottom: 5px;">
+        <strong>Drill 1 (Airflow Separation):</strong><br>
+        <em>Prompt:</em> The angle of attack increases past critical limit. Airflow detaches from the wing. (Join using <strong>When</strong> + <strong>results in</strong>)<br>
+        <span class="stem">Model: "When the angle of attack increases past the critical limit, it results in airflow detachment from the upper surface."</span>
+      </div>
+
+      <div class="card" style="margin-bottom: 5px;">
+        <strong>Drill 2 (Altitude &amp; Air Density):</strong><br>
+        <em>Prompt:</em> Air density decreases at high cruise altitudes. True airspeed must increase to produce equal lift. (Join using <strong>Because</strong> + <strong>therefore</strong>)<br>
+        <span class="stem">Model: "Because air density decreases at high altitudes, true airspeed must therefore increase to generate equivalent lift."</span>
+      </div>
+
+      <div class="card" style="margin-bottom: 5px;">
+        <strong>Drill 3 (Induced Drag Mitigation):</strong><br>
+        <em>Prompt:</em> Modern wings feature upward winglets. They diffuse high-pressure wingtip vortices. (Join using <strong>in order to</strong>)<br>
+        <span class="stem">Model: "Modern airliners are equipped with winglets in order to diffuse wingtip vortices and mitigate induced drag."</span>
+      </div>
+
+      <div class="card" style="margin-bottom: 5px;">
+        <strong>Drill 4 (Stall Recovery Protocol):</strong><br>
+        <em>Prompt:</em> The pilot reduces the angle of attack immediately. The wing will enter an uncontrolled aerodynamic stall. (Join using <strong>Unless</strong>)<br>
+        <span class="stem">Model: "Unless the flight crew immediately reduces the angle of attack, the wing will enter an uncontrolled aerodynamic stall."</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 5: BLACKBOARD CHALLENGE & PEER RUBRIC -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • TECHNICAL ENGLISH (AT) • MODULE 2 SESSION 1</span>
+      <span class="ref">PAGE 5 OF 7</span>
+    </div>
+
+    <h2>Part 5: Kinesthetic Blackboard Lab: 3-Person "Draw, Label &amp; Pitch"</h2>
+    <p style="font-size: 7.8pt; color: #475569; margin-bottom: 6px;">
+      Teams of 3 students are called to the board with markers. You have 3 minutes to draw, label, and orally deliver an aerodynamic briefing to your peers.
+    </p>
+
+    <div class="grid-3" style="gap: 6px; margin-bottom: 8px;">
+      <div class="card card-left-blue">
+        <span class="badge badge-primary">STUDENT 1</span>
+        <h3 style="margin-top: 3px;">The Airframe &amp; Forces Draftsperson</h3>
+        <ul style="font-size: 7.2pt; color: #334155; padding-left: 12px; margin-top: 3px;">
+          <li>Draws clean aircraft side profile &amp; wing cross-section.</li>
+          <li>Sketches the 4 vector arrows (Lift, Weight, Thrust, Drag).</li>
+          <li>Identifies Center of Gravity (CG) vs. Center of Pressure (CP).</li>
+        </ul>
+      </div>
+
+      <div class="card card-left-blue">
+        <span class="badge badge-primary">STUDENT 2</span>
+        <h3 style="margin-top: 3px;">The Axes &amp; Controls Specialist</h3>
+        <ul style="font-size: 7.2pt; color: #334155; padding-left: 12px; margin-top: 3px;">
+          <li>Draws 3 orthogonal axes (Longitudinal, Lateral, Vertical).</li>
+          <li>Labels rotational motions: Roll, Pitch, and Yaw.</li>
+          <li>Draws &amp; labels Ailerons, Elevators, and Rudder.</li>
+        </ul>
+      </div>
+
+      <div class="card card-left-amber">
+        <span class="badge badge-amber">STUDENT 3</span>
+        <h3 style="margin-top: 3px;">The Flight Test Presenter (60s Pitch)</h3>
+        <ul style="font-size: 7.2pt; color: #334155; padding-left: 12px; margin-top: 3px;">
+          <li>Delivers 60-second spoken briefing to the class.</li>
+          <li>Explains what happens when thrust exceeds drag.</li>
+          <li>Explains aileron deflection during a coordinated bank.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Peer Checklist &amp; Student B Observation Rubric</h2>
+    <p style="font-size: 7.5pt; color: #475569; margin-bottom: 4px;">
+      <strong>Safety Check &amp; Peer Observer Checklist:</strong> All seated students evaluate the presenting team on the whiteboard using this 4-point operational decision table and peer checklist:
+    </p>
+
+    <div class="checklist-box" style="margin-bottom: 8px;">
+      <table style="margin: 0; font-size: 7.4pt;">
+        <thead>
+          <tr>
+            <th style="width: 28%;">Assessment Category</th>
+            <th style="width: 52%;">Operational Performance Standard</th>
+            <th style="width: 20%; text-align: center;">Evaluation Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Vector &amp; Point Precision</strong></td>
+            <td>Are the 4 vectors correctly paired? Is Weight placed at CG and Lift placed at CP?</td>
+            <td style="text-align: center;">[ &check; ] Pass &nbsp; [ &sim; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>2. Axes &amp; Control Mapping</strong></td>
+            <td>Did Student 2 correctly map Ailerons &rarr; Roll, Elevator &rarr; Pitch, Rudder &rarr; Yaw?</td>
+            <td style="text-align: center;">[ &check; ] Pass &nbsp; [ &sim; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>3. Causal Linker Usage</strong></td>
+            <td>Did Student 3 use target connectors (<em>results in, leads to, when, whereas</em>)?</td>
+            <td style="text-align: center;">[ &check; ] Pass &nbsp; [ &sim; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>4. Spoken Fluency &amp; Clarity</strong></td>
+            <td>Was the explanation delivered without reading word-for-word, in clear B2 English?</td>
+            <td style="text-align: center;">[ &check; ] Pass &nbsp; [ &sim; ] Needs Work</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Oral Briefing Sentence Stems for Presenters (Student 3)</h2>
+    <div class="card card-left-blue" style="font-size: 7.5pt; color: #334155;">
+      &bull; <em>"As you can see from our diagram, in unaccelerated flight, Lift exactly balances Weight, while Thrust equals Drag."</em><br>
+      &bull; <em>"When the pilot pulls back on the control column, the elevators deflect upward. This produces downward tail force, rotating the aircraft around its lateral axis into a pitch-up attitude."</em><br>
+      &bull; <em>"To initiate a bank, the ailerons deflect differentially around the longitudinal axis, creating higher lift on the outer wing."</em>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 6: THE LIFT MASTERCLASS & STALL SCENARIO -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • TECHNICAL ENGLISH (AT) • MODULE 2 SESSION 1</span>
+      <span class="ref">PAGE 6 OF 7</span>
+    </div>
+
+    <h2>The Lift Masterclass: How Wings Actually Work</h2>
+    <p style="font-size: 7.8pt; color: #475569; margin-bottom: 6px;">
+      Deliver a 90-second spoken explanation of aerodynamic lift for a non-technical passenger or trainee controller. Combine Bernoulli and Newton.
+    </p>
+
+    <div class="card card-left-blue" style="margin-bottom: 8px;">
+      <h3>Model 90-Second Spoken Presentation Script</h3>
+      <p style="font-size: 7.5pt; line-height: 1.4; color: #334155; font-style: italic;">
+        "Generating aerodynamic lift requires two complementary physical mechanisms. First, an airplane wing has a curved upper camber. When relative wind approaches the leading edge, air flowing over the curved top must accelerate compared to the flatter lower surface. According to Bernoulli’s principle, faster-moving air creates lower static pressure. This pressure difference creates a net upward suction force.
+        <br><br>
+        Second, as the wing travels forward with a positive angle of attack, the lower surface deflects oncoming air downward. In accordance with Newton’s third law of motion, for every action there is an equal and opposite reaction: deflecting thousands of tons of air downward results in an equal upward force on the aircraft. Together, pressure differentials and downwash produce the total lift needed to overcome the aircraft's weight."
+      </p>
+    </div>
+
+    <h2>Operational Incident Scenario: High-Altitude Stall &amp; Recovery</h2>
+    <div class="card card-left-amber" style="margin-bottom: 8px;">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 3px;">
+        <span style="font-weight: 800; font-size: 8pt; color: #92400e;">Flight Deck Scenario: FL370 Atmospheric Wave &amp; Airspeed Decay</span>
+        <span class="badge badge-amber">CREW RESOURCE MANAGEMENT</span>
+      </div>
+      <p style="font-size: 7.5pt; line-height: 1.38; color: #334155;">
+        A twin-engine commercial airliner is in level cruise at Flight Level 370 (37,000 ft) over mountain terrain. The aircraft encounters severe clear-air turbulence and a sudden 30-knot headwind loss. Autothrottles advance to maximum continuous thrust, but airspeed continues decaying from Mach 0.78 to Mach 0.71. The autopilot trims nose-up to maintain assigned altitude. Suddenly, heavy aerodynamic buffeting begins and the primary stick shaker activates.
+      </p>
+    </div>
+
+    <h2>Crew Simulation Dialogue (Pair Role-Play: First Officer &amp; Captain)</h2>
+    <div class="grid-2" style="font-size: 7.4pt;">
+      <div class="card" style="border-left: 3px solid #0369a1;">
+        <strong>Role Card A: First Officer (Pilot Flying)</strong>
+        <p style="color: #475569; margin-top: 3px;">
+          1. Call out the tactile stick-shaker stall warning immediately.<br>
+          2. Disconnect the autopilot and autothrottle.<br>
+          3. Apply forward sidestick pressure to push the nose down below the horizon.<br>
+          4. Confirm that the angle of attack decreases and buffet ceases.
+        </p>
+        <div class="stem">Standard Callout: "STALL! DISCONNECTING AUTOPILOT! PUSHING NOSE DOWN!"</div>
+      </div>
+
+      <div class="card" style="border-left: 3px solid #059669;">
+        <strong>Role Card B: Captain (Pilot Monitoring)</strong>
+        <p style="color: #475569; margin-top: 3px;">
+          1. Monitor pitch attitude: ensure FO does not pull aft.<br>
+          2. Verify roll wings level using rudder pedals, not excessive ailerons.<br>
+          3. Advance thrust smoothly once nose is down and AoA is reduced.<br>
+          4. Call out airspeed recovery and notify ATC of descent.
+        </p>
+        <div class="stem">Standard Callout: "PITCH NOSE DOWN CONFIRMED. WINGS LEVEL. AIRSPEED INCREASING."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 7: TABOO GAME, QUIZ & PORTFOLIO LOG -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • TECHNICAL ENGLISH (AT) • MODULE 2 SESSION 1</span>
+      <span class="ref">PAGE 7 OF 7</span>
+    </div>
+
+    <h2>Part 6: Aerodynamics Taboo Game (Explain Without Forbidden Words)</h2>
+    <p style="font-size: 7.8pt; color: #475569; margin-bottom: 6px;">
+      Work in pairs. Describe the secret technical term to your partner without saying any of the 3 forbidden words.
+    </p>
+
+    <div class="grid-3" style="gap: 5px; margin-bottom: 8px;">
+      <div class="card" style="text-align: center; border: 1.5px solid #0284c7;">
+        <span class="badge badge-primary">CARD 1</span>
+        <div style="font-weight: 900; font-size: 9pt; color: #0f172a; margin: 3px 0;">STALL</div>
+        <div style="font-size: 6.8pt; color: #dc2626; text-transform: uppercase; font-weight: 700;">Forbidden Words:</div>
+        <div style="font-size: 7pt; color: #475569;">Drop • Speed • Crash</div>
+      </div>
+
+      <div class="card" style="text-align: center; border: 1.5px solid #0284c7;">
+        <span class="badge badge-primary">CARD 2</span>
+        <div style="font-weight: 900; font-size: 9pt; color: #0f172a; margin: 3px 0;">ANGLE OF ATTACK</div>
+        <div style="font-size: 6.8pt; color: #dc2626; text-transform: uppercase; font-weight: 700;">Forbidden Words:</div>
+        <div style="font-size: 7pt; color: #475569;">Pitch • Angle • Degrees</div>
+      </div>
+
+      <div class="card" style="text-align: center; border: 1.5px solid #0284c7;">
+        <span class="badge badge-primary">CARD 3</span>
+        <div style="font-weight: 900; font-size: 9pt; color: #0f172a; margin: 3px 0;">RUDDER</div>
+        <div style="font-size: 6.8pt; color: #dc2626; text-transform: uppercase; font-weight: 700;">Forbidden Words:</div>
+        <div style="font-size: 7pt; color: #475569;">Tail • Turn • Yaw</div>
+      </div>
+
+      <div class="card" style="text-align: center; border: 1.5px solid #0284c7;">
+        <span class="badge badge-primary">CARD 4</span>
+        <div style="font-weight: 900; font-size: 9pt; color: #0f172a; margin: 3px 0;">INDUCED DRAG</div>
+        <div style="font-size: 6.8pt; color: #dc2626; text-transform: uppercase; font-weight: 700;">Forbidden Words:</div>
+        <div style="font-size: 7pt; color: #475569;">Lift • Wingtip • Slow</div>
+      </div>
+
+      <div class="card" style="text-align: center; border: 1.5px solid #0284c7;">
+        <span class="badge badge-primary">CARD 5</span>
+        <div style="font-weight: 900; font-size: 9pt; color: #0f172a; margin: 3px 0;">CAMBER</div>
+        <div style="font-size: 6.8pt; color: #dc2626; text-transform: uppercase; font-weight: 700;">Forbidden Words:</div>
+        <div style="font-size: 7pt; color: #475569;">Curve • Shape • Wing</div>
+      </div>
+
+      <div class="card" style="text-align: center; border: 1.5px solid #0284c7;">
+        <span class="badge badge-primary">CARD 6</span>
+        <div style="font-weight: 900; font-size: 9pt; color: #0f172a; margin: 3px 0;">AILERONS</div>
+        <div style="font-size: 6.8pt; color: #dc2626; text-transform: uppercase; font-weight: 700;">Forbidden Words:</div>
+        <div style="font-size: 7pt; color: #475569;">Roll • Bank • Edge</div>
+      </div>
+    </div>
+
+    <h2>10-Question Aerodynamics Mastery Challenge</h2>
+    <div style="font-size: 7.2pt; color: #334155; margin-bottom: 8px;">
+      <div class="grid-2" style="gap: 5px;">
+        <div class="card">
+          <strong>1. In unaccelerated steady-state level flight:</strong><br>
+          (A) Lift &gt; Weight &nbsp; (B) Lift = Weight &amp; Thrust = Drag [Ans: B]
+        </div>
+        <div class="card">
+          <strong>2. The angle between the chord line and relative wind is:</strong><br>
+          (A) Pitch attitude &nbsp; (B) Angle of attack (AoA) [Ans: B]
+        </div>
+        <div class="card">
+          <strong>3. As airspeed increases, induced drag:</strong><br>
+          (A) Increases &nbsp; (B) Decreases sharply [Ans: B]
+        </div>
+        <div class="card">
+          <strong>4. Deflecting the control column forward moves elevators:</strong><br>
+          (A) Downward, pitching nose down &nbsp; (B) Upward [Ans: A]
+        </div>
+        <div class="card">
+          <strong>5. Wingtip devices (winglets) reduce drag by:</strong><br>
+          (A) Diffusing vortices &nbsp; (B) Increasing friction [Ans: A]
+        </div>
+        <div class="card">
+          <strong>6. Roll rotation occurs around the:</strong><br>
+          (A) Lateral axis &nbsp; (B) Longitudinal axis [Ans: B]
+        </div>
+        <div class="card">
+          <strong>7. An aerodynamic stall occurs when:</strong><br>
+          (A) Critical AoA is exceeded &nbsp; (B) Engines fail [Ans: A]
+        </div>
+        <div class="card">
+          <strong>8. Adverse yaw is counteracted by applying:</strong><br>
+          (A) Coordinated rudder &nbsp; (B) Speedbrakes [Ans: A]
+        </div>
+        <div class="card">
+          <strong>9. Spoilers deployed in flight produce:</strong><br>
+          (A) Lift destruction &amp; drag &nbsp; (B) Extra thrust [Ans: A]
+        </div>
+        <div class="card">
+          <strong>10. The primary recovery action from a stall is:</strong><br>
+          (A) Reduce AoA with forward stick &nbsp; (B) Pull back [Ans: A]
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-left-blue">
+      <h3>Weekly Learning Portfolio Reflection (Independent Self-Study)</h3>
+      <p style="font-size: 7.4pt; color: #475569; margin-bottom: 4px;">
+        Log 3 newly acquired technical terms and 1 spoken reflection in your digital portfolio:
+      </p>
+      <div style="height: 38px; border: 1px dashed #cbd5e1; border-radius: 4px; padding: 4px; font-size: 7pt; color: #94a3b8; font-style: italic;">
+        [My key takeaway today: How Bernoulli and Newton combine to generate lift, and why reducing angle of attack is the only way to recover from an aerodynamic stall...]
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

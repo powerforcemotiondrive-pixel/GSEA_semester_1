@@ -139,8 +139,9 @@
       ]
     },
     "sessions": {
-      "1": {
-        "session": 1,
+        "1": {
+          "session": 1,
+          "title": "Session 1 - Aerodynamics & Flight Principles",
         "objectives": {
           "title": "Session 1 Objectives - Introduction & Travel Anecdotes",
           "summary": "By the end of this session, you will be able to share engaging personal travel stories using narrative past tenses, use essential travel collocations, discuss global mobility dilemmas, and handle travel disruption conversations politely.",
@@ -506,7 +507,7 @@
               "sourceTag": "Global Language Standards • ETS",
               "heading": "Understanding the Global TOEIC Benchmark: Essential Strategies for B2 Learners",
               "snippet": "Demystifying the 785-point TOEIC threshold: practical techniques to conquer listening distractors, manage reading time pressure, and secure certified B2 international mobility.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://www.ets.org/toeic",
               "title": "Understanding the Global TOEIC Benchmark: Essential Strategies for B2 Learners",
               "summary": "Demystifying the 785-point TOEIC threshold: practical techniques to conquer listening distractors, manage reading time pressure, and secure certified B2 international mobility.",
@@ -1444,7 +1445,7 @@
               "sourceTag": "Transport & Environment • European Rail Study",
               "heading": "The European Rail Revival: Banning Short-Haul Domestic Flights Where Rail Alternatives Exist",
               "snippet": "Examining France's landmark decree eliminating regional air links under 2.5 hours, public debate on passenger convenience, and the European Union's broader modal shift ambitions.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://www.eea.europa.eu",
               "title": "The European Rail Revival: Banning Short-Haul Domestic Flights Where Rail Alternatives Exist",
               "summary": "Examining France's landmark decree eliminating regional air links under 2.5 hours, public debate on passenger convenience, and the European Union's broader modal shift ambitions.",
@@ -2348,7 +2349,7 @@
               "sourceTag": "UNESCO Sustainable Tourism • World Heritage Brief",
               "heading": "Carrying Capacity Indicators in European Heritage Centers",
               "snippet": "How historic destinations like Venice, Dubrovnik, and Amsterdam deploy smart sensors, booking thresholds, and crowd management to protect ancient infrastructure.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://whc.unesco.org",
               "title": "Carrying Capacity Indicators in European Heritage Centers",
               "summary": "How historic destinations like Venice, Dubrovnik, and Amsterdam deploy smart sensors, booking thresholds, and crowd management to protect ancient infrastructure.",
@@ -3243,7 +3244,7 @@
               "sourceTag": "Greenhouse Gas Protocol • Corporate Standard",
               "heading": "Auditing Corporate Travel: The Scope 3 Emissions Challenge",
               "snippet": "How multinational enterprises track business flights, implement internal carbon levies, and adopt video-first collaboration to achieve ambitious corporate climate targets.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://ghgprotocol.org",
               "title": "Auditing Corporate Travel: The Scope 3 Emissions Challenge",
               "summary": "How multinational enterprises track business flights, implement internal carbon levies, and adopt video-first collaboration to achieve ambitious corporate climate targets.",
@@ -4223,7 +4224,7 @@
               "sourceTag": "World Meteorological Organization (WMO)",
               "heading": "State of the Global Climate: Extreme Events & Frequency",
               "snippet": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://wmo.int",
               "title": "State of the Global Climate: Extreme Events & Frequency",
               "summary": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
@@ -4250,7 +4251,7 @@
               "sourceTag": "Global Insurance & Economic Resilience Institute",
               "heading": "The Escalating Economic Toll of Extreme Weather Disasters",
               "snippet": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://www.worldbank.org",
               "title": "The Escalating Economic Toll of Extreme Weather Disasters",
               "summary": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
@@ -5790,7 +5791,7 @@
               "sourceTag": "UNFCCC Climate Negotiations Review",
               "heading": "The Rhetoric of Climate Policy Negotiations",
               "snippet": "Analyzing linguistic nuances, diplomatic phrasing, and consensus-building mechanisms across international climate summits from the Paris Agreement to COP conferences.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://unfccc.int",
               "title": "The Rhetoric of Climate Policy Negotiations",
               "summary": "Analyzing linguistic nuances, diplomatic phrasing, and consensus-building mechanisms across international climate summits from the Paris Agreement to COP conferences.",
@@ -5817,7 +5818,7 @@
               "sourceTag": "International Monetary Fund (IMF) • Fiscal Monitor",
               "heading": "Economic Trade-Offs in Transport Carbon Taxation",
               "snippet": "Evaluating carbon pricing models, jet fuel tax exemptions under the Chicago Convention, and redistributive mechanisms designed to prevent public backlash.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://www.imf.org",
               "title": "Economic Trade-Offs in Transport Carbon Taxation",
               "summary": "Evaluating carbon pricing models, jet fuel tax exemptions under the Chicago Convention, and redistributive mechanisms designed to prevent public backlash.",
@@ -6607,7 +6608,7 @@
               "sourceTag": "ICAO Wildlife Hazard Management Digest",
               "heading": "Balancing Airfield Safety Standards with Habitat Conservation",
               "snippet": "Examining how airport operators manage vast grassland habitats around runways to prevent hazardous bird strikes while supporting endangered flora and fauna.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://www.icao.int",
               "title": "Balancing Airfield Safety Standards with Habitat Conservation",
               "summary": "Examining how airport operators manage vast grassland habitats around runways to prevent hazardous bird strikes while supporting endangered flora and fauna.",
@@ -7501,7 +7502,7 @@
               "sourceTag": "MIT Technology Review • AI & Workforce",
               "heading": "Generative AI and the Transformation of Modern Workplaces",
               "snippet": "Examining how large language models, automated code generation, and AI assistants augment engineering productivity while redefining essential human skills.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://www.technologyreview.com",
               "title": "Generative AI and the Transformation of Modern Workplaces",
               "summary": "Examining how large language models, automated code generation, and AI assistants augment engineering productivity while redefining essential human skills.",
@@ -8304,7 +8305,7 @@
               "sourceTag": "European Rail Alliance • Modal Shift Blueprint",
               "heading": "The European Rail Renaissance: Can High-Speed Rail Replace Regional Flights?",
               "snippet": "Evaluating overnight sleeper trains, open-access rail competition, and cross-border booking integration as Europe seeks to shift travelers away from domestic aviation.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://transport.ec.europa.eu",
               "title": "The European Rail Renaissance: Can High-Speed Rail Replace Regional Flights?",
               "summary": "Evaluating overnight sleeper trains, open-access rail competition, and cross-border booking integration as Europe seeks to shift travelers away from domestic aviation.",
@@ -8331,7 +8332,7 @@
               "sourceTag": "Clean Transport Observatory • Zero-Emission Fuels",
               "heading": "The Next Decade of Sustainable Mobility & Clean Fuels",
               "snippet": "Exploring the race between battery-electric heavy transport, green hydrogen fuel cells, and synthetic e-fuels to decarbonize long-haul logistics and commercial aviation.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://www.iea.org",
               "title": "The Next Decade of Sustainable Mobility & Clean Fuels",
               "summary": "Exploring the race between battery-electric heavy transport, green hydrogen fuel cells, and synthetic e-fuels to decarbonize long-haul logistics and commercial aviation.",
@@ -9107,7 +9108,7 @@
               "sourceTag": "Stanford Institute for Human-Centered AI (HAI)",
               "heading": "Critical Thinking in the Age of Automated Algorithms",
               "snippet": "Analyzing how human operators can maintain situational awareness, recognize cognitive complacency, and challenge flawed automated outputs.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://hai.stanford.edu",
               "title": "Critical Thinking in the Age of Automated Algorithms",
               "summary": "Analyzing how human operators can maintain situational awareness, recognize cognitive complacency, and challenge flawed automated outputs.",
@@ -9134,7 +9135,7 @@
               "sourceTag": "European Union AI Act • Legal Analysis",
               "heading": "Allocating Legal Liability for Automated Decisions",
               "snippet": "Who is responsible when an autonomous system fails? Examining the EU AI Act, strict manufacturer liability, operator accountability, and algorithmic explainability.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://digital-strategy.ec.europa.eu",
               "title": "Allocating Legal Liability for Automated Decisions",
               "summary": "Who is responsible when an autonomous system fails? Examining the EU AI Act, strict manufacturer liability, operator accountability, and algorithmic explainability.",
@@ -9910,7 +9911,7 @@
               "sourceTag": "European Data Protection Board (EDPB)",
               "heading": "Facial Recognition at the Border: Privacy Safeguards and Demographic Fairness",
               "snippet": "Examining automated e-Gates at international airports, GDPR biometric protections, and mitigating algorithmic error rates across diverse traveler demographics.",
-              "readTime": "5 min read",
+              "topicFocus": "Aerodynamics & Flight Efficiency",
               "url": "https://edpb.europa.eu",
               "title": "Facial Recognition at the Border: Privacy Safeguards and Demographic Fairness",
               "summary": "Examining automated e-Gates at international airports, GDPR biometric protections, and mitigating algorithmic error rates across diverse traveler demographics.",
@@ -10571,6 +10572,7 @@
       "sessions": {
         "1": {
           "session": 1,
+          "title": "Aerodynamics & Flight Principles",
           "objectives": {
             "title": "Session 1 Objectives - Introduction & Travel Anecdotes",
             "summary": "By the end of this session, you will be able to share engaging personal travel stories using narrative past tenses, use essential travel collocations, discuss global mobility dilemmas, and handle travel disruption conversations politely.",
@@ -10936,7 +10938,7 @@
                 "sourceTag": "Global Language Standards • ETS",
                 "heading": "Understanding the Global TOEIC Benchmark: Essential Strategies for B2 Learners",
                 "snippet": "Demystifying the 785-point TOEIC threshold: practical techniques to conquer listening distractors, manage reading time pressure, and secure certified B2 international mobility.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.ets.org/toeic",
                 "title": "Understanding the Global TOEIC Benchmark: Essential Strategies for B2 Learners",
                 "summary": "Demystifying the 785-point TOEIC threshold: practical techniques to conquer listening distractors, manage reading time pressure, and secure certified B2 international mobility.",
@@ -11874,7 +11876,7 @@
                 "sourceTag": "Transport & Environment • European Rail Study",
                 "heading": "The European Rail Revival: Banning Short-Haul Domestic Flights Where Rail Alternatives Exist",
                 "snippet": "Examining France's landmark decree eliminating regional air links under 2.5 hours, public debate on passenger convenience, and the European Union's broader modal shift ambitions.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.eea.europa.eu",
                 "title": "The European Rail Revival: Banning Short-Haul Domestic Flights Where Rail Alternatives Exist",
                 "summary": "Examining France's landmark decree eliminating regional air links under 2.5 hours, public debate on passenger convenience, and the European Union's broader modal shift ambitions.",
@@ -12778,7 +12780,7 @@
                 "sourceTag": "UNESCO Sustainable Tourism • World Heritage Brief",
                 "heading": "Carrying Capacity Indicators in European Heritage Centers",
                 "snippet": "How historic destinations like Venice, Dubrovnik, and Amsterdam deploy smart sensors, booking thresholds, and crowd management to protect ancient infrastructure.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://whc.unesco.org",
                 "title": "Carrying Capacity Indicators in European Heritage Centers",
                 "summary": "How historic destinations like Venice, Dubrovnik, and Amsterdam deploy smart sensors, booking thresholds, and crowd management to protect ancient infrastructure.",
@@ -13673,7 +13675,7 @@
                 "sourceTag": "Greenhouse Gas Protocol • Corporate Standard",
                 "heading": "Auditing Corporate Travel: The Scope 3 Emissions Challenge",
                 "snippet": "How multinational enterprises track business flights, implement internal carbon levies, and adopt video-first collaboration to achieve ambitious corporate climate targets.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://ghgprotocol.org",
                 "title": "Auditing Corporate Travel: The Scope 3 Emissions Challenge",
                 "summary": "How multinational enterprises track business flights, implement internal carbon levies, and adopt video-first collaboration to achieve ambitious corporate climate targets.",
@@ -14379,6 +14381,7 @@
       "sessions": {
         "1": {
           "session": 1,
+          "title": "Aerodynamics & Flight Principles",
           "objectives": {
             "title": "Session 1 - Extreme Weather Objectives",
             "summary": "By the end of this session, you will be able to discuss extreme weather and climate impacts with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
@@ -14653,7 +14656,7 @@
                 "sourceTag": "World Meteorological Organization (WMO)",
                 "heading": "State of the Global Climate: Extreme Events & Frequency",
                 "snippet": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://wmo.int",
                 "title": "State of the Global Climate: Extreme Events & Frequency",
                 "summary": "Examining accelerating climate indicators, record sea-surface temperatures, prolonged heatwaves, and unprecedented precipitation extremes across global regions.",
@@ -14680,7 +14683,7 @@
                 "sourceTag": "Global Insurance & Economic Resilience Institute",
                 "heading": "The Escalating Economic Toll of Extreme Weather Disasters",
                 "snippet": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.worldbank.org",
                 "title": "The Escalating Economic Toll of Extreme Weather Disasters",
                 "summary": "Analyzing the direct and indirect economic costs of natural disasters, rising insurance premiums, and the urgent necessity of investing in resilient public infrastructure.",
@@ -16220,7 +16223,7 @@
                 "sourceTag": "UNFCCC Climate Negotiations Review",
                 "heading": "The Rhetoric of Climate Policy Negotiations",
                 "snippet": "Analyzing linguistic nuances, diplomatic phrasing, and consensus-building mechanisms across international climate summits from the Paris Agreement to COP conferences.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://unfccc.int",
                 "title": "The Rhetoric of Climate Policy Negotiations",
                 "summary": "Analyzing linguistic nuances, diplomatic phrasing, and consensus-building mechanisms across international climate summits from the Paris Agreement to COP conferences.",
@@ -16247,7 +16250,7 @@
                 "sourceTag": "International Monetary Fund (IMF) • Fiscal Monitor",
                 "heading": "Economic Trade-Offs in Transport Carbon Taxation",
                 "snippet": "Evaluating carbon pricing models, jet fuel tax exemptions under the Chicago Convention, and redistributive mechanisms designed to prevent public backlash.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.imf.org",
                 "title": "Economic Trade-Offs in Transport Carbon Taxation",
                 "summary": "Evaluating carbon pricing models, jet fuel tax exemptions under the Chicago Convention, and redistributive mechanisms designed to prevent public backlash.",
@@ -17037,7 +17040,7 @@
                 "sourceTag": "ICAO Wildlife Hazard Management Digest",
                 "heading": "Balancing Airfield Safety Standards with Habitat Conservation",
                 "snippet": "Examining how airport operators manage vast grassland habitats around runways to prevent hazardous bird strikes while supporting endangered flora and fauna.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.icao.int",
                 "title": "Balancing Airfield Safety Standards with Habitat Conservation",
                 "summary": "Examining how airport operators manage vast grassland habitats around runways to prevent hazardous bird strikes while supporting endangered flora and fauna.",
@@ -17658,6 +17661,7 @@
       "sessions": {
         "1": {
           "session": 1,
+          "title": "Aerodynamics & Flight Principles",
           "objectives": {
             "title": "Session 1 - Artificial Intelligence Objectives",
             "summary": "By the end of this session, you will be able to discuss artificial intelligence and automation in everyday life and workplaces with confidence, use key vocabulary and grammar, and build the skills needed for your TOEIC test and Session 5 evaluation.",
@@ -17931,7 +17935,7 @@
                 "sourceTag": "MIT Technology Review • AI & Workforce",
                 "heading": "Generative AI and the Transformation of Modern Workplaces",
                 "snippet": "Examining how large language models, automated code generation, and AI assistants augment engineering productivity while redefining essential human skills.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.technologyreview.com",
                 "title": "Generative AI and the Transformation of Modern Workplaces",
                 "summary": "Examining how large language models, automated code generation, and AI assistants augment engineering productivity while redefining essential human skills.",
@@ -18734,7 +18738,7 @@
                 "sourceTag": "European Rail Alliance • Modal Shift Blueprint",
                 "heading": "The European Rail Renaissance: Can High-Speed Rail Replace Regional Flights?",
                 "snippet": "Evaluating overnight sleeper trains, open-access rail competition, and cross-border booking integration as Europe seeks to shift travelers away from domestic aviation.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://transport.ec.europa.eu",
                 "title": "The European Rail Renaissance: Can High-Speed Rail Replace Regional Flights?",
                 "summary": "Evaluating overnight sleeper trains, open-access rail competition, and cross-border booking integration as Europe seeks to shift travelers away from domestic aviation.",
@@ -18761,7 +18765,7 @@
                 "sourceTag": "Clean Transport Observatory • Zero-Emission Fuels",
                 "heading": "The Next Decade of Sustainable Mobility & Clean Fuels",
                 "snippet": "Exploring the race between battery-electric heavy transport, green hydrogen fuel cells, and synthetic e-fuels to decarbonize long-haul logistics and commercial aviation.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.iea.org",
                 "title": "The Next Decade of Sustainable Mobility & Clean Fuels",
                 "summary": "Exploring the race between battery-electric heavy transport, green hydrogen fuel cells, and synthetic e-fuels to decarbonize long-haul logistics and commercial aviation.",
@@ -19537,7 +19541,7 @@
                 "sourceTag": "Stanford Institute for Human-Centered AI (HAI)",
                 "heading": "Critical Thinking in the Age of Automated Algorithms",
                 "snippet": "Analyzing how human operators can maintain situational awareness, recognize cognitive complacency, and challenge flawed automated outputs.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://hai.stanford.edu",
                 "title": "Critical Thinking in the Age of Automated Algorithms",
                 "summary": "Analyzing how human operators can maintain situational awareness, recognize cognitive complacency, and challenge flawed automated outputs.",
@@ -19564,7 +19568,7 @@
                 "sourceTag": "European Union AI Act • Legal Analysis",
                 "heading": "Allocating Legal Liability for Automated Decisions",
                 "snippet": "Who is responsible when an autonomous system fails? Examining the EU AI Act, strict manufacturer liability, operator accountability, and algorithmic explainability.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://digital-strategy.ec.europa.eu",
                 "title": "Allocating Legal Liability for Automated Decisions",
                 "summary": "Who is responsible when an autonomous system fails? Examining the EU AI Act, strict manufacturer liability, operator accountability, and algorithmic explainability.",
@@ -20340,7 +20344,7 @@
                 "sourceTag": "European Data Protection Board (EDPB)",
                 "heading": "Facial Recognition at the Border: Privacy Safeguards and Demographic Fairness",
                 "snippet": "Examining automated e-Gates at international airports, GDPR biometric protections, and mitigating algorithmic error rates across diverse traveler demographics.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://edpb.europa.eu",
                 "title": "Facial Recognition at the Border: Privacy Safeguards and Demographic Fairness",
                 "summary": "Examining automated e-Gates at international airports, GDPR biometric protections, and mitigating algorithmic error rates across diverse traveler demographics.",
@@ -21002,6 +21006,7 @@
       "sessions": {
         "1": {
           "session": 1,
+          "title": "Aerodynamics & Flight Principles",
           "objectives": {
             "title": "Session 1 Objectives - Introduction & Aviation Survey",
             "summary": "By the end of this session, you will be able to discuss international aviation current events, express and defend professional opinions on commercial airline and aerodrome dilemmas, master regulatory modal verbs of obligation and permission, manage passenger service de-escalation under EU261 flight disruption rules, deliver a concise 60-second spoken consensus briefing, and consolidate key aviation vocabulary.",
@@ -21616,7 +21621,7 @@
                 "sourceTag": "ICAO Flight Safety Bulletin • Passenger Management",
                 "heading": "Zero Tolerance at 35,000 Feet: Should Airlines Enact Strict Airport and In-Flight Alcohol Bans?",
                 "snippet": "Examining the global rise in unruly passenger incidents, legal powers of the aircraft commander under international law, and carrier debates over pre-flight alcohol sales.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.icao.int",
                 "title": "Zero Tolerance at 35,000 Feet: Should Airlines Enact Strict Airport and In-Flight Alcohol Bans?",
                 "summary": "Examining the global rise in unruly passenger incidents, legal powers of the aircraft commander under international law, and carrier debates over pre-flight alcohol sales.",
@@ -21643,7 +21648,7 @@
                 "sourceTag": "European Court of Justice • Case Law Review",
                 "heading": "EU261 and Extraordinary Circumstances: Balancing Passenger Redress with Carrier Viability",
                 "snippet": "Analyzing European Regulation (EC) 261/2004 delay compensation rules, court interpretations of mechanical failure vs. weather events, and carrier operational duties.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://transport.ec.europa.eu",
                 "title": "EU261 and Extraordinary Circumstances: Balancing Passenger Redress with Carrier Viability",
                 "summary": "Analyzing European Regulation (EC) 261/2004 delay compensation rules, court interpretations of mechanical failure vs. weather events, and carrier operational duties.",
@@ -22592,7 +22597,7 @@
                 "sourceTag": "ICAO Annex 14 • Aerodrome Standards Digest",
                 "heading": "Movement Area Safety & Aerodrome Operations (ICAO Annex 14)",
                 "snippet": "Examining international standards for maneuvering areas and aprons, friction testing, runway strip dimensions, and ground vehicle separation protocols.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.icao.int",
                 "title": "Movement Area Safety & Aerodrome Operations (ICAO Annex 14)",
                 "summary": "Examining international standards for maneuvering areas and aprons, friction testing, runway strip dimensions, and ground vehicle separation protocols.",
@@ -22646,7 +22651,7 @@
                 "sourceTag": "Skybrary Aviation Safety Knowledgebase",
                 "heading": "Taxiway Surface Markings, Mandatory Signs & Holding Positions",
                 "snippet": "Decoding airside visual cues: solid vs. dashed holding lines, red mandatory signs, yellow boundary markings, and stop bars designed to prevent runway incursions.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://skybrary.aero/articles/runway-holding-positions",
                 "title": "Taxiway Surface Markings, Mandatory Signs & Holding Positions",
                 "summary": "Decoding airside visual cues: solid vs. dashed holding lines, red mandatory signs, yellow boundary markings, and stop bars designed to prevent runway incursions.",
@@ -23724,7 +23729,7 @@
                 "sourceTag": "IATA Ground Operations Manual (IGOM)",
                 "heading": "Managing Parallel Servicing Hazards during Fast-Turnaround Operations",
                 "snippet": "Coordinating simultaneous ground support activities: fueling safety buffers, baggage belt positioning, catering hoists, and aircraft engine spool-down clearance.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.iata.org",
                 "title": "Managing Parallel Servicing Hazards during Fast-Turnaround Operations",
                 "summary": "Coordinating simultaneous ground support activities: fueling safety buffers, baggage belt positioning, catering hoists, and aircraft engine spool-down clearance.",
@@ -25004,7 +25009,7 @@
                 "sourceTag": "FlightGlobal Aviation Careers • Operational Overview",
                 "heading": "Beyond the Flight Deck: The Essential Network of Airport Operations",
                 "snippet": "An in-depth look at the interconnected network of ground professionals, flight dispatchers, apron controllers, and maintenance crews who ensure every flight departs safely.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.flightglobal.com",
                 "title": "Beyond the Flight Deck: The Essential Network of Airport Operations",
                 "summary": "An in-depth look at the interconnected network of ground professionals, flight dispatchers, apron controllers, and maintenance crews who ensure every flight departs safely.",
@@ -25031,7 +25036,7 @@
                 "sourceTag": "DGAC France / ENAC Portal • Professional Profiles",
                 "heading": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
                 "snippet": "Examining the varied career paths of France's Civil Aviation Operations Corps (TSEEAC): aerodrome flight information, safety oversight, and technical airspace management.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.enac.fr/en",
                 "title": "The Modern Role of TSEEAC: From AFIS to Safety Oversight",
                 "summary": "Examining the varied career paths of France's Civil Aviation Operations Corps (TSEEAC): aerodrome flight information, safety oversight, and technical airspace management.",
@@ -25058,7 +25063,7 @@
                 "sourceTag": "Eurocontrol ATM Guidelines • ATS Jurisdictions",
                 "heading": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
                 "snippet": "Clarifying the fundamental differences in authority, separation responsibility, and phraseology between Air Traffic Control Officers and Aerodrome Flight Information Service Officers.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.eurocontrol.int",
                 "title": "ATCO vs AFISO: Understanding the Scope of Air Traffic Services",
                 "summary": "Clarifying the fundamental differences in authority, separation responsibility, and phraseology between Air Traffic Control Officers and Aerodrome Flight Information Service Officers.",
@@ -25085,7 +25090,7 @@
                 "sourceTag": "IATA Ground Operations Manual (IGOM)",
                 "heading": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
                 "snippet": "Profiling the Red Cap / Turnaround Coordinator: managing passenger boarding counts, weight and balance calculations, and final exterior walkarounds before pushback.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.iata.org",
                 "title": "The Turnaround Coordinator: Heartbeat of On-Time Performance",
                 "summary": "Profiling the Red Cap / Turnaround Coordinator: managing passenger boarding counts, weight and balance calculations, and final exterior walkarounds before pushback.",
@@ -25446,6 +25451,7 @@
       "sessions": {
         "1": {
           "session": 1,
+          "title": "Aerodynamics & Flight Principles",
           "objectives": {
             "title": "Session 1 Objectives - Aerodynamics & Flight Principles",
             "summary": "By the end of this session, you will be able to explain the four fundamental forces of flight, describe the three aircraft axes and their corresponding control surfaces, use cause-and-effect conditionals accurately, and communicate aerodynamic flight scenarios with professional B2 fluency.",
@@ -25478,37 +25484,37 @@
             ]
           },
           "lessonPlan": {
-            "title": "Session 1 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour communicative session featuring an aviation news warm-up, flight forces diagnostic, cause-and-effect language clinic, the 3-axes kinesthetic simulation, an operational stall scenario, and vocabulary consolidation.",
+            "title": "Session 1 Lesson Plan - Aerodynamics & Flight Principles (2 Hours)",
+            "summary": "A 2-hour communicative technical English workshop featuring an aviation news warm-up, video analysis of flight forces, an interactive gap-fill clinic, a 3-person blackboard drawing lab, the Lift Masterclass spoken briefing, and an interactive 10-question mastery quiz.",
             "items": [
               {
-                "title": "Part 1: Aviation News & Course Entry Warm-Up Check",
-                "description": "Weekly aviation news warm-up and diagnostic spot-check connecting Module 1 aerodrome operations to airborne flight physics.",
+                "title": "Part 1: Aviation Headlines & Diagnostic Quick-Check",
+                "description": "Opening aerospace headlines and diagnostic spot-check using communicative spoken sentence stems to contrast pitch attitude and angle of attack.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: The Four Forces & Airflow Quick Check",
-                "description": "Interactive vocabulary matching: connecting lift, thrust, weight, drag, airfoil camber, and angle of attack to real flight phases.",
+                "title": "Part 2: Video Lab: The Four Forces of Flight in Action",
+                "description": "Video-guided listening analysis exploring aerodynamic equilibrium, vector opposition, and pressure differentials with structured acoustic checkpoints.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Language Focus: Cause & Effect Linkers",
-                "description": "Expressing aerodynamic consequences with conditionals and causal connectors (if, when, as a result of, leads to, unless).",
+                "title": "Part 3: Airfoil Geometry & Technical Gap-Fill Clinic",
+                "description": "Interactive gap-fill texts with revealable answers covering Bernoulli's principle, camber, chord line, boundary layer airflow, and drag dynamics.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: The 3 Axes & Control Surfaces Game / Role-Play",
-                "description": "Interactive kinesthetic 'Human Flight Simulator' game and pilot-to-flight-test-engineer debriefing role-play.",
+                "title": "Part 4: The Blackboard Vector Lab (Group of 3 Challenge)",
+                "description": "Collaborative board activity: 3-student teams draw an aircraft, label force vectors and 3 axes, and deliver a 60-second spoken flight control pitch with peer rubrics.",
                 "part": "Part 4"
               },
               {
-                "title": "Part 5: Aerodynamic Dilemma: High-Altitude Stall Recovery",
-                "description": "Operational case study: analyzing stall warnings, high-altitude buffeting, and crew communication during flight envelope excursions.",
+                "title": "Part 5: The Lift Masterclass & Stall Recovery Simulation",
+                "description": "Spoken presentation masterclass explaining lift generation in plain B2 English followed by crew communication during an aerodynamic stall warning.",
                 "part": "Part 5"
               },
               {
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
-                "description": "Pronunciation stress practice (aero-DY-na-mics, cam-ber, sta-bi-LI-zer, ai-ler-on) and personal learning log entry.",
+                "title": "Part 6: Aerodynamics Taboo & 10-Question Mastery Challenge",
+                "description": "End-of-class communicative game (explaining terms without taboo words) and interactive 10-question multiple-choice mastery challenge with grammar rationale.",
                 "part": "Part 6"
               }
             ]
@@ -25528,9 +25534,9 @@
                 "🎯 Flight Physics Quick Check"
               ],
               "instructions": [
-                "Step 1 (Aviation Headlines - 3 mins): In pairs, discuss the opening news bullet on composite winglets and stall training advisories. Why are airlines prioritizing aerodynamics for both fuel economy and safety?",
-                "Step 2 (Aerodynamics Quick Check - 4 mins): Test each other on the 4 foundational flight physics questions below without viewing the answers.",
-                "Step 3 (Verify & Clarify - 3 mins): Click \"Reveal Answer\" to check explanations. Clarify the essential difference between pitch attitude (horizon reference) and angle of attack (relative wind reference)."
+                "Step 1 (Aviation Headlines): In pairs, discuss the opening news bullet on composite winglets and stall training advisories. Why are airlines prioritizing aerodynamics for both fuel economy and safety?",
+                "Step 2 (Aerodynamics Quick Check): Test each other on the 4 foundational flight physics questions below using the target sentence stems before viewing the answers.",
+                "Step 3 (Verify & Clarify): Click \"Reveal Answer\" to check explanations. Clarify the essential difference between pitch attitude (horizon reference) and angle of attack (relative wind reference)."
               ],
               "deliverable": "Accurately explain the difference between Angle of Attack and Pitch Attitude during the instructor spot-check.",
               "teacherNotes": "Use a model aircraft or your hands to demonstrate pitch attitude vs. relative wind and angle of attack. Ensure students realize AoA can exceed critical limit even in nose-low attitudes.",
@@ -25547,22 +25553,22 @@
                 "questions": [
                   {
                     "id": 1,
-                    "q": "What is the critical difference between 'Angle of Attack' (AoA) and 'Pitch Attitude'?",
+                    "q": "Explain to your partner the difference between Angle of Attack (AoA) and Pitch Attitude. (Target stem: \"Pitch attitude is measured relative to..., whereas Angle of Attack is the angle between...\")",
                     "answer": "Pitch attitude is the angle of the aircraft's longitudinal axis relative to the horizon. Angle of attack (AoA) is the angle between the wing's chord line and the oncoming relative airflow. An aircraft can be in a nose-down attitude and still exceed the critical AoA!"
                   },
                   {
                     "id": 2,
-                    "q": "How does 'induced drag' differ from 'parasitic drag' as an aircraft accelerates?",
+                    "q": "Contrast induced drag and parasitic drag as an aircraft accelerates. (Target stem: \"As airspeed increases, parasitic drag increases because..., whereas induced drag decreases because...\")",
                     "answer": "Parasitic drag (friction and form drag) increases with the square of airspeed. Induced drag is the penalty for generating lift and decreases as airspeed increases. Total drag is minimized at the best glide speed (L/D max)."
                   },
                   {
                     "id": 3,
-                    "q": "Which primary flight control surface produces yaw, and around which axis does it rotate?",
+                    "q": "Explain which flight control surface produces yaw and its axis of rotation. (Target stem: \"Yaw is controlled by the..., which rotates the aircraft around its...\")",
                     "answer": "The rudder produces yaw, rotating the aircraft around its vertical (normal) axis. It is controlled by the pilot's rudder pedals."
                   },
                   {
                     "id": 4,
-                    "q": "What occurs aerodynamically when an airfoil exceeds its critical angle of attack?",
+                    "q": "Describe what occurs aerodynamically when a wing exceeds its critical angle of attack. (Target stem: \"When a wing exceeds its critical AoA, the airflow separates from..., resulting in...\")",
                     "answer": "The smooth boundary layer airflow separates from the upper wing surface, creating turbulent eddies, causing an abrupt loss of lift and a severe increase in drag—a stall."
                   }
                 ]
@@ -25571,13 +25577,13 @@
             "forcesPrinciples": {
               "modeBadges": [
                 "⚖️ Force Balance Analysis",
-                "⏱️ 8 min study + 12 min paired explanation",
+                "👥 Vector Analysis & Paired Presentation",
                 "🎯 Technical Equilibrium B2"
               ],
               "instructions": [
-                "Step 1 (Force Vector Review - 8 mins): Study the 4 forces interactive cards. Review the aerodynamic definitions, equilibrium equations, and how each vector acts on the aircraft center of gravity.",
-                "Step 2 (Maneuver Vector Challenge - 8 mins): In pairs, describe what happens to the vectors in 3 specific flight regimes: (1) Steady Climb, (2) 45-degree Coordinated Turn, (3) Clean Power-Off Glide.",
-                "Step 3 (Spoken Debrief - 4 mins): Volunteer or answer the teacher spot-check by explaining why total lift must increase during a banked turn to maintain altitude."
+                "Step 1 (Force Vector Review): Study the 4 forces interactive cards. Review the aerodynamic definitions, equilibrium equations, and how each vector acts on the aircraft center of gravity.",
+                "Step 2 (Maneuver Vector Challenge): In pairs, describe what happens to the vectors in 3 specific flight regimes: (1) Steady Climb, (2) 45-degree Coordinated Turn, (3) Clean Power-Off Glide.",
+                "Step 3 (Spoken Debrief): Volunteer or answer the teacher spot-check by explaining why total lift must increase during a banked turn to maintain altitude."
               ],
               "deliverable": "Clearly explain the force balance equations for both level flight and a banked turn in technical B2 English.",
               "teacherNotes": "Emphasize that lift acts perpendicular to the flight path / relative wind, while weight acts toward Earth's center. In a turn, vertical component of lift balances weight, requiring increased total lift (load factor / G-load).",
@@ -25617,13 +25623,13 @@
             "grammarClinic": {
               "modeBadges": [
                 "⚡ Cause & Effect Workshop",
-                "⏱️ 8 min grammar + 12 min drills",
+                "💬 Grammatical Precision & Cause-Effect Formulas",
                 "🎯 Technical Precision"
               ],
               "instructions": [
-                "Step 1 (Aerodynamic Conditionals - 8 mins): Review the grammatical formulas for scientific invariants (Zero Conditional: If + present $\\rightarrow$ present) and operational contingencies (First Conditional: If + present $\\rightarrow$ will + verb).",
-                "Step 2 (Interactive Sentence Drills - 7 mins): Complete the 4 fill-in-the-blank causal sentences, selecting the correct connector (unless, due to, results in, provided that).",
-                "Step 3 (Peer Verification - 5 mins): Compare answers with your partner. Say each sentence aloud with natural sentence stress on key aerodynamic terms before clicking \"Reveal Answer\"."
+                "Step 1 (Aerodynamic Conditionals): Review the grammatical formulas for scientific invariants (Zero Conditional: If + present $\\rightarrow$ present) and operational contingencies (First Conditional: If + present $\\rightarrow$ will + verb).",
+                "Step 2 (Interactive Sentence Drills): Complete the 4 fill-in-the-blank causal sentences, selecting the correct connector (unless, due to, results in, provided that).",
+                "Step 3 (Peer Verification): Compare answers with your partner. Say each sentence aloud with natural sentence stress on key aerodynamic terms before clicking \"Reveal Answer\"."
               ],
               "deliverable": "Flawlessly formulate 4 conditional aerodynamic statements with correct tense agreement and causal connectors.",
               "teacherNotes": "Warn students against common errors: using \"will\" in the if-clause (\"If airspeed will drop...\" ❌) and confusing \"due to\" (requires noun) with \"because\" (requires clause).",
@@ -25666,13 +25672,13 @@
             "axesGame": {
               "modeBadges": [
                 "🎮 Kinesthetic Simulator & Role-Play",
-                "⏱️ 12 min game + 18 min pilot debrief",
+                "🎮 Kinesthetic Simulation & Flight Deck Debrief",
                 "🗣️ Dynamic Control Surfaces"
               ],
               "instructions": [
-                "Step 1 (Kinesthetic Simulator Game - 12 mins): Partner A acts as Pilot Flying giving control commands (\"Applying left rudder to counter crosswind\"); Partner B acts as Aircraft, demonstrating the physical motion with their hands and naming the axis and surface movement. Swap roles after 6 minutes.",
-                "Step 2 (Role-Play Briefing - 10 mins): Partner A takes Role Card 1 (Flight Test Captain); Partner B takes Role Card 2 (Avionics & Flight Control Engineer). Simulate a post-flight debrief analyzing flight control feedback, trimming issues, or crosswind control authority.",
-                "Step 3 (Class Demo - 8 mins): One pair demonstrates an uncoordinated flight scenario (skid/slip) and explains the corrective rudder-aileron input to the class."
+                "Step 1 (Kinesthetic Simulator Game): Partner A acts as Pilot Flying giving control commands (\"Applying left rudder to counter crosswind\"); Partner B acts as Aircraft, demonstrating the physical motion with their hands and naming the axis and surface movement. Swap roles after 6 minutes.",
+                "Step 2 (Role-Play Briefing): Partner A takes Role Card 1 (Flight Test Captain); Partner B takes Role Card 2 (Avionics & Flight Control Engineer). Simulate a post-flight debrief analyzing flight control feedback, trimming issues, or crosswind control authority.",
+                "Step 3 (Class Demo): One pair demonstrates an uncoordinated flight scenario (skid/slip) and explains the corrective rudder-aileron input to the class."
               ],
               "deliverable": "A 2-minute fluent pilot-to-engineer debrief detailing control surface deflections and aircraft axis reactions.",
               "teacherNotes": "This high-energy activity builds muscular and spatial memory. Ensure students use correct technical verbs: deflect, pivot, rotate, yaw, roll, pitch up/down. Check for proper preposition use (around the vertical axis).",
@@ -25715,13 +25721,13 @@
             "stallScenario": {
               "modeBadges": [
                 "🚨 Cockpit Emergency Case Study",
-                "⏱️ 8 min reading + 15 min crew response + 7 min debrief",
+                "🚨 Operational Incident Analysis & Crew Callouts",
                 "🎯 Standard Operating Procedures"
               ],
               "instructions": [
-                "Step 1 (Scenario Analysis - 8 mins): Read the authentic flight deck incident transcript. Identify the dangerous aerodynamic misconception made by the First Officer (confusing altitude loss with pitch attitude).",
-                "Step 2 (Cockpit Communication & Callouts - 15 mins): In pairs, role-play the cockpit crew communication. Draft the Captain's clear callouts (\"STALL, I have control, pitching down\") and the First Officer's verbal confirmations.",
-                "Step 3 (Cockpit Debrief Role-Play - 7 mins): Role-play the debrief between Captain and FO after leveling off at FL330. Address crew resource management (CRM), sensor iced-over pitot tubes, and aerodynamic AoA awareness."
+                "Step 1 (Scenario Analysis): Read the authentic flight deck incident transcript. Identify the dangerous aerodynamic misconception made by the First Officer (confusing altitude loss with pitch attitude).",
+                "Step 2 (Cockpit Communication & Callouts): In pairs, role-play the cockpit crew communication. Draft the Captain's clear callouts (\"STALL, I have control, pitching down\") and the First Officer's verbal confirmations.",
+                "Step 3 (Cockpit Debrief Role-Play): Role-play the debrief between Captain and FO after leveling off at FL330. Address crew resource management (CRM), sensor iced-over pitot tubes, and aerodynamic AoA awareness."
               ],
               "deliverable": "A clear 3-step cockpit communication script followed by an authentic 2-minute cockpit CRM debrief.",
               "teacherNotes": "Reference high-profile real-world accidents (AF447, Colgan 3407) where pulling back on the stick stalled the aircraft into the ground or ocean. Reinforce the aerodynamic invariant: The only way to recover from a stall is to reduce the angle of attack below the critical limit.",
@@ -25737,13 +25743,13 @@
             "closingReview": {
               "modeBadges": [
                 "🏁 Final Technical Wrap-Up",
-                "⏱️ 5 min audit + 5 min pronunciation",
+                "🎯 Mastery Audit & Pronunciation Clinic",
                 "🎯 Aerodynamic Vocabulary Mastery"
               ],
               "instructions": [
-                "Step 1 (Core Checkpoints Audit - 5 mins): In pairs, run through the 3 technical checkpoints. Confirm you can explain the 4 forces, 3 axes, and stall recovery without hesitation.",
-                "Step 2 (Pronunciation Rapid Fire - 3 mins): Drill the tricky multisyllabic aerodynamic terms (ae-ro-dy-NAM-ic, al-ti-tude, e-qui-LIB-ri-um, hor-i-ZON-tal, sta-bi-LI-zer).",
-                "Step 3 (Self-Study Assignment - 2 mins): Review the 18 vocabulary flashcards in the Revision tab and complete the 5 TOEIC questions for Session 1 before Session 2."
+                "Step 1 (Core Checkpoints Audit): In pairs, run through the 3 technical checkpoints. Confirm you can explain the 4 forces, 3 axes, and stall recovery without hesitation.",
+                "Step 2 (Pronunciation Rapid Fire): Drill the tricky multisyllabic aerodynamic terms (ae-ro-dy-NAM-ic, al-ti-tude, e-qui-LIB-ri-um, hor-i-ZON-tal, sta-bi-LI-zer).",
+                "Step 3 (Self-Study Assignment): Review the 18 vocabulary flashcards in the Revision tab and log your weekly portfolio reflections."
               ],
               "deliverable": "Verbally confirm mastery of the 3 technical checkpoints and demonstrate accurate stress placement on key aerodynamic terms.",
               "teacherNotes": "Quickly drill the class on word stress for \"aerodynamics\" (stress on NAM) and \"equilibrium\" (stress on LIB). Preview Session 2: Aircraft Anatomy (internal systems and external walkarounds).",
@@ -25886,7 +25892,7 @@
                 "heading": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
                 "snippet": "Examining how blended winglets, sharklets, and raked wingtips dissipate powerful wingtip vortices, reducing induced drag by up to 5% on commercial airliners.",
                 "url": "https://aviationweek.com",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "title": "How Modern Wingtip Devices Cut Induced Drag and Fuel Burn",
                 "summary": "Examining how blended winglets, sharklets, and raked wingtips dissipate powerful wingtip vortices, reducing induced drag by up to 5% on commercial airliners.",
                 "content": [
@@ -25913,7 +25919,7 @@
                 "heading": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
                 "snippet": "Reviewing the physics of angle of attack, boundary layer separation, stick shaker tactile warnings, and fly-by-wire flight envelope protection systems.",
                 "url": "https://flightsafety.org",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "title": "Understanding Aerodynamic Stalls in Commercial Jet Operations",
                 "summary": "Reviewing the physics of angle of attack, boundary layer separation, stick shaker tactile warnings, and fly-by-wire flight envelope protection systems.",
                 "content": [
@@ -26427,7 +26433,7 @@
               "instructions": [
                 "Step 1 (Spatial Grammar Analysis - 7 mins): Review the spatial preposition patterns and functional relative clauses ('located aft of', 'mounted flush with', 'which serves to prevent').",
                 "Step 2 (Guided Description Drills - 8 mins): Using the airframe diagram, construct 3 complex sentences locating antennas, sensors, and structural panels relative to major datum lines.",
-                "Step 3 (Peer Verification - 5 mins): Read your descriptions to your partner. They must identify the exact airframe zone based solely on your verbal cues."
+                "Step 3 (Peer Verification): Read your descriptions to your partner. They must identify the exact airframe zone based solely on your verbal cues."
               ],
               "deliverable": "Produce 3 grammatically sound spoken technical sentences combining spatial prepositions with functional relative clauses.",
               "teacherNotes": "Drill the prepositional phrases that often cause trouble: 'forward of', 'aft of', 'inboard of', 'outboard of', 'underneath the belly'. Insist on relative clauses: '...which is designed to relieve...', '...through which air flows...'.",
@@ -26676,7 +26682,7 @@
                 "heading": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
                 "snippet": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
                 "url": "https://aerospaceamerica.aiaa.org",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "title": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
                 "summary": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
                 "content": [
@@ -26703,7 +26709,7 @@
                 "heading": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
                 "snippet": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
                 "url": "https://www.aviationpros.com",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "title": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
                 "summary": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
                 "content": [
@@ -27408,7 +27414,7 @@
                 "heading": "The Rise of the Long-Range Narrowbody: How the A321XLR is Reshaping Aviation",
                 "snippet": "Analyzing how long-range single-aisle airliners replace traditional widebodies on secondary transatlantic routes, transforming point-to-point airline economics.",
                 "url": "https://www.flightglobal.com",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "title": "The Rise of the Long-Range Narrowbody: How the A321XLR is Reshaping Aviation",
                 "summary": "Analyzing how long-range single-aisle airliners replace traditional widebodies on secondary transatlantic routes, transforming point-to-point airline economics.",
                 "content": [
@@ -27435,7 +27441,7 @@
                 "heading": "Airbus, Boeing, and the Global Duopoly: Supply Chain Realities and Emerging Rivals",
                 "snippet": "Examining historic commercial order backlogs, titanium supply bottlenecks, assembly plant throughput, and China's COMAC C919 entering the global market.",
                 "url": "https://aviationweek.com",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "title": "Airbus, Boeing, and the Global Duopoly: Supply Chain Realities and Emerging Rivals",
                 "summary": "Examining historic commercial order backlogs, titanium supply bottlenecks, assembly plant throughput, and China's COMAC C919 entering the global market.",
                 "content": [
@@ -28156,7 +28162,7 @@
                 "heading": "From Tragedy to Technology: How Historical Accidents Made Modern Flying the Safest Transit Mode",
                 "snippet": "Tracing the birth of modern aviation safety: how investigation insights produced Crew Resource Management (CRM), TCAS collision avoidance, and terrain warning systems.",
                 "url": "https://flightsafety.org",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "title": "From Tragedy to Technology: How Historical Accidents Made Modern Flying the Safest Transit Mode",
                 "summary": "Tracing the birth of modern aviation safety: how investigation insights produced Crew Resource Management (CRM), TCAS collision avoidance, and terrain warning systems.",
                 "content": [
@@ -28183,7 +28189,7 @@
                 "heading": "The Role of Independent Technical Investigation in Preventing Future Accidents",
                 "snippet": "Examining ICAO Annex 13 non-punitive investigation principles: flight data recorder analysis, metallurgy testing, and issuing binding safety recommendations without assigning blame.",
                 "url": "https://www.bea.aero/en",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "title": "The Role of Independent Technical Investigation in Preventing Future Accidents",
                 "summary": "Examining ICAO Annex 13 non-punitive investigation principles: flight data recorder analysis, metallurgy testing, and issuing binding safety recommendations without assigning blame.",
                 "content": [
@@ -28556,6 +28562,7 @@
       "sessions": {
         "1": {
           "session": 1,
+          "title": "Aerodynamics & Flight Principles",
           "objectives": {
             "title": "Session 1 Objectives - Health & Human Factors in Aviation",
             "summary": "By the end of this session, you will be able to recognize and report in-flight medical emergencies, analyze pilot and controller fatigue using scientific human factors frameworks, apply the IMSAFE self-assessment model, execute a medical diversion decision protocol, and pronounce aeromedical vocabulary with accurate syllable stress.",
@@ -28845,7 +28852,7 @@
                 "sourceTag": "Aerospace Medical Association • In-Flight Clinical Protocols",
                 "heading": "Medical Diversions in Long-Haul Commercial Operations: Clinical Decision Metrics",
                 "snippet": "Analyzing captain decision-making during in-flight medical crises: satellite telemedicine telemetry, diversion airfield selection, emergency fuel dumping, and passenger care.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.asma.org",
                 "title": "Medical Diversions in Long-Haul Commercial Operations: Clinical Decision Metrics",
                 "summary": "Analyzing captain decision-making during in-flight medical crises: satellite telemedicine telemetry, diversion airfield selection, emergency fuel dumping, and passenger care.",
@@ -28872,7 +28879,7 @@
                 "sourceTag": "FAA & EASA Flight Time Limitations (FTL) Digest",
                 "heading": "Fatigue and Alertness Management: Mitigating Circadian Lows in Trans-Meridian Flight",
                 "snippet": "Examining Flight Time Limitations, Window of Circadian Low (WOCL) vulnerabilities, augmented flight crew rotations, and controlled flight deck rest protocols.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.easa.europa.eu",
                 "title": "Fatigue and Alertness Management: Mitigating Circadian Lows in Trans-Meridian Flight",
                 "summary": "Examining Flight Time Limitations, Window of Circadian Low (WOCL) vulnerabilities, augmented flight crew rotations, and controlled flight deck rest protocols.",
@@ -29627,7 +29634,7 @@
                 "sourceTag": "FAA Aviation Safety Study • Low-Level Windshear",
                 "heading": "Microburst Aerodynamics and Airborne Detection: The Legacy of Delta 191",
                 "snippet": "Reviewing low-level windshear physics, terminal Doppler weather radar, predictive windshear avionics, and the standardized escape maneuver.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
                 "title": "Microburst Aerodynamics and Airborne Detection: The Legacy of Delta 191",
                 "summary": "Reviewing low-level windshear physics, terminal Doppler weather radar, predictive windshear avionics, and the standardized escape maneuver.",
@@ -29654,7 +29661,7 @@
                 "sourceTag": "Volcanic Ash Advisory Centre (VAAC) • Technical Review",
                 "heading": "Silicate Ingestion and Turbine Glass Formation in Volcanic Ash Clouds",
                 "snippet": "Understanding how fine silicate particulates melt inside jet engine combustion chambers, coat turbine blades with molten glass, and trigger multi-engine flameouts.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://skybrary.aero/articles/volcanic-ash",
                 "title": "Silicate Ingestion and Turbine Glass Formation in Volcanic Ash Clouds",
                 "summary": "Understanding how fine silicate particulates melt inside jet engine combustion chambers, coat turbine blades with molten glass, and trigger multi-engine flameouts.",
@@ -30418,7 +30425,7 @@
                 "sourceTag": "ICAO Security Standards • Montreal Convention Review",
                 "heading": "Safety vs. Security: Legal Jurisdictions and Operational Parity under ICAO",
                 "snippet": "Distinguishing between aviation safety and aviation security: Annex 17 mandates, Tokyo/Montreal legal conventions, and in-flight security officer (IFSO) jurisdiction.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.icao.int",
                 "title": "Safety vs. Security: Legal Jurisdictions and Operational Parity under ICAO",
                 "summary": "Distinguishing between aviation safety and aviation security: Annex 17 mandates, Tokyo/Montreal legal conventions, and in-flight security officer (IFSO) jurisdiction.",
@@ -30445,7 +30452,7 @@
                 "sourceTag": "EASA Part-M & Part-145 Maintenance Handbook",
                 "heading": "The Pre-Flight Walkaround: Anatomy of a Critical Line Inspection",
                 "snippet": "A detailed technical breakdown of exterior aircraft inspections: checking brake wear pins, tire cord exposure, hydraulic leak limits, and static wick bonding.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.easa.europa.eu",
                 "title": "The Pre-Flight Walkaround: Anatomy of a Critical Line Inspection",
                 "summary": "A detailed technical breakdown of exterior aircraft inspections: checking brake wear pins, tire cord exposure, hydraulic leak limits, and static wick bonding.",
@@ -31171,7 +31178,7 @@
                 "sourceTag": "IATA Crisis Communications Best Practices",
                 "heading": "Crisis Communication in Commercial Aviation: Press Briefings Under Scrutiny",
                 "snippet": "Examining airline and airport crisis management: delivering factual statements, handling social media speculation, and supporting passenger families during emergency events.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.iata.org",
                 "title": "Crisis Communication in Commercial Aviation: Press Briefings Under Scrutiny",
                 "summary": "Examining airline and airport crisis management: delivering factual statements, handling social media speculation, and supporting passenger families during emergency events.",
@@ -31198,7 +31205,7 @@
                 "sourceTag": "ICAO Safety Management Systems (SMS) 50-Year Retrospective",
                 "heading": "The Evolution of Modern Commercial Flight Safety: A 50-Year Retrospective",
                 "snippet": "Tracing aviation safety's historic transformation: from early fly-fix-fly cycles to modern predictive Safety Management Systems (SMS) and global data sharing.",
-                "readTime": "5 min read",
+                "topicFocus": "Aerodynamics & Flight Efficiency",
                 "url": "https://www.icao.int",
                 "title": "The Evolution of Modern Commercial Flight Safety: A 50-Year Retrospective",
                 "summary": "Tracing aviation safety's historic transformation: from early fly-fix-fly cycles to modern predictive Safety Management Systems (SMS) and global data sharing.",

@@ -2,18 +2,18 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-24T10:20:45.163Z
+# Generated: 2026-11-24T10:44:10.120Z
 # ============================================================================
 
-6cbb64b97fc9674eb007d71465391ecb085005d23cb4167543c5d173b070b2b9  imsmanifest.xml
+9bb8bf54e2d52d8009558b639316bb492eebecd2fd52bc3f33b50f795d4c773f  imsmanifest.xml
 73b955dac024a85d862aaf01246d4d18b4fdd2df9742bd4142d5fb6330f65133  COPYRIGHT.md
-3f36c50ffd72db986dc09e4e0182f48da304bb39c4ff62d9d98a9f842f7cd423  index.html
+af452deff36b27b865655bbf5dda3440524e9a3617028c719800a9865ad695fe  index.html
 21620c1d34a82d0a5bf3e259ed5634a4f836c0a0b3298afd7aa619939dc06536  admin.html
 438013b62da4a37d3227a380723251ae389ee216022e88641b7374183afcfa01  presentation.html
 9b942f25da36225224e622900519317a99e933076c0331a6ead9637d0c6c9ea6  portfolio.html
 93414830a71d1cb256196bf3bfde0a845a3a563520b07112247290d75c75b9aa  immersion.html
-a6727dfe6481717a180692445592463380993987a419dc6a6c26b56f006a8190  output.css
-1a6aeda171c9651f0fa6af9e7fb3a9bef17b1974253a8dcd7f9eb1db77948c7f  data/course-data.js
+9f6d24d876419ac3f292d5f5dc6be5aa00ce31fb306d89af7478c03f4f3afa01  output.css
+ca70d346a761c7e029a2a7f3bbfeb8f8f9096425067248946767184ff481243c  data/course-data.js
 f1a805fd7cb605444d809257b4addcaf69a069e1a21ab363ee70882eca76245c  data/portfolio-latest.csv
 7447c6869dc7828b8b60b398767ad3a3de0b512af5f706dfc970daf76449a8a2  data/portfolio-summary-s1.json
 bfac1fbaa7fb337e34eed50c87e7a9a449c5be80112aeed6c2ae0254e0724881  images/aas_m1card1.jpg
@@ -70,3 +70,4 @@ c618fe246e85887aca5775cb9589cfbe4db27d865ef4d1f9456aaf82f3c8cd9b  docs/GSEA_S1_M
 bbaa9e0d7d0f05d587b986ba9bd89a9e424eadad4935b0db2eb087903c98ecce  docs/GSEA_S1_M1_AG_S4_Lesson_Worksheet.pdf
 c4e2c8cf54a33812821eae3c7a772cee07ade1cf2527610e1736630b30200dc2  docs/GSEA_S1_M1_AT_S3_Lesson_Worksheet.pdf
 23fad09924fe6c811f24e1b55ffd2cb8eb4aa1a56b10e4e55aa30429626ea8e4  docs/GSEA_S1_M1_AT_S4_Lesson_Worksheet.pdf
+b4e3bae192f95f28614ae0f7c3aefd5924a113c23c079cdaefe79a09f80847f8  docs/GSEA_S1_M2_AT_S1_Lesson_Worksheet.pdf

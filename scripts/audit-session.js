@@ -156,9 +156,9 @@ if (fs.existsSync(templateDir)) {
     // Look for track-specific function first, then generic session function
     let fnRegex;
     if (target.track === 'ag') {
-      fnRegex = new RegExp(`(?:function\\s+renderAgLessonContentTabSession${target.sessionNum}\\b[\\s\\S]*?)(?=function\\s+render[A-Za-z0-9_]*LessonContentTabSession|window\\.__|module\\.exports|$)`, 'i');
+      fnRegex = new RegExp(`(?:function\\s+renderAg(?:[0-9])?LessonContentTabSession${target.sessionNum}\\b[\\s\\S]*?)(?=function\\s+render[A-Za-z0-9_]*LessonContentTabSession|window\\.__|module\\.exports|$)`, 'i');
     } else {
-      fnRegex = new RegExp(`(?:function\\s+render(?:Aas|At)?LessonContentTabSession${target.sessionNum}\\b[\\s\\S]*?)(?=function\\s+render[A-Za-z0-9_]*LessonContentTabSession|window\\.__|module\\.exports|$)`, 'i');
+      fnRegex = new RegExp(`(?:function\\s+render(?:Aas|At)?(?:[0-9])?LessonContentTabSession${target.sessionNum}\\b[\\s\\S]*?)(?=function\\s+render[A-Za-z0-9_]*LessonContentTabSession|window\\.__|module\\.exports|$)`, 'i');
     }
     
     let match = text.match(fnRegex);
