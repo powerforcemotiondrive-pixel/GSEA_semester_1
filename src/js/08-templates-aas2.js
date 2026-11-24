@@ -631,7 +631,7 @@
                   ${videoLab.videoTitle || 'How a Jet Airliner Works: Airframe, Flight Controls &amp; Systems'}
                 </h4>
                 <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-300 shadow-md">
-                  <iframe class="w-full h-full" src="${videoLab.videoUrl || 'https://www.youtube-nocookie.com/embed/NZLbTuBDhJg'}" title="How a Jet Airliner Works: Airframe, Flight Controls &amp; Systems" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe class="w-full h-full" src="${videoLab.videoUrl || 'https://www.youtube.com/embed/NZLbTuBDhJg'}" title="How a Jet Airliner Works: Airframe, Flight Controls &amp; Systems" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="flex items-center justify-between pt-1 text-[11px]">
                   <span class="text-[10px] text-slate-400 font-mono">${videoLab.channel || 'Animagraffs • 3D Aircraft Systems &amp; Engineering'}</span>

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 2 Lesson Worksheet - Sustainable Cities &amp; Low-Emission Mobility</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 1 General English (AG • LV101E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.2pt;
+      line-height: 1.32;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    .doc-header {
+      border-bottom: 2px solid #059669;
+      padding-bottom: 4px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #047857;
+      text-transform: uppercase;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, monospace;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .doc-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 3px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 6.8pt;
+      color: #64748b;
+    }
+
+    h1 {
+      font-size: 13.5pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.3px;
+      line-height: 1.15;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 9.5pt;
+      font-weight: 800;
+      color: #047857;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 6.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 1.5px 5px;
+      border-radius: 3px;
+    }
+
+    .badge-primary { background: #059669; color: #ffffff; }
+    .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-slate { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-family: ui-monospace, monospace; }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 8px;
+      background: #ffffff;
+      margin-bottom: 5px;
+    }
+
+    .card-left-green {
+      border-left: 3.5px solid #059669;
+      background: #ffffff;
+    }
+
+    .card-left-amber {
+      border-left: 3.5px solid #f59e0b;
+      background: #ffffff;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+    }
+
+    table.tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.2pt;
+      margin-bottom: 5px;
+    }
+
+    table.tech-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      text-align: left;
+      padding: 4px 6px;
+      font-weight: 700;
+      border: 1px solid #cbd5e1;
+      text-transform: uppercase;
+      font-size: 6.5pt;
+      letter-spacing: 0.4px;
+    }
+
+    table.tech-table td {
+      padding: 3.5px 6px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #334155;
+    }
+
+    table.tech-table tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    .write-in-line {
+      border-bottom: 1px dotted #94a3b8;
+      height: 14px;
+      margin-bottom: 2px;
+    }
+
+    .stem {
+      display: block;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #059669;
+      padding: 3.5px 6px;
+      border-radius: 4px;
+      font-size: 7.2pt;
+      color: #334155;
+      margin-top: 3px;
+    }
+
+    .rubric-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.2pt;
+      margin-top: 4px;
+    }
+
+    .rubric-table th {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 3.5px 6px;
+      font-weight: 700;
+      font-size: 6.5pt;
+      text-align: left;
+    }
+
+    .rubric-table td {
+      padding: 3px 6px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+    }
+
+    .vocab-col {
+      font-size: 7.1pt;
+      line-height: 1.25;
+    }
+
+    .term-name { font-weight: 800; color: #0f172a; }
+    .term-ipa { font-family: ui-monospace, monospace; color: #059669; font-size: 6.6pt; }
+    .term-def { color: #475569; margin-bottom: 3.5px; }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- PAGE 1: BRIEFING, OBJECTIVES & VOCAB CLINIC -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 2</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S2 • PAGE 1/7</span>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+      <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 2px;">
+        <span class="badge badge-primary">SEMINAR WORKSHEET</span>
+        <span class="badge badge-slate">SESSION 02 • 120 MINS</span>
+        <span class="badge badge-amber">B2 COMMUNICATIVE LAB</span>
+      </div>
+      <h1>Sustainable Cities &amp; Low-Emission Mobility</h1>
+      <p style="font-size: 7.8pt; color: #64748b; margin-top: 1px;">
+        Sponge Cities, Multimodal Transit Integration &amp; 15-Minute Urban Districts
+      </p>
+    </div>
+
+    <div class="card card-left-green" style="margin-bottom: 6px;">
+      <h3 style="color: #047857;">Session Learning Objectives</h3>
+      <div class="grid-2" style="font-size: 7.2pt; gap: 4px;">
+        <div>&bull; <strong>Urban Microclimates:</strong> Explain the Urban Heat Island effect and 15-minute city planning using clear sentence stems.</div>
+        <div>&bull; <strong>Sponge City Hydraulics:</strong> Analyze nature-based storm absorption, bioretention, and permeable pavement matrices.</div>
+        <div>&bull; <strong>Double Comparatives:</strong> Master proportional change formulas (<em>The denser the network, the lower the emissions</em>).</div>
+        <div>&bull; <strong>Contrast Connectors:</strong> Deploy formal connecting words for contrast (<em>whereas, nevertheless, despite</em>) in policy debates.</div>
+        <div>&bull; <strong>Urban Design Sprint:</strong> Collaborate in pairs to formulate 3 low-emission corridor interventions with peer observer rubric.</div>
+        <div>&bull; <strong>Policy Debate &amp; Quiz:</strong> Debate banning short-haul flights under 2.5h rail and complete 10-question technical mastery quiz.</div>
+      </div>
+    </div>
+
+    <h2>Technical Vocabulary Clinic: 18 Essential Urban Mobility Terms</h2>
+    <div class="grid-3 card" style="margin-bottom: 6px;">
+      <div class="vocab-col">
+        <div><span class="term-name">1. Sponge City</span> <span class="term-ipa">/ˈspʌndʒ ˌsɪt.i/</span></div>
+        <div class="term-def">Urban planning model using nature-based systems to absorb and filter rainwater.</div>
+
+        <div><span class="term-name">2. Urban Heat Island</span> <span class="term-ipa">/ˌɜː.bən ˈhiːt/</span></div>
+        <div class="term-def">Metropolitan area significantly warmer than rural zones due to dark pavement and waste heat.</div>
+
+        <div><span class="term-name">3. 15-Minute City</span> <span class="term-ipa">/ˌfɪf.tiːn ˈmɪn.ɪt/</span></div>
+        <div class="term-def">Urban model where daily necessities are reachable in 15 mins by walking or cycling.</div>
+
+        <div><span class="term-name">4. Permeable Paving</span> <span class="term-ipa">/ˈpɜː.mi.ə.bəl/</span></div>
+        <div class="term-def">Porous surfacing material allowing stormwater to seep through into subsoil.</div>
+
+        <div><span class="term-name">5. Bioretention Basin</span> <span class="term-ipa">/ˌbaɪ.əʊ.rɪˈten.ʃən/</span></div>
+        <div class="term-def">Landscaped depression designed to slow, filter, and infiltrate stormwater runoff.</div>
+
+        <div><span class="term-name">6. Intermodal Connectivity</span> <span class="term-ipa">/ˌɪn.təˈməʊ.dəl/</span></div>
+        <div class="term-def">Seamless integration between air, rail, metro, bus, and micro-mobility modes.</div>
+      </div>
+
+      <div class="vocab-col">
+        <div><span class="term-name">7. Transit-Oriented Dev.</span> <span class="term-ipa">/ˈtræn.zɪt/</span></div>
+        <div class="term-def">High-density mixed-use development concentrated around mass transit nodes.</div>
+
+        <div><span class="term-name">8. Active Mobility</span> <span class="term-ipa">/ˈæk.tɪv məʊˈbɪl.ə.ti/</span></div>
+        <div class="term-def">Dedicated corridors reserved for walking, cycling, and human-powered transport.</div>
+
+        <div><span class="term-name">9. Congestion Pricing</span> <span class="term-ipa">/kənˈdʒes.tʃən/</span></div>
+        <div class="term-def">Regulatory fee charged to drivers entering city centers during peak commute hours.</div>
+
+        <div><span class="term-name">10. Low-Emission Zone</span> <span class="term-ipa">/ˌləʊ ɪˈmɪʃ.ən/</span></div>
+        <div class="term-def">Designated zone where polluting vehicles are banned or penalized to improve air quality.</div>
+
+        <div><span class="term-name">11. Decarbonization</span> <span class="term-ipa">/diːˌkɑː.bən.aɪˈzeɪ.ʃən/</span></div>
+        <div class="term-def">Scheduled strategic path toward achieving net-zero carbon output in transit.</div>
+
+        <div><span class="term-name">12. Multi-Modal Hub</span> <span class="term-ipa">/ˌmʌl.tiˈməʊ.dəl/</span></div>
+        <div class="term-def">Central interchange enabling frictionless transfers between air, rail, and micro-transit.</div>
+      </div>
+
+      <div class="vocab-col">
+        <div><span class="term-name">13. Aquifer Recharge</span> <span class="term-ipa">/ˈæk.wɪ.fər/</span></div>
+        <div class="term-def">Hydrological process where surface water percolates downward to replenish groundwater.</div>
+
+        <div><span class="term-name">14. Peak Runoff Attenuation</span> <span class="term-ipa">/əˌten.juˈeɪ.ʃən/</span></div>
+        <div class="term-def">Intentional buffering and delay of stormwater release to avoid municipal sewer overload.</div>
+
+        <div><span class="term-name">15. Bioswale</span> <span class="term-ipa">/ˈbaɪ.əʊ.sweɪl/</span></div>
+        <div class="term-def">Vegetated drainage channels designed to convey stormwater while removing silt.</div>
+
+        <div><span class="term-name">16. Last-Mile Transit</span> <span class="term-ipa">/ˌlɑːst ˈmaɪl/</span></div>
+        <div class="term-def">Lightweight zero-emission vehicles (e-bikes, e-scooters) for final trip legs.</div>
+
+        <div><span class="term-name">17. District Cooling</span> <span class="term-ipa">/ˈdɪs.trɪkt ˈkuː.lɪŋ/</span></div>
+        <div class="term-def">Centralized network distributing chilled water through insulated pipes to cool buildings.</div>
+
+        <div><span class="term-name">18. Modal Split</span> <span class="term-ipa">/ˈməʊ.dəl ˌsplɪt/</span></div>
+        <div class="term-def">The percentage share of travelers using a specific transport mode across a network.</div>
+      </div>
+    </div>
+
+    <h2>Part 1: Urban Innovation News Scan &amp; Oral Diagnostic</h2>
+    <div class="grid-2" style="font-size: 7.2pt;">
+      <div class="card card-left-green">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 2px;">Q1: Urban Heat Island (UHI) Effect &amp; Amplifying Factors</div>
+        <div class="stem">Prompt: "The Urban Heat Island effect is caused by..., which results in..."</div>
+      </div>
+      <div class="card card-left-green">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 2px;">Q2: Core Principles of Sponge City Design</div>
+        <div class="stem">Prompt: "Rather than channeling rainwater into storm sewers, a sponge city..."</div>
+      </div>
+      <div class="card card-left-green">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 2px;">Q3: Carlos Moreno's '15-Minute City' Concept</div>
+        <div class="stem">Prompt: "The core premise of the 15-minute city is that residents can reach..."</div>
+      </div>
+      <div class="card card-left-green">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 2px;">Q4: Permeable Paving vs. Conventional Asphalt</div>
+        <div class="stem">Prompt: "Conventional asphalt forms an impermeable barrier that..., whereas permeable paving features..."</div>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 1 &bull; Diagnostic Warm-Up &amp; Urban Mobility Vocabulary</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 2: VIDEO LAB: SPONGE CITIES HYDRAULICS -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 2</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S2 • PAGE 2/7</span>
+    </div>
+
+    <h2>Part 2: Technical Reading &amp; Video Lab — Sponge Cities &amp; Flood Resilience</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Multi-Column Noticeboard: Nature-Based Infrastructure, Bioretention Hydraulics &amp; Aquifer Recharge
+    </p>
+
+    <div class="grid-2" style="gap: 7px; margin-bottom: 5px;">
+      <!-- Left Column: Case Synopsis & Concept Table -->
+      <div class="card card-left-green">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <h3 style="color: #047857;">Technical Case Study</h3>
+          <span class="badge badge-slate">CIVIL ENGINEERING</span>
+        </div>
+        <p style="font-size: 7.1pt; color: #334155; line-height: 1.25; margin-bottom: 5px;">
+          <strong>Case Overview: Sponge City Hydraulics:</strong> Conventional urban storm drainage relies on concrete culverts designed to evacuate rainwater as fast as possible, which overloads downstream rivers and creates catastrophic flood crests. In contrast, the Sponge City paradigm mimics natural hydrology. Through permeable pavements, bioswales, rain gardens, and subsurface detention aquifers, it absorbs, purifies, and stores stormwater locally, shaving off peak runoff and cooling surrounding districts via evapotranspiration.
+        </p>
+
+        <table class="tech-table">
+          <thead>
+            <tr>
+              <th>Nature-Based System</th>
+              <th>Hydrological Mechanism</th>
+              <th>Urban Benefit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Bioretention Basin</strong></td>
+              <td>Engineered vegetation and stratified soil filtration.</td>
+              <td>Removes 90% of toxic hydrocarbons and heavy metals.</td>
+            </tr>
+            <tr>
+              <td><strong>2. Permeable Pavement</strong></td>
+              <td>Open-void porous matrix over coarse gravel bed.</td>
+              <td>Eliminates surface standing puddles &amp; hydroplaning.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Subsurface Aquifer</strong></td>
+              <td>Underground retention chambers for deep percolation.</td>
+              <td>Recharges groundwater table for dry season irrigation.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 4px; padding: 4px 6px; font-size: 6.9pt; color: #065f46; margin-top: 4px;">
+          <strong>Key Civil Engineering Takeaway:</strong> Retrofitting airport access roads and car parks with permeable concrete reduces stormwater peak runoff by up to 40%, but requires regular vacuum-sweeping maintenance to prevent jet fuel particulates and rubber soot from clogging voids.
+        </div>
+      </div>
+
+      <!-- Right Column: Guided Viewing Prompts -->
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <h3 style="color: #0f172a;">Guided Viewing Discussion</h3>
+          <span class="badge badge-amber">ORAL ANALYSIS</span>
+        </div>
+        <p style="font-size: 7.1pt; color: #475569; margin-bottom: 5px;">
+          Watch the video analysis in the learning deck. In pairs, discuss and answer the three questions:
+        </p>
+
+        <div style="margin-bottom: 5px;">
+          <div style="font-weight: 700; color: #0f172a; font-size: 7.2pt;">Q1. Evapotranspiration vs. Concrete:</div>
+          <div style="font-size: 7pt; color: #475569; font-style: italic;">How does green vegetated infrastructure actively lower urban ambient temperatures?</div>
+          <div class="write-in-line"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div style="margin-bottom: 5px;">
+          <div style="font-weight: 700; color: #0f172a; font-size: 7.2pt;">Q2. Peak Runoff Attenuation:</div>
+          <div style="font-size: 7pt; color: #475569; font-style: italic;">Why is delaying stormwater release more effective than constructing wider concrete sewer pipes?</div>
+          <div class="write-in-line"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div style="margin-bottom: 5px;">
+          <div style="font-weight: 700; color: #0f172a; font-size: 7.2pt;">Q3. Airport Apron Retrofitting:</div>
+          <div style="font-size: 7pt; color: #475569; font-style: italic;">What engineering constraints arise when installing permeable paving in heavy aircraft maintenance zones?</div>
+          <div class="write-in-line"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 6.8pt; color: #334155;">
+          <strong>Vocabulary Spotlight:</strong> <em>Peak Runoff Attenuation</em> &bull; <em>Subsurface Aquifer Recharge</em> &bull; <em>Bioswale</em> &bull; <em>Permeable Concrete</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Spoken Briefing Rubric -->
+    <div class="card card-left-green">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #047857;">Pair Spoken Briefing: Sponge Infrastructure Summary</h3>
+        <span class="badge badge-primary">STUDENT PRESENTATION</span>
+      </div>
+      <p style="font-size: 7.1pt; color: #334155; line-height: 1.25;">
+        <strong>Pair Task:</strong> Student A briefs Student B on how a metropolitan airport authority can replace 50 hectares of asphalt parking with nature-based bioswales and permeable paving without reducing vehicle capacity. Student B audits the explanation for technical terms (<em>infiltration, attenuation, aquifer</em>).
+      </p>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 2 &bull; Technical Reading &amp; Video Lab: Sponge Cities</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 3: LANGUAGE CLINIC: COMPARATIVES & CONTRAST -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 2</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S2 • PAGE 3/7</span>
+    </div>
+
+    <h2>Part 3: Language Clinic — Double Comparatives &amp; Contrast Connectors</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Mastering Proportional Change Structures &amp; Connecting Words for Environmental Policy Discourse
+    </p>
+
+    <!-- Grammar Rule Reference Cards -->
+    <div class="grid-2" style="gap: 6px; margin-bottom: 6px;">
+      <div class="card card-left-green">
+        <h3 style="color: #047857; font-size: 7.5pt;">1. Double Comparatives (Proportional Change)</h3>
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 3px; padding: 2px 4px; font-family: ui-monospace, monospace; font-size: 6.8pt; color: #047857; margin-bottom: 4px;">
+          The + comparative..., the + comparative...
+        </div>
+        <div style="font-size: 7pt; color: #334155; line-height: 1.25;">
+          Expresses how a change in one variable directly drives a change in another:<br>
+          &bull; <em>"The denser the transit network, the lower the per-capita emissions."</em><br>
+          &bull; <em>"The more permeable the pavement surface, the less severe the flood crest."</em>
+        </div>
+      </div>
+
+      <div class="card card-left-green">
+        <h3 style="color: #047857; font-size: 7.5pt;">2. Connecting Words for Contrast</h3>
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 3px; padding: 2px 4px; font-family: ui-monospace, monospace; font-size: 6.8pt; color: #047857; margin-bottom: 4px;">
+          Clause A + [whereas / nevertheless / despite] + Clause B
+        </div>
+        <div style="font-size: 7pt; color: #334155; line-height: 1.25;">
+          Highlights divergence between two policies or technologies:<br>
+          &bull; <strong>whereas / while:</strong> direct factual contrast between two subjects.<br>
+          &bull; <strong>nevertheless:</strong> surprising counter-point (starts independent clause).<br>
+          &bull; <strong>despite + noun phrase:</strong> unexpected outcome notwithstanding an obstacle.
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Transformation Exercises -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="color: #0f172a; margin-bottom: 4px;">Written Transformation Drills</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 5px;">
+        Combine or transform the urban sustainability statements using the target grammar formula:
+      </p>
+
+      <div style="margin-bottom: 6px;">
+        <div style="font-size: 7.2pt; color: #0f172a;"><strong>[Exercise 1 — Combine into a Double Comparative]</strong></div>
+        <div style="font-size: 7pt; color: #475569; font-style: italic;">
+          "As cities become more walkable, private car usage declines rapidly."
+        </div>
+        <div class="write-in-line"></div>
+      </div>
+
+      <div style="margin-bottom: 6px;">
+        <div style="font-size: 7.2pt; color: #0f172a;"><strong>[Exercise 2 — Combine using 'whereas']</strong></div>
+        <div style="font-size: 7pt; color: #475569; font-style: italic;">
+          "Electric buses generate zero tailpipe emissions in city streets. Diesel buses emit fine particulates and nitrogen oxides."
+        </div>
+        <div class="write-in-line"></div>
+      </div>
+
+      <div style="margin-bottom: 6px;">
+        <div style="font-size: 7.2pt; color: #0f172a;"><strong>[Exercise 3 — Combine using 'despite']</strong></div>
+        <div style="font-size: 7pt; color: #475569; font-style: italic;">
+          "The airport authority faced intense budgetary pressure. They installed a 50,000 m³ stormwater retention reservoir."
+        </div>
+        <div class="write-in-line"></div>
+      </div>
+
+      <div style="margin-bottom: 4px;">
+        <div style="font-size: 7.2pt; color: #0f172a;"><strong>[Exercise 4 — Combine into a Double Comparative with 'efficient']</strong></div>
+        <div style="font-size: 7pt; color: #475569; font-style: italic;">
+          "If intermodal transfers are smooth, passenger satisfaction is high."
+        </div>
+        <div class="write-in-line"></div>
+      </div>
+    </div>
+
+    <!-- Model Answers Self-Check Box -->
+    <div class="card card-left-amber" style="font-size: 7pt; color: #92400e;">
+      <strong>Grammar Self-Check &amp; Phrasing Verification:</strong>
+      <div style="margin-top: 3px; line-height: 1.25;">
+        <strong>Ans 1:</strong> The more walkable a city becomes, the more rapidly private car usage declines.<br>
+        <strong>Ans 2:</strong> Electric buses generate zero tailpipe emissions, whereas diesel buses emit fine particulates and NOx.<br>
+        <strong>Ans 3:</strong> Despite intense budgetary pressure, the airport authority installed a 50,000 m³ retention reservoir.<br>
+        <strong>Ans 4:</strong> The more efficient the intermodal transfer, the higher the passenger satisfaction.
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 3 &bull; Language Clinic: Comparatives &amp; Contrast</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 4: COLLOCATION MATCHER & MOBILITY PYRAMID -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 2</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S2 • PAGE 4/7</span>
+    </div>
+
+    <h2>Part 4: Vocabulary Game — Collocation Matcher &amp; Mobility Pyramid</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Lexical Collocation Precision &amp; Hierarchical Modal Split Sustainability Analysis
+    </p>
+
+    <!-- Step 1: 10 Collocations Matcher Table -->
+    <div class="card card-left-green" style="margin-bottom: 6px;">
+      <h3 style="color: #047857; font-size: 7.6pt;">Step 1: Match 10 Compound Mobility Collocations</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 4px;">
+        Draw a connecting line between the technical prefix on the left and the matching noun suffix on the right:
+      </p>
+
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th style="width: 28%;">Technical Prefix</th>
+            <th style="width: 32%;">Target Collocation Suffix</th>
+            <th style="width: 40%;">Operational Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Intermodal</strong></td>
+            <td>[ &nbsp; ] corridor</td>
+            <td>Smooth transfer between different transport systems</td>
+          </tr>
+          <tr>
+            <td><strong>2. Transit-oriented</strong></td>
+            <td>[ &nbsp; ] micro-mobility</td>
+            <td>Urban growth concentrated around transit stations</td>
+          </tr>
+          <tr>
+            <td><strong>3. Active mobility</strong></td>
+            <td>[ &nbsp; ] connectivity</td>
+            <td>Dedicated grade-separated cycle and walk paths</td>
+          </tr>
+          <tr>
+            <td><strong>4. Last-mile</strong></td>
+            <td>[ &nbsp; ] pricing cordon</td>
+            <td>Lightweight zero-emission transport for short links</td>
+          </tr>
+          <tr>
+            <td><strong>5. Congestion</strong></td>
+            <td>[ &nbsp; ] development (TOD)</td>
+            <td>Zone charging vehicles fees during peak hours</td>
+          </tr>
+          <tr>
+            <td><strong>6. Decarbonization</strong></td>
+            <td>[ &nbsp; ] attenuation</td>
+            <td>Strategic trajectory toward net-zero emissions</td>
+          </tr>
+          <tr>
+            <td><strong>7. Subsurface</strong></td>
+            <td>[ &nbsp; ] trajectory</td>
+            <td>Replenishing groundwater through soil filtration</td>
+          </tr>
+          <tr>
+            <td><strong>8. Peak runoff</strong></td>
+            <td>[ &nbsp; ] priority zone</td>
+            <td>Delaying rainwater surges into municipal sewers</td>
+          </tr>
+          <tr>
+            <td><strong>9. Urban heat</strong></td>
+            <td>[ &nbsp; ] aquifer recharge</td>
+            <td>Using tree canopies and green roofs to lower temps</td>
+          </tr>
+          <tr>
+            <td><strong>10. Pedestrian</strong></td>
+            <td>[ &nbsp; ] mitigation</td>
+            <td>Street sections where walkers possess right-of-way</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Step 2: The Sustainable Mobility Pyramid -->
+    <div class="card card-left-amber">
+      <h3 style="color: #92400e; font-size: 7.6pt;">Step 2: The Sustainable Urban Mobility Hierarchy</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 4px;">
+        In pairs, analyze the four tiers of the Mobility Pyramid, from the sustainable base to the restricted apex:
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 3.5px; font-size: 7.1pt;">
+        <div style="background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 4px; padding: 4px 6px; text-align: center;">
+          <strong style="color: #991b1b;">APEX (Tier 4) &bull; Private Fossil Vehicles (Single Occupancy)</strong><br>
+          <span style="font-size: 6.8pt; color: #7f1d1d;">Highest energy consumption per passenger-km; restrict via congestion pricing and low-emission zones.</span>
+        </div>
+        <div style="background: #fffbeb; border: 1.5px solid #fde68a; border-radius: 4px; padding: 4px 6px; text-align: center;">
+          <strong style="color: #92400e;">UPPER (Tier 3) &bull; Shared Electric Vehicles, Carpools &amp; Taxis</strong><br>
+          <span style="font-size: 6.8pt; color: #78350f;">Flexible on-demand transit for non-standard routes, luggage hauling, and night shift services.</span>
+        </div>
+        <div style="background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 4px; padding: 4px 6px; text-align: center;">
+          <strong style="color: #166534;">MIDDLE (Tier 2) &bull; Mass High-Capacity Rail &amp; Electric Bus Rapid Transit (BRT)</strong><br>
+          <span style="font-size: 6.8pt; color: #14532d;">High-volume arterial corridors moving thousands of passengers hourly with zero local emissions.</span>
+        </div>
+        <div style="background: #ecfdf5; border: 2px solid #059669; border-radius: 4px; padding: 5px 6px; text-align: center;">
+          <strong style="color: #065f46;">BASE (Tier 1) &bull; Active Mobility: Walking, Cycling, Wheelchairs, Micro-Mobility</strong><br>
+          <span style="font-size: 6.8pt; color: #047857;">100% zero carbon, minimal spatial footprint, highest public health dividend; priority right-of-way.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 4 &bull; Collocation Matcher &amp; Mobility Pyramid</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 5: PAIR URBAN DESIGN SPRINT           -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 2</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S2 • PAGE 5/7</span>
+    </div>
+
+    <h2>Part 5: Pair Urban Design Sprint — 'The 15-Minute Airport District'</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Spatial Engineering Challenge: Re-engineering a Congested 5km Airport Highway into a Low-Emission Corridor
+    </p>
+
+    <!-- Design Brief -->
+    <div class="card card-left-green" style="margin-bottom: 6px;">
+      <h3 style="color: #047857;">Corridor 21 Project Brief &amp; Target KPIs</h3>
+      <div class="grid-2" style="font-size: 7.1pt; gap: 6px; margin-top: 3px;">
+        <div>
+          <strong>Current Site Conditions:</strong><br>
+          &bull; 5.2 km 4-lane asphalt highway connecting Airport T1 to metro.<br>
+          &bull; 45,000 vehicles daily; 82% single-occupancy cars.<br>
+          &bull; 38-minute average commute baseline during peak morning rush.<br>
+          &bull; 0 dedicated bike lanes; severe surface runoff flooding.
+        </div>
+        <div>
+          <strong>3 Mandatory Design KPIs:</strong><br>
+          &bull; <strong>KPI 1:</strong> Cut peak private car trips by 35% within 3 years.<br>
+          &bull; <strong>KPI 2:</strong> Build 100% grade-separated active mobility corridor.<br>
+          &bull; <strong>KPI 3:</strong> Convert 40% of road verges into sponge bioretention swales.
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Interventions Decision Table -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="color: #0f172a; margin-bottom: 3px;">3-Point Infrastructure Decision Table</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 4px;">
+        Work in pairs. Formulate three concrete engineering interventions to meet the target KPIs:
+      </p>
+
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th style="width: 25%;">Intervention Area</th>
+            <th style="width: 45%;">Proposed Engineering Solution</th>
+            <th style="width: 30%;">Anticipated Impact on Modal Split</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Mass Transit Link</strong></td>
+            <td>Dedicated Bus Rapid Transit (BRT) lane / Tram spur:</td>
+            <td>Shifts [ &nbsp; &nbsp; ]% of commuters to transit.</td>
+          </tr>
+          <tr>
+            <td><strong>2. Active Mobility</strong></td>
+            <td>Continuous tree-shaded cycleway + e-bike docks:</td>
+            <td>Enables 15-minute airport worker access.</td>
+          </tr>
+          <tr>
+            <td><strong>3. Sponge Drainage</strong></td>
+            <td>Permeable pavement service lanes + bioswales:</td>
+            <td>Attenuates peak stormwater runoff by 40%.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Peer Observer Checklist -->
+    <div class="card card-left-amber">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #92400e;">Peer Observer Active Listening Rubric (Student B)</h3>
+        <span class="badge badge-amber">CRITERIA AUDIT</span>
+      </div>
+      <table class="rubric-table">
+        <thead>
+          <tr>
+            <th style="width: 24%;">Evaluation Criterion</th>
+            <th style="width: 52%;">B2 Mastery Target</th>
+            <th style="width: 24%;">Rating &amp; Observations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Lexical Accuracy</strong></td>
+            <td>Integrates terms: <em>modal split, TOD, permeable paving, micro-mobility</em>.</td>
+            <td>[ &nbsp; ] Exemplary &nbsp; [ &nbsp; ] Satisfactory &nbsp; [ &nbsp; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>2. Double Comparatives</strong></td>
+            <td>Employs proportional change structure correctly (<em>The more... the less...</em>).</td>
+            <td>[ &nbsp; ] Exemplary &nbsp; [ &nbsp; ] Satisfactory &nbsp; [ &nbsp; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>3. Contrast Connectors</strong></td>
+            <td>Uses connecting words for contrast (<em>whereas, nevertheless, despite</em>) smoothly.</td>
+            <td>[ &nbsp; ] Exemplary &nbsp; [ &nbsp; ] Satisfactory &nbsp; [ &nbsp; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>4. Pitch Fluency</strong></td>
+            <td>Delivers an engaging professional proposal within the 2-minute limit.</td>
+            <td>[ &nbsp; ] Exemplary &nbsp; [ &nbsp; ] Satisfactory &nbsp; [ &nbsp; ] Needs Work</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 5 &bull; Pair Urban Design Sprint &amp; Peer Rubric</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 6: POLICY DEBATE: FLIGHT BAN          -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 2</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S2 • PAGE 6/7</span>
+    </div>
+
+    <h2>Part 6: Multi-Stakeholder Policy Debate — Short-Haul Flight Ban</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Formal Parliamentary Simulation: Banning Domestic Commercial Flights Under 2.5 Hours Rail
+    </p>
+
+    <!-- Debate Motion -->
+    <div class="card card-left-green" style="margin-bottom: 6px;">
+      <h3 style="color: #047857; font-size: 7.5pt;">Debate Motion Before the Transport Commission</h3>
+      <p style="font-size: 7pt; color: #334155; line-height: 1.25;">
+        <em>"This assembly resolves that all domestic commercial passenger flights where a direct high-speed rail alternative under 2.5 hours exists shall be prohibited, with revenues re-allocated to regional rail intermodal hubs."</em>
+      </p>
+    </div>
+
+    <!-- 3 Stakeholder Roles -->
+    <div class="grid-3" style="gap: 5px; margin-bottom: 6px;">
+      <div class="card card-left-amber">
+        <h3 style="color: #92400e; font-size: 7.5pt;">Role A: Airport Director</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 3px;">
+          <strong>Stance: Strongly Opposed.</strong>
+        </p>
+        <div style="font-size: 6.8pt; color: #475569; line-height: 1.2;">
+          &bull; Feeder flights are critical for long-haul hub connectivity.<br>
+          &bull; Passengers transferring to intercontinental jets cannot drag luggage across metro networks.<br>
+          &bull; Ban damages regional airport viability and jobs.
+        </div>
+      </div>
+
+      <div class="card card-left-green">
+        <h3 style="color: #047857; font-size: 7.5pt;">Role B: High-Speed Rail Lead</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 3px;">
+          <strong>Stance: Strongly Supportive.</strong>
+        </p>
+        <div style="font-size: 6.8pt; color: #475569; line-height: 1.2;">
+          &bull; Electric trains slash passenger-km CO₂ emissions by 95%.<br>
+          &bull; City-center-to-city-center travel eliminates airport commute and 2-hour security queues.<br>
+          &bull; High-speed tracks offer double the hourly passenger throughput.
+        </div>
+      </div>
+
+      <div class="card card-left-green">
+        <h3 style="color: #047857; font-size: 7.5pt;">Role C: Climate Action NGO</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 3px;">
+          <strong>Stance: Ban + Expand to 4.5 Hours.</strong>
+        </p>
+        <div style="font-size: 6.8pt; color: #475569; line-height: 1.2;">
+          &bull; Short-haul jets burn 40% of their fuel in climb phase.<br>
+          &bull; Immediate climate mandates drive long-term modal split changes.<br>
+          &bull; Private business jets must face identical prohibitions.
+        </div>
+      </div>
+    </div>
+
+    <!-- Consensus Accord -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="color: #0f172a; margin-bottom: 3px;">Committee Policy Resolution &amp; Compromise</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 4px;">
+        Negotiate and draft your committee's 3-point compromise accord:
+      </p>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 6 &bull; Multi-Stakeholder Policy Debate</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 7: 10-QUESTION MASTERY QUIZ           -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 2</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S2 • PAGE 7/7</span>
+    </div>
+
+    <h2>Part 6 Continued: 10-Question Technical Mastery Quiz</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Formative Evaluation: Assessing Comprehension of Low-Emission Mobility &amp; Sponge Urbanism
+    </p>
+
+    <!-- 10 Quiz Questions Grid (2 Columns of 5) -->
+    <div class="grid-2" style="font-size: 7pt; gap: 6px; margin-bottom: 6px;">
+      <div class="space-y-2">
+        <div class="card">
+          <strong>Q1. Primary cause of the Urban Heat Island effect:</strong><br>
+          (A) Ground-level CO₂ density &nbsp; (B) Solar absorption by dark impermeable surfaces [Ans: B]
+        </div>
+
+        <div class="card">
+          <strong>Q2. How Sponge Cities manage heavy storm deluges:</strong><br>
+          (A) Pumping water to deep caverns &nbsp; (B) Local bioretention and permeable infiltration [Ans: B]
+        </div>
+
+        <div class="card">
+          <strong>Q3. Core target of the '15-Minute City' model:</strong><br>
+          (A) 15-min walk/cycle access to all necessities &nbsp; (B) Limiting car trips to 15 mins [Ans: A]
+        </div>
+
+        <div class="card">
+          <strong>Q4. Correct Double Comparative grammatical structure:</strong><br>
+          (A) The denser the network, the lower the emissions &nbsp; (B) The more denser networks are lower [Ans: A]
+        </div>
+
+        <div class="card">
+          <strong>Q5. Primary focus of Transit-Oriented Development:</strong><br>
+          (A) Multi-lane expressways &nbsp; (B) High-density mixed-use hubs around mass transit [Ans: B]
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <div class="card">
+          <strong>Q6. Operational function of Peak Runoff Attenuation:</strong><br>
+          (A) Buffering stormwater flow to prevent sewer overload &nbsp; (B) Accelerating flow velocity [Ans: A]
+        </div>
+
+        <div class="card">
+          <strong>Q7. Foundational mode in Sustainable Mobility Pyramid:</strong><br>
+          (A) Active mobility (walking, cycling, micro-mobility) &nbsp; (B) Electric autonomous taxis [Ans: A]
+        </div>
+
+        <div class="card">
+          <strong>Q8. Definition of 'Intermodal Connectivity':</strong><br>
+          (A) Parallel runways &nbsp; (B) Seamless physical/digital transfer between air and rail [Ans: B]
+        </div>
+
+        <div class="card">
+          <strong>Q9. Environmental dividend of High-Speed Rail over jets:</strong><br>
+          (A) Free passenger fares &nbsp; (B) 85–95% reduction in per-passenger-km emissions [Ans: B]
+        </div>
+
+        <div class="card">
+          <strong>Q10. Correct connecting word for contrast:</strong><br>
+          (A) Despite heavy costs, the city built bioswales &nbsp; (B) Whereas heavy costs the city built [Ans: A]
+        </div>
+      </div>
+    </div>
+
+    <!-- Score Tally & Self-Assessment -->
+    <div class="card card-left-green" style="font-size: 7.1pt; margin-bottom: 5px;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <strong>Mastery Quiz Score Tally: &nbsp; [ &nbsp; &nbsp; / 10 ] &nbsp; (8/10 Required for Mastery)</strong>
+        <span class="badge badge-primary">CEFR B2 BENCHMARK</span>
+      </div>
+    </div>
+
+    <div class="card card-left-green" style="font-size: 7pt;">
+      <h3 style="color: #047857; margin-bottom: 3px;">Session 2 Self-Assessment Checklist</h3>
+      <div class="grid-2" style="gap: 4px;">
+        <div>[ &nbsp; ] I can explain Sponge City engineering using technical terminology.</div>
+        <div>[ &nbsp; ] I can use Double Comparatives to describe environmental trade-offs.</div>
+        <div>[ &nbsp; ] I can employ connecting words for contrast (whereas, despite) accurately.</div>
+        <div>[ &nbsp; ] I can propose multi-modal airport transport solutions in an oral pitch.</div>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 6 &bull; Technical Mastery Quiz &amp; Self-Assessment</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+</body>
+</html>

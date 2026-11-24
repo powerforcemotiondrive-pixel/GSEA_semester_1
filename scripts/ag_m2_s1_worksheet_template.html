@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 1 Lesson Worksheet - Extreme Weather &amp; Atmospheric Hazards</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 1 General English (AG • LV101E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8.2pt;
+      line-height: 1.32;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    .doc-header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 4px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #0369a1;
+      text-transform: uppercase;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, monospace;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .doc-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 3px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 6.8pt;
+      color: #64748b;
+    }
+
+    h1 {
+      font-size: 13.5pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.3px;
+      line-height: 1.15;
+      margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 9.5pt;
+      font-weight: 800;
+      color: #0369a1;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 3px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 6.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 1.5px 5px;
+      border-radius: 3px;
+    }
+
+    .badge-primary { background: #0284c7; color: #ffffff; }
+    .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-slate { background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-family: ui-monospace, monospace; }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 8px;
+      background: #ffffff;
+      margin-bottom: 5px;
+    }
+
+    .card-left-amber {
+      border-left: 3.5px solid #f59e0b;
+      background: #ffffff;
+    }
+
+    .card-left-blue {
+      border-left: 3.5px solid #0284c7;
+      background: #ffffff;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+    }
+
+    table.tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.2pt;
+      margin-bottom: 5px;
+    }
+
+    table.tech-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      text-align: left;
+      padding: 4px 6px;
+      font-weight: 700;
+      border: 1px solid #cbd5e1;
+      text-transform: uppercase;
+      font-size: 6.5pt;
+      letter-spacing: 0.4px;
+    }
+
+    table.tech-table td {
+      padding: 3.5px 6px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #334155;
+    }
+
+    table.tech-table tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    .write-in-line {
+      border-bottom: 1px dotted #94a3b8;
+      height: 14px;
+      margin-bottom: 2px;
+    }
+
+    .stem {
+      display: block;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #0284c7;
+      padding: 3.5px 6px;
+      border-radius: 4px;
+      font-size: 7.2pt;
+      color: #334155;
+      margin-top: 3px;
+    }
+
+    .rubric-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.2pt;
+      margin-top: 4px;
+    }
+
+    .rubric-table th {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 3.5px 6px;
+      font-weight: 700;
+      font-size: 6.5pt;
+      text-align: left;
+    }
+
+    .rubric-table td {
+      padding: 3px 6px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+    }
+
+    .vocab-col {
+      font-size: 7.1pt;
+      line-height: 1.25;
+    }
+
+    .term-name { font-weight: 800; color: #0f172a; }
+    .term-ipa { font-family: ui-monospace, monospace; color: #0284c7; font-size: 6.6pt; }
+    .term-def { color: #475569; margin-bottom: 3.5px; }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- PAGE 1: BRIEFING, OBJECTIVES & VOCAB CLINIC -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 1</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S1 • PAGE 1/7</span>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+      <div style="display: flex; align-items: center; gap: 5px; margin-bottom: 2px;">
+        <span class="badge badge-primary">SEMINAR WORKSHEET</span>
+        <span class="badge badge-slate">SESSION 01 • 120 MINS</span>
+        <span class="badge badge-amber">B2 COMMUNICATIVE LAB</span>
+      </div>
+      <h1>Extreme Weather &amp; Atmospheric Hazards</h1>
+      <p style="font-size: 7.8pt; color: #64748b; margin-top: 1px;">
+        Convective Downburst Dynamics, Runaway Surface Heating &amp; Aerodrome Severe Weather Protocols
+      </p>
+    </div>
+
+    <div class="card card-left-blue" style="margin-bottom: 6px;">
+      <h3 style="color: #0369a1;">Session Learning Objectives</h3>
+      <div class="grid-2" style="font-size: 7.2pt; gap: 4px;">
+        <div>&bull; <strong>Meteorological Diagnostics:</strong> Explain severe convective hazards using precise B2 sentence stems.</div>
+        <div>&bull; <strong>Microburst Dynamics:</strong> Analyze downburst physics, virga, vortex rings, and windshear systems.</div>
+        <div>&bull; <strong>Causal Linkers:</strong> Master formal verbs of causation (<em>stems from, culminates in, triggers</em>) in context.</div>
+        <div>&bull; <strong>Conditionals:</strong> Deploy 2nd and 3rd conditional formulas for technical aerodrome risk assessment.</div>
+        <div>&bull; <strong>Incident Pitch:</strong> Deliver a 90-second operational mitigation briefing with peer observer rubric.</div>
+        <div>&bull; <strong>Crisis Debate:</strong> Negotiate runway closure thresholds across operations, dispatch, and safety roles.</div>
+      </div>
+    </div>
+
+    <h2>Technical Vocabulary Clinic: 18 Essential Meteorological Terms</h2>
+    <div class="grid-3 card" style="margin-bottom: 6px;">
+      <div class="vocab-col">
+        <div><span class="term-name">1. Microburst</span> <span class="term-ipa">/ˈmaɪ.krəʊ.bɜːst/</span></div>
+        <div class="term-def">Intense localized column of sinking air producing damaging outflow winds.</div>
+
+        <div><span class="term-name">2. Supercell</span> <span class="term-ipa">/ˈsuː.pə.sel/</span></div>
+        <div class="term-def">Severe thunderstorm characterized by a deeply rotating updraft (mesocyclone).</div>
+
+        <div><span class="term-name">3. Atmospheric River</span> <span class="term-ipa">/ˌæt.məsˈfer.ɪk/</span></div>
+        <div class="term-def">Narrow band of concentrated water vapor transporting moisture outside tropics.</div>
+
+        <div><span class="term-name">4. Heat Dome</span> <span class="term-ipa">/ˈhiːt ˌdəʊm/</span></div>
+        <div class="term-def">Persistent high-pressure ridge trapping hot ocean air like a pot with a lid.</div>
+
+        <div><span class="term-name">5. Density Altitude</span> <span class="term-ipa">/ˈden.sə.ti/</span></div>
+        <div class="term-def">Pressure altitude corrected for non-standard temperature; reduces lift and thrust.</div>
+
+        <div><span class="term-name">6. Flash Flood</span> <span class="term-ipa">/ˈflæʃ ˌflʌd/</span></div>
+        <div class="term-def">Rapid flooding of low-lying areas in less than six hours from intense rain.</div>
+      </div>
+
+      <div class="vocab-col">
+        <div><span class="term-name">7. Convective Cell</span> <span class="term-ipa">/kənˈvek.tɪv/</span></div>
+        <div class="term-def">Thermal circulatory system of rising warm air and sinking cool air.</div>
+
+        <div><span class="term-name">8. Windshear</span> <span class="term-ipa">/ˈwɪnd.ʃɪər/</span></div>
+        <div class="term-def">Sudden, dramatic change in wind speed or direction over a short distance.</div>
+
+        <div><span class="term-name">9. Virga</span> <span class="term-ipa">/ˈvɜː.ɡə/</span></div>
+        <div class="term-def">Precipitation falling from cloud that evaporates before reaching the ground.</div>
+
+        <div><span class="term-name">10. Runway Inundation</span> <span class="term-ipa">/ˌɪn.ʌnˈdeɪ.ʃən/</span></div>
+        <div class="term-def">Submersion of runway surfaces by stormwater runoff exceeding limits.</div>
+
+        <div><span class="term-name">11. Hail Swath</span> <span class="term-ipa">/ˈheɪl ˌswɒθ/</span></div>
+        <div class="term-def">A linear geographic corridor impacted by damaging falling hail stones.</div>
+
+        <div><span class="term-name">12. Squall Line</span> <span class="term-ipa">/ˈskwɔːl ˌlaɪn/</span></div>
+        <div class="term-def">A narrow line of active thunderstorms with severe surface wind gusts.</div>
+      </div>
+
+      <div class="vocab-col">
+        <div><span class="term-name">13. Inversion Layer</span> <span class="term-ipa">/ɪnˈvɜː.ʃən/</span></div>
+        <div class="term-def">Atmospheric layer where temperature increases with altitude, trapping air below.</div>
+
+        <div><span class="term-name">14. Clear-Air Turbulence</span> <span class="term-ipa">/ˌklɪər ˈeə/</span></div>
+        <div class="term-def">Sudden severe turbulence occurring in cloudless skies near jet stream gradients.</div>
+
+        <div><span class="term-name">15. Cold Front</span> <span class="term-ipa">/ˈkəʊld ˌfrʌnt/</span></div>
+        <div class="term-def">Leading edge of cooler air replacing warmer air, triggering instability.</div>
+
+        <div><span class="term-name">16. Holdover Time</span> <span class="term-ipa">/ˈhəʊld.əʊ.vər/</span></div>
+        <div class="term-def">Estimated time de-icing fluid prevents ice accumulation on treated surfaces.</div>
+
+        <div><span class="term-name">17. Climate Mitigation</span> <span class="term-ipa">/ˌmɪt.ɪˈɡeɪ.ʃən/</span></div>
+        <div class="term-def">Structural actions taken to reduce greenhouse gas emissions into atmosphere.</div>
+
+        <div><span class="term-name">18. Climate Adaptation</span> <span class="term-ipa">/ˌæd.æpˈteɪ.ʃən/</span></div>
+        <div class="term-def">Adjustments in infrastructure to cope with unavoidable extreme weather.</div>
+      </div>
+    </div>
+
+    <h2>Part 1: Meteorological News Scan &amp; Spoken Diagnostic</h2>
+    <div class="grid-2" style="font-size: 7.2pt;">
+      <div class="card card-left-amber">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 2px;">Q1: Supercell Thunderstorm vs. Convective Cell</div>
+        <div class="stem">Prompt: "A standard convective cell is driven by..., whereas a supercell is uniquely characterized by..."</div>
+      </div>
+      <div class="card card-left-amber">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 2px;">Q2: Atmospheric River vs. High-Altitude Jet Stream</div>
+        <div class="stem">Prompt: "The jet stream is a high-altitude band of..., while an atmospheric river consists of..."</div>
+      </div>
+      <div class="card card-left-amber">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 2px;">Q3: Flash Flooding vs. Riverine Flooding</div>
+        <div class="stem">Prompt: "Riverine flooding occurs over..., whereas flash flooding is triggered within..."</div>
+      </div>
+      <div class="card card-left-amber">
+        <div style="font-weight: 700; color: #0f172a; margin-bottom: 2px;">Q4: Climate Mitigation vs. Climate Adaptation</div>
+        <div class="stem">Prompt: "Mitigation focuses primarily on..., whereas adaptation involves..."</div>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 1 &bull; Diagnostic Warm-Up &amp; Technical Vocabulary</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 2: VIDEO LAB: MICROBURST DYNAMICS     -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 1</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S1 • PAGE 2/7</span>
+    </div>
+
+    <h2>Part 2: Interactive Video Lab — Convective Storms &amp; Microburst Physics</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Multi-Column Noticeboard: Downburst Velocity, Virga Evaporation &amp; Low-Altitude Windshear Mitigation
+    </p>
+
+    <div class="grid-2" style="gap: 7px; margin-bottom: 5px;">
+      <!-- Left Column: Case Synopsis & Concept Table -->
+      <div class="card card-left-blue">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <h3 style="color: #0369a1;">Technical Case Study</h3>
+          <span class="badge badge-slate">METEOROLOGY BRIEFING</span>
+        </div>
+        <p style="font-size: 7.1pt; color: #334155; line-height: 1.25; margin-bottom: 5px;">
+          <strong>Case Overview: Convective Microburst Physics:</strong> Microbursts are intense localized columns of sinking air forming within severe convective thunderstorms. As precipitation plunges through dry sub-cloud air, evaporative cooling renders the air pocket dramatically colder and denser than ambient air, accelerating downward velocities beyond 50 knots. Upon ground impact, this downburst expands radially into high-velocity vortex rings, creating violent low-altitude windshear.
+        </p>
+
+        <table class="tech-table">
+          <thead>
+            <tr>
+              <th>Physical Stage</th>
+              <th>Atmospheric Mechanism</th>
+              <th>Aerodrome Hazard</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Downdraft Core</strong></td>
+              <td>Negative buoyancy from evaporative cooling (virga).</td>
+              <td>Vertical plunge rates exceeding 2,500 ft/min.</td>
+            </tr>
+            <tr>
+              <td><strong>2. Ground Impact</strong></td>
+              <td>Deflection along horizontal plane upon runway impact.</td>
+              <td>Sudden 40–70 kt surface gusts in all directions.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Outflow Vortex</strong></td>
+              <td>Expanding curl of high-velocity turbulent air.</td>
+              <td>Abrupt transition from headwind to tailwind sheer.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="background: #fef3c7; border: 1px solid #fde68a; border-radius: 4px; padding: 4px 6px; font-size: 6.9pt; color: #92400e; margin-top: 4px;">
+          <strong>Key Aviation Takeaway:</strong> In a microburst encounter, an aircraft on final approach first experiences an airspeed surge (headwind), followed immediately by a downdraft and massive tailwind shear, causing dangerous uncommanded sink rates close to touchdown.
+        </div>
+      </div>
+
+      <!-- Right Column: Guided Viewing Prompts -->
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+          <h3 style="color: #0f172a;">Guided Viewing Discussion</h3>
+          <span class="badge badge-amber">ORAL ANALYSIS</span>
+        </div>
+        <p style="font-size: 7.1pt; color: #475569; margin-bottom: 5px;">
+          Watch the video analysis in the learning deck. In pairs, discuss and answer the three questions:
+        </p>
+
+        <div style="margin-bottom: 5px;">
+          <div style="font-weight: 700; color: #0f172a; font-size: 7.2pt;">Q1. Evaporative Acceleration:</div>
+          <div style="font-size: 7pt; color: #475569; font-style: italic;">Why does evaporative cooling inside a storm cloud dramatically accelerate a downburst?</div>
+          <div class="write-in-line"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div style="margin-bottom: 5px;">
+          <div style="font-weight: 700; color: #0f172a; font-size: 7.2pt;">Q2. The Airspeed Indicator Trap:</div>
+          <div style="font-size: 7pt; color: #475569; font-style: italic;">How does an aircraft encounter with a microburst fool flight crew who rely solely on indicated airspeed?</div>
+          <div class="write-in-line"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div style="margin-bottom: 5px;">
+          <div style="font-weight: 700; color: #0f172a; font-size: 7.2pt;">Q3. Ground Detection Networks:</div>
+          <div style="font-size: 7pt; color: #475569; font-style: italic;">What sensor systems (TDWR, LLWAS) allow aerodromes to detect microbursts before aircraft penetrate them?</div>
+          <div class="write-in-line"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 6px; font-size: 6.8pt; color: #334155;">
+          <strong>Vocabulary Spotlight:</strong> <em>Terminal Doppler Weather Radar (TDWR)</em> &bull; <em>Virga</em> &bull; <em>Vortex Ring</em> &bull; <em>Low-Level Windshear Alert System (LLWAS)</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Spoken Briefing Rubric -->
+    <div class="card card-left-amber">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #92400e;">Pair Spoken Briefing: Video Takeaways &amp; Systems Summary</h3>
+        <span class="badge badge-amber">STUDENT PRESENTATION</span>
+      </div>
+      <p style="font-size: 7.1pt; color: #334155; line-height: 1.25;">
+        <strong>Pair Task:</strong> Student A briefs Student B on how flight crews and air traffic controllers coordinate microburst avoidance using automated alerts and reactive windshear guidance. Student B verifies that technical terminology (<em>divergence, vortex ring, go-around mandate</em>) is deployed accurately.
+      </p>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 2 &bull; Interactive Video Lab &amp; Downburst Physics</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 3: LANGUAGE CLINIC: CAUSAL & CONDITIONAL -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 1</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S1 • PAGE 3/7</span>
+    </div>
+
+    <h2>Part 3: Language Clinic — Formal Causal Linkers &amp; Conditionals</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Mastering Verbs of Causation &amp; 2nd/3rd Conditional Formulas for Technical Risk Assessment
+    </p>
+
+    <!-- Grammar Rule Reference Cards -->
+    <div class="grid-3" style="gap: 5px; margin-bottom: 6px;">
+      <div class="card card-left-blue">
+        <h3 style="color: #0369a1; font-size: 7.5pt;">1. Formal Causal Verbs</h3>
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 3px; padding: 2px 4px; font-family: ui-monospace, monospace; font-size: 6.8pt; color: #0284c7; margin-bottom: 4px;">
+          Subject + [Verb] + Noun Phrase
+        </div>
+        <div style="font-size: 7pt; color: #334155; line-height: 1.25;">
+          &bull; <strong>stems from:</strong> originates in.<br>
+          &bull; <strong>culminates in:</strong> reaches final result.<br>
+          &bull; <strong>triggers:</strong> initiates immediate event.<br>
+          &bull; <strong>accounts for:</strong> explains proportion.
+        </div>
+      </div>
+
+      <div class="card card-left-blue">
+        <h3 style="color: #0369a1; font-size: 7.5pt;">2. Second Conditional</h3>
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 3px; padding: 2px 4px; font-family: ui-monospace, monospace; font-size: 6.8pt; color: #0284c7; margin-bottom: 4px;">
+          If + Past Simple, would/could + V
+        </div>
+        <div style="font-size: 7pt; color: #334155; line-height: 1.25;">
+          Used for <strong>hypothetical future risks</strong>:<br>
+          <em>"If surface temperatures reached 50°C, widebody aircraft could not meet required climb gradients."</em>
+        </div>
+      </div>
+
+      <div class="card card-left-blue">
+        <h3 style="color: #0369a1; font-size: 7.5pt;">3. Third Conditional</h3>
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 3px; padding: 2px 4px; font-family: ui-monospace, monospace; font-size: 6.8pt; color: #0284c7; margin-bottom: 4px;">
+          If + had + pp, would have + pp
+        </div>
+        <div style="font-size: 7pt; color: #334155; line-height: 1.25;">
+          Used for <strong>past root-cause analysis</strong>:<br>
+          <em>"If drainage culverts had been dredged, the taxiway network would not have been submerged."</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Transformation Exercises -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="color: #0f172a; margin-bottom: 4px;">Written Transformation Drills</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 5px;">
+        Combine or transform the meteorological statements using the exact grammatical formula indicated:
+      </p>
+
+      <div style="margin-bottom: 6px;">
+        <div style="font-size: 7.2pt; color: #0f172a;"><strong>[Exercise 1 — Combine using 'culminates in']</strong></div>
+        <div style="font-size: 7pt; color: #475569; font-style: italic;">
+          "Sustained torrential downpours saturated the topsoil. As a result, a retaining wall collapsed onto Taxiway Bravo."
+        </div>
+        <div class="write-in-line"></div>
+      </div>
+
+      <div style="margin-bottom: 6px;">
+        <div style="font-size: 7.2pt; color: #0f172a;"><strong>[Exercise 2 — Transform into Third Conditional]</strong></div>
+        <div style="font-size: 7pt; color: #475569; font-style: italic;">
+          "The airport lacked an automated LLWAS sensor grid, so controllers failed to warn the crew of the oncoming microburst."
+        </div>
+        <div class="write-in-line"></div>
+      </div>
+
+      <div style="margin-bottom: 6px;">
+        <div style="font-size: 7.2pt; color: #0f172a;"><strong>[Exercise 3 — Combine using 'stems from']</strong></div>
+        <div style="font-size: 7pt; color: #475569; font-style: italic;">
+          "Extreme density altitude reduces aircraft takeoff performance. This phenomenon originates from high ambient air temperatures."
+        </div>
+        <div class="write-in-line"></div>
+      </div>
+
+      <div style="margin-bottom: 4px;">
+        <div style="font-size: 7.2pt; color: #0f172a;"><strong>[Exercise 4 — Formulate a Second Conditional Policy Rule]</strong></div>
+        <div style="font-size: 7pt; color: #475569; font-style: italic;">
+          "If the aerodrome operated an on-site retention reservoir, surface flooding (not halt) operations during convective deluges."
+        </div>
+        <div class="write-in-line"></div>
+      </div>
+    </div>
+
+    <!-- Model Answers Self-Check Box -->
+    <div class="card card-left-amber" style="font-size: 7pt; color: #92400e;">
+      <strong>Grammar Self-Check &amp; Phrasing Verification:</strong>
+      <div style="margin-top: 3px; line-height: 1.25;">
+        <strong>Ans 1:</strong> Sustained torrential downpours saturated the topsoil, culminating in the collapse of a retaining wall onto Taxiway Bravo.<br>
+        <strong>Ans 2:</strong> If the airport had possessed an automated LLWAS sensor grid, controllers would have warned the crew of the oncoming microburst.<br>
+        <strong>Ans 3:</strong> Degraded aircraft takeoff performance during hot summer days stems from extreme density altitude.<br>
+        <strong>Ans 4:</strong> If the aerodrome operated an on-site retention reservoir, surface flooding would not halt flight operations.
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 3 &bull; Language Clinic: Causal Linkers &amp; Conditionals</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 4: 3-PERSON INCIDENT RESEARCH DOSSIERS-->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 1</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S1 • PAGE 4/7</span>
+    </div>
+
+    <h2>Part 4: 3-Person Incident Dossier Research &amp; Mitigation Briefing</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Investigating Real-World Severe Weather Disruptions &amp; Developing Technical Operational Responses
+    </p>
+
+    <!-- 3 Dossiers -->
+    <div class="grid-3" style="gap: 5px; margin-bottom: 6px;">
+      <!-- Dossier 1: DXB Inundation -->
+      <div class="card card-left-blue">
+        <span class="badge badge-primary" style="margin-bottom: 3px;">DOSSIER 1 &bull; FLOODING</span>
+        <h3 style="color: #0f172a; font-size: 7.6pt;">Dubai International (DXB) Apron Inundation</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 4px;">
+          <strong>Event:</strong> Historic cloudburst dumps 254 mm of rain in 24 hours (nearly two years of typical rainfall).
+        </p>
+        <table class="tech-table">
+          <tr><th>Metric</th><th>Recorded Impact</th></tr>
+          <tr><td>Runway Water</td><td>15–25 cm standing water</td></tr>
+          <tr><td>Ground Radar</td><td>Disabled by lightning strikes</td></tr>
+          <tr><td>Disruption</td><td>1,200+ flights cancelled</td></tr>
+          <tr><td>Infrastructure</td><td>Submerged fuel hydrants</td></tr>
+        </table>
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 3px; padding: 3px 5px; font-size: 6.8pt; color: #475569;">
+          <strong>Challenge:</strong> Develop an apron flood evacuation and rapid drainage restoration protocol within 48 hours.
+        </div>
+      </div>
+
+      <!-- Dossier 2: PHX Heat Grounding -->
+      <div class="card card-left-amber">
+        <span class="badge badge-amber" style="margin-bottom: 3px;">DOSSIER 2 &bull; EXTREME HEAT</span>
+        <h3 style="color: #0f172a; font-size: 7.6pt;">Phoenix Sky Harbor (PHX) Heat Grounding</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 4px;">
+          <strong>Event:</strong> Surface air temperatures surge to 49°C (120°F), exceeding aircraft certified operating tables.
+        </p>
+        <table class="tech-table">
+          <tr><th>Metric</th><th>Recorded Impact</th></tr>
+          <tr><td>Air Density</td><td>Decreases by 14%</td></tr>
+          <tr><td>Takeoff Run</td><td>Increases by 22%</td></tr>
+          <tr><td>Weight Penalty</td><td>-3,500 kg MTOW limit</td></tr>
+          <tr><td>Grounded Fleet</td><td>43 regional jet departures</td></tr>
+        </table>
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 3px; padding: 3px 5px; font-size: 6.8pt; color: #475569;">
+          <strong>Challenge:</strong> Establish temperature operating limits, night departure shifts, and passenger care rules.
+        </div>
+      </div>
+
+      <!-- Dossier 3: DFW Microburst -->
+      <div class="card card-left-blue">
+        <span class="badge badge-primary" style="margin-bottom: 3px;">DOSSIER 3 &bull; WINDSHEAR</span>
+        <h3 style="color: #0f172a; font-size: 7.6pt;">Dallas/Fort Worth (DFW) Microburst</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 4px;">
+          <strong>Event:</strong> Decaying thunderstorm cell generates a localized 60-knot downdraft on final approach.
+        </p>
+        <table class="tech-table">
+          <tr><th>Metric</th><th>Recorded Impact</th></tr>
+          <tr><td>Airspeed Sheer</td><td>+25 kt surge to -45 kt drop</td></tr>
+          <tr><td>Sink Rate</td><td>Exceeds 2,400 ft/min</td></tr>
+          <tr><td>Altitude</td><td>Encounter at 800 ft AGL</td></tr>
+          <tr><td>Outcome</td><td>Maximum thrust escape maneuvre</td></tr>
+        </table>
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 3px; padding: 3px 5px; font-size: 6.8pt; color: #475569;">
+          <strong>Challenge:</strong> Draft revised ATC go-around mandates and automated windshear sensor alerting thresholds.
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Research Notes Area -->
+    <div class="card">
+      <h3 style="color: #0f172a; margin-bottom: 3px;">Team Investigation &amp; Root-Cause Notes</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 4px;">
+        Work in groups of 3. Record your chosen dossier, primary meteorological causes, and cascading operational impacts:
+      </p>
+      <div style="font-size: 7pt; color: #334155; margin-bottom: 3px;">
+        <strong>Selected Dossier:</strong> [ &nbsp; ] DXB Apron Inundation &nbsp; [ &nbsp; ] PHX Extreme Heat &nbsp; [ &nbsp; ] DFW Convective Microburst
+      </div>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 4 &bull; 3-Person Incident Dossier Research</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 5: 90-SEC PITCH & PEER OBSERVER RUBRIC -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 1</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S1 • PAGE 5/7</span>
+    </div>
+
+    <h2>Part 4 Continued: Spoken Mitigation Pitch &amp; Peer Rubric</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      90-Second Crisis Briefing Delivery &amp; Active Listening Peer Observer Assessment
+    </p>
+
+    <!-- Pitch Guidelines -->
+    <div class="card card-left-blue" style="margin-bottom: 6px;">
+      <h3 style="color: #0369a1;">90-Second Operational Briefing Structure</h3>
+      <div class="grid-3" style="font-size: 7.1pt; gap: 4px; margin-top: 3px;">
+        <div>
+          <strong>1. Root Cause (00–25s):</strong><br>
+          Identify the meteorological trigger using target causal linkers (<em>stems from, triggered by</em>).
+        </div>
+        <div>
+          <strong>2. Operational Impact (25–55s):</strong><br>
+          Quantify the disruption to ground operations, passengers, and flight safety limits.
+        </div>
+        <div>
+          <strong>3. Mitigation Mandate (55–90s):</strong><br>
+          Deliver 3 actionable engineering or procedural mandates using conditional language.
+        </div>
+      </div>
+    </div>
+
+    <!-- Peer Observer Checklist -->
+    <div class="card card-left-amber" style="margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+        <h3 style="color: #92400e;">Peer Observer Active Listening Rubric (Student B)</h3>
+        <span class="badge badge-amber">CRITERIA AUDIT</span>
+      </div>
+      <p style="font-size: 7pt; color: #475569; margin-bottom: 4px;">
+        Student B evaluates Student A's spoken briefing across the four official criteria below:
+      </p>
+
+      <table class="rubric-table">
+        <thead>
+          <tr>
+            <th style="width: 24%;">Evaluation Criterion</th>
+            <th style="width: 52%;">B2 Mastery Target</th>
+            <th style="width: 24%;">Rating &amp; Observations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Technical Lexicon</strong></td>
+            <td>Uses precise terms: <em>density altitude, virga, vortex ring, inundation, LLWAS</em>.</td>
+            <td>[ &nbsp; ] Exemplary &nbsp; [ &nbsp; ] Satisfactory &nbsp; [ &nbsp; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>2. Causal Phrasing</strong></td>
+            <td>Deploys target verbs: <em>stems from, culminates in, triggers, accounts for</em>.</td>
+            <td>[ &nbsp; ] Exemplary &nbsp; [ &nbsp; ] Satisfactory &nbsp; [ &nbsp; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>3. Conditional Logic</strong></td>
+            <td>Uses 2nd or 3rd conditional formulas for incident assessment and mandates.</td>
+            <td>[ &nbsp; ] Exemplary &nbsp; [ &nbsp; ] Satisfactory &nbsp; [ &nbsp; ] Needs Work</td>
+          </tr>
+          <tr>
+            <td><strong>4. Fluency &amp; Delivery</strong></td>
+            <td>Speaks clearly within 90 seconds with confident pace and minimal hesitation.</td>
+            <td>[ &nbsp; ] Exemplary &nbsp; [ &nbsp; ] Satisfactory &nbsp; [ &nbsp; ] Needs Work</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Student B Written Feedback -->
+    <div class="card">
+      <h3 style="color: #0f172a; margin-bottom: 3px;">Observer Feedback &amp; Key Recommendations</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 4px;">
+        Record two specific strengths and one concrete area for spoken language improvement:
+      </p>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 4 &bull; Spoken Mitigation Pitch &amp; Peer Rubric</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 6: VOCABULARY GAME: TABOO            -->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 1</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S1 • PAGE 6/7</span>
+    </div>
+
+    <h2>Part 5: Interactive Spoken Vocabulary Game — Extreme Weather Taboo</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Oral Circumlocution &amp; Rapid Lexical Retrieval: 12 Technical Taboo Cards with IPA Stress Marks
+    </p>
+
+    <!-- Gameplay Rules -->
+    <div class="card card-left-amber" style="margin-bottom: 6px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+        <h3 style="color: #92400e; font-size: 7.4pt;">Game Rules &amp; Circumlocution Guidelines</h3>
+        <span class="badge badge-amber">PAIRWORK CHALLENGE</span>
+      </div>
+      <p style="font-size: 7pt; color: #334155; line-height: 1.25;">
+        <strong>How to Play:</strong> Player 1 explains the target buzzword without saying the word itself or any of the 3 forbidden words. Player 2 must guess the word within 45 seconds. Pay special attention to the IPA phonetic transcription and primary stress mark (ˈ).
+      </p>
+    </div>
+
+    <!-- 12 Taboo Cards (3x4 Grid) -->
+    <div class="grid-3" style="gap: 5px; margin-bottom: 5px;">
+      <!-- Card 1 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #01</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">MICROBURST</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈmaɪ.krəʊ.bɜːst/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Wind ] &bull; [ Downdraft ] &bull; [ Rain ]
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #02</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">HEAT DOME</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈhiːt ˌdəʊm/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Hot ] &bull; [ High Pressure ] &bull; [ Summer ]
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #03</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">ATMOSPHERIC RIVER</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˌæt.məsˈfer.ɪk/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Moisture ] &bull; [ Ocean ] &bull; [ Rain ]
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #04</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">SUPERCELL</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈsuː.pə.sel/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Tornado ] &bull; [ Cloud ] &bull; [ Storm ]
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #05</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">DENSITY ALTITUDE</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈden.sə.ti/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Temperature ] &bull; [ Thin Air ] &bull; [ Takeoff ]
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #06</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">RUNWAY INUNDATION</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˌɪn.ʌnˈdeɪ.ʃən/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Water ] &bull; [ Flood ] &bull; [ Closed ]
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #07</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">HAIL SWATH</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈheɪl ˌswɒθ/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Ice ] &bull; [ Damage ] &bull; [ Falling ]
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #08</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">SQUALL LINE</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈskwɔːl ˌlaɪn/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Front ] &bull; [ Gusts ] &bull; [ Thunderstorm ]
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #09</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">VIRGA</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈvɜː.ɡə/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Rain ] &bull; [ Evaporate ] &bull; [ Ground ]
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #10</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">WINDSHEAR</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈwɪnd.ʃɪər/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Speed ] &bull; [ Direction ] &bull; [ Change ]
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #11</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">HOLDOVER TIME</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˈhəʊld.əʊ.vər/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ De-icing ] &bull; [ Wings ] &bull; [ Snow ]
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="card" style="border: 1.5px solid #0284c7; text-align: center;">
+        <div style="font-size: 6.5pt; font-family: ui-monospace, monospace; color: #64748b;">CARD #12</div>
+        <div style="font-size: 8.5pt; font-weight: 900; color: #0f172a;">CLIMATE ADAPTATION</div>
+        <div style="font-size: 6.8pt; color: #0284c7; font-family: ui-monospace, monospace; margin-bottom: 3px;">/ˌæd.æpˈteɪ.ʃən/</div>
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 3px; font-size: 6.8pt; color: #b91c1c; font-weight: 700;">
+          FORBIDDEN:<br>
+          [ Change ] &bull; [ Future ] &bull; [ Protect ]
+        </div>
+      </div>
+    </div>
+
+    <!-- Pair Score Tracker -->
+    <div class="card" style="font-size: 7.1pt; color: #334155;">
+      <strong>Game Score Tracker:</strong> Correct Guesses: Player 1: [ &nbsp; / 6 ] &nbsp; Player 2: [ &nbsp; / 6 ] &nbsp; | &nbsp; Taboo Penalties: [ &nbsp; &nbsp; ]
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 5 &bull; Vocabulary Game: Extreme Weather Taboo</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- PAGE 7: CRISIS SHUTDOWN DEBATE & REFLECTION-->
+  <!-- ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • GENERAL ENGLISH (AG) • MODULE 2 SESSION 1</span>
+      <span class="ref">REF: GSEA-S1-M2-AG-S1 • PAGE 7/7</span>
+    </div>
+
+    <h2>Part 6: Aerodrome Crisis Shutdown Debate &amp; Consensus</h2>
+    <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+      Multi-Stakeholder Simulation: Balancing Apron Ground Safety, Fuel Contingency &amp; Regulatory Liability
+    </p>
+
+    <!-- Crisis Scenario -->
+    <div class="card card-left-amber" style="margin-bottom: 6px;">
+      <h3 style="color: #92400e; font-size: 7.5pt;">Emergency Scenario: Approaching Severe Convective Line</h3>
+      <p style="font-size: 7pt; color: #334155; line-height: 1.25;">
+        A violent supercell cluster with embedded microbursts and giant hail is detected 25 NM west of the aerodrome, moving east at 35 knots. Three incoming widebody flights have only 20 minutes of holding fuel. The crisis committee must decide whether to halt all operations immediately or maintain single-runway arrivals under ILS CAT II.
+      </p>
+    </div>
+
+    <!-- 3 Stakeholder Roles -->
+    <div class="grid-3" style="gap: 5px; margin-bottom: 6px;">
+      <div class="card card-left-blue">
+        <h3 style="color: #0369a1; font-size: 7.5pt;">Role A: Ramp Operations Director</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 3px;">
+          <strong>Mandate: Immediate Full Shutdown.</strong>
+        </p>
+        <div style="font-size: 6.8pt; color: #475569; line-height: 1.2;">
+          &bull; Lightning strikes within 5 NM mandate apron evacuation.<br>
+          &bull; 50-knot surface winds turn baggage containers into lethal projectiles.<br>
+          &bull; Refueling and catering must stop instantly.
+        </div>
+      </div>
+
+      <div class="card card-left-blue">
+        <h3 style="color: #0369a1; font-size: 7.5pt;">Role B: Lead Flight Dispatcher</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 3px;">
+          <strong>Mandate: Priority Runway Landing.</strong>
+        </p>
+        <div style="font-size: 6.8pt; color: #475569; line-height: 1.2;">
+          &bull; Diverting 3 widebodies causes regional airspace gridlock.<br>
+          &bull; Alternate airports are already at 95% ramp capacity.<br>
+          &bull; Aircraft can land safely before storm core hits runway apex.
+        </div>
+      </div>
+
+      <div class="card card-left-blue">
+        <h3 style="color: #0369a1; font-size: 7.5pt;">Role C: Safety Inspector</h3>
+        <p style="font-size: 6.9pt; color: #334155; line-height: 1.25; margin-bottom: 3px;">
+          <strong>Mandate: Regulatory Compliance.</strong>
+        </p>
+        <div style="font-size: 6.8pt; color: #475569; line-height: 1.2;">
+          &bull; LLWAS windshear warnings exceeding 15 kt mandate closure.<br>
+          &bull; Aerodrome operator faces legal liability in accident.<br>
+          &bull; Pilot-in-command retains final authority to divert.
+        </div>
+      </div>
+    </div>
+
+    <!-- Consensus Accord -->
+    <div class="card" style="margin-bottom: 6px;">
+      <h3 style="color: #0f172a; margin-bottom: 3px;">Committee Consensus Accord</h3>
+      <p style="font-size: 7pt; color: #64748b; margin-bottom: 4px;">
+        Negotiate and draft your committee's 3-point compromise decision:
+      </p>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+    </div>
+
+    <!-- Self-Assessment & Reflection -->
+    <div class="card card-left-blue" style="font-size: 7pt;">
+      <h3 style="color: #0369a1; margin-bottom: 3px;">Session 1 Self-Assessment Checklist</h3>
+      <div class="grid-2" style="gap: 4px;">
+        <div>[ &nbsp; ] I can explain downburst physics using target causal linkers.</div>
+        <div>[ &nbsp; ] I can distinguish between microbursts, supercells, and virga.</div>
+        <div>[ &nbsp; ] I can construct 2nd and 3rd conditional risk sentences correctly.</div>
+        <div>[ &nbsp; ] I can negotiate crisis shutdown criteria using professional English.</div>
+      </div>
+    </div>
+
+    <div class="doc-footer">
+      <span>Part 6 &bull; Crisis Shutdown Debate &amp; Self-Assessment</span>
+      <span>ENAC Technical English &bull; LV101E</span>
+    </div>
+  </div>
+
+</body>
+</html>
