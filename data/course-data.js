@@ -139,9 +139,9 @@
       ]
     },
     "sessions": {
-        "1": {
-          "session": 1,
-          "title": "Session 1 - Aerodynamics & Flight Principles",
+      "1": {
+        "session": 1,
+        "title": "Session 1 - Aerodynamics & Flight Principles",
         "objectives": {
           "title": "Session 1 Objectives - Introduction & Travel Anecdotes",
           "summary": "By the end of this session, you will be able to share engaging personal travel stories using narrative past tenses, use essential travel collocations, discuss global mobility dilemmas, and handle travel disruption conversations politely.",
@@ -26211,9 +26211,10 @@
         },
         "2": {
           "session": 2,
+          "title": "Aircraft Anatomy: Structure & Systems",
           "objectives": {
             "title": "Session 2 Objectives - Aircraft Anatomy: Structure & Systems",
-            "summary": "By the end of this session, you will be able to identify external and internal aircraft parts from diagrams, use spatial prepositions and functional descriptors accurately, conduct a simulated pre-flight exterior walkaround, and report mechanical defects in professional B2 English.",
+            "summary": "By the end of this session, you will be able to identify external and internal aircraft parts from diagrams, deploy spatial prepositions and functional descriptors accurately, detect aerodynamic and mechanical errors in technical texts, and master 18 structural vocabulary terms in professional B2 English.",
             "items": [
               {
                 "num": 1,
@@ -26227,53 +26228,53 @@
               },
               {
                 "num": 3,
-                "title": "Perform a 360-Degree Pre-Flight Walkaround Inspection Role-Play",
-                "description": "Simulate a captain or maintenance engineer inspecting the airframe, identifying foreign object damage (FOD), leaks, and structural dents."
+                "title": "Collaborative Blackboard Drawing & In-Flight Labeling",
+                "description": "Draw and label an aircraft in flight on the board in groups of three, briefing functional surfaces and sensor locations."
               },
               {
                 "num": 4,
-                "title": "Communicate Cockpit & Cabin Defect Handovers",
-                "description": "Discuss whether unserviceable components violate the Minimum Equipment List (MEL) and agree on dispatch decisions."
+                "title": "Detect & Correct Technical Fallacies (Error Hunter)",
+                "description": "Spot aerodynamic and structural inaccuracies in technical texts, explaining orally why statements are incorrect and supplying correct facts."
               },
               {
                 "num": 5,
-                "title": "Master High-Frequency Structural Pronunciation",
-                "description": "Correctly pronounce and stress specialized aeronautical components without hesitating during oral interactions."
+                "title": "Master High-Frequency Structural Pronunciation & Terminology",
+                "description": "Correctly pronounce and stress specialized aeronautical components during 12-term Taboo games and a 15-question mastery challenge."
               }
             ]
           },
           "lessonPlan": {
             "title": "Session 2 Lesson Plan (2 Hours)",
-            "summary": "A 2-hour communicative session combining aviation news, an airframe diagram labeling challenge, spatial grammar clinic, a 360-degree walkaround inspection simulation, MEL defect handovers, and pronunciation drills.",
+            "summary": "A 2-hour communicative session combining aviation news, an interactive video lab, a large aircraft in-flight diagram labeling challenge, technical gap-fills, a partner error-hunting reading, and an expanded 12-term Taboo game with a 15-question mastery quiz.",
             "items": [
               {
                 "title": "Part 1: Aviation News & Session 1 Aerodynamics Spot-Check",
-                "description": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes.",
+                "description": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes with spoken sentence stems.",
                 "part": "Part 1"
               },
               {
-                "title": "Part 2: Airframe Diagram Labeling Race",
-                "description": "Collaborative visual diagram race: identifying and labeling external control surfaces and internal cabin/cockpit zones.",
+                "title": "Part 2: Interactive Video Lab: Modern Aircraft Anatomy & Systems",
+                "description": "Noticeboard-style half-width video analysis examining commercial aircraft anatomy, flight controls, and hydraulic redundancy with debrief questions.",
                 "part": "Part 2"
               },
               {
-                "title": "Part 3: Language Focus: Spatial Prepositions & Functions",
-                "description": "Describing locations and mechanical functions using relative clauses and spatial prepositions (situated along, mounted to, designed to).",
+                "title": "Part 3: In-Flight Aircraft Labeling & 3-Person Blackboard Challenge",
+                "description": "Collaborative visual diagram race and 3-person board challenge labeling external airframe components on a large jet in flight.",
                 "part": "Part 3"
               },
               {
-                "title": "Part 4: Pre-Flight Walkaround Inspection Role-Play",
-                "description": "Captain & Ramp Maintenance Engineer simulation: performing an exterior walkaround and reporting simulated defects.",
+                "title": "Part 4: Technical Gap-Fill Clinic: Flight Controls & Pre-Flight Checks",
+                "description": "Two contextualized technical readings examining primary vs secondary surfaces and pre-flight inspection procedures.",
                 "part": "Part 4"
               },
               {
-                "title": "Part 5: Cockpit & Cabin Defect Handover Workshop",
-                "description": "Consulting the Minimum Equipment List (MEL) to negotiate dispatch decisions for inoperative cabin or airframe items.",
+                "title": "Part 5: Technical Error Hunter: Spotting Aircraft Anatomy Mistakes",
+                "description": "Partner reading and error-finding workshop detecting factual fallacies in airframe descriptions with spoken corrections.",
                 "part": "Part 5"
               },
               {
-                "title": "Part 6: Vocabulary Review, Pronunciation & Class Wrap-Up",
-                "description": "Pronunciation stress practice (fu-se-lage, emp-en-nage, hy-drau-lic, ra-dome) and vocabulary log consolidation.",
+                "title": "Part 6: Aircraft Anatomy Taboo & 15-Question Technical Mastery Challenge",
+                "description": "12-card Taboo word game and multi-format 15-question plenary challenge consolidating structural terminology.",
                 "part": "Part 6"
               }
             ]
@@ -26290,13 +26291,12 @@
             "openingSession": {
               "modeBadges": [
                 "⚡ Opening Warm-Up & News Scan",
-                "⏱️ 3 min news + 4 min quick check + 3 min verification",
                 "🎯 Aerodynamics to Anatomy Transition"
               ],
               "instructions": [
-                "Step 1 (Maintenance Headlines - 3 mins): Read the three weekly maintenance and structural headlines. Identify the airframe component most vulnerable to composite fatigue.",
-                "Step 2 (Session 1 Review Check - 4 mins): Answer the 4 review questions covering forces in equilibrium and control surfaces without consulting Session 1 notes.",
-                "Step 3 (Pair Verification - 3 mins): Compare your responses with your wingman. Toggle answers to verify technical precision and aerodynamic terminology."
+                "Step 1 (Maintenance Headlines): Read the three weekly maintenance and structural headlines. Identify the airframe component most vulnerable to composite fatigue.",
+                "Step 2 (Session 1 Review Check): Answer the 4 review questions covering forces in equilibrium and control surfaces using the spoken sentence stems.",
+                "Step 3 (Pair Verification): Compare your responses with your wingman. Toggle answers to verify technical precision and aerodynamic terminology."
               ],
               "deliverable": "Verbally answer all 4 spot-check questions with technical accuracy using correct aviation vocabulary.",
               "teacherNotes": "Ensure students connect Session 1's aerodynamic concepts (pitch, roll, yaw, lift) to the physical surfaces examined today (elevators, ailerons, rudder, flaps, slats).",
@@ -26309,46 +26309,111 @@
               ],
               "diagnostic": {
                 "title": "Session 1 Knowledge Check",
-                "instructions": "Confirm these 4 points before beginning aircraft anatomy:",
+                "instructions": "Confirm these 4 points before beginning aircraft anatomy using the spoken sentence stems:",
                 "questions": [
                   {
                     "id": 1,
-                    "q": "Which control surface controls roll, and where is it located on the wing?",
-                    "answer": "Ailerons control roll; they are hinged to the trailing edge of each outer wing and move in opposite directions."
+                    "q": "Explain which control surface controls roll, and describe its location on the wing.",
+                    "stem": "In spoken discussion, use: 'Roll is controlled by the ailerons, which are hinged to...'",
+                    "answer": "Ailerons control roll; they are hinged to the trailing edge of each outer wing and move differentially (one up, one down)."
                   },
                   {
                     "id": 2,
-                    "q": "What is the difference between leading-edge slats and trailing-edge flaps?",
-                    "answer": "Slats extend from the leading edge to delay stall at high angles of attack; flaps extend from the trailing edge to increase both lift and drag at low speeds."
+                    "q": "Compare and contrast the operational differences between leading-edge slats and trailing-edge flaps.",
+                    "stem": "In spoken discussion, use: 'While slats extend from the leading edge to..., flaps extend from the trailing edge to...'",
+                    "answer": "Slats extend from the leading edge to delay stall at high angles of attack; flaps extend from the trailing edge to increase both lift and drag at lower speeds."
                   },
                   {
                     "id": 3,
-                    "q": "Why are pitot tubes and static ports heated electrically?",
-                    "answer": "To prevent atmospheric ice accumulation from blocking dynamic and static pressure sensing, which would cause false airspeed indications."
+                    "q": "Explain why pitot tubes and static ports are heated electrically in flight.",
+                    "stem": "In spoken discussion, use: 'Electrical heating is essential because any ice accumulation would...'",
+                    "answer": "To prevent atmospheric ice accumulation from blocking dynamic and static pressure sensing, which would cause false airspeed and altitude indications."
                   },
                   {
                     "id": 4,
-                    "q": "What is the radome, and what sensitive equipment does it protect?",
+                    "q": "Describe what the radome is, and explain which sensitive equipment it protects.",
+                    "stem": "In spoken discussion, use: 'The radome serves as a protective composite dielectric cone that shields...'",
                     "answer": "The radome is the fiberglass dielectric nose cone that shields the weather radar antenna from aerodynamic weather without blocking radar signals."
                   }
                 ]
               }
             },
+            "videoLab": {
+              "modeBadges": [
+                "📹 Interactive Video Analysis",
+                "🎯 Airframe Anatomy & System Mechanics"
+              ],
+              "instructions": [
+                "Step 1 (Video Viewing): Watch the video on commercial aircraft anatomy and control surfaces. Note how primary and secondary surfaces deflect.",
+                "Step 2 (Debrief Analysis): Review the operational synopsis and technical terms in the right-hand debrief panel.",
+                "Step 3 (Spoken Pair Discussion): Answer the 3 guided viewing questions with your partner before revealing the model answers."
+              ],
+              "deliverable": "Discuss all 3 viewing questions in pairs using technical B2 aviation English.",
+              "teacherNotes": "Highlight the difference between primary controls (used continuously to maneuver) and secondary controls (used selectively for lift/drag during specific flight phases).",
+              "title": "Activity 2: Interactive Video Lab — Modern Aircraft Anatomy & Systems",
+              "summary": "Half-width video analysis examining commercial aircraft anatomy, flight controls, and hydraulic redundancy alongside an operational debrief card.",
+              "videoUrl": "https://www.youtube-nocookie.com/embed/fD3K8nW_z9o",
+              "youtubeUrl": "https://www.youtube.com/watch?v=fD3K8nW_z9o",
+              "channel": "Aviation Explained • Airframe Engineering & Flight Mechanics",
+              "videoTitle": "Commercial Aircraft Anatomy & How Flight Controls Work",
+              "synopsis": "An in-depth technical breakdown of commercial jet airframe architecture. Explains how primary control surfaces (ailerons, elevators, rudder) control attitude about the three axes, how high-lift devices (flaps and slats) alter wing camber during takeoff and landing, and how triple-redundant hydraulic systems power heavy aerodynamic surfaces.",
+              "keyTerms": [
+                "Primary vs. Secondary Controls",
+                "Fly-By-Wire Actuation",
+                "Triple Hydraulic Redundancy",
+                "Differential Aileron Deflection",
+                "Boundary Layer Re-energization"
+              ],
+              "questions": [
+                {
+                  "id": 1,
+                  "q": "Why do commercial aircraft use both inboard and outboard ailerons?",
+                  "answer": "Outboard ailerons provide high roll authority at low speeds (takeoff/landing), but are locked out at high cruise speeds to prevent wing twisting (aeroelastic torsion); high-speed roll is handled by inboard ailerons and roll spoilers."
+                },
+                {
+                  "id": 2,
+                  "q": "How do leading-edge slats prevent aerodynamic stall at high angles of attack?",
+                  "answer": "Slats open a slot allowing high-pressure air from beneath the wing to flow over the upper surface, re-energizing the boundary layer and keeping airflow attached at much higher angles of attack."
+                },
+                {
+                  "id": 3,
+                  "q": "What happens if an aircraft suffers a complete loss of hydraulic power?",
+                  "answer": "Modern airliners have triple redundant hydraulic circuits (e.g. Green, Blue, Yellow on Airbus). If all fail, a Ram Air Turbine (RAT) deploys automatically into the airstream to generate emergency hydraulic pressure for flight controls."
+                }
+              ]
+            },
             "diagramLabeling": {
               "modeBadges": [
                 "✈️ Aircraft Components & Anatomy",
-                "⏱️ 5 min diagram review + 15 min peer-teaching + 5 min plenary check",
                 "🎯 External Airframe Structural Vocabulary"
               ],
               "instructions": [
-                "Step 1 (Component Scan - 5 mins): Examine the 12 external aircraft components in the visual diagram. Review their English names, physical locations, and primary functions.",
-                "Step 2 (Peer-Teaching Walkthrough - 15 mins): In pairs, Student A describes a component's physical location and operational purpose without naming it; Student B identifies the part and its primary failure mode. Then swap.",
-                "Step 3 (Plenary Quick-Fire - 5 mins): Rapid-fire quiz on component abbreviations (APU, RAT, VOR/LOC, Pitot probes, static ports). Confirm precise technical pronunciation."
+                "Step 1 (Component Scan): Examine the 12 external aircraft components in the visual blueprint. Review their English names, physical locations, and primary functions.",
+                "Step 2 (Blackboard Challenge): In groups of 3, sketch an aircraft in flight on the board. Assign roles: Draftsperson (draws airframe), Systems Lead (labels components), and Spoken Briefing (presents to class).",
+                "Step 3 (Plenary Quick-Fire): Rapid-fire quiz on component abbreviations (APU, RAT, VOR/LOC, Pitot probes, static ports). Confirm precise technical pronunciation."
               ],
               "deliverable": "Accurately describe the location, function, and pre-flight inspection checkpoint for at least 4 airframe components to your partner.",
               "teacherNotes": "Emphasize correct stress on aviation compound nouns: PITOT probe, HORIZONTAL stabilizer, VORTEX generator, RADOME. Watch for confusion between flaps (lift augmentation) and spoilers (lift dumping).",
-              "title": "Activity 2: Airframe Anatomy Labeling Challenge",
-              "summary": "Identify and describe the key external parts and internal zones of a commercial transport aircraft.",
+              "title": "Activity 3: In-Flight Aircraft Labeling & 3-Person Blackboard Challenge",
+              "summary": "Identify and describe the key external parts and internal zones of a commercial transport aircraft in flight.",
+              "blackboardChallenge": {
+                "title": "3-Person Team Blackboard Drawing Challenge",
+                "instructions": "One group member draws the aircraft on the board, one labels the key parts, and one briefs the class.",
+                "roles": [
+                  {
+                    "role": "Student A: The Draftsperson",
+                    "task": "Draw a clear side and dorsal (top-down) profile of a twin-engine commercial airliner on the classroom board within 3 minutes."
+                  },
+                  {
+                    "role": "Student B: The Systems Lead",
+                    "task": "Label all 12 key components: Radome, Pitot probes, Slats, Flaps, Ailerons, Spoilers, Engines, Gear, Fin, Rudder, Horizontal Stabilizer, APU."
+                  },
+                  {
+                    "role": "Student C: The Flight Crew Presenter",
+                    "task": "Deliver a 90-second spoken walkaround briefing to the class explaining how primary controls and high-lift devices operate."
+                  }
+                ]
+              },
               "externalParts": [
                 {
                   "id": "01",
@@ -26424,131 +26489,449 @@
                 }
               ]
             },
-            "spatialClinic": {
+            "gapFillClinic": {
               "modeBadges": [
-                "📐 Technical Language Workshop",
-                "⏱️ 7 min spatial syntax + 8 min description drills + 5 min check",
-                "🎯 Spatial Prepositions & Functional Relative Clauses"
+                "✍️ Technical Reading & Gap-Fill",
+                "🎯 Airframe Systems & Inspection Lexicon"
               ],
               "instructions": [
-                "Step 1 (Spatial Grammar Analysis - 7 mins): Review the spatial preposition patterns and functional relative clauses ('located aft of', 'mounted flush with', 'which serves to prevent').",
-                "Step 2 (Guided Description Drills - 8 mins): Using the airframe diagram, construct 3 complex sentences locating antennas, sensors, and structural panels relative to major datum lines.",
-                "Step 3 (Peer Verification): Read your descriptions to your partner. They must identify the exact airframe zone based solely on your verbal cues."
+                "Step 1 (Text A Completion): Read the passage on Primary vs. Secondary Flight Controls. Fill the 6 technical gaps using the word bank.",
+                "Step 2 (Text B Completion): Read the pre-flight exterior walkaround passage. Select the appropriate technical term for each sensor and airframe zone.",
+                "Step 3 (Pair Verification): Check answers with your partner and practice reading the technical descriptions aloud."
               ],
-              "deliverable": "Produce 3 grammatically sound spoken technical sentences combining spatial prepositions with functional relative clauses.",
-              "teacherNotes": "Drill the prepositional phrases that often cause trouble: 'forward of', 'aft of', 'inboard of', 'outboard of', 'underneath the belly'. Insist on relative clauses: '...which is designed to relieve...', '...through which air flows...'.",
-              "title": "Activity 3: Language Focus: Spatial Prepositions & Functions",
-              "summary": "Formulating clear, professional technical descriptions of aircraft parts and their relative positions.",
-              "patterns": [
-                {
-                  "title": "Precise Spatial Prepositions",
-                  "examples": [
-                    "The auxiliary power unit (APU) is situated inside the tail cone, aft of the rear pressure bulkhead.",
-                    "The ram air turbine (RAT) is flush-mounted beneath the fuselage, ready to deploy into the relative airflow."
-                  ]
-                },
-                {
-                  "title": "Purposive Relative Clauses",
-                  "examples": [
-                    "Flaps are high-lift devices which extend from the trailing edge, serving to decrease landing speeds.",
-                    "The oleo strut is an oleo-pneumatic shock absorber designed to cushion touchdown impacts."
-                  ]
+              "deliverable": "Complete all 12 gap-fills with 100% technical accuracy and read the corrected texts aloud.",
+              "teacherNotes": "Focus on the distinction between primary control surfaces (ailerons, elevators, rudder) that control aircraft attitude and secondary control surfaces (flaps, slats, spoilers) that modify lift and drag.",
+              "title": "Activity 4: Technical Gap-Fill Clinic: Flight Controls & Pre-Flight Checks",
+              "summary": "Two contextualized technical readings examining flight control surfaces and pre-flight inspection procedures.",
+              "textA": {
+                "title": "Text A: Primary vs. Secondary Flight Controls & High-Lift Devices",
+                "wordBank": [
+                  "differentially",
+                  "camber",
+                  "longitudinal",
+                  "attitude",
+                  "spoilers",
+                  "rudder"
+                ],
+                "passage": "Modern commercial transport aircraft rely on two primary categories of aerodynamic surfaces to maneuver safely throughout the flight envelope. Primary flight controls manage the aircraft's [1] about its three axes. To control roll about the longitudinal axis, [2] deflect [3] on the outboard trailing edges of the wings. Pitch control about the lateral axis is governed by the elevators mounted to the horizontal stabilizer, ensuring [4] stability. Directional yaw control about the normal axis is commanded by the [5], hinged to the vertical fin. Conversely, secondary flight controls such as leading-edge slats and trailing-edge flaps alter wing [6] to generate the high lift required for low-speed takeoff and landing operations, while upper-wing [7] deploy to dump lift and decelerate during rollout.",
+                "answers": {
+                  "1": "attitude",
+                  "2": "ailerons",
+                  "3": "differentially",
+                  "4": "longitudinal",
+                  "5": "rudder",
+                  "6": "camber",
+                  "7": "spoilers"
                 }
-              ]
-            },
-            "walkaroundRoleplay": {
-              "modeBadges": [
-                "👨‍✈️ Flight Crew & Ramp Engineer Role-Play",
-                "⏱️ 5 min card study + 20 min bilateral simulation + 5 min debrief",
-                "🎯 Defect Reporting & Technical Dialogue"
-              ],
-              "instructions": [
-                "Step 1 (Defect Briefing - 5 mins): Study the 3 defect scenario cards. Student A takes the role of the Captain conducting the pre-departure walkaround; Student B takes the role of the Ramp Line Maintenance Engineer.",
-                "Step 2 (Spoken Walkaround Simulation - 20 mins): Perform the bilateral spoken inspection dialogue for all defect cards. Captain describes the physical defect observed; Engineer assesses airworthiness and recommends maintenance action or deferral.",
-                "Step 3 (Role Reversal & Debrief - 5 mins): Swap roles for the second scenario. Evaluate whether your dialogue maintained professional aviation decorum and clear technical phraseology."
-              ],
-              "deliverable": "Conduct a realistic walkaround dialogue applying standard aviation terminology for damage (gouges, delamination, hydraulic weeping, bird strike).",
-              "teacherNotes": "Listen for realistic aviation communication: clear, concise, objective. Discourage vague language ('it looks broken'); require specific technical descriptors ('there is hydraulic weeping around the actuator seal', 'delamination extending 3 centimeters').",
-              "title": "Activity 4: Pre-Flight Exterior Walkaround Role-Play",
-              "summary": "Captain & Line Maintenance Engineer simulation: performing a 360-degree exterior walkaround and reporting simulated defects.",
-              "defectCards": [
-                {
-                  "item": "Card 1: Radome Inspection",
-                  "defect": "Circular dent (8 cm diameter) with chipped paint on the lower right radome, likely caused by a bird strike on the previous flight.",
-                  "pilotDialogue": "Ramp, Captain here. I'm looking at a noticeable dent on the lower starboard radome. Could you bring the gauge to check if it's within structural limits?",
-                  "engineerDialogue": "Copy that, Captain. I'll inspect the honeycomb core with a tap hammer to confirm there's no delamination or radar interference."
-                },
-                {
-                  "item": "Card 2: Left Main Landing Gear",
-                  "defect": "Fresh reddish hydraulic fluid dripping slowly (approx. 5 drops per minute) from the brake line fitting onto the brake assembly.",
-                  "pilotDialogue": "We have hydraulic seepage near the port main gear brake line. It looks fresh. Can we get maintenance to torque this fitting?",
-                  "engineerDialogue": "I see it. That's Skydrol hydraulic fluid. Let me wipe it clean, verify the B-nut torque, and run a brake pressurization check."
-                },
-                {
-                  "item": "Card 3: Right Winglet Static Discharger",
-                  "defect": "One of the three trailing static discharger wicks on the right sharklet is broken off and missing.",
-                  "pilotDialogue": "I noticed one static wick missing on the starboard winglet tip. Can we dispatch with two wicks installed?",
-                  "engineerDialogue": "Let me check the Configuration Deviation List (CDL). Under CDL 23-60, flight is permitted with one wick missing provided lightning risk is low."
+              },
+              "textB": {
+                "title": "Text B: Exterior Pre-Flight Walkaround & Sensor Integrity",
+                "wordBank": [
+                  "delamination",
+                  "pitot-static",
+                  "static wicks",
+                  "hydraulic",
+                  "radome",
+                  "oleo-pneumatic"
+                ],
+                "passage": "Before every departure, the flight crew or licensed maintenance engineer must perform a rigorous 360-degree exterior walkaround. The inspection commences at the nose, verifying that the composite [1] is free of bird strikes or hail damage and that all [2] probes are clear of insect nests, ice, or protective covers. Moving aft along the fuselage, the engineer inspects the nose gear assembly, ensuring the [3] strut extension is within limits and shows no signs of [4] fluid leakage. Along the wings, trailing-edge control surfaces must be checked for free movement, and flexible [5] on the trailing edges and wingtips must be intact to dissipate electrical charges. Finally, composite panels must be visually scanned for impact cracks or composite [6].",
+                "answers": {
+                  "1": "radome",
+                  "2": "pitot-static",
+                  "3": "oleo-pneumatic",
+                  "4": "hydraulic",
+                  "5": "static wicks",
+                  "6": "delamination"
                 }
-              ]
+              }
             },
-            "cockpitSystemsHandover": {
+            "errorHunter": {
               "modeBadges": [
-                "📋 Dispatch & MEL Technical Workshop",
-                "⏱️ 5 min MEL review + 15 min crew deliberation + 5 min dispatch decision",
-                "🎯 Minimum Equipment List & Airworthiness Assessment"
+                "🔍 Technical Fact vs. Fallacy",
+                "🎯 Peer Listening & Error Correction"
               ],
               "instructions": [
-                "Step 1 (MEL Dispatch Framework - 5 mins): Review the 3 maintenance status items in the Minimum Equipment List (MEL) log (APU inoperative, lavatory door latch jammed, weather radar inoperative).",
-                "Step 2 (Crew Deliberation - 15 mins): In pairs, deliberate on each defect. Determine whether the aircraft is: (A) Go / Fit to Dispatch, (B) Go with Operational Limitations, or (C) No-Go / Grounded until rectification.",
-                "Step 3 (Technical Dispatch Briefing - 5 mins): Deliver your final verbal dispatch briefing to the Station Operations Control (SOC) justifying your go/no-go recommendation based on MEL conditions."
+                "Step 1 (Partner Reading): Student A reads statement 1 aloud to Student B. Student B listens closely without looking at the text.",
+                "Step 2 (Spot & Challenge): Student B identifies the technical or aerodynamic falsehood, states why it is incorrect, and provides the corrected statement.",
+                "Step 3 (Role Swap): Swap roles for each statement (Student B reads statement 2, Student A challenges and corrects). Toggle answers to verify."
               ],
-              "deliverable": "Present a structured 2-minute verbal dispatch recommendation to the class for all 3 MEL items citing operational restrictions.",
-              "teacherNotes": "Ensure students know what MEL Category A, B, C, and D mean in aviation. Ask: 'Can we dispatch with an inoperative APU if ground power and air start units are available at the destination?' Require technical justification.",
-              "title": "Activity 5: Minimum Equipment List (MEL) Dispatch Workshop",
-              "summary": "Reviewing the Minimum Equipment List (MEL) to make safe dispatch decisions for inoperative equipment.",
-              "melItems": [
+              "deliverable": "Detect and orally correct all 8 technical errors using accurate aeronautical vocabulary.",
+              "teacherNotes": "Encourage assertive, professional communication stems: 'That is technically incorrect because...', 'In reality, the purpose of the aileron is to...', 'Actually, dynamic pressure is measured by...'.",
+              "title": "Activity 5: Technical Error Hunter: Spotting Aircraft Anatomy Mistakes",
+              "summary": "Partner reading and error-finding workshop detecting factual fallacies in airframe descriptions with spoken corrections.",
+              "statements": [
                 {
-                  "item": "APU (Auxiliary Power Unit) Generator Inoperative",
-                  "status": "Permitted for 10 days provided both engine generators and external GPU are fully operational."
+                  "id": 1,
+                  "falseStatement": "\"The aileron is there to produce lift during takeoff and initial climb.\"",
+                  "mistake": "Ailerons do not exist to generate net lift; they deflect differentially (one up, one down) to roll the aircraft about its longitudinal axis. High-lift devices like flaps and slats produce extra lift.",
+                  "correction": "\"Ailerons control aircraft roll by deflecting differentially; trailing-edge flaps and leading-edge slats are designed to increase lift.\""
                 },
                 {
-                  "item": "Passenger Cabin Lavatory Door Latch Jammed",
-                  "status": "Permitted provided the lavatory is locked out, placarded 'INOPERATIVE', and passenger-to-lavatory ratio is respected."
+                  "id": 2,
+                  "falseStatement": "\"Pitot tubes measure static atmospheric pressure in order to calculate the aircraft's cruising altitude.\"",
+                  "mistake": "Pitot tubes measure dynamic ram air pressure for airspeed calculation. Ambient atmospheric static pressure is measured by flush-mounted static ports.",
+                  "correction": "\"Pitot tubes measure dynamic ram air pressure to determine indicated airspeed, whereas static ports measure ambient pressure for altitude.\""
                 },
                 {
-                  "item": "Weather Radar System Inoperative",
-                  "status": "Strictly prohibited if convective storms or IMC (Instrument Meteorological Conditions) are forecast along route."
+                  "id": 3,
+                  "falseStatement": "\"The Auxiliary Power Unit (APU) in the tail cone provides supplementary thrust during the high-altitude climb phase.\"",
+                  "mistake": "The APU does not produce propulsive thrust; it is a small gas turbine that generates electrical power and pneumatic bleed air for air conditioning and engine start on the ground or in emergencies.",
+                  "correction": "\"The APU provides electrical power and compressed air for pneumatic systems on the ground and in flight, but produces zero propulsive thrust.\""
+                },
+                {
+                  "id": 4,
+                  "falseStatement": "\"Leading-edge slats extend from the trailing edge of the wing to increase aerodynamic drag during final approach.\"",
+                  "mistake": "Slats extend from the leading edge (front) of the wing to delay stall at high angles of attack; flaps extend from the trailing edge (rear).",
+                  "correction": "\"Leading-edge slats extend from the front of the wing to re-energize the boundary layer and delay stall, while trailing-edge flaps increase lift and drag.\""
+                },
+                {
+                  "id": 5,
+                  "falseStatement": "\"Pilots use the rudder pedals to steer and turn the aircraft during normal high-speed cruising flight.\"",
+                  "mistake": "Aircraft turns at high speed are accomplished by banking with ailerons and roll spoilers (producing a horizontal component of lift). The rudder is used only to coordinate turns (prevent adverse yaw) or during crosswind landings.",
+                  "correction": "\"Normal cruising turns are performed by banking with ailerons; the rudder is used primarily to counteract adverse yaw and maintain coordinated flight.\""
+                },
+                {
+                  "id": 6,
+                  "falseStatement": "\"Static discharge wicks are thick grounding cables connected to airport fuel tankers during refuelling operations.\"",
+                  "mistake": "Static wicks are small braided metal or carbon needles mounted to trailing edges that bleed static electricity accumulated from friction with air molecules into the atmosphere.",
+                  "correction": "\"Static wicks dissipate static electrical charges built up in flight into the atmosphere to prevent radio interference and lightning damage.\""
+                },
+                {
+                  "id": 7,
+                  "falseStatement": "\"Ground spoilers deploy during the cruise phase to help the aircraft maintain its maximum cruising speed.\"",
+                  "mistake": "Ground spoilers deploy only upon touchdown on the runway to dump wing lift instantly, transferring weight onto the main landing gear wheels for maximum braking efficiency.",
+                  "correction": "\"Ground spoilers deploy upon landing touchdown to dump lift and increase wheel braking friction, not during cruise.\""
+                },
+                {
+                  "id": 8,
+                  "falseStatement": "\"The radome is made of thick aircraft-grade titanium to protect the weather radar antenna from high-speed bird impacts.\"",
+                  "mistake": "The radome cannot be made of metal (which would block or reflect radar waves); it is manufactured from dielectric composites such as fiberglass or quartz that are transparent to radio frequencies.",
+                  "correction": "\"The radome is constructed from radio-frequency-transparent composites (fiberglass or quartz), because metallic structures would block radar signals.\""
                 }
               ]
             },
             "closingReview": {
               "modeBadges": [
                 "🏁 Final Technical Wrap-Up",
-                "⏱️ 5 min pronunciation drill + 5 min portfolio audit",
-                "🎯 Aircraft Anatomy Vocabulary & Syllable Stress"
+                "🎯 Taboo Word Game & Technical Mastery Challenge"
               ],
               "instructions": [
-                "Step 1 (Syllable Stress Drill - 5 mins): Drill the tricky multisyllabic aircraft components (fu-se-LAGE, emp-en-NAGE, hy-DRAU-lic, RA-dome, sta-bi-LI-zer, AI-ler-on). Focus on primary and secondary stress.",
-                "Step 2 (Technical Checkpoints Audit - 3 mins): In pairs, confirm you can name 6 external parts, explain 2 walkaround defect types, and define the purpose of an MEL dispatch item.",
-                "Step 3 (Study Assignment - 2 mins): Review the 18 vocabulary flashcards in the Revision tab and complete the Session 2 TOEIC practice questions before Session 3."
+                "Step 1 (Aircraft Anatomy Taboo - 12 Cards): Play Taboo in pairs. Describe the target technical term without saying any of the 3 forbidden words. Test all 12 cards.",
+                "Step 2 (15-Question Technical Mastery Challenge): Complete the multi-format 15-question interactive quiz covering error spotting, surface matching, and pre-flight inspections.",
+                "Step 3 (Consolidation & Portfolio): Review your final score, note any missed concepts, and log today's technical terms in your digital Learning Portfolio."
               ],
-              "deliverable": "Demonstrate accurate pronunciation and primary stress placement on 6 multisyllabic aircraft parts and confirm mastery of key anatomy concepts.",
-              "teacherNotes": "Conduct a choral pronunciation drill for 'fuselage' (/ˈfjuːzəlɑːʒ/) and 'empennage' (/ˌɒmpɪˈnɑːʒ/). Preview Session 3: Commercial Aircraft & Fleet Types (narrow-body, wide-body, regional).",
-              "title": "Activity 6: Vocabulary Review & Class Wrap-Up",
-              "summary": "Drill tricky aeronautical component pronunciation and consolidate learning logs ahead of Session 3.",
-              "wordsToPronounce": [
-                "fu-se-lage",
-                "emp-en-nage",
-                "hy-drau-lic",
-                "ra-dome",
-                "sta-bi-li-zer",
-                "ail-er-on"
+              "deliverable": "Demonstrate mastery across all 12 Taboo cards and achieve at least 80% on the 15-question mastery challenge.",
+              "teacherNotes": "Encourage rapid spoken fluency during Taboo without hesitations. Review question explanations for any tricky concepts before concluding class.",
+              "title": "Activity 6: Aircraft Anatomy Taboo & 15-Question Technical Mastery Challenge",
+              "summary": "12-card Taboo word game and multi-format 15-question plenary challenge consolidating structural terminology.",
+              "tabooCards": [
+                {
+                  "id": 1,
+                  "term": "Aileron",
+                  "phonetic": "/ˈeɪ.lə.rɒn/",
+                  "forbidden": [
+                    "Wing",
+                    "Roll",
+                    "Lateral"
+                  ]
+                },
+                {
+                  "id": 2,
+                  "term": "Rudder",
+                  "phonetic": "/ˈrʌd.ər/",
+                  "forbidden": [
+                    "Tail",
+                    "Yaw",
+                    "Pedal"
+                  ]
+                },
+                {
+                  "id": 3,
+                  "term": "Elevator",
+                  "phonetic": "/ˈel.ɪ.veɪ.tər/",
+                  "forbidden": [
+                    "Pitch",
+                    "Nose",
+                    "Horizontal"
+                  ]
+                },
+                {
+                  "id": 4,
+                  "term": "Flap",
+                  "phonetic": "/flæp/",
+                  "forbidden": [
+                    "Lift",
+                    "Trailing-edge",
+                    "Drag"
+                  ]
+                },
+                {
+                  "id": 5,
+                  "term": "Slat",
+                  "phonetic": "/slæt/",
+                  "forbidden": [
+                    "Leading-edge",
+                    "Stall",
+                    "Extend"
+                  ]
+                },
+                {
+                  "id": 6,
+                  "term": "Spoiler",
+                  "phonetic": "/ˈspɔɪ.lər/",
+                  "forbidden": [
+                    "Speedbrake",
+                    "Descend",
+                    "Dump"
+                  ]
+                },
+                {
+                  "id": 7,
+                  "term": "Radome",
+                  "phonetic": "/ˈreɪ.dəʊm/",
+                  "forbidden": [
+                    "Nose",
+                    "Radar",
+                    "Weather"
+                  ]
+                },
+                {
+                  "id": 8,
+                  "term": "Pitot Tube",
+                  "phonetic": "/ˈpiː.təʊ tjuːb/",
+                  "forbidden": [
+                    "Airspeed",
+                    "Heat",
+                    "Ram"
+                  ]
+                },
+                {
+                  "id": 9,
+                  "term": "Static Wick",
+                  "phonetic": "/ˈstæt.ɪk wɪk/",
+                  "forbidden": [
+                    "Lightning",
+                    "Discharge",
+                    "Electricity"
+                  ]
+                },
+                {
+                  "id": 10,
+                  "term": "APU",
+                  "phonetic": "/ˌeɪ.piːˈjuː/",
+                  "forbidden": [
+                    "Engine",
+                    "Tail",
+                    "Electrical"
+                  ]
+                },
+                {
+                  "id": 11,
+                  "term": "Fuselage",
+                  "phonetic": "/ˈfjuː.zə.lɑːʒ/",
+                  "forbidden": [
+                    "Body",
+                    "Cabin",
+                    "Passengers"
+                  ]
+                },
+                {
+                  "id": 12,
+                  "term": "Empennage",
+                  "phonetic": "/ˌɒm.pɪˈnɑːʒ/",
+                  "forbidden": [
+                    "Tail",
+                    "Fin",
+                    "Stabilizer"
+                  ]
+                }
               ],
-              "checkpoints": [
-                "Can you accurately describe the location and function of the radome, pitot probes, APU, and static ports?",
-                "Can you use spatial prepositions (forward of, aft of, mounted flush with) to direct an engineer to an airframe defect?",
-                "Can you evaluate an airframe defect against the Minimum Equipment List (MEL) and justify a dispatch decision?"
+              "masteryQuiz": [
+                {
+                  "id": 1,
+                  "round": "Round 1: Rapid Error Buster",
+                  "q": "True or False: Trailing-edge flaps are primarily deployed to decrease drag during long-range cruise.",
+                  "options": [
+                    "True - Flaps streamline the wing for higher cruise Mach numbers.",
+                    "False - Flaps increase lift and drag for takeoff and landing; they are retracted during cruise."
+                  ],
+                  "correct": 1,
+                  "explanation": "Flaps are high-lift devices used exclusively during takeoff, approach, and landing to allow lower flying speeds. In cruise, they are fully retracted."
+                },
+                {
+                  "id": 2,
+                  "round": "Round 1: Rapid Error Buster",
+                  "q": "True or False: If all engine-driven generators fail in flight, the APU can be started in flight to provide electrical power.",
+                  "options": [
+                    "True - The APU can be started in-flight within certified altitude limits to supply electrical and pneumatic power.",
+                    "False - The APU can only be ignited when the aircraft is on the ground connected to GPU."
+                  ],
+                  "correct": 0,
+                  "explanation": "Modern transport aircraft APUs are certified for in-flight restart up to specified flight levels (typically FL250 to FL410 depending on aircraft type)."
+                },
+                {
+                  "id": 3,
+                  "round": "Round 1: Rapid Error Buster",
+                  "q": "True or False: Ailerons always deflect symmetrically in the same direction at the same time.",
+                  "options": [
+                    "True - Symmetrical deflection ensures balanced aerodynamic force.",
+                    "False - Ailerons deflect differentially (one up, one down) to roll the aircraft."
+                  ],
+                  "correct": 1,
+                  "explanation": "To induce roll, one aileron deflects upwards (reducing lift on that wing) while the opposite aileron deflects downwards (increasing lift)."
+                },
+                {
+                  "id": 4,
+                  "round": "Round 1: Rapid Error Buster",
+                  "q": "True or False: Pitot probe heating is only turned on after the pilot notices ice forming on the windshield.",
+                  "options": [
+                    "True - Heating is conserved to prevent premature heating element burnout.",
+                    "False - Pitot-static probe heating is activated prior to takeoff or automatically upon engine start regardless of weather."
+                  ],
+                  "correct": 1,
+                  "explanation": "Pitot heating is a critical pre-flight and in-flight safety system activated automatically or by checklist before entering any potential icing or flight conditions."
+                },
+                {
+                  "id": 5,
+                  "round": "Round 1: Rapid Error Buster",
+                  "q": "True or False: The vertical fin provides longitudinal stability, while the horizontal stabilizer provides directional stability.",
+                  "options": [
+                    "True - The vertical fin controls pitch, while the horizontal stabilizer controls yaw.",
+                    "False - The vertical fin provides directional (yaw) stability; the horizontal stabilizer provides longitudinal (pitch) stability."
+                  ],
+                  "correct": 1,
+                  "explanation": "Longitudinal stability (nose up/down) is maintained by the horizontal stabilizer, whereas directional stability (nose left/right) is provided by the vertical fin."
+                },
+                {
+                  "id": 6,
+                  "round": "Round 2: Flight Motion & Control Matcher",
+                  "q": "Which flight control surface is commanded by the pilot pushing the left or right rudder pedals?",
+                  "options": [
+                    "Ailerons on the outboard wingtips.",
+                    "Rudder hinged to the trailing edge of the vertical stabilizer.",
+                    "Elevators on the horizontal tailplane.",
+                    "Roll spoilers on the upper wing surface."
+                  ],
+                  "correct": 1,
+                  "explanation": "Rudder pedals command the rudder, causing yaw rotation about the vertical/normal axis."
+                },
+                {
+                  "id": 7,
+                  "round": "Round 2: Flight Motion & Control Matcher",
+                  "q": "When the pilot pulls back on the control column or sidestick, how do the elevators move?",
+                  "options": [
+                    "Elevators deflect downwards, pushing the tail up and lowering the nose.",
+                    "Elevators deflect upwards, producing downward aerodynamic force on the tail to pitch the nose up.",
+                    "Elevators move differentially to bank the aircraft.",
+                    "Elevators remain neutral while trim tabs adjust pitch."
+                  ],
+                  "correct": 1,
+                  "explanation": "Pulling back deflects elevators upward, creating negative lift on the horizontal tail, which forces the tail down and pitches the nose up."
+                },
+                {
+                  "id": 8,
+                  "round": "Round 2: Flight Motion & Control Matcher",
+                  "q": "What is the primary function of wing-mounted roll spoilers when deployed asymmetrically in flight?",
+                  "options": [
+                    "To increase wing camber and generate maximum lift during turns.",
+                    "To dump lift on the down-going wing to assist ailerons in banking the aircraft.",
+                    "To cool the hydraulic actuators inside the wing.",
+                    "To trim the rudder during engine-out operations."
+                  ],
+                  "correct": 1,
+                  "explanation": "Roll spoilers rise on the wing that needs to drop, spoiling lift and helping the aircraft roll rapidly into the desired bank angle."
+                },
+                {
+                  "id": 9,
+                  "round": "Round 2: Flight Motion & Control Matcher",
+                  "q": "Which devices extend from the leading edge of modern jetliner wings to delay aerodynamic stall?",
+                  "options": [
+                    "Slats (and Krueger flaps).",
+                    "Fowler flaps.",
+                    "Vortex spoilers.",
+                    "Aileron trim tabs."
+                  ],
+                  "correct": 0,
+                  "explanation": "Slats extend forward from the leading edge to create a slot that re-energizes airflow over the top of the wing at high angles of attack."
+                },
+                {
+                  "id": 10,
+                  "round": "Round 2: Flight Motion & Control Matcher",
+                  "q": "What aerodynamic phenomenon do wingtip winglets or sharklets mitigate?",
+                  "options": [
+                    "Parasite drag caused by rough paint.",
+                    "Induced drag caused by high-pressure air curling over the wingtips into wingtip vortices.",
+                    "Wave drag caused by supersonic shockwaves.",
+                    "Skin friction drag on the fuselage skin."
+                  ],
+                  "correct": 1,
+                  "explanation": "Winglets reduce wingtip vortex formation, significantly cutting induced drag and improving fuel efficiency by 3–5%."
+                },
+                {
+                  "id": 11,
+                  "round": "Round 3: Pre-Flight Operational Decision",
+                  "q": "During the exterior walkaround, you discover a pitot tube cover still installed on the right forward fuselage probe. What is the correct action?",
+                  "options": [
+                    "Leave it in place until the aircraft reaches the active runway.",
+                    "Remove it immediately, inspect the probe orifice for debris, and log its removal.",
+                    "Cut the lanyard to allow airspeed pressure to enter.",
+                    "Ignore it because the left captain's probe is uncovered."
+                  ],
+                  "correct": 1,
+                  "explanation": "All pitot covers must be removed and stowed prior to departure; leaving a cover on results in complete loss of airspeed data on that channel."
+                },
+                {
+                  "id": 12,
+                  "round": "Round 3: Pre-Flight Operational Decision",
+                  "q": "You observe red hydraulic fluid leaking at 4 drops per minute from the left main landing gear brake line. What must you do?",
+                  "options": [
+                    "Wipe it with a cloth and immediately clear the aircraft for passenger boarding.",
+                    "Report the leak to Line Maintenance for inspection against the AMM/MEL limits before flight.",
+                    "Increase brake accumulator pressure from the flight deck.",
+                    "Top off the hydraulic reservoir without notifying engineering."
+                  ],
+                  "correct": 1,
+                  "explanation": "Any active hydraulic leakage on brake lines or landing gear actuators must be evaluated by licensed maintenance engineers against Aircraft Maintenance Manual (AMM) limits."
+                },
+                {
+                  "id": 13,
+                  "round": "Round 3: Pre-Flight Operational Decision",
+                  "q": "On the horizontal stabilizer trailing edge, you notice that 2 of the 4 static discharge wicks are broken off. Can the aircraft dispatch?",
+                  "options": [
+                    "Never - All static wicks are mandatory 'No-Go' items on every aircraft.",
+                    "Consult the CDL (Configuration Deviation List); dispatch is often permitted with a limited number of missing wicks under specific conditions.",
+                    "Tie wire around the broken mounts to replace the wicks.",
+                    "Static wicks have no effect on flight and can be ignored indefinitely."
+                  ],
+                  "correct": 1,
+                  "explanation": "The Configuration Deviation List (CDL) specifies the maximum allowable number and locations of missing static discharge wicks permitted for dispatch."
+                },
+                {
+                  "id": 14,
+                  "round": "Round 3: Pre-Flight Operational Decision",
+                  "q": "A maintenance ramp vehicle accidentally scrapes the fiberglass radome, leaving a 10 cm visible crack. Why is this a serious airworthiness concern?",
+                  "options": [
+                    "It only affects exterior aesthetics and can be covered with speed tape indefinitely.",
+                    "Water ingress into the composite honeycomb can freeze at altitude, distorting radar signals or causing structural separation.",
+                    "It will immediately cause the cockpit windshield to depressurize.",
+                    "Radomes carry primary fuselage structural bending loads."
+                  ],
+                  "correct": 1,
+                  "explanation": "Radome cracks allow moisture into composite cores; at sub-zero flight levels, freezing moisture distorts weather radar returns and can cause explosive panel delamination."
+                },
+                {
+                  "id": 15,
+                  "round": "Round 3: Pre-Flight Operational Decision",
+                  "q": "What is the primary operational purpose of the oleo-pneumatic strut on the aircraft's landing gear?",
+                  "options": [
+                    "To steer the aircraft during high-speed takeoffs.",
+                    "To absorb touchdown impact forces using a combination of oil and compressed nitrogen.",
+                    "To store excess hydraulic fluid for the brake system.",
+                    "To cool the aircraft tires during rejected takeoffs."
+                  ],
+                  "correct": 1,
+                  "explanation": "Oleo struts combine hydraulic oil (metered through orifices) and compressed nitrogen gas to dissipate and cushion the violent kinetic energy of landing impact."
+                }
               ]
             }
           },
@@ -26563,440 +26946,90 @@
               },
               {
                 "num": "02",
-                "term": "Empennage",
-                "definition": "The tail assembly of an aircraft, consisting of the vertical fin, rudder, horizontal stabilizer, and elevators."
+                "term": "Radome",
+                "definition": "The fiberglass dielectric nose cone housing and protecting the weather radar antenna."
               },
               {
                 "num": "03",
-                "term": "Leading Edge",
-                "definition": "The forwardmost edge of an airfoil or wing that first meets the relative airflow."
+                "term": "Pitot Probe",
+                "definition": "An electrically heated forward-facing sensor measuring dynamic ram air pressure for indicated airspeed."
               },
               {
                 "num": "04",
-                "term": "Trailing Edge",
-                "definition": "The aft rear edge of an airfoil or wing where airflow passing over and under meets."
+                "term": "Static Port",
+                "definition": "A flush-mounted exterior fuselage sensor measuring ambient atmospheric barometric pressure for altitude."
               },
               {
                 "num": "05",
-                "term": "Slats",
-                "definition": "Movable aerodynamic surfaces on the leading edge that extend to delay stall at high angles of attack."
+                "term": "Aileron",
+                "definition": "A primary flight control surface hinged to the outer trailing edge of the wing that deflects differentially to control roll."
               },
               {
                 "num": "06",
-                "term": "Flaps",
-                "definition": "High-lift hinged surfaces on the trailing edge deployed to increase wing surface area and camber during takeoff and landing."
+                "term": "Elevator",
+                "definition": "A primary flight control surface hinged to the horizontal stabilizer that commands pitch attitude."
               },
               {
                 "num": "07",
-                "term": "Spoiler (Speed Brake)",
-                "definition": "Hinged plates on the upper wing surface that deploy upward to spoil lift and slow the aircraft."
+                "term": "Rudder",
+                "definition": "A primary flight control surface hinged to the vertical fin commanded by pedals to control yaw."
               },
               {
                 "num": "08",
-                "term": "Horizontal Stabilizer",
-                "definition": "The fixed or trimmable horizontal tail surface providing longitudinal stability in pitch."
+                "term": "Leading-Edge Slat",
+                "definition": "An aerodynamic high-lift device extending forward from the wing leading edge to delay boundary-layer stall."
               },
               {
                 "num": "09",
-                "term": "Vertical Fin",
-                "definition": "The vertical tail surface that provides directional stability against yaw."
+                "term": "Trailing-Edge Flap",
+                "definition": "A high-lift device extending rearward and downward from the wing to increase camber, surface area, and drag."
               },
               {
                 "num": "10",
-                "term": "Landing Gear",
-                "definition": "The undercarriage assembly (wheels, oleo struts, brakes) supporting the aircraft on the ground."
+                "term": "Spoiler",
+                "definition": "An upper-wing hinged plate that deploys upward to dump aerodynamic lift, assist roll, and act as a speed brake."
               },
               {
                 "num": "11",
-                "term": "Radome",
-                "definition": "The streamlined fiberglass nose cone protecting the weather radar antenna from aerodynamic weather."
+                "term": "Empennage",
+                "definition": "The complete aerodynamic tail assembly of an aircraft, consisting of vertical fin, rudder, stabilizer, and elevators."
               },
               {
                 "num": "12",
-                "term": "Pitot Tube",
-                "definition": "A forward-facing tube mounted on the airframe that measures dynamic ram air pressure for the airspeed indicator."
+                "term": "Horizontal Stabilizer",
+                "definition": "The fixed or trimmable horizontal tail surface providing longitudinal aerodynamic pitch stability."
               },
               {
                 "num": "13",
-                "term": "Static Port",
-                "definition": "A flush-mounted opening on the fuselage side that senses ambient atmospheric pressure for altimeters and VSI."
+                "term": "Vertical Fin",
+                "definition": "The vertical aerodynamic surface on the tail providing directional stability about the normal axis."
               },
               {
                 "num": "14",
-                "term": "Sidestick",
-                "definition": "The cockpit hand control stick mounted on the side console used by pilots to send electronic roll and pitch inputs."
+                "term": "APU (Auxiliary Power Unit)",
+                "definition": "A small gas turbine engine in the tail cone generating electrical power and bleed air independently of main engines."
               },
               {
                 "num": "15",
-                "term": "Throttle Quadrant",
-                "definition": "The center cockpit console containing engine thrust levers and reverse thrust triggers."
+                "term": "Nacelle",
+                "definition": "The aerodynamic pod or casing housing an engine, its accessories, and thrust reversers."
               },
               {
                 "num": "16",
-                "term": "Flight Deck",
-                "definition": "The cockpit area at the front of the aircraft where the flight crew operates the flight controls and instruments."
+                "term": "Oleo Strut",
+                "definition": "A shock-absorbing landing gear cylinder utilizing compressed nitrogen gas and hydraulic oil."
               },
               {
                 "num": "17",
-                "term": "Galley",
-                "definition": "The aircraft onboard kitchen area where flight attendants prepare passenger meals and store service carts."
+                "term": "Static Discharge Wick",
+                "definition": "A flexible metal or carbon needle on trailing edges that bleeds static electrical charges into the atmosphere."
               },
               {
                 "num": "18",
-                "term": "Bulkhead",
-                "definition": "A structural vertical dividing wall separating passenger cabins, galleys, or pressurized zones."
+                "term": "Winglet",
+                "definition": "A vertical or angled wingtip extension designed to diminish induced drag by disrupting wingtip vortices."
               }
             ]
-          },
-          "materials": {
-            "videos": [
-              {
-                "title": "Video 1: Airbus A320 Preflight: Technical Exterior Walkaround",
-                "watchUrl": "https://www.youtube.com/watch?v=Tdf_Ac7_gwA",
-                "tag": "Pre-Flight",
-                "videoId": "Tdf_Ac7_gwA",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/Tdf_Ac7_gwA",
-                "caption": "Focus: Step-by-step exterior pre-departure walkaround checking pitot-static probes, gear assemblies, tires, and control surfaces."
-              },
-              {
-                "title": "Video 2: How Airplane Flaps and Slats Work",
-                "watchUrl": "https://www.youtube.com/watch?v=fUPNN3N-oDI",
-                "tag": "Airframe Systems",
-                "videoId": "fUPNN3N-oDI",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/fUPNN3N-oDI",
-                "caption": "Focus: Understand trailing-edge flaps and leading-edge slats, hydraulic actuator tracks, camber change, and stall speed reduction."
-              },
-              {
-                "title": "Video 3: Turbofan Architecture: CFM56 Jet Engines",
-                "watchUrl": "https://www.youtube.com/watch?v=S2HymZd3GEE",
-                "tag": "Propulsion",
-                "videoId": "S2HymZd3GEE",
-                "embedUrl": "https://www.youtube-nocookie.com/embed/S2HymZd3GEE",
-                "caption": "Focus: Inspect the compressor stages, combustion chamber, turbine blades, bypass ratio, and thrust generation in modern turbofans."
-              }
-            ],
-            "articles": [
-              {
-                "topic": "Materials Science & Airframe Engineering",
-                "sourceTag": "Aerospace Manufacturing • Advanced Materials",
-                "heading": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
-                "snippet": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
-                "url": "https://aerospaceamerica.aiaa.org",
-                "topicFocus": "Aerodynamics & Flight Efficiency",
-                "title": "Composite Materials and Carbon Fiber in Modern Airframe Structures",
-                "summary": "How Carbon-Fiber-Reinforced Polymers (CFRP) in the Boeing 787 and Airbus A350 eliminate corrosion, reduce structural weight, and allow higher cabin humidity.",
-                "content": [
-                  "For more than seventy years, aluminum alloy was the uncontested material of choice for commercial aircraft construction. However, the introduction of next-generation widebody airliners—notably the Boeing 787 Dreamliner and Airbus A350—marked a permanent revolution: more than 50% of their primary airframe weight is made of advanced carbon-fiber composites.",
-                  "Carbon-Fiber-Reinforced Polymer (CFRP) consists of microscopic carbon strands embedded in a hardened polymer resin matrix. Pound for pound, carbon fiber is significantly stronger and lighter than aluminum, enabling aerodynamic wings that flex gracefully in flight without permanent metal fatigue.",
-                  "Crucially, composite materials do not corrode from moisture exposure. This property allows airlines to increase in-flight cabin humidity from 5% to 15% and pressurize the cabin to an equivalent altitude of 6,000 feet instead of the traditional 8,000 feet. Passengers arrive feeling significantly less dehydrated and fatigued after long-haul flights."
-                ],
-                "takeaways": [
-                  "Modern widebody airliners utilize over 50% carbon-fiber-reinforced polymer (CFRP) by weight.",
-                  "Composites offer superior strength-to-weight ratios and are immune to conventional metal fatigue and rust.",
-                  "Corrosion immunity allows higher cabin humidity and lower cabin pressure altitudes for passenger comfort."
-                ],
-                "vocab": [
-                  "Carbon-Fiber Composite (CFRP)",
-                  "Metal Fatigue",
-                  "Structural Weight Reduction",
-                  "Cabin Altitude",
-                  "Corrosion Resistance"
-                ]
-              },
-              {
-                "topic": "Airside Maintenance & Flight Safety",
-                "sourceTag": "Aviation Pros • Line Maintenance Manual",
-                "heading": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
-                "snippet": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
-                "url": "https://www.aviationpros.com",
-                "topicFocus": "Aerodynamics & Flight Efficiency",
-                "title": "Conducting Visual Pre-Flight Inspections: Detecting Cracks, Dents, and Bird Strikes",
-                "summary": "A systematic walkthrough guide for pilots and line engineers: inspecting pitot probes, fan blades, landing gear struts, and identifying non-visible composite delamination.",
-                "content": [
-                  "Before every commercial flight, either the captain, the first officer, or a licensed aircraft maintenance engineer must conduct a physical pre-flight inspection walkaround. Walking in a clockwise circle beneath the aircraft with a high-intensity flashlight, the inspector checks critical exterior components for damage.",
-                  "The walkaround begins at the nose, verifying that vital pitot tubes and static ports are free of insects, ice, or protective covers that could corrupt cockpit airspeed readings. Inspectors examine the engine inlet cowlings and rotate the titanium fan blades by hand to check for nicks or dents caused by foreign object debris (FOD) or bird strikes.",
-                  "On modern composite airframes, visual inspection requires specialized vigilance. Unlike aluminum, which dents noticeably when struck by a ground servicing vehicle, carbon-fiber skin can spring back into shape after an impact, leaving internal composite layers shattered underneath—a hidden hazard known as bare-surface delamination that requires ultrasonic inspection."
-                ],
-                "takeaways": [
-                  "The pre-flight walkaround verifies exterior integrity, tire tread depth, and flight control surfaces.",
-                  "Pitot probes and static ports must be completely unobstructed to ensure accurate airspeed indications.",
-                  "Composite structures can suffer internal delamination without visible exterior paint scratching."
-                ],
-                "vocab": [
-                  "Pre-Flight Walkaround",
-                  "Pitot-Static Tube",
-                  "Foreign Object Debris (FOD)",
-                  "Composite Delamination",
-                  "Visual Inspection"
-                ]
-              }
-            ],
-            "resources": [
-              {
-                "url": "https://www.skybrary.aero/articles/flight-control-surfaces",
-                "tag": "01 • Flight Controls",
-                "name": "Skybrary: Aircraft Flight Control Surfaces",
-                "desc": "Comprehensive encyclopedia entries on primary and secondary flight control systems."
-              },
-              {
-                "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
-                "tag": "02 • Airframe Engineering",
-                "name": "FAA AMT Airframe Handbook (FAA-H-8083-31A)",
-                "desc": "Authoritative technical manual on aircraft structures, composite repairs, and hydraulics."
-              },
-              {
-                "url": "https://aircraft.airbus.com/en/aircraft",
-                "tag": "03 • Airbus Specifications",
-                "name": "Airbus Aircraft Family Technical Data",
-                "desc": "Official payload, dimensions, and structural specifications for the A220, A320, and A350 families."
-              },
-              {
-                "url": "https://www.boeing.com/commercial",
-                "tag": "04 • Boeing Engineering",
-                "name": "Boeing Commercial Airplanes Technical Highlights",
-                "desc": "Detailed structural diagrams and systems overview of the 737 MAX and 787 Dreamliner."
-              },
-              {
-                "url": "https://www.easa.europa.eu",
-                "tag": "05 • Maintenance Standards",
-                "name": "EASA Part-66 Aircraft Maintenance Standards",
-                "desc": "European airworthiness regulations and syllabus requirements for airframe certifications."
-              },
-              {
-                "url": "https://www.rolls-royce.com/products-and-services/civil-aerospace.aspx",
-                "tag": "06 • Engine Architecture",
-                "name": "Rolls-Royce Trent Engine Cutaway & Architecture",
-                "desc": "Interactive visualization and explanatory guides on high-bypass turbofan components."
-              }
-            ],
-            "grammar": {
-              "title": "Spatial Prepositions & Passive Voice for Pre-Flight Defect Reporting",
-              "badge": "Line Operations",
-              "patternTitle": "Aircraft Inspection Formula",
-              "formula": "Subject + is/are/was/were + Past Participle (+ Prepositional Location)",
-              "rulesTitle": "Core Communicative Guidelines",
-              "rules": [
-                "<strong style=\"color: #1e293b;\">1. Spatial Prepositions for Airframe Anatomy:</strong> Locates external parts precisely (<em>'Leading-edge slats are mounted along the forward wing skin; trailing-edge flaps are situated adjacent to the engine pylon'</em>).",
-                "<strong style=\"color: #1e293b;\">2. Present Passive for Structural Functions:</strong> Explains standard operational mechanisms (<em>'Hydraulic actuators are powered by redundant engine-driven pumps'</em>).",
-                "<strong style=\"color: #1e293b;\">3. Past Passive for Walkaround Defect Reports:</strong> Documents pre-departure technical anomalies (<em>'A hydraulic leak was observed near the main gear brake lines'</em>).",
-                "<strong style=\"color: #1e293b;\">4. Modal Passive for Maintenance Clearance:</strong> Mandates safety release actions (<em>'All inspection panels must be securely fastened before the aircraft is cleared for pushback'</em>)."
-              ],
-              "trap": "⚠️ TOEIC Part 5 Passive Voice Alert: Be sure to check subject-verb agreement with collective or plural aviation nouns (e.g., 'The landing gear IS inspected' vs. 'The main gear assemblies ARE inspected').",
-              "examplesTitle": "Authentic Operational Examples",
-              "examples": [
-                "During the exterior walkaround, minor surface abrasions were detected on the composite radome.",
-                "The pitot-static probes are electrically heated to prevent ice formation during climb."
-              ]
-            },
-            "toeicQuestions": [
-              {
-                "stem": "The line maintenance engineer conducted a thorough exterior walkaround to ensure that no hydraulic fluid was ________ from the landing gear.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "leaking"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "leaked"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "leaks"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "leak"
-                  }
-                ],
-                "correctLetter": "A",
-                "correctText": "leaking",
-                "analysis": "The auxiliary verb 'was' combined with the active continuous context requires the present participle '-ing' form ('was leaking') to indicate an ongoing fluid drip.",
-                "strategy": "Be careful with active vs. passive after 'was/were': fluid leaks (active continuous = was leaking), fluid is drained (passive = was drained).",
-                "id": 1
-              },
-              {
-                "stem": "Slats are high-lift aerodynamic devices mounted ________ the leading edge of the wing to prevent boundary layer separation.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "through"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "along"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "between"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "into"
-                  }
-                ],
-                "correctLetter": "B",
-                "correctText": "along",
-                "analysis": "The preposition 'along' denotes continuous linear extension from the root to the tip of the wing's leading edge.",
-                "strategy": "Prepositions of location: use 'along' for items running parallel to a linear edge or boundary (along the leading edge, along the taxiway).",
-                "id": 2
-              },
-              {
-                "stem": "According to the Minimum Equipment List, the aircraft is permitted to dispatch ________ the weather radar is certified as fully operational.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "in case of"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "despite"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "provided that"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "although"
-                  }
-                ],
-                "correctLetter": "C",
-                "correctText": "provided that",
-                "analysis": "'Provided that' introduces the essential airworthiness condition required for flight release under MEL restrictions.",
-                "strategy": "MEL (Minimum Equipment List) regulatory sentences frequently test conditional conjunctions like 'provided that' or 'on condition that'.",
-                "id": 3
-              },
-              {
-                "stem": "The radome is constructed from radio-frequency transparent composite materials in order to shield the antenna without ________ radar signals.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "block"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "blocked"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "blockage"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "blocking"
-                  }
-                ],
-                "correctLetter": "D",
-                "correctText": "blocking",
-                "analysis": "The preposition 'without' requires a gerund (-ing form) when taking an action and an object ('without blocking radar signals').",
-                "strategy": "All prepositions (without, by, for, in, after, before) require a gerund (-ing) when immediately followed by a verb form.",
-                "id": 4
-              },
-              {
-                "stem": "Flight deck instruments provide real-time information regarding airspeed, altitude, and heading directly ________ the Primary Flight Display.",
-                "options": [
-                  {
-                    "letter": "A",
-                    "text": "on"
-                  },
-                  {
-                    "letter": "B",
-                    "text": "at"
-                  },
-                  {
-                    "letter": "C",
-                    "text": "of"
-                  },
-                  {
-                    "letter": "D",
-                    "text": "by"
-                  }
-                ],
-                "correctLetter": "A",
-                "correctText": "on",
-                "analysis": "Electronic and visual information is displayed 'on' a screen, monitor, or avionics display ('on the Primary Flight Display').",
-                "strategy": "Fixed tech preposition: information appears 'on' screens, displays, radars, monitors, and instruments.",
-                "id": 5
-              }
-            ],
-            "pageUrl": "session2/admat_aas2.html"
-          },
-          "overview": {
-            "intro": "In this session, you develop your ability to clearly describe and discuss aircraft structures and flight control systems in spoken English. Working in pairs and small groups, you will practise explaining how key aerodynamic surfaces function, describing mechanical and hydraulic issues clearly, and asking precise questions using standard technical vocabulary. This interactive practice helps you move beyond basic descriptions to explain operational situations naturally and accurately.",
-            "whyItMatters": "In international aviation, English is the shared global language between pilots, air traffic controllers, and airport teams. When communicating during flight operations or debriefings, you must be able to describe mechanical systems, report anomalies, and clarify technical details without hesitation or misunderstanding. Developing this specialised vocabulary and spoken confidence gives you the language skills you need to participate effectively in technical discussions and perform with confidence in your end-of-module Formative Evaluation.",
-            "keyTerms": [
-              {
-                "term": "Fuselage",
-                "ipa": "/ˈfjuː.zə.lɑːʒ/",
-                "definition": "The central body of an aircraft holding crew, passengers, baggage, and structural connection points."
-              },
-              {
-                "term": "Empennage",
-                "ipa": "/ˌɑːm.pəˈnɑːʒ/",
-                "definition": "The complete tail assembly of an aircraft, consisting of the vertical fin and horizontal stabilizer."
-              },
-              {
-                "term": "Leading Edge",
-                "ipa": "/ˈliː.dɪŋ edʒ/",
-                "definition": "The forwardmost edge of an airfoil that meets the oncoming relative wind first."
-              },
-              {
-                "term": "Trailing Edge",
-                "ipa": "/ˈtreɪ.lɪŋ edʒ/",
-                "definition": "The rear edge of a wing where the airflows from the upper and lower surfaces recombine."
-              },
-              {
-                "term": "Aileron",
-                "ipa": "/ˈeɪ.lə.rɒn/",
-                "definition": "A primary flight control surface hinged on the outer trailing edge of a wing that controls aircraft roll."
-              },
-              {
-                "term": "Elevator",
-                "ipa": "/ˈel.ə.veɪ.tər/",
-                "definition": "A horizontal flight control surface hinged to the empennage that controls pitch about the lateral axis."
-              },
-              {
-                "term": "Rudder",
-                "ipa": "/ˈrʌd.ər/",
-                "definition": "A vertical control surface hinged on the tail fin that controls aircraft yaw about the vertical axis."
-              },
-              {
-                "term": "Hydraulic Actuator",
-                "ipa": "/haɪˈdrɔː.lɪk ˈæk.tʃu.eɪ.tər/",
-                "definition": "A mechanical piston powered by pressurized fluid that moves primary flight control surfaces."
-              },
-              {
-                "term": "Flaps and Slats",
-                "ipa": "/flæps ənd slæts/",
-                "definition": "High-lift movable surfaces on the wing edges extended during takeoff and landing to increase camber."
-              },
-              {
-                "term": "Flight Control Surface",
-                "ipa": "/flaɪt kənˈtroʊl ˈsɜː.fɪs/",
-                "definition": "Movable aerodynamic panels allowing pilots to adjust aircraft attitude, direction, and roll."
-              }
-            ],
-            "speakingTask": {
-              "title": "Additional Speaking Activity • Practice in Groups of 3",
-              "instructions": "This additional speaking activity provides extra spoken English practice. Divide the class into 3 groups (or working trios). Each group is assigned one statement below to discuss together, give reasons and examples, and prepare a short 2-minute spoken summary using today's vocabulary.",
-              "requirements": [
-                "Use at least 4 of today's 10 useful words.",
-                "Give at least two clear reasons or operational examples to support your group's argument.",
-                "Ensure all 3 team members speak during your 2-minute spoken summary."
-              ],
-              "statements": {
-                "group1": "Modern automated fly-by-wire flight control computers are now so reliable that manual mechanical backup systems will soon become completely unnecessary on commercial airliners.",
-                "group2": "Clear spoken English and standardized communication between technical teams and pilots prevent far more safety incidents than redundant mechanical systems.",
-                "group3": "Routine aircraft structural inspections should be performed primarily by automated drones and AI cameras rather than human maintenance technicians."
-              },
-              "usefulPhrases": [
-                "Our group explored the operational balance between...",
-                "From a flight safety and maintenance perspective...",
-                "One key operational challenge we identified is...",
-                "In conclusion, our group recommends that..."
-              ]
-            }
           }
         },
         "3": {

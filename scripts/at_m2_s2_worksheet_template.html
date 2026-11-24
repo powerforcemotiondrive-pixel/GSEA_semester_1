@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Session 2 Lesson Worksheet - Aircraft Anatomy: Structure &amp; Systems</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 12mm 12mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        font-weight: 700;
+      }
+      @bottom-left {
+        content: "ENAC • GSEA Semester 1 Technical English (AT • LV121E) • Phil PARRIS";
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 7.5pt;
+        color: #94a3b8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 8pt;
+      line-height: 1.3;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      page-break-after: always;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    .doc-header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 4px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .doc-header .agency {
+      font-size: 7.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0369a1;
+    }
+
+    .doc-header .ref {
+      font-size: 7pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    h1 {
+      font-size: 14pt;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.3px;
+      margin-bottom: 2px;
+    }
+
+    .subtitle {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: 7px;
+    }
+
+    .badge-bar {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 7px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 7pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .badge-blue { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+    .badge-slate { background: #f1f5f9; color: #334155; border: 1px solid #e2e8f0; }
+    .badge-amber { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-indigo { background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; }
+    .badge-emerald { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 7px 9px;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 8.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 3px;
+    }
+
+    .card-title .tag {
+      font-size: 6.5pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+    }
+
+    .prompt-box {
+      background: #f8fafc;
+      border-left: 3px solid #0284c7;
+      padding: 5px 8px;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 5px;
+      font-size: 7.5pt;
+    }
+
+    .prompt-box.amber {
+      border-left-color: #f59e0b;
+      background: #fffbeb;
+    }
+
+    .prompt-box.emerald {
+      border-left-color: #10b981;
+      background: #ecfdf5;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 5px;
+    }
+
+    .grid-6 {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 5px;
+    }
+
+    table.tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.2pt;
+      margin-top: 4px;
+    }
+
+    table.tech-table th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 800;
+      text-align: left;
+      padding: 3.5px 5px;
+      border: 1px solid #cbd5e1;
+      text-transform: uppercase;
+      font-size: 6.5pt;
+      letter-spacing: 0.3px;
+    }
+
+    table.tech-table td {
+      padding: 3.5px 5px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    table.tech-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .callout-box {
+      border: 1px dashed #94a3b8;
+      border-radius: 5px;
+      padding: 6px 8px;
+      background: #fcfcfd;
+      margin-top: 5px;
+    }
+
+    .write-in-line {
+      border-bottom: 1px solid #94a3b8;
+      height: 14px;
+      margin: 2px 0;
+    }
+
+    .key-term {
+      font-weight: 800;
+      color: #0369a1;
+    }
+
+    .page-footer-note {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 6.8pt;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       PAGE 1: OVERVIEW, WARM-UP & ENTRY CHECK
+       ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">École Nationale de l'Aviation Civile • Flight Crew &amp; Maintenance Training</span>
+      <span class="ref">REF: GSEA-S1-M2-AT-S2 • WORKSHEET</span>
+    </div>
+
+    <h1>Aircraft Anatomy: Structure &amp; Systems</h1>
+    <div class="subtitle">Session 2 Student Worksheet: External Airframe Components, Control Surfaces &amp; Systems Inspection</div>
+
+    <div class="badge-bar">
+      <span class="badge badge-blue">Target: CEFR B2 Communicative English</span>
+      <span class="badge badge-slate">Role: Flight Crew / Line Maintenance Engineer</span>
+      <span class="badge badge-amber">Standard 2-Hour University Block</span>
+      <span class="badge badge-indigo">Track: AT (LV121E)</span>
+    </div>
+
+    <!-- Background & Objectives -->
+    <div class="card">
+      <div class="card-title">
+        <span>Course Background &amp; Core Learning Objectives</span>
+        <span class="tag">Pedagogical Framework</span>
+      </div>
+      <p style="font-size: 7.5pt; color: #334155; margin-bottom: 4px;">
+        Commercial transport aircraft integrate complex aerodynamic, mechanical, and electronic assemblies. This worksheet develops the communicative competencies required to identify external components, deploy spatial prepositions, detect technical fallacies, and conduct professional spoken walkaround briefings.
+      </p>
+      <div class="grid-2" style="font-size: 7.2pt; color: #475569;">
+        <div>
+          <strong>• Objective 1:</strong> Accurately name 18 external and internal airframe components from dorsal/side blueprints.<br>
+          <strong>• Objective 2:</strong> Master spatial prepositions (<em>forward of, aft of, inboard, outboard, flush-mounted</em>).
+        </div>
+        <div>
+          <strong>• Objective 3:</strong> Collaborative blackboard sketching and in-flight technical walkaround presentation.<br>
+          <strong>• Objective 4:</strong> Spot aerodynamic misconceptions and articulate verbal corrections in clear B2 English.
+        </div>
+      </div>
+    </div>
+
+    <!-- Part 1: Warm-Up & Maintenance Headlines -->
+    <div class="card">
+      <div class="card-title">
+        <span>Part 1: Communication Warm-Up &amp; Maintenance News Scan</span>
+        <span class="tag">Opening Discussion</span>
+      </div>
+      <div class="prompt-box amber">
+        <strong>Weekly Maintenance &amp; Structural News Headlines:</strong>
+        <ul style="margin-left: 14px; margin-top: 2px; list-style-type: square; line-height: 1.25;">
+          <li>Airbus introduces lightweight titanium 3D-printed hydraulic brackets to save structural empty weight on A350 deliveries.</li>
+          <li>EASA issues an Airworthiness Directive mandating ultrasonic non-destructive testing (NDT) on horizontal stabilizer pins.</li>
+          <li>Ground service vehicle strikes engine nacelle cowl during turnaround; engineering must inspect pylon mounts for hidden shear deformation.</li>
+        </ul>
+      </div>
+      <p style="font-size: 7.2pt; color: #334155;">
+        <strong>Warm-Up Speaking Task:</strong> In pairs, discuss which of the three events presents the most immediate risk of hidden structural fatigue. Use this spoken frame: <em>"In my assessment, headline #... is most critical because concealed structural damage could lead to..."</em>
+      </p>
+    </div>
+
+    <!-- Diagnostic Entry Spot-Check -->
+    <div class="card">
+      <div class="card-title">
+        <span>Session 1 Aerodynamics Review &amp; Entry Spot-Check</span>
+        <span class="tag">Oral Diagnostic</span>
+      </div>
+      <p style="font-size: 7.2pt; color: #475569; margin-bottom: 4px;">
+        Discuss each question orally with your wingman using the mandatory communicative sentence stem before reviewing technical answers.
+      </p>
+      <div class="grid-2">
+        <div class="prompt-box">
+          <strong>Q1. Roll Control &amp; Wing Location:</strong><br>
+          <em>Explain which control surface controls roll, and describe its location on the wing.</em><br>
+          <span style="font-family: ui-monospace; font-size: 6.8pt; color: #0369a1;">Useful Phrases: "Roll is commanded by the ailerons, which are hinged to the outer trailing edges..."</span>
+          <div class="write-in-line" style="margin-top: 4px;"></div>
+        </div>
+        <div class="prompt-box">
+          <strong>Q2. Slats vs. Flaps Operational Purpose:</strong><br>
+          <em>Compare and contrast the operational differences between leading-edge slats and trailing-edge flaps.</em><br>
+          <span style="font-family: ui-monospace; font-size: 6.8pt; color: #0369a1;">Useful Phrases: "While slats extend from the leading edge to delay stall, flaps extend rearward to..."</span>
+          <div class="write-in-line" style="margin-top: 4px;"></div>
+        </div>
+        <div class="prompt-box">
+          <strong>Q3. Pitot-Static Electrical Heating:</strong><br>
+          <em>Explain why pitot tubes and static ports are heated electrically in flight.</em><br>
+          <span style="font-family: ui-monospace; font-size: 6.8pt; color: #0369a1;">Useful Phrases: "Electrical heating is essential because atmospheric ice accumulation would cause..."</span>
+          <div class="write-in-line" style="margin-top: 4px;"></div>
+        </div>
+        <div class="prompt-box">
+          <strong>Q4. Radome &amp; Avionics Protection:</strong><br>
+          <em>Describe what the radome is, and explain which sensitive equipment it protects.</em><br>
+          <span style="font-family: ui-monospace; font-size: 6.8pt; color: #0369a1;">Useful Phrases: "The radome is a dielectric composite nose cone that houses the weather radar antenna..."</span>
+          <div class="write-in-line" style="margin-top: 4px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer-note">
+      <span>Part 1 • Warm-Up &amp; Diagnostic Review</span>
+      <span>ENAC Technical English • LV121E</span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE 2: VIDEO LAB & TECHNICAL DEBRIEF
+       ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Flight Systems &amp; Avionics Laboratory</span>
+      <span class="ref">REF: GSEA-S1-M2-AT-S2 • PAGE 2/7</span>
+    </div>
+
+    <h1>Part 2: Interactive Video Lab — Aircraft Systems &amp; Anatomy</h1>
+    <div class="subtitle">Multi-Column Noticeboard: Flight Control Architecture, Hydraulic Actuation &amp; Redundancy</div>
+
+    <!-- Noticeboard Layout -->
+    <div class="grid-2" style="gap: 8px;">
+      <!-- Left Column: Video Summary & Case Study -->
+      <div class="card" style="margin-bottom: 0;">
+        <div class="card-title">
+          <span>Technical Document &amp; Video Case Study</span>
+          <span class="tag">Engineering Briefing</span>
+        </div>
+        <div class="prompt-box" style="margin-bottom: 6px;">
+          <strong>Case Study Overview: Modern Airliner Flight Controls</strong><br>
+          Commercial transport aircraft (such as the Airbus A320 and Boeing 777) utilize Fly-By-Wire (FBW) systems to translate pilot stick inputs into digital actuator commands. Primary control surfaces (ailerons, elevators, rudder) deflect to control the aircraft about its three axes, powered by triple-redundant hydraulic circuits.
+        </div>
+        
+        <table class="tech-table" style="margin-bottom: 6px;">
+          <thead>
+            <tr>
+              <th>System</th>
+              <th>Actuation Power</th>
+              <th>Operational Function</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Primary Controls</strong></td>
+              <td>Triple Hydraulic Redundancy (Green/Blue/Yellow)</td>
+              <td>Continuous attitude control (Roll, Pitch, Yaw) via ailerons, elevators, rudder.</td>
+            </tr>
+            <tr>
+              <td><strong>Secondary Controls</strong></td>
+              <td>Hydraulic Power Units + Screwjack Motors</td>
+              <td>High-lift augmentation (flaps, slats) and lift-dumping/speed braking (spoilers).</td>
+            </tr>
+            <tr>
+              <td><strong>Emergency Backup</strong></td>
+              <td>Ram Air Turbine (RAT) + Accumulators</td>
+              <td>Deploys automatically if all engine generators and hydraulic pumps fail.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="prompt-box amber">
+          <strong>Key Engineering Takeaway:</strong> Inboard vs. Outboard Ailerons: At high cruise speeds (above 250 kt), outboard ailerons are locked out to prevent aerodynamic wing twisting (aeroelastic torsion); roll is commanded solely by inboard ailerons and roll spoilers.
+        </div>
+      </div>
+
+      <!-- Right Column: Guided Discussion & Spoken Analysis -->
+      <div class="card" style="margin-bottom: 0;">
+        <div class="card-title">
+          <span>Guided Viewing Discussion &amp; Spoken Briefing</span>
+          <span class="tag">Oral Analysis</span>
+        </div>
+        <p style="font-size: 7.2pt; color: #475569; margin-bottom: 5px;">
+          Watch the video analysis in the learning deck. In pairs, discuss the following three operational questions:
+        </p>
+
+        <div class="prompt-box" style="margin-bottom: 6px;">
+          <strong>Q1. Aileron High-Speed Lockout:</strong><br>
+          <em>Why do commercial jetliners disable or lock out their outboard ailerons during high-speed cruise flight?</em><br>
+          <div class="write-in-line" style="margin-top: 4px;"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div class="prompt-box" style="margin-bottom: 6px;">
+          <strong>Q2. Boundary Layer Slot Effect:</strong><br>
+          <em>How do leading-edge slats delay aerodynamic stall at high angles of attack during approach?</em><br>
+          <div class="write-in-line" style="margin-top: 4px;"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div class="prompt-box" style="margin-bottom: 6px;">
+          <strong>Q3. Total Hydraulic Depressurization:</strong><br>
+          <em>What safety mechanism automatically deploys into the slipstream if an aircraft loses all engine hydraulic pumps?</em><br>
+          <div class="write-in-line" style="margin-top: 4px;"></div>
+          <div class="write-in-line"></div>
+        </div>
+
+        <div class="callout-box" style="font-size: 7pt; color: #1e293b;">
+          <strong>Vocabulary Spotlight:</strong> <em>Boundary Layer Re-energization</em> • <em>Differential Aileron Travel</em> • <em>Ram Air Turbine (RAT)</em> • <em>Fly-by-Wire Actuator</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Listening Rubric for Video Briefing -->
+    <div class="card" style="margin-top: 6px;">
+      <div class="card-title">
+        <span>Spoken Briefing: Video Takeaways &amp; Systems Summary</span>
+        <span class="tag">Student Presentation</span>
+      </div>
+      <p style="font-size: 7.2pt; color: #334155;">
+        <strong>Pair Task:</strong> Student A briefs Student B on how a pilot commands a banked turn using both ailerons and roll spoilers without causing adverse yaw. Student B verifies that technical terminology (<em>differential deflection, lift dump, coordinated turn</em>) is used correctly.
+      </p>
+    </div>
+
+    <div class="page-footer-note">
+      <span>Part 2 • Video Lab &amp; Systems Architecture</span>
+      <span>ENAC Technical English • LV121E</span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE 3: IN-FLIGHT BLUEPRINT LABELING LAB
+       ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Airframe Engineering &amp; Design Group</span>
+      <span class="ref">REF: GSEA-S1-M2-AT-S2 • PAGE 3/7</span>
+    </div>
+
+    <h1>Part 3: Large In-Flight Aircraft Diagram Labeling Lab</h1>
+    <div class="subtitle">Twin-Engine Commercial Jetliner: External Component Mapping &amp; Functional Identification</div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>Commercial Transport Aircraft: 12 Key Structural Checkpoints</span>
+        <span class="tag">Blueprint Scan</span>
+      </div>
+      <p style="font-size: 7.2pt; color: #334155; margin-bottom: 5px;">
+        Examine the in-flight dorsal planform and side profile of the aircraft. Match the numbers [01] to [12] with the technical component names and functional descriptions below:
+      </p>
+
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th style="width: 30px;">ID</th>
+            <th style="width: 140px;">Component Name</th>
+            <th style="width: 130px;">Airframe Location</th>
+            <th>Primary Function &amp; Pre-Flight Checkpoint</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01</strong></td>
+            <td><strong>Radome (Nose Cone)</strong></td>
+            <td>Forward fuselage apex</td>
+            <td>Dielectric composite housing weather radar antenna; inspect for hail damage, bird strikes, or composite cracks.</td>
+          </tr>
+          <tr>
+            <td><strong>02</strong></td>
+            <td><strong>Pitot-Static Probes</strong></td>
+            <td>Forward side fuselage skin</td>
+            <td>Measures dynamic ram air and static ambient pressure; check orifices clear of covers, dirt, and verify heating.</td>
+          </tr>
+          <tr>
+            <td><strong>03</strong></td>
+            <td><strong>Fuselage Shell</strong></td>
+            <td>Central semi-monocoque cylinder</td>
+            <td>Pressurized passenger cabin, flight deck, and lower cargo decks; inspect skin panels, rivets, and door latches.</td>
+          </tr>
+          <tr>
+            <td><strong>04</strong></td>
+            <td><strong>Leading-Edge Slats</strong></td>
+            <td>Outboard &amp; inboard front wing</td>
+            <td>Extends forward and down to delay stall at high angle of attack; check track fairings and anti-icing seals.</td>
+          </tr>
+          <tr>
+            <td><strong>05</strong></td>
+            <td><strong>Trailing-Edge Flaps</strong></td>
+            <td>Inboard rear wing trailing edge</td>
+            <td>Extends rearward and down to increase wing surface area and camber for takeoff/landing; check track rollers.</td>
+          </tr>
+          <tr>
+            <td><strong>06</strong></td>
+            <td><strong>Ailerons</strong></td>
+            <td>Outboard wing trailing edge</td>
+            <td>Deflects differentially to command aircraft roll; check hinge freedom of movement and balance tabs.</td>
+          </tr>
+          <tr>
+            <td><strong>07</strong></td>
+            <td><strong>Spoilers &amp; Speedbrakes</strong></td>
+            <td>Upper wing surface panels</td>
+            <td>Deploy upward to dump lift during landing rollout and assist roll; inspect actuator seals and flush alignment.</td>
+          </tr>
+          <tr>
+            <td><strong>08</strong></td>
+            <td><strong>Nacelle &amp; Engine Pylon</strong></td>
+            <td>Underwing structural pylons</td>
+            <td>Houses high-bypass turbofan; check fan blades for FOD, cowl latches fastened, and reverser cascades clear.</td>
+          </tr>
+          <tr>
+            <td><strong>09</strong></td>
+            <td><strong>Main &amp; Nose Landing Gear</strong></td>
+            <td>Center wing box &amp; forward bay</td>
+            <td>Oleo-pneumatic struts absorbing touchdown forces; check tire tread, brake wear pins, and hydraulic lines.</td>
+          </tr>
+          <tr>
+            <td><strong>10</strong></td>
+            <td><strong>Vertical Fin &amp; Rudder</strong></td>
+            <td>Tail empennage vertical spar</td>
+            <td>Fin provides directional stability; rudder controls aerodynamic yaw; inspect static discharge wicks.</td>
+          </tr>
+          <tr>
+            <td><strong>11</strong></td>
+            <td><strong>Horizontal Stabilizer &amp; Elevators</strong></td>
+            <td>Tail empennage horizontal plane</td>
+            <td>Stabilizer provides longitudinal pitch stability; elevators command pitch up/down; check trim jack screw.</td>
+          </tr>
+          <tr>
+            <td><strong>12</strong></td>
+            <td><strong>Winglets / Sharklets</strong></td>
+            <td>Outer wingtip extremities</td>
+            <td>Disrupts wingtip vortex roll-up, decreasing induced drag; check composite bonding and navigation light lens.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Spatial Prepositions Focus -->
+    <div class="card">
+      <div class="card-title">
+        <span>Spatial Prepositions &amp; Technical Descriptors</span>
+        <span class="tag">Grammar in Context</span>
+      </div>
+      <p style="font-size: 7.2pt; color: #334155; margin-bottom: 4px;">
+        Use aviation spatial prepositions to describe component positions relative to the aircraft's datum lines:
+      </p>
+      <div class="grid-3" style="font-size: 7pt; font-family: ui-monospace;">
+        <div class="prompt-box">
+          <strong>Longitudinal Axis:</strong><br>
+          • <em>forward of / ahead of</em><br>
+          • <em>aft of / rearward of</em><br>
+          • <em>mid-fuselage section</em>
+        </div>
+        <div class="prompt-box">
+          <strong>Lateral Wing Axis:</strong><br>
+          • <em>inboard (towards fuselage)</em><br>
+          • <em>outboard (towards wingtip)</em><br>
+          • <em>leading edge vs trailing edge</em>
+        </div>
+        <div class="prompt-box">
+          <strong>Vertical / Mounting:</strong><br>
+          • <em>mounted flush with skin</em><br>
+          • <em>hinged to the rear spar</em><br>
+          • <em>suspended from pylons</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer-note">
+      <span>Part 3 • In-Flight Blueprint Labeling</span>
+      <span>ENAC Technical English • LV121E</span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE 4: 3-PERSON BLACKBOARD CHALLENGE
+       ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Collaborative Aeronautical Workshop</span>
+      <span class="ref">REF: GSEA-S1-M2-AT-S2 • PAGE 4/7</span>
+    </div>
+
+    <h1>Part 3 (Cont.): 3-Person Blackboard Drawing Challenge</h1>
+    <div class="subtitle">Collaborative Airframe Sketching, Component Labeling &amp; Technical Walkaround Briefing</div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>Activity 3 Team Protocol: The 3-Person Board Challenge</span>
+        <span class="tag">Collaborative Spoken Simulation</span>
+      </div>
+      <p style="font-size: 7.3pt; color: #334155; margin-bottom: 6px;">
+        Form a group of three. Move to the classroom whiteboard or a large paper chart. You have 5 minutes to complete the three coordinated stages below:
+      </p>
+
+      <div class="grid-3">
+        <div class="card" style="border-top: 3px solid #0284c7; margin-bottom: 0;">
+          <strong style="color: #0369a1; font-size: 8pt;">Student A: The Draftsperson</strong>
+          <p style="font-size: 7pt; color: #475569; margin-top: 3px;">
+            Draw a clean side and dorsal (top-down) view of a twin-engine commercial airliner on the board. Include wings, engines, fuselage, horizontal stabilizer, and vertical fin.
+          </p>
+        </div>
+        <div class="card" style="border-top: 3px solid #f59e0b; margin-bottom: 0;">
+          <strong style="color: #b45309; font-size: 8pt;">Student B: The Systems Lead</strong>
+          <p style="font-size: 7pt; color: #475569; margin-top: 3px;">
+            Draw leader lines and label all 12 key components: Radome, Pitot probes, Slats, Flaps, Ailerons, Spoilers, Engines, Gear, Fin, Rudder, Horizontal Stabilizer, and APU.
+          </p>
+        </div>
+        <div class="card" style="border-top: 3px solid #10b981; margin-bottom: 0;">
+          <strong style="color: #047857; font-size: 8pt;">Student C: Spoken Presenter</strong>
+          <p style="font-size: 7pt; color: #475569; margin-top: 3px;">
+            Deliver a 90-second technical briefing to the class explaining how primary controls (roll/pitch/yaw) and high-lift devices operate using spatial prepositions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Airframe Specifications Reference Card -->
+    <div class="card">
+      <div class="card-title">
+        <span>Airframe Specifications &amp; Structural Materials</span>
+        <span class="tag">Technical Reference</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <table class="tech-table">
+            <thead>
+              <tr>
+                <th>Airframe Section</th>
+                <th>Primary Material</th>
+                <th>Structural Rationale</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Forward Radome</strong></td>
+                <td>Quartz / Glass Fiber Composite</td>
+                <td>Radio-frequency transparency for radar.</td>
+              </tr>
+              <tr>
+                <td><strong>Fuselage Crown</strong></td>
+                <td>Carbon-Fiber Reinforced Polymer (CFRP)</td>
+                <td>Fatigue and corrosion resistance; high strength.</td>
+              </tr>
+              <tr>
+                <td><strong>Wing Spars &amp; Skin</strong></td>
+                <td>Aluminum-Lithium Alloy / CFRP</td>
+                <td>High flexural strength to endure wing bending moments.</td>
+              </tr>
+              <tr>
+                <td><strong>Engine Pylon Mounts</strong></td>
+                <td>Forged Titanium Alloy</td>
+                <td>Extreme heat and shear stress tolerance.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <table class="tech-table">
+            <thead>
+              <tr>
+                <th>Flight Control</th>
+                <th>Motion Axis</th>
+                <th>Cockpit Command Input</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Ailerons</strong></td>
+                <td>Longitudinal (Roll)</td>
+                <td>Sidestick / Control Wheel lateral deflection.</td>
+              </tr>
+              <tr>
+                <td><strong>Elevators</strong></td>
+                <td>Lateral (Pitch)</td>
+                <td>Control Column forward / backward displacement.</td>
+              </tr>
+              <tr>
+                <td><strong>Rudder</strong></td>
+                <td>Vertical / Normal (Yaw)</td>
+                <td>Left / Right Rudder Pedals on cockpit floor.</td>
+              </tr>
+              <tr>
+                <td><strong>Flaps &amp; Slats</strong></td>
+                <td>Wing Camber Modification</td>
+                <td>Center Pedestal Flap Control Lever (Detents 1-Full).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spoken Walkaround Briefing Notes -->
+    <div class="card">
+      <div class="card-title">
+        <span>Student Spoken Walkaround Script &amp; Notes</span>
+        <span class="tag">Drafting Space</span>
+      </div>
+      <div class="write-in-line" style="margin-top: 6px;"></div>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+      <div class="write-in-line"></div>
+    </div>
+
+    <div class="page-footer-note">
+      <span>Part 3 • Blackboard Drawing Challenge</span>
+      <span>ENAC Technical English • LV121E</span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE 5: TECHNICAL GAP-FILL CLINIC
+       ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Technical Documentation &amp; Systems Inspection</span>
+      <span class="ref">REF: GSEA-S1-M2-AT-S2 • PAGE 5/7</span>
+    </div>
+
+    <h1>Part 4: Technical Gap-Fill Clinic: Flight Controls &amp; Pre-Flight Checks</h1>
+    <div class="subtitle">Contextualized Technical Reading: Aerodynamic Actuation &amp; Exterior Walkaround Inspection</div>
+
+    <!-- Text A -->
+    <div class="card">
+      <div class="card-title">
+        <span>Text A: Primary vs. Secondary Flight Controls &amp; High-Lift Devices</span>
+        <span class="tag">Reading Text • Aerodynamic Actuation</span>
+      </div>
+      
+      <div class="prompt-box" style="margin-bottom: 5px;">
+        <strong>Word Bank (Text A):</strong> 
+        <span style="font-family: ui-monospace; font-weight: 700; color: #0369a1;">
+          differentially • camber • longitudinal • attitude • spoilers • rudder
+        </span>
+      </div>
+
+      <p style="font-size: 7.4pt; color: #334155; line-height: 1.38; text-align: justify;">
+        Modern commercial transport aircraft rely on two primary categories of aerodynamic surfaces to maneuver safely throughout the flight envelope. Primary flight controls manage the aircraft's <strong>[1]</strong> <span style="display:inline-block; width: 85px; border-bottom: 1px solid #64748b;"></span> about its three axes. To control roll about the longitudinal axis, <strong>[2]</strong> <span style="display:inline-block; width: 85px; border-bottom: 1px solid #64748b;"></span> deflect <strong>[3]</strong> <span style="display:inline-block; width: 95px; border-bottom: 1px solid #64748b;"></span> on the outboard trailing edges of the wings. Pitch control about the lateral axis is governed by the elevators mounted to the horizontal stabilizer, ensuring <strong>[4]</strong> <span style="display:inline-block; width: 95px; border-bottom: 1px solid #64748b;"></span> stability. Directional yaw control about the normal axis is commanded by the <strong>[5]</strong> <span style="display:inline-block; width: 85px; border-bottom: 1px solid #64748b;"></span>, hinged to the vertical fin. Conversely, secondary flight controls such as leading-edge slats and trailing-edge flaps alter wing <strong>[6]</strong> <span style="display:inline-block; width: 85px; border-bottom: 1px solid #64748b;"></span> to generate the high lift required for low-speed takeoff and landing operations, while upper-wing <strong>[7]</strong> <span style="display:inline-block; width: 85px; border-bottom: 1px solid #64748b;"></span> deploy to dump lift and decelerate during rollout.
+      </p>
+
+      <div class="prompt-box emerald" style="margin-top: 5px; font-size: 7pt;">
+        <strong>Text A Self-Check:</strong> [1] attitude • [2] ailerons • [3] differentially • [4] longitudinal • [5] rudder • [6] camber • [7] spoilers
+      </div>
+    </div>
+
+    <!-- Text B -->
+    <div class="card">
+      <div class="card-title">
+        <span>Text B: Exterior Pre-Flight Walkaround &amp; Sensor Integrity</span>
+        <span class="tag">Reading Text • Ramp Inspection</span>
+      </div>
+
+      <div class="prompt-box" style="margin-bottom: 5px;">
+        <strong>Word Bank (Text B):</strong> 
+        <span style="font-family: ui-monospace; font-weight: 700; color: #0369a1;">
+          delamination • pitot-static • static wicks • hydraulic • radome • oleo-pneumatic
+        </span>
+      </div>
+
+      <p style="font-size: 7.4pt; color: #334155; line-height: 1.38; text-align: justify;">
+        Before every departure, the flight crew or licensed maintenance engineer must perform a rigorous 360-degree exterior walkaround. The inspection commences at the nose, verifying that the composite <strong>[1]</strong> <span style="display:inline-block; width: 85px; border-bottom: 1px solid #64748b;"></span> is free of bird strikes or hail damage and that all <strong>[2]</strong> <span style="display:inline-block; width: 95px; border-bottom: 1px solid #64748b;"></span> probes are clear of insect nests, ice, or protective covers. Moving aft along the fuselage, the engineer inspects the nose gear assembly, ensuring the <strong>[3]</strong> <span style="display:inline-block; width: 105px; border-bottom: 1px solid #64748b;"></span> strut extension is within limits and shows no signs of <strong>[4]</strong> <span style="display:inline-block; width: 85px; border-bottom: 1px solid #64748b;"></span> fluid leakage. Along the wings, trailing-edge control surfaces must be checked for free movement, and flexible <strong>[5]</strong> <span style="display:inline-block; width: 95px; border-bottom: 1px solid #64748b;"></span> on the trailing edges and wingtips must be intact to dissipate electrical charges. Finally, composite panels must be visually scanned for impact cracks or composite <strong>[6]</strong> <span style="display:inline-block; width: 95px; border-bottom: 1px solid #64748b;"></span>.
+      </p>
+
+      <div class="prompt-box emerald" style="margin-top: 5px; font-size: 7pt;">
+        <strong>Text B Self-Check:</strong> [1] radome • [2] pitot-static • [3] oleo-pneumatic • [4] hydraulic • [5] static wicks • [6] delamination
+      </div>
+    </div>
+
+    <!-- Reading Aloud & Peer Feedback -->
+    <div class="card">
+      <div class="card-title">
+        <span>Oral Reading &amp; Peer Pronunciation Verification</span>
+        <span class="tag">Fluency Practice</span>
+      </div>
+      <p style="font-size: 7.2pt; color: #334155;">
+        Take turns reading Text A and Text B aloud with your partner. Verify natural sentence stress and correct pronunciation of multisyllabic terms: <em>differentially (/ˌdɪf.əˈren.ʃəl.i/), longitudinal (/ˌlɒŋ.ɡɪˈtjuː.dɪ.nəl/), delamination (/diːˌlæm.ɪˈneɪ.ʃən/)</em>.
+      </p>
+    </div>
+
+    <div class="page-footer-note">
+      <span>Part 4 • Technical Gap-Fill Clinic</span>
+      <span>ENAC Technical English • LV121E</span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE 6: TECHNICAL ERROR HUNTER (FACT VS FALLACY)
+       ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Flight Safety &amp; Quality Assurance</span>
+      <span class="ref">REF: GSEA-S1-M2-AT-S2 • PAGE 6/7</span>
+    </div>
+
+    <h1>Part 5: Technical Error Hunter: Spotting Aircraft Anatomy Mistakes</h1>
+    <div class="subtitle">Partner Reading &amp; Error Identification: Challenging Fallacies with Precise Technical Corrections</div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>Activity 5 Protocol &amp; Active Listening Rubric</span>
+        <span class="tag">Partner Interaction</span>
+      </div>
+      <div class="prompt-box amber">
+        <strong>Partner Protocol:</strong> Student A reads Statement 1 aloud. Student B listens actively (without looking at the text), identifies the technical error, explains *why* it is aerodynamically or mechanically wrong, and states the accurate correction. Then swap roles for each statement!
+      </div>
+    </div>
+
+    <!-- 8 Error Hunter Cards -->
+    <div class="grid-2">
+      <!-- S1 -->
+      <div class="card" style="margin-bottom: 4px;">
+        <strong style="color: #be123c; font-size: 7.5pt;">Statement 01: Ailerons &amp; Lift</strong>
+        <p style="font-size: 7.2pt; font-style: italic; color: #1e293b; margin: 2px 0;">"The aileron is there to produce lift during takeoff and initial climb."</p>
+        <div style="font-size: 6.8pt; color: #047857; background: #f0fdf4; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbf7d0;">
+          <strong>Correction:</strong> Ailerons control roll by deflecting differentially (one up, one down); flaps and slats increase lift.
+        </div>
+      </div>
+
+      <!-- S2 -->
+      <div class="card" style="margin-bottom: 4px;">
+        <strong style="color: #be123c; font-size: 7.5pt;">Statement 02: Pitot Tube Function</strong>
+        <p style="font-size: 7.2pt; font-style: italic; color: #1e293b; margin: 2px 0;">"Pitot tubes measure static atmospheric pressure to calculate altitude."</p>
+        <div style="font-size: 6.8pt; color: #047857; background: #f0fdf4; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbf7d0;">
+          <strong>Correction:</strong> Pitot tubes measure dynamic ram air pressure for airspeed; static ports measure altitude.
+        </div>
+      </div>
+
+      <!-- S3 -->
+      <div class="card" style="margin-bottom: 4px;">
+        <strong style="color: #be123c; font-size: 7.5pt;">Statement 03: APU Operational Role</strong>
+        <p style="font-size: 7.2pt; font-style: italic; color: #1e293b; margin: 2px 0;">"The APU in the tail cone provides supplementary thrust during climb."</p>
+        <div style="font-size: 6.8pt; color: #047857; background: #f0fdf4; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbf7d0;">
+          <strong>Correction:</strong> The APU generates electrical power and pneumatic bleed air; it produces zero propulsive thrust.
+        </div>
+      </div>
+
+      <!-- S4 -->
+      <div class="card" style="margin-bottom: 4px;">
+        <strong style="color: #be123c; font-size: 7.5pt;">Statement 04: Leading-Edge Slats</strong>
+        <p style="font-size: 7.2pt; font-style: italic; color: #1e293b; margin: 2px 0;">"Leading-edge slats extend from the trailing edge to increase drag."</p>
+        <div style="font-size: 6.8pt; color: #047857; background: #f0fdf4; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbf7d0;">
+          <strong>Correction:</strong> Slats extend from the leading edge to delay stall; flaps extend from the trailing edge.
+        </div>
+      </div>
+
+      <!-- S5 -->
+      <div class="card" style="margin-bottom: 4px;">
+        <strong style="color: #be123c; font-size: 7.5pt;">Statement 05: Rudder in Cruise Flight</strong>
+        <p style="font-size: 7.2pt; font-style: italic; color: #1e293b; margin: 2px 0;">"Pilots use the rudder pedals to steer and turn the plane during cruise."</p>
+        <div style="font-size: 6.8pt; color: #047857; background: #f0fdf4; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbf7d0;">
+          <strong>Correction:</strong> Turns in flight are made by banking with ailerons; the rudder is used only to coordinate turns.
+        </div>
+      </div>
+
+      <!-- S6 -->
+      <div class="card" style="margin-bottom: 4px;">
+        <strong style="color: #be123c; font-size: 7.5pt;">Statement 06: Static Discharge Wicks</strong>
+        <p style="font-size: 7.2pt; font-style: italic; color: #1e293b; margin: 2px 0;">"Static discharge wicks are thick cables connected to fuel tankers."</p>
+        <div style="font-size: 6.8pt; color: #047857; background: #f0fdf4; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbf7d0;">
+          <strong>Correction:</strong> Static wicks bleed electrical charges built up from air friction into the atmosphere during flight.
+        </div>
+      </div>
+
+      <!-- S7 -->
+      <div class="card" style="margin-bottom: 4px;">
+        <strong style="color: #be123c; font-size: 7.5pt;">Statement 07: Ground Spoilers Deployment</strong>
+        <p style="font-size: 7.2pt; font-style: italic; color: #1e293b; margin: 2px 0;">"Ground spoilers deploy during cruise to maintain top cruise speed."</p>
+        <div style="font-size: 6.8pt; color: #047857; background: #f0fdf4; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbf7d0;">
+          <strong>Correction:</strong> Ground spoilers deploy on touchdown to dump lift and transfer weight to wheel brakes.
+        </div>
+      </div>
+
+      <!-- S8 -->
+      <div class="card" style="margin-bottom: 4px;">
+        <strong style="color: #be123c; font-size: 7.5pt;">Statement 08: Radome Material Composition</strong>
+        <p style="font-size: 7.2pt; font-style: italic; color: #1e293b; margin: 2px 0;">"The radome is made of thick titanium to protect against bird strikes."</p>
+        <div style="font-size: 6.8pt; color: #047857; background: #f0fdf4; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbf7d0;">
+          <strong>Correction:</strong> Radomes must be dielectric composite (fiberglass/quartz); metal would block radar radio waves.
+        </div>
+      </div>
+    </div>
+
+    <!-- Student B / Peer Observer Active Listening Checklist -->
+    <div class="card" style="margin-top: 4px;">
+      <div class="card-title">
+        <span>Student B / Peer Observer Active Listening Checklist &amp; Evaluation Rubric</span>
+        <span class="tag">Peer Checklist</span>
+      </div>
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th>Evaluation Dimension</th>
+            <th>Observed Performance</th>
+            <th>Peer Observer Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Technical Error Detection</strong></td>
+            <td>Partner immediately identified the flawed concept without hesitation.</td>
+            <td>[ ] Mastered &nbsp;&nbsp; [ ] Needs Review</td>
+          </tr>
+          <tr>
+            <td><strong>Aerodynamic Explanation</strong></td>
+            <td>Partner explained the physical reason <em>why</em> the statement is incorrect.</td>
+            <td>[ ] Mastered &nbsp;&nbsp; [ ] Needs Review</td>
+          </tr>
+          <tr>
+            <td><strong>Spoken Delivery &amp; Terminology</strong></td>
+            <td>Partner used standard B2 aeronautical terms and professional syntax.</td>
+            <td>[ ] Mastered &nbsp;&nbsp; [ ] Needs Review</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="page-footer-note">
+      <span>Part 5 • Technical Error Hunter</span>
+      <span>ENAC Technical English • LV121E</span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE 7: TABOO GAME & 15-QUESTION QUIZ
+       ========================================== -->
+  <div class="page">
+    <div class="doc-header">
+      <span class="agency">ENAC • Aeronautical Vocabulary &amp; Synthesis</span>
+      <span class="ref">REF: GSEA-S1-M2-AT-S2 • PAGE 7/7</span>
+    </div>
+
+    <h1>Part 6: Word Games (Taboo) &amp; 15-Question Technical Mastery Challenge</h1>
+    <div class="subtitle">Vocabulary Fluency, 12-Card Taboo Challenge &amp; Comprehensive Technical Quiz</div>
+
+    <!-- Taboo Challenge (12 Cards) -->
+    <div class="card">
+      <div class="card-title">
+        <span>Aircraft Anatomy Taboo Challenge (12 Technical Terms)</span>
+        <span class="tag">Word Games</span>
+      </div>
+      <p style="font-size: 7pt; color: #475569; margin-bottom: 4px;">
+        In pairs, describe the mystery term without pronouncing any of the 3 forbidden buzzwords:
+      </p>
+
+      <div class="grid-6" style="gap: 4px;">
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>1. Aileron</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Wing</s><br><s>Roll</s><br><s>Lateral</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>2. Rudder</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Tail</s><br><s>Yaw</s><br><s>Pedal</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>3. Elevator</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Pitch</s><br><s>Nose</s><br><s>Horizontal</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>4. Flap</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Lift</s><br><s>Trailing</s><br><s>Drag</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>5. Slat</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Leading</s><br><s>Stall</s><br><s>Extend</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>6. Spoiler</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Speedbrake</s><br><s>Descend</s><br><s>Dump</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>7. Radome</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Nose</s><br><s>Radar</s><br><s>Weather</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>8. Pitot Tube</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Airspeed</s><br><s>Heat</s><br><s>Ram</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>9. Static Wick</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Lightning</s><br><s>Discharge</s><br><s>Spark</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>10. APU</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Engine</s><br><s>Tail</s><br><s>Power</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>11. Fuselage</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Body</s><br><s>Cabin</s><br><s>Seats</s></span>
+        </div>
+        <div class="card" style="padding: 4px; font-size: 6.8pt; margin-bottom: 0;">
+          <strong>12. Empennage</strong><br>
+          <span style="font-size: 6pt; color: #be123c;"><s>Tail</s><br><s>Fin</s><br><s>Assembly</s></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15-Question Mastery Challenge -->
+    <div class="card">
+      <div class="card-title">
+        <span>15-Question Multi-Format Technical Mastery Challenge</span>
+        <span class="tag">Mastery Quiz</span>
+      </div>
+      
+      <div class="grid-3" style="font-size: 6.8pt; gap: 5px;">
+        <!-- Round 1 -->
+        <div class="prompt-box" style="margin-bottom: 0;">
+          <strong style="color: #3730a3;">Round 1: Rapid Error Buster</strong><br>
+          <strong>Q1.</strong> Flaps deployed to decrease drag in cruise? <em>[False - High-lift device]</em><br>
+          <strong>Q2.</strong> Can APU be started in flight? <em>[True - Within certified limits]</em><br>
+          <strong>Q3.</strong> Ailerons deflect symmetrically? <em>[False - Differentially]</em><br>
+          <strong>Q4.</strong> Pitot heat only turned on if ice seen? <em>[False - Mandatory before takeoff]</em><br>
+          <strong>Q5.</strong> Fin provides longitudinal stability? <em>[False - Directional / Yaw]</em>
+        </div>
+
+        <!-- Round 2 -->
+        <div class="prompt-box" style="margin-bottom: 0;">
+          <strong style="color: #3730a3;">Round 2: Motion Matcher</strong><br>
+          <strong>Q6.</strong> Surface commanded by rudder pedals? <em>[Rudder on vertical fin]</em><br>
+          <strong>Q7.</strong> Column pulled back: elevator motion? <em>[Upward deflection]</em><br>
+          <strong>Q8.</strong> Asymmetrical spoilers in flight? <em>[Assist roll &amp; bank]</em><br>
+          <strong>Q9.</strong> Devices extending from leading edge? <em>[Slats &amp; Krueger flaps]</em><br>
+          <strong>Q10.</strong> Phenomenon mitigated by winglets? <em>[Induced drag / vortices]</em>
+        </div>
+
+        <!-- Round 3 -->
+        <div class="prompt-box" style="margin-bottom: 0;">
+          <strong style="color: #3730a3;">Round 3: Pre-Flight Decisions</strong><br>
+          <strong>Q11.</strong> Pitot cover found on probe? <em>[Remove immediately &amp; log]</em><br>
+          <strong>Q12.</strong> Hydraulic fluid leak on brake line? <em>[Report to Line Maintenance]</em><br>
+          <strong>Q13.</strong> Missing static wicks dispatch? <em>[Check CDL limits]</em><br>
+          <strong>Q14.</strong> Crack on composite radome? <em>[Moisture freezing hazard]</em><br>
+          <strong>Q15.</strong> Oleo strut purpose? <em>[Absorb landing impact energy]</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Self-Assessment & Reflection -->
+    <div class="card">
+      <div class="card-title">
+        <span>Session 2 Self-Assessment, Formative Evaluation &amp; Independent Study</span>
+        <span class="tag">Reflection &amp; Portfolio</span>
+      </div>
+      <p style="font-size: 7.2pt; color: #334155; margin-bottom: 4px;">
+        <strong>Self-Assessment &amp; Reflection:</strong> Can you name 12 external parts, explain flight controls without jargon, and justify MEL dispatch decisions in professional B2 English?
+      </p>
+      <div class="prompt-box emerald" style="margin-bottom: 0;">
+        <strong>Independent Study Assignment:</strong> Review all 18 vocabulary flashcards in the digital Learning Deck and record your spoken walkaround summary in your digital Learning Portfolio ahead of Session 3 (Commercial Aircraft Fleets).
+      </div>
+    </div>
+
+    <div class="page-footer-note">
+      <span>Part 6 • Taboo &amp; Mastery Quiz</span>
+      <span>ENAC Technical English • LV121E</span>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -12247,39 +12247,42 @@
       const content = sessionData.lessonContent || {};
       const hero = content.hero || {};
       const opening = content.openingSession || {};
+      const videoLab = content.videoLab || {};
       const diagramLabeling = content.diagramLabeling || {};
       const externalParts = diagramLabeling.externalParts || [];
-      const spatialClinic = content.spatialClinic || {};
-      const spatialPatterns = spatialClinic.patterns || [];
-      const walkaroundRoleplay = content.walkaroundRoleplay || {};
-      const defectCards = walkaroundRoleplay.defectCards || [];
-      const cockpitSystemsHandover = content.cockpitSystemsHandover || {};
-      const melItems = cockpitSystemsHandover.melItems || [];
+      const blackboardChallenge = diagramLabeling.blackboardChallenge || {};
+      const gapFillClinic = content.gapFillClinic || {};
+      const errorHunter = content.errorHunter || {};
       const closing = content.closingReview || {};
+      const tabooCards = closing.tabooCards || [];
+      const masteryQuiz = closing.masteryQuiz || [];
+
+      const savedNote = (typeof window.getLessonNote === 'function') ? (window.getLessonNote('s1_m2_at_s2_notes') || '') : '';
 
       bodyEl.innerHTML = `
         <div class="space-y-6 printable-lesson-container">
-          <!-- Printable Action Bar -->
-          <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+          <!-- Canonical Action Bar (Rule 1.T) -->
+          <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-2xs">
             <div>
               <div class="flex items-center gap-2">
-                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
+                <span class="text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded shadow-2xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">AT Module 2 • Session 2</span>
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">${hero.title || 'Aircraft Anatomy: Structure &amp; Systems'}</h3>
             </div>
-            <button type="button" onclick="window.printLessonContent()" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 shadow-xs transition-all cursor-pointer shrink-0">
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Print / Save Lesson PDF</span>
-            </button>
+            <a href="docs/GSEA_S1_M2_AT_S2_Lesson_Worksheet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 border border-blue-700 shadow-xs transition-all cursor-pointer shrink-0">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Lesson Worksheet (PDF)</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
-          <!-- Hero Banner -->
-          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+          <!-- Hero Banner & Context -->
+          <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
             <div class="relative bg-slate-900">
               <img src="${hero.image || 'images/aas_m2card2.jpg'}" alt="${hero.title || 'Aircraft Anatomy'}" class="w-full h-48 sm:h-64 object-cover" onerror="this.onerror=null;this.src='images/aas_m2card2.jpg'">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-4 sm:p-5">
-                <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Airframe Structures &amp; Walkaround Inspection</span>
+                <span class="text-[11px] font-mono font-bold text-amber-300 uppercase tracking-wider">AIRFRAME STRUCTURES &amp; SYSTEMS ANATOMY</span>
                 <h3 class="text-lg sm:text-2xl font-black text-white mt-0.5">${hero.title || 'Aircraft Anatomy: Structure &amp; Systems'}</h3>
                 <p class="text-xs sm:text-sm text-slate-200 mt-1 line-clamp-2">${hero.subtitle || 'External Airframe Components, Flight Deck Controls &amp; Pre-Flight Walkaround Inspections'}</p>
               </div>
@@ -12287,87 +12290,194 @@
             <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Target Level:</span>
-                <span class="bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded">CEFR B2</span>
+                <span class="bg-slate-200 text-slate-800 font-bold px-2 py-0.5 rounded font-mono text-[10px]">CEFR B2</span>
                 <span class="text-slate-400">&bull;</span>
                 <span class="font-bold text-slate-800">Role Context:</span>
                 <span class="text-slate-600">Flight Crew / Line Maintenance Engineer</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-slate-800">Total Duration:</span>
-                <span class="font-bold text-slate-900">120 Minutes</span>
+                <span class="font-bold text-slate-900 font-mono">120 Minutes</span>
               </div>
             </div>
           </div>
 
           ${renderSessionBriefingBanner(sessionData, theme)}
 
-          <!-- Activity 1: News & Session 1 Check -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Personal Notes Auto-Save Card -->
+          <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wide font-mono">Personal Lesson Notes &amp; Spoken Reflections</span>
+              <span class="text-[10px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Auto-Saved Locally</span>
+            </div>
+            <textarea id="lesson-note-s1-m2-at-s2" oninput="window.saveLessonNote && window.saveLessonNote('s1_m2_at_s2_notes', this.value)" placeholder="Type your personal observations, newly mastered anatomical terms, and speaking self-reflection here..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:border-amber-400 focus:outline-none transition-all leading-relaxed">${savedNote}</textarea>
+          </div>
+
+          <!-- Part 1: Aviation News & Entry Diagnostic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News & Session 1 Spot-Check'}</h4>
-                  <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Aviation News &amp; Session 1 Spot-Check'}</h4>
+                  <p class="text-[11px] text-slate-500">${opening.summary || 'Opening warm-up examining maintenance headlines and spot-checking aerodynamic concepts with sentence stems.'}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Opening Warm-Up</span>
             </div>
 
             ${renderActivityInstructions(opening, theme)}
 
             <!-- News Prompts -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-2">
-              <div class="flex items-center gap-2">
-                <svg width="16" height="16" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-                <h5 class="text-xs sm:text-sm font-bold text-amber-900">Weekly Aircraft Maintenance &amp; Structural News</h5>
+            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-2 shadow-2xs">
+              <div class="text-[11px] font-bold text-slate-900 uppercase tracking-wider font-mono">
+                Weekly Maintenance &amp; Structural News Headlines
               </div>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-amber-900/90 leading-relaxed">
+              <ul class="space-y-1.5 pl-5 list-disc text-xs text-slate-700 leading-relaxed">
                 ${(opening.newsPrompts || []).map(p => `<li>${p}</li>`).join('')}
               </ul>
             </div>
 
-            <!-- Spot check -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
-              ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
-                <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
-                  <p class="text-xs font-bold text-slate-800">${q.id}. ${q.q}</p>
-                  <div id="diag-ans-s2-${q.id}" class="hidden p-2 bg-white border border-slate-200 rounded text-[11px] text-slate-700 mt-2">
-                    ${q.answer}
+            <!-- Diagnostic Grid with Spoken Sentence Stems (Rule 1.V) -->
+            <div class="space-y-3 pt-1">
+              <div class="flex items-center justify-between">
+                <h5 class="text-xs sm:text-sm font-bold text-slate-800 font-mono uppercase tracking-wide">${(opening.diagnostic && opening.diagnostic.title) || 'Aerodynamics Review Diagnostic'}</h5>
+                <span class="text-[11px] text-slate-500">${(opening.diagnostic && opening.diagnostic.instructions) || 'Discuss in pairs using the spoken sentence stems before revealing:'}</span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                ${((opening.diagnostic && opening.diagnostic.questions) || []).map(q => `
+                  <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 flex flex-col justify-between shadow-2xs">
+                    <div>
+                      <div class="flex items-center justify-between gap-2">
+                        <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">Diagnostic Question 0${q.id}</span>
+                        <span class="w-2 h-2 rounded-full" style="background-color: ${theme.primary};"></span>
+                      </div>
+                      <p class="text-xs font-bold text-slate-800 mt-1 leading-snug">${q.q}</p>
+                      ${q.stem ? `<p class="text-[11px] font-mono text-amber-800 bg-amber-50/80 p-1.5 rounded border border-amber-200/60 mt-1.5">${q.stem}</p>` : ''}
+                    </div>
+                    <div>
+                      <div id="diag-ans-s2-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 border-l-3 border-l-amber-400 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-2xs mb-2">
+                        <span class="font-bold text-slate-900 block font-mono text-[10px] uppercase">Operational Answer:</span>
+                        ${q.answer}
+                      </div>
+                      <button type="button" onclick="document.getElementById('diag-ans-s2-${q.id}').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                        <span>Reveal Operational Distinction</span> &rarr;
+                      </button>
+                    </div>
                   </div>
-                  <button type="button" onclick="document.getElementById('diag-ans-s2-${q.id}').classList.toggle('hidden')" class="no-print text-left text-[11px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer mt-2">
-                    <span>Toggle Answer &rarr;</span>
-                  </button>
-                </div>
-              `).join('')}
+                `).join('')}
+              </div>
             </div>
           </div>
 
-          <!-- Activity 2: Airframe Diagram Labeling -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Part 2: Interactive Video Lab (Noticeboard Half-Width Style) -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${diagramLabeling.title || 'Activity 2: Airframe Anatomy Labeling Challenge'}</h4>
-                  <p class="text-[11px] text-slate-500">${diagramLabeling.summary || 'Identify and describe key external parts and internal zones of commercial aircraft.'}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${videoLab.title || 'Activity 2: Interactive Video Lab — Modern Aircraft Anatomy &amp; Systems'}</h4>
+                  <p class="text-[11px] text-slate-500">${videoLab.summary || 'Video analysis of commercial aircraft control surfaces and hydraulic redundancy alongside an operational debrief card.'}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Aircraft Components Chart</span>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Video Noticeboard</span>
+            </div>
+
+            ${renderActivityInstructions(videoLab, theme)}
+
+            <!-- 2-Column Noticeboard Layout (Half-Width Player on Left, Debrief on Right) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+              <!-- Left Column: Video Player (Half Width) -->
+              <div class="lg:col-span-7 flex flex-col space-y-2.5">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="inline-flex items-center gap-1 text-[9.5px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 border border-slate-800 font-mono">
+                    AIRFRAME SYSTEMS • FLIGHT CONTROLS
+                  </span>
+                  <span class="text-[10.5px] text-slate-500 font-mono">Triple Hydraulic Redundancy</span>
+                </div>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+                  ${videoLab.videoTitle || 'Commercial Aircraft Anatomy &amp; How Flight Controls Work'}
+                </h4>
+                <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-950 border border-slate-300 shadow-md">
+                  <iframe class="w-full h-full" src="${videoLab.videoUrl || 'https://www.youtube-nocookie.com/embed/fD3K8nW_z9o'}" title="Commercial Aircraft Anatomy &amp; How Flight Controls Work" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="flex items-center justify-between pt-1 text-[11px]">
+                  <span class="text-[10px] text-slate-400 font-mono">${videoLab.channel || 'Aviation Explained • Airframe Engineering &amp; Flight Mechanics'}</span>
+                  <a 
+                    href="${videoLab.youtubeUrl || 'https://www.youtube.com/watch?v=fD3K8nW_z9o'}" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="text-xs font-bold text-slate-800 hover:text-amber-600 inline-flex items-center gap-1 underline transition-colors cursor-pointer"
+                    title="Watch on YouTube ↗"
+                  >
+                    <span>Watch on YouTube</span>
+                    <span class="text-[10px]">&rarr;</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column: Operational Debrief & Guided Questions -->
+              <div class="lg:col-span-5 flex flex-col justify-between space-y-3.5 bg-slate-50/90 rounded-xl p-4 sm:p-5 border border-slate-200">
+                <div class="space-y-3">
+                  <div class="border-b border-slate-200 pb-2">
+                    <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 font-mono">Operational Synopsis</span>
+                    <h5 class="text-xs sm:text-sm font-bold text-slate-800 mt-0.5">Control Surface Architecture &amp; Actuation</h5>
+                  </div>
+
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    ${videoLab.synopsis || 'An in-depth breakdown of how commercial jet airframes are constructed, how primary control surfaces create aerodynamic moments, and how triple-redundant hydraulic systems actuate them.'}
+                  </p>
+
+                  <!-- Key Technical Terms -->
+                  <div class="space-y-1.5 pt-1">
+                    <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wide font-mono block">Core Technical Concepts:</span>
+                    <div class="flex flex-wrap gap-1.5">
+                      ${(videoLab.keyTerms || []).map(t => `<span class="px-2 py-0.5 rounded text-[10.5px] font-mono bg-white border border-slate-200 text-slate-800 shadow-2xs">${t}</span>`).join('')}
+                    </div>
+                  </div>
+
+                  <!-- Guided Viewing Questions -->
+                  <div class="space-y-2.5 pt-2 border-t border-slate-200">
+                    <span class="text-[10px] font-bold text-slate-700 uppercase tracking-wide font-mono block">Guided Spoken Discussion:</span>
+                    ${(videoLab.questions || []).map(vq => `
+                      <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1.5 text-xs shadow-2xs">
+                        <p class="font-bold text-slate-800">${vq.id}. ${vq.q}</p>
+                        <div id="video-ans-${vq.id}" class="hidden p-2 bg-amber-50/80 border border-amber-200/80 rounded text-[11px] text-amber-950 leading-relaxed mt-1">
+                          ${vq.answer}
+                        </div>
+                        <button type="button" onclick="document.getElementById('video-ans-${vq.id}').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1 text-[10.5px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer">
+                          <span>Toggle Technical Explanation</span> &rarr;
+                        </button>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 3: Aircraft Blueprint Labeling & 3-Person Blackboard Challenge -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 3</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${diagramLabeling.title || 'Activity 3: In-Flight Aircraft Labeling &amp; 3-Person Blackboard Challenge'}</h4>
+                  <p class="text-[11px] text-slate-500">${diagramLabeling.summary || 'Interactive blueprint diagram race and 3-person team blackboard drawing challenge.'}</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Blueprint &amp; Board Lab</span>
             </div>
 
             ${renderActivityInstructions(diagramLabeling, theme)}
 
-            <!-- Interactive Airframe Anatomy Diagram Container -->
+            <!-- Interactive Blueprint Container -->
             <div class="rounded-2xl border border-slate-700 bg-slate-900 p-3 sm:p-5 shadow-lg space-y-4 text-white overflow-hidden">
-              <!-- Mode Bar & Controls -->
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
                 <div class="flex items-center gap-2">
-                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-indigo-500 text-white shadow-2xs">Interactive Blueprint</span>
-                  <span class="text-xs font-bold text-slate-200">Twin-Engine Commercial Jetliner (Dorsal Planform View)</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-indigo-500 text-white shadow-2xs font-mono">Interactive Blueprint</span>
+                  <span class="text-xs font-bold text-slate-200">Twin-Engine Commercial Jetliner (In-Flight Dorsal Planform)</span>
                 </div>
-                
-                <!-- Controls (Study Mode vs Challenge Mode) -->
                 <div class="no-print flex flex-wrap items-center gap-2">
                   <button type="button" id="airframe-mode-study-btn" onclick="window.setAirframeDiagramMode('study')" class="px-2.5 py-1 rounded text-xs font-bold transition-all bg-indigo-600 text-white shadow-xs cursor-pointer">
                     Study Mode (All Labeled)
@@ -12376,13 +12486,13 @@
                     Labeling Challenge (Test Yourself)
                   </button>
                   <button type="button" onclick="window.resetAirframeChallenge()" id="airframe-reset-btn" class="hidden px-2.5 py-1 rounded text-xs font-bold bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 cursor-pointer">
-                    Reset Blanks
+                    Reset Challenge
                   </button>
                 </div>
               </div>
 
               <!-- SVG Viewport -->
-              <div class="relative w-full overflow-x-auto flex justify-center py-1">
+              <div class="relative overflow-x-auto flex justify-center py-2">
                 <svg viewBox="0 0 920 545" class="w-full h-auto max-w-4xl select-none" xmlns="http://www.w3.org/2000/svg" style="min-width: 650px;">
                   <!-- Background Blueprint Guide Lines -->
                   <g opacity="0.18">
@@ -12611,187 +12721,299 @@
                   </g>
                 </svg>
               </div>
-              
-              <!-- Diagram Footer / Hint -->
-              <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-800 text-[11px] text-slate-400">
-                <div class="flex items-center gap-2">
-                  <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span id="airframe-diagram-tip">Click any numbered pin or component badge on the blueprint to listen to pronunciation and inspect its functional purpose.</span>
+
+              <!-- Blueprint Instructions & Tip -->
+              <div class="p-3 bg-slate-800/90 rounded-xl border border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                <div class="flex items-center gap-2 text-slate-300">
+                  <span class="text-indigo-400 font-bold">&bull;</span>
+                  <span id="airframe-diagram-tip">Click any numbered pin or component badge on the blueprint to inspect its functional purpose and listen to native pronunciation.</span>
                 </div>
-                <span class="font-mono text-slate-500 text-[10px]">ICAO Aerodrome Operations • Airframe Technical English</span>
+                <div class="flex items-center gap-2">
+                  <button type="button" onclick="window.revealAllAirframeParts()" class="no-print text-[11px] font-bold text-indigo-400 hover:text-indigo-300 underline cursor-pointer">
+                    Reveal All Labels
+                  </button>
+                </div>
+              </div>
+
+              <!-- Component Grid List -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 pt-2 border-t border-slate-800">
+                ${externalParts.map(part => `
+                  <div id="airframe-card-${part.id}" onclick="window.selectAirframePart('${part.id}', '${part.name}')" class="airframe-component-card p-2.5 rounded-lg bg-slate-800/70 border border-slate-700/80 hover:border-indigo-500/80 transition-all cursor-pointer space-y-1">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-900 text-indigo-400 border border-slate-700">${part.id}</span>
+                      <button type="button" onclick="event.stopPropagation(); if (typeof speakWord === 'function') speakWord('${part.name}')" class="text-slate-400 hover:text-white" title="Listen to pronunciation">
+                        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
+                      </button>
+                    </div>
+                    <div id="card-part-name-${part.id}" data-real-name="${part.name}" class="font-bold text-xs text-slate-200">${part.name}</div>
+                    <div class="text-[10px] text-slate-400 line-clamp-1">${part.location}</div>
+                    <div class="text-[10.5px] text-slate-300 leading-tight">${part.purpose}</div>
+                  </div>
+                `).join('')}
               </div>
             </div>
 
-            <!-- 12 External Component Cards -->
-            <div class="space-y-2 pt-2">
-              <div class="flex items-center justify-between">
-                <h5 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Component Technical Specifications &amp; Walkaround Checkpoints:</h5>
-                <span class="text-[11px] text-slate-500">12 Primary Airframe Structures</span>
+            <!-- 3-Person Team Blackboard Drawing Challenge -->
+            <div class="p-5 bg-gradient-to-br from-indigo-50/80 via-white to-sky-50/80 border border-indigo-200 rounded-2xl shadow-2xs space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-indigo-100 pb-2.5">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🖍️</span>
+                  <h5 class="text-xs sm:text-sm font-black text-indigo-950 uppercase tracking-wide font-mono">${blackboardChallenge.title || '3-Person Team Blackboard Drawing Challenge'}</h5>
+                </div>
+                <span class="text-[10px] font-mono font-bold bg-indigo-100 text-indigo-900 border border-indigo-300 px-2 py-0.5 rounded">Collaborative Board Lab</span>
               </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                ${externalParts.map(p => `
-                  <div id="airframe-card-${p.id}" class="airframe-component-card p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between shadow-2xs transition-all">
-                    <div>
-                      <div class="flex items-center justify-between pb-1.5 border-b border-slate-200">
-                        <div class="flex items-center gap-1.5">
-                          <span class="text-[10px] font-mono font-bold text-white px-1.5 py-0.5 rounded shadow-2xs" style="background-color: ${theme.primary};">${p.id}</span>
-                          <span id="card-part-name-${p.id}" data-real-name="${p.name}" class="font-bold text-xs text-slate-900">${p.name}</span>
-                        </div>
-                        <button type="button" onclick="speakWord('${p.name.replace(/'/g, "\\'")}')" class="p-1 rounded bg-white hover:bg-slate-200 border border-slate-200 text-slate-600 transition-all cursor-pointer" title="Listen to pronunciation">
-                          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
-                        </button>
-                      </div>
-                      <p class="text-[11px] text-slate-500 mt-2"><strong>Location:</strong> ${p.location}</p>
-                      <p class="text-[11px] text-slate-700 mt-1 leading-relaxed">${p.purpose}</p>
-                    </div>
-                    <div class="pt-2 border-t border-slate-200/80 mt-2 flex items-center justify-between text-[10px]">
-                      <button type="button" onclick="window.selectAirframePart('${p.id}', '${p.name.replace(/'/g, "\\'")}')" class="font-bold text-indigo-600 hover:text-indigo-800 transition-all cursor-pointer">
-                        Locate on Blueprint &uarr;
-                      </button>
-                      <span class="text-slate-400 font-mono">Airframe Item ${p.id}</span>
-                    </div>
+              <p class="text-xs text-slate-700 leading-relaxed">
+                ${blackboardChallenge.instructions || 'In groups of 3, step up to the classroom board or a large flipchart. Divide responsibilities across the three specialized aviation roles:'}
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+                ${(blackboardChallenge.roles || []).map(r => `
+                  <div class="p-3.5 bg-white border border-indigo-200/80 rounded-xl space-y-1.5 shadow-2xs">
+                    <span class="text-xs font-black text-indigo-900 block font-mono">${r.role}</span>
+                    <p class="text-[11.5px] text-slate-600 leading-relaxed">${r.task}</p>
                   </div>
                 `).join('')}
               </div>
             </div>
           </div>
 
-          <!-- Activity 3: Language Focus: Spatial Prepositions -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Part 4: Technical Gap-Fill Clinic -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${spatialClinic.title || 'Activity 3: Language Focus: Spatial Prepositions &amp; Functions'}</h4>
-                  <p class="text-[11px] text-slate-500">${spatialClinic.summary || 'Mastering precise spatial locations and functional relative clauses for maintenance communication.'}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${gapFillClinic.title || 'Activity 4: Technical Gap-Fill Clinic: Flight Controls &amp; Pre-Flight Checks'}</h4>
+                  <p class="text-[11px] text-slate-500">${gapFillClinic.summary || 'Two contextualized technical readings examining flight control surfaces and pre-flight inspection procedures.'}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Spatial Descriptors</span>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Gap-Fill Clinic</span>
             </div>
 
-            ${renderActivityInstructions(spatialClinic, theme)}
+            ${renderActivityInstructions(gapFillClinic, theme)}
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              ${spatialPatterns.map(p => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-                  <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 pb-1 border-b border-slate-200">${p.title}</h5>
-                  <ul class="text-xs text-slate-700 space-y-1.5 pl-4 list-disc pt-1">
-                    ${p.examples.map(ex => `<li class="italic font-medium">&ldquo;${ex}&rdquo;</li>`).join('')}
-                  </ul>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 4: Walkaround Inspection Role-Play -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${walkaroundRoleplay.title || 'Activity 4: Pre-Flight Exterior Walkaround Role-Play'}</h4>
-                  <p class="text-[11px] text-slate-500">${walkaroundRoleplay.summary || 'Captain &amp; Line Maintenance Engineer simulation: reporting and assessing airframe defects.'}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Walkaround Role-Play</span>
-            </div>
-
-            ${renderActivityInstructions(walkaroundRoleplay, theme)}
-
-            <div class="space-y-3">
-              ${defectCards.map(d => `
-                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
-                  <div class="flex items-center justify-between pb-1 border-b border-slate-200">
-                    <span class="font-bold text-xs text-slate-900 uppercase">${d.item}</span>
-                    <span class="text-[10px] font-bold text-rose-700 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded">Simulated Defect</span>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <!-- Text A -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 flex flex-col justify-between shadow-2xs">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <h5 class="text-xs font-bold text-slate-900 font-mono">${(gapFillClinic.textA && gapFillClinic.textA.title) || 'Text A: Flight Controls'}</h5>
+                    <span class="text-[10px] font-mono text-slate-500 font-bold">Aerodynamic Controls</span>
                   </div>
-                  <p class="text-xs text-slate-700 font-medium"><strong>Observed Defect:</strong> ${d.defect}</p>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs pt-1">
-                    <div class="p-2.5 bg-white border border-slate-200 rounded">
-                      <strong class="text-indigo-900 block mb-0.5">Captain Dialogue:</strong>
-                      <p class="italic text-slate-600">&ldquo;${d.pilotDialogue}&rdquo;</p>
-                    </div>
-                    <div class="p-2.5 bg-white border border-slate-200 rounded">
-                      <strong class="text-emerald-900 block mb-0.5">Engineer Dialogue:</strong>
-                      <p class="italic text-slate-600">&ldquo;${d.engineerDialogue}&rdquo;</p>
+                  <!-- Word Bank -->
+                  <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1">
+                    <span class="text-[9.5px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Word Bank:</span>
+                    <div class="flex flex-wrap gap-1.5">
+                      ${((gapFillClinic.textA && gapFillClinic.textA.wordBank) || []).map(w => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 border border-slate-300 text-slate-800 font-bold">${w}</span>`).join('')}
                     </div>
                   </div>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    ${(gapFillClinic.textA && gapFillClinic.textA.passage) || ''}
+                  </p>
+                </div>
+                <div>
+                  <div id="gapfill-a-ans" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-[11px] text-emerald-900 leading-relaxed shadow-2xs mb-2 space-y-0.5 font-mono">
+                    <span class="font-bold block text-[10px] uppercase text-emerald-950 font-sans">Verified Answers (Text A):</span>
+                    <div>[1] attitude &bull; [2] ailerons &bull; [3] differentially &bull; [4] longitudinal &bull; [5] rudder &bull; [6] camber &bull; [7] spoilers</div>
+                  </div>
+                  <button type="button" onclick="document.getElementById('gapfill-a-ans').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                    <span>Toggle Answers (Text A)</span> &rarr;
+                  </button>
+                </div>
+              </div>
+
+              <!-- Text B -->
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 flex flex-col justify-between shadow-2xs">
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between">
+                    <h5 class="text-xs font-bold text-slate-900 font-mono">${(gapFillClinic.textB && gapFillClinic.textB.title) || 'Text B: Exterior Walkaround'}</h5>
+                    <span class="text-[10px] font-mono text-slate-500 font-bold">Ramp Walkaround</span>
+                  </div>
+                  <!-- Word Bank -->
+                  <div class="p-2.5 bg-white border border-slate-200 rounded-lg space-y-1">
+                    <span class="text-[9.5px] font-bold uppercase tracking-wider text-slate-400 font-mono block">Word Bank:</span>
+                    <div class="flex flex-wrap gap-1.5">
+                      ${((gapFillClinic.textB && gapFillClinic.textB.wordBank) || []).map(w => `<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 border border-slate-300 text-slate-800 font-bold">${w}</span>`).join('')}
+                    </div>
+                  </div>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    ${(gapFillClinic.textB && gapFillClinic.textB.passage) || ''}
+                  </p>
+                </div>
+                <div>
+                  <div id="gapfill-b-ans" class="hidden p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-[11px] text-emerald-900 leading-relaxed shadow-2xs mb-2 space-y-0.5 font-mono">
+                    <span class="font-bold block text-[10px] uppercase text-emerald-950 font-sans">Verified Answers (Text B):</span>
+                    <div>[1] radome &bull; [2] pitot-static &bull; [3] oleo-pneumatic &bull; [4] hydraulic &bull; [5] static wicks &bull; [6] delamination</div>
+                  </div>
+                  <button type="button" onclick="document.getElementById('gapfill-b-ans').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                    <span>Toggle Answers (Text B)</span> &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Part 5: Technical Error Hunter (Spotting Aircraft Anatomy Mistakes) -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 5</span>
+                <div>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${errorHunter.title || 'Activity 5: Technical Error Hunter: Spotting Aircraft Anatomy Mistakes'}</h4>
+                  <p class="text-[11px] text-slate-500">${errorHunter.summary || 'Partner reading and error-finding workshop detecting factual fallacies in airframe descriptions with spoken corrections.'}</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono font-bold text-rose-500 uppercase tracking-wider shrink-0">Partner Error Hunter</span>
+            </div>
+
+            ${renderActivityInstructions(errorHunter, theme)}
+
+            <div class="p-3 bg-amber-50/80 border border-amber-200/80 rounded-xl text-xs text-amber-950 leading-relaxed flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-base">🎯</span>
+                <span><strong>Partner Protocol:</strong> Student A reads the statement aloud. Student B listens, challenges the technical inaccuracy, explains why it is false, and formulates the correct statement. Then swap!</span>
+              </div>
+              <button type="button" onclick="window.toggleAllErrorCorrections()" class="no-print shrink-0 px-2.5 py-1 bg-white border border-amber-300 rounded text-[11px] font-bold text-amber-900 hover:bg-amber-100 cursor-pointer">
+                Toggle All Corrections
+              </button>
+            </div>
+
+            <!-- Error Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+              ${(errorHunter.statements || []).map(st => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-3 flex flex-col justify-between shadow-2xs">
+                  <div class="space-y-2">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-rose-600 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded">Statement 0${st.id} • Spot the Mistake</span>
+                      <span class="text-xs">❌</span>
+                    </div>
+                    <p class="text-xs font-bold text-slate-900 italic leading-snug bg-white p-2.5 rounded-lg border border-slate-200">
+                      ${st.falseStatement}
+                    </p>
+                  </div>
+                  <div>
+                    <div id="error-card-ans-${st.id}" class="hidden p-3 bg-white border border-emerald-200 border-l-4 border-l-emerald-500 rounded-lg text-xs space-y-2 shadow-2xs mb-2">
+                      <div>
+                        <span class="font-bold text-rose-700 block font-mono text-[10px] uppercase">The Technical Error:</span>
+                        <p class="text-[11.5px] text-slate-700 leading-relaxed">${st.mistake}</p>
+                      </div>
+                      <div class="pt-1.5 border-t border-slate-100">
+                        <span class="font-bold text-emerald-800 block font-mono text-[10px] uppercase">Accurate Spoken Correction:</span>
+                        <p class="text-[11.5px] text-emerald-950 font-bold leading-relaxed">${st.correction}</p>
+                      </div>
+                    </div>
+                    <button type="button" onclick="document.getElementById('error-card-ans-${st.id}').classList.toggle('hidden')" class="no-print inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600 hover:text-slate-900 cursor-pointer">
+                      <span>Reveal Technical Correction</span> &rarr;
+                    </button>
+                  </div>
                 </div>
               `).join('')}
             </div>
           </div>
 
-          <!-- Activity 5: MEL Handover -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
+          <!-- Part 6: Aircraft Anatomy Taboo & 15-Question Technical Mastery Challenge -->
+          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-2xs space-y-5">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-2xs font-mono" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${cockpitSystemsHandover.title || 'Activity 5: Minimum Equipment List (MEL) Dispatch Workshop'}</h4>
-                  <p class="text-[11px] text-slate-500">${cockpitSystemsHandover.summary || 'Reviewing the Minimum Equipment List (MEL) to make safe dispatch decisions for inoperative equipment.'}</p>
+                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Aircraft Anatomy Taboo &amp; 15-Question Technical Mastery Challenge'}</h4>
+                  <p class="text-[11px] text-slate-500">${closing.summary || '12-card Taboo word game and multi-format 15-question plenary challenge consolidating structural terminology.'}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">MEL Workshop</span>
-            </div>
-
-            ${renderActivityInstructions(cockpitSystemsHandover, theme)}
-
-            <p class="text-xs text-slate-600">Review these 3 maintenance status items and decide whether the aircraft is legally permitted to dispatch:</p>
-            <div class="space-y-2 text-xs">
-              ${melItems.map(m => `
-                <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <span class="font-bold text-slate-800">${m.item}</span>
-                  <span class="text-[11px] p-1.5 bg-white rounded border border-slate-200 text-slate-600">${m.status}</span>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-
-          <!-- Activity 6: Wrap-up -->
-          <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
-                <div>
-                  <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: Vocabulary Review &amp; Class Wrap-Up'}</h4>
-                  <p class="text-[11px] text-slate-500">${closing.summary || 'Drill tricky aeronautical component pronunciation and consolidate learning logs ahead of Session 3.'}</p>
-                </div>
-              </div>
-              <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider shrink-0">Closing Consolidation</span>
+              <span class="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider shrink-0">Games &amp; Mastery</span>
             </div>
 
             ${renderActivityInstructions(closing, theme)}
 
-            <!-- Pronunciation Syllable Badges -->
-            ${(closing.wordsToPronounce && closing.wordsToPronounce.length) ? `
-              <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
-                <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 block">Syllable Stress &amp; Pronunciation Focus:</span>
-                <div class="flex flex-wrap gap-2">
-                  ${closing.wordsToPronounce.map(w => `
-                    <span class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-white border border-slate-300 text-slate-800 shadow-2xs">${w}</span>
-                  `).join('')}
+            <!-- Taboo Word Challenge (12 Cards) -->
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🎴</span>
+                  <h5 class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wide font-mono">Aircraft Anatomy Taboo (12 Technical Terms)</h5>
                 </div>
+                <span class="text-[11px] text-slate-500">Describe the mystery term without using any of the 3 forbidden words!</span>
               </div>
-            ` : ''}
-
-            <!-- Technical Checkpoints -->
-            ${(closing.checkpoints && closing.checkpoints.length) ? `
-              <div class="p-4 bg-emerald-50/60 border border-emerald-200 rounded-xl space-y-3">
-                <div class="flex items-center justify-between">
-                  <h5 class="text-xs sm:text-sm font-bold text-emerald-950">Aircraft Anatomy Mastery Checkpoints</h5>
-                  <span class="text-[11px] font-bold text-emerald-800">Verification</span>
-                </div>
-                <div class="space-y-2 text-xs text-emerald-900">
-                  ${closing.checkpoints.map(cp => `
-                    <div class="p-2.5 bg-white border border-emerald-200 rounded-lg flex items-center gap-2">
-                      <span class="text-emerald-600 font-bold">&check;</span>
-                      <span>${cp}</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5">
+                ${tabooCards.map(tc => `
+                  <div class="p-3 bg-white border border-slate-300 rounded-xl shadow-2xs flex flex-col justify-between space-y-2 hover:border-amber-400 transition-all">
+                    <div class="space-y-1">
+                      <div class="flex items-center justify-between">
+                        <span class="font-mono text-[10px] font-bold text-amber-700 bg-amber-50 px-1 rounded border border-amber-200">#${tc.id}</span>
+                        <button type="button" onclick="if (typeof speakWord === 'function') speakWord('${tc.term}')" class="text-slate-400 hover:text-slate-700 cursor-pointer" title="Listen">
+                          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"/></svg>
+                        </button>
+                      </div>
+                      <div class="font-black text-xs sm:text-sm text-slate-900">${tc.term}</div>
+                      <div class="text-[10px] font-mono text-slate-400">${tc.phonetic}</div>
                     </div>
-                  `).join('')}
+                    <div class="pt-1.5 border-t border-slate-100 space-y-1">
+                      <span class="text-[9px] font-mono font-bold text-rose-600 uppercase tracking-wider block">Forbidden Words:</span>
+                      <div class="space-y-0.5">
+                        ${tc.forbidden.map(fw => `<div class="text-[10.5px] font-semibold text-slate-600 line-through decoration-rose-400">&bull; ${fw}</div>`).join('')}
+                      </div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- 15-Question Interactive Technical Mastery Quiz -->
+            <div class="space-y-4 pt-3 border-t border-slate-200">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 bg-slate-900 text-white rounded-xl shadow-xs">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🏆</span>
+                  <div>
+                    <h5 class="text-xs sm:text-sm font-bold font-mono">15-Question Multi-Format Technical Mastery Challenge</h5>
+                    <p class="text-[10.5px] text-slate-300">Round 1: Error Buster &bull; Round 2: Motion Matcher &bull; Round 3: Pre-Flight Decisions</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="text-right">
+                    <span class="text-[10px] font-mono text-slate-400 block uppercase">Mastery Score</span>
+                    <span id="mastery-score-display" class="text-sm font-black font-mono text-amber-300">0 / 15</span>
+                  </div>
+                  <button type="button" onclick="window.resetMasteryQuiz()" class="no-print px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs font-bold text-slate-200 border border-slate-700 cursor-pointer">
+                    Reset Quiz
+                  </button>
                 </div>
               </div>
-            ` : ''}
 
+              <!-- Questions List -->
+              <div class="space-y-3.5">
+                ${masteryQuiz.map(mq => `
+                  <div id="quiz-card-${mq.id}" class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5 shadow-2xs">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 border-b border-slate-200 pb-2">
+                      <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded">${mq.round} • Question ${mq.id}</span>
+                      <span id="quiz-status-${mq.id}" class="text-[11px] font-bold text-slate-400 font-mono">Pending</span>
+                    </div>
+                    <p class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">${mq.q}</p>
+                    
+                    <div class="space-y-1.5 pt-1">
+                      ${mq.options.map((opt, optIdx) => `
+                        <button 
+                          type="button" 
+                          id="quiz-btn-${mq.id}-${optIdx}" 
+                          onclick="window.handleMasteryQuizSelect(${mq.id}, ${optIdx}, ${mq.correct})" 
+                          class="quiz-option-btn-${mq.id} w-full text-left p-2.5 rounded-lg border border-slate-200 bg-white hover:bg-slate-100 text-xs text-slate-800 transition-all flex items-start gap-2 cursor-pointer"
+                        >
+                          <span class="font-mono font-bold text-slate-400 shrink-0">${String.fromCharCode(65 + optIdx)}.</span>
+                          <span class="leading-relaxed">${opt}</span>
+                        </button>
+                      `).join('')}
+                    </div>
+
+                    <!-- Explanation Card (Revealed upon selection) -->
+                    <div id="quiz-exp-${mq.id}" class="hidden p-2.5 rounded-lg text-xs leading-relaxed border space-y-1">
+                      <span class="font-bold block font-mono text-[10px] uppercase">Technical Explanation:</span>
+                      <p class="text-[11.5px]">${mq.explanation}</p>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Vocabulary Flashcards Link -->
             <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-700">
               <span class="text-[11px] text-slate-600">Review all 18 aircraft anatomy vocabulary terms and practice pronunciation flashcards.</span>
               <button onclick="switchModalTab('revision')" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white shadow-xs hover:opacity-90 transition-all cursor-pointer shrink-0" style="background-color: ${theme.primary};">
@@ -13399,6 +13621,83 @@
       });
     };
 
+
+    // ==========================================
+    // 15-Question Technical Mastery Quiz Controller
+    // ==========================================
+    window.masteryQuizState = {
+      score: 0,
+      answered: {}
+    };
+
+    window.handleMasteryQuizSelect = function(qId, selectedIdx, correctIdx) {
+      if (window.masteryQuizState.answered[qId]) return;
+      window.masteryQuizState.answered[qId] = true;
+
+      const isCorrect = (selectedIdx === correctIdx);
+      if (isCorrect) {
+        window.masteryQuizState.score++;
+      }
+
+      // Update status tag
+      const statusEl = document.getElementById('quiz-status-' + qId);
+      if (statusEl) {
+        statusEl.textContent = isCorrect ? '✅ Correct' : '❌ Incorrect';
+        statusEl.className = 'text-[11px] font-bold font-mono ' + (isCorrect ? 'text-emerald-600' : 'text-rose-600');
+      }
+
+      // Highlight options
+      const buttons = document.querySelectorAll('.quiz-option-btn-' + qId);
+      buttons.forEach((btn, idx) => {
+        btn.disabled = true;
+        btn.classList.remove('hover:bg-slate-100', 'cursor-pointer');
+        btn.classList.add('cursor-default');
+        if (idx === correctIdx) {
+          btn.className = 'w-full text-left p-2.5 rounded-lg border-2 border-emerald-500 bg-emerald-50 text-xs font-bold text-emerald-950 flex items-start gap-2';
+        } else if (idx === selectedIdx && !isCorrect) {
+          btn.className = 'w-full text-left p-2.5 rounded-lg border-2 border-rose-400 bg-rose-50 text-xs text-rose-950 flex items-start gap-2';
+        } else {
+          btn.className = 'w-full text-left p-2.5 rounded-lg border border-slate-200 bg-slate-50 text-xs text-slate-400 opacity-60 flex items-start gap-2';
+        }
+      });
+
+      // Show explanation
+      const expEl = document.getElementById('quiz-exp-' + qId);
+      if (expEl) {
+        expEl.classList.remove('hidden');
+        expEl.className = 'p-2.5 rounded-lg text-xs leading-relaxed border space-y-1 ' + 
+          (isCorrect ? 'bg-emerald-50/70 border-emerald-200 text-emerald-950' : 'bg-rose-50/70 border-rose-200 text-rose-950');
+      }
+
+      // Update total score display
+      const scoreEl = document.getElementById('mastery-score-display');
+      if (scoreEl) {
+        scoreEl.textContent = window.masteryQuizState.score + ' / 15';
+      }
+    };
+
+    window.resetMasteryQuiz = function() {
+      window.masteryQuizState = { score: 0, answered: {} };
+      const scoreEl = document.getElementById('mastery-score-display');
+      if (scoreEl) scoreEl.textContent = '0 / 15';
+
+      document.querySelectorAll('[id^="quiz-status-"]').forEach(el => {
+        el.textContent = 'Pending';
+        el.className = 'text-[11px] font-bold text-slate-400 font-mono';
+      });
+
+      document.querySelectorAll('[id^="quiz-exp-"]').forEach(el => {
+        el.classList.add('hidden');
+      });
+
+      document.querySelectorAll('[class*="quiz-option-btn-"]').forEach(btn => {
+        btn.disabled = false;
+        btn.className = btn.className.replace(/border-2 border-emerald-500 bg-emerald-50 text-xs font-bold text-emerald-950/, 'border border-slate-200 bg-white hover:bg-slate-100 text-xs text-slate-800 cursor-pointer')
+          .replace(/border-2 border-rose-400 bg-rose-50 text-xs text-rose-950/, 'border border-slate-200 bg-white hover:bg-slate-100 text-xs text-slate-800 cursor-pointer')
+          .replace(/border border-slate-200 bg-slate-50 text-xs text-slate-400 opacity-60/, 'border border-slate-200 bg-white hover:bg-slate-100 text-xs text-slate-800 cursor-pointer');
+        btn.classList.add('hover:bg-slate-100', 'cursor-pointer');
+      });
+    };
     /* ==========================================================================
        AT MODULE 3 LESSON CONTENT TEMPLATES (SESSIONS 1 - 4)
        Module 3: Health, Meteorology, Safety & Security (LV121E)
