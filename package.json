@@ -25,7 +25,10 @@
     "bug:check": "node scripts/bug-check.js",
     "bug1": "node scripts/bug-check.js 1",
     "bug2": "node scripts/bug-check.js 2",
-    "bug3": "node scripts/bug-check.js 3"
+    "bug3": "node scripts/bug-check.js 3",
+    "backupt": "node scripts/backup.js teachers",
+    "backup:teachers": "node scripts/backup.js teachers",
+    "backup:all": "node scripts/backup.js all"
   },
   "repository": {
     "type": "git",

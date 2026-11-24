@@ -64,14 +64,16 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   - **Level 3 ("Full detail" / "Deep dive")**: Full technical breakdowns, line diffs, architectural analyses, and test logs.
   - **Explicit User Directives**: Strictly follow user directives requesting custom detail levels (e.g. *"brief"*, *"summary only"*, *"detailed"*).
 
-### E. Automated Project Backups (`backup1`, `backup2` & `backup3`)
+### E. Automated Project Backups (`backup1`–`backup3`, `backupt` & `backup all`)
 - **`backup1` Trigger**: Whenever the user sends `backup1`, the assistant immediately runs `npm run backup1` (or `node scripts/backup.js semester1`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_1/` and confirms the file path and archive size.
 - **`backup2` Trigger**: Whenever the user sends `backup2`, the assistant immediately runs `npm run backup2` (or `node scripts/backup.js semester2`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_2/` and confirms the file path and archive size.
 - **`backup3` Trigger**: Whenever the user sends `backup3`, the assistant immediately runs `npm run backup3` (or `node scripts/backup.js semester3`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_3/` and confirms the file path and archive size.
-- **Archive Convention**: Archives are named `GSEA_Semester_X_backup_YYYY-MM-DD_HHmm.zip`, containing the full project source and compiled assets while omitting `node_modules` and `.git`.
+- **`backupt` / `backup teachers` Trigger**: Whenever the user sends `backupt` or `backup teachers`, the assistant immediately runs `npm run backupt` (or `node scripts/backup.js teachers`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_teachers/` and confirms the file path and archive size.
+- **`backup all` Trigger**: Whenever the user sends `backup all` or `Backup 1 2 3 Teachers`, the assistant immediately runs `npm run backup:all` (or `node scripts/backup.js all`) to bundle dated archives across all four projects and confirms their file paths and sizes.
+- **Archive Convention**: Archives are named `GSEA_Semester_X_backup_YYYY-MM-DD_HHmm.zip` (or `GSEA_Teachers_backup_YYYY-MM-DD_HHmm.zip`), containing the full project source and compiled assets while omitting `node_modules` and `.git`.
 
-### F. Cross-Project Rule, Feature & Tooling Synchronization (Tri-Project Invariant)
-- **Mandatory Tri-Project Propagation**: Whenever an architectural rule, governance guideline, operational command (e.g. `backup1`/`backup2`/`backup3`), utility script, **shared platform feature, portfolio enhancement, or UI workflow improvement** is created or updated in any semester, the assistant MUST automatically evaluate and synchronize that improvement across all three repositories (`GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`) within the same session (omitting only content that is strictly semester-specific, such as module lesson topics).
+### F. Cross-Project Rule, Feature & Tooling Synchronization (Quad-Project Invariant)
+- **Mandatory Quad-Project Propagation**: Whenever an architectural rule, governance guideline, operational command (e.g. `backup1`–`backup3`, `backupt`, `backup all`), utility script, **shared platform feature, portfolio enhancement, or UI workflow improvement** is created or updated in any semester or the Teachers Hub, the assistant MUST automatically evaluate and synchronize that improvement across all four repositories (`GSEA_semester_1`, `GSEA_semester_2`, `GSEA_semester_3`, and `GSEA_teachers`) within the same session (omitting only content that is strictly semester-specific, such as module lesson topics).
 
 ### G. Automatic Atomic Commit & Push Protocol
 - **Single-Step Remote Synchronization**: Whenever the user instructs the assistant to `"Commit"` or `"Commit changes"`, the assistant MUST automatically execute **both** `git commit` AND `git push origin main` together in one seamless step, ensuring GitHub and GitHub Pages stay continuously synchronized with local progress.
@@ -164,7 +166,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **General Culture Focus**: Film recommendations are curated for broad cultural perspective, creative storytelling, and critical reflection beyond language boundaries, and are not restricted to English-language cinema.
 - **Privacy & Clean Code Invariants**: Raw `data/*.csv` files remain in `.gitignore`. Example template is tracked at `data/media-latest.example.csv`. Prohibited term `"faculty"` must never appear in generated copy or UI.
 
-### P. Session Objectives & Lesson Plan Title Invariant (Tri-Project Permanent Invariant)
+### P. Session Objectives & Lesson Plan Title Invariant (Quad-Project Permanent Invariant)
 - **Objectives Title Syntax**: All session objectives titles must follow the strict format:
   `Session X Objectives - [Topic Title]`
   *(Never use trailing suffix `Session X - [Topic] Objectives`).*
@@ -172,7 +174,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   `Session X Lesson Plan - [Topic Title] (2 Hours)` or `Session X Lesson Plan (2 Hours)`.
 - **Tri-Project Consistency**: This rule applies permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
 
-### Q. Teacher Autonomy & Zero Classroom Timings Invariant (Tri-Project Permanent Invariant)
+### Q. Teacher Autonomy & Zero Classroom Timings Invariant (Quad-Project Permanent Invariant)
 - **Zero Classroom Minute Breakdowns**: All lesson plans, student worksheets, activities, and teacher facilitation notes must strictly omit rigid minute breakdowns and timestamps (e.g., never include `00–25`, `25–50`, `(20 mins)`, `(30 mins)`, `(45 mins)`).
 - **Pedagogical Stage Progression (`Part 1`–`Part 4` / `Step 1`–`Step 4`)**: All activities must be organized by clean, sequential pedagogical stages (e.g., `Part 1`, `Part 2`, `Part 3`, `Part 4` or `Step 1`, `Step 2`).
 - **Complete Teacher Pacing Autonomy**: Pacing, dwell time, and discussion depth are determined entirely by the classroom teacher based on real-time classroom dynamics, student speaking confidence, and communicative flow.
@@ -180,13 +182,13 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **Session Block Title Retention**: Per Rule 1.P, the top-level lesson plan title retains its standard university schedule block designation (e.g., `Session X Lesson Plan - [Topic Title] (2 Hours)`), while all internal activity timings are strictly omitted.
 
 
-### S. Automated Link Verification & In-Deck Full-Text Article Reader Invariant (Tri-Project Permanent Invariant)
+### S. Automated Link Verification & In-Deck Full-Text Article Reader Invariant (Quad-Project Permanent Invariant)
 - **Zero Broken Links Guarantee (`npm run verify:links`)**: Every external link included in `data/course-data.js` (under `materials.articles` or `materials.resources` / `portals`) must be verified via the automated link checking script `scripts/verify-links.js` before release. Broken URLs, 404s, or endpoints triggering crawler blocks must be updated to verified canonical endpoints.
 - **In-Deck Full-Text Article Reader (`window.openArticleReader`)**: To preserve SCORM 1.2 strict offline self-containment (Rule 1.A) and guarantee that students never encounter external 404s, login paywalls, or offline connection errors during class, clicking `Read Article →` on any technical article card opens an in-deck reading modal directly inside the portal. The modal displays the complete B1/B2 article text, operational takeaways, and spoken technical vocabulary in context, while providing a clean secondary link to the official external source.
 - **Polymorphic Property Fallbacks**: All article renderers must safely handle both naming conventions (`heading || title`, `snippet || summary || desc`, `url || link`) to ensure zero `undefined` values appear on screen.
 - **Automated Validation Invariant**: Running `npm run verify:links` is part of the standard pre-flight packaging checklist across all three semesters (`GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`).
 
-### R. 100% Paperless Digital-First Architecture & Zero Printable Materials Invariant (Tri-Project Permanent Invariant)
+### R. 100% Paperless Digital-First Architecture & Zero Printable Materials Invariant (Quad-Project Permanent Invariant)
 - **Zero Physical Printouts**: No lesson plan, student worksheet, role-play activity, teacher facilitation note, or evaluation rubric may ever require, instruct, or rely on printed paper or physical photocopying.
 - **100% Screen-Based Interactive Design**: All student handouts, role cards, barrier games, answer keys, teacher notes, and reflection tools must exist exclusively as responsive, interactive on-screen UI components (tab switchers, revealable answers, interactive barrier cards, and local auto-saving notes).
 - **Zero 'Print to Teach' Dependencies**: Even when source training materials contain sections labeled *"Part 1: Student Handout"* or *"Part 2: Teacher Answer Keys"*, these must always be converted into fully interactive, on-screen browser experiences. Teachers arrive in the classroom with their laptop or tablet, students use their laptops or tablets, and all tasks are executed digitally on screen with zero paper waste.
@@ -213,17 +215,17 @@ Course administration (student lists, teacher assignments, weekly schedules, and
   8. *7-Page A4 PDF Lesson Worksheet Status*: Enforces the exact 7-page A4 PDF invariant (`docs/GSEA_S[X]_M[X]_[TRACK]_S[X]_Lesson_Worksheet.pdf`), verified via native macOS PDFKit (`doc.pageCount === 7`), extracts full page text for content analysis, and verifies tracking in `imsmanifest.xml`.
 - **Tri-Project Invariant Synchronization**: The audit engine and command runbook are synchronized permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
 
-### U. GSEA / TSEEAC Professional Identity & Non-Engineer Invariant (Tri-Project Invariant)
+### U. GSEA / TSEEAC Professional Identity & Non-Engineer Invariant (Quad-Project Permanent Invariant)
 - **Strict Prohibition of the Term 'Engineer' for GSEA / TSEEAC**: GSEA students are preparing for careers as civil aviation technical officers (*Technicien Supérieur des Études et de l'Exploitation de l'Aviation Civile* • TSEEAC), aerodrome inspectors, safety officers, and operational specialists. Never refer to GSEA / TSEEAC students, graduates, cohorts, or role-play participants as "engineers" (which is the separate IENAC track).
 - **Approved Professional Designations**: Always use accurate civil aviation operational terminology: `"as future GSEA graduates / TSEEAC professionals"`, `"civil aviation specialists"`, `"technical officers"`, `"aerodrome operations officers"`, `"aviation safety specialists"`, `"safety investigators"`, `"aviation professionals"`, or `"students"`. Never use `"as future graduates in aerodrome engineering"`, `"engineers"`, or `"future engineering career"`.
 - **Engineering Works vs. People**: Technical airfield infrastructure (e.g., civil engineering works, concrete repairs, drainage culverts, runway resurfacing) may describe physical works or external contractors, but all aerodrome personnel, inspectors, and students must strictly use the approved non-engineer designations.
 
-### V. Context-Anchored Reading & Spoken Language Framing Invariant (Tri-Project Invariant)
+### V. Context-Anchored Reading & Spoken Language Framing Invariant (Quad-Project Permanent Invariant)
 - **Zero Unanchored Technical Trivia**: All diagnostic questions, spot-checks, and reading tasks must draw 100% of their factual answers directly from the accompanying scenario briefing, text extract, or context box. Never ask students or English teachers to recall unanchored legal deadlines (e.g. EU 376/2014 72-hour MOR deadline), mechanical failure thresholds (e.g. 3 mm water depth, shear pin engineering limits), or theoretical models that are not explicitly provided in the reading text.
 - **Communicative Spoken Language Formulation Framing**: Questions must not be framed as dry, isolated factual recall quizzes. Every question prompt must provide communicative speaking prompts and target sentence stems (e.g., using modal verbs *"Using 'must be submitted within...'..."*, causal linkers *"Explain using 'in order to protect...'..."*, or comparative markers *"Contrast using 'whereas...'..."*).
 - **Self-Check Model Answers Welcomed**: Model answers (`✓ Model Answer: ...`) visible on worksheets or revealable on-screen are encouraged as positive self-assessment and self-check benchmarks and must not be flagged as errors.
 
-### W. Interactive Component & DOM Switcher Integrity Invariant (Tri-Project Invariant)
+### W. Interactive Component & DOM Switcher Integrity Invariant (Quad-Project Permanent Invariant)
 - **100% Operational Interactive Components**: Every on-screen interactive control—tab switchers (`window.switchExhibitTab`, `window.switchDossierTab`, `window.switchCapTab`), answer reveals (`window.toggleDiagnosticAnswer`, `window.toggle*Answer`), audio pronunciation helpers (`window.speakWord`), notes clearers (`window.clearLessonNotes`), and PDF print handlers (`window.printLessonContent`)—must be fully implemented with matching DOM element IDs and CSS selectors.
 - **Strict Tab Switcher ID & Class Parity**: All tab switcher pane containers must possess their corresponding discriminator class (`.exhibit-pane`, `.dossier-pane`, `.cap-pane`) and exact matching IDs (`exhibit-pane-[id]`, `dossier-pane-[id]`, `cap-pane-[id]`). Automated audits verify that every interactive button has a live, matching target in the rendered DOM.
 
@@ -257,7 +259,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ---
 
-### Z. "Cockpit Clarity" Visual Design & Icon Discipline Invariant (Tri-Project Permanent Invariant)
+### Z. "Cockpit Clarity" Visual Design & Icon Discipline Invariant (Quad-Project Permanent Invariant)
 - **Aviation Cockpit Philosophy ("Quiet by Default, Urgent by Exception")**: The learning and teaching portals are professional aviation courseware interfaces. They must avoid visual fatigue, competing pastel palettes, and decorative clutter.
 - **The 60–30–10 Palette Discipline**:
   - **60% Neutral Canvas**: Clean white (`bg-white`) and deep cockpit slate/navy (`bg-[#0f172a]` / `bg-[#1e293b]`).
@@ -271,6 +273,12 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **Harmonized Card Archetypes (No Loud Pastel Fills)**:
   - Important notices, teaching notes, and discussion prompt boxes must NOT use full bright pastel fills (e.g., avoid full-bleed `bg-amber-50/90 border-amber-200`).
   - Standardize callouts to crisp white/slate cards with an understated **3px or 4px solid amber left-rail accent border** (`bg-white border border-slate-200 border-l-4 border-l-amber-400 shadow-2xs`).
+
+---
+
+### AA. Drawer Geometry & Bottom-Center Fullscreen Controller Invariant (Quad-Project Permanent Invariant)
+- **Slide-Over Drawer Standard**: All slide-over drawers across all four portals (`index.html` drawers, admin hubs, and grading panels) must strictly use `max-w-4xl 2xl:max-w-6xl` for consistent horizontal reach and readability across desktop displays, with backdrop layer `z-40` and drawer panel `z-50`.
+- **Fullscreen Controller Standard**: All four portals feature a floating bottom-center fullscreen toggle button (`fixed bottom-4 left-1/2 -translate-x-1/2 z-30`), discreet styling, and automatic Escape key listener to exit fullscreen mode cleanly.
 
 ---
 
