@@ -2,7 +2,7 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-24T16:44:09.472Z
+# Generated: 2026-11-24T17:54:30.552Z
 # ============================================================================
 
 e20e3e5588d4197e1091e6994d124610be9cbfe301121385e0e0ff789183b27f  imsmanifest.xml
@@ -68,15 +68,15 @@ e2ce5d503b5f3ffdd1eef6c0c381af868719da65200db47d3f59e0328b21eadf  images/job_psa
 e3ee2a85595e505642b0637084bdaaf2bb26fb0a950ce753d62035d9d2317173  images/urban_15min_neighborhood.jpg
 1ec89f655af441402ffc433b9a039b6fae20cfe70e9e2b1457661d21cb4bc931  images/urban_car_sprawl.jpg
 1426722da0e7abff0c4cb21acc664505d53cd1b4da0c714f815ddeb6e55848cf  images/urban_superblock.jpg
-78062696438292839e09c6683f2065ecdd4f13f95496b90c07f3259e6aa24b48  images/weather_heatwave_drought.jpg
+c33da57417b1518790d3b27c5b35217bc62d4da5b91c5bfc9efce4688d32d87d  images/weather_heatwave_drought.jpg
 e7bcd595573bcf982856879d522f5032099b1f489890b28b533ed94dc5f53099  images/weather_renewable_transition.jpg
 bb1e6730a682adfec47d59997c83f83540051d50a35043c7e0ed8aed4a0aab69  images/weather_urban_flash_flood.jpg
-df72dc92223ad2e69dc6bd79f988d6c3e38467d6e8a68d20e1fee92e0c6bd7d4  images/weather_wildfire_smoke.jpg
+a952c8b61d3d61318497fd5945bd4c24802f30a775dd698ca243f7da99046720  images/weather_wildfire_smoke.jpg
 c618fe246e85887aca5775cb9589cfbe4db27d865ef4d1f9456aaf82f3c8cd9b  docs/GSEA_S1_M1_AG_S3_Lesson_Worksheet.pdf
 bbaa9e0d7d0f05d587b986ba9bd89a9e424eadad4935b0db2eb087903c98ecce  docs/GSEA_S1_M1_AG_S4_Lesson_Worksheet.pdf
 c4e2c8cf54a33812821eae3c7a772cee07ade1cf2527610e1736630b30200dc2  docs/GSEA_S1_M1_AT_S3_Lesson_Worksheet.pdf
 23fad09924fe6c811f24e1b55ffd2cb8eb4aa1a56b10e4e55aa30429626ea8e4  docs/GSEA_S1_M1_AT_S4_Lesson_Worksheet.pdf
-c807a40f2d3d130425e6d1af293f634141d6944674581ef28f33cf03f88cd757  docs/GSEA_S1_M2_AG_S1_Lesson_Worksheet.pdf
-23f9ea0424c1d629ed4b654e8e3ff2f299fdbbbdcb4dc38f61628e92ef2fb400  docs/GSEA_S1_M2_AG_S2_Lesson_Worksheet.pdf
+e55ef04b777976e5821633d9216d73a92c69e9855c200056af1a22479794eb0c  docs/GSEA_S1_M2_AG_S1_Lesson_Worksheet.pdf
+6947dcf3f0abd6d9f00d1724d136ee9b939ab1c8358279b6e4afe4f8ec2a71d6  docs/GSEA_S1_M2_AG_S2_Lesson_Worksheet.pdf
 e7540d7224b84b4be5aa6189d7fd7c074ee0866a0f558493831b27992f0d843f  docs/GSEA_S1_M2_AT_S1_Lesson_Worksheet.pdf
 55f9521f911fae0a75f473fe38801badef114d5acbd4c614ca7a7d9f66724860  docs/GSEA_S1_M2_AT_S2_Lesson_Worksheet.pdf
