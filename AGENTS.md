@@ -329,6 +329,12 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ---
 
+### AG. Drawer Tab Typography & Zero Emoji Clutter Invariant (Quad-Project Permanent Invariant)
+- **Zero Decorative Emojis or Flags in Drawer Tabs**: All slide-over drawer and modal navigation tab strips must strictly use clean, authoritative text labels without novelty emojis, flags, or icons (e.g. `Student Guide`, `Objectives (EN)`, `Objectives (FR)`, `Portfolio Summary`, `FE1 Quick-Prep`, `GSEA 2027 Refonte`).
+- **Cockpit Typography Standard**: Drawer tab navigation must maintain uniform text sizing (`text-xs font-bold`), equal vertical rhythm, and compact horizontal density to prevent line wrapping and horizontal scroll clutter across desktop and mobile devices.
+
+---
+
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
 
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*
