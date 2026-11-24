@@ -52,8 +52,10 @@ function generateRefonteHTML() {
         background-color: #f1f5f9 !important;
         background-image: radial-gradient(rgba(0, 0, 0, 0.085) 1.25px, transparent 1.25px) !important;
         background-size: 20px 20px !important;
-        padding: 2.5rem 1.5rem !important;
+        padding: 1.5rem !important;
         box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
       }
 
       #refonte-deck-wrapper::backdrop {
@@ -62,11 +64,11 @@ function generateRefonteHTML() {
         background-size: 20px 20px !important;
       }
 
-      /* In Fullscreen: Presentation covers exactly 75% width centered */
+      /* In Fullscreen: Presentation covers exactly 75% width centered HORIZONTALLY & VERTICALLY */
       .refonte-deck-container.is-fullscreen .refonte-inner-stage {
         width: 75% !important;
         max-width: 1350px !important;
-        margin: 0 auto !important;
+        margin: auto !important; /* Perfect vertical & horizontal centering */
       }
 
       @media (max-width: 1024px) {
