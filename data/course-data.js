@@ -1,7 +1,17 @@
-// ENAC GSEA English Programme - Master Course Data
-// Generated & Maintained by GSEA Platform
-
-const courseData = {
+/**
+ * GSEA Semester 1 - General English & Technical English (AT)
+ * Complete Course Data Architecture
+ * Author: Phil PARRIS (LH/LAN)
+ */
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) {
+    module.exports = factory();
+  } else {
+    root.COURSE_DATA = factory();
+    root.courseData = root.COURSE_DATA;
+  }
+})(typeof self !== "undefined" ? self : this, function () {
+  const courseData = {
   "1": {
     "id": 1,
     "name": "Module 1",
@@ -41693,9 +41703,5 @@ const courseData = {
   }
 };
 
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = courseData;
-}
-if (typeof window !== 'undefined') {
-  window.courseData = courseData;
-}
+  return courseData;
+});

@@ -19,6 +19,7 @@ const header = `/**
     module.exports = factory();
   } else {
     root.COURSE_DATA = factory();
+    root.courseData = root.COURSE_DATA;
   }
 })(typeof self !== "undefined" ? self : this, function () {
   const courseData = `;

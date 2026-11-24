@@ -1362,7 +1362,7 @@
       if (!modalEl || !bodyEl) return;
 
       const progKey = currentProgram || 'ag';
-      const rootData = window.COURSE_DATA || {};
+      const rootData = window.COURSE_DATA || window.courseData || {};
       const progData = rootData[progKey] || rootData.ag || rootData;
       const modCourse = progData[modNum] || rootData[modNum] || {};
       const sessionData = (modCourse.sessions && modCourse.sessions[sessionNum]) || {};
@@ -2140,7 +2140,7 @@
 
     function getActiveModalCourseData() {
       const progKey = modalState.program || currentProgram || 'ag';
-      const rootData = window.COURSE_DATA || {};
+      const rootData = window.COURSE_DATA || window.courseData || {};
       const progData = (progKey === 'at' || progKey === 'aas') ? (rootData.at || rootData.aas) : (rootData[progKey] || rootData.ag || rootData);
       return (progData && progData[modalState.modNum]) || rootData[modalState.modNum] || {};
     }
@@ -2358,7 +2358,7 @@
         document.body.appendChild(modal);
       }
 
-      const rootData = window.COURSE_DATA || {};
+      const rootData = window.COURSE_DATA || window.courseData || {};
       const progKey = (window.modalState && window.modalState.program) || window.currentProgram || "ag";
       const modNum = (window.modalState && window.modalState.modNum) || 1;
       const progData = rootData[progKey] || rootData[progKey.toLowerCase()] || rootData["1"] || rootData.ag || {};
