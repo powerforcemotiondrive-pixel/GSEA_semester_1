@@ -721,10 +721,7 @@
 
           <!-- Modal Navigation Tab Strip -->
           <nav id="modal-tab-strip" class="flex items-center gap-1 overflow-x-auto pb-0.5 text-xs select-none">
-            <button data-tab="objectives" id="modal-tab-objectives" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Objectives</button>
-            <button data-tab="plan" id="modal-tab-plan" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Lesson Plan</button>
-            <button data-tab="plan_obj" id="modal-tab-plan-obj" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Lesson Plan / Objectives</button>
-            <button data-tab="content" id="modal-tab-content" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Lesson Content</button>
+            <button data-tab="content" id="modal-tab-content" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Lesson Content</button>
             <button data-tab="revision" id="modal-tab-revision" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Vocabulary</button>
             <button data-tab="materials" id="modal-tab-materials" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Additional Materials</button>
             <button data-tab="notepad" id="modal-tab-notepad" class="modal-tab-btn modal-tab-standard flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer whitespace-nowrap shrink-0">
@@ -3282,14 +3279,10 @@
       const adminFeedbackTab = document.getElementById('modal-tab-admin-feedback');
       const immersionOverviewTab = document.getElementById('modal-tab-immersion-overview');
       const immersionCitiesTab = document.getElementById('modal-tab-immersion-cities');
-      const tabPlanObj = document.getElementById('modal-tab-plan-obj');
       const tabContent = document.getElementById('modal-tab-content');
-      const tabObjectives = document.getElementById('modal-tab-objectives');
-      const tabPlan = document.getElementById('modal-tab-plan');
       const standardTabs = document.querySelectorAll('.modal-tab-standard');
 
-      if (tabPlanObj) tabPlanObj.classList.add('hidden');
-      if (tabContent) tabContent.classList.add('hidden');
+      if (tabContent) tabContent.classList.remove('hidden');
 
       if (isObjectivesSession) {
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
@@ -3448,22 +3441,9 @@
           }
         }
 
-        if (hasLessonContent) {
-          if (tabObjectives) tabObjectives.classList.add('hidden');
-          if (tabPlan) tabPlan.classList.add('hidden');
-          if (tabPlanObj) tabPlanObj.classList.remove('hidden');
-          if (tabContent) tabContent.classList.remove('hidden');
-          if (modalState.tab === 'objectives' || modalState.tab === 'plan') {
-            modalState.tab = 'plan_obj';
-          }
-        } else {
-          if (tabPlanObj) tabPlanObj.classList.add('hidden');
-          if (tabContent) tabContent.classList.add('hidden');
-          if (tabObjectives) tabObjectives.classList.remove('hidden');
-          if (tabPlan) tabPlan.classList.remove('hidden');
-          if (modalState.tab === 'plan_obj' || modalState.tab === 'content') {
-            modalState.tab = 'objectives';
-          }
+        if (tabContent) tabContent.classList.remove('hidden');
+        if (modalState.tab === 'objectives' || modalState.tab === 'plan' || modalState.tab === 'plan_obj') {
+          modalState.tab = 'content';
         }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
@@ -3790,9 +3770,7 @@
             </div>
           </div>
         `;
-      } else if (modalState.tab === 'plan_obj') {
-        renderLessonPlanObjectivesTab(sessionData, theme);
-      } else if (modalState.tab === 'content') {
+      } else if (modalState.tab === 'plan_obj' || modalState.tab === 'objectives' || modalState.tab === 'plan' || modalState.tab === 'content') {
         renderLessonContentTab(sessionData, theme);
       } else if (modalState.tab === 'revision') {
         renderRevisionTab(sessionData, theme);

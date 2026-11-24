@@ -1767,14 +1767,10 @@
       const adminFeedbackTab = document.getElementById('modal-tab-admin-feedback');
       const immersionOverviewTab = document.getElementById('modal-tab-immersion-overview');
       const immersionCitiesTab = document.getElementById('modal-tab-immersion-cities');
-      const tabPlanObj = document.getElementById('modal-tab-plan-obj');
       const tabContent = document.getElementById('modal-tab-content');
-      const tabObjectives = document.getElementById('modal-tab-objectives');
-      const tabPlan = document.getElementById('modal-tab-plan');
       const standardTabs = document.querySelectorAll('.modal-tab-standard');
 
-      if (tabPlanObj) tabPlanObj.classList.add('hidden');
-      if (tabContent) tabContent.classList.add('hidden');
+      if (tabContent) tabContent.classList.remove('hidden');
 
       if (isObjectivesSession) {
         if (immersionOverviewTab) immersionOverviewTab.classList.add('hidden');
@@ -1933,22 +1929,9 @@
           }
         }
 
-        if (hasLessonContent) {
-          if (tabObjectives) tabObjectives.classList.add('hidden');
-          if (tabPlan) tabPlan.classList.add('hidden');
-          if (tabPlanObj) tabPlanObj.classList.remove('hidden');
-          if (tabContent) tabContent.classList.remove('hidden');
-          if (modalState.tab === 'objectives' || modalState.tab === 'plan') {
-            modalState.tab = 'plan_obj';
-          }
-        } else {
-          if (tabPlanObj) tabPlanObj.classList.add('hidden');
-          if (tabContent) tabContent.classList.add('hidden');
-          if (tabObjectives) tabObjectives.classList.remove('hidden');
-          if (tabPlan) tabPlan.classList.remove('hidden');
-          if (modalState.tab === 'plan_obj' || modalState.tab === 'content') {
-            modalState.tab = 'objectives';
-          }
+        if (tabContent) tabContent.classList.remove('hidden');
+        if (modalState.tab === 'objectives' || modalState.tab === 'plan' || modalState.tab === 'plan_obj') {
+          modalState.tab = 'content';
         }
 
         tagEl.textContent = `${progConfig.code} Module ${modalState.modNum} • Session ${modalState.sessionNum}`;
@@ -2275,9 +2258,7 @@
             </div>
           </div>
         `;
-      } else if (modalState.tab === 'plan_obj') {
-        renderLessonPlanObjectivesTab(sessionData, theme);
-      } else if (modalState.tab === 'content') {
+      } else if (modalState.tab === 'plan_obj' || modalState.tab === 'objectives' || modalState.tab === 'plan' || modalState.tab === 'content') {
         renderLessonContentTab(sessionData, theme);
       } else if (modalState.tab === 'revision') {
         renderRevisionTab(sessionData, theme);
