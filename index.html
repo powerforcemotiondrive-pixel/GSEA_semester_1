@@ -4391,9 +4391,9 @@
             </button>
 
             <!-- Button 3: Portfolio Summary -->
-            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 border-l-4 border-l-emerald-500 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
+            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 border-l-4 border-l-slate-400 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
               <div class="min-w-0">
-                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-700">COHORT INSIGHTS</div>
+                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">COHORT INSIGHTS</div>
                 <div class="text-xs sm:text-[13px] font-bold text-slate-900 truncate mt-0.5">Portfolio Summary</div>
                 <div class="text-[10.5px] font-mono text-slate-500 truncate mt-0.5">Buzzwords &amp; grammar traps</div>
               </div>
@@ -4419,7 +4419,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
             <!-- Announcement 1: Wednesday AT -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-sky-500 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">WEDNESDAY &bull; AT</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">13:15 – 15:15</span>
@@ -4433,7 +4433,7 @@
             </div>
 
             <!-- Announcement 2: Friday AG -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-amber-400 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">FRIDAY &bull; AG</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">08:00 – 10:00</span>
@@ -4447,7 +4447,7 @@
             </div>
 
             <!-- Announcement 3: Portfolio Reminder -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-emerald-500 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">CONTINUOUS HABIT</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">Self-Study</span>
@@ -4461,7 +4461,7 @@
             </div>
 
             <!-- Announcement 4: Formative Evaluation (FE) Countdown or Active State -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-indigo-500 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200 border-l-4 ${activeInfo.isFe ? "border-l-amber-400" : "border-l-slate-300"} bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">${activeInfo.isFe ? "ACTIVE EVALUATION" : "UPCOMING EVALUATION"}</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">Week ${activeInfo.feWeek}</span>
