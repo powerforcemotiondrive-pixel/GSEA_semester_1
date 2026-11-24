@@ -68,7 +68,8 @@ const results = {
   dualAdminParity: { pass: true, details: [] },
   invariants: { pass: true, details: [] },
   localStorageNotes: { pass: true, details: [] },
-  curriculumSchema: { pass: true, details: [] }
+  curriculumSchema: { pass: true, details: [] },
+  tabRenderSimulation: { pass: true, details: [] }
 };
 
 // -----------------------------------------------------------------------------
@@ -459,6 +460,112 @@ if (fs.existsSync(courseDataPath)) {
 }
 
 // -----------------------------------------------------------------------------
+// CHECK 10: Full Modal Tab & Live Session Render Simulation (1,248 Paths)
+// -----------------------------------------------------------------------------
+try {
+  const targetMock = {
+    _val: "",
+    set innerHTML(v) { this._val = v; },
+    get innerHTML() { return this._val; },
+    classList: { add: () => {}, remove: () => {}, contains: () => false },
+    style: {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    setAttribute: () => {},
+    getAttribute: () => null
+  };
+
+  const simSandbox = {
+    window: {
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      matchMedia: () => ({ matches: false, addEventListener: () => {} }),
+      location: { href: "" }
+    },
+    document: {
+      getElementById: () => targetMock,
+      querySelectorAll: () => [],
+      querySelector: () => targetMock,
+      createElement: () => targetMock,
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      body: targetMock
+    },
+    console: { log: () => {}, warn: () => {}, error: () => {} },
+    setTimeout: (fn) => fn(),
+    clearTimeout: () => {},
+    navigator: { userAgent: "Node" },
+    localStorage: { getItem: () => null, setItem: () => {}, removeItem: () => {} }
+  };
+  Object.assign(simSandbox.window, simSandbox);
+  vm.createContext(simSandbox);
+
+  // Load course data and all src/js modules in order
+  if (fs.existsSync(courseDataPath)) {
+    vm.runInContext(fs.readFileSync(courseDataPath, "utf8"), simSandbox);
+  }
+  const simJsDir = path.join(repoDir, "src/js");
+  if (fs.existsSync(simJsDir)) {
+    const modules = fs.readdirSync(simJsDir).filter(f => f.endsWith(".js")).sort();
+    modules.forEach(f => {
+      vm.runInContext(fs.readFileSync(path.join(simJsDir, f), "utf8"), simSandbox);
+    });
+  }
+
+  const allModalTabs = [
+    "student_guide", "portfolio_summary", "sem_obj_en", "sem_obj_fr",
+    "immersion_overview", "immersion_cities", "admin_groups", "admin_calendar",
+    "admin_rota", "admin_presentation", "admin_refonte", "admin_feedback",
+    "admin_syllabus", "fe_guidelines", "fe_objectives", "fe_criteria", "fe_prep",
+    "objectives", "plan_obj", "content", "revision", "materials", "notepad",
+    "toeic_guide", "toeic", "ddrs"
+  ];
+
+  let simPasses = 0;
+  const simFailures = [];
+
+  ["ag", "at"].forEach(track => {
+    [1, 2, 3].forEach(mod => {
+      allModalTabs.forEach(tab => {
+        [1, 2, 3, 4, 5, 6, 7, 8].forEach(sess => {
+          simSandbox.modalState = {
+            tab: tab,
+            modNum: mod,
+            sessionNum: sess,
+            program: track
+          };
+          simSandbox.currentProgram = track;
+          targetMock._val = "";
+          try {
+            simSandbox.renderModalBody();
+            if (!targetMock._val || targetMock._val.length === 0) {
+              simFailures.push(`Empty markup returned: ${track.toUpperCase()} M${mod} S${sess} [tab: ${tab}]`);
+            } else {
+              simPasses++;
+            }
+          } catch (err) {
+            simFailures.push(`Exception in ${track.toUpperCase()} M${mod} S${sess} [tab: ${tab}]: ${err.message}`);
+          }
+        });
+      });
+    });
+  });
+
+  if (simFailures.length > 0) {
+    results.tabRenderSimulation.pass = false;
+    results.tabRenderSimulation.details.push(...simFailures.slice(0, 10));
+    if (simFailures.length > 10) {
+      results.tabRenderSimulation.details.push(`...and ${simFailures.length - 10} additional render failure(s).`);
+    }
+  } else {
+    results.tabRenderSimulation.details.push(`Executed ${simPasses} live simulation renders across all tracks, modules, sessions, and modal tabs — 0 crashes, 0 missing functions, 0 empty renders.`);
+  }
+} catch (simErr) {
+  results.tabRenderSimulation.pass = false;
+  results.tabRenderSimulation.details.push(`Simulation harness error: ${simErr.message}`);
+}
+
+// -----------------------------------------------------------------------------
 // FORMAT REPORT OUTPUT
 // -----------------------------------------------------------------------------
 const checks = [
@@ -470,7 +577,8 @@ const checks = [
   { key: 'dualAdminParity', name: '6. ⚖️ DUAL-ADMIN & TITLE PARITY (1.B/1.L)' },
   { key: 'invariants', name: '7. 🚫 JARGON, TIMINGS & PRIVACY (1.I/1.Q)' },
   { key: 'localStorageNotes', name: '8. 📝 LOCALSTORAGE AUTO-SAVE HANDLERS' },
-  { key: 'curriculumSchema', name: '9. 📚 CURRICULUM SCHEMA (VIDEOS, TOEIC, VOCAB)' }
+  { key: 'curriculumSchema', name: '9. 📚 CURRICULUM SCHEMA (VIDEOS, TOEIC, VOCAB)' },
+  { key: 'tabRenderSimulation', name: '10. 🧪 FULL MODAL TAB & SESSION SIMULATION' }
 ];
 
 let allPassed = true;
