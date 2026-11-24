@@ -76,7 +76,7 @@
           <div class="no-print flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
             <div>
               <div class="flex items-center gap-2">
-                <span class="text-[9.5px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">DIGITAL WORKSHEET</span>
+                <span class="text-white text-[10px] font-black px-2 py-0.5 rounded shadow-xs" style="background-color: ${theme.primary};">DIGITAL WORKSHEET</span>
                 <span class="text-xs font-bold text-slate-700">General English (AG) • Module 1 • Session 1</span>
               </div>
               <h3 class="text-sm sm:text-base font-black text-slate-900 mt-1">Introduction &amp; Travel Anecdotes</h3>
@@ -118,7 +118,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shadow-2xs">Part 1</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 1</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${opening.title || 'Activity 1: Travel Anecdotes — My Most Memorable Trip'}</h4>
                   <p class="text-[11px] text-slate-500">${opening.summary || ''}</p>
@@ -144,19 +144,19 @@
               <span class="text-[11px] font-bold text-slate-700 uppercase tracking-wider block">Useful Phrases for Telling Your Story:</span>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs">
                 <div class="p-3 bg-white border border-slate-200 rounded-lg shadow-2xs space-y-1.5">
-                  <strong class="text-[9.5px] font-mono font-bold uppercase tracking-wider text-slate-500 block">Starting Your Story</strong>
+                  <strong class="text-[10px] font-black uppercase tracking-wider text-sky-700 block">Starting Your Story</strong>
                   ${((opening.storyPhrases && opening.storyPhrases.start) || ['A couple of years ago, I went on a trip to...', 'It all started when I was traveling to...']).map(p => `
                     <p class="text-slate-700 italic">&ldquo;${p}&rdquo;</p>
                   `).join('')}
                 </div>
                 <div class="p-3 bg-white border border-slate-200 rounded-lg shadow-2xs space-y-1.5">
-                  <strong class="text-[9.5px] font-mono font-bold uppercase tracking-wider text-slate-500 block">What Happened (The Glitch)</strong>
+                  <strong class="text-[10px] font-black uppercase tracking-wider text-amber-700 block">What Happened (The Glitch)</strong>
                   ${((opening.storyPhrases && opening.storyPhrases.event) || ['Everything was going well until...', 'Before we knew it, we realized that...']).map(p => `
                     <p class="text-slate-700 italic">&ldquo;${p}&rdquo;</p>
                   `).join('')}
                 </div>
                 <div class="p-3 bg-white border border-slate-200 rounded-lg shadow-2xs space-y-1.5">
-                  <strong class="text-[9.5px] font-mono font-bold uppercase tracking-wider text-slate-500 block">How It Ended (Resolution)</strong>
+                  <strong class="text-[10px] font-black uppercase tracking-wider text-emerald-700 block">How It Ended (Resolution)</strong>
                   ${((opening.storyPhrases && opening.storyPhrases.ending) || ['To my relief, everything worked out when...', 'Looking back now, it was an unforgettable experience.']).map(p => `
                     <p class="text-slate-700 italic">&ldquo;${p}&rdquo;</p>
                   `).join('')}
@@ -165,11 +165,12 @@
             </div>
 
             <!-- Example Story -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+            <div class="p-4 bg-amber-50/70 border border-amber-200 rounded-xl space-y-1.5">
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">EXAMPLE SPOKEN STORY</span>
+                <svg width="15" height="15" class="text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                <h5 class="text-xs font-bold text-amber-950 uppercase tracking-wider">Example Story</h5>
               </div>
-              <p class="text-xs text-slate-700 leading-relaxed italic">
+              <p class="text-xs text-amber-900/95 leading-relaxed italic">
                 &ldquo;${opening.modelStory || 'Two summers ago, my friends and I took a train from Munich to Salzburg. Everything was going smoothly until our train stopped in the countryside because of an engine problem. Before we knew it, we had missed our connection! Luckily, a friendly local passenger helped us find a bus, and we reached our hostel just in time. Looking back now, it turned an ordinary trip into a fun adventure.'}&rdquo;
               </p>
             </div>
@@ -194,7 +195,9 @@
                       <div id="ag-spotcheck-ans-1-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 rounded-lg text-[11px] text-slate-700 leading-relaxed">
                         ${q.answer}
                       </div>
-                      <button type="button" id="ag-spotcheck-btn-1-${q.id}" onclick="window.toggleAgSpotCheckAnswer(1, ${q.id})" class="inline-flex items-center gap-1 text-[11px] font-mono font-bold text-slate-600 hover:text-slate-900 transition-all cursor-pointer"><span>Reveal Answer</span> <span>&rarr;</span></button>
+                      <button type="button" id="ag-spotcheck-btn-1-${q.id}" onclick="window.toggleAgSpotCheckAnswer(1, ${q.id})" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-slate-100 border border-slate-300 text-[11px] font-bold text-slate-700 transition-all cursor-pointer">
+                        <span>Reveal Answer</span> &rarr;
+                      </button>
                     </div>
                   </div>
                 `).join('')}
@@ -206,7 +209,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shadow-2xs">Part 2</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 2</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${survey.title || 'Activity 2: Global Travel Dilemmas: Speed Discussion'}</h4>
                   <p class="text-[11px] text-slate-500">${survey.summary || ''}</p>
@@ -231,20 +234,20 @@
                 <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs flex flex-col justify-between space-y-3">
                   <div>
                     <div class="flex items-center justify-between gap-2 mb-1.5">
-                      <span class="px-2 py-0.5 rounded text-[9.5px] font-mono font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">${t.badge}</span>
+                      <span class="px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide text-white" style="background-color: ${theme.primary};">${t.badge}</span>
                       <span class="text-[11px] font-bold text-slate-400">Dilemma 0${t.id}</span>
                     </div>
                     <h5 class="text-xs sm:text-sm font-bold text-slate-900">${t.statement}</h5>
                     <div class="grid grid-cols-1 gap-1.5 mt-2.5 text-[11px]">
-                      <div class="p-2 bg-slate-50 border border-slate-200 rounded text-slate-700 text-[11px]">
-                        <strong class="block font-mono text-[9.5px] uppercase tracking-wider text-slate-800">Support:</strong> ${t.pro}
+                      <div class="p-2 bg-emerald-50/70 border border-emerald-200 rounded text-emerald-900">
+                        <strong class="block text-emerald-800">Support:</strong> ${t.pro}
                       </div>
-                      <div class="p-2 bg-slate-50 border border-slate-200 rounded text-slate-700 text-[11px]">
-                        <strong class="block font-mono text-[9.5px] uppercase tracking-wider text-slate-800">Counter-argument:</strong> ${t.con}
+                      <div class="p-2 bg-rose-50/70 border border-rose-200 rounded text-rose-900">
+                        <strong class="block text-rose-800">Counter-argument:</strong> ${t.con}
                       </div>
                     </div>
                   </div>
-                  <div class="p-2.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-lg text-[11px] text-slate-800 font-medium shadow-2xs">
+                  <div class="p-2.5 bg-amber-50/60 border border-amber-200 rounded-lg text-[11px] text-amber-900 font-medium">
                     ${t.prompt}
                   </div>
                 </div>
@@ -256,7 +259,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shadow-2xs">Part 3</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 3</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${collocations.title || 'Activity 3: Language Focus: Essential Travel Collocations & Idioms'}</h4>
                   <p class="text-[11px] text-slate-500">${collocations.summary || ''}</p>
@@ -317,7 +320,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shadow-2xs">Part 4</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 4</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${grammar.title || 'Activity 4: Grammar Focus: Narrative Tenses & Storytelling'}</h4>
                   <p class="text-[11px] text-slate-500">${grammar.summary || ''}</p>
@@ -370,7 +373,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shadow-2xs">Part 5</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 5</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${rolePlay.title || 'Activity 5: Role-Play Simulation: Flight Delay & Missing a Connection'}</h4>
                   <p class="text-[11px] text-slate-500">${rolePlay.summary || ''}</p>
@@ -382,8 +385,8 @@
             ${renderActivityInstructions(rolePlay, theme)}
 
             <!-- Scenario Box -->
-            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl text-xs text-slate-800 leading-relaxed shadow-2xs">
-              <strong class="font-mono text-[10px] uppercase tracking-wider text-amber-700 block mb-0.5">ROLE-PLAY SCENARIO:</strong> ${rolePlay.scenario}
+            <div class="p-3.5 bg-amber-50/70 border border-amber-200 rounded-xl text-xs text-amber-950 leading-relaxed">
+              <strong>Scenario:</strong> ${rolePlay.scenario}
             </div>
 
             <!-- Roles Grid -->
@@ -410,7 +413,7 @@
           <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-900 text-amber-300 shadow-2xs">Part 6</span>
+                <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shadow-xs" style="background-color: ${theme.primary};">Part 6</span>
                 <div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${closing.title || 'Activity 6: vocabulary wrap-up & Exit Ticket'}</h4>
                   <p class="text-[11px] text-slate-500">${closing.summary || ''}</p>
@@ -438,9 +441,9 @@
             </div>
 
             <!-- Reflection Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-slate-300 rounded-xl space-y-2 shadow-2xs">
-              <h5 class="text-xs sm:text-sm font-bold text-slate-900 font-mono uppercase tracking-wider text-[11px]">Personal Study Log &amp; Exit Ticket</h5>
-              <ul class="space-y-1.5 pl-5 list-disc text-xs text-slate-600 leading-relaxed">
+            <div class="p-4 bg-orange-50/40 border border-orange-200 rounded-xl space-y-2">
+              <h5 class="text-xs sm:text-sm font-bold text-orange-950">Personal Study Log &amp; Exit Ticket</h5>
+              <ul class="space-y-1.5 pl-5 list-disc text-xs text-orange-900/90 leading-relaxed">
                 ${(closing.reflectionPrompts || []).map(rp => `<li>${rp}</li>`).join('')}
               </ul>
             </div>
