@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .refonte-deck-container {
+    width: 75% !important;
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  @media (max-width: 1024px) {
+    .refonte-deck-container {
+      width: 92% !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .refonte-deck-container {
+      width: 100% !important;
+    }
+  }
+  .refonte-deck-container.is-fullscreen {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 1.5rem !important;
+  }
+}
