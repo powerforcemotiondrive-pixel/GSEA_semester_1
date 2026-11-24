@@ -74,7 +74,8 @@
             ${activeTerms.map(t => {
               const isMastered = masteredList.includes(t.term);
               const termLower = (t.term || '').toLowerCase();
-              const defLower = (t.definition || '').toLowerCase();
+              const termDef = t.definition || t.def || '';
+              const defLower = termDef.toLowerCase();
               const matches = !currentSearch || termLower.includes(currentSearch) || defLower.includes(currentSearch);
               return `
                 <div class="vocab-card bg-white border ${isMastered ? 'border-emerald-300 ring-1 ring-emerald-200' : 'border-slate-200'} rounded-xl p-3 flex flex-col justify-between shadow-xs transition-all ${matches ? '' : 'hidden'}" data-term="${termLower.replace(/"/g, '&quot;')}" data-def="${defLower.replace(/"/g, '&quot;')}">
@@ -86,7 +87,7 @@
                       </div>
                       <span class="text-white text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 shadow-xs" style="background-color: ${theme.accent};">${modalState.vocabScope === 'module' ? `S${t.sessionNum} • ${t.num}` : t.num}</span>
                     </div>
-                    <p class="text-[11px] text-slate-600 leading-relaxed pt-2">${t.definition}</p>
+                    <p class="text-[11px] text-slate-600 leading-relaxed pt-2">${termDef}</p>
                   </div>
                   <div class="pt-2 mt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
                     <label class="inline-flex items-center gap-1.5 cursor-pointer text-slate-600 hover:text-slate-900 select-none">
@@ -139,7 +140,7 @@
                     </div>
 
                     <div class="my-auto px-2">
-                      <p class="text-sm sm:text-base text-slate-100 leading-relaxed font-medium">${currentTerm.definition}</p>
+                      <p class="text-sm sm:text-base text-slate-100 leading-relaxed font-medium">${currentTerm.definition || currentTerm.def || ''}</p>
                     </div>
 
                     <div class="text-[11px] text-slate-400 flex items-center gap-1">

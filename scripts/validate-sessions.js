@@ -93,6 +93,45 @@ function auditSession(trackName, modNum, sessNum, sessionObj, fnNames) {
       error: `Found ${undefMatches.length} occurrences of literal 'undefined' in rendered DOM output.`
     });
   }
+
+  // Schema Validation: Revision Vocabulary Terms
+  if (sessionObj.revision && Array.isArray(sessionObj.revision.terms)) {
+    sessionObj.revision.terms.forEach((t, idx) => {
+      const def = t.definition || t.def;
+      if (!def || def.trim() === '' || def === 'undefined') {
+        failures.push({
+          session: `${trackName.toUpperCase()} M${modNum} S${sessNum} (Vocabulary)`,
+          error: `Term #${idx + 1} (${t.term || 'unnamed'}) is missing a definition (got '${def}').`
+        });
+      }
+    });
+  }
+
+  // Schema Validation: Objectives Items
+  if (sessionObj.objectives && Array.isArray(sessionObj.objectives.items)) {
+    sessionObj.objectives.items.forEach((item, idx) => {
+      const desc = item.description || item.desc;
+      if (!desc || desc.trim() === '' || desc === 'undefined') {
+        failures.push({
+          session: `${trackName.toUpperCase()} M${modNum} S${sessNum} (Objectives)`,
+          error: `Objective #${idx + 1} (${item.title || 'unnamed'}) is missing description text.`
+        });
+      }
+    });
+  }
+
+  // Schema Validation: Overview 10 Key Terms
+  if (sessionObj.overview && Array.isArray(sessionObj.overview.keyTerms)) {
+    sessionObj.overview.keyTerms.forEach((kt, idx) => {
+      const def = kt.definition || kt.def;
+      if (!def || def.trim() === '' || def === 'undefined') {
+        failures.push({
+          session: `${trackName.toUpperCase()} M${modNum} S${sessNum} (Overview 10 Words)`,
+          error: `Key term #${idx + 1} (${kt.term || 'unnamed'}) is missing a definition (got '${def}').`
+        });
+      }
+    });
+  }
 }
 
 // 1. Audit AG track

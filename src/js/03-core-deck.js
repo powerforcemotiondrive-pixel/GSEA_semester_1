@@ -1454,8 +1454,8 @@
         const revTerms = (sessionData.revision && sessionData.revision.terms) || [];
         terms = revTerms.slice(0, 10).map(t => ({
           term: t.term,
-          ipa: "",
-          definition: t.definition
+          ipa: t.ipa || "",
+          definition: t.definition || t.def || t.meaning || ""
         }));
       }
 
@@ -1472,7 +1472,7 @@
               </button>
             </div>
             ${t.ipa ? `<div class="text-[10.5px] font-mono text-slate-500 mb-1">${t.ipa}</div>` : ''}
-            <p class="text-[11.5px] text-slate-600 leading-snug">${t.definition}</p>
+            <p class="text-[11.5px] text-slate-600 leading-snug">${t.definition || t.def || ''}</p>
           </div>
         </div>
       `).join('');
@@ -1807,10 +1807,9 @@
         if (adminGroupsTab) adminGroupsTab.classList.remove('hidden');
         if (adminCalendarTab) adminCalendarTab.classList.remove('hidden');
         if (adminRotaTab) adminRotaTab.classList.remove('hidden');
-        if (adminPresentationTab) adminPresentationTab.classList.remove('hidden');
+        if (adminPresentationTab) adminPresentationTab.classList.add('hidden'); // Replaced by GSEA 2027 Refonte
         if (adminSyllabusTab) adminSyllabusTab.classList.remove('hidden');
         if (adminRefonteTab) adminRefonteTab.classList.remove('hidden');
-        if (adminRefonteTab) adminRefonteTab.classList.add('hidden');
         if (adminFeedbackTab) adminFeedbackTab.classList.add('hidden');
 
         tagEl.textContent = "GSEA26A • Course Admin";
@@ -2181,12 +2180,10 @@
         renderAdminCalendarTab(theme);
       } else if (modalState.tab === 'admin_rota') {
         renderAdminRotaTab(theme);
-      } else if (modalState.tab === 'admin_presentation') {
-        renderAdminPresentationTab(theme);
+      } else if (modalState.tab === 'admin_presentation' || modalState.tab === 'admin_refonte' || modalState.tab === 'admin_feedback') {
+        renderAdminRefonteTab(theme);
       } else if (modalState.tab === 'admin_syllabus') {
         renderAdminSyllabusTab(theme);
-      } else if (modalState.tab === 'admin_refonte' || modalState.tab === 'admin_feedback') {
-        renderAdminRefonteTab(theme);
       } else if (modalState.tab === 'fe_guidelines') {
         renderFeGuidelinesTab(modalState.modNum, theme);
       } else if (modalState.tab === 'fe_objectives') {
@@ -2209,7 +2206,7 @@
                   <span class="text-white text-xs font-black px-2.5 py-1 rounded-md shrink-0 shadow-xs" style="background-color: ${theme.primary};">${item.num}</span>
                   <div>
                     <h4 class="text-xs sm:text-sm font-bold text-slate-800">${item.title}</h4>
-                    <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-0.5">${item.description}</p>
+                    <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-0.5">${item.description || item.desc || ''}</p>
                   </div>
                 </div>
               `).join('')}
@@ -2233,7 +2230,7 @@
                       <span class="text-xs font-black" style="color: ${theme.accent};">${idx + 1}.</span>
                       <h4 class="text-xs sm:text-sm font-bold text-slate-800">${item.title}</h4>
                     </div>
-                    <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-0.5">${item.description}</p>
+                    <p class="text-[11px] sm:text-xs text-slate-600 leading-relaxed mt-0.5">${item.description || item.desc || ''}</p>
                   </div>
                 </div>
               `).join('')}

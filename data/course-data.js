@@ -1,17 +1,9 @@
-/**
- * GSEA Semester 1 - General English & Technical English (AT)
- * Complete Course Data Architecture
- * Author: Phil PARRIS (LH/LAN)
- */
-(function (root, factory) {
-  if (typeof module === "object" && module.exports) {
-    module.exports = factory();
-  } else {
-    root.COURSE_DATA = factory();
-    root.courseData = root.COURSE_DATA;
-  }
-})(typeof self !== "undefined" ? self : this, function () {
-  const courseData = {
+// GSEA Semester 1 - Complete Course Data Architecture
+// In-Deck SCORM 1.2 Learning Platform
+// Author: Phil PARRIS (LH/LAN)
+// Updated with full communicative curriculum for AG Module 2 Sessions 1 & 2 & AT/AAS Module 2
+
+const COURSE_DATA = {
   "1": {
     "id": 1,
     "name": "Module 1",
@@ -3959,32 +3951,38 @@
             {
               "num": "01",
               "title": "Photo Description: The Four Faces of Climate Crisis",
-              "desc": "Describe and compare 4 contrasting scenes of severe climate disruption using observational B1/B2 language."
+              "desc": "Describe and compare 4 contrasting scenes of severe climate disruption using observational B1/B2 language.",
+              "description": "Describe and compare 4 contrasting scenes of severe climate disruption using observational B1/B2 language."
             },
             {
               "num": "02",
               "title": "Extreme Weather & Societal Impact Discussion",
-              "desc": "Discuss how heatwaves, flash floods, and wildfires disrupt daily routines, city living, and transport networks."
+              "desc": "Discuss how heatwaves, flash floods, and wildfires disrupt daily routines, city living, and transport networks.",
+              "description": "Discuss how heatwaves, flash floods, and wildfires disrupt daily routines, city living, and transport networks."
             },
             {
               "num": "03",
               "title": "Spoken Language Clinic: Expressing Stances & Nuanced Opinions",
-              "desc": "Deploy conversational signposts for expressing strong personal viewpoints and polite, constructive disagreement."
+              "desc": "Deploy conversational signposts for expressing strong personal viewpoints and polite, constructive disagreement.",
+              "description": "Deploy conversational signposts for expressing strong personal viewpoints and polite, constructive disagreement."
             },
             {
               "num": "04",
               "title": "Small-Group Decision Task: The €50M Climate Action Plan",
-              "desc": "Negotiate a municipal climate adaptation fund with your peers, debating trade-offs and agreeing on top priorities."
+              "desc": "Negotiate a municipal climate adaptation fund with your peers, debating trade-offs and agreeing on top priorities.",
+              "description": "Negotiate a municipal climate adaptation fund with your peers, debating trade-offs and agreeing on top priorities."
             },
             {
               "num": "05",
               "title": "Interactive Spoken Game: Climate Buzzword Taboo",
-              "desc": "Build rapid oral circumlocution and conversational agility using 12 B1/B2 climate buzzwords with forbidden terms."
+              "desc": "Build rapid oral circumlocution and conversational agility using 12 B1/B2 climate buzzwords with forbidden terms.",
+              "description": "Build rapid oral circumlocution and conversational agility using 12 B1/B2 climate buzzwords with forbidden terms."
             },
             {
               "num": "06",
               "title": "Town Hall Public Debate: Who Pays for Climate Adaptation?",
-              "desc": "Defend assigned community stakeholder positions on who should fund infrastructure repairs and disaster preparedness."
+              "desc": "Defend assigned community stakeholder positions on who should fund infrastructure repairs and disaster preparedness.",
+              "description": "Defend assigned community stakeholder positions on who should fund infrastructure repairs and disaster preparedness."
             }
           ]
         },
@@ -3995,32 +3993,38 @@
             {
               "part": "Part 1",
               "title": "Conversational Warm-Up: Personal Weather Stories & Community Impact",
-              "description": "Pairwise diagnostic questions with framed sentence stems sharing personal memories of severe weather and discussing how storms disrupt daily life."
+              "description": "Pairwise diagnostic questions with framed sentence stems sharing personal memories of severe weather and discussing how storms disrupt daily life.",
+              "desc": "Pairwise diagnostic questions with framed sentence stems sharing personal memories of severe weather and discussing how storms disrupt daily life."
             },
             {
               "part": "Part 2",
               "title": "4-Photo Visual Description & Debate Lab: The Four Faces of Climate Crisis",
-              "description": "Case study reading and photo comparison of 4 real-world climate impacts: Heatwave & Drought, Urban Flash Flood, Wildfire Smoke, and Renewable Adaptation."
+              "description": "Case study reading and photo comparison of 4 real-world climate impacts: Heatwave & Drought, Urban Flash Flood, Wildfire Smoke, and Renewable Adaptation.",
+              "desc": "Case study reading and photo comparison of 4 real-world climate impacts: Heatwave & Drought, Urban Flash Flood, Wildfire Smoke, and Renewable Adaptation."
             },
             {
               "part": "Part 3",
               "title": "Language Clinic: Expressing Opinions & Polite Disagreement",
-              "description": "Targeted spoken language drills deploying conversational markers (From my perspective, I see your point, but..., That may be true, yet...)."
+              "description": "Targeted spoken language drills deploying conversational markers (From my perspective, I see your point, but..., That may be true, yet...).",
+              "desc": "Targeted spoken language drills deploying conversational markers (From my perspective, I see your point, but..., That may be true, yet...)."
             },
             {
               "part": "Part 4",
               "title": "Small-Group Decision Task: The €50M Climate Action Plan",
-              "description": "Groups debate a decision table with 6 municipal adaptation projects, negotiating budget trade-offs to reach consensus on their top 3 investments."
+              "description": "Groups debate a decision table with 6 municipal adaptation projects, negotiating budget trade-offs to reach consensus on their top 3 investments.",
+              "desc": "Groups debate a decision table with 6 municipal adaptation projects, negotiating budget trade-offs to reach consensus on their top 3 investments."
             },
             {
               "part": "Part 5",
               "title": "Interactive Spoken Game: Climate Buzzword Taboo",
-              "description": "Fast-paced pair game with 12 accessible B1/B2 cards (heatwave, flash flood, drought, carbon footprint) to build circumlocution."
+              "description": "Fast-paced pair game with 12 accessible B1/B2 cards (heatwave, flash flood, drought, carbon footprint) to build circumlocution.",
+              "desc": "Fast-paced pair game with 12 accessible B1/B2 cards (heatwave, flash flood, drought, carbon footprint) to build circumlocution."
             },
             {
               "part": "Part 6",
               "title": "Town Hall Public Debate: Who Should Pay for Climate Damage?",
-              "description": "Multi-stakeholder consensus debate between Local Residents, Municipal Council, and Industry Executives on funding disaster adaptation, concluding with peer review."
+              "description": "Multi-stakeholder consensus debate between Local Residents, Municipal Council, and Industry Executives on funding disaster adaptation, concluding with peer review.",
+              "desc": "Multi-stakeholder consensus debate between Local Residents, Municipal Council, and Industry Executives on funding disaster adaptation, concluding with peer review."
             }
           ]
         },
@@ -4032,121 +4036,299 @@
               "num": "01",
               "term": "Global Warming",
               "ipa": "/ˈɡləʊ.bəl ˈwɔː.mɪŋ/",
-              "def": "Long-term heating of Earth's climate system driven by human fossil fuel burning."
+              "def": "Long-term heating of Earth's climate system driven by human fossil fuel burning.",
+              "definition": "Long-term heating of Earth's climate system driven by human fossil fuel burning."
             },
             {
               "num": "02",
               "term": "Greenhouse Effect",
               "ipa": "/ˈɡriːn.haʊs ɪˌfekt/",
-              "def": "The trapping of the sun's warmth in the atmosphere by carbon dioxide and methane gases."
+              "def": "The trapping of the sun's warmth in the atmosphere by carbon dioxide and methane gases.",
+              "definition": "The trapping of the sun's warmth in the atmosphere by carbon dioxide and methane gases."
             },
             {
               "num": "03",
               "term": "Carbon Footprint",
               "ipa": "/ˌkɑː.bən ˈfʊt.prɪnt/",
-              "def": "The total amount of greenhouse gases generated by our personal choices and activities."
+              "def": "The total amount of greenhouse gases generated by our personal choices and activities.",
+              "definition": "The total amount of greenhouse gases generated by our personal choices and activities."
             },
             {
               "num": "04",
               "term": "Heatwave",
               "ipa": "/ˈhiːt.weɪv/",
-              "def": "A prolonged period of abnormally hot weather affecting human health, crops, and infrastructure."
+              "def": "A prolonged period of abnormally hot weather affecting human health, crops, and infrastructure.",
+              "definition": "A prolonged period of abnormally hot weather affecting human health, crops, and infrastructure."
             },
             {
               "num": "05",
               "term": "Flash Flood",
               "ipa": "/ˈflæʃ ˌflʌd/",
-              "def": "A sudden, violent flood that happens in less than six hours after torrential rainfall."
+              "def": "A sudden, violent flood that happens in less than six hours after torrential rainfall.",
+              "definition": "A sudden, violent flood that happens in less than six hours after torrential rainfall."
             },
             {
               "num": "06",
               "term": "Drought",
               "ipa": "/draʊt/",
-              "def": "A prolonged period of abnormally low rainfall leading to severe water shortages and crop loss."
+              "def": "A prolonged period of abnormally low rainfall leading to severe water shortages and crop loss.",
+              "definition": "A prolonged period of abnormally low rainfall leading to severe water shortages and crop loss."
             },
             {
               "num": "07",
               "term": "Sea-Level Rise",
               "ipa": "/ˈsiː ˌlev.əl ˌraɪz/",
-              "def": "The increase in global ocean levels caused by melting glaciers and warm water expansion."
+              "def": "The increase in global ocean levels caused by melting glaciers and warm water expansion.",
+              "definition": "The increase in global ocean levels caused by melting glaciers and warm water expansion."
             },
             {
               "num": "08",
               "term": "Climate Adaptation",
               "ipa": "/ˈklaɪ.mət ˌæd.æpˈteɪ.ʃən/",
-              "def": "Changing our buildings, cities, and habits to protect communities from extreme weather."
+              "def": "Changing our buildings, cities, and habits to protect communities from extreme weather.",
+              "definition": "Changing our buildings, cities, and habits to protect communities from extreme weather."
             },
             {
               "num": "09",
               "term": "Climate Mitigation",
               "ipa": "/ˈklaɪ.mət ˌmɪt.ɪˈɡeɪ.ʃən/",
-              "def": "Actions taken to reduce or stop the emission of greenhouse gases into the atmosphere."
+              "def": "Actions taken to reduce or stop the emission of greenhouse gases into the atmosphere.",
+              "definition": "Actions taken to reduce or stop the emission of greenhouse gases into the atmosphere."
             },
             {
               "num": "10",
               "term": "Renewable Energy",
               "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
-              "def": "Clean energy collected from natural resources that replenish themselves (solar, wind, hydro)."
+              "def": "Clean energy collected from natural resources that replenish themselves (solar, wind, hydro).",
+              "definition": "Clean energy collected from natural resources that replenish themselves (solar, wind, hydro)."
             },
             {
               "num": "11",
               "term": "Fossil Fuels",
               "ipa": "/ˈfɒs.əl ˌfjuː.əlz/",
-              "def": "Non-renewable carbon sources like coal, oil, and gas formed over millions of years."
+              "def": "Non-renewable carbon sources like coal, oil, and gas formed over millions of years.",
+              "definition": "Non-renewable carbon sources like coal, oil, and gas formed over millions of years."
             },
             {
               "num": "12",
               "term": "Wildfire",
               "ipa": "/ˈwaɪld.faɪər/",
-              "def": "A large, destructive fire that spreads quickly over woodland, brush, or rural communities."
+              "def": "A large, destructive fire that spreads quickly over woodland, brush, or rural communities.",
+              "definition": "A large, destructive fire that spreads quickly over woodland, brush, or rural communities."
             },
             {
               "num": "13",
               "term": "Climate Anxiety",
               "ipa": "/ˈklaɪ.mət æŋˌzaɪ.ə.ti/",
-              "def": "Chronic worry and stress about the future of the planet and environmental breakdown."
+              "def": "Chronic worry and stress about the future of the planet and environmental breakdown.",
+              "definition": "Chronic worry and stress about the future of the planet and environmental breakdown."
             },
             {
               "num": "14",
               "term": "Extreme Weather",
               "ipa": "/ɪkˈstriːm ˈweð.ər/",
-              "def": "Severe, unexpected meteorological events like superstorms, blizzards, and heatwaves."
+              "def": "Severe, unexpected meteorological events like superstorms, blizzards, and heatwaves.",
+              "definition": "Severe, unexpected meteorological events like superstorms, blizzards, and heatwaves."
             },
             {
               "num": "15",
               "term": "Disaster Preparedness",
               "ipa": "/dɪˈzɑː.stər prɪˈpeə.rɪd.nəs/",
-              "def": "Community planning, emergency supplies, and evacuation systems to respond to crises."
+              "def": "Community planning, emergency supplies, and evacuation systems to respond to crises.",
+              "definition": "Community planning, emergency supplies, and evacuation systems to respond to crises."
             },
             {
               "num": "16",
               "term": "Cooling Shelter",
               "ipa": "/ˈkuː.lɪŋ ˌʃel.tər/",
-              "def": "An air-conditioned public facility opened during severe heatwaves to protect vulnerable citizens."
+              "def": "An air-conditioned public facility opened during severe heatwaves to protect vulnerable citizens.",
+              "definition": "An air-conditioned public facility opened during severe heatwaves to protect vulnerable citizens."
             },
             {
               "num": "17",
               "term": "Sustainable Living",
               "ipa": "/səˈsteɪ.nə.bəl ˈlɪv.ɪŋ/",
-              "def": "A lifestyle that attempts to reduce an individual's use of natural resources and waste."
+              "def": "A lifestyle that attempts to reduce an individual's use of natural resources and waste.",
+              "definition": "A lifestyle that attempts to reduce an individual's use of natural resources and waste."
             },
             {
               "num": "18",
               "term": "Eco-Friendly",
               "ipa": "/ˌiː.kəʊˈfrend.li/",
-              "def": "Products, policies, and practices that do not cause harm to the natural environment."
+              "def": "Products, policies, and practices that do not cause harm to the natural environment.",
+              "definition": "Products, policies, and practices that do not cause harm to the natural environment."
             }
           ]
         },
         "overview": {
           "title": "Extreme Weather & Atmospheric Hazards",
-          "subtitle": "Global Warming, Severe Weather Impacts on Communities & The Climate Adaptation Debate",
-          "badge": "Session Overview • Weather & Environment",
-          "image": "images/ag_m2card1.jpg"
+          "subtitle": "Climate Change, Extreme Weather & Community Resilience",
+          "badge": "Session 01 • Communicative General English",
+          "image": "images/ag_m2card1.jpg",
+          "intro": "In this communicative session, students explore the real-world impacts of extreme weather, heatwaves, flash flooding, and atmospheric hazards on communities and infrastructure. Through personal storytelling, photo analysis, and collaborative policy role-play, students practice expressing cause, effect, and urgency in clear B1/B2 English.",
+          "whyItMatters": "Extreme weather events are increasing in frequency and severity across Europe and worldwide. Engineering and aviation professionals must be able to communicate hazard data, evaluate environmental risks, and present actionable adaptation solutions to international stakeholders with clarity and confidence.",
+          "keyTerms": [
+            {
+              "term": "Global Warming",
+              "ipa": "/ˈɡləʊ.bəl ˈwɔː.mɪŋ/",
+              "definition": "Long-term heating of Earth's climate system driven by human fossil fuel burning.",
+              "def": "Long-term heating of Earth's climate system driven by human fossil fuel burning."
+            },
+            {
+              "term": "Carbon Footprint",
+              "ipa": "/ˌkɑː.bən ˈfʊt.prɪnt/",
+              "definition": "Total greenhouse gas emissions caused directly and indirectly by an individual, event, or organization.",
+              "def": "Total greenhouse gas emissions caused directly and indirectly by an individual, event, or organization."
+            },
+            {
+              "term": "Flash Flood",
+              "ipa": "/ˈflæʃ ˌflʌd/",
+              "definition": "A sudden, violent flood that occurs within a few hours of heavy rainfall.",
+              "def": "A sudden, violent flood that occurs within a few hours of heavy rainfall."
+            },
+            {
+              "term": "Heatwave",
+              "ipa": "/ˈhiːt.weɪv/",
+              "definition": "A prolonged period of abnormally hot and humid weather affecting public health and power grids.",
+              "def": "A prolonged period of abnormally hot and humid weather affecting public health and power grids."
+            },
+            {
+              "term": "Atmospheric Hazard",
+              "ipa": "/ˌæt.məsˈfer.ɪk ˈhæz.əd/",
+              "definition": "A dangerous natural weather event in the atmosphere such as a cyclone, severe wind shear, or microburst.",
+              "def": "A dangerous natural weather event in the atmosphere such as a cyclone, severe wind shear, or microburst."
+            },
+            {
+              "term": "Renewable Energy",
+              "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
+              "definition": "Energy derived from natural sources that replenish faster than they are consumed, like wind and solar.",
+              "def": "Energy derived from natural sources that replenish faster than they are consumed, like wind and solar."
+            },
+            {
+              "term": "Climate Resilience",
+              "ipa": "/ˈklaɪ.mət rɪˈzɪl.jəns/",
+              "definition": "The capacity of a community or system to anticipate, prepare for, and recover from hazardous climate events.",
+              "def": "The capacity of a community or system to anticipate, prepare for, and recover from hazardous climate events."
+            },
+            {
+              "term": "Adaptation Strategy",
+              "ipa": "/ˌæd.æpˈteɪ.ʃən ˈstræt.ə.dʒi/",
+              "definition": "Practical adjustments in natural or human systems to moderate harm from climate impacts.",
+              "def": "Practical adjustments in natural or human systems to moderate harm from climate impacts."
+            },
+            {
+              "term": "Greenhouse Effect",
+              "ipa": "/ˈɡriːn.haʊs ɪˌfekt/",
+              "definition": "The warming of Earth's surface caused by atmospheric gases trapping solar heat radiation.",
+              "def": "The warming of Earth's surface caused by atmospheric gases trapping solar heat radiation."
+            },
+            {
+              "term": "Drought",
+              "ipa": "/draʊt/",
+              "definition": "A prolonged, continuous period of deficient rainfall resulting in acute water shortages.",
+              "def": "A prolonged, continuous period of deficient rainfall resulting in acute water shortages."
+            }
+          ],
+          "speakingTask": {
+            "title": "3-Group Spoken Discussion & Presentation: Climate Action Decisions",
+            "instructions": "Divide the class into 3 working groups. Each group analyzes one critical statement below, debates potential solutions, and presents a 2-minute spoken briefing to the class using today's vocabulary.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two concrete reasons or real-world examples to support your group's position.",
+              "Ensure every team member contributes during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "Immediate financial investment in storm barriers and flood defenses must take absolute priority over long-term carbon reduction targets.",
+              "group2": "Municipal governments should introduce mandatory water-rationing and heatwave work stoppages during red-level weather alerts.",
+              "group3": "Aviation and transport hubs must be legally required to reach net-zero carbon operations within 5 years, regardless of economic cost."
+            },
+            "usefulPhrases": [
+              "Our group discussed whether...",
+              "We strongly agree / disagree with this statement because...",
+              "In our opinion, one major factor is...",
+              "To summarise our group's main argument..."
+            ]
+          }
         },
         "materials": {
-          "title": "Session 1 Study Materials: Weather & Environment",
-          "summary": "Visual debate panels, opinion phrasing guides, and municipal climate adaptation dossiers."
+          "title": "Additional Study Materials & Multimedia Resources",
+          "summary": "Curated video analysis, current affairs case studies, and grammar guidelines exploring climate hazards and disaster resilience.",
+          "videos": [
+            {
+              "title": "Extreme Weather Explained: Why Are Heatwaves & Floods Intensifying?",
+              "channel": "World Meteorological Organization",
+              "videoId": "3j3_iPskk4c",
+              "watchUrl": "https://www.youtube.com/watch?v=3j3_iPskk4c",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/3j3_iPskk4c",
+              "duration": "06:15",
+              "caption": "Scientific analysis of atmospheric moisture retention and jet stream stalling during extreme summer heatwaves."
+            },
+            {
+              "title": "How Cities Are Adapting to Rising Flash Flood Risks",
+              "channel": "Civil Engineering Briefings",
+              "videoId": "m1n_iQxP6eA",
+              "watchUrl": "https://www.youtube.com/watch?v=m1n_iQxP6eA",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/m1n_iQxP6eA",
+              "duration": "08:42",
+              "caption": "Overview of flood-retention basins, storm barrier infrastructure, and permeable drainage across European metropolitan areas."
+            },
+            {
+              "title": "Aviation & Extreme Weather: Wind Shear, Microbursts & Heat",
+              "channel": "Flight Safety International",
+              "videoId": "K9sT7mUqGZc",
+              "watchUrl": "https://www.youtube.com/watch?v=K9sT7mUqGZc",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/K9sT7mUqGZc",
+              "duration": "07:30",
+              "caption": "Operational impact of extreme density altitude and convective storms on takeoff performance and airport operations."
+            }
+          ],
+          "articles": [
+            {
+              "topic": "Climate Resilience",
+              "sourceTag": "European Environment Agency",
+              "readTime": "Estimated read: 4 mins",
+              "heading": "Managing Extreme Summer Temperatures: Urban Heat Action Plans Across Europe",
+              "snippet": "Municipal health authorities across Southern and Western Europe are implementing real-time heat warning systems, shaded public corridors, and emergency water-misting stations to safeguard vulnerable citizens during prolonged 40°C+ heatwaves.",
+              "url": "https://www.eea.europa.eu"
+            },
+            {
+              "topic": "Infrastructure Protection",
+              "sourceTag": "Reuters Climate Wire",
+              "readTime": "Estimated read: 5 mins",
+              "heading": "Rethinking Storm Drainage: €50M Adaptation Funds Deployed for Flash Flood Mitigation",
+              "snippet": "Engineers and regional planners are retrofitting highway drainage networks and airport runoffs with automated floodgates and bioretention basins to withstand sudden 100mm convective rainstorms.",
+              "url": "https://www.reuters.com"
+            }
+          ],
+          "grammar": {
+            "title": "Language Clinic: Conditionals for Cause, Effect & Urgency",
+            "points": [
+              {
+                "rule": "First Conditional (Real Present / Future Possibility)",
+                "structure": "If + present simple, will / can / must + verb",
+                "example": "If temperatures continue to rise, summer runway operations will require weight reductions.",
+                "note": "Used for real, probable future operational outcomes."
+              },
+              {
+                "rule": "Second Conditional (Hypothetical Proposals & Policy Debates)",
+                "structure": "If + past simple, would / could / might + verb",
+                "example": "If we invested €50M in sponge city drainage, flash flood damage would decrease significantly.",
+                "note": "Ideal for discussing proposed solutions, recommendations, and policy options."
+              }
+            ]
+          },
+          "resources": [
+            {
+              "title": "IPCC Climate Assessment Summary",
+              "desc": "Key summary for engineers and infrastructure policymakers.",
+              "link": "https://www.ipcc.ch"
+            },
+            {
+              "title": "European Storm Forecast & Warning Center",
+              "desc": "Interactive convective storm alerts and meteorological tracking.",
+              "link": "https://www.estofex.org"
+            }
+          ]
         },
         "lessonContent": {
           "overview": {
@@ -4512,32 +4694,38 @@
             {
               "num": "01",
               "title": "Photo Comparison: Two Visions of the Future City",
-              "desc": "Contrast car-dominated urban sprawl with green pedestrian superblocks using rich descriptive B1/B2 English."
+              "desc": "Contrast car-dominated urban sprawl with green pedestrian superblocks using rich descriptive B1/B2 English.",
+              "description": "Contrast car-dominated urban sprawl with green pedestrian superblocks using rich descriptive B1/B2 English."
             },
             {
               "num": "02",
               "title": "Livable Cities & The 15-Minute Neighborhood",
-              "desc": "Discuss how clean public transit, bike lanes, and green parks improve health, air quality, and social connection."
+              "desc": "Discuss how clean public transit, bike lanes, and green parks improve health, air quality, and social connection.",
+              "description": "Discuss how clean public transit, bike lanes, and green parks improve health, air quality, and social connection."
             },
             {
               "num": "03",
               "title": "Spoken Language Clinic: Making Persuasive Proposals",
-              "desc": "Deploy polite suggestion patterns (Why don't we consider..., What if we were to ban..., It would be far more effective to...)."
+              "desc": "Deploy polite suggestion patterns (Why don't we consider..., What if we were to ban..., It would be far more effective to...).",
+              "description": "Deploy polite suggestion patterns (Why don't we consider..., What if we were to ban..., It would be far more effective to...)."
             },
             {
               "num": "04",
               "title": "Interactive Vocabulary Game: Green City Collocation Matcher",
-              "desc": "Master 10 high-frequency compound phrases for urban lifestyle, clean transport, and eco-friendly infrastructure."
+              "desc": "Master 10 high-frequency compound phrases for urban lifestyle, clean transport, and eco-friendly infrastructure.",
+              "description": "Master 10 high-frequency compound phrases for urban lifestyle, clean transport, and eco-friendly infrastructure."
             },
             {
               "num": "05",
               "title": "Pair Urban Redesign Pitch: Reclaim Your Street or Campus",
-              "desc": "Redesign a car-dominated street or university zone into a green pedestrian haven and pitch it to the class."
+              "desc": "Redesign a car-dominated street or university zone into a green pedestrian haven and pitch it to the class.",
+              "description": "Redesign a car-dominated street or university zone into a green pedestrian haven and pitch it to the class."
             },
             {
               "num": "06",
               "title": "High-Stakes Public Debate: The Car-Free City Center",
-              "desc": "Debate a total ban on private passenger cars in metropolitan city cores across Commuters, Shop Owners, and Environmentalists."
+              "desc": "Debate a total ban on private passenger cars in metropolitan city cores across Commuters, Shop Owners, and Environmentalists.",
+              "description": "Debate a total ban on private passenger cars in metropolitan city cores across Commuters, Shop Owners, and Environmentalists."
             }
           ]
         },
@@ -4548,32 +4736,38 @@
             {
               "part": "Part 1",
               "title": "Conversational Warm-Up: The Livable City Ranking",
-              "description": "Pairwise diagnostic questions with framed sentence stems ranking the key factors that make a city healthy and enjoyable to live in."
+              "description": "Pairwise diagnostic questions with framed sentence stems ranking the key factors that make a city healthy and enjoyable to live in.",
+              "desc": "Pairwise diagnostic questions with framed sentence stems ranking the key factors that make a city healthy and enjoyable to live in."
             },
             {
               "part": "Part 2",
               "title": "4-Photo Visual Contrast & Debate Lab: Two Visions of the Future City",
-              "description": "Case study reading and photo comparison of 4 urban models: The Car-Choked Highway, The Reclaimed Superblock, High-Speed Rail vs Air, and The 15-Minute Street."
+              "description": "Case study reading and photo comparison of 4 urban models: The Car-Choked Highway, The Reclaimed Superblock, High-Speed Rail vs Air, and The 15-Minute Street.",
+              "desc": "Case study reading and photo comparison of 4 urban models: The Car-Choked Highway, The Reclaimed Superblock, High-Speed Rail vs Air, and The 15-Minute Street."
             },
             {
               "part": "Part 3",
               "title": "Language Clinic: Proposing Solutions & Making Recommendations",
-              "description": "Targeted spoken language drills practicing constructive suggestions and polite alternatives (Why don't we consider..., What if we were to...)."
+              "description": "Targeted spoken language drills practicing constructive suggestions and polite alternatives (Why don't we consider..., What if we were to...).",
+              "desc": "Targeted spoken language drills practicing constructive suggestions and polite alternatives (Why don't we consider..., What if we were to...)."
             },
             {
               "part": "Part 4",
               "title": "Interactive Vocabulary Game: Green City Collocation Matcher",
-              "description": "Pair matching game linking 10 compound phrases (pedestrian zone, public transport, congestion charge, cycling lane) and ranking transit modes."
+              "description": "Pair matching game linking 10 compound phrases (pedestrian zone, public transport, congestion charge, cycling lane) and ranking transit modes.",
+              "desc": "Pair matching game linking 10 compound phrases (pedestrian zone, public transport, congestion charge, cycling lane) and ranking transit modes."
             },
             {
               "part": "Part 5",
               "title": "Pair Urban Redesign Challenge: Reclaim Your Street or Campus",
-              "description": "Pairs formulate a 3-point plan to transform a car-dominated road into an active green corridor and deliver a 2-minute pitch with peer rubric."
+              "description": "Pairs formulate a 3-point plan to transform a car-dominated road into an active green corridor and deliver a 2-minute pitch with peer rubric.",
+              "desc": "Pairs formulate a 3-point plan to transform a car-dominated road into an active green corridor and deliver a 2-minute pitch with peer rubric."
             },
             {
               "part": "Part 6",
               "title": "High-Stakes Public Debate: The Car-Free City Center",
-              "description": "Multi-stakeholder consensus debate on banning private cars from metropolitan centers between Commuters, Shop Owners, and Climate Activists, concluding with final review."
+              "description": "Multi-stakeholder consensus debate on banning private cars from metropolitan centers between Commuters, Shop Owners, and Climate Activists, concluding with final review.",
+              "desc": "Multi-stakeholder consensus debate on banning private cars from metropolitan centers between Commuters, Shop Owners, and Climate Activists, concluding with final review."
             }
           ]
         },
@@ -4585,121 +4779,299 @@
               "num": "01",
               "term": "Car-Free Zone",
               "ipa": "/ˌkɑː ˈfriː ˌzəʊn/",
-              "def": "A city district where private motor vehicles are prohibited to give priority to pedestrians and cyclists."
+              "def": "A city district where private motor vehicles are prohibited to give priority to pedestrians and cyclists.",
+              "definition": "A city district where private motor vehicles are prohibited to give priority to pedestrians and cyclists."
             },
             {
               "num": "02",
               "term": "Pedestrian Street",
               "ipa": "/pəˈdes.tri.ən ˌstriːt/",
-              "def": "A street reserved exclusively for people walking, shopping, and outdoor dining without motor traffic."
+              "def": "A street reserved exclusively for people walking, shopping, and outdoor dining without motor traffic.",
+              "definition": "A street reserved exclusively for people walking, shopping, and outdoor dining without motor traffic."
             },
             {
               "num": "03",
               "term": "Cycling Lane",
               "ipa": "/ˈsaɪ.klɪŋ ˌleɪn/",
-              "def": "A dedicated, marked division of a road reserved exclusively for bicycles and light personal transport."
+              "def": "A dedicated, marked division of a road reserved exclusively for bicycles and light personal transport.",
+              "definition": "A dedicated, marked division of a road reserved exclusively for bicycles and light personal transport."
             },
             {
               "num": "04",
               "term": "Public Transport",
               "ipa": "/ˌpʌb.lɪk ˈtræn.spɔːt/",
-              "def": "Shared passenger transportation systems like metros, electric buses, trams, and suburban trains."
+              "def": "Shared passenger transportation systems like metros, electric buses, trams, and suburban trains.",
+              "definition": "Shared passenger transportation systems like metros, electric buses, trams, and suburban trains."
             },
             {
               "num": "05",
               "term": "15-Minute City",
               "ipa": "/ˌfɪf.tiːn ˈmɪn.ɪt ˌsɪt.i/",
-              "def": "An urban planning model where all daily resident needs are reachable in a 15-minute walk or bike ride."
+              "def": "An urban planning model where all daily resident needs are reachable in a 15-minute walk or bike ride.",
+              "definition": "An urban planning model where all daily resident needs are reachable in a 15-minute walk or bike ride."
             },
             {
               "num": "06",
               "term": "Superblock",
               "ipa": "/ˈsuː.pə.blɒk/",
-              "def": "A neighborhood cluster where inner streets are closed to through-traffic and turned into green public squares."
+              "def": "A neighborhood cluster where inner streets are closed to through-traffic and turned into green public squares.",
+              "definition": "A neighborhood cluster where inner streets are closed to through-traffic and turned into green public squares."
             },
             {
               "num": "07",
               "term": "Urban Sprawl",
               "ipa": "/ˌɜː.bən ˈsprɔːl/",
-              "def": "The uncontrolled outward spread of low-density suburbs heavily dependent on private cars."
+              "def": "The uncontrolled outward spread of low-density suburbs heavily dependent on private cars.",
+              "definition": "The uncontrolled outward spread of low-density suburbs heavily dependent on private cars."
             },
             {
               "num": "08",
               "term": "Congestion Charge",
               "ipa": "/kənˈdʒes.tʃən ˌtʃɑːdʒ/",
-              "def": "A daily fee charged to drivers entering city centers during peak hours to curb traffic and air pollution."
+              "def": "A daily fee charged to drivers entering city centers during peak hours to curb traffic and air pollution.",
+              "definition": "A daily fee charged to drivers entering city centers during peak hours to curb traffic and air pollution."
             },
             {
               "num": "09",
               "term": "Green Space",
               "ipa": "/ˈɡriːn ˌspeɪs/",
-              "def": "Open land covered with grass, trees, and plants in an urban area like public parks and gardens."
+              "def": "Open land covered with grass, trees, and plants in an urban area like public parks and gardens.",
+              "definition": "Open land covered with grass, trees, and plants in an urban area like public parks and gardens."
             },
             {
               "num": "10",
               "term": "Air Quality",
               "ipa": "/ˈeə ˌkwɒl.ə.ti/",
-              "def": "The degree to which outdoor air is clean and free from harmful vehicle exhaust and pollutants."
+              "def": "The degree to which outdoor air is clean and free from harmful vehicle exhaust and pollutants.",
+              "definition": "The degree to which outdoor air is clean and free from harmful vehicle exhaust and pollutants."
             },
             {
               "num": "11",
               "term": "Low-Emission Zone",
               "ipa": "/ˌləʊ ɪˈmɪʃ.ən ˌzəʊn/",
-              "def": "A designated municipal perimeter where high-polluting vehicles are restricted, banned, or fined."
+              "def": "A designated municipal perimeter where high-polluting vehicles are restricted, banned, or fined.",
+              "definition": "A designated municipal perimeter where high-polluting vehicles are restricted, banned, or fined."
             },
             {
               "num": "12",
               "term": "Micro-Mobility",
               "ipa": "/ˈmaɪ.krəʊ məʊˌbɪl.ə.ti/",
-              "def": "Small, lightweight personal electric vehicles like e-bikes and e-scooters for short trips."
+              "def": "Small, lightweight personal electric vehicles like e-bikes and e-scooters for short trips.",
+              "definition": "Small, lightweight personal electric vehicles like e-bikes and e-scooters for short trips."
             },
             {
               "num": "13",
               "term": "High-Speed Rail",
               "ipa": "/ˌhaɪ ˈspiːd ˈreɪl/",
-              "def": "Fast electric passenger trains operating at speeds over 250 km/h connecting major city centers."
+              "def": "Fast electric passenger trains operating at speeds over 250 km/h connecting major city centers.",
+              "definition": "Fast electric passenger trains operating at speeds over 250 km/h connecting major city centers."
             },
             {
               "num": "14",
               "term": "Energy-Efficient Housing",
               "ipa": "/ˌen.ə.dʒi ɪˈfɪʃ.ənt/",
-              "def": "Buildings with thick insulation and heat pumps that consume very little energy for heating and cooling."
+              "def": "Buildings with thick insulation and heat pumps that consume very little energy for heating and cooling.",
+              "definition": "Buildings with thick insulation and heat pumps that consume very little energy for heating and cooling."
             },
             {
               "num": "15",
               "term": "Waste Management",
               "ipa": "/ˈweɪst ˌmæn.ɪdʒ.mənt/",
-              "def": "Organized collection, sorting, recycling, and composting of household and commercial rubbish."
+              "def": "Organized collection, sorting, recycling, and composting of household and commercial rubbish.",
+              "definition": "Organized collection, sorting, recycling, and composting of household and commercial rubbish."
             },
             {
               "num": "16",
               "term": "Carbon Neutral",
               "ipa": "/ˌkɑː.bən ˈnjuː.trəl/",
-              "def": "Balancing the amount of carbon released into the atmosphere with an equivalent amount removed."
+              "def": "Balancing the amount of carbon released into the atmosphere with an equivalent amount removed.",
+              "definition": "Balancing the amount of carbon released into the atmosphere with an equivalent amount removed."
             },
             {
               "num": "17",
               "term": "Sustainable Commute",
               "ipa": "/səˈsteɪ.nə.bəl kəˈmjuːt/",
-              "def": "Traveling to work or study using walking, cycling, or shared electric public transit."
+              "def": "Traveling to work or study using walking, cycling, or shared electric public transit.",
+              "definition": "Traveling to work or study using walking, cycling, or shared electric public transit."
             },
             {
               "num": "18",
               "term": "Modal Split",
               "ipa": "/ˈməʊ.dəl ˌsplɪt/",
-              "def": "The percentage share of trips made by different transport modes (walking, cycling, public transit, cars)."
+              "def": "The percentage share of trips made by different transport modes (walking, cycling, public transit, cars).",
+              "definition": "The percentage share of trips made by different transport modes (walking, cycling, public transit, cars)."
             }
           ]
         },
         "overview": {
           "title": "Sustainable Cities & Low-Emission Mobility",
-          "subtitle": "Urban Living, Green Neighborhoods, The 15-Minute City & The Car-Free Center Debate",
-          "badge": "Session Overview • Sustainable Cities & Urban Design",
-          "image": "images/ag_m2card2.jpg"
+          "subtitle": "Urban Heat Islands, 15-Minute Cities & Green Transit",
+          "badge": "Session 02 • Communicative General English",
+          "image": "images/ag_m2card2.jpg",
+          "intro": "This session focuses on sustainable urban living, low-emission mobility, and green city design. Students contrast car-dominated urban sprawl with pedestrian-friendly superblocks, practice persuasive proposals, master transport collocations, pitch street redesigns, and debate the total pedestrianization of metropolitan city centers.",
+          "whyItMatters": "Cities consume over two-thirds of the world's energy and account for more than 70% of global CO2 emissions. Reimagining urban mobility through intermodal transit, active transport, and green public spaces is central to European sustainability targets and international climate agreements.",
+          "keyTerms": [
+            {
+              "term": "Sponge City",
+              "ipa": "/spʌndʒ ˈsɪt.i/",
+              "definition": "An urban area designed to naturally absorb, capture, and reuse rainwater through green infrastructure.",
+              "def": "An urban area designed to naturally absorb, capture, and reuse rainwater through green infrastructure."
+            },
+            {
+              "term": "Urban Heat Island (UHI)",
+              "ipa": "/ˈɜː.bən hiːt ˈaɪ.lənd/",
+              "definition": "A metropolitan area significantly warmer than surrounding rural areas due to human activity and dense concrete.",
+              "def": "A metropolitan area significantly warmer than surrounding rural areas due to human activity and dense concrete."
+            },
+            {
+              "term": "15-Minute City",
+              "ipa": "/ˌfɪf.tiːn ˈmɪn.ɪt ˈsɪt.i/",
+              "definition": "An urban planning model where daily necessities are reachable within a 15-minute walk or bike ride.",
+              "def": "An urban planning model where daily necessities are reachable within a 15-minute walk or bike ride."
+            },
+            {
+              "term": "Permeable Pavement",
+              "ipa": "/ˈpɜː.mi.ə.bəl ˈpeɪv.mənt/",
+              "definition": "Porous surfacing material allowing storm runoff to infiltrate directly into the soil below.",
+              "def": "Porous surfacing material allowing storm runoff to infiltrate directly into the soil below."
+            },
+            {
+              "term": "Bioretention Basin",
+              "ipa": "/ˌbaɪ.əʊ.rɪˈten.ʃən ˈbeɪ.sən/",
+              "definition": "A vegetated depression engineered to slow, filter, and absorb stormwater runoff.",
+              "def": "A vegetated depression engineered to slow, filter, and absorb stormwater runoff."
+            },
+            {
+              "term": "Intermodal Connectivity",
+              "ipa": "/ˌɪn.təˈməʊ.dəl kəˌnekˈtɪv.ə.ti/",
+              "definition": "Seamless physical and digital integration across cycling, rail, buses, and aviation networks.",
+              "def": "Seamless physical and digital integration across cycling, rail, buses, and aviation networks."
+            },
+            {
+              "term": "Transit-Oriented Development (TOD)",
+              "ipa": "/ˈtræn.zɪt ˌɔː.ri.en.tɪd/",
+              "definition": "Urban planning maximizing residential and business spaces within easy walking distance of public transit.",
+              "def": "Urban planning maximizing residential and business spaces within easy walking distance of public transit."
+            },
+            {
+              "term": "Active Mobility Corridor",
+              "ipa": "/ˈæk.tɪv məʊˈbɪl.ə.ti ˈkɒr.ɪ.dɔː/",
+              "definition": "Dedicated, safe street lanes reserved strictly for pedestrians, cyclists, and light personal e-vehicles.",
+              "def": "Dedicated, safe street lanes reserved strictly for pedestrians, cyclists, and light personal e-vehicles."
+            },
+            {
+              "term": "Congestion Pricing",
+              "ipa": "/kənˈdʒes.tʃən ˈpraɪ.sɪŋ/",
+              "definition": "A toll charged to private motorists entering dense urban centers during peak traffic hours.",
+              "def": "A toll charged to private motorists entering dense urban centers during peak traffic hours."
+            },
+            {
+              "term": "Low-Emission Zone (LEZ)",
+              "ipa": "/ləʊ ɪˈmɪʃ.ən zəʊn/",
+              "definition": "A legally defined city zone restricting or penalizing older, highly polluting motor vehicles.",
+              "def": "A legally defined city zone restricting or penalizing older, highly polluting motor vehicles."
+            }
+          ],
+          "speakingTask": {
+            "title": "3-Group Spoken Discussion & Presentation: Future City Redesign",
+            "instructions": "Divide into 3 groups. Each group examines one urban mobility proposal below, weighs public resistance against environmental benefits, and delivers a 2-minute spoken pitch with recommendations.",
+            "requirements": [
+              "Use at least 4 of today's 10 useful words.",
+              "Give at least two concrete reasons or real-world examples to support your group's position.",
+              "Ensure every team member contributes during your 2-minute spoken summary."
+            ],
+            "statements": {
+              "group1": "All private combustion-engine vehicles should be completely banned from European city centers by 2028.",
+              "group2": "Public transit within metropolitan zones must be entirely fare-free and subsidized through higher corporate parking taxes.",
+              "group3": "Urban planning should legally mandate that every essential service be reachable within a 15-minute walk or bike ride."
+            },
+            "usefulPhrases": [
+              "Our group considered the proposal to...",
+              "From our perspective, the strongest argument is...",
+              "While some citizens may be reluctant, we believe...",
+              "To conclude our proposal, we recommend..."
+            ]
+          }
         },
         "materials": {
-          "title": "Session 2 Study Materials: Sustainable Cities",
-          "summary": "Visual urban contrast panels, proposal phrasing guides, and street transformation briefs."
+          "title": "Additional Study Materials & Multimedia Resources",
+          "summary": "Curated video insights, urban case studies, and persuasive language frameworks for sustainable mobility and low-carbon transport.",
+          "videos": [
+            {
+              "title": "The 15-Minute City Concept: Urban Utopia or Practical Solution?",
+              "channel": "Urban Planning Explained",
+              "videoId": "m9L0f5mS4eY",
+              "watchUrl": "https://www.youtube.com/watch?v=m9L0f5mS4eY",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/m9L0f5mS4eY",
+              "duration": "09:12",
+              "caption": "How European capitals like Paris and Barcelona are redesigning neighborhoods to eliminate daily motorized car commutes."
+            },
+            {
+              "title": "How Barcelona Superblocks Reclaimed Streets for Citizens",
+              "channel": "Streetfilm Documentaries",
+              "videoId": "ZORzsubQA_8",
+              "watchUrl": "https://www.youtube.com/watch?v=ZORzsubQA_8",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/ZORzsubQA_8",
+              "duration": "08:24",
+              "caption": "Transforming 9-block intersections into green pedestrian plazas with reduced air and noise pollution."
+            },
+            {
+              "title": "Intermodal Transport Hubs: Connecting Air, Rail & Micro-Mobility",
+              "channel": "Global Transit Innovation",
+              "videoId": "W6bT8nS7Z3A",
+              "watchUrl": "https://www.youtube.com/watch?v=W6bT8nS7Z3A",
+              "embedUrl": "https://www.youtube-nocookie.com/embed/W6bT8nS7Z3A",
+              "duration": "06:45",
+              "caption": "Airport surface access strategies: replacing short-haul domestic flights with high-speed rail connections."
+            }
+          ],
+          "articles": [
+            {
+              "topic": "Urban Transition",
+              "sourceTag": "C40 Cities Network",
+              "readTime": "Estimated read: 4 mins",
+              "heading": "Low-Emission Zones Slash Toxic Nitrogen Dioxide Levels by 40% Across 30 European Metropolises",
+              "snippet": "Comprehensive emissions monitoring reveals that prioritizing electric buses, bike superhighways, and pedestrian zones has directly reduced respiratory illnesses and road congestion.",
+              "url": "https://www.c40.org"
+            },
+            {
+              "topic": "Mobility Innovation",
+              "sourceTag": "Clean Transport Digest",
+              "readTime": "Estimated read: 5 mins",
+              "heading": "Active Mobility Superhighways: How Protected Cycle Lanes Transformed Commuting Habits",
+              "snippet": "Municipal case study analyzing how investing in continuous, well-lit active travel corridors convinced over 250,000 suburban commuters to leave their cars at home.",
+              "url": "https://www.transportenvironment.org"
+            }
+          ],
+          "grammar": {
+            "title": "Language Clinic: Making Constructive Proposals & Recommendations",
+            "points": [
+              {
+                "rule": "Constructive Suggestions with 'Consider' / 'What if'",
+                "structure": "Why don't we consider + -ing / What if we were to + verb",
+                "example": "Why don't we consider pedestrianizing the central avenue during peak morning hours?",
+                "note": "Polite, collaborative framing suitable for workplace negotiations."
+              },
+              {
+                "rule": "Strong Diplomatic Recommendations",
+                "structure": "It would be far more effective to + verb / We strongly recommend that...",
+                "example": "It would be far more effective to expand the tram network before introducing congestion charges.",
+                "note": "Emphasizes practical logic without sounding overly aggressive."
+              }
+            ]
+          },
+          "resources": [
+            {
+              "title": "European Commission Clean Urban Transport",
+              "desc": "Policy directives and funding frameworks for green city mobility.",
+              "link": "https://transport.ec.europa.eu"
+            },
+            {
+              "title": "Barcelona Superblock Case Study",
+              "desc": "Detailed architectural and environmental impact report.",
+              "link": "https://ajuntament.barcelona.cat"
+            }
+          ]
         },
         "lessonContent": {
           "overview": {
@@ -13874,32 +14246,38 @@
               {
                 "num": "01",
                 "title": "Photo Description: The Four Faces of Climate Crisis",
-                "desc": "Describe and compare 4 contrasting scenes of severe climate disruption using observational B1/B2 language."
+                "desc": "Describe and compare 4 contrasting scenes of severe climate disruption using observational B1/B2 language.",
+                "description": "Describe and compare 4 contrasting scenes of severe climate disruption using observational B1/B2 language."
               },
               {
                 "num": "02",
                 "title": "Extreme Weather & Societal Impact Discussion",
-                "desc": "Discuss how heatwaves, flash floods, and wildfires disrupt daily routines, city living, and transport networks."
+                "desc": "Discuss how heatwaves, flash floods, and wildfires disrupt daily routines, city living, and transport networks.",
+                "description": "Discuss how heatwaves, flash floods, and wildfires disrupt daily routines, city living, and transport networks."
               },
               {
                 "num": "03",
                 "title": "Spoken Language Clinic: Expressing Stances & Nuanced Opinions",
-                "desc": "Deploy conversational signposts for expressing strong personal viewpoints and polite, constructive disagreement."
+                "desc": "Deploy conversational signposts for expressing strong personal viewpoints and polite, constructive disagreement.",
+                "description": "Deploy conversational signposts for expressing strong personal viewpoints and polite, constructive disagreement."
               },
               {
                 "num": "04",
                 "title": "Small-Group Decision Task: The €50M Climate Action Plan",
-                "desc": "Negotiate a municipal climate adaptation fund with your peers, debating trade-offs and agreeing on top priorities."
+                "desc": "Negotiate a municipal climate adaptation fund with your peers, debating trade-offs and agreeing on top priorities.",
+                "description": "Negotiate a municipal climate adaptation fund with your peers, debating trade-offs and agreeing on top priorities."
               },
               {
                 "num": "05",
                 "title": "Interactive Spoken Game: Climate Buzzword Taboo",
-                "desc": "Build rapid oral circumlocution and conversational agility using 12 B1/B2 climate buzzwords with forbidden terms."
+                "desc": "Build rapid oral circumlocution and conversational agility using 12 B1/B2 climate buzzwords with forbidden terms.",
+                "description": "Build rapid oral circumlocution and conversational agility using 12 B1/B2 climate buzzwords with forbidden terms."
               },
               {
                 "num": "06",
                 "title": "Town Hall Public Debate: Who Pays for Climate Adaptation?",
-                "desc": "Defend assigned community stakeholder positions on who should fund infrastructure repairs and disaster preparedness."
+                "desc": "Defend assigned community stakeholder positions on who should fund infrastructure repairs and disaster preparedness.",
+                "description": "Defend assigned community stakeholder positions on who should fund infrastructure repairs and disaster preparedness."
               }
             ]
           },
@@ -13910,32 +14288,38 @@
               {
                 "part": "Part 1",
                 "title": "Conversational Warm-Up: Personal Weather Stories & Community Impact",
-                "description": "Pairwise diagnostic questions with framed sentence stems sharing personal memories of severe weather and discussing how storms disrupt daily life."
+                "description": "Pairwise diagnostic questions with framed sentence stems sharing personal memories of severe weather and discussing how storms disrupt daily life.",
+                "desc": "Pairwise diagnostic questions with framed sentence stems sharing personal memories of severe weather and discussing how storms disrupt daily life."
               },
               {
                 "part": "Part 2",
                 "title": "4-Photo Visual Description & Debate Lab: The Four Faces of Climate Crisis",
-                "description": "Case study reading and photo comparison of 4 real-world climate impacts: Heatwave & Drought, Urban Flash Flood, Wildfire Smoke, and Renewable Adaptation."
+                "description": "Case study reading and photo comparison of 4 real-world climate impacts: Heatwave & Drought, Urban Flash Flood, Wildfire Smoke, and Renewable Adaptation.",
+                "desc": "Case study reading and photo comparison of 4 real-world climate impacts: Heatwave & Drought, Urban Flash Flood, Wildfire Smoke, and Renewable Adaptation."
               },
               {
                 "part": "Part 3",
                 "title": "Language Clinic: Expressing Opinions & Polite Disagreement",
-                "description": "Targeted spoken language drills deploying conversational markers (From my perspective, I see your point, but..., That may be true, yet...)."
+                "description": "Targeted spoken language drills deploying conversational markers (From my perspective, I see your point, but..., That may be true, yet...).",
+                "desc": "Targeted spoken language drills deploying conversational markers (From my perspective, I see your point, but..., That may be true, yet...)."
               },
               {
                 "part": "Part 4",
                 "title": "Small-Group Decision Task: The €50M Climate Action Plan",
-                "description": "Groups debate a decision table with 6 municipal adaptation projects, negotiating budget trade-offs to reach consensus on their top 3 investments."
+                "description": "Groups debate a decision table with 6 municipal adaptation projects, negotiating budget trade-offs to reach consensus on their top 3 investments.",
+                "desc": "Groups debate a decision table with 6 municipal adaptation projects, negotiating budget trade-offs to reach consensus on their top 3 investments."
               },
               {
                 "part": "Part 5",
                 "title": "Interactive Spoken Game: Climate Buzzword Taboo",
-                "description": "Fast-paced pair game with 12 accessible B1/B2 cards (heatwave, flash flood, drought, carbon footprint) to build circumlocution."
+                "description": "Fast-paced pair game with 12 accessible B1/B2 cards (heatwave, flash flood, drought, carbon footprint) to build circumlocution.",
+                "desc": "Fast-paced pair game with 12 accessible B1/B2 cards (heatwave, flash flood, drought, carbon footprint) to build circumlocution."
               },
               {
                 "part": "Part 6",
                 "title": "Town Hall Public Debate: Who Should Pay for Climate Damage?",
-                "description": "Multi-stakeholder consensus debate between Local Residents, Municipal Council, and Industry Executives on funding disaster adaptation, concluding with peer review."
+                "description": "Multi-stakeholder consensus debate between Local Residents, Municipal Council, and Industry Executives on funding disaster adaptation, concluding with peer review.",
+                "desc": "Multi-stakeholder consensus debate between Local Residents, Municipal Council, and Industry Executives on funding disaster adaptation, concluding with peer review."
               }
             ]
           },
@@ -13947,121 +14331,299 @@
                 "num": "01",
                 "term": "Global Warming",
                 "ipa": "/ˈɡləʊ.bəl ˈwɔː.mɪŋ/",
-                "def": "Long-term heating of Earth's climate system driven by human fossil fuel burning."
+                "def": "Long-term heating of Earth's climate system driven by human fossil fuel burning.",
+                "definition": "Long-term heating of Earth's climate system driven by human fossil fuel burning."
               },
               {
                 "num": "02",
                 "term": "Greenhouse Effect",
                 "ipa": "/ˈɡriːn.haʊs ɪˌfekt/",
-                "def": "The trapping of the sun's warmth in the atmosphere by carbon dioxide and methane gases."
+                "def": "The trapping of the sun's warmth in the atmosphere by carbon dioxide and methane gases.",
+                "definition": "The trapping of the sun's warmth in the atmosphere by carbon dioxide and methane gases."
               },
               {
                 "num": "03",
                 "term": "Carbon Footprint",
                 "ipa": "/ˌkɑː.bən ˈfʊt.prɪnt/",
-                "def": "The total amount of greenhouse gases generated by our personal choices and activities."
+                "def": "The total amount of greenhouse gases generated by our personal choices and activities.",
+                "definition": "The total amount of greenhouse gases generated by our personal choices and activities."
               },
               {
                 "num": "04",
                 "term": "Heatwave",
                 "ipa": "/ˈhiːt.weɪv/",
-                "def": "A prolonged period of abnormally hot weather affecting human health, crops, and infrastructure."
+                "def": "A prolonged period of abnormally hot weather affecting human health, crops, and infrastructure.",
+                "definition": "A prolonged period of abnormally hot weather affecting human health, crops, and infrastructure."
               },
               {
                 "num": "05",
                 "term": "Flash Flood",
                 "ipa": "/ˈflæʃ ˌflʌd/",
-                "def": "A sudden, violent flood that happens in less than six hours after torrential rainfall."
+                "def": "A sudden, violent flood that happens in less than six hours after torrential rainfall.",
+                "definition": "A sudden, violent flood that happens in less than six hours after torrential rainfall."
               },
               {
                 "num": "06",
                 "term": "Drought",
                 "ipa": "/draʊt/",
-                "def": "A prolonged period of abnormally low rainfall leading to severe water shortages and crop loss."
+                "def": "A prolonged period of abnormally low rainfall leading to severe water shortages and crop loss.",
+                "definition": "A prolonged period of abnormally low rainfall leading to severe water shortages and crop loss."
               },
               {
                 "num": "07",
                 "term": "Sea-Level Rise",
                 "ipa": "/ˈsiː ˌlev.əl ˌraɪz/",
-                "def": "The increase in global ocean levels caused by melting glaciers and warm water expansion."
+                "def": "The increase in global ocean levels caused by melting glaciers and warm water expansion.",
+                "definition": "The increase in global ocean levels caused by melting glaciers and warm water expansion."
               },
               {
                 "num": "08",
                 "term": "Climate Adaptation",
                 "ipa": "/ˈklaɪ.mət ˌæd.æpˈteɪ.ʃən/",
-                "def": "Changing our buildings, cities, and habits to protect communities from extreme weather."
+                "def": "Changing our buildings, cities, and habits to protect communities from extreme weather.",
+                "definition": "Changing our buildings, cities, and habits to protect communities from extreme weather."
               },
               {
                 "num": "09",
                 "term": "Climate Mitigation",
                 "ipa": "/ˈklaɪ.mət ˌmɪt.ɪˈɡeɪ.ʃən/",
-                "def": "Actions taken to reduce or stop the emission of greenhouse gases into the atmosphere."
+                "def": "Actions taken to reduce or stop the emission of greenhouse gases into the atmosphere.",
+                "definition": "Actions taken to reduce or stop the emission of greenhouse gases into the atmosphere."
               },
               {
                 "num": "10",
                 "term": "Renewable Energy",
                 "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
-                "def": "Clean energy collected from natural resources that replenish themselves (solar, wind, hydro)."
+                "def": "Clean energy collected from natural resources that replenish themselves (solar, wind, hydro).",
+                "definition": "Clean energy collected from natural resources that replenish themselves (solar, wind, hydro)."
               },
               {
                 "num": "11",
                 "term": "Fossil Fuels",
                 "ipa": "/ˈfɒs.əl ˌfjuː.əlz/",
-                "def": "Non-renewable carbon sources like coal, oil, and gas formed over millions of years."
+                "def": "Non-renewable carbon sources like coal, oil, and gas formed over millions of years.",
+                "definition": "Non-renewable carbon sources like coal, oil, and gas formed over millions of years."
               },
               {
                 "num": "12",
                 "term": "Wildfire",
                 "ipa": "/ˈwaɪld.faɪər/",
-                "def": "A large, destructive fire that spreads quickly over woodland, brush, or rural communities."
+                "def": "A large, destructive fire that spreads quickly over woodland, brush, or rural communities.",
+                "definition": "A large, destructive fire that spreads quickly over woodland, brush, or rural communities."
               },
               {
                 "num": "13",
                 "term": "Climate Anxiety",
                 "ipa": "/ˈklaɪ.mət æŋˌzaɪ.ə.ti/",
-                "def": "Chronic worry and stress about the future of the planet and environmental breakdown."
+                "def": "Chronic worry and stress about the future of the planet and environmental breakdown.",
+                "definition": "Chronic worry and stress about the future of the planet and environmental breakdown."
               },
               {
                 "num": "14",
                 "term": "Extreme Weather",
                 "ipa": "/ɪkˈstriːm ˈweð.ər/",
-                "def": "Severe, unexpected meteorological events like superstorms, blizzards, and heatwaves."
+                "def": "Severe, unexpected meteorological events like superstorms, blizzards, and heatwaves.",
+                "definition": "Severe, unexpected meteorological events like superstorms, blizzards, and heatwaves."
               },
               {
                 "num": "15",
                 "term": "Disaster Preparedness",
                 "ipa": "/dɪˈzɑː.stər prɪˈpeə.rɪd.nəs/",
-                "def": "Community planning, emergency supplies, and evacuation systems to respond to crises."
+                "def": "Community planning, emergency supplies, and evacuation systems to respond to crises.",
+                "definition": "Community planning, emergency supplies, and evacuation systems to respond to crises."
               },
               {
                 "num": "16",
                 "term": "Cooling Shelter",
                 "ipa": "/ˈkuː.lɪŋ ˌʃel.tər/",
-                "def": "An air-conditioned public facility opened during severe heatwaves to protect vulnerable citizens."
+                "def": "An air-conditioned public facility opened during severe heatwaves to protect vulnerable citizens.",
+                "definition": "An air-conditioned public facility opened during severe heatwaves to protect vulnerable citizens."
               },
               {
                 "num": "17",
                 "term": "Sustainable Living",
                 "ipa": "/səˈsteɪ.nə.bəl ˈlɪv.ɪŋ/",
-                "def": "A lifestyle that attempts to reduce an individual's use of natural resources and waste."
+                "def": "A lifestyle that attempts to reduce an individual's use of natural resources and waste.",
+                "definition": "A lifestyle that attempts to reduce an individual's use of natural resources and waste."
               },
               {
                 "num": "18",
                 "term": "Eco-Friendly",
                 "ipa": "/ˌiː.kəʊˈfrend.li/",
-                "def": "Products, policies, and practices that do not cause harm to the natural environment."
+                "def": "Products, policies, and practices that do not cause harm to the natural environment.",
+                "definition": "Products, policies, and practices that do not cause harm to the natural environment."
               }
             ]
           },
           "overview": {
             "title": "Extreme Weather & Atmospheric Hazards",
-            "subtitle": "Global Warming, Severe Weather Impacts on Communities & The Climate Adaptation Debate",
-            "badge": "Session Overview • Weather & Environment",
-            "image": "images/ag_m2card1.jpg"
+            "subtitle": "Climate Change, Extreme Weather & Community Resilience",
+            "badge": "Session 01 • Communicative General English",
+            "image": "images/ag_m2card1.jpg",
+            "intro": "In this communicative session, students explore the real-world impacts of extreme weather, heatwaves, flash flooding, and atmospheric hazards on communities and infrastructure. Through personal storytelling, photo analysis, and collaborative policy role-play, students practice expressing cause, effect, and urgency in clear B1/B2 English.",
+            "whyItMatters": "Extreme weather events are increasing in frequency and severity across Europe and worldwide. Engineering and aviation professionals must be able to communicate hazard data, evaluate environmental risks, and present actionable adaptation solutions to international stakeholders with clarity and confidence.",
+            "keyTerms": [
+              {
+                "term": "Global Warming",
+                "ipa": "/ˈɡləʊ.bəl ˈwɔː.mɪŋ/",
+                "definition": "Long-term heating of Earth's climate system driven by human fossil fuel burning.",
+                "def": "Long-term heating of Earth's climate system driven by human fossil fuel burning."
+              },
+              {
+                "term": "Carbon Footprint",
+                "ipa": "/ˌkɑː.bən ˈfʊt.prɪnt/",
+                "definition": "Total greenhouse gas emissions caused directly and indirectly by an individual, event, or organization.",
+                "def": "Total greenhouse gas emissions caused directly and indirectly by an individual, event, or organization."
+              },
+              {
+                "term": "Flash Flood",
+                "ipa": "/ˈflæʃ ˌflʌd/",
+                "definition": "A sudden, violent flood that occurs within a few hours of heavy rainfall.",
+                "def": "A sudden, violent flood that occurs within a few hours of heavy rainfall."
+              },
+              {
+                "term": "Heatwave",
+                "ipa": "/ˈhiːt.weɪv/",
+                "definition": "A prolonged period of abnormally hot and humid weather affecting public health and power grids.",
+                "def": "A prolonged period of abnormally hot and humid weather affecting public health and power grids."
+              },
+              {
+                "term": "Atmospheric Hazard",
+                "ipa": "/ˌæt.məsˈfer.ɪk ˈhæz.əd/",
+                "definition": "A dangerous natural weather event in the atmosphere such as a cyclone, severe wind shear, or microburst.",
+                "def": "A dangerous natural weather event in the atmosphere such as a cyclone, severe wind shear, or microburst."
+              },
+              {
+                "term": "Renewable Energy",
+                "ipa": "/rɪˈnjuː.ə.bəl ˈen.ə.dʒi/",
+                "definition": "Energy derived from natural sources that replenish faster than they are consumed, like wind and solar.",
+                "def": "Energy derived from natural sources that replenish faster than they are consumed, like wind and solar."
+              },
+              {
+                "term": "Climate Resilience",
+                "ipa": "/ˈklaɪ.mət rɪˈzɪl.jəns/",
+                "definition": "The capacity of a community or system to anticipate, prepare for, and recover from hazardous climate events.",
+                "def": "The capacity of a community or system to anticipate, prepare for, and recover from hazardous climate events."
+              },
+              {
+                "term": "Adaptation Strategy",
+                "ipa": "/ˌæd.æpˈteɪ.ʃən ˈstræt.ə.dʒi/",
+                "definition": "Practical adjustments in natural or human systems to moderate harm from climate impacts.",
+                "def": "Practical adjustments in natural or human systems to moderate harm from climate impacts."
+              },
+              {
+                "term": "Greenhouse Effect",
+                "ipa": "/ˈɡriːn.haʊs ɪˌfekt/",
+                "definition": "The warming of Earth's surface caused by atmospheric gases trapping solar heat radiation.",
+                "def": "The warming of Earth's surface caused by atmospheric gases trapping solar heat radiation."
+              },
+              {
+                "term": "Drought",
+                "ipa": "/draʊt/",
+                "definition": "A prolonged, continuous period of deficient rainfall resulting in acute water shortages.",
+                "def": "A prolonged, continuous period of deficient rainfall resulting in acute water shortages."
+              }
+            ],
+            "speakingTask": {
+              "title": "3-Group Spoken Discussion & Presentation: Climate Action Decisions",
+              "instructions": "Divide the class into 3 working groups. Each group analyzes one critical statement below, debates potential solutions, and presents a 2-minute spoken briefing to the class using today's vocabulary.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two concrete reasons or real-world examples to support your group's position.",
+                "Ensure every team member contributes during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "Immediate financial investment in storm barriers and flood defenses must take absolute priority over long-term carbon reduction targets.",
+                "group2": "Municipal governments should introduce mandatory water-rationing and heatwave work stoppages during red-level weather alerts.",
+                "group3": "Aviation and transport hubs must be legally required to reach net-zero carbon operations within 5 years, regardless of economic cost."
+              },
+              "usefulPhrases": [
+                "Our group discussed whether...",
+                "We strongly agree / disagree with this statement because...",
+                "In our opinion, one major factor is...",
+                "To summarise our group's main argument..."
+              ]
+            }
           },
           "materials": {
-            "title": "Session 1 Study Materials: Weather & Environment",
-            "summary": "Visual debate panels, opinion phrasing guides, and municipal climate adaptation dossiers."
+            "title": "Additional Study Materials & Multimedia Resources",
+            "summary": "Curated video analysis, current affairs case studies, and grammar guidelines exploring climate hazards and disaster resilience.",
+            "videos": [
+              {
+                "title": "Extreme Weather Explained: Why Are Heatwaves & Floods Intensifying?",
+                "channel": "World Meteorological Organization",
+                "videoId": "3j3_iPskk4c",
+                "watchUrl": "https://www.youtube.com/watch?v=3j3_iPskk4c",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/3j3_iPskk4c",
+                "duration": "06:15",
+                "caption": "Scientific analysis of atmospheric moisture retention and jet stream stalling during extreme summer heatwaves."
+              },
+              {
+                "title": "How Cities Are Adapting to Rising Flash Flood Risks",
+                "channel": "Civil Engineering Briefings",
+                "videoId": "m1n_iQxP6eA",
+                "watchUrl": "https://www.youtube.com/watch?v=m1n_iQxP6eA",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/m1n_iQxP6eA",
+                "duration": "08:42",
+                "caption": "Overview of flood-retention basins, storm barrier infrastructure, and permeable drainage across European metropolitan areas."
+              },
+              {
+                "title": "Aviation & Extreme Weather: Wind Shear, Microbursts & Heat",
+                "channel": "Flight Safety International",
+                "videoId": "K9sT7mUqGZc",
+                "watchUrl": "https://www.youtube.com/watch?v=K9sT7mUqGZc",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/K9sT7mUqGZc",
+                "duration": "07:30",
+                "caption": "Operational impact of extreme density altitude and convective storms on takeoff performance and airport operations."
+              }
+            ],
+            "articles": [
+              {
+                "topic": "Climate Resilience",
+                "sourceTag": "European Environment Agency",
+                "readTime": "Estimated read: 4 mins",
+                "heading": "Managing Extreme Summer Temperatures: Urban Heat Action Plans Across Europe",
+                "snippet": "Municipal health authorities across Southern and Western Europe are implementing real-time heat warning systems, shaded public corridors, and emergency water-misting stations to safeguard vulnerable citizens during prolonged 40°C+ heatwaves.",
+                "url": "https://www.eea.europa.eu"
+              },
+              {
+                "topic": "Infrastructure Protection",
+                "sourceTag": "Reuters Climate Wire",
+                "readTime": "Estimated read: 5 mins",
+                "heading": "Rethinking Storm Drainage: €50M Adaptation Funds Deployed for Flash Flood Mitigation",
+                "snippet": "Engineers and regional planners are retrofitting highway drainage networks and airport runoffs with automated floodgates and bioretention basins to withstand sudden 100mm convective rainstorms.",
+                "url": "https://www.reuters.com"
+              }
+            ],
+            "grammar": {
+              "title": "Language Clinic: Conditionals for Cause, Effect & Urgency",
+              "points": [
+                {
+                  "rule": "First Conditional (Real Present / Future Possibility)",
+                  "structure": "If + present simple, will / can / must + verb",
+                  "example": "If temperatures continue to rise, summer runway operations will require weight reductions.",
+                  "note": "Used for real, probable future operational outcomes."
+                },
+                {
+                  "rule": "Second Conditional (Hypothetical Proposals & Policy Debates)",
+                  "structure": "If + past simple, would / could / might + verb",
+                  "example": "If we invested €50M in sponge city drainage, flash flood damage would decrease significantly.",
+                  "note": "Ideal for discussing proposed solutions, recommendations, and policy options."
+                }
+              ]
+            },
+            "resources": [
+              {
+                "title": "IPCC Climate Assessment Summary",
+                "desc": "Key summary for engineers and infrastructure policymakers.",
+                "link": "https://www.ipcc.ch"
+              },
+              {
+                "title": "European Storm Forecast & Warning Center",
+                "desc": "Interactive convective storm alerts and meteorological tracking.",
+                "link": "https://www.estofex.org"
+              }
+            ]
           },
           "lessonContent": {
             "overview": {
@@ -14427,32 +14989,38 @@
               {
                 "num": "01",
                 "title": "Photo Comparison: Two Visions of the Future City",
-                "desc": "Contrast car-dominated urban sprawl with green pedestrian superblocks using rich descriptive B1/B2 English."
+                "desc": "Contrast car-dominated urban sprawl with green pedestrian superblocks using rich descriptive B1/B2 English.",
+                "description": "Contrast car-dominated urban sprawl with green pedestrian superblocks using rich descriptive B1/B2 English."
               },
               {
                 "num": "02",
                 "title": "Livable Cities & The 15-Minute Neighborhood",
-                "desc": "Discuss how clean public transit, bike lanes, and green parks improve health, air quality, and social connection."
+                "desc": "Discuss how clean public transit, bike lanes, and green parks improve health, air quality, and social connection.",
+                "description": "Discuss how clean public transit, bike lanes, and green parks improve health, air quality, and social connection."
               },
               {
                 "num": "03",
                 "title": "Spoken Language Clinic: Making Persuasive Proposals",
-                "desc": "Deploy polite suggestion patterns (Why don't we consider..., What if we were to ban..., It would be far more effective to...)."
+                "desc": "Deploy polite suggestion patterns (Why don't we consider..., What if we were to ban..., It would be far more effective to...).",
+                "description": "Deploy polite suggestion patterns (Why don't we consider..., What if we were to ban..., It would be far more effective to...)."
               },
               {
                 "num": "04",
                 "title": "Interactive Vocabulary Game: Green City Collocation Matcher",
-                "desc": "Master 10 high-frequency compound phrases for urban lifestyle, clean transport, and eco-friendly infrastructure."
+                "desc": "Master 10 high-frequency compound phrases for urban lifestyle, clean transport, and eco-friendly infrastructure.",
+                "description": "Master 10 high-frequency compound phrases for urban lifestyle, clean transport, and eco-friendly infrastructure."
               },
               {
                 "num": "05",
                 "title": "Pair Urban Redesign Pitch: Reclaim Your Street or Campus",
-                "desc": "Redesign a car-dominated street or university zone into a green pedestrian haven and pitch it to the class."
+                "desc": "Redesign a car-dominated street or university zone into a green pedestrian haven and pitch it to the class.",
+                "description": "Redesign a car-dominated street or university zone into a green pedestrian haven and pitch it to the class."
               },
               {
                 "num": "06",
                 "title": "High-Stakes Public Debate: The Car-Free City Center",
-                "desc": "Debate a total ban on private passenger cars in metropolitan city cores across Commuters, Shop Owners, and Environmentalists."
+                "desc": "Debate a total ban on private passenger cars in metropolitan city cores across Commuters, Shop Owners, and Environmentalists.",
+                "description": "Debate a total ban on private passenger cars in metropolitan city cores across Commuters, Shop Owners, and Environmentalists."
               }
             ]
           },
@@ -14463,32 +15031,38 @@
               {
                 "part": "Part 1",
                 "title": "Conversational Warm-Up: The Livable City Ranking",
-                "description": "Pairwise diagnostic questions with framed sentence stems ranking the key factors that make a city healthy and enjoyable to live in."
+                "description": "Pairwise diagnostic questions with framed sentence stems ranking the key factors that make a city healthy and enjoyable to live in.",
+                "desc": "Pairwise diagnostic questions with framed sentence stems ranking the key factors that make a city healthy and enjoyable to live in."
               },
               {
                 "part": "Part 2",
                 "title": "4-Photo Visual Contrast & Debate Lab: Two Visions of the Future City",
-                "description": "Case study reading and photo comparison of 4 urban models: The Car-Choked Highway, The Reclaimed Superblock, High-Speed Rail vs Air, and The 15-Minute Street."
+                "description": "Case study reading and photo comparison of 4 urban models: The Car-Choked Highway, The Reclaimed Superblock, High-Speed Rail vs Air, and The 15-Minute Street.",
+                "desc": "Case study reading and photo comparison of 4 urban models: The Car-Choked Highway, The Reclaimed Superblock, High-Speed Rail vs Air, and The 15-Minute Street."
               },
               {
                 "part": "Part 3",
                 "title": "Language Clinic: Proposing Solutions & Making Recommendations",
-                "description": "Targeted spoken language drills practicing constructive suggestions and polite alternatives (Why don't we consider..., What if we were to...)."
+                "description": "Targeted spoken language drills practicing constructive suggestions and polite alternatives (Why don't we consider..., What if we were to...).",
+                "desc": "Targeted spoken language drills practicing constructive suggestions and polite alternatives (Why don't we consider..., What if we were to...)."
               },
               {
                 "part": "Part 4",
                 "title": "Interactive Vocabulary Game: Green City Collocation Matcher",
-                "description": "Pair matching game linking 10 compound phrases (pedestrian zone, public transport, congestion charge, cycling lane) and ranking transit modes."
+                "description": "Pair matching game linking 10 compound phrases (pedestrian zone, public transport, congestion charge, cycling lane) and ranking transit modes.",
+                "desc": "Pair matching game linking 10 compound phrases (pedestrian zone, public transport, congestion charge, cycling lane) and ranking transit modes."
               },
               {
                 "part": "Part 5",
                 "title": "Pair Urban Redesign Challenge: Reclaim Your Street or Campus",
-                "description": "Pairs formulate a 3-point plan to transform a car-dominated road into an active green corridor and deliver a 2-minute pitch with peer rubric."
+                "description": "Pairs formulate a 3-point plan to transform a car-dominated road into an active green corridor and deliver a 2-minute pitch with peer rubric.",
+                "desc": "Pairs formulate a 3-point plan to transform a car-dominated road into an active green corridor and deliver a 2-minute pitch with peer rubric."
               },
               {
                 "part": "Part 6",
                 "title": "High-Stakes Public Debate: The Car-Free City Center",
-                "description": "Multi-stakeholder consensus debate on banning private cars from metropolitan centers between Commuters, Shop Owners, and Climate Activists, concluding with final review."
+                "description": "Multi-stakeholder consensus debate on banning private cars from metropolitan centers between Commuters, Shop Owners, and Climate Activists, concluding with final review.",
+                "desc": "Multi-stakeholder consensus debate on banning private cars from metropolitan centers between Commuters, Shop Owners, and Climate Activists, concluding with final review."
               }
             ]
           },
@@ -14500,121 +15074,299 @@
                 "num": "01",
                 "term": "Car-Free Zone",
                 "ipa": "/ˌkɑː ˈfriː ˌzəʊn/",
-                "def": "A city district where private motor vehicles are prohibited to give priority to pedestrians and cyclists."
+                "def": "A city district where private motor vehicles are prohibited to give priority to pedestrians and cyclists.",
+                "definition": "A city district where private motor vehicles are prohibited to give priority to pedestrians and cyclists."
               },
               {
                 "num": "02",
                 "term": "Pedestrian Street",
                 "ipa": "/pəˈdes.tri.ən ˌstriːt/",
-                "def": "A street reserved exclusively for people walking, shopping, and outdoor dining without motor traffic."
+                "def": "A street reserved exclusively for people walking, shopping, and outdoor dining without motor traffic.",
+                "definition": "A street reserved exclusively for people walking, shopping, and outdoor dining without motor traffic."
               },
               {
                 "num": "03",
                 "term": "Cycling Lane",
                 "ipa": "/ˈsaɪ.klɪŋ ˌleɪn/",
-                "def": "A dedicated, marked division of a road reserved exclusively for bicycles and light personal transport."
+                "def": "A dedicated, marked division of a road reserved exclusively for bicycles and light personal transport.",
+                "definition": "A dedicated, marked division of a road reserved exclusively for bicycles and light personal transport."
               },
               {
                 "num": "04",
                 "term": "Public Transport",
                 "ipa": "/ˌpʌb.lɪk ˈtræn.spɔːt/",
-                "def": "Shared passenger transportation systems like metros, electric buses, trams, and suburban trains."
+                "def": "Shared passenger transportation systems like metros, electric buses, trams, and suburban trains.",
+                "definition": "Shared passenger transportation systems like metros, electric buses, trams, and suburban trains."
               },
               {
                 "num": "05",
                 "term": "15-Minute City",
                 "ipa": "/ˌfɪf.tiːn ˈmɪn.ɪt ˌsɪt.i/",
-                "def": "An urban planning model where all daily resident needs are reachable in a 15-minute walk or bike ride."
+                "def": "An urban planning model where all daily resident needs are reachable in a 15-minute walk or bike ride.",
+                "definition": "An urban planning model where all daily resident needs are reachable in a 15-minute walk or bike ride."
               },
               {
                 "num": "06",
                 "term": "Superblock",
                 "ipa": "/ˈsuː.pə.blɒk/",
-                "def": "A neighborhood cluster where inner streets are closed to through-traffic and turned into green public squares."
+                "def": "A neighborhood cluster where inner streets are closed to through-traffic and turned into green public squares.",
+                "definition": "A neighborhood cluster where inner streets are closed to through-traffic and turned into green public squares."
               },
               {
                 "num": "07",
                 "term": "Urban Sprawl",
                 "ipa": "/ˌɜː.bən ˈsprɔːl/",
-                "def": "The uncontrolled outward spread of low-density suburbs heavily dependent on private cars."
+                "def": "The uncontrolled outward spread of low-density suburbs heavily dependent on private cars.",
+                "definition": "The uncontrolled outward spread of low-density suburbs heavily dependent on private cars."
               },
               {
                 "num": "08",
                 "term": "Congestion Charge",
                 "ipa": "/kənˈdʒes.tʃən ˌtʃɑːdʒ/",
-                "def": "A daily fee charged to drivers entering city centers during peak hours to curb traffic and air pollution."
+                "def": "A daily fee charged to drivers entering city centers during peak hours to curb traffic and air pollution.",
+                "definition": "A daily fee charged to drivers entering city centers during peak hours to curb traffic and air pollution."
               },
               {
                 "num": "09",
                 "term": "Green Space",
                 "ipa": "/ˈɡriːn ˌspeɪs/",
-                "def": "Open land covered with grass, trees, and plants in an urban area like public parks and gardens."
+                "def": "Open land covered with grass, trees, and plants in an urban area like public parks and gardens.",
+                "definition": "Open land covered with grass, trees, and plants in an urban area like public parks and gardens."
               },
               {
                 "num": "10",
                 "term": "Air Quality",
                 "ipa": "/ˈeə ˌkwɒl.ə.ti/",
-                "def": "The degree to which outdoor air is clean and free from harmful vehicle exhaust and pollutants."
+                "def": "The degree to which outdoor air is clean and free from harmful vehicle exhaust and pollutants.",
+                "definition": "The degree to which outdoor air is clean and free from harmful vehicle exhaust and pollutants."
               },
               {
                 "num": "11",
                 "term": "Low-Emission Zone",
                 "ipa": "/ˌləʊ ɪˈmɪʃ.ən ˌzəʊn/",
-                "def": "A designated municipal perimeter where high-polluting vehicles are restricted, banned, or fined."
+                "def": "A designated municipal perimeter where high-polluting vehicles are restricted, banned, or fined.",
+                "definition": "A designated municipal perimeter where high-polluting vehicles are restricted, banned, or fined."
               },
               {
                 "num": "12",
                 "term": "Micro-Mobility",
                 "ipa": "/ˈmaɪ.krəʊ məʊˌbɪl.ə.ti/",
-                "def": "Small, lightweight personal electric vehicles like e-bikes and e-scooters for short trips."
+                "def": "Small, lightweight personal electric vehicles like e-bikes and e-scooters for short trips.",
+                "definition": "Small, lightweight personal electric vehicles like e-bikes and e-scooters for short trips."
               },
               {
                 "num": "13",
                 "term": "High-Speed Rail",
                 "ipa": "/ˌhaɪ ˈspiːd ˈreɪl/",
-                "def": "Fast electric passenger trains operating at speeds over 250 km/h connecting major city centers."
+                "def": "Fast electric passenger trains operating at speeds over 250 km/h connecting major city centers.",
+                "definition": "Fast electric passenger trains operating at speeds over 250 km/h connecting major city centers."
               },
               {
                 "num": "14",
                 "term": "Energy-Efficient Housing",
                 "ipa": "/ˌen.ə.dʒi ɪˈfɪʃ.ənt/",
-                "def": "Buildings with thick insulation and heat pumps that consume very little energy for heating and cooling."
+                "def": "Buildings with thick insulation and heat pumps that consume very little energy for heating and cooling.",
+                "definition": "Buildings with thick insulation and heat pumps that consume very little energy for heating and cooling."
               },
               {
                 "num": "15",
                 "term": "Waste Management",
                 "ipa": "/ˈweɪst ˌmæn.ɪdʒ.mənt/",
-                "def": "Organized collection, sorting, recycling, and composting of household and commercial rubbish."
+                "def": "Organized collection, sorting, recycling, and composting of household and commercial rubbish.",
+                "definition": "Organized collection, sorting, recycling, and composting of household and commercial rubbish."
               },
               {
                 "num": "16",
                 "term": "Carbon Neutral",
                 "ipa": "/ˌkɑː.bən ˈnjuː.trəl/",
-                "def": "Balancing the amount of carbon released into the atmosphere with an equivalent amount removed."
+                "def": "Balancing the amount of carbon released into the atmosphere with an equivalent amount removed.",
+                "definition": "Balancing the amount of carbon released into the atmosphere with an equivalent amount removed."
               },
               {
                 "num": "17",
                 "term": "Sustainable Commute",
                 "ipa": "/səˈsteɪ.nə.bəl kəˈmjuːt/",
-                "def": "Traveling to work or study using walking, cycling, or shared electric public transit."
+                "def": "Traveling to work or study using walking, cycling, or shared electric public transit.",
+                "definition": "Traveling to work or study using walking, cycling, or shared electric public transit."
               },
               {
                 "num": "18",
                 "term": "Modal Split",
                 "ipa": "/ˈməʊ.dəl ˌsplɪt/",
-                "def": "The percentage share of trips made by different transport modes (walking, cycling, public transit, cars)."
+                "def": "The percentage share of trips made by different transport modes (walking, cycling, public transit, cars).",
+                "definition": "The percentage share of trips made by different transport modes (walking, cycling, public transit, cars)."
               }
             ]
           },
           "overview": {
             "title": "Sustainable Cities & Low-Emission Mobility",
-            "subtitle": "Urban Living, Green Neighborhoods, The 15-Minute City & The Car-Free Center Debate",
-            "badge": "Session Overview • Sustainable Cities & Urban Design",
-            "image": "images/ag_m2card2.jpg"
+            "subtitle": "Urban Heat Islands, 15-Minute Cities & Green Transit",
+            "badge": "Session 02 • Communicative General English",
+            "image": "images/ag_m2card2.jpg",
+            "intro": "This session focuses on sustainable urban living, low-emission mobility, and green city design. Students contrast car-dominated urban sprawl with pedestrian-friendly superblocks, practice persuasive proposals, master transport collocations, pitch street redesigns, and debate the total pedestrianization of metropolitan city centers.",
+            "whyItMatters": "Cities consume over two-thirds of the world's energy and account for more than 70% of global CO2 emissions. Reimagining urban mobility through intermodal transit, active transport, and green public spaces is central to European sustainability targets and international climate agreements.",
+            "keyTerms": [
+              {
+                "term": "Sponge City",
+                "ipa": "/spʌndʒ ˈsɪt.i/",
+                "definition": "An urban area designed to naturally absorb, capture, and reuse rainwater through green infrastructure.",
+                "def": "An urban area designed to naturally absorb, capture, and reuse rainwater through green infrastructure."
+              },
+              {
+                "term": "Urban Heat Island (UHI)",
+                "ipa": "/ˈɜː.bən hiːt ˈaɪ.lənd/",
+                "definition": "A metropolitan area significantly warmer than surrounding rural areas due to human activity and dense concrete.",
+                "def": "A metropolitan area significantly warmer than surrounding rural areas due to human activity and dense concrete."
+              },
+              {
+                "term": "15-Minute City",
+                "ipa": "/ˌfɪf.tiːn ˈmɪn.ɪt ˈsɪt.i/",
+                "definition": "An urban planning model where daily necessities are reachable within a 15-minute walk or bike ride.",
+                "def": "An urban planning model where daily necessities are reachable within a 15-minute walk or bike ride."
+              },
+              {
+                "term": "Permeable Pavement",
+                "ipa": "/ˈpɜː.mi.ə.bəl ˈpeɪv.mənt/",
+                "definition": "Porous surfacing material allowing storm runoff to infiltrate directly into the soil below.",
+                "def": "Porous surfacing material allowing storm runoff to infiltrate directly into the soil below."
+              },
+              {
+                "term": "Bioretention Basin",
+                "ipa": "/ˌbaɪ.əʊ.rɪˈten.ʃən ˈbeɪ.sən/",
+                "definition": "A vegetated depression engineered to slow, filter, and absorb stormwater runoff.",
+                "def": "A vegetated depression engineered to slow, filter, and absorb stormwater runoff."
+              },
+              {
+                "term": "Intermodal Connectivity",
+                "ipa": "/ˌɪn.təˈməʊ.dəl kəˌnekˈtɪv.ə.ti/",
+                "definition": "Seamless physical and digital integration across cycling, rail, buses, and aviation networks.",
+                "def": "Seamless physical and digital integration across cycling, rail, buses, and aviation networks."
+              },
+              {
+                "term": "Transit-Oriented Development (TOD)",
+                "ipa": "/ˈtræn.zɪt ˌɔː.ri.en.tɪd/",
+                "definition": "Urban planning maximizing residential and business spaces within easy walking distance of public transit.",
+                "def": "Urban planning maximizing residential and business spaces within easy walking distance of public transit."
+              },
+              {
+                "term": "Active Mobility Corridor",
+                "ipa": "/ˈæk.tɪv məʊˈbɪl.ə.ti ˈkɒr.ɪ.dɔː/",
+                "definition": "Dedicated, safe street lanes reserved strictly for pedestrians, cyclists, and light personal e-vehicles.",
+                "def": "Dedicated, safe street lanes reserved strictly for pedestrians, cyclists, and light personal e-vehicles."
+              },
+              {
+                "term": "Congestion Pricing",
+                "ipa": "/kənˈdʒes.tʃən ˈpraɪ.sɪŋ/",
+                "definition": "A toll charged to private motorists entering dense urban centers during peak traffic hours.",
+                "def": "A toll charged to private motorists entering dense urban centers during peak traffic hours."
+              },
+              {
+                "term": "Low-Emission Zone (LEZ)",
+                "ipa": "/ləʊ ɪˈmɪʃ.ən zəʊn/",
+                "definition": "A legally defined city zone restricting or penalizing older, highly polluting motor vehicles.",
+                "def": "A legally defined city zone restricting or penalizing older, highly polluting motor vehicles."
+              }
+            ],
+            "speakingTask": {
+              "title": "3-Group Spoken Discussion & Presentation: Future City Redesign",
+              "instructions": "Divide into 3 groups. Each group examines one urban mobility proposal below, weighs public resistance against environmental benefits, and delivers a 2-minute spoken pitch with recommendations.",
+              "requirements": [
+                "Use at least 4 of today's 10 useful words.",
+                "Give at least two concrete reasons or real-world examples to support your group's position.",
+                "Ensure every team member contributes during your 2-minute spoken summary."
+              ],
+              "statements": {
+                "group1": "All private combustion-engine vehicles should be completely banned from European city centers by 2028.",
+                "group2": "Public transit within metropolitan zones must be entirely fare-free and subsidized through higher corporate parking taxes.",
+                "group3": "Urban planning should legally mandate that every essential service be reachable within a 15-minute walk or bike ride."
+              },
+              "usefulPhrases": [
+                "Our group considered the proposal to...",
+                "From our perspective, the strongest argument is...",
+                "While some citizens may be reluctant, we believe...",
+                "To conclude our proposal, we recommend..."
+              ]
+            }
           },
           "materials": {
-            "title": "Session 2 Study Materials: Sustainable Cities",
-            "summary": "Visual urban contrast panels, proposal phrasing guides, and street transformation briefs."
+            "title": "Additional Study Materials & Multimedia Resources",
+            "summary": "Curated video insights, urban case studies, and persuasive language frameworks for sustainable mobility and low-carbon transport.",
+            "videos": [
+              {
+                "title": "The 15-Minute City Concept: Urban Utopia or Practical Solution?",
+                "channel": "Urban Planning Explained",
+                "videoId": "m9L0f5mS4eY",
+                "watchUrl": "https://www.youtube.com/watch?v=m9L0f5mS4eY",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/m9L0f5mS4eY",
+                "duration": "09:12",
+                "caption": "How European capitals like Paris and Barcelona are redesigning neighborhoods to eliminate daily motorized car commutes."
+              },
+              {
+                "title": "How Barcelona Superblocks Reclaimed Streets for Citizens",
+                "channel": "Streetfilm Documentaries",
+                "videoId": "ZORzsubQA_8",
+                "watchUrl": "https://www.youtube.com/watch?v=ZORzsubQA_8",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/ZORzsubQA_8",
+                "duration": "08:24",
+                "caption": "Transforming 9-block intersections into green pedestrian plazas with reduced air and noise pollution."
+              },
+              {
+                "title": "Intermodal Transport Hubs: Connecting Air, Rail & Micro-Mobility",
+                "channel": "Global Transit Innovation",
+                "videoId": "W6bT8nS7Z3A",
+                "watchUrl": "https://www.youtube.com/watch?v=W6bT8nS7Z3A",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/W6bT8nS7Z3A",
+                "duration": "06:45",
+                "caption": "Airport surface access strategies: replacing short-haul domestic flights with high-speed rail connections."
+              }
+            ],
+            "articles": [
+              {
+                "topic": "Urban Transition",
+                "sourceTag": "C40 Cities Network",
+                "readTime": "Estimated read: 4 mins",
+                "heading": "Low-Emission Zones Slash Toxic Nitrogen Dioxide Levels by 40% Across 30 European Metropolises",
+                "snippet": "Comprehensive emissions monitoring reveals that prioritizing electric buses, bike superhighways, and pedestrian zones has directly reduced respiratory illnesses and road congestion.",
+                "url": "https://www.c40.org"
+              },
+              {
+                "topic": "Mobility Innovation",
+                "sourceTag": "Clean Transport Digest",
+                "readTime": "Estimated read: 5 mins",
+                "heading": "Active Mobility Superhighways: How Protected Cycle Lanes Transformed Commuting Habits",
+                "snippet": "Municipal case study analyzing how investing in continuous, well-lit active travel corridors convinced over 250,000 suburban commuters to leave their cars at home.",
+                "url": "https://www.transportenvironment.org"
+              }
+            ],
+            "grammar": {
+              "title": "Language Clinic: Making Constructive Proposals & Recommendations",
+              "points": [
+                {
+                  "rule": "Constructive Suggestions with 'Consider' / 'What if'",
+                  "structure": "Why don't we consider + -ing / What if we were to + verb",
+                  "example": "Why don't we consider pedestrianizing the central avenue during peak morning hours?",
+                  "note": "Polite, collaborative framing suitable for workplace negotiations."
+                },
+                {
+                  "rule": "Strong Diplomatic Recommendations",
+                  "structure": "It would be far more effective to + verb / We strongly recommend that...",
+                  "example": "It would be far more effective to expand the tram network before introducing congestion charges.",
+                  "note": "Emphasizes practical logic without sounding overly aggressive."
+                }
+              ]
+            },
+            "resources": [
+              {
+                "title": "European Commission Clean Urban Transport",
+                "desc": "Policy directives and funding frameworks for green city mobility.",
+                "link": "https://transport.ec.europa.eu"
+              },
+              {
+                "title": "Barcelona Superblock Case Study",
+                "desc": "Detailed architectural and environmental impact report.",
+                "link": "https://ajuntament.barcelona.cat"
+              }
+            ]
           },
           "lessonContent": {
             "overview": {
@@ -24427,27 +25179,32 @@
               {
                 "num": 1,
                 "title": "Explain the Four Forces of Flight in Equilibrium",
-                "description": "Describe how lift, weight, thrust, and drag interact during straight-and-level flight, climbs, descents, and turns without technical jargon."
+                "description": "Describe how lift, weight, thrust, and drag interact during straight-and-level flight, climbs, descents, and turns without technical jargon.",
+                "desc": "Describe how lift, weight, thrust, and drag interact during straight-and-level flight, climbs, descents, and turns without technical jargon."
               },
               {
                 "num": 2,
                 "title": "Identify the Three Aircraft Axes and Primary Flight Controls",
-                "description": "Accurately name and describe the lateral (pitch / elevators), longitudinal (roll / ailerons), and vertical (yaw / rudder) axes."
+                "description": "Accurately name and describe the lateral (pitch / elevators), longitudinal (roll / ailerons), and vertical (yaw / rudder) axes.",
+                "desc": "Accurately name and describe the lateral (pitch / elevators), longitudinal (roll / ailerons), and vertical (yaw / rudder) axes."
               },
               {
                 "num": 3,
                 "title": "Deploy Cause & Effect Conditionals in Flight Physics",
-                "description": "Formulate zero and first conditionals with if, when, as, and unless to explain aerodynamic consequences and speed-drag dynamics."
+                "description": "Formulate zero and first conditionals with if, when, as, and unless to explain aerodynamic consequences and speed-drag dynamics.",
+                "desc": "Formulate zero and first conditionals with if, when, as, and unless to explain aerodynamic consequences and speed-drag dynamics."
               },
               {
                 "num": 4,
                 "title": "Engage in Control Surface & Flight Simulation Role-Plays",
-                "description": "Role-play flight control inputs and aerodynamic feedback between pilots and flight test engineers in interactive partner games."
+                "description": "Role-play flight control inputs and aerodynamic feedback between pilots and flight test engineers in interactive partner games.",
+                "desc": "Role-play flight control inputs and aerodynamic feedback between pilots and flight test engineers in interactive partner games."
               },
               {
                 "num": 5,
                 "title": "Analyze Stall Dynamics and Operational Recovery Briefings",
-                "description": "Discuss angle of attack, boundary layer separation, stall warning systems, and recovery actions in clear, professional English."
+                "description": "Discuss angle of attack, boundary layer separation, stall warning systems, and recovery actions in clear, professional English.",
+                "desc": "Discuss angle of attack, boundary layer separation, stall warning systems, and recovery actions in clear, professional English."
               }
             ]
           },
@@ -24458,32 +25215,38 @@
               {
                 "title": "Part 1: Aviation Headlines & Diagnostic Quick-Check",
                 "description": "Opening aerospace headlines and diagnostic spot-check using communicative spoken sentence stems to contrast pitch attitude and angle of attack.",
-                "part": "Part 1"
+                "part": "Part 1",
+                "desc": "Opening aerospace headlines and diagnostic spot-check using communicative spoken sentence stems to contrast pitch attitude and angle of attack."
               },
               {
                 "title": "Part 2: Video Lab: The Four Forces of Flight in Action",
                 "description": "Video-guided listening analysis exploring aerodynamic equilibrium, vector opposition, and pressure differentials with structured acoustic checkpoints.",
-                "part": "Part 2"
+                "part": "Part 2",
+                "desc": "Video-guided listening analysis exploring aerodynamic equilibrium, vector opposition, and pressure differentials with structured acoustic checkpoints."
               },
               {
                 "title": "Part 3: Airfoil Geometry & Technical Gap-Fill Clinic",
                 "description": "Interactive gap-fill texts with revealable answers covering Bernoulli's principle, camber, chord line, boundary layer airflow, and drag dynamics.",
-                "part": "Part 3"
+                "part": "Part 3",
+                "desc": "Interactive gap-fill texts with revealable answers covering Bernoulli's principle, camber, chord line, boundary layer airflow, and drag dynamics."
               },
               {
                 "title": "Part 4: The Blackboard Vector Lab (Group of 3 Challenge)",
                 "description": "Collaborative board activity: 3-student teams draw an aircraft, label force vectors and 3 axes, and deliver a 60-second spoken flight control pitch with peer rubrics.",
-                "part": "Part 4"
+                "part": "Part 4",
+                "desc": "Collaborative board activity: 3-student teams draw an aircraft, label force vectors and 3 axes, and deliver a 60-second spoken flight control pitch with peer rubrics."
               },
               {
                 "title": "Part 5: The Lift Masterclass & Stall Recovery Simulation",
                 "description": "Spoken presentation masterclass explaining lift generation in plain B2 English followed by crew communication during an aerodynamic stall warning.",
-                "part": "Part 5"
+                "part": "Part 5",
+                "desc": "Spoken presentation masterclass explaining lift generation in plain B2 English followed by crew communication during an aerodynamic stall warning."
               },
               {
                 "title": "Part 6: Aerodynamics Taboo & 10-Question Mastery Challenge",
                 "description": "End-of-class communicative game (explaining terms without taboo words) and interactive 10-question multiple-choice mastery challenge with grammar rationale.",
-                "part": "Part 6"
+                "part": "Part 6",
+                "desc": "End-of-class communicative game (explaining terms without taboo words) and interactive 10-question multiple-choice mastery challenge with grammar rationale."
               }
             ]
           },
@@ -24737,92 +25500,110 @@
               {
                 "num": "01",
                 "term": "Lift",
-                "definition": "The aerodynamic upward force generated by the wings perpendicular to the relative airflow, overcoming weight."
+                "definition": "The aerodynamic upward force generated by the wings perpendicular to the relative airflow, overcoming weight.",
+                "def": "The aerodynamic upward force generated by the wings perpendicular to the relative airflow, overcoming weight."
               },
               {
                 "num": "02",
                 "term": "Thrust",
-                "definition": "The forward force produced by the engines that overcomes aerodynamic drag."
+                "definition": "The forward force produced by the engines that overcomes aerodynamic drag.",
+                "def": "The forward force produced by the engines that overcomes aerodynamic drag."
               },
               {
                 "num": "03",
                 "term": "Weight",
-                "definition": "The downward gravitational force pulling the aircraft toward the Earth, directly opposed by lift."
+                "definition": "The downward gravitational force pulling the aircraft toward the Earth, directly opposed by lift.",
+                "def": "The downward gravitational force pulling the aircraft toward the Earth, directly opposed by lift."
               },
               {
                 "num": "04",
                 "term": "Drag",
-                "definition": "The retarding aerodynamic resistance force acting parallel and opposite to the direction of flight."
+                "definition": "The retarding aerodynamic resistance force acting parallel and opposite to the direction of flight.",
+                "def": "The retarding aerodynamic resistance force acting parallel and opposite to the direction of flight."
               },
               {
                 "num": "05",
                 "term": "Angle of Attack (AoA)",
-                "definition": "The acute angle formed between the chord line of the airfoil and the oncoming relative wind."
+                "definition": "The acute angle formed between the chord line of the airfoil and the oncoming relative wind.",
+                "def": "The acute angle formed between the chord line of the airfoil and the oncoming relative wind."
               },
               {
                 "num": "06",
                 "term": "Airfoil",
-                "definition": "A streamlined surface, such as an aircraft wing or rotor blade, designed to create lift as air flows over it."
+                "definition": "A streamlined surface, such as an aircraft wing or rotor blade, designed to create lift as air flows over it.",
+                "def": "A streamlined surface, such as an aircraft wing or rotor blade, designed to create lift as air flows over it."
               },
               {
                 "num": "07",
                 "term": "Camber",
-                "definition": "The convex asymmetry or curvature between the upper and lower surfaces of an airfoil."
+                "definition": "The convex asymmetry or curvature between the upper and lower surfaces of an airfoil.",
+                "def": "The convex asymmetry or curvature between the upper and lower surfaces of an airfoil."
               },
               {
                 "num": "08",
                 "term": "Boundary Layer",
-                "definition": "The thin layer of air immediately adjacent to the aircraft surface where viscous forces slow the airflow."
+                "definition": "The thin layer of air immediately adjacent to the aircraft surface where viscous forces slow the airflow.",
+                "def": "The thin layer of air immediately adjacent to the aircraft surface where viscous forces slow the airflow."
               },
               {
                 "num": "09",
                 "term": "Stall",
-                "definition": "A sudden reduction in lift caused by exceeding the critical angle of attack, resulting in airflow separation from the upper wing."
+                "definition": "A sudden reduction in lift caused by exceeding the critical angle of attack, resulting in airflow separation from the upper wing.",
+                "def": "A sudden reduction in lift caused by exceeding the critical angle of attack, resulting in airflow separation from the upper wing."
               },
               {
                 "num": "10",
                 "term": "Lateral Axis",
-                "definition": "The imaginary horizontal line running wingtip-to-wingtip around which the aircraft pitches up or down."
+                "definition": "The imaginary horizontal line running wingtip-to-wingtip around which the aircraft pitches up or down.",
+                "def": "The imaginary horizontal line running wingtip-to-wingtip around which the aircraft pitches up or down."
               },
               {
                 "num": "11",
                 "term": "Longitudinal Axis",
-                "definition": "The imaginary line running from nose to tail around which the aircraft rolls or banks."
+                "definition": "The imaginary line running from nose to tail around which the aircraft rolls or banks.",
+                "def": "The imaginary line running from nose to tail around which the aircraft rolls or banks."
               },
               {
                 "num": "12",
                 "term": "Vertical Axis",
-                "definition": "The imaginary vertical line running top-to-bottom through the center of gravity around which the aircraft yaws."
+                "definition": "The imaginary vertical line running top-to-bottom through the center of gravity around which the aircraft yaws.",
+                "def": "The imaginary vertical line running top-to-bottom through the center of gravity around which the aircraft yaws."
               },
               {
                 "num": "13",
                 "term": "Pitch",
-                "definition": "The rotational movement around the lateral axis causing the nose of the aircraft to move up or down."
+                "definition": "The rotational movement around the lateral axis causing the nose of the aircraft to move up or down.",
+                "def": "The rotational movement around the lateral axis causing the nose of the aircraft to move up or down."
               },
               {
                 "num": "14",
                 "term": "Roll",
-                "definition": "The rotational movement around the longitudinal axis causing the aircraft wings to bank left or right."
+                "definition": "The rotational movement around the longitudinal axis causing the aircraft wings to bank left or right.",
+                "def": "The rotational movement around the longitudinal axis causing the aircraft wings to bank left or right."
               },
               {
                 "num": "15",
                 "term": "Yaw",
-                "definition": "The rotational movement around the vertical axis causing the aircraft nose to turn left or right."
+                "definition": "The rotational movement around the vertical axis causing the aircraft nose to turn left or right.",
+                "def": "The rotational movement around the vertical axis causing the aircraft nose to turn left or right."
               },
               {
                 "num": "16",
                 "term": "Elevator",
-                "definition": "The movable horizontal flight control surface on the tail empennage used to control pitch."
+                "definition": "The movable horizontal flight control surface on the tail empennage used to control pitch.",
+                "def": "The movable horizontal flight control surface on the tail empennage used to control pitch."
               },
               {
                 "num": "17",
                 "term": "Aileron",
-                "definition": "A hinged control surface on the trailing edge of each wing used to control roll and banking."
+                "definition": "A hinged control surface on the trailing edge of each wing used to control roll and banking.",
+                "def": "A hinged control surface on the trailing edge of each wing used to control roll and banking."
               },
               {
                 "num": "18",
                 "term": "Rudder",
-                "definition": "The primary vertical flight control surface hinged to the fin used to control yaw."
+                "definition": "The primary vertical flight control surface hinged to the fin used to control yaw.",
+                "def": "The primary vertical flight control surface hinged to the fin used to control yaw."
               }
             ]
           },
@@ -25187,27 +25968,32 @@
               {
                 "num": 1,
                 "title": "Identify External & Internal Aircraft Components",
-                "description": "Accurately name key airframe components including slats, flaps, ailerons, empennage, radome, landing gear, flight deck instruments, and cabin bulkheads."
+                "description": "Accurately name key airframe components including slats, flaps, ailerons, empennage, radome, landing gear, flight deck instruments, and cabin bulkheads.",
+                "desc": "Accurately name key airframe components including slats, flaps, ailerons, empennage, radome, landing gear, flight deck instruments, and cabin bulkheads."
               },
               {
                 "num": 2,
                 "title": "Deploy Spatial Prepositions & Functional Descriptors",
-                "description": "Describe the physical position and operational purpose of parts using prepositions (along, behind, flush-mounted, adjacent to) and purpose clauses."
+                "description": "Describe the physical position and operational purpose of parts using prepositions (along, behind, flush-mounted, adjacent to) and purpose clauses.",
+                "desc": "Describe the physical position and operational purpose of parts using prepositions (along, behind, flush-mounted, adjacent to) and purpose clauses."
               },
               {
                 "num": 3,
                 "title": "Collaborative Blackboard Drawing & In-Flight Labeling",
-                "description": "Draw and label an aircraft in flight on the board in groups of three, briefing functional surfaces and sensor locations."
+                "description": "Draw and label an aircraft in flight on the board in groups of three, briefing functional surfaces and sensor locations.",
+                "desc": "Draw and label an aircraft in flight on the board in groups of three, briefing functional surfaces and sensor locations."
               },
               {
                 "num": 4,
                 "title": "Detect & Correct Technical Fallacies (Error Hunter)",
-                "description": "Spot aerodynamic and structural inaccuracies in technical texts, explaining orally why statements are incorrect and supplying correct facts."
+                "description": "Spot aerodynamic and structural inaccuracies in technical texts, explaining orally why statements are incorrect and supplying correct facts.",
+                "desc": "Spot aerodynamic and structural inaccuracies in technical texts, explaining orally why statements are incorrect and supplying correct facts."
               },
               {
                 "num": 5,
                 "title": "Master High-Frequency Structural Pronunciation & Terminology",
-                "description": "Correctly pronounce and stress specialized aeronautical components during 12-term Taboo games and a 15-question mastery challenge."
+                "description": "Correctly pronounce and stress specialized aeronautical components during 12-term Taboo games and a 15-question mastery challenge.",
+                "desc": "Correctly pronounce and stress specialized aeronautical components during 12-term Taboo games and a 15-question mastery challenge."
               }
             ]
           },
@@ -25218,32 +26004,38 @@
               {
                 "title": "Part 1: Aviation News & Session 1 Aerodynamics Spot-Check",
                 "description": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes with spoken sentence stems.",
-                "part": "Part 1"
+                "part": "Part 1",
+                "desc": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes with spoken sentence stems."
               },
               {
                 "title": "Part 2: Interactive Video Lab: Modern Aircraft Anatomy & Systems",
                 "description": "Noticeboard-style half-width video analysis examining commercial aircraft anatomy, flight controls, and hydraulic redundancy with debrief questions.",
-                "part": "Part 2"
+                "part": "Part 2",
+                "desc": "Noticeboard-style half-width video analysis examining commercial aircraft anatomy, flight controls, and hydraulic redundancy with debrief questions."
               },
               {
                 "title": "Part 3: In-Flight Aircraft Labeling & 3-Person Blackboard Challenge",
                 "description": "Collaborative visual diagram race and 3-person board challenge labeling external airframe components on a large jet in flight.",
-                "part": "Part 3"
+                "part": "Part 3",
+                "desc": "Collaborative visual diagram race and 3-person board challenge labeling external airframe components on a large jet in flight."
               },
               {
                 "title": "Part 4: Technical Gap-Fill Clinic: Flight Controls & Pre-Flight Checks",
                 "description": "Two contextualized technical readings examining primary vs secondary surfaces and pre-flight inspection procedures.",
-                "part": "Part 4"
+                "part": "Part 4",
+                "desc": "Two contextualized technical readings examining primary vs secondary surfaces and pre-flight inspection procedures."
               },
               {
                 "title": "Part 5: Technical Error Hunter: Spotting Aircraft Anatomy Mistakes",
                 "description": "Partner reading and error-finding workshop detecting factual fallacies in airframe descriptions with spoken corrections.",
-                "part": "Part 5"
+                "part": "Part 5",
+                "desc": "Partner reading and error-finding workshop detecting factual fallacies in airframe descriptions with spoken corrections."
               },
               {
                 "title": "Part 6: Aircraft Anatomy Taboo & 15-Question Technical Mastery Challenge",
                 "description": "12-card Taboo word game and multi-format 15-question plenary challenge consolidating structural terminology.",
-                "part": "Part 6"
+                "part": "Part 6",
+                "desc": "12-card Taboo word game and multi-format 15-question plenary challenge consolidating structural terminology."
               }
             ]
           },
@@ -25910,92 +26702,280 @@
               {
                 "num": "01",
                 "term": "Fuselage",
-                "definition": "The central main body structure of an aircraft holding passengers, flight crew, and cargo."
+                "definition": "The central main body structure of an aircraft holding passengers, flight crew, and cargo.",
+                "def": "The central main body structure of an aircraft holding passengers, flight crew, and cargo."
               },
               {
                 "num": "02",
                 "term": "Radome",
-                "definition": "The fiberglass dielectric nose cone housing and protecting the weather radar antenna."
+                "definition": "The fiberglass dielectric nose cone housing and protecting the weather radar antenna.",
+                "def": "The fiberglass dielectric nose cone housing and protecting the weather radar antenna."
               },
               {
                 "num": "03",
                 "term": "Pitot Probe",
-                "definition": "An electrically heated forward-facing sensor measuring dynamic ram air pressure for indicated airspeed."
+                "definition": "An electrically heated forward-facing sensor measuring dynamic ram air pressure for indicated airspeed.",
+                "def": "An electrically heated forward-facing sensor measuring dynamic ram air pressure for indicated airspeed."
               },
               {
                 "num": "04",
                 "term": "Static Port",
-                "definition": "A flush-mounted exterior fuselage sensor measuring ambient atmospheric barometric pressure for altitude."
+                "definition": "A flush-mounted exterior fuselage sensor measuring ambient atmospheric barometric pressure for altitude.",
+                "def": "A flush-mounted exterior fuselage sensor measuring ambient atmospheric barometric pressure for altitude."
               },
               {
                 "num": "05",
                 "term": "Aileron",
-                "definition": "A primary flight control surface hinged to the outer trailing edge of the wing that deflects differentially to control roll."
+                "definition": "A primary flight control surface hinged to the outer trailing edge of the wing that deflects differentially to control roll.",
+                "def": "A primary flight control surface hinged to the outer trailing edge of the wing that deflects differentially to control roll."
               },
               {
                 "num": "06",
                 "term": "Elevator",
-                "definition": "A primary flight control surface hinged to the horizontal stabilizer that commands pitch attitude."
+                "definition": "A primary flight control surface hinged to the horizontal stabilizer that commands pitch attitude.",
+                "def": "A primary flight control surface hinged to the horizontal stabilizer that commands pitch attitude."
               },
               {
                 "num": "07",
                 "term": "Rudder",
-                "definition": "A primary flight control surface hinged to the vertical fin commanded by pedals to control yaw."
+                "definition": "A primary flight control surface hinged to the vertical fin commanded by pedals to control yaw.",
+                "def": "A primary flight control surface hinged to the vertical fin commanded by pedals to control yaw."
               },
               {
                 "num": "08",
                 "term": "Leading-Edge Slat",
-                "definition": "An aerodynamic high-lift device extending forward from the wing leading edge to delay boundary-layer stall."
+                "definition": "An aerodynamic high-lift device extending forward from the wing leading edge to delay boundary-layer stall.",
+                "def": "An aerodynamic high-lift device extending forward from the wing leading edge to delay boundary-layer stall."
               },
               {
                 "num": "09",
                 "term": "Trailing-Edge Flap",
-                "definition": "A high-lift device extending rearward and downward from the wing to increase camber, surface area, and drag."
+                "definition": "A high-lift device extending rearward and downward from the wing to increase camber, surface area, and drag.",
+                "def": "A high-lift device extending rearward and downward from the wing to increase camber, surface area, and drag."
               },
               {
                 "num": "10",
                 "term": "Spoiler",
-                "definition": "An upper-wing hinged plate that deploys upward to dump aerodynamic lift, assist roll, and act as a speed brake."
+                "definition": "An upper-wing hinged plate that deploys upward to dump aerodynamic lift, assist roll, and act as a speed brake.",
+                "def": "An upper-wing hinged plate that deploys upward to dump aerodynamic lift, assist roll, and act as a speed brake."
               },
               {
                 "num": "11",
                 "term": "Empennage",
-                "definition": "The complete aerodynamic tail assembly of an aircraft, consisting of vertical fin, rudder, stabilizer, and elevators."
+                "definition": "The complete aerodynamic tail assembly of an aircraft, consisting of vertical fin, rudder, stabilizer, and elevators.",
+                "def": "The complete aerodynamic tail assembly of an aircraft, consisting of vertical fin, rudder, stabilizer, and elevators."
               },
               {
                 "num": "12",
                 "term": "Horizontal Stabilizer",
-                "definition": "The fixed or trimmable horizontal tail surface providing longitudinal aerodynamic pitch stability."
+                "definition": "The fixed or trimmable horizontal tail surface providing longitudinal aerodynamic pitch stability.",
+                "def": "The fixed or trimmable horizontal tail surface providing longitudinal aerodynamic pitch stability."
               },
               {
                 "num": "13",
                 "term": "Vertical Fin",
-                "definition": "The vertical aerodynamic surface on the tail providing directional stability about the normal axis."
+                "definition": "The vertical aerodynamic surface on the tail providing directional stability about the normal axis.",
+                "def": "The vertical aerodynamic surface on the tail providing directional stability about the normal axis."
               },
               {
                 "num": "14",
                 "term": "APU (Auxiliary Power Unit)",
-                "definition": "A small gas turbine engine in the tail cone generating electrical power and bleed air independently of main engines."
+                "definition": "A small gas turbine engine in the tail cone generating electrical power and bleed air independently of main engines.",
+                "def": "A small gas turbine engine in the tail cone generating electrical power and bleed air independently of main engines."
               },
               {
                 "num": "15",
                 "term": "Nacelle",
-                "definition": "The aerodynamic pod or casing housing an engine, its accessories, and thrust reversers."
+                "definition": "The aerodynamic pod or casing housing an engine, its accessories, and thrust reversers.",
+                "def": "The aerodynamic pod or casing housing an engine, its accessories, and thrust reversers."
               },
               {
                 "num": "16",
                 "term": "Oleo Strut",
-                "definition": "A shock-absorbing landing gear cylinder utilizing compressed nitrogen gas and hydraulic oil."
+                "definition": "A shock-absorbing landing gear cylinder utilizing compressed nitrogen gas and hydraulic oil.",
+                "def": "A shock-absorbing landing gear cylinder utilizing compressed nitrogen gas and hydraulic oil."
               },
               {
                 "num": "17",
                 "term": "Static Discharge Wick",
-                "definition": "A flexible metal or carbon needle on trailing edges that bleeds static electrical charges into the atmosphere."
+                "definition": "A flexible metal or carbon needle on trailing edges that bleeds static electrical charges into the atmosphere.",
+                "def": "A flexible metal or carbon needle on trailing edges that bleeds static electrical charges into the atmosphere."
               },
               {
                 "num": "18",
                 "term": "Winglet",
-                "definition": "A vertical or angled wingtip extension designed to diminish induced drag by disrupting wingtip vortices."
+                "definition": "A vertical or angled wingtip extension designed to diminish induced drag by disrupting wingtip vortices.",
+                "def": "A vertical or angled wingtip extension designed to diminish induced drag by disrupting wingtip vortices."
+              }
+            ]
+          },
+          "overview": {
+            "title": "Aircraft Anatomy: Structure & Systems",
+            "subtitle": "Airframe Components, Control Surfaces & Powerplant Integration",
+            "badge": "Session 02 • Technical English",
+            "image": "images/aas_m2card2.jpg",
+            "intro": "In this technical English session, students master the essential structural anatomy and operating systems of modern commercial aircraft. Students learn to describe airframe sections, flight control surfaces, engine nacelles, and landing gear with spatial accuracy, identify mechanical discrepancies in technical reports, and practice communicative B2 terminology.",
+            "whyItMatters": "Clear, standardized anatomical terminology is vital across aircraft maintenance, flight testing, and international airworthiness certification. Precision in naming structural components and describing spatial relationships prevents communication errors in safety-critical operations.",
+            "keyTerms": [
+              {
+                "term": "Fuselage",
+                "ipa": "/ˈfjuː.zə.lɑːʒ/",
+                "definition": "The central main body structure of an aircraft holding passengers, flight crew, and cargo.",
+                "def": "The central main body structure of an aircraft holding passengers, flight crew, and cargo."
+              },
+              {
+                "term": "Empennage",
+                "ipa": "/ˌɒm.pəˈnɑːʒ/",
+                "definition": "The tail assembly of an aircraft, typically consisting of the vertical fin, rudder, horizontal stabilizer, and elevators.",
+                "def": "The tail assembly of an aircraft, typically consisting of the vertical fin, rudder, horizontal stabilizer, and elevators."
+              },
+              {
+                "term": "Wing Spar",
+                "ipa": "/wɪŋ spɑː/",
+                "definition": "The primary longitudinal structural beam running spanwise through the wing to support bending loads.",
+                "def": "The primary longitudinal structural beam running spanwise through the wing to support bending loads."
+              },
+              {
+                "term": "Rudder",
+                "ipa": "/ˈrʌd.ər/",
+                "definition": "The primary flight control surface hinged to the vertical stabilizer, controlling aircraft yaw.",
+                "def": "The primary flight control surface hinged to the vertical stabilizer, controlling aircraft yaw."
+              },
+              {
+                "term": "Elevator",
+                "ipa": "/ˈel.ɪ.veɪ.tər/",
+                "definition": "The horizontal flight control surface hinged to the stabilizer, controlling aircraft pitch.",
+                "def": "The horizontal flight control surface hinged to the stabilizer, controlling aircraft pitch."
+              },
+              {
+                "term": "Aileron",
+                "ipa": "/ˈeɪ.lə.rɒn/",
+                "definition": "A hinged control surface on the trailing edge of each wing tip, controlling aircraft roll.",
+                "def": "A hinged control surface on the trailing edge of each wing tip, controlling aircraft roll."
+              },
+              {
+                "term": "Slats & Flaps",
+                "ipa": "/slæts ænd flæps/",
+                "definition": "High-lift aerodynamic devices deployed on leading and trailing wing edges to increase lift during takeoff and landing.",
+                "def": "High-lift aerodynamic devices deployed on leading and trailing wing edges to increase lift during takeoff and landing."
+              },
+              {
+                "term": "Cowling",
+                "ipa": "/ˈkaʊ.lɪŋ/",
+                "definition": "The removable metal or composite fairing covering an aircraft engine for streamlining and cooling.",
+                "def": "The removable metal or composite fairing covering an aircraft engine for streamlining and cooling."
+              },
+              {
+                "term": "Landing Gear Assembly",
+                "ipa": "/ˈlæn.dɪŋ ɡɪər əˌsem.bli/",
+                "definition": "The undercarriage structural system of struts, shock absorbers, wheels, and brakes supporting the aircraft on the ground.",
+                "def": "The undercarriage structural system of struts, shock absorbers, wheels, and brakes supporting the aircraft on the ground."
+              },
+              {
+                "term": "Radome",
+                "ipa": "/ˈreɪ.dəʊm/",
+                "definition": "The weatherproof forward nose cone enclosing the weather radar antenna while remaining transparent to radio waves.",
+                "def": "The weatherproof forward nose cone enclosing the weather radar antenna while remaining transparent to radio waves."
+              }
+            ],
+            "speakingTask": {
+              "title": "3-Group Technical Discussion & Briefing: Airframe System Design",
+              "instructions": "Divide into 3 groups. Each group investigates one airframe design challenge below, identifies potential aerodynamic and maintenance impacts, and delivers a 2-minute technical briefing to the class.",
+              "requirements": [
+                "Use at least 4 of today's 10 technical terms.",
+                "Provide at least two functional or safety explanations.",
+                "Ensure all group members speak during the 2-minute briefing."
+              ],
+              "statements": {
+                "group1": "Explain how structural composite materials in the fuselage and wings reduce fuel burn while changing maintenance inspection methods.",
+                "group2": "Describe the aerodynamic trade-offs between high-lift devices (slats/flaps) during low-speed approach and clean cruise configuration.",
+                "group3": "Analyze how fly-by-wire flight control surfaces (ailerons, spoilers, elevators) provide envelope protection during extreme turbulence."
+              },
+              "usefulPhrases": [
+                "Our group focused on the structural role of...",
+                "From an aerodynamic perspective, this component allows...",
+                "In terms of safety and maintenance, the primary advantage is...",
+                "To conclude our briefing, this system functions by..."
+              ]
+            }
+          },
+          "materials": {
+            "title": "Additional Study Materials & Technical References",
+            "summary": "Curated video labs, airframe structural diagrams, and technical grammar clinics for aircraft systems and component maintenance.",
+            "videos": [
+              {
+                "title": "Commercial Aircraft Anatomy: Structural Layout & Load Distribution",
+                "channel": "AeroTechnical Training",
+                "videoId": "7w_uPsk3180",
+                "watchUrl": "https://www.youtube.com/watch?v=7w_uPsk3180",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/7w_uPsk3180",
+                "duration": "08:15",
+                "caption": "Walkthrough of airframe frames, stringers, skin panels, and wing box carry-through structures."
+              },
+              {
+                "title": "Flight Control Systems: Primary vs Secondary Surfaces",
+                "channel": "Aviation Maintenance Hub",
+                "videoId": "8qNk9mPsk7w",
+                "watchUrl": "https://www.youtube.com/watch?v=8qNk9mPsk7w",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/8qNk9mPsk7w",
+                "duration": "07:40",
+                "caption": "Hydraulic and fly-by-wire actuation of ailerons, elevators, rudders, spoilers, and high-lift flaps."
+              },
+              {
+                "title": "Modern Aircraft Undercarriage & Retraction Systems",
+                "channel": "Aeronautical Engineering Review",
+                "videoId": "5zKp1mUsk8A",
+                "watchUrl": "https://www.youtube.com/watch?v=5zKp1mUsk8A",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/5zKp1mUsk8A",
+                "duration": "06:50",
+                "caption": "Detailed inspection of oleo-pneumatic struts, shimmy dampers, multi-disc carbon brakes, and anti-skid valves."
+              }
+            ],
+            "articles": [
+              {
+                "topic": "Structural Materials",
+                "sourceTag": "EASA Safety Review",
+                "readTime": "Estimated read: 4 mins",
+                "heading": "Composite Airframes in Commercial Service: Inspection Criteria and Damage Tolerance",
+                "snippet": "A technical overview of carbon-fiber reinforced polymer (CFRP) usage in fuselage barrels and wing structures, reviewing non-destructive testing (NDT) techniques for impact delamination.",
+                "url": "https://www.easa.europa.eu"
+              },
+              {
+                "topic": "Systems Engineering",
+                "sourceTag": "Flight International Archive",
+                "readTime": "Estimated read: 5 mins",
+                "heading": "Next-Generation Fly-By-Wire Architecture: Distributed Electro-Hydrostatic Actuation",
+                "snippet": "How replacing central hydraulic loops with localized electro-hydrostatic actuators (EHAs) optimizes flight control reliability and reduces empty airframe weight.",
+                "url": "https://www.flightglobal.com"
+              }
+            ],
+            "grammar": {
+              "title": "Technical Grammar: Spatial Prepositions & Functional Passives",
+              "points": [
+                {
+                  "rule": "Precise Spatial Prepositions in Engineering Descriptions",
+                  "structure": "Located [forward of / aft of / outboard of / adjacent to / flush with]",
+                  "example": "The weather radar transceiver is housed inside the radome forward of the pressure bulkhead.",
+                  "note": "Crucial for precise component positioning in maintenance manuals."
+                },
+                {
+                  "rule": "Functional Passive Voice for System Descriptions",
+                  "structure": "Subject + is / are + past participle (+ by / through)",
+                  "example": "The high-lift trailing edge flaps are actuated hydraulically through dual mechanical ballscrews.",
+                  "note": "Focuses on the component and its action rather than the operator."
+                }
+              ]
+            },
+            "resources": [
+              {
+                "title": "FAA Pilot's Handbook of Aeronautical Knowledge (Ch. 3 Aircraft Structure)",
+                "desc": "Standard FAA text on airframe components and systems.",
+                "link": "https://www.faa.gov"
+              },
+              {
+                "title": "EASA Part-66 Module 11 Study Guide",
+                "desc": "Aeroplanes Aerodynamics, Structures and Systems reference.",
+                "link": "https://www.easa.europa.eu"
               }
             ]
           }
@@ -35279,27 +36259,32 @@
               {
                 "num": 1,
                 "title": "Explain the Four Forces of Flight in Equilibrium",
-                "description": "Describe how lift, weight, thrust, and drag interact during straight-and-level flight, climbs, descents, and turns without technical jargon."
+                "description": "Describe how lift, weight, thrust, and drag interact during straight-and-level flight, climbs, descents, and turns without technical jargon.",
+                "desc": "Describe how lift, weight, thrust, and drag interact during straight-and-level flight, climbs, descents, and turns without technical jargon."
               },
               {
                 "num": 2,
                 "title": "Identify the Three Aircraft Axes and Primary Flight Controls",
-                "description": "Accurately name and describe the lateral (pitch / elevators), longitudinal (roll / ailerons), and vertical (yaw / rudder) axes."
+                "description": "Accurately name and describe the lateral (pitch / elevators), longitudinal (roll / ailerons), and vertical (yaw / rudder) axes.",
+                "desc": "Accurately name and describe the lateral (pitch / elevators), longitudinal (roll / ailerons), and vertical (yaw / rudder) axes."
               },
               {
                 "num": 3,
                 "title": "Deploy Cause & Effect Conditionals in Flight Physics",
-                "description": "Formulate zero and first conditionals with if, when, as, and unless to explain aerodynamic consequences and speed-drag dynamics."
+                "description": "Formulate zero and first conditionals with if, when, as, and unless to explain aerodynamic consequences and speed-drag dynamics.",
+                "desc": "Formulate zero and first conditionals with if, when, as, and unless to explain aerodynamic consequences and speed-drag dynamics."
               },
               {
                 "num": 4,
                 "title": "Engage in Control Surface & Flight Simulation Role-Plays",
-                "description": "Role-play flight control inputs and aerodynamic feedback between pilots and flight test engineers in interactive partner games."
+                "description": "Role-play flight control inputs and aerodynamic feedback between pilots and flight test engineers in interactive partner games.",
+                "desc": "Role-play flight control inputs and aerodynamic feedback between pilots and flight test engineers in interactive partner games."
               },
               {
                 "num": 5,
                 "title": "Analyze Stall Dynamics and Operational Recovery Briefings",
-                "description": "Discuss angle of attack, boundary layer separation, stall warning systems, and recovery actions in clear, professional English."
+                "description": "Discuss angle of attack, boundary layer separation, stall warning systems, and recovery actions in clear, professional English.",
+                "desc": "Discuss angle of attack, boundary layer separation, stall warning systems, and recovery actions in clear, professional English."
               }
             ]
           },
@@ -35310,32 +36295,38 @@
               {
                 "title": "Part 1: Aviation Headlines & Diagnostic Quick-Check",
                 "description": "Opening aerospace headlines and diagnostic spot-check using communicative spoken sentence stems to contrast pitch attitude and angle of attack.",
-                "part": "Part 1"
+                "part": "Part 1",
+                "desc": "Opening aerospace headlines and diagnostic spot-check using communicative spoken sentence stems to contrast pitch attitude and angle of attack."
               },
               {
                 "title": "Part 2: Video Lab: The Four Forces of Flight in Action",
                 "description": "Video-guided listening analysis exploring aerodynamic equilibrium, vector opposition, and pressure differentials with structured acoustic checkpoints.",
-                "part": "Part 2"
+                "part": "Part 2",
+                "desc": "Video-guided listening analysis exploring aerodynamic equilibrium, vector opposition, and pressure differentials with structured acoustic checkpoints."
               },
               {
                 "title": "Part 3: Airfoil Geometry & Technical Gap-Fill Clinic",
                 "description": "Interactive gap-fill texts with revealable answers covering Bernoulli's principle, camber, chord line, boundary layer airflow, and drag dynamics.",
-                "part": "Part 3"
+                "part": "Part 3",
+                "desc": "Interactive gap-fill texts with revealable answers covering Bernoulli's principle, camber, chord line, boundary layer airflow, and drag dynamics."
               },
               {
                 "title": "Part 4: The Blackboard Vector Lab (Group of 3 Challenge)",
                 "description": "Collaborative board activity: 3-student teams draw an aircraft, label force vectors and 3 axes, and deliver a 60-second spoken flight control pitch with peer rubrics.",
-                "part": "Part 4"
+                "part": "Part 4",
+                "desc": "Collaborative board activity: 3-student teams draw an aircraft, label force vectors and 3 axes, and deliver a 60-second spoken flight control pitch with peer rubrics."
               },
               {
                 "title": "Part 5: The Lift Masterclass & Stall Recovery Simulation",
                 "description": "Spoken presentation masterclass explaining lift generation in plain B2 English followed by crew communication during an aerodynamic stall warning.",
-                "part": "Part 5"
+                "part": "Part 5",
+                "desc": "Spoken presentation masterclass explaining lift generation in plain B2 English followed by crew communication during an aerodynamic stall warning."
               },
               {
                 "title": "Part 6: Aerodynamics Taboo & 10-Question Mastery Challenge",
                 "description": "End-of-class communicative game (explaining terms without taboo words) and interactive 10-question multiple-choice mastery challenge with grammar rationale.",
-                "part": "Part 6"
+                "part": "Part 6",
+                "desc": "End-of-class communicative game (explaining terms without taboo words) and interactive 10-question multiple-choice mastery challenge with grammar rationale."
               }
             ]
           },
@@ -35589,92 +36580,110 @@
               {
                 "num": "01",
                 "term": "Lift",
-                "definition": "The aerodynamic upward force generated by the wings perpendicular to the relative airflow, overcoming weight."
+                "definition": "The aerodynamic upward force generated by the wings perpendicular to the relative airflow, overcoming weight.",
+                "def": "The aerodynamic upward force generated by the wings perpendicular to the relative airflow, overcoming weight."
               },
               {
                 "num": "02",
                 "term": "Thrust",
-                "definition": "The forward force produced by the engines that overcomes aerodynamic drag."
+                "definition": "The forward force produced by the engines that overcomes aerodynamic drag.",
+                "def": "The forward force produced by the engines that overcomes aerodynamic drag."
               },
               {
                 "num": "03",
                 "term": "Weight",
-                "definition": "The downward gravitational force pulling the aircraft toward the Earth, directly opposed by lift."
+                "definition": "The downward gravitational force pulling the aircraft toward the Earth, directly opposed by lift.",
+                "def": "The downward gravitational force pulling the aircraft toward the Earth, directly opposed by lift."
               },
               {
                 "num": "04",
                 "term": "Drag",
-                "definition": "The retarding aerodynamic resistance force acting parallel and opposite to the direction of flight."
+                "definition": "The retarding aerodynamic resistance force acting parallel and opposite to the direction of flight.",
+                "def": "The retarding aerodynamic resistance force acting parallel and opposite to the direction of flight."
               },
               {
                 "num": "05",
                 "term": "Angle of Attack (AoA)",
-                "definition": "The acute angle formed between the chord line of the airfoil and the oncoming relative wind."
+                "definition": "The acute angle formed between the chord line of the airfoil and the oncoming relative wind.",
+                "def": "The acute angle formed between the chord line of the airfoil and the oncoming relative wind."
               },
               {
                 "num": "06",
                 "term": "Airfoil",
-                "definition": "A streamlined surface, such as an aircraft wing or rotor blade, designed to create lift as air flows over it."
+                "definition": "A streamlined surface, such as an aircraft wing or rotor blade, designed to create lift as air flows over it.",
+                "def": "A streamlined surface, such as an aircraft wing or rotor blade, designed to create lift as air flows over it."
               },
               {
                 "num": "07",
                 "term": "Camber",
-                "definition": "The convex asymmetry or curvature between the upper and lower surfaces of an airfoil."
+                "definition": "The convex asymmetry or curvature between the upper and lower surfaces of an airfoil.",
+                "def": "The convex asymmetry or curvature between the upper and lower surfaces of an airfoil."
               },
               {
                 "num": "08",
                 "term": "Boundary Layer",
-                "definition": "The thin layer of air immediately adjacent to the aircraft surface where viscous forces slow the airflow."
+                "definition": "The thin layer of air immediately adjacent to the aircraft surface where viscous forces slow the airflow.",
+                "def": "The thin layer of air immediately adjacent to the aircraft surface where viscous forces slow the airflow."
               },
               {
                 "num": "09",
                 "term": "Stall",
-                "definition": "A sudden reduction in lift caused by exceeding the critical angle of attack, resulting in airflow separation from the upper wing."
+                "definition": "A sudden reduction in lift caused by exceeding the critical angle of attack, resulting in airflow separation from the upper wing.",
+                "def": "A sudden reduction in lift caused by exceeding the critical angle of attack, resulting in airflow separation from the upper wing."
               },
               {
                 "num": "10",
                 "term": "Lateral Axis",
-                "definition": "The imaginary horizontal line running wingtip-to-wingtip around which the aircraft pitches up or down."
+                "definition": "The imaginary horizontal line running wingtip-to-wingtip around which the aircraft pitches up or down.",
+                "def": "The imaginary horizontal line running wingtip-to-wingtip around which the aircraft pitches up or down."
               },
               {
                 "num": "11",
                 "term": "Longitudinal Axis",
-                "definition": "The imaginary line running from nose to tail around which the aircraft rolls or banks."
+                "definition": "The imaginary line running from nose to tail around which the aircraft rolls or banks.",
+                "def": "The imaginary line running from nose to tail around which the aircraft rolls or banks."
               },
               {
                 "num": "12",
                 "term": "Vertical Axis",
-                "definition": "The imaginary vertical line running top-to-bottom through the center of gravity around which the aircraft yaws."
+                "definition": "The imaginary vertical line running top-to-bottom through the center of gravity around which the aircraft yaws.",
+                "def": "The imaginary vertical line running top-to-bottom through the center of gravity around which the aircraft yaws."
               },
               {
                 "num": "13",
                 "term": "Pitch",
-                "definition": "The rotational movement around the lateral axis causing the nose of the aircraft to move up or down."
+                "definition": "The rotational movement around the lateral axis causing the nose of the aircraft to move up or down.",
+                "def": "The rotational movement around the lateral axis causing the nose of the aircraft to move up or down."
               },
               {
                 "num": "14",
                 "term": "Roll",
-                "definition": "The rotational movement around the longitudinal axis causing the aircraft wings to bank left or right."
+                "definition": "The rotational movement around the longitudinal axis causing the aircraft wings to bank left or right.",
+                "def": "The rotational movement around the longitudinal axis causing the aircraft wings to bank left or right."
               },
               {
                 "num": "15",
                 "term": "Yaw",
-                "definition": "The rotational movement around the vertical axis causing the aircraft nose to turn left or right."
+                "definition": "The rotational movement around the vertical axis causing the aircraft nose to turn left or right.",
+                "def": "The rotational movement around the vertical axis causing the aircraft nose to turn left or right."
               },
               {
                 "num": "16",
                 "term": "Elevator",
-                "definition": "The movable horizontal flight control surface on the tail empennage used to control pitch."
+                "definition": "The movable horizontal flight control surface on the tail empennage used to control pitch.",
+                "def": "The movable horizontal flight control surface on the tail empennage used to control pitch."
               },
               {
                 "num": "17",
                 "term": "Aileron",
-                "definition": "A hinged control surface on the trailing edge of each wing used to control roll and banking."
+                "definition": "A hinged control surface on the trailing edge of each wing used to control roll and banking.",
+                "def": "A hinged control surface on the trailing edge of each wing used to control roll and banking."
               },
               {
                 "num": "18",
                 "term": "Rudder",
-                "definition": "The primary vertical flight control surface hinged to the fin used to control yaw."
+                "definition": "The primary vertical flight control surface hinged to the fin used to control yaw.",
+                "def": "The primary vertical flight control surface hinged to the fin used to control yaw."
               }
             ]
           },
@@ -36039,27 +37048,32 @@
               {
                 "num": 1,
                 "title": "Identify External & Internal Aircraft Components",
-                "description": "Accurately name key airframe components including slats, flaps, ailerons, empennage, radome, landing gear, flight deck instruments, and cabin bulkheads."
+                "description": "Accurately name key airframe components including slats, flaps, ailerons, empennage, radome, landing gear, flight deck instruments, and cabin bulkheads.",
+                "desc": "Accurately name key airframe components including slats, flaps, ailerons, empennage, radome, landing gear, flight deck instruments, and cabin bulkheads."
               },
               {
                 "num": 2,
                 "title": "Deploy Spatial Prepositions & Functional Descriptors",
-                "description": "Describe the physical position and operational purpose of parts using prepositions (along, behind, flush-mounted, adjacent to) and purpose clauses."
+                "description": "Describe the physical position and operational purpose of parts using prepositions (along, behind, flush-mounted, adjacent to) and purpose clauses.",
+                "desc": "Describe the physical position and operational purpose of parts using prepositions (along, behind, flush-mounted, adjacent to) and purpose clauses."
               },
               {
                 "num": 3,
                 "title": "Collaborative Blackboard Drawing & In-Flight Labeling",
-                "description": "Draw and label an aircraft in flight on the board in groups of three, briefing functional surfaces and sensor locations."
+                "description": "Draw and label an aircraft in flight on the board in groups of three, briefing functional surfaces and sensor locations.",
+                "desc": "Draw and label an aircraft in flight on the board in groups of three, briefing functional surfaces and sensor locations."
               },
               {
                 "num": 4,
                 "title": "Detect & Correct Technical Fallacies (Error Hunter)",
-                "description": "Spot aerodynamic and structural inaccuracies in technical texts, explaining orally why statements are incorrect and supplying correct facts."
+                "description": "Spot aerodynamic and structural inaccuracies in technical texts, explaining orally why statements are incorrect and supplying correct facts.",
+                "desc": "Spot aerodynamic and structural inaccuracies in technical texts, explaining orally why statements are incorrect and supplying correct facts."
               },
               {
                 "num": 5,
                 "title": "Master High-Frequency Structural Pronunciation & Terminology",
-                "description": "Correctly pronounce and stress specialized aeronautical components during 12-term Taboo games and a 15-question mastery challenge."
+                "description": "Correctly pronounce and stress specialized aeronautical components during 12-term Taboo games and a 15-question mastery challenge.",
+                "desc": "Correctly pronounce and stress specialized aeronautical components during 12-term Taboo games and a 15-question mastery challenge."
               }
             ]
           },
@@ -36070,32 +37084,38 @@
               {
                 "title": "Part 1: Aviation News & Session 1 Aerodynamics Spot-Check",
                 "description": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes with spoken sentence stems.",
-                "part": "Part 1"
+                "part": "Part 1",
+                "desc": "Weekly aviation news warm-up and rapid spot-check on the 4 forces, angle of attack, and the 3 aircraft axes with spoken sentence stems."
               },
               {
                 "title": "Part 2: Interactive Video Lab: Modern Aircraft Anatomy & Systems",
                 "description": "Noticeboard-style half-width video analysis examining commercial aircraft anatomy, flight controls, and hydraulic redundancy with debrief questions.",
-                "part": "Part 2"
+                "part": "Part 2",
+                "desc": "Noticeboard-style half-width video analysis examining commercial aircraft anatomy, flight controls, and hydraulic redundancy with debrief questions."
               },
               {
                 "title": "Part 3: In-Flight Aircraft Labeling & 3-Person Blackboard Challenge",
                 "description": "Collaborative visual diagram race and 3-person board challenge labeling external airframe components on a large jet in flight.",
-                "part": "Part 3"
+                "part": "Part 3",
+                "desc": "Collaborative visual diagram race and 3-person board challenge labeling external airframe components on a large jet in flight."
               },
               {
                 "title": "Part 4: Technical Gap-Fill Clinic: Flight Controls & Pre-Flight Checks",
                 "description": "Two contextualized technical readings examining primary vs secondary surfaces and pre-flight inspection procedures.",
-                "part": "Part 4"
+                "part": "Part 4",
+                "desc": "Two contextualized technical readings examining primary vs secondary surfaces and pre-flight inspection procedures."
               },
               {
                 "title": "Part 5: Technical Error Hunter: Spotting Aircraft Anatomy Mistakes",
                 "description": "Partner reading and error-finding workshop detecting factual fallacies in airframe descriptions with spoken corrections.",
-                "part": "Part 5"
+                "part": "Part 5",
+                "desc": "Partner reading and error-finding workshop detecting factual fallacies in airframe descriptions with spoken corrections."
               },
               {
                 "title": "Part 6: Aircraft Anatomy Taboo & 15-Question Technical Mastery Challenge",
                 "description": "12-card Taboo word game and multi-format 15-question plenary challenge consolidating structural terminology.",
-                "part": "Part 6"
+                "part": "Part 6",
+                "desc": "12-card Taboo word game and multi-format 15-question plenary challenge consolidating structural terminology."
               }
             ]
           },
@@ -36762,92 +37782,280 @@
               {
                 "num": "01",
                 "term": "Fuselage",
-                "definition": "The central main body structure of an aircraft holding passengers, flight crew, and cargo."
+                "definition": "The central main body structure of an aircraft holding passengers, flight crew, and cargo.",
+                "def": "The central main body structure of an aircraft holding passengers, flight crew, and cargo."
               },
               {
                 "num": "02",
                 "term": "Radome",
-                "definition": "The fiberglass dielectric nose cone housing and protecting the weather radar antenna."
+                "definition": "The fiberglass dielectric nose cone housing and protecting the weather radar antenna.",
+                "def": "The fiberglass dielectric nose cone housing and protecting the weather radar antenna."
               },
               {
                 "num": "03",
                 "term": "Pitot Probe",
-                "definition": "An electrically heated forward-facing sensor measuring dynamic ram air pressure for indicated airspeed."
+                "definition": "An electrically heated forward-facing sensor measuring dynamic ram air pressure for indicated airspeed.",
+                "def": "An electrically heated forward-facing sensor measuring dynamic ram air pressure for indicated airspeed."
               },
               {
                 "num": "04",
                 "term": "Static Port",
-                "definition": "A flush-mounted exterior fuselage sensor measuring ambient atmospheric barometric pressure for altitude."
+                "definition": "A flush-mounted exterior fuselage sensor measuring ambient atmospheric barometric pressure for altitude.",
+                "def": "A flush-mounted exterior fuselage sensor measuring ambient atmospheric barometric pressure for altitude."
               },
               {
                 "num": "05",
                 "term": "Aileron",
-                "definition": "A primary flight control surface hinged to the outer trailing edge of the wing that deflects differentially to control roll."
+                "definition": "A primary flight control surface hinged to the outer trailing edge of the wing that deflects differentially to control roll.",
+                "def": "A primary flight control surface hinged to the outer trailing edge of the wing that deflects differentially to control roll."
               },
               {
                 "num": "06",
                 "term": "Elevator",
-                "definition": "A primary flight control surface hinged to the horizontal stabilizer that commands pitch attitude."
+                "definition": "A primary flight control surface hinged to the horizontal stabilizer that commands pitch attitude.",
+                "def": "A primary flight control surface hinged to the horizontal stabilizer that commands pitch attitude."
               },
               {
                 "num": "07",
                 "term": "Rudder",
-                "definition": "A primary flight control surface hinged to the vertical fin commanded by pedals to control yaw."
+                "definition": "A primary flight control surface hinged to the vertical fin commanded by pedals to control yaw.",
+                "def": "A primary flight control surface hinged to the vertical fin commanded by pedals to control yaw."
               },
               {
                 "num": "08",
                 "term": "Leading-Edge Slat",
-                "definition": "An aerodynamic high-lift device extending forward from the wing leading edge to delay boundary-layer stall."
+                "definition": "An aerodynamic high-lift device extending forward from the wing leading edge to delay boundary-layer stall.",
+                "def": "An aerodynamic high-lift device extending forward from the wing leading edge to delay boundary-layer stall."
               },
               {
                 "num": "09",
                 "term": "Trailing-Edge Flap",
-                "definition": "A high-lift device extending rearward and downward from the wing to increase camber, surface area, and drag."
+                "definition": "A high-lift device extending rearward and downward from the wing to increase camber, surface area, and drag.",
+                "def": "A high-lift device extending rearward and downward from the wing to increase camber, surface area, and drag."
               },
               {
                 "num": "10",
                 "term": "Spoiler",
-                "definition": "An upper-wing hinged plate that deploys upward to dump aerodynamic lift, assist roll, and act as a speed brake."
+                "definition": "An upper-wing hinged plate that deploys upward to dump aerodynamic lift, assist roll, and act as a speed brake.",
+                "def": "An upper-wing hinged plate that deploys upward to dump aerodynamic lift, assist roll, and act as a speed brake."
               },
               {
                 "num": "11",
                 "term": "Empennage",
-                "definition": "The complete aerodynamic tail assembly of an aircraft, consisting of vertical fin, rudder, stabilizer, and elevators."
+                "definition": "The complete aerodynamic tail assembly of an aircraft, consisting of vertical fin, rudder, stabilizer, and elevators.",
+                "def": "The complete aerodynamic tail assembly of an aircraft, consisting of vertical fin, rudder, stabilizer, and elevators."
               },
               {
                 "num": "12",
                 "term": "Horizontal Stabilizer",
-                "definition": "The fixed or trimmable horizontal tail surface providing longitudinal aerodynamic pitch stability."
+                "definition": "The fixed or trimmable horizontal tail surface providing longitudinal aerodynamic pitch stability.",
+                "def": "The fixed or trimmable horizontal tail surface providing longitudinal aerodynamic pitch stability."
               },
               {
                 "num": "13",
                 "term": "Vertical Fin",
-                "definition": "The vertical aerodynamic surface on the tail providing directional stability about the normal axis."
+                "definition": "The vertical aerodynamic surface on the tail providing directional stability about the normal axis.",
+                "def": "The vertical aerodynamic surface on the tail providing directional stability about the normal axis."
               },
               {
                 "num": "14",
                 "term": "APU (Auxiliary Power Unit)",
-                "definition": "A small gas turbine engine in the tail cone generating electrical power and bleed air independently of main engines."
+                "definition": "A small gas turbine engine in the tail cone generating electrical power and bleed air independently of main engines.",
+                "def": "A small gas turbine engine in the tail cone generating electrical power and bleed air independently of main engines."
               },
               {
                 "num": "15",
                 "term": "Nacelle",
-                "definition": "The aerodynamic pod or casing housing an engine, its accessories, and thrust reversers."
+                "definition": "The aerodynamic pod or casing housing an engine, its accessories, and thrust reversers.",
+                "def": "The aerodynamic pod or casing housing an engine, its accessories, and thrust reversers."
               },
               {
                 "num": "16",
                 "term": "Oleo Strut",
-                "definition": "A shock-absorbing landing gear cylinder utilizing compressed nitrogen gas and hydraulic oil."
+                "definition": "A shock-absorbing landing gear cylinder utilizing compressed nitrogen gas and hydraulic oil.",
+                "def": "A shock-absorbing landing gear cylinder utilizing compressed nitrogen gas and hydraulic oil."
               },
               {
                 "num": "17",
                 "term": "Static Discharge Wick",
-                "definition": "A flexible metal or carbon needle on trailing edges that bleeds static electrical charges into the atmosphere."
+                "definition": "A flexible metal or carbon needle on trailing edges that bleeds static electrical charges into the atmosphere.",
+                "def": "A flexible metal or carbon needle on trailing edges that bleeds static electrical charges into the atmosphere."
               },
               {
                 "num": "18",
                 "term": "Winglet",
-                "definition": "A vertical or angled wingtip extension designed to diminish induced drag by disrupting wingtip vortices."
+                "definition": "A vertical or angled wingtip extension designed to diminish induced drag by disrupting wingtip vortices.",
+                "def": "A vertical or angled wingtip extension designed to diminish induced drag by disrupting wingtip vortices."
+              }
+            ]
+          },
+          "overview": {
+            "title": "Aircraft Anatomy: Structure & Systems",
+            "subtitle": "Airframe Components, Control Surfaces & Powerplant Integration",
+            "badge": "Session 02 • Technical English",
+            "image": "images/aas_m2card2.jpg",
+            "intro": "In this technical English session, students master the essential structural anatomy and operating systems of modern commercial aircraft. Students learn to describe airframe sections, flight control surfaces, engine nacelles, and landing gear with spatial accuracy, identify mechanical discrepancies in technical reports, and practice communicative B2 terminology.",
+            "whyItMatters": "Clear, standardized anatomical terminology is vital across aircraft maintenance, flight testing, and international airworthiness certification. Precision in naming structural components and describing spatial relationships prevents communication errors in safety-critical operations.",
+            "keyTerms": [
+              {
+                "term": "Fuselage",
+                "ipa": "/ˈfjuː.zə.lɑːʒ/",
+                "definition": "The central main body structure of an aircraft holding passengers, flight crew, and cargo.",
+                "def": "The central main body structure of an aircraft holding passengers, flight crew, and cargo."
+              },
+              {
+                "term": "Empennage",
+                "ipa": "/ˌɒm.pəˈnɑːʒ/",
+                "definition": "The tail assembly of an aircraft, typically consisting of the vertical fin, rudder, horizontal stabilizer, and elevators.",
+                "def": "The tail assembly of an aircraft, typically consisting of the vertical fin, rudder, horizontal stabilizer, and elevators."
+              },
+              {
+                "term": "Wing Spar",
+                "ipa": "/wɪŋ spɑː/",
+                "definition": "The primary longitudinal structural beam running spanwise through the wing to support bending loads.",
+                "def": "The primary longitudinal structural beam running spanwise through the wing to support bending loads."
+              },
+              {
+                "term": "Rudder",
+                "ipa": "/ˈrʌd.ər/",
+                "definition": "The primary flight control surface hinged to the vertical stabilizer, controlling aircraft yaw.",
+                "def": "The primary flight control surface hinged to the vertical stabilizer, controlling aircraft yaw."
+              },
+              {
+                "term": "Elevator",
+                "ipa": "/ˈel.ɪ.veɪ.tər/",
+                "definition": "The horizontal flight control surface hinged to the stabilizer, controlling aircraft pitch.",
+                "def": "The horizontal flight control surface hinged to the stabilizer, controlling aircraft pitch."
+              },
+              {
+                "term": "Aileron",
+                "ipa": "/ˈeɪ.lə.rɒn/",
+                "definition": "A hinged control surface on the trailing edge of each wing tip, controlling aircraft roll.",
+                "def": "A hinged control surface on the trailing edge of each wing tip, controlling aircraft roll."
+              },
+              {
+                "term": "Slats & Flaps",
+                "ipa": "/slæts ænd flæps/",
+                "definition": "High-lift aerodynamic devices deployed on leading and trailing wing edges to increase lift during takeoff and landing.",
+                "def": "High-lift aerodynamic devices deployed on leading and trailing wing edges to increase lift during takeoff and landing."
+              },
+              {
+                "term": "Cowling",
+                "ipa": "/ˈkaʊ.lɪŋ/",
+                "definition": "The removable metal or composite fairing covering an aircraft engine for streamlining and cooling.",
+                "def": "The removable metal or composite fairing covering an aircraft engine for streamlining and cooling."
+              },
+              {
+                "term": "Landing Gear Assembly",
+                "ipa": "/ˈlæn.dɪŋ ɡɪər əˌsem.bli/",
+                "definition": "The undercarriage structural system of struts, shock absorbers, wheels, and brakes supporting the aircraft on the ground.",
+                "def": "The undercarriage structural system of struts, shock absorbers, wheels, and brakes supporting the aircraft on the ground."
+              },
+              {
+                "term": "Radome",
+                "ipa": "/ˈreɪ.dəʊm/",
+                "definition": "The weatherproof forward nose cone enclosing the weather radar antenna while remaining transparent to radio waves.",
+                "def": "The weatherproof forward nose cone enclosing the weather radar antenna while remaining transparent to radio waves."
+              }
+            ],
+            "speakingTask": {
+              "title": "3-Group Technical Discussion & Briefing: Airframe System Design",
+              "instructions": "Divide into 3 groups. Each group investigates one airframe design challenge below, identifies potential aerodynamic and maintenance impacts, and delivers a 2-minute technical briefing to the class.",
+              "requirements": [
+                "Use at least 4 of today's 10 technical terms.",
+                "Provide at least two functional or safety explanations.",
+                "Ensure all group members speak during the 2-minute briefing."
+              ],
+              "statements": {
+                "group1": "Explain how structural composite materials in the fuselage and wings reduce fuel burn while changing maintenance inspection methods.",
+                "group2": "Describe the aerodynamic trade-offs between high-lift devices (slats/flaps) during low-speed approach and clean cruise configuration.",
+                "group3": "Analyze how fly-by-wire flight control surfaces (ailerons, spoilers, elevators) provide envelope protection during extreme turbulence."
+              },
+              "usefulPhrases": [
+                "Our group focused on the structural role of...",
+                "From an aerodynamic perspective, this component allows...",
+                "In terms of safety and maintenance, the primary advantage is...",
+                "To conclude our briefing, this system functions by..."
+              ]
+            }
+          },
+          "materials": {
+            "title": "Additional Study Materials & Technical References",
+            "summary": "Curated video labs, airframe structural diagrams, and technical grammar clinics for aircraft systems and component maintenance.",
+            "videos": [
+              {
+                "title": "Commercial Aircraft Anatomy: Structural Layout & Load Distribution",
+                "channel": "AeroTechnical Training",
+                "videoId": "7w_uPsk3180",
+                "watchUrl": "https://www.youtube.com/watch?v=7w_uPsk3180",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/7w_uPsk3180",
+                "duration": "08:15",
+                "caption": "Walkthrough of airframe frames, stringers, skin panels, and wing box carry-through structures."
+              },
+              {
+                "title": "Flight Control Systems: Primary vs Secondary Surfaces",
+                "channel": "Aviation Maintenance Hub",
+                "videoId": "8qNk9mPsk7w",
+                "watchUrl": "https://www.youtube.com/watch?v=8qNk9mPsk7w",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/8qNk9mPsk7w",
+                "duration": "07:40",
+                "caption": "Hydraulic and fly-by-wire actuation of ailerons, elevators, rudders, spoilers, and high-lift flaps."
+              },
+              {
+                "title": "Modern Aircraft Undercarriage & Retraction Systems",
+                "channel": "Aeronautical Engineering Review",
+                "videoId": "5zKp1mUsk8A",
+                "watchUrl": "https://www.youtube.com/watch?v=5zKp1mUsk8A",
+                "embedUrl": "https://www.youtube-nocookie.com/embed/5zKp1mUsk8A",
+                "duration": "06:50",
+                "caption": "Detailed inspection of oleo-pneumatic struts, shimmy dampers, multi-disc carbon brakes, and anti-skid valves."
+              }
+            ],
+            "articles": [
+              {
+                "topic": "Structural Materials",
+                "sourceTag": "EASA Safety Review",
+                "readTime": "Estimated read: 4 mins",
+                "heading": "Composite Airframes in Commercial Service: Inspection Criteria and Damage Tolerance",
+                "snippet": "A technical overview of carbon-fiber reinforced polymer (CFRP) usage in fuselage barrels and wing structures, reviewing non-destructive testing (NDT) techniques for impact delamination.",
+                "url": "https://www.easa.europa.eu"
+              },
+              {
+                "topic": "Systems Engineering",
+                "sourceTag": "Flight International Archive",
+                "readTime": "Estimated read: 5 mins",
+                "heading": "Next-Generation Fly-By-Wire Architecture: Distributed Electro-Hydrostatic Actuation",
+                "snippet": "How replacing central hydraulic loops with localized electro-hydrostatic actuators (EHAs) optimizes flight control reliability and reduces empty airframe weight.",
+                "url": "https://www.flightglobal.com"
+              }
+            ],
+            "grammar": {
+              "title": "Technical Grammar: Spatial Prepositions & Functional Passives",
+              "points": [
+                {
+                  "rule": "Precise Spatial Prepositions in Engineering Descriptions",
+                  "structure": "Located [forward of / aft of / outboard of / adjacent to / flush with]",
+                  "example": "The weather radar transceiver is housed inside the radome forward of the pressure bulkhead.",
+                  "note": "Crucial for precise component positioning in maintenance manuals."
+                },
+                {
+                  "rule": "Functional Passive Voice for System Descriptions",
+                  "structure": "Subject + is / are + past participle (+ by / through)",
+                  "example": "The high-lift trailing edge flaps are actuated hydraulically through dual mechanical ballscrews.",
+                  "note": "Focuses on the component and its action rather than the operator."
+                }
+              ]
+            },
+            "resources": [
+              {
+                "title": "FAA Pilot's Handbook of Aeronautical Knowledge (Ch. 3 Aircraft Structure)",
+                "desc": "Standard FAA text on airframe components and systems.",
+                "link": "https://www.faa.gov"
+              },
+              {
+                "title": "EASA Part-66 Module 11 Study Guide",
+                "desc": "Aeroplanes Aerodynamics, Structures and Systems reference.",
+                "link": "https://www.easa.europa.eu"
               }
             ]
           }
@@ -41549,5 +42757,9 @@
   }
 };
 
-  return courseData;
-});
+if (typeof window !== 'undefined') {
+  window.COURSE_DATA = COURSE_DATA;
+}
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = COURSE_DATA;
+}
