@@ -549,6 +549,27 @@ if (!templateLinkFound) {
   findings.pdfStatus.details.push(`No HTML link referencing ${expectedPdfName} found in template source files.`);
 }
 
+// --- Check 11b: PDF Template Visual & Active Worksheet Integrity (Rule 1.T) ---
+const possibleHtmlTemplateNames = [
+  `${target.track.toLowerCase()}_m${target.moduleNum}_s${target.sessionNum}_worksheet_template.html`,
+  `at_m${target.moduleNum}_s${target.sessionNum}_worksheet_template.html`,
+  `aas_m${target.moduleNum}_s${target.sessionNum}_worksheet_template.html`
+];
+possibleHtmlTemplateNames.forEach(tName => {
+  const tPath = path.join(baseDir, 'scripts', tName);
+  if (fs.existsSync(tPath)) {
+    const tContent = fs.readFileSync(tPath, 'utf8');
+    if (/examine the (?:in-flight )?(?:dorsal )?(?:diagram|planform|blueprint)/i.test(tContent) && !/<svg|<img/i.test(tContent)) {
+      findings.pdfStatus.pass = false;
+      findings.pdfStatus.details.push(`PDF template ${tName} instructs students to examine a diagram/blueprint, but contains no <svg> or <img> element!`);
+    }
+    if (tContent.includes('.stem {') && !tContent.includes('display: block')) {
+      findings.pdfStatus.pass = false;
+      findings.pdfStatus.details.push(`PDF template ${tName} has inline .stem CSS which causes text overlap during PDF export.`);
+    }
+  }
+});
+
 // --- Check 12: Zero Undefined Invariant & Simulated DOM Render Execution ---
 findings.renderExecution = { pass: true, undefCount: 0, details: [] };
 let renderedHtml = '';

@@ -213,6 +213,7 @@ Course administration (student lists, teacher assignments, weekly schedules, and
      - Link targets: `target="_blank" rel="noopener noreferrer"` (without `download` attribute).
      - Strict Invariant: Any deviation in color, label text, or missing trailing arrow fails the audit automatically.
   8. *7-Page A4 PDF Lesson Worksheet Status*: Enforces the exact 7-page A4 PDF invariant (`docs/GSEA_S[X]_M[X]_[TRACK]_S[X]_Lesson_Worksheet.pdf`), verified via native macOS PDFKit (`doc.pageCount === 7`), extracts full page text for content analysis, and verifies tracking in `imsmanifest.xml`.
+  9. *Active Student Worksheet & Visual Element Invariant*: Enforces that every visual referenced in exercise prompts (e.g. diagrams, blueprints, planforms) physically exists in the rendered HTML template as an `<svg>` or `<img>` element. Gap-fill exercises must provide numbered blank lines for active student write-in practice rather than pre-printed answers, prompt cards must use block display (`display: block`) to prevent line collisions, and PDF Part headings must strictly mirror the online deck sequence (Part 1 to Part 6).
 - **Tri-Project Invariant Synchronization**: The audit engine and command runbook are synchronized permanently across `GSEA_semester_1`, `GSEA_semester_2`, and `GSEA_semester_3`.
 
 ### U. GSEA / TSEEAC Professional Identity & Non-Engineer Invariant (Quad-Project Permanent Invariant)

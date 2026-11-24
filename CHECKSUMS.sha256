@@ -2,7 +2,7 @@
 # ENAC GSEA English Learning Platform — Cryptographic SHA-256 Manifest
 # Author & Pedagogical Architect: Phil PARRIS (Département LH / LAN)
 # © 2026 Phil PARRIS. All Rights Reserved.
-# Generated: 2026-11-24T11:58:14.476Z
+# Generated: 2026-11-24T12:37:07.521Z
 # ============================================================================
 
 d6d8f8d965a4ce59552d7ff27282685c0b22473b8b9b215f73be16c4e67b9a49  imsmanifest.xml
@@ -70,5 +70,5 @@ c618fe246e85887aca5775cb9589cfbe4db27d865ef4d1f9456aaf82f3c8cd9b  docs/GSEA_S1_M
 bbaa9e0d7d0f05d587b986ba9bd89a9e424eadad4935b0db2eb087903c98ecce  docs/GSEA_S1_M1_AG_S4_Lesson_Worksheet.pdf
 c4e2c8cf54a33812821eae3c7a772cee07ade1cf2527610e1736630b30200dc2  docs/GSEA_S1_M1_AT_S3_Lesson_Worksheet.pdf
 23fad09924fe6c811f24e1b55ffd2cb8eb4aa1a56b10e4e55aa30429626ea8e4  docs/GSEA_S1_M1_AT_S4_Lesson_Worksheet.pdf
-b4e3bae192f95f28614ae0f7c3aefd5924a113c23c079cdaefe79a09f80847f8  docs/GSEA_S1_M2_AT_S1_Lesson_Worksheet.pdf
-55a664f41289a386fd0122b75bd19df33c23633382662f227b04d326a68af591  docs/GSEA_S1_M2_AT_S2_Lesson_Worksheet.pdf
+e7540d7224b84b4be5aa6189d7fd7c074ee0866a0f558493831b27992f0d843f  docs/GSEA_S1_M2_AT_S1_Lesson_Worksheet.pdf
+55f9521f911fae0a75f473fe38801badef114d5acbd4c614ca7a7d9f66724860  docs/GSEA_S1_M2_AT_S2_Lesson_Worksheet.pdf
