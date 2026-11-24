@@ -719,9 +719,7 @@
           item.setAttribute('aria-label', `Navigate to ${page.title}`);
           const rightHtml = `<svg class="flight-strip-chevron w-3.5 h-3.5 shrink-0 opacity-40 transition-all pointer-events-none" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>`;
 
-          const leftIcon = page.isNoticeboard
-            ? `<svg width="12" height="12" class="w-3 h-3 text-amber-500 shrink-0 mr-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>`
-            : '';
+          const leftIcon = '';
 
           item.innerHTML = `
             <div class="flex items-center gap-2 min-w-0 pr-1 pointer-events-none">
@@ -2792,8 +2790,8 @@
       // Dynamic track-specific banner image, badge, and subtitle
       const heroImage = isAg ? "images/ag_m1card4.jpg" : "images/aas_m2card4.jpg";
       const heroBadge = isAg 
-        ? "🗣️ GENERAL ENGLISH (LV101E) • SEMESTER 1 NOTICEBOARD" 
-        : "✈️ TECHNICAL ENGLISH (LV121E) • SEMESTER 1 NOTICEBOARD";
+        ? "GENERAL ENGLISH (LV101E) • SEMESTER 1 NOTICEBOARD" 
+        : "TECHNICAL ENGLISH (LV121E) • SEMESTER 1 NOTICEBOARD";
       const heroSubtitle = isAg
         ? "Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and general culture announcements."
         : "Welcome to English at ENAC! Here is your home bulletin for weekly lessons, spoken practice, study materials, and technical course announcements.";
@@ -2832,7 +2830,7 @@
               </div>
             </div>
             <button type="button" onclick="window.openSemester1OverviewModal()" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl ${isAg ? 'bg-amber-600 hover:bg-amber-700 active:bg-amber-800' : 'bg-sky-600 hover:bg-sky-700 active:bg-sky-800'} text-white text-xs font-bold shadow-xs hover:shadow transition-all cursor-pointer self-start sm:self-auto shrink-0">
-              <span>📖 Open Full Guide &amp; Tips</span>
+              <span>Open Full Guide &amp; Tips</span>
               <span class="text-xs">➔</span>
             </button>
           </div>
@@ -3036,7 +3034,7 @@
           <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/80 pb-2.5">
             <div class="flex items-center gap-2">
               <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-              <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">✉️ Teaching Team &amp; Course Administration</span>
+              <span class="font-bold text-slate-900 uppercase tracking-wide text-[11px]">Teaching Team &amp; Course Administration</span>
             </div>
             <span class="text-[10.5px] font-mono text-slate-500">ENAC Département LH/LAN</span>
           </div>
@@ -3052,7 +3050,7 @@
 
             <!-- Box 2: General English Teachers -->
             <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
-              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">🗣️ General English (LV101E)</div>
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">General English (LV101E)</div>
               <div class="text-slate-900 font-semibold text-xs pt-0.5">
                 <div><span class="font-mono text-slate-500 text-[10.5px]">Group A:</span> Geri MIDDLETON</div>
                 <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Group B:</span> Penny WRIGHT</div>
@@ -3062,7 +3060,7 @@
 
             <!-- Box 3: Technical English Teachers -->
             <div class="p-3 rounded-lg bg-slate-50 border border-slate-200/70 space-y-1">
-              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">✈️ Technical English (LV121E)</div>
+              <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-sky-700">Technical English (LV121E)</div>
               <div class="text-slate-900 font-semibold text-xs pt-0.5">
                 <div><span class="font-mono text-slate-500 text-[10.5px]">Group A:</span> Tracy NEILL</div>
                 <div class="mt-0.5"><span class="font-mono text-slate-500 text-[10.5px]">Group B:</span> Ally HEWETT</div>
@@ -3131,7 +3129,7 @@
         <div class="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 animate-in fade-in zoom-in-95 duration-200" onclick="event.stopPropagation()">
           <div class="p-4 sm:p-6 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
             <div class="flex items-center gap-2">
-              <span class="text-xl">🎬</span>
+              
               <div>
                 <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-400">General Culture &amp; Cinema Pick (AG)</span>
                 <h3 class="text-base sm:text-lg font-black text-white">Tin Castle (2026)</h3>
@@ -3156,14 +3154,14 @@
             </div>
 
             <div class="p-3.5 bg-amber-50/70 border border-amber-200 rounded-xl space-y-1.5">
-              <span class="text-[10.5px] font-bold uppercase tracking-wider text-amber-900">🗣️ Why This Film Builds Spoken Fluency:</span>
+              <span class="text-[10.5px] font-bold uppercase tracking-wider text-amber-900">Why This Film Builds Spoken Fluency:</span>
               <p class="text-xs text-amber-950 leading-relaxed">
                 Featuring authentic regional accents, unscripted natural conversation, and real-life storytelling, the documentary challenges learners to understand colloquial rhythms, emotional nuance, and socioeconomic themes beyond mainstream media tropes.
               </p>
             </div>
 
             <div class="p-3.5 bg-slate-900 text-white rounded-xl space-y-2">
-              <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">💬 Discussion Questions for Class:</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-sky-400">Discussion Questions for Class:</span>
               <ul class="space-y-1.5 text-xs text-slate-300">
                 <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>How does the documentary portray the balance between preserving nomadic heritage and adapting to modern society?</span></li>
                 <li class="flex items-start gap-1.5"><span class="text-sky-400 font-bold">&bull;</span><span>What language and storytelling expressions stood out in the family's daily interactions?</span></li>
@@ -3210,7 +3208,7 @@
             <div class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white p-4 sm:p-6 border-b border-sky-900/60 flex items-start justify-between gap-4 shrink-0">
               <div>
                 <div class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-bold tracking-wider uppercase text-amber-300 bg-slate-900/90 border border-slate-700 px-2.5 py-0.5 rounded-full">
-                  <span>🗣️ GENERAL (LV101E) &amp; ✈️ TECHNICAL (LV121E) • SEMESTER 1</span>
+                  <span>GENERAL (LV101E) &amp; TECHNICAL (LV121E) • SEMESTER 1</span>
                 </div>
                 <h2 id="s1-modal-title" class="text-lg sm:text-2xl font-black text-white mt-1.5 leading-tight">
                   Semester 1 Overview &amp; Student Success Guide
@@ -3230,7 +3228,7 @@
               <!-- Section 1: What Will You Do This Semester? (The Dual-Track Approach) -->
               <div class="space-y-3">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🎯</span>
+                  
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     1. What Will You Do This Semester? The Dual-Track Approach
                   </h3>
@@ -3243,7 +3241,7 @@
                   <!-- Track 1: General English -->
                   <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200/80 space-y-2">
                     <div class="flex items-center gap-2 text-amber-900 font-bold text-xs sm:text-sm">
-                      <span class="p-1 rounded bg-amber-200/70 text-amber-800 text-xs">🗣️</span>
+                      <span class="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 text-[10px] font-mono font-bold">AG</span>
                       <span>A. General English (LV101E — Fridays 08:00–10:00)</span>
                     </div>
                     <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
@@ -3260,7 +3258,7 @@
                   <!-- Track 2: Technical English -->
                   <div class="p-4 rounded-xl bg-sky-50/60 border border-sky-200/80 space-y-2">
                     <div class="flex items-center gap-2 text-sky-900 font-bold text-xs sm:text-sm">
-                      <span class="p-1 rounded bg-sky-200/70 text-sky-800 text-xs">✈️</span>
+                      <span class="px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 text-[10px] font-mono font-bold">AT</span>
                       <span>B. Technical English (LV121E — Wednesdays 13:15–15:15)</span>
                     </div>
                     <p class="text-[12px] sm:text-[12.5px] text-slate-700 leading-relaxed">
@@ -3279,7 +3277,7 @@
               <!-- Section 2: Why Are You Doing These Lessons? (Future Career Value) -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🚀</span>
+                  
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     2. Why Are You Doing These Lessons? Your Future Career Advantage
                   </h3>
@@ -3290,15 +3288,15 @@
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs pt-1">
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">🌍 Global Civil Aviation Ecosystem</div>
+                      <div class="font-bold text-slate-900">Global Civil Aviation Ecosystem</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">You will coordinate with multinational airlines, foreign civil aviation authorities (DGAC, EASA, ICAO), aircraft manufacturers, and airport ground handlers.</p>
                     </div>
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">⚡ Zero Ambiguity in Safety</div>
+                      <div class="font-bold text-slate-900">Zero Ambiguity in Safety</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">Safety depends on precision. A misunderstanding of an operational directive, NOTAM, or safety bulletin can lead to costly delays or ground incidents.</p>
                     </div>
                     <div class="p-3 rounded-lg bg-white border border-slate-200 shadow-2xs space-y-1">
-                      <div class="font-bold text-slate-900">💼 Executive Career Mobility</div>
+                      <div class="font-bold text-slate-900">Executive Career Mobility</div>
                       <p class="text-[11.5px] text-slate-500 leading-relaxed">Fluency in both general debate and technical aviation English is the biggest catalyst for TSEEAC career progression, European safety projects, and operational leadership.</p>
                     </div>
                   </div>
@@ -3308,7 +3306,7 @@
               <!-- Section 3: Weekly Self-Study: Learning Portfolio Completion & FE Prep -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">📝</span>
+                  
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     3. Weekly Self-Study: Learning Portfolio Completion &amp; FE Prep
                   </h3>
@@ -3326,7 +3324,7 @@
                   </p>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                     <div class="p-3 rounded-lg bg-white/90 border border-amber-200/60 shadow-2xs space-y-1">
-                      <div class="font-bold text-amber-900">📝 Learning Portfolio Updates</div>
+                      <div class="font-bold text-amber-900">Learning Portfolio Updates</div>
                       <p class="text-[11.5px] text-slate-600 leading-relaxed">
                         Log key speaking takeaways, newly acquired technical terms, and personal reflection notes in your digital Learning Portfolio after each session to track your communicative growth.
                       </p>
@@ -3344,7 +3342,7 @@
               <!-- Section 4: 4 Practical Tips on How to Succeed -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">💡</span>
+                  
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     4. Four Golden Rules to Succeed in Semester 1
                   </h3>
@@ -3395,7 +3393,7 @@
               <!-- Section 5: Key Assessment Milestones -->
               <div class="space-y-3 pt-2 border-t border-slate-100">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">📅</span>
+                  
                   <h3 class="text-sm sm:text-base font-extrabold text-slate-900 uppercase tracking-wide">
                     5. Key Assessment Milestones: The Three Formative Evaluations (FE1, FE2, FE3)
                   </h3>
