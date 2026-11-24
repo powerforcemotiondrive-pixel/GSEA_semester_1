@@ -664,12 +664,10 @@ const COURSE_DATA = {
             "badge": "Session Overview • Travel & Transport"
           },
           "openingSession": {
-            "modeBadges": [
-              "👥 Pair Storytelling",
+            "modeBadges": [" Pair Storytelling",
               "⏱️ 15 mins",
-              "🗣️ Spoken Anecdote",
-              "🎯 Narrative Fluency"
-            ],
+              "️ Spoken Anecdote",
+              " Narrative Fluency"],
             "instructions": [
               "Step 1 (Think of a Trip - 2 mins): Think of a memorable travel experience (a flight delay, a missed train, a lost item, or a pleasant surprise). Review the useful words and phrases below.",
               "Step 2 (Tell Your Story - 8 mins): In pairs, take turns telling your story (about 90 seconds to 2 minutes each). Use at least two useful words or phrases.",
@@ -721,12 +719,10 @@ const COURSE_DATA = {
             }
           },
           "survey": {
-            "modeBadges": [
-              "👥 Speed-Dating Rotation",
+            "modeBadges": [" Speed-Dating Rotation",
               "⏱️ 4 min per dilemma",
-              "🗣️ Spoken Debate",
-              "🎯 Useful Opinion Phrases"
-            ],
+              "️ Spoken Debate",
+              " Useful Opinion Phrases"],
             "instructions": [
               "Step 1 (Pair Setup): Partner A defends the statement; Partner B provides the counter-argument using the Support/Counter prompts.",
               "Step 2 (Timed Debate - 3 mins/topic): Speak for 90 seconds each. Incorporate at least one opinion phrase from the reference box below.",
@@ -778,12 +774,10 @@ const COURSE_DATA = {
             ]
           },
           "collocationsClinic": {
-            "modeBadges": [
-              "👥 Pair Challenge",
+            "modeBadges": [" Pair Challenge",
               "⏱️ 10 min study + 10 min quiz",
-              "📝 Vocabulary Practice",
-              "🎯 B2 Collocations"
-            ],
+              " Vocabulary Practice",
+              " B2 Collocations"],
             "instructions": [
               "Step 1 (Contextualize - 8 mins): Read each collocation and its workplace example with your partner. Create an original sentence using \"clear customs\" and \"miss a connection\".",
               "Step 2 (Quiz Challenge - 8 mins): Complete the 4-question interactive practice challenge individually without looking at notes.",
@@ -872,11 +866,9 @@ const COURSE_DATA = {
             }
           },
           "grammarClinic": {
-            "modeBadges": [
-              "👥 Spoken Practice",
+            "modeBadges": [" Spoken Practice",
               "⏱️ 10 min rules + 15 min storytelling",
-              "🎯 Past Tenses for Stories"
-            ],
+              " Past Tenses for Stories"],
             "instructions": [
               "Step 1 (Understand the 3 Past Tenses - 8 mins): Review how Past Continuous sets the background, Past Simple describes the main events, and Past Perfect shows what happened earlier.",
               "Step 2 (Sentence Practice - 7 mins): Practice combining tenses with the example prompts. Click \"Show Model Answer\" to check your sentences.",
@@ -917,12 +909,10 @@ const COURSE_DATA = {
             ]
           },
           "rolePlay": {
-            "modeBadges": [
-              "🎭 Pair Simulation",
+            "modeBadges": [" Pair Simulation",
               "⏱️ 5 min prep + 15 min simulation + 10 min debrief",
-              "👥 Passenger vs. Station Agent",
-              "🎯 De-escalation Vocabulary"
-            ],
+              " Passenger vs. Station Agent",
+              " De-escalation Vocabulary"],
             "instructions": [
               "Step 1 (Role Prep - 5 mins): Person A = Passenger with tight Tokyo connection; Person B = Airline Customer Service Agent. Read your role card and plan 3 key phrases.",
               "Step 2 (Live Simulation - 15 mins): Conduct the interaction in real time. Passenger expresses urgency without shouting; Agent remains empathetic, cites EU261 duty of care, and negotiates rebooking.",
@@ -958,12 +948,10 @@ const COURSE_DATA = {
             "task": "Work with your partner for 4 minutes per role, then switch roles. Focus on polite phrases, clear explanations, and active listening."
           },
           "closingReview": {
-            "modeBadges": [
-              "👤 Individual Self-Assessment",
+            "modeBadges": [" Individual Self-Assessment",
               "⏱️ 10 mins",
-              "📝 Exit Ticket",
-              "🎯 Pronunciation Drill"
-            ],
+              " Exit Ticket",
+              " Pronunciation Drill"],
             "instructions": [
               "Step 1 (Rapid Drill - 4 mins): Read the 30 session vocabulary items aloud with correct word stress and clear pronunciation.",
               "Step 2 (Personal Selection - 3 mins): Star 3 words that are completely new to you and write a personal sentence for each.",
@@ -1661,12 +1649,10 @@ const COURSE_DATA = {
                 }
               ]
             },
-            "modeBadges": [
-              "👥 Pair Recall",
+            "modeBadges": [" Pair Recall",
               "⏱️ 5 min pairs + 5 min class discussion",
-              "🗣️ Spoken Retrieval",
-              "🌿 Green Mobility"
-            ],
+              "️ Spoken Retrieval",
+              " Green Mobility"],
             "instructions": [
               "Step 1 (City Headlines): In pairs, discuss the two Green Mobility news prompts. Ask your partner: \"Which modal shift initiative seems most viable in our region?\"",
               "Step 2 (Memory Recall): Without looking at previous notes, recall and verbally explain 2 key travel distinctions from Session 1 (e.g. Layover vs Stopover, Direct vs Non-stop).",
@@ -1716,12 +1702,10 @@ const COURSE_DATA = {
               "Which transport epoch brought the greatest improvement to human mobility? (Useful phrases: 'In my view, the steam railway was the biggest turning point because...', 'The automobile transformed society, but it also caused...').",
               "Can high-speed rail completely replace short-haul aviation across Europe by 2040? (Useful phrases: 'Trains can easily replace flights for journeys under 4 hours, but...', 'The biggest barrier to replacing planes is...')."
             ],
-            "modeBadges": [
-              "👥 Speed-Dating Pairs",
+            "modeBadges": [" Speed-Dating Pairs",
               "⏱️ 10 min prep + 15 min debate",
-              "🗣️ Epoch Defense",
-              "⏳ Historical Modal Shift"
-            ],
+              "️ Epoch Defense",
+              "⏳ Historical Modal Shift"],
             "instructions": [
               "Step 1 (Epoch Analysis - 4 mins): Examine the 4 Epochs of Transport (Canal & Steam, Rail Dominance, Automobile Expansion, High-Speed & Decarbonized).",
               "Step 2 (Timed Debate - 4 mins per topic): Partner A defends why their assigned epoch represented the greatest societal transformation; Partner B counters with its long-term environmental consequences.",
@@ -1759,11 +1743,9 @@ const COURSE_DATA = {
                 "prompt": "What infrastructure upgrades (like the planned Toulouse-Bordeaux high-speed line) are needed to trigger a complete modal shift? (Useful phrases: 'A high-speed rail connection would reduce travel time to...', 'To compete with hourly flights, train tickets need to be...')."
               }
             ],
-            "modeBadges": [
-              "🎭 Pair Negotiation Pitch",
-              "🗣️ High-Speed Rail vs Air",
-              "💼 Policy Defense"
-            ],
+            "modeBadges": [" Pair Negotiation Pitch",
+              "️ High-Speed Rail vs Air",
+              " Policy Defense"],
             "instructions": [
               "Step 1 (Corridor Selection - 3 mins): Choose one European corridor: Paris–Barcelona (6h30 rail vs 1h45 air), London–Edinburgh (4h20 rail vs 1h20 air), or Frankfurt–Milan (7h30 rail vs 1h15 air).",
               "Step 2 (Role Allocation & Prep - 7 mins): Partner A represents the High-Speed Rail operator pitching total door-to-door productivity, zero security dwell time, and 90% CO2 reduction. Partner B represents the Regional Airline defending turnaround efficiency, urgent time-value, and route flexibility.",
@@ -1819,12 +1801,10 @@ const COURSE_DATA = {
                 }
               ]
             },
-            "modeBadges": [
-              "👥 Grammar Pair Practice",
+            "modeBadges": [" Grammar Pair Practice",
               "⏱️ 8 min analysis + 12 min class review",
-              "✍️ Complex Comparisons",
-              "📈 Trends & Causality"
-            ],
+              "️ Complex Comparisons",
+              " Trends & Causality"],
             "instructions": [
               "Step 1 (Rule Analysis - 5 mins): Review the 3 core grammar rules: Cause/Effect linkers, Double Comparatives, and Future Predictions with Modals.",
               "Step 2 (Challenge Practice): Work through the 4 interactive grammar challenge questions individually, selecting the grammatically precise connector.",
@@ -1861,12 +1841,10 @@ const COURSE_DATA = {
               }
             ],
             "task": "In groups of 3, debate which option ENAC should select under its DDRS environmental charter. Present a 2-minute spoken recommendation to the class.",
-            "modeBadges": [
-              "👥 Groups of 3 Discussion",
+            "modeBadges": [" Groups of 3 Discussion",
               "⏱️ 12 min group work + 18 min class debate",
-              "🌿 Campus Decarbonization",
-              "📋 5-Point Action Plan"
-            ],
+              " Campus Decarbonization",
+              " 5-Point Action Plan"],
             "instructions": [
               "Step 1 (Audit Review - 4 mins): Read the ENAC Campus Travel Dilemma: 68% car dependency, student rail discount gaps, and inter-site transit bottlenecks.",
               "Step 2 (Taskforce Strategy - 8 mins): In groups of 3, act as the Green Mobility Taskforce to draft a 5-point Decarbonization Action Plan balancing 3 incentives with 2 deterrents.",
@@ -1957,12 +1935,10 @@ const COURSE_DATA = {
                 ]
               }
             ],
-            "modeBadges": [
-              "🎧 Audio Drill & Taboo Challenge",
+            "modeBadges": [" Audio Drill & Taboo Challenge",
               "⏱️ 5 min taboo pairs + 5 min reflection",
-              "🗣️ Fluency Under Pressure",
-              "📝 Self-Assessment Log"
-            ],
+              "️ Fluency Under Pressure",
+              " Self-Assessment Log"],
             "instructions": [
               "Step 1 (Audio Pronunciation Drill): Click each of the 18 key mobility vocabulary words to listen to native pronunciation. Repeat chorally with your partner.",
               "Step 2 (Taboo Challenge): Play the 45-Second Taboo Challenge: describe the target word to your partner without saying any of the 3 forbidden root terms.",
@@ -2565,11 +2541,9 @@ const COURSE_DATA = {
                 }
               ]
             },
-            "modeBadges": [
-              "👥 Pair Recall",
-              "🗣️ Spoken Retrieval",
-              "🏛️ Tourism Policy"
-            ],
+            "modeBadges": [" Pair Recall",
+              "️ Spoken Retrieval",
+              "️ Tourism Policy"],
             "instructions": [
               "Step 1 (City Headlines): In pairs, discuss the two City Tourism headlines: Venice entrance fee expansion and Amsterdam short-term rental limits. Ask your partner: \"Which measure addresses root causes rather than symptoms?\"",
               "Step 2 (Memory Recall): Without checking notes, test each other on 2 key concepts from Session 2 (e.g. modal shift, feeder line, decarbonization).",
@@ -2616,11 +2590,9 @@ const COURSE_DATA = {
               }
             ],
             "discussionPrompt": "Which city policy has been most successful in balancing economic income with resident well-being?",
-            "modeBadges": [
-              "👥 Destination Analysis",
-              "📊 Carrying Capacity",
-              "🏙️ Municipal Measures"
-            ],
+            "modeBadges": [" Destination Analysis",
+              " Carrying Capacity",
+              "️ Municipal Measures"],
             "instructions": [
               "Step 1 (Data Comparison): Examine the 4 destination pressure profiles (Venice, Amsterdam, Dubrovnik, Maya Bay), comparing resident populations against annual visitor volumes.",
               "Step 2 (Comparing Tourist Pressure): Compare the visitor-to-resident figures across the destinations. Practice using comparative structures (e.g., 'Venice experiences far greater visitor pressure than...') to discuss the impact on local housing and public services.",
@@ -2652,11 +2624,9 @@ const COURSE_DATA = {
                 "objection": "Port authorities argue the city will lose millions in docking fees and provisioning contracts."
               }
             ],
-            "modeBadges": [
-              "🎭 Municipal Role-Play Pitch",
-              "🗣️ Pitching to the Mayor",
-              "💼 Objection Defense"
-            ],
+            "modeBadges": [" Municipal Role-Play Pitch",
+              "️ Pitching to the Mayor",
+              " Objection Defense"],
             "instructions": [
               "Step 1 (Policy Selection): Select one controversial municipal tourism policy from the grid: Strict Short-Term Rental Caps, Peak-Hour Access Tolls, or Cruise Ship Disembarkation Quotas.",
               "Step 2 (Role-Play Prep): Partner A acts as the Chief Sustainability Officer pitching the policy to City Council; Partner B acts as the Chamber of Commerce President raising commercial objections.",
@@ -2712,11 +2682,9 @@ const COURSE_DATA = {
                 }
               ]
             },
-            "modeBadges": [
-              "👥 Causatives & Contrast Practice",
-              "✍️ Complex Connectors",
-              "🎯 B2 Sentence Patterns"
-            ],
+            "modeBadges": [" Causatives & Contrast Practice",
+              "️ Complex Connectors",
+              " B2 Sentence Patterns"],
             "instructions": [
               "Step 1 (Rule Review): Review the 3 grammar patterns: Causatives ('have/get something done', 'make/let someone do'), Contrast linkers ('whereas', 'while', 'in spite of'), and Concession clauses ('despite the fact that').",
               "Step 2 (Challenge Practice): Work through the 4 interactive grammar challenge questions individually without consulting notes.",
@@ -2771,11 +2739,9 @@ const COURSE_DATA = {
               }
             ],
             "task": "Negotiate a realistic 3-point compromise agreement that addresses water rationing, tourism capacity limits, and infrastructure funding.",
-            "modeBadges": [
-              "👥 Multi-Stakeholder Round-Table",
-              "💧 Resource Scarcity Crisis",
-              "🤝 Multi-Party Consensus"
-            ],
+            "modeBadges": [" Multi-Stakeholder Round-Table",
+              " Resource Scarcity Crisis",
+              " Multi-Party Consensus"],
             "instructions": [
               "Step 1 (Crisis Briefing): Review the Isla Serena Emergency Summit crisis dossier, reservoir depletion metrics, and the airport runway expansion dispute.",
               "Step 2 (Role Allocation & Strategy): In groups of 4, assign roles (The Town Mayor, The Hotel Association President, The Organic Farmer, or The Environmental Protection Regulator) and prepare your non-negotiable demands.",
@@ -2854,11 +2820,9 @@ const COURSE_DATA = {
                 ]
               }
             ],
-            "modeBadges": [
-              "🎧 Audio Drill & Taboo Challenge",
-              "🗣️ Fluency Under Pressure",
-              "📝 Self-Assessment Log"
-            ],
+            "modeBadges": [" Audio Drill & Taboo Challenge",
+              "️ Fluency Under Pressure",
+              " Self-Assessment Log"],
             "instructions": [
               "Step 1 (Audio Pronunciation Drill): Chorally repeat the 18 key overtourism terms using the audio pronunciation buttons.",
               "Step 2 (Taboo Challenge): Play the 45-Second Taboo Challenge with your partner: describe target terms ('carrying capacity', 'short-term let', 'moratorium') without saying forbidden words.",
@@ -3430,12 +3394,10 @@ const COURSE_DATA = {
           "openingSession": {
             "title": "Activity 1: Eco-Tourism News & Session 3 Spot-Check",
             "summary": "Opening warm-up: discuss genuine green travel innovations and check your memory of Session 3 overtourism terms.",
-            "modeBadges": [
-              "👥 Pairs / Plenary",
-              "🗣️ Spoken Retrieval Drill",
-              "🎯 Vocabulary & Fluency",
-              "⚡ Rapid Recall"
-            ],
+            "modeBadges": [" Pairs / Plenary",
+              "️ Spoken Retrieval Drill",
+              " Vocabulary & Fluency",
+              " Rapid Recall"],
             "instructions": [
               "Step 1 (Headline Exchange): In pairs, discuss the two eco-tourism news prompts below. Highlight one recent green travel story, clean transport initiative, or greenwashing controversy you have encountered.",
               "Step 2 (Memory Retrieval): Test your partner on the 4 Session 3 overtourism terms (Carrying Capacity, De-Marketing, Resident Backlash, Tourist Levy) before clicking 'Reveal Answer'.",
@@ -3477,12 +3439,10 @@ const COURSE_DATA = {
           "forensicAuditMatrix": {
             "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix",
             "summary": "Conduct a forensic evidence audit of 3 real-world tourism projects. Separate verified environmental stewardship from superficial marketing buzzwords using a structured criteria matrix.",
-            "modeBadges": [
-              "👥 Small Groups (3-4)",
-              "🔍 Forensic Case Audit",
-              "🎯 Evidence Evaluation Matrix",
-              "📊 Data Verification"
-            ],
+            "modeBadges": [" Small Groups (3-4)",
+              " Forensic Case Audit",
+              " Evidence Evaluation Matrix",
+              " Data Verification"],
             "instructions": [
               "Step 1 (Evidence Extraction): Read Projects A, B, and C with your group. Highlight specific data points: renewable energy source, revenue retention percentage, and land ownership model.",
               "Step 2 (Audit Checklist): Apply the 3-point Greenwashing Checklist to each project. Identify two deceptive marketing red flags in Project B and evaluate community revenue in Projects A and C.",
@@ -3522,12 +3482,10 @@ const COURSE_DATA = {
           "grammarClinic": {
             "title": "Activity 3: Grammar Focus: Mixed Conditionals & Purpose Clauses",
             "summary": "Connect past actions with present consequences using mixed conditionals, and express goals and conditions with formal connectors.",
-            "modeBadges": [
-              "👤 Individual -> 👥 Pairs",
-              "✍️ Grammar & Syntax Practice",
-              "🎯 B2 Grammar Mastery",
-              "💬 Sentence Clinic"
-            ],
+            "modeBadges": [" Individual ->  Pairs",
+              "️ Grammar & Syntax Practice",
+              " B2 Grammar Mastery",
+              " Sentence Clinic"],
             "instructions": [
               "Step 1 (Formula Analysis): Study the three grammatical formulas below. Note the past-to-present timeline shift in Mixed Conditionals ('had + V3' -> 'would + base verb').",
               "Step 2 (Sentence Construction): With your partner, construct 3 original sentences about tourism management: one mixed conditional ('If the island had banned mega-resorts...'), one connector of purpose ('in order that...'), and one conditional ('provided that...').",
@@ -3583,12 +3541,10 @@ const COURSE_DATA = {
           "researchSimulation": {
             "title": "Activity 4: Small-Group Research Sprint & Simulation: Global Destination Case Studies",
             "summary": "In pairs or triads, select one fragile destination case study. Analyze its ecological threats, examine its low-impact engineering solutions, and extract local community economic metrics for your upcoming 5-minute exposé.",
-            "modeBadges": [
-              "👥 Pairs / Working Trios",
-              "🔍 Case Study Research Sprint",
-              "📐 Data Synthesis & Planning",
-              "🌿 Fragile Ecosystem Analysis"
-            ],
+            "modeBadges": [" Pairs / Working Trios",
+              " Case Study Research Sprint",
+              " Data Synthesis & Planning",
+              " Fragile Ecosystem Analysis"],
             "instructions": [
               "Step 1 (Case Selection & Role Division): In pairs or triads, choose one of the four real-world destination dossiers below (Galápagos, Costa Rica, Bhutan, or Norwegian Fjords). Assign speaking roles across your team (Context & Challenge, Sustainable Solution, Community Impact & Grammar Reflection).",
               "Step 2 (Dossier Data Extraction): Examine the case data, photographic evidence, and carrying-capacity numbers. Extract 3 key operational facts, the primary ecological threat, and the local community benefit model.",
@@ -3653,12 +3609,10 @@ const COURSE_DATA = {
           "investorConsensusForum": {
             "title": "Activity 5: 5-Minute Spoken Exposés & Investor Consensus Defense",
             "summary": "Deliver a collaborative 5-minute spoken exposé on your team's destination case study. Defend your project against challenging questions from the Sustainability Investment Board, and complete the Peer Observer Evaluation Grid for other teams.",
-            "modeBadges": [
-              "🎤 Collaborative Spoken Exposé",
-              "👥 Plenary Defense & Q&A",
-              "📊 Peer Observer Evaluation Grid",
-              "🎯 Spoken Fluency & Non-Reading Delivery"
-            ],
+            "modeBadges": [" Collaborative Spoken Exposé",
+              " Plenary Defense & Q&A",
+              " Peer Observer Evaluation Grid",
+              " Spoken Fluency & Non-Reading Delivery"],
             "instructions": [
               "Step 1 (Collaborative Delivery): Deliver your team's 5-minute spoken exposé to the class or exchange partner group. Distribute speaking time equitably across all team members.",
               "Step 2 (The Non-Reading Standard): Speak from concise keywords, statistics, and visual prompts. Avoid reading full scripted paragraphs.",
@@ -3691,12 +3645,10 @@ const COURSE_DATA = {
           "closingReview": {
             "title": "Activity 6: Vocabulary Wrap-Up & FE1 Readiness Check",
             "summary": "Final consolidation for Session 5 Formative Evaluation: audio pronunciation drill of 18 essential terms and peer sign-off on your presentation readiness.",
-            "modeBadges": [
-              "👤 Individual & 👥 Pairs",
-              "⚡ Phonetic Audio Drill",
-              "🎯 FE1 Readiness Sign-Off",
-              "📋 Formative Verification"
-            ],
+            "modeBadges": [" Individual &  Pairs",
+              " Phonetic Audio Drill",
+              " FE1 Readiness Sign-Off",
+              " Formative Verification"],
             "instructions": [
               "Step 1 (Audio Pronunciation Drill): Click each of the 18 audio buttons. Listen and repeat aloud, focusing on stress patterns: 're-GEN-er-a-tive', 'va-lor-i-ZA-tion', 'bio-di-VER-si-ty'.",
               "Step 2 (FE1 Readiness Audit): Review the 4 items on the Session 5 Formative Evaluation Readiness Checklist with your presentation partner. Confirm your topic choice and slide structure.",
@@ -6229,11 +6181,9 @@ const COURSE_DATA = {
           "openingSession": {
             "title": "Activity 1: Environmental Policy News & Argument Warm-Up",
             "summary": "Opening warm-up examining international policy controversies and diagnostic distinctions in argumentation.",
-            "modeBadges": [
-              "Pairs",
+            "modeBadges": ["Pairs",
               "Quick Check",
-              "10 Mins"
-            ],
+              "10 Mins"],
             "instructions": [
               "Read the 3 weekly environmental policy headlines (short-haul flight bans, urban delivery mandates, greenwashing tribunals).",
               "With your partner, discuss the 4 key distinctions: Claim vs. Evidence, Strategic Concession, Correlation vs. Causation, and the Straw Man fallacy.",
@@ -6276,11 +6226,9 @@ const COURSE_DATA = {
           "survey": {
             "title": "Activity 2: Environmental Policy Dilemmas: Speed Sparring",
             "summary": "Engage in timed 4-minute debate rounds on four controversial climate policies. Practice using structured arguments: Claim → Evidence → Reasoning → Concession → Rebuttal.",
-            "modeBadges": [
-              "Pairs",
+            "modeBadges": ["Pairs",
               "Timed Speed Sparring",
-              "25 Mins"
-            ],
+              "25 Mins"],
             "instructions": [
               "Review the 4 policy dilemma cards: Short-Haul Flight Bans, Airport Night Curfews, Small Modular Nuclear Reactors, and Fast-Tracking Green Infrastructure Permits.",
               "Take turns roleplaying the Pro (advocacy) and Con (counter) positions for each topic in rapid 4-minute sparring rounds.",
@@ -6333,11 +6281,9 @@ const COURSE_DATA = {
           "grammarClinic": {
             "title": "Activity 3: Language Focus: Gerunds vs. Infinitives & Connecting Words for Contrasting Ideas",
             "summary": "Selecting the correct verb complementation patterns (Gerund vs. Infinitive) and mastering useful connecting words for persuasive speaking.",
-            "modeBadges": [
-              "Pairs / Individual",
+            "modeBadges": ["Pairs / Individual",
               "Grammar Drills",
-              "20 Mins"
-            ],
+              "20 Mins"],
             "instructions": [
               "Review the 3 core grammatical structures: Verbs taking Gerunds (advocate doing, delay implementing), Verbs taking Infinitives (agree to fund, aim to achieve), and Contrasting Clauses (Although + clause vs. Despite + noun phrase).",
               "Analyze the formula examples and identify which policy actions require an ongoing process focus (-ing) versus future commitments (to + verb).",
@@ -6417,11 +6363,9 @@ const COURSE_DATA = {
           "roleplay": {
             "title": "Activity 4: Public Inquiry Hearing Simulation",
             "summary": "Formal administrative inquiry and stakeholder Q&A on regional climate infrastructure.",
-            "modeBadges": [
-              "Groups of 4",
+            "modeBadges": ["Groups of 4",
               "Public Inquiry Hearing",
-              "45 Mins"
-            ],
+              "45 Mins"],
             "instructions": [
               "Form a hearing committee of 4: Environmental Commissioner (Chair), Airline/Airport Association Spokesperson, Metropolitan Residents Coalition President, and Chief Civil Infrastructure Engineer.",
               "Review the hearing scenario: a proposed €5 passenger surcharge and municipal tax levy to finance €150M in sea-wall defenses and district cooling networks.",
@@ -6453,11 +6397,9 @@ const COURSE_DATA = {
           "closingReview": {
             "title": "Session 3 Wrap-Up & FE2 Argument Defense",
             "summary": "Consolidation, phonetics, and portfolio check for Formative Evaluation 2 readiness.",
-            "modeBadges": [
-              "Plenary",
+            "modeBadges": ["Plenary",
               "Self-Assessment",
-              "15 Mins"
-            ],
+              "15 Mins"],
             "instructions": [
               "Cross-check your learning notes against the 3 Formative Evaluation 2 readiness criteria.",
               "Record 5 advanced rhetorical linking words and 4 verb complementation patterns in your personal study portfolio.",
@@ -7019,11 +6961,9 @@ const COURSE_DATA = {
           "openingSession": {
             "title": "Activity 1: Airport Ecology News & Opening Warm-Up",
             "summary": "Opening warm-up on nature-based solutions, aerodrome wildlife management, and biodiversity net gain.",
-            "modeBadges": [
-              "Pairs",
+            "modeBadges": ["Pairs",
               "Quick Check",
-              "10 Mins"
-            ],
+              "10 Mins"],
             "instructions": [
               "Read the 3 news headlines regarding aerodrome wildflower meadows, statutory Biodiversity Net Gain (BNG) mandates, and AI bird radar systems.",
               "Discuss the 4 diagnostic concepts with your partner: Nature-Based Solutions (NbS), BNG statutory metrics, ICAO Annex 14 Bird Strike Hazard balance, and Bioswales vs. concrete ditches.",
@@ -7066,11 +7006,9 @@ const COURSE_DATA = {
           "survey": {
             "title": "Activity 2: Biodiversity & Safety Dilemmas: Speed Survey",
             "summary": "Explore 4 real-world operational challenges where environmental protection intersects with aviation safety and urban expansion.",
-            "modeBadges": [
-              "Pairs",
+            "modeBadges": ["Pairs",
               "Timed Technical Survey",
-              "25 Mins"
-            ],
+              "25 Mins"],
             "instructions": [
               "Examine the 4 operational dilemmas: Airfield Long Grass Management (15-20 cm), Wildlife Overpasses (Ecoducts), AI Avian Radar & Acoustic Dispersal, and Terminal Green Roofs & Pollinators.",
               "Interview your partner across 4 timed rounds, alternating between presenting the ecological benefit and challenging it with the aviation safety or cost constraint.",
@@ -7123,11 +7061,9 @@ const COURSE_DATA = {
           "grammarClinic": {
             "title": "Activity 3: Language Focus: Pronouns & Determiners in Technical English",
             "summary": "Mastering agreement with singular and plural indefinite pronouns, possessive determiners (its vs. their), and reflexive forms in TOEIC Part 5.",
-            "modeBadges": [
-              "Pairs / Individual",
+            "modeBadges": ["Pairs / Individual",
               "Grammar Drills",
-              "20 Mins"
-            ],
+              "20 Mins"],
             "instructions": [
               "Review the 3 grammar rules: Singular Indefinite Pronouns (Each/Every/Neither take singular verbs), Possessive Determiners for organizations (The airport released its report, NOT their), and Reflexive/Emphatic forms (itself, themselves).",
               "Note the high-frequency TOEIC Part 5 traps: confusing 'its' (possessive) with 'it\\'s' (it is), and verb agreement after 'Each of [plural noun]'.",
@@ -7207,11 +7143,9 @@ const COURSE_DATA = {
           "roleplay": {
             "title": "Activity 4: Airport Wildlife Hazard & Ecological Transition Committee",
             "summary": "Joint wildlife hazard mitigation and nature-based solutions committee.",
-            "modeBadges": [
-              "Groups of 4",
+            "modeBadges": ["Groups of 4",
               "Committee Simulation",
-              "45 Mins"
-            ],
+              "45 Mins"],
             "instructions": [
               "Form a 4-person committee: Aerodrome Wildlife Hazard Officer, Regional Wetland Nature Reserve Director, Airport Operations & Flight Safety Liaison, and Ecological Landscape Architect.",
               "Review the mission: expand airport stormwater retention basins while guaranteeing zero increase in bird strike risks within the 13 km runway hazard zone.",
@@ -7243,11 +7177,9 @@ const COURSE_DATA = {
           "closingReview": {
             "title": "Session 4 Wrap-Up & FE2 Launch Briefing",
             "summary": "Final Formative Evaluation 2 checklist & topic confirmation.",
-            "modeBadges": [
-              "Plenary",
+            "modeBadges": ["Plenary",
               "FE2 Preparation",
-              "15 Mins"
-            ],
+              "15 Mins"],
             "instructions": [
               "Review the 5 Formative Evaluation 2 readiness checkpoints: topic selection, 50/50 partner speaking equity, 4-dimension structure, vocabulary integration (6-8 terms), and portfolio readiness.",
               "Confirm your partner pairing and final topic (Option A: Airport Climate Resilience or Option B: City Climate Resilience).",
@@ -7971,12 +7903,10 @@ const COURSE_DATA = {
                 }
               ]
             },
-            "modeBadges": [
-              "👥 Pairs / Plenary",
+            "modeBadges": [" Pairs / Plenary",
               "⏱️ 10 mins",
-              "🗣️ Spoken Retrieval Drill",
-              "🎯 Vocabulary & Warm-Up"
-            ],
+              "️ Spoken Retrieval Drill",
+              " Vocabulary & Warm-Up"],
             "instructions": [
               "Step 1 (Headline Scan - 3 mins): Read the three real-world AI news prompts with your partner. Discuss which application has the greatest immediate impact on aviation or engineering.",
               "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Narrow AI vs. General AI, Supervised Learning vs. Unsupervised Learning, Machine Learning vs. Deep Learning, Predictive Analytics vs. Generative Models).",
@@ -8028,12 +7958,10 @@ const COURSE_DATA = {
                 "prompt": "Interview your partner: How can airport management balance automation efficiency with social equity (DDRS)?"
               }
             ],
-            "modeBadges": [
-              "👥 Rotating Pairs",
+            "modeBadges": [" Rotating Pairs",
               "⏱️ 25 mins",
-              "🗣️ Speed Discussion",
-              "🎯 Stance & Linking Words"
-            ],
+              "️ Speed Discussion",
+              " Stance & Linking Words"],
             "instructions": [
               "Step 1 (Stance Preparation - 4 mins): Review the 4 workplace automation dilemmas below. Choose your personal stance on each dilemma, noting one strong reason and one counter-argument.",
               "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). State your stance clearly and support it with empirical evidence, using at least two linking phrases ('On the one hand...', 'While I accept that...', 'In contrast to...').",
@@ -8112,12 +8040,10 @@ const COURSE_DATA = {
                 "explanation": "Time marker 'By the end of the decade' combined with passive subject requires Future Perfect Passive ('will have been deployed')."
               }
             ],
-            "modeBadges": [
-              "👥 Pairs / Solo",
+            "modeBadges": [" Pairs / Solo",
               "⏱️ 20 mins",
-              "✍️ Grammar Practice",
-              "🎯 Technical Passive Voice"
-            ],
+              "️ Grammar Practice",
+              " Technical Passive Voice"],
             "instructions": [
               "Step 1 (Rule Review - 5 mins): Study the 3 technical passive voice formulas: Present Simple Passive ('is/are analyzed'), Present Continuous Passive ('is/are being processed'), and Modal Passive ('must/should be verified'). Note why engineering reports favor passive constructions to maintain objective neutrality.",
               "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive grammar challenge questions individually, converting active sentences to passive voice without notes.",
@@ -8159,12 +8085,10 @@ const COURSE_DATA = {
                 ]
               }
             ],
-            "modeBadges": [
-              "👥 Small Groups (3-4)",
+            "modeBadges": [" Small Groups (3-4)",
               "⏱️ 45 mins",
-              "🎭 Design Hearing & Defense",
-              "🎯 Negotiation & Critical Thinking"
-            ],
+              " Design Hearing & Defense",
+              " Negotiation & Critical Thinking"],
             "instructions": [
               "Step 1 (Role Allocation - 5 mins): Form small groups of 3 or 4 and select your stakeholder roles: Chief Technology Officer (CTO), Head of Flight Operations, Union Ramp Safety Representative, or Data Privacy Officer.",
               "Step 2 (Position Preparation - 15 mins): Prepare your 2-minute opening statement regarding the deployment of an autonomous baggage loading and predictive turn-around system. Identify 2 productivity benefits and 2 workforce safety or reliability risks.",
@@ -8182,12 +8106,10 @@ const COURSE_DATA = {
           "closingReview": {
             "title": "Activity 5: Wrap-Up & FE3 Preparation",
             "summary": "Consolidation, pronunciation practice, and portfolio check",
-            "modeBadges": [
-              "👥 Pairs / Plenary",
+            "modeBadges": [" Pairs / Plenary",
               "⏱️ 15 mins",
-              "🎧 Audio Drill & Exit Summary",
-              "🎯 Portfolio & FE3 Prep"
-            ],
+              " Audio Drill & Exit Summary",
+              " Portfolio & FE3 Prep"],
             "instructions": [
               "Step 1 (Checklist Audit - 5 mins): Complete the 3-point Formative Evaluation readiness checklist with your partner, verifying personal understanding of narrow vs. general AI and passive voice mastery.",
               "Step 2 (Vocabulary Audio Drill - 6 mins): Review the 18 key technical AI terms. Click to listen to audio pronunciations and practice syllable stress aloud with your partner.",
@@ -8774,12 +8696,10 @@ const COURSE_DATA = {
                 }
               ]
             },
-            "modeBadges": [
-              "👥 Pairs / Plenary",
+            "modeBadges": [" Pairs / Plenary",
               "⏱️ 10 mins",
-              "🗣️ Spoken Retrieval Drill",
-              "🎯 Vocabulary & Warm-Up"
-            ],
+              "️ Spoken Retrieval Drill",
+              " Vocabulary & Warm-Up"],
             "instructions": [
               "Step 1 (Headline Scan - 3 mins): Read the three clean transport news prompts with your partner. Discuss which propulsion technology (hydrogen fuel cells, sustainable aviation fuels, battery-electric) is nearest commercial maturity.",
               "Step 2 (Memory Recall): Without looking at notes, test each other on the 4 propulsion distinctions below (Cryogenic Liquid Hydrogen vs. High-Pressure Gas, SAF Drop-In Fuel vs. Clean-Sheet Airframe, Gravimetric Energy Density vs. Volumetric Density, High-Speed Rail vs. Short-Haul Turboprop).",
@@ -8831,12 +8751,10 @@ const COURSE_DATA = {
                 "prompt": "Interview your partner: How does the European Green Deal evaluate high-speed rail expansion vs. emerging magnetic levitation?"
               }
             ],
-            "modeBadges": [
-              "👥 Rotating Pairs",
+            "modeBadges": [" Rotating Pairs",
               "⏱️ 25 mins",
-              "🗣️ Speed Discussion",
-              "🎯 Stance & Linking Words"
-            ],
+              "️ Speed Discussion",
+              " Stance & Linking Words"],
             "instructions": [
               "Step 1 (Corridor Evaluation - 4 mins): Review the 4 transport corridor dilemmas below. Formulate your personal stance on domestic flight bans vs. high-speed rail and SAF blend mandates.",
               "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Defend your policy choice using at least two linking phrases ('In comparison to...', 'The fundamental trade-off is...', 'Whereas rail infrastructure requires...').",
@@ -8915,12 +8833,10 @@ const COURSE_DATA = {
                 "explanation": "Future passive 'will be introduced' matches the future timeframe before operations begin."
               }
             ],
-            "modeBadges": [
-              "👥 Pairs / Solo",
+            "modeBadges": [" Pairs / Solo",
               "⏱️ 20 mins",
-              "✍️ Grammar Practice",
-              "🎯 Predictive Language"
-            ],
+              "️ Grammar Practice",
+              " Predictive Language"],
             "instructions": [
               "Step 1 (Rule Review - 5 mins): Review the 4 levels of predictive certainty: Definite ('is bound to / will inevitably'), High Probability ('is likely to / is projected to'), Moderate Possibility ('may well / could potentially'), and Unlikely ('is doubtful that / is unlikely to').",
               "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive forecasting sentences individually, selecting the correct predictive modal and adverb according to empirical probability.",
@@ -8962,12 +8878,10 @@ const COURSE_DATA = {
                 ]
               }
             ],
-            "modeBadges": [
-              "👥 Small Groups (3-4)",
+            "modeBadges": [" Small Groups (3-4)",
               "⏱️ 45 mins",
-              "🎭 Boardroom Presentation & Defense",
-              "🎯 Fleet Strategy & Q&A"
-            ],
+              " Boardroom Presentation & Defense",
+              " Fleet Strategy & Q&A"],
             "instructions": [
               "Step 1 (Fleet Strategy Preparation - 10 mins): In teams of 3 or 4 representing an airline executive committee, prepare a €1.2 billion fleet renewal pitch for the Board of Directors. Select your transition pathway: (A) Accelerated SAF blend procurement, (B) Fleet of 40 hydrogen-hybrid regional turboprops, or (C) High-density conventional fleet retrofits with winglets and geared turbofans.",
               "Step 2 (Pitch Delivery - 15 mins): Present your 3-minute investment pitch to the Board, detailing capital costs, emissions reductions, fuel supply chain reliability, and return on investment.",
@@ -8985,12 +8899,10 @@ const COURSE_DATA = {
           "closingReview": {
             "title": "Activity 5: Wrap-Up & FE3 Preparation",
             "summary": "Consolidation, pronunciation practice, and portfolio check",
-            "modeBadges": [
-              "👥 Pairs / Plenary",
+            "modeBadges": [" Pairs / Plenary",
               "⏱️ 15 mins",
-              "🎧 Audio Drill & Exit Summary",
-              "🎯 Portfolio & FE3 Prep"
-            ],
+              " Audio Drill & Exit Summary",
+              " Portfolio & FE3 Prep"],
             "instructions": [
               "Step 1 (Checklist Audit - 5 mins): Audit your partner's understanding of clean propulsion pathways and predictive certainty formulas using the Session 2 FE3 checklist.",
               "Step 2 (Pronunciation Drill - 6 mins): Practice syllable stress on 18 clean transport terms aloud: 'al-TER-na-tive', 'pro-PUL-sion', 'hy-po-THET-i-cal', 'in-fra-STRUC-ture'.",
@@ -9577,12 +9489,10 @@ const COURSE_DATA = {
                 }
               ]
             },
-            "modeBadges": [
-              "👥 Pairs / Plenary",
+            "modeBadges": [" Pairs / Plenary",
               "⏱️ 10 mins",
-              "🗣️ Spoken Retrieval Drill",
-              "🎯 Vocabulary & Warm-Up"
-            ],
+              "️ Spoken Retrieval Drill",
+              " Vocabulary & Warm-Up"],
             "instructions": [
               "Step 1 (Headline Scan - 3 mins): Read the three headlines on autonomous AI decisions, algorithmic bias, and facial recognition bans. Discuss which controversy raises the greatest legal liability.",
               "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Algorithmic Bias vs. Training Data Imbalance, Explainable AI [XAI] vs. Black-Box Neural Networks, Human-in-the-Loop vs. Human-on-the-Loop, Data Minimization vs. Bulk Surveillance).",
@@ -9634,12 +9544,10 @@ const COURSE_DATA = {
                 "prompt": "Interview your partner: How can aerospace firms establish secure, closed-loop generative coding environments?"
               }
             ],
-            "modeBadges": [
-              "👥 Rotating Pairs",
+            "modeBadges": [" Rotating Pairs",
               "⏱️ 25 mins",
-              "🗣️ Speed Discussion",
-              "🎯 Stance & Linking Words"
-            ],
+              "️ Speed Discussion",
+              " Stance & Linking Words"],
             "instructions": [
               "Step 1 (Stance Preparation - 4 mins): Review the 4 ethical technology dilemmas below (Autonomous Drone Delivery, AI Recruitment Filtering, Predictive Policing at Customs, Generative AI for Maintenance Manuals). Decide your ethical boundary on each.",
               "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Debate each topic using polite disagreement and concession linkers ('While I concede that efficiency increases,... nevertheless...', 'Granted, the model is fast, but...').",
@@ -9718,12 +9626,10 @@ const COURSE_DATA = {
                 "explanation": "Fixed qualifying collocation 'To a certain extent' requires the noun form 'extent'."
               }
             ],
-            "modeBadges": [
-              "👥 Pairs / Solo",
+            "modeBadges": [" Pairs / Solo",
               "⏱️ 20 mins",
-              "✍️ Grammar Practice",
-              "🎯 Diplomatic Language"
-            ],
+              "️ Grammar Practice",
+              " Diplomatic Language"],
             "instructions": [
               "Step 1 (Rule Review - 5 mins): Study the 3 formulas for diplomatic counter-argumentation: Polite Concession ('While I understand that X, we must consider Y'), Cautious Assertion ('It could be argued that...', 'Evidence suggests that...'), and Formal Refutation ('That claim is not supported by empirical data').",
               "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive practice prompts individually, rewriting blunt, aggressive statements into polite, professional diplomatic phrases.",
@@ -9765,12 +9671,10 @@ const COURSE_DATA = {
                 ]
               }
             ],
-            "modeBadges": [
-              "👥 Small Groups (3-4)",
+            "modeBadges": [" Small Groups (3-4)",
               "⏱️ 45 mins",
-              "🎭 Ethics Hearing & Defense",
-              "🎯 Regulatory Defense & Q&A"
-            ],
+              " Ethics Hearing & Defense",
+              " Regulatory Defense & Q&A"],
             "instructions": [
               "Step 1 (Stakeholder Briefing - 10 mins): In groups of 3 or 4, take on assigned roles: Lead AI Research Engineer, Civil Aviation Authority Safety Inspector, Passenger Rights Advocate, or Corporate Legal Counsel.",
               "Step 2 (Position Preparation - 15 mins): Prepare your 2-minute testimony regarding an airline's proposed dynamic pricing and algorithmic overbooking model that uses passenger biometric tracking and credit scoring.",
@@ -9788,12 +9692,10 @@ const COURSE_DATA = {
           "closingReview": {
             "title": "Activity 5: Wrap-Up & FE3 Preparation",
             "summary": "Consolidation, pronunciation practice, and portfolio check",
-            "modeBadges": [
-              "👥 Pairs / Plenary",
+            "modeBadges": [" Pairs / Plenary",
               "⏱️ 15 mins",
-              "🎧 Audio Drill & Exit Summary",
-              "🎯 Portfolio & FE3 Prep"
-            ],
+              " Audio Drill & Exit Summary",
+              " Portfolio & FE3 Prep"],
             "instructions": [
               "Step 1 (Checklist Audit - 5 mins): Audit your partner's portfolio using the Session 3 FE3 checklist: verify notes on algorithmic bias, explainable AI, and diplomatic concession phrases.",
               "Step 2 (Pronunciation Drill - 6 mins): Practice pronouncing complex ethical terms aloud: 'au-TON-o-mous', 'trans-PAR-en-cy', 'lia-BIL-i-ty', 'al-go-RITH-mic'.",
@@ -10380,12 +10282,10 @@ const COURSE_DATA = {
                 }
               ]
             },
-            "modeBadges": [
-              "👥 Pairs / Plenary",
+            "modeBadges": [" Pairs / Plenary",
               "⏱️ 10 mins",
-              "🗣️ Spoken Retrieval Drill",
-              "🎯 Vocabulary & Warm-Up"
-            ],
+              "️ Spoken Retrieval Drill",
+              " Vocabulary & Warm-Up"],
             "instructions": [
               "Step 1 (Headline Scan - 3 mins): Read the 3 real-world smart airport news prompts with your partner. Discuss which biometric technology has the greatest operational benefit.",
               "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Facial Recognition vs. Contactless Iris Scanning, Data Sovereignty vs. Centralized Cloud, IATA One ID vs. Legacy Boarding Passes, False Acceptance Rate [FAR] vs. False Rejection Rate [FRR]).",
@@ -10437,12 +10337,10 @@ const COURSE_DATA = {
                 "prompt": "Interview your partner: How does the European Union regulate cross-border biometric data transfers with third-party nations?"
               }
             ],
-            "modeBadges": [
-              "👥 Rotating Pairs",
+            "modeBadges": [" Rotating Pairs",
               "⏱️ 25 mins",
-              "🗣️ Speed Discussion",
-              "🎯 Stance & Linking Words"
-            ],
+              "️ Speed Discussion",
+              " Stance & Linking Words"],
             "instructions": [
               "Step 1 (Stance Preparation - 4 mins): Review the 4 passenger privacy dilemmas below (Mandatory Facial Scans at Boarding, Commercial Data Sharing with Retailers, Biometric Cyber Attacks, Opt-Out Rights). Choose your stance on each.",
               "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Discuss one dilemma per round using at least two linking phrases ('On the one hand...', 'While I accept that...', 'In contrast to...').",
@@ -10521,12 +10419,10 @@ const COURSE_DATA = {
                 "explanation": "Defining relative pronoun 'that' correctly modifies the system subject ('algorithms')."
               }
             ],
-            "modeBadges": [
-              "👥 Pairs / Solo",
+            "modeBadges": [" Pairs / Solo",
               "⏱️ 20 mins",
-              "✍️ Grammar Practice",
-              "🎯 Sentence Combining"
-            ],
+              "️ Grammar Practice",
+              " Sentence Combining"],
             "instructions": [
               "Step 1 (Rule Review - 5 mins): Examine the 3 relative clause formulas: Defining ('who, which, that'), Non-defining ('which, who' with commas), and Preposition + Relative Pronoun ('through which, for whom').",
               "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive sentence combining challenge questions individually. Combine short technical sentences into elegant complex structures.",
@@ -10568,12 +10464,10 @@ const COURSE_DATA = {
                 ]
               }
             ],
-            "modeBadges": [
-              "👥 Small Groups (3-4)",
+            "modeBadges": [" Small Groups (3-4)",
               "⏱️ 45 mins",
-              "🎭 Design Taskforce & Hearing",
-              "🎯 Negotiation & Defense"
-            ],
+              " Design Taskforce & Hearing",
+              " Negotiation & Defense"],
             "instructions": [
               "Step 1 (Role Allocation - 5 mins): Form groups of 3 or 4 and assign stakeholder roles: (A) Airport Operational Director, (B) Data Protection & Privacy Commissioner, (C) International Airline Operations Manager, (D) Cybersecurity Specialist.",
               "Step 2 (Terminal Blueprint Design - 15 mins): Design a 4-step passenger journey from curbside to gate (Bag Drop, Security Checkpoint, Duty-Free, Boarding Gate) specifying biometric touchpoints and privacy safeguards.",
@@ -10591,12 +10485,10 @@ const COURSE_DATA = {
           "closingReview": {
             "title": "Activity 5: 10-Minute Vocabulary Wrap-Up & FE3 Readiness Check",
             "summary": "Consolidation, pronunciation practice, and portfolio check",
-            "modeBadges": [
-              "👥 Pairs / Plenary",
+            "modeBadges": [" Pairs / Plenary",
               "⏱️ 10 mins",
-              "🎧 Audio Drill & Exit Summary",
-              "🎯 FE3 Milestone Prep"
-            ],
+              " Audio Drill & Exit Summary",
+              " FE3 Milestone Prep"],
             "instructions": [
               "Step 1 (Audio Pronunciation Drill): Click through the 18 key technical vocabulary items to hear authentic pronunciation. Practice repeating aloud with your partner.",
               "Step 2 (Rapid Definition Test - 4 mins): Test your partner on 3 random terms from the word cloud (e.g., contactless e-Gate, encryption key, single token travel).",
@@ -11347,12 +11239,10 @@ const COURSE_DATA = {
               "badge": "Session Overview • Travel & Transport"
             },
             "openingSession": {
-              "modeBadges": [
-                "👥 Pair Storytelling",
+              "modeBadges": [" Pair Storytelling",
                 "⏱️ 15 mins",
-                "🗣️ Spoken Anecdote",
-                "🎯 Narrative Fluency"
-              ],
+                "️ Spoken Anecdote",
+                " Narrative Fluency"],
               "instructions": [
                 "Step 1 (Think of a Trip - 2 mins): Think of a memorable travel experience (a flight delay, a missed train, a lost item, or a pleasant surprise). Review the useful words and phrases below.",
                 "Step 2 (Tell Your Story - 8 mins): In pairs, take turns telling your story (about 90 seconds to 2 minutes each). Use at least two useful words or phrases.",
@@ -11404,12 +11294,10 @@ const COURSE_DATA = {
               }
             },
             "survey": {
-              "modeBadges": [
-                "👥 Speed-Dating Rotation",
+              "modeBadges": [" Speed-Dating Rotation",
                 "⏱️ 4 min per dilemma",
-                "🗣️ Spoken Debate",
-                "🎯 Useful Opinion Phrases"
-              ],
+                "️ Spoken Debate",
+                " Useful Opinion Phrases"],
               "instructions": [
                 "Step 1 (Pair Setup): Partner A defends the statement; Partner B provides the counter-argument using the Support/Counter prompts.",
                 "Step 2 (Timed Debate - 3 mins/topic): Speak for 90 seconds each. Incorporate at least one opinion phrase from the reference box below.",
@@ -11461,12 +11349,10 @@ const COURSE_DATA = {
               ]
             },
             "collocationsClinic": {
-              "modeBadges": [
-                "👥 Pair Challenge",
+              "modeBadges": [" Pair Challenge",
                 "⏱️ 10 min study + 10 min quiz",
-                "📝 Vocabulary Practice",
-                "🎯 B2 Collocations"
-              ],
+                " Vocabulary Practice",
+                " B2 Collocations"],
               "instructions": [
                 "Step 1 (Contextualize - 8 mins): Read each collocation and its workplace example with your partner. Create an original sentence using \"clear customs\" and \"miss a connection\".",
                 "Step 2 (Quiz Challenge - 8 mins): Complete the 4-question interactive practice challenge individually without looking at notes.",
@@ -11555,11 +11441,9 @@ const COURSE_DATA = {
               }
             },
             "grammarClinic": {
-              "modeBadges": [
-                "👥 Spoken Practice",
+              "modeBadges": [" Spoken Practice",
                 "⏱️ 10 min rules + 15 min storytelling",
-                "🎯 Past Tenses for Stories"
-              ],
+                " Past Tenses for Stories"],
               "instructions": [
                 "Step 1 (Understand the 3 Past Tenses - 8 mins): Review how Past Continuous sets the background, Past Simple describes the main events, and Past Perfect shows what happened earlier.",
                 "Step 2 (Sentence Practice - 7 mins): Practice combining tenses with the example prompts. Click \"Show Model Answer\" to check your sentences.",
@@ -11600,12 +11484,10 @@ const COURSE_DATA = {
               ]
             },
             "rolePlay": {
-              "modeBadges": [
-                "🎭 Pair Simulation",
+              "modeBadges": [" Pair Simulation",
                 "⏱️ 5 min prep + 15 min simulation + 10 min debrief",
-                "👥 Passenger vs. Station Agent",
-                "🎯 De-escalation Vocabulary"
-              ],
+                " Passenger vs. Station Agent",
+                " De-escalation Vocabulary"],
               "instructions": [
                 "Step 1 (Role Prep - 5 mins): Person A = Passenger with tight Tokyo connection; Person B = Airline Customer Service Agent. Read your role card and plan 3 key phrases.",
                 "Step 2 (Live Simulation - 15 mins): Conduct the interaction in real time. Passenger expresses urgency without shouting; Agent remains empathetic, cites EU261 duty of care, and negotiates rebooking.",
@@ -11641,12 +11523,10 @@ const COURSE_DATA = {
               "task": "Work with your partner for 4 minutes per role, then switch roles. Focus on polite phrases, clear explanations, and active listening."
             },
             "closingReview": {
-              "modeBadges": [
-                "👤 Individual Self-Assessment",
+              "modeBadges": [" Individual Self-Assessment",
                 "⏱️ 10 mins",
-                "📝 Exit Ticket",
-                "🎯 Pronunciation Drill"
-              ],
+                " Exit Ticket",
+                " Pronunciation Drill"],
               "instructions": [
                 "Step 1 (Rapid Drill - 4 mins): Read the 30 session vocabulary items aloud with correct word stress and clear pronunciation.",
                 "Step 2 (Personal Selection - 3 mins): Star 3 words that are completely new to you and write a personal sentence for each.",
@@ -12344,12 +12224,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Pair Recall",
+              "modeBadges": [" Pair Recall",
                 "⏱️ 5 min pairs + 5 min class discussion",
-                "🗣️ Spoken Retrieval",
-                "🌿 Green Mobility"
-              ],
+                "️ Spoken Retrieval",
+                " Green Mobility"],
               "instructions": [
                 "Step 1 (City Headlines): In pairs, discuss the two Green Mobility news prompts. Ask your partner: \"Which modal shift initiative seems most viable in our region?\"",
                 "Step 2 (Memory Recall): Without looking at previous notes, recall and verbally explain 2 key travel distinctions from Session 1 (e.g. Layover vs Stopover, Direct vs Non-stop).",
@@ -12399,12 +12277,10 @@ const COURSE_DATA = {
                 "Which transport epoch brought the greatest improvement to human mobility? (Useful phrases: 'In my view, the steam railway was the biggest turning point because...', 'The automobile transformed society, but it also caused...').",
                 "Can high-speed rail completely replace short-haul aviation across Europe by 2040? (Useful phrases: 'Trains can easily replace flights for journeys under 4 hours, but...', 'The biggest barrier to replacing planes is...')."
               ],
-              "modeBadges": [
-                "👥 Speed-Dating Pairs",
+              "modeBadges": [" Speed-Dating Pairs",
                 "⏱️ 10 min prep + 15 min debate",
-                "🗣️ Epoch Defense",
-                "⏳ Historical Modal Shift"
-              ],
+                "️ Epoch Defense",
+                "⏳ Historical Modal Shift"],
               "instructions": [
                 "Step 1 (Epoch Analysis - 4 mins): Examine the 4 Epochs of Transport (Canal & Steam, Rail Dominance, Automobile Expansion, High-Speed & Decarbonized).",
                 "Step 2 (Timed Debate - 4 mins per topic): Partner A defends why their assigned epoch represented the greatest societal transformation; Partner B counters with its long-term environmental consequences.",
@@ -12442,11 +12318,9 @@ const COURSE_DATA = {
                   "prompt": "What infrastructure upgrades (like the planned Toulouse-Bordeaux high-speed line) are needed to trigger a complete modal shift? (Useful phrases: 'A high-speed rail connection would reduce travel time to...', 'To compete with hourly flights, train tickets need to be...')."
                 }
               ],
-              "modeBadges": [
-                "🎭 Pair Negotiation Pitch",
-                "🗣️ High-Speed Rail vs Air",
-                "💼 Policy Defense"
-              ],
+              "modeBadges": [" Pair Negotiation Pitch",
+                "️ High-Speed Rail vs Air",
+                " Policy Defense"],
               "instructions": [
                 "Step 1 (Corridor Selection - 3 mins): Choose one European corridor: Paris–Barcelona (6h30 rail vs 1h45 air), London–Edinburgh (4h20 rail vs 1h20 air), or Frankfurt–Milan (7h30 rail vs 1h15 air).",
                 "Step 2 (Role Allocation & Prep - 7 mins): Partner A represents the High-Speed Rail operator pitching total door-to-door productivity, zero security dwell time, and 90% CO2 reduction. Partner B represents the Regional Airline defending turnaround efficiency, urgent time-value, and route flexibility.",
@@ -12502,12 +12376,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Grammar Pair Practice",
+              "modeBadges": [" Grammar Pair Practice",
                 "⏱️ 8 min analysis + 12 min class review",
-                "✍️ Complex Comparisons",
-                "📈 Trends & Causality"
-              ],
+                "️ Complex Comparisons",
+                " Trends & Causality"],
               "instructions": [
                 "Step 1 (Rule Analysis - 5 mins): Review the 3 core grammar rules: Cause/Effect linkers, Double Comparatives, and Future Predictions with Modals.",
                 "Step 2 (Challenge Practice): Work through the 4 interactive grammar challenge questions individually, selecting the grammatically precise connector.",
@@ -12544,12 +12416,10 @@ const COURSE_DATA = {
                 }
               ],
               "task": "In groups of 3, debate which option ENAC should select under its DDRS environmental charter. Present a 2-minute spoken recommendation to the class.",
-              "modeBadges": [
-                "👥 Groups of 3 Discussion",
+              "modeBadges": [" Groups of 3 Discussion",
                 "⏱️ 12 min group work + 18 min class debate",
-                "🌿 Campus Decarbonization",
-                "📋 5-Point Action Plan"
-              ],
+                " Campus Decarbonization",
+                " 5-Point Action Plan"],
               "instructions": [
                 "Step 1 (Audit Review - 4 mins): Read the ENAC Campus Travel Dilemma: 68% car dependency, student rail discount gaps, and inter-site transit bottlenecks.",
                 "Step 2 (Taskforce Strategy - 8 mins): In groups of 3, act as the Green Mobility Taskforce to draft a 5-point Decarbonization Action Plan balancing 3 incentives with 2 deterrents.",
@@ -12640,12 +12510,10 @@ const COURSE_DATA = {
                   ]
                 }
               ],
-              "modeBadges": [
-                "🎧 Audio Drill & Taboo Challenge",
+              "modeBadges": [" Audio Drill & Taboo Challenge",
                 "⏱️ 5 min taboo pairs + 5 min reflection",
-                "🗣️ Fluency Under Pressure",
-                "📝 Self-Assessment Log"
-              ],
+                "️ Fluency Under Pressure",
+                " Self-Assessment Log"],
               "instructions": [
                 "Step 1 (Audio Pronunciation Drill): Click each of the 18 key mobility vocabulary words to listen to native pronunciation. Repeat chorally with your partner.",
                 "Step 2 (Taboo Challenge): Play the 45-Second Taboo Challenge: describe the target word to your partner without saying any of the 3 forbidden root terms.",
@@ -13248,11 +13116,9 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Pair Recall",
-                "🗣️ Spoken Retrieval",
-                "🏛️ Tourism Policy"
-              ],
+              "modeBadges": [" Pair Recall",
+                "️ Spoken Retrieval",
+                "️ Tourism Policy"],
               "instructions": [
                 "Step 1 (City Headlines): In pairs, discuss the two City Tourism headlines: Venice entrance fee expansion and Amsterdam short-term rental limits. Ask your partner: \"Which measure addresses root causes rather than symptoms?\"",
                 "Step 2 (Memory Recall): Without checking notes, test each other on 2 key concepts from Session 2 (e.g. modal shift, feeder line, decarbonization).",
@@ -13299,11 +13165,9 @@ const COURSE_DATA = {
                 }
               ],
               "discussionPrompt": "Which city policy has been most successful in balancing economic income with resident well-being?",
-              "modeBadges": [
-                "👥 Destination Analysis",
-                "📊 Carrying Capacity",
-                "🏙️ Municipal Measures"
-              ],
+              "modeBadges": [" Destination Analysis",
+                " Carrying Capacity",
+                "️ Municipal Measures"],
               "instructions": [
                 "Step 1 (Data Comparison): Examine the 4 destination pressure profiles (Venice, Amsterdam, Dubrovnik, Maya Bay), comparing resident populations against annual visitor volumes.",
                 "Step 2 (Comparing Tourist Pressure): Compare the visitor-to-resident figures across the destinations. Practice using comparative structures (e.g., 'Venice experiences far greater visitor pressure than...') to discuss the impact on local housing and public services.",
@@ -13335,11 +13199,9 @@ const COURSE_DATA = {
                   "objection": "Port authorities argue the city will lose millions in docking fees and provisioning contracts."
                 }
               ],
-              "modeBadges": [
-                "🎭 Municipal Role-Play Pitch",
-                "🗣️ Pitching to the Mayor",
-                "💼 Objection Defense"
-              ],
+              "modeBadges": [" Municipal Role-Play Pitch",
+                "️ Pitching to the Mayor",
+                " Objection Defense"],
               "instructions": [
                 "Step 1 (Policy Selection): Select one controversial municipal tourism policy from the grid: Strict Short-Term Rental Caps, Peak-Hour Access Tolls, or Cruise Ship Disembarkation Quotas.",
                 "Step 2 (Role-Play Prep): Partner A acts as the Chief Sustainability Officer pitching the policy to City Council; Partner B acts as the Chamber of Commerce President raising commercial objections.",
@@ -13395,11 +13257,9 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Causatives & Contrast Practice",
-                "✍️ Complex Connectors",
-                "🎯 B2 Sentence Patterns"
-              ],
+              "modeBadges": [" Causatives & Contrast Practice",
+                "️ Complex Connectors",
+                " B2 Sentence Patterns"],
               "instructions": [
                 "Step 1 (Rule Review): Review the 3 grammar patterns: Causatives ('have/get something done', 'make/let someone do'), Contrast linkers ('whereas', 'while', 'in spite of'), and Concession clauses ('despite the fact that').",
                 "Step 2 (Challenge Practice): Work through the 4 interactive grammar challenge questions individually without consulting notes.",
@@ -13454,11 +13314,9 @@ const COURSE_DATA = {
                 }
               ],
               "task": "Negotiate a realistic 3-point compromise agreement that addresses water rationing, tourism capacity limits, and infrastructure funding.",
-              "modeBadges": [
-                "👥 Multi-Stakeholder Round-Table",
-                "💧 Resource Scarcity Crisis",
-                "🤝 Multi-Party Consensus"
-              ],
+              "modeBadges": [" Multi-Stakeholder Round-Table",
+                " Resource Scarcity Crisis",
+                " Multi-Party Consensus"],
               "instructions": [
                 "Step 1 (Crisis Briefing): Review the Isla Serena Emergency Summit crisis dossier, reservoir depletion metrics, and the airport runway expansion dispute.",
                 "Step 2 (Role Allocation & Strategy): In groups of 4, assign roles (The Town Mayor, The Hotel Association President, The Organic Farmer, or The Environmental Protection Regulator) and prepare your non-negotiable demands.",
@@ -13537,11 +13395,9 @@ const COURSE_DATA = {
                   ]
                 }
               ],
-              "modeBadges": [
-                "🎧 Audio Drill & Taboo Challenge",
-                "🗣️ Fluency Under Pressure",
-                "📝 Self-Assessment Log"
-              ],
+              "modeBadges": [" Audio Drill & Taboo Challenge",
+                "️ Fluency Under Pressure",
+                " Self-Assessment Log"],
               "instructions": [
                 "Step 1 (Audio Pronunciation Drill): Chorally repeat the 18 key overtourism terms using the audio pronunciation buttons.",
                 "Step 2 (Taboo Challenge): Play the 45-Second Taboo Challenge with your partner: describe target terms ('carrying capacity', 'short-term let', 'moratorium') without saying forbidden words.",
@@ -14113,12 +13969,10 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Eco-Tourism News & Session 3 Spot-Check",
               "summary": "Opening warm-up: discuss genuine green travel innovations and check your memory of Session 3 overtourism terms.",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
-                "🗣️ Spoken Retrieval Drill",
-                "🎯 Vocabulary & Fluency",
-                "⚡ Rapid Recall"
-              ],
+              "modeBadges": [" Pairs / Plenary",
+                "️ Spoken Retrieval Drill",
+                " Vocabulary & Fluency",
+                " Rapid Recall"],
               "instructions": [
                 "Step 1 (Headline Exchange): In pairs, discuss the two eco-tourism news prompts below. Highlight one recent green travel story, clean transport initiative, or greenwashing controversy you have encountered.",
                 "Step 2 (Memory Retrieval): Test your partner on the 4 Session 3 overtourism terms (Carrying Capacity, De-Marketing, Resident Backlash, Tourist Levy) before clicking 'Reveal Answer'.",
@@ -14160,12 +14014,10 @@ const COURSE_DATA = {
             "forensicAuditMatrix": {
               "title": "Activity 2: Genuine Eco-Tourism vs. Greenwashing Evaluation Matrix",
               "summary": "Conduct a forensic evidence audit of 3 real-world tourism projects. Separate verified environmental stewardship from superficial marketing buzzwords using a structured criteria matrix.",
-              "modeBadges": [
-                "👥 Small Groups (3-4)",
-                "🔍 Forensic Case Audit",
-                "🎯 Evidence Evaluation Matrix",
-                "📊 Data Verification"
-              ],
+              "modeBadges": [" Small Groups (3-4)",
+                " Forensic Case Audit",
+                " Evidence Evaluation Matrix",
+                " Data Verification"],
               "instructions": [
                 "Step 1 (Evidence Extraction): Read Projects A, B, and C with your group. Highlight specific data points: renewable energy source, revenue retention percentage, and land ownership model.",
                 "Step 2 (Audit Checklist): Apply the 3-point Greenwashing Checklist to each project. Identify two deceptive marketing red flags in Project B and evaluate community revenue in Projects A and C.",
@@ -14205,12 +14057,10 @@ const COURSE_DATA = {
             "grammarClinic": {
               "title": "Activity 3: Grammar Focus: Mixed Conditionals & Purpose Clauses",
               "summary": "Connect past actions with present consequences using mixed conditionals, and express goals and conditions with formal connectors.",
-              "modeBadges": [
-                "👤 Individual -> 👥 Pairs",
-                "✍️ Grammar & Syntax Practice",
-                "🎯 B2 Grammar Mastery",
-                "💬 Sentence Clinic"
-              ],
+              "modeBadges": [" Individual ->  Pairs",
+                "️ Grammar & Syntax Practice",
+                " B2 Grammar Mastery",
+                " Sentence Clinic"],
               "instructions": [
                 "Step 1 (Formula Analysis): Study the three grammatical formulas below. Note the past-to-present timeline shift in Mixed Conditionals ('had + V3' -> 'would + base verb').",
                 "Step 2 (Sentence Construction): With your partner, construct 3 original sentences about tourism management: one mixed conditional ('If the island had banned mega-resorts...'), one connector of purpose ('in order that...'), and one conditional ('provided that...').",
@@ -14266,12 +14116,10 @@ const COURSE_DATA = {
             "researchSimulation": {
               "title": "Activity 4: Small-Group Research Sprint & Simulation: Global Destination Case Studies",
               "summary": "In pairs or triads, select one fragile destination case study. Analyze its ecological threats, examine its low-impact engineering solutions, and extract local community economic metrics for your upcoming 5-minute exposé.",
-              "modeBadges": [
-                "👥 Pairs / Working Trios",
-                "🔍 Case Study Research Sprint",
-                "📐 Data Synthesis & Planning",
-                "🌿 Fragile Ecosystem Analysis"
-              ],
+              "modeBadges": [" Pairs / Working Trios",
+                " Case Study Research Sprint",
+                " Data Synthesis & Planning",
+                " Fragile Ecosystem Analysis"],
               "instructions": [
                 "Step 1 (Case Selection & Role Division): In pairs or triads, choose one of the four real-world destination dossiers below (Galápagos, Costa Rica, Bhutan, or Norwegian Fjords). Assign speaking roles across your team (Context & Challenge, Sustainable Solution, Community Impact & Grammar Reflection).",
                 "Step 2 (Dossier Data Extraction): Examine the case data, photographic evidence, and carrying-capacity numbers. Extract 3 key operational facts, the primary ecological threat, and the local community benefit model.",
@@ -14336,12 +14184,10 @@ const COURSE_DATA = {
             "investorConsensusForum": {
               "title": "Activity 5: 5-Minute Spoken Exposés & Investor Consensus Defense",
               "summary": "Deliver a collaborative 5-minute spoken exposé on your team's destination case study. Defend your project against challenging questions from the Sustainability Investment Board, and complete the Peer Observer Evaluation Grid for other teams.",
-              "modeBadges": [
-                "🎤 Collaborative Spoken Exposé",
-                "👥 Plenary Defense & Q&A",
-                "📊 Peer Observer Evaluation Grid",
-                "🎯 Spoken Fluency & Non-Reading Delivery"
-              ],
+              "modeBadges": [" Collaborative Spoken Exposé",
+                " Plenary Defense & Q&A",
+                " Peer Observer Evaluation Grid",
+                " Spoken Fluency & Non-Reading Delivery"],
               "instructions": [
                 "Step 1 (Collaborative Delivery): Deliver your team's 5-minute spoken exposé to the class or exchange partner group. Distribute speaking time equitably across all team members.",
                 "Step 2 (The Non-Reading Standard): Speak from concise keywords, statistics, and visual prompts. Avoid reading full scripted paragraphs.",
@@ -14374,12 +14220,10 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Vocabulary Wrap-Up & FE1 Readiness Check",
               "summary": "Final consolidation for Session 5 Formative Evaluation: audio pronunciation drill of 18 essential terms and peer sign-off on your presentation readiness.",
-              "modeBadges": [
-                "👤 Individual & 👥 Pairs",
-                "⚡ Phonetic Audio Drill",
-                "🎯 FE1 Readiness Sign-Off",
-                "📋 Formative Verification"
-              ],
+              "modeBadges": [" Individual &  Pairs",
+                " Phonetic Audio Drill",
+                " FE1 Readiness Sign-Off",
+                " Formative Verification"],
               "instructions": [
                 "Step 1 (Audio Pronunciation Drill): Click each of the 18 audio buttons. Listen and repeat aloud, focusing on stress patterns: 're-GEN-er-a-tive', 'va-lor-i-ZA-tion', 'bio-di-VER-si-ty'.",
                 "Step 2 (FE1 Readiness Audit): Review the 4 items on the Session 5 Formative Evaluation Readiness Checklist with your presentation partner. Confirm your topic choice and slide structure.",
@@ -16951,11 +16795,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Environmental Policy News & Argument Warm-Up",
               "summary": "Opening warm-up examining international policy controversies and diagnostic distinctions in argumentation.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Quick Check",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Read the 3 weekly environmental policy headlines (short-haul flight bans, urban delivery mandates, greenwashing tribunals).",
                 "With your partner, discuss the 4 key distinctions: Claim vs. Evidence, Strategic Concession, Correlation vs. Causation, and the Straw Man fallacy.",
@@ -16998,11 +16840,9 @@ const COURSE_DATA = {
             "survey": {
               "title": "Activity 2: Environmental Policy Dilemmas: Speed Sparring",
               "summary": "Engage in timed 4-minute debate rounds on four controversial climate policies. Practice using structured arguments: Claim → Evidence → Reasoning → Concession → Rebuttal.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Timed Speed Sparring",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Review the 4 policy dilemma cards: Short-Haul Flight Bans, Airport Night Curfews, Small Modular Nuclear Reactors, and Fast-Tracking Green Infrastructure Permits.",
                 "Take turns roleplaying the Pro (advocacy) and Con (counter) positions for each topic in rapid 4-minute sparring rounds.",
@@ -17055,11 +16895,9 @@ const COURSE_DATA = {
             "grammarClinic": {
               "title": "Activity 3: Language Focus: Gerunds vs. Infinitives & Connecting Words for Contrasting Ideas",
               "summary": "Selecting the correct verb complementation patterns (Gerund vs. Infinitive) and mastering useful connecting words for persuasive speaking.",
-              "modeBadges": [
-                "Pairs / Individual",
+              "modeBadges": ["Pairs / Individual",
                 "Grammar Drills",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Review the 3 core grammatical structures: Verbs taking Gerunds (advocate doing, delay implementing), Verbs taking Infinitives (agree to fund, aim to achieve), and Contrasting Clauses (Although + clause vs. Despite + noun phrase).",
                 "Analyze the formula examples and identify which policy actions require an ongoing process focus (-ing) versus future commitments (to + verb).",
@@ -17139,11 +16977,9 @@ const COURSE_DATA = {
             "roleplay": {
               "title": "Activity 4: Public Inquiry Hearing Simulation",
               "summary": "Formal administrative inquiry and stakeholder Q&A on regional climate infrastructure.",
-              "modeBadges": [
-                "Groups of 4",
+              "modeBadges": ["Groups of 4",
                 "Public Inquiry Hearing",
-                "45 Mins"
-              ],
+                "45 Mins"],
               "instructions": [
                 "Form a hearing committee of 4: Environmental Commissioner (Chair), Airline/Airport Association Spokesperson, Metropolitan Residents Coalition President, and Chief Civil Infrastructure Engineer.",
                 "Review the hearing scenario: a proposed €5 passenger surcharge and municipal tax levy to finance €150M in sea-wall defenses and district cooling networks.",
@@ -17175,11 +17011,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Session 3 Wrap-Up & FE2 Argument Defense",
               "summary": "Consolidation, phonetics, and portfolio check for Formative Evaluation 2 readiness.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Self-Assessment",
-                "15 Mins"
-              ],
+                "15 Mins"],
               "instructions": [
                 "Cross-check your learning notes against the 3 Formative Evaluation 2 readiness criteria.",
                 "Record 5 advanced rhetorical linking words and 4 verb complementation patterns in your personal study portfolio.",
@@ -17741,11 +17575,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Airport Ecology News & Opening Warm-Up",
               "summary": "Opening warm-up on nature-based solutions, aerodrome wildlife management, and biodiversity net gain.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Quick Check",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Read the 3 news headlines regarding aerodrome wildflower meadows, statutory Biodiversity Net Gain (BNG) mandates, and AI bird radar systems.",
                 "Discuss the 4 diagnostic concepts with your partner: Nature-Based Solutions (NbS), BNG statutory metrics, ICAO Annex 14 Bird Strike Hazard balance, and Bioswales vs. concrete ditches.",
@@ -17788,11 +17620,9 @@ const COURSE_DATA = {
             "survey": {
               "title": "Activity 2: Biodiversity & Safety Dilemmas: Speed Survey",
               "summary": "Explore 4 real-world operational challenges where environmental protection intersects with aviation safety and urban expansion.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Timed Technical Survey",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Examine the 4 operational dilemmas: Airfield Long Grass Management (15-20 cm), Wildlife Overpasses (Ecoducts), AI Avian Radar & Acoustic Dispersal, and Terminal Green Roofs & Pollinators.",
                 "Interview your partner across 4 timed rounds, alternating between presenting the ecological benefit and challenging it with the aviation safety or cost constraint.",
@@ -17845,11 +17675,9 @@ const COURSE_DATA = {
             "grammarClinic": {
               "title": "Activity 3: Language Focus: Pronouns & Determiners in Technical English",
               "summary": "Mastering agreement with singular and plural indefinite pronouns, possessive determiners (its vs. their), and reflexive forms in TOEIC Part 5.",
-              "modeBadges": [
-                "Pairs / Individual",
+              "modeBadges": ["Pairs / Individual",
                 "Grammar Drills",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Review the 3 grammar rules: Singular Indefinite Pronouns (Each/Every/Neither take singular verbs), Possessive Determiners for organizations (The airport released its report, NOT their), and Reflexive/Emphatic forms (itself, themselves).",
                 "Note the high-frequency TOEIC Part 5 traps: confusing 'its' (possessive) with 'it\\'s' (it is), and verb agreement after 'Each of [plural noun]'.",
@@ -17929,11 +17757,9 @@ const COURSE_DATA = {
             "roleplay": {
               "title": "Activity 4: Airport Wildlife Hazard & Ecological Transition Committee",
               "summary": "Joint wildlife hazard mitigation and nature-based solutions committee.",
-              "modeBadges": [
-                "Groups of 4",
+              "modeBadges": ["Groups of 4",
                 "Committee Simulation",
-                "45 Mins"
-              ],
+                "45 Mins"],
               "instructions": [
                 "Form a 4-person committee: Aerodrome Wildlife Hazard Officer, Regional Wetland Nature Reserve Director, Airport Operations & Flight Safety Liaison, and Ecological Landscape Architect.",
                 "Review the mission: expand airport stormwater retention basins while guaranteeing zero increase in bird strike risks within the 13 km runway hazard zone.",
@@ -17965,11 +17791,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Session 4 Wrap-Up & FE2 Launch Briefing",
               "summary": "Final Formative Evaluation 2 checklist & topic confirmation.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "FE2 Preparation",
-                "15 Mins"
-              ],
+                "15 Mins"],
               "instructions": [
                 "Review the 5 Formative Evaluation 2 readiness checkpoints: topic selection, 50/50 partner speaking equity, 4-dimension structure, vocabulary integration (6-8 terms), and portfolio readiness.",
                 "Confirm your partner pairing and final topic (Option A: Airport Climate Resilience or Option B: City Climate Resilience).",
@@ -18694,12 +18518,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Pairs / Plenary",
+              "modeBadges": [" Pairs / Plenary",
                 "⏱️ 10 mins",
-                "🗣️ Spoken Retrieval Drill",
-                "🎯 Vocabulary & Warm-Up"
-              ],
+                "️ Spoken Retrieval Drill",
+                " Vocabulary & Warm-Up"],
               "instructions": [
                 "Step 1 (Headline Scan - 3 mins): Read the three real-world AI news prompts with your partner. Discuss which application has the greatest immediate impact on aviation or engineering.",
                 "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Narrow AI vs. General AI, Supervised Learning vs. Unsupervised Learning, Machine Learning vs. Deep Learning, Predictive Analytics vs. Generative Models).",
@@ -18751,12 +18573,10 @@ const COURSE_DATA = {
                   "prompt": "Interview your partner: How can airport management balance automation efficiency with social equity (DDRS)?"
                 }
               ],
-              "modeBadges": [
-                "👥 Rotating Pairs",
+              "modeBadges": [" Rotating Pairs",
                 "⏱️ 25 mins",
-                "🗣️ Speed Discussion",
-                "🎯 Stance & Linking Words"
-              ],
+                "️ Speed Discussion",
+                " Stance & Linking Words"],
               "instructions": [
                 "Step 1 (Stance Preparation - 4 mins): Review the 4 workplace automation dilemmas below. Choose your personal stance on each dilemma, noting one strong reason and one counter-argument.",
                 "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). State your stance clearly and support it with empirical evidence, using at least two linking phrases ('On the one hand...', 'While I accept that...', 'In contrast to...').",
@@ -18835,12 +18655,10 @@ const COURSE_DATA = {
                   "explanation": "Time marker 'By the end of the decade' combined with passive subject requires Future Perfect Passive ('will have been deployed')."
                 }
               ],
-              "modeBadges": [
-                "👥 Pairs / Solo",
+              "modeBadges": [" Pairs / Solo",
                 "⏱️ 20 mins",
-                "✍️ Grammar Practice",
-                "🎯 Technical Passive Voice"
-              ],
+                "️ Grammar Practice",
+                " Technical Passive Voice"],
               "instructions": [
                 "Step 1 (Rule Review - 5 mins): Study the 3 technical passive voice formulas: Present Simple Passive ('is/are analyzed'), Present Continuous Passive ('is/are being processed'), and Modal Passive ('must/should be verified'). Note why engineering reports favor passive constructions to maintain objective neutrality.",
                 "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive grammar challenge questions individually, converting active sentences to passive voice without notes.",
@@ -18882,12 +18700,10 @@ const COURSE_DATA = {
                   ]
                 }
               ],
-              "modeBadges": [
-                "👥 Small Groups (3-4)",
+              "modeBadges": [" Small Groups (3-4)",
                 "⏱️ 45 mins",
-                "🎭 Design Hearing & Defense",
-                "🎯 Negotiation & Critical Thinking"
-              ],
+                " Design Hearing & Defense",
+                " Negotiation & Critical Thinking"],
               "instructions": [
                 "Step 1 (Role Allocation - 5 mins): Form small groups of 3 or 4 and select your stakeholder roles: Chief Technology Officer (CTO), Head of Flight Operations, Union Ramp Safety Representative, or Data Privacy Officer.",
                 "Step 2 (Position Preparation - 15 mins): Prepare your 2-minute opening statement regarding the deployment of an autonomous baggage loading and predictive turn-around system. Identify 2 productivity benefits and 2 workforce safety or reliability risks.",
@@ -18905,12 +18721,10 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 5: Wrap-Up & FE3 Preparation",
               "summary": "Consolidation, pronunciation practice, and portfolio check",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
+              "modeBadges": [" Pairs / Plenary",
                 "⏱️ 15 mins",
-                "🎧 Audio Drill & Exit Summary",
-                "🎯 Portfolio & FE3 Prep"
-              ],
+                " Audio Drill & Exit Summary",
+                " Portfolio & FE3 Prep"],
               "instructions": [
                 "Step 1 (Checklist Audit - 5 mins): Complete the 3-point Formative Evaluation readiness checklist with your partner, verifying personal understanding of narrow vs. general AI and passive voice mastery.",
                 "Step 2 (Vocabulary Audio Drill - 6 mins): Review the 18 key technical AI terms. Click to listen to audio pronunciations and practice syllable stress aloud with your partner.",
@@ -19497,12 +19311,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Pairs / Plenary",
+              "modeBadges": [" Pairs / Plenary",
                 "⏱️ 10 mins",
-                "🗣️ Spoken Retrieval Drill",
-                "🎯 Vocabulary & Warm-Up"
-              ],
+                "️ Spoken Retrieval Drill",
+                " Vocabulary & Warm-Up"],
               "instructions": [
                 "Step 1 (Headline Scan - 3 mins): Read the three clean transport news prompts with your partner. Discuss which propulsion technology (hydrogen fuel cells, sustainable aviation fuels, battery-electric) is nearest commercial maturity.",
                 "Step 2 (Memory Recall): Without looking at notes, test each other on the 4 propulsion distinctions below (Cryogenic Liquid Hydrogen vs. High-Pressure Gas, SAF Drop-In Fuel vs. Clean-Sheet Airframe, Gravimetric Energy Density vs. Volumetric Density, High-Speed Rail vs. Short-Haul Turboprop).",
@@ -19554,12 +19366,10 @@ const COURSE_DATA = {
                   "prompt": "Interview your partner: How does the European Green Deal evaluate high-speed rail expansion vs. emerging magnetic levitation?"
                 }
               ],
-              "modeBadges": [
-                "👥 Rotating Pairs",
+              "modeBadges": [" Rotating Pairs",
                 "⏱️ 25 mins",
-                "🗣️ Speed Discussion",
-                "🎯 Stance & Linking Words"
-              ],
+                "️ Speed Discussion",
+                " Stance & Linking Words"],
               "instructions": [
                 "Step 1 (Corridor Evaluation - 4 mins): Review the 4 transport corridor dilemmas below. Formulate your personal stance on domestic flight bans vs. high-speed rail and SAF blend mandates.",
                 "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Defend your policy choice using at least two linking phrases ('In comparison to...', 'The fundamental trade-off is...', 'Whereas rail infrastructure requires...').",
@@ -19638,12 +19448,10 @@ const COURSE_DATA = {
                   "explanation": "Future passive 'will be introduced' matches the future timeframe before operations begin."
                 }
               ],
-              "modeBadges": [
-                "👥 Pairs / Solo",
+              "modeBadges": [" Pairs / Solo",
                 "⏱️ 20 mins",
-                "✍️ Grammar Practice",
-                "🎯 Predictive Language"
-              ],
+                "️ Grammar Practice",
+                " Predictive Language"],
               "instructions": [
                 "Step 1 (Rule Review - 5 mins): Review the 4 levels of predictive certainty: Definite ('is bound to / will inevitably'), High Probability ('is likely to / is projected to'), Moderate Possibility ('may well / could potentially'), and Unlikely ('is doubtful that / is unlikely to').",
                 "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive forecasting sentences individually, selecting the correct predictive modal and adverb according to empirical probability.",
@@ -19685,12 +19493,10 @@ const COURSE_DATA = {
                   ]
                 }
               ],
-              "modeBadges": [
-                "👥 Small Groups (3-4)",
+              "modeBadges": [" Small Groups (3-4)",
                 "⏱️ 45 mins",
-                "🎭 Boardroom Presentation & Defense",
-                "🎯 Fleet Strategy & Q&A"
-              ],
+                " Boardroom Presentation & Defense",
+                " Fleet Strategy & Q&A"],
               "instructions": [
                 "Step 1 (Fleet Strategy Preparation - 10 mins): In teams of 3 or 4 representing an airline executive committee, prepare a €1.2 billion fleet renewal pitch for the Board of Directors. Select your transition pathway: (A) Accelerated SAF blend procurement, (B) Fleet of 40 hydrogen-hybrid regional turboprops, or (C) High-density conventional fleet retrofits with winglets and geared turbofans.",
                 "Step 2 (Pitch Delivery - 15 mins): Present your 3-minute investment pitch to the Board, detailing capital costs, emissions reductions, fuel supply chain reliability, and return on investment.",
@@ -19708,12 +19514,10 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 5: Wrap-Up & FE3 Preparation",
               "summary": "Consolidation, pronunciation practice, and portfolio check",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
+              "modeBadges": [" Pairs / Plenary",
                 "⏱️ 15 mins",
-                "🎧 Audio Drill & Exit Summary",
-                "🎯 Portfolio & FE3 Prep"
-              ],
+                " Audio Drill & Exit Summary",
+                " Portfolio & FE3 Prep"],
               "instructions": [
                 "Step 1 (Checklist Audit - 5 mins): Audit your partner's understanding of clean propulsion pathways and predictive certainty formulas using the Session 2 FE3 checklist.",
                 "Step 2 (Pronunciation Drill - 6 mins): Practice syllable stress on 18 clean transport terms aloud: 'al-TER-na-tive', 'pro-PUL-sion', 'hy-po-THET-i-cal', 'in-fra-STRUC-ture'.",
@@ -20300,12 +20104,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Pairs / Plenary",
+              "modeBadges": [" Pairs / Plenary",
                 "⏱️ 10 mins",
-                "🗣️ Spoken Retrieval Drill",
-                "🎯 Vocabulary & Warm-Up"
-              ],
+                "️ Spoken Retrieval Drill",
+                " Vocabulary & Warm-Up"],
               "instructions": [
                 "Step 1 (Headline Scan - 3 mins): Read the three headlines on autonomous AI decisions, algorithmic bias, and facial recognition bans. Discuss which controversy raises the greatest legal liability.",
                 "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Algorithmic Bias vs. Training Data Imbalance, Explainable AI [XAI] vs. Black-Box Neural Networks, Human-in-the-Loop vs. Human-on-the-Loop, Data Minimization vs. Bulk Surveillance).",
@@ -20357,12 +20159,10 @@ const COURSE_DATA = {
                   "prompt": "Interview your partner: How can aerospace firms establish secure, closed-loop generative coding environments?"
                 }
               ],
-              "modeBadges": [
-                "👥 Rotating Pairs",
+              "modeBadges": [" Rotating Pairs",
                 "⏱️ 25 mins",
-                "🗣️ Speed Discussion",
-                "🎯 Stance & Linking Words"
-              ],
+                "️ Speed Discussion",
+                " Stance & Linking Words"],
               "instructions": [
                 "Step 1 (Stance Preparation - 4 mins): Review the 4 ethical technology dilemmas below (Autonomous Drone Delivery, AI Recruitment Filtering, Predictive Policing at Customs, Generative AI for Maintenance Manuals). Decide your ethical boundary on each.",
                 "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Debate each topic using polite disagreement and concession linkers ('While I concede that efficiency increases,... nevertheless...', 'Granted, the model is fast, but...').",
@@ -20441,12 +20241,10 @@ const COURSE_DATA = {
                   "explanation": "Fixed qualifying collocation 'To a certain extent' requires the noun form 'extent'."
                 }
               ],
-              "modeBadges": [
-                "👥 Pairs / Solo",
+              "modeBadges": [" Pairs / Solo",
                 "⏱️ 20 mins",
-                "✍️ Grammar Practice",
-                "🎯 Diplomatic Language"
-              ],
+                "️ Grammar Practice",
+                " Diplomatic Language"],
               "instructions": [
                 "Step 1 (Rule Review - 5 mins): Study the 3 formulas for diplomatic counter-argumentation: Polite Concession ('While I understand that X, we must consider Y'), Cautious Assertion ('It could be argued that...', 'Evidence suggests that...'), and Formal Refutation ('That claim is not supported by empirical data').",
                 "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive practice prompts individually, rewriting blunt, aggressive statements into polite, professional diplomatic phrases.",
@@ -20488,12 +20286,10 @@ const COURSE_DATA = {
                   ]
                 }
               ],
-              "modeBadges": [
-                "👥 Small Groups (3-4)",
+              "modeBadges": [" Small Groups (3-4)",
                 "⏱️ 45 mins",
-                "🎭 Ethics Hearing & Defense",
-                "🎯 Regulatory Defense & Q&A"
-              ],
+                " Ethics Hearing & Defense",
+                " Regulatory Defense & Q&A"],
               "instructions": [
                 "Step 1 (Stakeholder Briefing - 10 mins): In groups of 3 or 4, take on assigned roles: Lead AI Research Engineer, Civil Aviation Authority Safety Inspector, Passenger Rights Advocate, or Corporate Legal Counsel.",
                 "Step 2 (Position Preparation - 15 mins): Prepare your 2-minute testimony regarding an airline's proposed dynamic pricing and algorithmic overbooking model that uses passenger biometric tracking and credit scoring.",
@@ -20511,12 +20307,10 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 5: Wrap-Up & FE3 Preparation",
               "summary": "Consolidation, pronunciation practice, and portfolio check",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
+              "modeBadges": [" Pairs / Plenary",
                 "⏱️ 15 mins",
-                "🎧 Audio Drill & Exit Summary",
-                "🎯 Portfolio & FE3 Prep"
-              ],
+                " Audio Drill & Exit Summary",
+                " Portfolio & FE3 Prep"],
               "instructions": [
                 "Step 1 (Checklist Audit - 5 mins): Audit your partner's portfolio using the Session 3 FE3 checklist: verify notes on algorithmic bias, explainable AI, and diplomatic concession phrases.",
                 "Step 2 (Pronunciation Drill - 6 mins): Practice pronouncing complex ethical terms aloud: 'au-TON-o-mous', 'trans-PAR-en-cy', 'lia-BIL-i-ty', 'al-go-RITH-mic'.",
@@ -21103,12 +20897,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Pairs / Plenary",
+              "modeBadges": [" Pairs / Plenary",
                 "⏱️ 10 mins",
-                "🗣️ Spoken Retrieval Drill",
-                "🎯 Vocabulary & Warm-Up"
-              ],
+                "️ Spoken Retrieval Drill",
+                " Vocabulary & Warm-Up"],
               "instructions": [
                 "Step 1 (Headline Scan - 3 mins): Read the 3 real-world smart airport news prompts with your partner. Discuss which biometric technology has the greatest operational benefit.",
                 "Step 2 (Memory Recall): Without looking at notes, take turns defining the 4 key distinction terms below (Facial Recognition vs. Contactless Iris Scanning, Data Sovereignty vs. Centralized Cloud, IATA One ID vs. Legacy Boarding Passes, False Acceptance Rate [FAR] vs. False Rejection Rate [FRR]).",
@@ -21160,12 +20952,10 @@ const COURSE_DATA = {
                   "prompt": "Interview your partner: How does the European Union regulate cross-border biometric data transfers with third-party nations?"
                 }
               ],
-              "modeBadges": [
-                "👥 Rotating Pairs",
+              "modeBadges": [" Rotating Pairs",
                 "⏱️ 25 mins",
-                "🗣️ Speed Discussion",
-                "🎯 Stance & Linking Words"
-              ],
+                "️ Speed Discussion",
+                " Stance & Linking Words"],
               "instructions": [
                 "Step 1 (Stance Preparation - 4 mins): Review the 4 passenger privacy dilemmas below (Mandatory Facial Scans at Boarding, Commercial Data Sharing with Retailers, Biometric Cyber Attacks, Opt-Out Rights). Choose your stance on each.",
                 "Step 2 (Speed Discussion - 16 mins): Rotate through 4 partner rounds (4 minutes per dilemma). Discuss one dilemma per round using at least two linking phrases ('On the one hand...', 'While I accept that...', 'In contrast to...').",
@@ -21244,12 +21034,10 @@ const COURSE_DATA = {
                   "explanation": "Defining relative pronoun 'that' correctly modifies the system subject ('algorithms')."
                 }
               ],
-              "modeBadges": [
-                "👥 Pairs / Solo",
+              "modeBadges": [" Pairs / Solo",
                 "⏱️ 20 mins",
-                "✍️ Grammar Practice",
-                "🎯 Sentence Combining"
-              ],
+                "️ Grammar Practice",
+                " Sentence Combining"],
               "instructions": [
                 "Step 1 (Rule Review - 5 mins): Examine the 3 relative clause formulas: Defining ('who, which, that'), Non-defining ('which, who' with commas), and Preposition + Relative Pronoun ('through which, for whom').",
                 "Step 2 (Practice Drills - 8 mins): Complete the 4 interactive sentence combining challenge questions individually. Combine short technical sentences into elegant complex structures.",
@@ -21291,12 +21079,10 @@ const COURSE_DATA = {
                   ]
                 }
               ],
-              "modeBadges": [
-                "👥 Small Groups (3-4)",
+              "modeBadges": [" Small Groups (3-4)",
                 "⏱️ 45 mins",
-                "🎭 Design Taskforce & Hearing",
-                "🎯 Negotiation & Defense"
-              ],
+                " Design Taskforce & Hearing",
+                " Negotiation & Defense"],
               "instructions": [
                 "Step 1 (Role Allocation - 5 mins): Form groups of 3 or 4 and assign stakeholder roles: (A) Airport Operational Director, (B) Data Protection & Privacy Commissioner, (C) International Airline Operations Manager, (D) Cybersecurity Specialist.",
                 "Step 2 (Terminal Blueprint Design - 15 mins): Design a 4-step passenger journey from curbside to gate (Bag Drop, Security Checkpoint, Duty-Free, Boarding Gate) specifying biometric touchpoints and privacy safeguards.",
@@ -21314,12 +21100,10 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 5: 10-Minute Vocabulary Wrap-Up & FE3 Readiness Check",
               "summary": "Consolidation, pronunciation practice, and portfolio check",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
+              "modeBadges": [" Pairs / Plenary",
                 "⏱️ 10 mins",
-                "🎧 Audio Drill & Exit Summary",
-                "🎯 FE3 Milestone Prep"
-              ],
+                " Audio Drill & Exit Summary",
+                " FE3 Milestone Prep"],
               "instructions": [
                 "Step 1 (Audio Pronunciation Drill): Click through the 18 key technical vocabulary items to hear authentic pronunciation. Practice repeating aloud with your partner.",
                 "Step 2 (Rapid Definition Test - 4 mins): Test your partner on 3 random terms from the word cloud (e.g., contactless e-Gate, encryption key, single token travel).",
@@ -21620,12 +21404,10 @@ const COURSE_DATA = {
               "subtitle": "Commercial Aviation Dilemmas, Passenger Disruption & Regulatory Modals"
             },
             "openingSession": {
-              "modeBadges": [
-                "👥 Pair Spot-Check",
+              "modeBadges": [" Pair Spot-Check",
                 "⏱️ 5 min pairs + 5 min debrief",
-                "🗣️ Vocabulary Recall",
-                "🎯 Operational Acronyms"
-              ],
+                "️ Vocabulary Recall",
+                " Operational Acronyms"],
               "instructions": [
                 "Step 1 (City Headlines): In pairs, discuss the headline prompts: \"What airline or air traffic management story made news this week?\"",
                 "Step 2 (Quick Check - 4 mins): Take turns testing each other on the 4 aviation distinctions (e.g. Ground Handler vs. Turnaround Coordinator) without revealing answers.",
@@ -21667,12 +21449,10 @@ const COURSE_DATA = {
               }
             },
             "survey": {
-              "modeBadges": [
-                "👥 Speed-Dating Rotation",
+              "modeBadges": [" Speed-Dating Rotation",
                 "⏱️ 4 min per dilemma",
-                "🗣️ Technical Debate",
-                "🎯 Useful Opinion Phrases"
-              ],
+                "️ Technical Debate",
+                " Useful Opinion Phrases"],
               "instructions": [
                 "Step 1 (Pairing): Review Topic 01–04. Partner A argues for stricter regulation; Partner B defends economic flexibility.",
                 "Step 2 (Timed Debate - 3 mins/topic): Debate each statement. Both speakers MUST incorporate at least one opinion phrase from the reference box below.",
@@ -21725,11 +21505,9 @@ const COURSE_DATA = {
               ]
             },
             "modalsClinic": {
-              "modeBadges": [
-                "👤 Individual Analysis + 👥 Regulatory Peer Check",
+              "modeBadges": [" Individual Analysis +  Regulatory Peer Check",
                 "⏱️ 10 min rules + 15 min drills",
-                "🎯 Must / May / Shall"
-              ],
+                " Must / May / Shall"],
               "instructions": [
                 "Step 1 (Regulatory Guidelines - 8 mins): Study the difference between mandatory obligations (\"must / shall\"), conditional permission (\"may\"), and strict prohibition (\"must not\").",
                 "Step 2 (ICAO Drafting - 10 mins): Complete the regulatory sentence drills by inserting the correct modal verb for aviation security rules.",
@@ -21817,11 +21595,9 @@ const COURSE_DATA = {
               }
             },
             "operationalCaseStudy": {
-              "modeBadges": [
-                "👥 Case Study Investigation",
+              "modeBadges": [" Case Study Investigation",
                 "⏱️ 8 min reading + 12 min pair analysis + 5 min plenary",
-                "🎯 Passenger Rights vs. Safety"
-              ],
+                " Passenger Rights vs. Safety"],
               "instructions": [
                 "Step 1 (Read Scenario - 5 mins): Review the Flight AF1420 Operational Incident Briefing, technical failure log, and EU261 passenger entitlement parameters.",
                 "Step 2 (Pair Preparation - 5 mins): Assign roles (Role A: Passenger Service Liaison vs. Role B: Frustrated Business Traveler) and review your communicative goals.",
@@ -21892,11 +21668,9 @@ const COURSE_DATA = {
               "task": "Conduct a 4-minute spoken role-play with your partner. Then swap roles. Focus on de-escalation, professional courtesy, and accurate explanation of passenger rights."
             },
             "miniDebate": {
-              "modeBadges": [
-                "👥👥 Groups of 4 • Stakeholder Committee",
+              "modeBadges": [" Groups of 4 • Stakeholder Committee",
                 "⏱️ 5 min prep + 15 min debate + 5 min pitch",
-                "🗣️ 60-Second Briefing"
-              ],
+                "️ 60-Second Briefing"],
               "instructions": [
                 "Step 1 (Role Allocation - 5 mins): Form teams of 4: Airport Director, Airline Station Manager, Air Traffic Control Supervisor, Passenger Rights Representative.",
                 "Step 2 (Committee Deliberation - 15 mins): Debate whether to support the total alcohol retail ban or propose a regulated compromise (such as a 2-drink boarding pass cap). Weigh safety against concession revenues.",
@@ -21935,12 +21709,10 @@ const COURSE_DATA = {
               }
             },
             "closingReview": {
-              "modeBadges": [
-                "👤 Individual Self-Assessment",
+              "modeBadges": [" Individual Self-Assessment",
                 "⏱️ 10 mins",
-                "📝 Study Log",
-                "🎯 Pronunciation Drill"
-              ],
+                " Study Log",
+                " Pronunciation Drill"],
               "instructions": [
                 "Step 1 (Pronunciation - 4 mins): Practice pronouncing the 30 core terms with emphasis on word stress (e.g., ca'pacity, co'mpliance, tur'naround).",
                 "Step 2 (Sentence Drill - 3 mins): Write 2 original operational sentences combining at least 3 target terms.",
@@ -22610,12 +22382,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Airfield Spot-Check",
+              "modeBadges": [" Airfield Spot-Check",
                 "⏱️ 5 min pairs + 5 min class discussion",
-                "🗣️ Spatial Terminology",
-                "✈️ Aerodrome Movement"
-              ],
+                "️ Spatial Terminology",
+                "️ Aerodrome Movement"],
               "instructions": [
                 "Step 1 (News Scan - 3 mins): Review the airport technology and innovation headlines with your partner.",
                 "Step 2 (Catch-Up Recall - 4 mins): Take turns quizzing each other on the 4 Session 1 operational distinctions (Apron vs Ramp, Slot vs Schedule, De-icing vs Anti-icing).",
@@ -22677,12 +22447,10 @@ const COURSE_DATA = {
                   "prompt": "Interview your partner: What customer assistance protocols should ground operations maintain when check-in is automated? (Useful phrases: 'Airlines should keep human staff because...', 'When kiosks break down, ground staff must...')."
                 }
               ],
-              "modeBadges": [
-                "👥 Sequential Flow Tracing",
+              "modeBadges": [" Sequential Flow Tracing",
                 "⏱️ 8 min pairs + 12 min class discussion",
-                "✈️ Passenger Facilitation",
-                "🔍 Bottleneck Identification"
-              ],
+                "️ Passenger Facilitation",
+                " Bottleneck Identification"],
               "instructions": [
                 "Step 1 (Touchpoint Tracing - 4 mins): Trace an international passenger's sequential movement across all 5 concourse touchpoints (Landside Curb to Departure Gate).",
                 "Step 2 (Dilemma Debate - 6 mins): Analyze Facilitation Dilemma 01 (Biometric E-Gates) and Dilemma 02 (Baggage Drop). Formulate your personal stance using the 1–5 scale.",
@@ -22770,12 +22538,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Spatial Precision Workshop",
+              "modeBadges": [" Spatial Precision Workshop",
                 "⏱️ 10 min exercise + 15 min class review",
-                "🗺️ Airfield Prepositions",
-                "🎯 Positional Clarity"
-              ],
+                "️ Airfield Prepositions",
+                " Positional Clarity"],
               "instructions": [
                 "Step 1 (Rule Review): Study the 4 preposition categories (Position, Movement/Direction, Relative Location, Aerodrome Proximity).",
                 "Step 2 (Interactive Challenge - 8 mins): Complete the 4 airfield spatial scenarios individually, selecting the exact preposition required by ICAO standards.",
@@ -22823,12 +22589,10 @@ const COURSE_DATA = {
                 }
               ],
               "task": "Conduct a 4-minute spoken VHF radio exchange and de-escalation role-play. Focus on spatial precision, professional composure, and clear prepositions. Then swap roles.",
-              "modeBadges": [
-                "🚨 Safety Incident Case Study",
+              "modeBadges": [" Safety Incident Case Study",
                 "⏱️ 10 min analysis + 15 min briefing",
-                "🔍 Unauthorized Access",
-                "📋 Corrective Protocol"
-              ],
+                " Unauthorized Access",
+                " Corrective Protocol"],
               "instructions": [
                 "Step 1 (Incident Dissection - 4 mins): Read the unauthorized apron access scenario: Gate B12 door breach and Stand 4 ramp security alert.",
                 "Step 2 (Role-Play Prep - 6 mins): Partner A takes the Operations Trainee role; Partner B takes the Ramp Lead role. Prepare your VHF radio statements using key phrases.",
@@ -22870,11 +22634,9 @@ const COURSE_DATA = {
                 "title": "60-Second Airfield Safety Briefing Model",
                 "text": "\"Good morning team. Here is our daily airfield pavement inspection summary for Runway 09/27 and its associated taxiway network. Pavement friction levels along Runway 09 Left are within nominal safety thresholds, but recent repaving near Holding Point Bravo has temporarily obscured the double solid holding position lines. A NOTAM has been issued, and maintenance crews will repaint the mandatory markings tonight at 2300 hours. In the interim, all ground vehicle operators must exercise heightened vigilance when holding short at Bravo, and verify taxiway centerline alignment on Taxiway Alpha due to ongoing apron stand expansion. Thank you.\""
               },
-              "modeBadges": [
-                "📻 Airside Movement Workshop",
-                "🗺️ Taxiway Markings & Signs",
-                "🗣️ Taxi Routing Briefing"
-              ],
+              "modeBadges": [" Airside Movement Workshop",
+                "️ Taxiway Markings & Signs",
+                "️ Taxi Routing Briefing"],
               "instructions": [
                 "Step 1 (Markings Scan - 4 mins): Review the 4 visual guidance markings (Holding Position, Taxiway Centerline, Mandatory Signage, ILS Critical Boundary).",
                 "Step 2 (Model Study - 4 mins): Study the 60-Second Airfield Safety Briefing Model, paying attention to phonetic alphabet delivery and holding point clarity.",
@@ -22900,12 +22662,10 @@ const COURSE_DATA = {
                   "desc": "Record two spatial prepositions and one operational radio phrase you practiced during today's apron case study into your learning log."
                 }
               ],
-              "modeBadges": [
-                "👥 Rapid Vocabulary Drill",
+              "modeBadges": [" Rapid Vocabulary Drill",
                 "⏱️ 5 min quiz + 5 min reflection",
-                "🗣️ Phonetic Precision",
-                "📝 Self-Assessment Log"
-              ],
+                "️ Phonetic Precision",
+                " Self-Assessment Log"],
               "instructions": [
                 "Step 1 (Review Prompts - 4 mins): Work through the 3 closing steps: Self-Check Quiz, Flashcard Review, and Audio Drill.",
                 "Step 2 (Phonetic Challenge - 3 mins): Practice aloud the standard ICAO spelling alphabet for all aerodrome designators (Alpha, Bravo, Charlie...).",
@@ -23609,11 +23369,9 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Apron News & Spot-Check",
-                "🗣️ Airside Vocabulary",
-                "✈️ Turnaround Briefing"
-              ],
+              "modeBadges": [" Apron News & Spot-Check",
+                "️ Airside Vocabulary",
+                "️ Turnaround Briefing"],
               "instructions": [
                 "Step 1 (News Review): Review the Apron Operations and Ground Safety news headlines with your partner.",
                 "Step 2 (Markings Recall): Take turns quizzing each other on 3 aerodrome markings from Session 2 (Holding Position, Taxiway Centerline, ILS Critical Area).",
@@ -23670,11 +23428,9 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "📊 Turnaround Timeline",
-                "✈️ 35-Min Servicing Window",
-                "🗣️ Sequencing Tenses"
-              ],
+              "modeBadges": [" Turnaround Timeline",
+                "️ 35-Min Servicing Window",
+                "️ Sequencing Tenses"],
               "instructions": [
                 "Step 1 (Timeline Analysis): Analyze the Turnaround Clock milestones from T-35 (chocks on, engine shutdown) to T+0 (pushback clearance).",
                 "Step 2 (Concurrent Paths): Identify critical path operations that run concurrently: passenger deplaning, baggage offloading, refueling, catering, and cleaning.",
@@ -23915,12 +23671,10 @@ const COURSE_DATA = {
                   "spokenTask": "Describe the safety hazard using 'as a result of' and 'therefore'."
                 }
               ],
-              "modeBadges": [
-                "🚨 Apron Safety & Incident Analysis",
-                "🗣️ Spoken Cause-Effect Practice",
-                "✍️ Cause-Effect Linkers",
-                "📋 Root Cause Analysis"
-              ],
+              "modeBadges": [" Apron Safety & Incident Analysis",
+                "️ Spoken Cause-Effect Practice",
+                "️ Cause-Effect Linkers",
+                " Root Cause Analysis"],
               "instructions": [
                 "Step 1 (Grammar Review): Review the 4 Cause-Effect grammatical patterns: 'due to / owing to' + noun phrase, 'as a result of', and 'consequently / therefore'.",
                 "Step 2 (Scenario Dissection): Work through the 4 Ramp Incident Case Scenarios (hydraulic fluid spill, FOD on taxiway, wing icing, unauthorized contractor vehicle).",
@@ -23964,11 +23718,9 @@ const COURSE_DATA = {
                 }
               ],
               "recoveryInstructions": "Work together in pairs to agree on a prioritized 3-step action plan using modal verbs of necessity and obligation (must, should, have to, need to). Prepare to defend your sequence to the class.",
-              "modeBadges": [
-                "📻 TSEEAC Shift Handover Simulation",
-                "🗣️ 60-Second Handover Standard",
-                "🤝 Ramp Crisis Management"
-              ],
+              "modeBadges": [" TSEEAC Shift Handover Simulation",
+                "️ 60-Second Handover Standard",
+                " Ramp Crisis Management"],
               "instructions": [
                 "Step 1 (Situation Report): Examine the Operational Situation Report: 3 simultaneous ramp bottlenecks (fuel spill Stand 14, conveyor belt failure Stand 16, lost transfer baggage).",
                 "Step 2 (Role Allocation & Briefing Prep): Partner A acts as Outgoing Ramp Coordinator delivering the 4-part Shift Handover Briefing; Partner B acts as Incoming Ramp Coordinator preparing tactical follow-up questions.",
@@ -24021,12 +23773,10 @@ const COURSE_DATA = {
                   "desc": "Rate your confidence (1 to 5) explaining ramp delays using formal connectors like 'due to' and 'owing to'. Note any difficult words in your study portfolio."
                 }
               ],
-              "modeBadges": [
-                "👥 Rapid Vocabulary Drill",
-                "🎯 Vocabulary Retention",
-                "🗣️ Phonetic Precision",
-                "📝 Self-Assessment Log"
-              ],
+              "modeBadges": [" Rapid Vocabulary Drill",
+                " Vocabulary Retention",
+                "️ Phonetic Precision",
+                " Self-Assessment Log"],
               "instructions": [
                 "Step 1 (Consolidation): Complete the 3-step vocabulary review: Self-Check Quiz, Flashcard Mode, and Pronunciation Drill.",
                 "Step 2 (Peer Quiz): Test your partner on 4 high-risk operational terms: 'chocks', 'conveyor', 'pushback', 'turnaround'.",
@@ -24036,12 +23786,10 @@ const COURSE_DATA = {
               "teacherNotes": "Conduct a rapid whole-class choral drill on high-risk pronunciation items: 'chocks', 'hydraulic', 'conveyance', 'turnaround', 'simultaneous'."
             },
             "vehiclesInstruction": {
-              "modeBadges": [
-                "👥 GSE Defining Game",
-                "🎯 Mystery GSE Challenge",
-                "🗣️ Defining Relative Clauses",
-                "🚜 Ground Support Equipment"
-              ],
+              "modeBadges": [" GSE Defining Game",
+                " Mystery GSE Challenge",
+                "️ Defining Relative Clauses",
+                " Ground Support Equipment"],
               "instructions": [
                 "Step 1 (Clue Reading): Student A views the vehicle clues and describes its operational role using defining language without stating the vehicle's name.",
                 "Step 2 (Identification & Model): Student B listens, identifies the vehicle, and formulates a complete spoken definition ('This vehicle is designed to...').",
@@ -24611,11 +24359,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation News & Session 3 Spot-Check",
               "summary": "Every session begins with a professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
-                "🗣️ Operational Recall Drill",
-                "🎯 Technical Vocabulary & Fluency"
-              ],
+              "modeBadges": [" Pairs / Plenary",
+                "️ Operational Recall Drill",
+                " Technical Vocabulary & Fluency"],
               "instructions": [
                 "Step 1 (Aviation News Exchange): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
                 "Step 2 (Session 3 GSE Spot-Check): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
@@ -24653,11 +24399,9 @@ const COURSE_DATA = {
             "jobTaxonomy": {
               "title": "Activity 2: Aviation Operational Roles & Jurisdictions Reference Matrix",
               "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
-              "modeBadges": [
-                "👥 Small Groups / Pairs",
-                "🧭 Roles & Jurisdiction Matrix",
-                "🎯 Operational Domain Mastery"
-              ],
+              "modeBadges": [" Small Groups / Pairs",
+                " Roles & Jurisdiction Matrix",
+                " Operational Domain Mastery"],
               "instructions": [
                 "Step 1 (Matrix Exploration): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Analyze the physical jurisdiction, daily equipment, and core duty for each.",
                 "Step 2 (Crucial Distinction Audit): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
@@ -24773,11 +24517,9 @@ const COURSE_DATA = {
             "grammarClinic": {
               "title": "Activity 4: Functional Language Clinic: Responsibilities, Duties & Authority",
               "summary": "Mastering professional formulas to express responsibilities and authority clearly and naturally. Avoid French false friends ('responsable de', 'chargé de').",
-              "modeBadges": [
-                "👥 Pairs / Interactive Practice",
-                "📝 Sentence Structure Clinic",
-                "🎯 Preposition Mastery"
-              ],
+              "modeBadges": [" Pairs / Interactive Practice",
+                " Sentence Structure Clinic",
+                " Preposition Mastery"],
               "instructions": [
                 "Step 1 (Formula Mastery): Study the four core structures: 'be responsible for + -ing', 'be tasked with + -ing', 'have authority to + base verb', and 'liaise with vs. report to'.",
                 "Step 2 (Role Duty Construction): In pairs, draft defining sentences for 3 aviation professions using the target preposition formulas.",
@@ -24857,11 +24599,9 @@ const COURSE_DATA = {
             "handoffSimulation": {
               "title": "Activity 5: Role-Play Simulation: 'A Day in the Life' Handoffs & Peer Audit",
               "summary": "Simulating professional operational interfaces under pressure. Practice delivering clear handoffs, asking tactical clarifying questions, and resolving cross-domain bottlenecks.",
-              "modeBadges": [
-                "👥 Triads (Role A, Role B, Observer C)",
-                "🎭 Operational Handoff Simulation",
-                "📋 Peer Observation & Feedback"
-              ],
+              "modeBadges": [" Triads (Role A, Role B, Observer C)",
+                " Operational Handoff Simulation",
+                " Peer Observation & Feedback"],
               "instructions": [
                 "Step 1 (Scenario Assignment): Choose Scenario 1 (TRC <-> First Officer) or Scenario 2 (AFISO <-> Inbound Pilot). Assign roles: Student A (Lead), Student B (Interface Partner), Student C (Peer Observer).",
                 "Step 2 (Simulation Rehearsal): Conduct an operational briefing resolving the bottleneck using today's functional vocabulary.",
@@ -24906,11 +24646,9 @@ const COURSE_DATA = {
             "careerForumDebate": {
               "title": "Activity 6: Winter Weather Diversion Crisis Decision Table & Action Protocol",
               "summary": "Aerodrome operations during severe weather demand swift cross-domain coordination. Analyze the multi-agency triage matrix, prioritize three simultaneous crises on Stand Charlie-4, and negotiate an agreed action plan.",
-              "modeBadges": [
-                "👥 Small Groups (4-5 Students)",
-                "❄️ Winter Crisis Triage Table",
-                "🎯 Consensus Negotiation"
-              ],
+              "modeBadges": [" Small Groups (4-5 Students)",
+                "️ Winter Crisis Triage Table",
+                " Consensus Negotiation"],
               "instructions": [
                 "Step 1 (Crisis Briefing & Stance): Stand Charlie-4 at 16:45. Sudden freezing rain triggers aerodrome-wide ground delays. Flight ENAC-101 has 180 passengers onboard with an in-flight medical emergency divert inbound. Review the 3 complications in the table below.",
                 "Step 2 (Stakeholder Round-Robin): Each student adopts a role (AFISO / TSEEAC, Tower ATCO, Turnaround Coordinator, Airline Dispatcher). State your department's top priority using conditional language ('Provided that...', 'On condition that...').",
@@ -24940,11 +24678,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 7: Vocabulary Review, Syllable Stress & Class Wrap-Up",
               "summary": "Consolidate the session's key vocabulary, word stress patterns, and self-assessment benchmarks.",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
-                "🗣️ Phonology & Word Stress",
-                "📊 Continuous Assessment Log"
-              ],
+              "modeBadges": [" Pairs / Plenary",
+                "️ Phonology & Word Stress",
+                " Continuous Assessment Log"],
               "instructions": [
                 "Step 1 (Pronunciation Practice): Drill word stress on the 6 target terms below, emphasizing secondary and primary syllable stress.",
                 "Step 2 (Rapid-Fire Partner Quiz): Student A names a definition from Part 7; Student B provides the term within 5 seconds.",
@@ -24986,11 +24722,9 @@ const COURSE_DATA = {
             "rolesMatrix": {
               "title": "Activity 2: Aviation Operational Roles & Jurisdictions Reference Matrix",
               "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
-              "modeBadges": [
-                "👥 Small Groups / Pairs",
-                "🧭 Roles & Jurisdiction Matrix",
-                "🎯 Operational Domain Mastery"
-              ],
+              "modeBadges": [" Small Groups / Pairs",
+                " Roles & Jurisdiction Matrix",
+                " Operational Domain Mastery"],
               "instructions": [
                 "Step 1 (Matrix Exploration): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Analyze the physical jurisdiction, daily equipment, and core duty for each.",
                 "Step 2 (Crucial Distinction Audit): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
@@ -25298,11 +25032,9 @@ const COURSE_DATA = {
             "decisionTable": {
               "title": "Activity 6: Winter Weather Diversion Crisis Decision Table & Action Protocol",
               "summary": "Aerodrome operations during severe weather demand swift cross-domain coordination. Analyze the multi-agency triage matrix, prioritize three simultaneous crises on Stand Charlie-4, and negotiate an agreed action plan.",
-              "modeBadges": [
-                "👥 Small Groups (4-5 Students)",
-                "❄️ Winter Crisis Triage Table",
-                "🎯 Consensus Negotiation"
-              ],
+              "modeBadges": [" Small Groups (4-5 Students)",
+                "️ Winter Crisis Triage Table",
+                " Consensus Negotiation"],
               "instructions": [
                 "Step 1 (Crisis Briefing & Stance): Stand Charlie-4 at 16:45. Sudden freezing rain triggers aerodrome-wide ground delays. Flight ENAC-101 has 180 passengers onboard with an in-flight medical emergency divert inbound. Review the 3 complications in the table below.",
                 "Step 2 (Stakeholder Round-Robin): Each student adopts a role (AFISO / TSEEAC, Tower ATCO, Turnaround Coordinator, Airline Dispatcher). State your department's top priority using conditional language ('Provided that...', 'On condition that...').",
@@ -26074,10 +25806,8 @@ const COURSE_DATA = {
               "duration": "120 Minutes"
             },
             "openingSession": {
-              "modeBadges": [
-                "👥 Aerodynamic Spot-Check",
-                "🎯 Flight Physics Quick Check"
-              ],
+              "modeBadges": [" Aerodynamic Spot-Check",
+                " Flight Physics Quick Check"],
               "instructions": [
                 "Step 1 (Aviation Headlines): In pairs, discuss the opening news bullet on composite winglets and stall training advisories. Why are airlines prioritizing aerodynamics for both fuel economy and safety?",
                 "Step 2 (Aerodynamics Quick Check): Test each other on the 4 foundational flight physics questions below using the target sentence stems before viewing the answers.",
@@ -26120,11 +25850,9 @@ const COURSE_DATA = {
               }
             },
             "forcesPrinciples": {
-              "modeBadges": [
-                "⚖️ Force Balance Analysis",
-                "👥 Vector Analysis & Paired Presentation",
-                "🎯 Technical Equilibrium B2"
-              ],
+              "modeBadges": ["️ Force Balance Analysis",
+                " Vector Analysis & Paired Presentation",
+                " Technical Equilibrium B2"],
               "instructions": [
                 "Step 1 (Force Vector Review): Study the 4 forces interactive cards. Review the aerodynamic definitions, equilibrium equations, and how each vector acts on the aircraft center of gravity.",
                 "Step 2 (Maneuver Vector Challenge): In pairs, describe what happens to the vectors in 3 specific flight regimes: (1) Steady Climb, (2) 45-degree Coordinated Turn, (3) Clean Power-Off Glide.",
@@ -26166,11 +25894,9 @@ const COURSE_DATA = {
               ]
             },
             "grammarClinic": {
-              "modeBadges": [
-                "⚡ Cause & Effect Workshop",
-                "💬 Grammatical Precision & Cause-Effect Formulas",
-                "🎯 Technical Precision"
-              ],
+              "modeBadges": [" Cause & Effect Workshop",
+                " Grammatical Precision & Cause-Effect Formulas",
+                " Technical Precision"],
               "instructions": [
                 "Step 1 (Aerodynamic Conditionals): Review the grammatical formulas for scientific invariants (Zero Conditional: If + present $\\rightarrow$ present) and operational contingencies (First Conditional: If + present $\\rightarrow$ will + verb).",
                 "Step 2 (Interactive Sentence Drills): Complete the 4 fill-in-the-blank causal sentences, selecting the correct connector (unless, due to, results in, provided that).",
@@ -26215,11 +25941,9 @@ const COURSE_DATA = {
               ]
             },
             "axesGame": {
-              "modeBadges": [
-                "🎮 Kinesthetic Simulator & Role-Play",
-                "🎮 Kinesthetic Simulation & Flight Deck Debrief",
-                "🗣️ Dynamic Control Surfaces"
-              ],
+              "modeBadges": [" Kinesthetic Simulator & Role-Play",
+                " Kinesthetic Simulation & Flight Deck Debrief",
+                "️ Dynamic Control Surfaces"],
               "instructions": [
                 "Step 1 (Kinesthetic Simulator Game): Partner A acts as Pilot Flying giving control commands (\"Applying left rudder to counter crosswind\"); Partner B acts as Aircraft, demonstrating the physical motion with their hands and naming the axis and surface movement. Swap roles after 6 minutes.",
                 "Step 2 (Role-Play Briefing): Partner A takes Role Card 1 (Flight Test Captain); Partner B takes Role Card 2 (Avionics & Flight Control Engineer). Simulate a post-flight debrief analyzing flight control feedback, trimming issues, or crosswind control authority.",
@@ -26264,11 +25988,9 @@ const COURSE_DATA = {
               ]
             },
             "stallScenario": {
-              "modeBadges": [
-                "🚨 Cockpit Emergency Case Study",
-                "🚨 Operational Incident Analysis & Crew Callouts",
-                "🎯 Standard Operating Procedures"
-              ],
+              "modeBadges": [" Cockpit Emergency Case Study",
+                " Operational Incident Analysis & Crew Callouts",
+                " Standard Operating Procedures"],
               "instructions": [
                 "Step 1 (Scenario Analysis): Read the authentic flight deck incident transcript. Identify the dangerous aerodynamic misconception made by the First Officer (confusing altitude loss with pitch attitude).",
                 "Step 2 (Cockpit Communication & Callouts): In pairs, role-play the cockpit crew communication. Draft the Captain's clear callouts (\"STALL, I have control, pitching down\") and the First Officer's verbal confirmations.",
@@ -26286,11 +26008,9 @@ const COURSE_DATA = {
               ]
             },
             "closingReview": {
-              "modeBadges": [
-                "🏁 Final Technical Wrap-Up",
-                "🎯 Mastery Audit & Pronunciation Clinic",
-                "🎯 Aerodynamic Vocabulary Mastery"
-              ],
+              "modeBadges": [" Final Technical Wrap-Up",
+                " Mastery Audit & Pronunciation Clinic",
+                " Aerodynamic Vocabulary Mastery"],
               "instructions": [
                 "Step 1 (Core Checkpoints Audit): In pairs, run through the 3 technical checkpoints. Confirm you can explain the 4 forces, 3 axes, and stall recovery without hesitation.",
                 "Step 2 (Pronunciation Rapid Fire): Drill the tricky multisyllabic aerodynamic terms (ae-ro-dy-NAM-ic, al-ti-tude, e-qui-LIB-ri-um, hor-i-ZON-tal, sta-bi-LI-zer).",
@@ -26863,10 +26583,8 @@ const COURSE_DATA = {
               "duration": "120 Minutes"
             },
             "openingSession": {
-              "modeBadges": [
-                "⚡ Opening Warm-Up & News Scan",
-                "🎯 Aerodynamics to Anatomy Transition"
-              ],
+              "modeBadges": [" Opening Warm-Up & News Scan",
+                " Aerodynamics to Anatomy Transition"],
               "instructions": [
                 "Step 1 (Maintenance Headlines): Read the three weekly maintenance and structural headlines. Identify the airframe component most vulnerable to composite fatigue.",
                 "Step 2 (Session 1 Review Check): Answer the 4 review questions covering forces in equilibrium and control surfaces using the spoken sentence stems.",
@@ -26913,10 +26631,8 @@ const COURSE_DATA = {
               }
             },
             "videoLab": {
-              "modeBadges": [
-                "📹 Interactive Video Analysis",
-                "🎯 Airframe Anatomy & System Mechanics"
-              ],
+              "modeBadges": [" Interactive Video Analysis",
+                " Airframe Anatomy & System Mechanics"],
               "instructions": [
                 "Step 1 (Video Viewing): Watch the video on commercial aircraft anatomy and control surfaces. Note how primary and secondary surfaces deflect.",
                 "Step 2 (Debrief Analysis): Review the operational synopsis and technical terms in the right-hand debrief panel.",
@@ -26957,10 +26673,8 @@ const COURSE_DATA = {
               ]
             },
             "diagramLabeling": {
-              "modeBadges": [
-                "✈️ Aircraft Components & Anatomy",
-                "🎯 External Airframe Structural Vocabulary"
-              ],
+              "modeBadges": ["️ Aircraft Components & Anatomy",
+                " External Airframe Structural Vocabulary"],
               "instructions": [
                 "Step 1 (Component Scan): Examine the 12 external aircraft components in the visual blueprint. Review their English names, physical locations, and primary functions.",
                 "Step 2 (Blackboard Challenge): In groups of 3, sketch an aircraft in flight on the board. Assign roles: Draftsperson (draws airframe), Systems Lead (labels components), and Spoken Briefing (presents to class).",
@@ -27064,10 +26778,8 @@ const COURSE_DATA = {
               ]
             },
             "gapFillClinic": {
-              "modeBadges": [
-                "✍️ Technical Reading & Gap-Fill",
-                "🎯 Airframe Systems & Inspection Lexicon"
-              ],
+              "modeBadges": ["️ Technical Reading & Gap-Fill",
+                " Airframe Systems & Inspection Lexicon"],
               "instructions": [
                 "Step 1 (Text A Completion): Read the passage on Primary vs. Secondary Flight Controls. Fill the 6 technical gaps using the word bank.",
                 "Step 2 (Text B Completion): Read the pre-flight exterior walkaround passage. Select the appropriate technical term for each sensor and airframe zone.",
@@ -27120,10 +26832,8 @@ const COURSE_DATA = {
               }
             },
             "errorHunter": {
-              "modeBadges": [
-                "🔍 Technical Fact vs. Fallacy",
-                "🎯 Peer Listening & Error Correction"
-              ],
+              "modeBadges": [" Technical Fact vs. Fallacy",
+                " Peer Listening & Error Correction"],
               "instructions": [
                 "Step 1 (Partner Reading): Student A reads statement 1 aloud to Student B. Student B listens closely without looking at the text.",
                 "Step 2 (Spot & Challenge): Student B identifies the technical or aerodynamic falsehood, states why it is incorrect, and provides the corrected statement.",
@@ -27185,10 +26895,8 @@ const COURSE_DATA = {
               ]
             },
             "closingReview": {
-              "modeBadges": [
-                "🏁 Final Technical Wrap-Up",
-                "🎯 Taboo Word Game & Technical Mastery Challenge"
-              ],
+              "modeBadges": [" Final Technical Wrap-Up",
+                " Taboo Word Game & Technical Mastery Challenge"],
               "instructions": [
                 "Step 1 (Aircraft Anatomy Taboo - 12 Cards): Play Taboo in pairs. Describe the target technical term without saying any of the 3 forbidden words. Test all 12 cards.",
                 "Step 2 (15-Question Technical Mastery Challenge): Complete the multi-format 15-question interactive quiz covering error spotting, surface matching, and pre-flight inspections.",
@@ -27875,11 +27583,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation News & Session 2 Spot-Check",
               "summary": "News review followed by quick vocabulary check on aircraft parts.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "News & Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Read the 3 fleet news prompts (Airbus A321XLR deliveries, Boeing 747 freighter retirement, Air France-KLM A350 fleet renewal).",
                 "Test your partner on the 4 aircraft anatomy spot-check questions (narrowbody vs. widebody, LCC fleet commonality benefits, regional manufacturers, MTOW definition).",
@@ -27922,11 +27628,9 @@ const COURSE_DATA = {
             "fleetTaxonomy": {
               "title": "Activity 2: Commercial Aircraft Classification Table",
               "summary": "Classify commercial passenger and freighter aircraft into operational categories.",
-              "modeBadges": [
-                "Pairs / Small Groups",
+              "modeBadges": ["Pairs / Small Groups",
                 "Fleet Analysis",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Analyze the 4 commercial aircraft categories: Regional Turboprops & Jets, Single-Aisle Narrowbodies, Twin-Aisle Widebodies, and Dedicated Freighters.",
                 "Compare seat capacities, operational ranges, and typical airline missions across models (ATR 72, A220, A320neo, 737 MAX, A350, 777F).",
@@ -27968,11 +27672,9 @@ const COURSE_DATA = {
             "comparativeClinic": {
               "title": "Activity 3: Language Focus: Comparative & Superlative Data",
               "summary": "Mastering modifiers and comparative structures to evaluate aircraft efficiency and fleet statistics.",
-              "modeBadges": [
-                "Pairs / Individual",
+              "modeBadges": ["Pairs / Individual",
                 "Data Analysis & Grammar",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Study the 3 comparative structures: Quantified Comparatives (Percentage/Factor + more/less... than), Emphatic Modifiers (substantially / significantly / considerably), and Superlative Benchmarks (the longest range... in its class).",
                 "Review the aircraft performance data and formulate 4 spoken sentences comparing the fuel burn, seat capacity, MTOW, and range of the A350-900 vs. Boeing 777-300ER.",
@@ -28001,11 +27703,9 @@ const COURSE_DATA = {
             "fleetCommitteeSimulation": {
               "title": "Activity 4: Airline Fleet Selection Committee Simulation",
               "summary": "Pairs represent airline management committees pitching an aircraft purchase order for a new route network.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Executive Simulation",
-                "30 Mins"
-              ],
+                "30 Mins"],
               "instructions": [
                 "Select one of the two business cases: Case 1 (Transatlantic Expansion: A321XLR vs. Boeing 787-8) or Case 2 (Regional Feeder Fleet: ATR 72-600 vs. Embraer E175).",
                 "With your partner, spend 15 minutes analyzing the payload, range, trip cost, and passenger appeal trade-offs of Option A versus Option B.",
@@ -28032,11 +27732,9 @@ const COURSE_DATA = {
             "globalLandscapeDebate": {
               "title": "Activity 5: Global Manufacturer Debate & Industry Trends",
               "summary": "Class debate exploring the Airbus-Boeing duopoly, supply chain bottlenecks, and the emergence of COMAC.",
-              "modeBadges": [
-                "Plenary / Fishbowl",
+              "modeBadges": ["Plenary / Fishbowl",
                 "Industry Debate",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Review the 3 industry debate topics: point-to-point narrowbody flying vs. hub widebodies, COMAC C919 challenging the Western duopoly, and dual-sourcing vs. single-manufacturer fleet commonality.",
                 "Form two debate teams (or use a fishbowl format) to debate whether airlines should risk split orders to avoid multi-year delivery backlogs.",
@@ -28053,11 +27751,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Vocabulary Review & Pronunciation Wrap-Up",
               "summary": "Consolidate the 18 commercial fleet terms and prepare for Session 4 Aviation Accidents.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Pronunciation Drill",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Complete the syllable stress drills on the 5 technical terms: ma-nu-FAC-tu-rer, du-OP-o-ly, TUR-bo-prop, ca-PA-ci-ty, con-fig-u-RA-tion.",
                 "Review the 18 commercial fleet flashcard definitions in the Revision tab.",
@@ -28607,11 +28303,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation News & Session 3 Spot-Check",
               "summary": "News review followed by quick vocabulary check on commercial fleets.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "News & Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Read the 3 aviation safety news items (BEA annual report, NTSB automation symposium, ICAO 25-hour CVR mandate).",
                 "Test your partner on the 4 core accident investigation questions: Accident vs. Incident (ICAO Annex 13), FDR vs. CVR capabilities, CFIT definition, and the Swiss Cheese safety model.",
@@ -28654,11 +28348,9 @@ const COURSE_DATA = {
             "investigationLexis": {
               "title": "Activity 2: Accident Investigation Terminology & Causal Chains",
               "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Vocabulary Acquisition",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Review the 5 core investigation concepts: Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), Root Cause vs. Contributing Factor, Human Factors & CRM, and Airworthiness Directives (AD).",
                 "Pair up to explain how a minor technical glitch can cascade into a catastrophic event when multiple contributing factors align.",
@@ -28692,11 +28384,9 @@ const COURSE_DATA = {
             "pastNarrativesClinic": {
               "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers",
               "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
-              "modeBadges": [
-                "Pairs / Individual",
+              "modeBadges": ["Pairs / Individual",
                 "Narrative Grammar",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Examine the narrative timeline formula combining Past Continuous (background condition: 'was cruising at FL350'), Past Perfect (prior action: 'ice crystals had blocked the probes'), and Past Simple (consecutive events: 'the autopilot disconnected, the alarm sounded, and the crew pitched up').",
                 "Identify the time sequencers used in professional accident reports: 'subsequently', 'concurrently', 'prior to impact', 'thereafter'.",
@@ -28725,11 +28415,9 @@ const COURSE_DATA = {
             "groupResearchSprint": {
               "title": "Activity 4: 15-Minute Group Research & Preparation Sprint",
               "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
-              "modeBadges": [
-                "Small Groups (3-4)",
+              "modeBadges": ["Small Groups (3-4)",
                 "Research Sprint",
-                "15 Mins"
-              ],
+                "15 Mins"],
               "instructions": [
                 "Form groups of 3-4 and select one of the 6 landmark accident case studies: Tenerife (1977), AF447 (2009), US Airways 1549 (2009), BA038 (2008), Aloha 243 (1988), or Boeing 737 MAX (2018-2019).",
                 "In a 15-minute timed sprint, extract the 4 mandatory briefing pillars: (1) Aircraft type & context, (2) Chronology of events, (3) Technical & human root causes, (4) Permanent safety upgrades.",
@@ -28785,11 +28473,9 @@ const COURSE_DATA = {
             "presentationsDebrief": {
               "title": "Activity 5: Spoken Group Presentations & Class Debrief",
               "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
-              "modeBadges": [
-                "Small Groups",
+              "modeBadges": ["Small Groups",
                 "Spoken Presentation",
-                "45 Mins"
-              ],
+                "45 Mins"],
               "instructions": [
                 "Deliver your 5-minute accident briefing to the class, using the whiteboard or bullet slides to support your narrative.",
                 "Ensure talking time is distributed equally among all team members. Strictly no reading from pre-written essays!",
@@ -28807,11 +28493,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep",
               "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "FE2 Preparation",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Review the 18 accident and safety terms in the Revision tab flashcards.",
                 "Note the expectations for Session 5 Formative Evaluation 2: 10-12 minute paired presentation of an Aircraft or Airline Profile, followed by teacher Q&A.",
@@ -29834,11 +29518,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation Health News & Quick Check",
               "summary": "Analyze recent in-flight medical incidents, crew fatigue advisories, and complete a 5-question baseline aeromedical diagnostic.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Opening Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Review recent aviation headlines regarding in-flight medical diversions, EASA pilot mental health regulations, and FAA controller fatigue taskforce recommendations.",
                 "In plenary, discuss: 'What are the legal responsibilities of the Captain when deciding whether to divert for a medical emergency?'",
@@ -29885,11 +29567,9 @@ const COURSE_DATA = {
             "medicalIncidentsLexis": {
               "title": "Activity 2: In-Flight Medical Emergencies & Triage Vocabulary",
               "summary": "Master specialized medical condition terminology, cabin emergency medical kits (EMK), and passenger triage.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Medical Protocols",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "In pairs, review the 18 specialized medical conditions, emergency kit components, and operational procedures.",
                 "Categorize each condition into one of 3 triage urgency levels: Critical (immediate landing/defibrillation), Serious (urgent medical stabilization), or Non-Emergency (in-seat comfort & monitoring).",
@@ -29933,11 +29613,9 @@ const COURSE_DATA = {
             "fatigueHumanFactorsClinic": {
               "title": "Activity 3: Crew & Controller Fatigue, Circadian Rhythms & FTL",
               "summary": "Examine the physiological mechanisms of fatigue, sleep debt, circadian disruption, and flight time limitations.",
-              "modeBadges": [
-                "Individual & Pairs",
+              "modeBadges": ["Individual & Pairs",
                 "Human Factors Workshop",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Step 1 (Concepts & Vocabulary - 5 mins): Review key human factors terms: sleep debt, sleep inertia (grogginess upon waking), and the Window of Circadian Low (WOCL).",
                 "Step 2 (Roster Evaluation - 8 mins): In pairs, review the 12-hour multi-sector crew schedule. Identify points where fatigue and reduced alertness pose operational risks.",
@@ -29967,11 +29645,9 @@ const COURSE_DATA = {
             "medicalDiversionSimulation": {
               "title": "Activity 4: Airborne Medical Diversion Simulation & Decision Guide",
               "summary": "Roleplay a flight crew facing an acute in-flight medical crisis over continental / transoceanic airspace.",
-              "modeBadges": [
-                "Small Groups (3-4)",
+              "modeBadges": ["Small Groups (3-4)",
                 "Decision Simulation",
-                "35 Mins"
-              ],
+                "35 Mins"],
               "instructions": [
                 "In small groups of 3-4, select one of the 3 realistic in-flight emergency scenarios below.",
                 "Step 1: Clinical Assessment & Ground Telemedicine (consult MedLink satellite doctor, evaluate EMK pharmaceuticals).",
@@ -30004,11 +29680,9 @@ const COURSE_DATA = {
             "humanFactorsDebrief": {
               "title": "Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia & Emergency Descent",
               "summary": "Analyze physiological illusions in instrument flight, hypoxia progression, and emergency descent maneuvers.",
-              "modeBadges": [
-                "Plenary & Pairs",
+              "modeBadges": ["Plenary & Pairs",
                 "Aeromedical Physics",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Analyze the 3 classic vestibular sensory illusions: the leans (false roll sensation), somatogravic illusion (false pitch-up during rapid acceleration), and graveyard spiral.",
                 "Examine Time of Useful Consciousness (TUC) table: FL250 (3–5 mins), FL350 (30–60 secs), FL400 (15–20 secs).",
@@ -30034,11 +29708,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Medical & Human Factors Consolidation & Syllable Stress",
               "summary": "Consolidate the 18 aeromedical terms, conduct syllable stress drills, and prepare for Session 2 Meteorology.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Consolidation",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Conduct rhythmic pronunciation drills on multi-syllabic aeromedical vocabulary.",
                 "Verify personal mastery of the 3 triage categories, FTL rules, and the IMSAFE mnemonic.",
@@ -30616,11 +30288,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation Weather Briefing & Meteorological Warm-Up",
               "summary": "Review current convective storm advisories, satellite imagery, and complete a 5-question baseline meteorological diagnostic.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Opening Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Examine recent aviation weather headlines detailing severe clear-air turbulence encounters, winter freezing fog disruptions, and volcanic ash plume tracking.",
                 "In plenary, discuss: 'Why is clear air turbulence (CAT) significantly more dangerous for passengers and flight attendants than thunderstorm turbulence?'",
@@ -30667,11 +30337,9 @@ const COURSE_DATA = {
             "weatherPhenomenaLexis": {
               "title": "Activity 2: Severe Atmospheric Phenomena & Flight Impacts",
               "summary": "Master specialized meteorological terminology, aerodynamic degradation mechanisms, and pilot avoidance maneuvers.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Meteorological Vocabulary",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "In pairs, analyze the 18 specialized aviation weather terms, phonetic pronunciations, and operational definitions.",
                 "Match each weather phenomenon with its direct operational consequence (e.g., loss of lift, loss of instrumentation, flameout, runway closure).",
@@ -30715,11 +30383,9 @@ const COURSE_DATA = {
             "weatherBriefingClinic": {
               "title": "Activity 3: Language Focus: Decoding METAR, TAF & SIGMET Advisories",
               "summary": "Interactive translation and interpretation of real-world coded aviation weather reports for dispatchers and pilots.",
-              "modeBadges": [
-                "Individual",
+              "modeBadges": ["Individual",
                 "Language Focus",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Study the 3 real-world operational weather strings provided below (METAR, TAF, and Convective SIGMET).",
                 "Decode all elements: surface wind direction/speed/gusts, visibility, runway visual range, present weather descriptors, cloud coverage, temperature/dewpoint, and altimeter setting.",
@@ -30748,11 +30414,9 @@ const COURSE_DATA = {
             "weatherCaseStudiesSprint": {
               "title": "Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies",
               "summary": "Small-group rapid research analyzing Delta 191 (DFW microburst) or BA 009 (volcanic ash ingestion), extracting safety fixes and crew actions.",
-              "modeBadges": [
-                "Small Groups (3-4)",
+              "modeBadges": ["Small Groups (3-4)",
                 "15-Min Sprint",
-                "15 Mins"
-              ],
+                "15 Mins"],
               "instructions": [
                 "In small groups of 3-4, select one of the 2 landmark weather case studies below.",
                 "You have exactly 15 minutes to research and outline your 5-minute technical briefing.",
@@ -30782,11 +30446,9 @@ const COURSE_DATA = {
             "weatherDiversionSimulation": {
               "title": "Activity 5: Severe Weather En-Route & Terminal Diversion Simulation",
               "summary": "Flight crew and dispatcher teams reroute aircraft around a massive squall line with fuel reserve calculations and ATC coordination.",
-              "modeBadges": [
-                "Teams (3-4)",
+              "modeBadges": ["Teams (3-4)",
                 "Operations Simulation",
-                "45 Mins"
-              ],
+                "45 Mins"],
               "instructions": [
                 "In teams of 3-4, assume the roles of Airline Flight Dispatchers and Cockpit Crew for flight AF7842 (Toulouse to Brussels).",
                 "Cruising at FL340, your airborne radar displays an active squall line stretching across northern France with embedded CB cells reaching FL430. Your destination (EBBR) has just issued a SPECI reporting runway closure due to flash flooding and windshear.",
@@ -30825,11 +30487,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Meteorology Consolidation & Pronunciation Wrap-Up",
               "summary": "Consolidate the 18 meteorological terms, conduct syllable stress drills, and prepare for Session 3 Safety vs. Security.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Consolidation",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Conduct rhythmic syllable stress drills on complex meteorological terms.",
                 "Review key takeaways from the Delta 191 and BA 009 case studies.",
@@ -31407,11 +31067,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Safety & Security News & Quick Check",
               "summary": "Review recent aviation security incidents, airworthiness directives, and complete a 5-question baseline diagnostic.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Opening Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Examine recent aviation headlines detailing airport perimeter intrusions, updated computed tomography (CT) baggage rules, and emergency airworthiness directives.",
                 "In plenary, discuss: 'Why do civil aviation authorities maintain completely separate government departments for Safety (DGAC/FAA Safety) and Security (Police aux Frontières / TSA)?'",
@@ -31458,11 +31116,9 @@ const COURSE_DATA = {
             "safetyVsSecurityLexis": {
               "title": "Activity 2: The Literal & Operational Distinction: Safety vs. Security",
               "summary": "Establish the clear, unambiguous distinction between Aviation Safety and Aviation Security.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Conceptual Analysis",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "In pairs, analyze the detailed definition matrix comparing Safety (Sécurité Technique) and Security (Sûreté).",
                 "Examine 6 real-world airport occurrences provided below. Classify each occurrence as strictly a Safety issue, strictly a Security issue, or an overlapping Dual-Domain issue.",
@@ -31488,11 +31144,9 @@ const COURSE_DATA = {
             "airportSecurityArchitecture": {
               "title": "Activity 3: Airport Security Architecture: Landside to Airside",
               "summary": "Detailed examination of passenger and baggage screening workflows, millimeter-wave scanners, CT tomography, and sterile area protection.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Security Engineering",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "In pairs, trace the journey of an international passenger and their checked bag from terminal curbside to the aircraft cabin.",
                 "Map out each concentric security barrier: (1) Landside public hall, (2) Boarding pass validation gate, (3) Central security screening checkpoint (millimeter-wave body scanner, x-ray/CT carry-on scan), (4) Sterile concourse, (5) Boarding gate identity verification.",
@@ -31522,11 +31176,9 @@ const COURSE_DATA = {
             "aircraftSafetyChecksClinic": {
               "title": "Activity 4: Aircraft Security Search & Sterile Pre-Flight Checks",
               "summary": "Pre-flight security sweep workshop identifying cabin search protocols, unattended baggage, and spoken handover to the flight crew.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Security Search Workshop",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Step 1 (Security Protocols - 5 mins): Contrast safety walkarounds (checking mechanical integrity) with mandatory pre-flight cabin security sweeps (identifying unattended items and tampering).",
                 "Step 2 (Security Search Scenario - 12 mins): In pairs, role-play the pre-boarding cabin security sweep between Lead Flight Attendant and Ground Security Officer: report a suspicious unlabelled item found in row 18 overhead bin.",
@@ -31556,11 +31208,9 @@ const COURSE_DATA = {
             "securityThreatSimulation": {
               "title": "Activity 5: Dual-Track Safety & Security Crisis Scenario",
               "summary": "Multi-agency emergency simulation coordinating response between Airport Police, ARFF fire services, and ATC for a perimeter breach and hydraulic emergency.",
-              "modeBadges": [
-                "Teams (3-4)",
+              "modeBadges": ["Teams (3-4)",
                 "Incident Simulation",
-                "35 Mins"
-              ],
+                "35 Mins"],
               "instructions": [
                 "In teams of 3-4, assume the role of the Aerodrome Emergency Operations Center (EOC) Command Staff.",
                 "Scenario: At 14:15 UTC, an unidentified vehicle crashes through an airside perimeter fence and speeds toward the passenger aprons (Security Threat). Simultaneously, an inbound widebody airliner (AF452) declares MAYDAY due to complete loss of Green hydraulic system and hot brakes on rollout, halting on runway 26L (Safety Emergency).",
@@ -31578,11 +31228,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Safety vs. Security Wrap-Up & FE3 Preview",
               "summary": "Consolidation checkpoints, pronunciation audit, and introduction to Session 4 Global Review and Session 5 FE3.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Consolidation & FE3 Prep",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Review the critical vocabulary and concepts of Safety vs. Security.",
                 "Examine the structure of next week's Session 4 Global Semester Review & 3-Team Aviation Grand Prix Quiz.",
@@ -32160,11 +31808,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Semester 1 Retrospective & Competition Rules",
               "summary": "Review the full Semester 1 aeronautical syllabus, divide into 3 teams, and establish the Grand Prix tournament rules.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Grand Prix Setup",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Divide the classroom cohort into 3 competitive squads: Team Alpha, Team Bravo, and Team Charlie.",
                 "Each team elects a Team Captain to deliver final answers and keep score on the interactive Grand Prix board.",
@@ -32193,11 +31839,9 @@ const COURSE_DATA = {
             "teamGrandPrixRound1": {
               "title": "Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy & Systems",
               "summary": "Competitive round covering Module 1 and Module 2: runway numbering, GSE turnaround, flight control surfaces, and turbofan bypass ratios.",
-              "modeBadges": [
-                "3 Teams (Alpha/Bravo/Charlie)",
+              "modeBadges": ["3 Teams (Alpha/Bravo/Charlie)",
                 "Team Competition",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Teams take turns selecting challenge questions from the Round 1 Question Board.",
                 "Teams have 60 seconds of internal consultation before their Captain must state the final answer in clear English.",
@@ -32247,11 +31891,9 @@ const COURSE_DATA = {
             "teamGrandPrixRound2": {
               "title": "Activity 3: Grand Prix Round 2: Human Factors, Health & Severe Meteorology",
               "summary": "Competitive round covering Module 3: medical triage, EASA FTL fatigue rules, METAR decoding, and microburst physics.",
-              "modeBadges": [
-                "3 Teams (Alpha/Bravo/Charlie)",
+              "modeBadges": ["3 Teams (Alpha/Bravo/Charlie)",
                 "Team Competition",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Teams tackle Round 2 challenge questions covering aviation medicine, crew fatigue regulations, and severe atmospheric hazards.",
                 "Points escalate: 100 pts for clinical definitions, 200 pts for regulatory/METAR decoding, and 300 pts for aerodynamic physics.",
@@ -32301,11 +31943,9 @@ const COURSE_DATA = {
             "teamGrandPrixRound3": {
               "title": "Activity 4: Grand Prix Round 3: Safety vs. Security & Landmark Case Studies",
               "summary": "Competitive round covering airport security screening, pre-flight walkaround, Delta 191/BA 009 case studies, and tournament tiebreaker.",
-              "modeBadges": [
-                "3 Teams (Alpha/Bravo/Charlie)",
+              "modeBadges": ["3 Teams (Alpha/Bravo/Charlie)",
                 "Team Competition",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Final championship round! High-stakes questions worth 100, 200, and 300 points on Safety vs. Security and landmark case studies.",
                 "In case of a points tie between teams, the Sudden-Death Tiebreaker Question will be contested live by the team captains.",
@@ -32355,11 +31995,9 @@ const COURSE_DATA = {
             "fe3MasteryWorkshop": {
               "title": "Activity 5: FE3 Current Events Press Briefing Masterclass",
               "summary": "Pairs prepare their Press Briefing for Session 5 Formative Evaluation 3, verifying slides and Q&A strategies.",
-              "modeBadges": [
-                "Pairs / Trios",
+              "modeBadges": ["Pairs / Trios",
                 "FE3 Workshop",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "In your confirmed evaluation pairs/trios, finalize your selection of a major aviation current event from one of the 3 domains (Severe Weather, Medical Emergency Diversion, or Airport Security/Airworthiness).",
                 "Structure your 10-12 minute Press Briefing using the 4-phase professional framework: (1) Situation Overview & Initial Facts, (2) Technical Causal Analysis, (3) Operational Immediate Measures, (4) Long-term Corrective Actions & Regulatory Mandates.",
@@ -32389,11 +32027,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Semester 1 Grand Finale & FE3 Action Plan",
               "summary": "Podium celebration for Grand Prix champions, portfolio audit guidelines, and final encouragement for FE3.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Semester Wrap-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Congratulate the winning squad of the Semester 1 Grand Prix Tournament!",
                 "Review final preparation reminders for Formative Evaluation 3 on Wednesday 24 February 2027 (Week 08).",
@@ -32700,12 +32336,10 @@ const COURSE_DATA = {
               "subtitle": "Commercial Aviation Dilemmas, Passenger Disruption & Regulatory Modals"
             },
             "openingSession": {
-              "modeBadges": [
-                "👥 Pair Spot-Check",
+              "modeBadges": [" Pair Spot-Check",
                 "⏱️ 5 min pairs + 5 min debrief",
-                "🗣️ Vocabulary Recall",
-                "🎯 Operational Acronyms"
-              ],
+                "️ Vocabulary Recall",
+                " Operational Acronyms"],
               "instructions": [
                 "Step 1 (City Headlines): In pairs, discuss the headline prompts: \"What airline or air traffic management story made news this week?\"",
                 "Step 2 (Quick Check - 4 mins): Take turns testing each other on the 4 aviation distinctions (e.g. Ground Handler vs. Turnaround Coordinator) without revealing answers.",
@@ -32747,12 +32381,10 @@ const COURSE_DATA = {
               }
             },
             "survey": {
-              "modeBadges": [
-                "👥 Speed-Dating Rotation",
+              "modeBadges": [" Speed-Dating Rotation",
                 "⏱️ 4 min per dilemma",
-                "🗣️ Technical Debate",
-                "🎯 Useful Opinion Phrases"
-              ],
+                "️ Technical Debate",
+                " Useful Opinion Phrases"],
               "instructions": [
                 "Step 1 (Pairing): Review Topic 01–04. Partner A argues for stricter regulation; Partner B defends economic flexibility.",
                 "Step 2 (Timed Debate - 3 mins/topic): Debate each statement. Both speakers MUST incorporate at least one opinion phrase from the reference box below.",
@@ -32805,11 +32437,9 @@ const COURSE_DATA = {
               ]
             },
             "modalsClinic": {
-              "modeBadges": [
-                "👤 Individual Analysis + 👥 Regulatory Peer Check",
+              "modeBadges": [" Individual Analysis +  Regulatory Peer Check",
                 "⏱️ 10 min rules + 15 min drills",
-                "🎯 Must / May / Shall"
-              ],
+                " Must / May / Shall"],
               "instructions": [
                 "Step 1 (Regulatory Guidelines - 8 mins): Study the difference between mandatory obligations (\"must / shall\"), conditional permission (\"may\"), and strict prohibition (\"must not\").",
                 "Step 2 (ICAO Drafting - 10 mins): Complete the regulatory sentence drills by inserting the correct modal verb for aviation security rules.",
@@ -32897,11 +32527,9 @@ const COURSE_DATA = {
               }
             },
             "operationalCaseStudy": {
-              "modeBadges": [
-                "👥 Case Study Investigation",
+              "modeBadges": [" Case Study Investigation",
                 "⏱️ 8 min reading + 12 min pair analysis + 5 min plenary",
-                "🎯 Passenger Rights vs. Safety"
-              ],
+                " Passenger Rights vs. Safety"],
               "instructions": [
                 "Step 1 (Read Scenario - 5 mins): Review the Flight AF1420 Operational Incident Briefing, technical failure log, and EU261 passenger entitlement parameters.",
                 "Step 2 (Pair Preparation - 5 mins): Assign roles (Role A: Passenger Service Liaison vs. Role B: Frustrated Business Traveler) and review your communicative goals.",
@@ -32972,11 +32600,9 @@ const COURSE_DATA = {
               "task": "Conduct a 4-minute spoken role-play with your partner. Then swap roles. Focus on de-escalation, professional courtesy, and accurate explanation of passenger rights."
             },
             "miniDebate": {
-              "modeBadges": [
-                "👥👥 Groups of 4 • Stakeholder Committee",
+              "modeBadges": [" Groups of 4 • Stakeholder Committee",
                 "⏱️ 5 min prep + 15 min debate + 5 min pitch",
-                "🗣️ 60-Second Briefing"
-              ],
+                "️ 60-Second Briefing"],
               "instructions": [
                 "Step 1 (Role Allocation - 5 mins): Form teams of 4: Airport Director, Airline Station Manager, Air Traffic Control Supervisor, Passenger Rights Representative.",
                 "Step 2 (Committee Deliberation - 15 mins): Debate whether to support the total alcohol retail ban or propose a regulated compromise (such as a 2-drink boarding pass cap). Weigh safety against concession revenues.",
@@ -33015,12 +32641,10 @@ const COURSE_DATA = {
               }
             },
             "closingReview": {
-              "modeBadges": [
-                "👤 Individual Self-Assessment",
+              "modeBadges": [" Individual Self-Assessment",
                 "⏱️ 10 mins",
-                "📝 Study Log",
-                "🎯 Pronunciation Drill"
-              ],
+                " Study Log",
+                " Pronunciation Drill"],
               "instructions": [
                 "Step 1 (Pronunciation - 4 mins): Practice pronouncing the 30 core terms with emphasis on word stress (e.g., ca'pacity, co'mpliance, tur'naround).",
                 "Step 2 (Sentence Drill - 3 mins): Write 2 original operational sentences combining at least 3 target terms.",
@@ -33690,12 +33314,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Airfield Spot-Check",
+              "modeBadges": [" Airfield Spot-Check",
                 "⏱️ 5 min pairs + 5 min class discussion",
-                "🗣️ Spatial Terminology",
-                "✈️ Aerodrome Movement"
-              ],
+                "️ Spatial Terminology",
+                "️ Aerodrome Movement"],
               "instructions": [
                 "Step 1 (News Scan - 3 mins): Review the airport technology and innovation headlines with your partner.",
                 "Step 2 (Catch-Up Recall - 4 mins): Take turns quizzing each other on the 4 Session 1 operational distinctions (Apron vs Ramp, Slot vs Schedule, De-icing vs Anti-icing).",
@@ -33757,12 +33379,10 @@ const COURSE_DATA = {
                   "prompt": "Interview your partner: What customer assistance protocols should ground operations maintain when check-in is automated? (Useful phrases: 'Airlines should keep human staff because...', 'When kiosks break down, ground staff must...')."
                 }
               ],
-              "modeBadges": [
-                "👥 Sequential Flow Tracing",
+              "modeBadges": [" Sequential Flow Tracing",
                 "⏱️ 8 min pairs + 12 min class discussion",
-                "✈️ Passenger Facilitation",
-                "🔍 Bottleneck Identification"
-              ],
+                "️ Passenger Facilitation",
+                " Bottleneck Identification"],
               "instructions": [
                 "Step 1 (Touchpoint Tracing - 4 mins): Trace an international passenger's sequential movement across all 5 concourse touchpoints (Landside Curb to Departure Gate).",
                 "Step 2 (Dilemma Debate - 6 mins): Analyze Facilitation Dilemma 01 (Biometric E-Gates) and Dilemma 02 (Baggage Drop). Formulate your personal stance using the 1–5 scale.",
@@ -33850,12 +33470,10 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Spatial Precision Workshop",
+              "modeBadges": [" Spatial Precision Workshop",
                 "⏱️ 10 min exercise + 15 min class review",
-                "🗺️ Airfield Prepositions",
-                "🎯 Positional Clarity"
-              ],
+                "️ Airfield Prepositions",
+                " Positional Clarity"],
               "instructions": [
                 "Step 1 (Rule Review): Study the 4 preposition categories (Position, Movement/Direction, Relative Location, Aerodrome Proximity).",
                 "Step 2 (Interactive Challenge - 8 mins): Complete the 4 airfield spatial scenarios individually, selecting the exact preposition required by ICAO standards.",
@@ -33903,12 +33521,10 @@ const COURSE_DATA = {
                 }
               ],
               "task": "Conduct a 4-minute spoken VHF radio exchange and de-escalation role-play. Focus on spatial precision, professional composure, and clear prepositions. Then swap roles.",
-              "modeBadges": [
-                "🚨 Safety Incident Case Study",
+              "modeBadges": [" Safety Incident Case Study",
                 "⏱️ 10 min analysis + 15 min briefing",
-                "🔍 Unauthorized Access",
-                "📋 Corrective Protocol"
-              ],
+                " Unauthorized Access",
+                " Corrective Protocol"],
               "instructions": [
                 "Step 1 (Incident Dissection - 4 mins): Read the unauthorized apron access scenario: Gate B12 door breach and Stand 4 ramp security alert.",
                 "Step 2 (Role-Play Prep - 6 mins): Partner A takes the Operations Trainee role; Partner B takes the Ramp Lead role. Prepare your VHF radio statements using key phrases.",
@@ -33950,11 +33566,9 @@ const COURSE_DATA = {
                 "title": "60-Second Airfield Safety Briefing Model",
                 "text": "\"Good morning team. Here is our daily airfield pavement inspection summary for Runway 09/27 and its associated taxiway network. Pavement friction levels along Runway 09 Left are within nominal safety thresholds, but recent repaving near Holding Point Bravo has temporarily obscured the double solid holding position lines. A NOTAM has been issued, and maintenance crews will repaint the mandatory markings tonight at 2300 hours. In the interim, all ground vehicle operators must exercise heightened vigilance when holding short at Bravo, and verify taxiway centerline alignment on Taxiway Alpha due to ongoing apron stand expansion. Thank you.\""
               },
-              "modeBadges": [
-                "📻 Airside Movement Workshop",
-                "🗺️ Taxiway Markings & Signs",
-                "🗣️ Taxi Routing Briefing"
-              ],
+              "modeBadges": [" Airside Movement Workshop",
+                "️ Taxiway Markings & Signs",
+                "️ Taxi Routing Briefing"],
               "instructions": [
                 "Step 1 (Markings Scan - 4 mins): Review the 4 visual guidance markings (Holding Position, Taxiway Centerline, Mandatory Signage, ILS Critical Boundary).",
                 "Step 2 (Model Study - 4 mins): Study the 60-Second Airfield Safety Briefing Model, paying attention to phonetic alphabet delivery and holding point clarity.",
@@ -33980,12 +33594,10 @@ const COURSE_DATA = {
                   "desc": "Record two spatial prepositions and one operational radio phrase you practiced during today's apron case study into your learning log."
                 }
               ],
-              "modeBadges": [
-                "👥 Rapid Vocabulary Drill",
+              "modeBadges": [" Rapid Vocabulary Drill",
                 "⏱️ 5 min quiz + 5 min reflection",
-                "🗣️ Phonetic Precision",
-                "📝 Self-Assessment Log"
-              ],
+                "️ Phonetic Precision",
+                " Self-Assessment Log"],
               "instructions": [
                 "Step 1 (Review Prompts - 4 mins): Work through the 3 closing steps: Self-Check Quiz, Flashcard Review, and Audio Drill.",
                 "Step 2 (Phonetic Challenge - 3 mins): Practice aloud the standard ICAO spelling alphabet for all aerodrome designators (Alpha, Bravo, Charlie...).",
@@ -34689,11 +34301,9 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "👥 Apron News & Spot-Check",
-                "🗣️ Airside Vocabulary",
-                "✈️ Turnaround Briefing"
-              ],
+              "modeBadges": [" Apron News & Spot-Check",
+                "️ Airside Vocabulary",
+                "️ Turnaround Briefing"],
               "instructions": [
                 "Step 1 (News Review): Review the Apron Operations and Ground Safety news headlines with your partner.",
                 "Step 2 (Markings Recall): Take turns quizzing each other on 3 aerodrome markings from Session 2 (Holding Position, Taxiway Centerline, ILS Critical Area).",
@@ -34750,11 +34360,9 @@ const COURSE_DATA = {
                   }
                 ]
               },
-              "modeBadges": [
-                "📊 Turnaround Timeline",
-                "✈️ 35-Min Servicing Window",
-                "🗣️ Sequencing Tenses"
-              ],
+              "modeBadges": [" Turnaround Timeline",
+                "️ 35-Min Servicing Window",
+                "️ Sequencing Tenses"],
               "instructions": [
                 "Step 1 (Timeline Analysis): Analyze the Turnaround Clock milestones from T-35 (chocks on, engine shutdown) to T+0 (pushback clearance).",
                 "Step 2 (Concurrent Paths): Identify critical path operations that run concurrently: passenger deplaning, baggage offloading, refueling, catering, and cleaning.",
@@ -34995,12 +34603,10 @@ const COURSE_DATA = {
                   "spokenTask": "Describe the safety hazard using 'as a result of' and 'therefore'."
                 }
               ],
-              "modeBadges": [
-                "🚨 Apron Safety & Incident Analysis",
-                "🗣️ Spoken Cause-Effect Practice",
-                "✍️ Cause-Effect Linkers",
-                "📋 Root Cause Analysis"
-              ],
+              "modeBadges": [" Apron Safety & Incident Analysis",
+                "️ Spoken Cause-Effect Practice",
+                "️ Cause-Effect Linkers",
+                " Root Cause Analysis"],
               "instructions": [
                 "Step 1 (Grammar Review): Review the 4 Cause-Effect grammatical patterns: 'due to / owing to' + noun phrase, 'as a result of', and 'consequently / therefore'.",
                 "Step 2 (Scenario Dissection): Work through the 4 Ramp Incident Case Scenarios (hydraulic fluid spill, FOD on taxiway, wing icing, unauthorized contractor vehicle).",
@@ -35044,11 +34650,9 @@ const COURSE_DATA = {
                 }
               ],
               "recoveryInstructions": "Work together in pairs to agree on a prioritized 3-step action plan using modal verbs of necessity and obligation (must, should, have to, need to). Prepare to defend your sequence to the class.",
-              "modeBadges": [
-                "📻 TSEEAC Shift Handover Simulation",
-                "🗣️ 60-Second Handover Standard",
-                "🤝 Ramp Crisis Management"
-              ],
+              "modeBadges": [" TSEEAC Shift Handover Simulation",
+                "️ 60-Second Handover Standard",
+                " Ramp Crisis Management"],
               "instructions": [
                 "Step 1 (Situation Report): Examine the Operational Situation Report: 3 simultaneous ramp bottlenecks (fuel spill Stand 14, conveyor belt failure Stand 16, lost transfer baggage).",
                 "Step 2 (Role Allocation & Briefing Prep): Partner A acts as Outgoing Ramp Coordinator delivering the 4-part Shift Handover Briefing; Partner B acts as Incoming Ramp Coordinator preparing tactical follow-up questions.",
@@ -35101,12 +34705,10 @@ const COURSE_DATA = {
                   "desc": "Rate your confidence (1 to 5) explaining ramp delays using formal connectors like 'due to' and 'owing to'. Note any difficult words in your study portfolio."
                 }
               ],
-              "modeBadges": [
-                "👥 Rapid Vocabulary Drill",
-                "🎯 Vocabulary Retention",
-                "🗣️ Phonetic Precision",
-                "📝 Self-Assessment Log"
-              ],
+              "modeBadges": [" Rapid Vocabulary Drill",
+                " Vocabulary Retention",
+                "️ Phonetic Precision",
+                " Self-Assessment Log"],
               "instructions": [
                 "Step 1 (Consolidation): Complete the 3-step vocabulary review: Self-Check Quiz, Flashcard Mode, and Pronunciation Drill.",
                 "Step 2 (Peer Quiz): Test your partner on 4 high-risk operational terms: 'chocks', 'conveyor', 'pushback', 'turnaround'.",
@@ -35116,12 +34718,10 @@ const COURSE_DATA = {
               "teacherNotes": "Conduct a rapid whole-class choral drill on high-risk pronunciation items: 'chocks', 'hydraulic', 'conveyance', 'turnaround', 'simultaneous'."
             },
             "vehiclesInstruction": {
-              "modeBadges": [
-                "👥 GSE Defining Game",
-                "🎯 Mystery GSE Challenge",
-                "🗣️ Defining Relative Clauses",
-                "🚜 Ground Support Equipment"
-              ],
+              "modeBadges": [" GSE Defining Game",
+                " Mystery GSE Challenge",
+                "️ Defining Relative Clauses",
+                " Ground Support Equipment"],
               "instructions": [
                 "Step 1 (Clue Reading): Student A views the vehicle clues and describes its operational role using defining language without stating the vehicle's name.",
                 "Step 2 (Identification & Model): Student B listens, identifies the vehicle, and formulates a complete spoken definition ('This vehicle is designed to...').",
@@ -35691,11 +35291,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation News & Session 3 Spot-Check",
               "summary": "Every session begins with a professional opening: analyzing current aviation headlines followed by rapid spot-checking of Session 3 ground operations and GSE vocabulary.",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
-                "🗣️ Operational Recall Drill",
-                "🎯 Technical Vocabulary & Fluency"
-              ],
+              "modeBadges": [" Pairs / Plenary",
+                "️ Operational Recall Drill",
+                " Technical Vocabulary & Fluency"],
               "instructions": [
                 "Step 1 (Aviation News Exchange): In pairs, discuss the current aviation headlines prompt. Share one news item regarding airport staffing, ATM capacity, or airline operations.",
                 "Step 2 (Session 3 GSE Spot-Check): Quiz your partner on Questions 1 to 4 (GPU function, Marshaller guidance, turnaround time critical path, FOD prevention) before revealing answers.",
@@ -35733,11 +35331,9 @@ const COURSE_DATA = {
             "jobTaxonomy": {
               "title": "Activity 2: Aviation Operational Roles & Jurisdictions Reference Matrix",
               "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
-              "modeBadges": [
-                "👥 Small Groups / Pairs",
-                "🧭 Roles & Jurisdiction Matrix",
-                "🎯 Operational Domain Mastery"
-              ],
+              "modeBadges": [" Small Groups / Pairs",
+                " Roles & Jurisdiction Matrix",
+                " Operational Domain Mastery"],
               "instructions": [
                 "Step 1 (Matrix Exploration): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Analyze the physical jurisdiction, daily equipment, and core duty for each.",
                 "Step 2 (Crucial Distinction Audit): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
@@ -35853,11 +35449,9 @@ const COURSE_DATA = {
             "grammarClinic": {
               "title": "Activity 4: Functional Language Clinic: Responsibilities, Duties & Authority",
               "summary": "Mastering professional formulas to express responsibilities and authority clearly and naturally. Avoid French false friends ('responsable de', 'chargé de').",
-              "modeBadges": [
-                "👥 Pairs / Interactive Practice",
-                "📝 Sentence Structure Clinic",
-                "🎯 Preposition Mastery"
-              ],
+              "modeBadges": [" Pairs / Interactive Practice",
+                " Sentence Structure Clinic",
+                " Preposition Mastery"],
               "instructions": [
                 "Step 1 (Formula Mastery): Study the four core structures: 'be responsible for + -ing', 'be tasked with + -ing', 'have authority to + base verb', and 'liaise with vs. report to'.",
                 "Step 2 (Role Duty Construction): In pairs, draft defining sentences for 3 aviation professions using the target preposition formulas.",
@@ -35937,11 +35531,9 @@ const COURSE_DATA = {
             "handoffSimulation": {
               "title": "Activity 5: Role-Play Simulation: 'A Day in the Life' Handoffs & Peer Audit",
               "summary": "Simulating professional operational interfaces under pressure. Practice delivering clear handoffs, asking tactical clarifying questions, and resolving cross-domain bottlenecks.",
-              "modeBadges": [
-                "👥 Triads (Role A, Role B, Observer C)",
-                "🎭 Operational Handoff Simulation",
-                "📋 Peer Observation & Feedback"
-              ],
+              "modeBadges": [" Triads (Role A, Role B, Observer C)",
+                " Operational Handoff Simulation",
+                " Peer Observation & Feedback"],
               "instructions": [
                 "Step 1 (Scenario Assignment): Choose Scenario 1 (TRC <-> First Officer) or Scenario 2 (AFISO <-> Inbound Pilot). Assign roles: Student A (Lead), Student B (Interface Partner), Student C (Peer Observer).",
                 "Step 2 (Simulation Rehearsal): Conduct an operational briefing resolving the bottleneck using today's functional vocabulary.",
@@ -35986,11 +35578,9 @@ const COURSE_DATA = {
             "careerForumDebate": {
               "title": "Activity 6: Winter Weather Diversion Crisis Decision Table & Action Protocol",
               "summary": "Aerodrome operations during severe weather demand swift cross-domain coordination. Analyze the multi-agency triage matrix, prioritize three simultaneous crises on Stand Charlie-4, and negotiate an agreed action plan.",
-              "modeBadges": [
-                "👥 Small Groups (4-5 Students)",
-                "❄️ Winter Crisis Triage Table",
-                "🎯 Consensus Negotiation"
-              ],
+              "modeBadges": [" Small Groups (4-5 Students)",
+                "️ Winter Crisis Triage Table",
+                " Consensus Negotiation"],
               "instructions": [
                 "Step 1 (Crisis Briefing & Stance): Stand Charlie-4 at 16:45. Sudden freezing rain triggers aerodrome-wide ground delays. Flight ENAC-101 has 180 passengers onboard with an in-flight medical emergency divert inbound. Review the 3 complications in the table below.",
                 "Step 2 (Stakeholder Round-Robin): Each student adopts a role (AFISO / TSEEAC, Tower ATCO, Turnaround Coordinator, Airline Dispatcher). State your department's top priority using conditional language ('Provided that...', 'On condition that...').",
@@ -36020,11 +35610,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 7: Vocabulary Review, Syllable Stress & Class Wrap-Up",
               "summary": "Consolidate the session's key vocabulary, word stress patterns, and self-assessment benchmarks.",
-              "modeBadges": [
-                "👥 Pairs / Plenary",
-                "🗣️ Phonology & Word Stress",
-                "📊 Continuous Assessment Log"
-              ],
+              "modeBadges": [" Pairs / Plenary",
+                "️ Phonology & Word Stress",
+                " Continuous Assessment Log"],
               "instructions": [
                 "Step 1 (Pronunciation Practice): Drill word stress on the 6 target terms below, emphasizing secondary and primary syllable stress.",
                 "Step 2 (Rapid-Fire Partner Quiz): Student A names a definition from Part 7; Student B provides the term within 5 seconds.",
@@ -36066,11 +35654,9 @@ const COURSE_DATA = {
             "rolesMatrix": {
               "title": "Activity 2: Aviation Operational Roles & Jurisdictions Reference Matrix",
               "summary": "Aviation is an intricate ecosystem where specialized professions collaborate seamlessly. Explore the five primary operational domains, their key responsibilities, and the essential distinction between ATCO separation authority and TSEEAC functions.",
-              "modeBadges": [
-                "👥 Small Groups / Pairs",
-                "🧭 Roles & Jurisdiction Matrix",
-                "🎯 Operational Domain Mastery"
-              ],
+              "modeBadges": [" Small Groups / Pairs",
+                " Roles & Jurisdiction Matrix",
+                " Operational Domain Mastery"],
               "instructions": [
                 "Step 1 (Matrix Exploration): Study the 5 operational domains: Landside, Airside, Flight Crew, ATCOs, and TSEEAC. Analyze the physical jurisdiction, daily equipment, and core duty for each.",
                 "Step 2 (Crucial Distinction Audit): Analyze the structural legal difference between ATCOs (tactical separation authority) and TSEEAC / AFISOs (flight information and advisory services without separation authority).",
@@ -36378,11 +35964,9 @@ const COURSE_DATA = {
             "decisionTable": {
               "title": "Activity 6: Winter Weather Diversion Crisis Decision Table & Action Protocol",
               "summary": "Aerodrome operations during severe weather demand swift cross-domain coordination. Analyze the multi-agency triage matrix, prioritize three simultaneous crises on Stand Charlie-4, and negotiate an agreed action plan.",
-              "modeBadges": [
-                "👥 Small Groups (4-5 Students)",
-                "❄️ Winter Crisis Triage Table",
-                "🎯 Consensus Negotiation"
-              ],
+              "modeBadges": [" Small Groups (4-5 Students)",
+                "️ Winter Crisis Triage Table",
+                " Consensus Negotiation"],
               "instructions": [
                 "Step 1 (Crisis Briefing & Stance): Stand Charlie-4 at 16:45. Sudden freezing rain triggers aerodrome-wide ground delays. Flight ENAC-101 has 180 passengers onboard with an in-flight medical emergency divert inbound. Review the 3 complications in the table below.",
                 "Step 2 (Stakeholder Round-Robin): Each student adopts a role (AFISO / TSEEAC, Tower ATCO, Turnaround Coordinator, Airline Dispatcher). State your department's top priority using conditional language ('Provided that...', 'On condition that...').",
@@ -37154,10 +36738,8 @@ const COURSE_DATA = {
               "duration": "120 Minutes"
             },
             "openingSession": {
-              "modeBadges": [
-                "👥 Aerodynamic Spot-Check",
-                "🎯 Flight Physics Quick Check"
-              ],
+              "modeBadges": [" Aerodynamic Spot-Check",
+                " Flight Physics Quick Check"],
               "instructions": [
                 "Step 1 (Aviation Headlines): In pairs, discuss the opening news bullet on composite winglets and stall training advisories. Why are airlines prioritizing aerodynamics for both fuel economy and safety?",
                 "Step 2 (Aerodynamics Quick Check): Test each other on the 4 foundational flight physics questions below using the target sentence stems before viewing the answers.",
@@ -37200,11 +36782,9 @@ const COURSE_DATA = {
               }
             },
             "forcesPrinciples": {
-              "modeBadges": [
-                "⚖️ Force Balance Analysis",
-                "👥 Vector Analysis & Paired Presentation",
-                "🎯 Technical Equilibrium B2"
-              ],
+              "modeBadges": ["️ Force Balance Analysis",
+                " Vector Analysis & Paired Presentation",
+                " Technical Equilibrium B2"],
               "instructions": [
                 "Step 1 (Force Vector Review): Study the 4 forces interactive cards. Review the aerodynamic definitions, equilibrium equations, and how each vector acts on the aircraft center of gravity.",
                 "Step 2 (Maneuver Vector Challenge): In pairs, describe what happens to the vectors in 3 specific flight regimes: (1) Steady Climb, (2) 45-degree Coordinated Turn, (3) Clean Power-Off Glide.",
@@ -37246,11 +36826,9 @@ const COURSE_DATA = {
               ]
             },
             "grammarClinic": {
-              "modeBadges": [
-                "⚡ Cause & Effect Workshop",
-                "💬 Grammatical Precision & Cause-Effect Formulas",
-                "🎯 Technical Precision"
-              ],
+              "modeBadges": [" Cause & Effect Workshop",
+                " Grammatical Precision & Cause-Effect Formulas",
+                " Technical Precision"],
               "instructions": [
                 "Step 1 (Aerodynamic Conditionals): Review the grammatical formulas for scientific invariants (Zero Conditional: If + present $\\rightarrow$ present) and operational contingencies (First Conditional: If + present $\\rightarrow$ will + verb).",
                 "Step 2 (Interactive Sentence Drills): Complete the 4 fill-in-the-blank causal sentences, selecting the correct connector (unless, due to, results in, provided that).",
@@ -37295,11 +36873,9 @@ const COURSE_DATA = {
               ]
             },
             "axesGame": {
-              "modeBadges": [
-                "🎮 Kinesthetic Simulator & Role-Play",
-                "🎮 Kinesthetic Simulation & Flight Deck Debrief",
-                "🗣️ Dynamic Control Surfaces"
-              ],
+              "modeBadges": [" Kinesthetic Simulator & Role-Play",
+                " Kinesthetic Simulation & Flight Deck Debrief",
+                "️ Dynamic Control Surfaces"],
               "instructions": [
                 "Step 1 (Kinesthetic Simulator Game): Partner A acts as Pilot Flying giving control commands (\"Applying left rudder to counter crosswind\"); Partner B acts as Aircraft, demonstrating the physical motion with their hands and naming the axis and surface movement. Swap roles after 6 minutes.",
                 "Step 2 (Role-Play Briefing): Partner A takes Role Card 1 (Flight Test Captain); Partner B takes Role Card 2 (Avionics & Flight Control Engineer). Simulate a post-flight debrief analyzing flight control feedback, trimming issues, or crosswind control authority.",
@@ -37344,11 +36920,9 @@ const COURSE_DATA = {
               ]
             },
             "stallScenario": {
-              "modeBadges": [
-                "🚨 Cockpit Emergency Case Study",
-                "🚨 Operational Incident Analysis & Crew Callouts",
-                "🎯 Standard Operating Procedures"
-              ],
+              "modeBadges": [" Cockpit Emergency Case Study",
+                " Operational Incident Analysis & Crew Callouts",
+                " Standard Operating Procedures"],
               "instructions": [
                 "Step 1 (Scenario Analysis): Read the authentic flight deck incident transcript. Identify the dangerous aerodynamic misconception made by the First Officer (confusing altitude loss with pitch attitude).",
                 "Step 2 (Cockpit Communication & Callouts): In pairs, role-play the cockpit crew communication. Draft the Captain's clear callouts (\"STALL, I have control, pitching down\") and the First Officer's verbal confirmations.",
@@ -37366,11 +36940,9 @@ const COURSE_DATA = {
               ]
             },
             "closingReview": {
-              "modeBadges": [
-                "🏁 Final Technical Wrap-Up",
-                "🎯 Mastery Audit & Pronunciation Clinic",
-                "🎯 Aerodynamic Vocabulary Mastery"
-              ],
+              "modeBadges": [" Final Technical Wrap-Up",
+                " Mastery Audit & Pronunciation Clinic",
+                " Aerodynamic Vocabulary Mastery"],
               "instructions": [
                 "Step 1 (Core Checkpoints Audit): In pairs, run through the 3 technical checkpoints. Confirm you can explain the 4 forces, 3 axes, and stall recovery without hesitation.",
                 "Step 2 (Pronunciation Rapid Fire): Drill the tricky multisyllabic aerodynamic terms (ae-ro-dy-NAM-ic, al-ti-tude, e-qui-LIB-ri-um, hor-i-ZON-tal, sta-bi-LI-zer).",
@@ -37943,10 +37515,8 @@ const COURSE_DATA = {
               "duration": "120 Minutes"
             },
             "openingSession": {
-              "modeBadges": [
-                "⚡ Opening Warm-Up & News Scan",
-                "🎯 Aerodynamics to Anatomy Transition"
-              ],
+              "modeBadges": [" Opening Warm-Up & News Scan",
+                " Aerodynamics to Anatomy Transition"],
               "instructions": [
                 "Step 1 (Maintenance Headlines): Read the three weekly maintenance and structural headlines. Identify the airframe component most vulnerable to composite fatigue.",
                 "Step 2 (Session 1 Review Check): Answer the 4 review questions covering forces in equilibrium and control surfaces using the spoken sentence stems.",
@@ -37993,10 +37563,8 @@ const COURSE_DATA = {
               }
             },
             "videoLab": {
-              "modeBadges": [
-                "📹 Interactive Video Analysis",
-                "🎯 Airframe Anatomy & System Mechanics"
-              ],
+              "modeBadges": [" Interactive Video Analysis",
+                " Airframe Anatomy & System Mechanics"],
               "instructions": [
                 "Step 1 (Video Viewing): Watch the video on commercial aircraft anatomy and control surfaces. Note how primary and secondary surfaces deflect.",
                 "Step 2 (Debrief Analysis): Review the operational synopsis and technical terms in the right-hand debrief panel.",
@@ -38037,10 +37605,8 @@ const COURSE_DATA = {
               ]
             },
             "diagramLabeling": {
-              "modeBadges": [
-                "✈️ Aircraft Components & Anatomy",
-                "🎯 External Airframe Structural Vocabulary"
-              ],
+              "modeBadges": ["️ Aircraft Components & Anatomy",
+                " External Airframe Structural Vocabulary"],
               "instructions": [
                 "Step 1 (Component Scan): Examine the 12 external aircraft components in the visual blueprint. Review their English names, physical locations, and primary functions.",
                 "Step 2 (Blackboard Challenge): In groups of 3, sketch an aircraft in flight on the board. Assign roles: Draftsperson (draws airframe), Systems Lead (labels components), and Spoken Briefing (presents to class).",
@@ -38144,10 +37710,8 @@ const COURSE_DATA = {
               ]
             },
             "gapFillClinic": {
-              "modeBadges": [
-                "✍️ Technical Reading & Gap-Fill",
-                "🎯 Airframe Systems & Inspection Lexicon"
-              ],
+              "modeBadges": ["️ Technical Reading & Gap-Fill",
+                " Airframe Systems & Inspection Lexicon"],
               "instructions": [
                 "Step 1 (Text A Completion): Read the passage on Primary vs. Secondary Flight Controls. Fill the 6 technical gaps using the word bank.",
                 "Step 2 (Text B Completion): Read the pre-flight exterior walkaround passage. Select the appropriate technical term for each sensor and airframe zone.",
@@ -38200,10 +37764,8 @@ const COURSE_DATA = {
               }
             },
             "errorHunter": {
-              "modeBadges": [
-                "🔍 Technical Fact vs. Fallacy",
-                "🎯 Peer Listening & Error Correction"
-              ],
+              "modeBadges": [" Technical Fact vs. Fallacy",
+                " Peer Listening & Error Correction"],
               "instructions": [
                 "Step 1 (Partner Reading): Student A reads statement 1 aloud to Student B. Student B listens closely without looking at the text.",
                 "Step 2 (Spot & Challenge): Student B identifies the technical or aerodynamic falsehood, states why it is incorrect, and provides the corrected statement.",
@@ -38265,10 +37827,8 @@ const COURSE_DATA = {
               ]
             },
             "closingReview": {
-              "modeBadges": [
-                "🏁 Final Technical Wrap-Up",
-                "🎯 Taboo Word Game & Technical Mastery Challenge"
-              ],
+              "modeBadges": [" Final Technical Wrap-Up",
+                " Taboo Word Game & Technical Mastery Challenge"],
               "instructions": [
                 "Step 1 (Aircraft Anatomy Taboo - 12 Cards): Play Taboo in pairs. Describe the target technical term without saying any of the 3 forbidden words. Test all 12 cards.",
                 "Step 2 (15-Question Technical Mastery Challenge): Complete the multi-format 15-question interactive quiz covering error spotting, surface matching, and pre-flight inspections.",
@@ -39149,11 +38709,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation News & Session 2 Spot-Check",
               "summary": "News review followed by quick vocabulary check on aircraft parts.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "News & Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Read the 3 fleet news prompts (Airbus A321XLR deliveries, Boeing 747 freighter retirement, Air France-KLM A350 fleet renewal).",
                 "Test your partner on the 4 aircraft anatomy spot-check questions (narrowbody vs. widebody, LCC fleet commonality benefits, regional manufacturers, MTOW definition).",
@@ -39196,11 +38754,9 @@ const COURSE_DATA = {
             "fleetTaxonomy": {
               "title": "Activity 2: Commercial Aircraft Classification Table",
               "summary": "Classify commercial passenger and freighter aircraft into operational categories.",
-              "modeBadges": [
-                "Pairs / Small Groups",
+              "modeBadges": ["Pairs / Small Groups",
                 "Fleet Analysis",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Analyze the 4 commercial aircraft categories: Regional Turboprops & Jets, Single-Aisle Narrowbodies, Twin-Aisle Widebodies, and Dedicated Freighters.",
                 "Compare seat capacities, operational ranges, and typical airline missions across models (ATR 72, A220, A320neo, 737 MAX, A350, 777F).",
@@ -39242,11 +38798,9 @@ const COURSE_DATA = {
             "comparativeClinic": {
               "title": "Activity 3: Language Focus: Comparative & Superlative Data",
               "summary": "Mastering modifiers and comparative structures to evaluate aircraft efficiency and fleet statistics.",
-              "modeBadges": [
-                "Pairs / Individual",
+              "modeBadges": ["Pairs / Individual",
                 "Data Analysis & Grammar",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Study the 3 comparative structures: Quantified Comparatives (Percentage/Factor + more/less... than), Emphatic Modifiers (substantially / significantly / considerably), and Superlative Benchmarks (the longest range... in its class).",
                 "Review the aircraft performance data and formulate 4 spoken sentences comparing the fuel burn, seat capacity, MTOW, and range of the A350-900 vs. Boeing 777-300ER.",
@@ -39275,11 +38829,9 @@ const COURSE_DATA = {
             "fleetCommitteeSimulation": {
               "title": "Activity 4: Airline Fleet Selection Committee Simulation",
               "summary": "Pairs represent airline management committees pitching an aircraft purchase order for a new route network.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Executive Simulation",
-                "30 Mins"
-              ],
+                "30 Mins"],
               "instructions": [
                 "Select one of the two business cases: Case 1 (Transatlantic Expansion: A321XLR vs. Boeing 787-8) or Case 2 (Regional Feeder Fleet: ATR 72-600 vs. Embraer E175).",
                 "With your partner, spend 15 minutes analyzing the payload, range, trip cost, and passenger appeal trade-offs of Option A versus Option B.",
@@ -39306,11 +38858,9 @@ const COURSE_DATA = {
             "globalLandscapeDebate": {
               "title": "Activity 5: Global Manufacturer Debate & Industry Trends",
               "summary": "Class debate exploring the Airbus-Boeing duopoly, supply chain bottlenecks, and the emergence of COMAC.",
-              "modeBadges": [
-                "Plenary / Fishbowl",
+              "modeBadges": ["Plenary / Fishbowl",
                 "Industry Debate",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Review the 3 industry debate topics: point-to-point narrowbody flying vs. hub widebodies, COMAC C919 challenging the Western duopoly, and dual-sourcing vs. single-manufacturer fleet commonality.",
                 "Form two debate teams (or use a fishbowl format) to debate whether airlines should risk split orders to avoid multi-year delivery backlogs.",
@@ -39327,11 +38877,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Vocabulary Review & Pronunciation Wrap-Up",
               "summary": "Consolidate the 18 commercial fleet terms and prepare for Session 4 Aviation Accidents.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Pronunciation Drill",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Complete the syllable stress drills on the 5 technical terms: ma-nu-FAC-tu-rer, du-OP-o-ly, TUR-bo-prop, ca-PA-ci-ty, con-fig-u-RA-tion.",
                 "Review the 18 commercial fleet flashcard definitions in the Revision tab.",
@@ -39881,11 +39429,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation News & Session 3 Spot-Check",
               "summary": "News review followed by quick vocabulary check on commercial fleets.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "News & Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Read the 3 aviation safety news items (BEA annual report, NTSB automation symposium, ICAO 25-hour CVR mandate).",
                 "Test your partner on the 4 core accident investigation questions: Accident vs. Incident (ICAO Annex 13), FDR vs. CVR capabilities, CFIT definition, and the Swiss Cheese safety model.",
@@ -39928,11 +39474,9 @@ const COURSE_DATA = {
             "investigationLexis": {
               "title": "Activity 2: Accident Investigation Terminology & Causal Chains",
               "summary": "Learn and deploy specialized safety vocabulary used by investigation authorities (BEA, NTSB, AAIB).",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Vocabulary Acquisition",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Review the 5 core investigation concepts: Flight Data Recorder (FDR), Cockpit Voice Recorder (CVR), Root Cause vs. Contributing Factor, Human Factors & CRM, and Airworthiness Directives (AD).",
                 "Pair up to explain how a minor technical glitch can cascade into a catastrophic event when multiple contributing factors align.",
@@ -39966,11 +39510,9 @@ const COURSE_DATA = {
             "pastNarrativesClinic": {
               "title": "Activity 3: Language Focus: Narrative Past Tenses & Sequencers",
               "summary": "Combining Past Simple, Past Continuous, and Past Perfect to build clear chronological incident reports.",
-              "modeBadges": [
-                "Pairs / Individual",
+              "modeBadges": ["Pairs / Individual",
                 "Narrative Grammar",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Examine the narrative timeline formula combining Past Continuous (background condition: 'was cruising at FL350'), Past Perfect (prior action: 'ice crystals had blocked the probes'), and Past Simple (consecutive events: 'the autopilot disconnected, the alarm sounded, and the crew pitched up').",
                 "Identify the time sequencers used in professional accident reports: 'subsequently', 'concurrently', 'prior to impact', 'thereafter'.",
@@ -39999,11 +39541,9 @@ const COURSE_DATA = {
             "groupResearchSprint": {
               "title": "Activity 4: 15-Minute Group Research & Preparation Sprint",
               "summary": "Small groups (3-4 students) select one landmark accident case study. Within 15 minutes, prepare a 5-minute spoken briefing for classmates.",
-              "modeBadges": [
-                "Small Groups (3-4)",
+              "modeBadges": ["Small Groups (3-4)",
                 "Research Sprint",
-                "15 Mins"
-              ],
+                "15 Mins"],
               "instructions": [
                 "Form groups of 3-4 and select one of the 6 landmark accident case studies: Tenerife (1977), AF447 (2009), US Airways 1549 (2009), BA038 (2008), Aloha 243 (1988), or Boeing 737 MAX (2018-2019).",
                 "In a 15-minute timed sprint, extract the 4 mandatory briefing pillars: (1) Aircraft type & context, (2) Chronology of events, (3) Technical & human root causes, (4) Permanent safety upgrades.",
@@ -40059,11 +39599,9 @@ const COURSE_DATA = {
             "presentationsDebrief": {
               "title": "Activity 5: Spoken Group Presentations & Class Debrief",
               "summary": "Each group presents their 5-minute accident analysis using whiteboard or slide bullet points, followed by class Q&A.",
-              "modeBadges": [
-                "Small Groups",
+              "modeBadges": ["Small Groups",
                 "Spoken Presentation",
-                "45 Mins"
-              ],
+                "45 Mins"],
               "instructions": [
                 "Deliver your 5-minute accident briefing to the class, using the whiteboard or bullet slides to support your narrative.",
                 "Ensure talking time is distributed equally among all team members. Strictly no reading from pre-written essays!",
@@ -40081,11 +39619,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Vocabulary Review & Formative Evaluation 2 Prep",
               "summary": "Review the 18 accident investigation terms and review expectations for Session 5 Formative Evaluation 2.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "FE2 Preparation",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Review the 18 accident and safety terms in the Revision tab flashcards.",
                 "Note the expectations for Session 5 Formative Evaluation 2: 10-12 minute paired presentation of an Aircraft or Airline Profile, followed by teacher Q&A.",
@@ -41108,11 +40644,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation Health News & Quick Check",
               "summary": "Analyze recent in-flight medical incidents, crew fatigue advisories, and complete a 5-question baseline aeromedical diagnostic.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Opening Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Review recent aviation headlines regarding in-flight medical diversions, EASA pilot mental health regulations, and FAA controller fatigue taskforce recommendations.",
                 "In plenary, discuss: 'What are the legal responsibilities of the Captain when deciding whether to divert for a medical emergency?'",
@@ -41159,11 +40693,9 @@ const COURSE_DATA = {
             "medicalIncidentsLexis": {
               "title": "Activity 2: In-Flight Medical Emergencies & Triage Vocabulary",
               "summary": "Master specialized medical condition terminology, cabin emergency medical kits (EMK), and passenger triage.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Medical Protocols",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "In pairs, review the 18 specialized medical conditions, emergency kit components, and operational procedures.",
                 "Categorize each condition into one of 3 triage urgency levels: Critical (immediate landing/defibrillation), Serious (urgent medical stabilization), or Non-Emergency (in-seat comfort & monitoring).",
@@ -41207,11 +40739,9 @@ const COURSE_DATA = {
             "fatigueHumanFactorsClinic": {
               "title": "Activity 3: Crew & Controller Fatigue, Circadian Rhythms & FTL",
               "summary": "Examine the physiological mechanisms of fatigue, sleep debt, circadian disruption, and flight time limitations.",
-              "modeBadges": [
-                "Individual & Pairs",
+              "modeBadges": ["Individual & Pairs",
                 "Human Factors Workshop",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Step 1 (Concepts & Vocabulary - 5 mins): Review key human factors terms: sleep debt, sleep inertia (grogginess upon waking), and the Window of Circadian Low (WOCL).",
                 "Step 2 (Roster Evaluation - 8 mins): In pairs, review the 12-hour multi-sector crew schedule. Identify points where fatigue and reduced alertness pose operational risks.",
@@ -41241,11 +40771,9 @@ const COURSE_DATA = {
             "medicalDiversionSimulation": {
               "title": "Activity 4: Airborne Medical Diversion Simulation & Decision Guide",
               "summary": "Roleplay a flight crew facing an acute in-flight medical crisis over continental / transoceanic airspace.",
-              "modeBadges": [
-                "Small Groups (3-4)",
+              "modeBadges": ["Small Groups (3-4)",
                 "Decision Simulation",
-                "35 Mins"
-              ],
+                "35 Mins"],
               "instructions": [
                 "In small groups of 3-4, select one of the 3 realistic in-flight emergency scenarios below.",
                 "Step 1: Clinical Assessment & Ground Telemedicine (consult MedLink satellite doctor, evaluate EMK pharmaceuticals).",
@@ -41278,11 +40806,9 @@ const COURSE_DATA = {
             "humanFactorsDebrief": {
               "title": "Activity 5: Aeromedical Physics: Spatial Disorientation, Hypoxia & Emergency Descent",
               "summary": "Analyze physiological illusions in instrument flight, hypoxia progression, and emergency descent maneuvers.",
-              "modeBadges": [
-                "Plenary & Pairs",
+              "modeBadges": ["Plenary & Pairs",
                 "Aeromedical Physics",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Analyze the 3 classic vestibular sensory illusions: the leans (false roll sensation), somatogravic illusion (false pitch-up during rapid acceleration), and graveyard spiral.",
                 "Examine Time of Useful Consciousness (TUC) table: FL250 (3–5 mins), FL350 (30–60 secs), FL400 (15–20 secs).",
@@ -41308,11 +40834,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Medical & Human Factors Consolidation & Syllable Stress",
               "summary": "Consolidate the 18 aeromedical terms, conduct syllable stress drills, and prepare for Session 2 Meteorology.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Consolidation",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Conduct rhythmic pronunciation drills on multi-syllabic aeromedical vocabulary.",
                 "Verify personal mastery of the 3 triage categories, FTL rules, and the IMSAFE mnemonic.",
@@ -41890,11 +41414,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Aviation Weather Briefing & Meteorological Warm-Up",
               "summary": "Review current convective storm advisories, satellite imagery, and complete a 5-question baseline meteorological diagnostic.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Opening Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Examine recent aviation weather headlines detailing severe clear-air turbulence encounters, winter freezing fog disruptions, and volcanic ash plume tracking.",
                 "In plenary, discuss: 'Why is clear air turbulence (CAT) significantly more dangerous for passengers and flight attendants than thunderstorm turbulence?'",
@@ -41941,11 +41463,9 @@ const COURSE_DATA = {
             "weatherPhenomenaLexis": {
               "title": "Activity 2: Severe Atmospheric Phenomena & Flight Impacts",
               "summary": "Master specialized meteorological terminology, aerodynamic degradation mechanisms, and pilot avoidance maneuvers.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Meteorological Vocabulary",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "In pairs, analyze the 18 specialized aviation weather terms, phonetic pronunciations, and operational definitions.",
                 "Match each weather phenomenon with its direct operational consequence (e.g., loss of lift, loss of instrumentation, flameout, runway closure).",
@@ -41989,11 +41509,9 @@ const COURSE_DATA = {
             "weatherBriefingClinic": {
               "title": "Activity 3: Language Focus: Decoding METAR, TAF & SIGMET Advisories",
               "summary": "Interactive translation and interpretation of real-world coded aviation weather reports for dispatchers and pilots.",
-              "modeBadges": [
-                "Individual",
+              "modeBadges": ["Individual",
                 "Language Focus",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "Study the 3 real-world operational weather strings provided below (METAR, TAF, and Convective SIGMET).",
                 "Decode all elements: surface wind direction/speed/gusts, visibility, runway visual range, present weather descriptors, cloud coverage, temperature/dewpoint, and altimeter setting.",
@@ -42022,11 +41540,9 @@ const COURSE_DATA = {
             "weatherCaseStudiesSprint": {
               "title": "Activity 4: 15-Minute Group Research Sprint: Landmark Weather Case Studies",
               "summary": "Small-group rapid research analyzing Delta 191 (DFW microburst) or BA 009 (volcanic ash ingestion), extracting safety fixes and crew actions.",
-              "modeBadges": [
-                "Small Groups (3-4)",
+              "modeBadges": ["Small Groups (3-4)",
                 "15-Min Sprint",
-                "15 Mins"
-              ],
+                "15 Mins"],
               "instructions": [
                 "In small groups of 3-4, select one of the 2 landmark weather case studies below.",
                 "You have exactly 15 minutes to research and outline your 5-minute technical briefing.",
@@ -42056,11 +41572,9 @@ const COURSE_DATA = {
             "weatherDiversionSimulation": {
               "title": "Activity 5: Severe Weather En-Route & Terminal Diversion Simulation",
               "summary": "Flight crew and dispatcher teams reroute aircraft around a massive squall line with fuel reserve calculations and ATC coordination.",
-              "modeBadges": [
-                "Teams (3-4)",
+              "modeBadges": ["Teams (3-4)",
                 "Operations Simulation",
-                "45 Mins"
-              ],
+                "45 Mins"],
               "instructions": [
                 "In teams of 3-4, assume the roles of Airline Flight Dispatchers and Cockpit Crew for flight AF7842 (Toulouse to Brussels).",
                 "Cruising at FL340, your airborne radar displays an active squall line stretching across northern France with embedded CB cells reaching FL430. Your destination (EBBR) has just issued a SPECI reporting runway closure due to flash flooding and windshear.",
@@ -42099,11 +41613,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Meteorology Consolidation & Pronunciation Wrap-Up",
               "summary": "Consolidate the 18 meteorological terms, conduct syllable stress drills, and prepare for Session 3 Safety vs. Security.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Consolidation",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Conduct rhythmic syllable stress drills on complex meteorological terms.",
                 "Review key takeaways from the Delta 191 and BA 009 case studies.",
@@ -42681,11 +42193,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Safety & Security News & Quick Check",
               "summary": "Review recent aviation security incidents, airworthiness directives, and complete a 5-question baseline diagnostic.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Opening Warm-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Examine recent aviation headlines detailing airport perimeter intrusions, updated computed tomography (CT) baggage rules, and emergency airworthiness directives.",
                 "In plenary, discuss: 'Why do civil aviation authorities maintain completely separate government departments for Safety (DGAC/FAA Safety) and Security (Police aux Frontières / TSA)?'",
@@ -42732,11 +42242,9 @@ const COURSE_DATA = {
             "safetyVsSecurityLexis": {
               "title": "Activity 2: The Literal & Operational Distinction: Safety vs. Security",
               "summary": "Establish the clear, unambiguous distinction between Aviation Safety and Aviation Security.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Conceptual Analysis",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "In pairs, analyze the detailed definition matrix comparing Safety (Sécurité Technique) and Security (Sûreté).",
                 "Examine 6 real-world airport occurrences provided below. Classify each occurrence as strictly a Safety issue, strictly a Security issue, or an overlapping Dual-Domain issue.",
@@ -42762,11 +42270,9 @@ const COURSE_DATA = {
             "airportSecurityArchitecture": {
               "title": "Activity 3: Airport Security Architecture: Landside to Airside",
               "summary": "Detailed examination of passenger and baggage screening workflows, millimeter-wave scanners, CT tomography, and sterile area protection.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Security Engineering",
-                "20 Mins"
-              ],
+                "20 Mins"],
               "instructions": [
                 "In pairs, trace the journey of an international passenger and their checked bag from terminal curbside to the aircraft cabin.",
                 "Map out each concentric security barrier: (1) Landside public hall, (2) Boarding pass validation gate, (3) Central security screening checkpoint (millimeter-wave body scanner, x-ray/CT carry-on scan), (4) Sterile concourse, (5) Boarding gate identity verification.",
@@ -42796,11 +42302,9 @@ const COURSE_DATA = {
             "aircraftSafetyChecksClinic": {
               "title": "Activity 4: Aircraft Security Search & Sterile Pre-Flight Checks",
               "summary": "Pre-flight security sweep workshop identifying cabin search protocols, unattended baggage, and spoken handover to the flight crew.",
-              "modeBadges": [
-                "Pairs",
+              "modeBadges": ["Pairs",
                 "Security Search Workshop",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Step 1 (Security Protocols - 5 mins): Contrast safety walkarounds (checking mechanical integrity) with mandatory pre-flight cabin security sweeps (identifying unattended items and tampering).",
                 "Step 2 (Security Search Scenario - 12 mins): In pairs, role-play the pre-boarding cabin security sweep between Lead Flight Attendant and Ground Security Officer: report a suspicious unlabelled item found in row 18 overhead bin.",
@@ -42830,11 +42334,9 @@ const COURSE_DATA = {
             "securityThreatSimulation": {
               "title": "Activity 5: Dual-Track Safety & Security Crisis Scenario",
               "summary": "Multi-agency emergency simulation coordinating response between Airport Police, ARFF fire services, and ATC for a perimeter breach and hydraulic emergency.",
-              "modeBadges": [
-                "Teams (3-4)",
+              "modeBadges": ["Teams (3-4)",
                 "Incident Simulation",
-                "35 Mins"
-              ],
+                "35 Mins"],
               "instructions": [
                 "In teams of 3-4, assume the role of the Aerodrome Emergency Operations Center (EOC) Command Staff.",
                 "Scenario: At 14:15 UTC, an unidentified vehicle crashes through an airside perimeter fence and speeds toward the passenger aprons (Security Threat). Simultaneously, an inbound widebody airliner (AF452) declares MAYDAY due to complete loss of Green hydraulic system and hot brakes on rollout, halting on runway 26L (Safety Emergency).",
@@ -42852,11 +42354,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Safety vs. Security Wrap-Up & FE3 Preview",
               "summary": "Consolidation checkpoints, pronunciation audit, and introduction to Session 4 Global Review and Session 5 FE3.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Consolidation & FE3 Prep",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Review the critical vocabulary and concepts of Safety vs. Security.",
                 "Examine the structure of next week's Session 4 Global Semester Review & 3-Team Aviation Grand Prix Quiz.",
@@ -43434,11 +42934,9 @@ const COURSE_DATA = {
             "openingSession": {
               "title": "Activity 1: Semester 1 Retrospective & Competition Rules",
               "summary": "Review the full Semester 1 aeronautical syllabus, divide into 3 teams, and establish the Grand Prix tournament rules.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Grand Prix Setup",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Divide the classroom cohort into 3 competitive squads: Team Alpha, Team Bravo, and Team Charlie.",
                 "Each team elects a Team Captain to deliver final answers and keep score on the interactive Grand Prix board.",
@@ -43467,11 +42965,9 @@ const COURSE_DATA = {
             "teamGrandPrixRound1": {
               "title": "Activity 2: Grand Prix Round 1: Aerodromes, Aircraft Anatomy & Systems",
               "summary": "Competitive round covering Module 1 and Module 2: runway numbering, GSE turnaround, flight control surfaces, and turbofan bypass ratios.",
-              "modeBadges": [
-                "3 Teams (Alpha/Bravo/Charlie)",
+              "modeBadges": ["3 Teams (Alpha/Bravo/Charlie)",
                 "Team Competition",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Teams take turns selecting challenge questions from the Round 1 Question Board.",
                 "Teams have 60 seconds of internal consultation before their Captain must state the final answer in clear English.",
@@ -43521,11 +43017,9 @@ const COURSE_DATA = {
             "teamGrandPrixRound2": {
               "title": "Activity 3: Grand Prix Round 2: Human Factors, Health & Severe Meteorology",
               "summary": "Competitive round covering Module 3: medical triage, EASA FTL fatigue rules, METAR decoding, and microburst physics.",
-              "modeBadges": [
-                "3 Teams (Alpha/Bravo/Charlie)",
+              "modeBadges": ["3 Teams (Alpha/Bravo/Charlie)",
                 "Team Competition",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Teams tackle Round 2 challenge questions covering aviation medicine, crew fatigue regulations, and severe atmospheric hazards.",
                 "Points escalate: 100 pts for clinical definitions, 200 pts for regulatory/METAR decoding, and 300 pts for aerodynamic physics.",
@@ -43575,11 +43069,9 @@ const COURSE_DATA = {
             "teamGrandPrixRound3": {
               "title": "Activity 4: Grand Prix Round 3: Safety vs. Security & Landmark Case Studies",
               "summary": "Competitive round covering airport security screening, pre-flight walkaround, Delta 191/BA 009 case studies, and tournament tiebreaker.",
-              "modeBadges": [
-                "3 Teams (Alpha/Bravo/Charlie)",
+              "modeBadges": ["3 Teams (Alpha/Bravo/Charlie)",
                 "Team Competition",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "Final championship round! High-stakes questions worth 100, 200, and 300 points on Safety vs. Security and landmark case studies.",
                 "In case of a points tie between teams, the Sudden-Death Tiebreaker Question will be contested live by the team captains.",
@@ -43629,11 +43121,9 @@ const COURSE_DATA = {
             "fe3MasteryWorkshop": {
               "title": "Activity 5: FE3 Current Events Press Briefing Masterclass",
               "summary": "Pairs prepare their Press Briefing for Session 5 Formative Evaluation 3, verifying slides and Q&A strategies.",
-              "modeBadges": [
-                "Pairs / Trios",
+              "modeBadges": ["Pairs / Trios",
                 "FE3 Workshop",
-                "25 Mins"
-              ],
+                "25 Mins"],
               "instructions": [
                 "In your confirmed evaluation pairs/trios, finalize your selection of a major aviation current event from one of the 3 domains (Severe Weather, Medical Emergency Diversion, or Airport Security/Airworthiness).",
                 "Structure your 10-12 minute Press Briefing using the 4-phase professional framework: (1) Situation Overview & Initial Facts, (2) Technical Causal Analysis, (3) Operational Immediate Measures, (4) Long-term Corrective Actions & Regulatory Mandates.",
@@ -43663,11 +43153,9 @@ const COURSE_DATA = {
             "closingReview": {
               "title": "Activity 6: Semester 1 Grand Finale & FE3 Action Plan",
               "summary": "Podium celebration for Grand Prix champions, portfolio audit guidelines, and final encouragement for FE3.",
-              "modeBadges": [
-                "Plenary",
+              "modeBadges": ["Plenary",
                 "Semester Wrap-Up",
-                "10 Mins"
-              ],
+                "10 Mins"],
               "instructions": [
                 "Congratulate the winning squad of the Semester 1 Grand Prix Tournament!",
                 "Review final preparation reminders for Formative Evaluation 3 on Wednesday 24 February 2027 (Week 08).",

@@ -28,7 +28,8 @@
     "bug3": "node scripts/bug-check.js 3",
     "backupt": "node scripts/backup.js teachers",
     "backup:teachers": "node scripts/backup.js teachers",
-    "backup:all": "node scripts/backup.js all"
+    "backup:all": "node scripts/backup.js all",
+    "strip": "node scripts/strip-icons.js"
   },
   "repository": {
     "type": "git",

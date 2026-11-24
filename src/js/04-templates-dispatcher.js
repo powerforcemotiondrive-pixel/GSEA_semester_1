@@ -20,20 +20,20 @@
             <div class="bg-slate-900 text-white rounded-xl p-3 sm:p-3.5 shadow-xs border border-slate-800">
               <div class="flex flex-col md:flex-row md:items-center justify-between gap-2.5">
                 <div class="flex items-center gap-2 shrink-0">
-                  <span class="text-xs">💡</span>
+                  
                   <span class="text-[10.5px] font-black uppercase tracking-wider text-amber-300">How to Use This Platform:</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 text-[11px] text-slate-300 w-full md:w-auto">
                   <div class="flex items-center gap-1.5">
-                    <span class="text-blue-400 font-bold">💻 In-Class:</span>
+                    <span class="text-blue-400 font-bold">In-Class:</span>
                     <span>Live digital worksheet &amp; pair speaking</span>
                   </div>
                   <div class="flex items-center gap-1.5">
-                    <span class="text-indigo-400 font-bold">📄 Offline / Paper:</span>
+                    <span class="text-indigo-400 font-bold">Offline / Paper:</span>
                     <span>Downloadable 7-page PDF (top right)</span>
                   </div>
                   <div class="flex items-center gap-1.5">
-                    <span class="text-amber-400 font-bold">📚 Self-Study:</span>
+                    <span class="text-amber-400 font-bold">Self-Study:</span>
                     <span>Vocabulary &amp; Additional Materials tabs</span>
                   </div>
                 </div>
@@ -46,7 +46,7 @@
               <div class="lg:col-span-7 bg-white border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3.5">
                 <div class="space-y-1.5">
                   <div class="flex items-center gap-2">
-                    <span class="text-xs">📌</span>
+                    
                     <span class="text-[10.5px] font-black uppercase tracking-wider text-slate-500">Session Briefing • Operational Context</span>
                   </div>
                   <h4 class="text-sm sm:text-base font-black text-slate-900">${heroTitle}</h4>
@@ -56,7 +56,7 @@
                 ${objs.length > 0 ? `
                   <div class="pt-2.5 border-t border-slate-100 space-y-1.5">
                     <div class="flex items-center gap-2">
-                      <span class="text-xs">🎯</span>
+                      
                       <span class="text-[10px] font-black uppercase tracking-wider text-slate-700">Core Spoken Objectives (B2 Standards)</span>
                     </div>
                     <ul class="space-y-1 text-xs text-slate-700">
@@ -75,7 +75,7 @@
               <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-xl p-4 sm:p-5 shadow-xs flex flex-col justify-between space-y-3">
                 <div class="space-y-2">
                   <div class="flex items-center gap-2">
-                    <span class="text-xs">🧭</span>
+                    
                     <span class="text-[10.5px] font-black uppercase tracking-wider text-slate-500">How This Session Works</span>
                   </div>
                   <div class="p-2.5 bg-blue-50/70 border border-blue-200/70 rounded-lg text-xs text-blue-950 space-y-1">
@@ -137,7 +137,7 @@
           if (typeof b === "object" && b !== null) {
             text = b.label || b.name || b.text || "";
           } else {
-            text = String(b || "");
+            text = String(b || "").replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, "").trim();
           }
           if (text && !text.toLowerCase().includes("timing")) {
             badgePills += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white text-slate-700 border border-slate-200/80 shadow-2xs">' + text + '</span>';
@@ -194,7 +194,7 @@
         html += '<summary class="flex items-center justify-between font-bold text-purple-950 cursor-pointer select-none">';
         html += '<span class="flex items-center gap-2">';
         html += '<svg width="15" height="15" class="text-purple-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>';
-        html += '<span>👨‍🏫 Teacher Tips &amp; Speaking Prompts</span>';
+        html += '<span>Teacher Tips &amp; Speaking Prompts</span>';
         html += '</span>';
         html += '<span class="text-[11px] text-purple-700 font-semibold group-open:rotate-180 transition-transform duration-200">▾</span>';
         html += '</summary>';

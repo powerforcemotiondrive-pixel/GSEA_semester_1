@@ -350,6 +350,15 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 
 ---
 
+### AI. `Strip` Decorative Icon & Emoji Purge Protocol (Strip Semester X ...)
+- **`Strip` Operational Trigger**: Whenever the user sends `Strip Semester [1|2|3] [AG|AT|AAS|all] [session X | module Y | all]` or `Strip all`:
+  1. Runs `npm run strip -- <semester> <track> <session>` (or `node scripts/strip-icons.js ...`) to systematically purge decorative emojis and illustrative icons from titles, badges, activity labels, instructions, and worksheets while preserving essential interactive controls (audio players, modal close buttons `✕`, carousel arrows `‹` `›`).
+  2. Runs `npm run build && npm run bug1 && npm run package` (or corresponding semester checks) to verify 12/12 defense checks.
+  3. Automatically executes `git commit && git push origin main` in the same step.
+- **Cockpit Clarity Invariant**: Decorative emojis (e.g. 🎧, 🗣️, ✈️, 📝, 💡, 🎯, 📌, 🎬, 💬) must be replaced with crisp, adult typographic headings, monospace badges, or clean text labels to eliminate cognitive visual noise for B2 learners.
+
+---
+
 ## 2. Active Cohort Configuration (GSEA26A • 2026–2027)
 
 *This section defines the active variables for the current cohort. Update this section when rotating students or semesters.*
