@@ -848,7 +848,7 @@
           `;
 
           const calloutsHtml = `
-            <div class="p-3.5 bg-slate-50 border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-slate-400 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 shrink-0 mt-0.5">Key Areas</span>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
                 ${areasText}
