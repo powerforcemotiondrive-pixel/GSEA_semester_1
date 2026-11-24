@@ -58,6 +58,11 @@ Course administration (student lists, teacher assignments, weekly schedules, and
 - **No Direct Changes Without Prior Response**: ALL questions, requests, or suggested modifications from the user require a thorough review, report, and recommendation from the AI assistant **BEFORE** implementing any changes.
 - **Proceed / Ignore Prompt**: Every proposal or review must conclude with an explicit prompt asking the user whether to **proceed or ignore/adjust** (e.g. *"Please let me know if you would like me to proceed with these changes, or ignore/adjust."*).
 - **Explicit Confirmation Required**: The assistant must wait for explicit approval (such as *"Proceed"*, *"Approved"*, the author shorthand code **`PX`**, or further instructions) before modifying any codebase files.
+- **Tiered On-Demand Detail Protocol (Default Ultra-Concise)**:
+  - **Level 1 (Default — Ultra-Concise)**: Default to brief, 1–3 line confirmations for routine actions, builds, backups, or approvals (e.g. *"Completed for S1, S2, and S3."* or *"Proposal ready for S1, S2, S3. Ready to proceed?"*). Omit large markdown tables, diff logs, and repetitive file lists unless requested.
+  - **Level 2 ("More detail" / "Expand" / "Detail")**: When requested, expand with exact file paths, size metrics, key differences, and summary tables.
+  - **Level 3 ("Full detail" / "Deep dive")**: Full technical breakdowns, line diffs, architectural analyses, and test logs.
+  - **Explicit User Directives**: Strictly follow user directives requesting custom detail levels (e.g. *"brief"*, *"summary only"*, *"detailed"*).
 
 ### E. Automated Project Backups (`backup1`, `backup2` & `backup3`)
 - **`backup1` Trigger**: Whenever the user sends `backup1`, the assistant immediately runs `npm run backup1` (or `node scripts/backup.js semester1`) to bundle a full dated archive into `/Users/philparris/Documents/moodle_backups/GSEA_semester_1/` and confirms the file path and archive size.
