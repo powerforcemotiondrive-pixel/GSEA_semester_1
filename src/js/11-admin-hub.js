@@ -1123,9 +1123,6 @@
           <!-- Top Header Banner -->
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div class="flex items-center gap-3.5">
-              <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl" style="background-color: ${theme.primary};">
-                
-              </div>
               <div>
                 <div class="flex items-center gap-2">
                   <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">${isFr ? 'GUIDE ÉTUDIANT' : 'STUDENT GUIDE'}</span>
@@ -1610,9 +1607,6 @@
           <!-- Top Course Header & Language Switcher Banner -->
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs" style="background-color: ${theme.primary};">
-                
-              </div>
               <div>
                 <div class="flex items-center gap-2">
                   <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">${isAas ? 'AAS' : 'AG'}</span>
@@ -1985,9 +1979,6 @@
       <!-- Top Action & Filter Header Banner -->
       <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div class="flex items-center gap-3">
-          <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl bg-slate-900">
-            
-          </div>
           <div>
             <div class="flex items-center gap-2">
               <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white bg-blue-600 shadow-2xs">SYLLABUS</span>
@@ -4302,9 +4293,6 @@ const PORTFOLIO_SUMMARY_DATA = {
           <!-- Top Header Banner -->
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div class="flex items-center gap-3.5">
-              <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl" style="background-color: ${theme.primary};">
-                
-              </div>
               <div>
                 <div class="flex items-center gap-2">
                   <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-2xs" style="background-color: ${theme.accent};">COHORT PULSE</span>
