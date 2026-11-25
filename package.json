@@ -29,7 +29,8 @@
     "backupt": "node scripts/backup.js teachers",
     "backup:teachers": "node scripts/backup.js teachers",
     "backup:all": "node scripts/backup.js all",
-    "strip": "node scripts/strip-icons.js"
+    "strip": "node scripts/strip-icons.js",
+    "presentation:import": "node scripts/import-presentation.js && npm run package"
   },
   "repository": {
     "type": "git",
