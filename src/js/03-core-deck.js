@@ -846,7 +846,7 @@
           `;
 
           const calloutsHtml = `
-            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-slate-400 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+            <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 shrink-0 mt-0.5">Key Areas</span>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
                 ${areasText}
@@ -892,7 +892,7 @@
         if (overviewText) {
           const focusLabel = (page && page.isImmersion) ? 'Academic Goals' : 'Focus';
           calloutsHtml += `
-            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-slate-400 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+            <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="text-[10px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 shrink-0 mt-0.5">${focusLabel}</span>
               <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
                 ${overviewText}
@@ -904,7 +904,7 @@
         if (milestoneText) {
           const badgeText = cardIdx === 4 ? 'FE Target' : (cardIdx === 6 || (page && page.isAdmin) ? 'Admin Action' : (page && page.isImmersion ? 'Homestay' : (page && page.isObjectives ? 'Syllabus' : 'FE Tip')));
           calloutsHtml += `
-            <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
+            <div class="p-3.5 bg-amber-50/40 border border-amber-300/80 rounded-xl flex items-start gap-2.5 shadow-2xs h-full">
               <span class="inline-flex items-center text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-200/80 text-amber-900 shrink-0 mt-0.5">${badgeText}</span>
               <p class="text-xs sm:text-sm text-amber-950 leading-relaxed font-normal">
                 ${milestoneText}
@@ -1339,7 +1339,7 @@
           </div>
 
           <!-- Section 3: TOEIC Speaking & Listening Impact -->
-          <div class="p-3.5 rounded-xl bg-white border border-slate-200 border-l-4 border-l-amber-400 shadow-2xs">
+          <div class="p-3.5 rounded-xl bg-amber-50/40 border border-amber-200/80 shadow-2xs">
             <div class="flex items-center gap-2 mb-1.5 text-amber-950 font-bold text-xs uppercase tracking-wider">
               <svg class="w-3.5 h-3.5 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
               <span>TOEIC Benchmark &amp; Exam Strategy</span>
@@ -2883,7 +2883,7 @@
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
             <!-- Button 1: Jump to Active Lesson -->
-            <button type="button" onclick="switchModule(${activeModIdx}, ${activeSessionIdx})" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 border-l-4 border-l-amber-400 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
+            <button type="button" onclick="switchModule(${activeModIdx}, ${activeSessionIdx})" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-amber-50/30 hover:bg-amber-50/60 border border-amber-300/90 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
               <div class="min-w-0">
                 <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-700">ACTIVE LESSON</div>
                 <div class="text-xs sm:text-[13px] font-bold text-slate-900 truncate mt-0.5">Jump to Today's Lesson</div>
@@ -2893,7 +2893,7 @@
             </button>
 
             <!-- Button 2: Weekly Calendar -->
-            <button type="button" onclick="openModalDrawer('admin_calendar', 1, 7)" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 border-l-4 border-l-slate-400 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
+            <button type="button" onclick="openModalDrawer('admin_calendar', 1, 7)" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200/90 hover:border-slate-300 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
               <div class="min-w-0">
                 <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">SCHEDULE</div>
                 <div class="text-xs sm:text-[13px] font-bold text-slate-900 truncate mt-0.5">Weekly Calendar</div>
@@ -2903,7 +2903,7 @@
             </button>
 
             <!-- Button 3: Portfolio Summary -->
-            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 border-l-4 border-l-slate-400 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
+            <button type="button" onclick="openModalDrawer('portfolio_summary', 1, 8)" class="group flex items-center justify-between px-3.5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200/90 hover:border-slate-300 shadow-2xs hover:shadow-xs transition-all cursor-pointer text-left">
               <div class="min-w-0">
                 <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500">COHORT INSIGHTS</div>
                 <div class="text-xs sm:text-[13px] font-bold text-slate-900 truncate mt-0.5">Portfolio Summary</div>
@@ -2931,7 +2931,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
             <!-- Announcement 1: Wednesday AT -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">WEDNESDAY &bull; AT</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">13:15 – 15:15</span>
@@ -2945,7 +2945,7 @@
             </div>
 
             <!-- Announcement 2: Friday AG -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">FRIDAY &bull; AG</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">08:00 – 10:00</span>
@@ -2959,7 +2959,7 @@
             </div>
 
             <!-- Announcement 3: Portfolio Reminder -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 border-l-slate-300 bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">CONTINUOUS HABIT</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">Self-Study</span>
@@ -2973,7 +2973,7 @@
             </div>
 
             <!-- Announcement 4: Formative Evaluation (FE) Countdown or Active State -->
-            <div class="p-4 rounded-xl border border-slate-200 border-l-4 ${activeInfo.isFe ? "border-l-amber-400" : "border-l-slate-300"} bg-white shadow-2xs space-y-1.5">
+            <div class="p-4 rounded-xl border ${activeInfo.isFe ? "border-amber-300/90 bg-amber-50/25" : "border-slate-200/90 bg-white"} shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
                 <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">${activeInfo.isFe ? "ACTIVE EVALUATION" : "UPCOMING EVALUATION"}</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">Week ${activeInfo.feWeek}</span>
