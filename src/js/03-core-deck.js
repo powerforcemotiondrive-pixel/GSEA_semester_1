@@ -2462,7 +2462,7 @@
             <h2 class="text-base sm:text-xl font-black text-slate-900 leading-snug">${heading}</h2>
             
             ${(snippet && hasContent) ? `
-              <div class="p-3 rounded-xl bg-slate-50 border-l-4 border-sky-600 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
+              <div class="p-3 rounded-xl bg-slate-50 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
                 ${snippet}
               </div>
             ` : ""}
@@ -2568,7 +2568,7 @@
           <div class="p-4 sm:p-6 overflow-y-auto space-y-3">
             <h2 class="text-base sm:text-xl font-black text-slate-900 leading-snug">${heading}</h2>
             ${(snippet && hasContent) ? `
-              <div class="p-3 rounded-xl bg-slate-50 border-l-4 border-sky-600 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
+              <div class="p-3 rounded-xl bg-slate-50 text-slate-600 text-xs sm:text-[13px] italic leading-relaxed">
                 ${snippet}
               </div>
             ` : ""}
@@ -2975,7 +2975,7 @@
             <!-- Announcement 4: Formative Evaluation (FE) Countdown or Active State -->
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs space-y-1.5">
               <div class="flex items-center justify-between">
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${activeInfo.isFe ? "bg-amber-100 text-amber-900 border border-amber-300/60" : "bg-slate-100 text-slate-700 border border-slate-200"} font-mono">${activeInfo.isFe ? "ACTIVE EVALUATION" : "UPCOMING EVALUATION"}</span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${activeInfo.isFe ?"bg-amber-100 text-amber-900 border border-amber-300/60" : "bg-slate-100 text-slate-700 border border-slate-200"} font-mono">${activeInfo.isFe ? "ACTIVE EVALUATION" : "UPCOMING EVALUATION"}</span>
                 <span class="text-[10.5px] font-mono text-slate-500 font-medium">Week ${activeInfo.feWeek}</span>
               </div>
               <h3 class="text-xs sm:text-sm font-bold text-slate-900">

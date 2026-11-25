@@ -61,7 +61,7 @@
           ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Personal Notes Auto-Save Card -->
-          <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+          <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
             <div class="flex items-center justify-between">
               <span class="text-xs font-bold text-slate-800 uppercase tracking-wide font-mono">Personal Lesson Notes &amp; Spoken Reflections</span>
               <span class="text-[10px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Auto-Saved Locally</span>
@@ -85,7 +85,7 @@
             ${renderActivityInstructions(opening, theme)}
 
             <!-- Aviation News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-2 shadow-2xs">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl space-y-2 shadow-2xs">
               <div class="text-[11px] font-bold text-slate-900 uppercase tracking-wider font-mono">
                 Weekly Aviation Headlines &amp; Aerodynamic Innovations
               </div>
@@ -111,7 +111,7 @@
                       <p class="text-xs font-bold text-slate-800 mt-1 leading-snug">${q.q}</p>
                     </div>
                     <div>
-                      <div id="diagnostic-ans-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 border-l-3 border-l-amber-400 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-2xs mb-2">
+                      <div id="diagnostic-ans-${q.id}" class="hidden p-2.5 bg-white border border-slate-200/90 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-2xs mb-2">
                         <span class="font-bold text-slate-900 block font-mono text-[10px] uppercase">Operational Explanation:</span>
                         ${q.answer}
                       </div>
@@ -159,7 +159,7 @@
             <div class="space-y-3 pt-2">
               <h5 class="text-xs font-bold text-slate-800 font-mono uppercase tracking-wide">Video Listening Checkpoints (Work in Pairs):</h5>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                <div class="p-3 bg-white border border-slate-200/90 rounded-xl space-y-1.5 shadow-2xs">
                   <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Checkpoint 01</span>
                   <div class="text-xs font-bold text-slate-900">Static Pressure Differential</div>
                   <p class="text-[11.5px] text-slate-600 leading-snug">How does air acceleration over the curved upper surface create net upward force?</p>
@@ -171,7 +171,7 @@
                   </button>
                 </div>
 
-                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                <div class="p-3 bg-white border border-slate-200/90 rounded-xl space-y-1.5 shadow-2xs">
                   <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Checkpoint 02</span>
                   <div class="text-xs font-bold text-slate-900">Cruise Equilibrium</div>
                   <p class="text-[11.5px] text-slate-600 leading-snug">In straight-and-level unaccelerated flight, which forces are equal and opposite?</p>
@@ -183,7 +183,7 @@
                   </button>
                 </div>
 
-                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+                <div class="p-3 bg-white border border-slate-200/90 rounded-xl space-y-1.5 shadow-2xs">
                   <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Checkpoint 03</span>
                   <div class="text-xs font-bold text-slate-900">Speed-Drag Inversion</div>
                   <p class="text-[11.5px] text-slate-600 leading-snug">What happens to induced drag as airspeed drops toward minimum flying speed?</p>
@@ -237,12 +237,12 @@
             <div class="space-y-2 pt-1">
               <h5 class="text-xs font-bold text-slate-800 font-mono uppercase tracking-wide">Cause &amp; Effect Linguistic Formulas in Flight Physics</h5>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1 shadow-2xs">
+                <div class="p-3 bg-white border border-slate-200/90 rounded-xl space-y-1 shadow-2xs">
                   <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Formula 1: Zero Conditional (Scientific Invariant)</span>
                   <div class="text-xs font-bold text-slate-900">If / When + Present Simple &rarr; Present Simple</div>
                   <p class="text-[11.5px] text-slate-600 italic">"If angle of attack exceeds 16 degrees, the boundary layer separates."</p>
                 </div>
-                <div class="p-3 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1 shadow-2xs">
+                <div class="p-3 bg-white border border-slate-200/90 rounded-xl space-y-1 shadow-2xs">
                   <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">Formula 2: First Conditional (Operational Cause &amp; Effect)</span>
                   <div class="text-xs font-bold text-slate-900">Unless / If + Present Simple &rarr; Will / Must + Verb</div>
                   <p class="text-[11.5px] text-slate-600 italic">"Unless the pilot pushes the nose forward, the aircraft will stall."</p>
@@ -266,19 +266,19 @@
 
             <!-- Group of 3 Roles Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+              <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl space-y-1.5 shadow-2xs">
                 <span class="text-[10px] font-mono font-bold text-amber-700 uppercase">STUDENT 1 (Board)</span>
                 <div class="text-xs font-bold text-slate-900">The Airframe &amp; Forces Draftsperson</div>
                 <p class="text-[11.5px] text-slate-600 leading-snug">Draws a clean aircraft profile and wing cross-section on the board. Correctly places the 4 force vectors (Lift &uarr;, Weight &darr;, Thrust &rarr;, Drag &larr;) and identifies CG vs. CP.</p>
               </div>
 
-              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+              <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl space-y-1.5 shadow-2xs">
                 <span class="text-[10px] font-mono font-bold text-amber-700 uppercase">STUDENT 2 (Board)</span>
                 <div class="text-xs font-bold text-slate-900">The Axes &amp; Controls Specialist</div>
                 <p class="text-[11.5px] text-slate-600 leading-snug">Draws the 3 orthogonal axes (Longitudinal, Lateral, Vertical) through the CG and labels primary control surfaces: Ailerons (Roll), Elevators (Pitch), and Rudder (Yaw).</p>
               </div>
 
-              <div class="p-3.5 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-1.5 shadow-2xs">
+              <div class="p-3.5 bg-white border border-slate-200/90 rounded-xl space-y-1.5 shadow-2xs">
                 <span class="text-[10px] font-mono font-bold text-amber-700 uppercase">STUDENT 3 (Floor)</span>
                 <div class="text-xs font-bold text-slate-900">The Flight Test Presenter (60s Pitch)</div>
                 <p class="text-[11.5px] text-slate-600 leading-snug">Delivers a 60-second spoken briefing to the class explaining how the aircraft responds when thrust exceeds drag, and how a coordinated bank is initiated.</p>
@@ -327,7 +327,7 @@
             </div>
 
             <!-- The Lift Masterclass Box -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-2 shadow-2xs">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl space-y-2 shadow-2xs">
               <div class="flex items-center justify-between">
                 <h5 class="text-xs font-bold uppercase tracking-wider text-slate-800 font-mono">The Lift Masterclass: How Wings Actually Work (Spoken Briefing)</h5>
                 <span class="text-[10px] font-mono text-slate-500">Bernoulli &amp; Newton Combined</span>
@@ -449,7 +449,7 @@
                       <p class="font-bold text-slate-900 mt-0.5 leading-snug">${item.q}</p>
                     </div>
                     <div>
-                      <div id="quiz-ans-${item.id}" class="hidden p-2 bg-white border border-slate-200 border-l-3 border-l-emerald-500 rounded text-[11px] text-slate-700 mt-1">
+                      <div id="quiz-ans-${item.id}" class="hidden p-2 bg-white border border-slate-200/90 rounded text-[11px] text-slate-700 mt-1">
                         &check; <strong>Operational Answer:</strong> ${item.a}
                       </div>
                       <button type="button" onclick="document.getElementById('quiz-ans-${item.id}').classList.toggle('hidden')" class="no-print text-[10.5px] font-bold text-slate-500 hover:text-slate-800 cursor-pointer pt-0.5">
@@ -537,7 +537,7 @@
           ${renderSessionBriefingBanner(sessionData, theme)}
 
           <!-- Personal Notes Auto-Save Card -->
-          <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl shadow-2xs space-y-2">
+          <div class="p-4 bg-white border border-slate-200/90 rounded-xl shadow-2xs space-y-2">
             <div class="flex items-center justify-between">
               <span class="text-xs font-bold text-slate-800 uppercase tracking-wide font-mono">Personal Lesson Notes &amp; Spoken Reflections</span>
               <span class="text-[10px] font-mono text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Auto-Saved Locally</span>
@@ -561,7 +561,7 @@
             ${renderActivityInstructions(opening, theme)}
 
             <!-- News Prompts -->
-            <div class="p-4 bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl space-y-2 shadow-2xs">
+            <div class="p-4 bg-white border border-slate-200/90 rounded-xl space-y-2 shadow-2xs">
               <div class="text-[11px] font-bold text-slate-900 uppercase tracking-wider font-mono">
                 Weekly Maintenance &amp; Structural News Headlines
               </div>
@@ -588,7 +588,7 @@
                       ${q.stem ? `<p class="text-[11px] font-mono text-amber-800 bg-amber-50/80 p-1.5 rounded border border-amber-200/60 mt-1.5">${q.stem}</p>` : ''}
                     </div>
                     <div>
-                      <div id="diag-ans-s2-${q.id}" class="hidden p-2.5 bg-white border border-slate-200 border-l-3 border-l-amber-400 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-2xs mb-2">
+                      <div id="diag-ans-s2-${q.id}" class="hidden p-2.5 bg-white border border-slate-200/90 rounded-lg text-[11px] text-slate-700 leading-relaxed shadow-2xs mb-2">
                         <span class="font-bold text-slate-900 block font-mono text-[10px] uppercase">Operational Answer:</span>
                         ${q.answer}
                       </div>
@@ -1301,7 +1301,7 @@
                     </p>
                   </div>
                   <div>
-                    <div id="error-card-ans-${st.id}" class="hidden p-3 bg-white border border-emerald-200 border-l-4 border-l-emerald-500 rounded-lg text-xs space-y-2 shadow-2xs mb-2">
+                    <div id="error-card-ans-${st.id}" class="hidden p-3 bg-white border border-slate-200/90 rounded-lg text-xs space-y-2 shadow-2xs mb-2">
                       <div>
                         <span class="font-bold text-rose-700 block font-mono text-[10px] uppercase">The Technical Error:</span>
                         <p class="text-[11.5px] text-slate-700 leading-relaxed">${st.mistake}</p>

@@ -941,7 +941,7 @@
                     <td class="py-2 px-3 font-mono font-bold text-blue-700">550 &ndash; 784</td>
                     <td class="py-2 px-3 text-slate-700">Intermediate: Understands the main points in clear standard speech and workplace texts on familiar matters.</td>
                   </tr>
-                  <tr class="bg-emerald-50/70 border-l-4 border-emerald-500 font-medium">
+                  <tr class="bg-emerald-50/70 font-medium">
                     <td class="py-2.5 px-3 font-black text-emerald-800">B2 Benchmark</td>
                     <td class="py-2.5 px-3 font-mono font-black text-emerald-800">785 &ndash; 944</td>
                     <td class="py-2.5 px-3 text-emerald-950">
