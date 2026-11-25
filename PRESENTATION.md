@@ -9,7 +9,7 @@ npm run presentation:import
 
 ---
 
-## Slide 1: Refonte Timeline: Phased Cohort Deployment
+## Slide 1: Refonte Timeline: Phased Deployment Timeline
 
 - **Badge**: SLIDE 1 • ROLLOUT TIMELINE
 - **Subtitle**: Progressive curriculum rollout across active promotions: GSEA26A and GSEA25A
@@ -20,7 +20,7 @@ npm run presentation:import
 **Key Points**:
 - **Status:** Now running in Version 1 with GSEA26A.
 - **Milestone:** Module 1 complete (Travel & Transport).
-- **Current Phase:** Module 2 active (Climate & Cities).
+- **Current Phase:** Module 2 active (Weather & Environment).
 
 ### Card 2: Semester 2
 - **Tag**: SPRING 2027
@@ -30,7 +30,7 @@ npm run presentation:import
 - **Status:** Will be implemented with GSEA26A in 2027.
 - **Key Change:** Reduction of 32 classroom hours.
 - **Tracks:** AG (16h) + AAS (16h: AFIS & Ground).
-- **Immersion:** 4-week dedicated English immersion.
+- **Immersion:** 4-week English immersion at the end of semester 2.
 
 ### Card 3: Semester 3
 - **Tag**: LIVE
@@ -40,17 +40,17 @@ npm run presentation:import
 - **Status:** Now running with GSEA25A.
 - **Key Change:** Reduction of 30 hours (zero General English).
 - **Track:** Technical English (AT 30h) only.
-- **Focus:** EASA regulatory documents & MTF prep.
+- **Focus:** EASA regulatory documents & MTF preparation.
+- **MTF Test:** MTF Test end semester 3. Retakes mid semester 4.
 
 ### Card 4: Semester 4
 - **Tag**: 2027
 - **Description**: Promotion GSEA25A
 
 **Key Points**:
-- **Status:** Will be implemented with GSEA25A in 2027.
+- **Status:** Will be implemented with GSEA25A in April 2027.
 - **Key Change:** Reduction of 30 hours (zero General English).
-- **Tracks:** Professional English (AP 30h) + Pecha Kucha (6h).
-- **Graduation:** Final internship defense & exit validation.
+- **Tracks:** Professional English (AP 30h) + (NEW) Pecha Kucha (PFE 6h).
 
 ---
 
@@ -60,51 +60,50 @@ npm run presentation:import
 - **Subtitle**: Building core conversational fluency, aviation terminology, and communicative confidence
 - **Pill**: Autumn 2026 • Live V1.0
 
-### Card 1: Intensive Cohort Onboarding
-- **Tag**: INDUCTION
-- **Metric**: 5 Hours
-- **Description**: Spoken fluency diagnosis, methodology orientation, and cohort cohesion:
+### Card 1: Adaptation Week (LV130)
+- **Tag**: INTENSIVE
+- **Metric**: 21 Hours
+- **Description**: Spoken fluency, orientation, and cohort cohesion:
 
 **Key Points**:
-- **Baseline Evaluation:** Spoken fluency & listening diagnosis.
+- **Baseline Evaluation:** Spoken fluency & grammar diagnosis.
 - **Methodology Briefing:** Interactive, communicative workshops.
-- **Cohort Cohesion:** Team communication & peer pairing.
-- **Digital Orientation:** Flight Deck and self-study platform tour.
+- **Digital Orientation:** e-Campus and self-study platform tour.
 
 ### Card 2: General English: 3 Thematic Modules
 - **Tag**: LV101E • AG
-- **Metric**: 42 Hours
-- **Description**: Cultural perspective, debate, and spontaneous spoken interaction:
+- **Metric**: 34 Hours
+- **Description**: Culture, debate, and spontaneous spoken interaction:
 
 **Key Points**:
-- **Module 1:** Travel, Tourism & Cultural Immersion (4 sessions).
+- **Module 1:** Travel, Transport and Leisure (4 sessions).
 - **Module 2:** Climate Change & Sustainable Cities (4 sessions).
-- **Module 3:** Cinema, Media & Storytelling (3 sessions).
-- **Session 12:** Formative Evaluation • Peer challenge (1 session).
+- **Module 3:** New Technology (3 sessions).
+- **Session 12:** Formative Evaluation (1 session).
 
 ### Card 3: Technical English: 3 Aeronautical Modules
 - **Tag**: LV121E • AT
-- **Metric**: 42 Hours
-- **Description**: Engineering fundamentals, aircraft systems, and operational safety:
+- **Metric**: 34 Hours
+- **Description**: Aircraft, Aerodynamics, Turnaround, Meteorology and other core basic vocabulary:
 
 **Key Points**:
 - **Module 1:** Airframe, Aerodynamics & Propulsion (4 sessions).
 - **Module 2:** Avionics, Cockpit & Navigation (4 sessions).
-- **Module 3:** Green Aviation & Alternative Fuels (3 sessions).
+- **Module 3:** Meteorology, Health & Revision (3 sessions).
 - **Session 12:** Formative Evaluation • Paired technical briefing.
 
 ---
 
-## Slide 3: Semester 2: Streamlining, Air Traffic & Immersion
+## Slide 3: Semester 2: Current Events, Live Traffic / Comprehension & Immersion
 
 - **Badge**: SLIDE 3 • THE NEW STRUCTURE
-- **Subtitle**: Curriculum Reduction of 32 Hours: 16h General English + 16h Aviation Safety + 4-Week Immersion
+- **Subtitle**: Curriculum Reduction of 32 Hours: 16h General English + 16h Live Traffic Introduction + 4-Week Immersion
 - **Pill**: Spring 2027 • &minus;32h Reduction
 
 ### Card 1: General English (AG)
 - **Tag**: LV102E • AG
-- **Metric**: 16 Hours (-18h)
-- **Description**: Streamlined format centered on global affairs and active debate:
+- **Metric**: 16 Hours (-16h)
+- **Description**: Streamlined format centered on global current affairs and active debate:
 
 **Key Points**:
 - **1 Thematic Module:** Current international events and global debate preparation.
@@ -113,40 +112,41 @@ npm run presentation:import
 
 ### Card 2: Aviation Safety & Air Traffic (AAS)
 - **Tag**: LV122E • AAS
-- **Metric**: 16 Hours (-14h)
-- **Description**: Introduction to Language Testing (LT) & air traffic procedures:
+- **Metric**: 16 Hours (-16h)
+- **Description**: Introduction to Live Traffic (LT) & AFIS:
 
 **Key Points**:
 - **2 Modules:** 1. AFIS; 2. Ground Operations (ATIS, Apron control).
-- **Self-Study:** Preparatory Language Training (PLT) modules on eCampus.
-- **Formative Evaluation:** Session 8 simulated Language Testing assessment.
+- **Self-Study:** Live Traffic & PCE modules on eCampus.
+- **Formative Evaluation:** Session 8 Live Traffic Test (FE).
 
 ### Card 3: Immersion & TOEIC Benchmark
-- **Tag**: MILESTONE
+- **Tag**: IMMERSION
 - **Metric**: 4 Weeks
 - **Description**: Intensive homestay immersion in English-speaking destinations:
 
 **Key Points**:
-- **4-Week Homestay:** 1 ENAC student per host family across partner cities.
+- **4-Week Homestay:** 1 ENAC student per host family ain (5) possible locations.
 - **TOEIC Benchmark:** Minimum B2 level (785 pts) required for graduation.
-- **Official Exam Window:** Administered Week 1 of Semester 3.
+- **Official Exam Window:** Administered Week 1 of Semester 3. (May change)
 
 ---
 
-## Slide 4: Semesters 3 & 4: Specialized Technical & Professional Mastery
+## Slide 4: Semesters 3 & 4: Specialized Technical & Professional English
 
 - **Badge**: SLIDE 4 • THE NEW STRUCTURE
 - **Subtitle**: Complete Elimination of General English: Pure Technical & Professional Focus (&minus;60h Total Reduction)
 - **Pill**: S3 = AT (30h) • S4 = AP (36h)
+- **Pill**: S4 = PFE (+ 6h)
 
 ### Card 1: Technical English (AT) &mdash; No General English
 - **Tag**: SEMESTER 3 • LV125E
 - **Metric**: 30 Hours (-30h Reduction)
-- **Description**: Rigorous preparation for operational document navigation and civil aviation qualification:
+- **Description**: Rigorous preparation for operational document (EASA) navigation:
 
 **Key Points**:
 - **Module 1 • EASA Documents:** Regulatory texts, CS specifications, and safety directives. Flipped peer lessons in Session 7.
-- **Module 2 • MTF Qualification Prep:** Intensive exam strategy, practice drills, and mock tests for the qualification test.
+- **Module 2 • MTF Qualification (Level 4) Prep:** Intensive exam strategy, practice drills, and mock tests for the qualification test.
 - **Language Testing Self-Study:** Continuous self-directed listening and vocabulary on eCampus.
 - **End-of-Semester MTF Test:** Mandatory qualification exam for all GSEA students; remains obligatory.
 
@@ -156,9 +156,8 @@ npm run presentation:import
 - **Description**: Final stage polishing workplace presentation skills and career-launch communications:
 
 **Key Points**:
-- **Professional English Course (30 Hours):** International workplace correspondence, cross-cultural technical leadership, and engineering negotiations.
+- **Professional English Course (30 Hours):** International workplace correspondence, cross-cultural workshops.
 - **Pecha Kucha PFE Defense (6 Hours):** 20 slides &times; 20 seconds fast-paced spoken defense format for the graduation end-of-studies project.
-- **Exit Qualification:** Final verification of B2/C1 operational fluency before civil aviation workplace entry.
 
 ---
 
