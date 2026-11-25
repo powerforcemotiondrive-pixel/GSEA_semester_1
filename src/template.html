@@ -708,48 +708,48 @@
         <header id="modal-header" class="textured-surface bg-[#374151] text-white px-4 py-3.5 sm:px-6 sm:py-4 flex flex-col gap-3 border-b border-[#1f2937] shrink-0">
           <div class="flex items-center justify-between gap-2.5 sm:gap-3">
             <div class="flex items-center gap-2 min-w-0">
-              <span id="modal-tag" class="bg-white/20 text-white text-[10.5px] sm:text-xs font-extrabold px-2.5 py-0.5 sm:py-1 rounded-md tracking-wide w-fit shrink-0">Module 1 • Session 1</span>
+              <span id="modal-tag" class="bg-amber-500/15 border border-amber-500/35 text-amber-300 font-mono text-[10.5px] sm:text-xs font-bold px-2.5 py-0.5 sm:py-1 rounded-md tracking-wide w-fit shrink-0">Module 1 • Session 1</span>
             </div>
             
             <div class="flex items-center space-x-2 shrink-0">
               <!-- Close Modal Button -->
-              <button id="modal-close-btn" type="button" aria-label="Close modal" class="text-white hover:text-white bg-black/20 hover:bg-black/35 p-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer">
+              <button id="modal-close-btn" type="button" aria-label="Close modal" class="text-slate-300 hover:text-white bg-white/10 hover:bg-white/20 border border-white/10 p-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer">
                 <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
               </button>
             </div>
           </div>
 
           <!-- Modal Navigation Tab Strip -->
-          <nav id="modal-tab-strip" class="flex items-center gap-1 overflow-x-auto pb-0.5 text-xs select-none">
-            <button data-tab="content" id="modal-tab-content" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Lesson Content</button>
-            <button data-tab="revision" id="modal-tab-revision" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Vocabulary</button>
-            <button data-tab="materials" id="modal-tab-materials" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Additional Materials</button>
-            <button data-tab="notepad" id="modal-tab-notepad" class="modal-tab-btn modal-tab-standard flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer whitespace-nowrap shrink-0">
+          <nav id="modal-tab-strip" class="flex items-center gap-1 overflow-x-auto p-1 text-xs select-none bg-slate-900/80 backdrop-blur-md border border-white/12 rounded-xl shadow-inner scrollbar-none">
+            <button data-tab="content" id="modal-tab-content" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Lesson Content</button>
+            <button data-tab="revision" id="modal-tab-revision" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Vocabulary</button>
+            <button data-tab="materials" id="modal-tab-materials" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer">Additional Materials</button>
+            <button data-tab="notepad" id="modal-tab-notepad" class="modal-tab-btn modal-tab-standard flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer whitespace-nowrap shrink-0">
               <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
               <span>My Notes</span>
             </button>
-            <button data-tab="toeic_guide" id="modal-tab-toeic-guide" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">TOEIC</button>
-            <button data-tab="toeic" id="modal-tab-toeic" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">TOEIC Practice</button>
-            <button data-tab="ddrs" id="modal-tab-ddrs" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">DDRS</button>
+            <button data-tab="toeic_guide" id="modal-tab-toeic-guide" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer">TOEIC</button>
+            <button data-tab="toeic" id="modal-tab-toeic" class="modal-tab-btn modal-tab-standard flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer">TOEIC Practice</button>
+            <button data-tab="ddrs" id="modal-tab-ddrs" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">DDRS</button>
             <!-- Formative Evaluation Tabs -->
-            <button data-tab="fe_guidelines" id="modal-tab-fe-guidelines" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Guidelines</button>
-            <button data-tab="fe_objectives" id="modal-tab-fe-objectives" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Objectives</button>
-            <button data-tab="fe_criteria" id="modal-tab-fe-criteria" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Marking Criteria</button>
+            <button data-tab="fe_guidelines" id="modal-tab-fe-guidelines" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Guidelines</button>
+            <button data-tab="fe_objectives" id="modal-tab-fe-objectives" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Objectives</button>
+            <button data-tab="fe_criteria" id="modal-tab-fe-criteria" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Marking Criteria</button>
             <!-- Course Administration Tabs -->
-            <button data-tab="admin_groups" id="modal-tab-admin-groups" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Class Groups &amp; Teachers</button>
-            <button data-tab="admin_calendar" id="modal-tab-admin-calendar" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Weekly Calendar</button>
-            <button data-tab="admin_rota" id="modal-tab-admin-rota" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Tutorial Rotas</button>
-            <button data-tab="admin_refonte" id="modal-tab-admin-refonte" class="modal-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">GSEA 2027 Refonte (LH / LAN)</button>
-            <button data-tab="admin_syllabus" id="modal-tab-admin-syllabus" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Course Syllabus</button>
+            <button data-tab="admin_groups" id="modal-tab-admin-groups" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Class Groups &amp; Teachers</button>
+            <button data-tab="admin_calendar" id="modal-tab-admin-calendar" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Weekly Calendar</button>
+            <button data-tab="admin_rota" id="modal-tab-admin-rota" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">FE Tutorial Rotas</button>
+            <button data-tab="admin_refonte" id="modal-tab-admin-refonte" class="modal-tab-btn flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">GSEA 2027 Refonte (LH / LAN)</button>
+            <button data-tab="admin_syllabus" id="modal-tab-admin-syllabus" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Course Syllabus</button>
             <!-- English Immersion Tabs -->
-            <button data-tab="immersion_overview" id="modal-tab-immersion-overview" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Immersion Overview</button>
-            <button data-tab="immersion_cities" id="modal-tab-immersion-cities" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">6 Destination Guides</button>
+            <button data-tab="immersion_overview" id="modal-tab-immersion-overview" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">Immersion Overview</button>
+            <button data-tab="immersion_cities" id="modal-tab-immersion-cities" class="modal-tab-btn flex items-center gap-1 px-3 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer hidden">6 Destination Guides</button>
             <!-- Student Guide & Semester Objectives Tabs -->
-            <button data-tab="student_guide" id="modal-tab-student-guide" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Student Guide</button>
-            <button data-tab="sem_obj_en" id="modal-tab-sem-obj-en" class="modal-tab-btn flex items-center px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Objectives (EN)</button>
-            <button data-tab="sem_obj_fr" id="modal-tab-sem-obj-fr" class="modal-tab-btn flex items-center px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Objectives (FR)</button>
-            <button data-tab="portfolio_summary" id="modal-tab-portfolio-summary" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Portfolio Summary</button>
-            <button data-tab="fe_prep" id="modal-tab-fe-prep" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">FE1 Quick-Prep</button>
+            <button data-tab="student_guide" id="modal-tab-student-guide" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Student Guide</button>
+            <button data-tab="sem_obj_en" id="modal-tab-sem-obj-en" class="modal-tab-btn flex items-center px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Objectives (EN)</button>
+            <button data-tab="sem_obj_fr" id="modal-tab-sem-obj-fr" class="modal-tab-btn flex items-center px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Objectives (FR)</button>
+            <button data-tab="portfolio_summary" id="modal-tab-portfolio-summary" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">Portfolio Summary</button>
+            <button data-tab="fe_prep" id="modal-tab-fe-prep" class="modal-tab-btn flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 whitespace-nowrap shrink-0 transition-all cursor-pointer hidden">FE1 Quick-Prep</button>
           </nav>
         </header>
 

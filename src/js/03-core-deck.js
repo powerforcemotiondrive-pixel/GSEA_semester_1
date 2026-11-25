@@ -1740,6 +1740,11 @@
       const theme = modulesData[modalState.modNum - 1];
       headerEl.style.backgroundColor = theme.primary;
       headerEl.style.borderColor = theme.primaryDark;
+      if (tagEl && theme.accent) {
+        tagEl.style.borderColor = theme.accent + "55";
+        tagEl.style.backgroundColor = theme.accent + "22";
+        tagEl.style.color = "#ffffff";
+      }
 
       const progConfig = PROGRAMS_CONFIG[modalState.program] || PROGRAMS_CONFIG.ag;
       const isObjectivesSession = tabKey === 'student_guide' || tabKey.startsWith('sem_obj_') || tabKey === 'portfolio_summary' || (modalState.sessionNum === 8 && tabKey === 'fe_prep') || modalState.tab === 'student_guide' || modalState.tab.startsWith('sem_obj_') || modalState.tab === 'portfolio_summary' || (modalState.sessionNum === 8 && modalState.tab === 'fe_prep');
@@ -2149,18 +2154,22 @@
 
     function switchModalTab(tabKey) {
       modalState.tab = tabKey;
+      const theme = modulesData[modalState.modNum - 1] || {};
+      const activeColor = theme.accent || '#d97706';
       const tabBtns = document.querySelectorAll('.modal-tab-btn');
       tabBtns.forEach(btn => {
         const isSelected = btn.getAttribute('data-tab') === tabKey;
         if (isSelected) {
-          btn.classList.add('text-white', 'bg-white/25', 'shadow-xs');
-          btn.classList.remove('text-white/80', 'hover:bg-white/10');
+          btn.style.backgroundColor = activeColor;
+          btn.classList.add('text-white', 'shadow-xs', 'font-bold');
+          btn.classList.remove('text-slate-200', 'text-white/80', 'hover:bg-white/10', 'bg-white/25');
           if (btn.scrollIntoView) {
             btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
           }
         } else {
-          btn.classList.remove('text-white', 'bg-white/25', 'shadow-xs');
-          btn.classList.add('text-white/80', 'hover:bg-white/10');
+          btn.style.backgroundColor = 'transparent';
+          btn.classList.remove('text-white', 'shadow-xs', 'font-bold', 'bg-white/25');
+          btn.classList.add('text-slate-200', 'hover:bg-white/10');
         }
       });
 
