@@ -1011,7 +1011,7 @@
             <div class="p-5 bg-gradient-to-br from-indigo-50/80 via-white to-sky-50/80 border border-indigo-200 rounded-2xl shadow-2xs space-y-3">
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-indigo-100 pb-2.5">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🖍️</span>
+                  
                   <h5 class="text-xs sm:text-sm font-black text-indigo-950 uppercase tracking-wide font-mono">${blackboardChallenge.title || '3-Person Team Blackboard Drawing Challenge'}</h5>
                 </div>
                 <span class="text-[10px] font-mono font-bold bg-indigo-100 text-indigo-900 border border-indigo-300 px-2 py-0.5 rounded">Collaborative Board Lab</span>
@@ -1279,7 +1279,7 @@
 
             <div class="p-3 bg-amber-50/80 border border-amber-200/80 rounded-xl text-xs text-amber-950 leading-relaxed flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div class="flex items-center gap-2">
-                <span class="text-base">🎯</span>
+                
                 <span><strong>Partner Protocol:</strong> Student A reads the statement aloud. Student B listens, challenges the technical inaccuracy, explains why it is false, and formulates the correct statement. Then swap!</span>
               </div>
               <button type="button" onclick="window.toggleAllErrorCorrections()" class="no-print shrink-0 px-3 py-1.5 bg-white border border-amber-300 hover:bg-amber-100 rounded-lg text-xs font-bold text-amber-900 shadow-2xs cursor-pointer">
@@ -1339,7 +1339,7 @@
             <div class="space-y-3">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🎴</span>
+                  
                   <h5 class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wide font-mono">Aircraft Anatomy Taboo (12 Technical Terms)</h5>
                 </div>
                 <span class="text-[11px] text-slate-500">Describe the mystery term without pronouncing any of the 3 forbidden words!</span>
@@ -1372,7 +1372,7 @@
             <div class="space-y-4 pt-3 border-t border-slate-200">
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 bg-slate-900 text-white rounded-xl shadow-xs">
                 <div class="flex items-center gap-2">
-                  <span class="text-base">🏆</span>
+                  
                   <div>
                     <h5 class="text-xs sm:text-sm font-bold font-mono">15-Question Multi-Format Technical Mastery Challenge</h5>
                     <p class="text-[10.5px] text-slate-300">Round 1: Error Buster &bull; Round 2: Motion Matcher &bull; Round 3: Pre-Flight Decisions</p>

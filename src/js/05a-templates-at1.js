@@ -1581,7 +1581,7 @@
 
             <!-- Auto-Saving Notes Textarea -->
             <div class="pt-2 border-t border-slate-100 space-y-1.5">
-              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">📝 My Session 3 Catch-Up Notes</span>
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">My Session 3 Catch-Up Notes</span>
               <textarea id="notes-at-s4_warmup" oninput="window.saveLessonNote('at-s4_warmup', this.value)" placeholder="Note key takeaways, GPU functions, and turnaround terms recalled..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
             </div>
           </div>
@@ -1737,7 +1737,7 @@
               <!-- Taboo Challenge Instructions -->
               <div class="p-3.5 rounded-xl bg-gradient-to-r from-amber-50 via-white to-amber-50 border border-amber-200/90 text-xs text-amber-950 space-y-1">
                 <div class="flex items-center gap-1.5 font-bold text-amber-900 uppercase tracking-wider text-[11px]">
-                  <span>⚡ Spoken Taboo Pair Challenge</span>
+                  <span>Spoken Taboo Pair Challenge</span>
                 </div>
                 <p>
                   Work in pairs or two teams (Team Alpha vs Team Bravo). Choose a card. Describe the job to your partner using target responsibility formulas (<em>"This person is tasked with..."</em>, <em>"They have authority to..."</em>) <strong>WITHOUT saying the 3 forbidden Taboo words</strong>!
@@ -1772,7 +1772,7 @@
 
                       <!-- Taboo Forbidden Words Box -->
                       <div class="p-2.5 rounded-lg bg-rose-50 border border-rose-200 text-[11px] text-rose-950 flex items-center justify-between">
-                        <span class="font-bold uppercase tracking-wider text-[10px] text-rose-800">🚫 Forbidden Taboo Words:</span>
+                        <span class="font-bold uppercase tracking-wider text-[10px] text-rose-800">Forbidden Taboo Words:</span>
                         <div class="flex items-center gap-1 font-mono font-bold">
                           ${(q.tabooWords || []).map(tw => `<span class="px-1.5 py-0.5 rounded bg-white border border-rose-300 text-rose-700">${tw}</span>`).join('')}
                         </div>
@@ -2086,7 +2086,7 @@
 
             <!-- Auto-Saving Continuous Learning Textarea -->
             <div class="pt-2 border-t border-slate-100 space-y-1.5">
-              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">📝 My Study Log &amp; Target Vocabulary</span>
+              <span class="text-xs font-bold text-slate-800 uppercase tracking-wider">My Study Log &amp; Target Vocabulary</span>
               <textarea id="notes-at-s4_vocab" oninput="window.saveLessonNote('at-s4_vocab', this.value)" placeholder="Record 3 target aviation profession terms, pronunciation traps, and personal continuous assessment reflections..." class="w-full h-20 p-2.5 text-xs text-slate-800 bg-slate-50 border border-slate-300 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"></textarea>
             </div>
           </div>

@@ -73,7 +73,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-1">
               <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg space-y-2">
                 <h5 class="text-xs font-bold text-amber-900 flex items-center gap-1.5">
-                  <span>💬</span> Key Discussion Prompts
+                  Key Discussion Prompts
                 </h5>
                 <ul class="text-xs text-amber-950 space-y-1.5 list-disc list-inside">
                   ${(opening.prompts || [
@@ -86,7 +86,7 @@
 
               <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-lg space-y-2">
                 <h5 class="text-xs font-bold text-blue-900 flex items-center gap-1.5">
-                  <span>🗣️</span> Sentence Starters for Storytelling
+                  Sentence Starters for Storytelling
                 </h5>
                 <div class="space-y-1 text-xs text-blue-950">
                   ${(opening.sentenceStarters || [
@@ -130,7 +130,7 @@
                     </div>
                     <div class="pt-2 border-t border-slate-200/80 space-y-1.5 text-[11.5px]">
                       <div class="font-bold text-slate-700 flex items-center gap-1">
-                        <span>🔍</span> Guided Discussion Question:
+                        Guided Discussion Question:
                       </div>
                       <p class="text-blue-900 font-medium italic bg-blue-50/80 p-2 rounded border border-blue-200/60 leading-snug">
                         ${photo.debateQ || photo.question || 'How should cities adapt to prevent this catastrophe?'}
@@ -144,7 +144,7 @@
             <!-- Useful Language for Photo Comparison -->
             <div class="p-3.5 bg-slate-100/80 border border-slate-200 rounded-lg space-y-2 text-xs">
               <span class="font-bold text-slate-800 flex items-center gap-1.5">
-                <span>📐</span> Useful Phrases for Contrasting &amp; Comparing Photos:
+                Useful Phrases for Contrasting &amp; Comparing Photos:
               </span>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
                 ${(visual.sentenceFrames || [
@@ -158,7 +158,7 @@
 
             <!-- Debate Prompt -->
             <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs space-y-1">
-              <span class="font-bold text-amber-900">⚡ Paired Debate Question:</span>
+              <span class="font-bold text-amber-900">Paired Debate Question:</span>
               <p class="text-amber-950 font-medium leading-relaxed">${visual.debatePrompt || 'Which of these threats poses the greatest risk to modern society: sudden flash floods, prolonged heatwaves, or uncontrolled wildfires? Defend your position with two solid arguments.'}</p>
             </div>
           </div>
@@ -262,7 +262,7 @@
             <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg space-y-2">
               <div class="flex items-center justify-between">
                 <h5 class="text-xs font-bold text-amber-950 flex items-center gap-1.5">
-                  <span>📋</span> Peer Checklist &amp; Active Listening Rubric (Partner B Observer)
+                  Peer Checklist &amp; Active Listening Rubric (Partner B Observer)
                 </h5>
                 <span class="text-[10px] font-bold text-amber-800 uppercase">Peer Evaluation</span>
               </div>
@@ -454,7 +454,7 @@
             </div>
 
             <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-lg text-xs space-y-1">
-              <span class="font-bold text-blue-900">🗣️ Justifying Your Ranking:</span>
+              <span class="font-bold text-blue-900">Justifying Your Ranking:</span>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-blue-950 italic">
                 <div>"For me, having reliable public transit is far more essential than..."</div>
                 <div>"I put car-free streets at the top because it immediately cuts noise and air pollution."</div>
@@ -493,7 +493,7 @@
                     </div>
                     <div class="pt-2 border-t border-slate-200/80 space-y-1.5 text-[11.5px]">
                       <div class="font-bold text-slate-700 flex items-center gap-1">
-                        <span>🔍</span> Guided Discussion Question:
+                        Guided Discussion Question:
                       </div>
                       <p class="text-blue-900 font-medium italic bg-blue-50/80 p-2 rounded border border-blue-200/60 leading-snug">
                         ${photo.debateQ || photo.question || 'What are the main social benefits of reclaiming street space for humans?'}
@@ -507,7 +507,7 @@
             <!-- Useful Contrast Stems -->
             <div class="p-3.5 bg-slate-100/80 border border-slate-200 rounded-lg space-y-2 text-xs">
               <span class="font-bold text-slate-800 flex items-center gap-1.5">
-                <span>📐</span> Sentence Stems for Contrasting Urban Environments:
+                Sentence Stems for Contrasting Urban Environments:
               </span>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
                 ${(visual.sentenceFrames || [
@@ -521,7 +521,7 @@
 
             <!-- Debate Prompt -->
             <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-xs space-y-1">
-              <span class="font-bold text-amber-900">⚡ Paired Debate Question:</span>
+              <span class="font-bold text-amber-900">Paired Debate Question:</span>
               <p class="text-amber-950 font-medium leading-relaxed">${visual.debatePrompt || 'Is the 15-minute city an idealistic dream only feasible for wealthy metropolitan centers, or can it be applied to suburbs and mid-sized towns?'}</p>
             </div>
           </div>
@@ -659,7 +659,7 @@
             <div class="p-3 bg-amber-50/70 border border-amber-200 rounded-lg space-y-2">
               <div class="flex items-center justify-between">
                 <h5 class="text-xs font-bold text-amber-950 flex items-center gap-1.5">
-                  <span>📋</span> Peer Checklist &amp; Active Listening Rubric (Partner B Observer)
+                  Peer Checklist &amp; Active Listening Rubric (Partner B Observer)
                 </h5>
                 <span class="text-[10px] font-bold text-amber-800 uppercase">Peer Evaluation</span>
               </div>
@@ -685,7 +685,7 @@
               <span class="text-[11px] font-semibold text-rose-600 font-bold uppercase tracking-wide">Public Debate</span>
             </div>
             <div class="p-3 bg-rose-50 border border-rose-200 rounded-lg text-xs space-y-1">
-              <span class="font-bold text-rose-900">⚡ Debate Motion:</span>
+              <span class="font-bold text-rose-900">Debate Motion:</span>
               <p class="text-rose-950 font-bold leading-relaxed">${debate.motion || '"This city should permanently ban private fossil-fueled vehicles from the entire central district within 18 months, reallocating all street parking to parks and bike paths."'}</p>
             </div>
 

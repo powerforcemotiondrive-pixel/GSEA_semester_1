@@ -643,7 +643,7 @@
             <!-- Benchmark Callout -->
             <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between gap-3 text-xs text-emerald-950">
               <div class="flex items-center gap-2">
-                <span class="text-base">🎯</span>
+                
                 <span><strong>ENAC Graduation Benchmark:</strong> Minimum <strong>785 points (CEFR B2)</strong> required for degree validation. Targeting <strong>850–945+ (B2/C1)</strong> for international career mobility.</span>
               </div>
             </div>
@@ -884,12 +884,12 @@
 
             <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3 text-xs">
               <div class="p-3 bg-blue-50/70 border border-blue-200 rounded-lg text-blue-950 font-bold">
-                🔄 The Reverse Strategy: Always read the questions BEFORE reading the passage!
+                The Reverse Strategy: Always read the questions BEFORE reading the passage!
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
-                  <h5 class="font-bold text-slate-900">📖 Skimming (Reading for Gist &amp; Purpose)</h5>
+                  <h5 class="font-bold text-slate-900">Skimming (Reading for Gist &amp; Purpose)</h5>
                   <p class="text-slate-600 leading-relaxed text-[11.5px]">
                     Read quickly to grasp the main ideas. Check the title, first sentence of each paragraph, and the closing sentence.<br>
                     <strong>Ask yourself:</strong> What is the document? Who is it for? What is the main objective?<br>
@@ -898,7 +898,7 @@
                 </div>
 
                 <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5">
-                  <h5 class="font-bold text-slate-900">🔍 Scanning (Searching for Specific Facts)</h5>
+                  <h5 class="font-bold text-slate-900">Scanning (Searching for Specific Facts)</h5>
                   <p class="text-slate-600 leading-relaxed text-[11.5px]">
                     Read carefully to pinpoint targeted facts: dates, times, prices, personal names, phone numbers, or flight/order codes.<br>
                     <strong>How to scan:</strong> Know exactly what keyword you are looking for before glancing at the text. Use headings and bullet points as visual anchors.<br>
@@ -942,7 +942,7 @@
                     <td class="py-2 px-3 text-slate-700">Intermediate: Understands the main points in clear standard speech and workplace texts on familiar matters.</td>
                   </tr>
                   <tr class="bg-emerald-50/70 border-l-4 border-emerald-500 font-medium">
-                    <td class="py-2.5 px-3 font-black text-emerald-800">B2 🎯</td>
+                    <td class="py-2.5 px-3 font-black text-emerald-800">B2 Benchmark</td>
                     <td class="py-2.5 px-3 font-mono font-black text-emerald-800">785 &ndash; 944</td>
                     <td class="py-2.5 px-3 text-emerald-950">
                       <strong>Independent User (ENAC Graduation Benchmark):</strong> Understands complex technical and business texts. Interacts with spontaneity and fluency in professional meetings and discussions.
@@ -1099,7 +1099,7 @@
           const btnText = document.getElementById("copy-btn-text");
           if (btnText) {
             btnText.textContent = "✓ Copied!";
-            setTimeout(() => { btnText.textContent = "📋 Copy All"; }, 2000);
+            setTimeout(() => { btnText.textContent = "Copy All"; }, 2000);
           }
         }).catch(() => {
           ta.select();
@@ -1243,15 +1243,15 @@
               <div class="flex items-center flex-wrap gap-1 sm:gap-1.5 shrink-0">
                 <button type="button" onclick="window.copyNotepadNotes()" id="btn-copy-notepad" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                  <span id="copy-btn-text">📋 Copy</span>
+                  <span id="copy-btn-text">Copy</span>
                 </button>
                 <button type="button" onclick="window.downloadNotepadNotes()" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-blue-50 hover:bg-blue-100 active:bg-blue-200 text-blue-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                  <span>💾 Download</span>
+                  <span>Download</span>
                 </button>
                 <button type="button" onclick="window.printNotepadNotes()" class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs">
                   <svg class="w-3 sm:w-3.5 h-3 sm:h-3.5 text-slate-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-                  <span class="hidden sm:inline">🖨️ Print / PDF</span>
+                  <span class="hidden sm:inline">Print / PDF</span>
                   <span class="sm:hidden">🖨️ Print</span>
                 </button>
                 <button type="button" onclick="window.clearNotepadNotes()" class="inline-flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-600 text-[11px] sm:text-xs font-bold rounded-lg transition-all cursor-pointer shadow-2xs" title="Clear notes for this session">
@@ -1287,7 +1287,7 @@
               <button type="button" onclick="window.insertNotepadHeader('Questions for Teacher / FE Prep')" class="px-2 py-0.5 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-md text-[10.5px] sm:text-[11px] font-semibold transition-all cursor-pointer">+ FE Questions</button>
               ${hasWorksheetNotes ? `
                 <button type="button" onclick="window.importWorksheetNotesToNotepad()" class="px-2 py-0.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 rounded-md text-[10.5px] sm:text-[11px] font-bold transition-all cursor-pointer flex items-center gap-1">
-                  <span>📥 Import Worksheet Notes</span>
+                  <span>Import Worksheet Notes</span>
                 </button>
               ` : ""}
             </div>

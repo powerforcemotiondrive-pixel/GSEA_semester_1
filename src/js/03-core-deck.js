@@ -1797,7 +1797,7 @@
         if (semObjFrTab) semObjFrTab.classList.remove('hidden');
         if (portfolioSummaryTab) portfolioSummaryTab.classList.remove('hidden');
         if (fePrepTab) {
-          fePrepTab.textContent = `⚡ FE${modalState.modNum || 1} Quick-Prep`;
+          fePrepTab.textContent = `FE${modalState.modNum || 1} Quick-Prep`;
           fePrepTab.classList.remove('hidden');
         }
 
@@ -1871,7 +1871,7 @@
         if (feObjectivesTab) feObjectivesTab.classList.remove('hidden');
         if (feCriteriaTab) feCriteriaTab.classList.remove('hidden');
         if (fePrepTab) {
-          fePrepTab.textContent = `⚡ FE${modalState.modNum || 1} Quick-Prep`;
+          fePrepTab.textContent = `FE${modalState.modNum || 1} Quick-Prep`;
           fePrepTab.classList.remove('hidden');
         }
 

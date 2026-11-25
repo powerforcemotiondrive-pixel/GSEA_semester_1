@@ -158,7 +158,7 @@
                     </div>
                   </div>
                   <div class="pt-2 border-t border-slate-200 text-[11px] text-slate-600 font-medium italic">
-                    💬 ${t.prompt}
+                    ${t.prompt}
                   </div>
                 </div>
               `).join('')}
@@ -461,7 +461,7 @@
                     </div>
                   </div>
                   <div class="pt-2 border-t border-slate-200 text-[11px] text-slate-600 font-medium italic">
-                    💬 ${t.prompt}
+                    ${t.prompt}
                   </div>
                 </div>
               `).join('')}
@@ -764,7 +764,7 @@
                     </div>
                   </div>
                   <div class="pt-2 border-t border-slate-200 text-[11px] text-slate-600 font-medium italic">
-                    💬 ${t.prompt}
+                    ${t.prompt}
                   </div>
                 </div>
               `).join('')}
@@ -1067,7 +1067,7 @@
                     </div>
                   </div>
                   <div class="pt-2 border-t border-slate-200 text-[11px] text-slate-600 font-medium italic">
-                    💬 ${t.prompt}
+                    ${t.prompt}
                   </div>
                 </div>
               `).join('')}

@@ -636,10 +636,10 @@
                     </div>
                     <div class="space-y-2 mt-2.5 text-[11px]">
                       <div class="p-2 bg-emerald-50 border border-emerald-200 rounded text-emerald-950">
-                        <strong class="block text-emerald-800">🚄 Rail:</strong> ${c.train}
+                        <strong class="block text-emerald-800">Rail:</strong> ${c.train}
                       </div>
                       <div class="p-2 bg-sky-50 border border-sky-200 rounded text-sky-950">
-                        <strong class="block text-sky-800">✈️ Flight:</strong> ${c.flight}
+                        <strong class="block text-sky-800">Flight:</strong> ${c.flight}
                       </div>
                     </div>
                   </div>
@@ -1619,7 +1619,7 @@
             <!-- Interactive Auto-Saving Digital Notes Container -->
             <div class="notes-textarea-container p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
               <div class="flex items-center justify-between">
-                <label for="ag-s4-notes" class="text-xs font-bold text-slate-800">📝 Your Case Study Briefing Notes &amp; Spoken Bullets (Auto-Saving)</label>
+                <label for="ag-s4-notes" class="text-xs font-bold text-slate-800">Your Case Study Briefing Notes &amp; Spoken Bullets (Auto-Saving)</label>
                 <span class="text-[11px] text-slate-500" id="ag-s4-notes-status">Saved locally in browser</span>
               </div>
               <textarea id="ag-s4-notes" rows="4" placeholder="Draft your 4-point exposé notes here: 1. Ecosystem context... 2. Solution... 3. Community impact... 4. Mixed conditional..." oninput="window.saveLessonNote && window.saveLessonNote('ag-s4-notes', this.value)" class="w-full p-3 rounded-lg border border-slate-300 bg-white text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>

@@ -230,7 +230,7 @@
             sessions: [
               { week: "W49", date: "Fri 04 Dec", title: "Session 1 — Extreme Weather & Atmospheric Hazards", tag: "Teaching Session", isFe: false },
               { week: "W50", date: "Fri 11 Dec", title: "Session 2 — Sustainable Cities & Low-Emission Mobility", tag: "Teaching Session", isFe: false },
-              { isHoliday: true, text: "🎄 Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)" },
+              { isHoliday: true, text: "Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)" },
               { week: "W01", date: "Fri 08 Jan", title: "Session 3 — Building & Supporting Environmental Arguments", tag: "Teaching Session", isFe: false },
               { week: "W02", date: "Fri 15 Jan", title: "Session 4 — Biodiversity in Urban Areas & Transport Hubs", tag: "Teaching Session • Prep FE2", isFe: false },
               { week: "W03", date: "Fri 22 Jan", title: "FORMATIVE EVALUATION 2 (FE2) — Climate Resilience Redesign (Airport / City)", subtitle: "Fri 22 Jan • 30-min evaluation slots (Geri MIDDLETON / Penny WRIGHT)", tag: "Grade /20", isFe: true }
@@ -278,7 +278,7 @@
             sessions: [
               { week: "W49", date: "Wed 02 Dec", title: "Session 1 — Aerodynamics & Flight Principles", tag: "Teaching Session", isFe: false },
               { week: "W50", date: "Wed 09 Dec", title: "Session 2 — Aircraft Anatomy: Structure & Systems", tag: "Teaching Session", isFe: false },
-              { isHoliday: true, text: "🎄 Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)" },
+              { isHoliday: true, text: "Weeks 51 & 52 — Christmas & Winter Vacation (No Classes)" },
               { week: "W01", date: "Wed 06 Jan", title: "Session 3 — Commercial Aircraft & Airlines", tag: "Teaching Session", isFe: false },
               { week: "W02", date: "Wed 13 Jan", title: "Session 4 — Significant Aviation Accidents & Aircraft Types", tag: "Teaching Session • Prep FE2", isFe: false },
               { week: "W03", date: "Wed 20 Jan", title: "FORMATIVE EVALUATION 2 (FE2) — Aircraft & Airlines Profile", subtitle: "Wed 20 Jan • 30-min evaluation slots (Tracy NEILL / Ally HEWETT)", tag: "Grade /20", isFe: true }
@@ -1124,7 +1124,7 @@
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div class="flex items-center gap-3.5">
               <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl" style="background-color: ${theme.primary};">
-                <span>📘</span>
+                
               </div>
               <div>
                 <div class="flex items-center gap-2">
@@ -1144,7 +1144,7 @@
 
           <!-- Key Mindset Alert Box -->
           <div class="p-4 rounded-xl border border-blue-200/80 bg-blue-50/70 shadow-2xs flex items-start gap-3">
-            <span class="text-xl shrink-0 mt-0.5">🎯</span>
+            
             <div class="text-xs text-blue-900 space-y-1">
               <h4 class="font-extrabold text-blue-950 text-sm">${isFr ? 'Notre Priorité : Progression Continue &amp; Régulière' : 'Our Focus: Gradual &amp; Steady Improvement'}</h4>
               <p class="leading-relaxed">
@@ -1164,7 +1164,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
-                  <span>📈</span>
+                  
                   <span>${isFr ? 'Progression Continue' : 'Continuous Progress'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1175,7 +1175,7 @@
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
-                  <span>🗣️</span>
+                  
                   <span>${isFr ? 'Évaluations Formatives' : 'Formative Evaluations'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1186,7 +1186,7 @@
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 space-y-1">
                 <div class="flex items-center gap-2 text-xs font-bold text-slate-800">
-                  <span>📊</span>
+                  
                   <span>${isFr ? 'Auto-évaluation Active' : 'Self-Monitoring'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1281,7 +1281,7 @@
             </div>
             <div class="space-y-2.5 text-xs text-slate-700">
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                <span class="text-base shrink-0">👥</span>
+                
                 <div>
                   <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? 'EF 1, EF 2 et EF 3 — Préparées en dehors des cours' : 'FE 1, FE 2, and FE 3 — Prepared Outside of Class'}</strong>
                   <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1292,7 +1292,7 @@
                 </div>
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                <span class="text-base shrink-0">🎓</span>
+                
                 <div>
                   <strong class="text-slate-900 block font-bold mb-0.5">${isFr ? 'EF Finale (Séance 17) — Séance de révision dédiée en classe' : 'Final FE (Class 17) — Revision Session in Class'}</strong>
                   <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1317,7 +1317,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <span>📋</span>
+                  
                   <span>${isFr ? 'Plan de Cours &amp; Objectifs' : 'Lesson Plan &amp; Objectives'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1328,7 +1328,7 @@
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <span>📖</span>
+                  
                   <span>${isFr ? 'Supports &amp; Activités de Cours' : 'Class Content &amp; Worksheets'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1339,7 +1339,7 @@
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <span>🔤</span>
+                  
                   <span>${isFr ? 'Vocabulaire Indispensable' : 'Vocabulary Revision'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1350,7 +1350,7 @@
               </div>
               <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
                 <div class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <span>🔎</span>
+                  
                   <span>${isFr ? 'Ressources Complémentaires &amp; TOEIC' : 'Additional Materials &amp; TOEIC'}</span>
                 </div>
                 <p class="text-[11.5px] text-slate-600 leading-relaxed">
@@ -1611,7 +1611,7 @@
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs" style="background-color: ${theme.primary};">
-                <span class="text-xl">🎯</span>
+                
               </div>
               <div>
                 <div class="flex items-center gap-2">
@@ -1632,7 +1632,7 @@
 
           <!-- Lead Statement Box -->
           <div class="p-4 rounded-xl border border-blue-200/80 bg-blue-50/70 shadow-2xs flex items-start gap-3">
-            <span class="text-xl shrink-0 mt-0.5">📌</span>
+            
             <div>
               <h4 class="text-xs sm:text-sm font-extrabold text-blue-950">${leadSentence}</h4>
               <p class="text-[11.5px] sm:text-xs text-blue-900/90 leading-relaxed mt-1">
@@ -1986,7 +1986,7 @@
       <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div class="flex items-center gap-3">
           <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl bg-slate-900">
-            <span>📋</span>
+            
           </div>
           <div>
             <div class="flex items-center gap-2">
@@ -2008,10 +2008,10 @@
           <!-- Track Switcher -->
           <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-lg border border-slate-200 text-xs font-bold">
             <button id="btn-drawer-syl-ag" onclick="setDrawerSyllabusTrack('ag')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer bg-white text-slate-900 shadow-xs">
-              🗣️ General English (AG)
+              General English (AG)
             </button>
             <button id="btn-drawer-syl-at" onclick="setDrawerSyllabusTrack('at')" class="px-2.5 py-1 rounded-md transition-all cursor-pointer text-slate-600 hover:text-slate-900">
-              ✈️ Technical English (AT)
+              Technical English (AT)
             </button>
           </div>
 
@@ -2055,12 +2055,12 @@
         <!-- Track Badge Banner -->
         <div class="pt-2 flex flex-wrap items-center gap-2 text-xs">
           <span class="track-ag-only px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-200 border border-indigo-400/30 font-bold">
-            <span class="lang-en">🗣️ LV101E • General English • CEFR B2 Level Benchmark</span>
-            <span class="lang-fr">🗣️ LV101E • Anglais Général • Standard Niveau B2 CECRL</span>
+            <span class="lang-en">LV101E • General English • CEFR B2 Level Benchmark</span>
+            <span class="lang-fr">LV101E • Anglais Général • Standard Niveau B2 CECRL</span>
           </span>
           <span class="track-at-only px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-200 border border-emerald-400/30 font-bold">
-            <span class="lang-en">✈️ LV121E • Technical English • ICAO Operational Level 4/5 Benchmark</span>
-            <span class="lang-fr">✈️ LV121E • Anglais Technique • Standard OACI Niveau 4/5</span>
+            <span class="lang-en">LV121E • Technical English • ICAO Operational Level 4/5 Benchmark</span>
+            <span class="lang-fr">LV121E • Anglais Technique • Standard OACI Niveau 4/5</span>
           </span>
         </div>
       </div>
@@ -2069,7 +2069,7 @@
       <div class="track-ag-only space-y-6">
         <div class="flex items-center justify-between border-b border-slate-200 pb-2">
           <h3 class="text-sm font-extrabold text-slate-900 uppercase tracking-wide flex items-center gap-2">
-            <span>🗣️</span>
+            
             <span class="lang-en">General English (AG • LV101E) — Full 17-Session Programme</span>
             <span class="lang-fr">Anglais Général (AG • LV101E) — Programme Intégral en 17 Séances</span>
           </h3>
@@ -2112,7 +2112,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2124,11 +2124,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Travel idioms (get off to a flying start, off the beaten track, hit the road, word of mouth), collocations (book in advance, clear customs, miss a connection).</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Narrative past tenses contrast (Past Simple, Past Continuous, Past Perfect). Uncountable nouns check (luggage, accommodation).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2163,7 +2163,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2175,11 +2175,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Modal shift, carbon footprint, high-speed rail corridor, intermodality, transit-oriented development.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Expressing cause and effect (owing to, as a result of, lead to), double comparatives (the faster the train, the lower the emissions).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2214,7 +2214,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2226,11 +2226,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Carrying capacity, visitor quotas, tourist levy/tax, resident displacement, season peak, UNESCO preservation.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Causative verbs of authority (have/make/get something done), concessive linkers (despite, in spite of, whereas).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2265,7 +2265,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2277,11 +2277,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Carbon offsetting, wildlife sanctuary, low-impact hospitality, local empowerment, greenwashing claims.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Mixed conditionals (If the reserve had invested in solar shuttles earlier, it would attract...), clauses of purpose (so that, in order to).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2316,7 +2316,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2328,11 +2328,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Active deployment of Module 1 vocabulary log and travel definitions.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Controlled use of narrative past tenses, causatives, mixed conditionals, and formal signpost linkers.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2381,7 +2381,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2393,11 +2393,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Torrential downpour, storm surge, heat dome, infrastructure vulnerability, contingency plan.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Passive voice in technical crisis reporting (Power lines were severed; transport links have been suspended), modals of deduction.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2432,7 +2432,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2444,11 +2444,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Permeable pavement, urban heat island, congestion charging, active mobility, mixed-use zoning, district heating.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Quantifiers and determiners (a great deal of, fewer vehicles vs. less pollution), complex noun phrases.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2483,7 +2483,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2495,11 +2495,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Counter-argument, regulatory mandate, public pushback, unintended consequence, viable alternative.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Verbs followed by gerunds vs. infinitives (advocate implementing, fail to address), diplomatic concession markers (While I concede that...).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2534,7 +2534,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2546,11 +2546,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Native species, ecological corridor, bird strike hazard, wetland restoration, habitat fragmentation.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Complex relative clauses (defining vs. non-defining), dependent prepositions following nouns and adjectives.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2585,7 +2585,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2597,11 +2597,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Accurate use of Module 2 environmental engineering and urban climate terminology.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Deployment of complex relative clauses, passive voice in crisis contexts, and gerund/infinitive precision.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2650,7 +2650,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2662,11 +2662,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Predictive analytics, algorithmic bias, automated decision-making, machine learning model, human-in-the-loop.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Passive voice in process descriptions (Data is ingested, processed, and validated), verbs of speculation (tend to, be bound to).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2701,7 +2701,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2713,11 +2713,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Energy density, charging infrastructure, green hydrogen, battery degradation, life-cycle emissions, prototype testing.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Expressing future probability (is projected to become viable by 2035), modifiers of degree (substantially higher, marginal improvement).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2752,7 +2752,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2764,11 +2764,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Data sovereignty, facial recognition ban, chilling effect, regulatory sandbox, accountability framework.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Inversion for formal emphasis (Not only does the algorithm introduce bias, but it also...), concession markers (whereas, albeit).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2803,7 +2803,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2815,11 +2815,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Biometric token, facial recognition e-gate, contactless border control, spoofing attack, encrypted credential.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Dependent prepositions and collocations (comply with regulations, susceptible to cyberattacks, prioritize security over convenience).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2854,7 +2854,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2866,11 +2866,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Comprehensive mastery of Module 3 artificial intelligence, clean energy, and biometric vocabulary.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Use of emphatic inversion, complex modal verbs of probability, and technical passive descriptions.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2919,7 +2919,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2931,11 +2931,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Holistic review of all 90+ core General English terms and idioms across Modules 1 to 3.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Eradication of common spoken errors (uncountable nouns, false friends, mixed conditionals, causative structures).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -2970,7 +2970,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -2982,11 +2982,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Demonstrated B2 CEFR active vocabulary across all societal and mobility domains.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Consolidated mastery of basic and complex structural patterns with consistent self-correction.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3047,7 +3047,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3059,11 +3059,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Go-around, touchdown zone, apron, landing gear, turnaround, unruly passenger, low-cost carrier (LCC), ancillary revenue.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Regulatory modals of authority (must, must not, is required to, is authorized to, may not, shall).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3098,7 +3098,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3110,11 +3110,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Landside vs. airside, concourse, security checkpoint, holding point, taxiway centerline, runway designator (14L/32R), FOD (Foreign Object Debris).</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Spatial prepositions of point, surface, and movement (at the holding point, on the apron, taxiing via Charlie, lining up on Runway 26).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3149,7 +3149,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3161,11 +3161,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">GPU (Ground Power Unit), APU (Auxiliary Power Unit), pushback tug, conveyor belt, refueler, Marshaller, TRC (Turnaround Coordinator), chocks.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Time linkers and sequential markers (simultaneously, prior to, upon completion of), expressing cause and effect in ramp delays.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3200,7 +3200,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3212,11 +3212,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">AFISO (Aerodrome Flight Information Service Officer), Ramp Marshaller, Baggage Handler, Safety Inspector, TSEEAC, Dispatcher, Station Manager.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Formulaic formulas of responsibility ("be responsible for + -ing", "be tasked with + noun", "fall under the jurisdiction of").</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3251,7 +3251,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3263,11 +3263,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Precise deployment of Module 1 aerodrome, runway, apron, and ground handling technical terminology.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Controlled deployment of spatial prepositions, regulatory modals, and formal cause-and-effect links.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3316,7 +3316,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3328,11 +3328,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Lift, weight/gravity, thrust, drag, airfoil, camber, chord line, angle of attack (AoA), boundary layer, stall, vortex.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Zero and first conditionals in flight physics (If the angle of attack exceeds critical AoA, the wing stalls), cause-and-effect connectors.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3367,7 +3367,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3379,11 +3379,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Fuselage, empennage, aileron, elevator, rudder, flaps, slats, spoilers, radome, pitot tube, winglet, actuator.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Spatial and functional descriptors (located along the trailing edge of the wing, designed to increase camber during low-speed approach).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3418,7 +3418,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3430,11 +3430,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Narrowbody, widebody, MTOW (Maximum Takeoff Weight), payload-range, seat-mile cost, fuel burn, fleet commonality, retrofitting.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Comparative and superlative structures with modifiers (substantially lower operating cost, marginally longer range, significantly quieter engines).</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3469,7 +3469,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3481,11 +3481,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">FDR (Flight Data Recorder), CVR (Cockpit Voice Recorder), CFIT, pitot icing, spatial disorientation, causal chain, safety recommendation.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Narrative past tenses in chronological investigations (Past Simple, Past Continuous, Past Perfect), modal verbs of past deduction.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3520,7 +3520,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3532,11 +3532,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Accurate aerodynamic, structural, and aircraft systems terminology.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Controlled deployment of comparative metrics, flight physics conditionals, and narrative past tenses.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3585,7 +3585,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3597,11 +3597,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Hypoxia, spatial disorientation, circadian dysrhythmia, somatogravic illusion, medical diversion, defibrillator (AED), incapacitated pilot.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Conditionals of operational urgency (In the event that the captain becomes incapacitated, the first officer shall...), reporting verbs.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3636,7 +3636,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3648,11 +3648,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Microburst, wind shear, cumulonimbus (CB), clear icing, rime icing, de-icing boot, CAT (Clear Air Turbulence), holding stack, alternate aerodrome.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Passive voice in weather briefings (Runway 09R was closed owing to standing water; departures were suspended), conditional routing formulas.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3687,7 +3687,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3699,11 +3699,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Safety vs. security distinction, perimeter intrusion detection, explosive trace detection, air marshal, baggage reconciliation, unlawful interference.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Connecting words for contrast (whereas safety encompasses mechanical reliability, security addresses criminal intent), passive modal constructions.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3738,7 +3738,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3750,11 +3750,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Comprehensive technical terminology synthesis, press briefing formulas (I will now address questions regarding the preliminary investigation...).</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Diplomatic response formulas (At this stage of the investigation, we cannot confirm that hypothesis), hypothetical conditionals.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3789,7 +3789,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3801,11 +3801,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Precise deployment of technical aviation vocabulary, investigative terminology, and press briefing formulas.</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Controlled deployment of diplomatic passive constructions, cause-and-effect links, and condition markers.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3854,7 +3854,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3866,11 +3866,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Immediate clarification strategies (Say again, Confirm runway heading, Request clarification on fuel state).</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Operational clarity, eradication of ambiguous phrasing, standardized phraseology compliance.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -3905,7 +3905,7 @@
       <!-- Activities -->
       <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100 text-[11.5px] text-slate-700 leading-relaxed flex items-start gap-2">
         <span class="font-bold text-slate-900 shrink-0">
-          <span class="lang-en">🎯 Activities:</span>
+          <span class="lang-en">Activities:</span>
           <span class="lang-fr">🎯 Activités :</span>
         </span>
         <span>
@@ -3917,11 +3917,11 @@
       <!-- Linguistic Focus Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] pt-1">
         <div class="p-2 rounded-lg bg-blue-50/70 border border-blue-100/90 text-blue-950">
-          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">📚 Vocabulary</span>
+          <span class="font-bold block text-[10px] uppercase text-blue-800 mb-0.5">Vocabulary</span>
           <span class="leading-relaxed">Active operational mastery across all Semester 1 aeronautical domains (Aerodromes, Aircraft, Meteorology, Safety/Security).</span>
         </div>
         <div class="p-2 rounded-lg bg-emerald-50/70 border border-emerald-100/90 text-emerald-950">
-          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">⚙️ Grammar &amp; Patterns</span>
+          <span class="font-bold block text-[10px] uppercase text-emerald-800 mb-0.5">Grammar &amp; Patterns</span>
           <span class="leading-relaxed">Consistent structural control of both simple and complex patterns under operational pressure.</span>
         </div>
         <div class="p-2 rounded-lg bg-amber-50/70 border border-amber-100/90 text-amber-950">
@@ -4303,7 +4303,7 @@ const PORTFOLIO_SUMMARY_DATA = {
           <div class="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div class="flex items-center gap-3.5">
               <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs text-2xl" style="background-color: ${theme.primary};">
-                <span>📊</span>
+                
               </div>
               <div>
                 <div class="flex items-center gap-2">
@@ -4325,7 +4325,7 @@ const PORTFOLIO_SUMMARY_DATA = {
             <div class="flex items-center gap-2 self-start sm:self-auto px-1">
               <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Viewing:</span>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-md border ${activeFilter === 'at' ? 'bg-emerald-50 text-emerald-800 border-emerald-300' : (activeFilter === 'ag' ? 'bg-indigo-50 text-indigo-800 border-indigo-300' : 'bg-white text-slate-800 border-slate-300')}">
-                ${activeFilter === 'all' ? '🌐 All Tracks Combined' : (activeFilter === 'at' ? '✈️ LV121E Technical English (AT)' : '🗣️ LV101E General English (AG)')}
+                ${activeFilter === 'all' ? '🌐 All Tracks Combined' : (activeFilter === 'at' ? 'LV121E Technical English (AT)' : 'LV101E General English (AG)')}
               </span>
             </div>
             <div class="w-full sm:w-auto grid grid-cols-3 gap-1 bg-slate-200/90 p-1 rounded-lg text-xs font-bold">
@@ -4423,7 +4423,7 @@ const PORTFOLIO_SUMMARY_DATA = {
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
               <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                 <h5 class="font-bold text-slate-900 flex items-center gap-1.5">
-                  <span>🗣️</span>
+                  
                   <span>Common Speaking Challenges (You Are Not Alone!)</span>
                 </h5>
                 <ul class="space-y-1.5 pl-4 list-disc text-slate-600 text-[11.5px] leading-relaxed">

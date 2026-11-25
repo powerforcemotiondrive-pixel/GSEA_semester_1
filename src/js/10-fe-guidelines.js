@@ -232,7 +232,7 @@
           <!-- Student Success Tips -->
           <div class="p-4 rounded-xl border space-y-2.5" style="background-color: ${theme.highlight || '#fef3c7'}; border-color: ${theme.accent}40;">
             <div class="flex items-center gap-1.5 font-bold text-xs" style="color: ${theme.accent};">
-              <span>💡</span>
+              
               <span class="uppercase tracking-wide">B2 Student Success Tips (AT FE 1)</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-slate-700">
@@ -1605,7 +1605,7 @@
           <!-- Student Success Tips -->
           <div class="p-4 rounded-xl border space-y-2.5" style="background-color: ${theme.highlight || '#fff7ed'}; border-color: ${theme.accent}40;">
             <div class="flex items-center gap-1.5 font-bold text-xs" style="color: ${theme.accent};">
-              <span>💡</span>
+              
               <span class="uppercase tracking-wide">B2 Student Success Tips</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-slate-700">
@@ -2567,7 +2567,7 @@
                 <div>
                   <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
                     <span class="text-[10px] font-black uppercase text-amber-600">Rule 01</span>
-                    <span class="text-xs">👥</span>
+                    
                   </div>
                   <h5 class="text-xs font-bold text-slate-900 mt-2">50/50 Speaking Balance</h5>
                   <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
@@ -2582,7 +2582,7 @@
                 <div>
                   <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
                     <span class="text-[10px] font-black uppercase text-rose-600">Rule 02</span>
-                    <span class="text-xs">🚫</span>
+                    
                   </div>
                   <h5 class="text-xs font-bold text-slate-900 mt-2">Zero Slide Reading</h5>
                   <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
@@ -2597,7 +2597,7 @@
                 <div>
                   <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
                     <span class="text-[10px] font-black uppercase text-indigo-600">Rule 03</span>
-                    <span class="text-xs">📱</span>
+                    
                   </div>
                   <h5 class="text-xs font-bold text-slate-900 mt-2">3-Minute Phone Rehearsal</h5>
                   <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
@@ -2612,7 +2612,7 @@
                 <div>
                   <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
                     <span class="text-[10px] font-black uppercase text-emerald-600">Rule 04</span>
-                    <span class="text-xs">📓</span>
+                    
                   </div>
                   <h5 class="text-xs font-bold text-slate-900 mt-2">Portfolio Readiness Check</h5>
                   <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
@@ -2956,7 +2956,7 @@
                 <div>
                   <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
                     <span class="text-[10px] font-black uppercase text-amber-600">Rule 01</span>
-                    <span class="text-xs">👥</span>
+                    
                   </div>
                   <h5 class="text-xs font-bold text-slate-900 mt-2">50/50 Talking Balance</h5>
                   <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
@@ -2971,7 +2971,7 @@
                 <div>
                   <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
                     <span class="text-[10px] font-black uppercase text-rose-600">Rule 02</span>
-                    <span class="text-xs">🚫</span>
+                    
                   </div>
                   <h5 class="text-xs font-bold text-slate-900 mt-2">Zero Slide Reading</h5>
                   <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
@@ -2986,7 +2986,7 @@
                 <div>
                   <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
                     <span class="text-[10px] font-black uppercase text-sky-600">Rule 03</span>
-                    <span class="text-xs">📱</span>
+                    
                   </div>
                   <h5 class="text-xs font-bold text-slate-900 mt-2">3-Minute Phone Drill</h5>
                   <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
@@ -3001,7 +3001,7 @@
                 <div>
                   <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
                     <span class="text-[10px] font-black uppercase text-emerald-600">Rule 04</span>
-                    <span class="text-xs">📓</span>
+                    
                   </div>
                   <h5 class="text-xs font-bold text-slate-900 mt-2">Portfolio Readiness Check</h5>
                   <p class="text-[11px] text-slate-600 mt-1 leading-relaxed">
@@ -3309,7 +3309,7 @@
         <div class="space-y-6">
           <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 text-white rounded-2xl p-6 sm:p-8 shadow-md border border-slate-700 text-center">
             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide bg-amber-400 text-slate-900 shadow-xs mb-3">
-              ⚡ Module ${modNum} FE Quick-Prep Milestone
+              Module ${modNum} FE Quick-Prep Milestone
             </span>
             <h3 class="text-lg sm:text-xl font-bold tracking-tight text-white">
               FE${modNum} Quick-Prep Cheat Sheet
