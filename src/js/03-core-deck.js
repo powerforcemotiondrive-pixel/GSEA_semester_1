@@ -1737,7 +1737,7 @@
       const tagEl = document.getElementById('modal-tag');
       const ddrsTabBtn = document.getElementById('modal-tab-ddrs');
 
-      const theme = modulesData[modalState.modNum - 1];
+      const theme = (modulesData && modulesData[modalState.modNum - 1]) || (modulesData && modulesData[0]) || { primary: '#1e293b', primaryDark: '#0f172a', accent: '#d97706' };
       headerEl.style.backgroundColor = theme.primary;
       headerEl.style.borderColor = theme.primaryDark;
       if (tagEl && theme.accent) {

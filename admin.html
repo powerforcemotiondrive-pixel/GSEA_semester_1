@@ -77,24 +77,26 @@
     </header>
 
     <!-- Navigation Tab Strip -->
-    <div class="bg-slate-800/95 border-b border-slate-700 px-4 sm:px-6 py-2 flex items-center gap-2 overflow-x-auto text-xs">
-      <button onclick="switchAdminTab('groups')" id="tab-btn-groups" class="px-3.5 py-1.5 rounded-lg font-bold text-white bg-white/25 shadow-xs transition-all cursor-pointer">
-        Class Groups &amp; Teachers
-      </button>
-      <button onclick="switchAdminTab('calendar')" id="tab-btn-calendar" class="px-3.5 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">
-        Weekly Course Calendar
-      </button>
-      <button onclick="switchAdminTab('rota')" id="tab-btn-rota" class="px-3.5 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer">
-        FE Tutorial Rotas
-      </button>
-      <button onclick="switchAdminTab('refonte')" id="tab-btn-refonte" class="px-3.5 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer flex items-center gap-1.5 shrink-0">
-        <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-        <span>🚀 GSEA 2027 Refonte (LH / LAN)</span>
-      </button>
-      <button onclick="switchAdminTab('syllabus')" id="tab-btn-syllabus" class="px-3.5 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer flex items-center gap-1.5 shrink-0">
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <span>Course Syllabus</span>
-      </button>
+    <div class="bg-slate-900 border-b border-slate-700/80 px-4 sm:px-6 py-2.5 overflow-x-auto">
+      <nav class="inline-flex items-center gap-1 bg-slate-950/80 backdrop-blur-md p-1 rounded-xl border border-white/12 shadow-inner text-xs">
+        <button onclick="switchAdminTab('groups')" id="tab-btn-groups" class="px-3.5 py-1.5 rounded-lg font-bold text-white bg-amber-600 shadow-xs transition-all cursor-pointer">
+          Class Groups &amp; Teachers
+        </button>
+        <button onclick="switchAdminTab('calendar')" id="tab-btn-calendar" class="px-3.5 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer">
+          Weekly Course Calendar
+        </button>
+        <button onclick="switchAdminTab('rota')" id="tab-btn-rota" class="px-3.5 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer">
+          FE Tutorial Rotas
+        </button>
+        <button onclick="switchAdminTab('refonte')" id="tab-btn-refonte" class="px-3.5 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer flex items-center gap-1.5 shrink-0">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          <span>🚀 GSEA 2027 Refonte (LH / LAN)</span>
+        </button>
+        <button onclick="switchAdminTab('syllabus')" id="tab-btn-syllabus" class="px-3.5 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer flex items-center gap-1.5 shrink-0">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Course Syllabus</span>
+        </button>
+      </nav>
     </div>
 
     <!-- Main Content Container -->
@@ -3859,9 +3861,9 @@
       }
       if (btns[key]) {
         if (key === tabKey) {
-          btns[key].className = "px-3.5 py-1.5 rounded-lg font-bold text-white bg-white/25 shadow-xs transition-all cursor-pointer";
+          btns[key].className = "px-3.5 py-1.5 rounded-lg font-bold text-white bg-amber-600 shadow-xs transition-all cursor-pointer";
         } else {
-          btns[key].className = "px-3.5 py-1.5 rounded-lg font-bold text-white/80 hover:text-white hover:bg-white/10 transition-all cursor-pointer";
+          btns[key].className = "px-3.5 py-1.5 rounded-lg font-bold text-slate-200 hover:text-white hover:bg-white/10 transition-all cursor-pointer";
         }
       }
     });
