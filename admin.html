@@ -2695,6 +2695,23 @@
           width: 100% !important;
         }
       }
+
+      /* Bullet List Alignment: Flush wrapped text */
+      .refonte-deck-container ul,
+      .refonte-deck-container ul.list-disc {
+        list-style-type: disc !important;
+        list-style-position: outside !important;
+        padding-left: 1.15rem !important;
+        margin-left: 0 !important;
+      }
+      .refonte-deck-container li {
+        padding-left: 0.15rem !important;
+        margin-bottom: 0.25rem !important;
+        line-height: 1.35 !important;
+      }
+      .refonte-deck-container li::marker {
+        font-size: 0.85em !important;
+      }
     </style>
 
     <div id="refonte-deck-wrapper" class="refonte-deck-container transition-all duration-200">
@@ -2773,9 +2790,9 @@
                   <h2 class="text-base sm:text-xl font-black text-amber-600 mt-1">Refonte Timeline: Phased Deployment Timeline</h2>
                   <p class="text-[12px] text-slate-500 mt-0.5">Progressive curriculum rollout across active promotions: GSEA26A and GSEA25A</p>
                 </div>
-                <span class="px-2.5 py-0.5 rounded-full text-[10.5px] font-bold bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded-full text-[10.5px] font-bold bg-amber-50 text-amber-700 border border-amber-200 flex items-center gap-1.5 font-mono">
                   <span class="w-1.5 h-1.5 rounded-full bg-amber-600 animate-pulse"></span>
-                  2 Cohorts in Parallel
+                  4 Promotions
                 </span>
               </div>
 
@@ -2790,11 +2807,11 @@
                     </div>
                     <h3 class="text-xs font-black text-amber-900 mt-1.5">Semester 1</h3>
                     <p class="text-[11px] font-bold text-amber-600">Promotion GSEA26A</p>
-                    <div class="text-[11px] text-slate-600 space-y-1 mt-1.5 leading-tight">
-                      <p>&bull; <strong>Status:</strong> Now running in Version 1 with GSEA26A.</p>
-                      <p>&bull; <strong>Milestone:</strong> Module 1 complete (Travel &amp; Transport).</p>
-                      <p>&bull; <strong>Current Phase:</strong> Module 2 active (Climate &amp; Cities).</p>
-                    </div>
+                    <ul class="text-[11px] text-slate-600 space-y-1 mt-1.5 list-disc list-outside pl-3.5 leading-tight">
+                    <li><strong>Status:</strong> Now running in Version 1 with GSEA26A.</li>
+                    <li><strong>Milestone:</strong> Module 1 complete (Travel & Transport).</li>
+                    <li><strong>Current Phase:</strong> Module 2 active (Weather & Environment).</li>
+                  </ul>
                   </div>
                   <div class="pt-2 border-t border-amber-100 text-[10.5px] font-mono font-bold text-amber-700">
                     89 Hours (Induction + AG + AT)
@@ -2810,12 +2827,12 @@
                     </div>
                     <h3 class="text-xs font-black text-amber-900 mt-1.5">Semester 2</h3>
                     <p class="text-[11px] font-bold text-amber-600">Promotion GSEA26A</p>
-                    <div class="text-[11px] text-slate-600 space-y-1 mt-1.5 leading-tight">
-                      <p>&bull; <strong>Status:</strong> Will be implemented with GSEA26A in 2027.</p>
-                      <p>&bull; <strong>Key Change:</strong> Reduction of 32 classroom hours.</p>
-                      <p>&bull; <strong>Tracks:</strong> AG (16h) + AAS (16h: AFIS &amp; Ground).</p>
-                      <p>&bull; <strong>Immersion:</strong> 4-week dedicated English immersion.</p>
-                    </div>
+                    <ul class="text-[11px] text-slate-600 space-y-1 mt-1.5 list-disc list-outside pl-3.5 leading-tight">
+                    <li><strong>Status:</strong> Will be implemented with GSEA26A in 2027.</li>
+                    <li><strong>Key Change:</strong> Reduction of 32 classroom hours.</li>
+                    <li><strong>Tracks:</strong> AG (16h) + AAS (16h: AFIS & Ground).</li>
+                    <li><strong>Immersion:</strong> 4-week English immersion at the end of semester 2.</li>
+                  </ul>
                   </div>
                   <div class="pt-2 border-t border-amber-100 text-[10.5px] font-mono font-bold text-amber-700">
                     32 Hours Total + 4 Weeks Immersion
@@ -2831,12 +2848,13 @@
                     </div>
                     <h3 class="text-xs font-black text-amber-900 mt-1.5">Semester 3</h3>
                     <p class="text-[11px] font-bold text-amber-600">Promotion GSEA25A</p>
-                    <div class="text-[11px] text-slate-600 space-y-1 mt-1.5 leading-tight">
-                      <p>&bull; <strong>Status:</strong> Now running with GSEA25A.</p>
-                      <p>&bull; <strong>Key Change:</strong> Reduction of 30 hours (zero General English).</p>
-                      <p>&bull; <strong>Track:</strong> Technical English (AT 30h) only.</p>
-                      <p>&bull; <strong>Focus:</strong> EASA regulatory documents &amp; MTF prep.</p>
-                    </div>
+                    <ul class="text-[11px] text-slate-600 space-y-1 mt-1.5 list-disc list-outside pl-3.5 leading-tight">
+                    <li><strong>Status:</strong> Now running with GSEA25A.</li>
+                    <li><strong>Key Change:</strong> Reduction of 30 hours (zero General English).</li>
+                    <li><strong>Track:</strong> Technical English (AT 30h) only.</li>
+                    <li><strong>Focus:</strong> EASA regulatory documents & MTF preparation.</li>
+                    <li><strong>MTF Test:</strong> MTF Test end semester 3. Retakes mid semester 4.</li>
+                  </ul>
                   </div>
                   <div class="pt-2 border-t border-amber-100 text-[10.5px] font-mono font-bold text-amber-700">
                     30 Hours AT + End S3 MTF Test
@@ -2852,12 +2870,11 @@
                     </div>
                     <h3 class="text-xs font-black text-amber-900 mt-1.5">Semester 4</h3>
                     <p class="text-[11px] font-bold text-amber-600">Promotion GSEA25A</p>
-                    <div class="text-[11px] text-slate-600 space-y-1 mt-1.5 leading-tight">
-                      <p>&bull; <strong>Status:</strong> Will be implemented with GSEA25A in 2027.</p>
-                      <p>&bull; <strong>Key Change:</strong> Reduction of 30 hours (zero General English).</p>
-                      <p>&bull; <strong>Tracks:</strong> Professional English (AP 30h) + Pecha Kucha (6h).</p>
-                      <p>&bull; <strong>Graduation:</strong> Final internship defense &amp; exit validation.</p>
-                    </div>
+                    <ul class="text-[11px] text-slate-600 space-y-1 mt-1.5 list-disc list-outside pl-3.5 leading-tight">
+                    <li><strong>Status:</strong> Will be implemented with GSEA25A in April 2027.</li>
+                    <li><strong>Key Change:</strong> Reduction of 30 hours (zero General English).</li>
+                    <li><strong>Tracks:</strong> Professional English (AP 30h) + (NEW) Pecha Kucha (PFE 6h).</li>
+                  </ul>
                   </div>
                   <div class="pt-2 border-t border-amber-100 text-[10.5px] font-mono font-bold text-amber-700">
                     36 Hours Total (30h AP + 6h PFE)
@@ -2869,11 +2886,11 @@
             <!-- Slide 1 Callout -->
             <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-amber-900">
               <div>
-                <strong class="font-bold text-amber-900">Strategic Curriculum Impact:</strong>
-                Overall reduction of <strong>~92 classroom hours</strong> across the 2-year cycle, replacing passive lecture hours with high-density spoken workshops, continuous formative assessment, and self-directed digital study.
+                <strong class="font-bold text-amber-900">Curriculum Impact:</strong>
+                Overall reduction of ~92 classroom hours across the 2-year cycle.
               </div>
               <span class="font-mono font-bold text-white bg-amber-600 px-2.5 py-1 rounded-lg shrink-0">
-                Total Streamlining: &minus;92 Hours
+                Total hours lost - 92 hours.
               </span>
             </div>
           </div>
@@ -2903,14 +2920,11 @@
                   </div>
                   <h3 class="text-xs font-black text-emerald-950">Adaptation Week (LV130)</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Spoken fluency, orientation, and cohort cohesion:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>Baseline Evaluation:</strong> Spoken fluency & grammar diagnosis.</li>
                     <li><strong>Methodology Briefing:</strong> Interactive, communicative workshops.</li>
                     <li><strong>Digital Orientation:</strong> e-Campus and self-study platform tour.</li>
                   </ul>
-                  <div class="pt-2 border-t border-emerald-100 text-[10.5px] font-mono font-bold text-emerald-700">
-                    5h Induction &bull; 0 ECTS
-                  </div>
                 </div>
 
                 <!-- LV101E AG -->
@@ -2921,15 +2935,12 @@
                   </div>
                   <h3 class="text-xs font-black text-emerald-950">General English: 3 Thematic Modules</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Culture, debate, and spontaneous spoken interaction:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>Module 1:</strong> Travel, Transport and Leisure (4 sessions).</li>
                     <li><strong>Module 2:</strong> Climate Change & Sustainable Cities (4 sessions).</li>
                     <li><strong>Module 3:</strong> New Technology (3 sessions).</li>
                     <li><strong>Session 12:</strong> Formative Evaluation (1 session).</li>
                   </ul>
-                  <div class="pt-2 border-t border-emerald-100 text-[10.5px] font-mono font-bold text-emerald-700">
-                    42h &bull; Continuous Formative Assessment
-                  </div>
                 </div>
 
                 <!-- LV121E AT -->
@@ -2940,15 +2951,12 @@
                   </div>
                   <h3 class="text-xs font-black text-emerald-950">Technical English: 3 Aeronautical Modules</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Aircraft, Aerodynamics, Turnaround, Meteorology and other core basic vocabulary:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>Module 1:</strong> Airframe, Aerodynamics & Propulsion (4 sessions).</li>
                     <li><strong>Module 2:</strong> Avionics, Cockpit & Navigation (4 sessions).</li>
                     <li><strong>Module 3:</strong> Meteorology, Health & Revision (3 sessions).</li>
                     <li><strong>Session 12:</strong> Formative Evaluation • Paired technical briefing.</li>
                   </ul>
-                  <div class="pt-2 border-t border-emerald-100 text-[10.5px] font-mono font-bold text-emerald-700">
-                    42h &bull; Continuous Formative Assessment
-                  </div>
                 </div>
               </div>
             </div>
@@ -2956,8 +2964,7 @@
             <!-- Slide 2 Callout -->
             <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-emerald-900">
               <div>
-                <strong class="font-bold text-emerald-900">Pedagogical Foundation:</strong>
-                Semester 1 establishes the intensive bedrock (89 hours total), developing confident speakers before the program pivots toward specialized autonomy in Semesters 2, 3, and 4.
+                Semester 1 establishes the foundation (89 hours total), developing confident speakers before the program moves toward specialized / professional English in Semesters 2, 3, and 4.
               </div>
               <span class="font-mono font-bold text-white bg-emerald-600 px-2.5 py-1 rounded-lg shrink-0">
                 Cohort: GSEA26A &bull; 89 Hours Total
@@ -2990,7 +2997,7 @@
                   </div>
                   <h3 class="text-xs font-black text-sky-950">General English (AG)</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Streamlined format centered on global current affairs and active debate:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>1 Thematic Module:</strong> Current international events and global debate preparation.</li>
                     <li><strong>Autonomous Listening:</strong> Guided self-study listening program on eCampus.</li>
                     <li><strong>Formative Evaluation:</strong> Session 8 paired communicative speaking challenge.</li>
@@ -3008,7 +3015,7 @@
                   </div>
                   <h3 class="text-xs font-black text-sky-950">Aviation Safety & Air Traffic (AAS)</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Introduction to Live Traffic (LT) & AFIS:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>2 Modules:</strong> 1. AFIS; 2. Ground Operations (ATIS, Apron control).</li>
                     <li><strong>Self-Study:</strong> Live Traffic & PCE modules on eCampus.</li>
                     <li><strong>Formative Evaluation:</strong> Session 8 Live Traffic Test (FE).</li>
@@ -3026,7 +3033,7 @@
                   </div>
                   <h3 class="text-xs font-black text-sky-950">Immersion & TOEIC Benchmark</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Intensive homestay immersion in English-speaking destinations:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>4-Week Homestay:</strong> 1 ENAC student per host family ain (5) possible locations.</li>
                     <li><strong>TOEIC Benchmark:</strong> Minimum B2 level (785 pts) required for graduation.</li>
                     <li><strong>Official Exam Window:</strong> Administered Week 1 of Semester 3. (May change)</li>
@@ -3041,8 +3048,7 @@
             <!-- Slide 3 Callout -->
             <div class="p-3 rounded-xl bg-sky-50 border border-sky-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-sky-900">
               <div>
-                <strong class="font-bold text-sky-900">Pacing &amp; Efficiency:</strong>
-                Reducing Semester 2 classroom contact by 32 hours prevents cognitive overload before students depart for the intensive 4-week immersion stay.
+                Reduction of Semester 2 classroom contact by 32 hours. Due to Pilot training in first 4 weeks of semester. This may be moved to the end of the semester. 4 week immersion course followed by TOEIC.
               </div>
               <span class="font-mono font-bold text-white bg-sky-600 px-2.5 py-1 rounded-lg shrink-0">
                 Net Reduction: &minus;32 Hours
@@ -3075,7 +3081,7 @@
                   </div>
                   <h3 class="text-xs font-black text-amber-950">Technical English (AT) &mdash; No General English</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Rigorous preparation for operational document (EASA) navigation:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>Module 1 • EASA Documents:</strong> Regulatory texts, CS specifications, and safety directives. Flipped peer lessons in Session 7.</li>
                     <li><strong>Module 2 • MTF Qualification (Level 4) Prep:</strong> Intensive exam strategy, practice drills, and mock tests for the qualification test.</li>
                     <li><strong>Language Testing Self-Study:</strong> Continuous self-directed listening and vocabulary on eCampus.</li>
@@ -3094,7 +3100,7 @@
                   </div>
                   <h3 class="text-xs font-black text-amber-950">Professional English (AP) & Pecha Kucha PFE</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Final stage polishing workplace presentation skills and career-launch communications:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>Professional English Course (30 Hours):</strong> International workplace correspondence, cross-cultural workshops.</li>
                     <li><strong>Pecha Kucha PFE Defense (6 Hours):</strong> 20 slides &times; 20 seconds fast-paced spoken defense format for the graduation end-of-studies project.</li>
                   </ul>
@@ -3109,7 +3115,7 @@
             <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-amber-900">
               <div>
                 <strong class="font-bold text-amber-900">Specialization Strategy:</strong>
-                Second-year technicians focus entirely on real-world operational survival: mastering legal regulatory frameworks in S3 and delivering high-stakes project defenses in S4.
+                Second-year GSEA will focus entirely on real-world operational skills: mastering legal regulatory frameworks in S3 and professional English in S4.
               </div>
               <span class="font-mono font-bold text-white bg-amber-600 px-2.5 py-1 rounded-lg shrink-0">
                 Total S3+S4 Reduction: &minus;60 Hours
@@ -3142,7 +3148,7 @@
                   </div>
                   <h3 class="text-xs font-black text-sky-950">Self-Contained SCORM 1.2</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Complete offline delivery embedded directly within ENAC Moodle:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>Zero CDN Dependencies:</strong> All fonts, audio clips, and scripts reside locally inside the zip.</li>
                     <li><strong>LMS Integration:</strong> Tracks session completion, mastery score, and suspend_data progress.</li>
                     <li><strong>In-Deck Admin Hub:</strong> Instant access to timetables, evaluation rotas, and rubrics.</li>
@@ -3160,7 +3166,7 @@
                   </div>
                   <h3 class="text-xs font-black text-sky-950">Cross-Platform ISO & DMG</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Drag-and-drop offline installers for home computers and USB thumb drives:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>Windows PC:</strong> Universal Hybrid ISO (Joliet + UDF) mounts instantly as a virtual drive.</li>
                     <li><strong>Apple Mac:</strong> Native 1-click DMG auto-opens clean Finder window.</li>
                     <li><strong>100% Write-Protected:</strong> Tamper-proof read-only images guarantee asset integrity.</li>
@@ -3178,7 +3184,7 @@
                   </div>
                   <h3 class="text-xs font-black text-sky-950">Continuous Learner Saves</h3>
                   <p class="text-[11px] text-slate-600 leading-snug">Instant persistence of student notes, quiz scores, and speech practice:</p>
-                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-inside leading-tight">
+                  <ul class="text-[11px] text-slate-700 space-y-1 list-disc list-outside pl-3.5 leading-tight">
                     <li><strong>Zero Data Loss:</strong> All student answers persist in browser localStorage across reboots.</li>
                     <li><strong>Native Audio Engine:</strong> Offline Web Speech synthesis for vocabulary phonetics.</li>
                     <li><strong>Privacy Architecture:</strong> Real student identities never touch Git or external servers.</li>
@@ -3197,7 +3203,7 @@
                 The entire platform operates identically online within eCampus or completely offline on student laptops during travel or immersion.
               </div>
               <span class="font-mono font-bold text-white bg-sky-600 px-2.5 py-1 rounded-lg shrink-0">
-                Zero License Fees &bull; Instant Deployment
+                Works offline
               </span>
             </div>
           </div>
@@ -3226,12 +3232,12 @@
                     <span class="text-xs font-mono font-bold text-emerald-600">Competency-Based</span>
                   </div>
                   <h3 class="text-xs font-black text-emerald-950">L'Approche par Compétences</h3>
-                  <div class="text-[11px] text-slate-700 space-y-1.5 leading-tight">
-                    <p>&bull; <strong>Grounded in TSEEAC Feedback:</strong> Designed directly around operational feedback from civil aviation technicians who need spontaneous speaking confidence rather than theoretical grammar memorization.</p>
-                    <p>&bull; <strong>Continuous Assessment (No Exams):</strong> Traditional high-stakes end-of-semester written exams are replaced with continuous formative evaluation (FE) in small groups or pairs.</p>
-                    <p>&bull; <strong>Building Confidence:</strong> Low-anxiety environment encouraging active peer interaction, immediate constructive teacher feedback, and personal learning reflection.</p>
-                    <p>&bull; <strong>Proactive Certification Success:</strong> Integrated preparation for the <strong>TOEIC</strong> (mandatory CEFR B2 benchmark) and the <strong>MTF</strong> (mandatory civil aviation graduation exam).</p>
-                  </div>
+                  <ul class="text-[11px] text-slate-700 space-y-1.5 list-disc list-outside pl-3.5 leading-tight">
+                    <li><strong>Grounded in TSEEAC Feedback:</strong> Designed directly around operational feedback from civil aviation technicians who need spontaneous speaking confidence rather than theoretical grammar memorization.</li>
+                    <li><strong>Continuous Assessment (No Exams):</strong> Traditional high-stakes end-of-semester written exams are replaced with continuous formative evaluation (FE) in small groups or pairs.</li>
+                    <li><strong>Building Confidence:</strong> Low-anxiety environment encouraging active peer interaction, immediate constructive teacher feedback, and personal learning reflection.</li>
+                    <li><strong>Proactive Certification Success:</strong> Integrated preparation for the <strong>TOEIC</strong> (mandatory CEFR B2 benchmark) and the <strong>MTF</strong> (mandatory civil aviation graduation exam).</li>
+                  </ul>
                   <div class="pt-2 border-t border-emerald-100 text-[10.5px] font-mono font-bold text-emerald-700">
                     Continuous Formative Evaluation &bull; Zero Exam Stress
                   </div>
@@ -3244,12 +3250,12 @@
                     <span class="text-xs font-mono font-bold text-emerald-600">Zero-Print Practice</span>
                   </div>
                   <h3 class="text-xs font-black text-emerald-950">Environmental Benefits of our Structure</h3>
-                  <div class="text-[11px] text-slate-700 space-y-1.5 leading-tight">
-                    <p>&bull; <strong>Strict No-Print Approach:</strong> Digital worksheets, auto-saving textareas, and on-screen rubrics completely eliminate physical photocopies (~2,000 pages of paper saved per promotion).</p>
-                    <p>&bull; <strong>Printable PDFs Only on Demand:</strong> Clean 7-page A4 PDF worksheets are generated on demand via native PDF engines for students who genuinely require physical copies.</p>
-                    <p>&bull; <strong>Ultra-Low Energy Computing:</strong> Client-side rendering requires no active server infrastructure or compute cycles, minimizing server-farm energy consumption.</p>
-                    <p>&bull; <strong>Full DD&RS Integration:</strong> Every module is linked to official French Higher Education ecological transition benchmarks.</p>
-                  </div>
+                  <ul class="text-[11px] text-slate-700 space-y-1.5 list-disc list-outside pl-3.5 leading-tight">
+                    <li><strong>Strict No-Print Approach:</strong> Digital worksheets, auto-saving textareas, and on-screen rubrics completely eliminate physical photocopies (~2,000 pages of paper saved per promotion).</li>
+                    <li><strong>Printable PDFs Only on Demand:</strong> Clean 7-page A4 PDF worksheets are generated on demand via native PDF engines for students who genuinely require physical copies.</li>
+                    <li><strong>Ultra-Low Energy Computing:</strong> Client-side rendering requires no active server infrastructure or compute cycles, minimizing server-farm energy consumption.</li>
+                    <li><strong>Full DD&RS Integration:</strong> Every module is linked to official French Higher Education ecological transition benchmarks.</li>
+                  </ul>
                   <div class="pt-2 border-t border-emerald-100 text-[10.5px] font-mono font-bold text-emerald-700">
                     ~2,000 Sheets Saved / Promo &bull; DD&amp;RS Compliant
                   </div>
@@ -3260,8 +3266,8 @@
             <!-- Slide 6 Callout -->
             <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-emerald-900">
               <div>
-                <strong class="font-bold text-emerald-900">Modern, Sustainable, Communicative English Education:</strong>
-                A validated pedagogical platform empowering future ENAC technicians to communicate fluently, safely, and responsibly.
+                <strong class="font-bold text-emerald-900">Modern, Sustainable, Communicative English Learning Platform:</strong>
+                A pedagogical platform empowering future ENAC GSEA students to communicate fluently and with confidence.
               </div>
               <span class="font-mono font-bold text-white bg-emerald-600 px-2.5 py-1 rounded-lg shrink-0">
                 ENAC LH / LAN &bull; Phil PARRIS

@@ -59,11 +59,7 @@ const slidesData = slideSections.map((sec, sIdx) => {
 
 function formatBulletToHtml(b, isLi) {
   let formatted = b.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-  if (isLi) {
-    return `<li>${formatted}</li>`;
-  } else {
-    return `<p>&bull; ${formatted}</p>`;
-  }
+  return `<li>${formatted}</li>`;
 }
 
 // 1. Update admin.html

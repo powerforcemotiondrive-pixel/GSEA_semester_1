@@ -13,6 +13,7 @@ npm run presentation:import
 
 - **Badge**: SLIDE 1 • ROLLOUT TIMELINE
 - **Subtitle**: Progressive curriculum rollout across active promotions: GSEA26A and GSEA25A
+- **Pill**: 4 Promotions
 ### Card 1: Semester 1
 - **Tag**: LIVE • V1.0
 - **Description**: Promotion GSEA26A
@@ -226,8 +227,8 @@ npm run presentation:import
 - **Full DD&RS Integration:** Every module is linked to official French Higher Education ecological transition benchmarks.
 
 ### Slide 6 Callout Banner
-- **Headline**: Modern, Sustainable, Communicative English Education:
-- **Summary**: A validated pedagogical platform empowering future ENAC technicians to communicate fluently, safely, and responsibly.
+- **Headline**: Modern, Sustainable, Communicative English Learning Platform:
+- **Summary**: A pedagogical platform empowering future ENAC GSEA students to communicate fluently and with confidence.
 - **Badge**: ENAC LH / LAN • Phil PARRIS
 
 ---
