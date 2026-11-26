@@ -4491,22 +4491,22 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <!-- Card 1: Aeronautical English (AT) -->
+            <!-- Card 1: Aeronautical & Passenger Culture (AT/AG) -->
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">TECHNICAL ENGLISH (AT)</span>
-                  <span class="text-[10px] font-mono text-slate-400 font-semibold">BBC News • 3 min read</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">PASSENGER CULTURE &amp; CABIN ETIQUETTE (AT/AG)</span>
+                  <span class="text-[10px] font-mono text-slate-400 font-semibold">BBC Travel &bull; 4 min read</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                  "Man with Venomous Snakes and Lizards Stopped at German Airport"
+                  "Why Does Plane Clapping Make People So Angry? Experts Explain"
                 </h4>
                 <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
-                  Customs officers at Cologne Bonn Airport intercept a passenger attempting to smuggle dozens of venomous vipers and protected reptiles concealed inside checked luggage.
+                  Cabin etiquette, collective relief, and why spontaneous landing applause sparks passionate debate between relieved vacationers and irritable frequent flyers.
                 </p>
               </div>
-              <button type="button" onclick="openCustomsNoticeboardArticle()" class="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer font-mono uppercase tracking-wider text-[11px]">
-                <span>Read Technical Article</span>
+              <button type="button" onclick="openPlaneClappingNoticeboardArticle()" class="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer font-mono uppercase tracking-wider text-[11px]">
+                <span>Read Feature Article</span>
                 <span>&rarr;</span>
               </button>
             </div>
@@ -4515,18 +4515,18 @@
             <div class="p-4 rounded-xl border border-slate-200/90 bg-white shadow-2xs flex flex-col justify-between space-y-3">
               <div class="space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">GENERAL CULTURE &amp; FILM (AG)</span>
-                  <span class="text-[10px] font-mono text-slate-400 font-semibold">Cinema Pick • Documentary</span>
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">GENERAL CULTURE &amp; CINEMA (AG)</span>
+                  <span class="text-[10px] font-mono text-slate-400 font-semibold">BBC News Live &bull; 3 min read</span>
                 </div>
                 <h4 class="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
-                  "Tin Castle" (2026, Alexander Murphy)
+                  "BBC News Live: Robert Pattinson Confirmed as New James Bond (007)"
                 </h4>
                 <p class="text-[11.5px] sm:text-xs text-slate-600 leading-relaxed font-normal">
-                  An intimate documentary following an Irish family living along a rural roadside trailer, exploring heritage, identity, community resilience, and modern social pressures.
+                  Eon Productions and Amazon MGM officially announce Robert Pattinson as the 7th James Bond, directed by Denis Villeneuve with a screenplay by Steven Knight.
                 </p>
               </div>
-              <button type="button" onclick="openFilmDetailsModal()" class="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer font-mono uppercase tracking-wider text-[11px]">
-                <span>Explore Film Notes</span>
+              <button type="button" onclick="openJamesBondNoticeboardArticle()" class="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-2xs transition-all cursor-pointer font-mono uppercase tracking-wider text-[11px]">
+                <span>Read Live Coverage</span>
                 <span>&rarr;</span>
               </button>
             </div>
@@ -4585,6 +4585,66 @@
         </div>
       `;
     }
+
+    function openPlaneClappingNoticeboardArticle() {
+      const article = {
+        title: "Why Does Plane Clapping Make People So Angry? Experts Explain",
+        sourceTag: "BBC Travel • Passenger Culture & Cabin Etiquette",
+        topic: "Aviation Culture & Psychology",
+        readTime: "4 min read",
+        url: "https://www.bbc.com/travel/article/20261112-why-does-plane-clapping-make-people-so-angry-experts-explain",
+        snippet: "The long-standing tradition of applauding when an aircraft lands safely divides the cabin between passengers expressing genuine relief and those irritated by the disruption.",
+        content: [
+          "Few cabin rituals provoke as instant or polarizing a reaction as applause echoing through the cabin the second an airliner's main gear touches down on the runway. For some travelers, spontaneous clapping is an instinctive expression of collective relief and heartfelt gratitude toward the flight crew. For others, it is an exasperating breach of travel etiquette.",
+          "According to sociologists and aviation psychologists, plane clapping exposes the unwritten social contracts of commercial aviation. Critics argue that landing the aircraft safely is the flight deck crew's baseline professional duty, comparing public applause to cheering a bus driver for stopping at a red light. To frequent flyers decompressing in cramped quarters, loud outbursts shatter the shared quiet headspace of the cabin.",
+          "Conversely, behavioral experts note that applause often stems from physiological stress release. Passengers with mild flight anxiety or those who have just endured severe turbulence experience a surge of relief once weight is securely back on wheels. In many cultures, especially across parts of Southern Europe and Latin America, clapping is a cherished holiday custom marking the start of vacation.",
+          "For aviation students, this phenomenon offers a fascinating study in passenger psychology, customer experience (CX), and cabin dynamics. Understanding how passengers process travel fatigue, flight anxiety, and cultural differences is vital for airline ground and cabin personnel striving to manage customer expectations and onboard harmony."
+        ],
+        takeaways: [
+          "Cabin etiquette reflects unspoken social norms: while some passengers view applause as grateful appreciation, others consider it patronizing or disruptive.",
+          "Applause is frequently driven by physiological relief following turbulence or flight anxiety, releasing built-up tension upon touchdown.",
+          "Cultural norms significantly shape onboard behavior, with applause being customary on holiday charters in several European and Latin American regions."
+        ],
+        vocab: [
+          { word: "unwritten social contract", ipa: "/ʌnˈrɪt.ən ˈsəʊ.ʃəl ˈkɒn.trækt/", def: "Implicit behavioral expectations and shared norms that govern polite interactions in shared public spaces." },
+          { word: "performative applause", ipa: "/pəˈfɔː.mə.tɪv əˈplɔːz/", def: "Public clapping perceived by some as attention-seeking rather than a necessary expression of appreciation." },
+          { word: "collective relief", ipa: "/kəˈlek.tɪv rɪˈliːf/", def: "A shared emotional release experienced simultaneously by a group following a tense or uncertain situation." },
+          { word: "touchdown", ipa: "/ˈtʌtʃ.daʊn/", def: "The exact moment an aircraft's landing gear makes physical contact with the runway surface." }
+        ]
+      };
+      window.openCustomArticleReader(article);
+    }
+    window.openPlaneClappingNoticeboardArticle = openPlaneClappingNoticeboardArticle;
+
+    function openJamesBondNoticeboardArticle() {
+      const article = {
+        title: "BBC News Live: Robert Pattinson Confirmed as the New James Bond (007)",
+        sourceTag: "BBC News Live • British Cinema & Global Culture",
+        topic: "General Culture & Cinema",
+        readTime: "3 min read",
+        url: "https://www.bbc.com/news/live/ckg5j69ndv2vt",
+        snippet: "Eon Productions and Amazon MGM officially announce Robert Pattinson as the 7th James Bond, directed by Denis Villeneuve and written by Steven Knight.",
+        content: [
+          "In a landmark cinematic announcement, Eon Productions and Amazon MGM have officially confirmed that British actor Robert Pattinson has been cast as James Bond, becoming the seventh actor in history to assume the iconic role of Agent 007 in the official franchise.",
+          "Pattinson succeeds Daniel Craig, who concluded his celebrated 15-year tenure with 'No Time to Die' in 2021. The announcement ends months of intense global media speculation and debate surrounding the future direction of Britain's most successful cultural export.",
+          "The upcoming production will be directed by visionary filmmaker Denis Villeneuve ('Dune', 'Blade Runner 2049', 'Arrival'), with a screenplay penned by Steven Knight ('Peaky Blinders'). Producers Michael G. Wilson and Barbara Broccoli stated that Pattinson brings the requisite intensity, psychological depth, and international presence to lead the character into a new era of global cinema.",
+          "For English language learners, the James Bond franchise represents a premier platform for exploring British cultural identity, espionage vocabulary, formal discourse, and the global soft power of cinematic storytelling. The transition sparks rich conversational debate on tradition versus modernity."
+        ],
+        takeaways: [
+          "Robert Pattinson becomes the 7th official actor to portray Ian Fleming's legendary British secret agent on screen.",
+          "Acclaimed director Denis Villeneuve and screenwriter Steven Knight join forces to reboot the multi-billion-dollar franchise.",
+          "The 007 series remains one of the world's most influential cultural exports, reflecting evolving British society, diplomacy, and cinema."
+        ],
+        vocab: [
+          { word: "cinematic franchise", ipa: "/ˌsɪn.əˈmæt.ɪk ˈfræn.tʃaɪz/", def: "A series of related films sharing the same fictional universe, characters, and commercial intellectual property." },
+          { word: "cultural export", ipa: "/ˈkʌl.tʃər.əl ˈek.spɔːt/", def: "Artistic, cinematic, or media products from one country that gain widespread commercial and cultural popularity abroad." },
+          { word: "espionage", ipa: "/ˈes.pi.ə.nɑːʒ/", def: "The systematic practice of spying or intelligence-gathering to obtain secret state or corporate information." },
+          { word: "soft power", ipa: "/ˌsɒft ˈpaʊ.ər/", def: "A nation's ability to influence international preferences and culture through attraction, arts, and values rather than coercion." }
+        ]
+      };
+      window.openCustomArticleReader(article);
+    }
+    window.openJamesBondNoticeboardArticle = openJamesBondNoticeboardArticle;
 
     function openCustomsNoticeboardArticle() {
       const article = {
@@ -24204,14 +24264,14 @@
 
 /* --- PORTFOLIO_SUMMARY_DATA_START --- */
 const PORTFOLIO_SUMMARY_DATA = {
-  "lastUpdated": "20 Nov 2026",
-  "totalSubmissions": 105,
+  "lastUpdated": "26 Nov 2026",
+  "totalSubmissions": 143,
   "trackBreakdown": {
-    "at": 55,
-    "ag": 50
+    "at": 74,
+    "ag": 69
   },
   "metrics": {
-    "avgFeConfidence": "5.8",
+    "avgFeConfidence": "6.1",
     "avgToeicConfidence": "8.2",
     "targetFeLevel": "CEFR B2",
     "feWindow": "Week 48 (FE1)"

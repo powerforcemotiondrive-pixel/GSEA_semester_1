@@ -3968,14 +3968,14 @@
 
 /* --- PORTFOLIO_SUMMARY_DATA_START --- */
 const PORTFOLIO_SUMMARY_DATA = {
-  "lastUpdated": "20 Nov 2026",
-  "totalSubmissions": 105,
+  "lastUpdated": "26 Nov 2026",
+  "totalSubmissions": 143,
   "trackBreakdown": {
-    "at": 55,
-    "ag": 50
+    "at": 74,
+    "ag": 69
   },
   "metrics": {
-    "avgFeConfidence": "5.8",
+    "avgFeConfidence": "6.1",
     "avgToeicConfidence": "8.2",
     "targetFeLevel": "CEFR B2",
     "feWindow": "Week 48 (FE1)"
